@@ -53,9 +53,9 @@
 
 <a href="https://www.buymeacoffee.com/yinan" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" ></a>
 
-- https://arxiv.org/rss/cs.AI -> https://zhangqib.github.io/RSS-GPT/arxiv.AI.xml
-- https://arxiv.org/rss/cs.LG -> https://zhangqib.github.io/RSS-GPT/arxiv.ML.xml
-- https://arxiv.org/rss/cs.CL -> https://zhangqib.github.io/RSS-GPT/arxiv.CL.xml
-- https://arxiv.org/rss/cs.CE -> https://zhangqib.github.io/RSS-GPT/arxiv.CE.xml
-- https://arxiv.org/rss/cs.CV -> https://zhangqib.github.io/RSS-GPT/arxiv.CV.xml
-- https://arxiv.org/rss/cs.SI -> https://zhangqib.github.io/RSS-GPT/arxiv.SI.xml
+- https://rss.arxiv.org/rss/cs.AI -> https://zhangqib.github.io/RSS-GPT/arxiv.AI.xml
+- https://rss.arxiv.org/rss/cs.LG -> https://zhangqib.github.io/RSS-GPT/arxiv.ML.xml
+- https://rss.arxiv.org/rss/cs.CL -> https://zhangqib.github.io/RSS-GPT/arxiv.CL.xml
+- https://rss.arxiv.org/rss/cs.CE -> https://zhangqib.github.io/RSS-GPT/arxiv.CE.xml
+- https://rss.arxiv.org/rss/cs.CV -> https://zhangqib.github.io/RSS-GPT/arxiv.CV.xml
+- https://rss.arxiv.org/rss/cs.SI -> https://zhangqib.github.io/RSS-GPT/arxiv.SI.xml

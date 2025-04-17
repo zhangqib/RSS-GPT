@@ -54,9 +54,9 @@ These feeds on hosted in the [`docs/` subdirectory](https://github.com/yinan-c/R
 
 I will consider hosting more feeds in the future. Email me or submit an issue if there are any questions using the script or any suggestions.
 
-- https://arxiv.org/rss/cs.AI -> https://zhangqib.github.io/RSS-GPT/arxiv.AI.xml
-- https://arxiv.org/rss/cs.LG -> https://zhangqib.github.io/RSS-GPT/arxiv.ML.xml
-- https://arxiv.org/rss/cs.CL -> https://zhangqib.github.io/RSS-GPT/arxiv.CL.xml
-- https://arxiv.org/rss/cs.CE -> https://zhangqib.github.io/RSS-GPT/arxiv.CE.xml
-- https://arxiv.org/rss/cs.CV -> https://zhangqib.github.io/RSS-GPT/arxiv.CV.xml
-- https://arxiv.org/rss/cs.SI -> https://zhangqib.github.io/RSS-GPT/arxiv.SI.xml
+- https://rss.arxiv.org/rss/cs.AI -> https://zhangqib.github.io/RSS-GPT/arxiv.AI.xml
+- https://rss.arxiv.org/rss/cs.LG -> https://zhangqib.github.io/RSS-GPT/arxiv.ML.xml
+- https://rss.arxiv.org/rss/cs.CL -> https://zhangqib.github.io/RSS-GPT/arxiv.CL.xml
+- https://rss.arxiv.org/rss/cs.CE -> https://zhangqib.github.io/RSS-GPT/arxiv.CE.xml
+- https://rss.arxiv.org/rss/cs.CV -> https://zhangqib.github.io/RSS-GPT/arxiv.CV.xml
+- https://rss.arxiv.org/rss/cs.SI -> https://zhangqib.github.io/RSS-GPT/arxiv.SI.xml
