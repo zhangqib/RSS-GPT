@@ -37,6 +37,7 @@ jobs:
           python main.py
           ls -al docs/
         env:
+          OPENAI_BASE_URL: ${{ secrets.OPENAI_BASE_URL }}
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
           U_NAME: ${{ secrets.U_NAME }}
              
