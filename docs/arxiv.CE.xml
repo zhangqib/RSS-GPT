@@ -4,19 +4,19 @@
 <title>cs.CE updates on arXiv.org</title>
 <link>http://rss.arxiv.org/rss/cs.CE</link>
 
+
 <item>
 <title>Physics-Aware Compression of Plasma Distribution Functions with GPU-Accelerated Gaussian Mixture Models</title>
 <link>https://arxiv.org/abs/2504.14897</link>
 <guid>https://arxiv.org/abs/2504.14897</guid>
 <content:encoded><![CDATA[
-<div> compression, plasma simulations, Gaussian Mixture Models, in-situ, real-time <br>
-<br>
+<div> compression, plasma simulations, Gaussian Mixture Models, in-situ, real-time <br />
+<br />
 Summary: 
 This article introduces a physics-aware in-situ compression method using Gaussian Mixture Models (GMMs) for large-scale plasma simulations. By approximating electron and ion velocity distribution functions with GMMs, the method captures plasma features like mean velocity and temperature, enabling identification of heating processes and beam generation. The approach involves constructing a histogram to reduce computational overhead and implementing GPU-accelerated, in-situ GMM fitting within the iPIC3D simulator for real-time compression. The compressed representation is stored using the ADIOS 2 library to optimize the I/O process. Compared to other algorithms like SZ, MGARD, and BLOSC2, the GMM-based method retains a physics-based approach, preserving the physical interpretation of plasma phenomena while achieving compression ratios of up to $10^4 and processing times comparable to standard compression engines. <div>
 arXiv:2504.14897v1 Announce Type: new 
 Abstract: Data compression is a critical technology for large-scale plasma simulations. Storing complete particle information requires Terabyte-scale data storage, and analysis requires ad-hoc scalable post-processing tools. We propose a physics-aware in-situ compression method using Gaussian Mixture Models (GMMs) to approximate electron and ion velocity distribution functions with a number of Gaussian components. This GMM-based method allows us to capture plasma features such as mean velocity and temperature, and it enables us to identify heating processes and generate beams. We first construct a histogram to reduce computational overhead and apply GPU-accelerated, in-situ GMM fitting within \texttt{iPIC3D}, a large-scale implicit Particle-in-Cell simulator, ensuring real-time compression. The compressed representation is stored using the \texttt{ADIOS 2} library, thus optimizing the I/O process. The GPU and histogramming implementation provides a significant speed-up with respect to GMM on particles (both in time and required memory at run-time), enabling real-time compression. Compared to algorithms like SZ, MGARD, and BLOSC2, our GMM-based method has a physics-based approach, retaining the physical interpretation of plasma phenomena such as beam formation, acceleration, and heating mechanisms. Our GMM algorithm achieves a compression ratio of up to $10^4$, requiring a processing time comparable to, or even lower than, standard compression engines.
 ]]></content:encoded>
-<pubDate>Tue, 22 Apr 2025 00:00:00 -0400</pubDate>
 <pubDate>Tue, 22 Apr 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -26,12 +26,11 @@ Abstract: Data compression is a critical technology for large-scale plasma simul
 <content:encoded><![CDATA[
 <div> algorithm, distributed, reduced-order models, aerospace engineering, parallel
 
-Summary:<br>
-This paper introduces distributed Operator Inference (dOpInf), a parallel algorithm designed for constructing physics-based reduced-order models (ROMs) in large-scale aerospace engineering simulations. The algorithm efficiently processes high-dimensional datasets using distributed computing, enabling the learning of structured ROMs that approximate underlying dynamical systems. dOpInf is scalable, allowing for fully parallelized reduced modeling on thousands of processors. The resulting ROMs are computationally inexpensive, suitable for tasks such as design exploration, risk assessment, and uncertainty quantification. A tutorial using a 2D Navier-Stokes flow case study is provided to guide users through implementation, making dOpInf accessible for integration into complex aerospace simulations.<br> <div>
+Summary:<br />
+This paper introduces distributed Operator Inference (dOpInf), a parallel algorithm designed for constructing physics-based reduced-order models (ROMs) in large-scale aerospace engineering simulations. The algorithm efficiently processes high-dimensional datasets using distributed computing, enabling the learning of structured ROMs that approximate underlying dynamical systems. dOpInf is scalable, allowing for fully parallelized reduced modeling on thousands of processors. The resulting ROMs are computationally inexpensive, suitable for tasks such as design exploration, risk assessment, and uncertainty quantification. A tutorial using a 2D Navier-Stokes flow case study is provided to guide users through implementation, making dOpInf accessible for integration into complex aerospace simulations.<br /> <div>
 arXiv:2504.14338v1 Announce Type: cross 
 Abstract: Motivated by the large-scale nature of modern aerospace engineering simulations, this paper presents a detailed description of distributed Operator Inference (dOpInf), a recently developed parallel algorithm designed to efficiently construct physics-based reduced-order models (ROMs) for problems with large state dimensions. One such example is the simulation of rotating detonation rocket engines, where snapshot data generated by high-fidelity large-eddy simulations have many millions of degrees of freedom. dOpInf enables, via distributed computing, the efficient processing of datasets with state dimensions that are too large to process on a single computer, and the learning of structured physics-based ROMs that approximate the dynamical systems underlying those datasets. All elements of dOpInf are scalable, leading to a fully parallelized reduced modeling approach that can scale to the thousands of processors available on leadership high-performance computing platforms. The resulting ROMs are computationally cheap, making them ideal for key engineering tasks such as design space exploration, risk assessment, and uncertainty quantification. To illustrate the practical application of dOpInf, we provide a step-by-step tutorial using a 2D Navier-Stokes flow over a step scenario as a case study. This tutorial guides users through the implementation process, making dOpInf accessible for integration into complex aerospace engineering simulations.
 ]]></content:encoded>
-<pubDate>Tue, 22 Apr 2025 00:00:00 -0400</pubDate>
 <pubDate>Tue, 22 Apr 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -39,14 +38,13 @@ Abstract: Motivated by the large-scale nature of modern aerospace engineering si
 <link>https://arxiv.org/abs/2504.14928</link>
 <guid>https://arxiv.org/abs/2504.14928</guid>
 <content:encoded><![CDATA[
-<div> Dialogue framework, teaching capabilities, evaluation, language models, pedagogical effectiveness<br>
-Summary:<br>
-EducationQ is a multi-agent dialogue framework designed to assess the teaching capabilities of large language models (LLMs). Evaluating 14 LLMs from major AI organizations, the study found that teaching effectiveness does not solely rely on model scale or general reasoning abilities. Smaller open-source models sometimes outperformed larger commercial ones in educational contexts. The research highlighted a gap in current evaluations that prioritize knowledge recall over interactive pedagogy. Through a mixed-methods approach combining quantitative metrics, qualitative analysis, and expert case studies, distinct pedagogical strengths of top-performing models were identified. Human expert evaluations supported the automated qualitative analysis of effective teaching behaviors. The study suggests that LLMs-as-teachers require specialized optimization beyond simple scaling, indicating a need for targeted enhancement of specific pedagogical effectiveness in future educational AI development.<br> 
+<div> Dialogue framework, teaching capabilities, evaluation, language models, pedagogical effectiveness<br />
+Summary:<br />
+EducationQ is a multi-agent dialogue framework designed to assess the teaching capabilities of large language models (LLMs). Evaluating 14 LLMs from major AI organizations, the study found that teaching effectiveness does not solely rely on model scale or general reasoning abilities. Smaller open-source models sometimes outperformed larger commercial ones in educational contexts. The research highlighted a gap in current evaluations that prioritize knowledge recall over interactive pedagogy. Through a mixed-methods approach combining quantitative metrics, qualitative analysis, and expert case studies, distinct pedagogical strengths of top-performing models were identified. Human expert evaluations supported the automated qualitative analysis of effective teaching behaviors. The study suggests that LLMs-as-teachers require specialized optimization beyond simple scaling, indicating a need for targeted enhancement of specific pedagogical effectiveness in future educational AI development.<br /> 
 Summary: <div>
 arXiv:2504.14928v1 Announce Type: cross 
 Abstract: Large language models (LLMs) increasingly serve as educational tools, yet evaluating their teaching capabilities remains challenging due to the resource-intensive, context-dependent, and methodologically complex nature of teacher-student interactions. We introduce EducationQ, a multi-agent dialogue framework that efficiently assesses teaching capabilities through simulated dynamic educational scenarios, featuring specialized agents for teaching, learning, and evaluation. Testing 14 LLMs across major AI Organizations (OpenAI, Meta, Google, Anthropic, and others) on 1,498 questions spanning 13 disciplines and 10 difficulty levels reveals that teaching effectiveness does not correlate linearly with model scale or general reasoning capabilities - with some smaller open-source models outperforming larger commercial counterparts in teaching contexts. This finding highlights a critical gap in current evaluations that prioritize knowledge recall over interactive pedagogy. Our mixed-methods evaluation, combining quantitative metrics with qualitative analysis and expert case studies, identifies distinct pedagogical strengths employed by top-performing models (e.g., sophisticated questioning strategies, adaptive feedback mechanisms). Human expert evaluations show 78% agreement with our automated qualitative analysis of effective teaching behaviors, validating our methodology. EducationQ demonstrates that LLMs-as-teachers require specialized optimization beyond simple scaling, suggesting next-generation educational AI prioritize targeted enhancement of specific pedagogical effectiveness.
 ]]></content:encoded>
-<pubDate>Tue, 22 Apr 2025 00:00:00 -0400</pubDate>
 <pubDate>Tue, 22 Apr 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -57,11 +55,10 @@ Abstract: Large language models (LLMs) increasingly serve as educational tools, 
 <div> acoustic features, speaker identification, textual data, fuzzy fingerprints, pre-trained models
 Summary:
 This study explores the use of fuzzy fingerprints from large pre-trained models to enhance text-based speaker identification. By incorporating speaker-specific tokens and context-aware modeling, the accuracy of speaker identification from text reaches up to 70.6% on the Friends dataset and 67.7% on the Big Bang Theory dataset. The approach of using fuzzy fingerprints enables approximation of full fine-tuning performance with fewer hidden units, enhancing interpretability. The analysis includes a mechanism to identify speaker-agnostic lines and handle ambiguous utterances. The study highlights the challenges in text-based speaker identification and offers insights for future improvements. 
-<br><br>Summary: <div>
+<br /><br />Summary: <div>
 arXiv:2504.14963v1 Announce Type: cross 
 Abstract: Speaker identification using voice recordings leverages unique acoustic features, but this approach fails when only textual data is available. Few approaches have attempted to tackle the problem of identifying speakers solely from text, and the existing ones have primarily relied on traditional methods. In this work, we explore the use of fuzzy fingerprints from large pre-trained models to improve text-based speaker identification. We integrate speaker-specific tokens and context-aware modeling, demonstrating that conversational context significantly boosts accuracy, reaching 70.6% on the Friends dataset and 67.7% on the Big Bang Theory dataset. Additionally, we show that fuzzy fingerprints can approximate full fine-tuning performance with fewer hidden units, offering improved interpretability. Finally, we analyze ambiguous utterances and propose a mechanism to detect speaker-agnostic lines. Our findings highlight key challenges and provide insights for future improvements in text-based speaker identification.
 ]]></content:encoded>
-<pubDate>Tue, 22 Apr 2025 00:00:00 -0400</pubDate>
 <pubDate>Tue, 22 Apr 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -77,23 +74,20 @@ arXiv:2405.08542v2 Announce Type: replace
 Abstract: As an emerging technology that enables seamless integration between the physical and virtual worlds, the Metaverse has great potential to be deployed in the industrial production field with the development of extended reality (XR) and next-generation communication networks. This deployment, called the Industrial Metaverse, is used for product design, production operations, industrial quality inspection, and product testing. However, there lacks of in-depth understanding of the enabling technologies associated with the Industrial Metaverse. This encompasses both the precise industrial scenarios targeted by each technology and the potential migration of technologies developed in other domains to the industrial sector. Driven by this issue, in this article, we conduct a comprehensive survey of the state-of-the-art literature on the Industrial Metaverse. Specifically, we first analyze the advantages of the Metaverse for industrial production. Then, we review a collection of key enabling technologies of the Industrial Metaverse, including blockchain (BC), digital twin (DT), 6G, XR, and artificial intelligence (AI), and analyze how these technologies can support different aspects of industrial production. Subsequently, we present numerous formidable challenges encountered within the Industrial Metaverse, including confidentiality and security concerns, resource limitations, and interoperability constraints. Furthermore, we investigate the extant solutions devised to address them. Finally, we briefly outline several open issues and future research directions of the Industrial Metaverse.
 ]]></content:encoded>
 <pubDate>Tue, 22 Apr 2025 00:00:00 -0400</pubDate>
-<pubDate>Tue, 22 Apr 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
 <title>An optimization-based coupling of reduced order models with efficient reduced adjoint basis generation approach</title>
 <link>https://arxiv.org/abs/2408.14450</link>
 <guid>https://arxiv.org/abs/2408.14450</guid>
 <content:encoded><![CDATA[
-<div> Optimization-based coupling, Lagrange multiplier, multiple modeling, simulation, reduced order models<br>
-<br>
+<div> Optimization-based coupling, Lagrange multiplier, multiple modeling, simulation, reduced order models<br />
+<br />
 Summary: Optimization-based coupling (OBC) offers a promising approach in various modeling and simulation scenarios but faces challenges in time-dependent problems due to computational costs. This paper introduces an optimization-based ROM-ROM coupling for a transient advection-diffusion transmission issue, utilizing reduced order models to alleviate computational burdens. The "optimize-then-reduce" strategy is employed to solve the minimization problem at each time step efficiently. A key innovation is the development of a technique for effective adjoint snapshot collection for gradient-based optimizers in the context of optimization-based ROM-ROM couplings. Numerical experiments validate the accuracy of the proposed approach while comparing different methods for selecting reduced order bases for adjoint systems. Criteria such as decay of snapshot energy, average iteration counts, and timings are assessed to demonstrate the effectiveness of the optimization-based ROM-ROM coupling. <div>
 arXiv:2408.14450v2 Announce Type: replace 
 Abstract: Optimization-based coupling (OBC) is an attractive alternative to traditional Lagrange multiplier approaches in multiple modeling and simulation contexts. However, application of OBC to time-dependent problems has been hindered by the computational cost of finding the stationary points of the associated Lagrangian, which requires primal and adjoint solves. This issue can be mitigated by using OBC in conjunction with computationally efficient reduced order models (ROM). To demonstrate the potential of this combination, in this paper we develop an optimization-based ROM-ROM coupling for a transient advection-diffusion transmission problem. We pursue the ``optimize-then-reduce'' path towards solving the minimization problem at each timestep and solve reduced-space adjoint system of equations, where the main challenge in this formulation is the generation of adjoint snapshots and reduced bases for the adjoint systems required by the optimizer. One of the main contributions of the paper is a new technique for efficient adjoint snapshot collection for gradient-based optimizers in the context of optimization-based ROM-ROM couplings. We present numerical studies demonstrating the accuracy of the approach along with comparison between various approaches for selecting a reduced order basis for the adjoint systems, including decay of snapshot energy, average iteration counts, and timings.
 ]]></content:encoded>
 <pubDate>Tue, 22 Apr 2025 00:00:00 -0400</pubDate>
-<pubDate>Tue, 22 Apr 2025 00:00:00 -0400</pubDate>
 </item>
-
 <item>
 <title>CardioFit: A WebGL-Based Tool for Fast and Efficient Parameterization of Cardiac Action Potential Models to Fit User-Provided Data</title>
 <link>https://arxiv.org/abs/2504.13274</link>
