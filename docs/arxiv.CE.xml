@@ -4,6 +4,65 @@
 <title>cs.CE updates on arXiv.org</title>
 <link>http://rss.arxiv.org/rss/cs.CE</link>
 
+<item>
+<title>A dual-stage constitutive modeling framework based on finite strain data-driven identification and physics-augmented neural networks</title>
+<link>https://arxiv.org/abs/2504.15492</link>
+<guid>https://arxiv.org/abs/2504.15492</guid>
+<content:encoded><![CDATA[
+<div> approach; hyperelastic constitutive models; Data-Driven Identification; Physics-Augmented Neural Network; Finite Element simulations <br>
+Summary: 
+This study introduces a novel dual-stage approach for generating hyperelastic constitutive models using only experimentally measurable data. The first step involves applying a Data-Driven Identification (DDI) formulation to identify stress-strain tuples based on measured displacement fields. In the second step, a Physics-Augmented Neural Network (PANN) is calibrated using the data set, ensuring compliance with hyperelasticity conditions while maintaining flexibility. The approach is validated through synthetic 2D data generated in virtual experiments and applied in 3D Finite Element simulations. Additionally, a real experiment with noisy data is successfully mimicked, showcasing the effectiveness of the proposed method for automated hyperelastic model generation. <br> <div>
+arXiv:2504.15492v1 Announce Type: new 
+Abstract: In this contribution, we present a novel consistent dual-stage approach for the automated generation of hyperelastic constitutive models which only requires experimentally measurable data. To generate input data for our approach, an experiment with full-field measurement has to be conducted to gather testing force and corresponding displacement field of the sample. Then, in the first step of the dual-stage framework, a new finite strain Data-Driven Identification (DDI) formulation is applied. This method enables to identify tuples consisting of stresses and strains by only prescribing the applied boundary conditions and the measured displacement field. In the second step, the data set is used to calibrate a Physics-Augmented Neural Network (PANN), which fulfills all common conditions of hyperelasticity by construction and is very flexible at the same time. We demonstrate the applicability of our approach by several descriptive examples. Two-dimensional synthetic data are exemplarily generated in virtual experiments by using a reference constitutive model. The calibrated PANN is then applied in 3D Finite Element simulations. In addition, a real experiment including noisy data is mimicked.
+]]></content:encoded>
+<pubDate>Wed, 23 Apr 2025 00:00:00 -0400</pubDate>
+<pubDate>Wed, 23 Apr 2025 00:00:00 -0400</pubDate>
+</item>
+<item>
+<title>Fast Higher-Order Interpolation and Restriction in ExaHyPE Avoiding Non-physical Reflections</title>
+<link>https://arxiv.org/abs/2504.15814</link>
+<guid>https://arxiv.org/abs/2504.15814</guid>
+<content:encoded><![CDATA[
+<div> Wave equations, adaptive mesh refinement, ExaHyPE, ExaGRyPE, interpolation schemes<br>
+Summary:<br>
+Wave equations play an essential role in understanding various phenomena, but tracking them over regular meshes is computationally challenging given their large scales. Adaptive mesh refinement (AMR) helps by creating higher-resolution meshes near regions of interest. ExaHyPE and ExaGRyPE are software engines developed to solve wave problems using AMR. To advance the mesh in time, a set of higher-order interpolation schemes was introduced to address errors near AMR boundaries and improve computational efficiency. By calculating derivatives at each coarse grid cell to approximate fine cells, these new methods outperform the traditional tensor-product approach in terms of speed and accuracy. This improvement was demonstrated in a benchmark simulation of a stationary black hole, where the errors near AMR boundaries were eliminated. <div>
+arXiv:2504.15814v1 Announce Type: new 
+Abstract: Wave equations help us to understand phenomena ranging from earthquakes to tsunamis. These phenomena materialise over very large scales. It would be computationally infeasible to track them over a regular mesh. Yet, since the phenomena are localised, adaptive mesh refinement (AMR) can be used to construct meshes with a higher resolution close to the regions of interest. ExaHyPE is a software engine created to solve wave problems using AMR, and we use it as baseline to construct our numerical relativity application called ExaGRyPE. To advance the mesh in time, we have to interpolate and restrict along resolution transitions in each and every time step. ExaHyPE's vanilla code version uses a d-linear tensor-product approach. In benchmarks of a stationary black hole this performs slowly and leads to errors in conserved quantities near AMR boundaries. We therefore introduce a set of higher-order interpolation schemes where the derivatives are calculated at each coarse grid cell to approximate the enclosed fine cells. The resulting methods run faster than the tensor-product approach. Most importantly, when running the stationary black hole simulation using the higher order methods the errors near the AMR boundaries are removed.
+]]></content:encoded>
+<pubDate>Wed, 23 Apr 2025 00:00:00 -0400</pubDate>
+<pubDate>Wed, 23 Apr 2025 00:00:00 -0400</pubDate>
+</item>
+<item>
+<title>AneuPy: An open source Python tool for creating simulation-ready geometries of abdominal aortic aneurysms</title>
+<link>https://arxiv.org/abs/2504.15285</link>
+<guid>https://arxiv.org/abs/2504.15285</guid>
+<content:encoded><![CDATA[
+<div> AAA, abdominal aortic aneurysm, geometrical models, open-source software, AneuPy <br>
+Summary:
+Abdominal aortic aneurysms (AAAs) are a serious health concern, particularly among older individuals, due to their potential for life-threatening rupture. The geometric characteristics of AAAs, such as maximum diameter and wall thickness, are vital for assessing rupture risk. However, there is a lack of open-source software for generating simulation-ready AAA geometries. AneuPy, a Python-based tool, addresses this gap by automating the generation of idealized and patient-specific AAA geometrical models with minimal input data. By facilitating the creation of simulation-ready geometries for biomechanical and hemodynamic analyses, AneuPy aims to enhance research in AAA and improve patient-specific risk assessment. Its efficiency and flexibility make it a valuable tool for modeling AAA using finite element analysis (FEA), computational fluid dynamics (CFD), or fluid-structure interaction (FSI) methods. <br><br>Summary: <div>
+arXiv:2504.15285v1 Announce Type: cross 
+Abstract: Abdominal aortic aneurysms (AAAs) are localized dilations of the abdominal aorta that can lead to life-threatening rupture if left untreated. AAAs predominantly affect older individuals, with a high mortality rate upon rupture, making early diagnosis and risk assessment critical. The geometric characteristics of an AAA, such as its maximum diameter, asymmetry, and wall thickness, play a crucial role in biomechanical models used to assess rupture risk. Despite the growing use of computational modeling to study AAAs, there is a lack of open source software that facilitates the generation of simulation-ready geometries tailored for biomechanical and hemodynamic analyses. To address this need, we introduce AneuPy, an open-source Python-based tool designed to generate idealized and patient-specific AAA geometrical models. AneuPy provides an efficient and automated approach to aneurysm geometry generation, requiring minimal input data while allowing for flexible parameterization. By streamlining the creation of simulation-ready geometries for finite element analysis (FEA), computational fluid dynamics (CFD), or fluid-structure interaction (FSI) models, AneuPy aims to facilitate research in AAAs and enhance patient-specific risk assessment.
+]]></content:encoded>
+<pubDate>Wed, 23 Apr 2025 00:00:00 -0400</pubDate>
+<pubDate>Wed, 23 Apr 2025 00:00:00 -0400</pubDate>
+</item>
+<item>
+<title>Trading Devil RL: Backdoor attack via Stock market, Bayesian Optimization and Reinforcement Learning</title>
+<link>https://arxiv.org/abs/2412.17908</link>
+<guid>https://arxiv.org/abs/2412.17908</guid>
+<content:encoded><![CDATA[
+<div> Keywords: generative artificial intelligence, data poisoning, backdoor attack, detection methods, reinforcement learning
+
+Summary:
+The article explores the potential impact of large language models utilizing reinforcement learning in various fields, such as finance, physics, and artificial intelligence ecosystems. Specifically, the focus is on a backdoor attack named FinanceLLMsBackRL, which targets data poisoning without prior triggers. This attack poses a threat to financial institutions using reinforcement learning to simulate scenarios for models before and after regular operations. The study proposes a method for detecting such attacks through dynamic systems and statistical analysis of data distribution. Through this research, the authors aim to shed light on the vulnerabilities that may arise from the integration of large language models with reinforcement learning in critical sectors. This work underscores the importance of developing robust security measures to safeguard against potential threats in the evolving landscape of artificial intelligence systems. 
+
+<br><br>Summary: <div>
+arXiv:2412.17908v3 Announce Type: replace-cross 
+Abstract: With the rapid development of generative artificial intelligence, particularly large language models a number of sub-fields of deep learning have made significant progress and are now very useful in everyday applications. For example,financial institutions simulate a wide range of scenarios for various models created by their research teams using reinforcement learning, both before production and after regular operations. In this work, we propose a backdoor attack that focuses solely on data poisoning and a method of detection by dynamic systems and statistical analysis of the distribution of data. This particular backdoor attack is classified as an attack without prior consideration or trigger, and we name it FinanceLLMsBackRL. Our aim is to examine the potential effects of large language models that use reinforcement learning systems for text production or speech recognition, finance, physics, or the ecosystem of contemporary artificial intelligence models.
+]]></content:encoded>
+<pubDate>Wed, 23 Apr 2025 00:00:00 -0400</pubDate>
+<pubDate>Wed, 23 Apr 2025 00:00:00 -0400</pubDate>
+</item>
 
 <item>
 <title>Physics-Aware Compression of Plasma Distribution Functions with GPU-Accelerated Gaussian Mixture Models</title>
