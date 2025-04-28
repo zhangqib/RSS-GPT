@@ -4,6 +4,7 @@
 <title>cs.CV updates on arXiv.org</title>
 <link>http://rss.arxiv.org/rss/cs.CV</link>
 
+
 <item>
 <title>Rethinking Few-Shot Image Fusion: Granular Ball Priors Enable General-Purpose Deep Fusion</title>
 <link>https://arxiv.org/abs/2504.08937</link>
@@ -17,9 +18,7 @@ arXiv:2504.08937v3 Announce Type: replace-cross
 Abstract: In image fusion tasks, the absence of real fused images as priors presents a fundamental challenge. Most deep learning-based fusion methods rely on large-scale paired datasets to extract global weighting features from raw images, thereby generating fused outputs that approximate real fused images. In contrast to previous studies, this paper explores few-shot training of neural networks under the condition of having prior knowledge. We propose a novel fusion framework named GBFF, and a Granular Ball Significant Extraction algorithm specifically designed for the few-shot prior setting. All pixel pairs involved in the fusion process are initially modeled as a Coarse-Grained Granular Ball. At the local level, Fine-Grained Granular Balls are used to slide through the brightness space to extract Non-Salient Pixel Pairs, and perform splitting operations to obtain Salient Pixel Pairs. Pixel-wise weights are then computed to generate a pseudo-supervised image. At the global level, pixel pairs with significant contributions to the fusion process are categorized into the Positive Region, while those whose contributions cannot be accurately determined are assigned to the Boundary Region. The Granular Ball performs modality-aware adaptation based on the proportion of the positive region, thereby adjusting the neural network's loss function and enabling it to complement the information of the boundary region. Extensive experiments demonstrate the effectiveness of both the proposed algorithm and the underlying theory. Compared with state-of-the-art (SOTA) methods, our approach shows strong competitiveness in terms of both fusion time and image expressiveness. Our code is publicly available at:
 ]]></content:encoded>
 <pubDate>Mon, 28 Apr 2025 00:00:00 -0400</pubDate>
-<pubDate>Mon, 28 Apr 2025 00:00:00 -0400</pubDate>
 </item>
-
 <item>
 <title>Spectral Dictionary Learning for Generative Image Modeling</title>
 <link>https://arxiv.org/abs/2504.17804</link>
@@ -11686,16 +11685,6 @@ Abstract: Vision-language models are integral to computer vision research, yet m
 <content:encoded><![CDATA[
 arXiv:2504.13181v1 Announce Type: new 
 Abstract: We introduce Perception Encoder (PE), a state-of-the-art encoder for image and video understanding trained via simple vision-language learning. Traditionally, vision encoders have relied on a variety of pretraining objectives, each tailored to specific downstream tasks such as classification, captioning, or localization. Surprisingly, after scaling our carefully tuned image pretraining recipe and refining with our robust video data engine, we find that contrastive vision-language training alone can produce strong, general embeddings for all of these downstream tasks. There is only one caveat: these embeddings are hidden within the intermediate layers of the network. To draw them out, we introduce two alignment methods, language alignment for multimodal language modeling, and spatial alignment for dense prediction. Together with the core contrastive checkpoint, our PE family of models achieves state-of-the-art performance on a wide variety of tasks, including zero-shot image and video classification and retrieval; document, image, and video Q&amp;A and spatial tasks such as detection, depth estimation, and tracking. To foster further research, we are releasing our models, code, and a novel dataset of synthetically and human-annotated videos.
-]]></content:encoded>
-<pubDate>Fri, 18 Apr 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Capybara-OMNI: An Efficient Paradigm for Building Omni-Modal Language Models</title>
-<link>https://arxiv.org/abs/2504.12315</link>
-<guid>https://arxiv.org/abs/2504.12315</guid>
-<content:encoded><![CDATA[
-arXiv:2504.12315v1 Announce Type: cross 
-Abstract: With the development of Multimodal Large Language Models (MLLMs), numerous outstanding accomplishments have emerged within the open-source community. Due to the complexity of creating and training multimodal data pairs, it is still a computational and time-consuming process to build powerful MLLMs. In this work, we introduce Capybara-OMNI, an MLLM that trains in a lightweight and efficient manner and supports understanding text, image, video, and audio modalities. We present in detail the framework design, the data construction, and the training recipe, to develop an MLLM step-by-step to obtain competitive performance. We also provide exclusive benchmarks utilized in our experiments to show how to properly verify understanding capabilities across different modalities. Results show that by following our guidance, we can efficiently build an MLLM that achieves competitive performance among models of the same scale on various multimodal benchmarks. Additionally, to enhance the multimodal instruction following and conversational capabilities of the model, we further discuss how to train the chat version upon an MLLM understanding model, which is more in line with user habits for tasks like real-time interaction with humans. We publicly disclose the Capybara-OMNI model, along with its chat-based version. The disclosure includes both the model weights, a portion of the training data, and the inference codes, which are made available on GitHub.
 ]]></content:encoded>
 <pubDate>Fri, 18 Apr 2025 00:00:00 -0400</pubDate>
 </item>

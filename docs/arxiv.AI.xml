@@ -4,18 +4,18 @@
 <title>cs.AI updates on arXiv.org</title>
 <link>http://rss.arxiv.org/rss/cs.AI</link>
 
+
 <item>
 <title>Antidistillation Sampling</title>
 <link>https://arxiv.org/abs/2504.13146</link>
 <guid>https://arxiv.org/abs/2504.13146</guid>
 <content:encoded><![CDATA[
-<div> Keywords: Frontier models, reasoning traces, model distillation, sampling strategies, antidistillation<br>
-Summary:<br>
+<div> Keywords: Frontier models, reasoning traces, model distillation, sampling strategies, antidistillation<br />
+Summary:<br />
 Frontier models with extended reasoning traces can be vulnerable to model distillation due to the rich token sequences they produce. To address this, antidistillation sampling offers a solution by strategically altering a model's next-token probability distribution. This process poisons reasoning traces, making them less effective for distillation while maintaining the model's practical performance. Antidistillation sampling is a valuable strategy for model owners looking to safeguard their models from potential distillation attacks without sacrificing their overall utility. For more information on how antidistillation sampling works and its benefits, visit the website https://antidistillation.com. <div>
 arXiv:2504.13146v2 Announce Type: replace 
 Abstract: Frontier models that generate extended reasoning traces inadvertently produce rich token sequences that can facilitate model distillation. Recognizing this vulnerability, model owners may seek sampling strategies that limit the effectiveness of distillation without compromising model performance. Antidistillation sampling provides exactly this capability. By strategically modifying a model's next-token probability distribution, antidistillation sampling poisons reasoning traces, rendering them significantly less effective for distillation while preserving the model's practical utility. For further details, see https://antidistillation.com.
 ]]></content:encoded>
-<pubDate>Mon, 28 Apr 2025 00:00:00 -0400</pubDate>
 <pubDate>Mon, 28 Apr 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -28,16 +28,14 @@ Abstract: Frontier models that generate extended reasoning traces inadvertently 
 Summary:
 This work explores the derivation of interpretable symbolic models, such as decision trees, from feedforward neural networks (FNNs) to address the trust and acceptance challenges posed by the opacity of AI systems. The intersection of connectionist and symbolic approaches is investigated to bridge neural and symbolic paradigms. A systematic methodology is proposed to identify symbolic components within FNNs, enhancing transparency and accountability. The process involves tracing neuron activation values and input configurations across network layers to map activations to decision tree edges. A prototype was developed to validate the theoretical framework, demonstrating the feasibility of extracting symbolic representations from neural networks using tools like Keras and TensorFlow. This approach not only enhances trust in AI systems but also enables scalability to deeper networks through iterative refinement. The resulting symbolic structures effectively capture FNN decision processes, promoting interpretability in AI systems. 
 
-<br><br>Summary: <div>
+<br /><br />Summary: <div>
 arXiv:2504.12446v2 Announce Type: replace-cross 
 Abstract: Artificial intelligence (AI) has emerged as a transformative force across industries, driven by advances in deep learning and natural language processing, and fueled by large-scale data and computing resources. Despite its rapid adoption, the opacity of AI systems poses significant challenges to trust and acceptance.
   This work explores the intersection of connectionist and symbolic approaches to artificial intelligence, focusing on the derivation of interpretable symbolic models, such as decision trees, from feedforward neural networks (FNNs). Decision trees provide a transparent framework for elucidating the operations of neural networks while preserving their functionality. The derivation is presented in a step-by-step approach and illustrated with several examples. A systematic methodology is proposed to bridge neural and symbolic paradigms by exploiting distributed representations in FNNs to identify symbolic components, including fillers, roles, and their interrelationships. The process traces neuron activation values and input configurations across network layers, mapping activations and their underlying inputs to decision tree edges. The resulting symbolic structures effectively capture FNN decision processes and enable scalability to deeper networks through iterative refinement of subpaths for each hidden layer.
   To validate the theoretical framework, a prototype was developed using Keras .h5-data and emulating TensorFlow within the Java JDK/JavaFX environment. This prototype demonstrates the feasibility of extracting symbolic representations from neural networks, enhancing trust in AI systems, and promoting accountability.
 ]]></content:encoded>
 <pubDate>Mon, 28 Apr 2025 00:00:00 -0400</pubDate>
-<pubDate>Mon, 28 Apr 2025 00:00:00 -0400</pubDate>
 </item>
-
 <item>
 <title>ApproXAI: Energy-Efficient Hardware Acceleration of Explainable AI using Approximate Computing</title>
 <link>https://arxiv.org/abs/2504.17929</link>
@@ -11259,26 +11257,6 @@ Abstract: The dream of achieving a student-teacher ratio of 1:1 is closer than e
 <content:encoded><![CDATA[
 arXiv:2502.13407v2 Announce Type: replace-cross 
 Abstract: Deep learning has achieved significant success in the field of remote sensing image change detection (CD), yet two major challenges remain: the scarcity of sub-meter, comprehensive open-source CD datasets, and the difficulty of achieving consistent and satisfactory detection results across images with varying change areas. To address these issues, we introduce the JL1-CD dataset, which consists of 5,000 pairs of 512 x 512 pixel images with a resolution of 0.5 to 0.75 meters. This all-inclusive dataset covers a wide range of human-induced and natural changes, including buildings, roads, hardened surfaces, woodlands, grasslands, croplands, water bodies, and photovoltaic panels, among others. Additionally, we propose a novel multi-teacher knowledge distillation (MTKD) framework that leverages the Origin-Partition (O-P) strategy to enhance CD performance. In the O-P strategy, we partition the training data based on the Change Area Ratio (CAR) to train separate models for small, medium, and large CAR values, alleviating the learning burden on each model and improving their performance within their respective partitions. Building upon this, our MTKD framework distills knowledge from multiple teacher models trained on different CAR partitions into a single student model,enabling the student model to achieve superior detection results across diverse CAR scenarios without incurring additional computational or time overhead during the inference phase. Experimental results on the JL1-CD and SYSU-CD datasets demonstrate that the MTKD framework significantly improves the performance of CD models with various network architectures and parameter sizes, achieving new state-of-the-art results. The JL1-CD dataset and code are available at https://github.com/circleLZY/MTKD-CD.
-]]></content:encoded>
-<pubDate>Mon, 21 Apr 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Unbiased Collaborative Filtering with Fair Sampling</title>
-<link>https://arxiv.org/abs/2502.13840</link>
-<guid>https://arxiv.org/abs/2502.13840</guid>
-<content:encoded><![CDATA[
-arXiv:2502.13840v2 Announce Type: replace-cross 
-Abstract: Recommender systems leverage extensive user interaction data to model preferences; however, directly modeling these data may introduce biases that disproportionately favor popular items. In this paper, we demonstrate that popularity bias arises from the influence of propensity factors during training. Building on this insight, we propose a fair sampling (FS) method that ensures each user and each item has an equal likelihood of being selected as both positive and negative instances, thereby mitigating the influence of propensity factors. The proposed FS method does not require estimating propensity scores, thus avoiding the risk of failing to fully eliminate popularity bias caused by estimation inaccuracies. Comprehensive experiments demonstrate that the proposed FS method achieves state-of-the-art performance in both point-wise and pair-wise recommendation tasks. The code implementation is available at https://github.com/jhliu0807/Fair-Sampling.
-]]></content:encoded>
-<pubDate>Mon, 21 Apr 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>AgentCF++: Memory-enhanced LLM-based Agents for Popularity-aware Cross-domain Recommendations</title>
-<link>https://arxiv.org/abs/2502.13843</link>
-<guid>https://arxiv.org/abs/2502.13843</guid>
-<content:encoded><![CDATA[
-arXiv:2502.13843v2 Announce Type: replace-cross 
-Abstract: LLM-based user agents, which simulate user interaction behavior, are emerging as a promising approach to enhancing recommender systems. In real-world scenarios, users' interactions often exhibit cross-domain characteristics and are influenced by others. However, the memory design in current methods causes user agents to introduce significant irrelevant information during decision-making in cross-domain scenarios and makes them unable to recognize the influence of other users' interactions, such as popularity factors. To tackle this issue, we propose a dual-layer memory architecture combined with a two-step fusion mechanism. This design avoids irrelevant information during decision-making while ensuring effective integration of cross-domain preferences. We also introduce the concepts of interest groups and group-shared memory to better capture the influence of popularity factors on users with similar interests. Comprehensive experiments validate the effectiveness of AgentCF++. Our code is available at https://github.com/jhliu0807/AgentCF-plus.
 ]]></content:encoded>
 <pubDate>Mon, 21 Apr 2025 00:00:00 -0400</pubDate>
 </item>
