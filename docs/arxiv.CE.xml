@@ -4,6 +4,153 @@
 <title>cs.CE updates on arXiv.org</title>
 <link>http://rss.arxiv.org/rss/cs.CE</link>
 
+<item>
+<title>4DGS-CC: A Contextual Coding Framework for 4D Gaussian Splatting Data Compression</title>
+<link>https://arxiv.org/abs/2504.18925</link>
+<guid>https://arxiv.org/abs/2504.18925</guid>
+<content:encoded><![CDATA[
+<div> Neural Voxel Contextual Coding, Vector Quantization Contextual Coding, 4DGS data compression, multi-rate compression, storage reduction<br>
+Summary:<br>
+This study introduces 4DGS-CC, a contextual coding framework for compressing 4D Gaussian Splatting (4DGS) data to address storage challenges. The framework decomposes the 4DGS data into 4D neural voxels and 3DGS components for efficient compression. It leverages Neural Voxel Contextual Coding (NVCC) and Vector Quantization Contextual Coding (VQCC) to compress the data, achieving a storage reduction of approximately 12 times while maintaining rendering fidelity. The approach separates temporal and spatial dimensions in the data decomposition process and utilizes prior information for contextual coding using NVCC. Additionally, a codebook is employed to store spherical harmonics information from canonical 3DGS, which is compressed using VQCC with auxiliary hyperpriors. The integrated NVCC and VQCC enable tailored multi-rate compression of 4DGS data, making it suitable for specific storage requirements. Extensive experiments validate the effectiveness of the proposed method in achieving significant storage savings without compromising data quality. <br><br> <div>
+arXiv:2504.18925v1 Announce Type: new 
+Abstract: Storage is a significant challenge in reconstructing dynamic scenes with 4D Gaussian Splatting (4DGS) data. In this work, we introduce 4DGS-CC, a contextual coding framework that compresses 4DGS data to meet specific storage constraints.Building upon the established deformable 3D Gaussian Splatting (3DGS) method, our approach decomposes 4DGS data into 4D neural voxels and a canonical 3DGS component, which are then compressed using Neural Voxel Contextual Coding (NVCC) and Vector Quantization Contextual Coding (VQCC), respectively.Specifically, we first decompose the 4D neural voxels into distinct quantized features by separating the temporal and spatial dimensions. To losslessly compress each quantized feature, we leverage the previously compressed features from the temporal and spatial dimensions as priors and apply NVCC to generate the spatiotemporal context for contextual coding.Next, we employ a codebook to store spherical harmonics information from canonical 3DGS as quantized vectors, which are then losslessly compressed by using VQCC with the auxiliary learned hyperpriors for contextual coding, thereby reducing redundancy within the codebook.By integrating NVCC and VQCC, our contextual coding framework, 4DGS-CC, enables multi-rate 4DGS data compression tailored to specific storage requirements. Extensive experiments on three 4DGS data compression benchmarks demonstrate that our method achieves an average storage reduction of approximately 12 times while maintaining rendering fidelity compared to our baseline 4DGS approach.
+]]></content:encoded>
+<pubDate>Tue, 29 Apr 2025 00:00:00 -0400</pubDate>
+<pubDate>Tue, 29 Apr 2025 00:00:00 -0400</pubDate>
+</item>
+<item>
+<title>Stochastic Subspace via Probabilistic Principal Component Analysis for Characterizing Model Error</title>
+<link>https://arxiv.org/abs/2504.19963</link>
+<guid>https://arxiv.org/abs/2504.19963</guid>
+<content:encoded><![CDATA[
+<div> probabilistic model, subspaces, principal component analysis, model reduction, computational mechanics
+<br>
+Summary:<br>
+This paper introduces a probabilistic model of subspaces based on probabilistic principal component analysis (PCA). The method uses quantities derived from probabilistic PCA to construct distributions of the sample matrix and the principal subspaces in an embedding space. It is applicable to projection-based reduced-order modeling methods, such as proper orthogonal decomposition. The constructed stochastic subspace can help characterize model-form uncertainty in computational mechanics. The method is justified by probabilistic PCA, satisfying linear constraints like boundary conditions, and has only one hyperparameter, simplifying training. The algorithm is easy to implement. Comparisons with existing approaches show promising results in low-dimensional visualization, parametric static problems, and dynamics modeling of space structures. <div>
+arXiv:2504.19963v1 Announce Type: new 
+Abstract: This paper proposes a probabilistic model of subspaces based on the probabilistic principal component analysis (PCA). Given a sample of vectors in the embedding space -- commonly known as a snapshot matrix -- this method uses quantities derived from the probabilistic PCA to construct distributions of the sample matrix, as well as the principal subspaces. It is applicable to projection-based reduced-order modeling methods, such as proper orthogonal decomposition and related model reduction methods. The stochastic subspace thus constructed can be used, for example, to characterize model-form uncertainty in computational mechanics. The proposed method has multiple desirable properties: (1) it is naturally justified by the probabilistic PCA and has analytic forms for the induced random matrix models; (2) it satisfies linear constraints, such as boundary conditions of all kinds, by default; (3) it has only one hyperparameter, which significantly simplifies training; and (4) its algorithm is very easy to implement. We compare the proposed method with existing approaches in a low-dimensional visualization example and a parametric static problem, and demonstrate its performance in a dynamics model of a space structure.
+]]></content:encoded>
+<pubDate>Tue, 29 Apr 2025 00:00:00 -0400</pubDate>
+<pubDate>Tue, 29 Apr 2025 00:00:00 -0400</pubDate>
+</item>
+<item>
+<title>QuantBench: Benchmarking AI Methods for Quantitative Investment</title>
+<link>https://arxiv.org/abs/2504.18600</link>
+<guid>https://arxiv.org/abs/2504.18600</guid>
+<content:encoded><![CDATA[
+<div> benchmark, artificial intelligence, quantitative investment, industry practices, QuantBench  
+Summary:  
+QuantBench is introduced as a benchmark platform for AI in quantitative investment, aiming to bridge the gap between academic research and industry practices. It offers standardization aligned with industry standards, flexibility for integrating AI algorithms, and full coverage of the quantitative investment process. Using QuantBench, empirical studies highlight the importance of continual learning to address distribution shifts, improved methods for modeling relational financial data, and robust approaches to mitigate overfitting in low signal-to-noise environments. By providing a common platform for evaluation, QuantBench fosters collaboration between researchers and practitioners, accelerating progress in the field of AI for quantitative investment, similar to the impact of benchmark platforms in other domains such as computer vision and natural language processing. <div>
+arXiv:2504.18600v1 Announce Type: cross 
+Abstract: The field of artificial intelligence (AI) in quantitative investment has seen significant advancements, yet it lacks a standardized benchmark aligned with industry practices. This gap hinders research progress and limits the practical application of academic innovations. We present QuantBench, an industrial-grade benchmark platform designed to address this critical need. QuantBench offers three key strengths: (1) standardization that aligns with quantitative investment industry practices, (2) flexibility to integrate various AI algorithms, and (3) full-pipeline coverage of the entire quantitative investment process. Our empirical studies using QuantBench reveal some critical research directions, including the need for continual learning to address distribution shifts, improved methods for modeling relational financial data, and more robust approaches to mitigate overfitting in low signal-to-noise environments. By providing a common ground for evaluation and fostering collaboration between researchers and practitioners, QuantBench aims to accelerate progress in AI for quantitative investment, similar to the impact of benchmark platforms in computer vision and natural language processing.
+]]></content:encoded>
+<pubDate>Tue, 29 Apr 2025 00:00:00 -0400</pubDate>
+<pubDate>Tue, 29 Apr 2025 00:00:00 -0400</pubDate>
+</item>
+<item>
+<title>Scientific Open-Source Software Is Less Likely to Become Abandoned Than One Might Think! Lessons from Curating a Catalog of Maintained Scientific Software</title>
+<link>https://arxiv.org/abs/2504.18971</link>
+<guid>https://arxiv.org/abs/2504.18971</guid>
+<content:encoded><![CDATA[
+<div> classification, scientific software, longevity, survival models, open-source
+
+Summary:
+Using large language models, the study classifies over 18,000 scientific software projects, analyzing their attributes to understand factors affecting longevity. Infrastructural layers, downstream dependencies, publication mentions, and government participants are linked to longer lifespans, while newer projects with academic participants have shorter lifespans. Despite common perceptions, scientific projects have a longer lifespan than non-scientific open-source projects. The curated dataset provides a valuable resource for future research on scientific software, offering insights that could help prolong the lifespan of both scientific and non-scientific software projects. <div>
+arXiv:2504.18971v1 Announce Type: cross 
+Abstract: Scientific software is essential to scientific innovation and in many ways it is distinct from other types of software. Abandoned (or unmaintained), buggy, and hard to use software, a perception often associated with scientific software can hinder scientific progress, yet, in contrast to other types of software, its longevity is poorly understood. Existing data curation efforts are fragmented by science domain and/or are small in scale and lack key attributes. We use large language models to classify public software repositories in World of Code into distinct scientific domains and layers of the software stack, curating a large and diverse collection of over 18,000 scientific software projects. Using this data, we estimate survival models to understand how the domain, infrastructural layer, and other attributes of scientific software affect its longevity. We further obtain a matched sample of non-scientific software repositories and investigate the differences. We find that infrastructural layers, downstream dependencies, mentions of publications, and participants from government are associated with a longer lifespan, while newer projects with participants from academia had shorter lifespan. Against common expectations, scientific projects have a longer lifetime than matched non-scientific open-source software projects. We expect our curated attribute-rich collection to support future research on scientific software and provide insights that may help extend longevity of both scientific and other projects.
+]]></content:encoded>
+<pubDate>Tue, 29 Apr 2025 00:00:00 -0400</pubDate>
+<pubDate>Tue, 29 Apr 2025 00:00:00 -0400</pubDate>
+</item>
+<item>
+<title>Spreading of highly cohesive metal powders with transverse oscillation kinematics</title>
+<link>https://arxiv.org/abs/2504.18981</link>
+<guid>https://arxiv.org/abs/2504.18981</guid>
+<content:encoded><![CDATA[
+<div> powder bed additive manufacturing, laser powder bed fusion, binder jetting, transverse oscillation kinematic, dense powder layers<br>
+<br>
+Summary: 
+The study examines the challenges of spreading fine powders in powder bed additive manufacturing processes and proposes a transverse oscillation kinematic for powder spreading. Computational simulations using a DEM-FEM framework show that transverse oscillation of a non-rotating roller can facilitate the spreading of dense powder layers with high packing fractions. Experimental validation confirms the computational results, with high packing fractions achieved for transverse oscillation frequencies above 200 Hz. Statistical analysis demonstrates that increasing transverse surface velocity improves layer uniformity and reduces cracking defects. The proposed transverse oscillation kinematic has the potential to produce thin and consistently uniform powder layers in additive manufacturing processes, offering a promising solution for handling highly cohesive powders. <br><br> <div>
+arXiv:2504.18981v1 Announce Type: cross 
+Abstract: Powder bed additive manufacturing processes such as laser powder bed fusion (LPBF) or binder jetting (BJ) benefit from using fine (D50 $\leq20~\mu m$) powders. However, the increasing level of cohesion with decreasing particle size makes spreading a uniform and continuous layer challenging. As a result, LPBF typically employs a coarser size distribution, and rotating roller mechanisms are used in BJ machines, that can create wave-like surface profiles due to roller run-out.
+  In this work, a transverse oscillation kinematic for powder spreading is proposed, explored computationally, and validated experimentally. Simulations are performed using an integrated discrete element-finite element (DEM-FEM) framework and predict that transverse oscillation of a non-rotating roller facilitates the spreading of dense powder layers (beyond 50% packing fraction) with a high level of robustness to kinematic parameters. The experimental study utilizes a custom-built mechanized powder spreading testbed and X-ray transmission imaging for the analysis of spread powder layers. Experimental results generally validate the computational results, however, also exhibit parasitic layer cracking. For transverse oscillation frequencies above 200 Hz, powder layers of high packing fraction (between 50-60%) were formed, and for increased layer thicknesses, highly uniform and continuous layers were deposited. Statistical analysis of the experimental powder layer morphology as a function of kinematic spreading parameters revealed that an increasing transverse surface velocity improves layer uniformity and reduces cracking defects. This suggests that with minor improvements to the machine design, the proposed transverse oscillation kinematic has the potential to result in thin and consistently uniform powder layers of highly cohesive powder.
+]]></content:encoded>
+<pubDate>Tue, 29 Apr 2025 00:00:00 -0400</pubDate>
+<pubDate>Tue, 29 Apr 2025 00:00:00 -0400</pubDate>
+</item>
+<item>
+<title>Variational Bayesian Optimal Experimental Design with Normalizing Flows</title>
+<link>https://arxiv.org/abs/2404.13056</link>
+<guid>https://arxiv.org/abs/2404.13056</guid>
+<content:encoded><![CDATA[
+<div> Bayesian optimal experimental design, variational OED, normalizing flows, Monte Carlo estimators, gradient-based optimization<br>
+<br>
+Summary: The study introduces a novel approach, vOED-NFs, which utilizes normalizing flows (NFs) to enhance variational optimal experimental design (vOED) by approximating posterior distributions. The method employs NFs with a conditional invertible neural network architecture and includes a summary network for data dimension reduction. Monte Carlo estimators and gradient expressions enable simultaneous optimization of variational parameters and design variables. The algorithm is validated on benchmark problems and applied to scenarios involving cathodic electrophoretic deposition and stochastic modeling of aphid population. Results demonstrate that a composition of 4-5 coupling layers reduces EIG estimation bias, while NFs provide accurate approximations of posterior distributions, effectively capturing non-Gaussian and multi-modal features. The vOED-NFs approach offers a computationally efficient and accurate method for Bayesian optimal experimental design without the need for explicit likelihood evaluations. <br><br> <div>
+arXiv:2404.13056v2 Announce Type: replace-cross 
+Abstract: Bayesian optimal experimental design (OED) seeks experiments that maximize the expected information gain (EIG) in model parameters. Directly estimating the EIG using nested Monte Carlo is computationally expensive and requires an explicit likelihood. Variational OED (vOED), in contrast, estimates a lower bound of the EIG without likelihood evaluations by approximating the posterior distributions with variational forms, and then tightens the bound by optimizing its variational parameters. We introduce the use of normalizing flows (NFs) for representing variational distributions in vOED; we call this approach vOED-NFs. Specifically, we adopt NFs with a conditional invertible neural network architecture built from compositions of coupling layers, and enhanced with a summary network for data dimension reduction. We present Monte Carlo estimators to the lower bound along with gradient expressions to enable a gradient-based simultaneous optimization of the variational parameters and the design variables. The vOED-NFs algorithm is then validated in two benchmark problems, and demonstrated on a partial differential equation-governed application of cathodic electrophoretic deposition and an implicit likelihood case with stochastic modeling of aphid population. The findings suggest that a composition of 4--5 coupling layers is able to achieve lower EIG estimation bias, under a fixed budget of forward model runs, compared to previous approaches. The resulting NFs produce approximate posteriors that agree well with the true posteriors, able to capture non-Gaussian and multi-modal features effectively.
+]]></content:encoded>
+<pubDate>Tue, 29 Apr 2025 00:00:00 -0400</pubDate>
+<pubDate>Tue, 29 Apr 2025 00:00:00 -0400</pubDate>
+</item>
+<item>
+<title>Mechanistic Modeling of Lipid Nanoparticle Formation for the Delivery of Nucleic Acid Therapeutics</title>
+<link>https://arxiv.org/abs/2408.08577</link>
+<guid>https://arxiv.org/abs/2408.08577</guid>
+<content:encoded><![CDATA[
+<div> Keywords: nucleic acids, lipid nanoparticles, mechanistic modeling, process development, process control<br>
+Summary: 
+Nucleic acids, including mRNA, are a promising therapeutic modality for treating various diseases. Lipid nanoparticles (LNPs) have been used as a delivery system for nucleic acids in COVID-19 vaccines. However, understanding the formation and structure of LNPs is challenging, especially during scale-up of manufacturing processes. Mathematical and computational methods offer a way to improve understanding of LNP formation and aid in process development and control. This article discusses strategies for mechanistic modeling of LNP formation, starting with predicting important physicochemical properties of the species involved. It outlines a framework for constructing models of reactor- and particle-scale processes, linking insights from the models to product quality attributes and process understanding. Finally, the article explores using these models to guide advanced process control and optimization strategies.<br><br>Summary: <div>
+arXiv:2408.08577v2 Announce Type: replace-cross 
+Abstract: Nucleic acids such as mRNA have emerged as a promising therapeutic modality with the capability of addressing a wide range of diseases. Lipid nanoparticles (LNPs) as a delivery platform for nucleic acids were used in the COVID-19 vaccines and have received much attention. While modern manufacturing processes which involve rapidly mixing an organic stream containing the lipids with an aqueous stream containing the nucleic acids are conceptually straightforward, detailed understanding of LNP formation and structure is still limited and scale-up can be challenging. Mathematical and computational methods are a promising avenue for deepening scientific understanding of the LNP formation process and facilitating improved process development and control. This article describes strategies for the mechanistic modeling of LNP formation, starting with strategies to estimate and predict important physicochemical properties of the various species such as diffusivities and solubilities. Subsequently, a framework is outlined for constructing mechanistic models of reactor- and particle-scale processes. Insights gained from the various models are mapped back to product quality attributes and process insights. Lastly, the use of the models to guide development of advanced process control and optimization strategies is discussed.
+]]></content:encoded>
+<pubDate>Tue, 29 Apr 2025 00:00:00 -0400</pubDate>
+<pubDate>Tue, 29 Apr 2025 00:00:00 -0400</pubDate>
+</item>
+<item>
+<title>PatternPaint: Practical Layout Pattern Generation Using Diffusion-Based Inpainting</title>
+<link>https://arxiv.org/abs/2409.01348</link>
+<guid>https://arxiv.org/abs/2409.01348</guid>
+<content:encoded><![CDATA[
+<div> diffusion-based framework, VLSI layout patterns, design for manufacturing, few-shot finetuning, technology nodes 
+Summary:
+PatternPaint is a diffusion-based framework designed for generating diverse VLSI layout patterns essential for design for manufacturing. It addresses the challenge of limited design-rule-compliant training samples and simplifies complex layout pattern generation through inpainting processes. The framework incorporates a template-based denoising scheme and utilizes few-shot finetuning on a pretrained image foundation model with only 20 design-rule-compliant samples. Experimental results demonstrate the effectiveness of PatternPaint in generating legal patterns in complex 2D metal interconnect design rule settings for sub-3nm technology nodes. It achieves high diversity scores and improves legality rates significantly through few-shot finetuning. This approach offers a production-ready solution for layout pattern generation in the development of new technology nodes. 
+<br><br>Summary: <div>
+arXiv:2409.01348v4 Announce Type: replace-cross 
+Abstract: Generating diverse VLSI layout patterns is essential for various downstream tasks in design for manufacturing, as design rules continually evolve during the development of new technology nodes. However, existing training-based methods for layout pattern generation rely on large datasets. In practical scenarios, especially when developing a new technology node, obtaining such extensive layout data is challenging. Consequently, training models with large datasets becomes impractical, limiting the scalability and adaptability of prior approaches. To this end, we propose PatternPaint, a diffusion-based framework capable of generating legal patterns with limited design-rule-compliant training samples. PatternPaint simplifies complex layout pattern generation into a series of inpainting processes with a template-based denoising scheme. Furthermore, we perform few-shot finetuning on a pretrained image foundation model with only 20 design-rule-compliant samples. Experimental results show that using a sub-3nm technology node (Intel 18A), our model is the only one that can generate legal patterns in complex 2D metal interconnect design rule settings among all previous works and achieves a high diversity score. Additionally, our few-shot finetuning can boost the legality rate with 1.87X improvement compared to the original pretrained model. As a result, we demonstrate a production-ready approach for layout pattern generation in developing new technology nodes.
+]]></content:encoded>
+<pubDate>Tue, 29 Apr 2025 00:00:00 -0400</pubDate>
+<pubDate>Tue, 29 Apr 2025 00:00:00 -0400</pubDate>
+</item>
+<item>
+<title>AgileRate: Bringing Adaptivity and Robustness to DeFi Lending Markets</title>
+<link>https://arxiv.org/abs/2410.13105</link>
+<guid>https://arxiv.org/abs/2410.13105</guid>
+<content:encoded><![CDATA[
+<div> Decentralized Finance, DeFi, lending, algorithm-driven, liquidity pools <br>
+<br>
+Summary: 
+This work proposes a dynamic model for the DeFi lending market, incorporating evolving demand and supply curves and an adaptive interest rate controller to respond to market changes in real-time. The Recursive Least Squares algorithm is used to track external market conditions, ensuring stable utilization and managing default and liquidation risks. The algorithm provides theoretical guarantees on interest rate convergence and utilization stability while also addressing vulnerability to adversarial manipulation. Two approaches are proposed to mitigate manipulation: detecting extreme fluctuations and enhancing elasticity through interest rate derivative markets. The dynamic model shows low error rates on real data and the interest rate controller outperforms static curve protocols in optimizing utilization and reducing liquidations. <div>
+arXiv:2410.13105v4 Announce Type: replace-cross 
+Abstract: Decentralized Finance (DeFi) has revolutionized lending by replacing intermediaries with algorithm-driven liquidity pools. However, existing platforms like Aave and Compound rely on static interest rate curves and collateral requirements that struggle to adapt to rapid market changes, leading to inefficiencies in utilization and increased risks of liquidations. In this work, we propose a dynamic model of the lending market based on evolving demand and supply curves, alongside an adaptive interest rate controller that responds in real-time to shifting market conditions. Using a Recursive Least Squares algorithm, our controller tracks the external market and achieves stable utilization, while also controlling default and liquidation risk. We provide theoretical guarantees on the interest rate convergence and utilization stability of our algorithm. We establish bounds on the system's vulnerability to adversarial manipulation compared to static curves, while quantifying the trade-off between adaptivity and adversarial robustness. We propose two complementary approaches to mitigating adversarial manipulation: an algorithmic method that detects extreme demand and supply fluctuations and a market-based strategy that enhances elasticity, potentially via interest rate derivative markets. Our dynamic curve demand/supply model demonstrates a low best-fit error on Aave data, while our interest rate controller significantly outperforms static curve protocols in maintaining optimal utilization and minimizing liquidations.
+]]></content:encoded>
+<pubDate>Tue, 29 Apr 2025 00:00:00 -0400</pubDate>
+<pubDate>Tue, 29 Apr 2025 00:00:00 -0400</pubDate>
+</item>
+<item>
+<title>Performance Evaluation of Variational Quantum Eigensolver and Quantum Dynamics Algorithms on the Advection-Diffusion Equation</title>
+<link>https://arxiv.org/abs/2503.24045</link>
+<guid>https://arxiv.org/abs/2503.24045</guid>
+<content:encoded><![CDATA[
+<div> Variational Quantum Eigensolver, linear advection-diffusion equation, quantum algorithms, partial differential equations, noiseless simulation<br>
+<br>
+Summary: 
+The study investigates the performance of quantum algorithms in solving a linear one-dimensional advection-diffusion equation. It compares Variational Quantum Eigensolver (VQE) with Trotterization, Variational Quantum Imaginary Time Evolution (VarQTE), and Adaptive Variational Quantum Dynamics Simulation (AVQDS) on small quantum hardware. While VQE on a noiseless simulator achieves high accuracy with low infidelities, the dynamics algorithms suffer from errors due to noise and limited shot statistics on hardware. VQE outperforms the dynamics methods in terms of accuracy as it reaches low infidelities with moderate circuit depths. The comparison provides insights into the accuracy and resource demands of different algorithms for solving partial differential equations. The study concludes with a discussion on potential extensions to higher-dimensional and nonlinear PDEs relevant to engineering and finance. <br><br> <div>
+arXiv:2503.24045v2 Announce Type: replace-cross 
+Abstract: We investigate the potential of near-term quantum algorithms for solving partial differential equations (PDEs), focusing on a linear one-dimensional advection-diffusion equation as a test case. This study benchmarks a ground-state algorithm, Variational Quantum Eigensolver (VQE), against three leading quantum dynamics algorithms, Trotterization, Variational Quantum Imaginary Time Evolution (VarQTE), and Adaptive Variational Quantum Dynamics Simulation (AVQDS), applied to the same PDE on small quantum hardware. While Trotterization is fully quantum, VarQTE and AVQDS are variational algorithms that reduce circuit depth for noisy intermediate-scale quantum (NISQ) devices. However, hardware results from these dynamics methods show sizable errors due to noise and limited shot statistics. To establish a noise-free performance baseline, we implement the VQE-based solver on a noiseless statevector simulator. Our results show VQE can reach final-time infidelities as low as ${O}(10^{-9})$ with $N=4$ qubits and moderate circuit depths, outperforming hardware-deployed dynamics methods that show infidelities $\gtrsim 10^{-1}$. By comparing noiseless VQE to shot-based and hardware-run algorithms, we assess their accuracy and resource demands, providing a baseline for future quantum PDE solvers. We conclude with a discussion of limitations and potential extensions to higher-dimensional, nonlinear PDEs relevant to engineering and finance.
+]]></content:encoded>
+<pubDate>Tue, 29 Apr 2025 00:00:00 -0400</pubDate>
+<pubDate>Tue, 29 Apr 2025 00:00:00 -0400</pubDate>
+</item>
 
 <item>
 <title>SMARTFinRAG: Interactive Modularized Financial RAG Benchmark</title>
