@@ -4,22 +4,21 @@
 <title>cs.AI updates on arXiv.org</title>
 <link>http://rss.arxiv.org/rss/cs.AI</link>
 
+
 <item>
 <title>Improving Human-AI Coordination through Adversarial Training and Generative Models</title>
 <link>https://arxiv.org/abs/2504.15457</link>
 <guid>https://arxiv.org/abs/2504.15457</guid>
 <content:encoded><![CDATA[
-<div> Keywords: generative model, adversarial training, cooperative agents, coordination strategies, generalization <br>
-<br>
-Summary: <br>
+<div> Keywords: generative model, adversarial training, cooperative agents, coordination strategies, generalization <br />
+<br />
+Summary: <br />
 Being able to cooperate with new individuals is crucial for various AI applications, such as household robotics and autonomous driving. However, achieving this requires training on diverse human behavior data. Adversarial training can help in creating robust agents, but it is challenging in cooperative settings as adversarial policies may sabotage tasks. To address this issue, the proposed GOAT method combines a pre-trained generative model with adversarial training to maximize regret and overcome self-sabotage. This framework dynamically generates coordination strategies to expose the learning policy to challenging interaction scenarios without adversarial exploitation. By updating only the generative model's embedding, GOAT maintains realistic coordination strategies and demonstrates superior generalization to diverse human behaviors, as evidenced by its performance on the Overcooked benchmark with real human partners. <div>
 arXiv:2504.15457v2 Announce Type: replace 
 Abstract: Being able to cooperate with new people is an important component of many economically valuable AI tasks, from household robotics to autonomous driving. However, generalizing to novel humans requires training on data that captures the diversity of human behaviors. Adversarial training is one avenue for searching for such data and ensuring that agents are robust. However, it is difficult to apply in the cooperative setting because adversarial policies intentionally learn to sabotage the task instead of simulating valid cooperation partners. To address this challenge, we propose a novel strategy for overcoming self-sabotage that combines a pre-trained generative model to simulate valid cooperative agent policies with adversarial training to maximize regret. We call our method GOAT: Generative Online Adversarial Training. In this framework, the GOAT dynamically searches for and generates coordination strategies where the learning policy -- the Cooperator agent -- underperforms. GOAT enables better generalization by exposing the Cooperator to various challenging interaction scenarios. We maintain realistic coordination strategies by updating only the generative model's embedding while keeping its parameters frozen, thus avoiding adversarial exploitation. We evaluate GOAT with real human partners, and the results demonstrate state-of-the-art performance on the Overcooked benchmark, highlighting its effectiveness in generalizing to diverse human behaviors.
 ]]></content:encoded>
 <pubDate>Thu, 01 May 2025 00:00:00 -0400</pubDate>
-<pubDate>Thu, 01 May 2025 00:00:00 -0400</pubDate>
 </item>
-
 <item>
 <title>A Formalism for Optimal Search with Dynamic Heuristics</title>
 <link>https://arxiv.org/abs/2504.21131</link>
@@ -11289,18 +11288,6 @@ Abstract: Learning robust and generalizable world models is crucial for enabling
 <content:encoded><![CDATA[
 arXiv:2502.10475v2 Announce Type: replace-cross 
 Abstract: 3D Gaussian Splatting (3DGS) has been widely used in 3D reconstruction and 3D generation. Training to get a 3DGS scene often takes a lot of time and resources and even valuable inspiration. The increasing amount of 3DGS digital asset have brought great challenges to the copyright protection. However, it still lacks profound exploration targeted at 3DGS. In this paper, we propose a new framework X-SG$^2$S which can simultaneously watermark 1 to 3D messages while keeping the original 3DGS scene almost unchanged. Generally, we have a X-SG$^2$S injector for adding multi-modal messages simultaneously and an extractor for extract them. Specifically, we first split the watermarks into message patches in a fixed manner and sort the 3DGS points. A self-adaption gate is used to pick out suitable location for watermarking. Then use a XD(multi-dimension)-injection heads to add multi-modal messages into sorted 3DGS points. A learnable gate can recognize the location with extra messages and XD-extraction heads can restore hidden messages from the location recommended by the learnable gate. Extensive experiments demonstrated that the proposed X-SG$^2$S can effectively conceal multi modal messages without changing pretrained 3DGS pipeline or the original form of 3DGS parameters. Meanwhile, with simple and efficient model structure and high practicality, X-SG$^2$S still shows good performance in hiding and extracting multi-modal inner structured or unstructured messages. X-SG$^2$S is the first to unify 1 to 3D watermarking model for 3DGS and the first framework to add multi-modal watermarks simultaneous in one 3DGS which pave the wave for later researches.
-]]></content:encoded>
-<pubDate>Thu, 24 Apr 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Clinical QA 2.0: Multi-Task Learning for Answer Extraction and Categorization</title>
-<link>https://arxiv.org/abs/2502.13108</link>
-<guid>https://arxiv.org/abs/2502.13108</guid>
-<content:encoded><![CDATA[
-arXiv:2502.13108v2 Announce Type: replace-cross 
-Abstract: Clinical Question Answering (CQA) plays a crucial role in medical decision-making, enabling physicians to extract relevant information from Electronic Medical Records (EMRs). While transformer-based models such as BERT, BioBERT, and ClinicalBERT have demonstrated state-of-the-art performance in CQA, existing models lack the ability to categorize extracted answers, which is critical for structured retrieval, content filtering, and medical decision support.
-  To address this limitation, we introduce a Multi-Task Learning (MTL) framework that jointly trains CQA models for both answer extraction and medical categorization. In addition to predicting answer spans, our model classifies responses into five standardized medical categories: Diagnosis, Medication, Symptoms, Procedure, and Lab Reports. This categorization enables more structured and interpretable outputs, making clinical QA models more useful in real-world healthcare settings.
-  We evaluate our approach on emrQA, a large-scale dataset for medical question answering. Results show that MTL improves F1-score by 2.2% compared to standard fine-tuning, while achieving 90.7% accuracy in answer categorization. These findings suggest that MTL not only enhances CQA performance but also introduces an effective mechanism for categorization and structured medical information retrieval.
 ]]></content:encoded>
 <pubDate>Thu, 24 Apr 2025 00:00:00 -0400</pubDate>
 </item>

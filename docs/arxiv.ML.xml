@@ -4,6 +4,7 @@
 <title>cs.LG updates on arXiv.org</title>
 <link>http://rss.arxiv.org/rss/cs.LG</link>
 
+
 <item>
 <title>Hexcute: A Tile-based Programming Language with Automatic Layout and Task-Mapping Synthesis</title>
 <link>https://arxiv.org/abs/2504.16214</link>
@@ -11,11 +12,10 @@
 <content:encoded><![CDATA[
 <div> Keywords: Deep learning, GPU optimization, Matrix multiplication, Hexcute, Task mapping
 
-Summary:<br><br>Deep learning workloads often run on GPUs, and new quantization techniques require specialized matrix multiplication operators with mixed data types. Existing compilers like Triton struggle to optimize these operators effectively, while low-level programming models are labor-intensive to use. To address this gap, Hexcute is introduced as a tile-based programming language that enables fine-grained optimization for these complex operators. Hexcute exposes shared memory and register abstractions and leverages task mapping to schedule GPU programs efficiently. It also automates layout and task mapping synthesis using a novel algorithm based on type inference. Evaluation results demonstrate that Hexcute performs exceptionally well, achieving significant speedups compared to existing compilers for mixed-type operators and delivering notable improvements in overall performance. <div>
+Summary:<br /><br />Deep learning workloads often run on GPUs, and new quantization techniques require specialized matrix multiplication operators with mixed data types. Existing compilers like Triton struggle to optimize these operators effectively, while low-level programming models are labor-intensive to use. To address this gap, Hexcute is introduced as a tile-based programming language that enables fine-grained optimization for these complex operators. Hexcute exposes shared memory and register abstractions and leverages task mapping to schedule GPU programs efficiently. It also automates layout and task mapping synthesis using a novel algorithm based on type inference. Evaluation results demonstrate that Hexcute performs exceptionally well, achieving significant speedups compared to existing compilers for mixed-type operators and delivering notable improvements in overall performance. <div>
 arXiv:2504.16214v2 Announce Type: replace 
 Abstract: Deep learning (DL) workloads mainly run on accelerators like GPUs. Recent DL quantization techniques demand a new matrix multiplication operator with mixed input data types, further complicating GPU optimization. Prior high-level compilers like Triton lack the expressiveness to implement key optimizations like fine-grained data pipelines and hardware-friendly memory layouts for these operators, while low-level programming models, such as Hidet, Graphene, and CUTLASS, require significant programming efforts. To balance expressiveness with engineering effort, we propose Hexcute, a tile-based programming language that exposes shared memory and register abstractions to enable fine-grained optimization for these operators. Additionally, Hexcute leverages task mapping to schedule the GPU program, and to reduce programming efforts, it automates layout and task mapping synthesis with a novel type-inference-based algorithm. Our evaluation shows that Hexcute generalizes to a wide range of DL operators, achieves 1.7-11.28$\times$ speedup over existing DL compilers for mixed-type operators, and brings up to 2.91$\times$ speedup in the end-to-end evaluation.
 ]]></content:encoded>
-<pubDate>Thu, 01 May 2025 00:00:00 -0400</pubDate>
 <pubDate>Thu, 01 May 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -23,16 +23,14 @@ Abstract: Deep learning (DL) workloads mainly run on accelerators like GPUs. Rec
 <link>https://arxiv.org/abs/2501.15857</link>
 <guid>https://arxiv.org/abs/2501.15857</guid>
 <content:encoded><![CDATA[
-<div> Transformers, compositional reasoning, generalization ability, few-shot learning, causal graph <br>
-Summary: <br>
+<div> Transformers, compositional reasoning, generalization ability, few-shot learning, causal graph <br />
+Summary: <br />
 The study introduces a learning task called FTCT to test Transformers' ability to integrate knowledge fragments. It demonstrates that Transformers can perform compositional reasoning by connecting fragments from separate sources to deduce relationships. The model successfully infers complete causal graph traces during testing, even when such combinations were not present in the training data. The research highlights the importance of few-shot Chain-of-Thought prompting in enabling Transformers to showcase their compositional reasoning skills. It is noted that the model's ability to perform compositional reasoning is linked to its complexity and the similarity between training and testing data. The study suggests that Transformers learn a generalizable program during training, allowing them to effectively reason compositionally during testing. <div>
 arXiv:2501.15857v4 Announce Type: replace-cross 
 Abstract: Humans exhibit remarkable compositional reasoning by integrating knowledge from various sources. For example, if someone learns ( B = f(A) ) from one source and ( C = g(B) ) from another, they can deduce ( C=g(B)=g(f(A)) ) even without encountering ( ABC ) together, showcasing the generalization ability of human intelligence. In this paper, we introduce a synthetic learning task, "FTCT" (Fragmented at Training, Chained at Testing), to validate the potential of Transformers in replicating this skill and interpret its inner mechanism. In the training phase, data consist of separated knowledge fragments from an overall causal graph. During testing, Transformers must infer complete causal graph traces by integrating these fragments. Our findings demonstrate that few-shot Chain-of-Thought prompting enables Transformers to perform compositional reasoning on FTCT by revealing correct combinations of fragments, even if such combinations were absent in the training data. Furthermore, the emergence of compositional reasoning ability is strongly correlated with the model complexity and training-testing data similarity. We propose, both theoretically and empirically, that Transformers learn an underlying generalizable program from training, enabling effective compositional reasoning during testing.
 ]]></content:encoded>
 <pubDate>Thu, 01 May 2025 00:00:00 -0400</pubDate>
-<pubDate>Thu, 01 May 2025 00:00:00 -0400</pubDate>
 </item>
-
 <item>
 <title>Model Connectomes: A Generational Approach to Data-Efficient Language Models</title>
 <link>https://arxiv.org/abs/2504.21047</link>
@@ -11273,29 +11271,6 @@ Abstract: Federated Learning (FL) has emerged as a transformative paradigm in th
 <content:encoded><![CDATA[
 arXiv:2504.17709v1 Announce Type: new 
 Abstract: Intelligent condition monitoring of wind turbines is essential for reducing downtimes. Machine learning models trained on wind turbine operation data are commonly used to detect anomalies and, eventually, operation faults. However, data-driven normal behavior models (NBMs) require a substantial amount of training data, as NBMs trained with scarce data may result in unreliable fault diagnosis. To overcome this limitation, we present a novel generative deep learning approach to make SCADA samples from one wind turbine lacking training data resemble SCADA data from wind turbines with representative training data. Through CycleGAN-based domain mapping, our method enables the application of an NBM trained on an existing wind turbine to one with severely limited data. We demonstrate our approach on field data mapping SCADA samples across 7 substantially different WTs. Our findings show significantly improved fault diagnosis in wind turbines with scarce data. Our method achieves the most similar anomaly scores to an NBM trained with abundant data, outperforming NBMs trained on scarce training data with improvements of +10.3% in F1-score when 1 month of training data is available and +16.8% when 2 weeks are available. The domain mapping approach outperforms conventional fine-tuning at all considered degrees of data scarcity, ranging from 1 to 8 weeks of training data. The proposed technique enables earlier and more reliable fault diagnosis in newly installed wind farms, demonstrating a novel and promising research direction to improve anomaly detection when faced with training data scarcity.
-]]></content:encoded>
-<pubDate>Fri, 25 Apr 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Early Detection of Multidrug Resistance Using Multivariate Time Series Analysis and Interpretable Patient-Similarity Representations</title>
-<link>https://arxiv.org/abs/2504.17717</link>
-<guid>https://arxiv.org/abs/2504.17717</guid>
-<content:encoded><![CDATA[
-arXiv:2504.17717v1 Announce Type: new 
-Abstract: Background and Objectives: Multidrug Resistance (MDR) is a critical global health issue, causing increased hospital stays, healthcare costs, and mortality. This study proposes an interpretable Machine Learning (ML) framework for MDR prediction, aiming for both accurate inference and enhanced explainability.
-  Methods: Patients are modeled as Multivariate Time Series (MTS), capturing clinical progression and patient-to-patient interactions. Similarity among patients is quantified using MTS-based methods: descriptive statistics, Dynamic Time Warping, and Time Cluster Kernel. These similarity measures serve as inputs for MDR classification via Logistic Regression, Random Forest, and Support Vector Machines, with dimensionality reduction and kernel transformations improving model performance. For explainability, patient similarity networks are constructed from these metrics. Spectral clustering and t-SNE are applied to identify MDR-related subgroups and visualize high-risk clusters, enabling insight into clinically relevant patterns.
-  Results: The framework was validated on ICU Electronic Health Records from the University Hospital of Fuenlabrada, achieving an AUC of 81%. It outperforms baseline ML and deep learning models by leveraging graph-based patient similarity. The approach identifies key risk factors -- prolonged antibiotic use, invasive procedures, co-infections, and extended ICU stays -- and reveals clinically meaningful clusters. Code and results are available at \https://github.com/oscarescuderoarnanz/DM4MTS.
-  Conclusions: Patient similarity representations combined with graph-based analysis provide accurate MDR prediction and interpretable insights. This method supports early detection, risk factor identification, and patient stratification, highlighting the potential of explainable ML in critical care.
-]]></content:encoded>
-<pubDate>Fri, 25 Apr 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Conformal Segmentation in Industrial Surface Defect Detection with Statistical Guarantees</title>
-<link>https://arxiv.org/abs/2504.17721</link>
-<guid>https://arxiv.org/abs/2504.17721</guid>
-<content:encoded><![CDATA[
-arXiv:2504.17721v1 Announce Type: new 
-Abstract: In industrial settings, surface defects on steel can significantly compromise its service life and elevate potential safety risks. Traditional defect detection methods predominantly rely on manual inspection, which suffers from low efficiency and high costs. Although automated defect detection approaches based on Convolutional Neural Networks(e.g., Mask R-CNN) have advanced rapidly, their reliability remains challenged due to data annotation uncertainties during deep model training and overfitting issues. These limitations may lead to detection deviations when processing the given new test samples, rendering automated detection processes unreliable. To address this challenge, we first evaluate the detection model's practical performance through calibration data that satisfies the independent and identically distributed (i.i.d) condition with test data. Specifically, we define a loss function for each calibration sample to quantify detection error rates, such as the complement of recall rate and false discovery rate. Subsequently, we derive a statistically rigorous threshold based on a user-defined risk level to identify high-probability defective pixels in test images, thereby constructing prediction sets (e.g., defect regions). This methodology ensures that the expected error rate (mean error rate) on the test set remains strictly bounced by the predefined risk level. Additionally, we observe a negative correlation between the average prediction set size and the risk level on the test set, establishing a statistically rigorous metric for assessing detection model uncertainty. Furthermore, our study demonstrates robust and efficient control over the expected test set error rate across varying calibration-to-test partitioning ratios, validating the method's adaptability and operational effectiveness.
 ]]></content:encoded>
 <pubDate>Fri, 25 Apr 2025 00:00:00 -0400</pubDate>
 </item>

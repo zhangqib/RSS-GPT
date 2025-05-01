@@ -4,21 +4,20 @@
 <title>cs.CV updates on arXiv.org</title>
 <link>http://rss.arxiv.org/rss/cs.CV</link>
 
+
 <item>
 <title>DyST-XL: Dynamic Layout Planning and Content Control for Compositional Text-to-Video Generation</title>
 <link>https://arxiv.org/abs/2504.15032</link>
 <guid>https://arxiv.org/abs/2504.15032</guid>
 <content:encoded><![CDATA[
-<div> keywords: Compositional text-to-video generation, DyST-XL, training-free framework, entity-attribute graphs, frame-aware control <br>
+<div> keywords: Compositional text-to-video generation, DyST-XL, training-free framework, entity-attribute graphs, frame-aware control <br />
 Summary:
-DyST-XL is a training-free framework designed to improve text-to-video generation models by addressing issues such as layout discontinuity and implausible interaction dynamics. It leverages large language models to parse input prompts into entity-attribute graphs and generates physics-aware keyframe layouts. The framework also enforces localized text-video alignment through frame-aware attention masking, allowing for precise control over individual entities. Additionally, DyST-XL utilizes an Entity-Consistency Constraint strategy to preserve object identity throughout frames. Experimental results show significant improvements in compositional text-to-video generation, especially on complex prompts. The code for DyST-XL is available on GitHub, making it accessible for further research and development. <br><br>Summary: <div>
+DyST-XL is a training-free framework designed to improve text-to-video generation models by addressing issues such as layout discontinuity and implausible interaction dynamics. It leverages large language models to parse input prompts into entity-attribute graphs and generates physics-aware keyframe layouts. The framework also enforces localized text-video alignment through frame-aware attention masking, allowing for precise control over individual entities. Additionally, DyST-XL utilizes an Entity-Consistency Constraint strategy to preserve object identity throughout frames. Experimental results show significant improvements in compositional text-to-video generation, especially on complex prompts. The code for DyST-XL is available on GitHub, making it accessible for further research and development. <br /><br />Summary: <div>
 arXiv:2504.15032v2 Announce Type: replace 
 Abstract: Compositional text-to-video generation, which requires synthesizing dynamic scenes with multiple interacting entities and precise spatial-temporal relationships, remains a critical challenge for diffusion-based models. Existing methods struggle with layout discontinuity, entity identity drift, and implausible interaction dynamics due to unconstrained cross-attention mechanisms and inadequate physics-aware reasoning. To address these limitations, we propose DyST-XL, a \textbf{training-free} framework that enhances off-the-shelf text-to-video models (e.g., CogVideoX-5B) through frame-aware control. DyST-XL integrates three key innovations: (1) A Dynamic Layout Planner that leverages large language models (LLMs) to parse input prompts into entity-attribute graphs and generates physics-aware keyframe layouts, with intermediate frames interpolated via trajectory optimization; (2) A Dual-Prompt Controlled Attention Mechanism that enforces localized text-video alignment through frame-aware attention masking, achieving precise control over individual entities; and (3) An Entity-Consistency Constraint strategy that propagates first-frame feature embeddings to subsequent frames during denoising, preserving object identity without manual annotation. Experiments demonstrate that DyST-XL excels in compositional text-to-video generation, significantly improving performance on complex prompts and bridging a crucial gap in training-free video synthesis. The code is released in https://github.com/XiaoBuL/DyST-XL.
 ]]></content:encoded>
 <pubDate>Thu, 01 May 2025 00:00:00 -0400</pubDate>
-<pubDate>Thu, 01 May 2025 00:00:00 -0400</pubDate>
 </item>
-
 <item>
 <title>Can a Large Language Model Assess Urban Design Quality? Evaluating Walkability Metrics Across Expertise Levels</title>
 <link>https://arxiv.org/abs/2504.21040</link>
@@ -11781,16 +11780,6 @@ Abstract: Recognizing the same faces with and without masks is important for ens
 <content:encoded><![CDATA[
 arXiv:2501.10640v2 Announce Type: replace 
 Abstract: Convolutional Neural Networks (CNN) and Vision Transformers (ViT) have dominated the field of Computer Vision (CV). Graph Neural Networks (GNN) have performed remarkably well across diverse domains because they can represent complex relationships via unstructured graphs. However, the applicability of GNNs for visual tasks was unexplored till the introduction of Vision GNNs (ViG). Despite the success of ViGs, their performance is severely bottlenecked due to the expensive $k$-Nearest Neighbors ($k$-NN) based graph construction. Recent works addressing this bottleneck impose constraints on the flexibility of GNNs to build unstructured graphs, undermining their core advantage while introducing additional inefficiencies. To address these issues, in this paper, we propose a novel method called Dynamic Efficient Graph Convolution (DEGC) for designing efficient and globally aware ViGs. DEGC partitions the input image and constructs graphs in parallel for each partition, improving graph construction efficiency. Further, DEGC integrates local intra-graph and global inter-graph feature learning, enabling enhanced global context awareness. Using DEGC as a building block, we propose a novel CNN-GNN architecture, ClusterViG, for CV tasks. Extensive experiments indicate that ClusterViG reduces end-to-end inference latency for vision tasks by up to $5\times$ when compared against a suite of models such as ViG, ViHGNN, PVG, and GreedyViG, with a similar model parameter count. Additionally, ClusterViG reaches state-of-the-art performance on image classification, object detection, and instance segmentation tasks, demonstrating the effectiveness of the proposed globally aware learning strategy. Finally, input partitioning performed by DEGC enables ClusterViG to be trained efficiently on higher-resolution images, underscoring the scalability of our approach.
-]]></content:encoded>
-<pubDate>Wed, 23 Apr 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Gungnir: Exploiting Stylistic Features in Images for Backdoor Attacks on Diffusion Models</title>
-<link>https://arxiv.org/abs/2502.20650</link>
-<guid>https://arxiv.org/abs/2502.20650</guid>
-<content:encoded><![CDATA[
-arXiv:2502.20650v2 Announce Type: replace 
-Abstract: In recent years, Diffusion Models (DMs) have demonstrated significant advances in the field of image generation. However, according to current research, DMs are vulnerable to backdoor attacks, which allow attackers to control the model's output by inputting data containing covert triggers, such as a specific visual patch or phrase. Existing defense strategies are well equipped to thwart such attacks through backdoor detection and trigger inversion because previous attack methods are constrained by limited input spaces and low-dimensional triggers. For example, visual triggers are easily observed by defenders, text-based or attention-based triggers are more susceptible to neural network detection. To explore more possibilities of backdoor attack in DMs, we propose Gungnir, a novel method that enables attackers to activate the backdoor in DMs through style triggers within input images. Our approach proposes using stylistic features as triggers for the first time and implements backdoor attacks successfully in image-to-image tasks by introducing Reconstructing-Adversarial Noise (RAN) and Short-Term Timesteps-Retention (STTR). Our technique generates trigger-embedded images that are perceptually indistinguishable from clean images, thus bypassing both manual inspection and automated detection neural networks. Experiments demonstrate that Gungnir can easily bypass existing defense methods. Among existing DM defense frameworks, our approach achieves a 0 backdoor detection rate (BDR). Our codes are available at https://github.com/paoche11/Gungnir.
 ]]></content:encoded>
 <pubDate>Wed, 23 Apr 2025 00:00:00 -0400</pubDate>
 </item>
