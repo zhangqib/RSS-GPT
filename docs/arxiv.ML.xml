@@ -4,19 +4,19 @@
 <title>cs.LG updates on arXiv.org</title>
 <link>http://rss.arxiv.org/rss/cs.LG</link>
 
+
 <item>
 <title>Whence Is A Model Fair? Fixing Fairness Bugs via Propensity Score Matching</title>
 <link>https://arxiv.org/abs/2504.17066</link>
 <guid>https://arxiv.org/abs/2504.17066</guid>
 <content:encoded><![CDATA[
-<div> Fairness-aware learning, discrimination mitigation, protected social groups, fairness metrics, bias<br>
-<br>
-Summary: <br> 
+<div> Fairness-aware learning, discrimination mitigation, protected social groups, fairness metrics, bias<br />
+<br />
+Summary: <br /> 
 The paper explores the impact of data sampling on the reliability of fairness metrics in machine learning models. It introduces FairMatch, a post-processing method that uses propensity score matching to evaluate and mitigate bias in test data. By identifying control and treatment pairs with similar propensity scores and adjusting decision thresholds for different subgroups, FairMatch locates unbiased subsets and reduces bias in the remaining data. The approach also includes probabilistic calibration using fairness-aware loss functions for unmatched samples. Experimental results demonstrate the effectiveness of FairMatch in improving fairness evaluation and mitigation without sacrificing predictive performance. <div>
 arXiv:2504.17066v2 Announce Type: replace 
 Abstract: Fairness-aware learning aims to mitigate discrimination against specific protected social groups (e.g., those categorized by gender, ethnicity, age) while minimizing predictive performance loss. Despite efforts to improve fairness in machine learning, prior studies have shown that many models remain unfair when measured against various fairness metrics. In this paper, we examine whether the way training and testing data are sampled affects the reliability of reported fairness metrics. Since training and test sets are often randomly sampled from the same population, bias present in the training data may still exist in the test data, potentially skewing fairness assessments. To address this, we propose FairMatch, a post-processing method that applies propensity score matching to evaluate and mitigate bias. FairMatch identifies control and treatment pairs with similar propensity scores in the test set and adjusts decision thresholds for different subgroups accordingly. For samples that cannot be matched, we perform probabilistic calibration using fairness-aware loss functions. Experimental results demonstrate that our approach can (a) precisely locate subsets of the test data where the model is unbiased, and (b) significantly reduce bias on the remaining data. Overall, propensity score matching offers a principled way to improve both fairness evaluation and mitigation, without sacrificing predictive performance.
 ]]></content:encoded>
-<pubDate>Fri, 02 May 2025 00:00:00 -0400</pubDate>
 <pubDate>Fri, 02 May 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -29,14 +29,12 @@ Abstract: Fairness-aware learning aims to mitigate discrimination against specif
 Summary: 
 Satellite-based estimates of greenhouse gas properties play a crucial role in understanding and monitoring terrestrial systems and the carbon cycle. Retrieval of GHG concentrations from solar spectra observations is a challenging non-linear Bayesian inverse problem solved using the computationally expensive Optimal Estimation (OE) algorithm. However, the current method leads to convergence issues and overly confident uncertainty estimates. The upcoming satellite missions will generate significantly more data, necessitating fast and accurate retrieval algorithms with robust uncertainty quantification. To address this, a diffusion-based approach is proposed to retrieve Gaussian or non-Gaussian posteriors for NASA's Orbiting Carbon Observatory-2 spectrometer, offering a substantial computational speed-up compared to current approaches. This advancement is crucial for achieving near continuous real-time global monitoring of carbon sources and sinks, essential for informing policy decisions. 
 
-<br><br>Summary: <div>
+<br /><br />Summary: <div>
 arXiv:2504.17074v3 Announce Type: replace 
 Abstract: Satellite-based estimates of greenhouse gas (GHG) properties from observations of reflected solar spectra are integral for understanding and monitoring complex terrestrial systems and their impact on the carbon cycle due to their near global coverage. Known as retrieval, making GHG concentration estimations from these observations is a non-linear Bayesian inverse problem, which is operationally solved using a computationally expensive algorithm called Optimal Estimation (OE), providing a Gaussian approximation to a non-Gaussian posterior. This leads to issues in solver algorithm convergence, and to unrealistically confident uncertainty estimates for the retrieved quantities. Upcoming satellite missions will provide orders of magnitude more data than the current constellation of GHG observers. Development of fast and accurate retrieval algorithms with robust uncertainty quantification is critical. Doing so stands to provide substantial climate impact of moving towards the goal of near continuous real-time global monitoring of carbon sources and sinks which is essential for policy making. To achieve this goal, we propose a diffusion-based approach to flexibly retrieve a Gaussian or non-Gaussian posterior, for NASA's Orbiting Carbon Observatory-2 spectrometer, while providing a substantial computational speed-up over the current operational state-of-the-art.
 ]]></content:encoded>
 <pubDate>Fri, 02 May 2025 00:00:00 -0400</pubDate>
-<pubDate>Fri, 02 May 2025 00:00:00 -0400</pubDate>
 </item>
-
 <item>
 <title>From Lab to Wrist: Bridging Metabolic Monitoring and Consumer Wearables for Heart Rate and Oxygen Consumption Modeling</title>
 <link>https://arxiv.org/abs/2505.00101</link>
@@ -11288,26 +11286,6 @@ Abstract: Today's robots learn new tasks by imitating human examples. However, t
 <content:encoded><![CDATA[
 arXiv:2504.17966v1 Announce Type: cross 
 Abstract: The ability to predict trajectories of surrounding agents and obstacles is a crucial component in many robotic applications. Data-driven approaches are commonly adopted for state prediction in scenarios where the underlying dynamics are unknown. However, the performance, reliability, and uncertainty of data-driven predictors become compromised when encountering out-of-distribution observations relative to the training data. In this paper, we introduce a Plug-and-Play Physics-Informed Machine Learning (PnP-PIML) framework to address this challenge. Our method employs conformal prediction to identify outlier dynamics and, in that case, switches from a nominal predictor to a physics-consistent model, namely distributed Port-Hamiltonian systems (dPHS). We leverage Gaussian processes to model the energy function of the dPHS, enabling not only the learning of system dynamics but also the quantification of predictive uncertainty through its Bayesian nature. In this way, the proposed framework produces reliable physics-informed predictions even for the out-of-distribution scenarios.
-]]></content:encoded>
-<pubDate>Mon, 28 Apr 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Streaming, Fast and Slow: Cognitive Load-Aware Streaming for Efficient LLM Serving</title>
-<link>https://arxiv.org/abs/2504.17999</link>
-<guid>https://arxiv.org/abs/2504.17999</guid>
-<content:encoded><![CDATA[
-arXiv:2504.17999v1 Announce Type: cross 
-Abstract: Generative conversational interfaces powered by large language models (LLMs) typically stream output token-by-token at a rate determined by computational budget, often neglecting actual human reading speeds and the cognitive load associated with the content. This mismatch frequently leads to inefficient use of computational resources. For example, in cloud-based services, streaming content faster than users can read appears unnecessary, resulting in wasted computational resources and potential delays for other users, particularly during peak usage periods. To address this issue, we propose an adaptive streaming method that dynamically adjusts the pacing of LLM streaming output in real-time based on inferred cognitive load. Our approach estimates the cognitive load associated with streaming content and strategically slows down the stream during complex or information-rich segments, thereby freeing computational resources for other users. Our statistical analysis of computational savings, combined with crowdsourced user studies, provides insights into the trade-offs between service efficiency and user satisfaction, demonstrating that our method can significantly reduce computational consumption up to 16.8\%. This context-aware computational resource management strategy presents a practical framework for enhancing system efficiency in cloud-based conversational AI interfaces without compromising user experience.
-]]></content:encoded>
-<pubDate>Mon, 28 Apr 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Differential Privacy-Driven Framework for Enhancing Heart Disease Prediction</title>
-<link>https://arxiv.org/abs/2504.18007</link>
-<guid>https://arxiv.org/abs/2504.18007</guid>
-<content:encoded><![CDATA[
-arXiv:2504.18007v1 Announce Type: cross 
-Abstract: With the rapid digitalization of healthcare systems, there has been a substantial increase in the generation and sharing of private health data. Safeguarding patient information is essential for maintaining consumer trust and ensuring compliance with legal data protection regulations. Machine learning is critical in healthcare, supporting personalized treatment, early disease detection, predictive analytics, image interpretation, drug discovery, efficient operations, and patient monitoring. It enhances decision-making, accelerates research, reduces errors, and improves patient outcomes. In this paper, we utilize machine learning methodologies, including differential privacy and federated learning, to develop privacy-preserving models that enable healthcare stakeholders to extract insights without compromising individual privacy. Differential privacy introduces noise to data to guarantee statistical privacy, while federated learning enables collaborative model training across decentralized datasets. We explore applying these technologies to Heart Disease Data, demonstrating how they preserve privacy while delivering valuable insights and comprehensive analysis. Our results show that using a federated learning model with differential privacy achieved a test accuracy of 85%, ensuring patient data remained secure and private throughout the process.
 ]]></content:encoded>
 <pubDate>Mon, 28 Apr 2025 00:00:00 -0400</pubDate>
 </item>
