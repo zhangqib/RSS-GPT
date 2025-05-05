@@ -4,6 +4,7 @@
 <title>cs.CV updates on arXiv.org</title>
 <link>http://rss.arxiv.org/rss/cs.CV</link>
 
+
 <item>
 <title>An Automated Pipeline for Few-Shot Bird Call Classification: A Case Study with the Tooth-Billed Pigeon</title>
 <link>https://arxiv.org/abs/2504.16276</link>
@@ -14,14 +15,12 @@
 Summary:
 This paper introduces an automated bird call classification pipeline specifically designed for rare species that are not covered by existing large classifiers such as BirdNET and Perch. These traditional models lack the capability to detect species with limited training data, which poses a challenge for conservationists monitoring endangered birds with only a few known recordings. The approach leverages the embedding space of established bird classification networks and utilizes cosine similarity, along with filtering and denoising preprocessing methods, to enhance detection accuracy with minimal training data. The evaluation includes testing with Xeno-Canto recordings and a real-world application on the critically endangered tooth-billed pigeon, achieving perfect recall and high accuracy. This open-source system provides a practical solution for conservationists to identify and track rare species on the brink of extinction. 
 
-<br><br>Summary: <div>
+<br /><br />Summary: <div>
 arXiv:2504.16276v2 Announce Type: replace-cross 
 Abstract: This paper presents an automated one-shot bird call classification pipeline designed for rare species absent from large publicly available classifiers like BirdNET and Perch. While these models excel at detecting common birds with abundant training data, they lack options for species with only 1-3 known recordings-a critical limitation for conservationists monitoring the last remaining individuals of endangered birds. To address this, we leverage the embedding space of large bird classification networks and develop a classifier using cosine similarity, combined with filtering and denoising preprocessing techniques, to optimize detection with minimal training data. We evaluate various embedding spaces using clustering metrics and validate our approach in both a simulated scenario with Xeno-Canto recordings and a real-world test on the critically endangered tooth-billed pigeon (Didunculus strigirostris), which has no existing classifiers and only three confirmed recordings. The final model achieved 1.0 recall and 0.95 accuracy in detecting tooth-billed pigeon calls, making it practical for use in the field. This open-source system provides a practical tool for conservationists seeking to detect and monitor rare species on the brink of extinction.
 ]]></content:encoded>
 <pubDate>Mon, 05 May 2025 00:00:00 -0400</pubDate>
-<pubDate>Mon, 05 May 2025 00:00:00 -0400</pubDate>
 </item>
-
 <item>
 <title>Unconstrained Large-scale 3D Reconstruction and Rendering across Altitudes</title>
 <link>https://arxiv.org/abs/2505.00734</link>
@@ -11935,19 +11934,6 @@ Summary: <br />
 Event cameras provide high-speed event streams for perception tasks. Existing methods using graph neural networks struggle with capturing long-range dependencies and hierarchical structures of non-uniformly distributed event streams in Euclidean space. The proposed EHGCN approach combines Euclidean and hyperbolic spaces for event vision. It uses adaptive sampling to regulate sampling rates and a motion-aware hyperedge generation method based on Markov Vector Field to capture long-range dependencies and eliminate spurious associations. The Euclidean-Hyperbolic GCN fuses locally aggregated information in Euclidean space and globally hierarchically modeled information in hyperbolic space for hybrid event perception. Experimental results on object detection and recognition tasks demonstrate the effectiveness of the approach. <div>
 arXiv:2504.16616v1 Announce Type: new 
 Abstract: Event cameras, with microsecond temporal resolution and high dynamic range (HDR) characteristics, emit high-speed event stream for perception tasks. Despite the recent advancement in GNN-based perception methods, they are prone to use straightforward pairwise connectivity mechanisms in the pure Euclidean space where they struggle to capture long-range dependencies and fail to effectively characterize the inherent hierarchical structures of non-uniformly distributed event stream. To this end, in this paper we propose a novel approach named EHGCN, which is a pioneer to perceive event stream in both Euclidean and hyperbolic spaces for event vision. In EHGCN, we introduce an adaptive sampling strategy to dynamically regulate sampling rates, retaining discriminative events while attenuating chaotic noise. Then we present a Markov Vector Field (MVF)-driven motion-aware hyperedge generation method based on motion state transition probabilities, thereby eliminating cross-target spurious associations and providing critically topological priors while capturing long-range dependencies between events. Finally, we propose a Euclidean-Hyperbolic GCN to fuse the information locally aggregated and globally hierarchically modeled in Euclidean and hyperbolic spaces, respectively, to achieve hybrid event perception. Experimental results on event perception tasks such as object detection and recognition validate the effectiveness of our approach.
-]]></content:encoded>
-<pubDate>Thu, 24 Apr 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Dual-Camera All-in-Focus Neural Radiance Fields</title>
-<link>https://arxiv.org/abs/2504.16636</link>
-<guid>https://arxiv.org/abs/2504.16636</guid>
-<content:encoded><![CDATA[
-<div> NeRF, dual-camera, all-in-focus, defocus-aware fusion, multi-view dataset <br />
-Summary: <br />
-This article introduces a framework called DC-NeRF that can synthesize the all-in-focus neural radiance field (NeRF) without manual refocusing. By utilizing the dual-camera setup from smartphones, with the ultra-wide camera providing a wider depth-of-field (DoF) and the main camera offering higher resolution, DC-NeRF aligns and fuses images from both cameras to restore sharp, focused images. The approach includes spatial warping, color matching, and a defocus-aware fusion module to predict and adjust defocus parameters for accurate image synthesis. A multi-view dataset is created for testing, demonstrating the effectiveness of DC-NeRF in producing high-quality, all-in-focus images. The framework also enables depth-of-field applications like adjustable blur intensity and focal plane for tasks such as refocusing and split diopter effects. <div>
-arXiv:2504.16636v1 Announce Type: new 
-Abstract: We present the first framework capable of synthesizing the all-in-focus neural radiance field (NeRF) from inputs without manual refocusing. Without refocusing, the camera will automatically focus on the fixed object for all views, and current NeRF methods typically using one camera fail due to the consistent defocus blur and a lack of sharp reference. To restore the all-in-focus NeRF, we introduce the dual-camera from smartphones, where the ultra-wide camera has a wider depth-of-field (DoF) and the main camera possesses a higher resolution. The dual camera pair saves the high-fidelity details from the main camera and uses the ultra-wide camera's deep DoF as reference for all-in-focus restoration. To this end, we first implement spatial warping and color matching to align the dual camera, followed by a defocus-aware fusion module with learnable defocus parameters to predict a defocus map and fuse the aligned camera pair. We also build a multi-view dataset that includes image pairs of the main and ultra-wide cameras in a smartphone. Extensive experiments on this dataset verify that our solution, termed DC-NeRF, can produce high-quality all-in-focus novel views and compares favorably against strong baselines quantitatively and qualitatively. We further show DoF applications of DC-NeRF with adjustable blur intensity and focal plane, including refocusing and split diopter.
 ]]></content:encoded>
 <pubDate>Thu, 24 Apr 2025 00:00:00 -0400</pubDate>
 </item>
