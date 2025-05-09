@@ -4,6 +4,7 @@
 <title>cs.CL updates on arXiv.org</title>
 <link>http://rss.arxiv.org/rss/cs.CL</link>
 
+
 <item>
 <title>TCAN: Text-oriented Cross Attention Network for Multimodal Sentiment Analysis</title>
 <link>https://arxiv.org/abs/2404.04545</link>
@@ -11,15 +12,13 @@
 <content:encoded><![CDATA[
 <div> Keywords: Multimodal Sentiment Analysis, Cross-Attention Network, Text-oriented, Gated Control Mechanism, Joint Learning  
 
-<br><br>Summary:  
+<br /><br />Summary:  
 Multimodal Sentiment Analysis (MSA) integrates language, visual, and acoustic signals to determine human sentiment. Previous MSA techniques demonstrated strong performance but often treated different modalities equally, leading to a lack of attention to the variation in semantic richness among them. Recognizing that certain modalities may carry more weight, the authors propose the Text-oriented Cross-Attention Network (TCAN), which prioritizes the text modality. The framework begins by organizing unimodal features into visual-text and acoustic-text pairs, followed by implementing self-attention on the text modality. The method includes text-queried cross-attention to refine features from the visual and acoustic streams. A gated control mechanism is used to control noise and redundant features, enhancing the system’s focus on significant data. Furthermore, unimodal joint learning is employed to better understand emotional dynamics across different modalities via backpropagation. Extensive experiments validate the effectiveness of the TCAN model, showing consistent improvements over state-of-the-art MSA methods on two datasets, CMU-MOSI and CMU-MOSEI. This approach innovatively addresses the challenge of multimodal heterogeneities in sentiment analysis, marking a significant advancement in the field. <div>
 arXiv:2404.04545v3 Announce Type: replace-cross 
 Abstract: Multimodal Sentiment Analysis (MSA) endeavors to understand human sentiment by leveraging language, visual, and acoustic modalities. Despite the remarkable performance exhibited by previous MSA approaches, the presence of inherent multimodal heterogeneities poses a challenge, with the contribution of different modalities varying considerably. Past research predominantly focused on improving representation learning techniques and feature fusion strategies. However, many of these efforts overlooked the variation in semantic richness among different modalities, treating each modality uniformly. This approach may lead to underestimating the significance of strong modalities while overemphasizing the importance of weak ones. Motivated by these insights, we introduce a Text-oriented Cross-Attention Network (TCAN), emphasizing the predominant role of the text modality in MSA. Specifically, for each multimodal sample, by taking unaligned sequences of the three modalities as inputs, we initially allocate the extracted unimodal features into a visual-text and an acoustic-text pair. Subsequently, we implement self-attention on the text modality and apply text-queried cross-attention to the visual and acoustic modalities. To mitigate the influence of noise signals and redundant features, we incorporate a gated control mechanism into the framework. Additionally, we introduce unimodal joint learning to gain a deeper understanding of homogeneous emotional tendencies across diverse modalities through backpropagation. Experimental results demonstrate that TCAN consistently outperforms state-of-the-art MSA methods on two datasets (CMU-MOSI and CMU-MOSEI).
 ]]></content:encoded>
 <pubDate>Fri, 09 May 2025 00:00:00 -0400</pubDate>
-<pubDate>Fri, 09 May 2025 00:00:00 -0400</pubDate>
 </item>
-
 <item>
 <title>How Social is It? A Benchmark for LLMs' Capabilities in Multi-user Multi-turn Social Agent Tasks</title>
 <link>https://arxiv.org/abs/2505.04628</link>
@@ -12856,22 +12855,6 @@ IRIS is an Interactive Research Ideation System that aims to enhance scientific 
 <br /><br />Summary: <div>
 arXiv:2504.16728v1 Announce Type: cross 
 Abstract: The rapid advancement in capabilities of large language models (LLMs) raises a pivotal question: How can LLMs accelerate scientific discovery? This work tackles the crucial first stage of research, generating novel hypotheses. While recent work on automated hypothesis generation focuses on multi-agent frameworks and extending test-time compute, none of the approaches effectively incorporate transparency and steerability through a synergistic Human-in-the-loop (HITL) approach. To address this gap, we introduce IRIS: Interactive Research Ideation System, an open-source platform designed for researchers to leverage LLM-assisted scientific ideation. IRIS incorporates innovative features to enhance ideation, including adaptive test-time compute expansion via Monte Carlo Tree Search (MCTS), fine-grained feedback mechanism, and query-based literature synthesis. Designed to empower researchers with greater control and insight throughout the ideation process. We additionally conduct a user study with researchers across diverse disciplines, validating the effectiveness of our system in enhancing ideation. We open-source our code at https://github.com/Anikethh/IRIS-Interactive-Research-Ideation-System
-]]></content:encoded>
-<pubDate>Thu, 24 Apr 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Process Reward Models That Think</title>
-<link>https://arxiv.org/abs/2504.16828</link>
-<guid>https://arxiv.org/abs/2504.16828</guid>
-<content:encoded><![CDATA[
-<div> Keywords: PRM, ThinkPRM, verification, process labels, test-time scaling
-
-Summary: 
-ThinkPRM introduces a data-efficient approach to building process reward models (PRMs) for step-level verification tasks. By training on fewer process labels compared to discriminative PRMs, ThinkPRM leverages the reasoning abilities of long chain-of-thought models to outperform baselines on various benchmarks such as ProcessBench, MATH-500, and AIME '24. In out-of-domain evaluations on GPQA-Diamond and LiveCodeBench, ThinkPRM surpasses discriminative verifiers trained on a larger dataset. The approach also demonstrates effective scaling of verification compute compared to LLM-as-a-Judge under the same token budget. The work highlights the benefits of generative, long CoT PRMs in reducing the supervision required for training while enabling efficient test-time computation for verification tasks. The code, data, and models for ThinkPRM will be made available on the GitHub repository. 
-
-<br /><br />Summary: <div>
-arXiv:2504.16828v1 Announce Type: cross 
-Abstract: Step-by-step verifiers -- also known as process reward models (PRMs) -- are a key ingredient for test-time scaling. PRMs require step-level supervision, making them expensive to train. This work aims to build data-efficient PRMs as verbalized step-wise reward models that verify every step in the solution by generating a verification chain-of-thought (CoT). We propose ThinkPRM, a long CoT verifier fine-tuned on orders of magnitude fewer process labels than those required by discriminative PRMs. Our approach capitalizes on the inherent reasoning abilities of long CoT models, and outperforms LLM-as-a-Judge and discriminative verifiers -- using only 1% of the process labels in PRM800K -- across several challenging benchmarks. Specifically, ThinkPRM beats the baselines on ProcessBench, MATH-500, and AIME '24 under best-of-N selection and reward-guided search. In an out-of-domain evaluation on a subset of GPQA-Diamond and LiveCodeBench, our PRM surpasses discriminative verifiers trained on the full PRM800K by 8% and 4.5%, respectively. Lastly, under the same token budget, ThinkPRM scales up verification compute more effectively compared to LLM-as-a-Judge, outperforming it by 7.2% on a subset of ProcessBench. Our work highlights the value of generative, long CoT PRMs that can scale test-time compute for verification while requiring minimal supervision for training. Our code, data, and models will be released at https://github.com/mukhal/thinkprm.
 ]]></content:encoded>
 <pubDate>Thu, 24 Apr 2025 00:00:00 -0400</pubDate>
 </item>
