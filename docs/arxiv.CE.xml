@@ -4,6 +4,7 @@
 <title>cs.CE updates on arXiv.org</title>
 <link>http://rss.arxiv.org/rss/cs.CE</link>
 
+
 <item>
 <title>Unfitted finite element modelling of surface-bulk viscous flows in animal cells</title>
 <link>https://arxiv.org/abs/2505.05723</link>
@@ -14,11 +15,10 @@
 Summary: 
 This work introduces a novel unfitted finite element framework for simulating surface-bulk problems in time-dependent domains, specifically focusing on fluid-fluid interactions in animal cells. The framework addresses the challenges of modelling cortical contractions that induce surface flows and intracellular flow within large animal cells. By combining the trace finite element method for surface flows with the aggregated finite element method for bulk flows, the framework enables accurate and stable simulations on fixed Cartesian grids without remeshing. Additionally, it incorporates mechanochemical feedback through the surface transport of a molecular regulator of active tension. The method's accuracy and stability are validated through numerical experiments, showcasing its ability to capture phenomena such as self-organized pattern formation, curvature-driven relaxation, and cell cleavage. This innovative framework provides a versatile tool for studying complex morphogenetic processes in animal cells. 
 
-<br><br>Summary: <div>
+<br /><br />Summary: <div>
 arXiv:2505.05723v1 Announce Type: new 
 Abstract: This work presents a novel unfitted finite element framework to simulate coupled surface-bulk problems in time-dependent domains, focusing on fluid-fluid interactions in animal cells between the actomyosin cortex and the cytoplasm. The cortex, a thin layer beneath the plasma membrane, provides structural integrity and drives shape changes by generating surface contractile forces akin to tension. Cortical contractions generate Marangoni-like surface flows and induce intracellular cytoplasmic flows that are essential for processes such as cell division, migration, and polarization, particularly in large animal cells. Despite its importance, the spatiotemporal regulation of cortex-cytoplasm interactions remains poorly understood and computational modelling can be very challenging because surface-bulk dynamics often lead to large cell deformations. To address these challenges, we propose a sharp-interface framework that uniquely combines the trace finite element method for surface flows with the aggregated finite element method for bulk flows. This approach enables accurate and stable simulations on fixed Cartesian grids without remeshing. The model also incorporates mechanochemical feedback through the surface transport of a molecular regulator of active tension. We solve the resulting mixed-dimensional system on a fixed Cartesian grid using a level-set-based method to track the evolving surface. Numerical experiments validate the accuracy and stability of the method, capturing phenomena such as self-organised pattern formation, curvature-driven relaxation, and cell cleavage. This novel framework offers a powerful and extendable tool for investigating increasingly complex morphogenetic processes in animal cells.
 ]]></content:encoded>
-<pubDate>Mon, 12 May 2025 00:00:00 -0400</pubDate>
 <pubDate>Mon, 12 May 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -29,11 +29,10 @@ Abstract: This work presents a novel unfitted finite element framework to simula
 <div> Transformer model, futures trading, price predictions, attention mechanisms, risk management 
 Summary:
 The FutureQuant Transformer model is introduced to predict future price ranges and volatility in futures trading. Unlike traditional models, it focuses on forecasting ranges and volatility rather than point predictions, providing richer insights for trading strategies. By leveraging attention mechanisms to analyze complex data like real-time Limit Order Books, the model significantly improves decision-making and risk management in trading. Through its ability to learn intricate market patterns, it achieved an average gain of 0.1193% per 30-minute trade, outperforming state-of-the-art models. The model uses factors such as RSI, ATR, and Bollinger Bands in a simple algorithm to make accurate predictions, marking a substantial advancement in predictive analytics for futures trading. 
-<br><br>Summary: <div>
+<br /><br />Summary: <div>
 arXiv:2505.05595v1 Announce Type: cross 
 Abstract: In the complex landscape of traditional futures trading, where vast data and variables like real-time Limit Order Books (LOB) complicate price predictions, we introduce the FutureQuant Transformer model, leveraging attention mechanisms to navigate these challenges. Unlike conventional models focused on point predictions, the FutureQuant model excels in forecasting the range and volatility of future prices, thus offering richer insights for trading strategies. Its ability to parse and learn from intricate market patterns allows for enhanced decision-making, significantly improving risk management and achieving a notable average gain of 0.1193% per 30-minute trade over state-of-the-art models with a simple algorithm using factors such as RSI, ATR, and Bollinger Bands. This innovation marks a substantial leap forward in predictive analytics within the volatile domain of futures trading.
 ]]></content:encoded>
-<pubDate>Mon, 12 May 2025 00:00:00 -0400</pubDate>
 <pubDate>Mon, 12 May 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -41,14 +40,13 @@ Abstract: In the complex landscape of traditional futures trading, where vast da
 <link>https://arxiv.org/abs/2505.05605</link>
 <guid>https://arxiv.org/abs/2505.05605</guid>
 <content:encoded><![CDATA[
-<div> Keywords: Deep Learning, Conversion Prediction, Embedding Tables, Multi-Task Model, Overfitting<br>
-<br>
+<div> Keywords: Deep Learning, Conversion Prediction, Embedding Tables, Multi-Task Model, Overfitting<br />
+<br />
 Summary: 
-Deep learning models for conversion prediction in online advertising often require complex training to predict multiple objectives. The use of embedding tables encoding high cardinality categorical features can enhance model performance but poses challenges due to gradient sparsity and label sparsity. Pinterest Ads Conversion models utilize Sparse Optimizer to improve convergence speed and address multi-epoch overfitting. The severity of overfitting varies across objectives in a multi-task model based on label sparsity. A new approach using frequency-adaptive learning rates on embedding tables is proposed to mitigate multi-epoch overfitting, compared to re-initialization. Evaluation on a large-scale production dataset demonstrates the effectiveness of these techniques in enhancing model performance without sacrificing accuracy.<br><br>Summary: <div>
+Deep learning models for conversion prediction in online advertising often require complex training to predict multiple objectives. The use of embedding tables encoding high cardinality categorical features can enhance model performance but poses challenges due to gradient sparsity and label sparsity. Pinterest Ads Conversion models utilize Sparse Optimizer to improve convergence speed and address multi-epoch overfitting. The severity of overfitting varies across objectives in a multi-task model based on label sparsity. A new approach using frequency-adaptive learning rates on embedding tables is proposed to mitigate multi-epoch overfitting, compared to re-initialization. Evaluation on a large-scale production dataset demonstrates the effectiveness of these techniques in enhancing model performance without sacrificing accuracy.<br /><br />Summary: <div>
 arXiv:2505.05605v1 Announce Type: cross 
 Abstract: Deep learning for conversion prediction has found widespread applications in online advertising. These models have become more complex as they are trained to jointly predict multiple objectives such as click, add-to-cart, checkout and other conversion types. Additionally, the capacity and performance of these models can often be increased with the use of embedding tables that encode high cardinality categorical features such as advertiser, user, campaign, and product identifiers (IDs). These embedding tables can be pre-trained, but also learned end-to-end jointly with the model to directly optimize the model objectives. Training these large tables is challenging due to: gradient sparsity, the high cardinality of the categorical features, the non-uniform distribution of IDs and the very high label sparsity. These issues make training prone to both slow convergence and overfitting after the first epoch. Previous works addressed the multi-epoch overfitting issue by using: stronger feature hashing to reduce cardinality, filtering of low frequency IDs, regularization of the embedding tables, re-initialization of the embedding tables after each epoch, etc. Some of these techniques reduce overfitting at the expense of reduced model performance if used too aggressively. In this paper, we share key learnings from the development of embedding table optimization and multi-epoch training in Pinterest Ads Conversion models. We showcase how our Sparse Optimizer speeds up convergence, and how multi-epoch overfitting varies in severity between different objectives in a multi-task model depending on label sparsity. We propose a new approach to deal with multi-epoch overfitting: the use of a frequency-adaptive learning rate on the embedding tables and compare it to embedding re-initialization. We evaluate both methods offline using an industrial large-scale production dataset.
 ]]></content:encoded>
-<pubDate>Mon, 12 May 2025 00:00:00 -0400</pubDate>
 <pubDate>Mon, 12 May 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -58,14 +56,13 @@ Abstract: Deep learning for conversion prediction has found widespread applicati
 <content:encoded><![CDATA[
 <div> quantum Monte Carlo, adaptive mesh, GPU energy usage, exascale-ready applications, mixed-precision
 
-Summary:<br>
-The study focuses on analyzing the GPU energy usage of two exascale-ready applications, QMCPACK and AMReX-Castro, representing particle and mesh solvers, respectively. Using NVIDIA's A100 and H100 GPUs and AMD's MI250X GPUs, power, temperature, utilization, and energy traces were examined. The research highlights the energy-saving potential of mixed-precision computations, with savings ranging from 6-25% for QMCPACK and 45% for AMReX-Castro. Challenges remain in the AMD tooling for Frontier GPUs, while NVML query resolutions exhibit little variability. The study underscores the importance of application-specific metrics in informing energy-performance trade-offs and optimizing future supercomputer architectures in the post-Moore era.<br> 
+Summary:<br />
+The study focuses on analyzing the GPU energy usage of two exascale-ready applications, QMCPACK and AMReX-Castro, representing particle and mesh solvers, respectively. Using NVIDIA's A100 and H100 GPUs and AMD's MI250X GPUs, power, temperature, utilization, and energy traces were examined. The research highlights the energy-saving potential of mixed-precision computations, with savings ranging from 6-25% for QMCPACK and 45% for AMReX-Castro. Challenges remain in the AMD tooling for Frontier GPUs, while NVML query resolutions exhibit little variability. The study underscores the importance of application-specific metrics in informing energy-performance trade-offs and optimizing future supercomputer architectures in the post-Moore era.<br /> 
 
 Summary: <div>
 arXiv:2505.05623v1 Announce Type: cross 
 Abstract: We characterize the GPU energy usage of two widely adopted exascale-ready applications representing two classes of particle and mesh solvers: (i) QMCPACK, a quantum Monte Carlo package, and (ii) AMReX-Castro, an adaptive mesh astrophysical code. We analyze power, temperature, utilization, and energy traces from double-/single (mixed)-precision benchmarks on NVIDIA's A100 and H100 and AMD's MI250X GPUs using queries in NVML and rocm smi lib, respectively. We explore application-specific metrics to provide insights on energy vs. performance trade-offs. Our results suggest that mixed-precision energy savings range between 6-25% on QMCPACK and 45% on AMReX-Castro. Also there are still gaps in the AMD tooling on Frontier GPUs that need to be understood, while query resolutions on NVML have little variability between 1 ms and 1 s. Overall, application level knowledge is crucial to define energy-cost/science-benefit opportunities for the codesign of future supercomputer architectures in the post-Moore era.
 ]]></content:encoded>
-<pubDate>Mon, 12 May 2025 00:00:00 -0400</pubDate>
 <pubDate>Mon, 12 May 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -78,11 +75,10 @@ Abstract: We characterize the GPU energy usage of two widely adopted exascale-re
 Summary:
 FlowHFT is an imitation learning framework designed for high-frequency trading (HFT) that addresses the limitations of traditional HFT approaches. It simultaneously learns strategies from various expert models, allowing for adaptive adjustment of investment decisions based on market conditions. The framework incorporates a grid-search fine-tuning mechanism to refine strategies and outperform expert strategies in complex market scenarios. Through testing in multiple market environments, FlowHFT consistently achieves superior performance compared to individual expert models, showcasing its effectiveness in dynamic and diverse market conditions. The flow matching policy utilized in FlowHFT enables the framework to learn trading strategies under different market scenarios, demonstrating its applicability in stochastic market environments. This innovative approach offers a promising solution for HFT strategies in real-world markets. 
 
-<br><br>Summary: <div>
+<br /><br />Summary: <div>
 arXiv:2505.05784v1 Announce Type: cross 
 Abstract: High-frequency trading (HFT) is an investing strategy that continuously monitors market states and places bid and ask orders at millisecond speeds. Traditional HFT approaches fit models with historical data and assume that future market states follow similar patterns. This limits the effectiveness of any single model to the specific conditions it was trained for. Additionally, these models achieve optimal solutions only under specific market conditions, such as assumptions about stock price's stochastic process, stable order flow, and the absence of sudden volatility. Real-world markets, however, are dynamic, diverse, and frequently volatile. To address these challenges, we propose the FlowHFT, a novel imitation learning framework based on flow matching policy. FlowHFT simultaneously learns strategies from numerous expert models, each proficient in particular market scenarios. As a result, our framework can adaptively adjust investment decisions according to the prevailing market state. Furthermore, FlowHFT incorporates a grid-search fine-tuning mechanism. This allows it to refine strategies and achieve superior performance even in complex or extreme market scenarios where expert strategies may be suboptimal. We test FlowHFT in multiple market environments. We first show that flow matching policy is applicable in stochastic market environments, thus enabling FlowHFT to learn trading strategies under different market conditions. Notably, our single framework consistently achieves performance superior to the best expert for each market condition.
 ]]></content:encoded>
-<pubDate>Mon, 12 May 2025 00:00:00 -0400</pubDate>
 <pubDate>Mon, 12 May 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -93,14 +89,12 @@ Abstract: High-frequency trading (HFT) is an investing strategy that continuousl
 <div> Keywords: vehicle trajectories, traffic flow maps, measurement noise, local alignment algorithms, spatial resolution
 
 Summary: 
-Vehicle trajectories are valuable data for generating traffic flow maps at various scales. However, the presence of measurement noise can make small-scale aggregation challenging. To address this issue, new local alignment algorithms are introduced to align road segments for accurate flow mapping. These algorithms use inferred road segments as reference points and iterate through the process to compute locally aligned flow maps. Testing on synthetic and real-world data shows that the locally aligned maps provide precise flow aggregation at multiple scales, enhancing the accuracy and spatial resolution of static and interactive maps. The innovative approach offers a solution to the noise-related challenges in small-scale flow aggregation, making it possible to generate detailed and reliable traffic flow maps for effective traffic management and planning.<br><br>Summary: <div>
+Vehicle trajectories are valuable data for generating traffic flow maps at various scales. However, the presence of measurement noise can make small-scale aggregation challenging. To address this issue, new local alignment algorithms are introduced to align road segments for accurate flow mapping. These algorithms use inferred road segments as reference points and iterate through the process to compute locally aligned flow maps. Testing on synthetic and real-world data shows that the locally aligned maps provide precise flow aggregation at multiple scales, enhancing the accuracy and spatial resolution of static and interactive maps. The innovative approach offers a solution to the noise-related challenges in small-scale flow aggregation, making it possible to generate detailed and reliable traffic flow maps for effective traffic management and planning.<br /><br />Summary: <div>
 arXiv:2406.17500v4 Announce Type: replace-cross 
 Abstract: Vehicle trajectories, with their detailed geolocations, are a promising data source to compute traffic flow maps at scales ranging from the city/regional level to the road level. The main obstacle is that trajectory data are prone to measurement noise. While this is negligible for city level large-scale flow aggregation, it poses substantial difficulties for road level small-scale aggregation. To overcome these difficulties, we introduce innovative local alignment algorithms, where we infer road segments to serve as local reference segments, and proceed to align nearby road segments to them. We deploy these algorithms in an iterative workflow to compute locally aligned flow maps. By applying this workflow to synthetic and empirical trajectories, we verify that our locally aligned flow maps provide high levels of accuracy and spatial resolution of flow aggregation at multiple scales for static and interactive maps.
 ]]></content:encoded>
 <pubDate>Mon, 12 May 2025 00:00:00 -0400</pubDate>
-<pubDate>Mon, 12 May 2025 00:00:00 -0400</pubDate>
 </item>
-
 <item>
 <title>Physics-informed solution reconstruction in elasticity and heat transfer using the explicit constraint force method</title>
 <link>https://arxiv.org/abs/2505.04875</link>
