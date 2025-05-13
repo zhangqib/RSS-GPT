@@ -4,6 +4,7 @@
 <title>cs.LG updates on arXiv.org</title>
 <link>http://rss.arxiv.org/rss/cs.LG</link>
 
+
 <item>
 <title>Rewriting Pre-Training Data Boosts LLM Performance in Math and Code</title>
 <link>https://arxiv.org/abs/2505.02881</link>
@@ -12,14 +13,12 @@
 <div> performance, large language models, program synthesis, mathematical reasoning, datasets
 
 Summary:
-Large language models (LLMs) in program synthesis and mathematical reasoning have limitations due to the quality of their pre-training data. The introduction of two openly licensed datasets, SwallowCode and SwallowMath, significantly improves LLM performance by enhancing publicly available data. SwallowCode refines Python snippets through a four-stage pipeline, while SwallowMath enhances mathematical solutions by providing concise explanations. Training Llama-3.1-8B with SwallowCode increases accuracy in code generation, surpassing baseline models, while SwallowMath improves accuracy in mathematical tasks. Ablation studies show that each stage of the pipeline contributes to the overall improvement, with rewriting providing the most significant gains. The release of these datasets and checkpoints enables reproducible research and advances LLM pre-training in specialized domains. <br><br>Summary: <div>
+Large language models (LLMs) in program synthesis and mathematical reasoning have limitations due to the quality of their pre-training data. The introduction of two openly licensed datasets, SwallowCode and SwallowMath, significantly improves LLM performance by enhancing publicly available data. SwallowCode refines Python snippets through a four-stage pipeline, while SwallowMath enhances mathematical solutions by providing concise explanations. Training Llama-3.1-8B with SwallowCode increases accuracy in code generation, surpassing baseline models, while SwallowMath improves accuracy in mathematical tasks. Ablation studies show that each stage of the pipeline contributes to the overall improvement, with rewriting providing the most significant gains. The release of these datasets and checkpoints enables reproducible research and advances LLM pre-training in specialized domains. <br /><br />Summary: <div>
 arXiv:2505.02881v2 Announce Type: replace 
 Abstract: The performance of large language models (LLMs) in program synthesis and mathematical reasoning is fundamentally limited by the quality of their pre-training corpora. We introduce two openly licensed datasets, released under the Llama 3.3 Community License, that significantly enhance LLM performance by systematically rewriting public data. SwallowCode (approximately 16.1 billion tokens) refines Python snippets from The-Stack-v2 through a novel four-stage pipeline: syntax validation, pylint-based style filtering, and a two-stage LLM rewriting process that enforces style conformity and transforms snippets into self-contained, algorithmically efficient examples. Unlike prior methods that rely on exclusionary filtering or limited transformations, our transform-and-retain approach upgrades low-quality code, maximizing data utility. SwallowMath (approximately 2.3 billion tokens) enhances Finemath-4+ by removing boilerplate, restoring context, and reformatting solutions into concise, step-by-step explanations. Within a fixed 50 billion token training budget, continual pre-training of Llama-3.1-8B with SwallowCode boosts pass@1 by +17.0 on HumanEval and +17.7 on HumanEval+ compared to Stack-Edu, surpassing the baseline model's code generation capabilities. Similarly, substituting SwallowMath yields +12.4 accuracy on GSM8K and +7.6 on MATH. Ablation studies confirm that each pipeline stage contributes incrementally, with rewriting delivering the largest gains. All datasets, prompts, and checkpoints are publicly available, enabling reproducible research and advancing LLM pre-training for specialized domains.
 ]]></content:encoded>
 <pubDate>Tue, 13 May 2025 00:00:00 -0400</pubDate>
-<pubDate>Tue, 13 May 2025 00:00:00 -0400</pubDate>
 </item>
-
 <item>
 <title>Reward-free World Models for Online Imitation Learning</title>
 <link>https://arxiv.org/abs/2410.14081</link>
@@ -10927,17 +10926,6 @@ Abstract: Transformers with linear recurrent modeling offer linear-time training
 <content:encoded><![CDATA[
 arXiv:2504.20752v2 Announce Type: replace-cross 
 Abstract: Transformers have achieved great success in numerous NLP tasks but continue to exhibit notable gaps in multi-step factual reasoning, especially when real-world knowledge is sparse. Recent advances in grokking have demonstrated that neural networks can transition from memorizing to perfectly generalizing once they detect underlying logical patterns - yet these studies have primarily used small, synthetic tasks. In this paper, for the first time, we extend grokking to real-world factual data and address the challenge of dataset sparsity by augmenting existing knowledge graphs with carefully designed synthetic data to raise the ratio $\phi_r$ of inferred facts to atomic facts above the threshold required for grokking. Surprisingly, we find that even factually incorrect synthetic data can strengthen emergent reasoning circuits rather than degrade accuracy, as it forces the model to rely on relational structure rather than memorization. When evaluated on multi-hop reasoning benchmarks, our approach achieves up to 95-100% accuracy on 2WikiMultiHopQA - substantially improving over strong baselines and matching or exceeding current state-of-the-art results. We further provide an in-depth analysis of how increasing $\phi_r$ drives the formation of generalizing circuits inside Transformers. Our findings suggest that grokking-based data augmentation can unlock implicit multi-hop reasoning capabilities, opening the door to more robust and interpretable factual reasoning in large-scale language models.
-]]></content:encoded>
-<pubDate>Thu, 08 May 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>ACE: A Security Architecture for LLM-Integrated App Systems</title>
-<link>https://arxiv.org/abs/2504.20984</link>
-<guid>https://arxiv.org/abs/2504.20984</guid>
-<content:encoded><![CDATA[
-arXiv:2504.20984v2 Announce Type: replace-cross 
-Abstract: LLM-integrated app systems extend the utility of Large Language Models (LLMs) with third-party apps that are invoked by a system LLM using interleaved planning and execution phases to answer user queries. These systems introduce new attack vectors where malicious apps can cause integrity violation of planning or execution, availability breakdown, or privacy compromise during execution.
-  In this work, we identify new attacks impacting the integrity of planning, as well as the integrity and availability of execution in LLM-integrated apps, and demonstrate them against IsolateGPT, a recent solution designed to mitigate attacks from malicious apps. We propose Abstract-Concrete-Execute (ACE), a new secure architecture for LLM-integrated app systems that provides security guarantees for system planning and execution. Specifically, ACE decouples planning into two phases by first creating an abstract execution plan using only trusted information, and then mapping the abstract plan to a concrete plan using installed system apps. We verify that the plans generated by our system satisfy user-specified secure information flow constraints via static analysis on the structured plan output. During execution, ACE enforces data and capability barriers between apps, and ensures that the execution is conducted according to the trusted abstract plan. We show experimentally that our system is secure against attacks from the INJECAGENT benchmark, a standard benchmark for control flow integrity in the face of indirect prompt injection attacks, and our newly introduced attacks. Our architecture represents a significant advancement towards hardening LLM-based systems containing system facilities of varying levels of trustworthiness.
 ]]></content:encoded>
 <pubDate>Thu, 08 May 2025 00:00:00 -0400</pubDate>
 </item>
