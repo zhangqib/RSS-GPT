@@ -4,6 +4,7 @@
 <title>cs.AI updates on arXiv.org</title>
 <link>http://rss.arxiv.org/rss/cs.AI</link>
 
+
 <item>
 <title>Emotions in Artificial Intelligence</title>
 <link>https://arxiv.org/abs/2505.01462</link>
@@ -15,7 +16,6 @@ Summary: This theoretical paper explores the possibility of artificial intellige
 arXiv:2505.01462v2 Announce Type: replace 
 Abstract: This conceptual contribution offers a speculative account of how AI systems might emulate emotions as experienced by humans and animals. It presents a thought experiment grounded in the hypothesis that natural emotions evolved as heuristics for rapid situational appraisal and action selection, enabling biologically adaptive behaviour without requiring full deliberative modeling. The text examines whether artificial systems operating in complex action spaces could similarly benefit from these principles. It is proposed that affect be interwoven with episodic memory by storing corresponding affective tags alongside all events. This allows AIs to establish whether present situations resemble past events and project the associated emotional labels onto the current context. These emotional cues are then combined with need-driven emotional hints. The combined emotional state facilitates decision-making in the present by modulating action selection. The low complexity and experiential inertness of the proposed architecture are emphasized as evidence that emotional expression and consciousness are, in principle, orthogonal-permitting the theoretical possibility of affective zombies. On this basis, the moral status of AIs emulating affective states is critically examined. It is argued that neither the mere presence of internal representations of emotion nor consciousness alone suffices for moral standing; rather, the capacity for self-awareness of inner emotional states is posited as a necessary condition. A complexity-based criterion is proposed to exclude such awareness in the presented model. Additional thought experiments are presented to test the conceptual boundaries of this framework.
 ]]></content:encoded>
-<pubDate>Tue, 13 May 2025 00:00:00 -0400</pubDate>
 <pubDate>Tue, 13 May 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -30,24 +30,21 @@ arXiv:2505.02118v3 Announce Type: replace
 Abstract: This study investigates the self-rationalization framework constructed with a cooperative game, where a generator initially extracts the most informative segment from raw input, and a subsequent predictor utilizes the selected subset for its input. The generator and predictor are trained collaboratively to maximize prediction accuracy. In this paper, we first uncover a potential caveat: such a cooperative game could unintentionally introduce a sampling bias during rationale extraction. Specifically, the generator might inadvertently create an incorrect correlation between the selected rationale candidate and the label, even when they are semantically unrelated in the original dataset. Subsequently, we elucidate the origins of this bias using both detailed theoretical analysis and empirical evidence. Our findings suggest a direction for inspecting these correlations through attacks, based on which we further introduce an instruction to prevent the predictor from learning the correlations. Through experiments on six text classification datasets and two graph classification datasets using three network architectures (GRUs, BERT, and GCN), we show that our method not only significantly outperforms recent rationalization methods, but also achieves comparable or even better results than a representative LLM (llama3.1-8b-instruct).
 ]]></content:encoded>
 <pubDate>Tue, 13 May 2025 00:00:00 -0400</pubDate>
-<pubDate>Tue, 13 May 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
 <title>LLM-Guided Probabilistic Program Induction for POMDP Model Estimation</title>
 <link>https://arxiv.org/abs/2505.02216</link>
 <guid>https://arxiv.org/abs/2505.02216</guid>
 <content:encoded><![CDATA[
-<div> Probabilistic graphical models, learning, POMDPs, LLM, reinforcement learning<br>
-<br>
+<div> Probabilistic graphical models, learning, POMDPs, LLM, reinforcement learning<br />
+<br />
 Summary: 
-Partially Observable Markov Decision Processes (POMDPs) model decision making under uncertainty. The study focuses on learning models for a specific subset of POMDPs that can be represented as low-complexity probabilistic graphical models in the form of probabilistic programs. The approach involves using a Latent Linear Model (LLM) as a prior to generate candidate probabilistic programs, which are then refined based on feedback from the empirical distribution. Experiments conducted on various POMDP problems and robotics search domains demonstrate that leveraging an LLM for constructing low-complexity POMDP models can outperform traditional approaches like tabular POMDP learning, behavior cloning, and direct LLM planning. This research showcases the effectiveness of using LLM guidance in the learning process for POMDPs and presents a promising strategy for addressing decision-making under uncertainty. <br><br> <div>
+Partially Observable Markov Decision Processes (POMDPs) model decision making under uncertainty. The study focuses on learning models for a specific subset of POMDPs that can be represented as low-complexity probabilistic graphical models in the form of probabilistic programs. The approach involves using a Latent Linear Model (LLM) as a prior to generate candidate probabilistic programs, which are then refined based on feedback from the empirical distribution. Experiments conducted on various POMDP problems and robotics search domains demonstrate that leveraging an LLM for constructing low-complexity POMDP models can outperform traditional approaches like tabular POMDP learning, behavior cloning, and direct LLM planning. This research showcases the effectiveness of using LLM guidance in the learning process for POMDPs and presents a promising strategy for addressing decision-making under uncertainty. <br /><br /> <div>
 arXiv:2505.02216v2 Announce Type: replace 
 Abstract: Partially Observable Markov Decision Processes (POMDPs) model decision making under uncertainty. While there are many approaches to approximately solving POMDPs, we aim to address the problem of learning such models. In particular, we are interested in a subclass of POMDPs wherein the components of the model, including the observation function, reward function, transition function, and initial state distribution function, can be modeled as low-complexity probabilistic graphical models in the form of a short probabilistic program. Our strategy to learn these programs uses an LLM as a prior, generating candidate probabilistic programs that are then tested against the empirical distribution and adjusted through feedback. We experiment on a number of classical toy POMDP problems, simulated MiniGrid domains, and two real mobile-base robotics search domains involving partial observability. Our results show that using an LLM to guide in the construction of a low-complexity POMDP model can be more effective than tabular POMDP learning, behavior cloning, or direct LLM planning.
 ]]></content:encoded>
 <pubDate>Tue, 13 May 2025 00:00:00 -0400</pubDate>
-<pubDate>Tue, 13 May 2025 00:00:00 -0400</pubDate>
 </item>
-
 <item>
 <title>BedreFlyt: Improving Patient Flows through Hospital Wards with Digital Twins</title>
 <link>https://arxiv.org/abs/2505.06287</link>
@@ -11152,36 +11149,6 @@ Abstract: Cancer survivors face unique emotional challenges that impact their qu
 <content:encoded><![CDATA[
 arXiv:2503.13551v3 Announce Type: replace-cross 
 Abstract: Recent studies show that Large Language Models (LLMs) achieve strong reasoning capabilities through supervised fine-tuning or reinforcement learning. However, a key approach, the Process Reward Model (PRM), suffers from reward hacking, making it unreliable in identifying the best intermediate step. In addition, the cost of annotating reasoning processes for reward modeling is high, making large-scale collection of high-quality data challenging. To address this, we propose a novel reward model approach called the Hierarchical Reward Model (HRM), which evaluates both individual and consecutive reasoning steps at both fine-grained and coarse-grained levels. HRM excels at assessing multi-step reasoning coherence, especially when flawed steps are later corrected through self-reflection. To further reduce the cost of generating training data, we introduce a lightweight and effective data augmentation strategy called Hierarchical Node Compression (HNC), which merges two consecutive reasoning steps into one within the tree structure. By applying HNC to MCTS-generated reasoning trajectories, we enhance the diversity and robustness of HRM training data while introducing controlled noise with minimal computational overhead. Empirical results on the PRM800K dataset show that HRM, together with HNC, provides more stable and reliable evaluations than PRM. Furthermore, cross-domain evaluations on the MATH500 and GSM8K datasets demonstrate HRM's strong generalization and robustness across a variety of reasoning tasks.
-]]></content:encoded>
-<pubDate>Wed, 07 May 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Content ARCs: Decentralized Content Rights in the Age of Generative AI</title>
-<link>https://arxiv.org/abs/2503.14519</link>
-<guid>https://arxiv.org/abs/2503.14519</guid>
-<content:encoded><![CDATA[
-arXiv:2503.14519v2 Announce Type: replace-cross 
-Abstract: The rise of Generative AI (GenAI) has sparked significant debate over balancing the interests of creative rightsholders and AI developers. As GenAI models are trained on vast datasets that often include copyrighted material, questions around fair compensation and proper attribution have become increasingly urgent. To address these challenges, this paper proposes a framework called Content ARCs (Authenticity, Rights, Compensation). By combining open standards for provenance and dynamic licensing with data attribution, and decentralized technologies, Content ARCs create a mechanism for managing rights and compensating creators for using their work in AI training. We characterize several nascent works in the AI data licensing space within Content ARCs and identify where challenges remain to fully implement the end-to-end framework.
-]]></content:encoded>
-<pubDate>Wed, 07 May 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>UI-Vision: A Desktop-centric GUI Benchmark for Visual Perception and Interaction</title>
-<link>https://arxiv.org/abs/2503.15661</link>
-<guid>https://arxiv.org/abs/2503.15661</guid>
-<content:encoded><![CDATA[
-arXiv:2503.15661v2 Announce Type: replace-cross 
-Abstract: Autonomous agents that navigate Graphical User Interfaces (GUIs) to automate tasks like document editing and file management can greatly enhance computer workflows. While existing research focuses on online settings, desktop environments, critical for many professional and everyday tasks, remain underexplored due to data collection challenges and licensing issues. We introduce UI-Vision, the first comprehensive, license-permissive benchmark for offline, fine-grained evaluation of computer use agents in real-world desktop environments. Unlike online benchmarks, UI-Vision provides: (i) dense, high-quality annotations of human demonstrations, including bounding boxes, UI labels, and action trajectories (clicks, drags, and keyboard inputs) across 83 software applications, and (ii) three fine-to-coarse grained tasks-Element Grounding, Layout Grounding, and Action Prediction-with well-defined metrics to rigorously evaluate agents' performance in desktop environments. Our evaluation reveals critical limitations in state-of-the-art models like UI-TARS-72B, including issues with understanding professional software, spatial reasoning, and complex actions like drag-and-drop. These findings highlight the challenges in developing fully autonomous computer use agents. By releasing UI-Vision as open-source, we aim to advance the development of more capable agents for real-world desktop tasks.
-]]></content:encoded>
-<pubDate>Wed, 07 May 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Knowledge-guided machine learning for county-level corn yield prediction under drought</title>
-<link>https://arxiv.org/abs/2503.16328</link>
-<guid>https://arxiv.org/abs/2503.16328</guid>
-<content:encoded><![CDATA[
-arXiv:2503.16328v2 Announce Type: replace-cross 
-Abstract: Remote sensing (RS) technique, enabling the non-contact acquisition of extensive ground observations, is a valuable tool for crop yield predictions. Traditional process-based models struggle to incorporate large volumes of RS data, and most users lack understanding of crop growth mechanisms. In contrast, machine learning (ML) models are often criticized as "black boxes" due to their limited interpretability. To address these limitations, we utilized Knowledge-Guided Machine Learning (KGML), a framework that leverages the strengths of both process-based and ML models. Existing works have either overlooked the role of soil moisture in corn growth or did not embed this effect into their models. To bridge this gap, we developed the Knowledge-Guided Machine Learning with Soil Moisture (KGML-SM) framework, treating soil moisture as an intermediate variable in corn growth to emphasize its key role in plant development. Additionally, based on the prior knowledge that the model may overestimate under drought conditions, we designed a drought-aware loss function that penalized predicted yield in drought-affected areas. Our experiments showed that the KGML-SM model outperformed other traditional ML models. We explored the relationships between drought, soil moisture, and corn yield prediction by assessing the importance of different features within the model, and analyzing how soil moisture impacts predictions across different regions and time periods. Finally we provided interpretability for prediction errors to guide future model optimization.
 ]]></content:encoded>
 <pubDate>Wed, 07 May 2025 00:00:00 -0400</pubDate>
 </item>

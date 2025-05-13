@@ -5,17 +5,32 @@
 <link>http://rss.arxiv.org/rss/cs.LG</link>
 
 <item>
+<title>Rewriting Pre-Training Data Boosts LLM Performance in Math and Code</title>
+<link>https://arxiv.org/abs/2505.02881</link>
+<guid>https://arxiv.org/abs/2505.02881</guid>
+<content:encoded><![CDATA[
+<div> performance, large language models, program synthesis, mathematical reasoning, datasets
+
+Summary:
+Large language models (LLMs) in program synthesis and mathematical reasoning have limitations due to the quality of their pre-training data. The introduction of two openly licensed datasets, SwallowCode and SwallowMath, significantly improves LLM performance by enhancing publicly available data. SwallowCode refines Python snippets through a four-stage pipeline, while SwallowMath enhances mathematical solutions by providing concise explanations. Training Llama-3.1-8B with SwallowCode increases accuracy in code generation, surpassing baseline models, while SwallowMath improves accuracy in mathematical tasks. Ablation studies show that each stage of the pipeline contributes to the overall improvement, with rewriting providing the most significant gains. The release of these datasets and checkpoints enables reproducible research and advances LLM pre-training in specialized domains. <br><br>Summary: <div>
+arXiv:2505.02881v2 Announce Type: replace 
+Abstract: The performance of large language models (LLMs) in program synthesis and mathematical reasoning is fundamentally limited by the quality of their pre-training corpora. We introduce two openly licensed datasets, released under the Llama 3.3 Community License, that significantly enhance LLM performance by systematically rewriting public data. SwallowCode (approximately 16.1 billion tokens) refines Python snippets from The-Stack-v2 through a novel four-stage pipeline: syntax validation, pylint-based style filtering, and a two-stage LLM rewriting process that enforces style conformity and transforms snippets into self-contained, algorithmically efficient examples. Unlike prior methods that rely on exclusionary filtering or limited transformations, our transform-and-retain approach upgrades low-quality code, maximizing data utility. SwallowMath (approximately 2.3 billion tokens) enhances Finemath-4+ by removing boilerplate, restoring context, and reformatting solutions into concise, step-by-step explanations. Within a fixed 50 billion token training budget, continual pre-training of Llama-3.1-8B with SwallowCode boosts pass@1 by +17.0 on HumanEval and +17.7 on HumanEval+ compared to Stack-Edu, surpassing the baseline model's code generation capabilities. Similarly, substituting SwallowMath yields +12.4 accuracy on GSM8K and +7.6 on MATH. Ablation studies confirm that each pipeline stage contributes incrementally, with rewriting delivering the largest gains. All datasets, prompts, and checkpoints are publicly available, enabling reproducible research and advancing LLM pre-training for specialized domains.
+]]></content:encoded>
+<pubDate>Tue, 13 May 2025 00:00:00 -0400</pubDate>
+<pubDate>Tue, 13 May 2025 00:00:00 -0400</pubDate>
+</item>
+
+<item>
 <title>Reward-free World Models for Online Imitation Learning</title>
 <link>https://arxiv.org/abs/2410.14081</link>
 <guid>https://arxiv.org/abs/2410.14081</guid>
 <content:encoded><![CDATA[
-<div> Imitation learning, online learning, reward-free world models, latent dynamics model, inverse soft-Q learning<br>
-Summary: <br>
+<div> Imitation learning, online learning, reward-free world models, latent dynamics model, inverse soft-Q learning<br />
+Summary: <br />
 This study introduces a novel online imitation learning approach that utilizes reward-free world models to improve performance in complex tasks with high-dimensional inputs and dynamics. By learning environmental dynamics in latent spaces without reconstruction, the method achieves efficient and accurate modeling. Adopting the inverse soft-Q learning objective helps stabilize optimization in the Q-policy space, leading to expert-level performance in tasks with intricate dynamics. Using a learned latent dynamics model and planning for control, the approach outperforms existing methods in various benchmarks such as DMControl, MyoSuite, and ManiSkill2. <div>
 arXiv:2410.14081v5 Announce Type: replace 
 Abstract: Imitation learning (IL) enables agents to acquire skills directly from expert demonstrations, providing a compelling alternative to reinforcement learning. However, prior online IL approaches struggle with complex tasks characterized by high-dimensional inputs and complex dynamics. In this work, we propose a novel approach to online imitation learning that leverages reward-free world models. Our method learns environmental dynamics entirely in latent spaces without reconstruction, enabling efficient and accurate modeling. We adopt the inverse soft-Q learning objective, reformulating the optimization process in the Q-policy space to mitigate the instability associated with traditional optimization in the reward-policy space. By employing a learned latent dynamics model and planning for control, our approach consistently achieves stable, expert-level performance in tasks with high-dimensional observation or action spaces and intricate dynamics. We evaluate our method on a diverse set of benchmarks, including DMControl, MyoSuite, and ManiSkill2, demonstrating superior empirical performance compared to existing approaches.
 ]]></content:encoded>
-<pubDate>Tue, 13 May 2025 00:00:00 -0400</pubDate>
 <pubDate>Tue, 13 May 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -23,14 +38,13 @@ Abstract: Imitation learning (IL) enables agents to acquire skills directly from
 <link>https://arxiv.org/abs/2505.02222</link>
 <guid>https://arxiv.org/abs/2505.02222</guid>
 <content:encoded><![CDATA[
-<div> Second-order optimizer, Muon, Pareto frontier, AdamW, compute-time tradeoff <br>
-<br>
+<div> Second-order optimizer, Muon, Pareto frontier, AdamW, compute-time tradeoff <br />
+<br />
 Summary: 
 The study compares Muon, a second-order optimizer, with AdamW and shows that Muon expands the Pareto frontier on the compute-time tradeoff. Muon outperforms AdamW in data efficiency at large batch sizes, even beyond the critical batch size, while remaining computationally efficient. The combination of Muon with muP for efficient hyperparameter transfer is explored. A telescoping algorithm is introduced to handle errors in muP with minimal resource overhead. Extensive experiments with model sizes up to four billion parameters validate the effectiveness of Muon, along with ablations on data distribution and architecture. <div>
 arXiv:2505.02222v3 Announce Type: replace 
 Abstract: We demonstrate that Muon, the simplest instantiation of a second-order optimizer, explicitly expands the Pareto frontier over AdamW on the compute-time tradeoff. We find that Muon is more effective than AdamW in retaining data efficiency at large batch sizes, far beyond the so-called critical batch size, while remaining computationally efficient, thus enabling more economical training. We study the combination of Muon and the maximal update parameterization (muP) for efficient hyperparameter transfer and present a simple telescoping algorithm that accounts for all sources of error in muP while introducing only a modest overhead in resources. We validate our findings through extensive experiments with model sizes up to four billion parameters and ablations on the data distribution and architecture.
 ]]></content:encoded>
-<pubDate>Tue, 13 May 2025 00:00:00 -0400</pubDate>
 <pubDate>Tue, 13 May 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -43,13 +57,12 @@ Abstract: We demonstrate that Muon, the simplest instantiation of a second-order
 Summary:
 The chapter introduces a novel framework for studying the interpretability of Large Language Models (LLMs) in handling geographical information. It focuses on using spatial analysis to understand the internal representations generated by LLMs when processing geographical data. The use of probing is outlined to reveal the internal structures of LLMs, while discussing the superposition hypothesis and the role of sparse autoencoders in disentangling complex representations. Through experiments using spatial autocorrelation, the study shows how features obtained for place names exhibit spatial patterns related to their geographical locations, providing insights into how LLMs process geographical information. The framework aims to advance understanding of LLMs' internal workings and could potentially shape the study and application of foundation models in geography. 
 
-<br><br>Summary: <div>
+<br /><br />Summary: <div>
 arXiv:2505.03368v2 Announce Type: replace 
 Abstract: Large Language Models (LLMs) have demonstrated unprecedented capabilities across various natural language processing tasks. Their ability to process and generate viable text and code has made them ubiquitous in many fields, while their deployment as knowledge bases and "reasoning" tools remains an area of ongoing research. In geography, a growing body of literature has been focusing on evaluating LLMs' geographical knowledge and their ability to perform spatial reasoning. However, very little is still known about the internal functioning of these models, especially about how they process geographical information.
   In this chapter, we establish a novel framework for the study of geospatial mechanistic interpretability - using spatial analysis to reverse engineer how LLMs handle geographical information. Our aim is to advance our understanding of the internal representations that these complex models generate while processing geographical information - what one might call "how LLMs think about geographic information" if such phrasing was not an undue anthropomorphism.
   We first outline the use of probing in revealing internal structures within LLMs. We then introduce the field of mechanistic interpretability, discussing the superposition hypothesis and the role of sparse autoencoders in disentangling polysemantic internal representations of LLMs into more interpretable, monosemantic features. In our experiments, we use spatial autocorrelation to show how features obtained for placenames display spatial patterns related to their geographic location and can thus be interpreted geospatially, providing insights into how these models process geographical information. We conclude by discussing how our framework can help shape the study and use of foundation models in geography.
 ]]></content:encoded>
-<pubDate>Tue, 13 May 2025 00:00:00 -0400</pubDate>
 <pubDate>Tue, 13 May 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -62,14 +75,12 @@ Abstract: Large Language Models (LLMs) have demonstrated unprecedented capabilit
 Summary:
 This paper introduces a machine learning approach for approximating the signed distance function (SDF) of a point cloud using a sparse ellipsoidal radial basis function network. The method aims to accurately represent the surface using sparse ellipsoidal radial basis functions (ERBFs) while balancing sparsity and precision through dynamic multi-objective optimization. To enhance computational efficiency, a nearest-neighbor-based data structure and CUDA parallelization are utilized. A hierarchical octree-based refinement strategy is employed for training to improve model convergence and efficiency. Experimental results on various datasets show that the proposed method surpasses previous sparse representation approaches in terms of accuracy, robustness, and computational efficiency. The code for the executable program is publicly available at https://github.com/lianbobo/SE-RBFNet.git.
 
-<br><br>Summary: <div>
+<br /><br />Summary: <div>
 arXiv:2505.02350v2 Announce Type: replace-cross 
 Abstract: Point cloud surface representation is a fundamental problem in computer graphics and vision. This paper presents a machine learning approach for approximating the signed distance function (SDF) of a point cloud using a sparse ellipsoidal radial basis function network, enabling a compact and accurate surface representation. Given the SDF values defined on the grid points constructed from the point cloud, our method approximates the SDF accurately with as few ellipsoidal radial basis functions (ERBFs) as possible, i.e., represents the SDF of a point cloud by sparse ERBFs. To balance sparsity and approximation precision, a dynamic multi-objective optimization strategy is introduced, which adaptively adds the regularization terms and jointly optimizes the weights, centers, shapes, and orientations of ERBFs. To improve computational efficiency, a nearest-neighbor-based data structure is employed, restricting function calculations to points near each Gaussian kernel center. The computations for each kernel are further parallelized on CUDA, which significantly improves the optimization speed. Additionally, a hierarchical octree-based refinement strategy is designed for training. Specifically, the initialization and optimization of network parameters are conducted using coarse grid points in the octree lattice structure. Subsequently, fine lattice points are progressively incorporated to accelerate model convergence and enhance training efficiency. Extensive experiments on multiple benchmark datasets demonstrate that our method outperforms previous sparse representation approaches in terms of accuracy, robustness, and computational efficiency. The corresponding executable program is publicly available at https://github.com/lianbobo/SE-RBFNet.git.
 ]]></content:encoded>
 <pubDate>Tue, 13 May 2025 00:00:00 -0400</pubDate>
-<pubDate>Tue, 13 May 2025 00:00:00 -0400</pubDate>
 </item>
-
 <item>
 <title>Neural Network Operator-Based Fractal Approximation: Smoothness Preservation and Convergence Analysis</title>
 <link>https://arxiv.org/abs/2505.06229</link>
@@ -10929,62 +10940,6 @@ Abstract: LLM-integrated app systems extend the utility of Large Language Models
   In this work, we identify new attacks impacting the integrity of planning, as well as the integrity and availability of execution in LLM-integrated apps, and demonstrate them against IsolateGPT, a recent solution designed to mitigate attacks from malicious apps. We propose Abstract-Concrete-Execute (ACE), a new secure architecture for LLM-integrated app systems that provides security guarantees for system planning and execution. Specifically, ACE decouples planning into two phases by first creating an abstract execution plan using only trusted information, and then mapping the abstract plan to a concrete plan using installed system apps. We verify that the plans generated by our system satisfy user-specified secure information flow constraints via static analysis on the structured plan output. During execution, ACE enforces data and capability barriers between apps, and ensures that the execution is conducted according to the trusted abstract plan. We show experimentally that our system is secure against attacks from the INJECAGENT benchmark, a standard benchmark for control flow integrity in the face of indirect prompt injection attacks, and our newly introduced attacks. Our architecture represents a significant advancement towards hardening LLM-based systems containing system facilities of varying levels of trustworthiness.
 ]]></content:encoded>
 <pubDate>Thu, 08 May 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Uncertainty Quantification for Machine Learning in Healthcare: A Survey</title>
-<link>https://arxiv.org/abs/2505.02874</link>
-<guid>https://arxiv.org/abs/2505.02874</guid>
-<content:encoded><![CDATA[
-<div> Quantification, Uncertainty, Machine Learning, Healthcare, Survey  
-Summary:  
-Uncertainty Quantification (UQ) is crucial for improving Machine Learning (ML) systems in healthcare by enhancing robustness, reliability, and interpretability. The lack of principled uncertainty quantification in ML models is a major challenge in healthcare applications. This survey provides a comprehensive analysis of current UQ methods in healthcare, offering a framework for integrating these methods into different stages of the ML pipeline. Popular methods in healthcare and potential novel approaches from other domains are highlighted. The study aims to guide researchers and practitioners in selecting suitable UQ techniques to enhance the reliability, safety, and trust in ML-driven healthcare solutions.<br /><br />Summary: <div>
-arXiv:2505.02874v1 Announce Type: new 
-Abstract: Uncertainty Quantification (UQ) is pivotal in enhancing the robustness, reliability, and interpretability of Machine Learning (ML) systems for healthcare, optimizing resources and improving patient care. Despite the emergence of ML-based clinical decision support tools, the lack of principled quantification of uncertainty in ML models remains a major challenge. Current reviews have a narrow focus on analyzing the state-of-the-art UQ in specific healthcare domains without systematically evaluating method efficacy across different stages of model development, and despite a growing body of research, its implementation in healthcare applications remains limited. Therefore, in this survey, we provide a comprehensive analysis of current UQ in healthcare, offering an informed framework that highlights how different methods can be integrated into each stage of the ML pipeline including data processing, training and evaluation. We also highlight the most popular methods used in healthcare and novel approaches from other domains that hold potential for future adoption in the medical context. We expect this study will provide a clear overview of the challenges and opportunities of implementing UQ in the ML pipeline for healthcare, guiding researchers and practitioners in selecting suitable techniques to enhance the reliability, safety and trust from patients and clinicians on ML-driven healthcare solutions.
-]]></content:encoded>
-<pubDate>Wed, 07 May 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>A Wireless Collaborated Inference Acceleration Framework for Plant Disease Recognition</title>
-<link>https://arxiv.org/abs/2505.02877</link>
-<guid>https://arxiv.org/abs/2505.02877</guid>
-<content:encoded><![CDATA[
-<div> Keywords: plant disease recognition, deep learning, collaborative inference, edge computing, reinforcement learning
-
-Summary:
-Plant disease recognition is crucial for agricultural production. Traditional methods are inaccurate and inefficient, prompting the use of deep learning techniques. However, running these models on edge devices presents challenges due to inference delays and high energy consumption. To address this, a collaborative inference framework between edge devices and cloud servers is proposed. A pruned DNN model using reinforcement learning improves inference speed and reduces energy consumption. The optimal split point is determined through a greedy strategy for efficient collaboration. The system is implemented using Gradio for user-friendly interaction. Experimental results show that the framework significantly increases inference speed while maintaining recognition accuracy, providing a novel solution for timely plant disease diagnosis and prevention.<br /><br />Summary: <div>
-arXiv:2505.02877v1 Announce Type: new 
-Abstract: Plant disease is a critical factor affecting agricultural production. Traditional manual recognition methods face significant drawbacks, including low accuracy, high costs, and inefficiency. Deep learning techniques have demonstrated significant benefits in identifying plant diseases, but they still face challenges such as inference delays and high energy consumption. Deep learning algorithms are difficult to run on resource-limited embedded devices. Offloading these models to cloud servers is confronted with the restriction of communication bandwidth, and all of these factors will influence the inference's efficiency. We propose a collaborative inference framework for recognizing plant diseases between edge devices and cloud servers to enhance inference speed. The DNN model for plant disease recognition is pruned through deep reinforcement learning to improve the inference speed and reduce energy consumption. Then the optimal split point is determined by a greedy strategy to achieve the best collaborated inference acceleration. Finally, the system for collaborative inference acceleration in plant disease recognition has been implemented using Gradio to facilitate friendly human-machine interaction. Experiments indicate that the proposed collaborative inference framework significantly increases inference speed while maintaining acceptable recognition accuracy, offering a novel solution for rapidly diagnosing and preventing plant diseases.
-]]></content:encoded>
-<pubDate>Wed, 07 May 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>LLM4FTS: Enhancing Large Language Models for Financial Time Series Prediction</title>
-<link>https://arxiv.org/abs/2505.02880</link>
-<guid>https://arxiv.org/abs/2505.02880</guid>
-<content:encoded><![CDATA[
-<div> financial time series, machine learning models, large language models, market data, stock return prediction <br />
-Summary:<br />
-- Traditional machine learning models struggle in predicting financial time series due to low signal-to-noise ratios and complex patterns.
-- Large language models (LLMs) show promise in overcoming these challenges with their expanded parameter spaces.
-- The proposed $LLM4FTS$ framework enhances LLM capabilities by incorporating learnable patch segmentation and dynamic wavelet convolution modules.
-- K-means++ clustering and adaptive patch segmentation identify scale-invariant patterns in market data, while the dynamic wavelet convolution module captures time-varying frequency characteristics.
-- Extensive experiments on real-world financial datasets demonstrate the framework's effectiveness in capturing complex market patterns and achieving state-of-the-art results in stock return prediction, making it applicable in practical trading systems. <br /> <div>
-arXiv:2505.02880v1 Announce Type: new 
-Abstract: Predicting financial time series presents significant challenges due to inherent low signal-to-noise ratios and intricate temporal patterns. Traditional machine learning models exhibit limitations in this forecasting task constrained by their restricted model capacity. Recent advances in large language models (LLMs), with their greatly expanded parameter spaces, demonstrate promising potential for modeling complex dependencies in temporal sequences. However, existing LLM-based approaches typically focus on fixed-length patch analysis due to the Transformer architecture, ignoring market data's multi-scale pattern characteristics. In this study, we propose $LLM4FTS$, a novel framework that enhances LLM capabilities for temporal sequence modeling through learnable patch segmentation and dynamic wavelet convolution modules. Specifically,we first employ K-means++ clustering based on DTW distance to identify scale-invariant patterns in market data. Building upon pattern recognition results, we introduce adaptive patch segmentation that partitions temporal sequences while preserving maximal pattern integrity. To accommodate time-varying frequency characteristics, we devise a dynamic wavelet convolution module that emulates discrete wavelet transformation with enhanced flexibility in capturing time-frequency features. These three modules work together to improve large language model's ability to handle scale-invariant patterns in financial time series. Extensive experiments on real-world financial datasets substantiate the framework's efficacy, demonstrating superior performance in capturing complex market patterns and achieving state-of-the-art results in stock return prediction. The successful deployment in practical trading systems confirms its real-world applicability, representing a significant advancement in LLM applications for financial forecasting.
-]]></content:encoded>
-<pubDate>Wed, 07 May 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Rewriting Pre-Training Data Boosts LLM Performance in Math and Code</title>
-<link>https://arxiv.org/abs/2505.02881</link>
-<guid>https://arxiv.org/abs/2505.02881</guid>
-<content:encoded><![CDATA[
-<div> Dataset, Large Language Models, Program Synthesis, Mathematical Reasoning, Llama 3.3 Community License <br />
-<br />Summary: Large language models face limitations in program synthesis and mathematical reasoning due to the quality of their pre-training data. To address this, two openly licensed datasets, SwallowCode and SwallowMath, are introduced. SwallowCode enhances Python snippets by enforcing style conformity and improving algorithmic efficiency. SwallowMath improves mathematical solutions by providing concise step-by-step explanations. Continual pre-training with SwallowCode and SwallowMath significantly boosts performance on evaluation metrics, surpassing baseline models. Ablation studies show that each stage of the data refinement process contributes incrementally to the overall improvements. The publicly available datasets, prompts, and checkpoints facilitate reproducible research and advance large language model pre-training for specialized domains. <br /> <div>
-arXiv:2505.02881v1 Announce Type: new 
-Abstract: The performance of large language models (LLMs) in program synthesis and mathematical reasoning is fundamentally limited by the quality of their pre-training corpora. We introduce two openly licensed datasets, released under the Llama 3.3 Community License, that significantly enhance LLM performance by systematically rewriting public data. SwallowCode (approximately 16.1 billion tokens) refines Python snippets from The-Stack-v2 through a novel four-stage pipeline: syntax validation, pylint-based style filtering, and a two-stage LLM rewriting process that enforces style conformity and transforms snippets into self-contained, algorithmically efficient examples. Unlike prior methods that rely on exclusionary filtering or limited transformations, our transform-and-retain approach upgrades low-quality code, maximizing data utility. SwallowMath (approximately 2.3 billion tokens) enhances Finemath-4+ by removing boilerplate, restoring context, and reformatting solutions into concise, step-by-step explanations. Within a fixed 50 billion token training budget, continual pre-training of Llama-3.1-8B with SwallowCode boosts pass@1 by +17.0 on HumanEval and +17.7 on HumanEval+ compared to Stack-Edu, surpassing the baseline model's code generation capabilities. Similarly, substituting SwallowMath yields +12.4 accuracy on GSM8K and +7.6 on MATH. Ablation studies confirm that each pipeline stage contributes incrementally, with rewriting delivering the largest gains. All datasets, prompts, and checkpoints are publicly available, enabling reproducible research and advancing LLM pre-training for specialized domains.
-]]></content:encoded>
-<pubDate>Wed, 07 May 2025 00:00:00 -0400</pubDate>
 </item>
 </channel>
 </rss>
