@@ -4,6 +4,7 @@
 <title>cs.LG updates on arXiv.org</title>
 <link>http://rss.arxiv.org/rss/cs.LG</link>
 
+
 <item>
 <title>Semantic Shift Estimation via Dual-Projection and Classifier Reconstruction for Exemplar-Free Class-Incremental Learning</title>
 <link>https://arxiv.org/abs/2503.05423</link>
@@ -11,14 +12,12 @@
 <content:encoded><![CDATA[
 <div> Keywords: Exemplar-Free, Class-Incremental Learning, catastrophic forgetting, semantic shift, decision bias
 
-<br><br>Summary: Exemplar-Free Class-Incremental Learning (EFCIL) focuses on learning from new categories without retaining exemplars, which can lead to catastrophic forgetting of previously learned information. Traditional EFCIL methods use knowledge distillation to combat this forgetting but struggle with two major issues: semantic shift and decision bias. Semantic shift causes the embeddings of older tasks to change after new tasks are learned, while decision bias results from classifier training being overly influenced by new data. To tackle these challenges, the authors propose the Dual-Projection Shift Estimation and Classifier Reconstruction (DPCR) method. DPCR estimates semantic shift through a dual-projection mechanism that merges a learnable transformation with a row-space projection, effectively capturing task-wise and category-wise shifts. To counteract decision bias, DPCR uses ridge regression to reformulate the classifier reconstruction, leveraging prior covariance and class prototypes after adjusting for the estimated shift. Experiments show that DPCR successfully balances knowledge from old and new tasks, leading to improved performance compared to other state-of-the-art EFCIL techniques. The authors also provide their code for implementation at a designated GitHub repository. <div>
+<br /><br />Summary: Exemplar-Free Class-Incremental Learning (EFCIL) focuses on learning from new categories without retaining exemplars, which can lead to catastrophic forgetting of previously learned information. Traditional EFCIL methods use knowledge distillation to combat this forgetting but struggle with two major issues: semantic shift and decision bias. Semantic shift causes the embeddings of older tasks to change after new tasks are learned, while decision bias results from classifier training being overly influenced by new data. To tackle these challenges, the authors propose the Dual-Projection Shift Estimation and Classifier Reconstruction (DPCR) method. DPCR estimates semantic shift through a dual-projection mechanism that merges a learnable transformation with a row-space projection, effectively capturing task-wise and category-wise shifts. To counteract decision bias, DPCR uses ridge regression to reformulate the classifier reconstruction, leveraging prior covariance and class prototypes after adjusting for the estimated shift. Experiments show that DPCR successfully balances knowledge from old and new tasks, leading to improved performance compared to other state-of-the-art EFCIL techniques. The authors also provide their code for implementation at a designated GitHub repository. <div>
 arXiv:2503.05423v3 Announce Type: replace-cross 
 Abstract: Exemplar-Free Class-Incremental Learning (EFCIL) aims to sequentially learn from distinct categories without retaining exemplars but easily suffers from catastrophic forgetting of learned knowledge. While existing EFCIL methods leverage knowledge distillation to alleviate forgetting, they still face two critical challenges: semantic shift and decision bias. Specifically, the embeddings of old tasks shift in the embedding space after learning new tasks, and the classifier becomes biased towards new tasks due to training solely with new data, hindering the balance between old and new knowledge. To address these issues, we propose the Dual-Projection Shift Estimation and Classifier Reconstruction (DPCR) approach for EFCIL. DPCR effectively estimates semantic shift through a dual-projection, which combines a learnable transformation with a row-space projection to capture both task-wise and category-wise shifts. Furthermore, to mitigate decision bias, DPCR employs ridge regression to reformulate a classifier reconstruction process. This reconstruction exploits previous in covariance and prototype of each class after calibration with estimated shift, thereby reducing decision bias. Extensive experiments demonstrate that, on various datasets, DPCR effectively balances old and new tasks, outperforming state-of-the-art EFCIL methods. Our codes are available at https://github.com/RHe502/ICML25-DPCR.
 ]]></content:encoded>
 <pubDate>Wed, 14 May 2025 00:00:00 -0400</pubDate>
-<pubDate>Wed, 14 May 2025 00:00:00 -0400</pubDate>
 </item>
-
 <item>
 <title>MARCO: A Multi-Agent System for Optimizing HPC Code Generation Using Large Language Models</title>
 <link>https://arxiv.org/abs/2505.03906</link>
@@ -10930,16 +10929,6 @@ Abstract: Evaluation has traditionally focused on ranking candidates for a speci
 <content:encoded><![CDATA[
 arXiv:2503.01116v2 Announce Type: replace-cross 
 Abstract: Channel prediction is crucial for high-mobility vehicular networks, as it enables the anticipation of future channel conditions and the proactive adjustment of communication strategies. However, achieving accurate vehicular channel prediction is challenging due to significant Doppler effects and rapid channel variations resulting from high-speed vehicle movement and complex propagation environments. In this paper, we propose a novel delay-Doppler (DD) domain channel prediction framework tailored for high-mobility vehicular networks. By transforming the channel representation into the DD domain, we obtain an intuitive, sparse, and stable depiction that closely aligns with the underlying physical propagation processes, effectively reducing the complex vehicular channel to a set of time-series parameters with enhanced predictability. Furthermore, we leverage the large artificial intelligence (AI) model to predict these DD-domain time-series parameters, capitalizing on their advanced ability to model temporal correlations. The zero-shot capability of the pre-trained large AI model facilitates accurate channel predictions without requiring task-specific training, while subsequent fine-tuning on specific vehicular channel data further improves prediction accuracy. Extensive simulation results demonstrate the effectiveness of our DD-domain channel prediction framework and the superior accuracy of the large AI model in predicting time-series channel parameters, thereby highlighting the potential of our approach for robust vehicular communication systems.
-]]></content:encoded>
-<pubDate>Fri, 09 May 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Rethinking Video Super-Resolution: Towards Diffusion-Based Methods without Motion Alignment</title>
-<link>https://arxiv.org/abs/2503.03355</link>
-<guid>https://arxiv.org/abs/2503.03355</guid>
-<content:encoded><![CDATA[
-arXiv:2503.03355v4 Announce Type: replace-cross 
-Abstract: In this work, we rethink the approach to video super-resolution by introducing a method based on the Diffusion Posterior Sampling framework, combined with an unconditional video diffusion transformer operating in latent space. The video generation model, a diffusion transformer, functions as a space-time model. We argue that a powerful model, which learns the physics of the real world, can easily handle various kinds of motion patterns as prior knowledge, thus eliminating the need for explicit estimation of optical flows or motion parameters for pixel alignment. Furthermore, a single instance of the proposed video diffusion transformer model can adapt to different sampling conditions without re-training. Empirical results on synthetic and real-world datasets illustrate the feasibility of diffusion-based, alignment-free video super-resolution.
 ]]></content:encoded>
 <pubDate>Fri, 09 May 2025 00:00:00 -0400</pubDate>
 </item>
