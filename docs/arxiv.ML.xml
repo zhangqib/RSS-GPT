@@ -4,6 +4,7 @@
 <title>cs.LG updates on arXiv.org</title>
 <link>http://rss.arxiv.org/rss/cs.LG</link>
 
+
 <item>
 <title>Autoencoder-Based Hybrid Replay for Class-Incremental Learning</title>
 <link>https://arxiv.org/abs/2505.05926</link>
@@ -14,11 +15,10 @@
 Summary: 
 The study introduces a novel autoencoder-based hybrid replay (AHR) strategy for class-incremental learning (CIL) to address task confusion and catastrophic forgetting. The proposed approach utilizes a hybrid autoencoder (HAE) as a compressor, significantly reducing memory requirements to $\mathcal{O}(0.1t)$ while maintaining computing complexity at $\mathcal{O}(t) compared to existing strategies. HAE is designed for discriminative and generative modeling, allowing for classification and replay capabilities. The energy minimization equations and repulsive force algorithm are employed in HAE for incremental embedding of new class centroids in the latent space. Experimental results demonstrate the superior performance of AHR over recent baselines on various benchmarks, using the same memory/compute resources. The source code is provided in the supplementary material and will be open-sourced upon publication. 
 
-<br><br>Summary: <div>
+<br /><br />Summary: <div>
 arXiv:2505.05926v2 Announce Type: replace 
 Abstract: In class-incremental learning (CIL), effective incremental learning strategies are essential to mitigate task confusion and catastrophic forgetting, especially as the number of tasks $t$ increases. Current exemplar replay strategies impose $\mathcal{O}(t)$ memory/compute complexities. We propose an autoencoder-based hybrid replay (AHR) strategy that leverages our new hybrid autoencoder (HAE) to function as a compressor to alleviate the requirement for large memory, achieving $\mathcal{O}(0.1 t)$ at the worst case with the computing complexity of $\mathcal{O}(t)$ while accomplishing state-of-the-art performance. The decoder later recovers the exemplar data stored in the latent space, rather than in raw format. Additionally, HAE is designed for both discriminative and generative modeling, enabling classification and replay capabilities, respectively. HAE adopts the charged particle system energy minimization equations and repulsive force algorithm for the incremental embedding and distribution of new class centroids in its latent space. Our results demonstrate that AHR consistently outperforms recent baselines across multiple benchmarks while operating with the same memory/compute budgets. The source code is included in the supplementary material and will be open-sourced upon publication.
 ]]></content:encoded>
-<pubDate>Fri, 16 May 2025 00:00:00 -0400</pubDate>
 <pubDate>Fri, 16 May 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -34,7 +34,6 @@ arXiv:2505.05922v2 Announce Type: replace-cross
 Abstract: Large Language Models (LLMs) have gained significant popularity due to their remarkable capabilities in text understanding and generation. However, despite their widespread deployment in inference services such as ChatGPT, concerns about the potential leakage of sensitive user data have arisen. Existing solutions primarily rely on privacy-enhancing technologies to mitigate such risks, facing the trade-off among efficiency, privacy, and utility. To narrow this gap, we propose Cape, a context-aware prompt perturbation mechanism based on differential privacy, to enable efficient inference with an improved privacy-utility trade-off. Concretely, we introduce a hybrid utility function that better captures the token similarity. Additionally, we propose a bucketized sampling mechanism to handle large sampling space, which might lead to long-tail phenomenons. Extensive experiments across multiple datasets, along with ablation studies, demonstrate that Cape achieves a better privacy-utility trade-off compared to prior state-of-the-art works.
 ]]></content:encoded>
 <pubDate>Fri, 16 May 2025 00:00:00 -0400</pubDate>
-<pubDate>Fri, 16 May 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
 <title>Efficient Quantum Convolutional Neural Networks for Image Classification: Overcoming Hardware Constraints</title>
@@ -46,11 +45,10 @@ Abstract: Large Language Models (LLMs) have gained significant popularity due to
 Summary:
 An encoding scheme is introduced to reduce input dimensionality for Quantum CNNs (QCNNs). A primitive QCNN architecture with 49 qubits is shown to process $28\times 28$ pixel MNIST images directly without classic dimensionality reduction. An automated framework is proposed using expressibility, entanglement, and complexity characteristics to identify parameterized quantum circuits (PQCs) as building blocks of QCNNs. Experimental results on IBM's Heron r2 quantum processor show high accuracy of $96.08\%, surpassing traditional approaches' 71.74% benchmark. The approach demonstrates advantages in accuracy and convergence speed with a similar parameter count compared to hybrid QCNNs and classical CNNs. These results validate the potential of quantum computing in image classification, providing one of the first implementations on real quantum hardware. 
 
-<br><br>Summary: <div>
+<br /><br />Summary: <div>
 arXiv:2505.05957v2 Announce Type: replace-cross 
 Abstract: While classical convolutional neural networks (CNNs) have revolutionized image classification, the emergence of quantum computing presents new opportunities for enhancing neural network architectures. Quantum CNNs (QCNNs) leverage quantum mechanical properties and hold potential to outperform classical approaches. However, their implementation on current noisy intermediate-scale quantum (NISQ) devices remains challenging due to hardware limitations. In our research, we address this challenge by introducing an encoding scheme that significantly reduces the input dimensionality. We demonstrate that a primitive QCNN architecture with 49 qubits is sufficient to directly process $28\times 28$ pixel MNIST images, eliminating the need for classical dimensionality reduction pre-processing. Additionally, we propose an automated framework based on expressibility, entanglement, and complexity characteristics to identify the building blocks of QCNNs, parameterized quantum circuits (PQCs). Our approach demonstrates advantages in accuracy and convergence speed with a similar parameter count compared to both hybrid QCNNs and classical CNNs. We validated our experiments on IBM's Heron r2 quantum processor, achieving $96.08\%$ classification accuracy, surpassing the $71.74\%$ benchmark of traditional approaches under identical training conditions. These results represent one of the first implementations of image classifications on real quantum hardware and validate the potential of quantum computing in this area.
 ]]></content:encoded>
-<pubDate>Fri, 16 May 2025 00:00:00 -0400</pubDate>
 <pubDate>Fri, 16 May 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -68,11 +66,10 @@ Summary:
 - LLMs demonstrated higher accuracy on guidance intended for the general public, indicating their potential as a reliable source of public health information.
 - The study suggests that while SOTA LLMs are increasingly accurate in providing public health information, additional safeguards or tools may still be necessary in generating free form responses on public health topics. 
 
-<br><br>Summary: <div>
+<br /><br />Summary: <div>
 arXiv:2505.06046v2 Announce Type: replace-cross 
 Abstract: As Large Language Models (LLMs) become widely accessible, a detailed understanding of their knowledge within specific domains becomes necessary for successful real world use. This is particularly critical in public health, where failure to retrieve relevant, accurate, and current information could significantly impact UK residents. However, currently little is known about LLM knowledge of UK Government public health information. To address this issue, this paper introduces a new benchmark, PubHealthBench, with over 8000 questions for evaluating LLMs' Multiple Choice Question Answering (MCQA) and free form responses to public health queries. To create PubHealthBench we extract free text from 687 current UK government guidance documents and implement an automated pipeline for generating MCQA samples. Assessing 24 LLMs on PubHealthBench we find the latest private LLMs (GPT-4.5, GPT-4.1 and o1) have a high degree of knowledge, achieving >90% accuracy in the MCQA setup, and outperform humans with cursory search engine use. However, in the free form setup we see lower performance with no model scoring >75%. Importantly we find in both setups LLMs have higher accuracy on guidance intended for the general public. Therefore, there are promising signs that state of the art (SOTA) LLMs are an increasingly accurate source of public health information, but additional safeguards or tools may still be needed when providing free form responses on public health topics.
 ]]></content:encoded>
-<pubDate>Fri, 16 May 2025 00:00:00 -0400</pubDate>
 <pubDate>Fri, 16 May 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -83,14 +80,12 @@ Abstract: As Large Language Models (LLMs) become widely accessible, a detailed u
 <div> framework, cross-embodiment, vision-language-action, policy, UniVLA 
 Summary: 
 UniVLA introduces a framework for learning cross-embodiment vision-language-action policies by deriving task-centric action representations from videos. It utilizes a latent action model to leverage extensive data across various embodiments and perspectives. By incorporating language instructions and a latent action model within the DINO feature space, UniVLA mitigates task-irrelevant dynamics. The generalist policy learned from internet-scale videos can be efficiently deployed to different robots through latent action decoding. UniVLA outperforms OpenVLA with significantly less pretraining compute and downstream data, achieving state-of-the-art results on manipulation and navigation benchmarks, as well as in real-robot deployments. Continuous improvements are seen with the inclusion of heterogeneous data sources in the training pipeline, including human videos, highlighting UniVLA's potential for scalable and efficient robot policy learning. 
-<br><br>Summary: <div>
+<br /><br />Summary: <div>
 arXiv:2505.06111v2 Announce Type: replace-cross 
 Abstract: A generalist robot should perform effectively across various environments. However, most existing approaches heavily rely on scaling action-annotated data to enhance their capabilities. Consequently, they are often limited to single physical specification and struggle to learn transferable knowledge across different embodiments and environments. To confront these limitations, we propose UniVLA, a new framework for learning cross-embodiment vision-language-action (VLA) policies. Our key innovation is to derive task-centric action representations from videos with a latent action model. This enables us to exploit extensive data across a wide spectrum of embodiments and perspectives. To mitigate the effect of task-irrelevant dynamics, we incorporate language instructions and establish a latent action model within the DINO feature space. Learned from internet-scale videos, the generalist policy can be deployed to various robots through efficient latent action decoding. We obtain state-of-the-art results across multiple manipulation and navigation benchmarks, as well as real-robot deployments. UniVLA achieves superior performance over OpenVLA with less than 1/20 of pretraining compute and 1/10 of downstream data. Continuous performance improvements are observed as heterogeneous data, even including human videos, are incorporated into the training pipeline. The results underscore UniVLA's potential to facilitate scalable and efficient robot policy learning.
 ]]></content:encoded>
 <pubDate>Fri, 16 May 2025 00:00:00 -0400</pubDate>
-<pubDate>Fri, 16 May 2025 00:00:00 -0400</pubDate>
 </item>
-
 <item>
 <title>LAS: Loss-less ANN-SNN Conversion for Fully Spike-Driven Large Language Models</title>
 <link>https://arxiv.org/abs/2505.09659</link>
@@ -11049,57 +11044,6 @@ Abstract: Resting-state fMRI captures spontaneous neural activity characterized 
 <content:encoded><![CDATA[
 arXiv:2412.15826v2 Announce Type: replace-cross 
 Abstract: Matrix-product states (MPS) have proven to be a versatile ansatz for modeling quantum many-body physics. For many applications, and particularly in one-dimension, they capture relevant quantum correlations in many-body wavefunctions while remaining tractable to store and manipulate on a classical computer. This has motivated researchers to also apply the MPS ansatz to machine learning (ML) problems where capturing complex correlations in datasets is also a key requirement. Here, we develop and apply an MPS-based algorithm, MPSTime, for learning a joint probability distribution underlying an observed time-series dataset, and show how it can be used to tackle important time-series ML problems, including classification and imputation. MPSTime can efficiently learn complicated time-series probability distributions directly from data, requires only moderate maximum MPS bond dimension $\chi_{\rm max}$, with values for our applications ranging between $\chi_{\rm max} = 20-160$, and can be trained for both classification and imputation tasks under a single logarithmic loss function. Using synthetic and publicly available real-world datasets, spanning applications in medicine, energy, and astronomy, we demonstrate performance competitive with state-of-the-art ML approaches, but with the key advantage of encoding the full joint probability distribution learned from the data, which is useful for analyzing and interpreting its underlying structure. This manuscript is supplemented with the release of a publicly available code package MPSTime that implements our approach. The effectiveness of the MPS-based ansatz for capturing complex correlation structures in time-series data makes it a powerful foundation for tackling challenging time-series analysis problems across science, industry, and medicine.
-]]></content:encoded>
-<pubDate>Tue, 13 May 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Gaussian entropic optimal transport: Schr\"odinger bridges and the Sinkhorn algorithm</title>
-<link>https://arxiv.org/abs/2412.18432</link>
-<guid>https://arxiv.org/abs/2412.18432</guid>
-<content:encoded><![CDATA[
-arXiv:2412.18432v4 Announce Type: replace-cross 
-Abstract: Entropic optimal transport problems are regularized versions of optimal transport problems. These models play an increasingly important role in machine learning and generative modelling. For finite spaces, these problems are commonly solved using Sinkhorn algorithm (a.k.a. iterative proportional fitting procedure). However, in more general settings the Sinkhorn iterations are based on nonlinear conditional/conjugate transformations and exact finite-dimensional solutions cannot be computed.
-  This article presents a finite-dimensional recursive formulation of the iterative proportional fitting procedure for general Gaussian multivariate models. As expected, this recursive formulation is closely related to the celebrated Kalman filter and related Riccati matrix difference equations, and it yields algorithms that can be implemented in practical settings without further approximations. We extend this filtering methodology to develop a refined and self-contained convergence analysis of Gaussian Sinkhorn algorithms, including closed form expressions of entropic transport maps and Schr\"odinger bridges.
-]]></content:encoded>
-<pubDate>Tue, 13 May 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Softplus Attention with Re-weighting Boosts Length Extrapolation in Large Language Models</title>
-<link>https://arxiv.org/abs/2501.13428</link>
-<guid>https://arxiv.org/abs/2501.13428</guid>
-<content:encoded><![CDATA[
-arXiv:2501.13428v3 Announce Type: replace-cross 
-Abstract: Large language models have achieved remarkable success in recent years, primarily due to the implementation of self-attention mechanisms. However, traditional Softmax attention suffers from numerical instability and reduced performance as the length of inference tokens increases. This paper addresses these issues by decomposing the Softmax operation into a non-linear transformation and the $l_1$-norm. We identify the latter as essential for maintaining model performance. By replacing the non-linear transformation with the Softplus activation function and introducing a dynamic scale factor for different token lengths based on invariance entropy, we create a novel attention mechanism with performance better than conventional Softmax attention across various inference lengths. To further improve the length extrapolation ability of the proposed attention mechanism, we introduce a novel re-weighting mechanism that amplifies significant attention weights while diminishing weaker ones, enabling the model to concentrate more effectively on relevant tokens. When combined with our proposed attention mechanism, this approach maintains nearly constant validation loss even at 16$\times$ the training token length, ensures numerical stability, and achieves superior results on downstream benchmarks.
-]]></content:encoded>
-<pubDate>Tue, 13 May 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>RadioLLM: Introducing Large Language Model into Cognitive Radio via Hybrid Prompt and Token Reprogrammings</title>
-<link>https://arxiv.org/abs/2501.17888</link>
-<guid>https://arxiv.org/abs/2501.17888</guid>
-<content:encoded><![CDATA[
-arXiv:2501.17888v2 Announce Type: replace-cross 
-Abstract: The growing scarcity of spectrum resources and rapid proliferation of wireless devices make efficient radio network management critical. While deep learning-enhanced Cognitive Radio Technology (CRT) provides promising solutions for tasks such as radio signal classification (RSC), denoising, and spectrum allocation, existing DL-based CRT frameworks are typically task-specific and lack scalability in diverse real-world applications. This limitation naturally leads to the exploration of Large Language Models (LLMs), whose exceptional cross-domain generalization capabilities offer new potential for advancing CRT. To bridge this gap, we propose RadioLLM, a novel framework that integrates Hybrid Prompt and Token Reprogramming (HPTR) for combining radio signal features with expert knowledge, and a Frequency-Attuned Fusion (FAF) module for enhanced high-frequency feature modeling. Extensive evaluations on multiple benchmark datasets demonstrate that RadioLLM achieves superior performance compared to existing baselines in the majority of testing scenarios.
-]]></content:encoded>
-<pubDate>Tue, 13 May 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Understanding Model Calibration -- A gentle introduction and visual exploration of calibration and the expected calibration error (ECE)</title>
-<link>https://arxiv.org/abs/2501.19047</link>
-<guid>https://arxiv.org/abs/2501.19047</guid>
-<content:encoded><![CDATA[
-arXiv:2501.19047v4 Announce Type: replace-cross 
-Abstract: To be considered reliable, a model must be calibrated so that its confidence in each decision closely reflects its true outcome. In this blogpost we'll take a look at the most commonly used definition for calibration and then dive into a frequently used evaluation measure for model calibration. We'll then cover some of the drawbacks of this measure and how these surfaced the need for additional notions of calibration, which require their own new evaluation measures. This post is not intended to be an in-depth dissection of all works on calibration, nor does it focus on how to calibrate models. Instead, it is meant to provide a gentle introduction to the different notions and their evaluation measures as well as to re-highlight some issues with a measure that is still widely used to evaluate calibration.
-]]></content:encoded>
-<pubDate>Tue, 13 May 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>A Frugal Model for Accurate Early Student Failure Prediction</title>
-<link>https://arxiv.org/abs/2502.00017</link>
-<guid>https://arxiv.org/abs/2502.00017</guid>
-<content:encoded><![CDATA[
-arXiv:2502.00017v2 Announce Type: replace-cross 
-Abstract: Predicting student success or failure is vital for timely interventions and personalized support. Early failure prediction is particularly crucial, yet limited data availability in the early stages poses challenges, one of the possible solutions is to make use of additional data from other contexts, however, this might lead to overconsumption with no guarantee of better results. To address this, we propose the Frugal Early Prediction (FEP) model, a new hybrid model that selectively incorporates additional data, promoting data frugality and efficient resource utilization. Experiments conducted on a public dataset from a VLE demonstrate FEP's effectiveness in reducing data usage, a primary goal of this research.Experiments showcase a remarkable 27% reduction in data consumption, compared to a systematic use of additional data, aligning with our commitment to data frugality and offering substantial benefits to educational institutions seeking efficient data consumption. Additionally, FEP also excels in enhancing prediction accuracy. Compared to traditional approaches, FEP achieves an average accuracy gain of 7.3%. This not only highlights the practicality and efficiency of FEP but also its superiority in performance, while respecting resource constraints, providing beneficial findings for educational institutions seeking data frugality.
 ]]></content:encoded>
 <pubDate>Tue, 13 May 2025 00:00:00 -0400</pubDate>
 </item>

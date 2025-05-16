@@ -4,6 +4,7 @@
 <title>cs.AI updates on arXiv.org</title>
 <link>http://rss.arxiv.org/rss/cs.AI</link>
 
+
 <item>
 <title>Understanding In-context Learning of Addition via Activation Subspaces</title>
 <link>https://arxiv.org/abs/2505.05145</link>
@@ -14,14 +15,12 @@
 Summary:
 In the study of in-context learning in modern transformer models, researchers investigated how these models extract signals from few-shot examples, aggregate them into learned prediction rules, and apply these rules to new examples. They focused on a specific few-shot learning task where the true prediction rule is adding an integer k to the input. The Llama-3-8B model showed high accuracy on this task for various k values, and its few-shot ability was localized to three attention heads through a novel optimization approach. The extracted signals were found to lie in a six-dimensional subspace, with four dimensions tracking the unit digit and two tracking the overall magnitude. Additionally, the researchers identified a self-correction mechanism in which mistakes from earlier examples were suppressed by later examples. This study demonstrates how tracking low-dimensional subspaces during a forward pass can provide insights into fine-grained computational structures. 
 
-<br><br>Summary: <div>
+<br /><br />Summary: <div>
 arXiv:2505.05145v2 Announce Type: replace-cross 
 Abstract: To perform in-context learning, language models must extract signals from individual few-shot examples, aggregate these into a learned prediction rule, and then apply this rule to new examples. How is this implemented in the forward pass of modern transformer models? To study this, we consider a structured family of few-shot learning tasks for which the true prediction rule is to add an integer $k$ to the input. We find that Llama-3-8B attains high accuracy on this task for a range of $k$, and localize its few-shot ability to just three attention heads via a novel optimization approach. We further show the extracted signals lie in a six-dimensional subspace, where four of the dimensions track the unit digit and the other two dimensions track overall magnitude. We finally examine how these heads extract information from individual few-shot examples, identifying a self-correction mechanism in which mistakes from earlier examples are suppressed by later examples. Our results demonstrate how tracking low-dimensional subspaces across a forward pass can provide insight into fine-grained computational structures.
 ]]></content:encoded>
 <pubDate>Fri, 16 May 2025 00:00:00 -0400</pubDate>
-<pubDate>Fri, 16 May 2025 00:00:00 -0400</pubDate>
 </item>
-
 <item>
 <title>Study and improvement of search algorithms in two-players perfect information games</title>
 <link>https://arxiv.org/abs/2505.09639</link>
@@ -11246,16 +11245,6 @@ Abstract: We introduce Attentive VLM Agent (AVA), a multimodal StarCraft II agen
 <content:encoded><![CDATA[
 arXiv:2504.04430v3 Announce Type: replace 
 Abstract: Despite remarkable progress in machine learning, current AI systems continue to fall short of true human-like intelligence. While Large Language Models (LLMs) excel in pattern recognition and response generation, they lack genuine understanding - an essential hallmark of Artificial General Intelligence (AGI). Existing AGI evaluation methods fail to offer a practical, gradual, and informative metric. This paper introduces the Artificial General Intelligence Test Bed (AGITB), comprising twelve rigorous tests that form a signal-processing-level foundation for the potential emergence of cognitive capabilities. AGITB evaluates intelligence through a model's ability to predict binary signals across time without relying on symbolic representations or pretraining. Unlike high-level tests grounded in language or perception, AGITB focuses on core computational invariants reflective of biological intelligence, such as determinism, sensitivity, and generalisation. The test bed assumes no prior bias, operates independently of semantic meaning, and ensures unsolvability through brute force or memorization. While humans pass AGITB by design, no current AI system has met its criteria, making AGITB a compelling benchmark for guiding and recognizing progress toward AGI.
-]]></content:encoded>
-<pubDate>Mon, 12 May 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>RadioDiff-Inverse: Diffusion Enhanced Bayesian Inverse Estimation for ISAC Radio Map Construction</title>
-<link>https://arxiv.org/abs/2504.14298</link>
-<guid>https://arxiv.org/abs/2504.14298</guid>
-<content:encoded><![CDATA[
-arXiv:2504.14298v2 Announce Type: replace 
-Abstract: Radio maps (RMs) are essential for environment-aware communication and sensing, providing location-specific wireless channel information. Existing RM construction methods often rely on precise environmental data and base station (BS) locations, which are not always available in dynamic or privacy-sensitive environments. While sparse measurement techniques reduce data collection, the impact of noise in sparse data on RM accuracy is not well understood. This paper addresses these challenges by formulating RM construction as a Bayesian inverse problem under coarse environmental knowledge and noisy sparse measurements. Although maximum a posteriori (MAP) filtering offers an optimal solution, it requires a precise prior distribution of the RM, which is typically unavailable. To solve this, we propose RadioDiff-Inverse, a diffusion-enhanced Bayesian inverse estimation framework that uses an unconditional generative diffusion model to learn the RM prior. This approach not only reconstructs the spatial distribution of wireless channel features but also enables environmental structure perception, such as building outlines, and location of BS just relay on pathloss, through integrated sensing and communication (ISAC). Remarkably, RadioDiff-Inverse is training-free, leveraging a pre-trained model from Imagenet without task-specific fine-tuning, which significantly reduces the training cost of using generative large model in wireless networks. Experimental results demonstrate that RadioDiff-Inverse achieves state-of-the-art performance in accuracy of RM construction and environmental reconstruction, and robustness against noisy sparse sampling.
 ]]></content:encoded>
 <pubDate>Mon, 12 May 2025 00:00:00 -0400</pubDate>
 </item>

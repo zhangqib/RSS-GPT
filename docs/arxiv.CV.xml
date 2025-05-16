@@ -4,21 +4,20 @@
 <title>cs.CV updates on arXiv.org</title>
 <link>http://rss.arxiv.org/rss/cs.CV</link>
 
+
 <item>
 <title>Estimating the Diameter at Breast Height of Trees in a Forest With a Single 360 Camera</title>
 <link>https://arxiv.org/abs/2505.03093</link>
 <guid>https://arxiv.org/abs/2505.03093</guid>
 <content:encoded><![CDATA[
-<div> LiDAR, forest inventories, DBH measurement, 360 video camera, photogrammetry <br>
-Summary: <br>
+<div> LiDAR, forest inventories, DBH measurement, 360 video camera, photogrammetry <br />
+Summary: <br />
 The study presents a low-cost alternative to LiDAR-based techniques for accurate DBH measurement in forest inventories using a consumer-grade 360 video camera. Their pipeline includes dense point cloud reconstruction via photogrammetry software, trunk segmentation using SAM masks, and DBH estimation using a RANSAC-based technique. Their method achieved a median absolute relative error of 5-9% compared to manual measurements, only slightly higher than LiDAR-based estimates. The use of a single 360 camera significantly reduces costs and operational complexity, making it a feasible option for ecological monitoring and resource management in forest environments. They also introduced an interactive visualization tool for inspecting segmented trees and their estimated DBH. <div>
 arXiv:2505.03093v2 Announce Type: replace 
 Abstract: Forest inventories rely on accurate measurements of the diameter at breast height (DBH) for ecological monitoring, resource management, and carbon accounting. While LiDAR-based techniques can achieve centimeter-level precision, they are cost-prohibitive and operationally complex. We present a low-cost alternative that only needs a consumer-grade 360 video camera. Our semi-automated pipeline comprises of (i) a dense point cloud reconstruction using Structure from Motion (SfM) photogrammetry software called Agisoft Metashape, (ii) semantic trunk segmentation by projecting Grounded Segment Anything (SAM) masks onto the 3D cloud, and (iii) a robust RANSAC-based technique to estimate cross section shape and DBH. We introduce an interactive visualization tool for inspecting segmented trees and their estimated DBH. On 61 acquisitions of 43 trees under a variety of conditions, our method attains median absolute relative errors of 5-9% with respect to "ground-truth" manual measurements. This is only 2-4% higher than LiDAR-based estimates, while employing a single 360 camera that costs orders of magnitude less, requires minimal setup, and is widely available.
 ]]></content:encoded>
 <pubDate>Fri, 16 May 2025 00:00:00 -0400</pubDate>
-<pubDate>Fri, 16 May 2025 00:00:00 -0400</pubDate>
 </item>
-
 <item>
 <title>A Computational Pipeline for Advanced Analysis of 4D Flow MRI in the Left Atrium</title>
 <link>https://arxiv.org/abs/2505.09746</link>
@@ -11659,16 +11658,6 @@ Abstract: Despite the superior diagnostic capability of Magnetic Resonance Imagi
 <content:encoded><![CDATA[
 arXiv:2505.04594v1 Announce Type: new 
 Abstract: Accurately predicting 3D attributes is crucial for monocular 3D object detection (Mono3D), with depth estimation posing the greatest challenge due to the inherent ambiguity in mapping 2D images to 3D space. While existing methods leverage multiple depth cues (e.g., estimating depth uncertainty, modeling depth error) to improve depth accuracy, they overlook that accurate depth prediction requires conditioning on other 3D attributes, as these attributes are intrinsically inter-correlated through the 3D to 2D projection, which ultimately limits overall accuracy and stability. Inspired by Chain-of-Thought (CoT) in large language models (LLMs), this paper proposes MonoCoP, which leverages a Chain-of-Prediction (CoP) to predict attributes sequentially and conditionally via three key designs. First, it employs a lightweight AttributeNet (AN) for each 3D attribute to learn attribute-specific features. Next, MonoCoP constructs an explicit chain to propagate these learned features from one attribute to the next. Finally, MonoCoP uses a residual connection to aggregate features for each attribute along the chain, ensuring that later attribute predictions are conditioned on all previously processed attributes without forgetting the features of earlier ones. Experimental results show that our MonoCoP achieves state-of-the-art (SoTA) performance on the KITTI leaderboard without requiring additional data and further surpasses existing methods on the Waymo and nuScenes frontal datasets.
-]]></content:encoded>
-<pubDate>Thu, 08 May 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>OpenVision: A Fully-Open, Cost-Effective Family of Advanced Vision Encoders for Multimodal Learning</title>
-<link>https://arxiv.org/abs/2505.04601</link>
-<guid>https://arxiv.org/abs/2505.04601</guid>
-<content:encoded><![CDATA[
-arXiv:2505.04601v1 Announce Type: new 
-Abstract: OpenAI's CLIP, released in early 2021, have long been the go-to choice of vision encoder for building multimodal foundation models. Although recent alternatives such as SigLIP have begun to challenge this status quo, to our knowledge none are fully open: their training data remains proprietary and/or their training recipes are not released. This paper fills this gap with OpenVision, a fully-open, cost-effective family of vision encoders that match or surpass the performance of OpenAI's CLIP when integrated into multimodal frameworks like LLaVA. OpenVision builds on existing works -- e.g., CLIPS for training framework and Recap-DataComp-1B for training data -- while revealing multiple key insights in enhancing encoder quality and showcasing practical benefits in advancing multimodal models. By releasing vision encoders spanning from 5.9M to 632.1M parameters, OpenVision offers practitioners a flexible trade-off between capacity and efficiency in building multimodal models: larger models deliver enhanced multimodal performance, while smaller versions enable lightweight, edge-ready multimodal deployments.
 ]]></content:encoded>
 <pubDate>Thu, 08 May 2025 00:00:00 -0400</pubDate>
 </item>
