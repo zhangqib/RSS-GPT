@@ -4,6 +4,7 @@
 <title>cs.LG updates on arXiv.org</title>
 <link>http://rss.arxiv.org/rss/cs.LG</link>
 
+
 <item>
 <title>Prototype Augmented Hypernetworks for Continual Learning</title>
 <link>https://arxiv.org/abs/2505.07450</link>
@@ -14,7 +15,7 @@
 Summary:
 Prototype-Augmented Hypernetworks (PAH) tackle the issue of catastrophic forgetting in continual learning by dynamically generating task-specific classifier heads using a single hypernetwork. This framework incorporates learnable task prototypes to ensure stable feature representations across tasks. PAH utilizes a combination of cross-entropy and dual distillation losses to align logits and prototypes, thus mitigating forgetting. Evaluations on Split-CIFAR100 and TinyImageNet datasets show that PAH outperforms prior methods by achieving 74.5% and 63.7% accuracy with minimal forgetting rates of 1.7% and 4.4%, respectively. This performance is achieved without the need to store samples or heads, making PAH a promising approach for continual learning tasks. 
 
-<br><br>Summary: 
+<br /><br />Summary: 
 - Prototype-Augmented Hypernetworks (PAH) address catastrophic forgetting by dynamically generating task-specific classifier heads.
 - PAH incorporates learnable task prototypes to ensure stable feature representations across tasks.
 - Dual distillation losses align logits and prototypes, mitigating forgetting in continual learning.
@@ -23,7 +24,6 @@ Prototype-Augmented Hypernetworks (PAH) tackle the issue of catastrophic forgett
 arXiv:2505.07450v3 Announce Type: replace 
 Abstract: Continual learning (CL) aims to learn a sequence of tasks without forgetting prior knowledge, but gradient updates for a new task often overwrite the weights learned earlier, causing catastrophic forgetting (CF). We propose Prototype-Augmented Hypernetworks (PAH), a framework where a single hypernetwork, conditioned on learnable task prototypes, dynamically generates task-specific classifier heads on demand. To mitigate forgetting, PAH combines cross-entropy with dual distillation losses, one to align logits and another to align prototypes, ensuring stable feature representations across tasks. Evaluations on Split-CIFAR100 and TinyImageNet demonstrate that PAH achieves state-of-the-art performance, reaching 74.5 % and 63.7 % accuracy with only 1.7 % and 4.4 % forgetting, respectively, surpassing prior methods without storing samples or heads.
 ]]></content:encoded>
-<pubDate>Mon, 19 May 2025 00:00:00 -0400</pubDate>
 <pubDate>Mon, 19 May 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -38,7 +38,6 @@ arXiv:2505.07783v2 Announce Type: replace
 Abstract: Currently, the scaling law of Large Language Models (LLMs) faces challenges and bottlenecks. This paper posits that noise effects, stemming from changes in the signal-to-noise ratio under diminishing marginal returns, are the root cause of these issues. To control this noise, we investigated the differences between models with performance advantages and disadvantages, introducing the concept of "relative overfitting." Based on their complementary strengths, we have proposed an application framework, Accept-Reject (AR). In Natural Language Processing (NLP), we use LLMs and Small Language Models (SLMs) as the medium for discussion. This framework enables SLMs to exert a universal positive influence on LLM decision outputs, rather than the intuitively expected negative influence. We validated our approach using self-built models based on mainstream architectures and pre-trained mainstream models across multiple datasets, including basic language modeling, long-context tasks, subject examination, and question-answering (QA) benchmarks. The results demonstrate that through our structure, compared to increasing the LLM's parameters, we can achieve better performance improvements with significantly lower parameter and computational costs in many scenarios. These improvements are universal, stable, and effective. Furthermore, we explore the potential of "relative overfitting" and the AR framework in other machine learning domains, such as computer vision (CV) and AI for science. We hope the proposed approach can help scale laws overcome existing bottlenecks.
 ]]></content:encoded>
 <pubDate>Mon, 19 May 2025 00:00:00 -0400</pubDate>
-<pubDate>Mon, 19 May 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
 <title>Constrained Online Decision-Making: A Unified Framework</title>
@@ -46,16 +45,14 @@ Abstract: Currently, the scaling law of Large Language Models (LLMs) faces chall
 <guid>https://arxiv.org/abs/2505.07101</guid>
 <content:encoded><![CDATA[
 <div> formulation, sequential decision-making, feasibility constraints, counterfactual confidence bound, online algorithms
-<br>
+<br />
 Summary:
 This paper addresses contextual online decision-making problems with constraints, such as personalized recommendation with resource limits and dynamic pricing with fairness constraints. The study introduces a unified algorithmic framework for constrained learning problems, including constrained bandits, stream active learning, online hypothesis testing, and model calibration. The proposed approach utilizes the concept of upper counterfactual confidence bound and offline conditional density estimation oracles to design efficient online algorithms. A generalized eluder dimension is introduced to handle feasibility constraints, extending its application to various density function classes. The results offer a principled foundation for constrained sequential decision-making, bridging theory and practice effectively. <div>
 arXiv:2505.07101v2 Announce Type: replace-cross 
 Abstract: Contextual online decision-making problems with constraints appear in various real-world applications, such as personalized recommendation with resource limits and dynamic pricing with fairness constraints. In this paper, we investigate a general formulation of sequential decision-making with stage-wise feasibility constraints, where at each round, the learner must select an action based on observed context while ensuring a problem-specific feasibility criterion. We propose a unified algorithmic framework that captures many existing constrained learning problems, including constrained bandits, stream active learning, online hypothesis testing, and model calibration. Central to our approach is the concept of upper counterfactual confidence bound, which enables the design of practically efficient online algorithms using any offline conditional density estimation oracle. Technically, to handle feasibility constraints, we introduce a generalized notion of the eluder dimension, extending it from the classical setting based on square loss to a broader class of metric-like probability divergences, which could capture the complexity of various density function classes and characterize the loss incurred due to feasibility constraint uncertainty. Our result offers a principled foundation for constrained sequential decision-making in both theory and practice.
 ]]></content:encoded>
 <pubDate>Mon, 19 May 2025 00:00:00 -0400</pubDate>
-<pubDate>Mon, 19 May 2025 00:00:00 -0400</pubDate>
 </item>
-
 <item>
 <title>Two Minds Better Than One: Collaborative Reward Modeling for LLM Alignment</title>
 <link>https://arxiv.org/abs/2505.10597</link>
@@ -11274,36 +11271,6 @@ Abstract: The distribution of child sexual abuse imagery (CSAI) is an ever-growi
 <content:encoded><![CDATA[
 arXiv:2505.06651v1 Announce Type: new 
 Abstract: Most existing decentralized learning methods with differential privacy (DP) guarantee rely on constant gradient clipping bounds and fixed-level DP Gaussian noises for each node throughout the training process, leading to a significant accuracy degradation compared to non-private counterparts. In this paper, we propose a new Dynamic Differentially Private Decentralized learning approach (termed Dyn-D$^2$P) tailored for general time-varying directed networks. Leveraging the Gaussian DP (GDP) framework for privacy accounting, Dyn-D$^2$P dynamically adjusts gradient clipping bounds and noise levels based on gradient convergence. This proposed dynamic noise strategy enables us to enhance model accuracy while preserving the total privacy budget. Extensive experiments on benchmark datasets demonstrate the superiority of Dyn-D$^2$P over its counterparts employing fixed-level noises, especially under strong privacy guarantees. Furthermore, we provide a provable utility bound for Dyn-D$^2$P that establishes an explicit dependency on network-related parameters, with a scaling factor of $1/\sqrt{n}$ in terms of the number of nodes $n$ up to a bias error term induced by gradient clipping. To our knowledge, this is the first model utility analysis for differentially private decentralized non-convex optimization with dynamic gradient clipping bounds and noise levels.
-]]></content:encoded>
-<pubDate>Tue, 13 May 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Improving Block-Wise LLM Quantization by 4-bit Block-Wise Optimal Float (BOF4): Analysis and Variations</title>
-<link>https://arxiv.org/abs/2505.06653</link>
-<guid>https://arxiv.org/abs/2505.06653</guid>
-<content:encoded><![CDATA[
-arXiv:2505.06653v1 Announce Type: new 
-Abstract: Large language models (LLMs) demand extensive memory capacity during both fine-tuning and inference. To enable memory-efficient fine-tuning, existing methods apply block-wise quantization techniques, such as NF4 and AF4, to the network weights. We show that these quantization techniques incur suboptimal quantization errors. Therefore, as a first novelty, we propose an optimization approach for block-wise quantization. Using this method, we design a family of quantizers named 4-bit block-wise optimal float (BOF4), which consistently reduces the quantization error compared to both baseline methods. We provide both a theoretical and a data-driven solution for the optimization process and prove their practical equivalence. Secondly, we propose a modification to the employed normalization method based on the signed absolute block maximum (BOF4-S), enabling further reduction of the quantization error and empirically achieving less degradation in language modeling performance. Thirdly, we explore additional variations of block-wise quantization methods applied to LLMs through an experimental study on the importance of accurately representing zero and large-amplitude weights on the one hand, and optimization towards various error metrics on the other hand. Lastly, we introduce a mixed-precision quantization strategy dubbed outlier-preserving quantization (OPQ) to address the distributional mismatch induced by outlier weights in block-wise quantization. By storing outlier weights in 16-bit precision (OPQ) while applying BOF4-S, we achieve top performance among 4-bit block-wise quantization techniques w.r.t. perplexity.
-]]></content:encoded>
-<pubDate>Tue, 13 May 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>A Novel Framework for Significant Wave Height Prediction based on Adaptive Feature Extraction Time-Frequency Network</title>
-<link>https://arxiv.org/abs/2505.06688</link>
-<guid>https://arxiv.org/abs/2505.06688</guid>
-<content:encoded><![CDATA[
-arXiv:2505.06688v1 Announce Type: new 
-Abstract: Precise forecasting of significant wave height (Hs) is essential for the development and utilization of wave energy. The challenges in predicting Hs arise from its non-linear and non-stationary characteristics. The combination of decomposition preprocessing and machine learning models have demonstrated significant effectiveness in Hs prediction by extracting data features. However, decomposing the unknown data in the test set can lead to data leakage issues. To simultaneously achieve data feature extraction and prevent data leakage, a novel Adaptive Feature Extraction Time-Frequency Network (AFE-TFNet) is proposed to improve prediction accuracy and stability. It is encoder-decoder rolling framework. The encoder consists of two stages: feature extraction and feature fusion. In the feature extraction stage, global and local frequency domain features are extracted by combining Wavelet Transform (WT) and Fourier Transform (FT), and multi-scale frequency analysis is performed using Inception blocks. In the feature fusion stage, time-domain and frequency-domain features are integrated through dominant harmonic sequence energy weighting (DHSEW). The decoder employed an advanced long short-term memory (LSTM) model. Hourly measured wind speed (Ws), dominant wave period (DPD), average wave period (APD) and Hs from three stations are used as the dataset, and the four metrics are employed to evaluate the forecasting performance. Results show that AFE-TFNet significantly outperforms benchmark methods in terms of prediction accuracy. Feature extraction can significantly improve the prediction accuracy. DHSEW has substantially increased the accuracy of medium-term to long-term forecasting. The prediction accuracy of AFE-TFNet does not demonstrate significant variability with changes of rolling time window size. Overall, AFE-TFNet shows strong potential for handling complex signal forecasting.
-]]></content:encoded>
-<pubDate>Tue, 13 May 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>E2E-FANet: A Highly Generalizable Framework for Waves prediction Behind Floating Breakwaters via Exogenous-to-Endogenous Variable Attention</title>
-<link>https://arxiv.org/abs/2505.06690</link>
-<guid>https://arxiv.org/abs/2505.06690</guid>
-<content:encoded><![CDATA[
-arXiv:2505.06690v1 Announce Type: new 
-Abstract: Accurate prediction of waves behind floating breakwaters (FB) is crucial for optimizing coastal engineering structures, enhancing safety, and improving design efficiency. Existing methods demonstrate limitations in capturing nonlinear interactions between waves and structures, while exhibiting insufficient capability in modeling the complex frequency-domain relationships among elevations of different wave gauges. To address these challenges, this study introduces the Exogenous-to-Endogenous Frequency-Aware Network (E2E-FANet), a novel end-to-end neural network designed to model relationships between waves and structures. The E2E-FANetarchitecture incorporates a Dual-Basis Frequency Mapping (DBFM) module that leverages orthogonal cosine and sine bases to extract wave features from the frequency domain while preserving temporal information. Additionally, we introduce the Exogenous-to-Endogenous Cross-Attention (E2ECA) module, which employs cross attention to model the interactions between endogenous and exogenous variables. We incorporate a Temporal-wise Attention (TA) mechanism that adaptively captures complex dependencies in endogenous variables. These integrated modules function synergistically, enabling E2E-FANet to achieve both comprehensive feature perception in the time-frequency domain and precise modeling of wave-structure interactions. To comprehensively evaluate the performance of E2E-FANet, we constructed a multi-level validation framework comprising three distinct testing scenarios: internal validation under identical wave conditions, generalization testing across different wave conditions, and adaptability testing with varying relative water density (RW) conditions. These comprehensive tests demonstrate that E2E-FANet provides accurate waves behind FB predictions while successfully generalizing diverse wave conditions.
 ]]></content:encoded>
 <pubDate>Tue, 13 May 2025 00:00:00 -0400</pubDate>
 </item>

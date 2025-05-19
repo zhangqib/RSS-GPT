@@ -5,22 +5,34 @@
 <link>http://rss.arxiv.org/rss/cs.AI</link>
 
 <item>
+<title>DynamicRAG: Leveraging Outputs of Large Language Model as Feedback for Dynamic Reranking in Retrieval-Augmented Generation</title>
+<link>https://arxiv.org/abs/2505.07233</link>
+<guid>https://arxiv.org/abs/2505.07233</guid>
+<content:encoded><![CDATA[
+
+arXiv:2505.07233v2 Announce Type: replace-cross 
+Abstract: Retrieval-augmented generation (RAG) systems combine large language models (LLMs) with external knowledge retrieval, making them highly effective for knowledge-intensive tasks. A crucial but often under-explored component of these systems is the reranker. Since irrelevant documents in RAG systems can mislead the generator, the reranker plays a vital role in refining retrieved documents to enhance generation quality and explainability. However, it is challenging to determine the appropriate number of documents ($k$) that the reranker should select: too few may result in missing critical information, while too many introduce noise and inefficiencies. Although recent studies have explored LLM-based rerankers, they primarily leverage internal model knowledge and overlook the rich supervisory signals that LLMs can provide, such as using response quality as feedback for optimizing reranking decisions. In this paper, we propose DynamicRAG, a novel RAG framework where the reranker dynamically adjusts both the order and number of retrieved documents based on the query. We model the reranker as an agent optimized through reinforcement learning (RL), using rewards derived from LLM output quality. Across seven knowledge-intensive datasets, DynamicRAG demonstrates superior performance, achieving state-of-the-art results among models of same parameter sizes. The model, data and code are available at https://github.com/GasolSun36/DynamicRAG.
+]]></content:encoded>
+<pubDate>Mon, 19 May 2025 00:00:00 -0400</pubDate>
+<pubDate>Mon, 19 May 2025 00:00:00 -0400</pubDate>
+</item>
+
+<item>
 <title>AVA: Attentive VLM Agent for Mastering StarCraft II</title>
 <link>https://arxiv.org/abs/2503.05383</link>
 <guid>https://arxiv.org/abs/2503.05383</guid>
 <content:encoded><![CDATA[
-<div> Agent, StarCraft II, multimodal, perception, AI<br>
-<br>
-Summary:<br>
-- Introducing Attentive VLM Agent (AVA) for StarCraft II, aligning agent perception with human gameplay experience.<br>
-- AVA incorporates RGB visual inputs and natural language observations to simulate human cognitive processes.<br>
-- Consists of a vision-language model with self-attention, retrieval-augmented generation system, and role-based task distribution system.<br>
-- Experimental evaluation in AVACraft environment shows AVA powered by Qwen-VL and GPT-4o models can perform complex tactical maneuvers without explicit training.<br>
+<div> Agent, StarCraft II, multimodal, perception, AI<br />
+<br />
+Summary:<br />
+- Introducing Attentive VLM Agent (AVA) for StarCraft II, aligning agent perception with human gameplay experience.<br />
+- AVA incorporates RGB visual inputs and natural language observations to simulate human cognitive processes.<br />
+- Consists of a vision-language model with self-attention, retrieval-augmented generation system, and role-based task distribution system.<br />
+- Experimental evaluation in AVACraft environment shows AVA powered by Qwen-VL and GPT-4o models can perform complex tactical maneuvers without explicit training.<br />
 - Provides a foundation for developing human-aligned StarCraft II agents and advancing multimodal game AI research. <div>
 arXiv:2503.05383v5 Announce Type: replace 
 Abstract: We introduce Attentive VLM Agent (AVA), a multimodal StarCraft II agent that aligns artificial agent perception with the human gameplay experience. Traditional frameworks such as SMAC rely on abstract state representations that diverge significantly from human perception, limiting the ecological validity of agent behavior. Our agent addresses this limitation by incorporating RGB visual inputs and natural language observations that more closely simulate human cognitive processes during gameplay. The AVA architecture consists of three integrated components: (1) a vision-language model enhanced with specialized self-attention mechanisms for strategic unit targeting and battlefield assessment, (2) a retrieval-augmented generation system that leverages domain-specific StarCraft II knowledge to inform tactical decisions, and (3) a dynamic role-based task distribution system that enables coordinated multi-agent behavior. The experimental evaluation in our proposed AVACraft environment, which contains 21 multimodal StarCraft II scenarios, demonstrates that AVA powered by foundation models (specifically Qwen-VL and GPT-4o) can execute complex tactical maneuvers without explicit training, achieving comparable performance to traditional MARL methods that require substantial training iterations. This work establishes a foundation for developing human-aligned StarCraft II agents and advances the broader research agenda of multimodal game AI. Our implementation is available at https://github.com/camel-ai/VLM-Play-StarCraft2.
 ]]></content:encoded>
-<pubDate>Mon, 19 May 2025 00:00:00 -0400</pubDate>
 <pubDate>Mon, 19 May 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -33,11 +45,10 @@ Abstract: We introduce Attentive VLM Agent (AVA), a multimodal StarCraft II agen
 Summary: 
 The article presents a computational theory for evaluating mini agents, aiming to reduce experimental evaluation costs. It introduces evaluation models to expedite the evaluation process, proving upper bounds for error and causal effect error for infinite agents. The efficiency and consistency of estimated causal effects from deployed agents to evaluation metrics are also demonstrated. A meta-learner is proposed to address the issue of heterogeneous agent spaces when learning evaluation models. Compared to existing methods, the (conditional) evaluation model showcased a reduction of 24.1% to 99.0% in evaluation errors across various scenarios such as individual medicine, scientific simulations, social experiments, business activities, and quantum trade. The evaluation time per subject was reduced by 3 to 7 orders of magnitude compared to traditional experiments or simulations. 
 
-<br><br>Summary: <div>
+<br /><br />Summary: <div>
 arXiv:2503.21138v5 Announce Type: replace 
 Abstract: In order to reduce the cost of experimental evaluation for agents, we introduce a computational theory of evaluation for mini agents: build evaluation model to accelerate the evaluation procedures. We prove upper bounds of generalized error and generalized causal effect error of given evaluation models for infinite agents. We also prove efficiency, and consistency to estimated causal effect from deployed agents to evaluation metric by prediction. To learn evaluation models, we propose a meta-learner to handle heterogeneous agents space problem. Comparing with existed evaluation approaches, our (conditional) evaluation model reduced 24.1\% to 99.0\% evaluation errors across 12 scenes, including individual medicine, scientific simulation, social experiment, business activity, and quantum trade. The evaluation time is reduced 3 to 7 order of magnitude per subject comparing with experiments or simulations.
 ]]></content:encoded>
-<pubDate>Mon, 19 May 2025 00:00:00 -0400</pubDate>
 <pubDate>Mon, 19 May 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -53,7 +64,6 @@ arXiv:2412.09521v3 Announce Type: replace-cross
 Abstract: Pathological diagnosis is vital for determining disease characteristics, guiding treatment, and assessing prognosis, relying heavily on detailed, multi-scale analysis of high-resolution whole slide images (WSI). However, existing large vision-language models (LVLMs) are limited by input resolution constraints, hindering their efficiency and accuracy in pathology image analysis. To overcome these issues, we propose two innovative strategies: the mixed task-guided feature enhancement, which directs feature extraction toward lesion-related details across scales, and the prompt-guided detail feature completion, which integrates coarse- and fine-grained features from WSI based on specific prompts without compromising inference speed. Leveraging a comprehensive dataset of 490K samples from diverse pathology tasks, we trained the pathology-specialized LVLM, OmniPath. Extensive experiments demonstrate that this model significantly outperforms existing methods in diagnostic accuracy and efficiency, providing an interactive, clinically aligned approach for auxiliary diagnosis in a wide range of pathology applications.
 ]]></content:encoded>
 <pubDate>Mon, 19 May 2025 00:00:00 -0400</pubDate>
-<pubDate>Mon, 19 May 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
 <title>SCAM: A Real-World Typographic Robustness Evaluation for Multimodal Foundation Models</title>
@@ -62,7 +72,7 @@ Abstract: Pathological diagnosis is vital for determining disease characteristic
 <content:encoded><![CDATA[
 <div> Dataset, Typographic attacks, Vision-Language Models, Vulnerability, Benchmarking
 
-Summary:<br>
+Summary:<br />
 This paper introduces SCAM, the largest and most diverse dataset of real-world typographic attack images to date, containing 1,162 images across multiple object categories and attack words. Through benchmarking Vision-Language Models (VLMs) on SCAM, it is shown that typographic attacks significantly reduce performance. The study identifies that training data and model architecture influence susceptibility to these attacks. Large Vision-Language Models (LVLMs) are found to be vulnerable due to their vision encoder choice, but larger Large Language Models (LLMs) backbones can help lessen vulnerability. The research demonstrates that synthetic attacks closely resemble real-world handwritten attacks, supporting their use in studies. The datasets and evaluation code are publicly released, providing a valuable resource for future research on creating robust and reliable multimodal AI systems. 
 
 Summary: <div>
@@ -70,21 +80,19 @@ arXiv:2504.04893v4 Announce Type: replace-cross
 Abstract: Typographic attacks exploit the interplay between text and visual content in multimodal foundation models, causing misclassifications when misleading text is embedded within images. However, existing datasets are limited in size and diversity, making it difficult to study such vulnerabilities. In this paper, we introduce SCAM, the largest and most diverse dataset of real-world typographic attack images to date, containing 1,162 images across hundreds of object categories and attack words. Through extensive benchmarking of Vision-Language Models (VLMs) on SCAM, we demonstrate that typographic attacks significantly degrade performance, and identify that training data and model architecture influence the susceptibility to these attacks. Our findings reveal that typographic attacks persist in state-of-the-art Large Vision-Language Models (LVLMs) due to the choice of their vision encoder, though larger Large Language Models (LLMs) backbones help mitigate their vulnerability. Additionally, we demonstrate that synthetic attacks closely resemble real-world (handwritten) attacks, validating their use in research. Our work provides a comprehensive resource and empirical insights to facilitate future research toward robust and trustworthy multimodal AI systems. We publicly release the datasets introduced in this paper along with the code for evaluations at www.bliss.berlin/research/scam.
 ]]></content:encoded>
 <pubDate>Mon, 19 May 2025 00:00:00 -0400</pubDate>
-<pubDate>Mon, 19 May 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
 <title>FlowHFT: Imitation Learning via Flow Matching Policy for Optimal High-Frequency Trading under Diverse Market Conditions</title>
 <link>https://arxiv.org/abs/2505.05784</link>
 <guid>https://arxiv.org/abs/2505.05784</guid>
 <content:encoded><![CDATA[
-<div> HFT, investing strategy, flow matching policy, expert models, market conditions<br>
-<br>
-Summary:<br>
+<div> HFT, investing strategy, flow matching policy, expert models, market conditions<br />
+<br />
+Summary:<br />
 FlowHFT is a novel imitation learning framework for high-frequency trading (HFT) that addresses the limitations of traditional HFT approaches. It utilizes a flow matching policy to learn strategies from multiple expert models, enabling adaptive adjustments to market conditions. FlowHFT incorporates a grid-search fine-tuning mechanism to refine strategies, especially in complex or extreme market scenarios. Testing in various market environments shows that FlowHFT consistently outperforms individual expert models across different market conditions. This framework demonstrates applicability in stochastic market environments and achieves superior performance by learning from diverse expert strategies. <div>
 arXiv:2505.05784v2 Announce Type: replace-cross 
 Abstract: High-frequency trading (HFT) is an investing strategy that continuously monitors market states and places bid and ask orders at millisecond speeds. Traditional HFT approaches fit models with historical data and assume that future market states follow similar patterns. This limits the effectiveness of any single model to the specific conditions it was trained for. Additionally, these models achieve optimal solutions only under specific market conditions, such as assumptions about stock price's stochastic process, stable order flow, and the absence of sudden volatility. Real-world markets, however, are dynamic, diverse, and frequently volatile. To address these challenges, we propose the FlowHFT, a novel imitation learning framework based on flow matching policy. FlowHFT simultaneously learns strategies from numerous expert models, each proficient in particular market scenarios. As a result, our framework can adaptively adjust investment decisions according to the prevailing market state. Furthermore, FlowHFT incorporates a grid-search fine-tuning mechanism. This allows it to refine strategies and achieve superior performance even in complex or extreme market scenarios where expert strategies may be suboptimal. We test FlowHFT in multiple market environments. We first show that flow matching policy is applicable in stochastic market environments, thus enabling FlowHFT to learn trading strategies under different market conditions. Notably, our single framework consistently achieves performance superior to the best expert for each market condition.
 ]]></content:encoded>
-<pubDate>Mon, 19 May 2025 00:00:00 -0400</pubDate>
 <pubDate>Mon, 19 May 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -94,13 +102,12 @@ Abstract: High-frequency trading (HFT) is an investing strategy that continuousl
 <content:encoded><![CDATA[
 <div> Keywords: collaboration structure, multi-agent systems, collective reasoning, expertise alignment, system scale
 
-Summary:<br><br>Effective collaboration structures for multi-agent systems are vital for enhancing collective reasoning. This study examines the impact of three design dimensions on collaborative reasoning performance: Expertise-Domain Alignment, Collaboration Paradigm, and System Scale. Expertise alignment is found to be most beneficial for contextual reasoning tasks. Collaboration focused on integrating diverse knowledge outperforms rigid task decomposition. Scaling the multi-agent system with expertise specialization highlights the need for efficient communication protocols. This research provides guidelines for configuring specialized multi-agent systems and identifies critical architectural trade-offs for scalable multi-agent reasoning. By considering these dimensions, researchers can design more effective collaboration structures for enhancing collective reasoning in multi-agent systems. The code for this study will be available upon acceptance. 
+Summary:<br /><br />Effective collaboration structures for multi-agent systems are vital for enhancing collective reasoning. This study examines the impact of three design dimensions on collaborative reasoning performance: Expertise-Domain Alignment, Collaboration Paradigm, and System Scale. Expertise alignment is found to be most beneficial for contextual reasoning tasks. Collaboration focused on integrating diverse knowledge outperforms rigid task decomposition. Scaling the multi-agent system with expertise specialization highlights the need for efficient communication protocols. This research provides guidelines for configuring specialized multi-agent systems and identifies critical architectural trade-offs for scalable multi-agent reasoning. By considering these dimensions, researchers can design more effective collaboration structures for enhancing collective reasoning in multi-agent systems. The code for this study will be available upon acceptance. 
 
 Summary: <div>
 arXiv:2505.07313v2 Announce Type: replace-cross 
 Abstract: Designing effective collaboration structure for multi-agent LLM systems to enhance collective reasoning is crucial yet remains under-explored. In this paper, we systematically investigate how collaborative reasoning performance is affected by three key design dimensions: (1) Expertise-Domain Alignment, (2) Collaboration Paradigm (structured workflow vs. diversity-driven integration), and (3) System Scale. Our findings reveal that expertise alignment benefits are highly domain-contingent, proving most effective for contextual reasoning tasks. Furthermore, collaboration focused on integrating diverse knowledge consistently outperforms rigid task decomposition. Finally, we empirically explore the impact of scaling the multi-agent system with expertise specialization and study the computational trade off, highlighting the need for more efficient communication protocol design. This work provides concrete guidelines for configuring specialized multi-agent system and identifies critical architectural trade-offs and bottlenecks for scalable multi-agent reasoning. The code will be made available upon acceptance.
 ]]></content:encoded>
-<pubDate>Mon, 19 May 2025 00:00:00 -0400</pubDate>
 <pubDate>Mon, 19 May 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -108,16 +115,14 @@ Abstract: Designing effective collaboration structure for multi-agent LLM system
 <link>https://arxiv.org/abs/2505.07450</link>
 <guid>https://arxiv.org/abs/2505.07450</guid>
 <content:encoded><![CDATA[
-<div> Continual learning, Prototype-Augmented Hypernetworks, catastrophic forgetting, Split-CIFAR100, TinyImageNet <br>
-Summary:<br>
+<div> Continual learning, Prototype-Augmented Hypernetworks, catastrophic forgetting, Split-CIFAR100, TinyImageNet <br />
+Summary:<br />
 Continual learning (CL) addresses the challenge of learning new tasks without forgetting previous knowledge. The Prototype-Augmented Hypernetworks (PAH) framework introduces task prototypes to dynamically generate task-specific classifier heads using a single hypernetwork. PAH combines cross-entropy with dual distillation losses to align logits and prototypes, ensuring stable feature representations across tasks. Evaluations on Split-CIFAR100 and TinyImageNet show that PAH achieves state-of-the-art performance with minimal forgetting, surpassing prior methods. It reaches 74.5% accuracy on Split-CIFAR100 with 1.7% forgetting and 63.7% accuracy on TinyImageNet with 4.4% forgetting, all without the need to store samples or heads. <div>
 arXiv:2505.07450v3 Announce Type: replace-cross 
 Abstract: Continual learning (CL) aims to learn a sequence of tasks without forgetting prior knowledge, but gradient updates for a new task often overwrite the weights learned earlier, causing catastrophic forgetting (CF). We propose Prototype-Augmented Hypernetworks (PAH), a framework where a single hypernetwork, conditioned on learnable task prototypes, dynamically generates task-specific classifier heads on demand. To mitigate forgetting, PAH combines cross-entropy with dual distillation losses, one to align logits and another to align prototypes, ensuring stable feature representations across tasks. Evaluations on Split-CIFAR100 and TinyImageNet demonstrate that PAH achieves state-of-the-art performance, reaching 74.5 % and 63.7 % accuracy with only 1.7 % and 4.4 % forgetting, respectively, surpassing prior methods without storing samples or heads.
 ]]></content:encoded>
 <pubDate>Mon, 19 May 2025 00:00:00 -0400</pubDate>
-<pubDate>Mon, 19 May 2025 00:00:00 -0400</pubDate>
 </item>
-
 <item>
 <title>On the Evaluation of Engineering Artificial General Intelligence</title>
 <link>https://arxiv.org/abs/2505.10653</link>
@@ -11260,78 +11265,6 @@ Abstract: Large Language Models (LLMs) have recently been leveraged for asset pr
 <content:encoded><![CDATA[
 arXiv:2505.07096v1 Announce Type: cross 
 Abstract: Human videos offer a scalable way to train robot manipulation policies, but lack the action labels needed by standard imitation learning algorithms. Existing cross-embodiment approaches try to map human motion to robot actions, but often fail when the embodiments differ significantly. We propose X-Sim, a real-to-sim-to-real framework that uses object motion as a dense and transferable signal for learning robot policies. X-Sim starts by reconstructing a photorealistic simulation from an RGBD human video and tracking object trajectories to define object-centric rewards. These rewards are used to train a reinforcement learning (RL) policy in simulation. The learned policy is then distilled into an image-conditioned diffusion policy using synthetic rollouts rendered with varied viewpoints and lighting. To transfer to the real world, X-Si introduces an online domain adaptation technique that aligns real and simulated observations during deployment. Importantly, X-Sim does not require any robot teleoperation data. We evaluate it across 5 manipulation tasks in 2 environments and show that it: (1) improves task progress by 30% on average over hand-tracking and sim-to-real baselines, (2) matches behavior cloning with 10x less data collection time, and (3) generalizes to new camera viewpoints and test-time changes. Code and videos are available at https://portal-cornell.github.io/X-Sim/.
-]]></content:encoded>
-<pubDate>Tue, 13 May 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Towards Scalable IoT Deployment for Visual Anomaly Detection via Efficient Compression</title>
-<link>https://arxiv.org/abs/2505.07119</link>
-<guid>https://arxiv.org/abs/2505.07119</guid>
-<content:encoded><![CDATA[
-arXiv:2505.07119v1 Announce Type: cross 
-Abstract: Visual Anomaly Detection (VAD) is a key task in industrial settings, where minimizing waste and operational costs is essential. Deploying deep learning models within Internet of Things (IoT) environments introduces specific challenges due to the limited computational power and bandwidth of edge devices. This study investigates how to perform VAD effectively under such constraints by leveraging compact and efficient processing strategies. We evaluate several data compression techniques, examining the trade-off between system latency and detection accuracy. Experiments on the MVTec AD benchmark demonstrate that significant compression can be achieved with minimal loss in anomaly detection performance compared to uncompressed data.
-]]></content:encoded>
-<pubDate>Tue, 13 May 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Internet of Agents: Fundamentals, Applications, and Challenges</title>
-<link>https://arxiv.org/abs/2505.07176</link>
-<guid>https://arxiv.org/abs/2505.07176</guid>
-<content:encoded><![CDATA[
-arXiv:2505.07176v1 Announce Type: cross 
-Abstract: With the rapid proliferation of large language models and vision-language models, AI agents have evolved from isolated, task-specific systems into autonomous, interactive entities capable of perceiving, reasoning, and acting without human intervention. As these agents proliferate across virtual and physical environments, from virtual assistants to embodied robots, the need for a unified, agent-centric infrastructure becomes paramount. In this survey, we introduce the Internet of Agents (IoA) as a foundational framework that enables seamless interconnection, dynamic discovery, and collaborative orchestration among heterogeneous agents at scale. We begin by presenting a general IoA architecture, highlighting its hierarchical organization, distinguishing features relative to the traditional Internet, and emerging applications. Next, we analyze the key operational enablers of IoA, including capability notification and discovery, adaptive communication protocols, dynamic task matching, consensus and conflict-resolution mechanisms, and incentive models. Finally, we identify open research directions toward building resilient and trustworthy IoA ecosystems.
-]]></content:encoded>
-<pubDate>Tue, 13 May 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Towards user-centered interactive medical image segmentation in VR with an assistive AI agent</title>
-<link>https://arxiv.org/abs/2505.07214</link>
-<guid>https://arxiv.org/abs/2505.07214</guid>
-<content:encoded><![CDATA[
-arXiv:2505.07214v1 Announce Type: cross 
-Abstract: Crucial in disease analysis and surgical planning, manual segmentation of volumetric medical scans (e.g. MRI, CT) is laborious, error-prone, and challenging to master, while fully automatic algorithms can benefit from user-feedback. Therefore, with the complementary power of the latest radiological AI foundation models and virtual reality (VR)'s intuitive data interaction, we propose SAMIRA, a novel conversational AI agent that assists users with localizing, segmenting, and visualizing 3D medical concepts in VR. Through speech-based interaction, the agent helps users understand radiological features, locate clinical targets, and generate segmentation masks that can be refined with just a few point prompts. The system also supports true-to-scale 3D visualization of segmented pathology to enhance patient-specific anatomical understanding. Furthermore, to determine the optimal interaction paradigm under near-far attention-switching for refining segmentation masks in an immersive, human-in-the-loop workflow, we compare VR controller pointing, head pointing, and eye tracking as input modes. With a user study, evaluations demonstrated a high usability score (SUS=90.0 $\pm$ 9.0), low overall task load, as well as strong support for the proposed VR system's guidance, training potential, and integration of AI in radiological segmentation tasks.
-]]></content:encoded>
-<pubDate>Tue, 13 May 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>DynamicRAG: Leveraging Outputs of Large Language Model as Feedback for Dynamic Reranking in Retrieval-Augmented Generation</title>
-<link>https://arxiv.org/abs/2505.07233</link>
-<guid>https://arxiv.org/abs/2505.07233</guid>
-<content:encoded><![CDATA[
-arXiv:2505.07233v1 Announce Type: cross 
-Abstract: Retrieval-augmented generation (RAG) systems combine large language models (LLMs) with external knowledge retrieval, making them highly effective for knowledge-intensive tasks. A crucial but often under-explored component of these systems is the reranker, which refines retrieved documents to enhance generation quality and explainability. The challenge of selecting the optimal number of documents (k) remains unsolved: too few may omit critical information, while too many introduce noise and inefficiencies. Although recent studies have explored LLM-based rerankers, they primarily leverage internal model knowledge and overlook the rich supervisory signals that LLMs can provide, such as using response quality as feedback for optimizing reranking decisions. In this paper, we propose DynamicRAG, a novel RAG framework where the reranker dynamically adjusts both the order and number of retrieved documents based on the query. We model the reranker as an agent optimized through reinforcement learning (RL), using rewards derived from LLM output quality. Across seven knowledge-intensive datasets, DynamicRAG demonstrates superior performance, achieving state-of-the-art results. The model, data and code are available at https://github.com/GasolSun36/DynamicRAG
-]]></content:encoded>
-<pubDate>Tue, 13 May 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>UAV-CodeAgents: Scalable UAV Mission Planning via Multi-Agent ReAct and Vision-Language Reasoning</title>
-<link>https://arxiv.org/abs/2505.07236</link>
-<guid>https://arxiv.org/abs/2505.07236</guid>
-<content:encoded><![CDATA[
-arXiv:2505.07236v1 Announce Type: cross 
-Abstract: We present UAV-CodeAgents, a scalable multi-agent framework for autonomous UAV mission generation, built on large language and vision-language models (LLMs/VLMs). The system leverages the ReAct (Reason + Act) paradigm to interpret satellite imagery, ground high-level natural language instructions, and collaboratively generate UAV trajectories with minimal human supervision. A core component is a vision-grounded, pixel-pointing mechanism that enables precise localization of semantic targets on aerial maps. To support real-time adaptability, we introduce a reactive thinking loop, allowing agents to iteratively reflect on observations, revise mission goals, and coordinate dynamically in evolving environments.
-  UAV-CodeAgents is evaluated on large-scale mission scenarios involving industrial and environmental fire detection. Our results show that a lower decoding temperature (0.5) yields higher planning reliability and reduced execution time, with an average mission creation time of 96.96 seconds and a success rate of 93%. We further fine-tune Qwen2.5VL-7B on 9,000 annotated satellite images, achieving strong spatial grounding across diverse visual categories. To foster reproducibility and future research, we will release the full codebase and a novel benchmark dataset for vision-language-based UAV planning.
-]]></content:encoded>
-<pubDate>Tue, 13 May 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Comet: Accelerating Private Inference for Large Language Model by Predicting Activation Sparsity</title>
-<link>https://arxiv.org/abs/2505.07239</link>
-<guid>https://arxiv.org/abs/2505.07239</guid>
-<content:encoded><![CDATA[
-arXiv:2505.07239v1 Announce Type: cross 
-Abstract: With the growing use of large language models (LLMs) hosted on cloud platforms to offer inference services, privacy concerns about the potential leakage of sensitive information are escalating. Secure multi-party computation (MPC) is a promising solution to protect the privacy in LLM inference. However, MPC requires frequent inter-server communication, causing high performance overhead.
-  Inspired by the prevalent activation sparsity of LLMs, where most neuron are not activated after non-linear activation functions, we propose an efficient private inference system, Comet. This system employs an accurate and fast predictor to predict the sparsity distribution of activation function output. Additionally, we introduce a new private inference protocol. It efficiently and securely avoids computations involving zero values by exploiting the spatial locality of the predicted sparse distribution. While this computation-avoidance approach impacts the spatiotemporal continuity of KV cache entries, we address this challenge with a low-communication overhead cache refilling strategy that merges miss requests and incorporates a prefetching mechanism. Finally, we evaluate Comet on four common LLMs and compare it with six state-of-the-art private inference systems. Comet achieves a 1.87x-2.63x speedup and a 1.94x-2.64x communication reduction.
-]]></content:encoded>
-<pubDate>Tue, 13 May 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>REMEDI: Relative Feature Enhanced Meta-Learning with Distillation for Imbalanced Prediction</title>
-<link>https://arxiv.org/abs/2505.07245</link>
-<guid>https://arxiv.org/abs/2505.07245</guid>
-<content:encoded><![CDATA[
-arXiv:2505.07245v1 Announce Type: cross 
-Abstract: Predicting future vehicle purchases among existing owners presents a critical challenge due to extreme class imbalance (<0.5% positive rate) and complex behavioral patterns. We propose REMEDI (Relative feature Enhanced Meta-learning with Distillation for Imbalanced prediction), a novel multi-stage framework addressing these challenges. REMEDI first trains diverse base models to capture complementary aspects of user behavior. Second, inspired by comparative op-timization techniques, we introduce relative performance meta-features (deviation from ensemble mean, rank among peers) for effective model fusion through a hybrid-expert architecture. Third, we distill the ensemble's knowledge into a single efficient model via supervised fine-tuning with MSE loss, enabling practical deployment. Evaluated on approximately 800,000 vehicle owners, REMEDI significantly outperforms baseline approaches, achieving the business target of identifying ~50% of actual buyers within the top 60,000 recommendations at ~10% precision. The distilled model preserves the ensemble's predictive power while maintaining deployment efficiency, demonstrating REMEDI's effectiveness for imbalanced prediction in industry settings.
 ]]></content:encoded>
 <pubDate>Tue, 13 May 2025 00:00:00 -0400</pubDate>
 </item>
