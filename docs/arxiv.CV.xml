@@ -4,6 +4,7 @@
 <title>cs.CV updates on arXiv.org</title>
 <link>http://rss.arxiv.org/rss/cs.CV</link>
 
+
 <item>
 <title>SOAP: Style-Omniscient Animatable Portraits</title>
 <link>https://arxiv.org/abs/2505.05022</link>
@@ -12,11 +13,10 @@
 <div> diffusion model, 3D avatars, style-omniscient framework, rigged avatars, FACS-based animation
 
 Summary:
-The article introduces SOAP, a novel framework for generating animatable 3D avatars from a single image. The framework overcomes limitations in style variation and handles accessories and hairstyles effectively. SOAP utilizes a multiview diffusion model trained on a large dataset of 3D heads with different styles. An adaptive optimization pipeline deforms the FLAME mesh while preserving topology and rigging through differentiable rendering. The resulting avatars support FACS-based animation, integrate with eyeballs and teeth, and maintain details like braided hair and accessories. Extensive experiments demonstrate the superiority of SOAP over existing techniques for single-view head modeling and Image-to-3D generation using diffusion. The code and data for SOAP are publicly available for research purposes at the provided GitHub repository.<br><br>Summary: <div>
+The article introduces SOAP, a novel framework for generating animatable 3D avatars from a single image. The framework overcomes limitations in style variation and handles accessories and hairstyles effectively. SOAP utilizes a multiview diffusion model trained on a large dataset of 3D heads with different styles. An adaptive optimization pipeline deforms the FLAME mesh while preserving topology and rigging through differentiable rendering. The resulting avatars support FACS-based animation, integrate with eyeballs and teeth, and maintain details like braided hair and accessories. Extensive experiments demonstrate the superiority of SOAP over existing techniques for single-view head modeling and Image-to-3D generation using diffusion. The code and data for SOAP are publicly available for research purposes at the provided GitHub repository.<br /><br />Summary: <div>
 arXiv:2505.05022v2 Announce Type: replace 
 Abstract: Creating animatable 3D avatars from a single image remains challenging due to style limitations (realistic, cartoon, anime) and difficulties in handling accessories or hairstyles. While 3D diffusion models advance single-view reconstruction for general objects, outputs often lack animation controls or suffer from artifacts because of the domain gap. We propose SOAP, a style-omniscient framework to generate rigged, topology-consistent avatars from any portrait. Our method leverages a multiview diffusion model trained on 24K 3D heads with multiple styles and an adaptive optimization pipeline to deform the FLAME mesh while maintaining topology and rigging via differentiable rendering. The resulting textured avatars support FACS-based animation, integrate with eyeballs and teeth, and preserve details like braided hair or accessories. Extensive experiments demonstrate the superiority of our method over state-of-the-art techniques for both single-view head modeling and diffusion-based generation of Image-to-3D. Our code and data are publicly available for research purposes at https://github.com/TingtingLiao/soap.
 ]]></content:encoded>
-<pubDate>Tue, 20 May 2025 00:00:00 -0400</pubDate>
 <pubDate>Tue, 20 May 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -33,21 +33,19 @@ arXiv:2505.05621v2 Announce Type: replace
 Abstract: OpenAI's GPT-4o model, integrating multi-modal inputs and outputs within an autoregressive architecture, has demonstrated unprecedented performance in image generation. In this work, we investigate its potential impact on the image restoration community. We present the first systematic evaluation of GPT-4o across diverse restoration tasks. Our experiments reveal that, although restoration outputs from GPT-4o are visually appealing, they often suffer from pixel-level structural fidelity when compared to ground-truth images. Common issues are variations in image proportions, shifts in object positions and quantities, and changes in viewpoint. To address it, taking image dehazing, derainning, and low-light enhancement as representative case studies, we show that GPT-4o's outputs can serve as powerful visual priors, substantially enhancing the performance of existing dehazing networks. It offers practical guidelines and a baseline framework to facilitate the integration of GPT-4o into future image restoration pipelines. We hope the study on GPT-4o image restoration will accelerate innovation in the broader field of image generation areas. To support further research, we will release GPT-4o-restored images.
 ]]></content:encoded>
 <pubDate>Tue, 20 May 2025 00:00:00 -0400</pubDate>
-<pubDate>Tue, 20 May 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
 <title>InstanceGen: Image Generation with Instance-level Instructions</title>
 <link>https://arxiv.org/abs/2505.05678</link>
 <guid>https://arxiv.org/abs/2505.05678</guid>
 <content:encoded><![CDATA[
-<div> Keywords: generative models, text-to-image, structural constraints, fine-grained structural initialization, instance-level instructions<br>
-<br>
+<div> Keywords: generative models, text-to-image, structural constraints, fine-grained structural initialization, instance-level instructions<br />
+<br />
 Summary: 
 This work addresses the limitations of pretrained text-to-image models in handling complex prompts involving multiple objects and attributes. Current models struggle to capture the semantics of such prompts accurately. To improve the generation process, the authors propose a technique that combines image-based structural guidance with instance-level instructions from LLMs. This approach ensures that the generated images align closely with the text prompts, including object counts, attributes of individual instances, and spatial relations between objects. By leveraging fine-grained structural initialization provided by image generation models, the proposed technique enhances the overall quality and coherence of the generated images. The integration of additional structural constraints, in the form of coarse bounding boxes, further assists in guiding the generation process in challenging scenarios, ultimately leading to more accurate and semantically-rich output images. <div>
 arXiv:2505.05678v3 Announce Type: replace 
 Abstract: Despite rapid advancements in the capabilities of generative models, pretrained text-to-image models still struggle in capturing the semantics conveyed by complex prompts that compound multiple objects and instance-level attributes. Consequently, we are witnessing growing interests in integrating additional structural constraints, typically in the form of coarse bounding boxes, to better guide the generation process in such challenging cases. In this work, we take the idea of structural guidance a step further by making the observation that contemporary image generation models can directly provide a plausible fine-grained structural initialization. We propose a technique that couples this image-based structural guidance with LLM-based instance-level instructions, yielding output images that adhere to all parts of the text prompt, including object counts, instance-level attributes, and spatial relations between instances.
 ]]></content:encoded>
-<pubDate>Tue, 20 May 2025 00:00:00 -0400</pubDate>
 <pubDate>Tue, 20 May 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -62,7 +60,6 @@ arXiv:2505.05834v2 Announce Type: replace
 Abstract: Ordinal regression bridges regression and classification by assigning objects to ordered classes. While human experts rely on discriminative patch-level features for decisions, current approaches are limited by the availability of only image-level ordinal labels, overlooking fine-grained patch-level characteristics. In this paper, we propose a Dual-level Fuzzy Learning with Patch Guidance framework, named DFPG that learns precise feature-based grading boundaries from ambiguous ordinal labels, with patch-level supervision. Specifically, we propose patch-labeling and filtering strategies to enable the model to focus on patch-level features exclusively with only image-level ordinal labels available. We further design a dual-level fuzzy learning module, which leverages fuzzy logic to quantitatively capture and handle label ambiguity from both patch-wise and channel-wise perspectives. Extensive experiments on various image ordinal regression datasets demonstrate the superiority of our proposed method, further confirming its ability in distinguishing samples from difficult-to-classify categories. The code is available at https://github.com/ZJUMAI/DFPG-ord.
 ]]></content:encoded>
 <pubDate>Tue, 20 May 2025 00:00:00 -0400</pubDate>
-<pubDate>Tue, 20 May 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
 <title>Generative Pre-trained Autoregressive Diffusion Transformer</title>
@@ -74,11 +71,10 @@ Abstract: Ordinal regression bridges regression and classification by assigning 
 Summary: 
 The article introduces GPDiT, a model that combines diffusion and autoregressive modeling for long-range video synthesis in a continuous latent space. Instead of predicting discrete tokens, GPDiT predicts future latent frames using a diffusion loss, resulting in natural motion dynamics and semantic consistency across frames. This continuous autoregressive framework improves generation quality and provides strong representation capabilities. Additionally, the model introduces a lightweight causal attention variant and a parameter-free time-conditioning mechanism, enhancing training and inference efficiency. Experimental results show that GPDiT excels in video generation quality, representation ability, and few-shot learning tasks, making it a promising framework for video modeling in continuous space. 
 
-Summary: <br><br>Keywords: GPDiT, Generative Pre-trained Autoregressive Diffusion Transformer, video synthesis, continuous latent space, motion dynamics. <div>
+Summary: <br /><br />Keywords: GPDiT, Generative Pre-trained Autoregressive Diffusion Transformer, video synthesis, continuous latent space, motion dynamics. <div>
 arXiv:2505.07344v3 Announce Type: replace 
 Abstract: In this work, we present GPDiT, a Generative Pre-trained Autoregressive Diffusion Transformer that unifies the strengths of diffusion and autoregressive modeling for long-range video synthesis, within a continuous latent space. Instead of predicting discrete tokens, GPDiT autoregressively predicts future latent frames using a diffusion loss, enabling natural modeling of motion dynamics and semantic consistency across frames. This continuous autoregressive framework not only enhances generation quality but also endows the model with representation capabilities. Additionally, we introduce a lightweight causal attention variant and a parameter-free rotation-based time-conditioning mechanism, improving both the training and inference efficiency. Extensive experiments demonstrate that GPDiT achieves strong performance in video generation quality, video representation ability, and few-shot learning tasks, highlighting its potential as an effective framework for video modeling in continuous space.
 ]]></content:encoded>
-<pubDate>Tue, 20 May 2025 00:00:00 -0400</pubDate>
 <pubDate>Tue, 20 May 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -94,9 +90,7 @@ arXiv:2505.07538v2 Announce Type: replace
 Abstract: We completely discard the conventional spatial prior in image representation and introduce a novel discrete visual tokenizer: Self-consistency Tokenizer (Selftok). At its design core, we compose an autoregressive (AR) prior -- mirroring the causal structure of language -- into visual tokens by using the reverse diffusion process of image generation. The AR property makes Selftok fundamentally distinct from traditional spatial tokens in the following two key ways: - Selftok offers an elegant and minimalist approach to unify diffusion and AR for vision-language models (VLMs): By representing images with Selftok tokens, we can train a VLM using a purely discrete autoregressive architecture -- like that in LLMs -- without requiring additional modules or training objectives. - We theoretically show that the AR prior satisfies the Bellman equation, whereas the spatial prior does not. Therefore, Selftok supports reinforcement learning (RL) for visual generation with effectiveness comparable to that achieved in LLMs. Besides the AR property, Selftok is also a SoTA tokenizer that achieves a favorable trade-off between high-quality reconstruction and compression rate. We use Selftok to build a pure AR VLM for both visual comprehension and generation tasks. Impressively, without using any text-image training pairs, a simple policy gradient RL working in the visual tokens can significantly boost the visual generation benchmark, surpassing all the existing models by a large margin. Therefore, we believe that Selftok effectively addresses the long-standing challenge that visual tokens cannot support effective RL. When combined with the well-established strengths of RL in LLMs, this brings us one step closer to realizing a truly multimodal LLM. Project Page: https://selftok-team.github.io/report/.
 ]]></content:encoded>
 <pubDate>Tue, 20 May 2025 00:00:00 -0400</pubDate>
-<pubDate>Tue, 20 May 2025 00:00:00 -0400</pubDate>
 </item>
-
 <item>
 <title>Improving Open-Set Semantic Segmentation in 3D Point Clouds by Conditional Channel Capacity Maximization: Preliminary Results</title>
 <link>https://arxiv.org/abs/2505.11521</link>
@@ -11498,95 +11492,6 @@ Summary:
 <br /><br />Summary: <div>
 arXiv:2505.06831v1 Announce Type: new 
 Abstract: Achieving group-robust generalization in the presence of spurious correlations remains a significant challenge, particularly when bias annotations are unavailable. Recent studies on Class-Conditional Distribution Balancing (CCDB) reveal that spurious correlations often stem from mismatches between the class-conditional and marginal distributions of bias attributes. They achieve promising results by addressing this issue through simple distribution matching in a bias-agnostic manner. However, CCDB approximates each distribution using a single Gaussian, which is overly simplistic and rarely holds in real-world applications. To address this limitation, we propose a novel method called Bias Exploration via Overfitting (BEO), which captures each distribution in greater detail by modeling it as a mixture of latent groups. Building on these group-level descriptions, we introduce a fine-grained variant of CCDB, termed FG-CCDB, which performs more precise distribution matching and balancing within each group. Through group-level reweighting, FG-CCDB learns sample weights from a global perspective, achieving stronger mitigation of spurious correlations without incurring substantial storage or computational costs. Extensive experiments demonstrate that BEO serves as a strong proxy for ground-truth bias annotations and can be seamlessly integrated with bias-supervised methods. Moreover, when combined with FG-CCDB, our method performs on par with bias-supervised approaches on binary classification tasks and significantly outperforms them in highly biased multi-class scenarios.
-]]></content:encoded>
-<pubDate>Tue, 13 May 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Visual Instruction Tuning with Chain of Region-of-Interest</title>
-<link>https://arxiv.org/abs/2505.06840</link>
-<guid>https://arxiv.org/abs/2505.06840</guid>
-<content:encoded><![CDATA[
-<div> Keywords: high-resolution images, multimodal large language models, Chain of Region-of-Interest, visual instruction tuning, computational efficiency 
-
-Summary: 
-The study introduces a novel method called Chain of Region-of-Interest (CoRoI) for Visual Instruction Tuning to address the computational challenges of high-resolution images in multimodal large language models. Inspired by the selective nature of the human visual system, CoRoI prioritizes informative regions in images to improve visual comprehension and recognition without processing lengthy high-resolution tokens. Extensive experiments across 11 benchmarks validate the effectiveness of CoRoI across various model sizes, consistently outperforming existing methods like LLaVA-NeXT and proprietary models like Gemini Pro 1.0 and GPT-4V on multiple benchmarks. The proposed method demonstrates superior performance, especially with a finetuned 34B model surpassing proprietary methods on six benchmarks and outperforming GPT-4V on specific tasks. Overall, CoRoI enhances multimodal visual comprehension while providing computational efficiency for large language models. 
-
-<br /><br />Summary: <div>
-arXiv:2505.06840v1 Announce Type: new 
-Abstract: High-resolution (HR) images are pivotal for enhancing the recognition and understanding capabilities of multimodal large language models (MLLMs). However, directly increasing image resolution can significantly escalate computational demands. In this study, we propose a method called Chain of Region-of-Interest (CoRoI) for Visual Instruction Tuning, aimed at alleviating the computational burden associated with high-resolution images for MLLMs. Drawing inspiration from the selective nature of the human visual system, we recognize that not all regions within high-resolution images carry equal importance. CoRoI seeks to identify and prioritize the most informative regions, thereby enhancing multimodal visual comprehension and recognition while circumventing the need for processing lengthy HR image tokens. Through extensive experiments on 11 benchmarks, we validate the efficacy of CoRoI across varying sizes, ranging from 7B to 34B in parameters. Our models consistently demonstrate superior performance across diverse multimodal benchmarks and tasks. Notably, our method outperforms LLaVA-NeXT on almost all benchmarks and our finetuned 34B model surpasses proprietary methods like Gemini Pro 1.0 on six benchmarks, as well as outperforming GPT-4V on MMB, SEED-I, and MME.
-]]></content:encoded>
-<pubDate>Tue, 13 May 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Predicting Surgical Safety Margins in Osteosarcoma Knee Resections: An Unsupervised Approach</title>
-<link>https://arxiv.org/abs/2505.06853</link>
-<guid>https://arxiv.org/abs/2505.06853</guid>
-<content:encoded><![CDATA[
-<div> Pan American Health Organization, cancer cases, Latin America, osteosarcoma, surgical safety margins
-
-Summary:
-The Pan American Health Organization reports a rising trend in cancer cases in Latin America, with osteosarcoma being a common and lethal bone cancer affecting the youth. Detection of osteosarcoma poses challenges due to its unique characteristics. Surgical removal of osteosarcoma requires precise safety margins to ensure complete resection while sparing healthy tissue. A novel approach is proposed in this study for estimating the confidence interval of surgical safety margins in osteosarcoma surgery around the knee. The method utilizes MRI and X-ray data, digital processing techniques, and unsupervised learning algorithms like k-means clustering to delineate tumor boundaries. Results from experiments demonstrate the potential of automated, patient-specific determination of safety margins, which could enhance the efficiency and accuracy of osteosarcoma surgery.<br /><br />Summary: <div>
-arXiv:2505.06853v1 Announce Type: new 
-Abstract: According to the Pan American Health Organization, the number of cancer cases in Latin America was estimated at 4.2 million in 2022 and is projected to rise to 6.7 million by 2045. Osteosarcoma, one of the most common and deadly bone cancers affecting young people, is difficult to detect due to its unique texture and intensity. Surgical removal of osteosarcoma requires precise safety margins to ensure complete resection while preserving healthy tissue. Therefore, this study proposes a method for estimating the confidence interval of surgical safety margins in osteosarcoma surgery around the knee. The proposed approach uses MRI and X-ray data from open-source repositories, digital processing techniques, and unsupervised learning algorithms (such as k-means clustering) to define tumor boundaries. Experimental results highlight the potential for automated, patient-specific determination of safety margins.
-]]></content:encoded>
-<pubDate>Tue, 13 May 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Joint Low-level and High-level Textual Representation Learning with Multiple Masking Strategies</title>
-<link>https://arxiv.org/abs/2505.06855</link>
-<guid>https://arxiv.org/abs/2505.06855</guid>
-<content:encoded><![CDATA[
-<div> Keywords: text recognition, self-supervised learning, masked image modeling, multi-masking strategy, real-world datasets
-
-Summary:
-The study focuses on improving text recognition methods by addressing the limitations of training on synthetic datasets. Existing techniques suffer from performance disparities when handling complex real-world images due to their inability to replicate real-world scenarios accurately. The researchers propose a Multi-Masking Strategy (MMS) that integrates different masking techniques, including random patch, blockwise, and span masking, into the Masked Image Modeling (MIM) framework. By combining low and high-level textual representations, MMS outperforms existing self-supervised methods after fine-tuning with real data. The approach enhances performance in various text-related tasks such as recognition, segmentation, and text-image super-resolution. This novel strategy aims to bridge the gap between synthetic and real-world data, leading to more accurate and robust text recognition systems.<br /><br />Summary: <div>
-arXiv:2505.06855v1 Announce Type: new 
-Abstract: Most existing text recognition methods are trained on large-scale synthetic datasets due to the scarcity of labeled real-world datasets. Synthetic images, however, cannot faithfully reproduce real-world scenarios, such as uneven illumination, irregular layout, occlusion, and degradation, resulting in performance disparities when handling complex real-world images. Recent self-supervised learning techniques, notably contrastive learning and masked image modeling (MIM), narrow this domain gap by exploiting unlabeled real text images. This study first analyzes the original Masked AutoEncoder (MAE) and observes that random patch masking predominantly captures low-level textural features but misses high-level contextual representations. To fully exploit the high-level contextual representations, we introduce random blockwise and span masking in the text recognition task. These strategies can mask the continuous image patches and completely remove some characters, forcing the model to infer relationships among characters within a word. Our Multi-Masking Strategy (MMS) integrates random patch, blockwise, and span masking into the MIM frame, which jointly learns low and high-level textual representations. After fine-tuning with real data, MMS outperforms the state-of-the-art self-supervised methods in various text-related tasks, including text recognition, segmentation, and text-image super-resolution.
-]]></content:encoded>
-<pubDate>Tue, 13 May 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>NeuRN: Neuro-inspired Domain Generalization for Image Classification</title>
-<link>https://arxiv.org/abs/2505.06881</link>
-<guid>https://arxiv.org/abs/2505.06881</guid>
-<content:encoded><![CDATA[
-<div> Neural Response Normalization, domain generalization, image classification, deep learning architectures, neuro-inspired
-
-Summary: 
-Neural Response Normalization (NeuRN) layer is introduced to improve domain generalization in image classification tasks. Inspired by neurons in the visual cortex, NeuRN aims to enhance deep learning models' performance on unseen datasets. Experimenting with various deep learning architectures, including those from Neural Architecture Search and Vision Transformer, models integrated with NeuRN show improved performance compared to baseline models. A novel method that uses the Needleman-Wunsch algorithm is proposed to compute similarity between deep learning architectures, aiding in selecting models for experimentation. Results demonstrate the effectiveness of NeuRN in cross-domain image classification, paving the way for future neuro-inspired deep learning models. 
-
-<br /><br />Summary: <div>
-arXiv:2505.06881v1 Announce Type: new 
-Abstract: Domain generalization in image classification is a crucial challenge, with models often failing to generalize well across unseen datasets. We address this issue by introducing a neuro-inspired Neural Response Normalization (NeuRN) layer which draws inspiration from neurons in the mammalian visual cortex, which aims to enhance the performance of deep learning architectures on unseen target domains by training deep learning models on a source domain. The performance of these models is considered as a baseline and then compared against models integrated with NeuRN on image classification tasks. We perform experiments across a range of deep learning architectures, including ones derived from Neural Architecture Search and Vision Transformer. Additionally, in order to shortlist models for our experiment from amongst the vast range of deep neural networks available which have shown promising results, we also propose a novel method that uses the Needleman-Wunsch algorithm to compute similarity between deep learning architectures. Our results demonstrate the effectiveness of NeuRN by showing improvement against baseline in cross-domain image classification tasks. Our framework attempts to establish a foundation for future neuro-inspired deep learning models.
-]]></content:encoded>
-<pubDate>Tue, 13 May 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Mice to Machines: Neural Representations from Visual Cortex for Domain Generalization</title>
-<link>https://arxiv.org/abs/2505.06886</link>
-<guid>https://arxiv.org/abs/2505.06886</guid>
-<content:encoded><![CDATA[
-<div> Keywords: mouse, visual cortex, deep learning, NeuRN, neural representations  
-
-<br /><br />Summary: The mouse serves as a vital model in systems neuroscience, particularly in understanding how its visual cortex responds to various natural scene stimuli. This study examines the functional alignment of the mouse visual cortex with deep learning models in object classification tasks. A novel representational learning strategy reveals a significant resemblance between the mouse's visual processing and top-performing deep learning models, observed at both population and single-cell levels. The research introduces a Neural Response Normalization (NeuRN) layer, inspired by the activation profiles of excitatory and inhibitory neurons, which enhances the representational similarity. Testing NeuRN within deep learning frameworks demonstrates marked improvements in robustness, especially against data shifts in domain generalization tasks. This work outlines a transformative approach for comparing the mouse visual cortex's architecture with advanced AI models, enabling a deeper understanding of neural representations. The findings suggest that deep learning models can benefit from insights gained from mouse vision, potentially leading to enhanced performance in real-world applications. Overall, this research holds significant implications for advancing AI models by integrating insights from biological systems. <div>
-arXiv:2505.06886v1 Announce Type: new 
-Abstract: The mouse is one of the most studied animal models in the field of systems neuroscience. Understanding the generalized patterns and decoding the neural representations that are evoked by the diverse range of natural scene stimuli in the mouse visual cortex is one of the key quests in computational vision. In recent years, significant parallels have been drawn between the primate visual cortex and hierarchical deep neural networks. However, their generalized efficacy in understanding mouse vision has been limited. In this study, we investigate the functional alignment between the mouse visual cortex and deep learning models for object classification tasks. We first introduce a generalized representational learning strategy that uncovers a striking resemblance between the functional mapping of the mouse visual cortex and high-performing deep learning models on both top-down (population-level) and bottom-up (single cell-level) scenarios. Next, this representational similarity across the two systems is further enhanced by the addition of Neural Response Normalization (NeuRN) layer, inspired by the activation profile of excitatory and inhibitory neurons in the visual cortex. To test the performance effect of NeuRN on real-world tasks, we integrate it into deep learning models and observe significant improvements in their robustness against data shifts in domain generalization tasks. Our work proposes a novel framework for comparing the functional architecture of the mouse visual cortex with deep learning models. Our findings carry broad implications for the development of advanced AI models that draw inspiration from the mouse visual cortex, suggesting that these models serve as valuable tools for studying the neural representations of the mouse visual cortex and, as a result, enhancing their performance on real-world tasks.
-]]></content:encoded>
-<pubDate>Tue, 13 May 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>NeuGen: Amplifying the 'Neural' in Neural Radiance Fields for Domain Generalization</title>
-<link>https://arxiv.org/abs/2505.06894</link>
-<guid>https://arxiv.org/abs/2505.06894</guid>
-<content:encoded><![CDATA[
-<div> NeuGen, brain-inspired normalization, NeRF architectures, generalization, image rendering
-
-Summary:
-Neural Radiance Fields (NeRF) have revolutionized novel view synthesis but face challenges in generalizing across diverse scenes. This study proposes integrating a brain-inspired normalization technique, NeuGen, into leading NeRF architectures like MVSNeRF and GeoNeRF. NeuGen extracts domain-invariant features to enhance models' generalization capabilities, improving accuracy and robustness in image rendering. Integration of NeuGen shows enhanced performance in benchmarks across diverse datasets, enabling better generalization across varied scenes. Comprehensive evaluations, both quantitative and qualitative, demonstrate that this approach outperforms existing models in generalizability and rendering quality. By merging neuroscientific principles with deep learning frameworks, this work sets a new standard for improved generalizability and efficiency in novel view synthesis. A demo showcasing the study is available at https://neugennerf.github.io.
-
-<br /><br />Summary: <div>
-arXiv:2505.06894v1 Announce Type: new 
-Abstract: Neural Radiance Fields (NeRF) have significantly advanced the field of novel view synthesis, yet their generalization across diverse scenes and conditions remains challenging. Addressing this, we propose the integration of a novel brain-inspired normalization technique Neural Generalization (NeuGen) into leading NeRF architectures which include MVSNeRF and GeoNeRF. NeuGen extracts the domain-invariant features, thereby enhancing the models' generalization capabilities. It can be seamlessly integrated into NeRF architectures and cultivates a comprehensive feature set that significantly improves accuracy and robustness in image rendering. Through this integration, NeuGen shows improved performance on benchmarks on diverse datasets across state-of-the-art NeRF architectures, enabling them to generalize better across varied scenes. Our comprehensive evaluations, both quantitative and qualitative, confirm that our approach not only surpasses existing models in generalizability but also markedly improves rendering quality. Our work exemplifies the potential of merging neuroscientific principles with deep learning frameworks, setting a new precedent for enhanced generalizability and efficiency in novel view synthesis. A demo of our study is available at https://neugennerf.github.io.
 ]]></content:encoded>
 <pubDate>Tue, 13 May 2025 00:00:00 -0400</pubDate>
 </item>
