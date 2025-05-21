@@ -4,6 +4,7 @@
 <title>cs.CL updates on arXiv.org</title>
 <link>http://rss.arxiv.org/rss/cs.CL</link>
 
+
 <item>
 <title>Can Prompting LLMs Unlock Hate Speech Detection across Languages? A Zero-shot and Few-shot Study</title>
 <link>https://arxiv.org/abs/2505.06149</link>
@@ -17,11 +18,10 @@ Summary:
 - Customized prompt designs are crucial for maximizing performance in different languages.  
 - The study highlights the need for linguistic diversity in hate speech detection and the importance of tailored prompting techniques for accurate results. 
 
-Summary:  <br><br> <div>
+Summary:  <br /><br /> <div>
 arXiv:2505.06149v2 Announce Type: replace 
 Abstract: Despite growing interest in automated hate speech detection, most existing approaches overlook the linguistic diversity of online content. Multilingual instruction-tuned large language models such as LLaMA, Aya, Qwen, and BloomZ offer promising capabilities across languages, but their effectiveness in identifying hate speech through zero-shot and few-shot prompting remains underexplored. This work evaluates LLM prompting-based detection across eight non-English languages, utilizing several prompting techniques and comparing them to fine-tuned encoder models. We show that while zero-shot and few-shot prompting lag behind fine-tuned encoder models on most of the real-world evaluation sets, they achieve better generalization on functional tests for hate speech detection. Our study also reveals that prompt design plays a critical role, with each language often requiring customized prompting techniques to maximize performance.
 ]]></content:encoded>
-<pubDate>Wed, 21 May 2025 00:00:00 -0400</pubDate>
 <pubDate>Wed, 21 May 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -34,11 +34,10 @@ Abstract: Despite growing interest in automated hate speech detection, most exis
 Summary:
 This paper introduces a novel approach to analyzing the generalization capability of deep neural networks (DNNs) by dissecting the dynamics of generalizable and non-generalizable interactions encoded during training. Building on explainable AI research, which demonstrates that DNN inference can be represented by a limited set of AND-OR interaction patterns, the study proposes a method to quantify the generalization power of each interaction. It identifies a three-phase evolution in interaction generalization during training, with initial stages focusing on simple and generalizable interactions while later stages capture more complex, harder-to-generalize patterns. Experimental findings support the notion that learning non-generalizable interactions contributes to the gap between training and testing losses. This analysis sheds light on the underlying mechanisms impacting network generalization and offers insights into optimizing DNN training processes. 
 
-<br><br>Summary: <div>
+<br /><br />Summary: <div>
 arXiv:2505.06993v2 Announce Type: replace-cross 
 Abstract: This paper proposes a new perspective for analyzing the generalization power of deep neural networks (DNNs), i.e., directly disentangling and analyzing the dynamics of generalizable and non-generalizable interaction encoded by a DNN through the training process. Specifically, this work builds upon the recent theoretical achievement in explainble AI, which proves that the detailed inference logic of DNNs can be can be strictly rewritten as a small number of AND-OR interaction patterns. Based on this, we propose an efficient method to quantify the generalization power of each interaction, and we discover a distinct three-phase dynamics of the generalization power of interactions during training. In particular, the early phase of training typically removes noisy and non-generalizable interactions and learns simple and generalizable ones. The second and the third phases tend to capture increasingly complex interactions that are harder to generalize. Experimental results verify that the learning of non-generalizable interactions is the the direct cause for the gap between the training and testing losses.
 ]]></content:encoded>
-<pubDate>Wed, 21 May 2025 00:00:00 -0400</pubDate>
 <pubDate>Wed, 21 May 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -46,17 +45,15 @@ Abstract: This paper proposes a new perspective for analyzing the generalization
 <link>https://arxiv.org/abs/2505.07558</link>
 <guid>https://arxiv.org/abs/2505.07558</guid>
 <content:encoded><![CDATA[
-<div> alignment, large language models, human preferences, Direct Density Ratio Optimization, statistical consistency <br>
-<br>
+<div> alignment, large language models, human preferences, Direct Density Ratio Optimization, statistical consistency <br />
+<br />
 Summary: 
 The paper presents a novel method called Direct Density Ratio Optimization (DDRO) for aligning large language models (LLMs) with human preferences. Unlike existing methods that rely on specific preference models, DDRO directly estimates the density ratio between preferred and unpreferred output distributions, eliminating the need for explicit human preference modeling. The authors prove theoretically that DDRO is statistically consistent, ensuring convergence to the true preferred distribution as the data size increases, regardless of the underlying preference structure. Experimental results show that DDRO outperforms existing methods on various benchmarks. This approach enables truly data-driven alignment of LLMs, enhancing reliability and alignment with human preferences.<dd> <div>
 arXiv:2505.07558v2 Announce Type: replace-cross 
 Abstract: Aligning large language models (LLMs) with human preferences is crucial for safe deployment, yet existing methods assume specific preference models like Bradley-Terry model. This assumption leads to statistical inconsistency, where more data doesn't guarantee convergence to true human preferences. To address this critical gap, we introduce a novel alignment method Direct Density Ratio Optimization (DDRO). DDRO directly estimates the density ratio between preferred and unpreferred output distributions, circumventing the need for explicit human preference modeling. We theoretically prove that DDRO is statistically consistent, ensuring convergence to the true preferred distribution as the data size grows, regardless of the underlying preference structure. Experiments demonstrate that DDRO achieves superior performance compared to existing methods on many major benchmarks. DDRO unlocks the potential for truly data-driven alignment, paving the way for more reliable and human-aligned LLMs.
 ]]></content:encoded>
 <pubDate>Wed, 21 May 2025 00:00:00 -0400</pubDate>
-<pubDate>Wed, 21 May 2025 00:00:00 -0400</pubDate>
 </item>
-
 <item>
 <title>Evaluating Reasoning LLMs for Suicide Screening with the Columbia-Suicide Severity Rating Scale</title>
 <link>https://arxiv.org/abs/2505.13480</link>
@@ -11411,54 +11408,6 @@ Summary:
 The paper introduces a novel post-training reinforcement learning framework called SEM aimed at optimizing search usage for Large Language Models (LLMs). By combining datasets MuSiQue and MMLU, scenarios are created to train the model to differentiate between questions that can be answered internally and those requiring external search. A structured reasoning template is designed, and Group Relative Policy Optimization (GRPO) is used to post-train the model's search behaviors. The reward function encourages accurate answering and efficient retrieval, reducing redundant search operations while maintaining or improving answer accuracy across various benchmarks. This approach enhances the model's reasoning efficiency and its ability to effectively utilize external knowledge when needed. <div>
 arXiv:2505.07903v1 Announce Type: new 
 Abstract: Recent advancements in Large Language Models(LLMs) have demonstrated their capabilities not only in reasoning but also in invoking external tools, particularly search engines. However, teaching models to discern when to invoke search and when to rely on their internal knowledge remains a significant challenge. Existing reinforcement learning approaches often lead to redundant search behaviors, resulting in inefficiencies and over-cost. In this paper, we propose SEM, a novel post-training reinforcement learning framework that explicitly trains LLMs to optimize search usage. By constructing a balanced dataset combining MuSiQue and MMLU, we create scenarios where the model must learn to distinguish between questions it can answer directly and those requiring external retrieval. We design a structured reasoning template and employ Group Relative Policy Optimization(GRPO) to post-train the model's search behaviors. Our reward function encourages accurate answering without unnecessary search while promoting effective retrieval when needed. Experimental results demonstrate that our method significantly reduces redundant search operations while maintaining or improving answer accuracy across multiple challenging benchmarks. This framework advances the model's reasoning efficiency and extends its capability to judiciously leverage external knowledge.
-]]></content:encoded>
-<pubDate>Wed, 14 May 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Re$^2$: A Consistency-ensured Dataset for Full-stage Peer Review and Multi-turn Rebuttal Discussions</title>
-<link>https://arxiv.org/abs/2505.07920</link>
-<guid>https://arxiv.org/abs/2505.07920</guid>
-<content:encoded><![CDATA[
-<div> Keywords: peer review, large language models, dataset, rebuttal, interactive<br />
-Summary:<br />
-The article discusses the challenges faced by the scientific community in dealing with the increasing volume of submissions in fields like AI due to a lack of effective tools for authors to self-evaluate their work before submission. This has led to reviewer shortages and declines in review quality. The utilization of Large Language Models (LLMs) shows promise in assisting both authors and reviewers, but their performance is limited by the quality of peer review data. The article introduces a new dataset named Re^2, which addresses the limitations of existing peer review datasets by providing more diverse and consistent data, as well as support for tasks involving rebuttal and reviewer-author interactions. Additionally, the dataset includes a multi-turn conversation paradigm to support dynamic interactive LLM assistants, aiming to provide practical guidance for authors to refine their manuscripts and alleviate the growing review burden.<br /><br />Summary: <div>
-arXiv:2505.07920v1 Announce Type: new 
-Abstract: Peer review is a critical component of scientific progress in the fields like AI, but the rapid increase in submission volume has strained the reviewing system, which inevitably leads to reviewer shortages and declines review quality. Besides the growing research popularity, another key factor in this overload is the repeated resubmission of substandard manuscripts, largely due to the lack of effective tools for authors to self-evaluate their work before submission. Large Language Models (LLMs) show great promise in assisting both authors and reviewers, and their performance is fundamentally limited by the quality of the peer review data. However, existing peer review datasets face three major limitations: (1) limited data diversity, (2) inconsistent and low-quality data due to the use of revised rather than initial submissions, and (3) insufficient support for tasks involving rebuttal and reviewer-author interactions. To address these challenges, we introduce the largest consistency-ensured peer review and rebuttal dataset named Re^2, which comprises 19,926 initial submissions, 70,668 review comments, and 53,818 rebuttals from 24 conferences and 21 workshops on OpenReview. Moreover, the rebuttal and discussion stage is framed as a multi-turn conversation paradigm to support both traditional static review tasks and dynamic interactive LLM assistants, providing more practical guidance for authors to refine their manuscripts and helping alleviate the growing review burden. Our data and code are available in https://anonymous.4open.science/r/ReviewBench_anon/.
-]]></content:encoded>
-<pubDate>Wed, 14 May 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Assessing and Mitigating Medical Knowledge Drift and Conflicts in Large Language Models</title>
-<link>https://arxiv.org/abs/2505.07968</link>
-<guid>https://arxiv.org/abs/2505.07968</guid>
-<content:encoded><![CDATA[
-<div> Keywords: Large Language Models, health care, clinical guidelines, concept drift, model performance
-
-Summary:<br />
-- Large Language Models (LLMs) have potential in health care but struggle with evolving medical knowledge.
-- A study investigated LLM response to evolving clinical guidelines, focusing on concept drift and internal inconsistencies.
-- The DriftMedQA benchmark simulated guideline evolution and evaluated temporal reliability of seven state-of-the-art models.
-- Models had difficulty rejecting outdated recommendations and often endorsed conflicting guidance.
-- Mitigation strategies like Retrieval-Augmented Generation and preference fine-tuning improved model performance, with the combination yielding the best results.
-- Improving LLM robustness to temporal shifts is crucial for more reliable applications in clinical practice.
-
-Summary: <div>
-arXiv:2505.07968v1 Announce Type: new 
-Abstract: Large Language Models (LLMs) have great potential in the field of health care, yet they face great challenges in adapting to rapidly evolving medical knowledge. This can lead to outdated or contradictory treatment suggestions. This study investigated how LLMs respond to evolving clinical guidelines, focusing on concept drift and internal inconsistencies. We developed the DriftMedQA benchmark to simulate guideline evolution and assessed the temporal reliability of various LLMs. Our evaluation of seven state-of-the-art models across 4,290 scenarios demonstrated difficulties in rejecting outdated recommendations and frequently endorsing conflicting guidance. Additionally, we explored two mitigation strategies: Retrieval-Augmented Generation and preference fine-tuning via Direct Preference Optimization. While each method improved model performance, their combination led to the most consistent and reliable results. These findings underscore the need to improve LLM robustness to temporal shifts to ensure more dependable applications in clinical practice.
-]]></content:encoded>
-<pubDate>Wed, 14 May 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Task-Adaptive Semantic Communications with Controllable Diffusion-based Data Regeneration</title>
-<link>https://arxiv.org/abs/2505.07980</link>
-<guid>https://arxiv.org/abs/2505.07980</guid>
-<content:encoded><![CDATA[
-<div> Keywords: semantic communications, task-adaptive, diffusion models, deep-compressed, attention mechanism
-
-Summary:
-This study introduces a novel task-adaptive semantic communication framework that aims to improve bandwidth efficiency by conveying semantic meanings instead of raw data. By utilizing diffusion models, the framework dynamically adjusts the semantic message delivery based on the downstream tasks. The process begins with transmitting a deep-compressed general semantic representation from the sender to facilitate coarse data reconstruction at the receiver. Upon receiving task-specific prompts as feedback, the sender incorporates an attention mechanism to refine the semantic transmission with more detailed information that aligns with the receiver's objectives. Experimental results demonstrate the effectiveness of this approach in adaptively preserving crucial task-relevant information for semantic communications while maintaining high compression efficiency.<br /><br />Summary: This study presents a task-adaptive semantic communication framework utilizing diffusion models to dynamically adjust semantic message delivery based on downstream tasks. It starts with transmitting a deep-compressed general semantic representation, allowing for coarse data reconstruction at the receiver. Through task-specific prompts and an attention mechanism, the framework refines semantic transmission to align with receiver objectives, effectively preserving critical task-relevant information while maintaining high compression efficiency. <div>
-arXiv:2505.07980v1 Announce Type: new 
-Abstract: Semantic communications represent a new paradigm of next-generation networking that shifts bit-wise data delivery to conveying the semantic meanings for bandwidth efficiency. To effectively accommodate various potential downstream tasks at the receiver side, one should adaptively convey the most critical semantic information. This work presents a novel task-adaptive semantic communication framework based on diffusion models that is capable of dynamically adjusting the semantic message delivery according to various downstream tasks. Specifically, we initialize the transmission of a deep-compressed general semantic representation from the transmitter to enable diffusion-based coarse data reconstruction at the receiver. The receiver identifies the task-specific demands and generates textual prompts as feedback. Integrated with the attention mechanism, the transmitter updates the semantic transmission with more details to better align with the objectives of the intended receivers. Our test results demonstrate the efficacy of the proposed method in adaptively preserving critical task-relevant information for semantic communications while preserving high compression efficiency.
 ]]></content:encoded>
 <pubDate>Wed, 14 May 2025 00:00:00 -0400</pubDate>
 </item>

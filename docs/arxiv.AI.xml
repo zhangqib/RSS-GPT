@@ -5,6 +5,22 @@
 <link>http://rss.arxiv.org/rss/cs.AI</link>
 
 <item>
+<title>HICD: Hallucination-Inducing via Attention Dispersion for Contrastive Decoding to Mitigate Hallucinations in Large Language Models</title>
+<link>https://arxiv.org/abs/2503.12908</link>
+<guid>https://arxiv.org/abs/2503.12908</guid>
+<content:encoded><![CDATA[
+<div> Keywords: Large Language Models, Hallucinations, Contrastive Decoding, Contextual Faithfulness, Inducing Heads
+
+Summary:
+HICD is a novel method proposed to address the issue of hallucinations in Large Language Models (LLMs). The technique involves inducing controlled hallucinations through attention dispersion of selected inducing heads crucial to the model's prediction. By comparing the hallucinated outputs with the original outputs, HICD effectively mitigates contextual inaccuracies and improves factual correctness in tasks like context completion, reading comprehension, and question answering. The approach significantly enhances the faithfulness of LLMs to the input context and accuracy in knowledge recall tasks. Moreover, the inducing heads selection and attention dispersion strategy make HICD more effective in generating "contrast-effective" hallucinations compared to other methods. Overall, the findings present a promising technique for reducing hallucinations in LLMs and improving their performance across a diverse set of tasks.<br><br>Summary: <div>
+arXiv:2503.12908v3 Announce Type: replace-cross 
+Abstract: Large Language Models (LLMs) often generate hallucinations, producing outputs that are contextually inaccurate or factually incorrect. We introduce HICD, a novel method designed to induce hallucinations for contrastive decoding to mitigate hallucinations. Unlike existing contrastive decoding methods, HICD selects attention heads crucial to the model's prediction as inducing heads, then induces hallucinations by dispersing attention of these inducing heads and compares the hallucinated outputs with the original outputs to obtain the final result. Our approach significantly improves performance on tasks requiring contextual faithfulness, such as context completion, reading comprehension, and question answering. It also improves factuality in tasks requiring accurate knowledge recall. We demonstrate that our inducing heads selection and attention dispersion method leads to more "contrast-effective" hallucinations for contrastive decoding, outperforming other hallucination-inducing methods. Our findings provide a promising strategy for reducing hallucinations by inducing hallucinations in a controlled manner, enhancing the performance of LLMs in a wide range of tasks.
+]]></content:encoded>
+<pubDate>Wed, 21 May 2025 00:00:00 -0400</pubDate>
+<pubDate>Wed, 21 May 2025 00:00:00 -0400</pubDate>
+</item>
+
+<item>
 <title>AI Agents vs. Agentic AI: A Conceptual Taxonomy, Applications and Challenges</title>
 <link>https://arxiv.org/abs/2505.10468</link>
 <guid>https://arxiv.org/abs/2505.10468</guid>
@@ -14,11 +30,10 @@
 Summary:
 AI Agents and Agentic AI represent two distinct design philosophies in artificial intelligence systems. AI Agents are modular systems driven by large language and image models for task-specific automation, while Agentic AI systems focus on multi-agent collaboration, dynamic task decomposition, persistent memory, and orchestrated autonomy. The study provides a detailed comparison of the architectural evolution, operational mechanisms, interaction styles, and autonomy levels between the two paradigms. It also discusses application domains such as customer support, scheduling, and data summarization for AI Agents, and research automation, robotic coordination, and medical decision support for Agentic AI. The challenges faced by each paradigm, such as hallucination and coordination failure, are addressed with proposed solutions like ReAct loops and causal modeling. This work aims to guide the development of robust, scalable, and explainable AI-driven systems in both AI Agent and Agentic AI paradigms. 
 
-<br><br>Summary: <div>
+<br /><br />Summary: <div>
 arXiv:2505.10468v3 Announce Type: replace 
 Abstract: This study critically distinguishes between AI Agents and Agentic AI, offering a structured conceptual taxonomy, application mapping, and challenge analysis to clarify their divergent design philosophies and capabilities. We begin by outlining the search strategy and foundational definitions, characterizing AI Agents as modular systems driven by Large Language Models (LLMs) and Large Image Models (LIMs) for narrow, task-specific automation. Generative AI is positioned as a precursor, with AI Agents advancing through tool integration, prompt engineering, and reasoning enhancements. In contrast, Agentic AI systems represent a paradigmatic shift marked by multi-agent collaboration, dynamic task decomposition, persistent memory, and orchestrated autonomy. Through a sequential evaluation of architectural evolution, operational mechanisms, interaction styles, and autonomy levels, we present a comparative analysis across both paradigms. Application domains such as customer support, scheduling, and data summarization are contrasted with Agentic AI deployments in research automation, robotic coordination, and medical decision support. We further examine unique challenges in each paradigm including hallucination, brittleness, emergent behavior, and coordination failure and propose targeted solutions such as ReAct loops, RAG, orchestration layers, and causal modeling. This work aims to provide a definitive roadmap for developing robust, scalable, and explainable AI agent and Agentic AI-driven systems. >AI Agents, Agent-driven, Vision-Language-Models, Agentic AI Decision Support System, Agentic-AI Applications
 ]]></content:encoded>
-<pubDate>Wed, 21 May 2025 00:00:00 -0400</pubDate>
 <pubDate>Wed, 21 May 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -26,13 +41,12 @@ Abstract: This study critically distinguishes between AI Agents and Agentic AI, 
 <link>https://arxiv.org/abs/2505.10991</link>
 <guid>https://arxiv.org/abs/2505.10991</guid>
 <content:encoded><![CDATA[
-<div> XAI, abductive explanations, inflated explanations, most general explanation, AI decision <br>
-Summary: <br>
+<div> XAI, abductive explanations, inflated explanations, most general explanation, AI decision <br />
+Summary: <br />
 Explainable Artificial Intelligence (XAI) is essential for building trust in AI systems by providing insights into why decisions are made. Formal approaches to XAI use abductive explanations to clarify the reasoning behind AI decisions. In the case of numeric inputs, inflated abductive explanations offer more general explanations by providing intervals for each feature. This paper introduces the concept of finding the most general abductive explanation for an AI decision, covering a wide range of input space while remaining a formal explanation of the model's behavior. By selecting the most general explanation, the aim is to provide a single, broad explanation that is likely to be perceived as sensible by humans. This approach ensures transparency and trustworthiness in AI decision-making processes. (The paper has been accepted at IJCAI2025 conference.) <div>
 arXiv:2505.10991v3 Announce Type: replace 
 Abstract: Explainable Artificial Intelligence (XAI) is critical for attaining trust in the operation of AI systems. A key question of an AI system is ``why was this decision made this way''. Formal approaches to XAI use a formal model of the AI system to identify abductive explanations. While abductive explanations may be applicable to a large number of inputs sharing the same concrete values, more general explanations may be preferred for numeric inputs. So-called inflated abductive explanations give intervals for each feature ensuring that any input whose values fall withing these intervals is still guaranteed to make the same prediction. Inflated explanations cover a larger portion of the input space, and hence are deemed more general explanations. But there can be many (inflated) abductive explanations for an instance. Which is the best? In this paper, we show how to find a most general abductive explanation for an AI decision. This explanation covers as much of the input space as possible, while still being a correct formal explanation of the model's behaviour. Given that we only want to give a human one explanation for a decision, the most general explanation gives us the explanation with the broadest applicability, and hence the one most likely to seem sensible. (The paper has been accepted at IJCAI2025 conference.)
 ]]></content:encoded>
-<pubDate>Wed, 21 May 2025 00:00:00 -0400</pubDate>
 <pubDate>Wed, 21 May 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -48,7 +62,6 @@ arXiv:2505.10643v2 Announce Type: replace-cross
 Abstract: This study investigated potential scoring biases and disparities toward English Language Learners (ELLs) when using automatic scoring systems for middle school students' written responses to science assessments. We specifically focus on examining how unbalanced training data with ELLs contributes to scoring bias and disparities. We fine-tuned BERT with four datasets: responses from (1) ELLs, (2) non-ELLs, (3) a mixed dataset reflecting the real-world proportion of ELLs and non-ELLs (unbalanced), and (4) a balanced mixed dataset with equal representation of both groups. The study analyzed 21 assessment items: 10 items with about 30,000 ELL responses, five items with about 1,000 ELL responses, and six items with about 200 ELL responses. Scoring accuracy (Acc) was calculated and compared to identify bias using Friedman tests. We measured the Mean Score Gaps (MSGs) between ELLs and non-ELLs and then calculated the differences in MSGs generated through both the human and AI models to identify the scoring disparities. We found that no AI bias and distorted disparities between ELLs and non-ELLs were found when the training dataset was large enough (ELL = 30,000 and ELL = 1,000), but concerns could exist if the sample size is limited (ELL = 200).
 ]]></content:encoded>
 <pubDate>Wed, 21 May 2025 00:00:00 -0400</pubDate>
-<pubDate>Wed, 21 May 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
 <title>Who You Are Matters: Bridging Topics and Social Roles via LLM-Enhanced Logical Recommendation</title>
@@ -57,14 +70,13 @@ Abstract: This study investigated potential scoring biases and disparities towar
 <content:encoded><![CDATA[
 <div> Keywords: Recommender systems, user roles, logical modeling, Large Language Model, integration framework
 
-Summary:<br>
+Summary:<br />
 Recommender systems typically focus on learning item topics and user preferences but often overlook user characteristics and social roles. This study introduces the tasks of user role identification and behavioral logic modeling to explicitly model user roles and understand the relationships between item topics and user social roles. The proposed TagCF integrates Large Language Models with recommendation systems to extract tag-based virtual logic graphs and improve recommendation performance. Experimental results demonstrate the effectiveness of TagCF in both online and offline settings, showing that user role modeling may be more beneficial than item topic modeling. The extracted logic graphs are shown to be general and transferable knowledge that can enhance a range of recommendation tasks. This research highlights the importance of considering user characteristics and social roles in recommender system design. 
 
-<br><br>Summary: <div>
+<br /><br />Summary: <div>
 arXiv:2505.10940v2 Announce Type: replace-cross 
 Abstract: Recommender systems filter contents/items valuable to users by inferring preferences from user features and historical behaviors. Mainstream approaches follow the learning-to-rank paradigm, which focus on discovering and modeling item topics (e.g., categories), and capturing user preferences on these topics based on historical interactions. However, this paradigm often neglects the modeling of user characteristics and their social roles, which are logical confounders influencing the correlated interest and user preference transition. To bridge this gap, we introduce the user role identification task and the behavioral logic modeling task that aim to explicitly model user roles and learn the logical relations between item topics and user social roles. We show that it is possible to explicitly solve these tasks through an efficient integration framework of Large Language Model (LLM) and recommendation systems, for which we propose TagCF. On the one hand, TagCF exploits the (Multi-modal) LLM's world knowledge and logic inference ability to extract realistic tag-based virtual logic graphs that reveal dynamic and expressive knowledge of users, refining our understanding of user behaviors. On the other hand, TagCF presents empirically effective integration modules that take advantage of the extracted tag-logic information, augmenting the recommendation performance. We conduct both online experiments and offline experiments with industrial and public datasets as verification of TagCF's effectiveness, and we empirically show that the user role modeling strategy is potentially a better choice than the modeling of item topics. Additionally, we provide evidence that the extracted logic graphs are empirically a general and transferable knowledge that can benefit a wide range of recommendation tasks.
 ]]></content:encoded>
-<pubDate>Wed, 21 May 2025 00:00:00 -0400</pubDate>
 <pubDate>Wed, 21 May 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -72,17 +84,16 @@ Abstract: Recommender systems filter contents/items valuable to users by inferri
 <link>https://arxiv.org/abs/2505.10973</link>
 <guid>https://arxiv.org/abs/2505.10973</guid>
 <content:encoded><![CDATA[
-<div> framework, attention-based, generalist policy, quadruped robots, locomotion<br>
-Summary:<br>
-- The paper introduces GRoQ-Loco, an attention-based framework for generalist policy learning on multiple quadruped robots and terrains.<br>
-- The framework learns from expert demonstrations of both non-periodic gaits (stair traversal) and periodic gaits (flat terrain traversal) without needing robot-specific encodings.<br>
-- The proposed policy is deployable on Intel i7 nuc with low-latency control outputs and does not require test-time optimization.<br>
-- Strong zero-shot transfer is demonstrated across diverse robots and terrains, including successful deployment on the Unitree Go1 robot without fine-tuning.<br>
-- Preliminary experiments on the Stoch 5 robot show walking on flat and outdoor terrains, showcasing robust generalist locomotion capabilities. <br> <div>
+<div> framework, attention-based, generalist policy, quadruped robots, locomotion<br />
+Summary:<br />
+- The paper introduces GRoQ-Loco, an attention-based framework for generalist policy learning on multiple quadruped robots and terrains.<br />
+- The framework learns from expert demonstrations of both non-periodic gaits (stair traversal) and periodic gaits (flat terrain traversal) without needing robot-specific encodings.<br />
+- The proposed policy is deployable on Intel i7 nuc with low-latency control outputs and does not require test-time optimization.<br />
+- Strong zero-shot transfer is demonstrated across diverse robots and terrains, including successful deployment on the Unitree Go1 robot without fine-tuning.<br />
+- Preliminary experiments on the Stoch 5 robot show walking on flat and outdoor terrains, showcasing robust generalist locomotion capabilities. <br /> <div>
 arXiv:2505.10973v2 Announce Type: replace-cross 
 Abstract: Recent advancements in large-scale offline training have demonstrated the potential of generalist policy learning for complex robotic tasks. However, applying these principles to legged locomotion remains a challenge due to continuous dynamics and the need for real-time adaptation across diverse terrains and robot morphologies. In this work, we propose GRoQ-Loco, a scalable, attention-based framework that learns a single generalist locomotion policy across multiple quadruped robots and terrains, relying solely on offline datasets. Our approach leverages expert demonstrations from two distinct locomotion behaviors - stair traversal (non-periodic gaits) and flat terrain traversal (periodic gaits) - collected across multiple quadruped robots, to train a generalist model that enables behavior fusion for both behaviors. Crucially, our framework operates directly on proprioceptive data from all robots without incorporating any robot-specific encodings. The policy is directly deployable on an Intel i7 nuc, producing low-latency control outputs without any test-time optimization. Our extensive experiments demonstrate strong zero-shot transfer across highly diverse quadruped robots and terrains, including hardware deployment on the Unitree Go1, a commercially available 12kg robot. Notably, we evaluate challenging cross-robot training setups where different locomotion skills are unevenly distributed across robots, yet observe successful transfer of both flat walking and stair traversal behaviors to all robots at test time. We also show preliminary walking on Stoch 5, a 70kg quadruped, on flat and outdoor terrains without requiring any fine tuning. These results highlight the potential for robust generalist locomotion across diverse robots and terrains.
 ]]></content:encoded>
-<pubDate>Wed, 21 May 2025 00:00:00 -0400</pubDate>
 <pubDate>Wed, 21 May 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -97,23 +108,20 @@ arXiv:2505.11192v3 Announce Type: replace-cross
 Abstract: False negatives pose a critical challenge in vision-language pretraining (VLP) due to the many-to-many correspondence between images and texts in large-scale datasets. These false negatives introduce conflicting supervision signals that degrade the learned embedding space and diminish the effectiveness of hard negative sampling. In this paper, we propose FALCON (False-negative Aware Learning of COntrastive Negatives), a learning-based mini-batch construction strategy that adaptively balances the trade-off between hard and false negatives during VLP. Rather than relying on fixed heuristics, FALCON employs a negative mining scheduler that dynamically selects negative samples of appropriate hardness for each anchor instance during mini-batch construction, guided by a proxy for cross-modal alignment improvement. Experimental results demonstrate that FALCON significantly improves performance across two widely adopted VLP frameworks (ALBEF, BLIP-2) and a broad range of downstream tasks and evaluation settings, underscoring its effectiveness and robustness in mitigating the impact of false negatives.
 ]]></content:encoded>
 <pubDate>Wed, 21 May 2025 00:00:00 -0400</pubDate>
-<pubDate>Wed, 21 May 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
 <title>TCC-Bench: Benchmarking the Traditional Chinese Culture Understanding Capabilities of MLLMs</title>
 <link>https://arxiv.org/abs/2505.11275</link>
 <guid>https://arxiv.org/abs/2505.11275</guid>
 <content:encoded><![CDATA[
-<div> benchmark, MLLMs, Traditional Chinese Culture, Visual Question Answering, cultural understanding <br>
-Summary:<br>
-The article introduces the Traditional Chinese Culture understanding Benchmark (TCC-Bench), a bilingual Visual Question Answering (VQA) benchmark aimed at evaluating the understanding of traditional Chinese culture by Multimodal Large Language Models (MLLMs). TCC-Bench includes culturally rich and visually diverse data, incorporating images from various cultural contexts. A semi-automated pipeline involving GPT-4o and human curation is used to generate and ensure data quality. The benchmark prevents language bias by not directly revealing cultural concepts in question texts. Experimental evaluations reveal that current MLLMs struggle with reasoning about culturally grounded visual content, indicating the need for further research on culturally inclusive and context-aware multimodal systems. The code and data for TCC-Bench are available at the provided link. <br> <div>
+<div> benchmark, MLLMs, Traditional Chinese Culture, Visual Question Answering, cultural understanding <br />
+Summary:<br />
+The article introduces the Traditional Chinese Culture understanding Benchmark (TCC-Bench), a bilingual Visual Question Answering (VQA) benchmark aimed at evaluating the understanding of traditional Chinese culture by Multimodal Large Language Models (MLLMs). TCC-Bench includes culturally rich and visually diverse data, incorporating images from various cultural contexts. A semi-automated pipeline involving GPT-4o and human curation is used to generate and ensure data quality. The benchmark prevents language bias by not directly revealing cultural concepts in question texts. Experimental evaluations reveal that current MLLMs struggle with reasoning about culturally grounded visual content, indicating the need for further research on culturally inclusive and context-aware multimodal systems. The code and data for TCC-Bench are available at the provided link. <br /> <div>
 arXiv:2505.11275v3 Announce Type: replace-cross 
 Abstract: Recent progress in Multimodal Large Language Models (MLLMs) have significantly enhanced the ability of artificial intelligence systems to understand and generate multimodal content. However, these models often exhibit limited effectiveness when applied to non-Western cultural contexts, which raises concerns about their wider applicability. To address this limitation, we propose the Traditional Chinese Culture understanding Benchmark (TCC-Bench), a bilingual (i.e., Chinese and English) Visual Question Answering (VQA) benchmark specifically designed for assessing the understanding of traditional Chinese culture by MLLMs. TCC-Bench comprises culturally rich and visually diverse data, incorporating images from museum artifacts, everyday life scenes, comics, and other culturally significant contexts. We adopt a semi-automated pipeline that utilizes GPT-4o in text-only mode to generate candidate questions, followed by human curation to ensure data quality and avoid potential data leakage. The benchmark also avoids language bias by preventing direct disclosure of cultural concepts within question texts. Experimental evaluations across a wide range of MLLMs demonstrate that current models still face significant challenges when reasoning about culturally grounded visual content. The results highlight the need for further research in developing culturally inclusive and context-aware multimodal systems. The code and data can be found at: https://tcc-bench.github.io/.
 ]]></content:encoded>
 <pubDate>Wed, 21 May 2025 00:00:00 -0400</pubDate>
-<pubDate>Wed, 21 May 2025 00:00:00 -0400</pubDate>
 </item>
-
 <item>
 <title>AgentSGEN: Multi-Agent LLM in the Loop for Semantic Collaboration and GENeration of Synthetic Data</title>
 <link>https://arxiv.org/abs/2505.13466</link>
@@ -10626,76 +10634,6 @@ Abstract: Exemplar-Free Class-Incremental Learning (EFCIL) aims to sequentially 
 <content:encoded><![CDATA[
 arXiv:2503.09427v2 Announce Type: replace-cross 
 Abstract: Single-cell RNA sequencing (scRNA-seq) offers detailed insights into cellular heterogeneity. Recent advancements leverage single-cell large language models (scLLMs) for effective representation learning. These models focus exclusively on transcriptomic data, neglecting complementary biological knowledge from textual descriptions. To overcome this limitation, we propose scMMGPT, a novel multimodal framework designed for language-enhanced representation learning in single-cell transcriptomics. Unlike existing methods, scMMGPT employs robust cell representation extraction, preserving quantitative gene expression data, and introduces an innovative two-stage pre-training strategy combining discriminative precision with generative flexibility. Extensive experiments demonstrate that scMMGPT significantly outperforms unimodal and multimodal baselines across key downstream tasks, including cell annotation and clustering, and exhibits superior generalization in out-of-distribution scenarios.
-]]></content:encoded>
-<pubDate>Tue, 20 May 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Block Diffusion: Interpolating Between Autoregressive and Diffusion Language Models</title>
-<link>https://arxiv.org/abs/2503.09573</link>
-<guid>https://arxiv.org/abs/2503.09573</guid>
-<content:encoded><![CDATA[
-arXiv:2503.09573v3 Announce Type: replace-cross 
-Abstract: Diffusion language models offer unique benefits over autoregressive models due to their potential for parallelized generation and controllability, yet they lag in likelihood modeling and are limited to fixed-length generation. In this work, we introduce a class of block diffusion language models that interpolate between discrete denoising diffusion and autoregressive models. Block diffusion overcomes key limitations of both approaches by supporting flexible-length generation and improving inference efficiency with KV caching and parallel token sampling. We propose a recipe for building effective block diffusion models that includes an efficient training algorithm, estimators of gradient variance, and data-driven noise schedules to minimize the variance. Block diffusion sets a new state-of-the-art performance among diffusion models on language modeling benchmarks and enables generation of arbitrary-length sequences. We provide the code, along with the model weights and blog post on the project page: https://m-arriola.com/bd3lms
-]]></content:encoded>
-<pubDate>Tue, 20 May 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Revisiting Backdoor Attacks on Time Series Classification in the Frequency Domain</title>
-<link>https://arxiv.org/abs/2503.09712</link>
-<guid>https://arxiv.org/abs/2503.09712</guid>
-<content:encoded><![CDATA[
-arXiv:2503.09712v3 Announce Type: replace-cross 
-Abstract: Time series classification (TSC) is a cornerstone of modern web applications, powering tasks such as financial data analysis, network traffic monitoring, and user behavior analysis. In recent years, deep neural networks (DNNs) have greatly enhanced the performance of TSC models in these critical domains. However, DNNs are vulnerable to backdoor attacks, where attackers can covertly implant triggers into models to induce malicious outcomes. Existing backdoor attacks targeting DNN-based TSC models remain elementary. In particular, early methods borrow trigger designs from computer vision, which are ineffective for time series data. More recent approaches utilize generative models for trigger generation, but at the cost of significant computational complexity. In this work, we analyze the limitations of existing attacks and introduce an enhanced method, FreqBack. Drawing inspiration from the fact that DNN models inherently capture frequency domain features in time series data, we identify that improper perturbations in the frequency domain are the root cause of ineffective attacks. To address this, we propose to generate triggers both effectively and efficiently, guided by frequency analysis. FreqBack exhibits substantial performance across five models and eight datasets, achieving an impressive attack success rate of over 90%, while maintaining less than a 3% drop in model accuracy on clean data.
-]]></content:encoded>
-<pubDate>Tue, 20 May 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>dFLMoE: Decentralized Federated Learning via Mixture of Experts for Medical Data Analysis</title>
-<link>https://arxiv.org/abs/2503.10412</link>
-<guid>https://arxiv.org/abs/2503.10412</guid>
-<content:encoded><![CDATA[
-arXiv:2503.10412v4 Announce Type: replace-cross 
-Abstract: Federated learning has wide applications in the medical field. It enables knowledge sharing among different healthcare institutes while protecting patients' privacy. However, existing federated learning systems are typically centralized, requiring clients to upload client-specific knowledge to a central server for aggregation. This centralized approach would integrate the knowledge from each client into a centralized server, and the knowledge would be already undermined during the centralized integration before it reaches back to each client. Besides, the centralized approach also creates a dependency on the central server, which may affect training stability if the server malfunctions or connections are unstable. To address these issues, we propose a decentralized federated learning framework named dFLMoE. In our framework, clients directly exchange lightweight head models with each other. After exchanging, each client treats both local and received head models as individual experts, and utilizes a client-specific Mixture of Experts (MoE) approach to make collective decisions. This design not only reduces the knowledge damage with client-specific aggregations but also removes the dependency on the central server to enhance the robustness of the framework. We validate our framework on multiple medical tasks, demonstrating that our method evidently outperforms state-of-the-art approaches under both model homogeneity and heterogeneity settings.
-]]></content:encoded>
-<pubDate>Tue, 20 May 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>UC-MOA: Utility-Conditioned Multi-Objective Alignment for Distributional Pareto-Optimality</title>
-<link>https://arxiv.org/abs/2503.10669</link>
-<guid>https://arxiv.org/abs/2503.10669</guid>
-<content:encoded><![CDATA[
-arXiv:2503.10669v2 Announce Type: replace-cross 
-Abstract: Reinforcement Learning from Human Feedback (RLHF) has become a cornerstone for aligning large language models (LLMs) with human values. However, existing approaches struggle to capture the multi-dimensional, distributional nuances of human preferences. Methods such as RiC that directly inject raw reward values into prompts face significant numerical sensitivity issues--for instance, LLMs may fail to distinguish between 9.11 and 9.8--while alternatives like MORLHF, Rewarded Soups, and MODPO incur high computational costs by training multiple models. In this work, we introduce Utility-Conditioned Multi-Objective Alignment (UC-MOA), a novel framework that overcomes these limitations. Our approach leverages a diverse set of strictly increasing, non-linear utility functions to transform user-specified preferences into symbolic tokens, which are then used to condition a single LLM. This design not only mitigates numerical reasoning challenges but also substantially reduces training overhead, yielding models that achieve superior Pareto fronts and robust alignment across complex reward dimensions.
-]]></content:encoded>
-<pubDate>Tue, 20 May 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>HICD: Hallucination-Inducing via Attention Dispersion for Contrastive Decoding to Mitigate Hallucinations in Large Language Models</title>
-<link>https://arxiv.org/abs/2503.12908</link>
-<guid>https://arxiv.org/abs/2503.12908</guid>
-<content:encoded><![CDATA[
-arXiv:2503.12908v2 Announce Type: replace-cross 
-Abstract: Large Language Models (LLMs) often generate hallucinations, producing outputs that are contextually inaccurate or factually incorrect. We introduce HICD, a novel method designed to induce hallucinations for contrastive decoding to mitigate hallucinations. Unlike existing contrastive decoding methods, HICD selects attention heads crucial to the model's prediction as inducing heads, then induces hallucinations by dispersing attention of these inducing heads and compares the hallucinated outputs with the original outputs to obtain the final result. Our approach significantly improves performance on tasks requiring contextual faithfulness, such as context completion, reading comprehension, and question answering. It also improves factuality in tasks requiring accurate knowledge recall. We demonstrate that our inducing heads selection and attention dispersion method leads to more "contrast-effective" hallucinations for contrastive decoding, outperforming other hallucination-inducing methods. Our findings provide a promising strategy for reducing hallucinations by inducing hallucinations in a controlled manner, enhancing the performance of LLMs in a wide range of tasks.
-]]></content:encoded>
-<pubDate>Tue, 20 May 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Logic-in-Frames: Dynamic Keyframe Search via Visual Semantic-Logical Verification for Long Video Understanding</title>
-<link>https://arxiv.org/abs/2503.13139</link>
-<guid>https://arxiv.org/abs/2503.13139</guid>
-<content:encoded><![CDATA[
-arXiv:2503.13139v2 Announce Type: replace-cross 
-Abstract: Understanding long video content is a complex endeavor that often relies on densely sampled frame captions or end-to-end feature selectors, yet these techniques commonly overlook the logical relationships between textual queries and visual elements. In practice, computational constraints necessitate coarse frame subsampling, a challenge analogous to "finding a needle in a haystack." To address this issue, we introduce a semantics-driven search framework that reformulates keyframe selection under the paradigm of Visual Semantic-Logical Search. Specifically, we systematically define four fundamental logical dependencies: 1) spatial co-occurrence, 2) temporal proximity, 3) attribute dependency, and 4) causal order. These relations dynamically update frame sampling distributions through an iterative refinement process, enabling context-aware identification of semantically critical frames tailored to specific query requirements. Our method establishes new SOTA performance on the manually annotated benchmark in key-frame selection metrics. Furthermore, when applied to downstream video question-answering tasks, the proposed approach demonstrates the best performance gains over existing methods on LongVideoBench and Video-MME, validating its effectiveness in bridging the logical gap between textual queries and visual-temporal reasoning. The code will be publicly available.
-]]></content:encoded>
-<pubDate>Tue, 20 May 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Unifying Text Semantics and Graph Structures for Temporal Text-attributed Graphs with Large Language Models</title>
-<link>https://arxiv.org/abs/2503.14411</link>
-<guid>https://arxiv.org/abs/2503.14411</guid>
-<content:encoded><![CDATA[
-arXiv:2503.14411v2 Announce Type: replace-cross 
-Abstract: Temporal graph neural networks (TGNNs) have shown remarkable performance in temporal graph modeling. However, real-world temporal graphs often possess rich textual information, giving rise to temporal text-attributed graphs (TTAGs). Such combination of dynamic text semantics and evolving graph structures introduces heightened complexity. Existing TGNNs embed texts statically and rely heavily on encoding mechanisms that biasedly prioritize structural information, overlooking the temporal evolution of text semantics and the essential interplay between semantics and structures for synergistic reinforcement. To tackle these issues, we present \textbf{CROSS}, a flexible framework that seamlessly extends existing TGNNs for TTAG modeling. CROSS is designed by decomposing the TTAG modeling process into two phases: (i) temporal semantics extraction; and (ii) semantic-structural information unification. The key idea is to advance the large language models (LLMs) to dynamically extract the temporal semantics in text space and then generate cohesive representations unifying both semantics and structures. Specifically, we propose a Temporal Semantics Extractor in the CROSS framework, which empowers LLMs to offer the temporal semantic understanding of node's evolving contexts of textual neighborhoods, facilitating semantic dynamics. Subsequently, we introduce the Semantic-structural Co-encoder, which collaborates with the above Extractor for synthesizing illuminating representations by jointly considering both semantic and structural information while encouraging their mutual reinforcement. Extensive experiments show that CROSS achieves state-of-the-art results on four public datasets and one industrial dataset, with 24.7% absolute MRR gain on average in temporal link prediction and 3.7% AUC gain in node classification of industrial application.
 ]]></content:encoded>
 <pubDate>Tue, 20 May 2025 00:00:00 -0400</pubDate>
 </item>

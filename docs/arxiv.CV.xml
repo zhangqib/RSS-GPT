@@ -4,6 +4,7 @@
 <title>cs.CV updates on arXiv.org</title>
 <link>http://rss.arxiv.org/rss/cs.CV</link>
 
+
 <item>
 <title>A portable diagnosis model for Keratoconus using a smartphone</title>
 <link>https://arxiv.org/abs/2505.08616</link>
@@ -18,14 +19,12 @@ Summary:
 - The first stage involves estimating the dimensions of the Placido disc to identify whether KC is present, using k-means clustering to analyze statistical characteristics of non-KC and KC-affected groups.
 - The second stage creates a distance matrix for precise localization of KC on the cornea, achieving a classification accuracy of 96.94% using a logistic regression model. This method is expected to improve the detection of KC and facilitate timely treatment. 
 
-<br><br>Summary: <div>
+<br /><br />Summary: <div>
 arXiv:2505.08616v3 Announce Type: replace-cross 
 Abstract: Keratoconus (KC) is a corneal disorder that results in blurry and distorted vision. Traditional diagnostic tools, while effective, are often bulky, costly, and require professional operation. In this paper, we present a portable and innovative methodology for diagnosing. Our proposed approach first captures the image reflected on the eye's cornea when a smartphone screen-generated Placido disc sheds its light on an eye, then utilizes a two-stage diagnosis for identifying the KC cornea and pinpointing the location of the KC on the cornea. The first stage estimates the height and width of the Placido disc extracted from the captured image to identify whether it has KC. In this KC identification, k-means clustering is implemented to discern statistical characteristics, such as height and width values of extracted Placido discs, from non-KC (control) and KC-affected groups. The second stage involves the creation of a distance matrix, providing a precise localization of KC on the cornea, which is critical for efficient treatment planning. The analysis of these distance matrices, paired with a logistic regression model and robust statistical analysis, reveals a clear distinction between control and KC groups. The logistic regression model, which classifies small areas on the cornea as either control or KC-affected based on the corresponding inter-disc distances in the distance matrix, reported a classification accuracy of 96.94%, which indicates that we can effectively pinpoint the protrusion caused by KC. This comprehensive, smartphone-based method is expected to detect KC and streamline timely treatment.
 ]]></content:encoded>
 <pubDate>Wed, 21 May 2025 00:00:00 -0400</pubDate>
-<pubDate>Wed, 21 May 2025 00:00:00 -0400</pubDate>
 </item>
-
 <item>
 <title>An Edge AI Solution for Space Object Detection</title>
 <link>https://arxiv.org/abs/2505.13468</link>
@@ -11276,21 +11275,6 @@ Summary:
 JSover is a new one-step framework for multi-material decomposition (MMD) in CT imaging that improves the accuracy and efficiency of traditional methods. Unlike previous two-step approaches, JSover simultaneously reconstructs tissue compositions and estimates the energy spectrum directly from single-energy CT projections. By incorporating physics-informed spectral priors, it creates a virtual spectral CT system from SE acquisitions, reducing beam hardening artifacts. Additionally, JSover leverages implicit neural representation (INR) to enhance material map estimation using unsupervised deep learning. Experimental results demonstrate that JSover surpasses existing SEMMD techniques in accuracy and computational performance on both simulated and real CT datasets. This advancement in MMD technology holds potential for a wide range of clinical applications by enabling more reliable quantitative tissue composition reconstructions from single-energy CT scans.<br /><br />Summary: <div>
 arXiv:2505.08123v1 Announce Type: new 
 Abstract: Multi-material decomposition (MMD) enables quantitative reconstruction of tissue compositions in the human body, supporting a wide range of clinical applications. However, traditional MMD typically requires spectral CT scanners and pre-measured X-ray energy spectra, significantly limiting clinical applicability. To this end, various methods have been developed to perform MMD using conventional (i.e., single-energy, SE) CT systems, commonly referred to as SEMMD. Despite promising progress, most SEMMD methods follow a two-step image decomposition pipeline, which first reconstructs monochromatic CT images using algorithms such as FBP, and then performs decomposition on these images. The initial reconstruction step, however, neglects the energy-dependent attenuation of human tissues, introducing severe nonlinear beam hardening artifacts and noise into the subsequent decomposition. This paper proposes JSover, a fundamentally reformulated one-step SEMMD framework that jointly reconstructs multi-material compositions and estimates the energy spectrum directly from SECT projections. By explicitly incorporating physics-informed spectral priors into the SEMMD process, JSover accurately simulates a virtual spectral CT system from SE acquisitions, thereby improving the reliability and accuracy of decomposition. Furthermore, we introduce implicit neural representation (INR) as an unsupervised deep learning solver for representing the underlying material maps. The inductive bias of INR toward continuous image patterns constrains the solution space and further enhances estimation quality. Extensive experiments on both simulated and real CT datasets show that JSover outperforms state-of-the-art SEMMD methods in accuracy and computational efficiency.
-]]></content:encoded>
-<pubDate>Wed, 14 May 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>SLAG: Scalable Language-Augmented Gaussian Splatting</title>
-<link>https://arxiv.org/abs/2505.08124</link>
-<guid>https://arxiv.org/abs/2505.08124</guid>
-<content:encoded><![CDATA[
-<div> framework, language-augmented, scene representations, Gaussian splatting, scalability
-Summary:
-SLAG is a multi-GPU framework that accelerates the encoding of language-augmented scene representations for robotics applications. By integrating 2D visual-language model features into 3D scenes using SAM and CLIP, SLAG eliminates the need for loss functions and enables highly parallelized scene encoding. The method achieves an 18 times speedup in embedding computation on a 16-GPU setup compared to OpenGaussian, while maintaining embedding quality on datasets like ScanNet and LERF. Additionally, SLAG introduces a vector database for efficient embedding storage and retrieval, making it suitable for time-sensitive and data-intensive scenarios. The framework holds promise for use in search-and-rescue operations, smart cities, mining, and other large-scale robotics applications. Visit the project website for more information: https://slag-project.github.io/. 
-
-<br /><br />Summary: <div>
-arXiv:2505.08124v1 Announce Type: new 
-Abstract: Language-augmented scene representations hold great promise for large-scale robotics applications such as search-and-rescue, smart cities, and mining. Many of these scenarios are time-sensitive, requiring rapid scene encoding while also being data-intensive, necessitating scalable solutions. Deploying these representations on robots with limited computational resources further adds to the challenge. To address this, we introduce SLAG, a multi-GPU framework for language-augmented Gaussian splatting that enhances the speed and scalability of embedding large scenes. Our method integrates 2D visual-language model features into 3D scenes using SAM and CLIP. Unlike prior approaches, SLAG eliminates the need for a loss function to compute per-Gaussian language embeddings. Instead, it derives embeddings from 3D Gaussian scene parameters via a normalized weighted average, enabling highly parallelized scene encoding. Additionally, we introduce a vector database for efficient embedding storage and retrieval. Our experiments show that SLAG achieves an 18 times speedup in embedding computation on a 16-GPU setup compared to OpenGaussian, while preserving embedding quality on the ScanNet and LERF datasets. For more details, visit our project website: https://slag-project.github.io/.
 ]]></content:encoded>
 <pubDate>Wed, 14 May 2025 00:00:00 -0400</pubDate>
 </item>

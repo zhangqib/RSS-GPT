@@ -4,18 +4,18 @@
 <title>cs.LG updates on arXiv.org</title>
 <link>http://rss.arxiv.org/rss/cs.LG</link>
 
+
 <item>
 <title>Dual-Balancing for Physics-Informed Neural Networks</title>
 <link>https://arxiv.org/abs/2505.11117</link>
 <guid>https://arxiv.org/abs/2505.11117</guid>
 <content:encoded><![CDATA[
-<div> PINNs, physics-informed neural networks, PDEs, dual-balanced PINN, imbalance mitigation<br>
-Summary:<br>
-Physics-informed neural networks (PINNs) have revolutionized the solving of partial differential equations (PDEs) but face accuracy and convergence challenges. The Dual-Balanced PINN (DB-PINN) proposed in this paper integrates inter-balancing and intra-balancing to address these issues. Inter-balancing mitigates gradient imbalances between PDE residual and condition-fitting losses, while intra-balancing allocates weights based on fitting difficulty. A robust weight update strategy prevents abrupt spikes. Extensive experiments show that DB-PINN outperforms popular weighting methods in both convergence speed and prediction accuracy. The code and supplementary material are available at https://github.com/chenhong-zhou/DualBalanced-PINNs.<br> <div>
+<div> PINNs, physics-informed neural networks, PDEs, dual-balanced PINN, imbalance mitigation<br />
+Summary:<br />
+Physics-informed neural networks (PINNs) have revolutionized the solving of partial differential equations (PDEs) but face accuracy and convergence challenges. The Dual-Balanced PINN (DB-PINN) proposed in this paper integrates inter-balancing and intra-balancing to address these issues. Inter-balancing mitigates gradient imbalances between PDE residual and condition-fitting losses, while intra-balancing allocates weights based on fitting difficulty. A robust weight update strategy prevents abrupt spikes. Extensive experiments show that DB-PINN outperforms popular weighting methods in both convergence speed and prediction accuracy. The code and supplementary material are available at https://github.com/chenhong-zhou/DualBalanced-PINNs.<br /> <div>
 arXiv:2505.11117v3 Announce Type: replace 
 Abstract: Physics-informed neural networks (PINNs) have emerged as a new learning paradigm for solving partial differential equations (PDEs) by enforcing the constraints of physical equations, boundary conditions (BCs), and initial conditions (ICs) into the loss function. Despite their successes, vanilla PINNs still suffer from poor accuracy and slow convergence due to the intractable multi-objective optimization issue. In this paper, we propose a novel Dual-Balanced PINN (DB-PINN), which dynamically adjusts loss weights by integrating inter-balancing and intra-balancing to alleviate two imbalance issues in PINNs. Inter-balancing aims to mitigate the gradient imbalance between PDE residual loss and condition-fitting losses by determining an aggregated weight that offsets their gradient distribution discrepancies. Intra-balancing acts on condition-fitting losses to tackle the imbalance in fitting difficulty across diverse conditions. By evaluating the fitting difficulty based on the loss records, intra-balancing can allocate the aggregated weight proportionally to each condition loss according to its fitting difficulty level. We further introduce a robust weight update strategy to prevent abrupt spikes and arithmetic overflow in instantaneous weight values caused by large loss variances, enabling smooth weight updating and stable training. Extensive experiments demonstrate that DB-PINN achieves significantly superior performance than those popular gradient-based weighting methods in terms of convergence speed and prediction accuracy. Our code and supplementary material are available at https://github.com/chenhong-zhou/DualBalanced-PINNs.
 ]]></content:encoded>
-<pubDate>Wed, 21 May 2025 00:00:00 -0400</pubDate>
 <pubDate>Wed, 21 May 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -31,7 +31,6 @@ arXiv:2401.05502v3 Announce Type: replace-cross
 Abstract: In this work, we study diversity-aware clustering problems where the data points are associated with multiple attributes resulting in intersecting groups. A clustering solution needs to ensure that the number of chosen cluster centers from each group should be within the range defined by a lower and upper bound threshold for each group, while simultaneously minimizing the clustering objective, which can be either $k$-median, $k$-means or $k$-supplier. We study the computational complexity of the proposed problems, offering insights into their NP-hardness, polynomial-time inapproximability, and fixed-parameter intractability. We present parameterized approximation algorithms with approximation ratios $1+ \frac{2}{e} + \epsilon \approx 1.736$, $1+\frac{8}{e} + \epsilon \approx 3.943$, and $5$ for diversity-aware $k$-median, diversity-aware $k$-means and diversity-aware $k$-supplier, respectively. Assuming Gap-ETH, the approximation ratios are tight for the diversity-aware $k$-median and diversity-aware $k$-means problems. Our results imply the same approximation factors for their respective fair variants with disjoint groups -- fair $k$-median, fair $k$-means, and fair $k$-supplier -- with lower bound requirements.
 ]]></content:encoded>
 <pubDate>Wed, 21 May 2025 00:00:00 -0400</pubDate>
-<pubDate>Wed, 21 May 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
 <title>VisDiff: SDF-Guided Polygon Generation for Visibility Reconstruction and Recognition</title>
@@ -40,20 +39,19 @@ Abstract: In this work, we study diversity-aware clustering problems where the d
 <content:encoded><![CDATA[
 <div> diffusion-based approach, visibility reconstruction, combinatorial structures, representation learning, signed distance function
 
-Summary:<br>
+Summary:<br />
 - The paper addresses the challenge of generating a polygon from a given visibility graph, focusing on structures without well-defined features and distance metrics.
 - The VisDiff approach is proposed, which utilizes a diffusion-based method to estimate the signed distance function (SDF) associated with the polygon before extracting vertex locations.
 - By learning the visibility relationship through the SDF, VisDiff outperforms existing methods, achieving a 26% improvement in F1-Score.
 - A carefully curated dataset is created to train VisDiff and benchmark its performance against standard and state-of-the-art approaches.
 - The novelty of incorporating the SDF in the generation process enhances the effectiveness of capturing the visibility relationship in combinatorial structures. 
 
-Summary:<br>
+Summary:<br />
 The paper introduces the VisDiff approach to tackle the visibility reconstruction problem for polygons, emphasizing structures lacking well-defined features and distance metrics. By leveraging a diffusion-based method to estimate the signed distance function (SDF) before extracting vertex locations, VisDiff surpasses existing techniques with a 26% enhancement in F1-Score. The use of a meticulously curated dataset for training enables thorough benchmarking against standard and state-of-the-art methods. The innovative incorporation of the SDF in the generation process significantly enhances the capacity to capture visibility relationships in complex combinatorial structures. <div>
 arXiv:2410.05530v3 Announce Type: replace-cross 
 Abstract: The ability to capture rich representations of combinatorial structures has enabled the application of machine learning to tasks such as analysis and generation of floorplans, terrains, images, and animations. Recent work has primarily focused on understanding structures with well-defined features, neighborhoods, or underlying distance metrics, while those lacking such characteristics remain largely unstudied. Examples of these combinatorial structures can be found in polygons, where a small change in the vertex locations causes a significant rearrangement of the combinatorial structure, expressed as a visibility or triangulation graphs. Current representation learning approaches fail to capture structures without well-defined features and distance metrics. In this paper, we study the open problem of Visibility Reconstruction: Given a visibility graph $G$, construct a polygon $P$ whose visibility graph is $G$.
   We introduce VisDiff, a novel diffusion-based approach to generate polygon $P$ from the input visibility graph $G$. The main novelty of our approach is that, rather than generating the polygon's vertex set directly, we first estimate the signed distance function (SDF) associated with the polygon. The SDF is then used to extract the vertex location representing the final polygon. We show that going through the SDF allows VisDiff to learn the visibility relationship much more effectively than generating vertex locations directly. In order to train VisDiff, we create a carefully curated dataset. We use this dataset to benchmark our method and achieve 26% improvement in F1-Score over standard methods as well as state of the art approaches.
 ]]></content:encoded>
-<pubDate>Wed, 21 May 2025 00:00:00 -0400</pubDate>
 <pubDate>Wed, 21 May 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -65,11 +63,10 @@ Abstract: The ability to capture rich representations of combinatorial structure
 
 Summary:
 
-The study explores the impact of distractors on latent action learning, particularly addressing challenges that arise when real-world videos contain action-correlated distractions. The research introduces LAOM, a modified version of LAPO that significantly enhances the quality of latent actions. By using the Distracting Control Suite (DCS) for empirical analysis, the study reveals that LAPO struggles in the presence of distractors, emphasizing the importance of supervision with ground-truth actions during training. Surprisingly, providing supervision with as little as 2.5% of the full dataset improves downstream performance by 4.2 times on average. These results challenge the traditional approach of solely focusing on learning Latent Action Models (LAM) before decoding from latent to ground-truth actions, highlighting the critical role of incorporating supervision in the training phase. <br><br>Summary: <div>
+The study explores the impact of distractors on latent action learning, particularly addressing challenges that arise when real-world videos contain action-correlated distractions. The research introduces LAOM, a modified version of LAPO that significantly enhances the quality of latent actions. By using the Distracting Control Suite (DCS) for empirical analysis, the study reveals that LAPO struggles in the presence of distractors, emphasizing the importance of supervision with ground-truth actions during training. Surprisingly, providing supervision with as little as 2.5% of the full dataset improves downstream performance by 4.2 times on average. These results challenge the traditional approach of solely focusing on learning Latent Action Models (LAM) before decoding from latent to ground-truth actions, highlighting the critical role of incorporating supervision in the training phase. <br /><br />Summary: <div>
 arXiv:2502.00379v4 Announce Type: replace-cross 
 Abstract: Recently, latent action learning, pioneered by Latent Action Policies (LAPO), have shown remarkable pre-training efficiency on observation-only data, offering potential for leveraging vast amounts of video available on the web for embodied AI. However, prior work has focused on distractor-free data, where changes between observations are primarily explained by ground-truth actions. Unfortunately, real-world videos contain action-correlated distractors that may hinder latent action learning. Using Distracting Control Suite (DCS) we empirically investigate the effect of distractors on latent action learning and demonstrate that LAPO struggle in such scenario. We propose LAOM, a simple LAPO modification that improves the quality of latent actions by 8x, as measured by linear probing. Importantly, we show that providing supervision with ground-truth actions, as few as 2.5% of the full dataset, during latent action learning improves downstream performance by 4.2x on average. Our findings suggest that integrating supervision during Latent Action Models (LAM) training is critical in the presence of distractors, challenging the conventional pipeline of first learning LAM and only then decoding from latent to ground-truth actions.
 ]]></content:encoded>
-<pubDate>Wed, 21 May 2025 00:00:00 -0400</pubDate>
 <pubDate>Wed, 21 May 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -82,11 +79,10 @@ Abstract: Recently, latent action learning, pioneered by Latent Action Policies 
 Summary: 
 AI coding assistants used for tasks like code generation now gather automatic context from various sources, making them vulnerable to attacks like Cross-Origin Context Poisoning (XOXO). This attack manipulates coding assistants into generating incorrect outputs by subtly poisoning input with semantically equivalent adversarial code modifications. Traditional program analysis techniques struggle to detect these manipulations, allowing attackers to shift blame to victim developers. A novel black-box attack algorithm, GCGS, systematically explores the transformation space using a Cayley Graph, achieving a 75.72% success rate across multiple tasks and models. Defenses like adversarial fine-tuning are ineffective against this attack, highlighting the need for new security measures in AI coding tools. 
 
-<br><br>Summary: <div>
+<br /><br />Summary: <div>
 arXiv:2503.14281v3 Announce Type: replace-cross 
 Abstract: AI coding assistants are widely used for tasks like code generation. These tools now require large and complex contexts, automatically sourced from various origins$\unicode{x2014}$across files, projects, and contributors$\unicode{x2014}$forming part of the prompt fed to underlying LLMs. This automatic context-gathering introduces new vulnerabilities, allowing attackers to subtly poison input to compromise the assistant's outputs, potentially generating vulnerable code or introducing critical errors. We propose a novel attack, Cross-Origin Context Poisoning (XOXO), that is challenging to detect as it relies on adversarial code modifications that are semantically equivalent. Traditional program analysis techniques struggle to identify these perturbations since the semantics of the code remains correct, making it appear legitimate. This allows attackers to manipulate coding assistants into producing incorrect outputs, while shifting the blame to the victim developer. We introduce a novel, task-agnostic, black-box attack algorithm GCGS that systematically searches the transformation space using a Cayley Graph, achieving a 75.72% attack success rate on average across five tasks and eleven models, including GPT 4.1 and Claude 3.5 Sonnet v2 used by popular AI coding assistants. Furthermore, defenses like adversarial fine-tuning are ineffective against our attack, underscoring the need for new security measures in LLM-powered coding tools.
 ]]></content:encoded>
-<pubDate>Wed, 21 May 2025 00:00:00 -0400</pubDate>
 <pubDate>Wed, 21 May 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -101,11 +97,10 @@ Summary:
 - The framework leverages expert demonstrations of stair traversal and flat terrain traversal behaviors to train a single generalist model without robot-specific encodings.
 - The policy can be deployed on an Intel i7 nuc with low-latency control outputs without test-time optimization.
 - Strong zero-shot transfer is demonstrated across diverse robots and terrains, including successful deployment on the Unitree Go1 robot.
-- Successful transfer of flat walking and stair traversal behaviors is observed in challenging cross-robot training setups, with promising preliminary results on the Stoch 5 robot on various terrains <br><br>Summary: <div>
+- Successful transfer of flat walking and stair traversal behaviors is observed in challenging cross-robot training setups, with promising preliminary results on the Stoch 5 robot on various terrains <br /><br />Summary: <div>
 arXiv:2505.10973v2 Announce Type: replace-cross 
 Abstract: Recent advancements in large-scale offline training have demonstrated the potential of generalist policy learning for complex robotic tasks. However, applying these principles to legged locomotion remains a challenge due to continuous dynamics and the need for real-time adaptation across diverse terrains and robot morphologies. In this work, we propose GRoQ-Loco, a scalable, attention-based framework that learns a single generalist locomotion policy across multiple quadruped robots and terrains, relying solely on offline datasets. Our approach leverages expert demonstrations from two distinct locomotion behaviors - stair traversal (non-periodic gaits) and flat terrain traversal (periodic gaits) - collected across multiple quadruped robots, to train a generalist model that enables behavior fusion for both behaviors. Crucially, our framework operates directly on proprioceptive data from all robots without incorporating any robot-specific encodings. The policy is directly deployable on an Intel i7 nuc, producing low-latency control outputs without any test-time optimization. Our extensive experiments demonstrate strong zero-shot transfer across highly diverse quadruped robots and terrains, including hardware deployment on the Unitree Go1, a commercially available 12kg robot. Notably, we evaluate challenging cross-robot training setups where different locomotion skills are unevenly distributed across robots, yet observe successful transfer of both flat walking and stair traversal behaviors to all robots at test time. We also show preliminary walking on Stoch 5, a 70kg quadruped, on flat and outdoor terrains without requiring any fine tuning. These results highlight the potential for robust generalist locomotion across diverse robots and terrains.
 ]]></content:encoded>
-<pubDate>Wed, 21 May 2025 00:00:00 -0400</pubDate>
 <pubDate>Wed, 21 May 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -120,14 +115,12 @@ Summary:
 - Inflated explanations are more general for numeric inputs.  
 - This paper presents a method to find the most general abductive explanation for AI decisions.  
 - The most general explanation covers a wide input space and is most likely to make sense to humans.  
-<br><br>Summary: <div>
+<br /><br />Summary: <div>
 arXiv:2505.10991v3 Announce Type: replace-cross 
 Abstract: Explainable Artificial Intelligence (XAI) is critical for attaining trust in the operation of AI systems. A key question of an AI system is ``why was this decision made this way''. Formal approaches to XAI use a formal model of the AI system to identify abductive explanations. While abductive explanations may be applicable to a large number of inputs sharing the same concrete values, more general explanations may be preferred for numeric inputs. So-called inflated abductive explanations give intervals for each feature ensuring that any input whose values fall withing these intervals is still guaranteed to make the same prediction. Inflated explanations cover a larger portion of the input space, and hence are deemed more general explanations. But there can be many (inflated) abductive explanations for an instance. Which is the best? In this paper, we show how to find a most general abductive explanation for an AI decision. This explanation covers as much of the input space as possible, while still being a correct formal explanation of the model's behaviour. Given that we only want to give a human one explanation for a decision, the most general explanation gives us the explanation with the broadest applicability, and hence the one most likely to seem sensible. (The paper has been accepted at IJCAI2025 conference.)
 ]]></content:encoded>
 <pubDate>Wed, 21 May 2025 00:00:00 -0400</pubDate>
-<pubDate>Wed, 21 May 2025 00:00:00 -0400</pubDate>
 </item>
-
 <item>
 <title>Tuning Learning Rates with the Cumulative-Learning Constant</title>
 <link>https://arxiv.org/abs/2505.13457</link>
@@ -10647,76 +10640,6 @@ Abstract: With the rapid advancement of Artificial Intelligence (AI), Large Lang
 <content:encoded><![CDATA[
 arXiv:2503.11441v2 Announce Type: replace 
 Abstract: Recent advancements in instruction tuning for large language models (LLMs) suggest that a small, high-quality dataset can significantly equip LLMs with instruction-following capabilities, outperforming large datasets often burdened by quality and redundancy issues. However, the challenge lies in automatically identifying valuable subsets from large datasets to boost both the effectiveness and efficiency of instruction tuning. In this paper, we first establish data selection criteria based on three distinct aspects of data value: diversity, difficulty, and dependability, and then propose the D3 method comprising two key steps of scoring and selection. Specifically, in the scoring step, we define the diversity function to measure sample distinctiveness and introduce the uncertainty-based prediction difficulty to evaluate sample difficulty by mitigating the interference of context-oriented generation diversity. Additionally, we integrate an external LLM for dependability assessment. In the selection step, we formulate the D3 weighted coreset objective, which jointly optimizes three aspects of data value to solve for the most valuable subset. The two steps of D3 can iterate multiple rounds, incorporating feedback to refine the selection focus adaptively. Experiments on both public datasets and the real-world Taobao Live application demonstrate the effectiveness of D3 in endowing LLMs with competitive or even superior instruction-following capabilities using less than 10\% of the entire dataset.
-]]></content:encoded>
-<pubDate>Tue, 20 May 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Quantization-Free Autoregressive Action Transformer</title>
-<link>https://arxiv.org/abs/2503.14259</link>
-<guid>https://arxiv.org/abs/2503.14259</guid>
-<content:encoded><![CDATA[
-arXiv:2503.14259v2 Announce Type: replace 
-Abstract: Current transformer-based imitation learning approaches introduce discrete action representations and train an autoregressive transformer decoder on the resulting latent code. However, the initial quantization breaks the continuous structure of the action space thereby limiting the capabilities of the generative model. We propose a quantization-free method instead that leverages Generative Infinite-Vocabulary Transformers (GIVT) as a direct, continuous policy parametrization for autoregressive transformers. This simplifies the imitation learning pipeline while achieving state-of-the-art performance on a variety of popular simulated robotics tasks. We enhance our policy roll-outs by carefully studying sampling algorithms, further improving the results.
-]]></content:encoded>
-<pubDate>Tue, 20 May 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Higher-Order Graphon Neural Networks: Approximation and Cut Distance</title>
-<link>https://arxiv.org/abs/2503.14338</link>
-<guid>https://arxiv.org/abs/2503.14338</guid>
-<content:encoded><![CDATA[
-arXiv:2503.14338v3 Announce Type: replace 
-Abstract: Graph limit models, like graphons for limits of dense graphs, have recently been used to study size transferability of graph neural networks (GNNs). While most literature focuses on message passing GNNs (MPNNs), in this work we attend to the more powerful higher-order GNNs. First, we extend the $k$-WL test for graphons (B\"oker, 2023) to the graphon-signal space and introduce signal-weighted homomorphism densities as a key tool. As an exemplary focus, we generalize Invariant Graph Networks (IGNs) to graphons, proposing Invariant Graphon Networks (IWNs) defined via a subset of the IGN basis corresponding to bounded linear operators. Even with this restricted basis, we show that IWNs of order $k$ are at least as powerful as the $k$-WL test, and we establish universal approximation results for graphon-signals in $L^p$ distances. This significantly extends the prior work of Cai & Wang (2022), showing that IWNs--a subset of their IGN-small--retain effectively the same expressivity as the full IGN basis in the limit. In contrast to their approach, our blueprint of IWNs also aligns better with the geometry of graphon space, for example facilitating comparability to MPNNs. We highlight that, while typical higher-order GNNs are discontinuous w.r.t. cut distance--which causes their lack of convergence and is inherently tied to the definition of $k$-WL--transferability remains achievable.
-]]></content:encoded>
-<pubDate>Tue, 20 May 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>SocialJax: An Evaluation Suite for Multi-agent Reinforcement Learning in Sequential Social Dilemmas</title>
-<link>https://arxiv.org/abs/2503.14576</link>
-<guid>https://arxiv.org/abs/2503.14576</guid>
-<content:encoded><![CDATA[
-arXiv:2503.14576v2 Announce Type: replace 
-Abstract: Sequential social dilemmas pose a significant challenge in the field of multi-agent reinforcement learning (MARL), requiring environments that accurately reflect the tension between individual and collective interests. Previous benchmarks and environments, such as Melting Pot, provide an evaluation protocol that measures generalization to new social partners in various test scenarios. However, running reinforcement learning algorithms in traditional environments requires substantial computational resources. In this paper, we introduce SocialJax, a suite of sequential social dilemma environments and algorithms implemented in JAX. JAX is a high-performance numerical computing library for Python that enables significant improvements in operational efficiency. Our experiments demonstrate that the SocialJax training pipeline achieves at least 50\texttimes{} speed-up in real-time performance compared to Melting Pot RLlib baselines. Additionally, we validate the effectiveness of baseline algorithms within SocialJax environments. Finally, we use Schelling diagrams to verify the social dilemma properties of these environments, ensuring that they accurately capture the dynamics of social dilemmas.
-]]></content:encoded>
-<pubDate>Tue, 20 May 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>SEEK: Self-adaptive Explainable Kernel For Nonstationary Gaussian Processes</title>
-<link>https://arxiv.org/abs/2503.14785</link>
-<guid>https://arxiv.org/abs/2503.14785</guid>
-<content:encoded><![CDATA[
-arXiv:2503.14785v2 Announce Type: replace 
-Abstract: Gaussian processes (GPs) are powerful probabilistic models that define flexible priors over functions, offering strong interpretability and uncertainty quantification. However, GP models often rely on simple, stationary kernels which can lead to suboptimal predictions and miscalibrated uncertainty estimates, especially in nonstationary real-world applications. In this paper, we introduce SEEK, a novel class of learnable kernels to model complex, nonstationary functions via GPs. Inspired by artificial neurons, SEEK is derived from first principles to ensure symmetry and positive semi-definiteness, key properties of valid kernels. The proposed method achieves flexible and adaptive nonstationarity by learning a mapping from a set of base kernels. Compared to existing techniques, our approach is more interpretable and much less prone to overfitting. We conduct comprehensive sensitivity analyses and comparative studies to demonstrate that our approach is not only robust to many of its design choices, but also outperforms existing stationary/nonstationary kernels in both mean prediction accuracy and uncertainty quantification.
-]]></content:encoded>
-<pubDate>Tue, 20 May 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Continual Multimodal Contrastive Learning</title>
-<link>https://arxiv.org/abs/2503.14963</link>
-<guid>https://arxiv.org/abs/2503.14963</guid>
-<content:encoded><![CDATA[
-arXiv:2503.14963v2 Announce Type: replace 
-Abstract: Multimodal contrastive learning (MCL) advances in aligning different modalities and generating multimodal representations in a joint space. By leveraging contrastive learning across diverse modalities, large-scale multimodal data enhances representational quality. However, a critical yet often overlooked challenge remains: multimodal data is rarely collected in a single process, and training from scratch is computationally expensive. Instead, emergent multimodal data can be used to optimize existing models gradually, \textit{i.e.}, models are trained on a sequence of modality pair data. We define this problem as Continual Multimodal Contrastive Learning (CMCL), an underexplored yet crucial research direction at the intersection of multimodal and continual learning. In this paper, we formulate CMCL through two specialized principles of stability and plasticity. We theoretically derive a novel optimization-based method, which projects updated gradients from dual sides onto subspaces where any gradient is prevented from interfering with the previously learned knowledge. Two upper bounds provide theoretical insights on both stability and plasticity in our solution. Beyond our theoretical contributions, we conduct experiments on multiple datasets by comparing our method against advanced continual learning baselines. The empirical results further support our claims and demonstrate the efficacy of our method. The code will be publicly available.
-]]></content:encoded>
-<pubDate>Tue, 20 May 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>DeLoRA: Decoupling Angles and Strength in Low-rank Adaptation</title>
-<link>https://arxiv.org/abs/2503.18225</link>
-<guid>https://arxiv.org/abs/2503.18225</guid>
-<content:encoded><![CDATA[
-arXiv:2503.18225v2 Announce Type: replace 
-Abstract: Parameter-Efficient FineTuning (PEFT) methods have recently gained significant popularity thanks to the widespread availability of large-scale pretrained models. These methods allow for quick adaptation to downstream tasks with minimal computational cost. However, popular finetuning methods such as LoRA exhibit limited robustness when it comes to hyperparameter choices or extended training regimes, preventing optimal out-of-the-box performance. In contrast, bounded approaches, such as ETHER, provide greater robustness but are limited to extremely low-rank adaptations and fixed-strength transformations, reducing their adaptation expressive power. In this work, we propose Decoupled Low-rank Adaptation (DeLoRA), a novel finetuning method that normalizes and scales learnable low-rank matrices. By bounding the distance of the transformation, DeLoRA effectively decouples the angular learning from the adaptation strength, enhancing robustness without compromising performance. Through evaluations on subject-driven image generation, natural language understanding, and instruction tuning, we show that DeLoRA matches or surpasses performance of competing PEFT methods, while exhibiting stronger robustness. Code is available at https://github.com/ExplainableML/DeLoRA.
-]]></content:encoded>
-<pubDate>Tue, 20 May 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Severing Spurious Correlations with Data Pruning</title>
-<link>https://arxiv.org/abs/2503.18258</link>
-<guid>https://arxiv.org/abs/2503.18258</guid>
-<content:encoded><![CDATA[
-arXiv:2503.18258v3 Announce Type: replace 
-Abstract: Deep neural networks have been shown to learn and rely on spurious correlations present in the data that they are trained on. Reliance on such correlations can cause these networks to malfunction when deployed in the real world, where these correlations may no longer hold. To overcome the learning of and reliance on such correlations, recent studies propose approaches that yield promising results. These works, however, study settings where the strength of the spurious signal is significantly greater than that of the core, invariant signal, making it easier to detect the presence of spurious features in individual training samples and allow for further processing. In this paper, we identify new settings where the strength of the spurious signal is relatively weaker, making it difficult to detect any spurious information while continuing to have catastrophic consequences. We also discover that spurious correlations are learned primarily due to only a handful of all the samples containing the spurious feature and develop a novel data pruning technique that identifies and prunes small subsets of the training data that contain these samples. Our proposed technique does not require inferred domain knowledge, information regarding the sample-wise presence or nature of spurious information, or human intervention. Finally, we show that such data pruning attains state-of-the-art performance on previously studied settings where spurious information is identifiable.
 ]]></content:encoded>
 <pubDate>Tue, 20 May 2025 00:00:00 -0400</pubDate>
 </item>
