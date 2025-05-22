@@ -4,6 +4,7 @@
 <title>cs.AI updates on arXiv.org</title>
 <link>http://rss.arxiv.org/rss/cs.AI</link>
 
+
 <item>
 <title>AlignRAG: Leveraging Critique Learning for Evidence-Sensitive Retrieval-Augmented Reasoning</title>
 <link>https://arxiv.org/abs/2504.14858</link>
@@ -14,11 +15,10 @@
 Summary: 
 In this work, the authors propose a novel framework called AlignRAG to address the issue of Reasoning Misalignment in retrieval-augmented generation (RAG) systems. They introduce a Critique-Driven Alignment approach, which includes a contrastive critique synthesis mechanism to generate critiques that are sensitive to retrieved evidence. This mechanism trains a Critic Language Model (CLM) to distinguish between evidence-aligned and misaligned reasoning. The CLM is optimized for evidence sensitivity, allowing it to detect and correct reasoning errors during inference. Evaluation results show that the 8B-parameter CLM in AlignRAG outperforms baseline models on out-of-domain tasks and is compatible with existing RAG architectures. Overall, AlignRAG provides a principled solution for ensuring that model reasoning aligns with retrieved evidence, improving the factual reliability and robustness of RAG systems. 
 
-<br><br>Summary: <div>
+<br /><br />Summary: <div>
 arXiv:2504.14858v3 Announce Type: replace 
 Abstract: Retrieval-augmented generation (RAG) has become a widely adopted paradigm for enabling knowledge-grounded large language models (LLMs). However, standard RAG pipelines often fail to ensure that model reasoning remains consistent with the evidence retrieved, leading to factual inconsistencies or unsupported conclusions. In this work, we reinterpret RAG as Retrieval-Augmented Reasoning and identify a central but underexplored problem: \textit{Reasoning Misalignment}-the divergence between an LLM's internal reasoning trajectory and the evidential constraints provided by retrieval. To address this issue, we propose \textsc{AlignRAG}, a novel iterative framework grounded in Critique-Driven Alignment (CDA). At the heart of \textsc{AlignRAG} lies a \textit{contrastive critique synthesis} mechanism that generates retrieval-sensitive critiques while mitigating self-bias. This mechanism trains a dedicated retrieval-augmented \textit{Critic Language Model (CLM)} using labeled critiques that distinguish between evidence-aligned and misaligned reasoning. Alignment signals for supervision are obtained through self-supervised or externally guided labeling strategies. The resulting CLM is explicitly optimized for evidence sensitivity, enabling it to detect and revise reasoning errors during inference without relying solely on self-generated feedback. Empirical evaluations show that our 8B-parameter CLM improves performance over the Self-Refine baseline by 12.1\% on out-of-domain tasks and outperforms a standard 72B-parameter CLM by 2.2\%, while remaining compatible with existing RAG architectures as a plug-and-play module. Overall, AlignRAG offers a principled solution for aligning model reasoning with retrieved evidence, substantially improving the factual reliability and robustness of RAG systems.
 ]]></content:encoded>
-<pubDate>Thu, 22 May 2025 00:00:00 -0400</pubDate>
 <pubDate>Thu, 22 May 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -28,12 +28,11 @@ Abstract: Retrieval-augmented generation (RAG) has become a widely adopted parad
 <content:encoded><![CDATA[
 <div> alignment, multimodal, preference optimization, Medical LVLM, clinical relevance
 
-Summary:<br>
-The article introduces a novel approach called MMedPO to enhance alignment in Medical LVLMs by considering clinical relevance in preference data. MMedPO curates multimodal preference data by introducing plausible hallucinations and lesion region neglect to disrupt visual understanding. Clinical relevance scores are calculated for each sample and integrated as weights in the optimization process. Experimental results show that MMedPO significantly improves factual accuracy in Med-LVLMs, outperforming existing methods by 14.2% and 51.7% in Med-VQA and report generation tasks, respectively. The code for MMedPO is available on GitHub at https://github.com/aiming-lab/MMedPO.<br><br>Summary: <div>
+Summary:<br />
+The article introduces a novel approach called MMedPO to enhance alignment in Medical LVLMs by considering clinical relevance in preference data. MMedPO curates multimodal preference data by introducing plausible hallucinations and lesion region neglect to disrupt visual understanding. Clinical relevance scores are calculated for each sample and integrated as weights in the optimization process. Experimental results show that MMedPO significantly improves factual accuracy in Med-LVLMs, outperforming existing methods by 14.2% and 51.7% in Med-VQA and report generation tasks, respectively. The code for MMedPO is available on GitHub at https://github.com/aiming-lab/MMedPO.<br /><br />Summary: <div>
 arXiv:2412.06141v3 Announce Type: replace-cross 
 Abstract: The advancement of Large Vision-Language Models (LVLMs) has propelled their application in the medical field. However, Medical LVLMs (Med-LVLMs) encounter factuality challenges due to modality misalignment, where the models prioritize textual knowledge over visual input, leading to hallucinations that contradict information in medical images. Previous attempts to enhance modality alignment in Med-LVLMs through preference optimization have inadequately mitigated clinical relevance in preference data, making these samples easily distinguishable and reducing alignment effectiveness. To address this challenge, we propose MMedPO, a novel multimodal medical preference optimization approach that considers the clinical relevance of preference samples to enhance Med-LVLM alignment. MMedPO curates multimodal preference data by introducing two types of dispreference: (1) plausible hallucinations injected through target Med-LVLMs or GPT-4o to produce medically inaccurate responses, and (2) lesion region neglect achieved through local lesion-noising, disrupting visual understanding of critical areas. We then calculate clinical relevance for each sample based on scores from multiple Med-LLMs and visual tools, and integrate these scores into the preference optimization process as weights, enabling effective alignment. Our experiments demonstrate that MMedPO significantly enhances factual accuracy in Med-LVLMs, achieving substantial improvements over existing preference optimization methods by averaging 14.2% and 51.7% across the Med-VQA and report generation tasks. Our code are available in https://github.com/aiming-lab/MMedPO.
 ]]></content:encoded>
-<pubDate>Thu, 22 May 2025 00:00:00 -0400</pubDate>
 <pubDate>Thu, 22 May 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -43,15 +42,13 @@ Abstract: The advancement of Large Vision-Language Models (LVLMs) has propelled 
 <content:encoded><![CDATA[
 <div> Keywords: GPT, Video-GPT, visual world modeling, video prediction, world modeling
 
-Summary:<br><br>
+Summary:<br /><br />
 The paper introduces Video-GPT, a novel approach that leverages video sequences as a new form of language for modeling the visual world. By incorporating a next clip diffusion paradigm for pretraining, Video-GPT can generate short-term and predict long-term visual sequences by denoising noisy clips based on clean historical clips. Experimental results demonstrate that Video-GPT outperforms existing methods in video prediction, achieving state-of-the-art performance. The model shows strong generalization capabilities across six mainstream video tasks, including generation and understanding. The project page provides further information on Video-GPT and its applications in modeling the visual world. <div>
 arXiv:2505.12489v2 Announce Type: replace-cross 
 Abstract: GPT has shown its remarkable success in natural language processing. However, the language sequence is not sufficient to describe spatial-temporal details in the visual world. Alternatively, the video sequence is good at capturing such details. Motivated by this fact, we propose a concise Video-GPT in this paper by treating video as new language for visual world modeling. By analogy to next token prediction in GPT, we introduce a novel next clip diffusion paradigm for pretraining Video-GPT. Different from the previous works, this distinct paradigm allows Video-GPT to tackle both short-term generation and long-term prediction, by autoregressively denoising the noisy clip according to the clean clips in the history. Extensive experiments show our Video-GPT achieves the state-of-the-art performance on video prediction, which is the key factor towards world modeling (Physics-IQ Benchmark: Video-GPT 34.97 vs. Kling 23.64 vs. Wan 20.89). Moreover, it can be well adapted on 6 mainstream video tasks in both video generation and understanding, showing its great generalization capacity in downstream. The project page is at https://zhuangshaobin.github.io/Video-GPT.github.io/.
 ]]></content:encoded>
 <pubDate>Thu, 22 May 2025 00:00:00 -0400</pubDate>
-<pubDate>Thu, 22 May 2025 00:00:00 -0400</pubDate>
 </item>
-
 <item>
 <title>Follow the STARs: Dynamic $\omega$-Regular Shielding of Learned Policies</title>
 <link>https://arxiv.org/abs/2505.14689</link>
@@ -10887,36 +10884,6 @@ Abstract: This paper introduces a formal notion of fixed point explanations, ins
 <content:encoded><![CDATA[
 arXiv:2505.12423v1 Announce Type: cross 
 Abstract: Rotary Position Embedding (RoPE) is an efficient position encoding approach and is widely utilized in numerous large language models (LLMs). Recently, a lot of methods have been put forward to further expand the context window based on RoPE. The core concept of those methods is to predefine or search for a set of factors to rescale the base frequencies of RoPE. Nevertheless, it is quite a challenge for existing methods to predefine an optimal factor due to the exponential search space. In view of this, we introduce PSC (Phase Shift Calibration), a small module for calibrating the frequencies predefined by existing methods. With the employment of PSC, we demonstrate that many existing methods can be further enhanced, like PI, YaRN, and LongRoPE. We conducted extensive experiments across multiple models and tasks. The results demonstrate that (1) when PSC is enabled, the comparative reductions in perplexity increase as the context window size is varied from 16k, to 32k, and up to 64k. (2) Our approach is broadly applicable and exhibits robustness across a variety of models and tasks. The code can be found at https://github.com/WNQzhu/PSC.
-]]></content:encoded>
-<pubDate>Tue, 20 May 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>EvoGPT: Enhancing Test Suite Robustness via LLM-Based Generation and Genetic Optimization</title>
-<link>https://arxiv.org/abs/2505.12424</link>
-<guid>https://arxiv.org/abs/2505.12424</guid>
-<content:encoded><![CDATA[
-arXiv:2505.12424v1 Announce Type: cross 
-Abstract: Large Language Models (LLMs) have recently emerged as promising tools for automated unit test generation. We introduce a hybrid framework called EvoGPT that integrates LLM-based test generation with evolutionary search techniques to create diverse, fault-revealing unit tests. Unit tests are initially generated with diverse temperature sampling to maximize behavioral and test suite diversity, followed by a generation-repair loop and coverage-guided assertion enhancement. The resulting test suites are evolved using genetic algorithms, guided by a fitness function prioritizing mutation score over traditional coverage metrics. This design emphasizes the primary objective of unit testing-fault detection. Evaluated on multiple open-source Java projects, EvoGPT achieves an average improvement of 10% in both code coverage and mutation score compared to LLMs and traditional search-based software testing baselines. These results demonstrate that combining LLM-driven diversity, targeted repair, and evolutionary optimization produces more effective and resilient test suites.
-]]></content:encoded>
-<pubDate>Tue, 20 May 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Observe-R1: Unlocking Reasoning Abilities of MLLMs with Dynamic Progressive Reinforcement Learning</title>
-<link>https://arxiv.org/abs/2505.12432</link>
-<guid>https://arxiv.org/abs/2505.12432</guid>
-<content:encoded><![CDATA[
-arXiv:2505.12432v1 Announce Type: cross 
-Abstract: Reinforcement Learning (RL) has shown promise in improving the reasoning abilities of Large Language Models (LLMs). However, the specific challenges of adapting RL to multimodal data and formats remain relatively unexplored. In this work, we present Observe-R1, a novel framework aimed at enhancing the reasoning capabilities of multimodal large language models (MLLMs). We draw inspirations from human learning progression--from simple to complex and easy to difficult, and propose a gradual learning paradigm for MLLMs. To this end, we construct the NeuraLadder dataset, which is organized and sampled according to the difficulty and complexity of data samples for RL training. To tackle multimodal tasks, we introduce a multimodal format constraint that encourages careful observation of images, resulting in enhanced visual abilities and clearer and more structured responses. Additionally, we implement a bonus reward system that favors concise, correct answers within a length constraint, alongside a dynamic weighting mechanism that prioritizes uncertain and medium-difficulty problems, ensuring that more informative samples have a greater impact on training. Our experiments with the Qwen2.5-VL-3B and Qwen2.5-VL-7B models on 20k samples from the NeuraLadder dataset show that Observe-R1 outperforms a series of larger reasoning models on both reasoning and general benchmarks, achieving superior clarity and conciseness in reasoning chains. Ablation studies validate the effectiveness of our strategies, highlighting the robustness and generalization of our approach. The dataset and code will be released at https://github.com/zrguo/Observe-R1.
-]]></content:encoded>
-<pubDate>Tue, 20 May 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>SRLoRA: Subspace Recomposition in Low-Rank Adaptation via Importance-Based Fusion and Reinitialization</title>
-<link>https://arxiv.org/abs/2505.12433</link>
-<guid>https://arxiv.org/abs/2505.12433</guid>
-<content:encoded><![CDATA[
-arXiv:2505.12433v1 Announce Type: cross 
-Abstract: Low-Rank Adaptation (LoRA) is a widely adopted parameter-efficient fine-tuning (PEFT) method that injects two trainable low-rank matrices (A and B) into frozen pretrained models. While efficient, LoRA constrains updates to a fixed low-rank subspace (Delta W = BA), which can limit representational capacity and hinder downstream performance. We introduce Subspace Recomposition in Low-Rank Adaptation (SRLoRA) via importance-based fusion and reinitialization, a novel approach that enhances LoRA's expressiveness without compromising its lightweight structure. SRLoRA assigns importance scores to each LoRA pair (a column of B and the corresponding row of A), and dynamically recomposes the subspace during training. Less important pairs are fused into the frozen backbone, freeing capacity to reinitialize new pairs along unused principal directions derived from the pretrained weight's singular value decomposition. This mechanism enables continual subspace refreshment and richer adaptation over time, without increasing the number of trainable parameters. We evaluate SRLoRA on both language and vision tasks, including the GLUE benchmark and various image classification datasets. SRLoRA consistently achieves faster convergence and improved accuracy over standard LoRA, demonstrating its generality, efficiency, and potential for broader PEFT applications.
 ]]></content:encoded>
 <pubDate>Tue, 20 May 2025 00:00:00 -0400</pubDate>
 </item>
