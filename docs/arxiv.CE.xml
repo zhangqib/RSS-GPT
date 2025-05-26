@@ -4,6 +4,110 @@
 <title>cs.CE updates on arXiv.org</title>
 <link>http://rss.arxiv.org/rss/cs.CE</link>
 
+<item>
+<title>Sparse Diffusion Autoencoder for Test-time Adapting Prediction of Complex Systems</title>
+<link>https://arxiv.org/abs/2505.17459</link>
+<guid>https://arxiv.org/abs/2505.17459</guid>
+<content:encoded><![CDATA[
+<div> SparseDiff, test-time adaptation, sparse encoder, graph neural ordinary differential equation, spatial interactions <br>
+Summary: SparseDiff is a novel approach for predicting the behavior of complex systems by dynamically updating the encoding scheme to capture emergent spatiotemporal structures. It utilizes a codebook-based sparse encoder to create a sparse graph topology of the spatial domain, coupled with a graph neural ordinary differential equation to model dynamics and a diffusion decoder for reconstruction. This method enables autoregressive prediction of spatiotemporal evolution while adapting the sparse topological structure to accommodate emerging spatial patterns through adaptive re-encoding. Extensive evaluations show that SparseDiff significantly reduces prediction errors compared to baselines, requiring only a fraction of the spatial resolution. <div>
+arXiv:2505.17459v1 Announce Type: new 
+Abstract: Predicting the behavior of complex systems is critical in many scientific and engineering domains, and hinges on the model's ability to capture their underlying dynamics. Existing methods encode the intrinsic dynamics of high-dimensional observations through latent representations and predict autoregressively. However, these latent representations lose the inherent spatial structure of spatiotemporal dynamics, leading to the predictor's inability to effectively model spatial interactions and neglect emerging dynamics during long-term prediction. In this work, we propose SparseDiff, introducing a test-time adaptation strategy to dynamically update the encoding scheme to accommodate emergent spatiotemporal structures during the long-term evolution of the system. Specifically, we first design a codebook-based sparse encoder, which coarsens the continuous spatial domain into a sparse graph topology. Then, we employ a graph neural ordinary differential equation to model the dynamics and guide a diffusion decoder for reconstruction. SparseDiff autoregressively predicts the spatiotemporal evolution and adjust the sparse topological structure to adapt to emergent spatiotemporal patterns by adaptive re-encoding. Extensive evaluations on representative systems demonstrate that SparseDiff achieves an average prediction error reduction of 49.99\% compared to baselines, requiring only 1\% of the spatial resolution.
+]]></content:encoded>
+<pubDate>Mon, 26 May 2025 00:00:00 -0400</pubDate>
+<pubDate>Mon, 26 May 2025 00:00:00 -0400</pubDate>
+</item>
+<item>
+<title>Latent Imputation before Prediction: A New Computational Paradigm for De Novo Peptide Sequencing</title>
+<link>https://arxiv.org/abs/2505.17524</link>
+<guid>https://arxiv.org/abs/2505.17524</guid>
+<content:encoded><![CDATA[
+<div> Keywords: de novo peptide sequencing, missing fragmentation, latent imputation, set-prediction, performance improvement
+
+Summary:
+De novo peptide sequencing is a critical technique for determining peptide sequences directly from mass spectrometry data. The new computational approach, LIPNovo, addresses the challenge of missing fragmentation in spectra by imputing missing information in the latent space using theoretical peak profiles of target peptides. By framing the imputation as a set-prediction problem and utilizing learnable peak queries, LIPNovo effectively supplements missing data during inference, leading to improved performance. Experimental results on benchmark datasets show that LIPNovo surpasses existing methods significantly. The code for LIPNovo is available on GitHub for further exploration and application. 
+
+<br><br>Summary: De novo peptide sequencing is vital for peptide identification from mass spectrometry data. LIPNovo introduces a novel approach to handle missing fragmentation by imputing information in the latent space, enhancing performance through set-prediction techniques. Experimentally, LIPNovo outperforms state-of-the-art methods, underscoring its effectiveness in peptide sequencing tasks. The availability of the code on GitHub enables wider adoption and exploration of LIPNovo's capabilities. <div>
+arXiv:2505.17524v1 Announce Type: new 
+Abstract: De novo peptide sequencing is a fundamental computational technique for ascertaining amino acid sequences of peptides directly from tandem mass spectrometry data, eliminating the need for reference databases. Cutting-edge models usually encode the observed mass spectra into latent representations from which peptides are predicted autoregressively. However, the issue of missing fragmentation, attributable to factors such as suboptimal fragmentation efficiency and instrumental constraints, presents a formidable challenge in practical applications. To tackle this obstacle, we propose a novel computational paradigm called \underline{\textbf{L}}atent \underline{\textbf{I}}mputation before \underline{\textbf{P}}rediction (LIPNovo). LIPNovo is devised to compensate for missing fragmentation information within observed spectra before executing the final peptide prediction. Rather than generating raw missing data, LIPNovo performs imputation in the latent space, guided by the theoretical peak profile of the target peptide sequence. The imputation process is conceptualized as a set-prediction problem, utilizing a set of learnable peak queries to reason about the relationships among observed peaks and directly generate the latent representations of theoretical peaks through optimal bipartite matching. In this way, LIPNovo manages to supplement missing information during inference and thus boosts performance. Despite its simplicity, experiments on three benchmark datasets demonstrate that LIPNovo outperforms state-of-the-art methods by large margins. Code is available at \href{https://github.com/usr922/LIPNovo}{https://github.com/usr922/LIPNovo}.
+]]></content:encoded>
+<pubDate>Mon, 26 May 2025 00:00:00 -0400</pubDate>
+<pubDate>Mon, 26 May 2025 00:00:00 -0400</pubDate>
+</item>
+<item>
+<title>4D-CTA Image and geometry dataset for kinematic analysis of abdominal aortic aneurysms</title>
+<link>https://arxiv.org/abs/2505.17647</link>
+<guid>https://arxiv.org/abs/2505.17647</guid>
+<content:encoded><![CDATA[
+<div> Dataset, Abdominal Aortic Aneurysm, 4D-CTA, Biomechanics, Image Registration
+
+Summary:<br><br>This article presents a dataset of 4D-CTA images and patient-specific AAA geometries from ten patients for kinematic analysis of abdominal aortic aneurysms (AAA). The dataset includes images captured throughout the cardiac cycle, allowing for the study of AAA wall displacement and strain. Synthetic ground truth data from Patient 1's image is also included for method verification. The dataset facilitates non-invasive analysis of AAA kinematics using an image registration-based approach. The use of open-source file formats enhances the applicability and reusability of the dataset in AAA biomechanics studies. The research was conducted at the ISML-UWA, using images acquired at Fiona Stanley Hospital in Western Australia. This dataset provides valuable information for understanding the biomechanics of AAA and could aid in the development of improved diagnostic and treatment strategies.<br>Summary: <div>
+arXiv:2505.17647v1 Announce Type: new 
+Abstract: This article presents a dataset used in the article "Kinematics of Abdominal Aortic Aneurysms" [arXiv:2405.13377], published in the Journal of Biomechanics. The dataset is publicly available for download from the Zenodo data repository (https://doi.org/10.5281/zenodo.15477710). The dataset includes time-resolved 3D computed tomography angiography (4D-CTA) images of abdominal aortic aneurysm (AAA) captured throughout the cardiac cycle from ten patients diagnosed with AAA, along with ten patient-specific AAA geometries extracted from these images. Typically, the 4D-CTA dataset for each patient contains ten electrocardiogram (ECG)-gated 3D-CTA image frames acquired over a cardiac cycle, capturing both the systolic and diastolic phases of the AAA configuration. For method verification, the dataset also includes synthetic ground truth data generated from Patient 1's 3D-CTA AAA image in the diastolic phase. The ground truth data includes the patient-specific finite element (FE) biomechanical model and a synthetic systolic 3D-CTA image. The synthetic systolic image was generated by warping Patient 1's diastolic 3D-CTA image using the realistic displacement field obtained from the AAA biomechanical FE model. The images were acquired at Fiona Stanley Hospital in Western Australia and provided to the researchers at the Intelligent Systems for Medicine Laboratory at The University of Western Australia (ISML-UWA), where image-based AAA kinematic analysis was performed. Our dataset enabled the analysis of AAA wall displacement and strain throughout the cardiac cycle using a non-invasive, in vivo, image registration-based approach. The use of widely adopted, open-source file formats (NRRD for images and STL for geometries) facilitates broad applicability and reusability in AAA biomechanics studies that require patient-specific geometry and information about AAA kinematics during cardiac cycle.
+]]></content:encoded>
+<pubDate>Mon, 26 May 2025 00:00:00 -0400</pubDate>
+<pubDate>Mon, 26 May 2025 00:00:00 -0400</pubDate>
+</item>
+<item>
+<title>A brief review of the Deep BSDE method for solving high-dimensional partial differential equations</title>
+<link>https://arxiv.org/abs/2505.17032</link>
+<guid>https://arxiv.org/abs/2505.17032</guid>
+<content:encoded><![CDATA[
+<div> Deep BSDE method, high-dimensional PDEs, numerical computation, deep learning techniques, neural networks <br>
+<br>
+Summary: 
+The article discusses the challenges posed by high-dimensional partial differential equations (PDEs) in traditional numerical computation methods. It introduces the Deep BSDE method, which utilizes deep learning techniques to effectively solve nonlinear PDEs in high dimensions. Since its inception in 2017, the Deep BSDE method has generated widespread interest in using neural networks for tackling high-dimensional PDEs. The article briefly outlines the method, its subsequent developments, and highlights the active research being conducted in this area. The Deep BSDE method has opened up new possibilities for solving complex PDEs in very high dimensions, offering a promising approach for addressing the curse of dimensionality in numerical computations. Future directions for research in this field are also discussed, suggesting potential advancements and applications of deep learning techniques in solving high-dimensional PDEs. <div>
+arXiv:2505.17032v1 Announce Type: cross 
+Abstract: High-dimensional partial differential equations (PDEs) pose significant challenges for numerical computation due to the curse of dimensionality, which limits the applicability of traditional mesh-based methods. Since 2017, the Deep BSDE method has introduced deep learning techniques that enable the effective solution of nonlinear PDEs in very high dimensions. This innovation has sparked considerable interest in using neural networks for high-dimensional PDEs, making it an active area of research. In this short review, we briefly sketch the Deep BSDE method, its subsequent developments, and future directions for the field.
+]]></content:encoded>
+<pubDate>Mon, 26 May 2025 00:00:00 -0400</pubDate>
+<pubDate>Mon, 26 May 2025 00:00:00 -0400</pubDate>
+</item>
+<item>
+<title>Towards Robust Evaluation of STEM Education: Leveraging MLLMs in Project-Based Learning</title>
+<link>https://arxiv.org/abs/2505.17050</link>
+<guid>https://arxiv.org/abs/2505.17050</guid>
+<content:encoded><![CDATA[
+<div> Keywords: Project-Based Learning, Multimodal Large Language Models, PBLBench, Analytic Hierarchy Process, Education
+
+Summary:
+PBLBench is a new benchmark designed to evaluate complex reasoning tasks in Project-Based Learning using multimodal large language models. The benchmark challenges models with tasks that mirror those handled by human experts, assessing their performance using structured and weighted evaluation criteria derived from the Analytic Hierarchy Process. The study tested 15 leading models and found that even the most advanced ones achieved only 59% rank accuracy, highlighting the difficulty of the benchmark. This indicates the challenges presented by real-world educational tasks and the need for more capable AI agents to assist teachers effectively. PBLBench aims to improve teacher workload and enhance educational productivity by providing a rigorous evaluation platform for multimodal large language models in educational settings.<br><br>Summary: <div>
+arXiv:2505.17050v1 Announce Type: cross 
+Abstract: Project-Based Learning (PBL) involves a variety of highly correlated multimodal data, making it a vital educational approach within STEM disciplines. With the rapid development of multimodal large language models (MLLMs), researchers have begun exploring their potential to enhance tasks such as information retrieval, knowledge comprehension, and data generation in educational settings. However, existing benchmarks fall short in providing both a free-form output structure and a rigorous human expert validation process, limiting their effectiveness in evaluating real-world educational tasks. Additionally, few methods have developed automated pipelines to assist with the complex responsibilities of teachers leveraging MLLMs, largely due to model hallucination and instability, which lead to unreliable implementation. To address this gap, we introduce PBLBench, a novel benchmark designed to evaluate complex reasoning grounded in domain-specific knowledge and long-context understanding, thereby challenging models with tasks that closely resemble those handled by human experts. To establish reliable ground truth, we adopt the Analytic Hierarchy Process (AHP), utilizing expert-driven pairwise comparisons to derive structured and weighted evaluation criteria. We assess the performance of 15 leading MLLMs/LLMs using PBLBench and demonstrate that even the most advanced models achieve only 59% rank accuracy, underscoring the significant challenges presented by this benchmark. We believe PBLBench will serve as a catalyst for the development of more capable AI agents, ultimately aiming to alleviate teacher workload and enhance educational productivity.
+]]></content:encoded>
+<pubDate>Mon, 26 May 2025 00:00:00 -0400</pubDate>
+<pubDate>Mon, 26 May 2025 00:00:00 -0400</pubDate>
+</item>
+<item>
+<title>MOOSE-Chem3: Toward Experiment-Guided Hypothesis Ranking via Simulated Experimental Feedback</title>
+<link>https://arxiv.org/abs/2505.17873</link>
+<guid>https://arxiv.org/abs/2505.17873</guid>
+<content:encoded><![CDATA[
+<div> simulator, experiment-guided ranking, hypothesis, chemistry, automated scientific discovery
+
+Summary:
+The paper introduces the concept of experiment-guided ranking in the context of hypothesis prioritization in natural sciences. Existing approaches in automated scientific discovery focus on pre-experiment ranking without considering empirical outcomes. To address this gap, the authors propose a simulator that models hypothesis performance based on similarity to a known ground truth hypothesis, incorporating noise. They validate the simulator using a dataset of chemistry hypotheses with experimentally reported outcomes. The proposed method clusters hypotheses based on functional characteristics and uses insights from simulated experimental feedback to prioritize candidates. Experimental results demonstrate that the method outperforms pre-experiment baselines and strong ablations in hypothesis ranking. <div>
+arXiv:2505.17873v1 Announce Type: cross 
+Abstract: Hypothesis ranking is a crucial component of automated scientific discovery, particularly in natural sciences where wet-lab experiments are costly and throughput-limited. Existing approaches focus on pre-experiment ranking, relying solely on large language model's internal reasoning without incorporating empirical outcomes from experiments. We introduce the task of experiment-guided ranking, which aims to prioritize candidate hypotheses based on the results of previously tested ones. However, developing such strategies is challenging due to the impracticality of repeatedly conducting real experiments in natural science domains. To address this, we propose a simulator grounded in three domain-informed assumptions, modeling hypothesis performance as a function of similarity to a known ground truth hypothesis, perturbed by noise. We curate a dataset of 124 chemistry hypotheses with experimentally reported outcomes to validate the simulator. Building on this simulator, we develop a pseudo experiment-guided ranking method that clusters hypotheses by shared functional characteristics and prioritizes candidates based on insights derived from simulated experimental feedback. Experiments show that our method outperforms pre-experiment baselines and strong ablations.
+]]></content:encoded>
+<pubDate>Mon, 26 May 2025 00:00:00 -0400</pubDate>
+<pubDate>Mon, 26 May 2025 00:00:00 -0400</pubDate>
+</item>
+<item>
+<title>SINDyG: Sparse Identification of Nonlinear Dynamical Systems from Graph-Structured Data</title>
+<link>https://arxiv.org/abs/2409.04463</link>
+<guid>https://arxiv.org/abs/2409.04463</guid>
+<content:encoded><![CDATA[
+<div> Sparse Identification of Nonlinear Dynamical Systems, Machine Learning, Sparsity-promoting techniques, Network structure, Neuronal dynamics
+
+Summary: 
+The article introduces a new method called Sparse Identification of Nonlinear Dynamical Systems from Graph-structured data (SINDyG), which incorporates network structure into sparse regression for identifying model parameters that explain underlying network dynamics. Unlike existing methods, SINDyG considers interactions between subsystems, allowing for capturing small changes in emergent system behavior. The method is applied to neuronal dynamics, modeling macroscopic oscillations of a neuron population with the extended Stuart-Landau equation. Computational experiments demonstrate improved accuracy and simplicity in identifying network dynamics compared to the original SINDy approach. This innovative approach of combining machine learning with sparsity-promoting techniques opens up new possibilities for extracting governing equations from data in various scientific fields. <br><br>Summary: <div>
+arXiv:2409.04463v3 Announce Type: replace-cross 
+Abstract: The combination of machine learning (ML) and sparsity-promoting techniques is enabling direct extraction of governing equations from data, revolutionizing computational modeling in diverse fields of science and engineering. The discovered dynamical models could be used to address challenges in climate science, neuroscience, ecology, finance, epidemiology, and beyond. However, most existing sparse identification methods for discovering dynamical systems treat the whole system as one without considering the interactions between subsystems. As a result, such models are not able to capture small changes in the emergent system behavior. To address this issue, we developed a new method called Sparse Identification of Nonlinear Dynamical Systems from Graph-structured data (SINDyG), which incorporates the network structure into sparse regression to identify model parameters that explain the underlying network dynamics. We showcase the application of our proposed method using several case studies of neuronal dynamics, where we model the macroscopic oscillation of a population of neurons using the extended Stuart-Landau (SL) equation and utilize the SINDyG method to identify the underlying nonlinear dynamics. Our extensive computational experiments validate the improved accuracy and simplicity of discovered network dynamics when compared to the original SINDy approach.
+]]></content:encoded>
+<pubDate>Mon, 26 May 2025 00:00:00 -0400</pubDate>
+<pubDate>Mon, 26 May 2025 00:00:00 -0400</pubDate>
+</item>
 
 <item>
 <title>A finite element solver for a thermodynamically consistent electrolyte model</title>
