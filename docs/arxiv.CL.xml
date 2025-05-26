@@ -5,6 +5,22 @@
 <link>http://rss.arxiv.org/rss/cs.CL</link>
 
 <item>
+<title>HausaNLP: Current Status, Challenges and Future Directions for Hausa Natural Language Processing</title>
+<link>https://arxiv.org/abs/2505.14311</link>
+<guid>https://arxiv.org/abs/2505.14311</guid>
+<content:encoded><![CDATA[
+<div> Keywords: Hausa, Natural Language Processing, low-resource language, HausaNLP, language modeling
+
+Summary: 
+This paper provides an overview of the current state of Hausa Natural Language Processing (NLP), highlighting the challenges faced due to limited resources and model representation. It examines existing resources, research contributions, and gaps in fundamental NLP tasks such as text classification, machine translation, named entity recognition, speech recognition, and question answering. The paper introduces HausaNLP, a curated catalog consolidating datasets, tools, and research works to facilitate accessibility and further development in the field. Additionally, it discusses the challenges in integrating Hausa into large language models (LLMs), particularly focusing on tokenization and dialectal variation issues. The proposed strategic research directions aim to enhance dataset expansion, improve language modeling approaches, and foster community collaboration to advance Hausa NLP. Overall, this work serves as a foundation for accelerating progress in Hausa NLP and offers valuable insights for broader multilingual NLP research.<br><br>Summary: <div>
+arXiv:2505.14311v2 Announce Type: replace 
+Abstract: Hausa Natural Language Processing (NLP) has gained increasing attention in recent years, yet remains understudied as a low-resource language despite having over 120 million first-language (L1) and 80 million second-language (L2) speakers worldwide. While significant advances have been made in high-resource languages, Hausa NLP faces persistent challenges, including limited open-source datasets and inadequate model representation. This paper presents an overview of the current state of Hausa NLP, systematically examining existing resources, research contributions, and gaps across fundamental NLP tasks: text classification, machine translation, named entity recognition, speech recognition, and question answering. We introduce HausaNLP (https://catalog.hausanlp.org), a curated catalog that aggregates datasets, tools, and research works to enhance accessibility and drive further development. Furthermore, we discuss challenges in integrating Hausa into large language models (LLMs), addressing issues of suboptimal tokenization and dialectal variation. Finally, we propose strategic research directions emphasizing dataset expansion, improved language modeling approaches, and strengthened community collaboration to advance Hausa NLP. Our work provides both a foundation for accelerating Hausa NLP progress and valuable insights for broader multilingual NLP research.
+]]></content:encoded>
+<pubDate>Mon, 26 May 2025 00:00:00 -0400</pubDate>
+<pubDate>Mon, 26 May 2025 00:00:00 -0400</pubDate>
+</item>
+
+<item>
 <title>Chain-of-Model Learning for Language Model</title>
 <link>https://arxiv.org/abs/2505.11820</link>
 <guid>https://arxiv.org/abs/2505.11820</guid>
@@ -14,11 +30,10 @@
 Summary: 
 Chain-of-Model (CoM) introduces a novel learning paradigm incorporating causal relationships in hidden states, offering scaling efficiency and deployment flexibility. The concept of Chain-of-Representation (CoR) formulates hidden states as chains at the hidden dimension level. Models built on CoM can progressively scale up model size by increasing chains and provide varying sizes for elastic inference. Chain-of-Language-Model (CoLM) integrates CoM into Transformer architecture. CoLM-Air enhances CoLM with a KV sharing mechanism for key and value computation efficiency. Experimental results show comparable performance to the standard Transformer. CoLM family enables progressive scaling for training efficiency and multiple model sizes for flexible inference, advancing language model development. Our code will be available at https://github.com/microsoft/CoLM. 
 
-<br><br>Summary: <div>
+<br /><br />Summary: <div>
 arXiv:2505.11820v2 Announce Type: replace 
 Abstract: In this paper, we propose a novel learning paradigm, termed Chain-of-Model (CoM), which incorporates the causal relationship into the hidden states of each layer as a chain style, thereby introducing great scaling efficiency in model training and inference flexibility in deployment. We introduce the concept of Chain-of-Representation (CoR), which formulates the hidden states at each layer as a combination of multiple sub-representations (i.e., chains) at the hidden dimension level. In each layer, each chain from the output representations can only view all of its preceding chains in the input representations. Consequently, the model built upon CoM framework can progressively scale up the model size by increasing the chains based on the previous models (i.e., chains), and offer multiple sub-models at varying sizes for elastic inference by using different chain numbers. Based on this principle, we devise Chain-of-Language-Model (CoLM), which incorporates the idea of CoM into each layer of Transformer architecture. Based on CoLM, we further introduce CoLM-Air by introducing a KV sharing mechanism, that computes all keys and values within the first chain and then shares across all chains. This design demonstrates additional extensibility, such as enabling seamless LM switching, prefilling acceleration and so on. Experimental results demonstrate our CoLM family can achieve comparable performance to the standard Transformer, while simultaneously enabling greater flexiblity, such as progressive scaling to improve training efficiency and offer multiple varying model sizes for elastic inference, paving a a new way toward building language models. Our code will be released in the future at: https://github.com/microsoft/CoLM.
 ]]></content:encoded>
-<pubDate>Mon, 26 May 2025 00:00:00 -0400</pubDate>
 <pubDate>Mon, 26 May 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -31,7 +46,7 @@ Abstract: In this paper, we propose a novel learning paradigm, termed Chain-of-M
 Summary:
 A new multilabel hate speech dataset in the Arabic language has been introduced in this study, consisting of 10,000 annotated tweets. The dataset identifies offensive content and classifies it into categories such as religion, gender, politics, ethnicity, and origin. Inter-annotator agreement was high, with 0.86 for offensive content and 0.71 for multiple hate speech targets. Various annotators were involved in the data annotation process. Evaluation of the data annotation task was conducted using transformers-based models, with AraBERTv2 achieving the highest performance metrics, including a micro-F1 score of 0.7865 and an accuracy of 0.786. This dataset and model can be valuable tools for identifying and combating hate speech in the Arabic language. 
 
-<br><br>Summary: 
+<br /><br />Summary: 
 - Introduction of a multilabel hate speech dataset in Arabic language
 - Dataset contains 10,000 annotated tweets with offensive content classification
 - Inter-annotator agreement was high for offensive content and multiple hate speech targets
@@ -40,7 +55,6 @@ A new multilabel hate speech dataset in the Arabic language has been introduced 
 arXiv:2505.11969v2 Announce Type: replace 
 Abstract: Identifying hate speech content in the Arabic language is challenging due to the rich quality of dialectal variations. This study introduces a multilabel hate speech dataset in the Arabic language. We have collected 10000 Arabic tweets and annotated each tweet, whether it contains offensive content or not. If a text contains offensive content, we further classify it into different hate speech targets such as religion, gender, politics, ethnicity, origin, and others. A text can contain either single or multiple targets. Multiple annotators are involved in the data annotation task. We calculated the inter-annotator agreement, which was reported to be 0.86 for offensive content and 0.71 for multiple hate speech targets. Finally, we evaluated the data annotation task by employing a different transformers-based model in which AraBERTv2 outperformed with a micro-F1 score of 0.7865 and an accuracy of 0.786.
 ]]></content:encoded>
-<pubDate>Mon, 26 May 2025 00:00:00 -0400</pubDate>
 <pubDate>Mon, 26 May 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -56,20 +70,18 @@ arXiv:2505.12158v2 Announce Type: replace
 Abstract: Socioeconomic status (SES) fundamentally influences how people interact with each other and more recently, with digital technologies like Large Language Models (LLMs). While previous research has highlighted the interaction between SES and language technology, it was limited by reliance on proxy metrics and synthetic data. We survey 1,000 individuals from diverse socioeconomic backgrounds about their use of language technologies and generative AI, and collect 6,482 prompts from their previous interactions with LLMs. We find systematic differences across SES groups in language technology usage (i.e., frequency, performed tasks), interaction styles, and topics. Higher SES entails a higher level of abstraction, convey requests more concisely, and topics like 'inclusivity' and 'travel'. Lower SES correlates with higher anthropomorphization of LLMs (using ''hello'' and ''thank you'') and more concrete language. Our findings suggest that while generative language technologies are becoming more accessible to everyone, socioeconomic linguistic differences still stratify their use to exacerbate the digital divide. These differences underscore the importance of considering SES in developing language technologies to accommodate varying linguistic needs rooted in socioeconomic factors and limit the AI Gap across SES groups.
 ]]></content:encoded>
 <pubDate>Mon, 26 May 2025 00:00:00 -0400</pubDate>
-<pubDate>Mon, 26 May 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
 <title>UniEdit: A Unified Knowledge Editing Benchmark for Large Language Models</title>
 <link>https://arxiv.org/abs/2505.12345</link>
 <guid>https://arxiv.org/abs/2505.12345</guid>
 <content:encoded><![CDATA[
-<div> Entity-based Language Model Editing, UniEdit Benchmark, Large Language Models, Editing Evaluation, Ripple Effects <br>
-Summary: <br>
-The article introduces UniEdit, a benchmark for editing large language models (LLMs) that spans various open-domain knowledge domains. It addresses the limitations of current LLM editing datasets by incorporating entities from 25 different domains and utilizing triple knowledge from open-domain graphs for comprehensive coverage. The Neighborhood Multi-hop Chain Sampling (NMCS) algorithm is designed to sample subgraphs and evaluate ripple effects. The benchmark ensures grammatical accuracy and syntactical diversity by converting knowledge subgraphs into natural language text. Extensive statistical analysis demonstrates the scale, comprehensiveness, and diversity of UniEdit. Experiments across different LLMs and editors highlight performance strengths and weaknesses in editing across open knowledge domains, providing insights for future research. <br> <div>
+<div> Entity-based Language Model Editing, UniEdit Benchmark, Large Language Models, Editing Evaluation, Ripple Effects <br />
+Summary: <br />
+The article introduces UniEdit, a benchmark for editing large language models (LLMs) that spans various open-domain knowledge domains. It addresses the limitations of current LLM editing datasets by incorporating entities from 25 different domains and utilizing triple knowledge from open-domain graphs for comprehensive coverage. The Neighborhood Multi-hop Chain Sampling (NMCS) algorithm is designed to sample subgraphs and evaluate ripple effects. The benchmark ensures grammatical accuracy and syntactical diversity by converting knowledge subgraphs into natural language text. Extensive statistical analysis demonstrates the scale, comprehensiveness, and diversity of UniEdit. Experiments across different LLMs and editors highlight performance strengths and weaknesses in editing across open knowledge domains, providing insights for future research. <br /> <div>
 arXiv:2505.12345v2 Announce Type: replace 
 Abstract: Model editing aims to enhance the accuracy and reliability of large language models (LLMs) by efficiently adjusting their internal parameters. Currently, most LLM editing datasets are confined to narrow knowledge domains and cover a limited range of editing evaluation. They often overlook the broad scope of editing demands and the diversity of ripple effects resulting from edits. In this context, we introduce UniEdit, a unified benchmark for LLM editing grounded in open-domain knowledge. First, we construct editing samples by selecting entities from 25 common domains across five major categories, utilizing the extensive triple knowledge available in open-domain knowledge graphs to ensure comprehensive coverage of the knowledge domains. To address the issues of generality and locality in editing, we design an Neighborhood Multi-hop Chain Sampling (NMCS) algorithm to sample subgraphs based on a given knowledge piece to entail comprehensive ripple effects to evaluate. Finally, we employ proprietary LLMs to convert the sampled knowledge subgraphs into natural language text, guaranteeing grammatical accuracy and syntactical diversity. Extensive statistical analysis confirms the scale, comprehensiveness, and diversity of our UniEdit benchmark. We conduct comprehensive experiments across multiple LLMs and editors, analyzing their performance to highlight strengths and weaknesses in editing across open knowledge domains and various evaluation criteria, thereby offering valuable insights for future research endeavors.
 ]]></content:encoded>
-<pubDate>Mon, 26 May 2025 00:00:00 -0400</pubDate>
 <pubDate>Mon, 26 May 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -79,14 +91,12 @@ Abstract: Model editing aims to enhance the accuracy and reliability of large la
 <content:encoded><![CDATA[
 <div> Keywords: Graphical user interface, multimodal large language models, backdoor attacks, AgentGhost, defense method
 
-Summary:<br><br>Graphical user interface agents powered by multimodal large language models have shown promise for human interaction but are susceptible to backdoor attacks. The AgentGhost framework introduces a stealthy method for injecting backdoors into GUI agents by exploiting interaction-level triggers. By combining goal and interaction levels, backdoors can be activated unintentionally while maintaining task utility. This framework utilizes Min-Max optimization and supervised contrastive learning to maximize feature differences across sample classes, enhancing flexibility. Additionally, supervised fine-tuning minimizes the discrepancy between backdoor and clean behavior generation, improving effectiveness and utility. Extensive evaluations on established mobile benchmarks demonstrate the effectiveness and generic nature of AgentGhost, with high attack accuracy and minimal utility degradation. A defense method is proposed to reduce the attack accuracy of AgentGhost significantly. This work highlights the importance of securing GUI agents powered by large language models against backdoor attacks. <div>
+Summary:<br /><br />Graphical user interface agents powered by multimodal large language models have shown promise for human interaction but are susceptible to backdoor attacks. The AgentGhost framework introduces a stealthy method for injecting backdoors into GUI agents by exploiting interaction-level triggers. By combining goal and interaction levels, backdoors can be activated unintentionally while maintaining task utility. This framework utilizes Min-Max optimization and supervised contrastive learning to maximize feature differences across sample classes, enhancing flexibility. Additionally, supervised fine-tuning minimizes the discrepancy between backdoor and clean behavior generation, improving effectiveness and utility. Extensive evaluations on established mobile benchmarks demonstrate the effectiveness and generic nature of AgentGhost, with high attack accuracy and minimal utility degradation. A defense method is proposed to reduce the attack accuracy of AgentGhost significantly. This work highlights the importance of securing GUI agents powered by large language models against backdoor attacks. <div>
 arXiv:2505.14418v2 Announce Type: replace 
 Abstract: Graphical user interface (GUI) agents powered by multimodal large language models (MLLMs) have shown greater promise for human-interaction. However, due to the high fine-tuning cost, users often rely on open-source GUI agents or APIs offered by AI providers, which introduces a critical but underexplored supply chain threat: backdoor attacks. In this work, we first unveil that MLLM-powered GUI agents naturally expose multiple interaction-level triggers, such as historical steps, environment states, and task progress. Based on this observation, we introduce AgentGhost, an effective and stealthy framework for red-teaming backdoor attacks. Specifically, we first construct composite triggers by combining goal and interaction levels, allowing GUI agents to unintentionally activate backdoors while ensuring task utility. Then, we formulate backdoor injection as a Min-Max optimization problem that uses supervised contrastive learning to maximize the feature difference across sample classes at the representation space, improving flexibility of the backdoor. Meanwhile, it adopts supervised fine-tuning to minimize the discrepancy between backdoor and clean behavior generation, enhancing effectiveness and utility. Extensive evaluations of various agent models in two established mobile benchmarks show that AgentGhost is effective and generic, with attack accuracy that reaches 99.7\% on three attack objectives, and shows stealthiness with only 1\% utility degradation. Furthermore, we tailor a defense method against AgentGhost that reduces the attack accuracy to 22.1\%. Our code is available at \texttt{anonymous}.
 ]]></content:encoded>
 <pubDate>Mon, 26 May 2025 00:00:00 -0400</pubDate>
-<pubDate>Mon, 26 May 2025 00:00:00 -0400</pubDate>
 </item>
-
 <item>
 <title>Prompt Engineering: How Prompt Vocabulary affects Domain Knowledge</title>
 <link>https://arxiv.org/abs/2505.17037</link>
@@ -11118,56 +11128,6 @@ Abstract: Text-to-SQL, which maps natural language to SQL queries, has benefited
 <content:encoded><![CDATA[
 arXiv:2505.14309v1 Announce Type: new 
 Abstract: Retrieval-augmented language models have demonstrated performance comparable to much larger models while requiring fewer computational resources. The effectiveness of these models crucially depends on the overlap between query and retrieved context, but the optimal degree of this overlap remains unexplored. In this paper, we systematically investigate how varying levels of query--context overlap affect model performance during both training and inference. Our experiments reveal that increased overlap initially has minimal effect, but substantially improves test-time perplexity and accelerates model learning above a critical threshold. Building on these findings, we demonstrate that deliberately increasing overlap through synthetic context can enhance data efficiency and reduce training time by approximately 40\% without compromising performance. We specifically generate synthetic context through paraphrasing queries. We validate our perplexity-based findings on question-answering tasks, confirming that the benefits of retrieval-augmented language modeling extend to practical applications. Our results provide empirical evidence of significant optimization potential for retrieval mechanisms in language model pretraining.
-]]></content:encoded>
-<pubDate>Wed, 21 May 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>HausaNLP: Current Status, Challenges and Future Directions for Hausa Natural Language Processing</title>
-<link>https://arxiv.org/abs/2505.14311</link>
-<guid>https://arxiv.org/abs/2505.14311</guid>
-<content:encoded><![CDATA[
-arXiv:2505.14311v1 Announce Type: new 
-Abstract: Hausa Natural Language Processing (NLP) has gained increasing attention in recent years, yet remains understudied as a low-resource language despite having over 120 million first-language (L1) and 80 million second-language (L2) speakers worldwide. While significant advances have been made in high-resource languages, Hausa NLP faces persistent challenges, including limited open-source datasets and inadequate model representation. This paper presents an overview of the current state of Hausa NLP, systematically examining existing resources, research contributions, and gaps across fundamental NLP tasks: text classification, machine translation, named entity recognition, speech recognition, and question answering. We introduce HausaNLP (https://catalog.hausanlp.org), a curated catalog that aggregates datasets, tools, and research works to enhance accessibility and drive further development. Furthermore, we discuss challenges in integrating Hausa into large language models (LLMs), addressing issues of suboptimal tokenization and dialectal variation. Finally, we propose strategic research directions emphasizing dataset expansion, improved language modeling approaches, and strengthened community collaboration to advance Hausa NLP. Our work provides both a foundation for accelerating Hausa NLP progress and valuable insights for broader multilingual NLP research.
-]]></content:encoded>
-<pubDate>Wed, 21 May 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>A MIND for Reasoning: Meta-learning for In-context Deduction</title>
-<link>https://arxiv.org/abs/2505.14313</link>
-<guid>https://arxiv.org/abs/2505.14313</guid>
-<content:encoded><![CDATA[
-arXiv:2505.14313v1 Announce Type: new 
-Abstract: Large language models (LLMs) are increasingly evaluated on formal tasks, where strong reasoning abilities define the state of the art. However, their ability to generalize to out-of-distribution problems remains limited. In this paper, we investigate how LLMs can achieve a systematic understanding of deductive rules. Our focus is on the task of identifying the appropriate subset of premises within a knowledge base needed to derive a given hypothesis. To tackle this challenge, we propose Meta-learning for In-context Deduction (MIND), a novel few-shot meta-learning fine-tuning approach. The goal of MIND is to enable models to generalize more effectively to unseen knowledge bases and to systematically apply inference rules. Our results show that MIND significantly improves generalization in small LMs ranging from 1.5B to 7B parameters. The benefits are especially pronounced in smaller models and low-data settings. Remarkably, small models fine-tuned with MIND outperform state-of-the-art LLMs, such as GPT-4o and o3-mini, on this task.
-]]></content:encoded>
-<pubDate>Wed, 21 May 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>QA-prompting: Improving Summarization with Large Language Models using Question-Answering</title>
-<link>https://arxiv.org/abs/2505.14347</link>
-<guid>https://arxiv.org/abs/2505.14347</guid>
-<content:encoded><![CDATA[
-arXiv:2505.14347v1 Announce Type: new 
-Abstract: Language Models (LMs) have revolutionized natural language processing, enabling high-quality text generation through prompting and in-context learning. However, models often struggle with long-context summarization due to positional biases, leading to suboptimal extraction of critical information. There are techniques to improve this with fine-tuning, pipelining, or using complex techniques, which have their own challenges. To solve these challenges, we propose QA-prompting - a simple prompting method for summarization that utilizes question-answering as an intermediate step prior to summary generation. Our method extracts key information and enriches the context of text to mitigate positional biases and improve summarization in a single LM call per task without requiring fine-tuning or pipelining. Experiments on multiple datasets belonging to different domains using ten state-of-the-art pre-trained models demonstrate that QA-prompting outperforms baseline and other state-of-the-art methods, achieving up to 29% improvement in ROUGE scores. This provides an effective and scalable solution for summarization and highlights the importance of domain-specific question selection for optimal performance.
-]]></content:encoded>
-<pubDate>Wed, 21 May 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>OSoRA: Output-Dimension and Singular-Value Initialized Low-Rank Adaptation</title>
-<link>https://arxiv.org/abs/2505.14350</link>
-<guid>https://arxiv.org/abs/2505.14350</guid>
-<content:encoded><![CDATA[
-arXiv:2505.14350v1 Announce Type: new 
-Abstract: Fine-tuning Large Language Models (LLMs) has become increasingly challenging due to their massive scale and associated computational costs. Parameter-Efficient Fine-Tuning (PEFT) methodologies have been proposed as computational alternatives; however, their implementations still require significant resources. In this paper, we present OSoRA (Output-Dimension and Singular-Value Initialized Low-Rank Adaptation), a novel PEFT method for LLMs. OSoRA extends Low-Rank Adaptation (LoRA) by integrating Singular Value Decomposition (SVD) with learnable scaling vectors in a unified framework. It first performs an SVD of pre-trained weight matrices, then optimizes an output-dimension vector during training, while keeping the corresponding singular vector matrices frozen. OSoRA substantially reduces computational resource requirements by minimizing the number of trainable parameters during fine-tuning. Comprehensive evaluations across mathematical reasoning, common sense reasoning, and other benchmarks demonstrate that OSoRA achieves comparable or superior performance to state-of-the-art methods like LoRA and VeRA, while maintaining a linear parameter scaling even as the rank increases to higher dimensions. Our ablation studies further confirm that jointly training both the singular values and the output-dimension vector is critical for optimal performance.
-]]></content:encoded>
-<pubDate>Wed, 21 May 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>WirelessMathBench: A Mathematical Modeling Benchmark for LLMs in Wireless Communications</title>
-<link>https://arxiv.org/abs/2505.14354</link>
-<guid>https://arxiv.org/abs/2505.14354</guid>
-<content:encoded><![CDATA[
-arXiv:2505.14354v1 Announce Type: new 
-Abstract: Large Language Models (LLMs) have achieved impressive results across a broad array of tasks, yet their capacity for complex, domain-specific mathematical reasoning-particularly in wireless communications-remains underexplored. In this work, we introduce WirelessMathBench, a novel benchmark specifically designed to evaluate LLMs on mathematical modeling challenges to wireless communications engineering. Our benchmark consists of 587 meticulously curated questions sourced from 40 state-of-the-art research papers, encompassing a diverse spectrum of tasks ranging from basic multiple-choice questions to complex equation completion tasks, including both partial and full completions, all of which rigorously adhere to physical and dimensional constraints. Through extensive experimentation with leading LLMs, we observe that while many models excel in basic recall tasks, their performance degrades significantly when reconstructing partially or fully obscured equations, exposing fundamental limitations in current LLMs. Even DeepSeek-R1, the best performer on our benchmark, achieves an average accuracy of only 38.05%, with a mere 7.83% success rate in full equation completion. By publicly releasing WirelessMathBench along with the evaluation toolkit, we aim to advance the development of more robust, domain-aware LLMs for wireless system analysis and broader engineering applications.
 ]]></content:encoded>
 <pubDate>Wed, 21 May 2025 00:00:00 -0400</pubDate>
 </item>

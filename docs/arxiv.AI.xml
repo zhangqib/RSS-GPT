@@ -4,18 +4,18 @@
 <title>cs.AI updates on arXiv.org</title>
 <link>http://rss.arxiv.org/rss/cs.AI</link>
 
+
 <item>
 <title>Unearthing Gems from Stones: Policy Optimization with Negative Sample Augmentation for LLM Reasoning</title>
 <link>https://arxiv.org/abs/2505.14403</link>
 <guid>https://arxiv.org/abs/2505.14403</guid>
 <content:encoded><![CDATA[
-<div> Keywords: reasoning language models, negative sample augmentation, offline RL, sample efficiency, robustness<br>
-Summary: <br>
+<div> Keywords: reasoning language models, negative sample augmentation, offline RL, sample efficiency, robustness<br />
+Summary: <br />
 Recent advances in reasoning language models have shifted towards long CoT patterns, posing computational challenges in maximizing the utility of fixed training datasets. Existing methods either discard negative samples or penalize all tokens equally, missing valuable learning signals within negative responses. To address this, Behavior Constrained Policy Gradient with Negative Sample Augmentation (BCPG-NSA) is proposed, a fine-grained offline RL framework that segments samples, assesses step correctness, and optimizes policies to mine positive steps within negative samples. Experimental results demonstrate BCPG-NSA's superiority over baselines in math/coding reasoning benchmarks, with improved sample efficiency and scalability over multiple iterations. <div>
 arXiv:2505.14403v2 Announce Type: replace 
 Abstract: Recent advances in reasoning language models have witnessed a paradigm shift from short to long CoT pattern. Given the substantial computational cost of rollouts in long CoT models, maximizing the utility of fixed training datasets becomes crucial. Our analysis reveals that negative responses contain valuable components such as self-reflection and error-correction steps, yet primary existing methods either completely discard negative samples (RFT) or apply equal penalization across all tokens (RL), failing to leverage these potential learning signals. In light of this, we propose Behavior Constrained Policy Gradient with Negative Sample Augmentation (BCPG-NSA), a fine-grained offline RL framework that encompasses three stages: 1) sample segmentation, 2) consensus-based step correctness assessment combining LLM and PRM judgers, and 3) policy optimization with NSA designed to effectively mine positive steps within negative samples. Experimental results show that BCPG-NSA outperforms baselines on several challenging math/coding reasoning benchmarks using the same training dataset, achieving improved sample efficiency and demonstrating robustness and scalability when extended to multiple iterations.
 ]]></content:encoded>
-<pubDate>Mon, 26 May 2025 00:00:00 -0400</pubDate>
 <pubDate>Mon, 26 May 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -31,7 +31,6 @@ arXiv:2503.12908v4 Announce Type: replace-cross
 Abstract: Large Language Models (LLMs) often generate hallucinations, producing outputs that are contextually inaccurate or factually incorrect. We introduce HICD, a novel method designed to induce hallucinations for contrastive decoding to mitigate hallucinations. Unlike existing contrastive decoding methods, HICD selects attention heads crucial to the model's prediction as inducing heads, then induces hallucinations by dispersing attention of these inducing heads and compares the hallucinated outputs with the original outputs to obtain the final result. Our approach significantly improves performance on tasks requiring contextual faithfulness, such as context completion, reading comprehension, and question answering. It also improves factuality in tasks requiring accurate knowledge recall. We demonstrate that our inducing heads selection and attention dispersion method leads to more "contrast-effective" hallucinations for contrastive decoding, outperforming other hallucination-inducing methods. Our findings provide a promising strategy for reducing hallucinations by inducing hallucinations in a controlled manner, enhancing the performance of LLMs in a wide range of tasks.
 ]]></content:encoded>
 <pubDate>Mon, 26 May 2025 00:00:00 -0400</pubDate>
-<pubDate>Mon, 26 May 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
 <title>Normalized Cut with Reinforcement Learning in Constrained Action Space</title>
@@ -41,11 +40,10 @@ Abstract: Large Language Models (LLMs) often generate hallucinations, producing 
 <div> Keywords: Reinforcement Learning, combinatorial optimization, constrained action spaces, transportation networks, Wedge and Ring Transformer
 
 Summary:
-Reinforcement Learning (RL) is utilized in combinatorial optimization problems for its ability to learn heuristics that generalize across instances. However, integrating external knowledge to guide problem solutions towards desired outcomes is challenging. This paper introduces an RL solution using constrained action spaces to direct the normalized cut problem towards predefined template instances. By focusing on transportation networks, a Wedge and Ring Transformer is proposed to shape graph partitions into Wedges and Rings, leading to partitions closer to natural optimal solutions. The approach is applicable to various domains, offering a general solution framework for guided optimization problems. <br><br>Summary: <div>
+Reinforcement Learning (RL) is utilized in combinatorial optimization problems for its ability to learn heuristics that generalize across instances. However, integrating external knowledge to guide problem solutions towards desired outcomes is challenging. This paper introduces an RL solution using constrained action spaces to direct the normalized cut problem towards predefined template instances. By focusing on transportation networks, a Wedge and Ring Transformer is proposed to shape graph partitions into Wedges and Rings, leading to partitions closer to natural optimal solutions. The approach is applicable to various domains, offering a general solution framework for guided optimization problems. <br /><br />Summary: <div>
 arXiv:2505.13986v2 Announce Type: replace-cross 
 Abstract: Reinforcement Learning (RL) has emerged as an important paradigm to solve combinatorial optimization problems primarily due to its ability to learn heuristics that can generalize across problem instances. However, integrating external knowledge that will steer combinatorial optimization problem solutions towards domain appropriate outcomes remains an extremely challenging task. In this paper, we propose the first RL solution that uses constrained action spaces to guide the normalized cut problem towards pre-defined template instances. Using transportation networks as an example domain, we create a Wedge and Ring Transformer that results in graph partitions that are shaped in form of Wedges and Rings and which are likely to be closer to natural optimal partitions. However, our approach is general as it is based on principles that can be generalized to other domains.
 ]]></content:encoded>
-<pubDate>Mon, 26 May 2025 00:00:00 -0400</pubDate>
 <pubDate>Mon, 26 May 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -55,12 +53,11 @@ Abstract: Reinforcement Learning (RL) has emerged as an important paradigm to so
 <content:encoded><![CDATA[
 <div> Keywords: graph neural networks, explainability, decision logic, transparency, reliability
 
-Summary:<br>
-The article introduces a novel approach, OPEN, for enhancing the explainability of graph neural networks (GNNs). Existing methods in explainability of GNNs (XGNN) face limitations in capturing the complete decision logic of GNNs across diverse distributions in the dataset and imposing strict prerequisites on edge properties. OPEN overcomes these limitations by partitioning the dataset's sample space into different environments and analyzing predictions across distributions without strict prerequisites. Experimental results show that OPEN outperforms state-of-the-art methods in fidelity, maintains efficiency, and enhances robustness in real-world scenarios. This comprehensive and prerequisite-free explainer provides a more transparent and reliable way to understand the decision-making process of GNNs, contributing to the advancement of explainability in this field. <br><br>Summary: <div>
+Summary:<br />
+The article introduces a novel approach, OPEN, for enhancing the explainability of graph neural networks (GNNs). Existing methods in explainability of GNNs (XGNN) face limitations in capturing the complete decision logic of GNNs across diverse distributions in the dataset and imposing strict prerequisites on edge properties. OPEN overcomes these limitations by partitioning the dataset's sample space into different environments and analyzing predictions across distributions without strict prerequisites. Experimental results show that OPEN outperforms state-of-the-art methods in fidelity, maintains efficiency, and enhances robustness in real-world scenarios. This comprehensive and prerequisite-free explainer provides a more transparent and reliable way to understand the decision-making process of GNNs, contributing to the advancement of explainability in this field. <br /><br />Summary: <div>
 arXiv:2505.14005v2 Announce Type: replace-cross 
 Abstract: To enhance the reliability and credibility of graph neural networks (GNNs) and improve the transparency of their decision logic, a new field of explainability of GNNs (XGNN) has emerged. However, two major limitations severely degrade the performance and hinder the generalizability of existing XGNN methods: they (a) fail to capture the complete decision logic of GNNs across diverse distributions in the entire dataset's sample space, and (b) impose strict prerequisites on edge properties and GNN internal accessibility. To address these limitations, we propose OPEN, a novel c\textbf{O}mprehensive and \textbf{P}rerequisite-free \textbf{E}xplainer for G\textbf{N}Ns. OPEN, as the first work in the literature, can infer and partition the entire dataset's sample space into multiple environments, each containing graphs that follow a distinct distribution. OPEN further learns the decision logic of GNNs across different distributions by sampling subgraphs from each environment and analyzing their predictions, thus eliminating the need for strict prerequisites. Experimental results demonstrate that OPEN captures nearly complete decision logic of GNNs, outperforms state-of-the-art methods in fidelity while maintaining similar efficiency, and enhances robustness in real-world scenarios.
 ]]></content:encoded>
-<pubDate>Mon, 26 May 2025 00:00:00 -0400</pubDate>
 <pubDate>Mon, 26 May 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -71,11 +68,10 @@ Abstract: To enhance the reliability and credibility of graph neural networks (G
 <div> Keywords: Large Language Models, Parameter-Efficient Fine-Tuning, ABBA, Expressivity, State-of-the-art results
 
 Summary:
-ABBA introduces a novel Parameter-Efficient Fine-Tuning (PEFT) architecture that revolutionizes adapting large language models to new domains. Unlike previous methods, ABBA completely decouples the update from the pre-trained weights, allowing both components to be optimized independently. This leads to higher expressivity within the same parameter budget, outperforming existing PEFT methods significantly. The architecture reparameterizes the update as a Hadamard product of two separately learnable low-rank matrices, increasing its flexibility and effectiveness. Formal analysis and experiments demonstrate ABBA's superior expressive capacity and performance on arithmetic and commonsense reasoning tasks, achieving state-of-the-art results across multiple models. The code for ABBA is publicly accessible on GitHub, allowing for further exploration and utilization in various applications.<br><br>Summary: <div>
+ABBA introduces a novel Parameter-Efficient Fine-Tuning (PEFT) architecture that revolutionizes adapting large language models to new domains. Unlike previous methods, ABBA completely decouples the update from the pre-trained weights, allowing both components to be optimized independently. This leads to higher expressivity within the same parameter budget, outperforming existing PEFT methods significantly. The architecture reparameterizes the update as a Hadamard product of two separately learnable low-rank matrices, increasing its flexibility and effectiveness. Formal analysis and experiments demonstrate ABBA's superior expressive capacity and performance on arithmetic and commonsense reasoning tasks, achieving state-of-the-art results across multiple models. The code for ABBA is publicly accessible on GitHub, allowing for further exploration and utilization in various applications.<br /><br />Summary: <div>
 arXiv:2505.14238v2 Announce Type: replace-cross 
 Abstract: Large Language Models have demonstrated strong performance across a wide range of tasks, but adapting them efficiently to new domains remains a key challenge. Parameter-Efficient Fine-Tuning (PEFT) methods address this by introducing lightweight, trainable modules while keeping most pre-trained weights fixed. The prevailing approach, LoRA, models updates using a low-rank decomposition, but its expressivity is inherently constrained by the rank. Recent methods like HiRA aim to increase expressivity by incorporating a Hadamard product with the frozen weights, but still rely on the structure of the pre-trained model. We introduce ABBA, a new PEFT architecture that reparameterizes the update as a Hadamard product of two independently learnable low-rank matrices. In contrast to prior work, ABBA fully decouples the update from the pre-trained weights, enabling both components to be optimized freely. This leads to significantly higher expressivity under the same parameter budget. We formally analyze ABBA's expressive capacity and validate its advantages through matrix reconstruction experiments. Empirically, ABBA achieves state-of-the-art results on arithmetic and commonsense reasoning benchmarks, consistently outperforming existing PEFT methods by a significant margin across multiple models. Our code is publicly available at: https://github.com/CERT-Lab/abba.
 ]]></content:encoded>
-<pubDate>Mon, 26 May 2025 00:00:00 -0400</pubDate>
 <pubDate>Mon, 26 May 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -91,9 +87,7 @@ arXiv:2505.14555v2 Announce Type: replace-cross
 Abstract: Weather forecasting is essential but remains computationally intensive and physically incomplete in traditional numerical weather prediction (NWP) methods. Deep learning (DL) models offer efficiency and accuracy but often ignore physical laws, limiting interpretability and generalization. We propose PhyDL-NWP, a physics-guided deep learning framework that integrates physical equations with latent force parameterization into data-driven models. It predicts weather variables from arbitrary spatiotemporal coordinates, computes physical terms via automatic differentiation, and uses a physics-informed loss to align predictions with governing dynamics. PhyDL-NWP enables resolution-free downscaling by modeling weather as a continuous function and fine-tunes pre-trained models with minimal overhead, achieving up to 170x faster inference with only 55K parameters. Experiments show that PhyDL-NWP improves both forecasting performance and physical consistency.
 ]]></content:encoded>
 <pubDate>Mon, 26 May 2025 00:00:00 -0400</pubDate>
-<pubDate>Mon, 26 May 2025 00:00:00 -0400</pubDate>
 </item>
-
 <item>
 <title>An Affective-Taxis Hypothesis for Alignment and Interpretability</title>
 <link>https://arxiv.org/abs/2505.17024</link>
@@ -10863,66 +10857,6 @@ Abstract: Deep learning models are increasingly utilized on resource-constrained
 <content:encoded><![CDATA[
 arXiv:2410.11871v3 Announce Type: replace-cross 
 Abstract: We present an UI agent for user interface (UI) interaction tasks, using Vision-Language Model Florence-2-Base. The agent's primary task is identifying the screen coordinates of the UI element corresponding to the user's command. It demonstrates very strong performance on Screenspot and OmniAct annotations, while maintaining a very small size of 0.27B parameters and minimal latency. Moreover, training needs small compute budget of 56 GPU-hours (worth about 40 USD). Relevant improvement comes from vision-specific multi-task training and MLLM-based data augmentation. We hope that decreased needs for expensive compute resources and manually annotated data will allow to facilitate more inclusive and sustainable research of UI agents.
-]]></content:encoded>
-<pubDate>Thu, 22 May 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>MagicTailor: Component-Controllable Personalization in Text-to-Image Diffusion Models</title>
-<link>https://arxiv.org/abs/2410.13370</link>
-<guid>https://arxiv.org/abs/2410.13370</guid>
-<content:encoded><![CDATA[
-arXiv:2410.13370v3 Announce Type: replace-cross 
-Abstract: Text-to-image diffusion models can generate high-quality images but lack fine-grained control of visual concepts, limiting their creativity. Thus, we introduce component-controllable personalization, a new task that enables users to customize and reconfigure individual components within concepts. This task faces two challenges: semantic pollution, where undesired elements disrupt the target concept, and semantic imbalance, which causes disproportionate learning of the target concept and component. To address these, we design MagicTailor, a framework that uses Dynamic Masked Degradation to adaptively perturb unwanted visual semantics and Dual-Stream Balancing for more balanced learning of desired visual semantics. The experimental results show that MagicTailor achieves superior performance in this task and enables more personalized and creative image generation.
-]]></content:encoded>
-<pubDate>Thu, 22 May 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Retrospective Learning from Interactions</title>
-<link>https://arxiv.org/abs/2410.13852</link>
-<guid>https://arxiv.org/abs/2410.13852</guid>
-<content:encoded><![CDATA[
-arXiv:2410.13852v2 Announce Type: replace-cross 
-Abstract: Multi-turn interactions between large language models (LLMs) and users naturally include implicit feedback signals. If an LLM responds in an unexpected way to an instruction, the user is likely to signal it by rephrasing the request, expressing frustration, or pivoting to an alternative task. Such signals are task-independent and occupy a relatively constrained subspace of language, allowing the LLM to identify them even if it fails on the actual task. We introduce ReSpect, a method to learn from such signals in past interactions via retrospection without additional annotations. We deploy ReSpect in a new multimodal interaction scenario, where humans instruct a multimodal LLM to solve an abstract reasoning task with a combinatorial solution space. Through thousands of interactions with humans, we show how ReSpect gradually improves task completion rate from 31% to 82%, all without any external annotation.
-]]></content:encoded>
-<pubDate>Thu, 22 May 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>GATEAU: Selecting Influential Samples for Long Context Alignment</title>
-<link>https://arxiv.org/abs/2410.15633</link>
-<guid>https://arxiv.org/abs/2410.15633</guid>
-<content:encoded><![CDATA[
-arXiv:2410.15633v5 Announce Type: replace-cross 
-Abstract: Aligning large language models to handle instructions with extremely long contexts has yet to be fully investigated. Previous studies have attempted to scale up the available data volume by synthesizing long instruction-following samples, as constructing such a dataset tends to be challenging for annotators. However, a lack of a well-defined strategy for ensuring data quality may introduce low-quality samples and restrict the model's performance. Thus, we propose GATEAU, a novel framework to address the unique challenge of long context alignment by identifying the influential samples enriched with long-range dependency relations. Specifically, GATEAU measures the long-range dependencies from two essential aspects: the difficulty of generating target responses due to the long-range dependencies, and the difficulty of understanding long inputs due to such dependencies. Comprehensive experiments indicate that GATEAU effectively identifies influential samples and the model trained on these selected samples exhibits better instruction-following and long-context understanding capabilities.
-]]></content:encoded>
-<pubDate>Thu, 22 May 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>LSCodec: Low-Bitrate and Speaker-Decoupled Discrete Speech Codec</title>
-<link>https://arxiv.org/abs/2410.15764</link>
-<guid>https://arxiv.org/abs/2410.15764</guid>
-<content:encoded><![CDATA[
-arXiv:2410.15764v3 Announce Type: replace-cross 
-Abstract: Although discrete speech tokens have exhibited strong potential for language model-based speech generation, their high bitrates and redundant timbre information restrict the development of such models. In this work, we propose LSCodec, a discrete speech codec that has both low bitrate and speaker decoupling ability. LSCodec adopts a multi-stage unsupervised training framework with a speaker perturbation technique. A continuous information bottleneck is first established, followed by vector quantization that produces a discrete speaker-decoupled space. A discrete token vocoder finally refines acoustic details from LSCodec. By reconstruction evaluations, LSCodec demonstrates superior intelligibility and audio quality with only a single codebook and smaller vocabulary size than baselines. Voice conversion and speaker probing experiments prove the excellent speaker disentanglement of LSCodec, and ablation study verifies the effectiveness of the proposed training framework.
-]]></content:encoded>
-<pubDate>Thu, 22 May 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Unsupervised detection of semantic correlations in big data</title>
-<link>https://arxiv.org/abs/2411.02126</link>
-<guid>https://arxiv.org/abs/2411.02126</guid>
-<content:encoded><![CDATA[
-arXiv:2411.02126v3 Announce Type: replace-cross 
-Abstract: In real-world data, information is stored in extremely large feature vectors. These variables are typically correlated due to complex interactions involving many features simultaneously. Such correlations qualitatively correspond to semantic roles and are naturally recognized by both the human brain and artificial neural networks. This recognition enables, for instance, the prediction of missing parts of an image or text based on their context. We present a method to detect these correlations in high-dimensional data represented as binary numbers. We estimate the binary intrinsic dimension of a dataset, which quantifies the minimum number of independent coordinates needed to describe the data, and is therefore a proxy of semantic complexity. The proposed algorithm is largely insensitive to the so-called curse of dimensionality, and can therefore be used in big data analysis. We test this approach identifying phase transitions in model magnetic systems and we then apply it to the detection of semantic correlations of images and text inside deep neural networks.
-]]></content:encoded>
-<pubDate>Thu, 22 May 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>MIRe: Enhancing Multimodal Queries Representation via Fusion-Free Modality Interaction for Multimodal Retrieval</title>
-<link>https://arxiv.org/abs/2411.08334</link>
-<guid>https://arxiv.org/abs/2411.08334</guid>
-<content:encoded><![CDATA[
-arXiv:2411.08334v3 Announce Type: replace-cross 
-Abstract: Recent multimodal retrieval methods have endowed text-based retrievers with multimodal capabilities by utilizing pre-training strategies for visual-text alignment. They often directly fuse the two modalities for cross-reference during the alignment to understand multimodal queries. However, existing methods often overlook crucial visual information due to a text-dominant issue, which overly depends on text-driven signals. In this paper, we introduce MIRe, a retrieval framework that achieves modality interaction without fusing textual features during the alignment. Our method allows the textual query to attend to visual embeddings while not feeding text-driven signals back into the visual representations. Additionally, we construct a pre-training dataset for multimodal query retrieval by transforming concise question-answer pairs into extended passages. Our experiments demonstrate that our pre-training strategy significantly enhances the understanding of multimodal queries, resulting in strong performance across four multimodal retrieval benchmarks under zero-shot settings. Moreover, our ablation studies and analyses explicitly verify the effectiveness of our framework in mitigating the text-dominant issue. Our code is publicly available: https://github.com/yeongjoonJu/MIRe
 ]]></content:encoded>
 <pubDate>Thu, 22 May 2025 00:00:00 -0400</pubDate>
 </item>
