@@ -4,18 +4,18 @@
 <title>cs.CV updates on arXiv.org</title>
 <link>http://rss.arxiv.org/rss/cs.CV</link>
 
+
 <item>
 <title>PMQ-VE: Progressive Multi-Frame Quantization for Video Enhancement</title>
 <link>https://arxiv.org/abs/2505.12266</link>
 <guid>https://arxiv.org/abs/2505.12266</guid>
 <content:encoded><![CDATA[
-<div> Keywords: video enhancement, Transformer-based methods, quantization, multi-frame, progressive distillation<br>
-Summary:<br>
-The paper introduces a novel method, PMQ-VE, for video enhancement tasks. It addresses the limitations of existing quantization methods by utilizing a two-stage process. The Backtracking-based Multi-Frame Quantization (BMFQ) stage utilizes percentile-based initialization and iterative search with pruning and backtracking to determine clipping bounds. The Progressive Multi-Teacher Distillation (PMTD) stage employs a progressive distillation strategy with full-precision and multiple high-bit teachers to enhance low-bit models' capacity and quality. Experimental results demonstrate that PMQ-VE outperforms existing approaches, achieving state-of-the-art performance across various tasks and benchmarks. The proposed framework offers a practical solution for improving the efficiency of Transformer-based video enhancement methods while maintaining performance and preserving fine details. The code for PMQ-VE will be publicly available on GitHub. <br> <div>
+<div> Keywords: video enhancement, Transformer-based methods, quantization, multi-frame, progressive distillation<br />
+Summary:<br />
+The paper introduces a novel method, PMQ-VE, for video enhancement tasks. It addresses the limitations of existing quantization methods by utilizing a two-stage process. The Backtracking-based Multi-Frame Quantization (BMFQ) stage utilizes percentile-based initialization and iterative search with pruning and backtracking to determine clipping bounds. The Progressive Multi-Teacher Distillation (PMTD) stage employs a progressive distillation strategy with full-precision and multiple high-bit teachers to enhance low-bit models' capacity and quality. Experimental results demonstrate that PMQ-VE outperforms existing approaches, achieving state-of-the-art performance across various tasks and benchmarks. The proposed framework offers a practical solution for improving the efficiency of Transformer-based video enhancement methods while maintaining performance and preserving fine details. The code for PMQ-VE will be publicly available on GitHub. <br /> <div>
 arXiv:2505.12266v2 Announce Type: replace 
 Abstract: Multi-frame video enhancement tasks aim to improve the spatial and temporal resolution and quality of video sequences by leveraging temporal information from multiple frames, which are widely used in streaming video processing, surveillance, and generation. Although numerous Transformer-based enhancement methods have achieved impressive performance, their computational and memory demands hinder deployment on edge devices. Quantization offers a practical solution by reducing the bit-width of weights and activations to improve efficiency. However, directly applying existing quantization methods to video enhancement tasks often leads to significant performance degradation and loss of fine details. This stems from two limitations: (a) inability to allocate varying representational capacity across frames, which results in suboptimal dynamic range adaptation; (b) over-reliance on full-precision teachers, which limits the learning of low-bit student models. To tackle these challenges, we propose a novel quantization method for video enhancement: Progressive Multi-Frame Quantization for Video Enhancement (PMQ-VE). This framework features a coarse-to-fine two-stage process: Backtracking-based Multi-Frame Quantization (BMFQ) and Progressive Multi-Teacher Distillation (PMTD). BMFQ utilizes a percentile-based initialization and iterative search with pruning and backtracking for robust clipping bounds. PMTD employs a progressive distillation strategy with both full-precision and multiple high-bit (INT) teachers to enhance low-bit models' capacity and quality. Extensive experiments demonstrate that our method outperforms existing approaches, achieving state-of-the-art performance across multiple tasks and benchmarks.The code will be made publicly available at: https://github.com/xiaoBIGfeng/PMQ-VE.
 ]]></content:encoded>
-<pubDate>Tue, 27 May 2025 00:00:00 -0400</pubDate>
 <pubDate>Tue, 27 May 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -23,14 +23,13 @@ Abstract: Multi-frame video enhancement tasks aim to improve the spatial and tem
 <link>https://arxiv.org/abs/2505.12408</link>
 <guid>https://arxiv.org/abs/2505.12408</guid>
 <content:encoded><![CDATA[
-<div> EEG-based visual decoding, ViEEG, hierarchical framework, Hubel-Wiesel theory, biologically inspired<br>
-<br>
-Summary:<br>
+<div> EEG-based visual decoding, ViEEG, hierarchical framework, Hubel-Wiesel theory, biologically inspired<br />
+<br />
+Summary:<br />
 The paper introduces ViEEG, a hierarchical EEG decoding framework inspired by the brain's visual hierarchy. It decomposes visual stimuli into contour, foreground object, and contextual scene components, aligning with the Hubel-Wiesel theory. ViEEG integrates EEG features using cross-attention routing, simulating cortical information flow. Hierarchical contrastive learning aligns EEG representations with CLIP embeddings for zero-shot object recognition. Experimental results on the THINGS-EEG dataset show ViEEG outperforms existing methods with 40.9% Top-1 accuracy in subject-dependent and 22.9% accuracy in cross-subject settings. The framework not only advances performance but also establishes a new paradigm for biologically grounded brain decoding in AI. <div>
 arXiv:2505.12408v2 Announce Type: replace 
 Abstract: Understanding and decoding brain activity into visual representations is a fundamental challenge at the intersection of neuroscience and artificial intelligence. While EEG-based visual decoding has shown promise due to its non-invasive, low-cost nature and millisecond-level temporal resolution, existing methods are limited by their reliance on flat neural representations that overlook the brain's inherent visual hierarchy. In this paper, we introduce ViEEG, a biologically inspired hierarchical EEG decoding framework that aligns with the Hubel-Wiesel theory of visual processing. ViEEG decomposes each visual stimulus into three biologically aligned components-contour, foreground object, and contextual scene-serving as anchors for a three-stream EEG encoder. These EEG features are progressively integrated via cross-attention routing, simulating cortical information flow from V1 to IT to the association cortex. We further adopt hierarchical contrastive learning to align EEG representations with CLIP embeddings, enabling zero-shot object recognition. Extensive experiments on the THINGS-EEG dataset demonstrate that ViEEG achieves state-of-the-art performance, with 40.9% Top-1 accuracy in subject-dependent and 22.9% Top-1 accuracy in cross-subject settings, surpassing existing methods by over 45%. Our framework not only advances the performance frontier but also sets a new paradigm for biologically grounded brain decoding in AI.
 ]]></content:encoded>
-<pubDate>Tue, 27 May 2025 00:00:00 -0400</pubDate>
 <pubDate>Tue, 27 May 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -43,11 +42,10 @@ Abstract: Understanding and decoding brain activity into visual representations 
 Summary:
 GlobalGeoTree is introduced as a global dataset for tree species classification, containing 6.3 million geolocated tree occurrences across various taxonomic levels and paired with remote sensing and environmental data. A baseline model called GeoTreeCLIP is presented, utilizing a vision-language framework pretrained on GlobalGeoTree-6M for improved classification. The dataset is divided into training and evaluation subsets, with emphasis on zero-shot and few-shot benchmarking using GlobalGeoTree-10kEval. Experimental results demonstrate the effectiveness of GeoTreeCLIP in enhancing classification accuracy over existing models. By releasing the dataset, models, and code publicly, the aim is to set a benchmark for advancing tree species classification and promoting innovation in biodiversity research and ecological applications. 
 
-<br><br>Summary: <div>
+<br /><br />Summary: <div>
 arXiv:2505.12513v2 Announce Type: replace 
 Abstract: Global tree species mapping using remote sensing data is vital for biodiversity monitoring, forest management, and ecological research. However, progress in this field has been constrained by the scarcity of large-scale, labeled datasets. To address this, we introduce GlobalGeoTree, a comprehensive global dataset for tree species classification. GlobalGeoTree comprises 6.3 million geolocated tree occurrences, spanning 275 families, 2,734 genera, and 21,001 species across the hierarchical taxonomic levels. Each sample is paired with Sentinel-2 image time series and 27 auxiliary environmental variables, encompassing bioclimatic, geographic, and soil data. The dataset is partitioned into GlobalGeoTree-6M for model pretraining and curated evaluation subsets, primarily GlobalGeoTree-10kEval for zero-shot and few-shot benchmarking. To demonstrate the utility of the dataset, we introduce a baseline model, GeoTreeCLIP, which leverages paired remote sensing data and taxonomic text labels within a vision-language framework pretrained on GlobalGeoTree-6M. Experimental results show that GeoTreeCLIP achieves substantial improvements in zero- and few-shot classification on GlobalGeoTree-10kEval over existing advanced models. By making the dataset, models, and code publicly available, we aim to establish a benchmark to advance tree species classification and foster innovation in biodiversity research and ecological applications.
 ]]></content:encoded>
-<pubDate>Tue, 27 May 2025 00:00:00 -0400</pubDate>
 <pubDate>Tue, 27 May 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -55,13 +53,12 @@ Abstract: Global tree species mapping using remote sensing data is vital for bio
 <link>https://arxiv.org/abs/2505.14362</link>
 <guid>https://arxiv.org/abs/2505.14362</guid>
 <content:encoded><![CDATA[
-<div> Keywords: Vision-Language Models, Multimodal Reasoning, DeepEyes, Reinforcement Learning, Tool-Assisted Reasoning<br>
-Summary:<br>
+<div> Keywords: Vision-Language Models, Multimodal Reasoning, DeepEyes, Reinforcement Learning, Tool-Assisted Reasoning<br />
+Summary:<br />
 The paper introduces DeepEyes, a large Vision-Language Model that incorporates visual input processing into reasoning mechanisms through end-to-end reinforcement learning. Unlike traditional models, DeepEyes does not require cold-start SFT and naturally develops "thinking with images" capabilities. The model utilizes a tool-use-oriented data selection mechanism and reward strategy to encourage successful tool-assisted reasoning trajectories. DeepEyes outperforms existing models on perception and reasoning benchmarks and shows improvement in grounding, hallucination, and mathematical reasoning tasks. The model exhibits evolution in tool-calling behavior, starting from exploration to efficient exploitation, and demonstrates diverse thinking patterns resembling human visual reasoning processes. The code for DeepEyes is publicly available on GitHub for further research and development. <div>
 arXiv:2505.14362v2 Announce Type: replace 
 Abstract: Large Vision-Language Models (VLMs) have shown strong capabilities in multimodal understanding and reasoning, yet they are primarily constrained by text-based reasoning processes. However, achieving seamless integration of visual and textual reasoning which mirrors human cognitive processes remains a significant challenge. In particular, effectively incorporating advanced visual input processing into reasoning mechanisms is still an open question. Thus, in this paper, we explore the interleaved multimodal reasoning paradigm and introduce DeepEyes, a model with "thinking with images" capabilities incentivized through end-to-end reinforcement learning without the need for cold-start SFT. Notably, this ability emerges natively within the model itself, leveraging its inherent grounding ability as a tool instead of depending on separate specialized models. Specifically, we propose a tool-use-oriented data selection mechanism and a reward strategy to encourage successful tool-assisted reasoning trajectories. DeepEyes achieves significant performance gains on fine-grained perception and reasoning benchmarks and also demonstrates improvement in grounding, hallucination, and mathematical reasoning tasks. Interestingly, we observe the distinct evolution of tool-calling behavior from initial exploration to efficient and accurate exploitation, and diverse thinking patterns that closely mirror human visual reasoning processes. Code is available at https://github.com/Visual-Agent/DeepEyes.
 ]]></content:encoded>
-<pubDate>Tue, 27 May 2025 00:00:00 -0400</pubDate>
 <pubDate>Tue, 27 May 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -71,13 +68,12 @@ Abstract: Large Vision-Language Models (VLMs) have shown strong capabilities in 
 <content:encoded><![CDATA[
 <div> decoder-only model, multimodal understanding, multimodal generation, pretrained, BAGEL
 
-Summary:<br><br>BAGEL is an open-source foundational model that supports both multimodal understanding and generation. It is a decoder-only model pretrained on trillions of tokens from a variety of multimodal data sources. By leveraging such diverse data, BAGEL demonstrates advanced capabilities in complex multimodal reasoning, surpassing other open-source models in both generation and understanding tasks. It excels in tasks like free-form image manipulation, future frame prediction, 3D manipulation, and world navigation. The researchers provide key insights, pretraining details, data creation protocol, and release their code and checkpoints to the community to foster further multimodal research opportunities. The project page for BAGEL can be found at https://bagel-ai.org/ 
+Summary:<br /><br />BAGEL is an open-source foundational model that supports both multimodal understanding and generation. It is a decoder-only model pretrained on trillions of tokens from a variety of multimodal data sources. By leveraging such diverse data, BAGEL demonstrates advanced capabilities in complex multimodal reasoning, surpassing other open-source models in both generation and understanding tasks. It excels in tasks like free-form image manipulation, future frame prediction, 3D manipulation, and world navigation. The researchers provide key insights, pretraining details, data creation protocol, and release their code and checkpoints to the community to foster further multimodal research opportunities. The project page for BAGEL can be found at https://bagel-ai.org/ 
 
-Summary:<br> <div>
+Summary:<br /> <div>
 arXiv:2505.14683v2 Announce Type: replace 
 Abstract: Unifying multimodal understanding and generation has shown impressive capabilities in cutting-edge proprietary systems. In this work, we introduce BAGEL, an open-source foundational model that natively supports multimodal understanding and generation. BAGEL is a unified, decoder-only model pretrained on trillions of tokens curated from large-scale interleaved text, image, video, and web data. When scaled with such diverse multimodal interleaved data, BAGEL exhibits emerging capabilities in complex multimodal reasoning. As a result, it significantly outperforms open-source unified models in both multimodal generation and understanding across standard benchmarks, while exhibiting advanced multimodal reasoning abilities such as free-form image manipulation, future frame prediction, 3D manipulation, and world navigation. In the hope of facilitating further opportunities for multimodal research, we share the key findings, pretraining details, data creation protocal, and release our code and checkpoints to the community. The project page is at https://bagel-ai.org/
 ]]></content:encoded>
-<pubDate>Tue, 27 May 2025 00:00:00 -0400</pubDate>
 <pubDate>Tue, 27 May 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -87,12 +83,11 @@ Abstract: Unifying multimodal understanding and generation has shown impressive 
 <content:encoded><![CDATA[
 <div> Keywords: zero-shot counting, RichCount framework, text-image alignment, unseen categories, generalization
 
-Summary:<br><br>
+Summary:<br /><br />
 The RichCount framework addresses limitations in zero-shot counting models by enhancing text encoding and aligning text and visual features. It employs a two-stage training strategy to enrich text features with a feed-forward network and adapter trained on text-image similarity. By refining the text encoder, RichCount enables accurate counting across diverse prompts and complex images, improving generalization to unseen categories. This approach goes beyond simple prompt expansion by establishing meaningful feature alignment for robust counting performance. Extensive experiments on benchmark datasets validate the effectiveness of RichCount, showcasing state-of-the-art performance in zero-shot counting and enhancing generalization to unseen categories in open-world scenarios. <div>
 arXiv:2505.15398v2 Announce Type: replace 
 Abstract: Expanding pre-trained zero-shot counting models to handle unseen categories requires more than simply adding new prompts, as this approach does not achieve the necessary alignment between text and visual features for accurate counting. We introduce RichCount, the first framework to address these limitations, employing a two-stage training strategy that enhances text encoding and strengthens the model's association with objects in images. RichCount improves zero-shot counting for unseen categories through two key objectives: (1) enriching text features with a feed-forward network and adapter trained on text-image similarity, thereby creating robust, aligned representations; and (2) applying this refined encoder to counting tasks, enabling effective generalization across diverse prompts and complex images. In this manner, RichCount goes beyond simple prompt expansion to establish meaningful feature alignment that supports accurate counting across novel categories. Extensive experiments on three benchmark datasets demonstrate the effectiveness of RichCount, achieving state-of-the-art performance in zero-shot counting and significantly enhancing generalization to unseen categories in open-world scenarios.
 ]]></content:encoded>
-<pubDate>Tue, 27 May 2025 00:00:00 -0400</pubDate>
 <pubDate>Tue, 27 May 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -108,7 +103,6 @@ arXiv:2505.15489v2 Announce Type: replace
 Abstract: The real-world impact of misinformation stems from the underlying misleading narratives that creators seek to convey. As such, interpreting misleading creator intent is essential for multimodal misinformation detection (MMD) systems aimed at effective information governance. In this paper, we introduce an automated framework that simulates real-world multimodal news creation by explicitly modeling creator intent through two components: the desired influence and the execution plan. Using this framework, we construct DeceptionDecoded, a large-scale benchmark comprising 12,000 image-caption pairs aligned with trustworthy reference articles. The dataset captures both misleading and non-misleading intents and spans manipulations across visual and textual modalities. We conduct a comprehensive evaluation of 14 state-of-the-art vision-language models (VLMs) on three intent-centric tasks: (1) misleading intent detection, (2) misleading source attribution, and (3) creator desire inference. Despite recent advances, we observe that current VLMs fall short in recognizing misleading intent, often relying on spurious cues such as superficial cross-modal consistency, stylistic signals, and heuristic authenticity hints. Our findings highlight the pressing need for intent-aware modeling in MMD and open new directions for developing systems capable of deeper reasoning about multimodal misinformation.
 ]]></content:encoded>
 <pubDate>Tue, 27 May 2025 00:00:00 -0400</pubDate>
-<pubDate>Tue, 27 May 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
 <title>Interspatial Attention for Efficient 4D Human Video Generation</title>
@@ -119,11 +113,10 @@ Abstract: The real-world impact of misinformation stems from the underlying misl
 
 Summary:
 In this paper, a new interspatial attention (ISA) mechanism is introduced as a scalable building block for modern diffusion transformer (DiT) based video generation models. The ISA is a type of cross attention tailored for generating human videos with high quality and consistency. By training a latent ISA-based diffusion model on a large video dataset using a custom-developed video variation autoencoder, the model achieves state-of-the-art performance for 4D human video synthesis. It demonstrates exceptional motion consistency and identity preservation while allowing precise control over camera and body poses. The code and model are publicly available, enabling researchers and practitioners to utilize this innovative approach for generating photorealistic videos of digital humans with controllable features.
-<br><br>Summary: <div>
+<br /><br />Summary: <div>
 arXiv:2505.15800v2 Announce Type: replace 
 Abstract: Generating photorealistic videos of digital humans in a controllable manner is crucial for a plethora of applications. Existing approaches either build on methods that employ template-based 3D representations or emerging video generation models but suffer from poor quality or limited consistency and identity preservation when generating individual or multiple digital humans. In this paper, we introduce a new interspatial attention (ISA) mechanism as a scalable building block for modern diffusion transformer (DiT)--based video generation models. ISA is a new type of cross attention that uses relative positional encodings tailored for the generation of human videos. Leveraging a custom-developed video variation autoencoder, we train a latent ISA-based diffusion model on a large corpus of video data. Our model achieves state-of-the-art performance for 4D human video synthesis, demonstrating remarkable motion consistency and identity preservation while providing precise control of the camera and body poses. Our code and model are publicly released at https://dsaurus.github.io/isa4d/.
 ]]></content:encoded>
-<pubDate>Tue, 27 May 2025 00:00:00 -0400</pubDate>
 <pubDate>Tue, 27 May 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -141,7 +134,6 @@ arXiv:2505.15804v2 Announce Type: replace
 Abstract: Multimodal Large Language Models (MLLMs) have demonstrated remarkable capabilities across diverse tasks, yet they lag significantly behind humans in spatial reasoning. We investigate this gap through Transformation-Driven Visual Reasoning (TVR), a challenging task requiring identification of object transformations across images under varying viewpoints. While traditional Supervised Fine-Tuning (SFT) fails to generate coherent reasoning paths in cross-view settings, sparse-reward Reinforcement Learning (RL) suffers from inefficient exploration and slow convergence. To address these limitations, we propose STAR-R1, a novel framework that integrates a single-stage RL paradigm with a fine-grained reward mechanism tailored for TVR. Specifically, STAR-R1 rewards partial correctness while penalizing excessive enumeration and passive inaction, enabling efficient exploration and precise reasoning. Comprehensive evaluations demonstrate that STAR-R1 achieves state-of-the-art performance across all 11 metrics, outperforming SFT by 23% in cross-view scenarios. Further analysis reveals STAR-R1's anthropomorphic behavior and highlights its unique ability to compare all objects for improving spatial reasoning. Our work provides critical insights in advancing the research of MLLMs and reasoning models. The codes, model weights, and data will be publicly available at https://github.com/zongzhao23/STAR-R1.
 ]]></content:encoded>
 <pubDate>Tue, 27 May 2025 00:00:00 -0400</pubDate>
-<pubDate>Tue, 27 May 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
 <title>Improving Compositional Generation with Diffusion Models Using Lift Scores</title>
@@ -156,20 +148,18 @@ arXiv:2505.13740v2 Announce Type: replace-cross
 Abstract: We introduce a novel resampling criterion using lift scores, for improving compositional generation in diffusion models. By leveraging the lift scores, we evaluate whether generated samples align with each single condition and then compose the results to determine whether the composed prompt is satisfied. Our key insight is that lift scores can be efficiently approximated using only the original diffusion model, requiring no additional training or external modules. We develop an optimized variant that achieves relatively lower computational overhead during inference while maintaining effectiveness. Through extensive experiments, we demonstrate that lift scores significantly improved the condition alignment for compositional generation across 2D synthetic data, CLEVR position tasks, and text-to-image synthesis. Our code is available at http://rainorangelemon.github.io/complift.
 ]]></content:encoded>
 <pubDate>Tue, 27 May 2025 00:00:00 -0400</pubDate>
-<pubDate>Tue, 27 May 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
 <title>X-GRM: Large Gaussian Reconstruction Model for Sparse-view X-rays to Computed Tomography</title>
 <link>https://arxiv.org/abs/2505.15235</link>
 <guid>https://arxiv.org/abs/2505.15235</guid>
 <content:encoded><![CDATA[
-<div> Keywords: Computed Tomography, X-GRM, Transformer-based architecture, Voxel-based Gaussian Splatting, CT volume reconstruction <br>
-Summary: <br>
-The article introduces X-GRM, a large feedforward model designed for reconstructing 3D CT volumes from sparse-view 2D X-ray projections. X-GRM utilizes a scalable transformer-based architecture to efficiently encode sparse-view X-ray inputs and a novel volume representation called Voxel-based Gaussian Splatting (VoxGS) for CT volume extraction and differentiable X-ray rendering. This combination of a high-capacity model and flexible volume representation allows X-GRM to generate high-quality reconstructions from various testing inputs, regardless of whether they are in-domain or out-domain X-ray projections. The implementation codes for X-GRM are accessible on GitHub for further exploration and application. <br> <div>
+<div> Keywords: Computed Tomography, X-GRM, Transformer-based architecture, Voxel-based Gaussian Splatting, CT volume reconstruction <br />
+Summary: <br />
+The article introduces X-GRM, a large feedforward model designed for reconstructing 3D CT volumes from sparse-view 2D X-ray projections. X-GRM utilizes a scalable transformer-based architecture to efficiently encode sparse-view X-ray inputs and a novel volume representation called Voxel-based Gaussian Splatting (VoxGS) for CT volume extraction and differentiable X-ray rendering. This combination of a high-capacity model and flexible volume representation allows X-GRM to generate high-quality reconstructions from various testing inputs, regardless of whether they are in-domain or out-domain X-ray projections. The implementation codes for X-GRM are accessible on GitHub for further exploration and application. <br /> <div>
 arXiv:2505.15235v2 Announce Type: replace-cross 
 Abstract: Computed Tomography serves as an indispensable tool in clinical workflows, providing non-invasive visualization of internal anatomical structures. Existing CT reconstruction works are limited to small-capacity model architecture and inflexible volume representation. In this work, we present X-GRM (X-ray Gaussian Reconstruction Model), a large feedforward model for reconstructing 3D CT volumes from sparse-view 2D X-ray projections. X-GRM employs a scalable transformer-based architecture to encode sparse-view X-ray inputs, where tokens from different views are integrated efficiently. Then, these tokens are decoded into a novel volume representation, named Voxel-based Gaussian Splatting (VoxGS), which enables efficient CT volume extraction and differentiable X-ray rendering. This combination of a high-capacity model and flexible volume representation, empowers our model to produce high-quality reconstructions from various testing inputs, including in-domain and out-domain X-ray projections. Our codes are available at: https://github.com/CUHK-AIM-Group/X-GRM.
 ]]></content:encoded>
-<pubDate>Tue, 27 May 2025 00:00:00 -0400</pubDate>
 <pubDate>Tue, 27 May 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -180,14 +170,12 @@ Abstract: Computed Tomography serves as an indispensable tool in clinical workfl
 <div> generalization, vision-language-action, manipulation, zero-shot, robotics
 Summary:
 AGNOSTOS is a new simulation benchmark that evaluates the cross-task zero-shot generalization capabilities of vision-language-action (VLA) models in manipulation tasks. It includes 23 unseen manipulation tasks for testing and assesses two levels of generalization difficulty. Current VLA models struggle to generalize effectively to these unseen tasks. To address this, X-ICM, a method conditioning large language models on in-context demonstrations from seen tasks, improves cross-task zero-shot generalization. A dynamics-guided sample selection strategy helps identify relevant demonstrations by capturing cross-task dynamics. AGNOSTOS and X-ICM aim to advance general-purpose robotic manipulation by enhancing the generalization capabilities of VLA models. 
-<br><br>Summary: <div>
+<br /><br />Summary: <div>
 arXiv:2505.15660v2 Announce Type: replace-cross 
 Abstract: The generalization capabilities of vision-language-action (VLA) models to unseen tasks are crucial to achieving general-purpose robotic manipulation in open-world settings. However, the cross-task generalization capabilities of existing VLA models remain significantly underexplored. To address this gap, we introduce AGNOSTOS, a novel simulation benchmark designed to rigorously evaluate cross-task zero-shot generalization in manipulation. AGNOSTOS comprises 23 unseen manipulation tasks for testing, distinct from common training task distributions, and incorporates two levels of generalization difficulty to assess robustness. Our systematic evaluation reveals that current VLA models, despite being trained on diverse datasets, struggle to generalize effectively to these unseen tasks. To overcome this limitation, we propose Cross-Task In-Context Manipulation (X-ICM), a method that conditions large language models (LLMs) on in-context demonstrations from seen tasks to predict action sequences for unseen tasks. Additionally, we introduce a dynamics-guided sample selection strategy that identifies relevant demonstrations by capturing cross-task dynamics. On AGNOSTOS, X-ICM significantly improves cross-task zero-shot generalization performance over leading VLAs. We believe AGNOSTOS and X-ICM will serve as valuable tools for advancing general-purpose robotic manipulation.
 ]]></content:encoded>
 <pubDate>Tue, 27 May 2025 00:00:00 -0400</pubDate>
-<pubDate>Tue, 27 May 2025 00:00:00 -0400</pubDate>
 </item>
-
 <item>
 <title>InstructPart: Task-Oriented Part Segmentation with Instruction Reasoning</title>
 <link>https://arxiv.org/abs/2505.18291</link>
@@ -10937,174 +10925,6 @@ MonoSplat introduces a new framework for robust Gaussian reconstruction in real-
 <br /><br />Summary: <div>
 arXiv:2505.15185v1 Announce Type: new 
 Abstract: Recent advances in generalizable 3D Gaussian Splatting have demonstrated promising results in real-time high-fidelity rendering without per-scene optimization, yet existing approaches still struggle to handle unfamiliar visual content during inference on novel scenes due to limited generalizability. To address this challenge, we introduce MonoSplat, a novel framework that leverages rich visual priors from pre-trained monocular depth foundation models for robust Gaussian reconstruction. Our approach consists of two key components: a Mono-Multi Feature Adapter that transforms monocular features into multi-view representations, coupled with an Integrated Gaussian Prediction module that effectively fuses both feature types for precise Gaussian generation. Through the Adapter's lightweight attention mechanism, features are seamlessly aligned and aggregated across views while preserving valuable monocular priors, enabling the Prediction module to generate Gaussian primitives with accurate geometry and appearance. Through extensive experiments on diverse real-world datasets, we convincingly demonstrate that MonoSplat achieves superior reconstruction quality and generalization capability compared to existing methods while maintaining computational efficiency with minimal trainable parameters. Codes are available at https://github.com/CUHK-AIM-Group/MonoSplat.
-]]></content:encoded>
-<pubDate>Thu, 22 May 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Geometrically Regularized Transfer Learning with On-Manifold and Off-Manifold Perturbation</title>
-<link>https://arxiv.org/abs/2505.15191</link>
-<guid>https://arxiv.org/abs/2505.15191</guid>
-<content:encoded><![CDATA[
-<div> adversarial perturbations, domain shift, transfer learning, data augmentation, manifold-aware
-
-Summary: 
-The paper introduces MAADA, a novel framework for transfer learning under domain shift challenges. MAADA decomposes adversarial perturbations into on-manifold and off-manifold components to address semantic variation and model brittleness. The framework theoretically demonstrates that enforcing on-manifold consistency reduces hypothesis complexity and improves generalization, while off-manifold regularization smooths decision boundaries in low-density regions. Additionally, MAADA introduces a geometry-aware alignment loss to minimize geodesic discrepancy between source and target manifolds. Experimental results on DomainNet, VisDA, and Office-Home datasets show that MAADA outperforms existing adversarial and adaptation methods in unsupervised and few-shot settings, exhibiting superior structural robustness and cross-domain generalization. <div>
-arXiv:2505.15191v1 Announce Type: new 
-Abstract: Transfer learning under domain shift remains a fundamental challenge due to the divergence between source and target data manifolds. In this paper, we propose MAADA (Manifold-Aware Adversarial Data Augmentation), a novel framework that decomposes adversarial perturbations into on-manifold and off-manifold components to simultaneously capture semantic variation and model brittleness. We theoretically demonstrate that enforcing on-manifold consistency reduces hypothesis complexity and improves generalization, while off-manifold regularization smooths decision boundaries in low-density regions. Moreover, we introduce a geometry-aware alignment loss that minimizes geodesic discrepancy between source and target manifolds. Experiments on DomainNet, VisDA, and Office-Home show that MAADA consistently outperforms existing adversarial and adaptation methods in both unsupervised and few-shot settings, demonstrating superior structural robustness and cross-domain generalization.
-]]></content:encoded>
-<pubDate>Thu, 22 May 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Leveraging Foundation Models for Multimodal Graph-Based Action Recognition</title>
-<link>https://arxiv.org/abs/2505.15192</link>
-<guid>https://arxiv.org/abs/2505.15192</guid>
-<content:encoded><![CDATA[
-<div> Graph-based framework, vision-language foundation, bimanual manipulation actions, adaptive multimodal graph, dynamic graph architecture
-
-Summary:
-Our work introduces a novel graph-based framework that integrates a vision-language foundation to recognize fine-grained bimanual manipulation actions. Unlike static graph architectures, our approach constructs an adaptive multimodal graph with nodes for frames, objects, and textual annotations, and edges encoding spatial, temporal, and semantic relationships. This dynamic structure allows for flexible and context-aware reasoning through learned interactions. A task-specific attention mechanism within a Graph Attention Network further improves reasoning by modulating edge importance based on action semantics. Extensive evaluations on benchmark datasets show that our method outperforms current baselines, highlighting the efficacy of combining foundation models with dynamic graph-based reasoning for robust and generalizable action recognition.<br /><br />Summary: <div>
-arXiv:2505.15192v1 Announce Type: new 
-Abstract: Foundation models have ushered in a new era for multimodal video understanding by enabling the extraction of rich spatiotemporal and semantic representations. In this work, we introduce a novel graph-based framework that integrates a vision-language foundation, leveraging VideoMAE for dynamic visual encoding and BERT for contextual textual embedding, to address the challenge of recognizing fine-grained bimanual manipulation actions. Departing from conventional static graph architectures, our approach constructs an adaptive multimodal graph where nodes represent frames, objects, and textual annotations, and edges encode spatial, temporal, and semantic relationships. These graph structures evolve dynamically based on learned interactions, allowing for flexible and context-aware reasoning. A task-specific attention mechanism within a Graph Attention Network further enhances this reasoning by modulating edge importance based on action semantics. Through extensive evaluations on diverse benchmark datasets, we demonstrate that our method consistently outperforms state-of-the-art baselines, underscoring the strength of combining foundation models with dynamic graph-based reasoning for robust and generalizable action recognition.
-]]></content:encoded>
-<pubDate>Thu, 22 May 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>GAMA: Geometry-Aware Manifold Alignment via Structured Adversarial Perturbations for Robust Domain Adaptation</title>
-<link>https://arxiv.org/abs/2505.15194</link>
-<guid>https://arxiv.org/abs/2505.15194</guid>
-<content:encoded><![CDATA[
-<div> Keywords: Domain adaptation, manifold misalignment, geometric information, structured perturbations, adversarial optimization
-
-Summary:
-GAMA (Geometry-Aware Manifold Alignment) addresses the challenge of domain adaptation by explicitly aligning manifolds through structured perturbations guided by geometric information. The framework combines tangent space exploration with manifold-constrained adversarial optimization to enhance semantic consistency, robustness to off-manifold deviations, and cross-domain alignment. Theoretical analysis shows that GAMA tightens generalization bounds through structured regularization and explicit alignment. Empirical results on DomainNet, VisDA, and Office-Home datasets demonstrate that GAMA outperforms existing adversarial and adaptation methods in both unsupervised and few-shot settings, showcasing superior robustness, generalization, and manifold alignment capabilities.<br /><br />Summary: GAMA introduces a novel approach to domain adaptation by explicitly aligning manifolds using structured perturbations guided by geometric information. The method enhances semantic consistency, robustness, and cross-domain alignment by systematically exploring tangent spaces and optimizing in a manifold-constrained manner. Theoretical analysis supports GAMA's ability to improve generalization bounds through regularization and alignment. Empirical evaluations on various datasets confirm GAMA's superiority over existing methods in unsupervised and few-shot scenarios, highlighting its robustness, generalization, and manifold alignment effectiveness. <div>
-arXiv:2505.15194v1 Announce Type: new 
-Abstract: Domain adaptation remains a challenge when there is significant manifold discrepancy between source and target domains. Although recent methods leverage manifold-aware adversarial perturbations to perform data augmentation, they often neglect precise manifold alignment and systematic exploration of structured perturbations. To address this, we propose GAMA (Geometry-Aware Manifold Alignment), a structured framework that achieves explicit manifold alignment via adversarial perturbation guided by geometric information. GAMA systematically employs tangent space exploration and manifold-constrained adversarial optimization, simultaneously enhancing semantic consistency, robustness to off-manifold deviations, and cross-domain alignment. Theoretical analysis shows that GAMA tightens the generalization bound via structured regularization and explicit alignment. Empirical results on DomainNet, VisDA, and Office-Home demonstrate that GAMA consistently outperforms existing adversarial and adaptation methods in both unsupervised and few-shot settings, exhibiting superior robustness, generalization, and manifold alignment capability.
-]]></content:encoded>
-<pubDate>Thu, 22 May 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Intentional Gesture: Deliver Your Intentions with Gestures for Speech</title>
-<link>https://arxiv.org/abs/2505.15197</link>
-<guid>https://arxiv.org/abs/2505.15197</guid>
-<content:encoded><![CDATA[
-<div> Keywords: co-speech gesture generation, communicative intentions, intention-reasoning, high-level communicative functions, digital humans<br />
-Summary: 
-The study introduces the Intentional-Gesture framework, which aims to generate gestures in communication based on high-level communicative functions rather than just linguistic cues. The framework focuses on understanding and leveraging the underlying communicative intentions behind human gestures, leading to more semantically meaningful and synchronized outputs. The InG dataset is curated by adding gesture-intention annotations from the BEAT-2 dataset, using large vision-language models for automatic annotation. Intentional Gesture Motion Tokenizer is introduced to incorporate high-level communicative functions into tokenized motion representations for intention-aware gesture synthesis. The framework achieves state-of-the-art performance on the BEAT-2 benchmark, offering a modular foundation for expressive gesture generation in digital humans and embodied AI.<br /><br />Summary: <div>
-arXiv:2505.15197v1 Announce Type: new 
-Abstract: When humans speak, gestures help convey communicative intentions, such as adding emphasis or describing concepts. However, current co-speech gesture generation methods rely solely on superficial linguistic cues (\textit{e.g.} speech audio or text transcripts), neglecting to understand and leverage the communicative intention that underpins human gestures. This results in outputs that are rhythmically synchronized with speech but are semantically shallow. To address this gap, we introduce \textbf{Intentional-Gesture}, a novel framework that casts gesture generation as an intention-reasoning task grounded in high-level communicative functions. % First, we curate the \textbf{InG} dataset by augmenting BEAT-2 with gesture-intention annotations (\textit{i.e.}, text sentences summarizing intentions), which are automatically annotated using large vision-language models. Next, we introduce the \textbf{Intentional Gesture Motion Tokenizer} to leverage these intention annotations. It injects high-level communicative functions (\textit{e.g.}, intentions) into tokenized motion representations to enable intention-aware gesture synthesis that are both temporally aligned and semantically meaningful, achieving new state-of-the-art performance on the BEAT-2 benchmark. Our framework offers a modular foundation for expressive gesture generation in digital humans and embodied AI. Project Page: https://andypinxinliu.github.io/Intentional-Gesture
-]]></content:encoded>
-<pubDate>Thu, 22 May 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Flashback: Memory-Driven Zero-shot, Real-time Video Anomaly Detection</title>
-<link>https://arxiv.org/abs/2505.15205</link>
-<guid>https://arxiv.org/abs/2505.15205</guid>
-<content:encoded><![CDATA[
-<div> Flashback, zero-shot, real-time, video anomaly detection, surveillance<br />
-Summary:<br />
-Flashback is a new approach to video anomaly detection that addresses the challenges of domain dependency and real-time constraints in surveillance systems. It operates in two stages: Recall and Respond. In the Recall stage, an LLM creates a memory of normal and anomalous captions without using real anomaly data. In the Respond stage, incoming video segments are matched against this memory for anomaly detection. Flashback achieves real-time VAD on a consumer-grade GPU by eliminating LLM calls during inference. On the UCF-Crime and XD-Violence datasets, Flashback outperforms prior zero-shot VAD methods by significant margins, achieving an AUC of 87.3 and AP of 75.1. This innovation has the potential to automate anomaly detection in large-scale surveillance systems, reducing the need for human operators and enhancing overall system efficiency. <br /> <div>
-arXiv:2505.15205v1 Announce Type: new 
-Abstract: Video Anomaly Detection (VAD) automatically identifies anomalous events from video, mitigating the need for human operators in large-scale surveillance deployments. However, three fundamental obstacles hinder real-world adoption: domain dependency and real-time constraints -- requiring near-instantaneous processing of incoming video. To this end, we propose Flashback, a zero-shot and real-time video anomaly detection paradigm. Inspired by the human cognitive mechanism of instantly judging anomalies and reasoning in current scenes based on past experience, Flashback operates in two stages: Recall and Respond. In the offline recall stage, an off-the-shelf LLM builds a pseudo-scene memory of both normal and anomalous captions without any reliance on real anomaly data. In the online respond stage, incoming video segments are embedded and matched against this memory via similarity search. By eliminating all LLM calls at inference time, Flashback delivers real-time VAD even on a consumer-grade GPU. On two large datasets from real-world surveillance scenarios, UCF-Crime and XD-Violence, we achieve 87.3 AUC (+7.0 pp) and 75.1 AP (+13.1 pp), respectively, outperforming prior zero-shot VAD methods by large margins.
-]]></content:encoded>
-<pubDate>Thu, 22 May 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>GT^2-GS: Geometry-aware Texture Transfer for Gaussian Splatting</title>
-<link>https://arxiv.org/abs/2505.15208</link>
-<guid>https://arxiv.org/abs/2505.15208</guid>
-<content:encoded><![CDATA[
-<div> geometry-aware texture transfer framework, gaussian splitting, texture features, geometry-consistent texture loss, geometry preservation strategy
-
-Summary:
-The article introduces GT^2-GS, a novel geometry-aware texture transfer framework for gaussian splitting with a focus on transferring 2D textures to 3D modalities. The framework addresses the issue of insufficient texture features by proposing a geometry-aware texture augmentation module. It also introduces a geometry-consistent texture loss function that considers both camera pose and 3D geometric information for optimized texture features. Additionally, a geometry preservation strategy is implemented to balance learning texture features and preserving geometric integrity through iterative texture transfer and geometry correction stages. Experimental results demonstrate the method's effectiveness and controllability in achieving high-quality 3D texture transfer results aligned with human visual perception. The framework provides a homepage for further information and access to the method. <br /><br />Summary: <div>
-arXiv:2505.15208v1 Announce Type: new 
-Abstract: Transferring 2D textures to 3D modalities is of great significance for improving the efficiency of multimedia content creation. Existing approaches have rarely focused on transferring image textures onto 3D representations. 3D style transfer methods are capable of transferring abstract artistic styles to 3D scenes. However, these methods often overlook the geometric information of the scene, which makes it challenging to achieve high-quality 3D texture transfer results. In this paper, we present GT^2-GS, a geometry-aware texture transfer framework for gaussian splitting. From the perspective of matching texture features with geometric information in rendered views, we identify the issue of insufficient texture features and propose a geometry-aware texture augmentation module to expand the texture feature set. Moreover, a geometry-consistent texture loss is proposed to optimize texture features into the scene representation. This loss function incorporates both camera pose and 3D geometric information of the scene, enabling controllable texture-oriented appearance editing. Finally, a geometry preservation strategy is introduced. By alternating between the texture transfer and geometry correction stages over multiple iterations, this strategy achieves a balance between learning texture features and preserving geometric integrity. Extensive experiments demonstrate the effectiveness and controllability of our method. Through geometric awareness, our approach achieves texture transfer results that better align with human visual perception. Our homepage is available at https://vpx-ecnu.github.io/GT2-GS-website.
-]]></content:encoded>
-<pubDate>Thu, 22 May 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Multimodal Conditional Information Bottleneck for Generalizable AI-Generated Image Detection</title>
-<link>https://arxiv.org/abs/2505.15217</link>
-<guid>https://arxiv.org/abs/2505.15217</guid>
-<content:encoded><![CDATA[
-<div> conditional bottleneck network, CLIP, AI-generated image detection, information bottleneck, generalization ability <br />
-Summary: <br />
-The paper introduces a multimodal conditional bottleneck network to enhance the detectability of AI-generated images. By addressing feature redundancy using an information bottleneck network, the model is able to improve its generalization ability. A semantic analysis experiment reveals a bias in the CLIP feature space, where fake image features exhibit higher similarity with text features compared to real image features. This prompts the development of InfoFD, a text-guided AI-generated image detection framework consisting of the Text-Guided Conditional Information Bottleneck (TGCIB) and Dynamic Text Orthogonalization (DTO). TGCIB conditions on both text and class modalities to improve representation generalizability, while DTO updates weighted text features to capitalize on the observed bias. The model showcases exceptional performance on the GenImage dataset and latest generative models, demonstrating the efficacy of the proposed approach. <div>
-arXiv:2505.15217v1 Announce Type: new 
-Abstract: Although existing CLIP-based methods for detecting AI-generated images have achieved promising results, they are still limited by severe feature redundancy, which hinders their generalization ability. To address this issue, incorporating an information bottleneck network into the task presents a straightforward solution. However, relying solely on image-corresponding prompts results in suboptimal performance due to the inherent diversity of prompts. In this paper, we propose a multimodal conditional bottleneck network to reduce feature redundancy while enhancing the discriminative power of features extracted by CLIP, thereby improving the model's generalization ability. We begin with a semantic analysis experiment, where we observe that arbitrary text features exhibit lower cosine similarity with real image features than with fake image features in the CLIP feature space, a phenomenon we refer to as "bias". Therefore, we introduce InfoFD, a text-guided AI-generated image detection framework. InfoFD consists of two key components: the Text-Guided Conditional Information Bottleneck (TGCIB) and Dynamic Text Orthogonalization (DTO). TGCIB improves the generalizability of learned representations by conditioning on both text and class modalities. DTO dynamically updates weighted text features, preserving semantic information while leveraging the global "bias". Our model achieves exceptional generalization performance on the GenImage dataset and latest generative models. Our code is available at https://github.com/Ant0ny44/InfoFD.
-]]></content:encoded>
-<pubDate>Thu, 22 May 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Continuous Representation Methods, Theories, and Applications: An Overview and Perspectives</title>
-<link>https://arxiv.org/abs/2505.15222</link>
-<guid>https://arxiv.org/abs/2505.15222</guid>
-<content:encoded><![CDATA[
-<div> Keywords: continuous representation, function representation, theoretical foundations, real-world applications, future directions
-
-Summary: 
-Continuous representation methods have emerged as a superior paradigm for characterizing real-world data, offering advantages like resolution flexibility and parameter efficiency. This review examines recent advancements in continuous representation frameworks, including method designs like basis function representation and statistical modeling. Theoretical foundations are discussed, such as approximation error analysis and convergence properties. The review also covers real-world applications in computer vision, graphics, bioinformatics, and remote sensing. Future directions and perspectives are outlined to inspire further exploration and insights in continuous representation methods. The referenced works are summarized in an open-source repository for easy access and reference.<br /><br />Summary: <div>
-arXiv:2505.15222v1 Announce Type: new 
-Abstract: Recently, continuous representation methods emerge as novel paradigms that characterize the intrinsic structures of real-world data through function representations that map positional coordinates to their corresponding values in the continuous space. As compared with the traditional discrete framework, the continuous framework demonstrates inherent superiority for data representation and reconstruction (e.g., image restoration, novel view synthesis, and waveform inversion) by offering inherent advantages including resolution flexibility, cross-modal adaptability, inherent smoothness, and parameter efficiency. In this review, we systematically examine recent advancements in continuous representation frameworks, focusing on three aspects: (i) Continuous representation method designs such as basis function representation, statistical modeling, tensor function decomposition, and implicit neural representation; (ii) Theoretical foundations of continuous representations such as approximation error analysis, convergence property, and implicit regularization; (iii) Real-world applications of continuous representations derived from computer vision, graphics, bioinformatics, and remote sensing. Furthermore, we outline future directions and perspectives to inspire exploration and deepen insights to facilitate continuous representation methods, theories, and applications. All referenced works are summarized in our open-source repository: https://github.com/YisiLuo/Continuous-Representation-Zoo.
-]]></content:encoded>
-<pubDate>Thu, 22 May 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>DC-Scene: Data-Centric Learning for 3D Scene Understanding</title>
-<link>https://arxiv.org/abs/2505.15232</link>
-<guid>https://arxiv.org/abs/2505.15232</guid>
-<content:encoded><![CDATA[
-<div> Keywords: 3D scene understanding, DC-Scene, data quality, training efficiency, vision-language alignment
-
-Summary:<br />
-Advancing learning-based 3D scene understanding faces challenges due to large scale scenes and lack of annotated 3D datasets. The DC-Scene framework is introduced as a solution that emphasizes data quality and training efficiency. It includes a CLIP-driven dual-indicator quality filter and a curriculum scheduler to filter out noisy samples and reduce the need for large-scale labeled data. Through experiments on ScanRefer and Nr3D datasets, DC-Scene achieves state-of-the-art performance while reducing training costs significantly. Specifically, it achieves an 86.1 CIDEr score with the top 75% subset, outperforming exhaustive training and confirming that a compact set of high-quality samples can lead to better results. The code for DC-Scene will be available on GitHub at https://github.com/AIGeeksGroup/DC-Scene.
-
-Summary: <div>
-arXiv:2505.15232v1 Announce Type: new 
-Abstract: 3D scene understanding plays a fundamental role in vision applications such as robotics, autonomous driving, and augmented reality. However, advancing learning-based 3D scene understanding remains challenging due to two key limitations: (1) the large scale and complexity of 3D scenes lead to higher computational costs and slower training compared to 2D counterparts; and (2) high-quality annotated 3D datasets are significantly scarcer than those available for 2D vision. These challenges underscore the need for more efficient learning paradigms. In this work, we propose DC-Scene, a data-centric framework tailored for 3D scene understanding, which emphasizes enhancing data quality and training efficiency. Specifically, we introduce a CLIP-driven dual-indicator quality (DIQ) filter, combining vision-language alignment scores with caption-loss perplexity, along with a curriculum scheduler that progressively expands the training pool from the top 25% to 75% of scene-caption pairs. This strategy filters out noisy samples and significantly reduces dependence on large-scale labeled 3D data. Extensive experiments on ScanRefer and Nr3D demonstrate that DC-Scene achieves state-of-the-art performance (86.1 CIDEr with the top-75% subset vs. 85.4 with the full dataset) while reducing training cost by approximately two-thirds, confirming that a compact set of high-quality samples can outperform exhaustive training. Code will be available at https://github.com/AIGeeksGroup/DC-Scene.
-]]></content:encoded>
-<pubDate>Thu, 22 May 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>CAD: A General Multimodal Framework for Video Deepfake Detection via Cross-Modal Alignment and Distillation</title>
-<link>https://arxiv.org/abs/2505.15233</link>
-<guid>https://arxiv.org/abs/2505.15233</guid>
-<content:encoded><![CDATA[
-<div> Keywords: deepfake, multimodal, forensic traces, cross-modal alignment, Cross-Modal Alignment and Distillation
-
-Summary:
-Cross-Modal Alignment and Distillation (CAD) is proposed for detecting multimodal deepfakes by reconciling modality-specific forensic traces and modality-shared semantic misalignments. The approach comprises two components: cross-modal alignment for identifying inconsistencies in high-level semantic synchronization and cross-modal distillation for mitigating feature conflicts while preserving modality-specific forensic traces. CAD significantly outperforms existing methods on both multimodal and unimodal deepfake benchmarks, showcasing the importance of integrating multimodal complementary information harmoniously. The study demonstrates that modality-specific artifacts (such as face-swap artifacts or spectral distortions) and modality-shared semantic misalignments (like lip-speech asynchrony) present complementary evidence for deepfake detection, and neglecting either aspect hinders performance. The framework emphasizes the need to consider both aspects for accurate and robust detection of multimodal deepfakes. 
-
-<br /><br />Summary: <div>
-arXiv:2505.15233v1 Announce Type: new 
-Abstract: The rapid emergence of multimodal deepfakes (visual and auditory content are manipulated in concert) undermines the reliability of existing detectors that rely solely on modality-specific artifacts or cross-modal inconsistencies. In this work, we first demonstrate that modality-specific forensic traces (e.g., face-swap artifacts or spectral distortions) and modality-shared semantic misalignments (e.g., lip-speech asynchrony) offer complementary evidence, and that neglecting either aspect limits detection performance. Existing approaches either naively fuse modality-specific features without reconciling their conflicting characteristics or focus predominantly on semantic misalignment at the expense of modality-specific fine-grained artifact cues. To address these shortcomings, we propose a general multimodal framework for video deepfake detection via Cross-Modal Alignment and Distillation (CAD). CAD comprises two core components: 1) Cross-modal alignment that identifies inconsistencies in high-level semantic synchronization (e.g., lip-speech mismatches); 2) Cross-modal distillation that mitigates feature conflicts during fusion while preserving modality-specific forensic traces (e.g., spectral distortions in synthetic audio). Extensive experiments on both multimodal and unimodal (e.g., image-only/video-only)deepfake benchmarks demonstrate that CAD significantly outperforms previous methods, validating the necessity of harmonious integration of multimodal complementary information.
-]]></content:encoded>
-<pubDate>Thu, 22 May 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>GAMA++: Disentangled Geometric Alignment with Adaptive Contrastive Perturbation for Reliable Domain Transfer</title>
-<link>https://arxiv.org/abs/2505.15241</link>
-<guid>https://arxiv.org/abs/2505.15241</guid>
-<content:encoded><![CDATA[
-<div> disentanglement, domain adaptation, perturbation, alignment, transfer learning
-Summary:
-GAMA++, a new framework, addresses issues in geometry-aware domain adaptation by introducing latent space disentanglement and adaptive contrastive perturbation. It isolates label-consistent manifold directions, tailors exploration to class-specific manifold characteristics, and encourages alignment of local semantic clusters while preserving diversity. The method achieves state-of-the-art results on various benchmarks, improving class-level alignment fidelity and boundary robustness. GAMA++ sets a new standard for semantic geometry alignment in transfer learning. 
-<br /><br />Summary: <div>
-arXiv:2505.15241v1 Announce Type: new 
-Abstract: Despite progress in geometry-aware domain adaptation, current methods such as GAMA still suffer from two unresolved issues: (1) insufficient disentanglement of task-relevant and task-irrelevant manifold dimensions, and (2) rigid perturbation schemes that ignore per-class alignment asymmetries. To address this, we propose GAMA++, a novel framework that introduces (i) latent space disentanglement to isolate label-consistent manifold directions from nuisance factors, and (ii) an adaptive contrastive perturbation strategy that tailors both on- and off-manifold exploration to class-specific manifold curvature and alignment discrepancy. We further propose a cross-domain contrastive consistency loss that encourages local semantic clusters to align while preserving intra-domain diversity. Our method achieves state-of-the-art results on DomainNet, Office-Home, and VisDA benchmarks under both standard and few-shot settings, with notable improvements in class-level alignment fidelity and boundary robustness. GAMA++ sets a new standard for semantic geometry alignment in transfer learning.
-]]></content:encoded>
-<pubDate>Thu, 22 May 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>VET-DINO: Learning Anatomical Understanding Through Multi-View Distillation in Veterinary Imaging</title>
-<link>https://arxiv.org/abs/2505.15248</link>
-<guid>https://arxiv.org/abs/2505.15248</guid>
-<content:encoded><![CDATA[
-<div> framework, self-supervised learning, medical imaging, veterinary radiographs, anatomical understanding
-Summary:
-VET-DINO introduces a novel self-supervised learning framework for medical imaging, specifically focusing on veterinary radiographs. By utilizing multiple standardized views from the same patient study, the model learns view-invariant anatomical structures and develops a 3D understanding from 2D projections. This approach, based on real multi-view pairs instead of synthetic augmentations, improves anatomical understanding and achieves state-of-the-art performance on various veterinary imaging tasks. The framework leverages domain-specific properties of medical imaging, setting a new standard for self-supervised learning in the field. <div>
-arXiv:2505.15248v1 Announce Type: new 
-Abstract: Self-supervised learning has emerged as a powerful paradigm for training deep neural networks, particularly in medical imaging where labeled data is scarce. While current approaches typically rely on synthetic augmentations of single images, we propose VET-DINO, a framework that leverages a unique characteristic of medical imaging: the availability of multiple standardized views from the same study. Using a series of clinical veterinary radiographs from the same patient study, we enable models to learn view-invariant anatomical structures and develop an implied 3D understanding from 2D projections. We demonstrate our approach on a dataset of 5 million veterinary radiographs from 668,000 canine studies. Through extensive experimentation, including view synthesis and downstream task performance, we show that learning from real multi-view pairs leads to superior anatomical understanding compared to purely synthetic augmentations. VET-DINO achieves state-of-the-art performance on various veterinary imaging tasks. Our work establishes a new paradigm for self-supervised learning in medical imaging that leverages domain-specific properties rather than merely adapting natural image techniques.
 ]]></content:encoded>
 <pubDate>Thu, 22 May 2025 00:00:00 -0400</pubDate>
 </item>

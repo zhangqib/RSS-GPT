@@ -5,17 +5,31 @@
 <link>http://rss.arxiv.org/rss/cs.LG</link>
 
 <item>
+<title>Unveil Multi-Picture Descriptions for Multilingual Mild Cognitive Impairment Detection via Contrastive Learning</title>
+<link>https://arxiv.org/abs/2505.17067</link>
+<guid>https://arxiv.org/abs/2505.17067</guid>
+<content:encoded><![CDATA[
+<div> Keywords: Mild Cognitive Impairment, multilingual, picture descriptions, contrastive learning, Product of Experts <br>
+Summary: <br>
+Detecting Mild Cognitive Impairment from multilingual and multiple picture descriptions is a challenging task. This article proposes a framework for MCI detection that includes enhancing discriminative representation learning through supervised contrastive learning, incorporating image modality in addition to speech and text modalities, and employing a Product of Experts strategy to address spurious correlations and overfitting. The framework improves MCI detection performance, with a significant increase in both Unweighted Average Recall and F1 score compared to a text unimodal baseline. The contrastive learning component showed particular effectiveness for the text modality. These results demonstrate the framework's efficacy in the challenging task of multilingual and multi-picture MCI detection. <br> <div>
+arXiv:2505.17067v2 Announce Type: replace-cross 
+Abstract: Detecting Mild Cognitive Impairment from picture descriptions is critical yet challenging, especially in multilingual and multiple picture settings. Prior work has primarily focused on English speakers describing a single picture (e.g., the 'Cookie Theft'). The TAUKDIAL-2024 challenge expands this scope by introducing multilingual speakers and multiple pictures, which presents new challenges in analyzing picture-dependent content. To address these challenges, we propose a framework with three components: (1) enhancing discriminative representation learning via supervised contrastive learning, (2) involving image modality rather than relying solely on speech and text modalities, and (3) applying a Product of Experts (PoE) strategy to mitigate spurious correlations and overfitting. Our framework improves MCI detection performance, achieving a +7.1% increase in Unweighted Average Recall (UAR) (from 68.1% to 75.2%) and a +2.9% increase in F1 score (from 80.6% to 83.5%) compared to the text unimodal baseline. Notably, the contrastive learning component yields greater gains for the text modality compared to speech. These results highlight our framework's effectiveness in multilingual and multi-picture MCI detection.
+]]></content:encoded>
+<pubDate>Tue, 27 May 2025 00:00:00 -0400</pubDate>
+<pubDate>Tue, 27 May 2025 00:00:00 -0400</pubDate>
+</item>
+
+<item>
 <title>Towards Understanding the Generalizability of Delayed Stochastic Gradient Descent</title>
 <link>https://arxiv.org/abs/2308.09430</link>
 <guid>https://arxiv.org/abs/2308.09430</guid>
 <content:encoded><![CDATA[
-<div> asynchronous delayed SGD, generalization performance, generalization error bounds, algorithmic stability, experimental results<br>
-Summary:<br>
+<div> asynchronous delayed SGD, generalization performance, generalization error bounds, algorithmic stability, experimental results<br />
+Summary:<br />
 This paper explores the generalization performance of stochastic gradient descent (SGD) with asynchronous delays, a key component in training large-scale machine learning models. By analyzing the average stability of the delayed gradient algorithm, the study establishes sharper upper bounds on generalization error for quadratic convex and strongly convex problems. The bounds are $\tilde{\mathcal{O}}(\frac{T-\tau}{n\tau})$ and $\tilde{\mathcal{O}}(\frac{1}{n})$, respectively, where $T$ is the iteration number and $n$ is the training data size. The analysis reveals that asynchronous delays can reduce the generalization error in the delayed SGD algorithm. The research also extends to random delay settings, with experimental results confirming the theoretical findings. <div>
 arXiv:2308.09430v4 Announce Type: replace 
 Abstract: Stochastic gradient descent (SGD) performed in an asynchronous manner plays a crucial role in training large-scale machine learning models. However, the generalization performance of asynchronous delayed SGD, which is an essential metric for assessing machine learning algorithms, has rarely been explored. Existing generalization error bounds are rather pessimistic and cannot reveal the correlation between asynchronous delays and generalization. In this paper, we investigate sharper generalization error bound for SGD with asynchronous delay $\tau$. Leveraging the generating function analysis tool, we first establish the average stability of the delayed gradient algorithm. Based on this algorithmic stability, we provide upper bounds on the generalization error of $\tilde{\mathcal{O}}(\frac{T-\tau}{n\tau})$ and $\tilde{\mathcal{O}}(\frac{1}{n})$ for quadratic convex and strongly convex problems, respectively, where $T$ refers to the iteration number and $n$ is the amount of training data. Our theoretical results indicate that asynchronous delays reduce the generalization error of the delayed SGD algorithm. Analogous analysis can be generalized to the random delay setting, and the experimental results validate our theoretical findings.
 ]]></content:encoded>
-<pubDate>Tue, 27 May 2025 00:00:00 -0400</pubDate>
 <pubDate>Tue, 27 May 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -28,11 +42,10 @@ Abstract: Stochastic gradient descent (SGD) performed in an asynchronous manner 
 Summary:
 The article addresses the inverse optimization problem of estimating weights for an optimal solution in mixed integer linear programming. Existing methods have slow convergence rates as the dimension of weights increases. The proposed method, utilizing a projected subgradient approach with a step size of k^-1/2, achieves efficient weight learning. The theoretical analysis reveals that the method guarantees a bounded distance between learned and true weights, approaching exact recovery of the optimal solution. Experimental results demonstrate the method's effectiveness in solving the inverse optimization problem with significantly fewer MILP calls compared to known methods, converging within a finite number of iterations. This novel approach offers a promising solution for efficiently estimating weights in MILP instances. 
 
-<br><br>Summary: <div>
+<br /><br />Summary: <div>
 arXiv:2405.14273v3 Announce Type: replace 
 Abstract: We consider the inverse optimization problem of estimating the weights of the objective function such that the given solution is an optimal solution for a mixed integer linear program (MILP). In this inverse optimization problem, the known methods exhibit inefficient convergence. Specifically, if $d$ denotes the dimension of the weights and $k$ the number of iterations, then the error of the weights is bounded by $O(k^{-1/(d-1)})$, leading to slow convergence as $d$ increases. We propose a projected subgradient method with a step size of $k^{-1/2}$ based on suboptimality loss. We theoretically show and demonstrate that the proposed method efficiently learns the weights. In particular, we show that there exists a constant $\gamma > 0$ such that the distance between the learned and true weights is bounded by $ O\left(k^{-1/(1+\gamma)} \exp\left(-\frac{\gamma k^{1/2}}{2+\gamma}\right)\right), $ or the optimal solution is exactly recovered. Furthermore, experiments demonstrate that the proposed method solves the inverse optimization problems of MILP using fewer than $1/7$ the number of MILP calls required by known methods, and converges within a finite number of iterations.
 ]]></content:encoded>
-<pubDate>Tue, 27 May 2025 00:00:00 -0400</pubDate>
 <pubDate>Tue, 27 May 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -48,7 +61,6 @@ arXiv:2505.14820v2 Announce Type: replace
 Abstract: Imitation learning often assumes that demonstrations are close to optimal according to some fixed, but unknown, cost function. However, according to satisficing theory, humans often choose acceptable behavior based on their personal (and potentially dynamic) levels of aspiration, rather than achieving (near-) optimality. For example, a lunar lander demonstration that successfully lands without crashing might be acceptable to a novice despite being slow or jerky. Using a margin-based objective to guide deep reinforcement learning, our focused satisficing approach to imitation learning seeks a policy that surpasses the demonstrator's aspiration levels -- defined over trajectories or portions of trajectories -- on unseen demonstrations without explicitly learning those aspirations. We show experimentally that this focuses the policy to imitate the highest quality (portions of) demonstrations better than existing imitation learning methods, providing much higher rates of guaranteed acceptability to the demonstrator, and competitive true returns on a range of environments.
 ]]></content:encoded>
 <pubDate>Tue, 27 May 2025 00:00:00 -0400</pubDate>
-<pubDate>Tue, 27 May 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
 <title>ReGUIDE: Data Efficient GUI Grounding via Spatial Reasoning and Search</title>
@@ -63,7 +75,6 @@ arXiv:2505.15259v2 Announce Type: replace
 Abstract: Recent advances in Multimodal Large Language Models (MLLMs) have enabled autonomous agents to interact with computers via Graphical User Interfaces (GUIs), where accurately localizing the coordinates of interface elements (e.g., buttons) is often required for fine-grained actions. However, this remains significantly challenging, leading prior works to rely on large-scale web datasets to improve the grounding accuracy. In this work, we propose Reasoning Graphical User Interface Grounding for Data Efficiency (ReGUIDE), a novel and effective framework for web grounding that enables MLLMs to learn data efficiently through self-generated reasoning and spatial-aware criticism. More specifically, ReGUIDE learns to (i) self-generate a language reasoning process for the localization via online reinforcement learning, and (ii) criticize the prediction using spatial priors that enforce equivariance under input transformations. At inference time, ReGUIDE further boosts performance through a test-time scaling strategy, which combines spatial search with coordinate aggregation. Our experiments demonstrate that ReGUIDE significantly advances web grounding performance across multiple benchmarks, outperforming baselines with substantially fewer training data points (e.g., only 0.2% samples compared to the best open-sourced baselines).
 ]]></content:encoded>
 <pubDate>Tue, 27 May 2025 00:00:00 -0400</pubDate>
-<pubDate>Tue, 27 May 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
 <title>A Temporal Difference Method for Stochastic Continuous Dynamics</title>
@@ -73,11 +84,10 @@ Abstract: Recent advances in Multimodal Large Language Models (MLLMs) have enabl
 <div> dynamical equations, Bellman's principle of optimality, Hamilton-Jacobi-Bellman equation, model-free approach, reinforcement learning
 
 Summary:
-This article presents a novel approach to reinforcement learning for continuous systems modeled by dynamical equations, such as ODEs and SDEs. While traditional RL methods assume known dynamics, this proposed model-free approach targets the Hamilton-Jacobi-Bellman (HJB) equation without requiring explicit access to the coefficient functions of the dynamical equations. By introducing a temporal difference method, this approach showcases potential advantages over transition kernel-based formulations, both qualitatively and empirically. This advancement in RL bridges the gap between stochastic optimal control and model-free reinforcement learning, offering a promising direction for future research and applications. <br><br>Summary: <div>
+This article presents a novel approach to reinforcement learning for continuous systems modeled by dynamical equations, such as ODEs and SDEs. While traditional RL methods assume known dynamics, this proposed model-free approach targets the Hamilton-Jacobi-Bellman (HJB) equation without requiring explicit access to the coefficient functions of the dynamical equations. By introducing a temporal difference method, this approach showcases potential advantages over transition kernel-based formulations, both qualitatively and empirically. This advancement in RL bridges the gap between stochastic optimal control and model-free reinforcement learning, offering a promising direction for future research and applications. <br /><br />Summary: <div>
 arXiv:2505.15544v3 Announce Type: replace 
 Abstract: For continuous systems modeled by dynamical equations such as ODEs and SDEs, Bellman's principle of optimality takes the form of the Hamilton-Jacobi-Bellman (HJB) equation, which provides the theoretical target of reinforcement learning (RL). Although recent advances in RL successfully leverage this formulation, the existing methods typically assume the underlying dynamics are known a priori because they need explicit access to the coefficient functions of dynamical equations to update the value function following the HJB equation. We address this inherent limitation of HJB-based RL; we propose a model-free approach still targeting the HJB equation and propose the corresponding temporal difference method. We demonstrate its potential advantages over transition kernel-based formulations, both qualitatively and empirically. The proposed formulation paves the way toward bridging stochastic optimal control and model-free reinforcement learning.
 ]]></content:encoded>
-<pubDate>Tue, 27 May 2025 00:00:00 -0400</pubDate>
 <pubDate>Tue, 27 May 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -85,14 +95,13 @@ Abstract: For continuous systems modeled by dynamical equations such as ODEs and
 <link>https://arxiv.org/abs/2505.15946</link>
 <guid>https://arxiv.org/abs/2505.15946</guid>
 <content:encoded><![CDATA[
-<div> Hierarchical Mixture-of-Experts architecture, fMRI signals, visual reconstruction, interpretability, neural decoding <br>
-<br>
-Summary: <br>
+<div> Hierarchical Mixture-of-Experts architecture, fMRI signals, visual reconstruction, interpretability, neural decoding <br />
+<br />
+Summary: <br />
 The MoRE-Brain framework proposes a neuro-inspired approach for visual reconstruction from fMRI data, prioritizing high-fidelity, adaptability, and interpretability. It utilizes a hierarchical Mixture-of-Experts architecture, where specialized experts process fMRI signals from related voxel groups, mimicking brain networks. By encoding fMRI into the CLIP space and using a finetuned diffusion model for image synthesis, MoRE-Brain achieves efficient cross-subject generalization and provides enhanced mechanistic insight into how different brain regions influence the reconstructed image. The framework demonstrates high reconstruction fidelity and effectively utilizes fMRI signals, distinguishing genuine neural decoding from generative priors. MoRE-Brain marks a significant advancement in fMRI-based visual decoding by combining interpretability with reconstruction accuracy, making it a valuable tool for understanding human perception and developing brain-computer interfaces. <div>
 arXiv:2505.15946v2 Announce Type: replace 
 Abstract: Decoding visual experiences from fMRI offers a powerful avenue to understand human perception and develop advanced brain-computer interfaces. However, current progress often prioritizes maximizing reconstruction fidelity while overlooking interpretability, an essential aspect for deriving neuroscientific insight. To address this gap, we propose MoRE-Brain, a neuro-inspired framework designed for high-fidelity, adaptable, and interpretable visual reconstruction. MoRE-Brain uniquely employs a hierarchical Mixture-of-Experts architecture where distinct experts process fMRI signals from functionally related voxel groups, mimicking specialized brain networks. The experts are first trained to encode fMRI into the frozen CLIP space. A finetuned diffusion model then synthesizes images, guided by expert outputs through a novel dual-stage routing mechanism that dynamically weighs expert contributions across the diffusion process. MoRE-Brain offers three main advancements: First, it introduces a novel Mixture-of-Experts architecture grounded in brain network principles for neuro-decoding. Second, it achieves efficient cross-subject generalization by sharing core expert networks while adapting only subject-specific routers. Third, it provides enhanced mechanistic insight, as the explicit routing reveals precisely how different modeled brain regions shape the semantic and spatial attributes of the reconstructed image. Extensive experiments validate MoRE-Brain's high reconstruction fidelity, with bottleneck analyses further demonstrating its effective utilization of fMRI signals, distinguishing genuine neural decoding from over-reliance on generative priors. Consequently, MoRE-Brain marks a substantial advance towards more generalizable and interpretable fMRI-based visual decoding. Code will be publicly available soon: https://github.com/yuxiangwei0808/MoRE-Brain.
 ]]></content:encoded>
-<pubDate>Tue, 27 May 2025 00:00:00 -0400</pubDate>
 <pubDate>Tue, 27 May 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -103,11 +112,10 @@ Abstract: Decoding visual experiences from fMRI offers a powerful avenue to unde
 <div> Keywords: stock market, reinforcement learning, Markov Decision Process, Q-Learning, machine learning
 
 Summary:
-Reinforcement Learning (RL) is applied to determine the best time to buy and sell stocks within a given time frame. The project uses a self-defined Markov Decision Process (MDP) problem based on real-world data to train the model. Various agents are trained using Q-Learning, Q-Learning with linear function approximation, and deep Q-Learning, along with machine learning regression and classification models to predict stock prices. The state space and reward system of the MDP problem are formulated with the help of existing research. The goal is to analyze and compare the agents to see which one learns the best policy to maximize profit on the stock market.<br><br>Summary: The project focuses on utilizing reinforcement learning and machine learning techniques to determine optimal times for buying and selling stocks. By training agents with Q-Learning and deep Q-Learning, a self-defined Markov Decision Process is used to model the stock market scenario. The study aims to compare different learning algorithms and models to identify the most effective strategy for maximizing profit in stock trading. <div>
+Reinforcement Learning (RL) is applied to determine the best time to buy and sell stocks within a given time frame. The project uses a self-defined Markov Decision Process (MDP) problem based on real-world data to train the model. Various agents are trained using Q-Learning, Q-Learning with linear function approximation, and deep Q-Learning, along with machine learning regression and classification models to predict stock prices. The state space and reward system of the MDP problem are formulated with the help of existing research. The goal is to analyze and compare the agents to see which one learns the best policy to maximize profit on the stock market.<br /><br />Summary: The project focuses on utilizing reinforcement learning and machine learning techniques to determine optimal times for buying and selling stocks. By training agents with Q-Learning and deep Q-Learning, a self-defined Markov Decision Process is used to model the stock market scenario. The study aims to compare different learning algorithms and models to identify the most effective strategy for maximizing profit in stock trading. <div>
 arXiv:2505.16099v2 Announce Type: replace 
 Abstract: Much research has been done to analyze the stock market. After all, if one can determine a pattern in the chaotic frenzy of transactions, then they could make a hefty profit from capitalizing on these insights. As such, the goal of our project was to apply reinforcement learning (RL) to determine the best time to buy a stock within a given time frame. With only a few adjustments, our model can be extended to identify the best time to sell a stock as well. In order to use the format of free, real-world data to train the model, we define our own Markov Decision Process (MDP) problem. These two papers [5] [6] helped us in formulating the state space and the reward system of our MDP problem. We train a series of agents using Q-Learning, Q-Learning with linear function approximation, and deep Q-Learning. In addition, we try to predict the stock prices using machine learning regression and classification models. We then compare our agents to see if they converge on a policy, and if so, which one learned the best policy to maximize profit on the stock market.
 ]]></content:encoded>
-<pubDate>Tue, 27 May 2025 00:00:00 -0400</pubDate>
 <pubDate>Tue, 27 May 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -115,14 +123,13 @@ Abstract: Much research has been done to analyze the stock market. After all, if
 <link>https://arxiv.org/abs/2505.16664</link>
 <guid>https://arxiv.org/abs/2505.16664</guid>
 <content:encoded><![CDATA[
-<div> Feature Engineering, Deep Learning Model, RUL Prediction, Transfer Learning, Battery Degradation </br>
-<br>
-Summary:<br>
-This paper presents a novel approach for predicting the Remaining Useful Life (RUL) of lithium-ion batteries, crucial for timely maintenance. The approach utilizes recent charge-discharge cycle data to estimate remaining usable cycles. It includes a unique signal processing pipeline and a deep learning prediction model. The pipeline computes a derived capacity feature and enhances it with statistical metrics and a delta-based method to capture cycle differences. The deep learning model consists of 1D CNN, A-LSTM, and ODE-LSTM blocks, capturing both local and long-range dependencies while modeling battery degradation dynamics. Transfer learning is employed, showing robust performance even with limited target data. Experimental results on large datasets demonstrate the superiority of this method over baseline techniques, with an RMSE of 101.59, indicating its potential for real-world RUL prediction applications. <br> <div>
+<div> Feature Engineering, Deep Learning Model, RUL Prediction, Transfer Learning, Battery Degradation 
+<br />
+Summary:<br />
+This paper presents a novel approach for predicting the Remaining Useful Life (RUL) of lithium-ion batteries, crucial for timely maintenance. The approach utilizes recent charge-discharge cycle data to estimate remaining usable cycles. It includes a unique signal processing pipeline and a deep learning prediction model. The pipeline computes a derived capacity feature and enhances it with statistical metrics and a delta-based method to capture cycle differences. The deep learning model consists of 1D CNN, A-LSTM, and ODE-LSTM blocks, capturing both local and long-range dependencies while modeling battery degradation dynamics. Transfer learning is employed, showing robust performance even with limited target data. Experimental results on large datasets demonstrate the superiority of this method over baseline techniques, with an RMSE of 101.59, indicating its potential for real-world RUL prediction applications. <br /> <div>
 arXiv:2505.16664v2 Announce Type: replace 
 Abstract: Accurate prediction of the Remaining Useful Life (RUL) is essential for enabling timely maintenance of lithium-ion batteries, impacting the operational efficiency of electric applications that rely on them. This paper proposes a RUL prediction approach that leverages data from recent charge-discharge cycles to estimate the number of remaining usable cycles. The approach introduces both a novel signal processing pipeline and a deep learning prediction model. In the signal preprocessing pipeline, a derived capacity feature $\dot{Q}(I, Q)$ is computed based on current and capacity signals. Alongside original capacity, voltage and current, these features are denoised and enhanced using statistical metrics and a delta-based method to capture differences between the current and previous cycles. In the prediction model, the processed features are then fed into a hybrid deep learning architecture composed of 1D Convolutional Neural Networks (CNN), Attentional Long Short-Term Memory (A-LSTM), and Ordinary Differential Equation-based LSTM (ODE-LSTM) blocks. This architecture is designed to capture both local signal characteristics and long-range temporal dependencies while modeling the continuous-time dynamics of battery degradation. The model is further evaluated using transfer learning across different learning strategies and target data partitioning scenarios. Results indicate that the model maintains robust performance, even when fine-tuned on limited target data. Experimental results on two publicly available large-scale datasets demonstrate that the proposed method outperforms a baseline deep learning approach and machine learning techniques, achieving an RMSE of 101.59, highlighting its strong potential for real-world RUL prediction applications.
 ]]></content:encoded>
-<pubDate>Tue, 27 May 2025 00:00:00 -0400</pubDate>
 <pubDate>Tue, 27 May 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -130,13 +137,12 @@ Abstract: Accurate prediction of the Remaining Useful Life (RUL) is essential fo
 <link>https://arxiv.org/abs/2505.16790</link>
 <guid>https://arxiv.org/abs/2505.16790</guid>
 <content:encoded><![CDATA[
-<div> Diffusion models, Molecular generation, Masked Element-wise Learnable Diffusion, State-clashing problem, Chemical validity <br>
-Summary: <br>
+<div> Diffusion models, Molecular generation, Masked Element-wise Learnable Diffusion, State-clashing problem, Chemical validity <br />
+Summary: <br />
 Masked diffusion models (MDMs) have shown success in modeling discrete data but face challenges in molecular generation. The study introduces Masked Element-wise Learnable Diffusion (MELD) to address the issue of state-clashing, where different molecules collapse into a common state during forward diffusion. MELD uses a noise scheduling network to assign corruption rates to individual graph elements, improving generation quality and chemical validity significantly. Experiments on various molecular benchmarks demonstrate that MELD enhances the performance of MDMs, increasing chemical validity from 15% to 93% on ZINC250K dataset. It also achieves state-of-the-art property alignment in conditional generation tasks. <div>
 arXiv:2505.16790v2 Announce Type: replace 
 Abstract: Masked diffusion models (MDMs) have achieved notable progress in modeling discrete data, while their potential in molecular generation remains underexplored. In this work, we explore their potential and introduce the surprising result that naively applying standards MDMs severely degrades the performance. We identify the critical cause of this issue as a state-clashing problem-where the forward diffusion of distinct molecules collapse into a common state, resulting in a mixture of reconstruction targets that cannot be learned using typical reverse diffusion process with unimodal predictions. To mitigate this, we propose Masked Element-wise Learnable Diffusion (MELD) that orchestrates per-element corruption trajectories to avoid collision between distinct molecular graphs. This is achieved through a parameterized noise scheduling network that assigns distinct corruption rates to individual graph elements, i.e., atoms and bonds. Extensive experiments on diverse molecular benchmarks reveal that MELD markedly enhances overall generation quality compared to element-agnostic noise scheduling, increasing the chemical validity of vanilla MDMs on ZINC250K from 15% to 93%, Furthermore, it achieves state-of-the-art property alignment in conditional generation tasks.
 ]]></content:encoded>
-<pubDate>Tue, 27 May 2025 00:00:00 -0400</pubDate>
 <pubDate>Tue, 27 May 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -144,14 +150,13 @@ Abstract: Masked diffusion models (MDMs) have achieved notable progress in model
 <link>https://arxiv.org/abs/2505.16925</link>
 <guid>https://arxiv.org/abs/2505.16925</guid>
 <content:encoded><![CDATA[
-<div> Reinforcement learning, risk-averse, exponential utility function, Itakura-Saito divergence, state-value, action-value<br>
-<br>
+<div> Reinforcement learning, risk-averse, exponential utility function, Itakura-Saito divergence, state-value, action-value<br />
+<br />
 Summary: 
 Risk-averse reinforcement learning is crucial in high-stakes fields, where agents aim to minimize risk rather than solely maximize returns. The exponential utility function is utilized to frame risk preferences, allowing for the derivation of Bellman equations and the adaptation of reinforcement learning algorithms. This study introduces a novel loss function based on the Itakura-Saito divergence for learning state-value and action-value functions in a numerically stable and mathematically sound manner. The proposed Itakura-Saito loss function is evaluated against established alternatives both theoretically and empirically, demonstrating superior performance in various scenarios, including those with known analytical solutions. This research contributes a valuable tool to the machine learning community for effectively addressing risk-averse reinforcement learning problems. <div>
 arXiv:2505.16925v2 Announce Type: replace 
 Abstract: Risk-averse reinforcement learning finds application in various high-stakes fields. Unlike classical reinforcement learning, which aims to maximize expected returns, risk-averse agents choose policies that minimize risk, occasionally sacrificing expected value. These preferences can be framed through utility theory. We focus on the specific case of the exponential utility function, where one can derive the Bellman equations and employ various reinforcement learning algorithms with few modifications. To address this, we introduce to the broad machine learning community a numerically stable and mathematically sound loss function based on the Itakura-Saito divergence for learning state-value and action-value functions. We evaluate the Itakura-Saito loss function against established alternatives, both theoretically and empirically. In the experimental section, we explore multiple scenarios, some with known analytical solutions, and show that the considered loss function outperforms the alternatives.
 ]]></content:encoded>
-<pubDate>Tue, 27 May 2025 00:00:00 -0400</pubDate>
 <pubDate>Tue, 27 May 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -169,20 +174,18 @@ arXiv:2505.17013v2 Announce Type: replace
 Abstract: Concept erasure, the ability to selectively prevent a model from generating specific concepts, has attracted growing interest, with various approaches emerging to address the challenge. However, it remains unclear how thoroughly these methods erase the target concept. We begin by proposing two conceptual models for the erasure mechanism in diffusion models: (i) reducing the likelihood of generating the target concept, and (ii) interfering with the model's internal guidance mechanisms. To thoroughly assess whether a concept has been truly erased from the model, we introduce a suite of independent evaluations. Our evaluation framework includes adversarial attacks, novel probing techniques, and analysis of the model's alternative generations in place of the erased concept. Our results shed light on the tension between minimizing side effects and maintaining robustness to adversarial prompts. Broadly, our work underlines the importance of comprehensive evaluation for erasure in diffusion models.
 ]]></content:encoded>
 <pubDate>Tue, 27 May 2025 00:00:00 -0400</pubDate>
-<pubDate>Tue, 27 May 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
 <title>Semi-Supervised Model-Free Bayesian State Estimation from Compressed Measurements</title>
 <link>https://arxiv.org/abs/2407.07368</link>
 <guid>https://arxiv.org/abs/2407.07368</guid>
 <content:encoded><![CDATA[
-<div> Bayesian state estimation, compressed measurements, model-free process, data-driven methods, SemiDANSE <br>
-Summary:<br>
+<div> Bayesian state estimation, compressed measurements, model-free process, data-driven methods, SemiDANSE <br />
+Summary:<br />
 The study focuses on data-driven Bayesian state estimation from compressed measurements in a model-free process, addressing an under-determined inverse problem. Traditional model-driven methods are unsuitable due to the unknown underlying dynamical model of the state's evolution. Existing unsupervised learning-based methods, DANSE and DMM, are shown to be inadequate for this task. A new approach, SemiDANSE, is proposed, utilizing semi-supervised learning with a combination of labelled and unlabelled data for regularization. Empirical experiments on benchmark dynamical systems demonstrate that SemiDANSE outperforms other methods for state estimation in the BSCM problem using different measurement systems. It competes well against KalmanNet, extended Kalman filter, and unscented Kalman filter, despite not knowing the exact dynamical models. <div>
 arXiv:2407.07368v5 Announce Type: replace-cross 
 Abstract: We consider data-driven Bayesian state estimation from compressed measurements (BSCM) of a model-free process. The dimension of the temporal measurement vector is lower than that of the temporal state vector to be estimated, leading to an under-determined inverse problem. The underlying dynamical model of the state's evolution is unknown for a 'model-free process.' Hence, it is difficult to use traditional model-driven methods, for example, Kalman and particle filters. Instead, we consider data-driven methods. We experimentally show that two existing unsupervised learning-based data-driven methods fail to address the BSCM problem in a model-free process. The methods are -- data-driven nonlinear state estimation (DANSE) and deep Markov model (DMM). While DANSE provides good predictive/forecasting performance to model the temporal measurement data as a time series, its unsupervised learning lacks suitable regularization for tackling the BSCM task. We then propose a semi-supervised learning approach and develop a semi-supervised learning-based DANSE method, referred to as SemiDANSE. In SemiDANSE, we use a large amount of unlabelled data along with a limited amount of labelled data, i.e., pairwise measurement-and-state data, which provides the desired regularization. Using three benchmark dynamical systems, we empirically show that the data-driven SemiDANSE provides competitive state estimation performance for BSCM using a handful of different measurement systems, against a hybrid method called KalmanNet and two model-driven methods (extended Kalman filter and unscented Kalman filter) that know the dynamical models exactly.
 ]]></content:encoded>
-<pubDate>Tue, 27 May 2025 00:00:00 -0400</pubDate>
 <pubDate>Tue, 27 May 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -193,11 +196,10 @@ Abstract: We consider data-driven Bayesian state estimation from compressed meas
 <div> semi-supervised learning, deep neural networks, pseudo-labeling, self-supervised learning, unsupervised methods
 
 Summary:
-In this work, the authors investigate the concept of pseudo-labeling in the context of deep neural models and explore its application beyond semi-supervised learning. They highlight the importance of leveraging large quantities of unlabeled data to improve the generalization of deep neural networks, identifying pseudo-labeling as a key technique in this domain. The study suggests a broader interpretation of pseudo-labels, extending their use to self-supervised and unsupervised learning methods. By bridging the gap between these areas, the authors propose new avenues for research, such as curriculum learning and self-supervised regularization, which could yield improvements across multiple domains. This holistic approach to pseudo-labeling opens up new possibilities for enhancing the performance and efficiency of deep neural networks in various computer science applications. <br><br>Summary: <div>
+In this work, the authors investigate the concept of pseudo-labeling in the context of deep neural models and explore its application beyond semi-supervised learning. They highlight the importance of leveraging large quantities of unlabeled data to improve the generalization of deep neural networks, identifying pseudo-labeling as a key technique in this domain. The study suggests a broader interpretation of pseudo-labels, extending their use to self-supervised and unsupervised learning methods. By bridging the gap between these areas, the authors propose new avenues for research, such as curriculum learning and self-supervised regularization, which could yield improvements across multiple domains. This holistic approach to pseudo-labeling opens up new possibilities for enhancing the performance and efficiency of deep neural networks in various computer science applications. <br /><br />Summary: <div>
 arXiv:2408.07221v3 Announce Type: replace-cross 
 Abstract: Deep neural models have achieved state of the art performance on a wide range of problems in computer science, especially in computer vision. However, deep neural networks often require large datasets of labeled samples to generalize effectively, and an important area of active research is semi-supervised learning, which attempts to instead utilize large quantities of (easily acquired) unlabeled samples. One family of methods in this space is pseudo-labeling, a class of algorithms that use model outputs to assign labels to unlabeled samples which are then used as labeled samples during training. Such assigned labels, called pseudo-labels, are most commonly associated with the field of semi-supervised learning. In this work we explore a broader interpretation of pseudo-labels within both self-supervised and unsupervised methods. By drawing the connection between these areas we identify new directions when advancements in one area would likely benefit others, such as curriculum learning and self-supervised regularization.
 ]]></content:encoded>
-<pubDate>Tue, 27 May 2025 00:00:00 -0400</pubDate>
 <pubDate>Tue, 27 May 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -210,11 +212,10 @@ Abstract: Deep neural models have achieved state of the art performance on a wid
 Summary: 
 Multi-agent systems (MAS) incorporating Large Language Models (LLMs) show promise in tackling complex tasks. However, manual MAS designs may not fully leverage LLM strengths and struggle to adapt to new tasks. Automatic MAS approaches often lack adaptability during inference. MAS-ZERO is introduced as a self-evolved, inference-time framework for automatic MAS design. It uses meta-level design to iteratively generate, evaluate, and refine MAS configurations tailored to each problem instance. MAS-ZERO enables dynamic agent composition and problem decomposition through meta-feedback. Experimental results across various benchmarks demonstrate that MAS-ZERO outperforms manual and automatic MAS baselines, achieving a 7.44% average accuracy improvement while remaining cost-effective. These findings highlight the potential of meta-level self-evolved design for creating effective and adaptive MAS. 
 
-<br><br>Summary: <div>
+<br /><br />Summary: <div>
 arXiv:2505.14996v2 Announce Type: replace-cross 
 Abstract: Multi-agent systems (MAS) leveraging the impressive capabilities of Large Language Models (LLMs) hold significant potential for tackling complex tasks. However, most current MAS depend on manually designed agent roles and communication protocols. These manual designs often fail to align with the underlying LLMs' strengths and struggle to adapt to novel tasks. Recent automatic MAS approaches attempt to mitigate these limitations but typically necessitate a validation set for tuning and yield static MAS designs lacking adaptability during inference. We introduce MAS-ZERO, the first self-evolved, inference-time framework for automatic MAS design. MAS-ZERO employs meta-level design to iteratively generate, evaluate, and refine MAS configurations tailored to each problem instance, without requiring a validation set. Critically, it enables dynamic agent composition and problem decomposition through meta-feedback on solvability and completeness. Experiments across math, graduate-level QA, and software engineering benchmarks, using both closed-source and open-source LLM backbones of varying sizes, demonstrate that MAS-ZERO outperforms both manual and automatic MAS baselines, achieving a 7.44% average accuracy improvement over the next strongest baseline while maintaining cost-efficiency. These findings underscore the promise of meta-level self-evolved design for creating effective and adaptive MAS.
 ]]></content:encoded>
-<pubDate>Tue, 27 May 2025 00:00:00 -0400</pubDate>
 <pubDate>Tue, 27 May 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -222,14 +223,13 @@ Abstract: Multi-agent systems (MAS) leveraging the impressive capabilities of La
 <link>https://arxiv.org/abs/2505.16463</link>
 <guid>https://arxiv.org/abs/2505.16463</guid>
 <content:encoded><![CDATA[
-<div> vision transformers, ViTs, AnchorFormer, bipartite attention, downstream tasks<br>
-<br>
+<div> vision transformers, ViTs, AnchorFormer, bipartite attention, downstream tasks<br />
+<br />
 Summary: 
-The article introduces AnchorFormer, an efficient vision transformer that utilizes anchor tokens to capture pivotal information and speed up inference. By estimating bipartite attention between anchors and tokens, the complexity is reduced from O(n^2) to O(mn), where m is the number of anchors. Anchors represented by neurons allow for differentiable learning of distributions and approximation of global self-attention through a Markov process. The model is extended to classification, detection, and segmentation tasks, showing superior performance compared to existing baselines. For instance, on ImageNet classification, AnchorFormer achieves up to 9.0% higher accuracy or 46.7% FLOPs reduction. On COCO detection, it achieves 81.3% higher mAP under comparable FLOPs. Overall, AnchorFormer proves to be effective in improving performance and efficiency across various vision tasks. <br><br> <div>
+The article introduces AnchorFormer, an efficient vision transformer that utilizes anchor tokens to capture pivotal information and speed up inference. By estimating bipartite attention between anchors and tokens, the complexity is reduced from O(n^2) to O(mn), where m is the number of anchors. Anchors represented by neurons allow for differentiable learning of distributions and approximation of global self-attention through a Markov process. The model is extended to classification, detection, and segmentation tasks, showing superior performance compared to existing baselines. For instance, on ImageNet classification, AnchorFormer achieves up to 9.0% higher accuracy or 46.7% FLOPs reduction. On COCO detection, it achieves 81.3% higher mAP under comparable FLOPs. Overall, AnchorFormer proves to be effective in improving performance and efficiency across various vision tasks. <br /><br /> <div>
 arXiv:2505.16463v2 Announce Type: replace-cross 
 Abstract: Recently, vision transformers (ViTs) have achieved excellent performance on vision tasks by measuring the global self-attention among the image patches. Given $n$ patches, they will have quadratic complexity such as $\mathcal{O}(n^2)$ and the time cost is high when splitting the input image with a small granularity. Meanwhile, the pivotal information is often randomly gathered in a few regions of an input image, some tokens may not be helpful for the downstream tasks. To handle this problem, we introduce an anchor-based efficient vision transformer (AnchorFormer), which employs the anchor tokens to learn the pivotal information and accelerate the inference. Firstly, by estimating the bipartite attention between the anchors and tokens, the complexity will be reduced from $\mathcal{O}(n^2)$ to $\mathcal{O}(mn)$, where $m$ is an anchor number and $m < n$. Notably, by representing the anchors with the neurons in a neural layer, we can differentiable learn these distributions and approximate global self-attention through the Markov process. Moreover, we extend the proposed model to three downstream tasks including classification, detection, and segmentation. Extensive experiments show the effectiveness of our AnchorFormer, e.g., achieving up to a 9.0% higher accuracy or 46.7% FLOPs reduction on ImageNet classification, 81.3% higher mAP on COCO detection under comparable FLOPs, as compared to the current baselines.
 ]]></content:encoded>
-<pubDate>Tue, 27 May 2025 00:00:00 -0400</pubDate>
 <pubDate>Tue, 27 May 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -240,11 +240,10 @@ Abstract: Recently, vision transformers (ViTs) have achieved excellent performan
 <div> Keywords: Deep reinforcement learning, Graph neural network, Multi-objective combinatorial optimization, Evolutionary algorithms, Algorithm configuration
 
 Summary:
-Deep reinforcement learning (DRL) is applied to dynamic algorithm configuration for multi-objective combinatorial optimization (MOCO) problems using a graph neural network (GNN). The method models algorithm configuration as a Markov decision process, with a graph representing solution convergence in the objective space. GNN is utilized to learn embeddings and enhance state representation. Experimental results show superior performance compared to traditional and DRL-based methods in efficacy and adaptability. The approach demonstrates generalizability across different objective types and problem sizes, and is applicable to various evolutionary computation methods. The GNN-based DRL algorithm configuration outperforms existing methods in MOCO challenges, showcasing its effectiveness in optimizing multi-objective problems using evolutionary algorithms. <br><br>Summary: <div>
+Deep reinforcement learning (DRL) is applied to dynamic algorithm configuration for multi-objective combinatorial optimization (MOCO) problems using a graph neural network (GNN). The method models algorithm configuration as a Markov decision process, with a graph representing solution convergence in the objective space. GNN is utilized to learn embeddings and enhance state representation. Experimental results show superior performance compared to traditional and DRL-based methods in efficacy and adaptability. The approach demonstrates generalizability across different objective types and problem sizes, and is applicable to various evolutionary computation methods. The GNN-based DRL algorithm configuration outperforms existing methods in MOCO challenges, showcasing its effectiveness in optimizing multi-objective problems using evolutionary algorithms. <br /><br />Summary: <div>
 arXiv:2505.16471v2 Announce Type: replace-cross 
 Abstract: Deep reinforcement learning (DRL) has been widely used for dynamic algorithm configuration, particularly in evolutionary computation, which benefits from the adaptive update of parameters during the algorithmic execution. However, applying DRL to algorithm configuration for multi-objective combinatorial optimization (MOCO) problems remains relatively unexplored. This paper presents a novel graph neural network (GNN) based DRL to configure multi-objective evolutionary algorithms. We model the dynamic algorithm configuration as a Markov decision process, representing the convergence of solutions in the objective space by a graph, with their embeddings learned by a GNN to enhance the state representation. Experiments on diverse MOCO challenges indicate that our method outperforms traditional and DRL-based algorithm configuration methods in terms of efficacy and adaptability. It also exhibits advantageous generalizability across objective types and problem sizes, and applicability to different evolutionary computation methods.
 ]]></content:encoded>
-<pubDate>Tue, 27 May 2025 00:00:00 -0400</pubDate>
 <pubDate>Tue, 27 May 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -260,7 +259,6 @@ arXiv:2505.16821v2 Announce Type: replace-cross
 Abstract: Integrating large AI models (LAMs) into 6G mobile networks promises to redefine protocol design and control-plane intelligence by enabling autonomous, cognitive network operations. While industry concepts, such as ETSI's Experiential Networked Intelligence (ENI), envision LAM-driven agents for adaptive network slicing and intent-based management, practical implementations still face challenges in protocol literacy and real-world deployment. This paper presents an end-to-end demonstration of a LAM that generates standards-compliant, ASN.1-encoded Radio Resource Control (RRC) messages as part of control-plane procedures inside a gNB. We treat RRC messaging as a domain-specific language and fine-tune a decoder-only transformer model (LLaMA class) using parameter-efficient Low-Rank Adaptation (LoRA) on RRC messages linearized to retain their ASN.1 syntactic structure before standard byte-pair encoding tokenization. This enables combinatorial generalization over RRC protocol states while minimizing training overhead. On 30k field-test request-response pairs, our 8 B model achieves a median cosine similarity of 0.97 with ground-truth messages on an edge GPU -- a 61 % relative gain over a zero-shot LLaMA-3 8B baseline -- indicating substantially improved structural and semantic RRC fidelity. Overall, our results show that LAMs, when augmented with Radio Access Network (RAN)-specific reasoning, can directly orchestrate control-plane procedures, representing a stepping stone toward the AI-native air-interface paradigm. Beyond RRC emulation, this work lays the groundwork for future AI-native wireless standards.
 ]]></content:encoded>
 <pubDate>Tue, 27 May 2025 00:00:00 -0400</pubDate>
-<pubDate>Tue, 27 May 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
 <title>CASS: Nvidia to AMD Transpilation with Data, Models, and Benchmark</title>
@@ -268,13 +266,12 @@ Abstract: Integrating large AI models (LAMs) into 6G mobile networks promises to
 <guid>https://arxiv.org/abs/2505.16968</guid>
 <content:encoded><![CDATA[
 <div> CUDA, HIP, Nvidia SASS, AMD RDNA3, GPU code transpilation 
-<br>
+<br />
 Summary: 
 CASS is introduced as a dataset and model suite for cross-architecture GPU code transpilation, covering source-level (CUDA $\leftrightarrow$ HIP) and assembly-level (Nvidia SASS $\leftrightarrow$ AMD RDNA3) translation. The dataset consists of 70k verified code pairs and trains domain-specific language models in the CASS family. The models achieve high accuracy in source and assembly translation, surpassing commercial baselines like GPT-4o and others. Code generated by the models matches native performance in the majority of test cases, preserving runtime and memory behavior. The CASS-Bench benchmark, spanning 16 GPU domains with ground-truth execution, is introduced for rigorous evaluation. All data, models, and evaluation tools are open source, promoting advancements in GPU compiler tooling, binary compatibility, and hardware translation guided by language models. The dataset and benchmark are available on HuggingFace, with the code repository on GitHub. <div>
 arXiv:2505.16968v2 Announce Type: replace-cross 
 Abstract: We introduce CASS, the first large-scale dataset and model suite for cross-architecture GPU code transpilation, targeting both source-level (CUDA $\leftrightarrow$ HIP) and assembly-level (Nvidia SASS $\leftrightarrow$ AMD RDNA3) translation. The dataset comprises 70k verified code pairs across host and device, addressing a critical gap in low-level GPU code portability. Leveraging this resource, we train the CASS family of domain-specific language models, achieving 95% source translation accuracy and 37.5% assembly translation accuracy, substantially outperforming commercial baselines such as GPT-4o, Claude, and Hipify. Our generated code matches native performance in over 85% of test cases, preserving runtime and memory behavior. To support rigorous evaluation, we introduce CASS-Bench, a curated benchmark spanning 16 GPU domains with ground-truth execution. All data, models, and evaluation tools are released as open source to foster progress in GPU compiler tooling, binary compatibility, and LLM-guided hardware translation. Dataset and benchmark are on \href{https://huggingface.co/datasets/MBZUAI/cass}{\textcolor{blue}{HuggingFace}}, with code at \href{https://github.com/GustavoStahl/CASS}{\textcolor{blue}{GitHub}}.
 ]]></content:encoded>
-<pubDate>Tue, 27 May 2025 00:00:00 -0400</pubDate>
 <pubDate>Tue, 27 May 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -282,17 +279,15 @@ Abstract: We introduce CASS, the first large-scale dataset and model suite for c
 <link>https://arxiv.org/abs/2505.17441</link>
 <guid>https://arxiv.org/abs/2505.17441</guid>
 <content:encoded><![CDATA[
-<div> discovery, refusal, language model, bias, AI<br>
-<br>
+<div> discovery, refusal, language model, bias, AI<br />
+<br />
 Summary: 
 The study introduces the concept of refusal discovery in language models, which aims to identify topics that the model refuses to discuss. A new method called LLM-crawler is developed using token prefilling to uncover forbidden topics. The method is tested on the Tulu-3-8B model, successfully retrieving a majority of the topics within a limited prompt budget. Scaling the crawl to a frontier model with the help of Claude-Haiku shows revealing patterns of censorship tuning in the DeepSeek-R1-70B model, indicating memorization of CCP-aligned responses. While the Perplexity-R1-1776-70B model exhibits robustness to censorship, the LLM-crawler still elicits CCP-aligned refusal answers in the quantized version. These findings underscore the importance of implementing refusal discovery methods to identify biases, limitations, and alignment failures in AI systems. <div>
 arXiv:2505.17441v2 Announce Type: replace-cross 
 Abstract: Refusal discovery is the task of identifying the full set of topics that a language model refuses to discuss. We introduce this new problem setting and develop a refusal discovery method, LLM-crawler, that uses token prefilling to find forbidden topics. We benchmark the LLM-crawler on Tulu-3-8B, an open-source model with public safety tuning data. Our crawler manages to retrieve 31 out of 36 topics within a budget of 1000 prompts. Next, we scale the crawl to a frontier model using the prefilling option of Claude-Haiku. Finally, we crawl three widely used open-weight models: Llama-3.3-70B and two of its variants finetuned for reasoning: DeepSeek-R1-70B and Perplexity-R1-1776-70B. DeepSeek-R1-70B reveals patterns consistent with censorship tuning: The model exhibits "thought suppression" behavior that indicates memorization of CCP-aligned responses. Although Perplexity-R1-1776-70B is robust to censorship, LLM-crawler elicits CCP-aligned refusals answers in the quantized model. Our findings highlight the critical need for refusal discovery methods to detect biases, boundaries, and alignment failures of AI systems.
 ]]></content:encoded>
 <pubDate>Tue, 27 May 2025 00:00:00 -0400</pubDate>
-<pubDate>Tue, 27 May 2025 00:00:00 -0400</pubDate>
 </item>
-
 <item>
 <title>Model-Distributed Inference for Large Language Models at the Edge</title>
 <link>https://arxiv.org/abs/2505.18164</link>
@@ -10610,198 +10605,6 @@ Abstract: Publishing a large language model (LLM) benchmark on the Internet risk
 <content:encoded><![CDATA[
 arXiv:2505.18113v1 Announce Type: new 
 Abstract: Training quantized neural networks requires addressing the non-differentiable and discrete nature of the underlying optimization problem. To tackle this challenge, the straight-through estimator (STE) has become the most widely adopted heuristic, allowing backpropagation through discrete operations by introducing surrogate gradients. However, its theoretical properties remain largely unexplored, with few existing works simplifying the analysis by assuming an infinite amount of training data. In contrast, this work presents the first finite-sample analysis of STE in the context of neural network quantization. Our theoretical results highlight the critical role of sample size in the success of STE, a key insight absent from existing studies. Specifically, by analyzing the quantization-aware training of a two-layer neural network with binary weights and activations, we derive the sample complexity bound in terms of the data dimensionality that guarantees the convergence of STE-based optimization to the global minimum. Moreover, in the presence of label noises, we uncover an intriguing recurrence property of STE-gradient method, where the iterate repeatedly escape from and return to the optimal binary weights. Our analysis leverages tools from compressed sensing and dynamical systems theory.
-]]></content:encoded>
-<pubDate>Mon, 26 May 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Bridging Supervised Learning and Reinforcement Learning in Math Reasoning</title>
-<link>https://arxiv.org/abs/2505.18116</link>
-<guid>https://arxiv.org/abs/2505.18116</guid>
-<content:encoded><![CDATA[
-arXiv:2505.18116v1 Announce Type: new 
-Abstract: Reinforcement Learning (RL) has played a central role in the recent surge of LLMs' math abilities by enabling self-improvement through binary verifier signals. In contrast, Supervised Learning (SL) is rarely considered for such verification-driven training, largely due to its heavy reliance on reference answers and inability to reflect on mistakes. In this work, we challenge the prevailing notion that self-improvement is exclusive to RL and propose Negative-aware Fine-Tuning (NFT) -- a supervised approach that enables LLMs to reflect on their failures and improve autonomously with no external teachers. In online training, instead of throwing away self-generated negative answers, NFT constructs an implicit negative policy to model them. This implicit policy is parameterized with the same positive LLM we target to optimize on positive data, enabling direct policy optimization on all LLMs' generations. We conduct experiments on 7B and 32B models in math reasoning tasks. Results consistently show that through the additional leverage of negative feedback, NFT significantly improves over SL baselines like Rejection sampling Fine-Tuning, matching or even surpassing leading RL algorithms like GRPO and DAPO. Furthermore, we demonstrate that NFT and GRPO are actually equivalent in strict-on-policy training, even though they originate from entirely different theoretical foundations. Our experiments and theoretical findings bridge the gap between SL and RL methods in binary-feedback learning systems.
-]]></content:encoded>
-<pubDate>Mon, 26 May 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>TabSTAR: A Foundation Tabular Model With Semantically Target-Aware Representations</title>
-<link>https://arxiv.org/abs/2505.18125</link>
-<guid>https://arxiv.org/abs/2505.18125</guid>
-<content:encoded><![CDATA[
-arXiv:2505.18125v1 Announce Type: new 
-Abstract: While deep learning has achieved remarkable success across many domains, it has historically underperformed on tabular learning tasks, which remain dominated by gradient boosting decision trees (GBDTs). However, recent advancements are paving the way for Tabular Foundation Models, which can leverage real-world knowledge and generalize across diverse datasets, particularly when the data contains free-text. Although incorporating language model capabilities into tabular tasks has been explored, most existing methods utilize static, target-agnostic textual representations, limiting their effectiveness. We introduce TabSTAR: a Foundation Tabular Model with Semantically Target-Aware Representations. TabSTAR is designed to enable transfer learning on tabular data with textual features, with an architecture free of dataset-specific parameters. It unfreezes a pretrained text encoder and takes as input target tokens, which provide the model with the context needed to learn task-specific embeddings. TabSTAR achieves state-of-the-art performance for both medium- and large-sized datasets across known benchmarks of classification tasks with text features, and its pretraining phase exhibits scaling laws in the number of datasets, offering a pathway for further performance improvements.
-]]></content:encoded>
-<pubDate>Mon, 26 May 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Reward Model Overoptimisation in Iterated RLHF</title>
-<link>https://arxiv.org/abs/2505.18126</link>
-<guid>https://arxiv.org/abs/2505.18126</guid>
-<content:encoded><![CDATA[
-arXiv:2505.18126v1 Announce Type: new 
-Abstract: Reinforcement learning from human feedback (RLHF) is a widely used method for aligning large language models with human preferences. However, RLHF often suffers from reward model overoptimisation, in which models overfit to the reward function, resulting in non-generalisable policies that exploit the idiosyncrasies and peculiarities of the reward function. A common mitigation is iterated RLHF, in which reward models are repeatedly retrained with updated human feedback and policies are re-optimised. Despite its increasing adoption, the dynamics of overoptimisation in this setting remain poorly understood. In this work, we present the first comprehensive study of overoptimisation in iterated RLHF. We systematically analyse key design choices - how reward model training data is transferred across iterations, which reward function is used for optimisation, and how policies are initialised. Using the controlled AlpacaFarm benchmark, we observe that overoptimisation tends to decrease over successive iterations, as reward models increasingly approximate ground-truth preferences. However, performance gains diminish over time, and while reinitialising from the base policy is robust, it limits optimisation flexibility. Other initialisation strategies often fail to recover from early overoptimisation. These findings offer actionable insights for building more stable and generalisable RLHF pipelines.
-]]></content:encoded>
-<pubDate>Mon, 26 May 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Leveraging KANs for Expedient Training of Multichannel MLPs via Preconditioning and Geometric Refinement</title>
-<link>https://arxiv.org/abs/2505.18131</link>
-<guid>https://arxiv.org/abs/2505.18131</guid>
-<content:encoded><![CDATA[
-arXiv:2505.18131v1 Announce Type: new 
-Abstract: Multilayer perceptrons (MLPs) are a workhorse machine learning architecture, used in a variety of modern deep learning frameworks. However, recently Kolmogorov-Arnold Networks (KANs) have become increasingly popular due to their success on a range of problems, particularly for scientific machine learning tasks. In this paper, we exploit the relationship between KANs and multichannel MLPs to gain structural insight into how to train MLPs faster. We demonstrate the KAN basis (1) provides geometric localized support, and (2) acts as a preconditioned descent in the ReLU basis, overall resulting in expedited training and improved accuracy. Our results show the equivalence between free-knot spline KAN architectures, and a class of MLPs that are refined geometrically along the channel dimension of each weight tensor. We exploit this structural equivalence to define a hierarchical refinement scheme that dramatically accelerates training of the multi-channel MLP architecture. We show further accuracy improvements can be had by allowing the $1$D locations of the spline knots to be trained simultaneously with the weights. These advances are demonstrated on a range of benchmark examples for regression and scientific machine learning.
-]]></content:encoded>
-<pubDate>Mon, 26 May 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Generative Distribution Embeddings</title>
-<link>https://arxiv.org/abs/2505.18150</link>
-<guid>https://arxiv.org/abs/2505.18150</guid>
-<content:encoded><![CDATA[
-arXiv:2505.18150v1 Announce Type: new 
-Abstract: Many real-world problems require reasoning across multiple scales, demanding models which operate not on single data points, but on entire distributions. We introduce generative distribution embeddings (GDE), a framework that lifts autoencoders to the space of distributions. In GDEs, an encoder acts on sets of samples, and the decoder is replaced by a generator which aims to match the input distribution. This framework enables learning representations of distributions by coupling conditional generative models with encoder networks which satisfy a criterion we call distributional invariance. We show that GDEs learn predictive sufficient statistics embedded in the Wasserstein space, such that latent GDE distances approximately recover the $W_2$ distance, and latent interpolation approximately recovers optimal transport trajectories for Gaussian and Gaussian mixture distributions. We systematically benchmark GDEs against existing approaches on synthetic datasets, demonstrating consistently stronger performance. We then apply GDEs to six key problems in computational biology: learning representations of cell populations from lineage-tracing data (150K cells), predicting perturbation effects on single-cell transcriptomes (1M cells), predicting perturbation effects on cellular phenotypes (20M single-cell images), modeling tissue-specific DNA methylation patterns (253M sequences), designing synthetic yeast promoters (34M sequences), and spatiotemporal modeling of viral protein sequences (1M sequences).
-]]></content:encoded>
-<pubDate>Mon, 26 May 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Advancing Uncertain Combinatorics through Graphization, Hyperization, and Uncertainization: Fuzzy, Neutrosophic, Soft, Rough, and Beyond</title>
-<link>https://arxiv.org/abs/2411.17411</link>
-<guid>https://arxiv.org/abs/2411.17411</guid>
-<content:encoded><![CDATA[
-arXiv:2411.17411v1 Announce Type: cross 
-Abstract: To better handle real-world uncertainty, concepts such as fuzzy sets, neutrosophic sets, rough sets, and soft sets have been introduced. For example, neutrosophic sets, which simultaneously represent truth, indeterminacy, and falsehood, have proven to be valuable tools for modeling uncertainty in complex systems. These set concepts are increasingly studied in graphized forms, and generalized graph concepts now encompass well-known structures such as hypergraphs and superhypergraphs. Furthermore, hyperconcepts and superhyperconcepts are being actively researched in areas beyond graph theory.
-  Combinatorics, uncertain sets (including fuzzy sets, neutrosophic sets, rough sets, soft sets, and plithogenic sets), uncertain graphs, and hyper and superhyper concepts are active areas of research with significant mathematical and practical implications. Recognizing their importance, this paper explores new graph and set concepts, as well as hyper and superhyper concepts, as detailed in the "Results" section of "The Structure of the Paper." Additionally, this work aims to consolidate recent findings, providing a survey-like resource to inform and engage readers.
-  For instance, we extend several graph concepts by introducing Neutrosophic Oversets, Neutrosophic Undersets, Neutrosophic Offsets, and the Nonstandard Real Set. This paper defines a variety of concepts with the goal of inspiring new ideas and serving as a valuable resource for researchers in their academic pursuits.
-]]></content:encoded>
-<pubDate>Mon, 26 May 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Distillation-Enabled Knowledge Alignment Protocol for Semantic Communication in AI Agent Networks</title>
-<link>https://arxiv.org/abs/2505.17030</link>
-<guid>https://arxiv.org/abs/2505.17030</guid>
-<content:encoded><![CDATA[
-arXiv:2505.17030v1 Announce Type: cross 
-Abstract: Future networks are envisioned to connect massive artificial intelligence (AI) agents, enabling their extensive collaboration on diverse tasks. Compared to traditional entities, these agents naturally suit the semantic communication (SC), which can significantly enhance the bandwidth efficiency. Nevertheless, SC requires the knowledge among agents to be aligned, while agents have distinct expert knowledge for their individual tasks in practice. In this paper, we propose a distillation-enabled knowledge alignment protocol (DeKAP), which distills the expert knowledge of each agent into parameter-efficient low-rank matrices, allocates them across the network, and allows agents to simultaneously maintain aligned knowledge for multiple tasks. We formulate the joint minimization of alignment loss, communication overhead, and storage cost as a large-scale integer linear programming problem and develop a highly efficient greedy algorithm. From computer simulation, the DeKAP establishes knowledge alignment with the lowest communication and computation resources compared to conventional approaches.
-]]></content:encoded>
-<pubDate>Mon, 26 May 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>A brief review of the Deep BSDE method for solving high-dimensional partial differential equations</title>
-<link>https://arxiv.org/abs/2505.17032</link>
-<guid>https://arxiv.org/abs/2505.17032</guid>
-<content:encoded><![CDATA[
-arXiv:2505.17032v1 Announce Type: cross 
-Abstract: High-dimensional partial differential equations (PDEs) pose significant challenges for numerical computation due to the curse of dimensionality, which limits the applicability of traditional mesh-based methods. Since 2017, the Deep BSDE method has introduced deep learning techniques that enable the effective solution of nonlinear PDEs in very high dimensions. This innovation has sparked considerable interest in using neural networks for high-dimensional PDEs, making it an active area of research. In this short review, we briefly sketch the Deep BSDE method, its subsequent developments, and future directions for the field.
-]]></content:encoded>
-<pubDate>Mon, 26 May 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>VLM-KG: Multimodal Radiology Knowledge Graph Generation</title>
-<link>https://arxiv.org/abs/2505.17042</link>
-<guid>https://arxiv.org/abs/2505.17042</guid>
-<content:encoded><![CDATA[
-arXiv:2505.17042v1 Announce Type: cross 
-Abstract: Vision-Language Models (VLMs) have demonstrated remarkable success in natural language generation, excelling at instruction following and structured output generation. Knowledge graphs play a crucial role in radiology, serving as valuable sources of factual information and enhancing various downstream tasks. However, generating radiology-specific knowledge graphs presents significant challenges due to the specialized language of radiology reports and the limited availability of domain-specific data. Existing solutions are predominantly unimodal, meaning they generate knowledge graphs only from radiology reports while excluding radiographic images. Additionally, they struggle with long-form radiology data due to limited context length. To address these limitations, we propose a novel multimodal VLM-based framework for knowledge graph generation in radiology. Our approach outperforms previous methods and introduces the first multimodal solution for radiology knowledge graph generation.
-]]></content:encoded>
-<pubDate>Mon, 26 May 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Fast and Flexible Quantum-Inspired Differential Equation Solvers with Data Integration</title>
-<link>https://arxiv.org/abs/2505.17046</link>
-<guid>https://arxiv.org/abs/2505.17046</guid>
-<content:encoded><![CDATA[
-arXiv:2505.17046v1 Announce Type: cross 
-Abstract: Accurately solving high-dimensional partial differential equations (PDEs) remains a central challenge in computational mathematics. Traditional numerical methods, while effective in low-dimensional settings or on coarse grids, often struggle to deliver the precision required in practical applications. Recent machine learning-based approaches offer flexibility but frequently fall short in terms of accuracy and reliability, particularly in industrial contexts. In this work, we explore a quantum-inspired method based on quantized tensor trains (QTT), enabling efficient and accurate solutions to PDEs in a variety of challenging scenarios. Through several representative examples, we demonstrate that the QTT approach can achieve logarithmic scaling in both memory and computational cost for linear and nonlinear PDEs. Additionally, we introduce a novel technique for data-driven learning within the quantum-inspired framework, combining the adaptability of neural networks with enhanced accuracy and reduced training time.
-]]></content:encoded>
-<pubDate>Mon, 26 May 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>METHOD: Modular Efficient Transformer for Health Outcome Discovery</title>
-<link>https://arxiv.org/abs/2505.17054</link>
-<guid>https://arxiv.org/abs/2505.17054</guid>
-<content:encoded><![CDATA[
-arXiv:2505.17054v1 Announce Type: cross 
-Abstract: Recent advances in transformer architectures have revolutionised natural language processing, but their application to healthcare domains presents unique challenges. Patient timelines are characterised by irregular sampling, variable temporal dependencies, and complex contextual relationships that differ substantially from traditional language tasks. This paper introduces \METHOD~(Modular Efficient Transformer for Health Outcome Discovery), a novel transformer architecture specifically designed to address the challenges of clinical sequence modelling in electronic health records. \METHOD~integrates three key innovations: (1) a patient-aware attention mechanism that prevents information leakage whilst enabling efficient batch processing; (2) an adaptive sliding window attention scheme that captures multi-scale temporal dependencies; and (3) a U-Net inspired architecture with dynamic skip connections for effective long sequence processing. Evaluations on the MIMIC-IV database demonstrate that \METHOD~consistently outperforms the state-of-the-art \ETHOS~model, particularly in predicting high-severity cases that require urgent clinical intervention. \METHOD~exhibits stable performance across varying inference lengths, a crucial feature for clinical deployment where patient histories vary significantly in length. Analysis of learned embeddings reveals that \METHOD~better preserves clinical hierarchies and relationships between medical concepts. These results suggest that \METHOD~represents a significant advancement in transformer architectures optimised for healthcare applications, providing more accurate and clinically relevant predictions whilst maintaining computational efficiency.
-]]></content:encoded>
-<pubDate>Mon, 26 May 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Synthetic Data RL: Task Definition Is All You Need</title>
-<link>https://arxiv.org/abs/2505.17063</link>
-<guid>https://arxiv.org/abs/2505.17063</guid>
-<content:encoded><![CDATA[
-arXiv:2505.17063v1 Announce Type: cross 
-Abstract: Reinforcement learning (RL) is a powerful way to adapt foundation models to specialized tasks, but its reliance on large-scale human-labeled data limits broad adoption. We introduce Synthetic Data RL, a simple and general framework that reinforcement fine-tunes models using only synthetic data generated from a task definition. Our method first generates question and answer pairs from the task definition and retrieved documents, then adapts the difficulty of the question based on model solvability, and selects questions using the average pass rate of the model across samples for RL training. On Qwen-2.5-7B, our method achieves a 29.2% absolute improvement over the base model on GSM8K (+2.9 pp vs. instruction-tuned, +6.6 pp vs. Self-Instruct), 8.7% on MATH, 13.1% on GPQA (+7.0 pp vs. SynthLLM), 8.9% on MedQA, 17.7% on CQA (law) and 13.7% on CFA (finance). It surpasses supervised fine-tuning under the same data budget and nearly matches RL with full human data across datasets (e.g., +17.2 pp on GSM8K). Adding 100 human demonstrations improves the performance of GSM8K only by 0.4 pp, showing a limited added value. By reducing human data annotation, Synthetic Data RL enables scalable and efficient RL-based model adaptation. Code and demos are available at https://github.com/gydpku/Data_Synthesis_RL/.
-]]></content:encoded>
-<pubDate>Mon, 26 May 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Decoding Rarity: Large Language Models in the Diagnosis of Rare Diseases</title>
-<link>https://arxiv.org/abs/2505.17065</link>
-<guid>https://arxiv.org/abs/2505.17065</guid>
-<content:encoded><![CDATA[
-arXiv:2505.17065v1 Announce Type: cross 
-Abstract: Recent advances in artificial intelligence, particularly large language models LLMs, have shown promising capabilities in transforming rare disease research. This survey paper explores the integration of LLMs in the analysis of rare diseases, highlighting significant strides and pivotal studies that leverage textual data to uncover insights and patterns critical for diagnosis, treatment, and patient care. While current research predominantly employs textual data, the potential for multimodal data integration combining genetic, imaging, and electronic health records stands as a promising frontier. We review foundational papers that demonstrate the application of LLMs in identifying and extracting relevant medical information, simulating intelligent conversational agents for patient interaction, and enabling the formulation of accurate and timely diagnoses. Furthermore, this paper discusses the challenges and ethical considerations inherent in deploying LLMs, including data privacy, model transparency, and the need for robust, inclusive data sets. As part of this exploration, we present a section on experimentation that utilizes multiple LLMs alongside structured questionnaires, specifically designed for diagnostic purposes in the context of different diseases. We conclude with future perspectives on the evolution of LLMs towards truly multimodal platforms, which would integrate diverse data types to provide a more comprehensive understanding of rare diseases, ultimately fostering better outcomes in clinical settings.
-]]></content:encoded>
-<pubDate>Mon, 26 May 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Unveil Multi-Picture Descriptions for Multilingual Mild Cognitive Impairment Detection via Contrastive Learning</title>
-<link>https://arxiv.org/abs/2505.17067</link>
-<guid>https://arxiv.org/abs/2505.17067</guid>
-<content:encoded><![CDATA[
-arXiv:2505.17067v1 Announce Type: cross 
-Abstract: Detecting Mild Cognitive Impairment from picture descriptions is critical yet challenging, especially in multilingual and multiple picture settings. Prior work has primarily focused on English speakers describing a single picture (e.g., the 'Cookie Theft'). The TAUKDIAL-2024 challenge expands this scope by introducing multilingual speakers and multiple pictures, which presents new challenges in analyzing picture-dependent content. To address these challenges, we propose a framework with three components: (1) enhancing discriminative representation learning via supervised contrastive learning, (2) involving image modality rather than relying solely on speech and text modalities, and (3) applying a Product of Experts (PoE) strategy to mitigate spurious correlations and overfitting. Our framework improves MCI detection performance, achieving a +7.1% increase in Unweighted Average Recall (UAR) (from 68.1% to 75.2%) and a +2.9% increase in F1 score (from 80.6% to 83.5%) compared to the text unimodal baseline. Notably, the contrastive learning component yields greater gains for the text modality compared to speech. These results highlight our framework's effectiveness in multilingual and multi-picture MCI detection.
-]]></content:encoded>
-<pubDate>Mon, 26 May 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Predictively Combatting Toxicity in Health-related Online Discussions through Machine Learning</title>
-<link>https://arxiv.org/abs/2505.17068</link>
-<guid>https://arxiv.org/abs/2505.17068</guid>
-<content:encoded><![CDATA[
-arXiv:2505.17068v1 Announce Type: cross 
-Abstract: In health-related topics, user toxicity in online discussions frequently becomes a source of social conflict or promotion of dangerous, unscientific behaviour; common approaches for battling it include different forms of detection, flagging and/or removal of existing toxic comments, which is often counterproductive for platforms and users alike. In this work, we propose the alternative of combatting user toxicity predictively, anticipating where a user could interact toxically in health-related online discussions. Applying a Collaborative Filtering-based Machine Learning methodology, we predict the toxicity in COVID-related conversations between any user and subcommunity of Reddit, surpassing 80% predictive performance in relevant metrics, and allowing us to prevent the pairing of conflicting users and subcommunities.
-]]></content:encoded>
-<pubDate>Mon, 26 May 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Safety Alignment Can Be Not Superficial With Explicit Safety Signals</title>
-<link>https://arxiv.org/abs/2505.17072</link>
-<guid>https://arxiv.org/abs/2505.17072</guid>
-<content:encoded><![CDATA[
-arXiv:2505.17072v1 Announce Type: cross 
-Abstract: Recent studies on the safety alignment of large language models (LLMs) have revealed that existing approaches often operate superficially, leaving models vulnerable to various adversarial attacks. Despite their significance, these studies generally fail to offer actionable solutions beyond data augmentation for achieving more robust safety mechanisms. This paper identifies a fundamental cause of this superficiality: existing alignment approaches often presume that models can implicitly learn a safety-related reasoning task during the alignment process, enabling them to refuse harmful requests. However, the learned safety signals are often diluted by other competing objectives, leading models to struggle with drawing a firm safety-conscious decision boundary when confronted with adversarial attacks. Based on this observation, by explicitly introducing a safety-related binary classification task and integrating its signals with our attention and decoding strategies, we eliminate this ambiguity and allow models to respond more responsibly to malicious queries. We emphasize that, with less than 0.2x overhead cost, our approach enables LLMs to assess the safety of both the query and the previously generated tokens at each necessary generating step. Extensive experiments demonstrate that our method significantly improves the resilience of LLMs against various adversarial attacks, offering a promising pathway toward more robust generative AI systems.
-]]></content:encoded>
-<pubDate>Mon, 26 May 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Mechanistic Interpretability of GPT-like Models on Summarization Tasks</title>
-<link>https://arxiv.org/abs/2505.17073</link>
-<guid>https://arxiv.org/abs/2505.17073</guid>
-<content:encoded><![CDATA[
-arXiv:2505.17073v1 Announce Type: cross 
-Abstract: Mechanistic interpretability research seeks to reveal the inner workings of large language models, yet most work focuses on classification or generative tasks rather than summarization. This paper presents an interpretability framework for analyzing how GPT-like models adapt to summarization tasks. We conduct differential analysis between pre-trained and fine-tuned models, quantifying changes in attention patterns and internal activations. By identifying specific layers and attention heads that undergo significant transformation, we locate the "summarization circuit" within the model architecture. Our findings reveal that middle layers (particularly 2, 3, and 5) exhibit the most dramatic changes, with 62% of attention heads showing decreased entropy, indicating a shift toward focused information selection. We demonstrate that targeted LoRA adaptation of these identified circuits achieves significant performance improvement over standard LoRA fine-tuning while requiring fewer training epochs. This work bridges the gap between black-box evaluation and mechanistic understanding, providing insights into how neural networks perform information selection and compression during summarization.
-]]></content:encoded>
-<pubDate>Mon, 26 May 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Semi-Clairvoyant Scheduling of Speculative Decoding Requests to Minimize LLM Inference Latency</title>
-<link>https://arxiv.org/abs/2505.17074</link>
-<guid>https://arxiv.org/abs/2505.17074</guid>
-<content:encoded><![CDATA[
-arXiv:2505.17074v1 Announce Type: cross 
-Abstract: Speculative decoding accelerates Large Language Model (LLM) inference by employing a small speculative model (SSM) to generate multiple candidate tokens and verify them using the LLM in parallel. This technique has been widely integrated into LLM inference serving systems. However, inference requests typically exhibit uncertain execution time, which poses a significant challenge of efficiently scheduling requests in these systems. Existing work estimates execution time based solely on predicted output length, which could be inaccurate because execution time depends on both output length and token acceptance rate of verification by the LLM. In this paper, we propose a semi-clairvoyant request scheduling algorithm called Least-Attained/Perceived-Service for Speculative Decoding (LAPS-SD). Given a number of inference requests, LAPS-SD can effectively minimize average inference latency by adaptively scheduling requests according to their features during decoding. When the token acceptance rate is dynamic and execution time is difficult to estimate, LAPS-SD maintains multiple priority queues and allows request execution preemption across different queues. Once the token acceptance rate becomes stable, LAPS-SD can accurately estimate the execution time and schedule requests accordingly. Extensive experiments show that LAPS-SD reduces inference latency by approximately 39\% compared to state-of-the-art scheduling methods.
-]]></content:encoded>
-<pubDate>Mon, 26 May 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Streamlining HTTP Flooding Attack Detection through Incremental Feature Selection</title>
-<link>https://arxiv.org/abs/2505.17077</link>
-<guid>https://arxiv.org/abs/2505.17077</guid>
-<content:encoded><![CDATA[
-arXiv:2505.17077v1 Announce Type: cross 
-Abstract: Applications over the Web primarily rely on the HTTP protocol to transmit web pages to and from systems. There are a variety of application layer protocols, but among all, HTTP is the most targeted because of its versatility and ease of integration with online services. The attackers leverage the fact that by default no detection system blocks any HTTP traffic. Thus, by exploiting such characteristics of the protocol, attacks are launched against web applications. HTTP flooding attacks are one such attack in the application layer of the OSI model. In this paper, a method for the detection of such an attack is proposed. The heart of the detection method is an incremental feature subset selection method based on mutual information and correlation. INFS-MICC helps in identifying a subset of highly relevant and independent feature subset so as to detect HTTP Flooding attacks with best possible classification performance in near-real time.
 ]]></content:encoded>
 <pubDate>Mon, 26 May 2025 00:00:00 -0400</pubDate>
 </item>
