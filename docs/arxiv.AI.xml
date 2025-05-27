@@ -4,19 +4,19 @@
 <title>cs.AI updates on arXiv.org</title>
 <link>http://rss.arxiv.org/rss/cs.AI</link>
 
+
 <item>
 <title>Discovering Forbidden Topics in Language Models</title>
 <link>https://arxiv.org/abs/2505.17441</link>
 <guid>https://arxiv.org/abs/2505.17441</guid>
 <content:encoded><![CDATA[
-<div> refusal discovery, language model, LLM-crawler, Tulu-3-8B, censorship tuning<br>
-Summary:<br>
-Refusal discovery is a new problem in identifying topics that a language model refuses to discuss. The LLM-crawler method uses token prefilling to find forbidden topics, successfully retrieving 31 out of 36 topics in Tulu-3-8B. Scaling the crawl to a frontier model using Claude-Haiku's prefilling option reveals censorship tuning in DeepSeek-R1-70B, indicating memorization of CCP-aligned responses. Perplexity-R1-1776-70B, though robust to censorship, shows CCP-aligned refusals in the quantized model. The study emphasizes the importance of refusal discovery methods in detecting biases, boundaries, and alignment failures in AI systems.<br> 
+<div> refusal discovery, language model, LLM-crawler, Tulu-3-8B, censorship tuning<br />
+Summary:<br />
+Refusal discovery is a new problem in identifying topics that a language model refuses to discuss. The LLM-crawler method uses token prefilling to find forbidden topics, successfully retrieving 31 out of 36 topics in Tulu-3-8B. Scaling the crawl to a frontier model using Claude-Haiku's prefilling option reveals censorship tuning in DeepSeek-R1-70B, indicating memorization of CCP-aligned responses. Perplexity-R1-1776-70B, though robust to censorship, shows CCP-aligned refusals in the quantized model. The study emphasizes the importance of refusal discovery methods in detecting biases, boundaries, and alignment failures in AI systems.<br /> 
 Summary: <div>
 arXiv:2505.17441v2 Announce Type: replace-cross 
 Abstract: Refusal discovery is the task of identifying the full set of topics that a language model refuses to discuss. We introduce this new problem setting and develop a refusal discovery method, LLM-crawler, that uses token prefilling to find forbidden topics. We benchmark the LLM-crawler on Tulu-3-8B, an open-source model with public safety tuning data. Our crawler manages to retrieve 31 out of 36 topics within a budget of 1000 prompts. Next, we scale the crawl to a frontier model using the prefilling option of Claude-Haiku. Finally, we crawl three widely used open-weight models: Llama-3.3-70B and two of its variants finetuned for reasoning: DeepSeek-R1-70B and Perplexity-R1-1776-70B. DeepSeek-R1-70B reveals patterns consistent with censorship tuning: The model exhibits "thought suppression" behavior that indicates memorization of CCP-aligned responses. Although Perplexity-R1-1776-70B is robust to censorship, LLM-crawler elicits CCP-aligned refusals answers in the quantized model. Our findings highlight the critical need for refusal discovery methods to detect biases, boundaries, and alignment failures of AI systems.
 ]]></content:encoded>
-<pubDate>Tue, 27 May 2025 00:00:00 -0400</pubDate>
 <pubDate>Tue, 27 May 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -25,17 +25,15 @@ Abstract: Refusal discovery is the task of identifying the full set of topics th
 <guid>https://arxiv.org/abs/2505.17490</guid>
 <content:encoded><![CDATA[
 <div> Transformer-based Robot Trajectron, Human-Robot Collaboration, Intent Estimation, Role Allocation, Differential Cooperative Game Theory
-<br>
+<br />
 Summary:
-<br>
+<br />
 The article introduces the Dual Transformer-based Robot Trajectron (DTRT) for physical Human-Robot Collaboration (pHRC). It addresses the limitations of existing methods by incorporating human-guided motion and force data for accurate intent estimation and role allocation. DTRT utilizes two Transformer-based Conditional Variational Autoencoders for intent estimation and Differential Cooperative Game Theory to align robot behavior with human intention. By capturing intent changes and enabling dynamic robot adjustments, DTRT enhances collaboration performance and autonomy. Experimental results demonstrate DTRT's superior accuracy in intent estimation and collaboration compared to state-of-the-art methods. <div>
 arXiv:2505.17490v2 Announce Type: replace-cross 
 Abstract: In physical Human-Robot Collaboration (pHRC), accurate human intent estimation and rational human-robot role allocation are crucial for safe and efficient assistance. Existing methods that rely on short-term motion data for intention estimation lack multi-step prediction capabilities, hindering their ability to sense intent changes and adjust human-robot assignments autonomously, resulting in potential discrepancies. To address these issues, we propose a Dual Transformer-based Robot Trajectron (DTRT) featuring a hierarchical architecture, which harnesses human-guided motion and force data to rapidly capture human intent changes, enabling accurate trajectory predictions and dynamic robot behavior adjustments for effective collaboration. Specifically, human intent estimation in DTRT uses two Transformer-based Conditional Variational Autoencoders (CVAEs), incorporating robot motion data in obstacle-free case with human-guided trajectory and force for obstacle avoidance. Additionally, Differential Cooperative Game Theory (DCGT) is employed to synthesize predictions based on human-applied forces, ensuring robot behavior align with human intention. Compared to state-of-the-art (SOTA) methods, DTRT incorporates human dynamics into long-term prediction, providing an accurate understanding of intention and enabling rational role allocation, achieving robot autonomy and maneuverability. Experiments demonstrate DTRT's accurate intent estimation and superior collaboration performance.
 ]]></content:encoded>
 <pubDate>Tue, 27 May 2025 00:00:00 -0400</pubDate>
-<pubDate>Tue, 27 May 2025 00:00:00 -0400</pubDate>
 </item>
-
 <item>
 <title>Facial Expression Analysis and Its Potentials in IoT Systems: A Contemporary Survey</title>
 <link>https://arxiv.org/abs/2412.17616</link>
@@ -10707,26 +10705,6 @@ Abstract: We present SEvoBench, a modern C++ framework for evolutionary computat
 <content:encoded><![CDATA[
 arXiv:2505.17434v1 Announce Type: cross 
 Abstract: Goal-conditioned dynamic manipulation is inherently challenging due to complex system dynamics and stringent task constraints, particularly in deformable object scenarios characterized by high degrees of freedom and underactuation. Prior methods often simplify the problem to low-speed or 2D settings, limiting their applicability to real-world 3D tasks. In this work, we explore 3D goal-conditioned rope manipulation as a representative challenge. To mitigate data scarcity, we introduce a novel simulation framework and benchmark grounded in reduced-order dynamics, which enables compact state representation and facilitates efficient policy learning. Building on this, we propose Dynamics Informed Diffusion Policy (DIDP), a framework that integrates imitation pretraining with physics-informed test-time adaptation. First, we design a diffusion policy that learns inverse dynamics within the reduced-order space, enabling imitation learning to move beyond na\"ive data fitting and capture the underlying physical structure. Second, we propose a physics-informed test-time adaptation scheme that imposes kinematic boundary conditions and structured dynamics priors on the diffusion process, ensuring consistency and reliability in manipulation execution. Extensive experiments validate the proposed approach, demonstrating strong performance in terms of accuracy and robustness in the learned policy.
-]]></content:encoded>
-<pubDate>Mon, 26 May 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Learning Generalized and Flexible Trajectory Models from Omni-Semantic Supervision</title>
-<link>https://arxiv.org/abs/2505.17437</link>
-<guid>https://arxiv.org/abs/2505.17437</guid>
-<content:encoded><![CDATA[
-arXiv:2505.17437v1 Announce Type: cross 
-Abstract: The widespread adoption of mobile devices and data collection technologies has led to an exponential increase in trajectory data, presenting significant challenges in spatio-temporal data mining, particularly for efficient and accurate trajectory retrieval. However, existing methods for trajectory retrieval face notable limitations, including inefficiencies in large-scale data, lack of support for condition-based queries, and reliance on trajectory similarity measures. To address the above challenges, we propose OmniTraj, a generalized and flexible omni-semantic trajectory retrieval framework that integrates four complementary modalities or semantics -- raw trajectories, topology, road segments, and regions -- into a unified system. Unlike traditional approaches that are limited to computing and processing trajectories as a single modality, OmniTraj designs dedicated encoders for each modality, which are embedded and fused into a shared representation space. This design enables OmniTraj to support accurate and flexible queries based on any individual modality or combination thereof, overcoming the rigidity of traditional similarity-based methods. Extensive experiments on two real-world datasets demonstrate the effectiveness of OmniTraj in handling large-scale data, providing flexible, multi-modality queries, and supporting downstream tasks and applications.
-]]></content:encoded>
-<pubDate>Mon, 26 May 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Designing an efficient and equitable humanitarian supply chain dynamically via reinforcement learning</title>
-<link>https://arxiv.org/abs/2505.17439</link>
-<guid>https://arxiv.org/abs/2505.17439</guid>
-<content:encoded><![CDATA[
-arXiv:2505.17439v1 Announce Type: cross 
-Abstract: This study designs an efficient and equitable humanitarian supply chain dynamically by using reinforcement learning, PPO, and compared with heuristic algorithms. This study demonstrates the model of PPO always treats average satisfaction rate as the priority.
 ]]></content:encoded>
 <pubDate>Mon, 26 May 2025 00:00:00 -0400</pubDate>
 </item>
