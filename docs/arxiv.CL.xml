@@ -4,6 +4,7 @@
 <title>cs.CL updates on arXiv.org</title>
 <link>http://rss.arxiv.org/rss/cs.CL</link>
 
+
 <item>
 <title>Information Gain-Guided Causal Intervention for Autonomous Debiasing Large Language Models</title>
 <link>https://arxiv.org/abs/2504.12898</link>
@@ -12,11 +13,10 @@
 <div> debiasing, large language models, dataset biases, information gain, causal intervention
 
 Summary:
-The study introduces an information gain-guided causal intervention debiasing (ICD) framework to address the issue of dataset biases affecting large language models' generalizability. Current debiasing methods have limitations due to the diverse nature of biases in datasets. The ICD framework combines causal mechanisms with information theory to autonomously balance the dataset distribution by reducing biases' information gain in predicting answers. This framework uses a causal intervention-based data rewriting method to achieve this and then employs supervised fine-tuning to train LLMs on the debiased dataset. Experimental results demonstrate that ICD effectively debiases LLMs and enhances their performance across various tasks.<br><br>Summary: <div>
+The study introduces an information gain-guided causal intervention debiasing (ICD) framework to address the issue of dataset biases affecting large language models' generalizability. Current debiasing methods have limitations due to the diverse nature of biases in datasets. The ICD framework combines causal mechanisms with information theory to autonomously balance the dataset distribution by reducing biases' information gain in predicting answers. This framework uses a causal intervention-based data rewriting method to achieve this and then employs supervised fine-tuning to train LLMs on the debiased dataset. Experimental results demonstrate that ICD effectively debiases LLMs and enhances their performance across various tasks.<br /><br />Summary: <div>
 arXiv:2504.12898v3 Announce Type: replace 
 Abstract: Despite significant progress, recent studies indicate that current large language models (LLMs) may still capture dataset biases and utilize them during inference, leading to the poor generalizability of LLMs. However, due to the diversity of dataset biases and the insufficient nature of bias suppression based on in-context learning, the effectiveness of previous prior knowledge-based debiasing methods and in-context learning based automatic debiasing methods is limited. To address these challenges, we explore the combination of causal mechanisms with information theory and propose an information gain-guided causal intervention debiasing (ICD) framework. To eliminate biases within the instruction-tuning dataset, it is essential to ensure that these biases do not provide any additional information to predict the answers, i.e., the information gain of these biases for predicting the answers needs to be 0. Under this guidance, this framework utilizes a causal intervention-based data rewriting method to automatically and autonomously balance the distribution of instruction-tuning dataset for reducing the information gain. Subsequently, it employs a standard supervised fine-tuning process to train LLMs on the debiased dataset. Experimental results show that ICD can effectively debias LLM to improve its generalizability across different tasks.
 ]]></content:encoded>
-<pubDate>Wed, 28 May 2025 00:00:00 -0400</pubDate>
 <pubDate>Wed, 28 May 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -24,13 +24,12 @@ Abstract: Despite significant progress, recent studies indicate that current lar
 <link>https://arxiv.org/abs/2505.17667</link>
 <guid>https://arxiv.org/abs/2505.17667</guid>
 <content:encoded><![CDATA[
-<div> framework, long-context reasoning, reinforcement learning, QwenLong-L1, document question-answering <br>
-Summary: <br>
-Recent advancements in large reasoning models (LRMs) have shown significant progress in short-context reasoning tasks using reinforcement learning (RL). However, extending these capabilities to long-context inputs poses a challenge due to suboptimal training efficiency and unstable optimization. In response, the QwenLong-L1 framework has been developed to adapt short-context LRMs for long-context scenarios. By incorporating supervised fine-tuning, phased RL techniques, and difficulty-aware sampling, QwenLong-L1 achieves competitive performance on long-context document question-answering benchmarks. Outperforming flagship LRMs like OpenAI-o3-mini and Qwen3-235B-A22B, QwenLong-L1-32B rivals the performance of Claude-3.7-Sonnet-Thinking, establishing its position as a leading LRM in processing and reasoning on long-context inputs. This work represents a significant step forward in the development of practical LRMs for robust reasoning in information-intensive environments. <br> <div>
+<div> framework, long-context reasoning, reinforcement learning, QwenLong-L1, document question-answering <br />
+Summary: <br />
+Recent advancements in large reasoning models (LRMs) have shown significant progress in short-context reasoning tasks using reinforcement learning (RL). However, extending these capabilities to long-context inputs poses a challenge due to suboptimal training efficiency and unstable optimization. In response, the QwenLong-L1 framework has been developed to adapt short-context LRMs for long-context scenarios. By incorporating supervised fine-tuning, phased RL techniques, and difficulty-aware sampling, QwenLong-L1 achieves competitive performance on long-context document question-answering benchmarks. Outperforming flagship LRMs like OpenAI-o3-mini and Qwen3-235B-A22B, QwenLong-L1-32B rivals the performance of Claude-3.7-Sonnet-Thinking, establishing its position as a leading LRM in processing and reasoning on long-context inputs. This work represents a significant step forward in the development of practical LRMs for robust reasoning in information-intensive environments. <br /> <div>
 arXiv:2505.17667v2 Announce Type: replace 
 Abstract: Recent large reasoning models (LRMs) have demonstrated strong reasoning capabilities through reinforcement learning (RL). These improvements have primarily been observed within the short-context reasoning tasks. In contrast, extending LRMs to effectively process and reason on long-context inputs via RL remains a critical unsolved challenge. To bridge this gap, we first formalize the paradigm of long-context reasoning RL, and identify key challenges in suboptimal training efficiency and unstable optimization process. To address these issues, we propose QwenLong-L1, a framework that adapts short-context LRMs to long-context scenarios via progressive context scaling. Specifically, we utilize a warm-up supervised fine-tuning (SFT) stage to establish a robust initial policy, followed by a curriculum-guided phased RL technique to stabilize the policy evolution, and enhanced with a difficulty-aware retrospective sampling strategy to incentivize the policy exploration. Experiments on seven long-context document question-answering benchmarks demonstrate that QwenLong-L1-32B outperforms flagship LRMs like OpenAI-o3-mini and Qwen3-235B-A22B, achieving performance on par with Claude-3.7-Sonnet-Thinking, demonstrating leading performance among state-of-the-art LRMs. This work advances the development of practical long-context LRMs capable of robust reasoning across information-intensive environments.
 ]]></content:encoded>
-<pubDate>Wed, 28 May 2025 00:00:00 -0400</pubDate>
 <pubDate>Wed, 28 May 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -38,8 +37,8 @@ Abstract: Recent large reasoning models (LRMs) have demonstrated strong reasonin
 <link>https://arxiv.org/abs/2505.18092</link>
 <guid>https://arxiv.org/abs/2505.18092</guid>
 <content:encoded><![CDATA[
-<div> Keywords: QwenLong-CPRS, context compression, dynamic optimization, LLMs, performance improvement<br>
-Summary: <br>
+<div> Keywords: QwenLong-CPRS, context compression, dynamic optimization, LLMs, performance improvement<br />
+Summary: <br />
 QwenLong-CPRS is a context compression framework that aims to optimize long-context processing in large language models (LLMs). It addresses computation overhead and performance degradation issues by introducing dynamic optimization mechanisms guided by natural language instructions. The framework incorporates bidirectional reasoning layers, token critic mechanisms, and window-parallel inference for enhanced performance. Evaluations show that QwenLong-CPRS outperforms other context management methods like RAG and sparse attention in accuracy and efficiency. It can be integrated with flagship LLMs, achieving significant context compression and performance gains. When deployed with Qwen2.5-32B-Instruct, QwenLong-CPRS surpasses proprietary LLMs in performance, establishing new state-of-the-art benchmarks on Ruler-128K and InfiniteBench. <div>
 arXiv:2505.18092v2 Announce Type: replace 
 Abstract: This technical report presents QwenLong-CPRS, a context compression framework designed for explicit long-context optimization, addressing prohibitive computation overhead during the prefill stage and the "lost in the middle" performance degradation of large language models (LLMs) during long sequence processing. Implemented through a novel dynamic context optimization mechanism, QwenLong-CPRS enables multi-granularity context compression guided by natural language instructions, achieving both efficiency gains and improved performance.
@@ -47,20 +46,18 @@ Abstract: This technical report presents QwenLong-CPRS, a context compression fr
   Comprehensive evaluations across five benchmarks (4K-2M word contexts) demonstrate QwenLong-CPRS's threefold effectiveness: (1) Consistent superiority over other context management methods like RAG and sparse attention in both accuracy and efficiency. (2) Architecture-agnostic integration with all flagship LLMs, including GPT-4o, Gemini2.0-pro, Claude3.7-sonnet, DeepSeek-v3, and Qwen2.5-max, achieves 21.59$\times$ context compression alongside 19.15-point average performance gains; (3) Deployed with Qwen2.5-32B-Instruct, QwenLong-CPRS surpasses leading proprietary LLMs by 4.85 and 10.88 points on Ruler-128K and InfiniteBench, establishing new SOTA performance.
 ]]></content:encoded>
 <pubDate>Wed, 28 May 2025 00:00:00 -0400</pubDate>
-<pubDate>Wed, 28 May 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
 <title>OrionBench: A Benchmark for Chart and Human-Recognizable Object Detection in Infographics</title>
 <link>https://arxiv.org/abs/2505.17473</link>
 <guid>https://arxiv.org/abs/2505.17473</guid>
 <content:encoded><![CDATA[
-<div> benchmark, object detection models, infographic, chart understanding, visual-language models<br>
-<br>
-OrionBench is a benchmark designed to improve the chart understanding capabilities of vision-language models (VLMs) by accurately detecting infographic elements such as charts and human-recognizable objects (HROs). It includes a large dataset of real and synthetic infographics with millions of bounding box annotations, created using a combination of methods. The benchmark is used to develop a "Thinking-with-Boxes" scheme to enhance VLM performance, compare object detection models, and apply the detection model to document layout and UI element detection. This benchmark aims to address the limitations of existing VLMs in accurately grounding infographic elements and to support the development of more accurate object detection models for charts and HROs in infographics.<br><br>Summary: <div>
+<div> benchmark, object detection models, infographic, chart understanding, visual-language models<br />
+<br />
+OrionBench is a benchmark designed to improve the chart understanding capabilities of vision-language models (VLMs) by accurately detecting infographic elements such as charts and human-recognizable objects (HROs). It includes a large dataset of real and synthetic infographics with millions of bounding box annotations, created using a combination of methods. The benchmark is used to develop a "Thinking-with-Boxes" scheme to enhance VLM performance, compare object detection models, and apply the detection model to document layout and UI element detection. This benchmark aims to address the limitations of existing VLMs in accurately grounding infographic elements and to support the development of more accurate object detection models for charts and HROs in infographics.<br /><br />Summary: <div>
 arXiv:2505.17473v2 Announce Type: replace-cross 
 Abstract: Given the central role of charts in scientific, business, and communication contexts, enhancing the chart understanding capabilities of vision-language models (VLMs) has become increasingly critical. A key limitation of existing VLMs lies in their inaccurate visual grounding of infographic elements, including charts and human-recognizable objects (HROs) such as icons and images. However, chart understanding often requires identifying relevant elements and reasoning over them. To address this limitation, we introduce OrionBench, a benchmark designed to support the development of accurate object detection models for charts and HROs in infographics. It contains 26,250 real and 78,750 synthetic infographics, with over 6.9 million bounding box annotations. These annotations are created by combining the model-in-the-loop and programmatic methods. We demonstrate the usefulness of OrionBench through three applications: 1) constructing a Thinking-with-Boxes scheme to boost the chart understanding performance of VLMs, 2) comparing existing object detection models, and 3) applying the developed detection model to document layout and UI element detection.
 ]]></content:encoded>
-<pubDate>Wed, 28 May 2025 00:00:00 -0400</pubDate>
 <pubDate>Wed, 28 May 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -77,11 +74,10 @@ Summary:
 - NeUQI is shown to outperform existing methods when applied to the LLaMA and Qwen families on various tasks.
 - When combined with a lightweight distillation strategy, NeUQI achieves superior performance to PV-tuning, a more resource-intensive approach. 
 
-<br><br>Summary: <div>
+<br /><br />Summary: <div>
 arXiv:2505.17595v2 Announce Type: replace-cross 
 Abstract: Large language models (LLMs) achieve impressive performance across domains but face significant challenges when deployed on consumer-grade GPUs or personal devices such as laptops, due to high memory consumption and inference costs. Post-training quantization (PTQ) of LLMs offers a promising solution that reduces their memory footprint and decoding latency. In practice, PTQ with uniform quantization representation is favored for its efficiency and ease of deployment since uniform quantization is widely supported by mainstream hardware and software libraries. Recent studies on $\geq 2$-bit uniform quantization have led to noticeable improvements in post-quantization model performance; however, they primarily focus on quantization methodologies, while the initialization of quantization parameters is underexplored and still relies on the suboptimal Min-Max strategies. In this work, we propose NeUQI, a method devoted to efficiently determining near-optimal initial parameters for uniform quantization. NeUQI is orthogonal to prior quantization methodologies and can seamlessly integrate with them. The experiments with the LLaMA and Qwen families on various tasks demonstrate that our NeUQI consistently outperforms existing methods. Furthermore, when combined with a lightweight distillation strategy, NeUQI can achieve superior performance to PV-tuning, a much more resource-intensive approach.
 ]]></content:encoded>
-<pubDate>Wed, 28 May 2025 00:00:00 -0400</pubDate>
 <pubDate>Wed, 28 May 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -92,11 +88,10 @@ Abstract: Large language models (LLMs) achieve impressive performance across dom
 <div> framework, reinforcement learning, value function, optimization, exploration
 
 Summary:
-The paper investigates the VAPO framework for reinforcement learning in long chain-of-thought reasoning tasks with large language models. It addresses challenges like value model bias and sparse reward signals, achieving top performance. The paper delves into theoretical aspects of VAPO, questioning assumptions and suggesting areas for further research. It examines value function approximation in complex reasoning spaces, the effectiveness of adaptive advantage estimation, the impact of token-level optimization, and challenges in exploration and generalization. This theoretical exploration aims to provide insights for enhancing the efficiency and reliability of reasoning agents in the future.<br><br>Summary: <div>
+The paper investigates the VAPO framework for reinforcement learning in long chain-of-thought reasoning tasks with large language models. It addresses challenges like value model bias and sparse reward signals, achieving top performance. The paper delves into theoretical aspects of VAPO, questioning assumptions and suggesting areas for further research. It examines value function approximation in complex reasoning spaces, the effectiveness of adaptive advantage estimation, the impact of token-level optimization, and challenges in exploration and generalization. This theoretical exploration aims to provide insights for enhancing the efficiency and reliability of reasoning agents in the future.<br /><br />Summary: <div>
 arXiv:2505.17997v2 Announce Type: replace-cross 
 Abstract: The VAPO framework has demonstrated significant empirical success in enhancing the efficiency and reliability of reinforcement learning for long chain-of-thought (CoT) reasoning tasks with large language models (LLMs). By systematically addressing challenges such as value model bias, heterogeneous sequence lengths, and sparse reward signals, VAPO achieves state-of-the-art performance. While its practical benefits are evident, a deeper theoretical understanding of its underlying mechanisms and potential limitations is crucial for guiding future advancements. This paper aims to initiate such a discussion by exploring VAPO from a theoretical perspective, highlighting areas where its assumptions might be challenged and where further investigation could yield more robust and generalizable reasoning agents. We delve into the intricacies of value function approximation in complex reasoning spaces, the optimality of adaptive advantage estimation, the impact of token-level optimization, and the enduring challenges of exploration and generalization.
 ]]></content:encoded>
-<pubDate>Wed, 28 May 2025 00:00:00 -0400</pubDate>
 <pubDate>Wed, 28 May 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -104,16 +99,14 @@ Abstract: The VAPO framework has demonstrated significant empirical success in e
 <link>https://arxiv.org/abs/2505.18034</link>
 <guid>https://arxiv.org/abs/2505.18034</guid>
 <content:encoded><![CDATA[
-<div> structured approach, knowledge graph, causal queries, Corr2Cause dataset benchmark, generalization <br>
+<div> structured approach, knowledge graph, causal queries, Corr2Cause dataset benchmark, generalization <br />
 Summary: 
 The article discusses the limitations of Language Models (LLMs) in distinguishing causation from correlation and presents a novel structured approach to address this issue. Rather than directly answering causal queries, the model is guided to build a structured knowledge graph based on correlational premises to enhance its causal capabilities. Experiments on the Corr2Cause dataset benchmark show significant improvements in F1 scores using this structured approach with the Qwen3-32B reasoning model. Results indicate a 47.5% relative increase in F1 scores, along with notable enhancements in precision and recall. The study highlights the effectiveness of structuring the model's thinking and its potential for broader generalization across various causal inference tasks. <div>
 arXiv:2505.18034v2 Announce Type: replace-cross 
 Abstract: Despite remarkable advances in the field, LLMs remain unreliable in distinguishing causation from correlation. Recent results from the Corr2Cause dataset benchmark reveal that state-of-the-art LLMs -- such as GPT-4 (F1 score: 29.08) -- only marginally outperform random baselines (Random Uniform, F1 score: 20.38), indicating limited capacity of generalization. To tackle this limitation, we propose a novel structured approach: rather than directly answering causal queries, we provide the model with the capability to structure its thinking by guiding the model to build a structured knowledge graph, systematically encoding the provided correlational premises, to answer the causal queries. This intermediate representation significantly enhances the model's causal capabilities. Experiments on the test subset of the Corr2Cause dataset benchmark with Qwen3-32B model (reasoning model) show substantial gains over standard direct prompting methods, improving F1 scores from 32.71 to 48.26 (over 47.5% relative increase), along with notable improvements in precision and recall. These results underscore the effectiveness of providing the model with the capability to structure its thinking and highlight its promising potential for broader generalization across diverse causal inference tasks.
 ]]></content:encoded>
 <pubDate>Wed, 28 May 2025 00:00:00 -0400</pubDate>
-<pubDate>Wed, 28 May 2025 00:00:00 -0400</pubDate>
 </item>
-
 <item>
 <title>Guiding Giants: Lightweight Controllers for Weighted Activation Steering in LLMs</title>
 <link>https://arxiv.org/abs/2505.20309</link>
@@ -10952,76 +10945,6 @@ Abstract: Large reasoning models (LRMs) have demonstrated impressive performance
 <content:encoded><![CDATA[
 arXiv:2505.17413v1 Announce Type: new 
 Abstract: Large Language Models (LLMs) demonstrate increasing conversational fluency, yet instilling them with nuanced, human-like emotional expression remains a significant challenge. Current alignment techniques often address surface-level output or require extensive fine-tuning. This paper demonstrates that targeted activation engineering can steer LLaMA 3.1-8B to exhibit more human-like emotional nuances. We first employ attribution patching to identify causally influential components, to find a key intervention locus by observing activation patterns during diagnostic conversational tasks. We then derive emotional expression vectors from the difference in the activations generated by contrastive text pairs (positive vs. negative examples of target emotions). Applying these vectors to new conversational prompts significantly enhances emotional characteristics: steered responses show increased positive sentiment (e.g., joy, trust) and more frequent first-person pronoun usage, indicative of greater personal engagement. Our findings offer a precise and interpretable method for controlling specific emotional attributes in LLMs, contributing to developing more aligned and empathetic conversational AI.
-]]></content:encoded>
-<pubDate>Mon, 26 May 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>DASH: Input-Aware Dynamic Layer Skipping for Efficient LLM Inference with Markov Decision Policies</title>
-<link>https://arxiv.org/abs/2505.17420</link>
-<guid>https://arxiv.org/abs/2505.17420</guid>
-<content:encoded><![CDATA[
-arXiv:2505.17420v1 Announce Type: new 
-Abstract: Large language models (LLMs) have achieved remarkable performance across a wide range of NLP tasks. However, their substantial inference cost poses a major barrier to real-world deployment, especially in latency-sensitive scenarios. To address this challenge, we propose \textbf{DASH}, an adaptive layer-skipping framework that dynamically selects computation paths conditioned on input characteristics. We model the skipping process as a Markov Decision Process (MDP), enabling fine-grained token-level decisions based on intermediate representations. To mitigate potential performance degradation caused by skipping, we introduce a lightweight compensation mechanism that injects differential rewards into the decision process. Furthermore, we design an asynchronous execution strategy that overlaps layer computation with policy evaluation to minimize runtime overhead. Experiments on multiple LLM architectures and NLP benchmarks show that our method achieves significant inference acceleration while maintaining competitive task performance, outperforming existing methods.
-]]></content:encoded>
-<pubDate>Mon, 26 May 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>T$^2$: An Adaptive Test-Time Scaling Strategy for Contextual Question Answering</title>
-<link>https://arxiv.org/abs/2505.17427</link>
-<guid>https://arxiv.org/abs/2505.17427</guid>
-<content:encoded><![CDATA[
-arXiv:2505.17427v1 Announce Type: new 
-Abstract: Recent advances in Large Language Models (LLMs) have demonstrated remarkable performance in Contextual Question Answering (CQA). However, prior approaches typically employ elaborate reasoning strategies regardless of question complexity, leading to low adaptability. Recent efficient test-time scaling methods introduce budget constraints or early stop mechanisms to avoid overthinking for straightforward questions. But they add human bias to the reasoning process and fail to leverage models' inherent reasoning capabilities. To address these limitations, we present T$^2$: Think-to-Think, a novel framework that dynamically adapts reasoning depth based on question complexity. T$^2$ leverages the insight that if an LLM can effectively solve similar questions using specific reasoning strategies, it can apply the same strategy to the original question. This insight enables to adoption of concise reasoning for straightforward questions while maintaining detailed analysis for complex problems. T$^2$ works through four key steps: decomposing questions into structural elements, generating similar examples with candidate reasoning strategies, evaluating these strategies against multiple criteria, and applying the most appropriate strategy to the original question. Experimental evaluation across seven diverse CQA benchmarks demonstrates that T$^2$ not only achieves higher accuracy than baseline methods but also reduces computational overhead by up to 25.2\%.
-]]></content:encoded>
-<pubDate>Mon, 26 May 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Discovering Forbidden Topics in Language Models</title>
-<link>https://arxiv.org/abs/2505.17441</link>
-<guid>https://arxiv.org/abs/2505.17441</guid>
-<content:encoded><![CDATA[
-arXiv:2505.17441v1 Announce Type: new 
-Abstract: Refusal discovery is the task of identifying the full set of topics that a language model refuses to discuss. We introduce this new problem setting and develop a refusal discovery method, LLM-crawler, that uses token prefilling to find forbidden topics. We benchmark the LLM-crawler on Tulu-3-8B, an open-source model with public safety tuning data. Our crawler manages to retrieve 31 out of 36 topics within a budget of 1000 prompts. Next, we scale the crawl to a frontier model using the prefilling option of Claude-Haiku. Finally, we crawl three widely used open-weight models: Llama-3.3-70B and two of its variants finetuned for reasoning: DeepSeek-R1-70B and Perplexity-R1-1776-70B. DeepSeek-R1-70B reveals patterns consistent with censorship tuning: The model exhibits "thought suppression" behavior that indicates memorization of CCP-aligned responses. Although Perplexity-R1-1776-70B is robust to censorship, LLM-crawler elicits CCP-aligned refusals answers in the quantized model. Our findings highlight the critical need for refusal discovery methods to detect biases, boundaries, and alignment failures of AI systems.
-]]></content:encoded>
-<pubDate>Mon, 26 May 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Exploring the Effect of Segmentation and Vocabulary Size on Speech Tokenization for Speech Language Models</title>
-<link>https://arxiv.org/abs/2505.17446</link>
-<guid>https://arxiv.org/abs/2505.17446</guid>
-<content:encoded><![CDATA[
-arXiv:2505.17446v1 Announce Type: new 
-Abstract: The purpose of speech tokenization is to transform a speech signal into a sequence of discrete representations, serving as the foundation for speech language models (SLMs). While speech tokenization has many options, their effect on the performance of SLMs remains unclear. This paper investigates two key aspects of speech tokenization: the segmentation width and the cluster size of discrete units. First, we segment speech signals into fixed/variable widths and pooled representations. We then train K-means models in multiple cluster sizes. Through the evaluation on zero-shot spoken language understanding benchmarks, we find the positive effect of moderately coarse segmentation and bigger cluster size. Notably, among the best-performing models, the most efficient one achieves a 50% reduction in training data and a 70% decrease in training runtime. Our analysis highlights the importance of combining multiple tokens to enhance fine-grained spoken language understanding.
-]]></content:encoded>
-<pubDate>Mon, 26 May 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>LeTS: Learning to Think-and-Search via Process-and-Outcome Reward Hybridization</title>
-<link>https://arxiv.org/abs/2505.17447</link>
-<guid>https://arxiv.org/abs/2505.17447</guid>
-<content:encoded><![CDATA[
-arXiv:2505.17447v1 Announce Type: new 
-Abstract: Large language models (LLMs) have demonstrated impressive capabilities in reasoning with the emergence of reasoning models like OpenAI-o1 and DeepSeek-R1. Recent research focuses on integrating reasoning capabilities into the realm of retrieval-augmented generation (RAG) via outcome-supervised reinforcement learning (RL) approaches, while the correctness of intermediate think-and-search steps is usually neglected. To address this issue, we design a process-level reward module to mitigate the unawareness of intermediate reasoning steps in outcome-level supervision without additional annotation. Grounded on this, we propose Learning to Think-and-Search (LeTS), a novel framework that hybridizes stepwise process reward and outcome-based reward to current RL methods for RAG. Extensive experiments demonstrate the generalization and inference efficiency of LeTS across various RAG benchmarks. In addition, these results reveal the potential of process- and outcome-level reward hybridization in boosting LLMs' reasoning ability via RL under other scenarios. The code will be released soon.
-]]></content:encoded>
-<pubDate>Mon, 26 May 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Towards Evaluating Proactive Risk Awareness of Multimodal Language Models</title>
-<link>https://arxiv.org/abs/2505.17455</link>
-<guid>https://arxiv.org/abs/2505.17455</guid>
-<content:encoded><![CDATA[
-arXiv:2505.17455v1 Announce Type: new 
-Abstract: Human safety awareness gaps often prevent the timely recognition of everyday risks. In solving this problem, a proactive safety artificial intelligence (AI) system would work better than a reactive one. Instead of just reacting to users' questions, it would actively watch people's behavior and their environment to detect potential dangers in advance. Our Proactive Safety Bench (PaSBench) evaluates this capability through 416 multimodal scenarios (128 image sequences, 288 text logs) spanning 5 safety-critical domains. Evaluation of 36 advanced models reveals fundamental limitations: Top performers like Gemini-2.5-pro achieve 71% image and 64% text accuracy, but miss 45-55% risks in repeated trials. Through failure analysis, we identify unstable proactive reasoning rather than knowledge deficits as the primary limitation. This work establishes (1) a proactive safety benchmark, (2) systematic evidence of model limitations, and (3) critical directions for developing reliable protective AI. We believe our dataset and findings can promote the development of safer AI assistants that actively prevent harm rather than merely respond to requests. Our dataset can be found at https://huggingface.co/datasets/Youliang/PaSBench.
-]]></content:encoded>
-<pubDate>Mon, 26 May 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Hydra: Structured Cross-Source Enhanced Large Language Model Reasoning</title>
-<link>https://arxiv.org/abs/2505.17464</link>
-<guid>https://arxiv.org/abs/2505.17464</guid>
-<content:encoded><![CDATA[
-arXiv:2505.17464v1 Announce Type: new 
-Abstract: Retrieval-augmented generation (RAG) enhances large language models (LLMs) by incorporating external knowledge. Current hybrid RAG system retrieves evidence from both knowledge graphs (KGs) and text documents to support LLM reasoning. However, it faces challenges like handling multi-hop reasoning, multi-entity questions, multi-source verification, and effective graph utilization. To address these limitations, we present Hydra, a training-free framework that unifies graph topology, document semantics, and source reliability to support deep, faithful reasoning in LLMs. Hydra handles multi-hop and multi-entity problems through agent-driven exploration that combines structured and unstructured retrieval, increasing both diversity and precision of evidence. To tackle multi-source verification, Hydra uses a tri-factor cross-source verification (source trustworthiness assessment, cross-source corroboration, and entity-path alignment), to balance topic relevance with cross-modal agreement. By leveraging graph structure, Hydra fuses heterogeneous sources, guides efficient exploration, and prunes noise early. Comprehensive experiments on seven benchmark datasets show that Hydra achieves overall state-of-the-art results on all benchmarks with GPT-3.5, outperforming the strong hybrid baseline ToG-2 by an average of 20.3% and up to 30.1%. Furthermore, Hydra enables smaller models (e.g., Llama-3.1-8B) to achieve reasoning performance comparable to that of GPT-4-Turbo.
 ]]></content:encoded>
 <pubDate>Mon, 26 May 2025 00:00:00 -0400</pubDate>
 </item>

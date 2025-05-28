@@ -5,17 +5,31 @@
 <link>http://rss.arxiv.org/rss/cs.LG</link>
 
 <item>
+<title>GMoE: Empowering LLMs Fine-Tuning via MoE Graph Collaboration</title>
+<link>https://arxiv.org/abs/2412.16216</link>
+<guid>https://arxiv.org/abs/2412.16216</guid>
+<content:encoded><![CDATA[
+<div> Graph-based MoE, load imbalance, collaboration, fine-tuning, LLMs <br>
+Summary: 
+The paper introduces a novel Graph-based Mixture-of-Experts (GMoE) framework to address the load imbalance issue in large language models (LLMs). By utilizing a graph router function, GMoE enhances collaboration among experts, allowing them to dynamically allocate information from input data. Two coordination strategies, Poisson distribution-based distinction, and Normal distribution-based balance, further enhance the model stability during fine-tuning of LLMs. The implementation of GMoE using the Low-Rank Adaptation (LoRA) technique shows promising results on real-world datasets, demonstrating the effectiveness of facilitating collaborations among multiple experts in LLM fine-tuning. The experimental code is available at https://github.com/BAI-LAB/GMoE <br><br> <div>
+arXiv:2412.16216v3 Announce Type: replace 
+Abstract: The sparse Mixture-of-Experts (MoE) architecture of large language models (LLMs) confronts an inherent issue of load imbalance arising from the simplistic linear router strategy, which ultimately causes the instability and inefficient learning of LLMs. To address this challenge, we introduce a novel MoE graph-based framework $\textbf{GMoE}$, aimed at enhancing the collaboration among multiple experts. In GMoE, a graph router function is designed to capture the collaboration signals among experts. This enables all experts to dynamically allocate information derived from input data by sharing information with their neighboring experts. Moreover, we put forward two coordination strategies in GMoE: the $\textit{Poisson distribution-based distinction strategy}$ and the $\textit{Normal distribution-based balance strategy}$, to further release the capacity of each expert and increase the model stability in the fine-tuning of LLMs. Specifically, we leverage a parameter-efficient fine-tuning technique, i.e., Low-Rank Adaptation (LoRA), to implement the graph MoE architecture. Extensive experiments on four real-world benchmark datasets demonstrate the effectiveness of GMoE, showing the benefits of facilitating collaborations of multiple experts in LLM fine-tuning. The code of experimental implementation is available at https://github.com/BAI-LAB/GMoE
+]]></content:encoded>
+<pubDate>Wed, 28 May 2025 00:00:00 -0400</pubDate>
+<pubDate>Wed, 28 May 2025 00:00:00 -0400</pubDate>
+</item>
+
+<item>
 <title>Exploring the Boundary of Diffusion-based Methods for Solving Constrained Optimization</title>
 <link>https://arxiv.org/abs/2502.10330</link>
 <guid>https://arxiv.org/abs/2502.10330</guid>
 <content:encoded><![CDATA[
-<div> Diffusion models, Continuous Constrained Optimization, DiOpt, supervised learning, multimodal distributions <br>
-Summary: <br>
+<div> Diffusion models, Continuous Constrained Optimization, DiOpt, supervised learning, multimodal distributions <br />
+Summary: <br />
 This paper explores the application of diffusion models to Continuous Constrained Optimization problems, specifically focusing on a two-dimensional constrained quadratic optimization example. The researchers identify challenges and propose the DiOpt framework, which consists of a warm-start phase and a bootstrapping phase to iteratively refine solutions while meeting constraints. The framework samples multiple candidate solutions and selects the optimal one through a screening process. Extensive experiments demonstrate the training dynamics, performance on various optimization problems, and the impact of hyperparameters on DiOpt's effectiveness. <div>
 arXiv:2502.10330v3 Announce Type: replace 
 Abstract: Diffusion models have achieved remarkable success in generative tasks such as image and video synthesis, and in control domains like robotics, owing to their strong generalization capabilities and proficiency in fitting complex multimodal distributions. However, their full potential in solving Continuous Constrained Optimization problems remains largely underexplored. Our work commences by investigating a two-dimensional constrained quadratic optimization problem as an illustrative example to explore the inherent challenges and issues when applying diffusion models to such optimization tasks and providing theoretical analyses for these observations. To address the identified gaps and harness diffusion models for Continuous Constrained Optimization, we build upon this analysis to propose a novel diffusion-based framework for optimization problems called DiOpt. This framework operates in two distinct phases: an initial warm-start phase, implemented via supervised learning, followed by a bootstrapping phase. This dual-phase architecture is designed to iteratively refine solutions, thereby improving the objective function while rigorously satisfying problem constraints. Finally, multiple candidate solutions are sampled, and the optimal one is selected through a screening process. We present extensive experiments detailing the training dynamics of DiOpt, its performance across a diverse set of Continuous Constrained Optimization problems, and an analysis of the impact of DiOpt's various hyperparameters.
 ]]></content:encoded>
-<pubDate>Wed, 28 May 2025 00:00:00 -0400</pubDate>
 <pubDate>Wed, 28 May 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -23,13 +37,12 @@ Abstract: Diffusion models have achieved remarkable success in generative tasks 
 <link>https://arxiv.org/abs/2505.17370</link>
 <guid>https://arxiv.org/abs/2505.17370</guid>
 <content:encoded><![CDATA[
-<div> Forecasting, LTSF, Geometric structure, Wasserstein-2 distance, FRIREN <br>
+<div> Forecasting, LTSF, Geometric structure, Wasserstein-2 distance, FRIREN <br />
 Summary:
 The study challenges the conventional approach of pointwise prediction in long-term time-series forecasting models and emphasizes the importance of capturing geometric changes. The proposed FRIREN model incorporates a normalizing flow block to embed data into a latent representation and generate optimal paths that preserve geometry. By focusing on the Wasserstein-2 distance and spectral analysis, FRIREN achieves high accuracy on chaotic systems like Lorenz-63 and Rossler, outperforming existing models like TimeMixer. The model offers interpretable predictions by identifying local and global dynamics, making it a promising solution for various forecasting tasks. FRIREN sets a new benchmark by combining generative flows with spectral analysis, providing accurate and interpretable long-term forecasting capabilities. <div>
 arXiv:2505.17370v2 Announce Type: replace 
 Abstract: Long-term time-series forecasting (LTSF) models are often presented as general-purpose solutions that can be applied across domains, implicitly assuming that all data is pointwise predictable. Using chaotic systems such as Lorenz-63 as a case study, we argue that geometric structure - not pointwise prediction - is the right abstraction for a dynamic-agnostic foundational model. Minimizing the Wasserstein-2 distance (W2), which captures geometric changes, and providing a spectral view of dynamics are essential for long-horizon forecasting. Our model, FRIREN (Flow-inspired Representations via Interpretable Eigen-networks), implements an augmented normalizing-flow block that embeds data into a normally distributed latent representation. It then generates a W2-efficient optimal path that can be decomposed into rotation, scaling, inverse rotation, and translation. This architecture yields locally generated, geometry-preserving predictions that are independent of the underlying dynamics, and a global spectral representation that functions as a finite Koopman operator with a small modification. This enables practitioners to identify which modes grow, decay, or oscillate, both locally and system-wide. FRIREN achieves an MSE of 11.4, MAE of 1.6, and SWD of 0.96 on Lorenz-63 in a 336-in, 336-out, dt=0.01 setting, surpassing TimeMixer (MSE 27.3, MAE 2.8, SWD 2.1). The model maintains effective prediction for 274 out of 336 steps, approximately 2.5 Lyapunov times. On Rossler (96-in, 336-out), FRIREN achieves an MSE of 0.0349, MAE of 0.0953, and SWD of 0.0170, outperforming TimeMixer's MSE of 4.3988, MAE of 0.886, and SWD of 3.2065. FRIREN is also competitive on standard LTSF datasets such as ETT and Weather. By connecting modern generative flows with classical spectral analysis, FRIREN makes long-term forecasting both accurate and interpretable, setting a new benchmark for LTSF model design.
 ]]></content:encoded>
-<pubDate>Wed, 28 May 2025 00:00:00 -0400</pubDate>
 <pubDate>Wed, 28 May 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -45,20 +58,18 @@ arXiv:2505.17595v2 Announce Type: replace
 Abstract: Large language models (LLMs) achieve impressive performance across domains but face significant challenges when deployed on consumer-grade GPUs or personal devices such as laptops, due to high memory consumption and inference costs. Post-training quantization (PTQ) of LLMs offers a promising solution that reduces their memory footprint and decoding latency. In practice, PTQ with uniform quantization representation is favored for its efficiency and ease of deployment since uniform quantization is widely supported by mainstream hardware and software libraries. Recent studies on $\geq 2$-bit uniform quantization have led to noticeable improvements in post-quantization model performance; however, they primarily focus on quantization methodologies, while the initialization of quantization parameters is underexplored and still relies on the suboptimal Min-Max strategies. In this work, we propose NeUQI, a method devoted to efficiently determining near-optimal initial parameters for uniform quantization. NeUQI is orthogonal to prior quantization methodologies and can seamlessly integrate with them. The experiments with the LLaMA and Qwen families on various tasks demonstrate that our NeUQI consistently outperforms existing methods. Furthermore, when combined with a lightweight distillation strategy, NeUQI can achieve superior performance to PV-tuning, a much more resource-intensive approach.
 ]]></content:encoded>
 <pubDate>Wed, 28 May 2025 00:00:00 -0400</pubDate>
-<pubDate>Wed, 28 May 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
 <title>Navigate the Unknown: Enhancing LLM Reasoning with Intrinsic Motivation Guided Exploration</title>
 <link>https://arxiv.org/abs/2505.17621</link>
 <guid>https://arxiv.org/abs/2505.17621</guid>
 <content:encoded><![CDATA[
-<div> Reinforcement learning, Large Language Models, i-MENTOR, dense rewards, exploration<br>
-Summary:<br>
+<div> Reinforcement learning, Large Language Models, i-MENTOR, dense rewards, exploration<br />
+Summary:<br />
 The article discusses the limitations of existing reinforcement learning approaches for Large Language Models (LLMs) and introduces i-MENTOR as a novel method to address these challenges. i-MENTOR focuses on delivering dense rewards and promoting exploration in RL training by introducing trajectory-aware exploration rewards, dynamic reward scaling, and advantage-preserving reward implementation. These innovations aim to mitigate bias in token-level strategies, stabilize exploration and exploitation in large action spaces, and maintain advantage distribution integrity while providing exploratory guidance. Experimental results on three public datasets demonstrate i-MENTOR's effectiveness, showing a significant 22.39% improvement on the challenging Countdown-4 dataset. <div>
 arXiv:2505.17621v2 Announce Type: replace 
 Abstract: Reinforcement learning (RL) has emerged as a pivotal method for improving the reasoning capabilities of Large Language Models (LLMs). However, prevalent RL approaches such as Proximal Policy Optimization (PPO) and Group-Regularized Policy Optimization (GRPO) face critical limitations due to their reliance on sparse outcome-based rewards and inadequate mechanisms for incentivizing exploration. These limitations result in inefficient guidance for multi-step reasoning processes. Specifically, sparse reward signals fail to deliver effective or sufficient feedback, particularly for challenging problems. Furthermore, such reward structures induce systematic biases that prioritize exploitation of familiar trajectories over novel solution discovery. These shortcomings critically hinder performance in complex reasoning tasks, which inherently demand iterative refinement across ipntermediate steps. To address these challenges, we propose an Intrinsic Motivation guidEd exploratioN meThOd foR LLM Reasoning (i-MENTOR), a novel method designed to both deliver dense rewards and amplify explorations in the RL-based training paradigm. i-MENTOR introduces three key innovations: trajectory-aware exploration rewards that mitigate bias in token-level strategies while maintaining computational efficiency; dynamic reward scaling to stabilize exploration and exploitation in large action spaces; and advantage-preserving reward implementation that maintains advantage distribution integrity while incorporating exploratory guidance. Experiments across three public datasets demonstrate i-MENTOR's effectiveness with a 22.39% improvement on the difficult dataset Countdown-4.
 ]]></content:encoded>
-<pubDate>Wed, 28 May 2025 00:00:00 -0400</pubDate>
 <pubDate>Wed, 28 May 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -66,13 +77,12 @@ Abstract: Reinforcement learning (RL) has emerged as a pivotal method for improv
 <link>https://arxiv.org/abs/2505.17708</link>
 <guid>https://arxiv.org/abs/2505.17708</guid>
 <content:encoded><![CDATA[
-<div> Causal reasoning, discovery, causal analysis, causal representation learning, downstream tasks<br>
-<br>
+<div> Causal reasoning, discovery, causal analysis, causal representation learning, downstream tasks<br />
+<br />
 Summary: Causal analysis faces challenges due to data complexity. This paper reinterprets causal representation learning using a measurement model framework where learned representations are proxy measurements of latent causal variables. This approach clarifies conditions for supporting downstream causal reasoning and introduces a Test-based Measurement EXclusivity (T-MEX) score to evaluate representation quality. The T-MEX score is validated through diverse causal inference scenarios, including simulations and ecological video analysis, demonstrating its effectiveness in assessing learned representations for causal tasks. <div>
 arXiv:2505.17708v2 Announce Type: replace 
 Abstract: Causal reasoning and discovery, two fundamental tasks of causal analysis, often face challenges in applications due to the complexity, noisiness, and high-dimensionality of real-world data. Despite recent progress in identifying latent causal structures using causal representation learning (CRL), what makes learned representations useful for causal downstream tasks and how to evaluate them are still not well understood. In this paper, we reinterpret CRL using a measurement model framework, where the learned representations are viewed as proxy measurements of the latent causal variables. Our approach clarifies the conditions under which learned representations support downstream causal reasoning and provides a principled basis for quantitatively assessing the quality of representations using a new Test-based Measurement EXclusivity (T-MEX) score. We validate T-MEX across diverse causal inference scenarios, including numerical simulations and real-world ecological video analysis, demonstrating that the proposed framework and corresponding score effectively assess the identification of learned representations and their usefulness for causal downstream tasks.
 ]]></content:encoded>
-<pubDate>Wed, 28 May 2025 00:00:00 -0400</pubDate>
 <pubDate>Wed, 28 May 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -80,13 +90,12 @@ Abstract: Causal reasoning and discovery, two fundamental tasks of causal analys
 <link>https://arxiv.org/abs/2505.17854</link>
 <guid>https://arxiv.org/abs/2505.17854</guid>
 <content:encoded><![CDATA[
-<div> Neural networks; Formal verification; Latent space; Projection-based set representation; Zonotopes <br>
-Summary:<br>
-This study introduces a novel approach for formal verification of neural networks by designing a latent space that enables iterative input refinement based on output specifications. By leveraging projection-based set representations like zonotopes, the approach allows for efficient transfer of constraints between input and output spaces. The verification tool developed based on this approach significantly reduces the number of subproblems in a branch-and-bound procedure, achieving competitive performance with potential to rank highly in neural network verification competitions. Unlike many existing methods, the tool relies solely on matrix operations, enabling efficient GPU acceleration and enhancing overall speed. This innovative approach addresses the conservatism issues often encountered in neural network verification, providing a promising solution for ensuring the safety of neural networks in critical applications. <br> <div>
+<div> Neural networks; Formal verification; Latent space; Projection-based set representation; Zonotopes <br />
+Summary:<br />
+This study introduces a novel approach for formal verification of neural networks by designing a latent space that enables iterative input refinement based on output specifications. By leveraging projection-based set representations like zonotopes, the approach allows for efficient transfer of constraints between input and output spaces. The verification tool developed based on this approach significantly reduces the number of subproblems in a branch-and-bound procedure, achieving competitive performance with potential to rank highly in neural network verification competitions. Unlike many existing methods, the tool relies solely on matrix operations, enabling efficient GPU acceleration and enhancing overall speed. This innovative approach addresses the conservatism issues often encountered in neural network verification, providing a promising solution for ensuring the safety of neural networks in critical applications. <br /> <div>
 arXiv:2505.17854v2 Announce Type: replace 
 Abstract: Neural networks are ubiquitous. However, they are often sensitive to small input changes. Hence, to prevent unexpected behavior in safety-critical applications, their formal verification -- a notoriously hard problem -- is necessary. Many state-of-the-art verification algorithms use reachability analysis or abstract interpretation to enclose the set of possible outputs of a neural network. Often, the verification is inconclusive due to the conservatism of the enclosure. To address this problem, we design a novel latent space for formal verification that enables the transfer of output specifications to the input space for an iterative specification-driven input refinement, i.e., we iteratively reduce the set of possible inputs to only enclose the unsafe ones. The latent space is constructed from a novel view of projection-based set representations, e.g., zonotopes, which are commonly used in reachability analysis of neural networks. A projection-based set representation is a "shadow" of a higher-dimensional set -- a latent space -- that does not change during a set propagation through a neural network. Hence, the input set and the output enclosure are "shadows" of the same latent space that we can use to transfer constraints. We present an efficient verification tool for neural networks that uses our iterative refinement to significantly reduce the number of subproblems in a branch-and-bound procedure. Using zonotopes as a set representation, unlike many other state-of-the-art approaches, our approach can be realized by only using matrix operations, which enables a significant speed-up through efficient GPU acceleration. We demonstrate that our tool achieves competitive performance, which would place it among the top-ranking tools of the last neural network verification competition (VNN-COMP'24).
 ]]></content:encoded>
-<pubDate>Wed, 28 May 2025 00:00:00 -0400</pubDate>
 <pubDate>Wed, 28 May 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -102,7 +111,6 @@ arXiv:2505.17871v2 Announce Type: replace
 Abstract: The advent of universal time series forecasting models has revolutionized zero-shot forecasting across diverse domains, yet the critical role of data diversity in training these models remains underexplored. Existing large-scale time series datasets often suffer from inherent biases and imbalanced distributions, leading to suboptimal model performance and generalization. To address this gap, we introduce BLAST, a novel pre-training corpus designed to enhance data diversity through a balanced sampling strategy. First, BLAST incorporates 321 billion observations from publicly available datasets and employs a comprehensive suite of statistical metrics to characterize time series patterns. Then, to facilitate pattern-oriented sampling, the data is implicitly clustered using grid-based partitioning. Furthermore, by integrating grid sampling and grid mixup techniques, BLAST ensures a balanced and representative coverage of diverse patterns. Experimental results demonstrate that models pre-trained on BLAST achieve state-of-the-art performance with a fraction of the computational resources and training tokens required by existing methods. Our findings highlight the pivotal role of data diversity in improving both training efficiency and model performance for the universal forecasting task.
 ]]></content:encoded>
 <pubDate>Wed, 28 May 2025 00:00:00 -0400</pubDate>
-<pubDate>Wed, 28 May 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
 <title>Mixture of Low Rank Adaptation with Partial Parameter Sharing for Time Series Forecasting</title>
@@ -114,11 +122,10 @@ Abstract: The advent of universal time series forecasting models has revolutioni
 Summary:
 Multi-task forecasting in time-series forecasting (TSF) faces the Expressiveness Bottleneck, leading to errors even with optimal representations. To overcome this limitation, a two-stage framework is proposed: first pre-training a foundation model for one-step-ahead prediction, then adapting it using step-specific LoRA modules. The Mixture-of-LoRA (MoLA) model uses adaptively weighted LoRA experts to achieve partial parameter sharing across steps, enhancing efficiency and forecasting performance by exploiting interdependencies between forecast steps. Experimental results demonstrate that MoLA significantly improves model expressiveness and outperforms existing time-series forecasting methods. The code for MoLA is available at https://anonymous.4open.science/r/MoLA-BC92. 
 
-<br><br>Summary: <div>
+<br /><br />Summary: <div>
 arXiv:2505.17872v2 Announce Type: replace 
 Abstract: Multi-task forecasting has become the standard approach for time-series forecasting (TSF). However, we show that it suffers from an Expressiveness Bottleneck, where predictions at different time steps share the same representation, leading to unavoidable errors even with optimal representations. To address this issue, we propose a two-stage framework: first, pre-train a foundation model for one-step-ahead prediction; then, adapt it using step-specific LoRA modules.This design enables the foundation model to handle any number of forecast steps while avoiding the expressiveness bottleneck. We further introduce the Mixture-of-LoRA (MoLA) model, which employs adaptively weighted LoRA experts to achieve partial parameter sharing across steps. This approach enhances both efficiency and forecasting performance by exploiting interdependencies between forecast steps. Experiments show that MoLA significantly improves model expressiveness and outperforms state-of-the-art time-series forecasting methods. Code is available at https://anonymous.4open.science/r/MoLA-BC92.
 ]]></content:encoded>
-<pubDate>Wed, 28 May 2025 00:00:00 -0400</pubDate>
 <pubDate>Wed, 28 May 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -129,11 +136,10 @@ Abstract: Multi-task forecasting has become the standard approach for time-serie
 <div> Graph Neural Networks, Topological Deep Learning, Semi-Simplicial Neural Networks, Routing-SSNs, Brain dynamics representation learning
 
 Summary:
-Semi-Simplicial Neural Networks (SSNs) are introduced as a class of Topological Deep Learning (TDL) models that operate on semi-simplicial sets to capture directed higher-order motifs in complex systems such as brain networks. Routing-SSNs dynamically select informative relations in a learnable way, enhancing scalability. SSNs are proven to be more expressive than standard graph and TDL models. A new framework for brain dynamics representation learning based on SSNs' ability to recover topological descriptors is presented, achieving state-of-the-art performance in brain dynamics classification tasks. Empirical results show that SSNs outperform other models by up to 50% in accuracy. Additionally, SSNs demonstrate competitive performance in node classification and edge regression tasks. The code and data will be made publicly available.<br><br>Summary: <div>
+Semi-Simplicial Neural Networks (SSNs) are introduced as a class of Topological Deep Learning (TDL) models that operate on semi-simplicial sets to capture directed higher-order motifs in complex systems such as brain networks. Routing-SSNs dynamically select informative relations in a learnable way, enhancing scalability. SSNs are proven to be more expressive than standard graph and TDL models. A new framework for brain dynamics representation learning based on SSNs' ability to recover topological descriptors is presented, achieving state-of-the-art performance in brain dynamics classification tasks. Empirical results show that SSNs outperform other models by up to 50% in accuracy. Additionally, SSNs demonstrate competitive performance in node classification and edge regression tasks. The code and data will be made publicly available.<br /><br />Summary: <div>
 arXiv:2505.17939v2 Announce Type: replace 
 Abstract: Graph Neural Networks (GNNs) excel at learning from pairwise interactions but often overlook multi-way and hierarchical relationships. Topological Deep Learning (TDL) addresses this limitation by leveraging combinatorial topological spaces. However, existing TDL models are restricted to undirected settings and fail to capture the higher-order directed patterns prevalent in many complex systems, e.g., brain networks, where such interactions are both abundant and functionally significant. To fill this gap, we introduce Semi-Simplicial Neural Networks (SSNs), a principled class of TDL models that operate on semi-simplicial sets -- combinatorial structures that encode directed higher-order motifs and their directional relationships. To enhance scalability, we propose Routing-SSNs, which dynamically select the most informative relations in a learnable manner. We prove that SSNs are strictly more expressive than standard graph and TDL models. We then introduce a new principled framework for brain dynamics representation learning, grounded in the ability of SSNs to provably recover topological descriptors shown to successfully characterize brain activity. Empirically, SSNs achieve state-of-the-art performance on brain dynamics classification tasks, outperforming the second-best model by up to 27%, and message passing GNNs by up to 50% in accuracy. Our results highlight the potential of principled topological models for learning from structured brain data, establishing a unique real-world case study for TDL. We also test SSNs on standard node classification and edge regression tasks, showing competitive performance. We will make the code and data publicly available.
 ]]></content:encoded>
-<pubDate>Wed, 28 May 2025 00:00:00 -0400</pubDate>
 <pubDate>Wed, 28 May 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -148,11 +154,10 @@ Summary:
 - SFT efficiency is limited by training data based on hypothetical analysis.  
 - Re-distillation technique is introduced to fine-tune pretrain model through distillation from RL-trained policy.  
 - Empirical verification on Knight & Knave and MATH datasets shows re-distillation's efficiency, surpassing DeepSeek-V3-0324 with fewer samples and less computation, and matching instruct-tuned variant without RL on MATH with only 500 samples.  
-<br><br>Summary: <div>
+<br /><br />Summary: <div>
 arXiv:2505.17988v2 Announce Type: replace 
 Abstract: R1-style Reinforcement Learning (RL) significantly enhances Large Language Models' reasoning capabilities, yet the mechanism behind rule-based RL remains unclear. We found that small-scale SFT has significant influence on RL but shows poor efficiency. To explain our observations, we propose an analytical framework and compare the efficiency of SFT and RL by measuring sample effect. Hypothetical analysis show that SFT efficiency is limited by training data. Guided by our analysis, we propose Re-distillation, a technique that fine-tunes pretrain model through small-scale distillation from the RL-trained policy. Experiments on Knight & Knave and MATH datasets demonstrate re-distillation's surprising efficiency: re-distilled models match RL performance with far fewer samples and less computation. Empirical verification shows that sample effect is a good indicator of performance improvements. As a result, on K&amp;K dataset, our re-distilled Qwen2.5-1.5B model surpasses DeepSeek-V3-0324 with only 1K SFT samples. On MATH, Qwen2.5-1.5B fine-tuned with re-distilled 500 samples matches its instruct-tuned variant without RL. Our work explains several interesting phenomena in R1-style RL, shedding light on the mechanisms behind its empirical success. Code is available at: https://github.com/on1262/deep-reasoning
 ]]></content:encoded>
-<pubDate>Wed, 28 May 2025 00:00:00 -0400</pubDate>
 <pubDate>Wed, 28 May 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -162,12 +167,11 @@ Abstract: R1-style Reinforcement Learning (RL) significantly enhances Large Lang
 <content:encoded><![CDATA[
 <div> Keywords: VAPO framework, reinforcement learning, long chain-of-thought reasoning tasks, large language models, value function approximation
 
-Summary:<br>
-The paper discusses the VAPO framework, which has shown significant empirical success in enhancing the efficiency and reliability of reinforcement learning for tasks requiring long chain-of-thought reasoning with large language models. It addresses challenges such as value model bias, sequence length variations, and sparse reward signals, leading to state-of-the-art performance. Theoretical exploration of VAPO's mechanisms and limitations is crucial for future advancements. Key areas of discussion include value function approximation in complex reasoning spaces, the optimality of adaptive advantage estimation, the impact of token-level optimization, and challenges related to exploration and generalization. This theoretical perspective aims to guide future research efforts in developing more robust and generalizable reasoning agents.<br><br>Summary: <div>
+Summary:<br />
+The paper discusses the VAPO framework, which has shown significant empirical success in enhancing the efficiency and reliability of reinforcement learning for tasks requiring long chain-of-thought reasoning with large language models. It addresses challenges such as value model bias, sequence length variations, and sparse reward signals, leading to state-of-the-art performance. Theoretical exploration of VAPO's mechanisms and limitations is crucial for future advancements. Key areas of discussion include value function approximation in complex reasoning spaces, the optimality of adaptive advantage estimation, the impact of token-level optimization, and challenges related to exploration and generalization. This theoretical perspective aims to guide future research efforts in developing more robust and generalizable reasoning agents.<br /><br />Summary: <div>
 arXiv:2505.17997v2 Announce Type: replace 
 Abstract: The VAPO framework has demonstrated significant empirical success in enhancing the efficiency and reliability of reinforcement learning for long chain-of-thought (CoT) reasoning tasks with large language models (LLMs). By systematically addressing challenges such as value model bias, heterogeneous sequence lengths, and sparse reward signals, VAPO achieves state-of-the-art performance. While its practical benefits are evident, a deeper theoretical understanding of its underlying mechanisms and potential limitations is crucial for guiding future advancements. This paper aims to initiate such a discussion by exploring VAPO from a theoretical perspective, highlighting areas where its assumptions might be challenged and where further investigation could yield more robust and generalizable reasoning agents. We delve into the intricacies of value function approximation in complex reasoning spaces, the optimality of adaptive advantage estimation, the impact of token-level optimization, and the enduring challenges of exploration and generalization.
 ]]></content:encoded>
-<pubDate>Wed, 28 May 2025 00:00:00 -0400</pubDate>
 <pubDate>Wed, 28 May 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -175,13 +179,12 @@ Abstract: The VAPO framework has demonstrated significant empirical success in e
 <link>https://arxiv.org/abs/2410.09403</link>
 <guid>https://arxiv.org/abs/2410.09403</guid>
 <content:encoded><![CDATA[
-<div> Keywords: AI, large language models, multi-agent system, scientific research, collaboration <br>
-Summary: <br>
-The article introduces Virtual Scientists (VirSci), a multi-agent system based on large language models (LLMs) designed to simulate the collaborative nature of scientific research. VirSci utilizes a team of agents to collectively generate, evaluate, and refine research ideas, surpassing existing methods in producing novel scientific concepts. Through extensive experimentation, the article demonstrates the effectiveness of this approach in fostering innovation. The study also delves into the collaborative mechanisms that enhance idea novelty, offering valuable insights for future research endeavors. The code for VirSci is openly available for further exploration and development. In summary, VirSci represents a significant leap forward in the quest for autonomous scientific discovery by leveraging AI technologies and collaborative teamwork. <br> <div>
+<div> Keywords: AI, large language models, multi-agent system, scientific research, collaboration <br />
+Summary: <br />
+The article introduces Virtual Scientists (VirSci), a multi-agent system based on large language models (LLMs) designed to simulate the collaborative nature of scientific research. VirSci utilizes a team of agents to collectively generate, evaluate, and refine research ideas, surpassing existing methods in producing novel scientific concepts. Through extensive experimentation, the article demonstrates the effectiveness of this approach in fostering innovation. The study also delves into the collaborative mechanisms that enhance idea novelty, offering valuable insights for future research endeavors. The code for VirSci is openly available for further exploration and development. In summary, VirSci represents a significant leap forward in the quest for autonomous scientific discovery by leveraging AI technologies and collaborative teamwork. <br /> <div>
 arXiv:2410.09403v4 Announce Type: replace-cross 
 Abstract: The rapid advancement of scientific progress requires innovative tools that can accelerate knowledge discovery. Although recent AI methods, particularly large language models (LLMs), have shown promise in tasks such as hypothesis generation and experimental design, they fall short of replicating the collaborative nature of real-world scientific practices, where diverse experts work together in teams to tackle complex problems. To address the limitations, we propose an LLM-based multi-agent system, i.e., Virtual Scientists (VirSci), designed to mimic the teamwork inherent in scientific research. VirSci organizes a team of agents to collaboratively generate, evaluate, and refine research ideas. Through comprehensive experiments, we demonstrate that this multi-agent approach outperforms the state-of-the-art method in producing novel scientific ideas. We further investigate the collaboration mechanisms that contribute to its tendency to produce ideas with higher novelty, offering valuable insights to guide future research and illuminating pathways toward building a robust system for autonomous scientific discovery. The code is available at https://github.com/open-sciencelab/Virtual-Scientists.
 ]]></content:encoded>
-<pubDate>Wed, 28 May 2025 00:00:00 -0400</pubDate>
 <pubDate>Wed, 28 May 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -189,12 +192,11 @@ Abstract: The rapid advancement of scientific progress requires innovative tools
 <link>https://arxiv.org/abs/2502.07266</link>
 <guid>https://arxiv.org/abs/2502.07266</guid>
 <content:encoded><![CDATA[
-<div> Optimal CoT Length, Chain-of-Thought Reasoning, Large Language Models, Performance, Simplicity Bias<br>
-<br>Summary: This paper challenges the assumption that longer Chain-of-Thought (CoT) reasoning is always better for Large Language Models (LLMs). Through real-world observations, experiments, and analysis, it is shown that task accuracy follows an inverted U-shaped curve with CoT length, with performance initially improving but eventually declining with more CoT steps. The optimal CoT length scales with task difficulty and model capability, revealing a simplicity bias where more capable models prefer shorter CoTs. This bias is also observed in Reinforcement Learning training where models gravitate towards shorter CoTs as accuracy improves. A theoretical model is proposed to explain these phenomena and guide the calibration of CoTs for optimal reasoning performance tailored to task complexity and model capability. Practical benefits are demonstrated by training with optimally-lengthed CoTs and employing length-aware filtering during inference. Overall, this study offers insights into the "overthinking" phenomenon and provides guidelines for adaptive CoT calibration in LLMs. <br><br> <div>
+<div> Optimal CoT Length, Chain-of-Thought Reasoning, Large Language Models, Performance, Simplicity Bias<br />
+<br />Summary: This paper challenges the assumption that longer Chain-of-Thought (CoT) reasoning is always better for Large Language Models (LLMs). Through real-world observations, experiments, and analysis, it is shown that task accuracy follows an inverted U-shaped curve with CoT length, with performance initially improving but eventually declining with more CoT steps. The optimal CoT length scales with task difficulty and model capability, revealing a simplicity bias where more capable models prefer shorter CoTs. This bias is also observed in Reinforcement Learning training where models gravitate towards shorter CoTs as accuracy improves. A theoretical model is proposed to explain these phenomena and guide the calibration of CoTs for optimal reasoning performance tailored to task complexity and model capability. Practical benefits are demonstrated by training with optimally-lengthed CoTs and employing length-aware filtering during inference. Overall, this study offers insights into the "overthinking" phenomenon and provides guidelines for adaptive CoT calibration in LLMs. <br /><br /> <div>
 arXiv:2502.07266v3 Announce Type: replace-cross 
 Abstract: Large Language Models (LLMs) employ Chain-of-Thought (CoT) reasoning to deconstruct complex problems. While longer CoTs are often presumed superior, this paper challenges that notion, arguing that longer is not always better. Drawing on combined evidence from real-world observations, controlled experiments, and theoretical analysis, we demonstrate that task accuracy typically follows an inverted U-shaped curve with CoT length, where performance initially improves but eventually decreases as the number of CoT steps increases. With controlled experiments, we further uncover the scaling behaviors of the optimal CoT length: it increases with task difficulty but decreases with model capability, exposing an inherent simplicity bias where more capable models favor shorter, more efficient CoT reasoning. This bias is also evident in Reinforcement Learning (RL) training, where models gravitate towards shorter CoTs as their accuracy improves. To have a deep understanding of these dynamics, we establish a simple theoretical model that formally proves these phenomena, including the optimal length's scaling laws and the emergence of simplicity bias during RL. Guided by this framework, we demonstrate significant practical benefits from training with optimally-lengthed CoTs and employing length-aware filtering at inference. These findings offer both a principled understanding of the "overthinking" phenomenon and multiple practical guidelines for CoT calibration, enabling LLMs to achieve optimal reasoning performance with adaptive CoTs tailored to task complexity and model capability.
 ]]></content:encoded>
-<pubDate>Wed, 28 May 2025 00:00:00 -0400</pubDate>
 <pubDate>Wed, 28 May 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -210,9 +212,7 @@ arXiv:2502.12051v3 Announce Type: replace-cross
 Abstract: Neural scaling laws have revolutionized the design and optimization of large-scale AI models by revealing predictable relationships between model size, dataset volume, and computational resources. Early research established power-law relationships in model performance, leading to compute-optimal scaling strategies. However, recent studies highlighted their limitations across architectures, modalities, and deployment contexts. Sparse models, mixture-of-experts, retrieval-augmented learning, and multimodal models often deviate from traditional scaling patterns. Moreover, scaling behaviors vary across domains such as vision, reinforcement learning, and fine-tuning, underscoring the need for more nuanced approaches. In this survey, we synthesize insights from over 50 studies, examining the theoretical foundations, empirical findings, and practical implications of scaling laws. We also explore key challenges, including data efficiency, inference scaling, and architecture-specific constraints, advocating for adaptive scaling strategies tailored to real-world applications. We suggest that while scaling laws provide a useful guide, they do not always generalize across all architectures and training strategies.
 ]]></content:encoded>
 <pubDate>Wed, 28 May 2025 00:00:00 -0400</pubDate>
-<pubDate>Wed, 28 May 2025 00:00:00 -0400</pubDate>
 </item>
-
 <item>
 <title>FMEnets: Flow, Material, and Energy networks for non-ideal plug flow reactor design</title>
 <link>https://arxiv.org/abs/2505.20300</link>
@@ -10638,146 +10638,6 @@ Abstract: This paper discusses the theory and algorithms for interacting large l
 <content:encoded><![CDATA[
 arXiv:2411.01898v2 Announce Type: replace 
 Abstract: We study the fixed-confidence best-arm identification problem in unimodal bandits, in which the means of the arms increase with the index of the arm up to their maximum, then decrease. We derive two lower bounds on the stopping time of any algorithm. The instance-dependent lower bound suggests that due to the unimodal structure, only three arms contribute to the leading confidence-dependent cost. However, a worst-case lower bound shows that a linear dependence on the number of arms is unavoidable in the confidence-independent cost. We propose modifications of Track-and-Stop and a Top Two algorithm that leverage the unimodal structure. Both versions of Track-and-Stop are asymptotically optimal for one-parameter exponential families. The Top Two algorithm is asymptotically near-optimal for Gaussian distributions and we prove a non-asymptotic guarantee matching the worse-case lower bound. The algorithms can be implemented efficiently and we demonstrate their competitive empirical performance.
-]]></content:encoded>
-<pubDate>Tue, 27 May 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Semantic-Aware Resource Management for C-V2X Platooning via Multi-Agent Reinforcement Learning</title>
-<link>https://arxiv.org/abs/2411.04672</link>
-<guid>https://arxiv.org/abs/2411.04672</guid>
-<content:encoded><![CDATA[
-arXiv:2411.04672v2 Announce Type: replace 
-Abstract: Semantic communication transmits the extracted features of information rather than raw data, significantly reducing redundancy, which is crucial for addressing spectrum and energy challenges in 6G networks. In this paper, we introduce semantic communication into a cellular vehicle-to-everything (C-V2X)- based autonomous vehicle platoon system for the first time, aiming to achieve efficient management of communication resources in a dynamic environment. Firstly, we construct a mathematical model for semantic communication in platoon systems, in which the DeepSC model and MU-DeepSC model are used to semantically encode and decode unimodal and multi-modal data, respectively. Then, we propose the quality of experience (QoE) metric based on semantic similarity and semantic rate. Meanwhile, we consider the success rate of semantic information transmission (SRS) metric to ensure the fairness of channel resource allocation. Next, the optimization problem is posed with the aim of maximizing the QoE in vehicle-to-vehicle (V2V) links while improving SRS. To solve this mixed integer nonlinear programming problem (MINLP) and adapt to time-varying channel conditions, the paper proposes a distributed semantic-aware multi-modal resource allocation (SAMRA) algorithm based on multi-agent reinforcement learning (MARL), referred to as SAMRAMARL. The algorithm can dynamically allocate channels and power and determine semantic symbol length based on the contextual importance of the transmitted information, ensuring efficient resource utilization. Finally, extensive simulations have demonstrated that SAMRAMARL outperforms existing methods, achieving significant gains in QoE, SRS, and communication delay in C-V2X platooning scenarios.
-]]></content:encoded>
-<pubDate>Tue, 27 May 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Solving Hidden Monotone Variational Inequalities with Surrogate Losses</title>
-<link>https://arxiv.org/abs/2411.05228</link>
-<guid>https://arxiv.org/abs/2411.05228</guid>
-<content:encoded><![CDATA[
-arXiv:2411.05228v3 Announce Type: replace 
-Abstract: Deep learning has proven to be effective in a wide variety of loss minimization problems. However, many applications of interest, like minimizing projected Bellman error and min-max optimization, cannot be modelled as minimizing a scalar loss function but instead correspond to solving a variational inequality (VI) problem. This difference in setting has caused many practical challenges as naive gradient-based approaches from supervised learning tend to diverge and cycle in the VI case. In this work, we propose a principled surrogate-based approach compatible with deep learning to solve VIs. We show that our surrogate-based approach has three main benefits: (1) under assumptions that are realistic in practice (when hidden monotone structure is present, interpolation, and sufficient optimization of the surrogates), it guarantees convergence, (2) it provides a unifying perspective of existing methods, and (3) is amenable to existing deep learning optimizers like ADAM. Experimentally, we demonstrate our surrogate-based approach is effective in min-max optimization and minimizing projected Bellman error. Furthermore, in the deep reinforcement learning case, we propose a novel variant of TD(0) which is more compute and sample efficient.
-]]></content:encoded>
-<pubDate>Tue, 27 May 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Learning Mixtures of Experts with EM: A Mirror Descent Perspective</title>
-<link>https://arxiv.org/abs/2411.06056</link>
-<guid>https://arxiv.org/abs/2411.06056</guid>
-<content:encoded><![CDATA[
-arXiv:2411.06056v2 Announce Type: replace 
-Abstract: Classical Mixtures of Experts (MoE) are Machine Learning models that involve partitioning the input space, with a separate "expert" model trained on each partition. Recently, MoE-based model architectures have become popular as a means to reduce training and inference costs. There, the partitioning function and the experts are both learnt jointly via gradient descent-type methods on the log-likelihood. In this paper we study theoretical guarantees of the Expectation Maximization (EM) algorithm for the training of MoE models. We first rigorously analyze EM for MoE where the conditional distribution of the target and latent variable conditioned on the feature variable belongs to an exponential family of distributions and show its equivalence to projected Mirror Descent with unit step size and a Kullback-Leibler Divergence regularizer. This perspective allows us to derive new convergence results and identify conditions for local linear convergence; In the special case of mixture of $2$ linear or logistic experts, we additionally provide guarantees for linear convergence based on the signal-to-noise ratio. Experiments on synthetic and (small-scale) real-world data supports that EM outperforms the gradient descent algorithm both in terms of convergence rate and the achieved accuracy.
-]]></content:encoded>
-<pubDate>Tue, 27 May 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>MolMiner: Towards Controllable, 3D-Aware, Fragment-Based Molecular Design</title>
-<link>https://arxiv.org/abs/2411.06608</link>
-<guid>https://arxiv.org/abs/2411.06608</guid>
-<content:encoded><![CDATA[
-arXiv:2411.06608v2 Announce Type: replace 
-Abstract: We introduce MolMiner, a fragment-based, geometry-aware, and order-agnostic autoregressive model for molecular design. MolMiner supports conditional generation of molecules over twelve properties, enabling flexible control across physicochemical and structural targets. Molecules are built via symmetry-aware fragment attachments, with 3D geometry dynamically updated during generation using forcefields. A probabilistic conditioning mechanism allows users to specify any subset of target properties while sampling the rest. MolMiner achieves calibrated conditional generation across most properties and offers competitive unconditional performance. We also propose improved benchmarking methods for both unconditional and conditional generation, including distributional comparisons via Wasserstein distance and calibration plots for property control. To our knowledge, this is the first model to unify dynamic geometry, symmetry handling, order-agnostic fragment-based generation, and high-dimensional multi-property conditioning.
-]]></content:encoded>
-<pubDate>Tue, 27 May 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Lean and Mean Adaptive Optimization via Subset-Norm and Subspace-Momentum with Convergence Guarantees</title>
-<link>https://arxiv.org/abs/2411.07120</link>
-<guid>https://arxiv.org/abs/2411.07120</guid>
-<content:encoded><![CDATA[
-arXiv:2411.07120v2 Announce Type: replace 
-Abstract: We introduce two complementary techniques for efficient optimization that reduce memory requirements while accelerating training of large-scale neural networks. The first technique, Subset-Norm step size, generalizes AdaGrad-Norm and AdaGrad(-Coordinate) through step-size sharing. Subset-Norm (SN) reduces AdaGrad's memory footprint from $O(d)$ to $O(\sqrt{d})$, where $d$ is the model size. For non-convex smooth objectives under coordinate-wise sub-gaussian noise, we show a noise-adapted high-probability convergence guarantee with improved dimensional dependence of SN over existing methods. Our second technique, Subspace-Momentum, reduces the momentum state's memory footprint by restricting momentum to a low-dimensional subspace while performing SGD in the orthogonal complement. We prove a high-probability convergence result for Subspace-Momentum under standard assumptions. Empirical evaluation on pre-training and fine-tuning LLMs demonstrates the effectiveness of our methods. For instance, combining Subset-Norm with Subspace-Momentum achieves Adam's validation perplexity for LLaMA 1B in approximately half the training tokens (6.8B vs 13.1B) while reducing Adam's optimizer-states memory footprint by more than 80\% with minimal additional hyperparameter tuning.
-]]></content:encoded>
-<pubDate>Tue, 27 May 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Bayesian Comparisons Between Representations</title>
-<link>https://arxiv.org/abs/2411.08739</link>
-<guid>https://arxiv.org/abs/2411.08739</guid>
-<content:encoded><![CDATA[
-arXiv:2411.08739v3 Announce Type: replace 
-Abstract: Which neural networks are similar is a fundamental question for both machine learning and neuroscience. Here, it is proposed to base comparisons on the predictive distributions of linear readouts from intermediate representations. In Bayesian statistics, the prior predictive distribution is a full description of the inductive bias and generalization of a model, making it a great basis for comparisons. This distribution directly gives the evidence a dataset would provide in favor of the model. If we want to compare multiple models to each other, we can use a metric for probability distributions like the Jensen-Shannon distance or the total variation distance. As these are metrics, this induces pseudo-metrics for representations, which measure how well two representations could be distinguished based on a linear read out. For a linear readout with a Gaussian prior on the read-out weights and Gaussian noise, we can analytically compute the (prior and posterior) predictive distributions without approximations. These distributions depend only on the linear kernel matrix of the representations in the model. Thus, the Bayesian metrics connect to both linear read-out based comparisons and kernel based metrics like centered kernel alignment and representational similarity analysis. The new methods are demonstrated with deep neural networks trained on ImageNet-1k comparing them to each other and a small subset of the Natural Scenes Dataset. The Bayesian comparisons are correlated to but distinct from existing metrics. Evaluations vary slightly less across random image samples and yield informative results with full uncertainty information. Thus the proposed Bayesian metrics nicely extend our toolkit for comparing representations.
-]]></content:encoded>
-<pubDate>Tue, 27 May 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Stealing Training Graphs from Graph Neural Networks</title>
-<link>https://arxiv.org/abs/2411.11197</link>
-<guid>https://arxiv.org/abs/2411.11197</guid>
-<content:encoded><![CDATA[
-arXiv:2411.11197v2 Announce Type: replace 
-Abstract: Graph Neural Networks (GNNs) have shown promising results in modeling graphs in various tasks. The training of GNNs, especially on specialized tasks such as bioinformatics, demands extensive expert annotations, which are expensive and usually contain sensitive information of data providers. The trained GNN models are often shared for deployment in the real world. As neural networks can memorize the training samples, the model parameters of GNNs have a high risk of leaking private training data. Our theoretical analysis shows the strong connections between trained GNN parameters and the training graphs used, confirming the training graph leakage issue. However, explorations into training data leakage from trained GNNs are rather limited. Therefore, we investigate a novel problem of stealing graphs from trained GNNs. To obtain high-quality graphs that resemble the target training set, a graph diffusion model with diffusion noise optimization is deployed as a graph generator. Furthermore, we propose a selection method that effectively leverages GNN model parameters to identify training graphs from samples generated by the graph diffusion model. Extensive experiments on real-world datasets demonstrate the effectiveness of the proposed framework in stealing training graphs from the trained GNN.
-]]></content:encoded>
-<pubDate>Tue, 27 May 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Multi-Agent Best Arm Identification in Stochastic Linear Bandits</title>
-<link>https://arxiv.org/abs/2411.13690</link>
-<guid>https://arxiv.org/abs/2411.13690</guid>
-<content:encoded><![CDATA[
-arXiv:2411.13690v2 Announce Type: replace 
-Abstract: We study the problem of collaborative best-arm identification in stochastic linear bandits under a fixed-budget scenario. In our learning model, we first consider multiple agents connected through a star network, interacting with a linear bandit instance in parallel. We then extend our analysis to arbitrary network topologies. The objective of the agents is to collaboratively identify the best arm of the given bandit instance with the help of a central server while minimizing the probability of error in best arm estimation. To this end, we propose two algorithms, MaLinBAI-Star and MaLinBAI-Gen for star networks and networks with arbitrary structure, respectively. Both algorithms utilize the technique of G-optimal design along with the successive elimination based strategy where agents share their knowledge through a central server at each communication round. We demonstrate, both theoretically and empirically, that our algorithms achieve exponentially decaying probability of error in the allocated time budget. Furthermore, experimental results on both synthetic and real-world data validate the effectiveness of our algorithms over the state-of-the art existing multi-agent algorithms.
-]]></content:encoded>
-<pubDate>Tue, 27 May 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>FuseGPT: Learnable Layers Fusion of Generative Pre-trained Transformers</title>
-<link>https://arxiv.org/abs/2411.14507</link>
-<guid>https://arxiv.org/abs/2411.14507</guid>
-<content:encoded><![CDATA[
-arXiv:2411.14507v2 Announce Type: replace 
-Abstract: Generative Pre-trained Transformers (GPTs) have demonstrated remarkable performance across diverse domains, largely due to the extensive scaling of model parameters. Recent works have observed redundancy within transformer blocks and developed compression methods by structured pruning of less important blocks. However, such direct removal often leads to irreversible performance degradation. In this paper, we propose FuseGPT, a novel methodology designed to recycle pruned transformer blocks, thereby recovering the model's performance. Firstly, we introduce a new importance detection metric, Macro Influence (MI), which evaluates the long-term impact of each transformer block by quantifying the information loss incurred upon its removal. Next, we propose group-level layer fusion, which leverages the parameters from layers of less important blocks and integrates them into the corresponding layers of neighboring blocks. This fusion process is not a one-time operation but is refined through iterative parameter updates by lightweight group-level fine-tuning. Specifically, the injected parameters are frozen but are weighted with learnable rank decomposition matrices to reduce the computational overhead during fine-tuning. Our approach not only works well for large language models but also for large multimodal models. Experimental results indicate that, even with modest amounts of data, FuseGPT surpasses previous methods in both perplexity and zero-shot task performance.
-]]></content:encoded>
-<pubDate>Tue, 27 May 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Federated Continual Graph Learning</title>
-<link>https://arxiv.org/abs/2411.18919</link>
-<guid>https://arxiv.org/abs/2411.18919</guid>
-<content:encoded><![CDATA[
-arXiv:2411.18919v2 Announce Type: replace 
-Abstract: In the era of big data, managing evolving graph data poses substantial challenges due to storage costs and privacy issues. Training graph neural networks (GNNs) on such evolving data usually causes catastrophic forgetting, impairing performance on earlier tasks. Despite existing continual graph learning (CGL) methods mitigating this to some extent, they rely on centralized architectures and ignore the potential of distributed graph databases to leverage collective intelligence. To address these challenges, we present a pioneering study on Federated Continual Graph Learning (FCGL), which adapts GNNs to multiple evolving graphs within decentralized settings while adhering to storage and privacy constraints. Our work begins with a comprehensive empirical analysis of FCGL, assessing its data characteristics, feasibility, and effectiveness, and reveals two non-trivial challenges: local graph forgetting (LGF), where local GNNs forget prior knowledge when adapting to new tasks, and global expertise conflict (GEC), where the global GNN exhibits sub-optimal performance in both adapting to new tasks and retaining old ones, arising from inconsistent client expertise during server-side parameter aggregation. To tackle these, we propose the POWER framework, which mitigates LGF by preserving and replaying experience nodes with maximum local-global coverage at each client and addresses GEC by using a pseudo prototype reconstruction strategy and trajectory-aware knowledge transfer at the central server. Experiments on various graph datasets demonstrate POWER's superiority over federated adaptations of CGL baselines and vision-centric federated continual learning approaches.
-]]></content:encoded>
-<pubDate>Tue, 27 May 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>HiMoE: Heterogeneity-Informed Mixture-of-Experts for Fair Spatial-Temporal Forecasting</title>
-<link>https://arxiv.org/abs/2412.00316</link>
-<guid>https://arxiv.org/abs/2412.00316</guid>
-<content:encoded><![CDATA[
-arXiv:2412.00316v3 Announce Type: replace 
-Abstract: Achieving both accurate and consistent predictive performance across spatial nodes is crucial for ensuring the validity and reliability of outcomes in fair spatial-temporal forecasting tasks. However, existing training methods treat heterogeneous nodes with a fully averaged perspective, resulting in inherently biased prediction targets. Balancing accuracy and consistency is particularly challenging due to the multi-objective nature of spatial-temporal forecasting. To address this issue, we propose a novel Heterogeneity-Informed Mixture-of-Experts (HiMoE) framework that delivers both uniform and precise spatial-temporal predictions. From a model architecture perspective, we design the Heterogeneity-Informed Graph Convolutional Network (HiGCN) to address trend heterogeneity, and we introduce the Node-wise Mixture-of-Experts (NMoE) module to handle cardinality heterogeneity across nodes. From an evaluation perspective, we propose STFairBench, a benchmark that handles fairness in spatial-temporal prediction from both training and evaluation stages. Extensive experiments on four real-world datasets demonstrate that HiMoE achieves state-of-the-art performance, outperforming the best baseline by at least 9.22% across all evaluation metrics.
-]]></content:encoded>
-<pubDate>Tue, 27 May 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Learning Mamba as a Continual Learner: Meta-learning Selective State Space Models for Efficient Continual Learning</title>
-<link>https://arxiv.org/abs/2412.00776</link>
-<guid>https://arxiv.org/abs/2412.00776</guid>
-<content:encoded><![CDATA[
-arXiv:2412.00776v4 Announce Type: replace 
-Abstract: Continual learning (CL) aims to efficiently learn from a non-stationary data stream, without storing or recomputing all seen samples. CL enables prediction on new tasks by incorporating sequential training samples. Building on this connection between CL and sequential modeling, meta-continual learning (MCL) aims to meta-learn an efficient continual learner as a sequence prediction model, with advanced sequence models like Transformers being natural choices. However, despite decent performance, Transformers rely on a linearly growing cache to store all past representations, conflicting with CL's objective of not storing all seen samples and limiting efficiency. In this paper, we focus on meta-learning sequence-prediction-based continual learners without retaining all past representations. While attention-free models with fixed-size hidden states (e.g., Linear Transformers) align with CL's essential goal and efficiency needs, they have shown limited effectiveness in MCL in previous literature. Given Mamba's strong sequence modeling performance and attention-free nature, we explore a key question: Can attention-free models like Mamba perform well on MCL? By formulating Mamba and the SSM for MCL tasks, we propose MambaCL, a meta-learned continual learner. To enhance MambaCL's training, we introduce selectivity regularization, leveraging the connection between Mamba and Transformers to guide its behavior over sequences. Furthermore, we study how Mamba and other models perform across various MCL scenarios through extensive and well-designed experiments. Our results highlight the promising performance and strong generalization of Mamba and attention-free models in MCL, demonstrating its potential for efficient continual learning and adaptation.
-]]></content:encoded>
-<pubDate>Tue, 27 May 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>GMoE: Empowering LLMs Fine-Tuning via MoE Graph Collaboration</title>
-<link>https://arxiv.org/abs/2412.16216</link>
-<guid>https://arxiv.org/abs/2412.16216</guid>
-<content:encoded><![CDATA[
-arXiv:2412.16216v2 Announce Type: replace 
-Abstract: The sparse Mixture-of-Experts (MoE) architecture of large language models (LLMs) confronts an inherent issue of load imbalance arising from the simplistic linear router strategy, which ultimately causes the instability and inefficient learning of LLMs. To address this challenge, we introduce a novel MoE graph-based framework $\textbf{GMoE}$, aimed at enhancing the collaboration among multiple experts. In GMoE, a graph router function is designed to capture the collaboration signals among experts. This enables all experts to dynamically allocate information derived from input data by sharing information with their neighboring experts. Moreover, we put forward two coordination strategies in GMoE: the $\textit{Poisson distribution-based distinction strategy}$ and the $\textit{Normal distribution-based balance strategy}$, to further release the capacity of each expert and increase the model stability in the fine-tuning of LLMs. Specifically, we leverage a parameter-efficient fine-tuning technique, i.e., Low-Rank Adaptation (LoRA), to implement the graph MoE architecture. Extensive experiments on four real-world benchmark datasets demonstrate the effectiveness of GMoE, showing the benefits of facilitating collaborations of multiple experts in LLM fine-tuning. The code of experimental implementation is available at https://github.com/BAI-LAB/GMoE
-]]></content:encoded>
-<pubDate>Tue, 27 May 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Towards Graph Foundation Models: Learning Generalities Across Graphs via Task-Trees</title>
-<link>https://arxiv.org/abs/2412.16441</link>
-<guid>https://arxiv.org/abs/2412.16441</guid>
-<content:encoded><![CDATA[
-arXiv:2412.16441v3 Announce Type: replace 
-Abstract: Foundation models are pretrained on large-scale corpora to learn generalizable patterns across domains and tasks -- such as contours, textures, and edges in images, or tokens and sentences in text. In contrast, discovering such generalities in graph-structured data, especially across heterogeneous graph tasks, remains an open challenge. To address this, we propose a novel approach to cross-task generalization in graphs via task-trees, which serve as unified learning instances aligning node-, edge-, and graph-level tasks. We theoretically analyze the stability, transferability, and generalization properties of task-trees, showing that pretraining a graph neural network (GNN) on diverse task-trees with a reconstruction objective induces transferable knowledge. This enables efficient adaptation to downstream tasks with minimal fine-tuning. To validate our framework, we introduce Graph Generality Identifier on Task-Trees (GIT), a graph foundation model that demonstrates strong performance on over 30 graphs across five domains via fine-tuning, in-context learning, and zero-shot generalization. Code and data are available at https://github.com/Zehong-Wang/GIT.
 ]]></content:encoded>
 <pubDate>Tue, 27 May 2025 00:00:00 -0400</pubDate>
 </item>

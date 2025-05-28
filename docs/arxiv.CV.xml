@@ -4,6 +4,7 @@
 <title>cs.CV updates on arXiv.org</title>
 <link>http://rss.arxiv.org/rss/cs.CV</link>
 
+
 <item>
 <title>Auto-nnU-Net: Towards Automated Medical Image Segmentation</title>
 <link>https://arxiv.org/abs/2505.16561</link>
@@ -17,7 +18,6 @@ arXiv:2505.16561v3 Announce Type: replace
 Abstract: Medical Image Segmentation (MIS) includes diverse tasks, from bone to organ segmentation, each with its own challenges in finding the best segmentation model. The state-of-the-art AutoML-related MIS-framework nnU-Net automates many aspects of model configuration but remains constrained by fixed hyperparameters and heuristic design choices. As a full-AutoML framework for MIS, we propose Auto-nnU-Net, a novel nnU-Net variant enabling hyperparameter optimization (HPO), neural architecture search (NAS), and hierarchical NAS (HNAS). Additionally, we propose Regularized PriorBand to balance model accuracy with the computational resources required for training, addressing the resource constraints often faced in real-world medical settings that limit the feasibility of extensive training procedures. We evaluate our approach across diverse MIS datasets from the well-established Medical Segmentation Decathlon, analyzing the impact of AutoML techniques on segmentation performance, computational efficiency, and model design choices. The results demonstrate that our AutoML approach substantially improves the segmentation performance of nnU-Net on 6 out of 10 datasets and is on par on the other datasets while maintaining practical resource requirements. Our code is available at https://github.com/automl/AutoNNUnet.
 ]]></content:encoded>
 <pubDate>Wed, 28 May 2025 00:00:00 -0400</pubDate>
-<pubDate>Wed, 28 May 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
 <title>When Are Concepts Erased From Diffusion Models?</title>
@@ -27,14 +27,12 @@ Abstract: Medical Image Segmentation (MIS) includes diverse tasks, from bone to 
 <div> concept erasure, diffusion models, evaluation framework, adversarial attacks, probing techniques
 
 Summary:
-Concept erasure in diffusion models is a subject of increasing interest, but the thoroughness of erasure methods remains unclear. The proposed erasure mechanisms include reducing the likelihood of generating the target concept and interfering with internal guidance mechanisms of the model. To assess the effectiveness of concept erasure, a suite of independent evaluation methods is introduced, including adversarial attacks, novel probing techniques, and analysis of alternative generations in place of the erased concept. The results highlight the balance between minimizing side effects and maintaining robustness to adversarial prompts. Comprehensive evaluation is crucial for understanding the efficacy of concept erasure in diffusion models. <br><br> <div>
+Concept erasure in diffusion models is a subject of increasing interest, but the thoroughness of erasure methods remains unclear. The proposed erasure mechanisms include reducing the likelihood of generating the target concept and interfering with internal guidance mechanisms of the model. To assess the effectiveness of concept erasure, a suite of independent evaluation methods is introduced, including adversarial attacks, novel probing techniques, and analysis of alternative generations in place of the erased concept. The results highlight the balance between minimizing side effects and maintaining robustness to adversarial prompts. Comprehensive evaluation is crucial for understanding the efficacy of concept erasure in diffusion models. <br /><br /> <div>
 arXiv:2505.17013v3 Announce Type: replace-cross 
 Abstract: Concept erasure, the ability to selectively prevent a model from generating specific concepts, has attracted growing interest, with various approaches emerging to address the challenge. However, it remains unclear how thoroughly these methods erase the target concept. We begin by proposing two conceptual models for the erasure mechanism in diffusion models: (i) reducing the likelihood of generating the target concept, and (ii) interfering with the model's internal guidance mechanisms. To thoroughly assess whether a concept has been truly erased from the model, we introduce a suite of independent evaluations. Our evaluation framework includes adversarial attacks, novel probing techniques, and analysis of the model's alternative generations in place of the erased concept. Our results shed light on the tension between minimizing side effects and maintaining robustness to adversarial prompts. Broadly, our work underlines the importance of comprehensive evaluation for erasure in diffusion models.
 ]]></content:encoded>
 <pubDate>Wed, 28 May 2025 00:00:00 -0400</pubDate>
-<pubDate>Wed, 28 May 2025 00:00:00 -0400</pubDate>
 </item>
-
 <item>
 <title>ReaMOT: A Benchmark and Framework for Reasoning-based Multi-Object Tracking</title>
 <link>https://arxiv.org/abs/2505.20381</link>
@@ -11000,27 +10998,6 @@ Abstract: Deep neural networks for image classification remain vulnerable to adv
 <content:encoded><![CDATA[
 arXiv:2505.16314v1 Announce Type: new 
 Abstract: This paper reports on the NTIRE 2025 challenge on Text to Image (T2I) generation model quality assessment, which will be held in conjunction with the New Trends in Image Restoration and Enhancement Workshop (NTIRE) at CVPR 2025. The aim of this challenge is to address the fine-grained quality assessment of text-to-image generation models. This challenge evaluates text-to-image models from two aspects: image-text alignment and image structural distortion detection, and is divided into the alignment track and the structural track. The alignment track uses the EvalMuse-40K, which contains around 40K AI-Generated Images (AIGIs) generated by 20 popular generative models. The alignment track has a total of 371 registered participants. A total of 1,883 submissions are received in the development phase, and 507 submissions are received in the test phase. Finally, 12 participating teams submitted their models and fact sheets. The structure track uses the EvalMuse-Structure, which contains 10,000 AI-Generated Images (AIGIs) with corresponding structural distortion mask. A total of 211 participants have registered in the structure track. A total of 1155 submissions are received in the development phase, and 487 submissions are received in the test phase. Finally, 8 participating teams submitted their models and fact sheets. Almost all methods have achieved better results than baseline methods, and the winning methods in both tracks have demonstrated superior prediction performance on T2I model quality assessment.
-]]></content:encoded>
-<pubDate>Fri, 23 May 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>SuperPure: Efficient Purification of Localized and Distributed Adversarial Patches via Super-Resolution GAN Models</title>
-<link>https://arxiv.org/abs/2505.16318</link>
-<guid>https://arxiv.org/abs/2505.16318</guid>
-<content:encoded><![CDATA[
-arXiv:2505.16318v1 Announce Type: new 
-Abstract: As vision-based machine learning models are increasingly integrated into autonomous and cyber-physical systems, concerns about (physical) adversarial patch attacks are growing. While state-of-the-art defenses can achieve certified robustness with minimal impact on utility against highly-concentrated localized patch attacks, they fall short in two important areas: (i) State-of-the-art methods are vulnerable to low-noise distributed patches where perturbations are subtly dispersed to evade detection or masking, as shown recently by the DorPatch attack; (ii) Achieving high robustness with state-of-the-art methods is extremely time and resource-consuming, rendering them impractical for latency-sensitive applications in many cyber-physical systems.
-  To address both robustness and latency issues, this paper proposes a new defense strategy for adversarial patch attacks called SuperPure. The key novelty is developing a pixel-wise masking scheme that is robust against both distributed and localized patches. The masking involves leveraging a GAN-based super-resolution scheme to gradually purify the image from adversarial patches. Our extensive evaluations using ImageNet and two standard classifiers, ResNet and EfficientNet, show that SuperPure advances the state-of-the-art in three major directions: (i) it improves the robustness against conventional localized patches by more than 20%, on average, while also improving top-1 clean accuracy by almost 10%; (ii) It achieves 58% robustness against distributed patch attacks (as opposed to 0% in state-of-the-art method, PatchCleanser); (iii) It decreases the defense end-to-end latency by over 98% compared to PatchCleanser. Our further analysis shows that SuperPure is robust against white-box attacks and different patch sizes. Our code is open-source.
-]]></content:encoded>
-<pubDate>Fri, 23 May 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Efficient Motion Prompt Learning for Robust Visual Tracking</title>
-<link>https://arxiv.org/abs/2505.16321</link>
-<guid>https://arxiv.org/abs/2505.16321</guid>
-<content:encoded><![CDATA[
-arXiv:2505.16321v1 Announce Type: new 
-Abstract: Due to the challenges of processing temporal information, most trackers depend solely on visual discriminability and overlook the unique temporal coherence of video data. In this paper, we propose a lightweight and plug-and-play motion prompt tracking method. It can be easily integrated into existing vision-based trackers to build a joint tracking framework leveraging both motion and vision cues, thereby achieving robust tracking through efficient prompt learning. A motion encoder with three different positional encodings is proposed to encode the long-term motion trajectory into the visual embedding space, while a fusion decoder and an adaptive weight mechanism are designed to dynamically fuse visual and motion features. We integrate our motion module into three different trackers with five models in total. Experiments on seven challenging tracking benchmarks demonstrate that the proposed motion module significantly improves the robustness of vision-based trackers, with minimal training costs and negligible speed sacrifice. Code is available at https://github.com/zj5559/Motion-Prompt-Tracking.
 ]]></content:encoded>
 <pubDate>Fri, 23 May 2025 00:00:00 -0400</pubDate>
 </item>
