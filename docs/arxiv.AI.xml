@@ -4,17 +4,17 @@
 <title>cs.AI updates on arXiv.org</title>
 <link>http://rss.arxiv.org/rss/cs.AI</link>
 
+
 <item>
 <title>ALPS: Attention Localization and Pruning Strategy for Efficient Alignment of Large Language Models</title>
 <link>https://arxiv.org/abs/2505.18799</link>
 <guid>https://arxiv.org/abs/2505.18799</guid>
 <content:encoded><![CDATA[
 <div> pruning, language models, attention, alignment, efficiency
-Summary:<br><br>ALPS proposes a novel method to efficiently align large language models (LLMs) with downstream tasks by localizing and pruning task-sensitive attention heads. It targets reducing training adjustment costs without introducing data dependency. The algorithm activates only 10% of attention parameters during fine-tuning, resulting in a 2% performance improvement over baselines across three tasks. Additionally, the identified task-specific attention heads show transferability across datasets and help mitigate knowledge forgetting. ALPS introduces an efficient and effective approach to enhancing model alignment efficiency in LLMs. The code for the method is available on GitHub for implementation and further exploration. <div>
+Summary:<br /><br />ALPS proposes a novel method to efficiently align large language models (LLMs) with downstream tasks by localizing and pruning task-sensitive attention heads. It targets reducing training adjustment costs without introducing data dependency. The algorithm activates only 10% of attention parameters during fine-tuning, resulting in a 2% performance improvement over baselines across three tasks. Additionally, the identified task-specific attention heads show transferability across datasets and help mitigate knowledge forgetting. ALPS introduces an efficient and effective approach to enhancing model alignment efficiency in LLMs. The code for the method is available on GitHub for implementation and further exploration. <div>
 arXiv:2505.18799v2 Announce Type: replace-cross 
 Abstract: Aligning general-purpose large language models (LLMs) to downstream tasks often incurs significant training adjustment costs. Prior research has explored various avenues to enhance alignment efficiency, primarily through minimal-data training or data-driven activations to identify key attention heads. However, these approaches inherently introduce data dependency, which hinders generalization and reusability. To address this issue and enhance model alignment efficiency, we propose the \textit{\textbf{A}ttention \textbf{L}ocalization and \textbf{P}runing \textbf{S}trategy (\textbf{ALPS})}, an efficient algorithm that localizes the most task-sensitive attention heads and prunes by restricting attention training updates to these heads, thereby reducing alignment costs. Experimental results demonstrate that our method activates only \textbf{10\%} of attention parameters during fine-tuning while achieving a \textbf{2\%} performance improvement over baselines on three tasks. Moreover, the identified task-specific heads are transferable across datasets and mitigate knowledge forgetting. Our work and findings provide a novel perspective on efficient LLM alignment. The code is available at https://github.com/VoiceBeer/ALPS.
 ]]></content:encoded>
-<pubDate>Thu, 29 May 2025 00:00:00 -0400</pubDate>
 <pubDate>Thu, 29 May 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -22,8 +22,8 @@ Abstract: Aligning general-purpose large language models (LLMs) to downstream ta
 <link>https://arxiv.org/abs/2505.18927</link>
 <guid>https://arxiv.org/abs/2505.18927</guid>
 <content:encoded><![CDATA[
-<div> Language models, content moderation, YouTube comments, benchmarking, automated systems<br>
-<br>
+<div> Language models, content moderation, YouTube comments, benchmarking, automated systems<br />
+<br />
 Summary: 
 - Study benchmarks three large language models on a dataset of YouTube comments to assess their effectiveness in detecting harmful content.
 - OpenAI GPT-4.1 achieved the best balance with high precision and recall scores.
@@ -32,11 +32,10 @@ Summary:
 - All models faced challenges with sarcasm, coded insults, and mixed-language slang.
 - Results highlight the importance of combining models, considering conversational context, and improving for under-represented languages and implicit abuse.
 - Dataset and prompts are released publicly for reproducibility and advancement in automated content moderation. 
-<br><br> <div>
+<br /><br /> <div>
 arXiv:2505.18927v2 Announce Type: replace-cross 
 Abstract: As online platforms grow, comment sections increasingly host harassment that undermines user experience and well-being. This study benchmarks three leading large language models, OpenAI GPT-4.1, Google Gemini 1.5 Pro, and Anthropic Claude 3 Opus, on a corpus of 5,080 YouTube comments sampled from high-abuse threads in gaming, lifestyle, food vlog, and music channels. The dataset comprises 1,334 harmful and 3,746 non-harmful messages in English, Arabic, and Indonesian, annotated independently by two reviewers with substantial agreement (Cohen's kappa = 0.83). Using a unified prompt and deterministic settings, GPT-4.1 achieved the best overall balance with an F1 score of 0.863, precision of 0.887, and recall of 0.841. Gemini flagged the highest share of harmful posts (recall = 0.875) but its precision fell to 0.767 due to frequent false positives. Claude delivered the highest precision at 0.920 and the lowest false-positive rate of 0.022, yet its recall dropped to 0.720. Qualitative analysis showed that all three models struggle with sarcasm, coded insults, and mixed-language slang. These results underscore the need for moderation pipelines that combine complementary models, incorporate conversational context, and fine-tune for under-represented languages and implicit abuse. A de-identified version of the dataset and full prompts is publicly released to promote reproducibility and further progress in automated content moderation.
 ]]></content:encoded>
-<pubDate>Thu, 29 May 2025 00:00:00 -0400</pubDate>
 <pubDate>Thu, 29 May 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -46,11 +45,10 @@ Abstract: As online platforms grow, comment sections increasingly host harassmen
 <content:encoded><![CDATA[
 <div> accelerator, FPGA, State Space Models, quantization, hardware-algorithm co-design
 Summary:
-FastMamba is a dedicated accelerator on FPGA designed to improve the deployment efficiency of State Space Models (SSMs) like Mamba2 on resource-constrained edge devices. The accelerator addresses challenges such as outliers in linear layers by implementing 8-bit quantization through Hadamard transformation. It also introduces a fine-grained power-of-two quantization framework for the SSM block and convolution layer and optimizes nonlinear functions using a first-order linear approximation. FastMamba integrates parallel vector processing units, pipelined execution dataflow, and an efficient SSM Nonlinear Approximation Unit to enhance computational efficiency and reduce hardware complexity. Evaluations on Xilinx VC709 FPGA show significant performance improvements, with FastMamba achieving 68.80x and 8.90x speedup over Intel Xeon 4210R CPU and NVIDIA RTX 3090 GPU for the input prefill task on Mamba2-130M, and 6x higher energy efficiency than the RTX 3090 GPU in the output decode experiment with Mamba2-2.7B. <br><br>Summary: <div>
+FastMamba is a dedicated accelerator on FPGA designed to improve the deployment efficiency of State Space Models (SSMs) like Mamba2 on resource-constrained edge devices. The accelerator addresses challenges such as outliers in linear layers by implementing 8-bit quantization through Hadamard transformation. It also introduces a fine-grained power-of-two quantization framework for the SSM block and convolution layer and optimizes nonlinear functions using a first-order linear approximation. FastMamba integrates parallel vector processing units, pipelined execution dataflow, and an efficient SSM Nonlinear Approximation Unit to enhance computational efficiency and reduce hardware complexity. Evaluations on Xilinx VC709 FPGA show significant performance improvements, with FastMamba achieving 68.80x and 8.90x speedup over Intel Xeon 4210R CPU and NVIDIA RTX 3090 GPU for the input prefill task on Mamba2-130M, and 6x higher energy efficiency than the RTX 3090 GPU in the output decode experiment with Mamba2-2.7B. <br /><br />Summary: <div>
 arXiv:2505.18975v2 Announce Type: replace-cross 
 Abstract: State Space Models (SSMs), like recent Mamba2, have achieved remarkable performance and received extensive attention. However, deploying Mamba2 on resource-constrained edge devices encounters many problems: severe outliers within the linear layer challenging the quantization, diverse and irregular element-wise tensor operations, and hardware-unfriendly nonlinear functions in the SSM block. To address these issues, this paper presents FastMamba, a dedicated accelerator on FPGA with hardware-algorithm co-design to promote the deployment efficiency of Mamba2. Specifically, we successfully achieve 8-bit quantization for linear layers through Hadamard transformation to eliminate outliers. Moreover, a hardware-friendly and fine-grained power-of-two quantization framework is presented for the SSM block and convolution layer, and a first-order linear approximation is developed to optimize the nonlinear functions. Based on the accurate algorithm quantization, we propose an accelerator that integrates parallel vector processing units, pipelined execution dataflow, and an efficient SSM Nonlinear Approximation Unit, which enhances computational efficiency and reduces hardware complexity. Finally, we evaluate FastMamba on Xilinx VC709 FPGA. For the input prefill task on Mamba2-130M, FastMamba achieves 68.80\times and 8.90\times speedup over Intel Xeon 4210R CPU and NVIDIA RTX 3090 GPU, respectively. In the output decode experiment with Mamba2-2.7B, FastMamba attains 6\times higher energy efficiency than RTX 3090 GPU.
 ]]></content:encoded>
-<pubDate>Thu, 29 May 2025 00:00:00 -0400</pubDate>
 <pubDate>Thu, 29 May 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -60,11 +58,10 @@ Abstract: State Space Models (SSMs), like recent Mamba2, have achieved remarkabl
 <content:encoded><![CDATA[
 <div> framework, hyperparameter optimization, multi-agent, AI agents, AutoML  
 Summary:  
-OptiMindTune introduces a novel multi-agent framework, leveraging three specialized AI agents powered by Google's Gemini models. The framework addresses various aspects of hyperparameter optimization, from model selection to decision-making, aiming to optimize configurations efficiently. By promoting dynamic interactions and knowledge sharing, OptiMindTune accelerates convergence to optimal hyperparameters. Integrating principles from large language models and adaptive search, the framework offers scalable and intelligent AutoML solutions. The collaborative intelligence approach of OptiMindTune presents a promising strategy for managing the complexity of modern machine learning model tuning.<br><br>Summary: <div>
+OptiMindTune introduces a novel multi-agent framework, leveraging three specialized AI agents powered by Google's Gemini models. The framework addresses various aspects of hyperparameter optimization, from model selection to decision-making, aiming to optimize configurations efficiently. By promoting dynamic interactions and knowledge sharing, OptiMindTune accelerates convergence to optimal hyperparameters. Integrating principles from large language models and adaptive search, the framework offers scalable and intelligent AutoML solutions. The collaborative intelligence approach of OptiMindTune presents a promising strategy for managing the complexity of modern machine learning model tuning.<br /><br />Summary: <div>
 arXiv:2505.19205v2 Announce Type: replace-cross 
 Abstract: Hyperparameter optimization (HPO) is a critical yet challenging aspect of machine learning model development, significantly impacting model performance and generalization. Traditional HPO methods often struggle with high dimensionality, complex interdependencies, and computational expense. This paper introduces OptiMindTune, a novel multi-agent framework designed to intelligently and efficiently optimize hyperparameters. OptiMindTune leverages the collaborative intelligence of three specialized AI agents -- a Recommender Agent, an Evaluator Agent, and a Decision Agent -- each powered by Google's Gemini models. These agents address distinct facets of the HPO problem, from model selection and hyperparameter suggestion to robust evaluation and strategic decision-making. By fostering dynamic interactions and knowledge sharing, OptiMindTune aims to converge to optimal hyperparameter configurations more rapidly and robustly than existing single-agent or monolithic approaches. Our framework integrates principles from advanced large language models, and adaptive search to achieve scalable and intelligent AutoML. We posit that this multi-agent paradigm offers a promising avenue for tackling the increasing complexity of modern machine learning model tuning.
 ]]></content:encoded>
-<pubDate>Thu, 29 May 2025 00:00:00 -0400</pubDate>
 <pubDate>Thu, 29 May 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -80,7 +77,6 @@ Abstract: Reinforcement Learning Finetuning (RFT) has significantly advanced the
   We introduce VTool-R1, the first framework that trains VLMs to generate multimodal chains of thought by interleaving text and intermediate visual reasoning steps. VTool-R1 integrates Python-based visual editing tools into the RFT process, enabling VLMs to learn when and how to generate visual reasoning steps that benefit final reasoning. Trained with outcome-based rewards tied to task accuracy, our approach elicits strategic visual tool use for reasoning without relying on process-based supervision. Experiments on structured visual question answering over charts and tables show that VTool-R1 enhances reasoning performance by teaching VLMs to "think with images" and generate multimodal chain of thoughts with tools.
 ]]></content:encoded>
 <pubDate>Thu, 29 May 2025 00:00:00 -0400</pubDate>
-<pubDate>Thu, 29 May 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
 <title>Towards Large Reasoning Models for Agriculture</title>
@@ -89,12 +85,11 @@ Abstract: Reinforcement Learning Finetuning (RFT) has significantly advanced the
 <content:encoded><![CDATA[
 <div> Keywords: agricultural decision-making, large reasoning models, AgReason, AgThoughts, AgThinker
 
-Summary:<br><br>
-The study introduces AgReason, a benchmark with 100 questions for agricultural reasoning, to explore the effectiveness of large reasoning models (LRMs) in this domain. Traditional large language models (LLMs) face challenges in complex agricultural decision-making due to limited reasoning capacity. Evaluation of thirteen models indicates that LRMs outperform conventional models, with the best Gemini-based baseline achieving 36% accuracy. The creation of AgThoughts, a dataset of 44.6K question-answer pairs with reasoning traces, aids in developing AgThinker, a suite of small reasoning models suitable for consumer-grade GPUs. This dataset enhances the agricultural reasoning abilities of LLMs, showcasing the potential for improving decision-making processes in agriculture through advanced reasoning models. The initiative paves the way for leveraging cutting-edge technology to address the multifaceted challenges of agricultural decision-making.<br>Summary: <div>
+Summary:<br /><br />
+The study introduces AgReason, a benchmark with 100 questions for agricultural reasoning, to explore the effectiveness of large reasoning models (LRMs) in this domain. Traditional large language models (LLMs) face challenges in complex agricultural decision-making due to limited reasoning capacity. Evaluation of thirteen models indicates that LRMs outperform conventional models, with the best Gemini-based baseline achieving 36% accuracy. The creation of AgThoughts, a dataset of 44.6K question-answer pairs with reasoning traces, aids in developing AgThinker, a suite of small reasoning models suitable for consumer-grade GPUs. This dataset enhances the agricultural reasoning abilities of LLMs, showcasing the potential for improving decision-making processes in agriculture through advanced reasoning models. The initiative paves the way for leveraging cutting-edge technology to address the multifaceted challenges of agricultural decision-making.<br />Summary: <div>
 arXiv:2505.19259v2 Announce Type: replace-cross 
 Abstract: Agricultural decision-making involves complex, context-specific reasoning, where choices about crops, practices, and interventions depend heavily on geographic, climatic, and economic conditions. Traditional large language models (LLMs) often fall short in navigating this nuanced problem due to limited reasoning capacity. We hypothesize that recent advances in large reasoning models (LRMs) can better handle such structured, domain-specific inference. To investigate this, we introduce AgReason, the first expert-curated open-ended science benchmark with 100 questions for agricultural reasoning. Evaluations across thirteen open-source and proprietary models reveal that LRMs outperform conventional ones, though notable challenges persist, with the strongest Gemini-based baseline achieving 36% accuracy. We also present AgThoughts, a large-scale dataset of 44.6K question-answer pairs generated with human oversight and equipped with synthetically generated reasoning traces. Using AgThoughts, we develop AgThinker, a suite of small reasoning models that can be run on consumer-grade GPUs, and show that our dataset can be effective in unlocking agricultural reasoning abilities in LLMs. Our project page is here: https://baskargroup.github.io/Ag_reasoning/
 ]]></content:encoded>
-<pubDate>Thu, 29 May 2025 00:00:00 -0400</pubDate>
 <pubDate>Thu, 29 May 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -102,14 +97,13 @@ Abstract: Agricultural decision-making involves complex, context-specific reason
 <link>https://arxiv.org/abs/2505.19623</link>
 <guid>https://arxiv.org/abs/2505.19623</guid>
 <content:encoded><![CDATA[
-<div> Keywords: agentic recommender systems, Large Language Models (LLMs), evaluation protocols, textual recommendation simulator, benchmark environment<br>
-<br>
-Summary: <br>
+<div> Keywords: agentic recommender systems, Large Language Models (LLMs), evaluation protocols, textual recommendation simulator, benchmark environment<br />
+<br />
+Summary: <br />
 The article discusses the emergence of agentic recommender systems powered by Large Language Models (LLMs) and the need for standardized evaluation protocols in the field. To address this gap, the authors propose an interactive textual recommendation simulator that includes rich user and item metadata and three evaluation scenarios. They also introduce a unified modular framework for developing and studying agentic recommender systems. Furthermore, the article presents a comprehensive benchmark comparing classical and agentic recommendation methods, highlighting the superiority of agentic systems and providing actionable design guidelines. The benchmark environment has been rigorously validated through an open challenge and is publicly available, fostering ongoing community engagement and reproducible research. The benchmark can be accessed at the provided link, offering a valuable resource for researchers and practitioners in the field. <div>
 arXiv:2505.19623v2 Announce Type: replace-cross 
 Abstract: The emergence of agentic recommender systems powered by Large Language Models (LLMs) represents a paradigm shift in personalized recommendations, leveraging LLMs' advanced reasoning and role-playing capabilities to enable autonomous, adaptive decision-making. Unlike traditional recommendation approaches, agentic recommender systems can dynamically gather and interpret user-item interactions from complex environments, generating robust recommendation strategies that generalize across diverse scenarios. However, the field currently lacks standardized evaluation protocols to systematically assess these methods. To address this critical gap, we propose: (1) an interactive textual recommendation simulator incorporating rich user and item metadata and three typical evaluation scenarios (classic, evolving-interest, and cold-start recommendation tasks); (2) a unified modular framework for developing and studying agentic recommender systems; and (3) the first comprehensive benchmark comparing 10 classical and agentic recommendation methods. Our findings demonstrate the superiority of agentic systems and establish actionable design guidelines for their core components. The benchmark environment has been rigorously validated through an open challenge and remains publicly available with a continuously maintained leaderboard~\footnote[2]{https://tsinghua-fib-lab.github.io/AgentSocietyChallenge/pages/overview.html}, fostering ongoing community engagement and reproducible research. The benchmark is available at: \hyperlink{https://huggingface.co/datasets/SGJQovo/AgentRecBench}{https://huggingface.co/datasets/SGJQovo/AgentRecBench}.
 ]]></content:encoded>
-<pubDate>Thu, 29 May 2025 00:00:00 -0400</pubDate>
 <pubDate>Thu, 29 May 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -117,14 +111,13 @@ Abstract: The emergence of agentic recommender systems powered by Large Language
 <link>https://arxiv.org/abs/2505.19663</link>
 <guid>https://arxiv.org/abs/2505.19663</guid>
 <content:encoded><![CDATA[
-<div> Keywords: Robust Audio Watermarking Benchmark, deep learning, audio attacks, neural compression techniques, evaluation framework <br>
+<div> Keywords: Robust Audio Watermarking Benchmark, deep learning, audio attacks, neural compression techniques, evaluation framework <br />
 Summary: 
-The Robust Audio Watermarking Benchmark (RAW-Bench) is introduced as a standardized benchmark for evaluating deep learning-based audio watermarking methods. It includes a comprehensive audio attack pipeline with various distortions and a diverse test dataset. Evaluation of existing watermarking methods on RAW-Bench reveals that neural compression techniques pose a significant challenge, even when trained with such compressions. Training with audio attacks generally improves robustness but may be insufficient in some cases. Specific distortions such as polarity inversion, time stretching, or reverb can seriously impact certain methods. The evaluation framework is available on GitHub at github.com/SonyResearch/raw_bench. <br> 
+The Robust Audio Watermarking Benchmark (RAW-Bench) is introduced as a standardized benchmark for evaluating deep learning-based audio watermarking methods. It includes a comprehensive audio attack pipeline with various distortions and a diverse test dataset. Evaluation of existing watermarking methods on RAW-Bench reveals that neural compression techniques pose a significant challenge, even when trained with such compressions. Training with audio attacks generally improves robustness but may be insufficient in some cases. Specific distortions such as polarity inversion, time stretching, or reverb can seriously impact certain methods. The evaluation framework is available on GitHub at github.com/SonyResearch/raw_bench. <br /> 
 Summary: <div>
 arXiv:2505.19663v2 Announce Type: replace-cross 
 Abstract: We introduce the Robust Audio Watermarking Benchmark (RAW-Bench), a benchmark for evaluating deep learning-based audio watermarking methods with standardized and systematic comparisons. To simulate real-world usage, we introduce a comprehensive audio attack pipeline with various distortions such as compression, background noise, and reverberation, along with a diverse test dataset including speech, environmental sounds, and music recordings. Evaluating four existing watermarking methods on RAW-bench reveals two main insights: (i) neural compression techniques pose the most significant challenge, even when algorithms are trained with such compressions; and (ii) training with audio attacks generally improves robustness, although it is insufficient in some cases. Furthermore, we find that specific distortions, such as polarity inversion, time stretching, or reverb, seriously affect certain methods. The evaluation framework is accessible at github.com/SonyResearch/raw_bench.
 ]]></content:encoded>
-<pubDate>Thu, 29 May 2025 00:00:00 -0400</pubDate>
 <pubDate>Thu, 29 May 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -135,11 +128,10 @@ Abstract: We introduce the Robust Audio Watermarking Benchmark (RAW-Bench), a be
 <div> diffusion world model, model-based reinforcement learning, Atari100k benchmark, JEDI, temporal latent space
 
 Summary:
-In this work, the authors address the performance asymmetry observed in pixel-based agents trained with diffusion world models in model-based reinforcement learning. They propose a new approach called Joint Embedding DIffusion (JEDI) to tackle this issue by training a novel latent diffusion world model with the self-consistency objective. The authors classify tasks as Agent-Optimal or Human-Optimal, emphasizing the importance of metrics from both sets to accurately assess performance. They hypothesize that the performance asymmetry is linked to the lack of temporally-structured latent space in pixel-based methods. Through experiments, they demonstrate that JEDI outperforms state-of-the-art models in human-optimal tasks and remains competitive across the Atari100k benchmark. Additionally, JEDI runs faster and with lower memory usage compared to the latest pixel-based diffusion baseline. This work offers a new perspective on achieving human-level performance in Atari100k through model-based reinforcement learning approaches. <br><br>Summary: <div>
+In this work, the authors address the performance asymmetry observed in pixel-based agents trained with diffusion world models in model-based reinforcement learning. They propose a new approach called Joint Embedding DIffusion (JEDI) to tackle this issue by training a novel latent diffusion world model with the self-consistency objective. The authors classify tasks as Agent-Optimal or Human-Optimal, emphasizing the importance of metrics from both sets to accurately assess performance. They hypothesize that the performance asymmetry is linked to the lack of temporally-structured latent space in pixel-based methods. Through experiments, they demonstrate that JEDI outperforms state-of-the-art models in human-optimal tasks and remains competitive across the Atari100k benchmark. Additionally, JEDI runs faster and with lower memory usage compared to the latest pixel-based diffusion baseline. This work offers a new perspective on achieving human-level performance in Atari100k through model-based reinforcement learning approaches. <br /><br />Summary: <div>
 arXiv:2505.19698v2 Announce Type: replace-cross 
 Abstract: Recent advances in model-based reinforcement learning (MBRL) have achieved super-human level performance on the Atari100k benchmark, driven by reinforcement learning agents trained on powerful diffusion world models. However, we identify that the current aggregates mask a major performance asymmetry: MBRL agents dramatically outperform humans in some tasks despite drastically underperforming in others, with the former inflating the aggregate metrics. This is especially pronounced in pixel-based agents trained with diffusion world models. In this work, we address the pronounced asymmetry observed in pixel-based agents as an initial attempt to reverse the worrying upward trend observed in them. We address the problematic aggregates by delineating all tasks as Agent-Optimal or Human-Optimal and advocate for equal importance on metrics from both sets. Next, we hypothesize this pronounced asymmetry is due to the lack of temporally-structured latent space trained with the World Model objective in pixel-based methods. Lastly, to address this issue, we propose Joint Embedding DIffusion (JEDI), a novel latent diffusion world model trained end-to-end with the self-consistency objective. JEDI outperforms SOTA models in human-optimal tasks while staying competitive across the Atari100k benchmark, and runs 3 times faster with 43% lower memory than the latest pixel-based diffusion baseline. Overall, our work rethinks what it truly means to cross human-level performance in Atari100k.
 ]]></content:encoded>
-<pubDate>Thu, 29 May 2025 00:00:00 -0400</pubDate>
 <pubDate>Thu, 29 May 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -152,11 +144,10 @@ Abstract: Recent advances in model-based reinforcement learning (MBRL) have achi
 Summary:
 This paper explores a novel approach to enhancing the reasoning capacity of large language models (LLMs) without the need for expensive reinforcement learning or high-quality demonstrations. The study investigates whether weaker models can effectively supervise LLMs to improve their reasoning abilities. It was found that supervision from weak reasoners can significantly enhance student reasoning performance, achieving nearly the same level of improvement as expensive reinforcement learning. Experiments conducted across various benchmarks and model architectures consistently showed that weak supervision can incentivize reasoning in LLMs effectively. The results suggest that this weak-to-strong paradigm is a cost-effective and widely applicable method for boosting reasoning capabilities in LLMs at inference time. The code for the study is available on GitHub for public access. 
 
-<br><br>Summary: <div>
+<br /><br />Summary: <div>
 arXiv:2505.20072v2 Announce Type: replace-cross 
 Abstract: Large language models (LLMs) have demonstrated impressive performance on reasoning-intensive tasks, but enhancing their reasoning abilities typically relies on either reinforcement learning (RL) with verifiable signals or supervised fine-tuning (SFT) with high-quality long chain-of-thought (CoT) demonstrations, both of which are expensive. In this paper, we study a novel problem of incentivizing the reasoning capacity of LLMs without expensive high-quality demonstrations and reinforcement learning. We investigate whether the reasoning capabilities of LLMs can be effectively incentivized via supervision from significantly weaker models. We further analyze when and why such weak supervision succeeds in eliciting reasoning abilities in stronger models. Our findings show that supervision from significantly weaker reasoners can substantially improve student reasoning performance, recovering close to 94% of the gains of expensive RL at a fraction of the cost. Experiments across diverse benchmarks and model architectures demonstrate that weak reasoners can effectively incentivize reasoning in stronger student models, consistently improving performance across a wide range of reasoning tasks. Our results suggest that this simple weak-to-strong paradigm is a promising and generalizable alternative to costly methods for incentivizing strong reasoning capabilities at inference-time in LLMs. The code is publicly available at https://github.com/yuanyige/w2sr.
 ]]></content:encoded>
-<pubDate>Thu, 29 May 2025 00:00:00 -0400</pubDate>
 <pubDate>Thu, 29 May 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -169,11 +160,10 @@ Abstract: Large language models (LLMs) have demonstrated impressive performance 
 Summary: 
 SEA (Simple Energy Adaptation) is proposed as an efficient algorithm for aligning large language models with human feedback at inference time. Unlike existing methods that search in a discrete response space, SEA directly adapts responses from the base policy through gradient-based sampling in a continuous latent space. This iterative optimization procedure on an energy function allows for simple and effective alignment towards the optimal policy. Despite its simplicity, SEA outperforms other baselines significantly, achieving a relative improvement of up to 77.51% on AdvBench and 16.36% on MATH datasets. SEA's approach of adapting responses in a continuous space shows promise for enhancing the effectiveness of inference-time alignment for language models. The code for SEA is openly available on GitHub for further exploration and implementation. 
 
-<br><br>Summary: <div>
+<br /><br />Summary: <div>
 arXiv:2505.20081v2 Announce Type: replace-cross 
 Abstract: Aligning large language models with human feedback at inference time has received increasing attention due to its flexibility. Existing methods rely on generating multiple responses from the base policy for search using a reward model, which can be considered as searching in a discrete response space. However, these methods struggle to explore informative candidates when the base policy is weak or the candidate set is small, resulting in limited effectiveness. In this paper, to address this problem, we propose Simple Energy Adaptation ($\textbf{SEA}$), a simple yet effective algorithm for inference-time alignment. In contrast to expensive search over the discrete space, SEA directly adapts original responses from the base policy toward the optimal one via gradient-based sampling in continuous latent space. Specifically, SEA formulates inference as an iterative optimization procedure on an energy function over actions in the continuous space defined by the optimal policy, enabling simple and effective alignment. For instance, despite its simplicity, SEA outperforms the second-best baseline with a relative improvement of up to $ \textbf{77.51%}$ on AdvBench and $\textbf{16.36%}$ on MATH. Our code is publicly available at https://github.com/yuanyige/sea
 ]]></content:encoded>
-<pubDate>Thu, 29 May 2025 00:00:00 -0400</pubDate>
 <pubDate>Thu, 29 May 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -186,14 +176,12 @@ Abstract: Aligning large language models with human feedback at inference time h
 Summary:
 OpenS2V-Nexus proposes a new infrastructure for Subject-to-Video (S2V) generation, consisting of OpenS2V-Eval benchmark and OpenS2V-5M dataset. OpenS2V-Eval focuses on the model's ability to generate subject-consistent videos with natural appearance and identity fidelity through 180 prompts from seven major categories of S2V. Three automatic metrics, NexusScore, NaturalScore, and GmeScore, are introduced to quantify subject consistency, naturalness, and text relevance in generated videos. A comprehensive evaluation of 16 S2V models is conducted to highlight their strengths and weaknesses across different content. OpenS2V-5M, the first open-source large-scale S2V dataset, contains five million high-quality subject-text-video triples with diverse subject information ensured through cross-video associations and GPT-Image-1 prompting on raw frames. OpenS2V-Nexus provides a robust infrastructure to advance future S2V generation research. 
 
-<br><br>Summary: <div>
+<br /><br />Summary: <div>
 arXiv:2505.20292v3 Announce Type: replace-cross 
 Abstract: Subject-to-Video (S2V) generation aims to create videos that faithfully incorporate reference content, providing enhanced flexibility in the production of videos. To establish the infrastructure for S2V generation, we propose OpenS2V-Nexus, consisting of (i) OpenS2V-Eval, a fine-grained benchmark, and (ii) OpenS2V-5M, a million-scale dataset. In contrast to existing S2V benchmarks inherited from VBench that focus on global and coarse-grained assessment of generated videos, OpenS2V-Eval focuses on the model's ability to generate subject-consistent videos with natural subject appearance and identity fidelity. For these purposes, OpenS2V-Eval introduces 180 prompts from seven major categories of S2V, which incorporate both real and synthetic test data. Furthermore, to accurately align human preferences with S2V benchmarks, we propose three automatic metrics, NexusScore, NaturalScore and GmeScore, to separately quantify subject consistency, naturalness, and text relevance in generated videos. Building on this, we conduct a comprehensive evaluation of 16 representative S2V models, highlighting their strengths and weaknesses across different content. Moreover, we create the first open-source large-scale S2V generation dataset OpenS2V-5M, which consists of five million high-quality 720P subject-text-video triples. Specifically, we ensure subject-information diversity in our dataset by (1) segmenting subjects and building pairing information via cross-video associations and (2) prompting GPT-Image-1 on raw frames to synthesize multi-view representations. Through OpenS2V-Nexus, we deliver a robust infrastructure to accelerate future S2V generation research.
 ]]></content:encoded>
 <pubDate>Thu, 29 May 2025 00:00:00 -0400</pubDate>
-<pubDate>Thu, 29 May 2025 00:00:00 -0400</pubDate>
 </item>
-
 <item>
 <title>Understanding the learned look-ahead behavior of chess neural networks</title>
 <link>https://arxiv.org/abs/2505.21552</link>
@@ -10992,127 +10980,6 @@ Abstract: As connected and automated transportation systems evolve, there is a g
 <content:encoded><![CDATA[
 arXiv:2505.18434v1 Announce Type: cross 
 Abstract: Vision-language models (VLMs), such as CLIP, have demonstrated strong performance across a range of downstream tasks. However, CLIP is still limited in negation understanding: the ability to recognize the absence or exclusion of a concept. Existing methods address the problem by using a large language model (LLM) to generate large-scale data of image captions containing negation for further fine-tuning CLIP. However, these methods are both time- and compute-intensive, and their evaluations are typically restricted to image-text matching tasks. To expand the horizon, we (1) introduce a training-time negation data generation pipeline such that negation captions are generated during the training stage, which only increases 2.5% extra training time, and (2) we propose the first benchmark, Neg-TtoI, for evaluating text-to-image generation models on prompts containing negation, assessing model's ability to produce semantically accurate images. We show that our proposed method, TNG-CLIP, achieves SOTA performance on diverse negation benchmarks of image-to-text matching, text-to-image retrieval, and image generation.
-]]></content:encoded>
-<pubDate>Tue, 27 May 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Efficient Long CoT Reasoning in Small Language Models</title>
-<link>https://arxiv.org/abs/2505.18440</link>
-<guid>https://arxiv.org/abs/2505.18440</guid>
-<content:encoded><![CDATA[
-arXiv:2505.18440v1 Announce Type: cross 
-Abstract: Recent large reasoning models such as DeepSeek-R1 exhibit strong complex problems solving abilities by generating long chain-of-thought (CoT) reasoning steps. It is challenging to directly train small language models (SLMs) to emerge long CoT. Thus, distillation becomes a practical method to enable SLMs for such reasoning ability. However, the long CoT often contains a lot of redundant contents (e.g., overthinking steps) which may make SLMs hard to learn considering their relatively poor capacity and generalization. To address this issue, we propose a simple-yet-effective method to prune unnecessary steps in long CoT, and then employ an on-policy method for the SLM itself to curate valid and useful long CoT training data. In this way, SLMs can effectively learn efficient long CoT reasoning and preserve competitive performance at the same time. Experimental results across a series of mathematical reasoning benchmarks demonstrate the effectiveness of the proposed method in distilling long CoT reasoning ability into SLMs which maintains the competitive performance but significantly reduces generating redundant reasoning steps.
-]]></content:encoded>
-<pubDate>Tue, 27 May 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Breaking Silos: Adaptive Model Fusion Unlocks Better Time Series Forecasting</title>
-<link>https://arxiv.org/abs/2505.18442</link>
-<guid>https://arxiv.org/abs/2505.18442</guid>
-<content:encoded><![CDATA[
-arXiv:2505.18442v1 Announce Type: cross 
-Abstract: Time-series forecasting plays a critical role in many real-world applications. Although increasingly powerful models have been developed and achieved superior results on benchmark datasets, through a fine-grained sample-level inspection, we find that (i) no single model consistently outperforms others across different test samples, but instead (ii) each model excels in specific cases. These findings prompt us to explore how to adaptively leverage the distinct strengths of various forecasting models for different samples. We introduce TimeFuse, a framework for collective time-series forecasting with sample-level adaptive fusion of heterogeneous models. TimeFuse utilizes meta-features to characterize input time series and trains a learnable fusor to predict optimal model fusion weights for any given input. The fusor can leverage samples from diverse datasets for joint training, allowing it to adapt to a wide variety of temporal patterns and thus generalize to new inputs, even from unseen datasets. Extensive experiments demonstrate the effectiveness of TimeFuse in various long-/short-term forecasting tasks, achieving near-universal improvement over the state-of-the-art individual models. Code is available at https://github.com/ZhiningLiu1998/TimeFuse.
-]]></content:encoded>
-<pubDate>Tue, 27 May 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Mitigating Context Bias in Domain Adaptation for Object Detection using Mask Pooling</title>
-<link>https://arxiv.org/abs/2505.18446</link>
-<guid>https://arxiv.org/abs/2505.18446</guid>
-<content:encoded><![CDATA[
-arXiv:2505.18446v1 Announce Type: cross 
-Abstract: Context bias refers to the association between the foreground objects and background during the object detection training process. Various methods have been proposed to minimize the context bias when applying the trained model to an unseen domain, known as domain adaptation for object detection (DAOD). But a principled approach to understand why the context bias occurs and how to remove it has been missing.
-  In this work, we provide a causal view of the context bias, pointing towards the pooling operation in the convolution network architecture as the possible source of this bias. We present an alternative, Mask Pooling, which uses an additional input of foreground masks, to separate the pooling process in the respective foreground and background regions and show that this process leads the trained model to detect objects in a more robust manner under different domains. We also provide a benchmark designed to create an ultimate test for DAOD, using foregrounds in the presence of absolute random backgrounds, to analyze the robustness of the intended trained models. Through these experiments, we hope to provide a principled approach for minimizing context bias under domain shift.
-]]></content:encoded>
-<pubDate>Tue, 27 May 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>$\mu$-MoE: Test-Time Pruning as Micro-Grained Mixture-of-Experts</title>
-<link>https://arxiv.org/abs/2505.18451</link>
-<guid>https://arxiv.org/abs/2505.18451</guid>
-<content:encoded><![CDATA[
-arXiv:2505.18451v1 Announce Type: cross 
-Abstract: To tackle the huge computational demand of large foundation models, activation-aware compression techniques without retraining have been introduced. However, since these rely on calibration data, domain shift may arise for unknown downstream tasks. With a computationally efficient calibration, activation-aware pruning can be executed for every prompt adaptively, yet achieving reduced complexity at inference. We formulate it as a mixture of micro-experts, called $\mu$-MoE. Several experiments demonstrate that $\mu$-MoE can dynamically adapt to task/prompt-dependent structured sparsity on the fly.
-]]></content:encoded>
-<pubDate>Tue, 27 May 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>MPE-TTS: Customized Emotion Zero-Shot Text-To-Speech Using Multi-Modal Prompt</title>
-<link>https://arxiv.org/abs/2505.18453</link>
-<guid>https://arxiv.org/abs/2505.18453</guid>
-<content:encoded><![CDATA[
-arXiv:2505.18453v1 Announce Type: cross 
-Abstract: Most existing Zero-Shot Text-To-Speech(ZS-TTS) systems generate the unseen speech based on single prompt, such as reference speech or text descriptions, which limits their flexibility. We propose a customized emotion ZS-TTS system based on multi-modal prompt. The system disentangles speech into the content, timbre, emotion and prosody, allowing emotion prompts to be provided as text, image or speech. To extract emotion information from different prompts, we propose a multi-modal prompt emotion encoder. Additionally, we introduce an prosody predictor to fit the distribution of prosody and propose an emotion consistency loss to preserve emotion information in the predicted prosody. A diffusion-based acoustic model is employed to generate the target mel-spectrogram. Both objective and subjective experiments demonstrate that our system outperforms existing systems in terms of naturalness and similarity. The samples are available at https://mpetts-demo.github.io/mpetts_demo/.
-]]></content:encoded>
-<pubDate>Tue, 27 May 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>A Survey of LLM $\times$ DATA</title>
-<link>https://arxiv.org/abs/2505.18458</link>
-<guid>https://arxiv.org/abs/2505.18458</guid>
-<content:encoded><![CDATA[
-arXiv:2505.18458v1 Announce Type: cross 
-Abstract: The integration of large language model (LLM) and data management (DATA) is rapidly redefining both domains. In this survey, we comprehensively review the bidirectional relationships. On the one hand, DATA4LLM, spanning large-scale data processing, storage, and serving, feeds LLMs with high quality, diversity, and timeliness of data required for stages like pre-training, post-training, retrieval-augmented generation, and agentic workflows: (i) Data processing for LLMs includes scalable acquisition, deduplication, filtering, selection, domain mixing, and synthetic augmentation; (ii) Data Storage for LLMs focuses on efficient data and model formats, distributed and heterogeneous storage hierarchies, KV-cache management, and fault-tolerant checkpointing; (iii) Data serving for LLMs tackles challenges in RAG (e.g., knowledge post-processing), LLM inference (e.g., prompt compression, data provenance), and training strategies (e.g., data packing and shuffling). On the other hand, in LLM4DATA, LLMs are emerging as general-purpose engines for data management. We review recent advances in (i) data manipulation, including automatic data cleaning, integration, discovery; (ii) data analysis, covering reasoning over structured, semi-structured, and unstructured data, and (iii) system optimization (e.g., configuration tuning, query rewriting, anomaly diagnosis), powered by LLM techniques like retrieval-augmented prompting, task-specialized fine-tuning, and multi-agent collaboration.
-]]></content:encoded>
-<pubDate>Tue, 27 May 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Performance and Generalizability Impacts of Incorporating Geolocation into Deep Learning for Dynamic PM2.5 Estimation</title>
-<link>https://arxiv.org/abs/2505.18461</link>
-<guid>https://arxiv.org/abs/2505.18461</guid>
-<content:encoded><![CDATA[
-arXiv:2505.18461v1 Announce Type: cross 
-Abstract: Deep learning models have demonstrated success in geospatial applications, yet quantifying the role of geolocation information in enhancing model performance and geographic generalizability remains underexplored. A new generation of location encoders have emerged with the goal of capturing attributes present at any given location for downstream use in predictive modeling. Being a nascent area of research, their evaluation has remained largely limited to static tasks such as species distributions or average temperature mapping. In this paper, we discuss and quantify the impact of incorporating geolocation into deep learning for a real-world application domain that is characteristically dynamic (with fast temporal change) and spatially heterogeneous at high resolutions: estimating surface-level daily PM2.5 levels using remotely sensed and ground-level data. We build on a recently published deep learning-based PM2.5 estimation model that achieves state-of-the-art performance on data observed in the contiguous United States. We examine three approaches for incorporating geolocation: excluding geolocation as a baseline, using raw geographic coordinates, and leveraging pretrained location encoders. We evaluate each approach under within-region (WR) and out-of-region (OoR) evaluation scenarios. Aggregate performance metrics indicate that while na\"ive incorporation of raw geographic coordinates improves within-region performance by retaining the interpolative value of geographic location, it can hinder generalizability across regions. In contrast, pretrained location encoders like GeoCLIP enhance predictive performance and geographic generalizability for both WR and OoR scenarios. However, qualitative analysis reveals artifact patterns caused by high-degree basis functions and sparse upstream samples in certain areas, and ablation results indicate varying performance among location encoders...
-]]></content:encoded>
-<pubDate>Tue, 27 May 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>From Reddit to Generative AI: Evaluating Large Language Models for Anxiety Support Fine-tuned on Social Media Data</title>
-<link>https://arxiv.org/abs/2505.18464</link>
-<guid>https://arxiv.org/abs/2505.18464</guid>
-<content:encoded><![CDATA[
-arXiv:2505.18464v1 Announce Type: cross 
-Abstract: The growing demand for accessible mental health support, compounded by workforce shortages and logistical barriers, has led to increased interest in utilizing Large Language Models (LLMs) for scalable and real-time assistance. However, their use in sensitive domains such as anxiety support remains underexamined. This study presents a systematic evaluation of LLMs (GPT and Llama) for their potential utility in anxiety support by using real user-generated posts from the r/Anxiety subreddit for both prompting and fine-tuning. Our approach utilizes a mixed-method evaluation framework incorporating three main categories of criteria: (i) linguistic quality, (ii) safety and trustworthiness, and (iii) supportiveness. Results show that fine-tuning LLMs with naturalistic anxiety-related data enhanced linguistic quality but increased toxicity and bias, and diminished emotional responsiveness. While LLMs exhibited limited empathy, GPT was evaluated as more supportive overall. Our findings highlight the risks of fine-tuning LLMs on unprocessed social media content without mitigation strategies.
-]]></content:encoded>
-<pubDate>Tue, 27 May 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Invisible Tokens, Visible Bills: The Urgent Need to Audit Hidden Operations in Opaque LLM Services</title>
-<link>https://arxiv.org/abs/2505.18471</link>
-<guid>https://arxiv.org/abs/2505.18471</guid>
-<content:encoded><![CDATA[
-arXiv:2505.18471v1 Announce Type: cross 
-Abstract: Modern large language model (LLM) services increasingly rely on complex, often abstract operations, such as multi-step reasoning and multi-agent collaboration, to generate high-quality outputs. While users are billed based on token consumption and API usage, these internal steps are typically not visible. We refer to such systems as Commercial Opaque LLM Services (COLS). This position paper highlights emerging accountability challenges in COLS: users are billed for operations they cannot observe, verify, or contest. We formalize two key risks: \textit{quantity inflation}, where token and call counts may be artificially inflated, and \textit{quality downgrade}, where providers might quietly substitute lower-cost models or tools. Addressing these risks requires a diverse set of auditing strategies, including commitment-based, predictive, behavioral, and signature-based methods. We further explore the potential of complementary mechanisms such as watermarking and trusted execution environments to enhance verifiability without compromising provider confidentiality. We also propose a modular three-layer auditing framework for COLS and users that enables trustworthy verification across execution, secure logging, and user-facing auditability without exposing proprietary internals. Our aim is to encourage further research and policy development toward transparency, auditability, and accountability in commercial LLM services.
-]]></content:encoded>
-<pubDate>Tue, 27 May 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Using Large Language Models to Tackle Fundamental Challenges in Graph Learning: A Comprehensive Survey</title>
-<link>https://arxiv.org/abs/2505.18475</link>
-<guid>https://arxiv.org/abs/2505.18475</guid>
-<content:encoded><![CDATA[
-arXiv:2505.18475v1 Announce Type: cross 
-Abstract: Graphs are a widely used paradigm for representing non-Euclidean data, with applications ranging from social network analysis to biomolecular prediction. Conventional graph learning approaches typically rely on fixed structural assumptions or fully observed data, limiting their effectiveness in more complex, noisy, or evolving settings. Consequently, real-world graph data often violates the assumptions of traditional graph learning methods, in particular, it leads to four fundamental challenges: (1) Incompleteness, real-world graphs have missing nodes, edges, or attributes; (2) Imbalance, the distribution of the labels of nodes or edges and their structures for real-world graphs are highly skewed; (3) Cross-domain Heterogeneity, graphs from different domains exhibit incompatible feature spaces or structural patterns; and (4) Dynamic Instability, graphs evolve over time in unpredictable ways. Recent advances in Large Language Models (LLMs) offer the potential to tackle these challenges by leveraging rich semantic reasoning and external knowledge. This survey provides a comprehensive review of how LLMs can be integrated with graph learning to address the aforementioned challenges. For each challenge, we review both traditional solutions and modern LLM-driven approaches, highlighting how LLMs contribute unique advantages. Finally, we discuss open research questions and promising future directions in this emerging interdisciplinary field. To support further exploration, we have curated a repository of recent advances on graph learning challenges: https://github.com/limengran98/Awesome-Literature-Graph-Learning-Challenges.
-]]></content:encoded>
-<pubDate>Tue, 27 May 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Synthesizing and Adapting Error Correction Data for Mobile Large Language Model Applications</title>
-<link>https://arxiv.org/abs/2505.18488</link>
-<guid>https://arxiv.org/abs/2505.18488</guid>
-<content:encoded><![CDATA[
-arXiv:2505.18488v1 Announce Type: cross 
-Abstract: Error correction is an important capability when applying large language models (LLMs) to facilitate user typing on mobile devices. In this paper, we use LLMs to synthesize a high-quality dataset of error correction pairs to evaluate and improve LLMs for mobile applications. We first prompt LLMs with error correction domain knowledge to build a scalable and reliable addition to the existing data synthesis pipeline. We then adapt the synthetic data distribution to match the mobile application domain by reweighting the samples. The reweighting model is learnt by predicting (a handful of) live A/B test metrics when deploying LLMs in production, given the LLM performance on offline evaluation data and scores from a small privacy-preserving on-device language model. Finally, we present best practices for mixing our synthetic data with other data sources to improve model performance on error correction in both offline evaluation and production live A/B testing.
-]]></content:encoded>
-<pubDate>Tue, 27 May 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>FedHL: Federated Learning for Heterogeneous Low-Rank Adaptation via Unbiased Aggregation</title>
-<link>https://arxiv.org/abs/2505.18494</link>
-<guid>https://arxiv.org/abs/2505.18494</guid>
-<content:encoded><![CDATA[
-arXiv:2505.18494v1 Announce Type: cross 
-Abstract: Federated Learning (FL) facilitates the fine-tuning of Foundation Models (FMs) using distributed data sources, with Low-Rank Adaptation (LoRA) gaining popularity due to its low communication costs and strong performance. While recent work acknowledges the benefits of heterogeneous LoRA in FL and introduces flexible algorithms to support its implementation, our theoretical analysis reveals a critical gap: existing methods lack formal convergence guarantees due to parameter truncation and biased gradient updates. Specifically, adapting client-specific LoRA ranks necessitates truncating global parameters, which introduces inherent truncation errors and leads to subsequent inaccurate gradient updates that accumulate over training rounds, ultimately degrading performance. To address the above issues, we propose \textbf{FedHL}, a simple yet effective \textbf{Fed}erated Learning framework tailored for \textbf{H}eterogeneous \textbf{L}oRA. By leveraging the full-rank global model as a calibrated aggregation basis, FedHL eliminates the direct truncation bias from initial alignment with client-specific ranks. Furthermore, we derive the theoretically optimal aggregation weights by minimizing the gradient drift term in the convergence upper bound. Our analysis shows that FedHL guarantees $\mathcal{O}(1/\sqrt{T})$ convergence rate, and experiments on multiple real-world datasets demonstrate a 1-3\% improvement over several state-of-the-art methods.
 ]]></content:encoded>
 <pubDate>Tue, 27 May 2025 00:00:00 -0400</pubDate>
 </item>

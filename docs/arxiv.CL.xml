@@ -4,19 +4,19 @@
 <title>cs.CL updates on arXiv.org</title>
 <link>http://rss.arxiv.org/rss/cs.CL</link>
 
+
 <item>
 <title>GraphCheck: Breaking Long-Term Text Barriers with Extracted Knowledge Graph-Powered Fact-Checking</title>
 <link>https://arxiv.org/abs/2502.16514</link>
 <guid>https://arxiv.org/abs/2502.16514</guid>
 <content:encoded><![CDATA[
-<div> GraphCheck, fact-checking, knowledge graphs, Graph Neural Networks, multihop reasoning<br>
-<br>
-Summary:<br>
+<div> GraphCheck, fact-checking, knowledge graphs, Graph Neural Networks, multihop reasoning<br />
+<br />
+Summary:<br />
 Large language models like GraphCheck are prone to generating subtle factual errors in long-form text, especially in specialized fields like medicine. Existing fact-checking methods struggle with complex multihop relations and high computational costs. GraphCheck introduces a framework that utilizes knowledge graphs to enhance text representation through Graph Neural Networks as a soft prompt. This approach enables LLMs to incorporate structured knowledge effectively, capturing overlooked multihop reasoning chains for precise fact-checking in a single inference call. Experimental results show GraphCheck's efficiency and effectiveness, outperforming specialized fact-checkers and rivaling state-of-the-art LLMs like DeepSeek-V3 and OpenAI-o1 with fewer parameters. <div>
 arXiv:2502.16514v4 Announce Type: replace 
 Abstract: Large language models (LLMs) are widely used, but they often generate subtle factual errors, especially in long-form text. These errors are fatal in some specialized domains such as medicine. Existing fact-checking with grounding documents methods face two main challenges: (1) they struggle to understand complex multihop relations in long documents, often overlooking subtle factual errors; (2) most specialized methods rely on pairwise comparisons, requiring multiple model calls, leading to high resource and computational costs. To address these challenges, we propose GraphCheck, a fact-checking framework that uses extracted knowledge graphs to enhance text representation. Graph Neural Networks further process these graphs as a soft prompt, enabling LLMs to incorporate structured knowledge more effectively. Enhanced with graph-based reasoning, GraphCheck captures multihop reasoning chains that are often overlooked by existing methods, enabling precise and efficient fact-checking in a single inference call. Experimental results on seven benchmarks spanning both general and medical domains demonstrate up to a 7.1% overall improvement over baseline models. Notably, GraphCheck outperforms existing specialized fact-checkers and achieves comparable performance with state-of-the-art LLMs, such as DeepSeek-V3 and OpenAI-o1, with significantly fewer parameters.
 ]]></content:encoded>
-<pubDate>Thu, 29 May 2025 00:00:00 -0400</pubDate>
 <pubDate>Thu, 29 May 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -26,11 +26,10 @@ Abstract: Large language models (LLMs) are widely used, but they often generate 
 <content:encoded><![CDATA[
 <div> Benchmark, reasoning, language models, knowledge, prior knowledge
 Summary:
-LINGOLY-TOO is introduced as a challenging reasoning benchmark that aims to evaluate language models' reasoning abilities while countering the impact of prior knowledge. By generating variations of reasoning problems in real languages through linguistically informed rulesets, the benchmark ensures that models cannot rely solely on their existing knowledge to solve tasks. Results from experiments indicate that models can still bypass reasoning and answer based on prior knowledge, highlighting the need for improved reasoning evaluation. Despite advancements in Inference-Time Compute (ITC) models, the performance on the benchmark demonstrates a lack of consistent reasoning abilities among Large Language Models (LLMs). The findings emphasize the necessity of distinguishing between reasoning skills and memorized knowledge in the development of reasoning benchmarks.<br><br>Summary: <div>
+LINGOLY-TOO is introduced as a challenging reasoning benchmark that aims to evaluate language models' reasoning abilities while countering the impact of prior knowledge. By generating variations of reasoning problems in real languages through linguistically informed rulesets, the benchmark ensures that models cannot rely solely on their existing knowledge to solve tasks. Results from experiments indicate that models can still bypass reasoning and answer based on prior knowledge, highlighting the need for improved reasoning evaluation. Despite advancements in Inference-Time Compute (ITC) models, the performance on the benchmark demonstrates a lack of consistent reasoning abilities among Large Language Models (LLMs). The findings emphasize the necessity of distinguishing between reasoning skills and memorized knowledge in the development of reasoning benchmarks.<br /><br />Summary: <div>
 arXiv:2503.02972v5 Announce Type: replace 
 Abstract: The expanding knowledge and memorisation capacity of frontier language models allows them to solve many reasoning tasks directly by exploiting prior knowledge, leading to inflated estimates of their reasoning abilities. We introduce LINGOLY-TOO, a challenging reasoning benchmark grounded in natural language and designed to counteract the effect of non-reasoning abilities on reasoning estimates. Using linguistically informed rulesets, we permute reasoning problems written in real languages to generate numerous question variations. These permutations preserve the intrinsic reasoning steps required for each solution while reducing the likelihood problems are directly solvable with models' knowledge. Experiments and analyses show that models can circumvent reasoning and answer from prior knowledge. On a metric that rewards consistent reasoning, all models perform poorly and exhibit high variance across question permutations, indicating that Large Language Models' (LLMs) reasoning faculty remains brittle. Overall, results on the benchmark reflect the recent progress of Inference-Time Compute (ITC) models but suggest ample room for further improvement. The benchmark is a step towards better measurement of reasoning abilities of LLMs and offers a cautionary tale on the importance of disentangling reasoning abilities from models' internalised knowledge when developing reasoning benchmarks.
 ]]></content:encoded>
-<pubDate>Thu, 29 May 2025 00:00:00 -0400</pubDate>
 <pubDate>Thu, 29 May 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -38,16 +37,14 @@ Abstract: The expanding knowledge and memorisation capacity of frontier language
 <link>https://arxiv.org/abs/2503.10688</link>
 <guid>https://arxiv.org/abs/2503.10688</guid>
 <content:encoded><![CDATA[
-<div> Keywords: NLP, emotion analysis, cultural dimensions, benchmark, state-of-the-art LLMs <br>
-Summary: <br>
+<div> Keywords: NLP, emotion analysis, cultural dimensions, benchmark, state-of-the-art LLMs <br />
+Summary: <br />
 The article introduces CuLEmo, a new benchmark for evaluating culture-aware emotion prediction in six languages. Existing emotion benchmarks have shortcomings in recognizing cultural dimensions and rely on translated data. CuLEmo addresses these issues with 400 questions per language that require nuanced cultural understanding. Evaluation of state-of-the-art LLMs on this benchmark shows significant variations in emotion conceptualizations and performance across languages and cultures. English prompts with country context often outperform in-language prompts for culture-aware emotion and sentiment understanding. The dataset and evaluation code are publicly available. <div>
 arXiv:2503.10688v3 Announce Type: replace 
 Abstract: NLP research has increasingly focused on subjective tasks such as emotion analysis. However, existing emotion benchmarks suffer from two major shortcomings: (1) they largely rely on keyword-based emotion recognition, overlooking crucial cultural dimensions required for deeper emotion understanding, and (2) many are created by translating English-annotated data into other languages, leading to potentially unreliable evaluation. To address these issues, we introduce Cultural Lenses on Emotion (CuLEmo), the first benchmark designed to evaluate culture-aware emotion prediction across six languages: Amharic, Arabic, English, German, Hindi, and Spanish. CuLEmo comprises 400 crafted questions per language, each requiring nuanced cultural reasoning and understanding. We use this benchmark to evaluate several state-of-the-art LLMs on culture-aware emotion prediction and sentiment analysis tasks. Our findings reveal that (1) emotion conceptualizations vary significantly across languages and cultures, (2) LLMs performance likewise varies by language and cultural context, and (3) prompting in English with explicit country context often outperforms in-language prompts for culture-aware emotion and sentiment understanding. The dataset and evaluation code are publicly available.
 ]]></content:encoded>
 <pubDate>Thu, 29 May 2025 00:00:00 -0400</pubDate>
-<pubDate>Thu, 29 May 2025 00:00:00 -0400</pubDate>
 </item>
-
 <item>
 <title>More Thinking, Less Seeing? Assessing Amplified Hallucination in Multimodal Reasoning Models</title>
 <link>https://arxiv.org/abs/2505.21523</link>
@@ -10895,36 +10892,6 @@ Abstract: The advancement of large language models (LLMs) has made it difficult 
 <content:encoded><![CDATA[
 arXiv:2502.07340v3 Announce Type: replace 
 Abstract: Training LLMs on data containing unfamiliar knowledge during the instruction tuning stage can encourage hallucinations. To address this challenge, we introduce NOVA, a novel framework designed to identify high-quality data that aligns well with the LLM's learned knowledge to reduce hallucinations. NOVA includes Internal Consistency Probing (ICP) and Semantic Equivalence Identification (SEI) to measure how familiar the LLM is with instruction data. Specifically, ICP evaluates the LLM's understanding of the given instruction by calculating the tailored consistency among multiple self-generated responses. SEI further assesses the familiarity of the LLM with the target response by comparing it to the generated responses, using the proposed semantic clustering and well-designed voting strategy. Finally, to ensure the quality of selected samples, we introduce an expert-aligned reward model, considering characteristics beyond just familiarity. By considering data quality and avoiding unfamiliar data, we can utilize the selected data to effectively align LLMs to follow instructions and hallucinate less.
-]]></content:encoded>
-<pubDate>Tue, 27 May 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>What Is That Talk About? A Video-to-Text Summarization Dataset for Scientific Presentations</title>
-<link>https://arxiv.org/abs/2502.08279</link>
-<guid>https://arxiv.org/abs/2502.08279</guid>
-<content:encoded><![CDATA[
-arXiv:2502.08279v4 Announce Type: replace 
-Abstract: Transforming recorded videos into concise and accurate textual summaries is a growing challenge in multimodal learning. This paper introduces VISTA, a dataset specifically designed for video-to-text summarization in scientific domains. VISTA contains 18,599 recorded AI conference presentations paired with their corresponding paper abstracts. We benchmark the performance of state-of-the-art large models and apply a plan-based framework to better capture the structured nature of abstracts. Both human and automated evaluations confirm that explicit planning enhances summary quality and factual consistency. However, a considerable gap remains between models and human performance, highlighting the challenges of our dataset. This study aims to pave the way for future research on scientific video-to-text summarization.
-]]></content:encoded>
-<pubDate>Tue, 27 May 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>SelfElicit: Your Language Model Secretly Knows Where is the Relevant Evidence</title>
-<link>https://arxiv.org/abs/2502.08767</link>
-<guid>https://arxiv.org/abs/2502.08767</guid>
-<content:encoded><![CDATA[
-arXiv:2502.08767v2 Announce Type: replace 
-Abstract: Providing Language Models (LMs) with relevant evidence in the context (either via retrieval or user-provided) can significantly improve their ability to provide better-grounded responses. However, recent studies have found that LMs often struggle to fully comprehend and utilize key evidence from the context, especially when it contains noise and irrelevant information, an issue common in real-world scenarios. To address this, we propose SelfElicit, an inference-time approach that helps LMs focus on key contextual evidence through self-guided explicit highlighting. By leveraging the inherent evidence-finding capabilities of LMs using the attention scores of deeper layers, our method automatically identifies and emphasizes key evidence within the input context, facilitating more accurate and grounded responses without additional training or iterative prompting. We demonstrate that SelfElicit brings consistent and significant improvement on multiple evidence-based QA tasks for various LM families while maintaining computational efficiency. Our code and documentation are available at https://github.com/ZhiningLiu1998/SelfElicit.
-]]></content:encoded>
-<pubDate>Tue, 27 May 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>A Survey of LLM-based Agents in Medicine: How far are we from Baymax?</title>
-<link>https://arxiv.org/abs/2502.11211</link>
-<guid>https://arxiv.org/abs/2502.11211</guid>
-<content:encoded><![CDATA[
-arXiv:2502.11211v2 Announce Type: replace 
-Abstract: Large Language Models (LLMs) are transforming healthcare through the development of LLM-based agents that can understand, reason about, and assist with medical tasks. This survey provides a comprehensive review of LLM-based agents in medicine, examining their architectures, applications, and challenges. We analyze the key components of medical agent systems, including system profiles, clinical planning mechanisms, medical reasoning frameworks, and external capacity enhancement. The survey covers major application scenarios such as clinical decision support, medical documentation, training simulations, and healthcare service optimization. We discuss evaluation frameworks and metrics used to assess these agents' performance in healthcare settings. While LLM-based agents show promise in enhancing healthcare delivery, several challenges remain, including hallucination management, multimodal integration, implementation barriers, and ethical considerations. The survey concludes by highlighting future research directions, including advances in medical reasoning inspired by recent developments in LLM architectures, integration with physical systems, and improvements in training simulations. This work provides researchers and practitioners with a structured overview of the current state and future prospects of LLM-based agents in medicine.
 ]]></content:encoded>
 <pubDate>Tue, 27 May 2025 00:00:00 -0400</pubDate>
 </item>
