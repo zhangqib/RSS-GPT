@@ -4,19 +4,19 @@
 <title>cs.AI updates on arXiv.org</title>
 <link>http://rss.arxiv.org/rss/cs.AI</link>
 
+
 <item>
 <title>Understanding and Mitigating Overrefusal in LLMs from an Unveiling Perspective of Safety Decision Boundary</title>
 <link>https://arxiv.org/abs/2505.18325</link>
 <guid>https://arxiv.org/abs/2505.18325</guid>
 <content:encoded><![CDATA[
-<div> Keywords: Large language models, overrefusal, safety decision boundaries, prompt generation, multilingual scenarios<br>
-<br>
+<div> Keywords: Large language models, overrefusal, safety decision boundaries, prompt generation, multilingual scenarios<br />
+<br />
 Summary: 
-Large language models (LLMs) have shown impressive performance in various tasks, but they often exhibit overrefusal, where they avoid answering legitimate queries due to overly cautious safety alignment. This issue arises from misalignment at safety decision boundaries, where models struggle to differentiate between benign and harmful content. To address overrefusal, the researchers developed RASS, an automated framework for generating and selecting prompts strategically near the safety boundary. By leveraging steering vectors in the representation space, RASS identifies and curates prompts to mitigate overrefusal effectively. The approach provides a precise and interpretable view of model safety decisions and extends well to multilingual scenarios. To evaluate model safety and helpfulness across multiple languages, the researchers created the MORBench evaluation set. The findings contribute to a better understanding of overrefusal and offer a practical solution to improve model performance in handling queries. <br><br> <div>
+Large language models (LLMs) have shown impressive performance in various tasks, but they often exhibit overrefusal, where they avoid answering legitimate queries due to overly cautious safety alignment. This issue arises from misalignment at safety decision boundaries, where models struggle to differentiate between benign and harmful content. To address overrefusal, the researchers developed RASS, an automated framework for generating and selecting prompts strategically near the safety boundary. By leveraging steering vectors in the representation space, RASS identifies and curates prompts to mitigate overrefusal effectively. The approach provides a precise and interpretable view of model safety decisions and extends well to multilingual scenarios. To evaluate model safety and helpfulness across multiple languages, the researchers created the MORBench evaluation set. The findings contribute to a better understanding of overrefusal and offer a practical solution to improve model performance in handling queries. <br /><br /> <div>
 arXiv:2505.18325v2 Announce Type: replace 
 Abstract: Large language models (LLMs) have demonstrated remarkable capabilities across a wide range of tasks, yet they often refuse to answer legitimate queries-a phenomenon known as overrefusal. Overrefusal typically stems from over-conservative safety alignment, causing models to treat many reasonable prompts as potentially risky. To systematically understand this issue, we probe and leverage the models'safety decision boundaries to analyze and mitigate overrefusal. Our findings reveal that overrefusal is closely tied to misalignment at these boundary regions, where models struggle to distinguish subtle differences between benign and harmful content. Building on these insights, we present RASS, an automated framework for prompt generation and selection that strategically targets overrefusal prompts near the safety boundary. By harnessing steering vectors in the representation space, RASS efficiently identifies and curates boundary-aligned prompts, enabling more effective and targeted mitigation of overrefusal. This approach not only provides a more precise and interpretable view of model safety decisions but also seamlessly extends to multilingual scenarios.We have explored the safety decision boundaries of various LLMs and construct the MORBench evaluation set to facilitate robust assessment of model safety and helpfulness across multiple languages. Code and datasets will be released at https://anonymous.4open.science/r/RASS-80D3.
 ]]></content:encoded>
-<pubDate>Fri, 30 May 2025 00:00:00 -0400</pubDate>
 <pubDate>Fri, 30 May 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -24,14 +24,13 @@ Abstract: Large language models (LLMs) have demonstrated remarkable capabilities
 <link>https://arxiv.org/abs/2501.18922</link>
 <guid>https://arxiv.org/abs/2501.18922</guid>
 <content:encoded><![CDATA[
-<div> Knowledge Base Question Answering, KBQA, Monte Carlo Tree Search, agentic approach, ReAct-based agent process <br>
-<br>
+<div> Knowledge Base Question Answering, KBQA, Monte Carlo Tree Search, agentic approach, ReAct-based agent process <br />
+<br />
 Summary: 
 The paper introduces KBQA-o1, a novel agentic KBQA method that utilizes Monte Carlo Tree Search (MCTS) to address challenges in Knowledge Base Question Answering. KBQA-o1 employs a ReAct-based agent process for logical form generation and MCTS for exploration within the KB environment. By balancing exploration and search space, KBQA-o1 outperforms previous low-resource KBQA methods with limited annotated data. The experimental results show a significant performance improvement, with KBQA-o1 achieving a GrailQA F1 performance of 78.5% compared to 48.5% of the previous state-of-the-art method using GPT-3.5-turbo. Furthermore, KBQA-o1 generates high-quality annotations for further enhancement through incremental fine-tuning. The code for KBQA-o1 is publicly available for replication and further research. <div>
 arXiv:2501.18922v3 Announce Type: replace-cross 
 Abstract: Knowledge Base Question Answering (KBQA) aims to answer natural language questions with a large-scale structured knowledge base (KB). Despite advancements with large language models (LLMs), KBQA still faces challenges in weak KB awareness, imbalance between effectiveness and efficiency, and high reliance on annotated data. To address these challenges, we propose KBQA-o1, a novel agentic KBQA method with Monte Carlo Tree Search (MCTS). It introduces a ReAct-based agent process for stepwise logical form generation with KB environment exploration. Moreover, it employs MCTS, a heuristic search method driven by policy and reward models, to balance agentic exploration's performance and search space. With heuristic exploration, KBQA-o1 generates high-quality annotations for further improvement by incremental fine-tuning. Experimental results show that KBQA-o1 outperforms previous low-resource KBQA methods with limited annotated data, boosting Llama-3.1-8B model's GrailQA F1 performance to 78.5% compared to 48.5% of the previous sota method with GPT-3.5-turbo. Our code is publicly available.
 ]]></content:encoded>
-<pubDate>Fri, 30 May 2025 00:00:00 -0400</pubDate>
 <pubDate>Fri, 30 May 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -41,11 +40,10 @@ Abstract: Knowledge Base Question Answering (KBQA) aims to answer natural langua
 <content:encoded><![CDATA[
 <div> dataset, model suite, GPU code transpilation, assembly-level translation, domain-specific language models 
 
-Summary:<br><br>Researchers introduce CASS, a dataset and model suite for cross-architecture GPU code transpilation, addressing the translation between CUDA and HIP at both source and assembly levels. The dataset comprises 70k verified code pairs across host and device, filling a crucial gap in low-level GPU code portability. The CASS family of domain-specific language models achieves high accuracy in source and assembly translation, surpassing commercial baselines like GPT-4o and Claude. The generated code matches native performance in a significant portion of test cases, preserving runtime and memory behavior. To facilitate evaluation, CASS-Bench, a benchmark spanning 16 GPU domains with ground-truth execution, is introduced. All data, models, and tools are released as open source to advance GPU compiler tooling, binary compatibility, and hardware translation guided by LLMs. <div>
+Summary:<br /><br />Researchers introduce CASS, a dataset and model suite for cross-architecture GPU code transpilation, addressing the translation between CUDA and HIP at both source and assembly levels. The dataset comprises 70k verified code pairs across host and device, filling a crucial gap in low-level GPU code portability. The CASS family of domain-specific language models achieves high accuracy in source and assembly translation, surpassing commercial baselines like GPT-4o and Claude. The generated code matches native performance in a significant portion of test cases, preserving runtime and memory behavior. To facilitate evaluation, CASS-Bench, a benchmark spanning 16 GPU domains with ground-truth execution, is introduced. All data, models, and tools are released as open source to advance GPU compiler tooling, binary compatibility, and hardware translation guided by LLMs. <div>
 arXiv:2505.16968v3 Announce Type: replace-cross 
 Abstract: We introduce CASS, the first large-scale dataset and model suite for cross-architecture GPU code transpilation, targeting both source-level (CUDA <--> HIP) and assembly-level (Nvidia SASS <--> AMD RDNA3) translation. The dataset comprises 70k verified code pairs across host and device, addressing a critical gap in low-level GPU code portability. Leveraging this resource, we train the CASS family of domain-specific language models, achieving 95% source translation accuracy and 37.5% assembly translation accuracy, substantially outperforming commercial baselines such as GPT-4o, Claude, and Hipify. Our generated code matches native performance in over 85% of test cases, preserving runtime and memory behavior. To support rigorous evaluation, we introduce CASS-Bench, a curated benchmark spanning 16 GPU domains with ground-truth execution. All data, models, and evaluation tools are released as open source to foster progress in GPU compiler tooling, binary compatibility, and LLM-guided hardware translation.
 ]]></content:encoded>
-<pubDate>Fri, 30 May 2025 00:00:00 -0400</pubDate>
 <pubDate>Fri, 30 May 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -58,11 +56,10 @@ Abstract: We introduce CASS, the first large-scale dataset and model suite for c
 Summary:
 OrionBench is introduced as a benchmark for enhancing chart understanding capabilities of vision-language models (VLMs). It addresses the inaccurate visual grounding of infographic elements by providing 26,250 real and 78,750 synthetic infographics with over 6.9 million bounding box annotations. The annotations are generated using model-in-the-loop and programmatic methods. Three applications demonstrate the usefulness of OrionBench: 1) implementing a Thinking-with-Boxes scheme to improve VLM chart understanding, 2) comparing object detection models, and 3) applying the developed detection model for document layout and UI element detection. OrionBench aims to support the development of accurate object detection models for charts and human-recognizable objects (HROs) in infographics, ultimately advancing chart understanding in various contexts. 
 
-<br><br>Summary: <div>
+<br /><br />Summary: <div>
 arXiv:2505.17473v3 Announce Type: replace-cross 
 Abstract: Given the central role of charts in scientific, business, and communication contexts, enhancing the chart understanding capabilities of vision-language models (VLMs) has become increasingly critical. A key limitation of existing VLMs lies in their inaccurate visual grounding of infographic elements, including charts and human-recognizable objects (HROs) such as icons and images. However, chart understanding often requires identifying relevant elements and reasoning over them. To address this limitation, we introduce OrionBench, a benchmark designed to support the development of accurate object detection models for charts and HROs in infographics. It contains 26,250 real and 78,750 synthetic infographics, with over 6.9 million bounding box annotations. These annotations are created by combining the model-in-the-loop and programmatic methods. We demonstrate the usefulness of OrionBench through three applications: 1) constructing a Thinking-with-Boxes scheme to boost the chart understanding performance of VLMs, 2) comparing existing object detection models, and 3) applying the developed detection model to document layout and UI element detection.
 ]]></content:encoded>
-<pubDate>Fri, 30 May 2025 00:00:00 -0400</pubDate>
 <pubDate>Fri, 30 May 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -70,13 +67,12 @@ Abstract: Given the central role of charts in scientific, business, and communic
 <link>https://arxiv.org/abs/2505.18377</link>
 <guid>https://arxiv.org/abs/2505.18377</guid>
 <content:encoded><![CDATA[
-<div> propagation, analog AI, metasurface, training framework, inverse design <br>
+<div> propagation, analog AI, metasurface, training framework, inverse design <br />
 Summary:
 SP2RINT is a spatially decoupled, progressive training framework designed for training high-capacity Discrete Optical Neural Networks (DONNs) efficiently. It formulates the training process as a Partial Differential Equation (PDE)-constrained learning problem, enabling the optimization of metasurface structures without the need for computationally intensive simulation-in-the-loop approaches. By relaxing metasurface responses into transfer matrices with a banded structure and enforcing physical constraints progressively through alternating training and inverse design steps, SP2RINT ensures the physical realizability of the final designs. The framework also introduces a spatially decoupled inverse design strategy that partitions the metasurface into independently solvable patches, enabling scalable and parallel optimization. By bridging the gap between abstract DONN models and implementable photonic hardware, SP2RINT achieves high accuracy while being significantly faster than traditional simulation-based approaches, making it a promising tool for scalable and efficient training of meta-optical neural systems. <div>
 arXiv:2505.18377v2 Announce Type: replace-cross 
 Abstract: DONNs leverage light propagation for efficient analog AI and signal processing. Advances in nanophotonic fabrication and metasurface-based wavefront engineering have opened new pathways to realize high-capacity DONNs across various spectral regimes. Training such DONN systems to determine the metasurface structures remains challenging. Heuristic methods are fast but oversimplify metasurfaces modulation, often resulting in physically unrealizable designs and significant performance degradation. Simulation-in-the-loop optimizes implementable metasurfaces via adjoint methods, but is computationally prohibitive and unscalable. To address these limitations, we propose SP2RINT, a spatially decoupled, progressive training framework that formulates DONN training as a PDE-constrained learning problem. Metasurface responses are first relaxed into freely trainable transfer matrices with a banded structure. We then progressively enforce physical constraints by alternating between transfer matrix training and adjoint-based inverse design, avoiding per-iteration PDE solves while ensuring final physical realizability. To further reduce runtime, we introduce a physics-inspired, spatially decoupled inverse design strategy based on the natural locality of field interactions. This approach partitions the metasurface into independently solvable patches, enabling scalable and parallel inverse design with system-level calibration. Evaluated across diverse DONN training tasks, SP2RINT achieves digital-comparable accuracy while being 1825 times faster than simulation-in-the-loop approaches. By bridging the gap between abstract DONN models and implementable photonic hardware, SP2RINT enables scalable, high-performance training of physically realizable meta-optical neural systems. Our code is available at https://github.com/ScopeX-ASU/SP2RINT
 ]]></content:encoded>
-<pubDate>Fri, 30 May 2025 00:00:00 -0400</pubDate>
 <pubDate>Fri, 30 May 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -84,20 +80,18 @@ Abstract: DONNs leverage light propagation for efficient analog AI and signal pr
 <link>https://arxiv.org/abs/2505.18424</link>
 <guid>https://arxiv.org/abs/2505.18424</guid>
 <content:encoded><![CDATA[
-<div> Keywords: stroke, deep learning, lesion segmentation, ISLES'24 challenge, CT scans <br>
+<div> Keywords: stroke, deep learning, lesion segmentation, ISLES'24 challenge, CT scans <br />
 Summary: 
 - Stroke is a major cause of death globally, emphasizing the importance of accurate lesion boundary identification for effective diagnosis and treatment.
 - Deep learning methods are commonly used for stroke lesion segmentation, requiring large and diverse annotated datasets for training.
 - The ISLES'24 challenge provides longitudinal stroke imaging data, focusing on CT scans on arrival and follow-up MRI for annotation, to advance the field.
 - Winning solutions in the challenge utilize a preprocessing pipeline involving skull stripping and custom intensity windowing to improve segmentation accuracy.
-- By combining these preprocessing techniques with a standard neural network architecture, a mean test Dice score of 28.5 with a standard deviation of 21.27 was achieved, demonstrating the effectiveness and potential of these methods.<br><br>Summary: <div>
+- By combining these preprocessing techniques with a standard neural network architecture, a mean test Dice score of 28.5 with a standard deviation of 21.27 was achieved, demonstrating the effectiveness and potential of these methods.<br /><br />Summary: <div>
 arXiv:2505.18424v2 Announce Type: replace-cross 
 Abstract: Stroke is among the top three causes of death worldwide, and accurate identification of stroke lesion boundaries is critical for diagnosis and treatment. Supervised deep learning methods have emerged as the leading solution for stroke lesion segmentation but require large, diverse, and annotated datasets. The ISLES'24 challenge addresses this need by providing longitudinal stroke imaging data, including CT scans taken on arrival to the hospital and follow-up MRI taken 2-9 days from initial arrival, with annotations derived from follow-up MRI. Importantly, models submitted to the ISLES'24 challenge are evaluated using only CT inputs, requiring prediction of lesion progression that may not be visible in CT scans for segmentation. Our winning solution shows that a carefully designed preprocessing pipeline including deep-learning-based skull stripping and custom intensity windowing is beneficial for accurate segmentation. Combined with a standard large residual nnU-Net architecture for segmentation, this approach achieves a mean test Dice of 28.5 with a standard deviation of 21.27.
 ]]></content:encoded>
 <pubDate>Fri, 30 May 2025 00:00:00 -0400</pubDate>
-<pubDate>Fri, 30 May 2025 00:00:00 -0400</pubDate>
 </item>
-
 <item>
 <title>Design and testing of an agent chatbot supporting decision making with public transport data</title>
 <link>https://arxiv.org/abs/2505.22698</link>
@@ -10851,67 +10845,6 @@ Abstract: We introduce a novel dataset designed to benchmark the physical and sp
 <content:encoded><![CDATA[
 arXiv:2505.16448v2 Announce Type: replace 
 Abstract: While current reasoning models possess strong exploratory capabilities, they are often criticized for overthinking due to redundant and unnecessary reflections. In this work, we reveal for the first time that overthinking in reasoning models may stem from their internal bias towards input texts. Upon encountering a reasoning problem, the model immediately forms a preliminary guess about the answer, which we term as an internal bias since it is not derived through actual reasoning. When this guess conflicts with its reasoning result, the model tends to engage in reflection, leading to the waste of computational resources. Through further interpretability experiments, we find that this behavior is largely driven by the model's excessive attention to the input section, which amplifies the influence of internal bias on its decision-making process. Additionally, by masking out the original input section, the affect of internal bias can be effectively alleviated and the reasoning length could be reduced by 31%-53% across different complex reasoning tasks. Notably, in most cases, this approach also leads to improvements in accuracy. These findings demonstrate a causal relationship between internal bias and overthinking.
-]]></content:encoded>
-<pubDate>Wed, 28 May 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>MMMR: Benchmarking Massive Multi-Modal Reasoning Tasks</title>
-<link>https://arxiv.org/abs/2505.16459</link>
-<guid>https://arxiv.org/abs/2505.16459</guid>
-<content:encoded><![CDATA[
-arXiv:2505.16459v2 Announce Type: replace 
-Abstract: Recent advances in Multi-Modal Large Language Models (MLLMs) have enabled unified processing of language, vision, and structured inputs, opening the door to complex tasks such as logical deduction, spatial reasoning, and scientific analysis. Despite their promise, the reasoning capabilities of MLLMs, particularly those augmented with intermediate thinking traces (MLLMs-T), remain poorly understood and lack standardized evaluation benchmarks. Existing work focuses primarily on perception or final answer correctness, offering limited insight into how models reason or fail across modalities. To address this gap, we introduce the MMMR, a new benchmark designed to rigorously evaluate multi-modal reasoning with explicit thinking. The MMMR comprises 1) a high-difficulty dataset of 1,083 questions spanning six diverse reasoning types with symbolic depth and multi-hop demands and 2) a modular Reasoning Trace Evaluation Pipeline (RTEP) for assessing reasoning quality beyond accuracy through metrics like relevance, consistency, and structured error annotations. Empirical results show that MLLMs-T overall outperform non-thinking counterparts, but even top models like Claude-3.7-Sonnet and Gemini-2.5 Pro suffer from reasoning pathologies such as inconsistency and overthinking. This benchmark reveals persistent gaps between accuracy and reasoning quality and provides an actionable evaluation pipeline for future model development. Overall, the MMMR offers a scalable foundation for evaluating, comparing, and improving the next generation of multi-modal reasoning systems.
-]]></content:encoded>
-<pubDate>Wed, 28 May 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Enter the Void - Planning to Seek Entropy When Reward is Scarce</title>
-<link>https://arxiv.org/abs/2505.16787</link>
-<guid>https://arxiv.org/abs/2505.16787</guid>
-<content:encoded><![CDATA[
-arXiv:2505.16787v2 Announce Type: replace 
-Abstract: Model-based reinforcement learning (MBRL) offers an intuitive way to increase the sample efficiency of model-free RL methods by simultaneously training a world model that learns to predict the future. MBRL methods have progressed by largely prioritising the actor; optimising the world model learning has been neglected meanwhile. Improving the fidelity of the world model and reducing its time to convergence can yield significant downstream benefits, one of which is improving the ensuing performance of any actor it may train. We propose a novel approach that anticipates and actively seeks out high-entropy states using short-horizon latent predictions generated by the world model, offering a principled alternative to traditional curiosity-driven methods that chase once-novel states well after they were stumbled into. While many model predictive control (MPC) based methods offer similar alternatives, they typically lack commitment, synthesising multi step plans after every step. To mitigate this, we present a hierarchical planner that dynamically decides when to replan, planning horizon length, and the weighting between reward and entropy. While our method can theoretically be applied to any model that trains its own actors with solely model generated data, we have applied it to just Dreamer as a proof of concept. Our method finishes the Miniworld procedurally generated mazes 50% faster than base Dreamer at convergence and the policy trained in imagination converges in only 60% of the environment steps that base Dreamer needs.
-]]></content:encoded>
-<pubDate>Wed, 28 May 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>WizardLM: Empowering large pre-trained language models to follow complex instructions</title>
-<link>https://arxiv.org/abs/2304.12244</link>
-<guid>https://arxiv.org/abs/2304.12244</guid>
-<content:encoded><![CDATA[
-arXiv:2304.12244v3 Announce Type: replace-cross 
-Abstract: Training large language models (LLMs) with open-domain instruction following data brings colossal success. However, manually creating such instruction data is very time-consuming and labor-intensive. Moreover, humans may struggle to produce high-complexity instructions. In this paper, we show an avenue for creating large amounts of instruction data with varying levels of complexity using LLM instead of humans. Starting with an initial set of instructions, we use our proposed Evol-Instruct to rewrite them step by step into more complex instructions. Then, we mix all generated instruction data to fine-tune LLaMA. We call the resulting model WizardLM. Human evaluations on a complexity-balanced test bed and Vicuna's testset show that instructions from Evol-Instruct are superior to human-created ones. By analyzing the human evaluation results of the high complexity part, we demonstrate that outputs from our WizardLM are preferred to outputs from OpenAI ChatGPT. In GPT-4 automatic evaluation, WizardLM achieves more than 90\% capacity of ChatGPT on 17 out of 29 skills. Even though WizardLM still lags behind ChatGPT in some aspects, our findings suggest that fine-tuning with AI-evolved instructions is a promising direction for enhancing LLMs. Our code and data are public at https://github.com/nlpxucan/WizardLM
-]]></content:encoded>
-<pubDate>Wed, 28 May 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>WizardCoder: Empowering Code Large Language Models with Evol-Instruct</title>
-<link>https://arxiv.org/abs/2306.08568</link>
-<guid>https://arxiv.org/abs/2306.08568</guid>
-<content:encoded><![CDATA[
-arXiv:2306.08568v2 Announce Type: replace-cross 
-Abstract: Code Large Language Models (Code LLMs), such as StarCoder, have demonstrated exceptional performance in code-related tasks. However, most existing models are solely pre-trained on extensive raw code data without instruction fine-tuning. In this paper, we introduce WizardCoder, which empowers Code LLMs with complex instruction fine-tuning, by adapting the Evol-Instruct method to the domain of code. Through comprehensive experiments on four prominent code generation benchmarks, namely HumanEval, HumanEval+, MBPP, and DS-1000, we unveil the exceptional capabilities of our model. It surpasses all other open-source Code LLMs by a substantial margin. Moreover, our model even outperforms the largest closed LLMs, Anthropic's Claude and Google's Bard, on HumanEval and HumanEval+. Our code, model weights, and data are public at https://github.com/nlpxucan/WizardLM
-]]></content:encoded>
-<pubDate>Wed, 28 May 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Multiple Different Black Box Explanations for Image Classifiers</title>
-<link>https://arxiv.org/abs/2309.14309</link>
-<guid>https://arxiv.org/abs/2309.14309</guid>
-<content:encoded><![CDATA[
-arXiv:2309.14309v4 Announce Type: replace-cross 
-Abstract: Existing explanation tools for image classifiers usually give only a single explanation for an image's classification. For many images, however, image classifiers accept more than one explanation for the image label. These explanations are useful for analyzing the decision process of the classifier and for detecting errors. Thus, restricting the number of explanations to just one severely limits insight into the behavior of the classifier.
-  In this paper, we describe an algorithm and a tool, MultEX, for computing multiple explanations as the output of a black-box image classifier for a given image. Our algorithm uses a principled approach based on actual causality. We analyze its theoretical complexity and evaluate MultEX against the state-of-the-art across three different models and three different datasets. We find that MultEX finds more explanations and that these explanations are of higher quality.
-]]></content:encoded>
-<pubDate>Wed, 28 May 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Quantum Speedups in Regret Analysis of Infinite Horizon Average-Reward Markov Decision Processes</title>
-<link>https://arxiv.org/abs/2310.11684</link>
-<guid>https://arxiv.org/abs/2310.11684</guid>
-<content:encoded><![CDATA[
-arXiv:2310.11684v4 Announce Type: replace-cross 
-Abstract: This paper investigates the potential of quantum acceleration in addressing infinite horizon Markov Decision Processes (MDPs) to enhance average reward outcomes. We introduce an innovative quantum framework for the agent's engagement with an unknown MDP, extending the conventional interaction paradigm. Our approach involves the design of an optimism-driven tabular Reinforcement Learning algorithm that harnesses quantum signals acquired by the agent through efficient quantum mean estimation techniques. Through thorough theoretical analysis, we demonstrate that the quantum advantage in mean estimation leads to exponential advancements in regret guarantees for infinite horizon Reinforcement Learning. Specifically, the proposed Quantum algorithm achieves a regret bound of $\tilde{\mathcal{O}}(1)$, a significant improvement over the $\tilde{\mathcal{O}}(\sqrt{T})$ bound exhibited by classical counterparts.
 ]]></content:encoded>
 <pubDate>Wed, 28 May 2025 00:00:00 -0400</pubDate>
 </item>

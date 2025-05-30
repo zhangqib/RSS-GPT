@@ -4,6 +4,7 @@
 <title>cs.CL updates on arXiv.org</title>
 <link>http://rss.arxiv.org/rss/cs.CL</link>
 
+
 <item>
 <title>Multi-Domain Explainability of Preferences</title>
 <link>https://arxiv.org/abs/2505.20088</link>
@@ -14,14 +15,12 @@
 Summary:
 Preference mechanisms play a crucial role in evaluating and aligning large language models (LLMs), but the underlying driving concepts are not well understood. This work introduces an automated method for generating concept-based explanations of preferences in various domains. By utilizing an LLM to identify distinguishing concepts and representing them with vectors, the proposed method achieves strong preference prediction performance. A white-box Hierarchical Multi-Domain Regression model captures both domain-general and domain-specific effects in modeling the relationships between concepts and preferences. The method is evaluated with a diverse dataset across eight domains, outperforming baselines while providing explainable results. Application-driven settings show that guiding LLM outputs with concepts from explanations leads to preferred responses and prompting LaaJs with concepts improves their preference predictions, indicating a new paradigm for explainability among LLMs. 
 
-<br><br>Summary: <div>
+<br /><br />Summary: <div>
 arXiv:2505.20088v2 Announce Type: replace 
 Abstract: Preference mechanisms, such as human preference, LLM-as-a-Judge (LaaJ), and reward models, are central to aligning and evaluating large language models (LLMs). Yet, the underlying concepts that drive these preferences remain poorly understood. In this work, we propose a fully automated method for generating local and global concept-based explanations of preferences across multiple domains. Our method utilizes an LLM to identify concepts that distinguish between chosen and rejected responses, and to represent them with concept-based vectors. To model the relationships between concepts and preferences, we propose a white-box Hierarchical Multi-Domain Regression model that captures both domain-general and domain-specific effects. To evaluate our method, we curate a dataset spanning eight challenging and diverse domains and explain twelve mechanisms. Our method achieves strong preference prediction performance, outperforming baselines while also being explainable. Additionally, we assess explanations in two application-driven settings. First, guiding LLM outputs with concepts from LaaJ explanations yields responses that those judges consistently prefer. Second, prompting LaaJs with concepts explaining humans improves their preference predictions. Together, our work establishes a new paradigm for explainability in the era of LLMs.
 ]]></content:encoded>
 <pubDate>Fri, 30 May 2025 00:00:00 -0400</pubDate>
-<pubDate>Fri, 30 May 2025 00:00:00 -0400</pubDate>
 </item>
-
 <item>
 <title>Training Language Models to Generate Quality Code with Program Analysis Feedback</title>
 <link>https://arxiv.org/abs/2505.22704</link>
@@ -11151,16 +11150,6 @@ Abstract: Large Language Models (LLMs) are prone to hallucination, especially du
 <content:encoded><![CDATA[
 arXiv:2505.19714v1 Announce Type: new 
 Abstract: Text Image Machine Translation (TIMT)-the task of translating textual content embedded in images-is critical for applications in accessibility, cross-lingual information access, and real-world document understanding. However, TIMT remains a complex challenge due to the need for accurate optical character recognition (OCR), robust visual-text reasoning, and high-quality translation, often requiring cascading multi-stage pipelines. Recent advances in large-scale Reinforcement Learning (RL) have improved reasoning in Large Language Models (LLMs) and Multimodal LLMs (MLLMs), but their application to end-to-end TIMT is still underexplored. To bridge this gap, we introduce MT$^{3}$, the first framework to apply Multi-Task RL to MLLMs for end-to-end TIMT. MT$^{3}$ adopts a multi-task optimization paradigm targeting three key sub-skills: text recognition, context-aware reasoning, and translation. It is trained using a novel multi-mixed reward mechanism that adapts rule-based RL strategies to TIMT's intricacies, offering fine-grained, non-binary feedback across tasks. Furthermore, to facilitate the evaluation of TIMT in authentic cross-cultural and real-world social media contexts, we introduced XHSPost, the first social media TIMT benchmark. Our MT$^{3}$-7B-Zero achieves state-of-the-art results on the latest in-domain MIT-10M benchmark, outperforming strong baselines such as Qwen2.5-VL-72B and InternVL2.5-78B by notable margins across multiple metrics. Additionally, the model shows strong generalization to out-of-distribution language pairs and datasets. In-depth analyses reveal how multi-task synergy, reinforcement learning initialization, curriculum design, and reward formulation contribute to advancing MLLM-driven TIMT.
-]]></content:encoded>
-<pubDate>Tue, 27 May 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Graceful Forgetting in Generative Language Models</title>
-<link>https://arxiv.org/abs/2505.19715</link>
-<guid>https://arxiv.org/abs/2505.19715</guid>
-<content:encoded><![CDATA[
-arXiv:2505.19715v1 Announce Type: new 
-Abstract: Recently, the pretrain-finetune paradigm has become a cornerstone in various deep learning areas. While in general the pre-trained model would promote both effectiveness and efficiency of downstream tasks fine-tuning, studies have shown that not all knowledge acquired during pre-training is beneficial. Some of the knowledge may actually bring detrimental effects to the fine-tuning tasks, which is also known as negative transfer. To address this problem, graceful forgetting has emerged as a promising approach. The core principle of graceful forgetting is to enhance the learning plasticity of the target task by selectively discarding irrelevant knowledge. However, this approach remains underexplored in the context of generative language models, and it is often challenging to migrate existing forgetting algorithms to these models due to architecture incompatibility. To bridge this gap, in this paper we propose a novel framework, Learning With Forgetting (LWF), to achieve graceful forgetting in generative language models. With Fisher Information Matrix weighting the intended parameter updates, LWF computes forgetting confidence to evaluate self-generated knowledge regarding the forgetting task, and consequently, knowledge with high confidence is periodically unlearned during fine-tuning. Our experiments demonstrate that, although thoroughly uncovering the mechanisms of knowledge interaction remains challenging in pre-trained language models, applying graceful forgetting can contribute to enhanced fine-tuning performance.
 ]]></content:encoded>
 <pubDate>Tue, 27 May 2025 00:00:00 -0400</pubDate>
 </item>
