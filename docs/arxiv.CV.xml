@@ -4,6 +4,7 @@
 <title>cs.CV updates on arXiv.org</title>
 <link>http://rss.arxiv.org/rss/cs.CV</link>
 
+
 <item>
 <title>JailBound: Jailbreaking Internal Safety Boundaries of Vision-Language Models</title>
 <link>https://arxiv.org/abs/2505.19610</link>
@@ -16,7 +17,6 @@ arXiv:2505.19610v2 Announce Type: replace
 Abstract: Vision-Language Models (VLMs) exhibit impressive performance, yet the integration of powerful vision encoders has significantly broadened their attack surface, rendering them increasingly susceptible to jailbreak attacks. However, lacking well-defined attack objectives, existing jailbreak methods often struggle with gradient-based strategies prone to local optima and lacking precise directional guidance, and typically decouple visual and textual modalities, thereby limiting their effectiveness by neglecting crucial cross-modal interactions. Inspired by the Eliciting Latent Knowledge (ELK) framework, we posit that VLMs encode safety-relevant information within their internal fusion-layer representations, revealing an implicit safety decision boundary in the latent space. This motivates exploiting boundary to steer model behavior. Accordingly, we propose JailBound, a novel latent space jailbreak framework comprising two stages: (1) Safety Boundary Probing, which addresses the guidance issue by approximating decision boundary within fusion layer's latent space, thereby identifying optimal perturbation directions towards the target region; and (2) Safety Boundary Crossing, which overcomes the limitations of decoupled approaches by jointly optimizing adversarial perturbations across both image and text inputs. This latter stage employs an innovative mechanism to steer the model's internal state towards policy-violating outputs while maintaining cross-modal semantic consistency. Extensive experiments on six diverse VLMs demonstrate JailBound's efficacy, achieves 94.32% white-box and 67.28% black-box attack success averagely, which are 6.17% and 21.13% higher than SOTA methods, respectively. Our findings expose a overlooked safety risk in VLMs and highlight the urgent need for more robust defenses. Warning: This paper contains potentially sensitive, harmful and offensive content.
 ]]></content:encoded>
 <pubDate>Mon, 02 Jun 2025 00:00:00 -0400</pubDate>
-<pubDate>Mon, 02 Jun 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
 <title>ErpGS: Equirectangular Image Rendering enhanced with 3D Gaussian Regularization</title>
@@ -26,14 +26,12 @@ Abstract: Vision-Language Models (VLMs) exhibit impressive performance, yet the 
 <div> Keywords: multi-view images, 3D reconstruction, 360-degree camera, novel view synthesis, rendering accuracy
 
 Summary: 
-ErpGS is a novel approach for 3D reconstruction using multi-view images from a 360-degree camera. It addresses distortion issues caused by the camera's projection model and improves rendering accuracy by introducing techniques such as geometric regularization, scale regularization, and distortion-aware weights. By utilizing Omnidirectional GS based on 3DGS, ErpGS overcomes the challenges posed by large distortion in existing methods, resulting in more accurate novel view synthesis. Experimental results on public datasets demonstrate the superior performance of ErpGS compared to traditional methods. The proposed approach offers a promising solution for reconstructing 3D spaces with wide areas and generating high-quality novel view images. <br><br>Summary: <div>
+ErpGS is a novel approach for 3D reconstruction using multi-view images from a 360-degree camera. It addresses distortion issues caused by the camera's projection model and improves rendering accuracy by introducing techniques such as geometric regularization, scale regularization, and distortion-aware weights. By utilizing Omnidirectional GS based on 3DGS, ErpGS overcomes the challenges posed by large distortion in existing methods, resulting in more accurate novel view synthesis. Experimental results on public datasets demonstrate the superior performance of ErpGS compared to traditional methods. The proposed approach offers a promising solution for reconstructing 3D spaces with wide areas and generating high-quality novel view images. <br /><br />Summary: <div>
 arXiv:2505.19883v2 Announce Type: replace 
 Abstract: The use of multi-view images acquired by a 360-degree camera can reconstruct a 3D space with a wide area. There are 3D reconstruction methods from equirectangular images based on NeRF and 3DGS, as well as Novel View Synthesis (NVS) methods. On the other hand, it is necessary to overcome the large distortion caused by the projection model of a 360-degree camera when equirectangular images are used. In 3DGS-based methods, the large distortion of the 360-degree camera model generates extremely large 3D Gaussians, resulting in poor rendering accuracy. We propose ErpGS, which is Omnidirectional GS based on 3DGS to realize NVS addressing the problems. ErpGS introduce some rendering accuracy improvement techniques: geometric regularization, scale regularization, and distortion-aware weights and a mask to suppress the effects of obstacles in equirectangular images. Through experiments on public datasets, we demonstrate that ErpGS can render novel view images more accurately than conventional methods.
 ]]></content:encoded>
 <pubDate>Mon, 02 Jun 2025 00:00:00 -0400</pubDate>
-<pubDate>Mon, 02 Jun 2025 00:00:00 -0400</pubDate>
 </item>
-
 <item>
 <title>BioCLIP 2: Emergent Properties from Scaling Hierarchical Contrastive Learning</title>
 <link>https://arxiv.org/abs/2505.23883</link>
@@ -11049,26 +11047,6 @@ Abstract: Recent advances in training one-step diffusion models typically follow
 <content:encoded><![CDATA[
 arXiv:2502.08528v3 Announce Type: replace-cross 
 Abstract: The properties of black holes and accretion flows can be inferred by fitting Event Horizon Telescope (EHT) data to simulated images generated through general relativistic ray tracing (GRRT). However, due to the computationally intensive nature of GRRT, the efficiency of generating specific radiation flux images needs to be improved. This paper introduces the Branch Correction Denoising Diffusion Model (BCDDM), a deep learning framework that synthesizes black hole images directly from physical parameters. The model incorporates a branch correction mechanism and a weighted mixed loss function to enhance accuracy and stability. We have constructed a dataset of 2,157 GRRT-simulated images for training the BCDDM, which spans seven key physical parameters of the radiatively inefficient accretion flow (RIAF) model. Our experiments show a strong correlation between the generated images and their physical parameters. By enhancing the GRRT dataset with BCDDM-generated images and using ResNet50 for parameter regression, we achieve significant improvements in parameter prediction performance. BCDDM offers a novel approach to reducing the computational costs of black hole image generation, providing a faster and more efficient pathway for dataset augmentation, parameter estimation, and model fitting.
-]]></content:encoded>
-<pubDate>Wed, 28 May 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Quantum autoencoders for image classification</title>
-<link>https://arxiv.org/abs/2502.15254</link>
-<guid>https://arxiv.org/abs/2502.15254</guid>
-<content:encoded><![CDATA[
-arXiv:2502.15254v2 Announce Type: replace-cross 
-Abstract: Classical machine learning often struggles with complex, high-dimensional data. Quantum machine learning offers a potential solution, promising more efficient processing. The quantum convolutional neural network (QCNN), a hybrid algorithm, fits current noisy intermediate-scale quantum hardware. However, its training depends largely on classical computation. Future gate-based quantum computers may realize full quantum advantages. In contrast to QCNNs, quantum autoencoders (QAEs) leverage classical optimization solely for parameter tuning. Data compression and reconstruction are handled entirely within quantum circuits, enabling purely quantum-based feature extraction. This study introduces a novel image-classification approach using QAEs, achieving classification without requiring additional qubits compared with conventional QAE implementations. The quantum circuit structure significantly impacts classification accuracy. Unlike hybrid methods such as QCNN, QAE-based classification emphasizes quantum computation. Our experiments demonstrate high accuracy in a four-class classification task, evaluating various quantum-gate configurations to understand the impact of different parameterized quantum circuit structures on classification performance. Specifically, noise-free conditions are considered, and simulations are performed using a statevector simulator to model the quantum system with full amplitude precision. Our results reveal that specific ansatz structures achieve superior accuracy. Moreover, the proposed approach achieves performance comparable to that of conventional machine-learning methods while significantly reducing the number of parameters requiring optimization. These findings indicate that QAEs can serve as efficient classification models with fewer parameters and highlight the potential of utilizing quantum circuits for complete end-to-end learning.
-]]></content:encoded>
-<pubDate>Wed, 28 May 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>HA-VLN: A Benchmark for Human-Aware Navigation in Discrete-Continuous Environments with Dynamic Multi-Human Interactions, Real-World Validation, and an Open Leaderboard</title>
-<link>https://arxiv.org/abs/2503.14229</link>
-<guid>https://arxiv.org/abs/2503.14229</guid>
-<content:encoded><![CDATA[
-arXiv:2503.14229v2 Announce Type: replace-cross 
-Abstract: Vision-and-Language Navigation (VLN) systems often focus on either discrete (panoramic) or continuous (free-motion) paradigms alone, overlooking the complexities of human-populated, dynamic environments. We introduce a unified Human-Aware VLN (HA-VLN) benchmark that merges these paradigms under explicit social-awareness constraints. Our contributions include: 1. A standardized task definition that balances discrete-continuous navigation with personal-space requirements; 2. An enhanced human motion dataset (HAPS 2.0) and upgraded simulators capturing realistic multi-human interactions, outdoor contexts, and refined motion-language alignment; 3. Extensive benchmarking on 16,844 human-centric instructions, revealing how multi-human dynamics and partial observability pose substantial challenges for leading VLN agents; 4. Real-world robot tests validating sim-to-real transfer in crowded indoor spaces; and 5. A public leaderboard supporting transparent comparisons across discrete and continuous tasks. Empirical results show improved navigation success and fewer collisions when social context is integrated, underscoring the need for human-centric design. By releasing all datasets, simulators, agent code, and evaluation tools, we aim to advance safer, more capable, and socially responsible VLN research.
 ]]></content:encoded>
 <pubDate>Wed, 28 May 2025 00:00:00 -0400</pubDate>
 </item>

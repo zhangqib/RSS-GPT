@@ -4,6 +4,7 @@
 <title>cs.AI updates on arXiv.org</title>
 <link>http://rss.arxiv.org/rss/cs.AI</link>
 
+
 <item>
 <title>AutoReproduce: Automatic AI Experiment Reproduction with Paper Lineage</title>
 <link>https://arxiv.org/abs/2505.20662</link>
@@ -14,11 +15,10 @@
 Summary:
 Efficient experiment reproduction is essential for advancing progress in artificial intelligence. The complexity of method design and training procedures poses challenges for automation, as implicit domain-specific knowledge is often required. The paper lineage algorithm and AutoReproduce framework address this issue by extracting implicit knowledge from cited references and automatically reproducing experiments from research papers. AutoReproduce enhances code executability by generating unit tests during the reproduction process. The ReproduceBench benchmark, with verified implementations, and novel evaluation metrics are introduced to assess reproduction and execution fidelity. Experimental results show AutoReproduce outperforms existing agent baselines by over 70% on all evaluation metrics. It achieves an average performance gap of 22.1% compared to official implementations on 89.74% of executable experiment runs. The code for AutoReproduce will be available at https://github.com/AI9Stars/AutoReproduce. 
 
-<br><br>Summary: <div>
+<br /><br />Summary: <div>
 arXiv:2505.20662v2 Announce Type: replace 
 Abstract: Efficient experiment reproduction is critical to accelerating progress in artificial intelligence. However, the inherent complexity of method design and training procedures presents substantial challenges for automation. Notably, reproducing experiments often requires implicit domain-specific knowledge not explicitly documented in the original papers. To address this, we introduce the paper lineage algorithm, which identifies and extracts implicit knowledge from the relevant references cited by the target paper. Building on this idea, we propose AutoReproduce, a multi-agent framework capable of automatically reproducing experiments described in research papers in an end-to-end manner. AutoReproduce enhances code executability by generating unit tests alongside the reproduction process. To evaluate the reproduction capability, we construct ReproduceBench, a benchmark annotated with verified implementations, and introduce novel evaluation metrics to assess both the reproduction and execution fidelity. Experimental results demonstrate that AutoReproduce outperforms the existing strong agent baselines on all five evaluation metrics by a peak margin of over $70\%$. In particular, compared to the official implementations, AutoReproduce achieves an average performance gap of $22.1\%$ on $89.74\%$ of the executable experiment runs. The code will be available at https://github.com/AI9Stars/AutoReproduce.
 ]]></content:encoded>
-<pubDate>Mon, 02 Jun 2025 00:00:00 -0400</pubDate>
 <pubDate>Mon, 02 Jun 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -29,11 +29,10 @@ Abstract: Efficient experiment reproduction is critical to accelerating progress
 <div> sensitivity, language model, context, prior knowledge, instruction-tuned  
 Summary:  
 In this paper, the researchers explore the concept of context sensitivity in language models and propose a task to analyze and control this sensitivity. They introduce a knob that allows the model to choose between relying on context or prior knowledge when making predictions. Through fine-tuning on a specific task, they demonstrate that models can achieve high accuracy in determining the appropriate response based on context. By analyzing the high-performing models, the researchers identify key layers that influence context sensitivity and discover a specific subspace within a single layer that determines whether the model follows context or prior knowledge. Surprisingly, this subspace serves as an effective control mechanism across different model variations. The study finds a strong correlation between a model's performance and its ability to differentiate context-agreeing and context-ignoring answers in this subspace, suggesting a simple yet fundamental mechanism for controlling language model behavior.  
-<br><br>Summary: <div>
+<br /><br />Summary: <div>
 arXiv:2411.07404v4 Announce Type: replace-cross 
 Abstract: When making predictions, a language model must trade off how much it relies on its context vs. its prior knowledge. Choosing how sensitive the model is to its context is a fundamental functionality, as it enables the model to excel at tasks like retrieval-augmented generation and question-answering. In this paper, we search for a knob which controls this sensitivity, determining whether language models answer from the context or their prior knowledge. To guide this search, we design a task for controllable context sensitivity. In this task, we first feed the model a context (Paris is in England) and a question (Where is Paris?); we then instruct the model to either use its prior or contextual knowledge and evaluate whether it generates the correct answer for both intents (either France or England). When fine-tuned on this task, instruction-tuned versions of Llama-3.1, Mistral-v0.3, and Gemma-2 can solve it with high accuracy (85-95%). Analyzing these high-performing models, we narrow down which layers may be important to context sensitivity using a novel linear time algorithm. Then, in each model, we identify a 1-D subspace in a single layer that encodes whether the model follows context or prior knowledge. Interestingly, while we identify this subspace in a fine-tuned model, we find that the exact same subspace serves as an effective knob in not only that model but also non-fine-tuned instruct and base models of that model family. Finally, we show a strong correlation between a model's performance and how distinctly it separates context-agreeing from context-ignoring answers in this subspace. These results suggest a single subspace facilitates how the model chooses between context and prior knowledge, hinting at a simple fundamental mechanism that controls this behavior.
 ]]></content:encoded>
-<pubDate>Mon, 02 Jun 2025 00:00:00 -0400</pubDate>
 <pubDate>Mon, 02 Jun 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -43,12 +42,11 @@ Abstract: When making predictions, a language model must trade off how much it r
 <content:encoded><![CDATA[
 <div> battery life prediction, dataset, benchmark, CyclePatch, neural networks
 
-Summary:<br>
-The article introduces BatteryLife, a dataset and benchmark for Battery Life Prediction (BLP). BatteryLife addresses three key challenges in BLP research by providing a comprehensive dataset with a larger sample size, diverse battery types and testing conditions. The dataset includes batteries from different formats, chemical systems, operating temperatures, and charge/discharge protocols, including zinc-ion and sodium-ion batteries. The article also introduces CyclePatch, a plug-in technique for neural networks that improves performance in BLP. Benchmarking on 18 methods shows that popular models in other time series fields may be ineffective for BLP, while CyclePatch consistently enhances model performance, setting new benchmarks in the field. BatteryLife evaluates model performance across aging conditions and domains, providing a valuable resource for battery utilization, optimization, and production. The dataset is available on GitHub for further research and development.<br><br>Summary: <div>
+Summary:<br />
+The article introduces BatteryLife, a dataset and benchmark for Battery Life Prediction (BLP). BatteryLife addresses three key challenges in BLP research by providing a comprehensive dataset with a larger sample size, diverse battery types and testing conditions. The dataset includes batteries from different formats, chemical systems, operating temperatures, and charge/discharge protocols, including zinc-ion and sodium-ion batteries. The article also introduces CyclePatch, a plug-in technique for neural networks that improves performance in BLP. Benchmarking on 18 methods shows that popular models in other time series fields may be ineffective for BLP, while CyclePatch consistently enhances model performance, setting new benchmarks in the field. BatteryLife evaluates model performance across aging conditions and domains, providing a valuable resource for battery utilization, optimization, and production. The dataset is available on GitHub for further research and development.<br /><br />Summary: <div>
 arXiv:2502.18807v5 Announce Type: replace-cross 
 Abstract: Battery Life Prediction (BLP), which relies on time series data produced by battery degradation tests, is crucial for battery utilization, optimization, and production. Despite impressive advancements, this research area faces three key challenges. Firstly, the limited size of existing datasets impedes insights into modern battery life data. Secondly, most datasets are restricted to small-capacity lithium-ion batteries tested under a narrow range of diversity in labs, raising concerns about the generalizability of findings. Thirdly, inconsistent and limited benchmarks across studies obscure the effectiveness of baselines and leave it unclear if models popular in other time series fields are effective for BLP. To address these challenges, we propose BatteryLife, a comprehensive dataset and benchmark for BLP. BatteryLife integrates 16 datasets, offering a 2.5 times sample size compared to the previous largest dataset, and provides the most diverse battery life resource with batteries from 8 formats, 59 chemical systems, 9 operating temperatures, and 421 charge/discharge protocols, including both laboratory and industrial tests. Notably, BatteryLife is the first to release battery life datasets of zinc-ion batteries, sodium-ion batteries, and industry-tested large-capacity lithium-ion batteries. With the comprehensive dataset, we revisit the effectiveness of baselines popular in this and other time series fields. Furthermore, we propose CyclePatch, a plug-in technique that can be employed in various neural networks. Extensive benchmarking of 18 methods reveals that models popular in other time series fields can be unsuitable for BLP, and CyclePatch consistently improves model performance establishing state-of-the-art benchmarks. Moreover, BatteryLife evaluates model performance across aging conditions and domains. BatteryLife is available at https://github.com/Ruifeng-Tan/BatteryLife.
 ]]></content:encoded>
-<pubDate>Mon, 02 Jun 2025 00:00:00 -0400</pubDate>
 <pubDate>Mon, 02 Jun 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -61,11 +59,10 @@ Abstract: Battery Life Prediction (BLP), which relies on time series data produc
 Summary:
 A new study presents a formal theoretical framework in machine learning to address interpretability and ethical safety concerns. The research constructs an information model using well-formed formulas to define machine learning components and introduces predicates and functions for logical analysis. A meta-framework for machine learning theory (MLT-MF) is proposed, with universal definitions for model interpretability and ethical safety. The study proves key theorems on model interpretability, ethical safety assurance, and generalization error estimation. Limitations include ideal conditions assumption and focus on static scenarios, without addressing information fusion in complex systems. The work provides a unified foundation for addressing challenges in machine learning, overcoming fragmented research. 
 
-<br><br>Summary: <div>
+<br /><br />Summary: <div>
 arXiv:2505.13182v3 Announce Type: replace-cross 
 Abstract: [Objective] This study focuses on addressing the current lack of a unified formal theoretical framework in machine learning, as well as the deficiencies in interpretability and ethical safety assurance. [Methods] A formal information model is first constructed, utilizing sets of well-formed formulas to explicitly define the ontological states and carrier mappings of typical components in machine learning. Learnable and processable predicates, along with learning and processing functions, are introduced to analyze the logical deduction and constraint rules of the causal chains within models. [Results] A meta-framework for machine learning theory (MLT-MF) is established. Based on this framework, universal definitions for model interpretability and ethical safety are proposed. Furthermore, three key theorems are proved: the equivalence of model interpretability and information recoverability, the assurance of ethical safety, and the estimation of generalization error. [Limitations] The current framework assumes ideal conditions with noiseless information-enabling mappings and primarily targets model learning and processing logic in static scenarios. It does not yet address information fusion and conflict resolution across ontological spaces in multimodal or multi-agent systems. [Conclusions] This work overcomes the limitations of fragmented research and provides a unified theoretical foundation for systematically addressing the critical challenges currently faced in machine learning.
 ]]></content:encoded>
-<pubDate>Mon, 02 Jun 2025 00:00:00 -0400</pubDate>
 <pubDate>Mon, 02 Jun 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -76,11 +73,10 @@ Abstract: [Objective] This study focuses on addressing the current lack of a uni
 <div> Keywords: federated learning, data heterogeneity, decision boundary, forgetting, ensemble knowledge fusion
 
 Summary:
-FedProj is proposed as a solution to the challenge of data heterogeneity in federated learning. The study reveals that existing methods suffer from forgetting the global decision boundary, leading to clients only learning the local one. FedProj addresses this by introducing a server-side ensemble knowledge transfer loss to improve ensemble knowledge fusion and prevent forgetting the global decision boundary during local training. Additionally, an episodic memory is utilized to regulate gradient updates and maintain the learned global decision boundary. Experimental results show that FedProj significantly outperforms current state-of-the-art methods, providing a robust solution to the issue of data heterogeneity in federated learning.<br><br>Summary: <div>
+FedProj is proposed as a solution to the challenge of data heterogeneity in federated learning. The study reveals that existing methods suffer from forgetting the global decision boundary, leading to clients only learning the local one. FedProj addresses this by introducing a server-side ensemble knowledge transfer loss to improve ensemble knowledge fusion and prevent forgetting the global decision boundary during local training. Additionally, an episodic memory is utilized to regulate gradient updates and maintain the learned global decision boundary. Experimental results show that FedProj significantly outperforms current state-of-the-art methods, providing a robust solution to the issue of data heterogeneity in federated learning.<br /><br />Summary: <div>
 arXiv:2505.20485v2 Announce Type: replace-cross 
 Abstract: The inevitable presence of data heterogeneity has made federated learning very challenging. There are numerous methods to deal with this issue, such as local regularization, better model fusion techniques, and data sharing. Though effective, they lack a deep understanding of how data heterogeneity can affect the global decision boundary. In this paper, we bridge this gap by performing an experimental analysis of the learned decision boundary using a toy example. Our observations are surprising: (1) we find that the existing methods suffer from forgetting and clients forget the global decision boundary and only learn the perfect local one, and (2) this happens regardless of the initial weights, and clients forget the global decision boundary even starting from pre-trained optimal weights. In this paper, we present FedProj, a federated learning framework that robustly learns the global decision boundary and avoids its forgetting during local training. To achieve better ensemble knowledge fusion, we design a novel server-side ensemble knowledge transfer loss to further calibrate the learned global decision boundary. To alleviate the issue of learned global decision boundary forgetting, we further propose leveraging an episodic memory of average ensemble logits on a public unlabeled dataset to regulate the gradient updates at each step of local training. Experimental results demonstrate that FedProj outperforms state-of-the-art methods by a large margin.
 ]]></content:encoded>
-<pubDate>Mon, 02 Jun 2025 00:00:00 -0400</pubDate>
 <pubDate>Mon, 02 Jun 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -90,12 +86,11 @@ Abstract: The inevitable presence of data heterogeneity has made federated learn
 <content:encoded><![CDATA[
 <div> algorithmic information theory, neural networks, Binarized Neural Networks, Block Decomposition Method, algorithmic complexity
 
-Summary:<br>
+Summary:<br />
 The study focuses on understanding and controlling the informational complexity of neural networks by shifting towards algorithmic information theory. By using Binarized Neural Networks (BNNs) as a proxy, the researchers apply the Block Decomposition Method (BDM) based on algorithmic probability to track learning dynamics during training. The results show that the BDM method more accurately captures structural changes during training compared to entropy-based approaches, exhibiting stronger correlations with training loss across different model sizes and training runs. The findings suggest that training can be viewed as a process of algorithmic compression, where learning involves internalizing structured regularities. This work provides a principled estimate of learning progression and proposes a complexity-aware learning and regularization framework grounded in information theory principles. <div>
 arXiv:2505.20646v2 Announce Type: replace-cross 
 Abstract: Understanding and controlling the informational complexity of neural networks is a central challenge in machine learning, with implications for generalization, optimization, and model capacity. While most approaches rely on entropy-based loss functions and statistical metrics, these measures often fail to capture deeper, causally relevant algorithmic regularities embedded in network structure. We propose a shift toward algorithmic information theory, using Binarized Neural Networks (BNNs) as a first proxy. Grounded in algorithmic probability (AP) and the universal distribution it defines, our approach characterizes learning dynamics through a formal, causally grounded lens. We apply the Block Decomposition Method (BDM) -- a scalable approximation of algorithmic complexity based on AP -- and demonstrate that it more closely tracks structural changes during training than entropy, consistently exhibiting stronger correlations with training loss across varying model sizes and randomized training runs. These results support the view of training as a process of algorithmic compression, where learning corresponds to the progressive internalization of structured regularities. In doing so, our work offers a principled estimate of learning progression and suggests a framework for complexity-aware learning and regularization, grounded in first principles from information theory, complexity, and computability.
 ]]></content:encoded>
-<pubDate>Mon, 02 Jun 2025 00:00:00 -0400</pubDate>
 <pubDate>Mon, 02 Jun 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -103,14 +98,13 @@ Abstract: Understanding and controlling the informational complexity of neural n
 <link>https://arxiv.org/abs/2505.20751</link>
 <guid>https://arxiv.org/abs/2505.20751</guid>
 <content:encoded><![CDATA[
-<div> reinforcement learning, optical tweezers, microrobotics, haptic feedback, shared control<br>
-<br>
-Summary: <br>
+<div> reinforcement learning, optical tweezers, microrobotics, haptic feedback, shared control<br />
+<br />
+Summary: <br />
 The article introduces the Interactive OT Gym, a simulation platform for optical tweezers-driven microrobotics. This platform combines complex physical field simulations with haptic feedback interfaces, reinforcement learning modules, and shared control strategies optimized for cooperative manipulation tasks. It allows for a seamless transition between manual and autonomous control, enhancing micromanipulation performance. In a cell manipulation task evaluation, the shared control system reduced task completion time by 67% compared to pure human or RL control and achieved a 100% success rate. Interactive OT Gym provides a user-friendly environment for developing advanced OT-driven micromanipulation systems and control algorithms, offering high fidelity, interactivity, low cost, and high-speed simulation capabilities. Visit the project website for more details. <div>
 arXiv:2505.20751v2 Announce Type: replace-cross 
 Abstract: Optical tweezers (OT) offer unparalleled capabilities for micromanipulation with submicron precision in biomedical applications. However, controlling conventional multi-trap OT to achieve cooperative manipulation of multiple complex-shaped microrobots in dynamic environments poses a significant challenge. To address this, we introduce Interactive OT Gym, a reinforcement learning (RL)-based simulation platform designed for OT-driven microrobotics. Our platform supports complex physical field simulations and integrates haptic feedback interfaces, RL modules, and context-aware shared control strategies tailored for OT-driven microrobot in cooperative biological object manipulation tasks. This integration allows for an adaptive blend of manual and autonomous control, enabling seamless transitions between human input and autonomous operation. We evaluated the effectiveness of our platform using a cell manipulation task. Experimental results show that our shared control system significantly improves micromanipulation performance, reducing task completion time by approximately 67% compared to using pure human or RL control alone and achieving a 100% success rate. With its high fidelity, interactivity, low cost, and high-speed simulation capabilities, Interactive OT Gym serves as a user-friendly training and testing environment for the development of advanced interactive OT-driven micromanipulation systems and control algorithms. For more details on the project, please see our website https://sites.google.com/view/otgym
 ]]></content:encoded>
-<pubDate>Mon, 02 Jun 2025 00:00:00 -0400</pubDate>
 <pubDate>Mon, 02 Jun 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -118,17 +112,15 @@ Abstract: Optical tweezers (OT) offer unparalleled capabilities for micromanipul
 <link>https://arxiv.org/abs/2505.20767</link>
 <guid>https://arxiv.org/abs/2505.20767</guid>
 <content:encoded><![CDATA[
-<div> Keywords: Faithfulness hallucinations, Large Language Model, CogniBench dataset, cognitive statements, automatic annotation pipeline<br>
-<br>
-Summary: <br>
+<div> Keywords: Faithfulness hallucinations, Large Language Model, CogniBench dataset, cognitive statements, automatic annotation pipeline<br />
+<br />
+Summary: <br />
 The article discusses faithfulness hallucinations in Large Language Models (LLMs) and the challenges in evaluating cognitive statements. Existing benchmarks focus on rephrased factual statements, overlooking cognitive statements that involve making inferences from context. To address this, the authors present a rigorous framework for assessing faithfulness levels of cognitive statements and introduce the CogniBench dataset. They further develop an automatic annotation pipeline to scale across different LLMs, resulting in the CogniBench-L dataset. The datasets facilitate training accurate detectors for both factual and cognitive hallucinations. The authors release their model and datasets, aiming to improve the evaluation and detection of hallucinations in LLM-generated content. <div>
 arXiv:2505.20767v3 Announce Type: replace-cross 
 Abstract: Faithfulness hallucinations are claims generated by a Large Language Model (LLM) not supported by contexts provided to the LLM. Lacking assessment standards, existing benchmarks focus on "factual statements" that rephrase source materials while overlooking "cognitive statements" that involve making inferences from the given context. Consequently, evaluating and detecting the hallucination of cognitive statements remains challenging. Inspired by how evidence is assessed in the legal domain, we design a rigorous framework to assess different levels of faithfulness of cognitive statements and introduce the CogniBench dataset where we reveal insightful statistics. To keep pace with rapidly evolving LLMs, we further develop an automatic annotation pipeline that scales easily across different models. This results in a large-scale CogniBench-L dataset, which facilitates training accurate detectors for both factual and cognitive hallucinations. We release our model and datasets at: https://github.com/FUTUREEEEEE/CogniBench
 ]]></content:encoded>
 <pubDate>Mon, 02 Jun 2025 00:00:00 -0400</pubDate>
-<pubDate>Mon, 02 Jun 2025 00:00:00 -0400</pubDate>
 </item>
-
 <item>
 <title>Using Reasoning Models to Generate Search Heuristics that Solve Open Instances of Combinatorial Design Problems</title>
 <link>https://arxiv.org/abs/2505.23881</link>
@@ -10893,86 +10885,6 @@ Abstract: Training with larger mini-batches improves the convergence rate and ca
 <content:encoded><![CDATA[
 arXiv:2408.05758v2 Announce Type: replace-cross 
 Abstract: Deep learning has brought significant improvements to the field of cross-modal representation learning. For tasks such as text-to-speech (TTS), voice conversion (VC), and automatic speech recognition (ASR), a cross-modal fine-grained (frame-level) sequence representation is desired, emphasizing the semantic content of the text modality while de-emphasizing the paralinguistic information of the speech modality. We propose a method called "Vector Quantized Contrastive Token-Acoustic Pre-training (VQ-CTAP)", which uses the cross-modal aligned sequence transcoder to bring text and speech into a joint multimodal space, learning how to connect text and speech at the frame level. The proposed VQ-CTAP is a paradigm for cross-modal sequence representation learning, offering a promising solution for fine-grained generation and recognition tasks in speech processing. The VQ-CTAP can be directly applied to VC and ASR tasks without fine-tuning or additional structures. We propose a sequence-aware semantic connector, which connects multiple frozen pre-trained modules for the TTS task, exhibiting a plug-and-play capability. We design a stepping optimization strategy to ensure effective model convergence by gradually injecting and adjusting the influence of various loss components. Furthermore, we propose a semantic-transfer-wise paralinguistic consistency loss to enhance representational capabilities, allowing the model to better generalize to unseen data and capture the nuances of paralinguistic information. In addition, VQ-CTAP achieves high-compression speech coding at a rate of 25Hz from 24kHz input waveforms, which is a 960-fold reduction in the sampling rate. The audio demo is available at https://qiangchunyu.github.io/VQCTAP/
-]]></content:encoded>
-<pubDate>Thu, 29 May 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>On the Within-class Variation Issue in Alzheimer's Disease Detection</title>
-<link>https://arxiv.org/abs/2409.16322</link>
-<guid>https://arxiv.org/abs/2409.16322</guid>
-<content:encoded><![CDATA[
-arXiv:2409.16322v2 Announce Type: replace-cross 
-Abstract: Alzheimer's Disease (AD) detection employs machine learning classification models to distinguish between individuals with AD and those without. Different from conventional classification tasks, we identify within-class variation as a critical challenge in AD detection: individuals with AD exhibit a spectrum of cognitive impairments. Therefore, simplistic binary AD classification may overlook two crucial aspects: within-class heterogeneity and instance-level imbalance. In this work, we found using a sample score estimator can generate sample-specific soft scores aligning with cognitive scores. We subsequently propose two simple yet effective methods: Soft Target Distillation (SoTD) and Instance-level Re-balancing (InRe), targeting two problems respectively. Based on the ADReSS and CU-MARVEL corpora, we demonstrated and analyzed the advantages of the proposed approaches in detection performance. These findings provide insights for developing robust and reliable AD detection models.
-]]></content:encoded>
-<pubDate>Thu, 29 May 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Criticality and Safety Margins for Reinforcement Learning</title>
-<link>https://arxiv.org/abs/2409.18289</link>
-<guid>https://arxiv.org/abs/2409.18289</guid>
-<content:encoded><![CDATA[
-arXiv:2409.18289v2 Announce Type: replace-cross 
-Abstract: State of the art reinforcement learning methods sometimes encounter unsafe situations. Identifying when these situations occur is of interest both for post-hoc analysis and during deployment, where it might be advantageous to call out to a human overseer for help. Efforts to gauge the criticality of different points in time have been developed, but their accuracy is not well established due to a lack of ground truth, and they are not designed to be easily interpretable by end users. Therefore, we seek to define a criticality framework with both a quantifiable ground truth and a clear significance to users. We introduce true criticality as the expected drop in reward when an agent deviates from its policy for n consecutive random actions. We also introduce the concept of proxy criticality, a low-overhead metric that has a statistically monotonic relationship to true criticality. Safety margins make these interpretable, when defined as the number of random actions for which performance loss will not exceed some tolerance with high confidence. We demonstrate this approach in several environment-agent combinations; for an A3C agent in an Atari Beamrider environment, the lowest 5% of safety margins contain 47% of agent losses; i.e., supervising only 5% of decisions could potentially prevent roughly half of an agent's errors. This criticality framework measures the potential impacts of bad decisions, even before those decisions are made, allowing for more effective debugging and oversight of autonomous agents.
-]]></content:encoded>
-<pubDate>Thu, 29 May 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>CLIP-MoE: Towards Building Mixture of Experts for CLIP with Diversified Multiplet Upcycling</title>
-<link>https://arxiv.org/abs/2409.19291</link>
-<guid>https://arxiv.org/abs/2409.19291</guid>
-<content:encoded><![CDATA[
-arXiv:2409.19291v3 Announce Type: replace-cross 
-Abstract: Contrastive Language-Image Pre-training (CLIP) has become a cornerstone in multimodal intelligence. However, recent studies discovered that CLIP can only encode one aspect of the feature space, leading to substantial information loss and indistinctive features. To mitigate this issue, this paper introduces a novel strategy that fine-tunes a series of complementary CLIP models and transforms them into a CLIP-MoE. Specifically, we propose a model-agnostic Diversified Multiplet Upcycling (DMU) framework for CLIP. Instead of training multiple CLIP models from scratch, DMU leverages a pre-trained CLIP and fine-tunes it into a diverse set with highly cost-effective multistage contrastive learning, thus capturing distinct feature subspaces efficiently. To fully exploit these fine-tuned models while minimizing computational overhead, we transform them into a CLIP-MoE, which dynamically activates a subset of CLIP experts, achieving an effective balance between model capacity and computational cost. Comprehensive experiments demonstrate the superior performance of CLIP-MoE across various zero-shot retrieval, zero-shot image classification tasks, and downstream Multimodal Large Language Model (MLLM) benchmarks when used as a vision encoder.
-]]></content:encoded>
-<pubDate>Thu, 29 May 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Rethinking GNN Expressive Power from a Distributed Computational Model Perspective</title>
-<link>https://arxiv.org/abs/2410.01308</link>
-<guid>https://arxiv.org/abs/2410.01308</guid>
-<content:encoded><![CDATA[
-arXiv:2410.01308v3 Announce Type: replace-cross 
-Abstract: The success of graph neural networks (GNNs) has motivated theoretical studies on their expressive power, often through alignments with the Weisfeiler-Lehman (WL) tests. However, such analyses typically focus on the ability of GNNs to distinguish between graph structures, rather than to compute or approximate specific function classes. The latter is more commonly studied in machine learning theory, including results such as the Turing completeness of recurrent networks and the universal approximation property of feedforward networks. We argue that using well-defined computational models, such as a modified CONGEST model with clearly specified preprocessing and postprocessing, offers a more sound framework for analyzing GNN expressiveness. Within this framework, we show that allowing unrestricted preprocessing or incorporating externally computed features, while claiming that these precomputations enhance the expressiveness, can sometimes lead to problems. We also show that the lower bound on a GNN's capacity (depth multiplied by width) to simulate one iteration of the WL test actually grows nearly linearly with graph size, indicating that the WL test is not locally computable and is misaligned with message-passing GNNs. Despite these negative results, we also present positive results that characterize the effects of virtual nodes and edges from a computational model perspective. Finally, we highlight several open problems regarding GNN expressiveness for further exploration.
-]]></content:encoded>
-<pubDate>Thu, 29 May 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Overcoming the Machine Penalty with Imperfectly Fair AI Agents</title>
-<link>https://arxiv.org/abs/2410.03724</link>
-<guid>https://arxiv.org/abs/2410.03724</guid>
-<content:encoded><![CDATA[
-arXiv:2410.03724v3 Announce Type: replace-cross 
-Abstract: Despite rapid technological progress, effective human-machine cooperation remains a significant challenge. Humans tend to cooperate less with machines than with fellow humans, a phenomenon known as the machine penalty. Here, we show that artificial intelligence (AI) agents powered by large language models can overcome this penalty in social dilemma games with communication. In a pre-registered experiment with 1,152 participants, we deploy AI agents exhibiting three distinct personas: selfish, cooperative, and fair. However, only fair agents elicit human cooperation at rates comparable to human-human interactions. Analysis reveals that fair agents, similar to human participants, occasionally break pre-game cooperation promises, but nonetheless effectively establish cooperation as a social norm. These results challenge the conventional wisdom of machines as altruistic assistants or rational actors. Instead, our study highlights the importance of AI agents reflecting the nuanced complexity of human social behaviors -- imperfect yet driven by deeper social cognitive processes.
-]]></content:encoded>
-<pubDate>Thu, 29 May 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Exploring the Limitations of Mamba in COPY and CoT Reasoning</title>
-<link>https://arxiv.org/abs/2410.03810</link>
-<guid>https://arxiv.org/abs/2410.03810</guid>
-<content:encoded><![CDATA[
-arXiv:2410.03810v2 Announce Type: replace-cross 
-Abstract: Transformers have become the backbone of modern Large Language Models (LLMs); however, their inference overhead grows linearly with the sequence length, posing challenges for modeling long sequences. In light of this, Mamba has attracted attention for maintaining a constant inference size, with empirical evidence demonstrating that it can match Transformer performance in sequence modeling while significantly reducing computational costs. However, an open question remains: can Mamba always bring savings while achieving performance comparable to Transformers? In this paper, we focus on analyzing the expressive ability of Mamba to perform our defined COPY operation and Chain of Thought (CoT) reasoning. First, inspired by the connection between Mamba and linear attention, we show that constant-sized Mamba may struggle to perform COPY operations while Transformers can handle them more easily. However, when the size of Mamba grows linearly with the input sequence length, it can accurately perform COPY, but in this case, Mamba no longer provides overhead savings. Based on this observation, we further analyze Mamba's ability to tackle CoT tasks, which can be described by the Dynamic Programming (DP) problems. Our findings suggest that to solve arbitrary DP problems, the total cost of Mamba is still comparable to standard Transformers. However, similar to efficient Transformers, when facing DP problems with favorable properties such as locality, Mamba can provide savings in overhead. Our experiments on the copy and CoT tasks further demonstrate Mamba's limitations compared to Transformers in learning these tasks.
-]]></content:encoded>
-<pubDate>Thu, 29 May 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Understanding Model Ensemble in Transferable Adversarial Attack</title>
-<link>https://arxiv.org/abs/2410.06851</link>
-<guid>https://arxiv.org/abs/2410.06851</guid>
-<content:encoded><![CDATA[
-arXiv:2410.06851v3 Announce Type: replace-cross 
-Abstract: Model ensemble adversarial attack has become a powerful method for generating transferable adversarial examples that can target even unknown models, but its theoretical foundation remains underexplored. To address this gap, we provide early theoretical insights that serve as a roadmap for advancing model ensemble adversarial attack. We first define transferability error to measure the error in adversarial transferability, alongside concepts of diversity and empirical model ensemble Rademacher complexity. We then decompose the transferability error into vulnerability, diversity, and a constant, which rigidly explains the origin of transferability error in model ensemble attack: the vulnerability of an adversarial example to ensemble components, and the diversity of ensemble components. Furthermore, we apply the latest mathematical tools in information theory to bound the transferability error using complexity and generalization terms, contributing to three practical guidelines for reducing transferability error: (1) incorporating more surrogate models, (2) increasing their diversity, and (3) reducing their complexity in cases of overfitting. Finally, extensive experiments with 54 models validate our theoretical framework, representing a significant step forward in understanding transferable model ensemble adversarial attacks.
-]]></content:encoded>
-<pubDate>Thu, 29 May 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Latent Weight Diffusion: Generating reactive policies instead of trajectories</title>
-<link>https://arxiv.org/abs/2410.14040</link>
-<guid>https://arxiv.org/abs/2410.14040</guid>
-<content:encoded><![CDATA[
-arXiv:2410.14040v2 Announce Type: replace-cross 
-Abstract: With the increasing availability of open-source robotic data, imitation learning has emerged as a viable approach for both robot manipulation and locomotion. Currently, large generalized policies are trained to predict controls or trajectories using diffusion models, which have the desirable property of learning multimodal action distributions. However, generalizability comes with a cost, namely, larger model size and slower inference. This is especially an issue for robotic tasks that require high control frequency. Further, there is a known trade-off between performance and action horizon for Diffusion Policy (DP), a popular model for generating trajectories: fewer diffusion queries accumulate greater trajectory tracking errors. For these reasons, it is common practice to run these models at high inference frequency, subject to robot computational constraints. To address these limitations, we propose Latent Weight Diffusion (LWD), a method that uses diffusion to generate closed-loop policies (weights for neural policies) for robotic tasks, rather than generating trajectories. Learning the behavior distribution through parameter space over trajectory space offers two key advantages: longer action horizons (fewer diffusion queries) & robustness to perturbations while retaining high performance; and a lower inference compute cost. To this end, we show that LWD has higher success rates than DP when the action horizon is longer and when stochastic perturbations exist in the environment. Furthermore, LWD achieves multitask performance comparable to DP while requiring just ~1/45th of the inference-time FLOPS
 ]]></content:encoded>
 <pubDate>Thu, 29 May 2025 00:00:00 -0400</pubDate>
 </item>
