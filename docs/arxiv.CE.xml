@@ -4,6 +4,128 @@
 <title>cs.CE updates on arXiv.org</title>
 <link>http://rss.arxiv.org/rss/cs.CE</link>
 
+<item>
+<title>Singularity Protocol for Cross Chain AMM without Intermediate Tokens or Bridges</title>
+<link>https://arxiv.org/abs/2505.24337</link>
+<guid>https://arxiv.org/abs/2505.24337</guid>
+<content:encoded><![CDATA[
+<div> AMMs, decentralized exchange, cross-chain swaps, liquidity, blockchain<br>
+Summary:<br>
+Automated Market Makers (AMMs) have revolutionized decentralized exchanges but face scalability challenges with cross-chain swaps. The current double-sided AMMs are inefficient and introduce risks like volatility and blockchain issues. This paper proposes a new class of AMMs that eliminate the need for intermediate tokens or bridging, enabling efficient cross-chain swaps with lower gas requirements. The new technology is based on an invariant that does not rely on bi-state dependency between assets being swapped. This innovation supports cross-chain swaps across various blockchain layers and offers a more streamlined and secure method for value transfer swaps. The proposed solution addresses the limitations of existing AMMs and provides a promising approach for improving liquidity and efficiency in cross-chain transactions. <br><br> <div>
+arXiv:2505.24337v1 Announce Type: new 
+Abstract: Automated Market Makers (AMMs) are decentralized exchange protocols that provide continuous access to token liquidity without the need for order books or traditional market makers. However, this innovation has failed to scale when it comes to cross-chain swaps. Modern cross-chain swaps employ double-sided AMMs, which are not only inefficient due to liquidity fragmentation but also require an intermediate token. This introduces inherent volatility risk as well as blockchain and bridging risk, especially in the case of wrapped tokens. This paper describes the inefficiencies of existing AMM invariants, particularly their mixed polynomial nature, and derives a new class of AMMs that do not have bi-state dependency between the assets being swapped. We propose a novel method of value transfer swaps using the described invariant that mitigates the need for bi-state dependency and eliminates the need for intermediate tokens or bridging. Furthermore, we show how this mechanism enables efficient cross-chain swaps with lower gas requirements and no bridging risks. The proposed technology is designed to support cross-chain swaps across any permutation of L1, L2, and L3 blockchains.
+]]></content:encoded>
+<pubDate>Mon, 02 Jun 2025 00:00:00 -0400</pubDate>
+<pubDate>Mon, 02 Jun 2025 00:00:00 -0400</pubDate>
+</item>
+<item>
+<title>Beyond the Black Box: Interpretability of LLMs in Finance</title>
+<link>https://arxiv.org/abs/2505.24650</link>
+<guid>https://arxiv.org/abs/2505.24650</guid>
+<content:encoded><![CDATA[
+<div> interpretability, financial services, large language models, transparency, regulatory compliance
+
+Summary: 
+This paper introduces the concept of mechanistic interpretability in the context of Large Language Models (LLMs) in the financial services sector. LLMs have shown great potential in various financial tasks but their complexity and lack of transparency raise concerns in the regulated financial industry. Mechanistic interpretability offers a transparent way to understand LLM behavior by reverse-engineering their internal workings, providing insights into how specific features influence predictions and allowing for the modification of model behavior. The paper explores the theoretical aspects of mechanistic interpretability and demonstrates its practical relevance through financial use cases such as trading strategies, sentiment analysis, bias detection, and hallucination detection. The adoption of advanced interpretability tools is expected to be crucial as LLM usage increases, ensuring that AI systems in finance are ethical, transparent, and compliant with evolving regulations. The paper emphasizes how these techniques can address interpretability requirements for regulatory and compliance purposes in the financial sector. 
+
+<br><br>Summary: <div>
+arXiv:2505.24650v1 Announce Type: new 
+Abstract: Large Language Models (LLMs) exhibit remarkable capabilities across a spectrum of tasks in financial services, including report generation, chatbots, sentiment analysis, regulatory compliance, investment advisory, financial knowledge retrieval, and summarization. However, their intrinsic complexity and lack of transparency pose significant challenges, especially in the highly regulated financial sector, where interpretability, fairness, and accountability are critical. As far as we are aware, this paper presents the first application in the finance domain of understanding and utilizing the inner workings of LLMs through mechanistic interpretability, addressing the pressing need for transparency and control in AI systems. Mechanistic interpretability is the most intuitive and transparent way to understand LLM behavior by reverse-engineering their internal workings. By dissecting the activations and circuits within these models, it provides insights into how specific features or components influence predictions - making it possible not only to observe but also to modify model behavior. In this paper, we explore the theoretical aspects of mechanistic interpretability and demonstrate its practical relevance through a range of financial use cases and experiments, including applications in trading strategies, sentiment analysis, bias, and hallucination detection. While not yet widely adopted, mechanistic interpretability is expected to become increasingly vital as adoption of LLMs increases. Advanced interpretability tools can ensure AI systems remain ethical, transparent, and aligned with evolving financial regulations. In this paper, we have put special emphasis on how these techniques can help unlock interpretability requirements for regulatory and compliance purposes - addressing both current needs and anticipating future expectations from financial regulators globally.
+]]></content:encoded>
+<pubDate>Mon, 02 Jun 2025 00:00:00 -0400</pubDate>
+<pubDate>Mon, 02 Jun 2025 00:00:00 -0400</pubDate>
+</item>
+<item>
+<title>Efficient Bayesian multi-fidelity inverse analysis for expensive and non-differentiable physics-based simulations in high stochastic dimensions</title>
+<link>https://arxiv.org/abs/2505.24708</link>
+<guid>https://arxiv.org/abs/2505.24708</guid>
+<content:encoded><![CDATA[
+<div> Bayesian, multi-fidelity, inverse analysis, high-dimensional, computational<br>
+Summary:<br>
+This article introduces a novel approach called Bayesian multi-fidelity inverse analysis (BMFIA) to address the challenges of high-dimensional Bayesian inverse analysis for computationally demanding, nonlinear physics-based high-fidelity models. The method leverages simpler lower-fidelity models designed to provide model derivatives, learning a probabilistic dependence between the lower and higher-fidelity models. This allows for statistically correcting the inaccurate lower-fidelity responses in an altered likelihood formulation. BMFIA is fully differentiable and can be applied to a wide range of scenarios, including finely-resolved spatial reconstruction problems for nonlinear and transient coupled poro-elastic media physics. The approach is demonstrated to solve Bayesian inverse problems efficiently, even with a small amount of data, making it a valuable tool for addressing complex multi-physics problems. <div>
+arXiv:2505.24708v1 Announce Type: new 
+Abstract: High-dimensional Bayesian inverse analysis (dim >> 100) is mostly unfeasible for computationally demanding, nonlinear physics-based high-fidelity (HF) models. Usually, the use of more efficient gradient-based inference schemes is impeded if the multi-physics models are provided by complex legacy codes. Adjoint-based derivatives are either exceedingly cumbersome to derive or non-existent for practically relevant large-scale nonlinear and coupled multi-physics problems. Similarly, holistic automated differentiation w.r.t. primary variables of multi-physics codes is usually not yet an option and requires extensive code restructuring if not considered from the outset in the software design. This absence of differentiability further exacerbates the already present computational challenges. To overcome the existing limitations, we propose a novel inference approach called Bayesian multi-fidelity inverse analysis (BMFIA), which leverages simpler and computationally cheaper lower-fidelity (LF) models that are designed to provide model derivatives. BMFIA learns a simple, probabilistic dependence of the LF and HF models, which is then employed in an altered likelihood formulation to statistically correct the inaccurate LF response. From a Bayesian viewpoint, this dependence represents a multi-fidelity conditional density (discriminative model). We demonstrate how this multi-fidelity conditional density can be learned robustly in the small data regime from only a few HF and LF simulations (50 to 300), which would not be sufficient for naive surrogate approaches. The formulation is fully differentiable and allows the flexible design of a wide range of LF models. We demonstrate that BMFIA solves Bayesian inverse problems for scenarios that used to be prohibitive, such as finely-resolved spatial reconstruction problems for nonlinear and transient coupled poro-elastic media physics.
+]]></content:encoded>
+<pubDate>Mon, 02 Jun 2025 00:00:00 -0400</pubDate>
+<pubDate>Mon, 02 Jun 2025 00:00:00 -0400</pubDate>
+</item>
+<item>
+<title>The Surprising Soupability of Documents in State Space Models</title>
+<link>https://arxiv.org/abs/2505.24033</link>
+<guid>https://arxiv.org/abs/2505.24033</guid>
+<content:encoded><![CDATA[
+<div> Keywords: Structured State Space Models, document souping, Mamba2 models, multi-hop QA, long-document reasoning
+
+Summary:
+Structured State Space Models (SSMs) are investigated to determine if their hidden states can be merged post-hoc to support downstream reasoning. A strategy called document souping is proposed, where documents are encoded independently and their representations are pooled into a single context state. This approach allows for modular encoding and reuse without the need to reprocess the full input for each query. Mamba2 models are modified to produce soupable representations, enabling support for multi-hop QA, sparse retrieval, and long-document reasoning with high accuracy. In experiments on HotpotQA, souping ten independently encoded documents achieves performance near that of a cross-encoder trained on the same inputs. Overall, this method demonstrates the effectiveness of combining independently encoded document representations for improved downstream reasoning tasks. 
+
+Summary: <div>
+arXiv:2505.24033v1 Announce Type: cross 
+Abstract: We investigate whether hidden states from Structured State Space Models (SSMs) can be merged post-hoc to support downstream reasoning. Inspired by model souping, we propose a strategy where documents are encoded independently and their representations are pooled -- via simple operations like averaging -- into a single context state. This approach, which we call document souping, enables modular encoding and reuse without reprocessing the full input for each query. We finetune Mamba2 models to produce soupable representations and find that they support multi-hop QA, sparse retrieval, and long-document reasoning with strong accuracy. On HotpotQA, souping ten independently encoded documents nearly matches the performance of a cross-encoder trained on the same inputs.
+]]></content:encoded>
+<pubDate>Mon, 02 Jun 2025 00:00:00 -0400</pubDate>
+<pubDate>Mon, 02 Jun 2025 00:00:00 -0400</pubDate>
+</item>
+<item>
+<title>Transaction Proximity: A Graph-Based Approach to Blockchain Fraud Prevention</title>
+<link>https://arxiv.org/abs/2505.24284</link>
+<guid>https://arxiv.org/abs/2505.24284</guid>
+<content:encoded><![CDATA[
+<div> Keywords: fraud-deterrent, public blockchains, transaction proximity, Easily Attainable Identities (EAIs), directed graph analysis
+
+Summary: 
+This paper presents a fraud-deterrent access validation system for public blockchains using Transaction Proximity and Easily Attainable Identities (EAIs) concepts. The system analyzes transaction patterns to identify wallets closely connected to centralized exchanges, aiming to prevent fraudulent activities. The analysis of the Ethereum blockchain reveals a high percentage of large USDC wallets being EAI or within one transaction hop of an EAI. Moreover, a significant number of past exploits were found to not involve EAIs, highlighting the need for such a validation system. Three implementation approaches are proposed, balancing gas cost and privacy considerations. This approach allows for programmatic compliance without restricting access or sharing personal information, maintaining blockchain openness and enabling protocols to implement customized validation systems.<br><br>Summary: <div>
+arXiv:2505.24284v1 Announce Type: cross 
+Abstract: This paper introduces a fraud-deterrent access validation system for public blockchains, leveraging two complementary concepts: "Transaction Proximity", which measures the distance between wallets in the transaction graph, and "Easily Attainable Identities (EAIs)", wallets with direct transaction connections to centralized exchanges. Recognizing the limitations of traditional approaches like blocklisting (reactive, slow) and strict allow listing (privacy-invasive, adoption barriers), we propose a system that analyzes transaction patterns to identify wallets with close connections to centralized exchanges.
+  Our directed graph analysis of the Ethereum blockchain reveals that 56% of large USDC wallets (with a lifetime maximum balance greater than \$10,000) are EAI and 88% are within one transaction hop of an EAI. For transactions exceeding \$2,000, 91% involve at least one EAI. Crucially, an analysis of past exploits shows that 83% of the known exploiter addresses are not EAIs, with 21% being more than five hops away from any regulated exchange. We present three implementation approaches with varying gas cost and privacy tradeoffs, demonstrating that EAI-based access control can potentially prevent most of these incidents while preserving blockchain openness. Importantly, our approach does not restrict access or share personally identifiable information, but it provides information for protocols to implement their own validation or risk scoring systems based on specific needs. This middle-ground solution enables programmatic compliance while maintaining the core values of open blockchain.
+]]></content:encoded>
+<pubDate>Mon, 02 Jun 2025 00:00:00 -0400</pubDate>
+<pubDate>Mon, 02 Jun 2025 00:00:00 -0400</pubDate>
+</item>
+<item>
+<title>Looking for Attention: Randomized Attention Test Design for Validator Monitoring in Optimistic Rollups</title>
+<link>https://arxiv.org/abs/2505.24393</link>
+<guid>https://arxiv.org/abs/2505.24393</guid>
+<content:encoded><![CDATA[
+<div> scalability, blockchain, Optimistic Rollups, Randomized Attention Test, game-theoretic analysis
+
+Summary:
+Optimistic Rollups (ORUs) enhance blockchain scalability but face the verifier's dilemma due to a lack of mechanisms ensuring validator attentiveness. The Randomized Attention Test (RAT) protocol is introduced to challenge validators in ORUs, verifying their liveness and readiness. Game-theoretic analysis shows that an Ideal Security Equilibrium can be achieved with RAT, where validators are attentive and proposers honest. This equilibrium is attainable with low penalties for non-responsive validators and a low attention test frequency. RAT serves as a practical mechanism to enforce validator diligence, increasing the security and integrity of ORU systems without significant additional costs. <div>
+arXiv:2505.24393v1 Announce Type: cross 
+Abstract: Optimistic Rollups (ORUs) significantly enhance blockchain scalability but inherently suffer from the verifier's dilemma, particularly concerning validator attentiveness. Current systems lack mechanisms to proactively ensure validators are diligently monitoring L2 state transitions, creating a vulnerability where fraudulent states could be finalized. This paper introduces the Randomized Attention Test (RAT), a novel L1-based protocol designed to probabilistically challenge validators in ORUs, thereby verifying their liveness and computational readiness. Our game-theoretic analysis demonstrates that an Ideal Security Equilibrium, where all validators are attentive and proposers are honest, can be achieved with RAT. Notably, this equilibrium is attainable and stable with relatively low economic penalties (e.g., under $1000) for non-responsive validators and a low attention test frequency (e.g., under 1% per epoch). RAT thus provides a crucial, practical mechanism to enforce validator diligence, fortifying the overall security and integrity of ORU systems with minimizing additional costs.
+]]></content:encoded>
+<pubDate>Mon, 02 Jun 2025 00:00:00 -0400</pubDate>
+<pubDate>Mon, 02 Jun 2025 00:00:00 -0400</pubDate>
+</item>
+<item>
+<title>Efficient Estimation of Regularized Tyler's M-Estimator Using Approximate LOOCV</title>
+<link>https://arxiv.org/abs/2505.24781</link>
+<guid>https://arxiv.org/abs/2505.24781</guid>
+<content:encoded><![CDATA[
+<div> Regularized Tyler's M-estimator, shrinkage coefficient, leave-one-out cross-validation, computational efficiency, high-dimensional data<br>
+<br>
+Summary: <br>
+The study focuses on estimating a shrinkage coefficient for Regularized Tyler's M-estimator using leave-one-out cross-validation (LOOCV) log-likelihood loss. The proposed approach aims to find an optimal shrinkage coefficient by solving a selected objective function, enhancing computational efficiency by approximating the LOOCV log-likelihood loss. This approximation significantly reduces the running time complexity for the LOOCV procedure by O(n), offering a faster computation of the LOOCV estimate. The efficiency and accuracy of the method were demonstrated through synthetic high-dimensional data and real datasets for object recognition, face recognition, and handwritten digit recognition. Results indicate the proposed approach is both efficient and more precise compared to existing methods for shrinkage coefficient estimation. <div>
+arXiv:2505.24781v1 Announce Type: cross 
+Abstract: We consider the problem of estimating a regularization parameter, or a shrinkage coefficient $\alpha \in (0,1)$ for Regularized Tyler's M-estimator (RTME). In particular, we propose to estimate an optimal shrinkage coefficient by setting $\alpha$ as the solution to a suitably chosen objective function; namely the leave-one-out cross-validated (LOOCV) log-likelihood loss. Since LOOCV is computationally prohibitive even for moderate sample size $n$, we propose a computationally efficient approximation for the LOOCV log-likelihood loss that eliminates the need for invoking the RTME procedure $n$ times for each sample left out during the LOOCV procedure. This approximation yields an $O(n)$ reduction in the running time complexity for the LOOCV procedure, which results in a significant speedup for computing the LOOCV estimate. We demonstrate the efficiency and accuracy of the proposed approach on synthetic high-dimensional data sampled from heavy-tailed elliptical distributions, as well as on real high-dimensional datasets for object recognition, face recognition, and handwritten digit's recognition. Our experiments show that the proposed approach is efficient and consistently more accurate than other methods in the literature for shrinkage coefficient estimation.
+]]></content:encoded>
+<pubDate>Mon, 02 Jun 2025 00:00:00 -0400</pubDate>
+<pubDate>Mon, 02 Jun 2025 00:00:00 -0400</pubDate>
+</item>
+<item>
+<title>Interpolating Neural Network-Tensor Decomposition (INN-TD): a scalable and interpretable approach for large-scale physics-based problems</title>
+<link>https://arxiv.org/abs/2503.02041</link>
+<guid>https://arxiv.org/abs/2503.02041</guid>
+<content:encoded><![CDATA[
+<div> Interpolating Neural Network-Tensor Decomposition, scalable, interpretable, machine learning, finite element methods, large-scale physical systems
+Summary:
+Interpolating Neural Network-Tensor Decomposition (INN-TD) is introduced as a framework that combines machine learning and finite element methods to model large-scale physical systems accurately and efficiently. By incorporating locally supported interpolation functions from finite element methods into the network architecture, INN-TD achieves a sparse learning structure, leading to enhanced accuracy, faster training/solving speed, and reduced memory usage. This framework is well-suited for addressing large-scale high-dimensional parametric partial differential equations in physical problems that require high precision in tasks such as training, solving, and inverse optimization. Its effectiveness lies in its ability to provide interpretable solutions for industrial problems while maintaining computational efficiency and accuracy in modeling complex physics-based systems. <br><br>Summary: <div>
+arXiv:2503.02041v3 Announce Type: replace 
+Abstract: Deep learning has been extensively employed as a powerful function approximator for modeling physics-based problems described by partial differential equations (PDEs). Despite their popularity, standard deep learning models often demand prohibitively large computational resources and yield limited accuracy when scaling to large-scale, high-dimensional physical problems. Their black-box nature further hinders the application in industrial problems where interpretability and high precision are critical. To overcome these challenges, this paper introduces Interpolating Neural Network-Tensor Decomposition (INN-TD), a scalable and interpretable framework that has the merits of both machine learning and finite element methods for modeling large-scale physical systems. By integrating locally supported interpolation functions from finite element into the network architecture, INN-TD achieves a sparse learning structure with enhanced accuracy, faster training/solving speed, and reduced memory footprint. This makes it particularly effective for tackling large-scale high-dimensional parametric PDEs in training, solving, and inverse optimization tasks in physical problems where high precision is required.
+]]></content:encoded>
+<pubDate>Mon, 02 Jun 2025 00:00:00 -0400</pubDate>
+<pubDate>Mon, 02 Jun 2025 00:00:00 -0400</pubDate>
+</item>
 
 <item>
 <title>Unified Network-Based Representation of BIM Models for Embedding Semantic, Spatial, and Topological Data</title>
