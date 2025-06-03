@@ -4,6 +4,7 @@
 <title>cs.AI updates on arXiv.org</title>
 <link>http://rss.arxiv.org/rss/cs.AI</link>
 
+
 <item>
 <title>Middle-Layer Representation Alignment for Cross-Lingual Transfer in Fine-Tuned LLMs</title>
 <link>https://arxiv.org/abs/2502.14830</link>
@@ -14,14 +15,12 @@
 Summary:
 Language models have shown impressive capabilities in task-specific applications through fine-tuning, but extending these benefits across diverse languages is crucial for broader accessibility. However, challenges arise due to performance gaps and limited fine-tuning data in many languages. A study analyzing over 1,000 language pairs reveals that middle layers of language models exhibit significant potential for cross-lingual alignment. To leverage this, a middle-layer alignment objective is proposed for integration into task-specific training, resulting in consistent improvements in cross-lingual transfer, particularly to lower-resource languages. The method is flexible in alignment language selection and generalizes well to unseen languages. Additionally, the study demonstrates that separately trained alignment modules can enhance cross-lingual capabilities without requiring full re-training. The code for the proposed method is openly available for public use. 
 
-<br><br>Summary: <div>
+<br /><br />Summary: <div>
 arXiv:2502.14830v3 Announce Type: replace-cross 
 Abstract: While large language models demonstrate remarkable capabilities at task-specific applications through fine-tuning, extending these benefits across diverse languages is essential for broad accessibility. However, effective cross-lingual transfer is hindered by LLM performance gaps across languages and the scarcity of fine-tuning data in many languages. Through analysis of LLM internal representations from over 1,000+ language pairs, we discover that middle layers exhibit the strongest potential for cross-lingual alignment. Building on this finding, we propose a middle-layer alignment objective integrated into task-specific training. Our experiments on slot filling, machine translation, and structured text generation show consistent improvements in cross-lingual transfer, especially to lower-resource languages. The method is robust to the choice of alignment languages and generalizes to languages unseen during alignment. Furthermore, we show that separately trained alignment modules can be merged with existing task-specific modules, improving cross-lingual capabilities without full re-training. Our code is publicly available (https://github.com/dannigt/mid-align).
 ]]></content:encoded>
 <pubDate>Tue, 03 Jun 2025 00:00:00 -0400</pubDate>
-<pubDate>Tue, 03 Jun 2025 00:00:00 -0400</pubDate>
 </item>
-
 <item>
 <title>MADCluster: Model-agnostic Anomaly Detection with Self-supervised Clustering Network</title>
 <link>https://arxiv.org/abs/2505.16223</link>
@@ -10708,16 +10707,6 @@ Abstract: Pre-trained foundation models have recently made significant progress 
 <content:encoded><![CDATA[
 arXiv:2501.13074v2 Announce Type: replace-cross 
 Abstract: Mixture-of-Experts (MoE) models mostly use a router to assign tokens to specific expert modules, activating only partial parameters and often outperforming dense models. We argue that the separation between the router's decision-making and the experts' execution is a critical yet overlooked issue, leading to suboptimal expert selection and ineffective learning. To address this, we propose Autonomy-of-Experts (AoE), a novel MoE paradigm in which experts autonomously select themselves to process inputs. AoE is based on the insight that an expert is aware of its own capacity to effectively process a token, an awareness reflected in the scale of its internal activations. In AoE, routers are removed; instead, experts pre-compute internal activations for inputs and are ranked based on their activation norms. Only the top-ranking experts proceed with the forward pass, while the others abort. The overhead of pre-computing activations is reduced through a low-rank weight factorization. This self-evaluating-then-partner-comparing approach ensures improved expert selection and effective learning. We pre-train language models having 700M up to 4B parameters, demonstrating that AoE outperforms traditional MoE models with comparable efficiency.
-]]></content:encoded>
-<pubDate>Mon, 02 Jun 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Multi-Domain Graph Foundation Models: Robust Knowledge Transfer via Topology Alignment</title>
-<link>https://arxiv.org/abs/2502.02017</link>
-<guid>https://arxiv.org/abs/2502.02017</guid>
-<content:encoded><![CDATA[
-arXiv:2502.02017v2 Announce Type: replace-cross 
-Abstract: Recent advances in CV and NLP have inspired researchers to develop general-purpose graph foundation models through pre-training across diverse domains. However, a fundamental challenge arises from the substantial differences in graph topologies across domains. Additionally, real-world graphs are often sparse and prone to noisy connections and adversarial attacks. To address these issues, we propose the Multi-Domain Graph Foundation Model (MDGFM), a unified framework that aligns and leverages cross-domain topological information to facilitate robust knowledge transfer. MDGFM bridges different domains by adaptively balancing features and topology while refining original graphs to eliminate noise and align topological structures. To further enhance knowledge transfer, we introduce an efficient prompt-tuning approach. By aligning topologies, MDGFM not only improves multi-domain pre-training but also enables robust knowledge transfer to unseen domains. Theoretical analyses provide guarantees of MDGFM's effectiveness and domain generalization capabilities. Extensive experiments on both homophilic and heterophilic graph datasets validate the robustness and efficacy of our method.
 ]]></content:encoded>
 <pubDate>Mon, 02 Jun 2025 00:00:00 -0400</pubDate>
 </item>
