@@ -4,6 +4,7 @@
 <title>cs.LG updates on arXiv.org</title>
 <link>http://rss.arxiv.org/rss/cs.LG</link>
 
+
 <item>
 <title>LENSLLM: Unveiling Fine-Tuning Dynamics for LLM Selection</title>
 <link>https://arxiv.org/abs/2505.03793</link>
@@ -14,11 +15,10 @@
 Summary:
 The article addresses the challenge of efficient model selection for Large Language Models (LLMs) within diverse downstream tasks. It introduces a theoretical framework that assesses the generalization capabilities of LLMs during fine-tuning. By deriving a PAC-Bayesian Generalization Bound, the fine-tuning dynamics of LLMs are unveiled, leading to the development of the LENSLLM model. This model, based on Neural Tangent Kernel (NTK), enables accurate performance predictions across various tasks while maintaining computational efficiency. Empirical results on large-scale benchmarks demonstrate the effectiveness of LENSLLM, achieving up to 91.1% accuracy and reducing computational costs by up to 88.5% compared to state-of-the-art methods. The open-sourced LENSLLM model and results are available at LensLLM.io. 
 
-<br><br>Summary: <div>
+<br /><br />Summary: <div>
 arXiv:2505.03793v3 Announce Type: replace 
 Abstract: The proliferation of open-sourced Large Language Models (LLMs) and diverse downstream tasks necessitates efficient model selection, given the impracticality of fine-tuning all candidates due to computational constraints. Despite the recent advances in LLM selection, a fundamental research question largely remains nascent: how can we model the dynamic behaviors of LLMs during fine-tuning, thereby enhancing our understanding of their generalization performance across diverse downstream tasks? In this work, we propose a novel theoretical framework that provides a proper lens to assess the generalization capabilities of LLMs, thereby enabling accurate and efficient LLM selection for downstream applications. In particular, we first derive a PAC-Bayesian Generalization Bound that unveils fine-tuning dynamics of LLMs and then introduce LENSLLM, a Neural Tangent Kernel (NTK)-based Rectified Scaling Model that enables accurate performance predictions across diverse tasks while maintaining computational efficiency. Extensive empirical results on 3 large-scale benchmarks demonstrate that our model achieves up to 91.1% accuracy and reduces up to 88.5% computational cost in LLM selection, outperforming 5 state-of-the-art methods. We open-source our proposed LENSLLM model and corresponding results at LensLLM.io.
 ]]></content:encoded>
-<pubDate>Tue, 03 Jun 2025 00:00:00 -0400</pubDate>
 <pubDate>Tue, 03 Jun 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -28,12 +28,11 @@ Abstract: The proliferation of open-sourced Large Language Models (LLMs) and div
 <content:encoded><![CDATA[
 <div> fake data injection, stochastic bandits, adversarial attacks, bounded perturbations, attack strategies
 
-Summary:<br>
+Summary:<br />
 The article introduces a new practical threat model called Fake Data Injection for adversarial attacks on stochastic bandits. This model allows attackers to inject a limited number of bounded fake feedback samples into the learner's history, simulating legitimate interactions. The proposed attack strategies efficiently mislead Upper Confidence Bound (UCB) and Thompson Sampling algorithms by addressing both magnitude and temporal constraints. The theoretical analysis demonstrates that these attacks can manipulate the algorithms into selecting a target arm in nearly all rounds with minimal attack cost. Experiments on synthetic and real-world datasets confirm the effectiveness of the strategies and highlight vulnerabilities in widely used stochastic bandit algorithms under practical adversarial scenarios. <div>
 arXiv:2505.21938v2 Announce Type: replace 
 Abstract: Adversarial attacks on stochastic bandits have traditionally relied on some unrealistic assumptions, such as per-round reward manipulation and unbounded perturbations, limiting their relevance to real-world systems. We propose a more practical threat model, Fake Data Injection, which reflects realistic adversarial constraints: the attacker can inject only a limited number of bounded fake feedback samples into the learner's history, simulating legitimate interactions. We design efficient attack strategies under this model, explicitly addressing both magnitude constraints (on reward values) and temporal constraints (on when and how often data can be injected). Our theoretical analysis shows that these attacks can mislead both Upper Confidence Bound (UCB) and Thompson Sampling algorithms into selecting a target arm in nearly all rounds while incurring only sublinear attack cost. Experiments on synthetic and real-world datasets validate the effectiveness of our strategies, revealing significant vulnerabilities in widely used stochastic bandit algorithms under practical adversarial scenarios.
 ]]></content:encoded>
-<pubDate>Tue, 03 Jun 2025 00:00:00 -0400</pubDate>
 <pubDate>Tue, 03 Jun 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -46,11 +45,10 @@ Abstract: Adversarial attacks on stochastic bandits have traditionally relied on
 Summary:
 This study addresses the fairness issue in K-means clustering algorithms, where clusters may exhibit bias based on sensitive variables such as gender or race. The proposed approach involves a two-stage optimization process that first performs clustering and then adjusts the cluster membership of selected data points to improve fairness. Two efficient algorithms are introduced to identify problematic data points that may impact fairness. One algorithm focuses on nearest data points outside of a cluster, while the other targets highly 'mixed' data points. Experimental results on benchmark datasets demonstrate significant improvements in fairness while maintaining clustering quality. The proposed algorithms can be easily adapted to various clustering methods and fairness metrics, offering a practical solution to address biases in clustering outcomes. 
 
-<br><br>Summary: <div>
+<br /><br />Summary: <div>
 arXiv:2505.22984v2 Announce Type: replace 
 Abstract: The popular K-means clustering algorithm potentially suffers from a major weakness for further analysis or interpretation. Some cluster may have disproportionately more (or fewer) points from one of the subpopulations in terms of some sensitive variable, e.g., gender or race. Such a fairness issue may cause bias and unexpected social consequences. This work attempts to improve the fairness of K-means clustering with a two-stage optimization formulation--clustering first and then adjust cluster membership of a small subset of selected data points. Two computationally efficient algorithms are proposed in identifying those data points that are expensive for fairness, with one focusing on nearest data points outside of a cluster and the other on highly 'mixed' data points. Experiments on benchmark datasets show substantial improvement on fairness with a minimal impact to clustering quality. The proposed algorithms can be easily extended to a broad class of clustering algorithms or fairness metrics.
 ]]></content:encoded>
-<pubDate>Tue, 03 Jun 2025 00:00:00 -0400</pubDate>
 <pubDate>Tue, 03 Jun 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -58,16 +56,15 @@ Abstract: The popular K-means clustering algorithm potentially suffers from a ma
 <link>https://arxiv.org/abs/2505.23337</link>
 <guid>https://arxiv.org/abs/2505.23337</guid>
 <content:encoded><![CDATA[
-<div> Teacher-TA-Student recipe, MatTA framework, multiple accurate student models, serving cost, A/B tests<br>
-<br>
+<div> Teacher-TA-Student recipe, MatTA framework, multiple accurate student models, serving cost, A/B tests<br />
+<br />
 Summary: 
 The paper introduces the MatTA framework, which is designed to efficiently train multiple accurate student models using a novel Teacher-TA-Student recipe. By leveraging TA models, which are larger versions of student models, MatTA enables student models to better relate to the teacher model and incorporate domain-specific expertise. This approach allows for multiple servable options with varying levels of accuracy without the need for additional training runs, thereby providing a cost-effective solution. The practical efficacy of MatTA is demonstrated through live A/B tests within a production ML system, showcasing a 20% improvement on a key metric. Additionally, the method is applied to the GPT-2 Medium model, achieving significant relative improvements on both the SAT Math and LAMBADA benchmark tasks. Overall, the MatTA framework offers a versatile and efficient approach to model training that can enhance performance and reduce serving costs. 
 
-<br><br> <div>
+<br /><br /> <div>
 arXiv:2505.23337v2 Announce Type: replace 
 Abstract: Industry-grade ML models are carefully designed to meet rapidly evolving serving constraints, which requires significant resources for model development. In this paper, we propose MatTA, a framework for training multiple accurate Student models using a novel Teacher-TA-Student recipe. TA models are larger versions of the Student models with higher capacity, and thus allow Student models to better relate to the Teacher model and also bring in more domain-specific expertise. Furthermore, multiple accurate Student models can be extracted from the TA model. Therefore, despite only one training run, our methodology provides multiple servable options to trade off accuracy for lower serving cost. We demonstrate the proposed method, MatTA, on proprietary datasets and models. Its practical efficacy is underscored by live A/B tests within a production ML system, demonstrating 20% improvement on a key metric. We also demonstrate our method on GPT-2 Medium, a public model, and achieve relative improvements of over 24% on SAT Math and over 10% on the LAMBADA benchmark.
 ]]></content:encoded>
-<pubDate>Tue, 03 Jun 2025 00:00:00 -0400</pubDate>
 <pubDate>Tue, 03 Jun 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -85,11 +82,10 @@ Summary:
 - Pre-trained speech embeddings are used on a dataset of shift workers to predict time since sleep from speech as a function of fatigue.
 - Meta-learning approaches outperformed conventional models, with transformer-based method showing the strongest performance. 
 
-<br><br>Summary: <div>
+<br /><br />Summary: <div>
 arXiv:2505.23378v2 Announce Type: replace 
 Abstract: Speaker-dependent modelling can substantially improve performance in speech-based health monitoring applications. While mixed-effect models are commonly used for such speaker adaptation, they require computationally expensive retraining for each new observation, making them impractical in a production environment. We reformulate this task as a meta-learning problem and explore three approaches of increasing complexity: ensemble-based distance models, prototypical networks, and transformer-based sequence models. Using pre-trained speech embeddings, we evaluate these methods on a large longitudinal dataset of shift workers (N=1,185, 10,286 recordings), predicting time since sleep from speech as a function of fatigue, a symptom commonly associated with ill-health. Our results demonstrate that all meta-learning approaches tested outperformed both cross-sectional and conventional mixed-effects models, with a transformer-based method achieving the strongest performance.
 ]]></content:encoded>
-<pubDate>Tue, 03 Jun 2025 00:00:00 -0400</pubDate>
 <pubDate>Tue, 03 Jun 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -106,11 +102,10 @@ Summary:
 - The study introduces a single NF architecture that seamlessly integrates into RL algorithms as a policy, Q-function, and occupancy measure.
 - This approach simplifies algorithms and improves performance in imitation learning, offline, goal conditioned RL, and unsupervised RL. 
 
-<br><br>Summary: <div>
+<br /><br />Summary: <div>
 arXiv:2505.23527v2 Announce Type: replace 
 Abstract: Modern reinforcement learning (RL) algorithms have found success by using powerful probabilistic models, such as transformers, energy-based models, and diffusion/flow-based models. To this end, RL researchers often choose to pay the price of accommodating these models into their algorithms -- diffusion models are expressive, but are computationally intensive due to their reliance on solving differential equations, while autoregressive transformer models are scalable but typically require learning discrete representations. Normalizing flows (NFs), by contrast, seem to provide an appealing alternative, as they enable likelihoods and sampling without solving differential equations or autoregressive architectures. However, their potential in RL has received limited attention, partly due to the prevailing belief that normalizing flows lack sufficient expressivity. We show that this is not the case. Building on recent work in NFs, we propose a single NF architecture which integrates seamlessly into RL algorithms, serving as a policy, Q-function, and occupancy measure. Our approach leads to much simpler algorithms, and achieves higher performance in imitation learning, offline, goal conditioned RL and unsupervised RL.
 ]]></content:encoded>
-<pubDate>Tue, 03 Jun 2025 00:00:00 -0400</pubDate>
 <pubDate>Tue, 03 Jun 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -126,12 +121,11 @@ Summary:
 - The framework consists of Base Embedder capturing high-dimensional temporal dynamics, Cluster Distance Mapping, and Sequence-wise Clustering for continuous center updates.
 - MADCluster's model-agnostic characteristics allow for compatibility with various architectures and demonstrate improved overall performance on time series benchmark datasets. 
 
-Summary:<br>
+Summary:<br />
 framework, anomaly detection, deep learning, clustering, MADCluster <div>
 arXiv:2505.16223v4 Announce Type: replace-cross 
 Abstract: In this paper, we propose MADCluster, a novel model-agnostic anomaly detection framework utilizing self-supervised clustering. MADCluster is applicable to various deep learning architectures and addresses the 'hypersphere collapse' problem inherent in existing deep learning-based anomaly detection methods. The core idea is to cluster normal pattern data into a 'single cluster' while simultaneously learning the cluster center and mapping data close to this center. Also, to improve expressiveness and enable effective single clustering, we propose a new 'One-directed Adaptive loss'. The optimization of this loss is mathematically proven. MADCluster consists of three main components: Base Embedder capturing high-dimensional temporal dynamics, Cluster Distance Mapping, and Sequence-wise Clustering for continuous center updates. Its model-agnostic characteristics are achieved by applying various architectures to the Base Embedder. Experiments on four time series benchmark datasets demonstrate that applying MADCluster improves the overall performance of comparative models. In conclusion, the compatibility of MADCluster shows potential for enhancing model performance across various architectures.
 ]]></content:encoded>
-<pubDate>Tue, 03 Jun 2025 00:00:00 -0400</pubDate>
 <pubDate>Tue, 03 Jun 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -139,13 +133,12 @@ Abstract: In this paper, we propose MADCluster, a novel model-agnostic anomaly d
 <link>https://arxiv.org/abs/2505.23436</link>
 <guid>https://arxiv.org/abs/2505.23436</guid>
 <content:encoded><![CDATA[
-<div> survival bandit framework, trade-offs, AI agents, resource constraints, utility functions <br>
-Summary: <br>
+<div> survival bandit framework, trade-offs, AI agents, resource constraints, utility functions <br />
+Summary: <br />
 The article discusses the impact of resource constraints on AI agents with agentic capabilities, highlighting how such constraints can lead to shifts in their rational behavior. It focuses on a survival bandit framework to formalize the setting where agents face trade-offs due to limited resources. The study explores the emergence of misalignment between human objectives and agent incentives in such scenarios, offering theoretical and empirical results to quantify the effects. The research identifies conditions under which misalignment occurs and proposes strategies to mitigate risk-seeking or risk-averse behaviors in AI agents. By enhancing understanding of how agents operate under survival pressure, the work aims to provide guidelines for safely deploying AI systems in critical resource-limited environments. <div>
 arXiv:2505.23436v2 Announce Type: replace-cross 
 Abstract: Advanced reasoning models with agentic capabilities (AI agents) are deployed to interact with humans and to solve sequential decision-making problems under (approximate) utility functions and internal models. When such problems have resource or failure constraints where action sequences may be forcibly terminated once resources are exhausted, agents face implicit trade-offs that reshape their utility-driven (rational) behaviour. Additionally, since these agents are typically commissioned by a human principal to act on their behalf, asymmetries in constraint exposure can give rise to previously unanticipated misalignment between human objectives and agent incentives. We formalise this setting through a survival bandit framework, provide theoretical and empirical results that quantify the impact of survival-driven preference shifts, identify conditions under which misalignment emerges and propose mechanisms to mitigate the emergence of risk-seeking or risk-averse behaviours. As a result, this work aims to increase understanding and interpretability of emergent behaviours of AI agents operating under such survival pressure, and offer guidelines for safely deploying such AI systems in critical resource-limited environments.
 ]]></content:encoded>
-<pubDate>Tue, 03 Jun 2025 00:00:00 -0400</pubDate>
 <pubDate>Tue, 03 Jun 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -161,7 +154,6 @@ arXiv:2505.23657v2 Announce Type: replace-cross
 Abstract: Recent decoding methods improve the factuality of large language models (LLMs) by refining how the next token is selected during generation. These methods typically operate at the token level, leveraging internal representations to suppress superficial patterns. Nevertheless, LLMs remain prone to hallucinations, especially over longer contexts. In this paper, we propose Active Layer-Contrastive Decoding (ActLCD), a novel decoding strategy that actively decides when to apply contrasting layers during generation. By casting decoding as a sequential decision-making problem, ActLCD employs a reinforcement learning policy guided by a reward-aware classifier to optimize factuality beyond the token level. Our experiments demonstrate that ActLCD surpasses state-of-the-art methods across five benchmarks, showcasing its effectiveness in mitigating hallucinations in diverse generation scenarios.
 ]]></content:encoded>
 <pubDate>Tue, 03 Jun 2025 00:00:00 -0400</pubDate>
-<pubDate>Tue, 03 Jun 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
 <title>GSO: Challenging Software Optimization Tasks for Evaluating SWE-Agents</title>
@@ -176,9 +168,7 @@ arXiv:2505.23671v2 Announce Type: replace-cross
 Abstract: Developing high-performance software is a complex task that requires specialized expertise. We introduce GSO, a benchmark for evaluating language models' capabilities in developing high-performance software. We develop an automated pipeline that generates and executes performance tests to analyze repository commit histories to identify 102 challenging optimization tasks across 10 codebases, spanning diverse domains and programming languages. An agent is provided with a codebase and performance test as a precise specification, and tasked to improve the runtime efficiency, which is measured against the expert developer optimization. Our quantitative evaluation reveals that leading SWE-Agents struggle significantly, achieving less than 5% success rate, with limited improvements even with inference-time scaling. Our qualitative analysis identifies key failure modes, including difficulties with low-level languages, practicing lazy optimization strategies, and challenges in accurately localizing bottlenecks. We release the code and artifacts of our benchmark along with agent trajectories to enable future research.
 ]]></content:encoded>
 <pubDate>Tue, 03 Jun 2025 00:00:00 -0400</pubDate>
-<pubDate>Tue, 03 Jun 2025 00:00:00 -0400</pubDate>
 </item>
-
 <item>
 <title>Modality Equilibrium Matters: Minor-Modality-Aware Adaptive Alternating for Cross-Modal Memory Enhancement</title>
 <link>https://arxiv.org/abs/2506.00030</link>
@@ -10583,107 +10573,6 @@ Abstract: We introduce SWE-Lancer, a benchmark of over 1,400 freelance software 
 <content:encoded><![CDATA[
 arXiv:2502.12929v2 Announce Type: replace 
 Abstract: We present a novel reasoning approach called Flow-of-Options (FoO), designed to address intrinsic biases in Large Language Models (LLMs). Flow-of-Options enables LLMs to systematically explore a diverse range of possibilities in their reasoning, as demonstrated by an FoO-based agentic framework developed for autonomously solving Machine Learning (ML) tasks. FoO enforces diversity in LLM solutions through compressed and interpretable task representations, resulting in improvements of 38.2% - 69.2% on standard data science tasks, and 37.4% - 47.9% on therapeutic chemistry tasks, as compared to state-of-the-art baselines. With an overall operation cost under $1 per task, our framework is well-suited for cost-sensitive applications. Going beyond tabular classification and regression, we show the broader applicability of our FoO-based agentic system to tasks such as reinforcement learning and image generation. Our code is open-sourced at: https://github.com/flagshippioneering/Flow-of-Options.
-]]></content:encoded>
-<pubDate>Mon, 02 Jun 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>PairBench: Are Vision-Language Models Reliable at Comparing What They See?</title>
-<link>https://arxiv.org/abs/2502.15210</link>
-<guid>https://arxiv.org/abs/2502.15210</guid>
-<content:encoded><![CDATA[
-arXiv:2502.15210v3 Announce Type: replace 
-Abstract: Understanding how effectively large vision language models (VLMs) compare visual inputs is crucial across numerous applications, yet this fundamental capability remains insufficiently assessed. While VLMs are increasingly deployed for tasks requiring comparative judgment, including automated evaluation, re-ranking, and retrieval-augmented generation, no systematic framework exists to measure their performance in these scenarios. We present PairBench, a simple framework that evaluates VLMs as customizable similarity tools using widely available image datasets. Our approach introduces four key metrics for reliable comparison: alignment with human annotations, consistency across pair ordering, distribution smoothness, and controllability through prompting. Our analysis reveals that no model consistently excels across all metrics, with each demonstrating distinct strengths and weaknesses. Most concerning is the widespread inability of VLMs to maintain symmetric similarity scores. Interestingly, we demonstrate that performance on our benchmark strongly correlates with popular benchmarks used for more complex tasks, while providing additional metrics into controllability, smoothness and ordering. This makes PairBench a unique and comprehensive framework to evaluate the performance of VLMs for automatic evaluation depending on the task.
-]]></content:encoded>
-<pubDate>Mon, 02 Jun 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Testing the Limits of Fine-Tuning for Improving Visual Cognition in Vision Language Models</title>
-<link>https://arxiv.org/abs/2502.15678</link>
-<guid>https://arxiv.org/abs/2502.15678</guid>
-<content:encoded><![CDATA[
-arXiv:2502.15678v2 Announce Type: replace 
-Abstract: Pre-trained vision language models still fall short of human visual cognition. In an effort to improve visual cognition and align models with human behavior, we introduce visual stimuli and human judgments on visual cognition tasks, allowing us to systematically evaluate performance across cognitive domains under a consistent environment. We fine-tune models on ground truth data for intuitive physics and causal reasoning and find that this improves model performance in the respective fine-tuning domain. Furthermore, it can improve model alignment with human behavior. However, we find that task-specific fine-tuning does not contribute to robust human-like generalization to data with other visual characteristics or to tasks in other cognitive domains.
-]]></content:encoded>
-<pubDate>Mon, 02 Jun 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Adaptive Conformal Guidance: A Framework for Multi-Domain Learning under Uncertainty</title>
-<link>https://arxiv.org/abs/2502.16736</link>
-<guid>https://arxiv.org/abs/2502.16736</guid>
-<content:encoded><![CDATA[
-arXiv:2502.16736v3 Announce Type: replace 
-Abstract: Learning with guidance has proven effective across a wide range of machine learning domains. Guidance may, for example, come from annotated datasets in supervised learning, pseudo-labels in semi-supervised learning, and expert demonstration policies in reinforcement learning. However, guidance signals can be noisy due to domain shifts and limited data availability and may not generalize well. Blindly trusting such signals when they are noisy, incomplete, or misaligned with the target domain can lead to degraded performance. To address these challenges, we propose $\underline{Ada}$ptive $\underline{Con}$formal $\underline{G}$uidance (AdaConG), a universal, plug-and-play framework that dynamically modulates the influence of guidance signals based on their associated uncertainty, quantified via split conformal prediction (CP). By adaptively adjusting to guidance uncertainty, AdaConG enables models to reduce reliance on potentially misleading signals and enhance learning performance. We validate AdaConG across diverse domains and tasks, including knowledge distillation, semi-supervised image classification, gridworld navigation, and autonomous driving. Experimental results demonstrate that AdaConG improves performance and robustness under imperfect guidance, e.g., in gridworld navigation, it accelerates convergence and achieves over $6\times$ higher rewards than the best-performing baseline. These results highlight AdaConG as a simple yet effective solution for multi-domain learning under uncertainty.
-]]></content:encoded>
-<pubDate>Mon, 02 Jun 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Model-Based Exploration in Monitored Markov Decision Processes</title>
-<link>https://arxiv.org/abs/2502.16772</link>
-<guid>https://arxiv.org/abs/2502.16772</guid>
-<content:encoded><![CDATA[
-arXiv:2502.16772v3 Announce Type: replace 
-Abstract: A tenet of reinforcement learning is that the agent always observes rewards. However, this is not true in many realistic settings, e.g., a human observer may not always be available to provide rewards, sensors may be limited or malfunctioning, or rewards may be inaccessible during deployment. Monitored Markov decision processes (Mon-MDPs) have recently been proposed to model such settings. However, existing Mon-MDP algorithms have several limitations: they do not fully exploit the problem structure, cannot leverage a known monitor, lack worst-case guarantees for 'unsolvable' Mon-MDPs without specific initialization, and offer only asymptotic convergence proofs. This paper makes three contributions. First, we introduce a model-based algorithm for Mon-MDPs that addresses these shortcomings. The algorithm employs two instances of model-based interval estimation: one to ensure that observable rewards are reliably captured, and another to learn the minimax-optimal policy. Second, we empirically demonstrate the advantages. We show faster convergence than prior algorithms in over four dozen benchmarks, and even more dramatic improvement when the monitoring process is known. Third, we present the first finite-sample bound on performance. We show convergence to a minimax-optimal policy even when some rewards are never observable.
-]]></content:encoded>
-<pubDate>Mon, 02 Jun 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>On Traceability in $\ell_p$ Stochastic Convex Optimization</title>
-<link>https://arxiv.org/abs/2502.17384</link>
-<guid>https://arxiv.org/abs/2502.17384</guid>
-<content:encoded><![CDATA[
-arXiv:2502.17384v2 Announce Type: replace 
-Abstract: In this paper, we investigate the necessity of traceability for accurate learning in stochastic convex optimization (SCO) under $\ell_p$ geometries. Informally, we say a learning algorithm is $m$-traceable if, by analyzing its output, it is possible to identify at least $m$ of its training samples. Our main results uncover a fundamental tradeoff between traceability and excess risk in SCO. For every $p\in [1,\infty)$, we establish the existence of an excess risk threshold below which every sample-efficient learner is traceable with the number of samples which is a constant fraction of its training sample. For $p\in [1,2]$, this threshold coincides with the best excess risk of differentially private (DP) algorithms, i.e., above this threshold, there exist algorithms that are not traceable, which corresponds to a sharp phase transition. For $p \in (2,\infty)$, this threshold instead gives novel lower bounds for DP learning, partially closing an open problem in this setup. En route to establishing these results, we prove a sparse variant of the fingerprinting lemma, which is of independent interest to the community.
-]]></content:encoded>
-<pubDate>Mon, 02 Jun 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Recurrent Knowledge Identification and Fusion for Language Model Continual Learning</title>
-<link>https://arxiv.org/abs/2502.17510</link>
-<guid>https://arxiv.org/abs/2502.17510</guid>
-<content:encoded><![CDATA[
-arXiv:2502.17510v2 Announce Type: replace 
-Abstract: Continual learning (CL) is crucial for deploying large language models (LLMs) in dynamic real-world environments without costly retraining. While recent model ensemble and model merging methods guided by parameter importance have gained popularity, they often struggle to balance knowledge transfer and forgetting, mainly due to the reliance on static importance estimates during sequential training. In this paper, we present Recurrent-KIF, a novel CL framework for Recurrent Knowledge Identification and Fusion, which enables dynamic estimation of parameter importance distributions to enhance knowledge transfer. Inspired by human continual learning, Recurrent-KIF employs an inner loop that rapidly adapts to new tasks while identifying important parameters, coupled with an outer loop that globally manages the fusion of new and historical knowledge through redundant knowledge pruning and key knowledge merging. These inner-outer loops iteratively perform multiple rounds of fusion, allowing Recurrent-KIF to leverage intermediate training information and adaptively adjust fusion strategies based on evolving importance distributions. Extensive experiments on two CL benchmarks with various model sizes (from 770M to 13B) demonstrate that Recurrent-KIF effectively mitigates catastrophic forgetting and enhances knowledge transfer.
-]]></content:encoded>
-<pubDate>Mon, 02 Jun 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Dynamic Classification: Leveraging Self-Supervised Classification to Enhance Prediction Performance</title>
-<link>https://arxiv.org/abs/2502.18891</link>
-<guid>https://arxiv.org/abs/2502.18891</guid>
-<content:encoded><![CDATA[
-arXiv:2502.18891v2 Announce Type: replace 
-Abstract: In this study, we propose an innovative dynamic classification algorithm aimed at achieving zero missed detections and minimal false positives,acritical in safety-critical domains (e.g., medical diagnostics) where undetected cases risk severe outcomes. The algorithm partitions data in a self-supervised learning-generated way, which allows the model to learn from the training set to understand the data distribution and thereby divides training set and test set into N different subareas. The training and test subsets in the same subarea will have nearly the same boundary. For each subarea, there will be the same type of model, such as linear or random forest model, to predict the results of that subareas. In addition, the algorithm uses subareas boundary to refine predictions results and filter out substandard results without requiring additional models. This approach allows each model to operate within a smaller data range and remove the inaccurate prediction results, thereby improving overall accuracy. Experimental results show that, with minimal data partitioning errors, the algorithm achieves exceptional performance with zero missed detections and minimal false positives, outperforming existing ensembles like XGBoost or LGBM model. Even with larger classification errors, it remains comparable to that of state-of-the-art models.
-  Key innovations include self-supervised classification learning, small-range subset predictions, and optimizing the prediction results and eliminate the unqualified ones without the need for additional model support. Although the algorithm still has room for improvement in automatic parameter tuning and efficiency, it demonstrates outstanding performance across multiple datasets. Future work will focus on optimizing the classification components to enhance robustness and adaptability.
-]]></content:encoded>
-<pubDate>Mon, 02 Jun 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Corporate Fraud Detection in Rich-yet-Noisy Financial Graph</title>
-<link>https://arxiv.org/abs/2502.19305</link>
-<guid>https://arxiv.org/abs/2502.19305</guid>
-<content:encoded><![CDATA[
-arXiv:2502.19305v2 Announce Type: replace 
-Abstract: Corporate fraud detection aims to automatically recognize companies that conduct wrongful activities such as fraudulent financial statements or illegal insider trading. Previous learning-based methods fail to effectively integrate rich interactions in the company network. To close this gap, we collect 18-year financial records in China to form three graph datasets with fraud labels. We analyze the characteristics of the financial graphs, highlighting two pronounced issues: (1) information overload: the dominance of (noisy) non-company nodes over company nodes hinders the message-passing process in Graph Convolution Networks (GCN); and (2) hidden fraud: there exists a large percentage of possible undetected violations in the collected data. The hidden fraud problem will introduce noisy labels in the training dataset and compromise fraud detection results. To handle such challenges, we propose a novel graph-based method, namely, Knowledge-enhanced GCN with Robust Two-stage Learning (${\rm KeGCN}_{R}$), which leverages Knowledge Graph Embeddings to mitigate the information overload and effectively learns rich representations. The proposed model adopts a two-stage learning method to enhance robustness against hidden frauds. Extensive experimental results not only confirm the importance of interactions but also show the superiority of ${\rm KeGCN}_{R}$ over a number of strong baselines in terms of fraud detection effectiveness and robustness.
-]]></content:encoded>
-<pubDate>Mon, 02 Jun 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>IL-SOAR : Imitation Learning with Soft Optimistic Actor cRitic</title>
-<link>https://arxiv.org/abs/2502.19859</link>
-<guid>https://arxiv.org/abs/2502.19859</guid>
-<content:encoded><![CDATA[
-arXiv:2502.19859v3 Announce Type: replace 
-Abstract: This paper introduces the SOAR framework for imitation learning. SOAR is an algorithmic template that learns a policy from expert demonstrations with a primal dual style algorithm that alternates cost and policy updates. Within the policy updates, the SOAR framework uses an actor critic method with multiple critics to estimate the critic uncertainty and build an optimistic critic fundamental to drive exploration. When instantiated in the tabular setting, we get a provable algorithm with guarantees that matches the best known results in $\epsilon$. Practically, the SOAR template is shown to boost consistently the performance of imitation learning algorithms based on Soft Actor Critic such as f-IRL, ML-IRL and CSIL in several MuJoCo environments. Overall, thanks to SOAR, the required number of episodes to achieve the same performance is reduced by half.
-]]></content:encoded>
-<pubDate>Mon, 02 Jun 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>BOSE: A Systematic Evaluation Method Optimized for Base Models</title>
-<link>https://arxiv.org/abs/2503.00812</link>
-<guid>https://arxiv.org/abs/2503.00812</guid>
-<content:encoded><![CDATA[
-arXiv:2503.00812v2 Announce Type: replace 
-Abstract: This paper poses two critical issues in evaluating base models (without post-training): (1) Unstable evaluation during training: in the early stages of pre-training, the models lack the capability to answer questions as required, leading to unstable evaluation results. This instability makes it difficult to provide solid conclusions to guide the training, especially for key experiments such as data ablation and scaling law. (2) Inconsistency between base and instruct models: base models generally exhibit poorer evaluation performance compared to corresponding instruct models. This gap poses a challenge for assessing whether a base model with better evaluation can truly lead to a better instruct model. To address these issues, we propose Base model Oriented Systematic Evaluation (BOSE), a method specifically designed to optimize the evaluation of base models. Specifically, BOSE introduces two key innovations: In-Context Light-instruction Prompt (ICLiP) for open-ended tasks and Blank-ppl for multi-choice tasks with candidate options, which transforms the standard perplexity (ppl) metric into a fill-in-the-blank format to mitigate early-stage evaluation fluctuations. Furthermore, we are the first to propose Kendall's rank correlation to quantitatively measure the evaluation stability and consistency. Experimental results demonstrate that BOSE significantly enhances both the stability of evaluations during pre-training and the consistency between base and instruct models, thereby providing more reliable guidance for the LLMs' training.
 ]]></content:encoded>
 <pubDate>Mon, 02 Jun 2025 00:00:00 -0400</pubDate>
 </item>

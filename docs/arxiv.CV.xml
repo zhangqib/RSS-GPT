@@ -4,6 +4,7 @@
 <title>cs.CV updates on arXiv.org</title>
 <link>http://rss.arxiv.org/rss/cs.CV</link>
 
+
 <item>
 <title>Contrastive Alignment with Semantic Gap-Aware Corrections in Text-Video Retrieval</title>
 <link>https://arxiv.org/abs/2505.12499</link>
@@ -16,7 +17,6 @@ GARE is a Gap-Aware Retrieval framework that addresses the modality gap and fals
 arXiv:2505.12499v4 Announce Type: replace 
 Abstract: Recent advances in text-video retrieval have been largely driven by contrastive learning frameworks. However, existing methods overlook a key source of optimization tension: the separation between text and video distributions in the representation space (referred to as the modality gap), and the prevalence of false negatives in batch sampling. These factors lead to conflicting gradients under the InfoNCE loss, impeding stable alignment. To mitigate this, we propose GARE, a Gap-Aware Retrieval framework that introduces a learnable, pair-specific increment Delta_ij between text t_i and video v_j to offload the tension from the global anchor representation. We first derive the ideal form of Delta_ij via a coupled multivariate first-order Taylor approximation of the InfoNCE loss under a trust-region constraint, revealing it as a mechanism for resolving gradient conflicts by guiding updates along a locally optimal descent direction. Due to the high cost of directly computing Delta_ij, we introduce a lightweight neural module conditioned on the semantic gap between each video-text pair, enabling structure-aware correction guided by gradient supervision. To further stabilize learning and promote interpretability, we regularize Delta using three components: a trust-region constraint to prevent oscillation, a directional diversity term to promote semantic coverage, and an information bottleneck to limit redundancy. Experiments across four retrieval benchmarks show that GARE consistently improves alignment accuracy and robustness to noisy supervision, confirming the effectiveness of gap-aware tension mitigation.
 ]]></content:encoded>
-<pubDate>Tue, 03 Jun 2025 00:00:00 -0400</pubDate>
 <pubDate>Tue, 03 Jun 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -32,7 +32,6 @@ arXiv:2505.20967v2 Announce Type: replace
 Abstract: Neural fields (NFs) have demonstrated remarkable performance in scene reconstruction, powering various tasks such as novel view synthesis. However, existing NF methods relying on RGB or LiDAR inputs often exhibit severe fragility to adverse weather, particularly when applied in outdoor scenarios like autonomous driving. In contrast, millimeter-wave radar is inherently robust to environmental changes, while unfortunately, its integration with NFs remains largely underexplored. Besides, as outdoor driving scenarios frequently involve moving objects, making spatiotemporal modeling essential for temporally consistent novel view synthesis. To this end, we introduce RF4D, a radar-based neural field framework specifically designed for novel view synthesis in outdoor dynamic scenes. RF4D explicitly incorporates temporal information into its representation, significantly enhancing its capability to model moving objects. We further introduce a feature-level flow module that predicts latent temporal offsets between adjacent frames, enforcing temporal coherence in dynamic scene modeling. Moreover, we propose a radar-specific power rendering formulation closely aligned with radar sensing physics, improving synthesis accuracy and interoperability. Extensive experiments on public radar datasets demonstrate the superior performance of RF4D in terms of radar measurement synthesis quality and occupancy estimation accuracy, achieving especially pronounced improvements in dynamic outdoor scenarios.
 ]]></content:encoded>
 <pubDate>Tue, 03 Jun 2025 00:00:00 -0400</pubDate>
-<pubDate>Tue, 03 Jun 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
 <title>Normalized Attention Guidance: Universal Negative Guidance for Diffusion Model</title>
@@ -47,20 +46,18 @@ arXiv:2505.21179v2 Announce Type: replace
 Abstract: Negative guidance -- explicitly suppressing unwanted attributes -- remains a fundamental challenge in diffusion models, particularly in few-step sampling regimes. While Classifier-Free Guidance (CFG) works well in standard settings, it fails under aggressive sampling step compression due to divergent predictions between positive and negative branches. We present Normalized Attention Guidance (NAG), an efficient, training-free mechanism that applies extrapolation in attention space with L1-based normalization and refinement. NAG restores effective negative guidance where CFG collapses while maintaining fidelity. Unlike existing approaches, NAG generalizes across architectures (UNet, DiT), sampling regimes (few-step, multi-step), and modalities (image, video), functioning as a \textit{universal} plug-in with minimal computational overhead. Through extensive experimentation, we demonstrate consistent improvements in text alignment (CLIP Score), fidelity (FID, PFID), and human-perceived quality (ImageReward). Our ablation studies validate each design component, while user studies confirm significant preference for NAG-guided outputs. As a model-agnostic inference-time approach requiring no retraining, NAG provides effortless negative guidance for all modern diffusion frameworks -- pseudocode in the Appendix!
 ]]></content:encoded>
 <pubDate>Tue, 03 Jun 2025 00:00:00 -0400</pubDate>
-<pubDate>Tue, 03 Jun 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
 <title>SynWorld: Virtual Scenario Synthesis for Agentic Action Knowledge Refinement</title>
 <link>https://arxiv.org/abs/2504.03561</link>
 <guid>https://arxiv.org/abs/2504.03561</guid>
 <content:encoded><![CDATA[
-<div> Keywords: agents, environments, SynWorld, action knowledge, MCTS<br>
+<div> Keywords: agents, environments, SynWorld, action knowledge, MCTS<br />
 Summary: 
- Agents in LLM face challenges in novel environments and unconventional action spaces. The SynWorld framework enables agents to autonomously explore environments, optimize workflows, and enhance their action understanding. It allows agents to synthesize scenarios with multi-step action invocation and use Monte Carlo Tree Search (MCTS) exploration to refine their action knowledge effectively. Experiments show that SynWorld is a versatile approach for learning action knowledge in new environments. The code for SynWorld is available on GitHub at https://github.com/zjunlp/SynWorld. <br><br>Summary: <div>
+ Agents in LLM face challenges in novel environments and unconventional action spaces. The SynWorld framework enables agents to autonomously explore environments, optimize workflows, and enhance their action understanding. It allows agents to synthesize scenarios with multi-step action invocation and use Monte Carlo Tree Search (MCTS) exploration to refine their action knowledge effectively. Experiments show that SynWorld is a versatile approach for learning action knowledge in new environments. The code for SynWorld is available on GitHub at https://github.com/zjunlp/SynWorld. <br /><br />Summary: <div>
 arXiv:2504.03561v3 Announce Type: replace-cross 
 Abstract: In the interaction between agents and their environments, agents expand their capabilities by planning and executing actions. However, LLM-based agents face substantial challenges when deployed in novel environments or required to navigate unconventional action spaces. To empower agents to autonomously explore environments, optimize workflows, and enhance their understanding of actions, we propose SynWorld, a framework that allows agents to synthesize possible scenarios with multi-step action invocation within the action space and perform Monte Carlo Tree Search (MCTS) exploration to effectively refine their action knowledge in the current environment. Our experiments demonstrate that SynWorld is an effective and general approach to learning action knowledge in new environments. Code is available at https://github.com/zjunlp/SynWorld.
 ]]></content:encoded>
-<pubDate>Tue, 03 Jun 2025 00:00:00 -0400</pubDate>
 <pubDate>Tue, 03 Jun 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -68,13 +65,12 @@ Abstract: In the interaction between agents and their environments, agents expan
 <link>https://arxiv.org/abs/2505.20431</link>
 <guid>https://arxiv.org/abs/2505.20431</guid>
 <content:encoded><![CDATA[
-<div> 3D detailizer, neural model, high-quality, shape proxy, text prompt <br>
-<br>
+<div> 3D detailizer, neural model, high-quality, shape proxy, text prompt <br />
+<br />
 Summary: The article introduces a 3D detailizer, a neural model that can quickly transform a coarse 3D shape proxy into a detailed asset based on an input text prompt. The model is trained using the text prompt to define shape class and details appearance. The coarse 3D proxy allows for structure control over the final shape and the model can be reused to generate various shapes with consistent style and appearance. Training involves distilling knowledge from a multi-view image diffusion model and using Score Distillation Sampling. The model is trained in two stages to generate shapes of increasing complexity. Results show superior quality compared to existing models and quick refining of shapes in less than a second. The method enables interactive 3D modeling workflow and shows strong generalizability across styles, structures, and object categories. <div>
 arXiv:2505.20431v2 Announce Type: replace-cross 
 Abstract: We introduce a 3D detailizer, a neural model which can instantaneously (in <1s) transform a coarse 3D shape proxy into a high-quality asset with detailed geometry and texture as guided by an input text prompt. Our model is trained using the text prompt, which defines the shape class and characterizes the appearance and fine-grained style of the generated details. The coarse 3D proxy, which can be easily varied and adjusted (e.g., via user editing), provides structure control over the final shape. Importantly, our detailizer is not optimized for a single shape; it is the result of distilling a generative model, so that it can be reused, without retraining, to generate any number of shapes, with varied structures, whose local details all share a consistent style and appearance. Our detailizer training utilizes a pretrained multi-view image diffusion model, with text conditioning, to distill the foundational knowledge therein into our detailizer via Score Distillation Sampling (SDS). To improve SDS and enable our detailizer architecture to learn generalizable features over complex structures, we train our model in two training stages to generate shapes with increasing structural complexity. Through extensive experiments, we show that our method generates shapes of superior quality and details compared to existing text-to-3D models under varied structure control. Our detailizer can refine a coarse shape in less than a second, making it possible to interactively author and adjust 3D shapes. Furthermore, the user-imposed structure control can lead to creative, and hence out-of-distribution, 3D asset generations that are beyond the current capabilities of leading text-to-3D generative models. We demonstrate an interactive 3D modeling workflow our method enables, and its strong generalizability over styles, structures, and object categories.
 ]]></content:encoded>
-<pubDate>Tue, 03 Jun 2025 00:00:00 -0400</pubDate>
 <pubDate>Tue, 03 Jun 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -89,11 +85,10 @@ Summary:
 - The RH-AUC metric is introduced to measure how a model's perception accuracy changes with reasoning length, assessing visual grounding during reasoning.
 - The RH-Bench diagnostic benchmark evaluates the trade-off between reasoning ability and hallucination across various multimodal tasks.
 - Findings suggest that larger models achieve a better balance between reasoning and perception, with training data types and domains influencing this balance more than volume. This highlights the need for evaluation frameworks that consider both reasoning quality and perceptual fidelity. 
-<br><br>Summary: <div>
+<br /><br />Summary: <div>
 arXiv:2505.21523v2 Announce Type: replace-cross 
 Abstract: Test-time compute has empowered multimodal large language models to generate extended reasoning chains, yielding strong performance on tasks such as multimodal math reasoning. However, this improved reasoning ability often comes with increased hallucination: as generations become longer, models tend to drift away from image-grounded content and rely more heavily on language priors. Attention analysis shows that longer reasoning chains lead to reduced focus on visual inputs, which contributes to hallucination. To systematically study this phenomenon, we introduce RH-AUC, a metric that quantifies how a model's perception accuracy changes with reasoning length, allowing us to evaluate whether the model preserves visual grounding during reasoning. We also release RH-Bench, a diagnostic benchmark that spans a variety of multimodal tasks, designed to assess the trade-off between reasoning ability and hallucination. Our analysis reveals that (i) larger models typically achieve a better balance between reasoning and perception, and (ii) this balance is influenced more by the types and domains of training data than by its overall volume. These findings underscore the importance of evaluation frameworks that jointly consider both reasoning quality and perceptual fidelity.
 ]]></content:encoded>
-<pubDate>Tue, 03 Jun 2025 00:00:00 -0400</pubDate>
 <pubDate>Tue, 03 Jun 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -103,11 +98,10 @@ Abstract: Test-time compute has empowered multimodal large language models to ge
 <content:encoded><![CDATA[
 <div> perception, planning, hierarchical cognition, autonomous driving, trajectory generation
 Summary:
-CogAD is a novel end-to-end autonomous driving model that mimics human cognitive processes. It incorporates global-to-local context processing for perception and intent-conditioned multi-mode trajectory generation for planning. The method offers advantages such as comprehensive environmental understanding, robust planning exploration, and diverse yet reasonable trajectory generation. Extensive experiments on nuScenes and Bench2Drive demonstrate CogAD's state-of-the-art performance in end-to-end planning, particularly excelling in long-tail scenarios and generalizing well to complex real-world driving conditions. <br><br>Summary: <div>
+CogAD is a novel end-to-end autonomous driving model that mimics human cognitive processes. It incorporates global-to-local context processing for perception and intent-conditioned multi-mode trajectory generation for planning. The method offers advantages such as comprehensive environmental understanding, robust planning exploration, and diverse yet reasonable trajectory generation. Extensive experiments on nuScenes and Bench2Drive demonstrate CogAD's state-of-the-art performance in end-to-end planning, particularly excelling in long-tail scenarios and generalizing well to complex real-world driving conditions. <br /><br />Summary: <div>
 arXiv:2505.21581v2 Announce Type: replace-cross 
 Abstract: While end-to-end autonomous driving has advanced significantly, prevailing methods remain fundamentally misaligned with human cognitive principles in both perception and planning. In this paper, we propose CogAD, a novel end-to-end autonomous driving model that emulates the hierarchical cognition mechanisms of human drivers. CogAD implements dual hierarchical mechanisms: global-to-local context processing for human-like perception and intent-conditioned multi-mode trajectory generation for cognitively-inspired planning. The proposed method demonstrates three principal advantages: comprehensive environmental understanding through hierarchical perception, robust planning exploration enabled by multi-level planning, and diverse yet reasonable multi-modal trajectory generation facilitated by dual-level uncertainty modeling. Extensive experiments on nuScenes and Bench2Drive demonstrate that CogAD achieves state-of-the-art performance in end-to-end planning, exhibiting particular superiority in long-tail scenarios and robust generalization to complex real-world driving conditions.
 ]]></content:encoded>
-<pubDate>Tue, 03 Jun 2025 00:00:00 -0400</pubDate>
 <pubDate>Tue, 03 Jun 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -120,14 +114,12 @@ Abstract: While end-to-end autonomous driving has advanced significantly, prevai
 Summary:
 Chain-of-Talkers (CoTalk) is an AI-in-the-loop methodology that aims to optimize human annotation efforts for image captions. It utilizes sequential annotation to reduce redundant workload and increase efficiency. By leveraging a multimodal interface that allows annotators to talk while annotating, CoTalk maximizes the number of annotated samples and improves their comprehensiveness within fixed budget constraints. The framework is evaluated based on intrinsic evaluations that measure the comprehensiveness of semantic units and extrinsic evaluations that assess the practical usage of annotated captions in vision-language alignment. Experimental results demonstrate that CoTalk improves annotation speed and retrieval performance compared to traditional parallel annotation methods, showing promise for enhancing the learning of robust vision-language alignment through optimized human annotation efforts. 
 
-<br><br>Summary: <div>
+<br /><br />Summary: <div>
 arXiv:2505.22627v2 Announce Type: replace-cross 
 Abstract: While densely annotated image captions significantly facilitate the learning of robust vision-language alignment, methodologies for systematically optimizing human annotation efforts remain underexplored. We introduce Chain-of-Talkers (CoTalk), an AI-in-the-loop methodology designed to maximize the number of annotated samples and improve their comprehensiveness under fixed budget constraints (e.g., total human annotation time). The framework is built upon two key insights. First, sequential annotation reduces redundant workload compared to conventional parallel annotation, as subsequent annotators only need to annotate the ``residual'' -- the missing visual information that previous annotations have not covered. Second, humans process textual input faster by reading while outputting annotations with much higher throughput via talking; thus a multimodal interface enables optimized efficiency. We evaluate our framework from two aspects: intrinsic evaluations that assess the comprehensiveness of semantic units, obtained by parsing detailed captions into object-attribute trees and analyzing their effective connections; extrinsic evaluation measures the practical usage of the annotated captions in facilitating vision-language alignment. Experiments with eight participants show our Chain-of-Talkers (CoTalk) improves annotation speed (0.42 vs. 0.30 units/sec) and retrieval performance (41.13% vs. 40.52%) over the parallel method.
 ]]></content:encoded>
 <pubDate>Tue, 03 Jun 2025 00:00:00 -0400</pubDate>
-<pubDate>Tue, 03 Jun 2025 00:00:00 -0400</pubDate>
 </item>
-
 <item>
 <title>EgoVIS@CVPR: What Changed and What Could Have Changed? State-Change Counterfactuals for Procedure-Aware Video Representation Learning</title>
 <link>https://arxiv.org/abs/2506.00101</link>
@@ -11088,86 +11080,6 @@ Abstract: Detecting vehicles in satellite images is crucial for traffic manageme
 <content:encoded><![CDATA[
 arXiv:2505.22360v1 Announce Type: new 
 Abstract: Recent advances in large-scale text-to-image generation models have led to a surge in subject-driven text-to-image generation, which aims to produce customized images that align with textual descriptions while preserving the identity of specific subjects. Despite significant progress, current methods struggle to disentangle identity-relevant information from identity-irrelevant details in the input images, resulting in overfitting or failure to maintain subject identity. In this work, we propose a novel framework that improves the separation of identity-related and identity-unrelated features and introduces an innovative feature fusion mechanism to improve the quality and text alignment of generated images. Our framework consists of two key components: an Implicit-Explicit foreground-background Decoupling Module (IEDM) and a Feature Fusion Module (FFM) based on a Mixture of Experts (MoE). IEDM combines learnable adapters for implicit decoupling at the feature level with inpainting techniques for explicit foreground-background separation at the image level. FFM dynamically integrates identity-irrelevant features with identity-related features, enabling refined feature representations even in cases of incomplete decoupling. In addition, we introduce three complementary loss functions to guide the decoupling process. Extensive experiments demonstrate the effectiveness of our proposed method in enhancing image generation quality, improving flexibility in scene adaptation, and increasing the diversity of generated outputs across various textual descriptions.
-]]></content:encoded>
-<pubDate>Thu, 29 May 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>DAM: Domain-Aware Module for Multi-Domain Dataset Condensation</title>
-<link>https://arxiv.org/abs/2505.22387</link>
-<guid>https://arxiv.org/abs/2505.22387</guid>
-<content:encoded><![CDATA[
-arXiv:2505.22387v1 Announce Type: new 
-Abstract: Dataset Condensation (DC) has emerged as a promising solution to mitigate the computational and storage burdens associated with training deep learning models. However, existing DC methods largely overlook the multi-domain nature of modern datasets, which are increasingly composed of heterogeneous images spanning multiple domains. In this paper, we extend DC and introduce Multi-Domain Dataset Condensation (MDDC), which aims to condense data that generalizes across both single-domain and multi-domain settings. To this end, we propose the Domain-Aware Module (DAM), a training-time module that embeds domain-related features into each synthetic image via learnable spatial masks. As explicit domain labels are mostly unavailable in real-world datasets, we employ frequency-based pseudo-domain labeling, which leverages low-frequency amplitude statistics. DAM is only active during the condensation process, thus preserving the same images per class (IPC) with prior methods. Experiments show that DAM consistently improves in-domain, out-of-domain, and cross-architecture performance over baseline dataset condensation methods.
-]]></content:encoded>
-<pubDate>Thu, 29 May 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>PacTure: Efficient PBR Texture Generation on Packed Views with Visual Autoregressive Models</title>
-<link>https://arxiv.org/abs/2505.22394</link>
-<guid>https://arxiv.org/abs/2505.22394</guid>
-<content:encoded><![CDATA[
-arXiv:2505.22394v1 Announce Type: new 
-Abstract: We present PacTure, a novel framework for generating physically-based rendering (PBR) material textures from an untextured 3D mesh, a text description, and an optional image prompt. Early 2D generation-based texturing approaches generate textures sequentially from different views, resulting in long inference times and globally inconsistent textures. More recent approaches adopt multi-view generation with cross-view attention to enhance global consistency, which, however, limits the resolution for each view. In response to these weaknesses, we first introduce view packing, a novel technique that significantly increases the effective resolution for each view during multi-view generation without imposing additional inference cost, by formulating the arrangement of multi-view maps as a 2D rectangle bin packing problem. In contrast to UV mapping, it preserves the spatial proximity essential for image generation and maintains full compatibility with current 2D generative models. To further reduce the inference cost, we enable fine-grained control and multi-domain generation within the next-scale prediction autoregressive framework to create an efficient multi-view multi-domain generative backbone. Extensive experiments show that PacTure outperforms state-of-the-art methods in both quality of generated PBR textures and efficiency in training and inference.
-]]></content:encoded>
-<pubDate>Thu, 29 May 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Zooming from Context to Cue: Hierarchical Preference Optimization for Multi-Image MLLMs</title>
-<link>https://arxiv.org/abs/2505.22396</link>
-<guid>https://arxiv.org/abs/2505.22396</guid>
-<content:encoded><![CDATA[
-arXiv:2505.22396v1 Announce Type: new 
-Abstract: Multi-modal Large Language Models (MLLMs) excel at single-image tasks but struggle with multi-image understanding due to cross-modal misalignment, leading to hallucinations (context omission, conflation, and misinterpretation). Existing methods using Direct Preference Optimization (DPO) constrain optimization to a solitary image reference within the input sequence, neglecting holistic context modeling. We propose Context-to-Cue Direct Preference Optimization (CcDPO), a multi-level preference optimization framework that enhances per-image perception in multi-image settings by zooming into visual clues -- from sequential context to local details. It features: (i) Context-Level Optimization : Re-evaluates cognitive biases underlying MLLMs' multi-image context comprehension and integrates a spectrum of low-cost global sequence preferences for bias mitigation. (ii) Needle-Level Optimization : Directs attention to fine-grained visual details through region-targeted visual prompts and multimodal preference supervision. To support scalable optimization, we also construct MultiScope-42k, an automatically generated dataset with high-quality multi-level preference pairs. Experiments show that CcDPO significantly reduces hallucinations and yields consistent performance gains across general single- and multi-image tasks.
-]]></content:encoded>
-<pubDate>Thu, 29 May 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Self-Reflective Reinforcement Learning for Diffusion-based Image Reasoning Generation</title>
-<link>https://arxiv.org/abs/2505.22407</link>
-<guid>https://arxiv.org/abs/2505.22407</guid>
-<content:encoded><![CDATA[
-arXiv:2505.22407v1 Announce Type: new 
-Abstract: Diffusion models have recently demonstrated exceptional performance in image generation task. However, existing image generation methods still significantly suffer from the dilemma of image reasoning, especially in logic-centered image generation tasks. Inspired by the success of Chain of Thought (CoT) and Reinforcement Learning (RL) in LLMs, we propose SRRL, a self-reflective RL algorithm for diffusion models to achieve reasoning generation of logical images by performing reflection and iteration across generation trajectories. The intermediate samples in the denoising process carry noise, making accurate reward evaluation difficult. To address this challenge, SRRL treats the entire denoising trajectory as a CoT step with multi-round reflective denoising process and introduces condition guided forward process, which allows for reflective iteration between CoT steps. Through SRRL-based iterative diffusion training, we introduce image reasoning through CoT into generation tasks adhering to physical laws and unconventional physical phenomena for the first time. Notably, experimental results of case study exhibit that the superior performance of our SRRL algorithm even compared with GPT-4o. The project page is https://jadenpan0.github.io/srrl.github.io/.
-]]></content:encoded>
-<pubDate>Thu, 29 May 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Frugal Incremental Generative Modeling using Variational Autoencoders</title>
-<link>https://arxiv.org/abs/2505.22408</link>
-<guid>https://arxiv.org/abs/2505.22408</guid>
-<content:encoded><![CDATA[
-arXiv:2505.22408v1 Announce Type: new 
-Abstract: Continual or incremental learning holds tremendous potential in deep learning with different challenges including catastrophic forgetting. The advent of powerful foundation and generative models has propelled this paradigm even further, making it one of the most viable solution to train these models. However, one of the persisting issues lies in the increasing volume of data particularly with replay-based methods. This growth introduces challenges with scalability since continuously expanding data becomes increasingly demanding as the number of tasks grows. In this paper, we attenuate this issue by devising a novel replay-free incremental learning model based on Variational Autoencoders (VAEs). The main contribution of this work includes (i) a novel incremental generative modelling, built upon a well designed multi-modal latent space, and also (ii) an orthogonality criterion that mitigates catastrophic forgetting of the learned VAEs. The proposed method considers two variants of these VAEs: static and dynamic with no (or at most a controlled) growth in the number of parameters. Extensive experiments show that our method is (at least) an order of magnitude more ``memory-frugal'' compared to the closely related works while achieving SOTA accuracy scores.
-]]></content:encoded>
-<pubDate>Thu, 29 May 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>GeoDrive: 3D Geometry-Informed Driving World Model with Precise Action Control</title>
-<link>https://arxiv.org/abs/2505.22421</link>
-<guid>https://arxiv.org/abs/2505.22421</guid>
-<content:encoded><![CDATA[
-arXiv:2505.22421v1 Announce Type: new 
-Abstract: Recent advancements in world models have revolutionized dynamic environment simulation, allowing systems to foresee future states and assess potential actions. In autonomous driving, these capabilities help vehicles anticipate the behavior of other road users, perform risk-aware planning, accelerate training in simulation, and adapt to novel scenarios, thereby enhancing safety and reliability. Current approaches exhibit deficiencies in maintaining robust 3D geometric consistency or accumulating artifacts during occlusion handling, both critical for reliable safety assessment in autonomous navigation tasks. To address this, we introduce GeoDrive, which explicitly integrates robust 3D geometry conditions into driving world models to enhance spatial understanding and action controllability. Specifically, we first extract a 3D representation from the input frame and then obtain its 2D rendering based on the user-specified ego-car trajectory. To enable dynamic modeling, we propose a dynamic editing module during training to enhance the renderings by editing the positions of the vehicles. Extensive experiments demonstrate that our method significantly outperforms existing models in both action accuracy and 3D spatial awareness, leading to more realistic, adaptable, and reliable scene modeling for safer autonomous driving. Additionally, our model can generalize to novel trajectories and offers interactive scene editing capabilities, such as object editing and object trajectory control.
-]]></content:encoded>
-<pubDate>Thu, 29 May 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>RC-AutoCalib: An End-to-End Radar-Camera Automatic Calibration Network</title>
-<link>https://arxiv.org/abs/2505.22427</link>
-<guid>https://arxiv.org/abs/2505.22427</guid>
-<content:encoded><![CDATA[
-arXiv:2505.22427v1 Announce Type: new 
-Abstract: This paper presents a groundbreaking approach - the first online automatic geometric calibration method for radar and camera systems. Given the significant data sparsity and measurement uncertainty in radar height data, achieving automatic calibration during system operation has long been a challenge. To address the sparsity issue, we propose a Dual-Perspective representation that gathers features from both frontal and bird's-eye views. The frontal view contains rich but sensitive height information, whereas the bird's-eye view provides robust features against height uncertainty. We thereby propose a novel Selective Fusion Mechanism to identify and fuse reliable features from both perspectives, reducing the effect of height uncertainty. Moreover, for each view, we incorporate a Multi-Modal Cross-Attention Mechanism to explicitly find location correspondences through cross-modal matching. During the training phase, we also design a Noise-Resistant Matcher to provide better supervision and enhance the robustness of the matching mechanism against sparsity and height uncertainty. Our experimental results, tested on the nuScenes dataset, demonstrate that our method significantly outperforms previous radar-camera auto-calibration methods, as well as existing state-of-the-art LiDAR-camera calibration techniques, establishing a new benchmark for future research. The code is available at https://github.com/nycu-acm/RC-AutoCalib.
-]]></content:encoded>
-<pubDate>Thu, 29 May 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Zero-Shot 3D Visual Grounding from Vision-Language Models</title>
-<link>https://arxiv.org/abs/2505.22429</link>
-<guid>https://arxiv.org/abs/2505.22429</guid>
-<content:encoded><![CDATA[
-arXiv:2505.22429v1 Announce Type: new 
-Abstract: 3D Visual Grounding (3DVG) seeks to locate target objects in 3D scenes using natural language descriptions, enabling downstream applications such as augmented reality and robotics. Existing approaches typically rely on labeled 3D data and predefined categories, limiting scalability to open-world settings. We present SeeGround, a zero-shot 3DVG framework that leverages 2D Vision-Language Models (VLMs) to bypass the need for 3D-specific training. To bridge the modality gap, we introduce a hybrid input format that pairs query-aligned rendered views with spatially enriched textual descriptions. Our framework incorporates two core components: a Perspective Adaptation Module that dynamically selects optimal viewpoints based on the query, and a Fusion Alignment Module that integrates visual and spatial signals to enhance localization precision. Extensive evaluations on ScanRefer and Nr3D confirm that SeeGround achieves substantial improvements over existing zero-shot baselines -- outperforming them by 7.7% and 7.1%, respectively -- and even rivals fully supervised alternatives, demonstrating strong generalization under challenging conditions.
 ]]></content:encoded>
 <pubDate>Thu, 29 May 2025 00:00:00 -0400</pubDate>
 </item>
