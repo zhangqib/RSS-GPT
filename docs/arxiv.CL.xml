@@ -4,19 +4,19 @@
 <title>cs.CL updates on arXiv.org</title>
 <link>http://rss.arxiv.org/rss/cs.CL</link>
 
+
 <item>
 <title>What Has Been Lost with Synthetic Evaluation?</title>
 <link>https://arxiv.org/abs/2505.22830</link>
 <guid>https://arxiv.org/abs/2505.22830</guid>
 <content:encoded><![CDATA[
 <div> evaluate, benchmarks, large language models, reasoning, crowdsourcing
-<br>
-<br>
+<br />
+<br />
 Summary: Large language models (LLMs) are being used for data generation, but creating evaluation benchmarks for them is crucial. This study compared LLM-generated benchmarks with crowdsourced ones for two reading comprehension datasets. While LLMs could produce valid benchmarks at a lower cost, they were found to be less challenging for LLMs compared to the human-authored ones. This raises questions about the effectiveness of using LLMs in creating evaluation data and highlights the importance of critically assessing this approach in benchmark creation. <div>
 arXiv:2505.22830v2 Announce Type: replace 
 Abstract: Large language models (LLMs) are increasingly used for data generation. However, creating evaluation benchmarks raises the bar for this emerging paradigm. Benchmarks must target specific phenomena, penalize exploiting shortcuts, and be challenging. Through two case studies, we investigate whether LLMs can meet these demands by generating reasoning over-text benchmarks and comparing them to those created through careful crowdsourcing. Specifically, we evaluate both the validity and difficulty of LLM-generated versions of two high-quality reading comprehension datasets: CondaQA, which evaluates reasoning about negation, and DROP, which targets reasoning about quantities. We find that prompting LLMs can produce variants of these datasets that are often valid according to the annotation guidelines, at a fraction of the cost of the original crowdsourcing effort. However, we show that they are less challenging for LLMs than their human-authored counterparts. This finding sheds light on what may have been lost by generating evaluation data with LLMs, and calls for critically reassessing the immediate use of this increasingly prevalent approach to benchmark creation.
 ]]></content:encoded>
-<pubDate>Wed, 04 Jun 2025 00:00:00 -0400</pubDate>
 <pubDate>Wed, 04 Jun 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -32,7 +32,6 @@ arXiv:2505.22848v2 Announce Type: replace
 Abstract: There is increasing evidence of Human Label Variation (HLV) in Natural Language Inference (NLI), where annotators assign different labels to the same premise-hypothesis pair. However, within-label variation--cases where annotators agree on the same label but provide divergent reasoning--poses an additional and mostly overlooked challenge. Several NLI datasets contain highlighted words in the NLI item as explanations, but the same spans on the NLI item can be highlighted for different reasons, as evidenced by free-text explanations, which offer a window into annotators' reasoning. To systematically understand this problem and gain insight into the rationales behind NLI labels, we introduce LITEX, a linguistically-informed taxonomy for categorizing free-text explanations. Using this taxonomy, we annotate a subset of the e-SNLI dataset, validate the taxonomy's reliability, and analyze how it aligns with NLI labels, highlights, and explanations. We further assess the taxonomy's usefulness in explanation generation, demonstrating that conditioning generation on LITEX yields explanations that are linguistically closer to human explanations than those generated using only labels or highlights. Our approach thus not only captures within-label variation but also shows how taxonomy-guided generation for reasoning can bridge the gap between human and model explanations more effectively than existing strategies.
 ]]></content:encoded>
 <pubDate>Wed, 04 Jun 2025 00:00:00 -0400</pubDate>
-<pubDate>Wed, 04 Jun 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
 <title>DyePack: Provably Flagging Test Set Contamination in LLMs Using Backdoors</title>
@@ -44,11 +43,10 @@ Abstract: There is increasing evidence of Human Label Variation (HLV) in Natural
 Summary:
 The article introduces DyePack, a framework that utilizes backdoor attacks to identify models that have used benchmark test sets during training without needing access to internal model details. DyePack incorporates multiple backdoors with stochastic targets to accurately compute the false positive rate when flagging models, thus preventing false accusations while providing strong evidence of contamination. Evaluation of DyePack on five models across three datasets shows its effectiveness in detecting all contaminated models in multiple-choice tasks with very low guaranteed false positive rates. Additionally, it demonstrates good generalization and detection capabilities in open-ended generation tasks with minimal false positives. DyePack offers a reliable and transparent approach to identifying model contamination in large language models, ensuring reproducibility and trust in benchmark evaluations. 
 
-<br><br>Summary: <div>
+<br /><br />Summary: <div>
 arXiv:2505.23001v2 Announce Type: replace 
 Abstract: Open benchmarks are essential for evaluating and advancing large language models, offering reproducibility and transparency. However, their accessibility makes them likely targets of test set contamination. In this work, we introduce DyePack, a framework that leverages backdoor attacks to identify models that used benchmark test sets during training, without requiring access to the loss, logits, or any internal details of the model. Like how banks mix dye packs with their money to mark robbers, DyePack mixes backdoor samples with the test data to flag models that trained on it. We propose a principled design incorporating multiple backdoors with stochastic targets, enabling exact false positive rate (FPR) computation when flagging every model. This provably prevents false accusations while providing strong evidence for every detected case of contamination. We evaluate DyePack on five models across three datasets, covering both multiple-choice and open-ended generation tasks. For multiple-choice questions, it successfully detects all contaminated models with guaranteed FPRs as low as 0.000073% on MMLU-Pro and 0.000017% on Big-Bench-Hard using eight backdoors. For open-ended generation tasks, it generalizes well and identifies all contaminated models on Alpaca with a guaranteed false positive rate of just 0.127% using six backdoors.
 ]]></content:encoded>
-<pubDate>Wed, 04 Jun 2025 00:00:00 -0400</pubDate>
 <pubDate>Wed, 04 Jun 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -56,12 +54,11 @@ Abstract: Open benchmarks are essential for evaluating and advancing large langu
 <link>https://arxiv.org/abs/2505.23114</link>
 <guid>https://arxiv.org/abs/2505.23114</guid>
 <content:encoded><![CDATA[
-<div> Keywords: Human preference data, large language models, Alignment Data Map, GPT-4o, efficiency<br>
-<br>Summary: <br>Human preference data is crucial for aligning large language models with human values, but collecting it can be costly and time-consuming. To address this challenge, a tool called Alignment Data Map has been introduced. This tool, assisted by GPT-4o, analyzes and diagnoses preference data by computing alignment scores for language model-generated responses. By focusing on high-mean, low-variance samples, the Alignment Data Map can achieve performance comparable to using the entire dataset with only 33% of the data. This efficient method can help identify high-quality samples for model alignment without requiring explicit annotations, improving data collection efficiency. Additionally, the Alignment Data Map can also diagnose existing preference datasets by detecting low-impact or potentially misannotated samples. The source code for this tool is available online. <div>
+<div> Keywords: Human preference data, large language models, Alignment Data Map, GPT-4o, efficiency<br />
+<br />Summary: <br />Human preference data is crucial for aligning large language models with human values, but collecting it can be costly and time-consuming. To address this challenge, a tool called Alignment Data Map has been introduced. This tool, assisted by GPT-4o, analyzes and diagnoses preference data by computing alignment scores for language model-generated responses. By focusing on high-mean, low-variance samples, the Alignment Data Map can achieve performance comparable to using the entire dataset with only 33% of the data. This efficient method can help identify high-quality samples for model alignment without requiring explicit annotations, improving data collection efficiency. Additionally, the Alignment Data Map can also diagnose existing preference datasets by detecting low-impact or potentially misannotated samples. The source code for this tool is available online. <div>
 arXiv:2505.23114v2 Announce Type: replace 
 Abstract: Human preference data plays a critical role in aligning large language models (LLMs) with human values. However, collecting such data is often expensive and inefficient, posing a significant scalability challenge. To address this, we introduce Alignment Data Map, a GPT-4o-assisted tool for analyzing and diagnosing preference data. Using GPT-4o as a proxy for LLM alignment, we compute alignment scores for LLM-generated responses to instructions from existing preference datasets. These scores are then used to construct an Alignment Data Map based on their mean and variance. Our experiments show that using only 33 percent of the data, specifically samples in the high-mean, low-variance region, achieves performance comparable to or better than using the entire dataset. This finding suggests that the Alignment Data Map can significantly improve data collection efficiency by identifying high-quality samples for LLM alignment without requiring explicit annotations. Moreover, the Alignment Data Map can diagnose existing preference datasets. Our analysis shows that it effectively detects low-impact or potentially misannotated samples. Source code is available online.
 ]]></content:encoded>
-<pubDate>Wed, 04 Jun 2025 00:00:00 -0400</pubDate>
 <pubDate>Wed, 04 Jun 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -69,16 +66,14 @@ Abstract: Human preference data plays a critical role in aligning large language
 <link>https://arxiv.org/abs/2505.24200</link>
 <guid>https://arxiv.org/abs/2505.24200</guid>
 <content:encoded><![CDATA[
-<div> self-supervised, multilingual, speech processing, fine-tuning, data augmentation <br>
-<br>
-Keywords: self-supervised, multilingual, speech processing, fine-tuning, data augmentation <br><br>Summary: Multilingual speech processing using pre-trained Speech Foundation Models (SFM) has shown strong performance in tasks like Language Identification (LID) and Automatic Speech Recognition (ASR). However, these models face challenges with limited resources during fine-tuning. This paper explores various strategies for adapting SFMs, such as frozen upstream training and low-rank adaptation, to enhance multilingual LID and ASR on ML-SUPERB 2.0. The approach includes data augmentation to address performance gaps in few-shot scenarios and introduces a novel LID Connectionist Temporal Classification (CTC) loss for regularization. The results demonstrate a 14% relative improvement in LID accuracy and a 30% relative reduction in ASR Character Error Rate (CER) compared to the baseline, leading to a second-place finish in the Interspeech 2025 ML-SUPERB 2.0 Challenge. <div>
+<div> self-supervised, multilingual, speech processing, fine-tuning, data augmentation <br />
+<br />
+Keywords: self-supervised, multilingual, speech processing, fine-tuning, data augmentation <br /><br />Summary: Multilingual speech processing using pre-trained Speech Foundation Models (SFM) has shown strong performance in tasks like Language Identification (LID) and Automatic Speech Recognition (ASR). However, these models face challenges with limited resources during fine-tuning. This paper explores various strategies for adapting SFMs, such as frozen upstream training and low-rank adaptation, to enhance multilingual LID and ASR on ML-SUPERB 2.0. The approach includes data augmentation to address performance gaps in few-shot scenarios and introduces a novel LID Connectionist Temporal Classification (CTC) loss for regularization. The results demonstrate a 14% relative improvement in LID accuracy and a 30% relative reduction in ASR Character Error Rate (CER) compared to the baseline, leading to a second-place finish in the Interspeech 2025 ML-SUPERB 2.0 Challenge. <div>
 arXiv:2505.24200v2 Announce Type: replace-cross 
 Abstract: Multilingual speech processing with self-supervised or supervised pre-trained Speech Foundation Models (SFM) has achieved strong performance on tasks like Language Identification (LID) and Automatic Speech Recognition (ASR). However, these models struggle with limited resources during fine-tuning. This paper enhances multilingual LID and ASR on ML-SUPERB 2.0 by exploring multiple strategies for adapting SFMs, including frozen upstream training, partial fine-tuning, and low-rank adaptation. Furthermore, we employ data augmentation to mitigate performance gaps in few-shot settings and introduce LID Connectionist Temporal Classification (CTC) loss for regularization. Our approach achieves a 14% relative improvement in LID accuracy and a 30% relative reduction in ASR CER over the baseline on ML-SUPERB 2.0, securing second place in the Interspeech 2025 ML-SUPERB 2.0 Challenge.
 ]]></content:encoded>
 <pubDate>Wed, 04 Jun 2025 00:00:00 -0400</pubDate>
-<pubDate>Wed, 04 Jun 2025 00:00:00 -0400</pubDate>
 </item>
-
 <item>
 <title>Research on Medical Named Entity Identification Based On Prompt-Biomrc Model and Its Application in Intelligent Consultation System</title>
 <link>https://arxiv.org/abs/2506.01961</link>
@@ -10882,56 +10877,6 @@ Abstract: Understanding complex character relations is crucial for narrative ana
 <content:encoded><![CDATA[
 arXiv:2505.24554v1 Announce Type: new 
 Abstract: The availability of Large Language Models (LLMs) presents a unique opportunity to reinvigorate research on Knowledge Engineering (KE) automation, a trend already evident in recent efforts developing LLM-based methods and tools for the automatic generation of Competency Questions (CQs). However, the evaluation of these tools lacks standardisation. This undermines the methodological rigour and hinders the replication and comparison of results. To address this gap, we introduce Bench4KE, an extensible API-based benchmarking system for KE automation. Its first release focuses on evaluating tools that generate CQs automatically. CQs are natural language questions used by ontology engineers to define the functional requirements of an ontology. Bench4KE provides a curated gold standard consisting of CQ datasets from four real-world ontology projects. It uses a suite of similarity metrics to assess the quality of the CQs generated. We present a comparative analysis of four recent CQ generation systems, which are based on LLMs, establishing a baseline for future research. Bench4KE is also designed to accommodate additional KE automation tasks, such as SPARQL query generation, ontology testing and drafting. Code and datasets are publicly available under the Apache 2.0 license.
-]]></content:encoded>
-<pubDate>Mon, 02 Jun 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Improving Language and Modality Transfer in Translation by Character-level Modeling</title>
-<link>https://arxiv.org/abs/2505.24561</link>
-<guid>https://arxiv.org/abs/2505.24561</guid>
-<content:encoded><![CDATA[
-arXiv:2505.24561v1 Announce Type: new 
-Abstract: Current translation systems, despite being highly multilingual, cover only 5% of the world's languages. Expanding language coverage to the long-tail of low-resource languages requires data-efficient methods that rely on cross-lingual and cross-modal knowledge transfer. To this end, we propose a character-based approach to improve adaptability to new languages and modalities. Our method leverages SONAR, a multilingual fixed-size embedding space with different modules for encoding and decoding. We use a teacher-student approach with parallel translation data to obtain a character-level encoder. Then, using ASR data, we train a lightweight adapter to connect a massively multilingual CTC ASR model (MMS), to the character-level encoder, potentially enabling speech translation from 1,000+ languages. Experimental results in text translation for 75 languages on FLORES+ demonstrate that our character-based approach can achieve better language transfer than traditional subword-based models, especially outperforming them in low-resource settings, and demonstrating better zero-shot generalizability to unseen languages. Our speech adaptation, maximizing knowledge transfer from the text modality, achieves state-of-the-art results in speech-to-text translation on the FLEURS benchmark on 33 languages, surpassing previous supervised and cascade models, albeit being a zero-shot model with minimal supervision from ASR data.
-]]></content:encoded>
-<pubDate>Mon, 02 Jun 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>NexusSum: Hierarchical LLM Agents for Long-Form Narrative Summarization</title>
-<link>https://arxiv.org/abs/2505.24575</link>
-<guid>https://arxiv.org/abs/2505.24575</guid>
-<content:encoded><![CDATA[
-arXiv:2505.24575v1 Announce Type: new 
-Abstract: Summarizing long-form narratives--such as books, movies, and TV scripts--requires capturing intricate plotlines, character interactions, and thematic coherence, a task that remains challenging for existing LLMs. We introduce NexusSum, a multi-agent LLM framework for narrative summarization that processes long-form text through a structured, sequential pipeline--without requiring fine-tuning. Our approach introduces two key innovations: (1) Dialogue-to-Description Transformation: A narrative-specific preprocessing method that standardizes character dialogue and descriptive text into a unified format, improving coherence. (2) Hierarchical Multi-LLM Summarization: A structured summarization pipeline that optimizes chunk processing and controls output length for accurate, high-quality summaries. Our method establishes a new state-of-the-art in narrative summarization, achieving up to a 30.0% improvement in BERTScore (F1) across books, movies, and TV scripts. These results demonstrate the effectiveness of multi-agent LLMs in handling long-form content, offering a scalable approach for structured summarization in diverse storytelling domains.
-]]></content:encoded>
-<pubDate>Mon, 02 Jun 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>GATE: General Arabic Text Embedding for Enhanced Semantic Textual Similarity with Matryoshka Representation Learning and Hybrid Loss Training</title>
-<link>https://arxiv.org/abs/2505.24581</link>
-<guid>https://arxiv.org/abs/2505.24581</guid>
-<content:encoded><![CDATA[
-arXiv:2505.24581v1 Announce Type: new 
-Abstract: Semantic textual similarity (STS) is a critical task in natural language processing (NLP), enabling applications in retrieval, clustering, and understanding semantic relationships between texts. However, research in this area for the Arabic language remains limited due to the lack of high-quality datasets and pre-trained models. This scarcity of resources has restricted the accurate evaluation and advance of semantic similarity in Arabic text. This paper introduces General Arabic Text Embedding (GATE) models that achieve state-of-the-art performance on the Semantic Textual Similarity task within the MTEB benchmark. GATE leverages Matryoshka Representation Learning and a hybrid loss training approach with Arabic triplet datasets for Natural Language Inference, which are essential for enhancing model performance in tasks that demand fine-grained semantic understanding. GATE outperforms larger models, including OpenAI, with a 20-25% performance improvement on STS benchmarks, effectively capturing the unique semantic nuances of Arabic.
-]]></content:encoded>
-<pubDate>Mon, 02 Jun 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Decoding Knowledge Attribution in Mixture-of-Experts: A Framework of Basic-Refinement Collaboration and Efficiency Analysis</title>
-<link>https://arxiv.org/abs/2505.24593</link>
-<guid>https://arxiv.org/abs/2505.24593</guid>
-<content:encoded><![CDATA[
-arXiv:2505.24593v1 Announce Type: new 
-Abstract: The interpretability of Mixture-of-Experts (MoE) models, especially those with heterogeneous designs, remains underexplored. Existing attribution methods for dense models fail to capture dynamic routing-expert interactions in sparse MoE architectures. To address this issue, we propose a cross-level attribution algorithm to analyze sparse MoE architectures (Qwen 1.5-MoE, OLMoE, Mixtral-8x7B) against dense models (Qwen 1.5-7B, Llama-7B, Mixtral-7B). Results show MoE models achieve 37% higher per-layer efficiency via a "mid-activation, late-amplification" pattern: early layers screen experts, while late layers refine knowledge collaboratively. Ablation studies reveal a "basic-refinement" framework--shared experts handle general tasks (entity recognition), while routed experts specialize in domain-specific processing (geographic attributes). Semantic-driven routing is evidenced by strong correlations between attention heads and experts (r=0.68), enabling task-aware coordination. Notably, architectural depth dictates robustness: deep Qwen 1.5-MoE mitigates expert failures (e.g., 43% MRR drop in geographic tasks when blocking top-10 experts) through shared expert redundancy, whereas shallow OLMoE suffers severe degradation (76% drop). Task sensitivity further guides design: core-sensitive tasks (geography) require concentrated expertise, while distributed-tolerant tasks (object attributes) leverage broader participation. These insights advance MoE interpretability, offering principles to balance efficiency, specialization, and robustness.
-]]></content:encoded>
-<pubDate>Mon, 02 Jun 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Explainable Depression Detection using Masked Hard Instance Mining</title>
-<link>https://arxiv.org/abs/2505.24609</link>
-<guid>https://arxiv.org/abs/2505.24609</guid>
-<content:encoded><![CDATA[
-arXiv:2505.24609v1 Announce Type: new 
-Abstract: This paper addresses the critical need for improved explainability in text-based depression detection. While offering predictive outcomes, current solutions often overlook the understanding of model predictions which can hinder trust in the system. We propose the use of Masked Hard Instance Mining (MHIM) to enhance the explainability in the depression detection task. MHIM strategically masks attention weights within the model, compelling it to distribute attention across a wider range of salient features. We evaluate MHIM on two datasets representing distinct languages: Thai (Thai-Maywe) and English (DAIC-WOZ). Our results demonstrate that MHIM significantly improves performance in terms of both prediction accuracy and explainability metrics.
 ]]></content:encoded>
 <pubDate>Mon, 02 Jun 2025 00:00:00 -0400</pubDate>
 </item>

@@ -4,6 +4,7 @@
 <title>cs.LG updates on arXiv.org</title>
 <link>http://rss.arxiv.org/rss/cs.LG</link>
 
+
 <item>
 <title>Noise-Robustness Through Noise: Asymmetric LoRA Adaption with Poisoning Expert</title>
 <link>https://arxiv.org/abs/2505.23868</link>
@@ -16,7 +17,6 @@ arXiv:2505.23868v2 Announce Type: replace
 Abstract: Current parameter-efficient fine-tuning methods for adapting pre-trained language models to downstream tasks are susceptible to interference from noisy data. Conventional noise-handling approaches either rely on laborious data pre-processing or employ model architecture modifications prone to error accumulation. In contrast to existing noise-process paradigms, we propose a noise-robust adaptation method via asymmetric LoRA poisoning experts (LoPE), a novel framework that enhances model robustness to noise only with generated noisy data. Drawing inspiration from the mixture-of-experts architecture, LoPE strategically integrates a dedicated poisoning expert in an asymmetric LoRA configuration. Through a two-stage paradigm, LoPE performs noise injection on the poisoning expert during fine-tuning to enhance its noise discrimination and processing ability. During inference, we selectively mask the dedicated poisoning expert to leverage purified knowledge acquired by normal experts for noise-robust output. Extensive experiments demonstrate that LoPE achieves strong performance and robustness purely through the low-cost noise injection, which completely eliminates the requirement of data cleaning.
 ]]></content:encoded>
 <pubDate>Wed, 04 Jun 2025 00:00:00 -0400</pubDate>
-<pubDate>Wed, 04 Jun 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
 <title>Interpreting Large Text-to-Image Diffusion Models with Dictionary Learning</title>
@@ -25,11 +25,10 @@ Abstract: Current parameter-efficient fine-tuning methods for adapting pre-train
 <content:encoded><![CDATA[
 <div> Keywords: Sparse Autoencoders, Interpretation, Control, Inference-Time Decomposition of Activations, Text-to-Image Diffusion Model
 
-Summary: Sparse autoencoders and Inference-Time Decomposition of Activations (ITDA) are utilized to decompose language model activations in the Flux 1 text-to-image diffusion model. The study finds that Sparse Autoencoders accurately reconstruct embeddings and outperform MLP neurons in interpretability. These embeddings can be used to control image generation through activation addition. ITDA demonstrates comparable interpretability to Sparse Autoencoders in this context. The research showcases the effectiveness of these techniques in understanding and controlling the representations within a large-scale text-to-image model, pointing towards their potential applications in various domains.<br><br>Summary: <div>
+Summary: Sparse autoencoders and Inference-Time Decomposition of Activations (ITDA) are utilized to decompose language model activations in the Flux 1 text-to-image diffusion model. The study finds that Sparse Autoencoders accurately reconstruct embeddings and outperform MLP neurons in interpretability. These embeddings can be used to control image generation through activation addition. ITDA demonstrates comparable interpretability to Sparse Autoencoders in this context. The research showcases the effectiveness of these techniques in understanding and controlling the representations within a large-scale text-to-image model, pointing towards their potential applications in various domains.<br /><br />Summary: <div>
 arXiv:2505.24360v2 Announce Type: replace 
 Abstract: Sparse autoencoders are a promising new approach for decomposing language model activations for interpretation and control. They have been applied successfully to vision transformer image encoders and to small-scale diffusion models. Inference-Time Decomposition of Activations (ITDA) is a recently proposed variant of dictionary learning that takes the dictionary to be a set of data points from the activation distribution and reconstructs them with gradient pursuit. We apply Sparse Autoencoders (SAEs) and ITDA to a large text-to-image diffusion model, Flux 1, and consider the interpretability of embeddings of both by introducing a visual automated interpretation pipeline. We find that SAEs accurately reconstruct residual stream embeddings and beat MLP neurons on interpretability. We are able to use SAE features to steer image generation through activation addition. We find that ITDA has comparable interpretability to SAEs.
 ]]></content:encoded>
-<pubDate>Wed, 04 Jun 2025 00:00:00 -0400</pubDate>
 <pubDate>Wed, 04 Jun 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -40,11 +39,10 @@ Abstract: Sparse autoencoders are a promising new approach for decomposing langu
 <div> binning, time series forecasting, regression, binary cumulative encoding, convolutional neural network
 
 Summary:
-The study focuses on time series forecasting, where regression is reformulated as a classification problem by discretizing the continuous target space into bins. Existing methods often use one-hot encoding, ignoring the ordinal structure of values and failing to capture relative distance information during training. To address this limitation, the paper introduces binary cumulative encoding (BCE) that represents scalar targets as monotonic binary vectors, maintaining order and magnitude information. A specialized convolutional neural network architecture for BCE is proposed, incorporating residual and dilated convolutions for efficient temporal modeling. Extensive experiments on benchmark datasets demonstrate that the approach outperforms traditional methods in both point and probabilistic forecasting, with improved performance, reduced parameter requirements, and faster training times.<br><br>Summary: <div>
+The study focuses on time series forecasting, where regression is reformulated as a classification problem by discretizing the continuous target space into bins. Existing methods often use one-hot encoding, ignoring the ordinal structure of values and failing to capture relative distance information during training. To address this limitation, the paper introduces binary cumulative encoding (BCE) that represents scalar targets as monotonic binary vectors, maintaining order and magnitude information. A specialized convolutional neural network architecture for BCE is proposed, incorporating residual and dilated convolutions for efficient temporal modeling. Extensive experiments on benchmark datasets demonstrate that the approach outperforms traditional methods in both point and probabilistic forecasting, with improved performance, reduced parameter requirements, and faster training times.<br /><br />Summary: <div>
 arXiv:2505.24595v2 Announce Type: replace 
 Abstract: Recent studies in time series forecasting have explored formulating regression via classification task. By discretizing the continuous target space into bins and predicting over a fixed set of classes, these approaches benefit from stable training, robust uncertainty modeling, and compatibility with modern deep learning architectures. However, most existing methods rely on one-hot encoding that ignores the inherent ordinal structure of the underlying values. As a result, they fail to provide information about the relative distance between predicted and true values during training. In this paper, we propose to address this limitation by introducing binary cumulative encoding (BCE), that represents scalar targets into monotonic binary vectors. This encoding implicitly preserves order and magnitude information, allowing the model to learn distance-aware representations while still operating within a classification framework. We propose a convolutional neural network architecture specifically designed for BCE, incorporating residual and dilated convolutions to enable fast and expressive temporal modeling. Through extensive experiments on benchmark forecasting datasets, we show that our approach outperforms widely used methods in both point and probabilistic forecasting, while requiring fewer parameters and enabling faster training.
 ]]></content:encoded>
-<pubDate>Wed, 04 Jun 2025 00:00:00 -0400</pubDate>
 <pubDate>Wed, 04 Jun 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -52,14 +50,13 @@ Abstract: Recent studies in time series forecasting have explored formulating re
 <link>https://arxiv.org/abs/2505.24779</link>
 <guid>https://arxiv.org/abs/2505.24779</guid>
 <content:encoded><![CDATA[
-<div> Instance generation, MILP, benchmark framework, evaluation, solver behavior <br>
-<br>
+<div> Instance generation, MILP, benchmark framework, evaluation, solver behavior <br />
+<br />
 Summary: 
 The paper presents a new benchmark framework for evaluating Mixed-Integer Linear Programming (MILP) instance generation methods. The framework assesses instance quality based on dimensions such as mathematical validity, structural similarity, computational hardness, and utility in machine learning tasks. A key feature is the analysis of solver-internal features to compare solver outputs and reveal computational resemblances. The framework offers solver-independent and solver-dependent metrics for robust comparisons among generation techniques. It aims to improve the quality of instance generators and enhance research reliability using synthetic MILP data. The effectiveness of the framework is demonstrated through comparisons of contemporary generative models. <div>
 arXiv:2505.24779v2 Announce Type: replace 
 Abstract: Mixed-Integer Linear Programming (MILP) is fundamental to solving complex decision-making problems. The proliferation of MILP instance generation methods, driven by machine learning's demand for diverse optimization datasets and the limitations of static benchmarks, has significantly outpaced standardized evaluation techniques. Consequently, assessing the fidelity and utility of synthetic MILP instances remains a critical, multifaceted challenge. This paper introduces a comprehensive benchmark framework designed for the systematic and objective evaluation of MILP instance generation methods. Our framework provides a unified and extensible methodology, assessing instance quality across crucial dimensions: mathematical validity, structural similarity, computational hardness, and utility in downstream machine learning tasks. A key innovation is its in-depth analysis of solver-internal features -- particularly by comparing distributions of key solver outputs including root node gap, heuristic success rates, and cut plane usage -- leveraging the solver's dynamic solution behavior as an `expert assessment' to reveal nuanced computational resemblances. By offering a structured approach with clearly defined solver-independent and solver-dependent metrics, our benchmark aims to facilitate robust comparisons among diverse generation techniques, spur the development of higher-quality instance generators, and ultimately enhance the reliability of research reliant on synthetic MILP data. The framework's effectiveness in systematically comparing the fidelity of instance sets is demonstrated using contemporary generative models.
 ]]></content:encoded>
-<pubDate>Wed, 04 Jun 2025 00:00:00 -0400</pubDate>
 <pubDate>Wed, 04 Jun 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -67,16 +64,15 @@ Abstract: Mixed-Integer Linear Programming (MILP) is fundamental to solving comp
 <link>https://arxiv.org/abs/2412.03238</link>
 <guid>https://arxiv.org/abs/2412.03238</guid>
 <content:encoded><![CDATA[
-<div> dynamic clustering, worst-case recourse, constant-factor approximation, deterministic algorithms, point updates<br>
-<br>
+<div> dynamic clustering, worst-case recourse, constant-factor approximation, deterministic algorithms, point updates<br />
+<br />
 Summary: 
-This paper addresses the problem of maintaining a constant-factor approximation to the k-clustering problem in a fully dynamic setting where point updates can be insertions or deletions. The focus is on the k-center objective, aiming to minimize the recourse per update. The authors present a deterministic algorithm that achieves optimal worst-case recourse of 1 per update, outperforming previous work. They also introduce new decremental and incremental algorithms that maintain a 6-approximate k-center solution with the same optimal worst-case recourse. The deterministic nature of these algorithms enables them to combat adaptive adversaries efficiently. The proposed algorithms rely on simple choices and light data structures, making them straightforward and fast compared to previous complex approaches. This research contributes to advancing the understanding and practicality of consistent clustering in dynamic environments. <br><br> <div>
+This paper addresses the problem of maintaining a constant-factor approximation to the k-clustering problem in a fully dynamic setting where point updates can be insertions or deletions. The focus is on the k-center objective, aiming to minimize the recourse per update. The authors present a deterministic algorithm that achieves optimal worst-case recourse of 1 per update, outperforming previous work. They also introduce new decremental and incremental algorithms that maintain a 6-approximate k-center solution with the same optimal worst-case recourse. The deterministic nature of these algorithms enables them to combat adaptive adversaries efficiently. The proposed algorithms rely on simple choices and light data structures, making them straightforward and fast compared to previous complex approaches. This research contributes to advancing the understanding and practicality of consistent clustering in dynamic environments. <br /><br /> <div>
 arXiv:2412.03238v3 Announce Type: replace-cross 
 Abstract: Given points from an arbitrary metric space and a sequence of point updates sent by an adversary, what is the minimum recourse per update (i.e., the minimum number of changes needed to the set of centers after an update), in order to maintain a constant-factor approximation to a $k$-clustering problem? This question has received attention in recent years under the name consistent clustering.
   Previous works by Lattanzi and Vassilvitskii [ICLM '17] and Fichtenberger, Lattanzi, Norouzi-Fard, and Svensson [SODA '21] studied $k$-clustering objectives, including the $k$-center and the $k$-median objectives, under only point insertions. In this paper we study the $k$-center objective in the fully dynamic setting, where the update is either a point insertion or a point deletion. Before our work, {\L}\k{a}cki, Haeupler, Grunau, Rozho\v{n}, and Jayaram [SODA '24] gave a deterministic fully dynamic constant-factor approximation algorithm for the $k$-center objective with worst-case recourse of $2$ per update.
   In this work, we prove that the $k$-center clustering problem admits optimal recourse bounds by developing a deterministic fully dynamic constant-factor approximation algorithm with worst-case recourse of $1$ per update. Moreover our algorithm performs simple choices based on light data structures, and thus is arguably more direct and faster than the previous one which uses a sophisticated combinatorial structure. Additionally, we develop a new deterministic decremental algorithm and a new deterministic incremental algorithm, both of which maintain a $6$-approximate $k$-center solution with worst-case recourse of $1$ per update. Our incremental algorithm improves over the $8$-approximation algorithm by Charikar, Chekuri, Feder, and Motwani [STOC '97]. Finally, we remark that since all three of our algorithms are deterministic, they work against an adaptive adversary.
 ]]></content:encoded>
-<pubDate>Wed, 04 Jun 2025 00:00:00 -0400</pubDate>
 <pubDate>Wed, 04 Jun 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -84,18 +80,16 @@ Abstract: Given points from an arbitrary metric space and a sequence of point up
 <link>https://arxiv.org/abs/2504.19475</link>
 <guid>https://arxiv.org/abs/2504.19475</guid>
 <content:encoded><![CDATA[
-<div> Keywords: vision mechanistic interpretability, framework, pre-trained models, sparse autoencoder, visualization tools <br>
+<div> Keywords: vision mechanistic interpretability, framework, pre-trained models, sparse autoencoder, visualization tools <br />
 Summary: 
 Prisma is an open-source framework aimed at advancing research in vision mechanistic interpretability. It offers a comprehensive toolkit with access to 75+ vision and video transformers, support for various training methods like sparse autoencoder, and a range of pre-trained weights. The framework also includes activation caching, circuit analysis tools, and visualization tools to aid in understanding model internals. Surprisingly, the analysis reveals that effective vision sparse autoencoders exhibit different sparsity patterns compared to language models, and in some cases, reconstructions can actually reduce model loss. This tool opens up new research opportunities in understanding vision models while making the field more accessible for researchers. 
 
-<br><br>Summary: <div>
+<br /><br />Summary: <div>
 arXiv:2504.19475v3 Announce Type: replace-cross 
 Abstract: Robust tooling and publicly available pre-trained models have helped drive recent advances in mechanistic interpretability for language models. However, similar progress in vision mechanistic interpretability has been hindered by the lack of accessible frameworks and pre-trained weights. We present Prisma (Access the codebase here: https://github.com/Prisma-Multimodal/ViT-Prisma), an open-source framework designed to accelerate vision mechanistic interpretability research, providing a unified toolkit for accessing 75+ vision and video transformers; support for sparse autoencoder (SAE), transcoder, and crosscoder training; a suite of 80+ pre-trained SAE weights; activation caching, circuit analysis tools, and visualization tools; and educational resources. Our analysis reveals surprising findings, including that effective vision SAEs can exhibit substantially lower sparsity patterns than language SAEs, and that in some instances, SAE reconstructions can decrease model loss. Prisma enables new research directions for understanding vision model internals while lowering barriers to entry in this emerging field.
 ]]></content:encoded>
 <pubDate>Wed, 04 Jun 2025 00:00:00 -0400</pubDate>
-<pubDate>Wed, 04 Jun 2025 00:00:00 -0400</pubDate>
 </item>
-
 <item>
 <title>Ubiquitous Symmetry at Critical Points Across Diverse Optimization Landscapes</title>
 <link>https://arxiv.org/abs/2506.01959</link>
@@ -10597,69 +10591,6 @@ Abstract: With a surge of large-scale pre-trained models, parameter-efficient tr
 <content:encoded><![CDATA[
 arXiv:2408.04607v4 Announce Type: replace-cross 
 Abstract: Recent years have seen substantial advances in our understanding of high-dimensional ridge regression, but existing theories assume that training examples are independent. By leveraging techniques from random matrix theory and free probability, we provide sharp asymptotics for the in- and out-of-sample risks of ridge regression when the data points have arbitrary correlations. We demonstrate that in this setting, the generalized cross validation estimator (GCV) fails to correctly predict the out-of-sample risk. However, in the case where the noise residuals have the same correlations as the data points, one can modify the GCV to yield an efficiently-computable unbiased estimator that concentrates in the high-dimensional limit, which we dub CorrGCV. We further extend our asymptotic analysis to the case where the test point has nontrivial correlations with the training set, a setting often encountered in time series forecasting. Assuming knowledge of the correlation structure of the time series, this again yields an extension of the GCV estimator, and sharply characterizes the degree to which such test points yield an overly optimistic prediction of long-time risk. We validate the predictions of our theory across a variety of high dimensional data.
-]]></content:encoded>
-<pubDate>Tue, 03 Jun 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>PADetBench: Towards Benchmarking Physical Attacks against Object Detection</title>
-<link>https://arxiv.org/abs/2408.09181</link>
-<guid>https://arxiv.org/abs/2408.09181</guid>
-<content:encoded><![CDATA[
-arXiv:2408.09181v3 Announce Type: replace-cross 
-Abstract: Physical attacks against object detection have gained increasing attention due to their significant practical implications. However, conducting physical experiments is extremely time-consuming and labor-intensive. Moreover, physical dynamics and cross-domain transformation are challenging to strictly regulate in the real world, leading to unaligned evaluation and comparison, severely hindering the development of physically robust models. To accommodate these challenges, we explore utilizing realistic simulation to thoroughly and rigorously benchmark physical attacks with fairness under controlled physical dynamics and cross-domain transformation. This resolves the problem of capturing identical adversarial images that cannot be achieved in the real world. Our benchmark includes 20 physical attack methods, 48 object detectors, comprehensive physical dynamics, and evaluation metrics. We also provide end-to-end pipelines for dataset generation, detection, evaluation, and further analysis. In addition, we perform 8064 groups of evaluation based on our benchmark, which includes both overall evaluation and further detailed ablation studies for controlled physical dynamics. Through these experiments, we provide in-depth analyses of physical attack performance and physical adversarial robustness, draw valuable observations, and discuss potential directions for future research.
-  Codebase: https://github.com/JiaweiLian/Benchmarking_Physical_Attack
-]]></content:encoded>
-<pubDate>Tue, 03 Jun 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>ANVIL: Anomaly-based Vulnerability Identification without Labelled Training Data</title>
-<link>https://arxiv.org/abs/2408.16028</link>
-<guid>https://arxiv.org/abs/2408.16028</guid>
-<content:encoded><![CDATA[
-arXiv:2408.16028v3 Announce Type: replace-cross 
-Abstract: Supervised-learning-based vulnerability detectors often fall short due to limited labelled training data. In contrast, Large Language Models (LLMs) like GPT-4 are trained on vast unlabelled code corpora, yet perform only marginally better than coin flips when directly prompted to detect vulnerabilities. In this paper, we reframe vulnerability detection as anomaly detection, based on the premise that vulnerable code is rare and thus anomalous relative to patterns learned by LLMs. We introduce ANVIL, which performs a masked code reconstruction task: the LLM reconstructs a masked line of code, and deviations from the original are scored as anomalies. We propose a hybrid anomaly score that combines exact match, cross-entropy loss, prediction confidence, and structural complexity. We evaluate our approach across multiple LLM families, scoring methods, and context sizes, and against vulnerabilities after the LLM's training cut-off. On the PrimeVul dataset, ANVIL outperforms state-of-the-art supervised detectors-LineVul, LineVD, and LLMAO-achieving up to 2x higher Top-3 accuracy, 75% better Normalized MFR, and a significant improvement on ROC-AUC. Finally, by integrating ANVIL with fuzzers, we uncover two previously unknown vulnerabilities, demonstrating the practical utility of anomaly-guided detection.
-]]></content:encoded>
-<pubDate>Tue, 03 Jun 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Investigating Privacy Leakage in Dimensionality Reduction Methods via Reconstruction Attack</title>
-<link>https://arxiv.org/abs/2408.17151</link>
-<guid>https://arxiv.org/abs/2408.17151</guid>
-<content:encoded><![CDATA[
-arXiv:2408.17151v3 Announce Type: replace-cross 
-Abstract: This study investigates privacy leakage in dimensionality reduction methods through a novel machine learning-based reconstruction attack. Employing an informed adversary threat model, we develop a neural network capable of reconstructing high-dimensional data from low-dimensional embeddings.
-  We evaluate six popular dimensionality reduction techniques: principal component analysis (PCA), sparse random projection (SRP), multidimensional scaling (MDS), Isomap, $t$-distributed stochastic neighbor embedding ($t$-SNE), and uniform manifold approximation and projection (UMAP). Using both MNIST and NIH Chest X-ray datasets, we perform a qualitative analysis to identify key factors affecting reconstruction quality. Furthermore, we assess the effectiveness of an additive noise mechanism in mitigating these reconstruction attacks. Our experimental results on both datasets reveal that the attack is effective against deterministic methods (PCA and Isomap). but ineffective against methods that employ random initialization (SRP, MDS, $t$-SNE and UMAP). The experimental results also show that, for PCA and Isomap, our reconstruction network produces higher quality outputs compared to a previously proposed network.
-  We also study the effect of additive noise mechanism to prevent the reconstruction attack. Our experiment shows that, when adding the images with large noises before performing PCA or Isomap, the attack produced severely distorted reconstructions. In contrast, for the other four methods, the reconstructions still show some recognizable features, though they bear little resemblance to the original images. The code is available at https://github.com/Chayadon/Reconstruction_attack_on_DR
-]]></content:encoded>
-<pubDate>Tue, 03 Jun 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Content Moderation by LLM: From Accuracy to Legitimacy</title>
-<link>https://arxiv.org/abs/2409.03219</link>
-<guid>https://arxiv.org/abs/2409.03219</guid>
-<content:encoded><![CDATA[
-arXiv:2409.03219v2 Announce Type: replace-cross 
-Abstract: One trending application of LLM (large language model) is to use it for content moderation in online platforms. Most current studies on this application have focused on the metric of accuracy -- the extent to which LLMs make correct decisions about content. This article argues that accuracy is insufficient and misleading because it fails to grasp the distinction between easy cases and hard cases, as well as the inevitable trade-offs in achieving higher accuracy. Closer examination reveals that content moderation is a constitutive part of platform governance, the key of which is to gain and enhance legitimacy. Instead of making moderation decisions correct, the chief goal of LLMs is to make them legitimate. In this regard, this article proposes a paradigm shift from the single benchmark of accuracy towards a legitimacy-based framework for evaluating the performance of LLM moderators. The framework suggests that for easy cases, the key is to ensure accuracy, speed, and transparency, while for hard cases, what matters is reasoned justification and user participation. Examined under this framework, LLMs' real potential in moderation is not accuracy improvement. Rather, LLMs can better contribute in four other aspects: to conduct screening of hard cases from easy cases, to provide quality explanations for moderation decisions, to assist human reviewers in getting more contextual information, and to facilitate user participation in a more interactive way. To realize these contributions, this article proposes a workflow for incorporating LLMs into the content moderation system. Using normative theories from law and social sciences to critically assess the new technological application, this article seeks to redefine LLMs' role in content moderation and redirect relevant research in this field.
-]]></content:encoded>
-<pubDate>Tue, 03 Jun 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>View-Invariant Policy Learning via Zero-Shot Novel View Synthesis</title>
-<link>https://arxiv.org/abs/2409.03685</link>
-<guid>https://arxiv.org/abs/2409.03685</guid>
-<content:encoded><![CDATA[
-arXiv:2409.03685v3 Announce Type: replace-cross 
-Abstract: Large-scale visuomotor policy learning is a promising approach toward developing generalizable manipulation systems. Yet, policies that can be deployed on diverse embodiments, environments, and observational modalities remain elusive. In this work, we investigate how knowledge from large-scale visual data of the world may be used to address one axis of variation for generalizable manipulation: observational viewpoint. Specifically, we study single-image novel view synthesis models, which learn 3D-aware scene-level priors by rendering images of the same scene from alternate camera viewpoints given a single input image. For practical application to diverse robotic data, these models must operate zero-shot, performing view synthesis on unseen tasks and environments. We empirically analyze view synthesis models within a simple data-augmentation scheme that we call View Synthesis Augmentation (VISTA) to understand their capabilities for learning viewpoint-invariant policies from single-viewpoint demonstration data. Upon evaluating the robustness of policies trained with our method to out-of-distribution camera viewpoints, we find that they outperform baselines in both simulated and real-world manipulation tasks. Videos and additional visualizations are available at https://s-tian.github.io/projects/vista.
-]]></content:encoded>
-<pubDate>Tue, 03 Jun 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>WET: Overcoming Paraphrasing Vulnerabilities in Embeddings-as-a-Service with Linear Transformation Watermarks</title>
-<link>https://arxiv.org/abs/2409.04459</link>
-<guid>https://arxiv.org/abs/2409.04459</guid>
-<content:encoded><![CDATA[
-arXiv:2409.04459v2 Announce Type: replace-cross 
-Abstract: Embeddings-as-a-Service (EaaS) is a service offered by large language model (LLM) developers to supply embeddings generated by LLMs. Previous research suggests that EaaS is prone to imitation attacks -- attacks that clone the underlying EaaS model by training another model on the queried embeddings. As a result, EaaS watermarks are introduced to protect the intellectual property of EaaS providers. In this paper, we first show that existing EaaS watermarks can be removed by paraphrasing when attackers clone the model. Subsequently, we propose a novel watermarking technique that involves linearly transforming the embeddings, and show that it is empirically and theoretically robust against paraphrasing.
 ]]></content:encoded>
 <pubDate>Tue, 03 Jun 2025 00:00:00 -0400</pubDate>
 </item>
