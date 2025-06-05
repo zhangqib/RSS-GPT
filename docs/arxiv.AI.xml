@@ -4,19 +4,19 @@
 <title>cs.AI updates on arXiv.org</title>
 <link>http://rss.arxiv.org/rss/cs.AI</link>
 
+
 <item>
 <title>LDMol: A Text-to-Molecule Diffusion Model with Structurally Informative Latent Space Surpasses AR Models</title>
 <link>https://arxiv.org/abs/2405.17829</link>
 <guid>https://arxiv.org/abs/2405.17829</guid>
 <content:encoded><![CDATA[
-<div> Keywords: diffusion models, molecule generation, latent diffusion model, text-to-molecule generation, contrastive learning<br>
-<br>
+<div> Keywords: diffusion models, molecule generation, latent diffusion model, text-to-molecule generation, contrastive learning<br />
+<br />
 Summary: 
-The article introduces a novel latent diffusion model called LDMol for text-conditioned molecule generation. The challenge of connecting raw data with complex conditions like natural language in molecule generation using diffusion models is addressed through the design of a suitable latent space. By utilizing contrastive learning, a feature space is extracted from text data to capture the unique characteristics of molecule structures. LDMol surpasses existing autoregressive methods in text-to-molecule generation, showcasing its performance and effectiveness in generating molecules from text. Furthermore, the model demonstrates versatility in applications such as molecule-to-text retrieval and text-guided molecule editing. LDMol's success is attributed to its innovative approach to latent domain selection, highlighting its potential for enhancing diffusion models in various text-to-molecule tasks. <br><br> <div>
+The article introduces a novel latent diffusion model called LDMol for text-conditioned molecule generation. The challenge of connecting raw data with complex conditions like natural language in molecule generation using diffusion models is addressed through the design of a suitable latent space. By utilizing contrastive learning, a feature space is extracted from text data to capture the unique characteristics of molecule structures. LDMol surpasses existing autoregressive methods in text-to-molecule generation, showcasing its performance and effectiveness in generating molecules from text. Furthermore, the model demonstrates versatility in applications such as molecule-to-text retrieval and text-guided molecule editing. LDMol's success is attributed to its innovative approach to latent domain selection, highlighting its potential for enhancing diffusion models in various text-to-molecule tasks. <br /><br /> <div>
 arXiv:2405.17829v4 Announce Type: replace-cross 
 Abstract: With the emergence of diffusion models as a frontline generative model, many researchers have proposed molecule generation techniques with conditional diffusion models. However, the unavoidable discreteness of a molecule makes it difficult for a diffusion model to connect raw data with highly complex conditions like natural language. To address this, here we present a novel latent diffusion model dubbed LDMol for text-conditioned molecule generation. By recognizing that the suitable latent space design is the key to the diffusion model performance, we employ a contrastive learning strategy to extract novel feature space from text data that embeds the unique characteristics of the molecule structure. Experiments show that LDMol outperforms the existing autoregressive baselines on the text-to-molecule generation benchmark, being one of the first diffusion models that outperforms autoregressive models in textual data generation with a better choice of the latent domain. Furthermore, we show that LDMol can be applied to downstream tasks such as molecule-to-text retrieval and text-guided molecule editing, demonstrating its versatility as a diffusion model.
 ]]></content:encoded>
-<pubDate>Thu, 05 Jun 2025 00:00:00 -0400</pubDate>
 <pubDate>Thu, 05 Jun 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -27,11 +27,10 @@ Abstract: With the emergence of diffusion models as a frontline generative model
 <div> Keywords: Large Language Models, Uncertainty Modeling, Long-form Generation, Data Collection, Training Pipeline
 
 Summary: 
-The article introduces the task of Long-form Generation with Uncertainty (LoGU) to address the challenge of factually incorrect content generation by Large Language Models (LLMs). Two key challenges identified are Uncertainty Suppression and Uncertainty Misalignment. To tackle these challenges, the authors propose a refinement-based data collection framework and a two-stage training pipeline. The framework utilizes a divide-and-conquer strategy to refine uncertainty based on atomic claims. The collected data are used in training through supervised fine-tuning (SFT) and direct preference optimization (DPO) to improve uncertainty expression. Experimental results on three long-form instruction following datasets demonstrate that the proposed method significantly enhances accuracy, reduces hallucinations, and maintains the comprehensiveness of responses.<br><br>Summary: <div>
+The article introduces the task of Long-form Generation with Uncertainty (LoGU) to address the challenge of factually incorrect content generation by Large Language Models (LLMs). Two key challenges identified are Uncertainty Suppression and Uncertainty Misalignment. To tackle these challenges, the authors propose a refinement-based data collection framework and a two-stage training pipeline. The framework utilizes a divide-and-conquer strategy to refine uncertainty based on atomic claims. The collected data are used in training through supervised fine-tuning (SFT) and direct preference optimization (DPO) to improve uncertainty expression. Experimental results on three long-form instruction following datasets demonstrate that the proposed method significantly enhances accuracy, reduces hallucinations, and maintains the comprehensiveness of responses.<br /><br />Summary: <div>
 arXiv:2410.14309v4 Announce Type: replace-cross 
 Abstract: While Large Language Models (LLMs) demonstrate impressive capabilities, they still struggle with generating factually incorrect content (i.e., hallucinations). A promising approach to mitigate this issue is enabling models to express uncertainty when unsure. Previous research on uncertainty modeling has primarily focused on short-form QA, but realworld applications often require much longer responses. In this work, we introduce the task of Long-form Generation with Uncertainty(LoGU). We identify two key challenges: Uncertainty Suppression, where models hesitate to express uncertainty, and Uncertainty Misalignment, where models convey uncertainty inaccurately. To tackle these challenges, we propose a refinement-based data collection framework and a two-stage training pipeline. Our framework adopts a divide-and-conquer strategy, refining uncertainty based on atomic claims. The collected data are then used in training through supervised fine-tuning (SFT) and direct preference optimization (DPO) to enhance uncertainty expression. Extensive experiments on three long-form instruction following datasets show that our method significantly improves accuracy, reduces hallucinations, and maintains the comprehensiveness of responses.
 ]]></content:encoded>
-<pubDate>Thu, 05 Jun 2025 00:00:00 -0400</pubDate>
 <pubDate>Thu, 05 Jun 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -47,12 +46,11 @@ Summary:
 - The model follows different paths to represent figurative and literal meanings, ensuring both interpretations are available.
 - The findings offer a mechanistic explanation for how autoregressive transformers comprehend idioms. 
 
-<br><br>Summary: 
+<br /><br />Summary: 
 Idioms present a challenge for language models as they require distinguishing between literal and figurative interpretations. The study utilizes a large transformer model to investigate how idioms are processed. Specific attention mechanisms are crucial in retrieving the figurative meaning of idioms while suppressing the literal interpretation. The model follows distinct paths to represent both meanings, ensuring a comprehensive understanding of idioms. This mechanistic analysis sheds light on how autoregressive transformers tackle the ambiguity of idiomatic language. <div>
 arXiv:2506.01723v2 Announce Type: replace-cross 
 Abstract: Idioms present a unique challenge for language models due to their non-compositional figurative meanings, which often strongly diverge from the idiom's literal interpretation. This duality requires a model to learn representing and deciding between the two meanings to interpret an idiom in a figurative sense, or literally. In this paper, we employ tools from mechanistic interpretability to trace how a large pretrained causal transformer (LLama3.2-1B-base) deals with this ambiguity. We localize three steps of idiom processing: First, the idiom's figurative meaning is retrieved in early attention and MLP sublayers. We identify specific attention heads which boost the figurative meaning of the idiom while suppressing the idiom's literal interpretation. The model subsequently represents the figurative representation through an intermediate path. Meanwhile, a parallel bypass route forwards literal interpretation, ensuring that a both reading remain available. Overall, our findings provide a mechanistic evidence for idiom comprehension in an autoregressive transformer.
 ]]></content:encoded>
-<pubDate>Thu, 05 Jun 2025 00:00:00 -0400</pubDate>
 <pubDate>Thu, 05 Jun 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -68,9 +66,7 @@ arXiv:2506.01921v3 Announce Type: replace-cross
 Abstract: Text-guided image editing has seen rapid progress in natural image domains, but its adaptation to medical imaging remains limited and lacks standardized evaluation. Clinically, such editing holds promise for simulating surgical outcomes, creating personalized teaching materials, and enhancing patient communication. To bridge this gap, we introduce MedEBench, a comprehensive benchmark for evaluating text-guided medical image editing. It consists of 1,182 clinically sourced image-prompt triplets spanning 70 tasks across 13 anatomical regions. MedEBench offers three key contributions: (1) a clinically relevant evaluation framework covering Editing Accuracy, Contextual Preservation, and Visual Quality, supported by detailed descriptions of expected change and ROI (Region of Interest) masks; (2) a systematic comparison of seven state-of-the-art models, revealing common failure patterns; and (3) a failure analysis protocol based on attention grounding, using IoU between attention maps and ROIs to identify mislocalization. MedEBench provides a solid foundation for developing and evaluating reliable, clinically meaningful medical image editing systems. Project website: https://mliuby.github.io/MedEBench_Website/
 ]]></content:encoded>
 <pubDate>Thu, 05 Jun 2025 00:00:00 -0400</pubDate>
-<pubDate>Thu, 05 Jun 2025 00:00:00 -0400</pubDate>
 </item>
-
 <item>
 <title>Q-ARDNS-Multi: A Multi-Agent Quantum Reinforcement Learning Framework with Meta-Cognitive Adaptation for Complex 3D Environments</title>
 <link>https://arxiv.org/abs/2506.03205</link>
@@ -10946,46 +10942,6 @@ Abstract: Spatio-temporal deep learning models aims to utilize useful patterns i
 <content:encoded><![CDATA[
 arXiv:2506.01369v1 Announce Type: cross 
 Abstract: Large Language Models (LLMs) have demonstrated remarkable progress in complex reasoning tasks through both post-training and test-time scaling laws. While prevalent test-time scaling approaches are often realized by using external reward models to guide the model generation process, we find only marginal gains can be acquired when scaling a model post-trained on specific reasoning tasks. We identify that the limited improvement stems from distribution discrepancies between the specific post-trained generator and the general reward model. To address this, we propose a framework that incentivizes LLMs to self-verify their own answers. By unifying answer generation and verification within a single reinforcement learning (RL) process, we train models that can effectively assess the correctness of their own solutions. The trained model can further scale its performance during inference time by verifying its generations, without the need for external verifiers. We train our self-verification models based on Qwen2.5-Math-7B and DeepSeek-R1-Distill-Qwen-1.5B, demonstrating its capabilities across varying reasoning context lengths. Experiments on multiple mathematical reasoning benchmarks show that our models can not only improve post-training performance but also enable effective test-time scaling. Our code is available at https://github.com/mansicer/self-verification.
-]]></content:encoded>
-<pubDate>Tue, 03 Jun 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Compiler Optimization via LLM Reasoning for Efficient Model Serving</title>
-<link>https://arxiv.org/abs/2506.01374</link>
-<guid>https://arxiv.org/abs/2506.01374</guid>
-<content:encoded><![CDATA[
-arXiv:2506.01374v1 Announce Type: cross 
-Abstract: While model serving has unlocked unprecedented capabilities, the high cost of serving large-scale models continues to be a significant barrier to widespread accessibility and rapid innovation. Compiler optimizations have long driven substantial performance improvements, but existing compilers struggle with neural workloads due to the exponentially large and highly interdependent space of possible transformations. Although existing stochastic search techniques can be effective, they are often sample-inefficient and fail to leverage the structural context underlying compilation decisions. We set out to investigate the research question of whether reasoning with large language models (LLMs), without any retraining, can leverage the context-aware decision space of compiler optimization to significantly improve sample efficiency. To that end, we introduce a novel compilation framework (dubbed REASONING COMPILER) that formulates optimization as a sequential, context-aware decision process, guided by a large language model and structured Monte Carlo tree search (MCTS). The LLM acts as a proposal mechanism, suggesting hardware-aware transformations that reflect the current program state and accumulated performance feedback. Monte Carlo tree search (MCTS) incorporates the LLM-generated proposals to balance exploration and exploitation, facilitating structured, context-sensitive traversal of the expansive compiler optimization space. By achieving substantial speedups with markedly fewer samples than leading neural compilers, our approach demonstrates the potential of LLM-guided reasoning to transform the landscape of compiler optimization.
-]]></content:encoded>
-<pubDate>Tue, 03 Jun 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Playing with Transformer at 30+ FPS via Next-Frame Diffusion</title>
-<link>https://arxiv.org/abs/2506.01380</link>
-<guid>https://arxiv.org/abs/2506.01380</guid>
-<content:encoded><![CDATA[
-arXiv:2506.01380v1 Announce Type: cross 
-Abstract: Autoregressive video models offer distinct advantages over bidirectional diffusion models in creating interactive video content and supporting streaming applications with arbitrary duration. In this work, we present Next-Frame Diffusion (NFD), an autoregressive diffusion transformer that incorporates block-wise causal attention, enabling iterative sampling and efficient inference via parallel token generation within each frame. Nonetheless, achieving real-time video generation remains a significant challenge for such models, primarily due to the high computational cost associated with diffusion sampling and the hardware inefficiencies inherent to autoregressive generation. To address this, we introduce two innovations: (1) We extend consistency distillation to the video domain and adapt it specifically for video models, enabling efficient inference with few sampling steps; (2) To fully leverage parallel computation, motivated by the observation that adjacent frames often share the identical action input, we propose speculative sampling. In this approach, the model generates next few frames using current action input, and discard speculatively generated frames if the input action differs. Experiments on a large-scale action-conditioned video generation benchmark demonstrate that NFD beats autoregressive baselines in terms of both visual quality and sampling efficiency. We, for the first time, achieves autoregressive video generation at over 30 Frames Per Second (FPS) on an A100 GPU using a 310M model.
-]]></content:encoded>
-<pubDate>Tue, 03 Jun 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>VRD-IU: Lessons from Visually Rich Document Intelligence and Understanding</title>
-<link>https://arxiv.org/abs/2506.01388</link>
-<guid>https://arxiv.org/abs/2506.01388</guid>
-<content:encoded><![CDATA[
-arXiv:2506.01388v1 Announce Type: cross 
-Abstract: Visually Rich Document Understanding (VRDU) has emerged as a critical field in document intelligence, enabling automated extraction of key information from complex documents across domains such as medical, financial, and educational applications. However, form-like documents pose unique challenges due to their complex layouts, multi-stakeholder involvement, and high structural variability. Addressing these issues, the VRD-IU Competition was introduced, focusing on extracting and localizing key information from multi-format forms within the Form-NLU dataset, which includes digital, printed, and handwritten documents. This paper presents insights from the competition, which featured two tracks: Track A, emphasizing entity-based key information retrieval, and Track B, targeting end-to-end key information localization from raw document images. With over 20 participating teams, the competition showcased various state-of-the-art methodologies, including hierarchical decomposition, transformer-based retrieval, multimodal feature fusion, and advanced object detection techniques. The top-performing models set new benchmarks in VRDU, providing valuable insights into document intelligence.
-]]></content:encoded>
-<pubDate>Tue, 03 Jun 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Sparse Imagination for Efficient Visual World Model Planning</title>
-<link>https://arxiv.org/abs/2506.01392</link>
-<guid>https://arxiv.org/abs/2506.01392</guid>
-<content:encoded><![CDATA[
-arXiv:2506.01392v1 Announce Type: cross 
-Abstract: World model based planning has significantly improved decision-making in complex environments by enabling agents to simulate future states and make informed choices. However, ensuring the prediction accuracy of world models often demands substantial computational resources, posing a major challenge for real-time applications. This computational burden is particularly restrictive in robotics, where resources are severely constrained. To address this limitation, we propose a Sparse Imagination for Efficient Visual World Model Planning, which enhances computational efficiency by reducing the number of tokens processed during forward prediction. Our method leverages a sparsely trained vision-based world model based on transformers with randomized grouped attention strategy, allowing the model to adaptively adjust the number of tokens processed based on the computational resource. By enabling sparse imagination (rollout), our approach significantly accelerates planning while maintaining high control fidelity. Experimental results demonstrate that sparse imagination preserves task performance while dramatically improving inference efficiency, paving the way for the deployment of world models in real-time decision-making scenarios.
 ]]></content:encoded>
 <pubDate>Tue, 03 Jun 2025 00:00:00 -0400</pubDate>
 </item>

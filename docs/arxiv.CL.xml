@@ -4,18 +4,18 @@
 <title>cs.CL updates on arXiv.org</title>
 <link>http://rss.arxiv.org/rss/cs.CL</link>
 
+
 <item>
 <title>LayerIF: Estimating Layer Quality for Large Language Models using Influence Functions</title>
 <link>https://arxiv.org/abs/2505.23811</link>
 <guid>https://arxiv.org/abs/2505.23811</guid>
 <content:encoded><![CDATA[
-<div> Influence Functions, LayerIF, Large Language Models, training quality, data-driven<br>
-Summary:<br>
+<div> Influence Functions, LayerIF, Large Language Models, training quality, data-driven<br />
+Summary:<br />
 The study introduces LayerIF, a data-driven framework using Influence Functions to assess the training quality of individual layers in Large Language Models. By analyzing each layer's gradients and their impact on validation loss, LayerIF provides task-specific layer importance scores, revealing layer specialization for different tasks. These scores are used for expert allocation in LoRA-MoE architectures and layer-wise sparsity distribution for LLM pruning. Experimental results with various LLM architectures show that the influence-guided allocation improves task performance consistently. <div>
 arXiv:2505.23811v2 Announce Type: replace 
 Abstract: Pretrained Large Language Models (LLMs) achieve strong performance across a wide range of tasks, yet exhibit substantial variability in the various layers' training quality with respect to specific downstream applications, limiting their downstream performance. It is therefore critical to estimate layer-wise training quality in a manner that accounts for both model architecture and training data. However, existing approaches predominantly rely on model-centric heuristics (such as spectral statistics, outlier detection, or uniform allocation) while overlooking the influence of data. To address these limitations, we propose LayerIF, a data-driven framework that leverages Influence Functions to quantify the training quality of individual layers in a principled and task-sensitive manner. By isolating each layer's gradients and measuring the sensitivity of the validation loss to training examples by computing layer-wise influences, we derive data-driven estimates of layer importance. Notably, our method produces task-specific layer importance estimates for the same LLM, revealing how layers specialize for different test-time evaluation tasks. We demonstrate the utility of our scores by leveraging them for two downstream applications: (a) expert allocation in LoRA-MoE architectures and (b) layer-wise sparsity distribution for LLM pruning. Experiments across multiple LLM architectures demonstrate that our model-agnostic, influence-guided allocation leads to consistent gains in task performance.
 ]]></content:encoded>
-<pubDate>Thu, 05 Jun 2025 00:00:00 -0400</pubDate>
 <pubDate>Thu, 05 Jun 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -23,13 +23,12 @@ Abstract: Pretrained Large Language Models (LLMs) achieve strong performance acr
 <link>https://arxiv.org/abs/2505.24554</link>
 <guid>https://arxiv.org/abs/2505.24554</guid>
 <content:encoded><![CDATA[
-<div> Large Language Models, Knowledge Engineering automation, Competency Questions, Bench4KE, evaluation <br>
-Summary: <br>
+<div> Large Language Models, Knowledge Engineering automation, Competency Questions, Bench4KE, evaluation <br />
+Summary: <br />
 The article discusses the potential of Large Language Models (LLMs) in automating Knowledge Engineering (KE) tasks, focusing on the automatic generation of Competency Questions (CQs). It highlights the lack of standardization in evaluating CQ generation tools, which hinders methodological rigor and result replication. To address this gap, the authors introduce Bench4KE, an API-based benchmarking system for KE automation. The system evaluates tools generating CQs using similarity metrics against a gold standard dataset from real-world ontology projects. The article provides a comparative analysis of four recent CQ generation systems based on LLMs, establishing a baseline for future research. Additionally, Bench4KE is designed to accommodate various KE automation tasks beyond CQ generation, such as SPARQL query generation and ontology testing. The code and datasets for Bench4KE are publicly available under the Apache 2.0 license. <div>
 arXiv:2505.24554v2 Announce Type: replace 
 Abstract: The availability of Large Language Models (LLMs) presents a unique opportunity to reinvigorate research on Knowledge Engineering (KE) automation, a trend already evident in recent efforts developing LLM-based methods and tools for the automatic generation of Competency Questions (CQs). However, the evaluation of these tools lacks standardisation. This undermines the methodological rigour and hinders the replication and comparison of results. To address this gap, we introduce Bench4KE, an extensible API-based benchmarking system for KE automation. Its first release focuses on evaluating tools that generate CQs automatically. CQs are natural language questions used by ontology engineers to define the functional requirements of an ontology. Bench4KE provides a curated gold standard consisting of CQ datasets from four real-world ontology projects. It uses a suite of similarity metrics to assess the quality of the CQs generated. We present a comparative analysis of four recent CQ generation systems, which are based on LLMs, establishing a baseline for future research. Bench4KE is also designed to accommodate additional KE automation tasks, such as SPARQL query generation, ontology testing and drafting. Code and datasets are publicly available under the Apache 2.0 license.
 ]]></content:encoded>
-<pubDate>Thu, 05 Jun 2025 00:00:00 -0400</pubDate>
 <pubDate>Thu, 05 Jun 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -42,14 +41,12 @@ Abstract: The availability of Large Language Models (LLMs) presents a unique opp
 Summary:
 SAEBench introduces a comprehensive evaluation suite for sparse autoencoders (SAEs), measuring performance across eight diverse metrics including interpretability, feature disentanglement, and practical applications like unlearning. The evaluation includes over 200 open-source SAEs across eight architectures and training algorithms, revealing that gains on proxy metrics may not always translate to better practical performance. Matryoshka SAEs, despite slightly underperforming on existing proxy metrics, showed substantial performance advantages on feature disentanglement metrics, especially as SAE scale increased. The standardized evaluation framework provided by SAEBench allows for systematic comparison of SAE development, enabling researchers to study scaling trends and make nuanced comparisons between different SAE architectures and training methodologies. Visit www.neuronpedia.org/sae-bench for an interactive interface to visualize relationships between metrics across the open-source SAEs. 
 
-<br><br>Summary: <div>
+<br /><br />Summary: <div>
 arXiv:2503.09532v4 Announce Type: replace-cross 
 Abstract: Sparse autoencoders (SAEs) are a popular technique for interpreting language model activations, and there is extensive recent work on improving SAE effectiveness. However, most prior work evaluates progress using unsupervised proxy metrics with unclear practical relevance. We introduce SAEBench, a comprehensive evaluation suite that measures SAE performance across eight diverse metrics, spanning interpretability, feature disentanglement and practical applications like unlearning. To enable systematic comparison, we open-source a suite of over 200 SAEs across eight recently proposed SAE architectures and training algorithms. Our evaluation reveals that gains on proxy metrics do not reliably translate to better practical performance. For instance, while Matryoshka SAEs slightly underperform on existing proxy metrics, they substantially outperform other architectures on feature disentanglement metrics; moreover, this advantage grows with SAE scale. By providing a standardized framework for measuring progress in SAE development, SAEBench enables researchers to study scaling trends and make nuanced comparisons between different SAE architectures and training methodologies. Our interactive interface enables researchers to flexibly visualize relationships between metrics across hundreds of open-source SAEs at: www.neuronpedia.org/sae-bench
 ]]></content:encoded>
 <pubDate>Thu, 05 Jun 2025 00:00:00 -0400</pubDate>
-<pubDate>Thu, 05 Jun 2025 00:00:00 -0400</pubDate>
 </item>
-
 <item>
 <title>Evaluating Large Language Models for Zero-Shot Disease Labeling in CT Radiology Reports Across Organ Systems</title>
 <link>https://arxiv.org/abs/2506.03259</link>
@@ -10862,37 +10859,6 @@ Abstract: Retrieval-Augmented Generation (RAG) leverages large language models (
 <content:encoded><![CDATA[
 arXiv:2505.16900v4 Announce Type: replace 
 Abstract: During the finetuning stage of text generation tasks, standard cross-entropy loss treats all tokens equally. This can lead models to overemphasize high-frequency, low-information tokens, neglecting lower-frequency tokens crucial for specificity and informativeness in generated content. This paper introduces a novel loss function, Power-Law Decay Loss (PDL), specifically designed to optimize the finetuning process for text generation. The core motivation for PDL stems from observations in information theory and linguistics: the informativeness of a token is often inversely proportional to its frequency of occurrence. PDL re-weights the contribution of each token in the standard cross-entropy loss based on its frequency in the training corpus, following a power-law decay. Specifically, the weights for high-frequency tokens are reduced, while low-frequency, information-dense tokens are assigned higher weights. This mechanism guides the model during finetuning to focus more on learning and generating tokens that convey specific and unique information, thereby enhancing the quality, diversity, and informativeness of the generated text. We theoretically elaborate on the motivation and construction of PDL and discuss its potential applications and advantages across various text generation finetuning tasks, such as abstractive summarization, dialogue systems, and style transfer.
-]]></content:encoded>
-<pubDate>Tue, 03 Jun 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>A Fully Generative Motivational Interviewing Counsellor Chatbot for Moving Smokers Towards the Decision to Quit</title>
-<link>https://arxiv.org/abs/2505.17362</link>
-<guid>https://arxiv.org/abs/2505.17362</guid>
-<content:encoded><![CDATA[
-arXiv:2505.17362v3 Announce Type: replace 
-Abstract: The conversational capabilities of Large Language Models (LLMs) suggest that they may be able to perform as automated talk therapists. It is crucial to know if these systems would be effective and adhere to known standards. We present a counsellor chatbot that focuses on motivating tobacco smokers to quit smoking. It uses a state-of-the-art LLM and a widely applied therapeutic approach called Motivational Interviewing (MI), and was evolved in collaboration with clinician-scientists with expertise in MI. We also describe and validate an automated assessment of both the chatbot's adherence to MI and client responses. The chatbot was tested on 106 participants, and their confidence that they could succeed in quitting smoking was measured before the conversation and one week later. Participants' confidence increased by an average of 1.7 on a 0-10 scale. The automated assessment of the chatbot showed adherence to MI standards in 98% of utterances, higher than human counsellors. The chatbot scored well on a participant-reported metric of perceived empathy but lower than typical human counsellors. Furthermore, participants' language indicated a good level of motivation to change, a key goal in MI. These results suggest that the automation of talk therapy with a modern LLM has promise.
-]]></content:encoded>
-<pubDate>Tue, 03 Jun 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Exploring the Effect of Segmentation and Vocabulary Size on Speech Tokenization for Speech Language Models</title>
-<link>https://arxiv.org/abs/2505.17446</link>
-<guid>https://arxiv.org/abs/2505.17446</guid>
-<content:encoded><![CDATA[
-arXiv:2505.17446v2 Announce Type: replace 
-Abstract: The purpose of speech tokenization is to transform a speech signal into a sequence of discrete representations, serving as the foundation for speech language models (SLMs). While speech tokenization has many options, their effect on the performance of SLMs remains unclear. This paper investigates two key aspects of speech tokenization: the segmentation width and the cluster size of discrete units. First, we segment speech signals into fixed/variable widths and pooled representations. We then train K-means models in multiple cluster sizes. Through the evaluation on zero-shot spoken language understanding benchmarks, we find the positive effect of moderately coarse segmentation and bigger cluster size. Notably, among the best-performing models, the most efficient one achieves a 50% reduction in training data and a 70% decrease in training runtime. Our analysis highlights the importance of combining multiple tokens to enhance fine-grained spoken language understanding.
-]]></content:encoded>
-<pubDate>Tue, 03 Jun 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Multimodal Conversation Structure Understanding</title>
-<link>https://arxiv.org/abs/2505.17536</link>
-<guid>https://arxiv.org/abs/2505.17536</guid>
-<content:encoded><![CDATA[
-arXiv:2505.17536v2 Announce Type: replace 
-Abstract: Conversations are usually structured by roles -- who is speaking, who's being addressed, and who's listening -- and unfold in threads that break with changes in speaker floor or topical focus. While large language models (LLMs) have shown incredible capabilities in dialogue and reasoning, their ability to understand fine-grained conversational structure, especially in multi-modal, multi-party settings, remains underexplored. To address this gap, we introduce a suite of tasks focused on conversational role attribution (speaker, addressees, side-participants) and conversation threading (utterance linking and clustering), drawing on conversation analysis and sociolinguistics. To support those tasks, we present a human annotated dataset of 4,398 annotations for speakers and reply-to relationship, 5,755 addressees, and 3,142 side-participants.
-  We evaluate popular audio-visual LLMs and vision-language models on our dataset, and our experimental results suggest that multimodal conversational structure understanding remains challenging. The most performant audio-visual LLM outperforms all vision-language models across all metrics, especially in speaker and addressee recognition. However, its performance drops significantly when conversation participants are anonymized. The number of conversation participants in a clip is the strongest negative predictor of role-attribution performance, while acoustic clarity (measured by pitch and spectral centroid) and detected face coverage yield positive associations. We hope this work lays the groundwork for future evaluation and development of multimodal LLMs that can reason more effectively about conversation structure.
 ]]></content:encoded>
 <pubDate>Tue, 03 Jun 2025 00:00:00 -0400</pubDate>
 </item>
