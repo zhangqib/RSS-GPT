@@ -4,6 +4,7 @@
 <title>cs.AI updates on arXiv.org</title>
 <link>http://rss.arxiv.org/rss/cs.AI</link>
 
+
 <item>
 <title>Aligned but Blind: Alignment Increases Implicit Bias by Reducing Awareness of Race</title>
 <link>https://arxiv.org/abs/2506.00253</link>
@@ -16,7 +17,6 @@ This study explores the discrepancy between explicit and implicit bias evaluatio
 arXiv:2506.00253v2 Announce Type: replace-cross 
 Abstract: Although value-aligned language models (LMs) appear unbiased in explicit bias evaluations, they often exhibit stereotypes in implicit word association tasks, raising concerns about their fair usage. We investigate the mechanisms behind this discrepancy and find that alignment surprisingly amplifies implicit bias in model outputs. Specifically, we show that aligned LMs, unlike their unaligned counterparts, overlook racial concepts in early internal representations when the context is ambiguous. Not representing race likely fails to activate safety guardrails, leading to unintended biases. Inspired by this insight, we propose a new bias mitigation strategy that works by incentivizing the representation of racial concepts in the early model layers. In contrast to conventional mitigation methods of machine unlearning, our interventions find that steering the model to be more aware of racial concepts effectively mitigates implicit bias. Similar to race blindness in humans, ignoring racial nuances can inadvertently perpetuate subtle biases in LMs.
 ]]></content:encoded>
-<pubDate>Fri, 06 Jun 2025 00:00:00 -0400</pubDate>
 <pubDate>Fri, 06 Jun 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -32,20 +32,18 @@ arXiv:2506.00653v3 Announce Type: replace-cross
 Abstract: It has been hypothesized that neural networks with similar architectures trained on similar data learn shared representations relevant to the learning task. We build on this idea by extending the conceptual framework where representations learned across models trained on the same data can be expressed as linear combinations of a \emph{universal} set of basis features. These basis features underlie the learning task itself and remain consistent across models, regardless of scale. From this framework, we propose the \textbf{Linear Representation Transferability (LRT)} Hypothesis -- that there exists an affine transformation between the representation spaces of different models. To test this hypothesis, we learn affine mappings between the hidden states of models of different sizes and evaluate whether steering vectors -- directions in hidden state space associated with specific model behaviors -- retain their semantic effect when transferred from small to large language models using the learned mappings. We find strong empirical evidence that such affine mappings can preserve steering behaviors. These findings suggest that representations learned by small models can be used to guide the behavior of large models, and that the LRT hypothesis may be a promising direction on understanding representation alignment across model scales.
 ]]></content:encoded>
 <pubDate>Fri, 06 Jun 2025 00:00:00 -0400</pubDate>
-<pubDate>Fri, 06 Jun 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
 <title>NTPP: Generative Speech Language Modeling for Dual-Channel Spoken Dialogue via Next-Token-Pair Prediction</title>
 <link>https://arxiv.org/abs/2506.00975</link>
 <guid>https://arxiv.org/abs/2506.00975</guid>
 <content:encoded><![CDATA[
-<div> Keywords: speech language models, dual-channel speech data, generative modeling, Next-Token-Pair Prediction, conversational abilities<br>
-Summary: <br>
+<div> Keywords: speech language models, dual-channel speech data, generative modeling, Next-Token-Pair Prediction, conversational abilities<br />
+Summary: <br />
 This article explores the use of dual-channel speech data in training speech language models (SLMs) for natural spoken interactions. A novel approach called Next-Token-Pair Prediction (NTPP) is introduced to enable speaker-independent dialogue learning using decoder-only architectures. The study shows that the NTPP method significantly enhances SLMs' conversational abilities in terms of turn-taking prediction, response coherence, and naturalness. Furthermore, NTPP outperforms existing methods in reducing inference latency, making it suitable for real-time applications. Through systematic evaluation on standard benchmarks, the empirical results demonstrate the effectiveness of NTPP in leveraging dual-channel speech data for improving SLMs' performance in spoken dialogue tasks. <div>
 arXiv:2506.00975v2 Announce Type: replace-cross 
 Abstract: Inspired by the impressive capabilities of GPT-4o, there is growing interest in enabling speech language models (SLMs) to engage in natural, fluid spoken interactions with humans. Recent advancements have led to the development of several SLMs that demonstrate promising results in this area. However, current approaches have yet to fully exploit dual-channel speech data, which inherently captures the structure and dynamics of human conversation. In this work, we systematically explore the use of dual-channel speech data in the context of modern large language models, and introduce a novel generative modeling paradigm, Next-Token-Pair Prediction (NTPP), to enable speaker-independent dual-channel spoken dialogue learning using decoder-only architectures for the first time. We evaluate our approach on standard benchmarks, and empirical results show that our proposed method, NTPP, significantly improves the conversational abilities of SLMs in terms of turn-taking prediction, response coherence, and naturalness. Moreover, compared to existing methods, NTPP achieves substantially lower inference latency, highlighting its practical efficiency for real-time applications.
 ]]></content:encoded>
-<pubDate>Fri, 06 Jun 2025 00:00:00 -0400</pubDate>
 <pubDate>Fri, 06 Jun 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -61,9 +59,7 @@ arXiv:2506.01320v2 Announce Type: replace-cross
 Abstract: We introduce $\Psi$-Sampler, an SMC-based framework incorporating pCNL-based initial particle sampling for effective inference-time reward alignment with a score-based generative model. Inference-time reward alignment with score-based generative models has recently gained significant traction, following a broader paradigm shift from pre-training to post-training optimization. At the core of this trend is the application of Sequential Monte Carlo (SMC) to the denoising process. However, existing methods typically initialize particles from the Gaussian prior, which inadequately captures reward-relevant regions and results in reduced sampling efficiency. We demonstrate that initializing from the reward-aware posterior significantly improves alignment performance. To enable posterior sampling in high-dimensional latent spaces, we introduce the preconditioned Crank-Nicolson Langevin (pCNL) algorithm, which combines dimension-robust proposals with gradient-informed dynamics. This approach enables efficient and scalable posterior sampling and consistently improves performance across various reward alignment tasks, including layout-to-image generation, quantity-aware generation, and aesthetic-preference generation, as demonstrated in our experiments. Project Webpage: https://psi-sampler.github.io/
 ]]></content:encoded>
 <pubDate>Fri, 06 Jun 2025 00:00:00 -0400</pubDate>
-<pubDate>Fri, 06 Jun 2025 00:00:00 -0400</pubDate>
 </item>
-
 <item>
 <title>Zero-Shot Adaptation of Parameter-Efficient Fine-Tuning in Diffusion Models</title>
 <link>https://arxiv.org/abs/2506.04244</link>
@@ -11185,46 +11181,6 @@ Abstract: A fundamental challenge in probabilistic modeling is balancing express
 <content:encoded><![CDATA[
 arXiv:2506.01297v1 Announce Type: new 
 Abstract: Representation learning of geospatial locations remains a core challenge in achieving general geospatial intelligence. Current embedding methods often lack versatility, limiting their utility across diverse tasks in both human and natural domains. We present MobCLIP, the first nationwide general-purpose location encoder, integrating an unprecedented diversity of data modalities through effective and scalable multimodal fusion. Adopting a novel CLIP-based architecture, our framework aligns 100M+ POIs, nationwide remote sensing imagery, and structured demographic statistics with a billion-edge mobility graph. By tokenizing spatial locations into grid cells inspired by Vision Transformers, we establish a unified representation space bridging mobility patterns and multimodal features. To rigorously evaluate the general-purpose effectiveness of MobCLIP, we construct a benchmark dataset composed of 11 downstream prediction tasks across social, economic, and natural domains. Experiments show that MobCLIP, with four input modalities and a compact 128-dimensional representation space, achieves significantly superior general-purpose predictive performances than state-of-the-art models by an average of 35%. Thanks to the effective integration of human-centric modalities, the performance gain is particularly profound in human-centric tasks, such as energy consumption (+260%), offline retail consumption amount (+98%), and crime cases (+95%) predictions. Echoing LLM scaling laws, we further demonstrate the scaling behavior in geospatial representation learning. We open-source code and pretrained models at: github.com.
-]]></content:encoded>
-<pubDate>Tue, 03 Jun 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Scalable In-Context Q-Learning</title>
-<link>https://arxiv.org/abs/2506.01299</link>
-<guid>https://arxiv.org/abs/2506.01299</guid>
-<content:encoded><![CDATA[
-arXiv:2506.01299v1 Announce Type: new 
-Abstract: Recent advancements in language models have demonstrated remarkable in-context learning abilities, prompting the exploration of in-context reinforcement learning (ICRL) to extend the promise to decision domains. Due to involving more complex dynamics and temporal correlations, existing ICRL approaches may face challenges in learning from suboptimal trajectories and achieving precise in-context inference. In the paper, we propose \textbf{S}calable \textbf{I}n-\textbf{C}ontext \textbf{Q}-\textbf{L}earning (\textbf{SICQL}), an innovative framework that harnesses dynamic programming and world modeling to steer ICRL toward efficient reward maximization and task generalization, while retaining the scalability and stability of supervised pretraining. We design a prompt-based multi-head transformer architecture that simultaneously predicts optimal policies and in-context value functions using separate heads. We pretrain a generalized world model to capture task-relevant information, enabling the construction of a compact prompt that facilitates fast and precise in-context inference. During training, we perform iterative policy improvement by fitting a state value function to an upper-expectile of the Q-function, and distill the in-context value functions into policy extraction using advantage-weighted regression. Extensive experiments across a range of discrete and continuous environments show consistent performance gains over various types of baselines, especially when learning from suboptimal data. Our code is available at https://github.com/NJU-RL/SICQL
-]]></content:encoded>
-<pubDate>Tue, 03 Jun 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Overcoming Multi-step Complexity in Multimodal Theory-of-Mind Reasoning: A Scalable Bayesian Planner</title>
-<link>https://arxiv.org/abs/2506.01301</link>
-<guid>https://arxiv.org/abs/2506.01301</guid>
-<content:encoded><![CDATA[
-arXiv:2506.01301v1 Announce Type: new 
-Abstract: Theory-of-Mind (ToM) enables humans to infer mental states-such as beliefs, desires, and intentions-forming the foundation of social cognition. However, existing computational ToM methods rely on structured workflows with ToM-specific priors or deep model fine-tuning, which struggle with scalability in multimodal environments and fail to generalize as task complexity increases. To address these limitations, we propose a scalable Bayesian ToM planner that decomposes ToM reasoning into stepwise Bayesian updates. Our framework introduces weak-to-strong control, allowing smaller language models (LMs) to specialize in ToM-specific likelihood estimation and transfer their reasoning behaviors to larger LMs (7B to 405B) for integration with social and world knowledge. This synergistic approach aligns large-model inference of human mental states with Bayesian principles. Extensive experiments show that our method achieves a 4.6% accuracy improvement over state-of-the-art techniques on multimodal ToM benchmarks, including challenging unseen scenarios, thereby establishing a new standard for modeling human mental states in complex environments.
-]]></content:encoded>
-<pubDate>Tue, 03 Jun 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>ORMind: A Cognitive-Inspired End-to-End Reasoning Framework for Operations Research</title>
-<link>https://arxiv.org/abs/2506.01326</link>
-<guid>https://arxiv.org/abs/2506.01326</guid>
-<content:encoded><![CDATA[
-arXiv:2506.01326v1 Announce Type: new 
-Abstract: Operations research (OR) is widely deployed to solve critical decision-making problems with complex objectives and constraints, impacting manufacturing, logistics, finance, and healthcare outcomes. While Large Language Models (LLMs) have shown promising results in various domains, their practical application in industry-relevant operations research (OR) problems presents significant challenges and opportunities. Preliminary industrial applications of LLMs for operations research face two critical deployment challenges: 1) Self-correction focuses on code syntax rather than mathematical accuracy, causing costly errors; 2) Complex expert selection creates unpredictable workflows that reduce transparency and increase maintenance costs, making them impractical for time-sensitive business applications. To address these business limitations, we introduce ORMind, a cognitive-inspired framework that enhances optimization through counterfactual reasoning. Our approach emulates human cognition, implementing an end-to-end workflow that systematically transforms requirements into mathematical models and executable solver code. It is currently being tested internally in Lenovo's AI Assistant, with plans to enhance optimization capabilities for both business and consumer customers. Experiments demonstrate that ORMind outperforms existing methods, achieving a 9.5\% improvement on the NL4Opt dataset and a 14.6\% improvement on the ComplexOR dataset.
-]]></content:encoded>
-<pubDate>Tue, 03 Jun 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>An Empirical Study of Group Conformity in Multi-Agent Systems</title>
-<link>https://arxiv.org/abs/2506.01332</link>
-<guid>https://arxiv.org/abs/2506.01332</guid>
-<content:encoded><![CDATA[
-arXiv:2506.01332v1 Announce Type: new 
-Abstract: Recent advances in Large Language Models (LLMs) have enabled multi-agent systems that simulate real-world interactions with near-human reasoning. While previous studies have extensively examined biases related to protected attributes such as race, the emergence and propagation of biases on socially contentious issues in multi-agent LLM interactions remain underexplored. This study explores how LLM agents shape public opinion through debates on five contentious topics. By simulating over 2,500 debates, we analyze how initially neutral agents, assigned a centrist disposition, adopt specific stances over time. Statistical analyses reveal significant group conformity mirroring human behavior; LLM agents tend to align with numerically dominant groups or more intelligent agents, exerting a greater influence. These findings underscore the crucial role of agent intelligence in shaping discourse and highlight the risks of bias amplification in online interactions. Our results emphasize the need for policy measures that promote diversity and transparency in LLM-generated discussions to mitigate the risks of bias propagation within anonymous online environments.
 ]]></content:encoded>
 <pubDate>Tue, 03 Jun 2025 00:00:00 -0400</pubDate>
 </item>

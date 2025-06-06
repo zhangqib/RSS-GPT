@@ -4,18 +4,18 @@
 <title>cs.LG updates on arXiv.org</title>
 <link>http://rss.arxiv.org/rss/cs.LG</link>
 
+
 <item>
 <title>Spectral Insights into Data-Oblivious Critical Layers in Large Language Models</title>
 <link>https://arxiv.org/abs/2506.00382</link>
 <guid>https://arxiv.org/abs/2506.00382</guid>
 <content:encoded><![CDATA[
-<div> critical layers, language models, representation dynamics, fine-tuning, semantic transitions <br>
+<div> critical layers, language models, representation dynamics, fine-tuning, semantic transitions <br />
 Summary: 
-In this study, the authors propose a data-oblivious approach to identify critical layers in large language models (LLMs) by analyzing representation dynamics through Centered Kernel Alignment (CKA). They found that layers with significant shifts in representation space are also most affected during fine-tuning, across different tasks. Spectral analysis revealed that these shifts are driven by changes in the top principal components, encoding semantic transitions from rationales to conclusions. The study applied these findings to two practical scenarios: efficient domain adaptation, where fine-tuning critical layers led to greater loss reduction; and backdoor defense, where freezing critical layers decreased attack success rates by up to 40%. These findings offer insights into improving model interpretability, robustness, and practical applications in domain adaptation and defense against backdoor attacks. <br><br>Summary: <div>
+In this study, the authors propose a data-oblivious approach to identify critical layers in large language models (LLMs) by analyzing representation dynamics through Centered Kernel Alignment (CKA). They found that layers with significant shifts in representation space are also most affected during fine-tuning, across different tasks. Spectral analysis revealed that these shifts are driven by changes in the top principal components, encoding semantic transitions from rationales to conclusions. The study applied these findings to two practical scenarios: efficient domain adaptation, where fine-tuning critical layers led to greater loss reduction; and backdoor defense, where freezing critical layers decreased attack success rates by up to 40%. These findings offer insights into improving model interpretability, robustness, and practical applications in domain adaptation and defense against backdoor attacks. <br /><br />Summary: <div>
 arXiv:2506.00382v2 Announce Type: replace 
 Abstract: Understanding how feature representations evolve across layers in large language models (LLMs) is key to improving their interpretability and robustness. While recent studies have identified critical layers linked to specific functions or behaviors, these efforts typically rely on data-dependent analyses of fine-tuned models, limiting their use to post-hoc settings. In contrast, we introduce a data-oblivious approach to identify intrinsic critical layers in pre-fine-tuned LLMs by analyzing representation dynamics via Centered Kernel Alignment(CKA). We show that layers with significant shifts in representation space are also those most affected during fine-tuning--a pattern that holds consistently across tasks for a given model. Our spectral analysis further reveals that these shifts are driven by changes in the top principal components, which encode semantic transitions from rationales to conclusions. We further apply these findings to two practical scenarios: efficient domain adaptation, where fine-tuning critical layers leads to greater loss reduction compared to non-critical layers; and backdoor defense, where freezing them reduces attack success rates by up to 40%.
 ]]></content:encoded>
-<pubDate>Fri, 06 Jun 2025 00:00:00 -0400</pubDate>
 <pubDate>Fri, 06 Jun 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -23,13 +23,12 @@ Abstract: Understanding how feature representations evolve across layers in larg
 <link>https://arxiv.org/abs/2506.00388</link>
 <guid>https://arxiv.org/abs/2506.00388</guid>
 <content:encoded><![CDATA[
-<div> Reinforcement Learning, Preference-based, Human Feedback, Trajectory Embedding, CLARIFY <br>
-Summary: <br>
+<div> Reinforcement Learning, Preference-based, Human Feedback, Trajectory Embedding, CLARIFY <br />
+Summary: <br />
 Preference-based reinforcement learning (PbRL) aims to infer reward functions from human preference comparisons, but human labeling of similar segments can be ambiguous. The proposed offline method, CLARIFY, learns a trajectory embedding space that incorporates preference information to ensure clear segment distinctions. This facilitates the selection of more definitive queries, improving label efficiency. Extensive experiments show that CLARIFY surpasses baseline methods in scenarios with non-ideal teachers and real human feedback. The approach not only selects more distinct queries but also produces meaningful trajectory embeddings. <div>
 arXiv:2506.00388v2 Announce Type: replace 
 Abstract: Preference-based reinforcement learning (PbRL) bypasses explicit reward engineering by inferring reward functions from human preference comparisons, enabling better alignment with human intentions. However, humans often struggle to label a clear preference between similar segments, reducing label efficiency and limiting PbRL's real-world applicability. To address this, we propose an offline PbRL method: Contrastive LeArning for ResolvIng Ambiguous Feedback (CLARIFY), which learns a trajectory embedding space that incorporates preference information, ensuring clearly distinguished segments are spaced apart, thus facilitating the selection of more unambiguous queries. Extensive experiments demonstrate that CLARIFY outperforms baselines in both non-ideal teachers and real human feedback settings. Our approach not only selects more distinguished queries but also learns meaningful trajectory embeddings.
 ]]></content:encoded>
-<pubDate>Fri, 06 Jun 2025 00:00:00 -0400</pubDate>
 <pubDate>Fri, 06 Jun 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -40,11 +39,10 @@ Abstract: Preference-based reinforcement learning (PbRL) bypasses explicit rewar
 <div> basis features, linear representation transferability, affine transformation, hidden states, steering vectors
 
 Summary:
-The study explores the concept of shared representations learned by neural networks with similar architectures trained on similar data. It introduces the Linear Representation Transferability (LRT) Hypothesis, suggesting the existence of an affine transformation between representation spaces of different models. The researchers learn affine mappings between hidden states of models of varying sizes and find that steering vectors, which indicate specific model behaviors, retain their semantic effect when transferred from small to large language models using these mappings. This indicates that representations learned by smaller models can influence the behavior of larger models. The study provides strong empirical evidence supporting the LRT hypothesis and indicates that understanding representation alignment across model scales could be a promising direction in neural network research.<br><br>Summary: <div>
+The study explores the concept of shared representations learned by neural networks with similar architectures trained on similar data. It introduces the Linear Representation Transferability (LRT) Hypothesis, suggesting the existence of an affine transformation between representation spaces of different models. The researchers learn affine mappings between hidden states of models of varying sizes and find that steering vectors, which indicate specific model behaviors, retain their semantic effect when transferred from small to large language models using these mappings. This indicates that representations learned by smaller models can influence the behavior of larger models. The study provides strong empirical evidence supporting the LRT hypothesis and indicates that understanding representation alignment across model scales could be a promising direction in neural network research.<br /><br />Summary: <div>
 arXiv:2506.00653v3 Announce Type: replace 
 Abstract: It has been hypothesized that neural networks with similar architectures trained on similar data learn shared representations relevant to the learning task. We build on this idea by extending the conceptual framework where representations learned across models trained on the same data can be expressed as linear combinations of a \emph{universal} set of basis features. These basis features underlie the learning task itself and remain consistent across models, regardless of scale. From this framework, we propose the \textbf{Linear Representation Transferability (LRT)} Hypothesis -- that there exists an affine transformation between the representation spaces of different models. To test this hypothesis, we learn affine mappings between the hidden states of models of different sizes and evaluate whether steering vectors -- directions in hidden state space associated with specific model behaviors -- retain their semantic effect when transferred from small to large language models using the learned mappings. We find strong empirical evidence that such affine mappings can preserve steering behaviors. These findings suggest that representations learned by small models can be used to guide the behavior of large models, and that the LRT hypothesis may be a promising direction on understanding representation alignment across model scales.
 ]]></content:encoded>
-<pubDate>Fri, 06 Jun 2025 00:00:00 -0400</pubDate>
 <pubDate>Fri, 06 Jun 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -52,16 +50,14 @@ Abstract: It has been hypothesized that neural networks with similar architectur
 <link>https://arxiv.org/abs/2506.01320</link>
 <guid>https://arxiv.org/abs/2506.01320</guid>
 <content:encoded><![CDATA[
-<div> SMC-based framework, pCNL algorithm, reward alignment, generative models, posterior sampling <br>
+<div> SMC-based framework, pCNL algorithm, reward alignment, generative models, posterior sampling <br />
 Summary: 
-The article introduces the $\Psi$-Sampler framework, which utilizes the pCNL algorithm for efficient posterior sampling to improve reward alignment with score-based generative models. This approach addresses the limitations of existing methods that initialize particles from the Gaussian prior, resulting in suboptimal sampling efficiency. By initializing from the reward-aware posterior, the framework demonstrates enhanced alignment performance in various tasks such as layout-to-image generation, quantity-aware generation, and aesthetic-preference generation. The pCNL algorithm combines dimension-robust proposals and gradient-informed dynamics to enable effective and scalable posterior sampling in high-dimensional latent spaces. Overall, the $\Psi$-Sampler framework significantly improves inference-time reward alignment with score-based generative models, showcasing its potential for various applications in the field of machine learning and artificial intelligence. <br><br> <div>
+The article introduces the $\Psi$-Sampler framework, which utilizes the pCNL algorithm for efficient posterior sampling to improve reward alignment with score-based generative models. This approach addresses the limitations of existing methods that initialize particles from the Gaussian prior, resulting in suboptimal sampling efficiency. By initializing from the reward-aware posterior, the framework demonstrates enhanced alignment performance in various tasks such as layout-to-image generation, quantity-aware generation, and aesthetic-preference generation. The pCNL algorithm combines dimension-robust proposals and gradient-informed dynamics to enable effective and scalable posterior sampling in high-dimensional latent spaces. Overall, the $\Psi$-Sampler framework significantly improves inference-time reward alignment with score-based generative models, showcasing its potential for various applications in the field of machine learning and artificial intelligence. <br /><br /> <div>
 arXiv:2506.01320v2 Announce Type: replace 
 Abstract: We introduce $\Psi$-Sampler, an SMC-based framework incorporating pCNL-based initial particle sampling for effective inference-time reward alignment with a score-based generative model. Inference-time reward alignment with score-based generative models has recently gained significant traction, following a broader paradigm shift from pre-training to post-training optimization. At the core of this trend is the application of Sequential Monte Carlo (SMC) to the denoising process. However, existing methods typically initialize particles from the Gaussian prior, which inadequately captures reward-relevant regions and results in reduced sampling efficiency. We demonstrate that initializing from the reward-aware posterior significantly improves alignment performance. To enable posterior sampling in high-dimensional latent spaces, we introduce the preconditioned Crank-Nicolson Langevin (pCNL) algorithm, which combines dimension-robust proposals with gradient-informed dynamics. This approach enables efficient and scalable posterior sampling and consistently improves performance across various reward alignment tasks, including layout-to-image generation, quantity-aware generation, and aesthetic-preference generation, as demonstrated in our experiments. Project Webpage: https://psi-sampler.github.io/
 ]]></content:encoded>
 <pubDate>Fri, 06 Jun 2025 00:00:00 -0400</pubDate>
-<pubDate>Fri, 06 Jun 2025 00:00:00 -0400</pubDate>
 </item>
-
 <item>
 <title>A Comprehensive Survey on the Risks and Limitations of Concept-based Models</title>
 <link>https://arxiv.org/abs/2506.04237</link>
@@ -10807,46 +10803,6 @@ Abstract: Medical research, particularly in predicting patient outcomes, heavily
 <content:encoded><![CDATA[
 arXiv:2505.07783v3 Announce Type: replace 
 Abstract: Currently, the scaling law of Large Language Models (LLMs) faces challenges and bottlenecks. This paper posits that noise effects, stemming from changes in the signal-to-noise ratio under diminishing marginal returns, are the root cause of these issues. To control this noise, we investigated the differences between models with performance advantages and disadvantages, introducing the concept of "relative overfitting." Based on their complementary strengths, we have proposed an application framework, Accept-Reject (AR), and the associated AR Law, which operates within this framework to elucidate the patterns of performance changes after model integration. In Natural Language Processing (NLP), we use LLMs and Small Language Models (SLMs) as the medium for discussion. This framework enables SLMs to exert a universal positive influence on LLM decision outputs, rather than the intuitively expected potential negative influence. We validated our approach using self-built models based on mainstream architectures and pre-trained mainstream models across multiple datasets, including basic language modeling, long-context tasks, subject examination, and question-answering (QA) benchmarks. The results demonstrate that through our framework, compared to increasing the LLM's parameters, we can achieve better performance improvements with significantly lower parameter and computational costs in many scenarios. These improvements are universal, stable, and effective. Furthermore, we explore the potential of "relative overfitting" and the AR framework in other machine learning domains, such as computer vision (CV) and AI for science. We hope the proposed approach can help scale laws overcome existing bottlenecks.
-]]></content:encoded>
-<pubDate>Wed, 04 Jun 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>A Dataless Reinforcement Learning Approach to Rounding Hyperplane Optimization for Max-Cut</title>
-<link>https://arxiv.org/abs/2505.13405</link>
-<guid>https://arxiv.org/abs/2505.13405</guid>
-<content:encoded><![CDATA[
-arXiv:2505.13405v3 Announce Type: replace 
-Abstract: The Maximum Cut (MaxCut) problem is NP-Complete, and obtaining its optimal solution is NP-hard in the worst case. As a result, heuristic-based algorithms are commonly used, though their design often requires significant domain expertise. More recently, learning-based methods trained on large (un)labeled datasets have been proposed; however, these approaches often struggle with generalizability and scalability. A well-known approximation algorithm for MaxCut is the Goemans-Williamson (GW) algorithm, which relaxes the Quadratic Unconstrained Binary Optimization (QUBO) formulation into a semidefinite program (SDP). The GW algorithm then applies hyperplane rounding by uniformly sampling a random hyperplane to convert the SDP solution into binary node assignments. In this paper, we propose a training-data-free approach based on a non-episodic reinforcement learning formulation, in which an agent learns to select improved rounding hyperplanes that yield better cuts than those produced by the GW algorithm. By optimizing over a Markov Decision Process (MDP), our method consistently achieves better cuts across large-scale graphs with varying densities and degree distributions.
-]]></content:encoded>
-<pubDate>Wed, 04 Jun 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Training on Plausible Counterfactuals Removes Spurious Correlations</title>
-<link>https://arxiv.org/abs/2505.16583</link>
-<guid>https://arxiv.org/abs/2505.16583</guid>
-<content:encoded><![CDATA[
-arXiv:2505.16583v4 Announce Type: replace 
-Abstract: Plausible counterfactual explanations (p-CFEs) are perturbations that minimally modify inputs to change classifier decisions while remaining plausible under the data distribution. In this study, we demonstrate that classifiers can be trained on p-CFEs labeled with induced \emph{incorrect} target classes to classify unperturbed inputs with the original labels. While previous studies have shown that such learning is possible with adversarial perturbations, we extend this paradigm to p-CFEs. Interestingly, our experiments reveal that learning from p-CFEs is even more effective: the resulting classifiers achieve not only high in-distribution accuracy but also exhibit significantly reduced bias with respect to spurious correlations.
-]]></content:encoded>
-<pubDate>Wed, 04 Jun 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>The Polar Express: Optimal Matrix Sign Methods and Their Application to the Muon Algorithm</title>
-<link>https://arxiv.org/abs/2505.16932</link>
-<guid>https://arxiv.org/abs/2505.16932</guid>
-<content:encoded><![CDATA[
-arXiv:2505.16932v2 Announce Type: replace 
-Abstract: Computing the polar decomposition and the related matrix sign function, has been a well-studied problem in numerical analysis for decades. More recently, it has emerged as an important subroutine in deep learning, particularly within the Muon optimization framework. However, the requirements in this setting differ significantly from those of traditional numerical analysis. In deep learning, methods must be highly efficient and GPU-compatible, but high accuracy is often unnecessary. As a result, classical algorithms like Newton-Schulz (which suffers from slow initial convergence) and methods based on rational functions (which rely on QR decompositions or matrix inverses) are poorly suited to this context. In this work, we introduce Polar Express, a GPU-friendly algorithm for computing the polar decomposition. Like classical polynomial methods such as Newton-Schulz, our approach uses only matrix-matrix multiplications, making it GPU-compatible. Motivated by earlier work of Chen & Chow and Nakatsukasa & Freund, Polar Express adapts the polynomial update rule at each iteration by solving a minimax optimization problem, and we prove that it enjoys a strong worst-case optimality guarantee. This property ensures both rapid early convergence and fast asymptotic convergence. We also address finite-precision issues, making it stable in bfloat16 in practice. We apply Polar Express within the Muon optimization framework and show consistent improvements in validation loss on large-scale models such as GPT-2, outperforming recent alternatives across a range of learning rates.
-]]></content:encoded>
-<pubDate>Wed, 04 Jun 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>JanusDNA: A Powerful Bi-directional Hybrid DNA Foundation Model</title>
-<link>https://arxiv.org/abs/2505.17257</link>
-<guid>https://arxiv.org/abs/2505.17257</guid>
-<content:encoded><![CDATA[
-arXiv:2505.17257v2 Announce Type: replace 
-Abstract: Large language models (LLMs) have revolutionized natural language processing and are increasingly applied to other sequential data types, including genetic sequences. However, adapting LLMs to genomics presents significant challenges. Capturing complex genomic interactions requires modeling long-range dependencies within DNA sequences, where interactions often span over 10,000 base pairs, even within a single gene, posing substantial computational burdens under conventional model architectures and training paradigms. Moreover, standard LLM training approaches are suboptimal for DNA: autoregressive training, while efficient, supports only unidirectional understanding. However, DNA is inherently bidirectional, e.g., bidirectional promoters regulate transcription in both directions and account for nearly 11% of human gene expression. Masked language models (MLMs) allow bidirectional understanding but are inefficient, as only masked tokens contribute to the loss per step. To address these limitations, we introduce JanusDNA, the first bidirectional DNA foundation model built upon a novel pretraining paradigm that combines the optimization efficiency of autoregressive modeling with the bidirectional comprehension of masked modeling. JanusDNA adopts a hybrid Mamba, Attention and Mixture of Experts (MoE) architecture, combining long-range modeling of Attention with efficient sequential learning of Mamba. MoE layers further scale model capacity via sparse activation while keeping computational cost low. Notably, JanusDNA processes up to 1 million base pairs at single nucleotide resolution on a single 80GB GPU. Extensive experiments and ablations show JanusDNA achieves new SOTA results on three genomic representation benchmarks, outperforming models with 250x more activated parameters. Code: https://github.com/Qihao-Duan/JanusDNA
 ]]></content:encoded>
 <pubDate>Wed, 04 Jun 2025 00:00:00 -0400</pubDate>
 </item>
