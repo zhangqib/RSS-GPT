@@ -4,18 +4,18 @@
 <title>cs.CL updates on arXiv.org</title>
 <link>http://rss.arxiv.org/rss/cs.CL</link>
 
+
 <item>
 <title>LLM in the Loop: Creating the ParaDeHate Dataset for Hate Speech Detoxification</title>
 <link>https://arxiv.org/abs/2506.01484</link>
 <guid>https://arxiv.org/abs/2506.01484</guid>
 <content:encoded><![CDATA[
-<div> Keywords: Detoxification, text rewriting, hate speech, LLM, automated pipeline<br>
-Summary:<br>
-The paper introduces a novel approach to detoxification of toxic language online, using an LLM-in-the-loop pipeline with GPT-4o-mini. By replacing human annotators with the LLM, the study shows comparable performance to human annotation in detoxification tasks. A large-scale parallel dataset called ParaDeHate is created specifically for hatespeech detoxification, consisting of over 8K hate/non-hate text pairs. Various baseline methods are evaluated on the ParaDeHate dataset, with models like BART achieving better performance in style accuracy, content preservation, and fluency. The study demonstrates the effectiveness of LLM-generated detoxification text as a scalable alternative to human annotation, addressing the scarcity of high-quality datasets for detoxification, especially for hate speech. <br> <div>
+<div> Keywords: Detoxification, text rewriting, hate speech, LLM, automated pipeline<br />
+Summary:<br />
+The paper introduces a novel approach to detoxification of toxic language online, using an LLM-in-the-loop pipeline with GPT-4o-mini. By replacing human annotators with the LLM, the study shows comparable performance to human annotation in detoxification tasks. A large-scale parallel dataset called ParaDeHate is created specifically for hatespeech detoxification, consisting of over 8K hate/non-hate text pairs. Various baseline methods are evaluated on the ParaDeHate dataset, with models like BART achieving better performance in style accuracy, content preservation, and fluency. The study demonstrates the effectiveness of LLM-generated detoxification text as a scalable alternative to human annotation, addressing the scarcity of high-quality datasets for detoxification, especially for hate speech. <br /> <div>
 arXiv:2506.01484v2 Announce Type: replace 
 Abstract: Detoxification, the task of rewriting harmful language into non-toxic text, has become increasingly important amid the growing prevalence of toxic content online. However, high-quality parallel datasets for detoxification, especially for hate speech, remain scarce due to the cost and sensitivity of human annotation. In this paper, we propose a novel LLM-in-the-loop pipeline leveraging GPT-4o-mini for automated detoxification. We first replicate the ParaDetox pipeline by replacing human annotators with an LLM and show that the LLM performs comparably to human annotation. Building on this, we construct ParaDeHate, a large-scale parallel dataset specifically for hatespeech detoxification. We release ParaDeHate as a benchmark of over 8K hate/non-hate text pairs and evaluate a wide range of baseline methods. Experimental results show that models such as BART, fine-tuned on ParaDeHate, achieve better performance in style accuracy, content preservation, and fluency, demonstrating the effectiveness of LLM-generated detoxification text as a scalable alternative to human annotation.
 ]]></content:encoded>
-<pubDate>Mon, 09 Jun 2025 00:00:00 -0400</pubDate>
 <pubDate>Mon, 09 Jun 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -31,12 +31,11 @@ Summary:
 - The study identified specific attention heads that prioritize the figurative meaning of idioms while suppressing the literal interpretation.
 - The model processes the figurative representation through an intermediate path while also maintaining a bypass route for literal interpretation, ensuring both meanings remain available. 
 
-<br><br>Summary: 
+<br /><br />Summary: 
 Idioms present a challenge for language models due to their figurative meanings, requiring the model to differentiate between literal and figurative interpretations. A study used mechanistic interpretability tools to analyze how a large pretrained causal transformer handles this ambiguity. Specific attention heads were identified that prioritize the figurative meaning while suppressing the literal interpretation. The model processes the figurative representation through an intermediate path and maintains a bypass route for literal interpretation. This mechanism ensures that both meanings of the idiom remain available during processing. <div>
 arXiv:2506.01723v3 Announce Type: replace 
 Abstract: Idioms present a unique challenge for language models due to their non-compositional figurative meanings, which often strongly diverge from the idiom's literal interpretation. This duality requires a model to learn representing and deciding between the two meanings to interpret an idiom in a figurative sense, or literally. In this paper, we employ tools from mechanistic interpretability to trace how a large pretrained causal transformer (LLama3.2-1B-base) deals with this ambiguity. We localize three steps of idiom processing: First, the idiom's figurative meaning is retrieved in early attention and MLP sublayers. We identify specific attention heads which boost the figurative meaning of the idiom while suppressing the idiom's literal interpretation. The model subsequently represents the figurative representation through an intermediate path. Meanwhile, a parallel bypass route forwards literal interpretation, ensuring that a both reading remain available. Overall, our findings provide a mechanistic evidence for idiom comprehension in an autoregressive transformer.
 ]]></content:encoded>
-<pubDate>Mon, 09 Jun 2025 00:00:00 -0400</pubDate>
 <pubDate>Mon, 09 Jun 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -52,7 +51,6 @@ arXiv:2506.01819v2 Announce Type: replace
 Abstract: With the recent advances in Artificial Intelligence (AI) and Large Language Models (LLMs), the automation of daily tasks, like automatic writing, is getting more and more attention. Hence, efforts have focused on aligning LLMs with human values, yet humor, particularly professional industrial humor used in workplaces, has been largely neglected. To address this, we develop a dataset of professional humor statements along with features that determine the appropriateness of each statement. Our evaluation of five LLMs shows that LLMs often struggle to judge the appropriateness of humor accurately.
 ]]></content:encoded>
 <pubDate>Mon, 09 Jun 2025 00:00:00 -0400</pubDate>
-<pubDate>Mon, 09 Jun 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
 <title>Generalizable LLM Learning of Graph Synthetic Data with Reinforcement Learning</title>
@@ -67,9 +65,7 @@ arXiv:2506.00845v2 Announce Type: replace-cross
 Abstract: Previous research has sought to enhance the graph reasoning capabilities of LLMs by supervised fine-tuning on synthetic graph data. While these led to specialized LLMs better at solving graph algorithm problems, we don't need LLMs for shortest path: we need generalization from synthetic graph data to real-world tasks with implicit graph structures. In this work, we propose to unlock generalizable learning of graph synthetic data with reinforcement learning. We first design solution-based and process-based rewards for synthetic graph problems: instead of rigid memorizing response patterns in direct fine-tuning, we posit that RL would help LLMs grasp the essentials underlying graph reasoning and alleviate overfitting. We employ RL algorithms such as GRPO and DPO, aligning both off-the-shelf LLMs and LLMs fine-tuned on synthetic graph data. We then compare them against existing settings on both in-domain synthetic tasks and out-of-domain real-world tasks with implicit graph structures such as multi-hop QA, structured planning, and more. Extensive experiments demonstrate that our RL recipe leads to statistically significant improvement on 5 datasets, with an average gain of 12.9\% over baseline settings. Further analysis reveals that process-based rewards consistently outperform solution-based rewards, mixing synthetic and real-world task data yields potential gains, while compositionality and explainable intermediate steps remains a critical challenge even after RL.
 ]]></content:encoded>
 <pubDate>Mon, 09 Jun 2025 00:00:00 -0400</pubDate>
-<pubDate>Mon, 09 Jun 2025 00:00:00 -0400</pubDate>
 </item>
-
 <item>
 <title>EvidenceOutcomes: a Dataset of Clinical Trial Publications with Clinically Meaningful Outcomes</title>
 <link>https://arxiv.org/abs/2506.05380</link>
@@ -11375,46 +11371,6 @@ Abstract: This paper presents LEMONADE, a large-scale conflict event dataset com
 <content:encoded><![CDATA[
 arXiv:2506.00981v1 Announce Type: new 
 Abstract: How language-specific are speech representations learned by self-supervised models? Existing work has shown that a range of linguistic features can be successfully decoded from end-to-end models trained only on speech recordings. However, it's less clear to what extent pre-training on specific languages improves language-specific linguistic information. Here we test the encoding of Dutch phonetic and lexical information in internal representations of self-supervised Wav2Vec2 models. Pre-training exclusively on Dutch improves the representation of Dutch linguistic features as compared to pre-training on similar amounts of English or larger amounts of multilingual data. This language-specific advantage is well-detected by trained clustering or classification probes, and partially observable using zero-shot metrics. Furthermore, the language-specific benefit on linguistic feature encoding aligns with downstream performance on Automatic Speech Recognition.
-]]></content:encoded>
-<pubDate>Tue, 03 Jun 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Do LLMs Understand Why We Write Diaries? A Method for Purpose Extraction and Clustering</title>
-<link>https://arxiv.org/abs/2506.00985</link>
-<guid>https://arxiv.org/abs/2506.00985</guid>
-<content:encoded><![CDATA[
-arXiv:2506.00985v1 Announce Type: new 
-Abstract: Diary analysis presents challenges, particularly in extracting meaningful information from large corpora, where traditional methods often fail to deliver satisfactory results. This study introduces a novel method based on Large Language Models (LLMs) to identify and cluster the various purposes of diary writing. By "purposes," we refer to the intentions behind diary writing, such as documenting life events, self-reflection, or practicing language skills. Our approach is applied to Soviet-era diaries (1922-1929) from the Prozhito digital archive, a rich collection of personal narratives. We evaluate different proprietary and open-source LLMs, finding that GPT-4o and o1-mini achieve the best performance, while a template-based baseline is significantly less effective. Additionally, we analyze the retrieved purposes based on gender, age of the authors, and the year of writing. Furthermore, we examine the types of errors made by the models, providing a deeper understanding of their limitations and potential areas for improvement in future research.
-]]></content:encoded>
-<pubDate>Tue, 03 Jun 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Talking to Data: Designing Smart Assistants for Humanities Databases</title>
-<link>https://arxiv.org/abs/2506.00986</link>
-<guid>https://arxiv.org/abs/2506.00986</guid>
-<content:encoded><![CDATA[
-arXiv:2506.00986v1 Announce Type: new 
-Abstract: Access to humanities research databases is often hindered by the limitations of traditional interaction formats, particularly in the methods of searching and response generation. This study introduces an LLM-based smart assistant designed to facilitate natural language communication with digital humanities data. The assistant, developed in a chatbot format, leverages the RAG approach and integrates state-of-the-art technologies such as hybrid search, automatic query generation, text-to-SQL filtering, semantic database search, and hyperlink insertion. To evaluate the effectiveness of the system, experiments were conducted to assess the response quality of various language models. The testing was based on the Prozhito digital archive, which contains diary entries from predominantly Russian-speaking individuals who lived in the 20th century. The chatbot is tailored to support anthropology and history researchers, as well as non-specialist users with an interest in the field, without requiring prior technical training. By enabling researchers to query complex databases with natural language, this tool aims to enhance accessibility and efficiency in humanities research. The study highlights the potential of Large Language Models to transform the way researchers and the public interact with digital archives, making them more intuitive and inclusive. Additional materials are presented in GitHub repository: https://github.com/alekosus/talking-to-data-intersys2025.
-]]></content:encoded>
-<pubDate>Tue, 03 Jun 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Less is More: Local Intrinsic Dimensions of Contextual Language Models</title>
-<link>https://arxiv.org/abs/2506.01034</link>
-<guid>https://arxiv.org/abs/2506.01034</guid>
-<content:encoded><![CDATA[
-arXiv:2506.01034v1 Announce Type: new 
-Abstract: Understanding the internal mechanisms of large language models (LLMs) remains a challenging and complex endeavor. Even fundamental questions, such as how fine-tuning affects model behavior, often require extensive empirical evaluation. In this paper, we introduce a novel perspective based on the geometric properties of contextual latent embeddings to study the effects of training and fine-tuning. To that end, we measure the local dimensions of a contextual language model's latent space and analyze their shifts during training and fine-tuning. We show that the local dimensions provide insights into the model's training dynamics and generalization ability. Specifically, the mean of the local dimensions predicts when the model's training capabilities are exhausted, as exemplified in a dialogue state tracking task, overfitting, as demonstrated in an emotion recognition task, and grokking, as illustrated with an arithmetic task. Furthermore, our experiments suggest a practical heuristic: reductions in the mean local dimension tend to accompany and predict subsequent performance gains. Through this exploration, we aim to provide practitioners with a deeper understanding of the implications of fine-tuning on embedding spaces, facilitating informed decisions when configuring models for specific applications. The results of this work contribute to the ongoing discourse on the interpretability, adaptability, and generalizability of LLMs by bridging the gap between intrinsic model mechanisms and geometric properties in the respective embeddings.
-]]></content:encoded>
-<pubDate>Tue, 03 Jun 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Probing Neural Topology of Large Language Models</title>
-<link>https://arxiv.org/abs/2506.01042</link>
-<guid>https://arxiv.org/abs/2506.01042</guid>
-<content:encoded><![CDATA[
-arXiv:2506.01042v1 Announce Type: new 
-Abstract: Probing large language models (LLMs) has yielded valuable insights into their internal mechanisms by linking neural representations to interpretable semantics. However, how neurons functionally co-activate with each other to give rise to emergent capabilities remains largely unknown, hindering a deeper understanding and safer development of LLMs. In this work, we introduce graph probing, a method for uncovering the functional connectivity topology of LLM neurons and relating it to language generation performance. By analyzing internal neural graphs across diverse LLM families and scales, we discover a universal predictability of next-token prediction performance using only neural topology. This predictability is robust even when retaining just 1% of neuron connections or probing models after only 8 pretraining steps, highlighting the sparsity and early emergence of topological patterns. Further graph matching analysis suggests that, despite significant distinctions in architectures, parameters, and training data, different LLMs develop intricate and consistent neural topological structures that may form the foundation for their language generation abilities. Codes and data for the graph probing toolbox are released at https://github.com/DavyMorgan/llm-graph-probing.
 ]]></content:encoded>
 <pubDate>Tue, 03 Jun 2025 00:00:00 -0400</pubDate>
 </item>
