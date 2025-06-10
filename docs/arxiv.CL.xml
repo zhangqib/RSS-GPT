@@ -4,6 +4,7 @@
 <title>cs.CL updates on arXiv.org</title>
 <link>http://rss.arxiv.org/rss/cs.CL</link>
 
+
 <item>
 <title>Aligned but Blind: Alignment Increases Implicit Bias by Reducing Awareness of Race</title>
 <link>https://arxiv.org/abs/2506.00253</link>
@@ -17,7 +18,6 @@ arXiv:2506.00253v3 Announce Type: replace
 Abstract: Although value-aligned language models (LMs) appear unbiased in explicit bias evaluations, they often exhibit stereotypes in implicit word association tasks, raising concerns about their fair usage. We investigate the mechanisms behind this discrepancy and find that alignment surprisingly amplifies implicit bias in model outputs. Specifically, we show that aligned LMs, unlike their unaligned counterparts, overlook racial concepts in early internal representations when the context is ambiguous. Not representing race likely fails to activate safety guardrails, leading to unintended biases. Inspired by this insight, we propose a new bias mitigation strategy that works by incentivizing the representation of racial concepts in the early model layers. In contrast to conventional mitigation methods of machine unlearning, our interventions find that steering the model to be more aware of racial concepts effectively mitigates implicit bias. Similar to race blindness in humans, ignoring racial nuances can inadvertently perpetuate subtle biases in LMs.
 ]]></content:encoded>
 <pubDate>Tue, 10 Jun 2025 00:00:00 -0400</pubDate>
-<pubDate>Tue, 10 Jun 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
 <title>SATA-BENCH: Select All That Apply Benchmark for Multiple Choice Questions</title>
@@ -29,11 +29,10 @@ Abstract: Although value-aligned language models (LMs) appear unbiased in explic
 Summary:
 Large language models (LLMs) are commonly evaluated on single-answer multiple-choice tasks but struggle in identifying all correct answers in Select All That Apply (SATA) questions. The introduced SATA-BENCH benchmark assesses LLMs across various domains and identifies significant shortcomings in existing models, with the strongest model achieving only 41.8% exact match. This deficiency is attributed to selection bias and count bias within the models. A proposed solution, Choice Funnel, combines token debiasing and adaptive thresholding to improve accuracy in multi-answer selection, resulting in up to a 29% higher exact match rate compared to other methods. This advancement not only enhances model performance but also reduces inference costs by over 64%. These findings underscore the limitations of current LLMs and offer a new framework for improving multi-answer reasoning tasks, facilitating robust decision-making in real-world applications. The release of SATA-BENCH and Choice Funnel aims to advance LLM development for complex multi-answer scenarios. 
 
-<br><br>Summary: <div>
+<br /><br />Summary: <div>
 arXiv:2506.00643v2 Announce Type: replace 
 Abstract: Large language models (LLMs) are increasingly evaluated on single-answer multiple-choice tasks, yet many real-world problems require identifying all correct answers from a set of options. This capability remains underexplored. We introduce SATA-BENCH, the first dedicated benchmark for evaluating LLMs on Select All That Apply (SATA) questions across diverse domains, including reading comprehension, law, and biomedicine. Our evaluation of 27 open-source and proprietary models reveals a significant gap: even the strongest model achieves only 41.8% exact match, exposing LLMs' inability to reliably identify all correct answers. We find that this weakness stems from two core challenges: selection bias - models favor certain choices regardless of content, and count bias - models fail to predict the correct number of answers. To address these issues, we propose Choice Funnel, a decoding strategy that combines token debiasing with adaptive thresholding to guide models toward complete and accurate selections. Choice Funnel achieves up to 29% higher exact match than competitive baselines while reducing inference cost by over 64%. Our findings expose fundamental limitations in current LLMs and introduce a new framework for diagnosing and improving multi-answer reasoning. We release SATA-BENCH and Choice Funnel to promote LLM development for robust decision-making in realistic, multi-answer applications.
 ]]></content:encoded>
-<pubDate>Tue, 10 Jun 2025 00:00:00 -0400</pubDate>
 <pubDate>Tue, 10 Jun 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -48,20 +47,18 @@ arXiv:2506.00759v2 Announce Type: replace
 Abstract: Large Language Models (LLMs) trained on massive data capture rich information embedded in the training data. However, this also introduces the risk of privacy leakage, particularly involving personally identifiable information (PII). Although previous studies have shown that this risk can be mitigated through methods such as privacy neurons, they all assume that both the (sensitive) training data and user queries are in English. We show that they cannot defend against the privacy leakage in cross-lingual contexts: even if the training data is exclusively in one language, these (private) models may still reveal private information when queried in another language. In this work, we first investigate the information flow of cross-lingual privacy leakage to give a better understanding. We find that LLMs process private information in the middle layers, where representations are largely shared across languages. The risk of leakage peaks when converted to a language-specific space in later layers. Based on this, we identify privacy-universal neurons and language-specific privacy neurons. Privacy-universal neurons influence privacy leakage across all languages, while language-specific privacy neurons are only related to specific languages. By deactivating these neurons, the cross-lingual privacy leakage risk is reduced by 23.3%-31.6%.
 ]]></content:encoded>
 <pubDate>Tue, 10 Jun 2025 00:00:00 -0400</pubDate>
-<pubDate>Tue, 10 Jun 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
 <title>NTPP: Generative Speech Language Modeling for Dual-Channel Spoken Dialogue via Next-Token-Pair Prediction</title>
 <link>https://arxiv.org/abs/2506.00975</link>
 <guid>https://arxiv.org/abs/2506.00975</guid>
 <content:encoded><![CDATA[
-<div> Keywords: GPT-4o, speech language models, dual-channel speech data, Next-Token-Pair Prediction, conversational abilities <br>
-Summary: <br>
+<div> Keywords: GPT-4o, speech language models, dual-channel speech data, Next-Token-Pair Prediction, conversational abilities <br />
+Summary: <br />
 The article discusses the use of dual-channel speech data in enhancing speech language models, with a focus on enabling natural spoken interactions with humans. A novel generative modeling paradigm, Next-Token-Pair Prediction (NTPP), is introduced to enable speaker-independent dual-channel spoken dialogue learning using decoder-only architectures. Evaluation on standard benchmarks demonstrates that NTPP significantly improves conversational abilities of speech language models in terms of turn-taking prediction, response coherence, and naturalness. Additionally, NTPP achieves lower inference latency compared to existing methods, making it efficient for real-time applications. <div>
 arXiv:2506.00975v3 Announce Type: replace 
 Abstract: Inspired by the impressive capabilities of GPT-4o, there is growing interest in enabling speech language models (SLMs) to engage in natural, fluid spoken interactions with humans. Recent advancements have led to the development of several SLMs that demonstrate promising results in this area. However, current approaches have yet to fully exploit dual-channel speech data, which inherently captures the structure and dynamics of human conversation. In this work, we systematically explore the use of dual-channel speech data in the context of modern large language models, and introduce a novel generative modeling paradigm, Next-Token-Pair Prediction (NTPP), to enable speaker-independent dual-channel spoken dialogue learning using decoder-only architectures for the first time. We evaluate our approach on standard benchmarks, and empirical results show that our proposed method, NTPP, significantly improves the conversational abilities of SLMs in terms of turn-taking prediction, response coherence, and naturalness. Moreover, compared to existing methods, NTPP achieves substantially lower inference latency, highlighting its practical efficiency for real-time applications.
 ]]></content:encoded>
-<pubDate>Tue, 10 Jun 2025 00:00:00 -0400</pubDate>
 <pubDate>Tue, 10 Jun 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -72,11 +69,10 @@ Abstract: Inspired by the impressive capabilities of GPT-4o, there is growing in
 <div> prompting, Large Language Models, reasoning, Chain-of-Thought, sequence prediction
 
 Summary: 
-Chain-of-Thought (CoT) prompting has been shown to improve the performance of Large Language Models on tasks requiring multi-step inference. While some claim that this prompts demonstrates emergent reasoning abilities in these models, the authors of this paper argue that CoT does not actually elicit genuine, abstract reasoning. Instead, they suggest that CoT functions as a structural constraint to guide models to imitate the form of reasoning. By generating intermediate steps, CoT utilizes the models' capacity for sequence prediction and pattern matching to constrain output to sequences resembling coherent thought processes. This perspective challenges the notion of emergent reasoning in Large Language Models and highlights the importance of the constraints imposed by CoT prompting on model output. <br><br>Summary: <div>
+Chain-of-Thought (CoT) prompting has been shown to improve the performance of Large Language Models on tasks requiring multi-step inference. While some claim that this prompts demonstrates emergent reasoning abilities in these models, the authors of this paper argue that CoT does not actually elicit genuine, abstract reasoning. Instead, they suggest that CoT functions as a structural constraint to guide models to imitate the form of reasoning. By generating intermediate steps, CoT utilizes the models' capacity for sequence prediction and pattern matching to constrain output to sequences resembling coherent thought processes. This perspective challenges the notion of emergent reasoning in Large Language Models and highlights the importance of the constraints imposed by CoT prompting on model output. <br /><br />Summary: <div>
 arXiv:2506.02878v2 Announce Type: replace 
 Abstract: Chain-of-Thought (CoT) prompting has demonstrably enhanced the performance of Large Language Models on tasks requiring multi-step inference. This success has led to widespread claims of emergent reasoning capabilities in these models. In this paper, we present a theoretical counter-perspective: Chain-of-Thought (CoT) does not elicit genuine, abstract reasoning. Instead, we argue that Chain-of-Thought functions as a powerful structural constraint that guides Large Language Models to imitate the form of reasoning. By forcing the generation of intermediate steps, Chain-of-Thought leverages the model immense capacity for sequence prediction and pattern matching, effectively constraining its output to sequences that resemble coherent thought processes. Chain-of-Thought (CoT) prompting has demonstrably enhanced the performance of Large Language Models on tasks requiring multi-step inference. This success has led to widespread claims of emergent reasoning capabilities in these models. In this paper, we present a theoretical counter-perspective: Chain-of-Thought (CoT) does not elicit genuine, abstract reasoning. Instead, we argue that Chain-of-Thought functions as a powerful structural constraint that guides Large Language Models to imitate the form of reasoning. By forcing the generation of intermediate steps, Chain-of-Thought leverages the model immense capacity for sequence prediction and pattern matching, effectively constraining its output to sequences that resemble coherent thought processes.
 ]]></content:encoded>
-<pubDate>Tue, 10 Jun 2025 00:00:00 -0400</pubDate>
 <pubDate>Tue, 10 Jun 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -86,11 +82,10 @@ Abstract: Chain-of-Thought (CoT) prompting has demonstrably enhanced the perform
 <content:encoded><![CDATA[
 <div> Keywords: Reinforcement learning, large language models, VAPO framework, credit assignment, value function representational capacity
 
-Summary:<br><br>Reinforcement learning (RL) is used to enhance large language models (LLMs) in complex, long-chain-of-thought (long-CoT) reasoning. The VAPO framework, despite its advanced mechanisms, faces limitations in modeling and leveraging deep, long-term value for fine-grained, step-by-step policy guidance in extended reasoning chains. These limitations are attributed to challenges in credit assignment, value function representational capacity, and translating global value signals into local policy improvements, particularly with sparse rewards. The theoretical analysis of VAPO's boundaries in long-term value modeling seeks to advance understanding of RL for advanced reasoning and suggests future research directions for creating more robust LLM agents. <div>
+Summary:<br /><br />Reinforcement learning (RL) is used to enhance large language models (LLMs) in complex, long-chain-of-thought (long-CoT) reasoning. The VAPO framework, despite its advanced mechanisms, faces limitations in modeling and leveraging deep, long-term value for fine-grained, step-by-step policy guidance in extended reasoning chains. These limitations are attributed to challenges in credit assignment, value function representational capacity, and translating global value signals into local policy improvements, particularly with sparse rewards. The theoretical analysis of VAPO's boundaries in long-term value modeling seeks to advance understanding of RL for advanced reasoning and suggests future research directions for creating more robust LLM agents. <div>
 arXiv:2506.03038v2 Announce Type: replace 
 Abstract: Reinforcement learning (RL) enhances large language models (LLMs) in complex, long-chain-of-thought (long-CoT) reasoning. The advanced VAPO framework, despite sophisticated mechanisms like Decoupled GAE, theoretically faces fundamental limitations in comprehensively modeling and leveraging deep, long-term value for fine-grained, step-by-step policy guidance in extended reasoning chains. We argue these limitations stem from inherent difficulties in credit assignment, value function representational capacity with temporally abstracted goals, and translating global value signals into local policy improvements, especially with sparse rewards. Our theoretical analysis examines these aspects to illuminate VAPO's boundaries in long-term value modeling, aiming to deepen understanding of current RL for advanced reasoning and suggest future research for more robust LLM agents.
 ]]></content:encoded>
-<pubDate>Tue, 10 Jun 2025 00:00:00 -0400</pubDate>
 <pubDate>Tue, 10 Jun 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -103,11 +98,10 @@ Abstract: Reinforcement learning (RL) enhances large language models (LLMs) in c
 Summary: 
 The article introduces a novel jailbreak paradigm called Simple Assistive Task Linkage (SATA) to explore vulnerabilities in Large Language Models (LLMs) and improve their security. SATA masks harmful keywords in a query to create a benign version with special tokens and then incorporates an assistive task to decode the masked keywords. By linking the assistive task with the query, SATA effectively bypasses LLM safeguards and elicits harmful responses. Experimental results demonstrate that SATA outperforms existing methods, achieving high attack success rates and harmful scores on the AdvBench dataset. With a masked language model assistive task, SATA achieves an overall attack success rate (ASR) of 85% and a harmful score (HS) of 4.57, while using an element lookup by position assistive task results in an ASR of 76% and an HS of 4.43. 
 
-<br><br>Summary: <div>
+<br /><br />Summary: <div>
 arXiv:2412.15289v4 Announce Type: replace-cross 
 Abstract: Large language models (LLMs) have made significant advancements across various tasks, but their safety alignment remain a major concern. Exploring jailbreak prompts can expose LLMs' vulnerabilities and guide efforts to secure them. Existing methods primarily design sophisticated instructions for the LLM to follow, or rely on multiple iterations, which could hinder the performance and efficiency of jailbreaks. In this work, we propose a novel jailbreak paradigm, Simple Assistive Task Linkage (SATA), which can effectively circumvent LLM safeguards and elicit harmful responses. Specifically, SATA first masks harmful keywords within a malicious query to generate a relatively benign query containing one or multiple [MASK] special tokens. It then employs a simple assistive task such as a masked language model task or an element lookup by position task to encode the semantics of the masked keywords. Finally, SATA links the assistive task with the masked query to jointly perform the jailbreak. Extensive experiments show that SATA achieves state-of-the-art performance and outperforms baselines by a large margin. Specifically, on AdvBench dataset, with mask language model (MLM) assistive task, SATA achieves an overall attack success rate (ASR) of 85% and harmful score (HS) of 4.57, and with element lookup by position (ELP) assistive task, SATA attains an overall ASR of 76% and HS of 4.43.
 ]]></content:encoded>
-<pubDate>Tue, 10 Jun 2025 00:00:00 -0400</pubDate>
 <pubDate>Tue, 10 Jun 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -115,13 +109,12 @@ Abstract: Large language models (LLMs) have made significant advancements across
 <link>https://arxiv.org/abs/2502.16810</link>
 <guid>https://arxiv.org/abs/2502.16810</guid>
 <content:encoded><![CDATA[
-<div> Keywords: agentic framework, large language models, real estate marketing, personalized content, factual accuracy<br>
-Summary:<br>
-This paper introduces an agentic framework that utilizes large language models (LLMs) to automate the creation of persuasive and factual marketing content, with a focus on real estate listing descriptions. The framework consists of three modules: Grounding, Personalization, and Marketing, which work together to generate content aligned with user preferences and marketable features. Human-subject experiments show that the generated descriptions outperform those written by human experts in terms of preference while maintaining factual accuracy. This study indicates the potential of using agentic approaches to automate targeted marketing efforts at scale while ensuring the accuracy of the content.<br><br>Summary: <div>
+<div> Keywords: agentic framework, large language models, real estate marketing, personalized content, factual accuracy<br />
+Summary:<br />
+This paper introduces an agentic framework that utilizes large language models (LLMs) to automate the creation of persuasive and factual marketing content, with a focus on real estate listing descriptions. The framework consists of three modules: Grounding, Personalization, and Marketing, which work together to generate content aligned with user preferences and marketable features. Human-subject experiments show that the generated descriptions outperform those written by human experts in terms of preference while maintaining factual accuracy. This study indicates the potential of using agentic approaches to automate targeted marketing efforts at scale while ensuring the accuracy of the content.<br /><br />Summary: <div>
 arXiv:2502.16810v3 Announce Type: replace-cross 
 Abstract: This paper develops an agentic framework that employs large language models (LLMs) to automate the generation of persuasive and grounded marketing content, using real estate listing descriptions as our focal application domain. Our method is designed to align the generated content with user preferences while highlighting useful factual attributes. This agent consists of three key modules: (1) Grounding Module, mimicking expert human behavior to predict marketable features; (2) Personalization Module, aligning content with user preferences; (3) Marketing Module, ensuring factual accuracy and the inclusion of localized features. We conduct systematic human-subject experiments in the domain of real estate marketing, with a focus group of potential house buyers. The results demonstrate that marketing descriptions generated by our approach are preferred over those written by human experts by a clear margin while maintaining the same level of factual accuracy. Our findings suggest a promising agentic approach to automate large-scale targeted marketing while ensuring factuality of content generation.
 ]]></content:encoded>
-<pubDate>Tue, 10 Jun 2025 00:00:00 -0400</pubDate>
 <pubDate>Tue, 10 Jun 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -129,14 +122,13 @@ Abstract: This paper develops an agentic framework that employs large language m
 <link>https://arxiv.org/abs/2506.02475</link>
 <guid>https://arxiv.org/abs/2506.02475</guid>
 <content:encoded><![CDATA[
-<div> keywords: Bilinear RNNs, Comba, recurrent memory management, Delta learning rule, language modeling, vision modeling <br>
-<br>
+<div> keywords: Bilinear RNNs, Comba, recurrent memory management, Delta learning rule, language modeling, vision modeling <br />
+<br />
 Summary: 
 This paper discusses the concept of Bilinear RNNs and their advantages and limitations compared to previous models like Mamba and GLA. Bilinear RNNs introduce interactions between the recurrent state and the key vector, resembling bilinear systems. The authors propose a new Bilinear RNN variant called Comba, which incorporates closed-loop control theory principles, featuring a scalar-plus-low-rank state transition with state feedback and output feedback corrections. A hardware-efficient chunk-wise parallel kernel named Triton is implemented to train models with 340M/1.3B parameters on a large-scale corpus. Comba demonstrates superior performance and computational efficiency in both language and vision modeling tasks. <div>
 arXiv:2506.02475v2 Announce Type: replace-cross 
 Abstract: Recent efficient sequence modeling methods such as Gated DeltaNet, TTT, and RWKV-7 have achieved performance improvements by supervising the recurrent memory management through Delta learning rule. Unlike previous state-space models (e.g., Mamba) and gated linear attentions (e.g., GLA), these models introduce interactions between the recurrent state and the key vector, structurally resembling bilinear systems. In this paper, we first introduce the concept of Bilinear RNNs with a comprehensive analysis on the advantages and limitations of these models. Then, based on closed-loop control theory, we propose a novel Bilinear RNN variant named Comba, which adopts a scalar-plus-low-rank state transition, with both state feedback and output feedback corrections. We also implement a hardware-efficient chunk-wise parallel kernel in Triton and train models with 340M/1.3B parameters on large-scale corpus. Comba demonstrates superior performance and computation efficiency in both language and vision modeling.
 ]]></content:encoded>
-<pubDate>Tue, 10 Jun 2025 00:00:00 -0400</pubDate>
 <pubDate>Tue, 10 Jun 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -152,9 +144,7 @@ arXiv:2506.03100v3 Announce Type: replace-cross
 Abstract: Retrieval-augmented generation (RAG) has seen many empirical successes in recent years by aiding the LLM with external knowledge. However, its theoretical aspect has remained mostly unexplored. In this paper, we propose the first finite-sample generalization bound for RAG in in-context linear regression and derive an exact bias-variance tradeoff. Our framework views the retrieved texts as query-dependent noisy in-context examples and recovers the classical in-context learning (ICL) and standard RAG as the limit cases. Our analysis suggests that an intrinsic ceiling on generalization error exists on RAG as opposed to the ICL. Furthermore, our framework is able to model retrieval both from the training data and from external corpora by introducing uniform and non-uniform RAG noise. In line with our theory, we show the sample efficiency of ICL and RAG empirically with experiments on common QA benchmarks, such as Natural Questions and TriviaQA.
 ]]></content:encoded>
 <pubDate>Tue, 10 Jun 2025 00:00:00 -0400</pubDate>
-<pubDate>Tue, 10 Jun 2025 00:00:00 -0400</pubDate>
 </item>
-
 <item>
 <title>How Significant Are the Real Performance Gains? An Unbiased Evaluation Framework for GraphRAG</title>
 <link>https://arxiv.org/abs/2506.06331</link>
@@ -11359,106 +11349,6 @@ Abstract: LLMssuch as GPT-4 have shown a remarkable ability to solve complex que
 <content:encoded><![CDATA[
 arXiv:2506.02527v1 Announce Type: new 
 Abstract: Multilingual information retrieval has emerged as powerful tools for expanding knowledge sharing across languages. On the other hand, resources on high quality knowledge base are often scarce and in limited languages, therefore an effective embedding model to transform sentences from different languages into a feature vector space same as the knowledge base language becomes the key ingredient for cross language knowledge sharing, especially to transfer knowledge available in high-resource languages to low-resource ones. In this paper we propose a novel strategy to fine-tune multilingual embedding models with weighted sampling for contrastive learning, enabling multilingual information retrieval with a monolingual knowledge base. We demonstrate that the weighted sampling strategy produces performance gains compared to standard ones by up to 31.03\% in MRR and up to 33.98\% in Recall@3. Additionally, our proposed methodology is language agnostic and applicable for both multilingual and code switching use cases.
-]]></content:encoded>
-<pubDate>Wed, 04 Jun 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>ReasoningFlow: Semantic Structure of Complex Reasoning Traces</title>
-<link>https://arxiv.org/abs/2506.02532</link>
-<guid>https://arxiv.org/abs/2506.02532</guid>
-<content:encoded><![CDATA[
-arXiv:2506.02532v1 Announce Type: new 
-Abstract: Large reasoning models (LRMs) generate complex reasoning traces with planning, reflection, verification, and backtracking. In this work, we introduce ReasoningFlow, a unified schema for analyzing the semantic structures of these complex traces. ReasoningFlow parses traces into directed acyclic graphs, enabling the characterization of distinct reasoning patterns as subgraph structures. This human-interpretable representation offers promising applications in understanding, evaluating, and enhancing the reasoning processes of LRMs.
-]]></content:encoded>
-<pubDate>Wed, 04 Jun 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Natural Language Processing to Enhance Deliberation in Political Online Discussions: A Survey</title>
-<link>https://arxiv.org/abs/2506.02533</link>
-<guid>https://arxiv.org/abs/2506.02533</guid>
-<content:encoded><![CDATA[
-arXiv:2506.02533v1 Announce Type: new 
-Abstract: Political online participation in the form of discussing political issues and exchanging opinions among citizens is gaining importance with more and more formats being held digitally. To come to a decision, a careful discussion and consideration of opinions and a civil exchange of arguments, which is defined as the act of deliberation, is desirable. The quality of discussions and participation processes in terms of their deliberativeness highly depends on the design of platforms and processes. To facilitate online communication for both participants and initiators, machine learning methods offer a lot of potential. In this work we want to showcase which issues occur in political online discussions and how machine learning can be used to counteract these issues and enhance deliberation.
-]]></content:encoded>
-<pubDate>Wed, 04 Jun 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Answer Convergence as a Signal for Early Stopping in Reasoning</title>
-<link>https://arxiv.org/abs/2506.02536</link>
-<guid>https://arxiv.org/abs/2506.02536</guid>
-<content:encoded><![CDATA[
-arXiv:2506.02536v1 Announce Type: new 
-Abstract: Chain-of-thought (CoT) prompting enhances reasoning in large language models (LLMs) but often leads to verbose and redundant outputs, thus increasing inference cost. We hypothesize that many reasoning steps are unnecessary for producing correct answers. To investigate this, we start with a systematic study to examine what is the minimum reasoning required for a model to reach a stable decision. We find that on math reasoning tasks like math, models typically converge to their final answers after 60\% of the reasoning steps, suggesting substantial redundancy in the remaining content. Based on these insights, we propose three inference-time strategies to improve efficiency: (1) early stopping via answer consistency, (2) boosting the probability of generating end-of-reasoning signals, and (3) a supervised method that learns when to stop based on internal activations. Experiments across five benchmarks and five open-weights LLMs show that our methods significantly reduce token usage with little or no accuracy drop. In particular, on NaturalQuestions, Answer Consistency reduces tokens by over 40\% while further improving accuracy. Our work underscores the importance of cost-effective reasoning methods that operate at inference time, offering practical benefits for real-world applications.
-]]></content:encoded>
-<pubDate>Wed, 04 Jun 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>CoRe-MMRAG: Cross-Source Knowledge Reconciliation for Multimodal RAG</title>
-<link>https://arxiv.org/abs/2506.02544</link>
-<guid>https://arxiv.org/abs/2506.02544</guid>
-<content:encoded><![CDATA[
-arXiv:2506.02544v1 Announce Type: new 
-Abstract: Multimodal Retrieval-Augmented Generation (MMRAG) has been introduced to enhance Multimodal Large Language Models by incorporating externally retrieved multimodal knowledge, but it introduces two challenges: Parametric-Retrieved Knowledge Inconsistency (PRKI), where discrepancies between parametric and retrieved knowledge create uncertainty in determining reliability, and Visual-Textual Knowledge Inconsistency (VTKI), where misalignment between visual and textual sources disrupts entity representation. To address these challenges, we propose \textbf{C}r\textbf{o}ss-source knowledge \textbf{Re}conciliation for \textbf{M}ulti\textbf{M}odal \textbf{RAG} (CoRe-MMRAG), a novel end-to-end framework that effectively reconciles inconsistencies across knowledge sources. CoRe-MMRAG follows a four-stage pipeline: it first generates an internal response from parametric knowledge, then selects the most relevant multimodal evidence via joint similarity assessment, generates an external response, and finally integrates both to produce a reliable answer. Additionally, a specialized training paradigm enhances knowledge source discrimination, multimodal integration, and unified answer generation. Experiments on KB-VQA benchmarks show that CoRe-MMRAG achieves substantial improvements over baseline methods, achieving 5.6\% and 9.3\% performance gains on InfoSeek and Encyclopedic-VQA, respectively. We release code and data at \href{https://github.com/TyangJN/CoRe-MMRAG}{https://github.com/TyangJN/CoRe-MMRAG}.
-]]></content:encoded>
-<pubDate>Wed, 04 Jun 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Pruning General Large Language Models into Customized Expert Models</title>
-<link>https://arxiv.org/abs/2506.02561</link>
-<guid>https://arxiv.org/abs/2506.02561</guid>
-<content:encoded><![CDATA[
-arXiv:2506.02561v1 Announce Type: new 
-Abstract: Large language models (LLMs) have revolutionized natural language processing, yet their substantial model sizes often require substantial computational resources. To preserve computing resources and accelerate inference speed, it is crucial to prune redundant parameters, especially for experienced users who often need compact expert models tailored to specific downstream scenarios. However, most existing pruning methods focus on preserving the model's general capabilities, often requiring extensive post-training or suffering from degraded performance due to coarse-grained pruning. In this work, we design a $\underline{Cus}$tom $\underline{Prun}$ing method ($\texttt{Cus-Prun}$) to prune a large general model into a smaller lightweight expert model, which is positioned along the "language", "domain" and "task" dimensions. By identifying and pruning irrelevant neurons of each dimension, $\texttt{Cus-Prun}$ creates expert models without any post-training. Our experiments demonstrate that $\texttt{Cus-Prun}$ consistently outperforms other methods, achieving minimal loss in both expert and general capabilities across various models from different model families and sizes.
-]]></content:encoded>
-<pubDate>Wed, 04 Jun 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>IndoSafety: Culturally Grounded Safety for LLMs in Indonesian Languages</title>
-<link>https://arxiv.org/abs/2506.02573</link>
-<guid>https://arxiv.org/abs/2506.02573</guid>
-<content:encoded><![CDATA[
-arXiv:2506.02573v1 Announce Type: new 
-Abstract: Although region-specific large language models (LLMs) are increasingly developed, their safety remains underexplored, particularly in culturally diverse settings like Indonesia, where sensitivity to local norms is essential and highly valued by the community. In this work, we present IndoSafety, the first high-quality, human-verified safety evaluation dataset tailored for the Indonesian context, covering five language varieties: formal and colloquial Indonesian, along with three major local languages: Javanese, Sundanese, and Minangkabau. IndoSafety is constructed by extending prior safety frameworks to develop a taxonomy that captures Indonesia's sociocultural context. We find that existing Indonesian-centric LLMs often generate unsafe outputs, particularly in colloquial and local language settings, while fine-tuning on IndoSafety significantly improves safety while preserving task performance. Our work highlights the critical need for culturally grounded safety evaluation and provides a concrete step toward responsible LLM deployment in multilingual settings. Warning: This paper contains example data that may be offensive, harmful, or biased.
-]]></content:encoded>
-<pubDate>Wed, 04 Jun 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Prosodic Structure Beyond Lexical Content: A Study of Self-Supervised Learning</title>
-<link>https://arxiv.org/abs/2506.02584</link>
-<guid>https://arxiv.org/abs/2506.02584</guid>
-<content:encoded><![CDATA[
-arXiv:2506.02584v1 Announce Type: new 
-Abstract: People exploit the predictability of lexical structures during text comprehension. Though predictable structure is also present in speech, the degree to which prosody, e.g. intonation, tempo, and loudness, contributes to such structure independently of the lexical content is unclear. This study leverages self-supervised learning (SSL) to examine the temporal granularity of structures in the acoustic correlates of prosody. Representations from our proposed Masked Prosody Model can predict perceptual labels dependent on local information, such as word boundaries, but provide the most value for labels involving longer-term structures, like emotion recognition. Probing experiments across various perceptual labels show strong relative gains over untransformed pitch, energy, and voice activity features. Our results reveal the importance of SSL training objective timescale and highlight the value of complex SSL-encoded structures compared to more constrained classical structures.
-]]></content:encoded>
-<pubDate>Wed, 04 Jun 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Evaluating Named Entity Recognition Models for Russian Cultural News Texts: From BERT to LLM</title>
-<link>https://arxiv.org/abs/2506.02589</link>
-<guid>https://arxiv.org/abs/2506.02589</guid>
-<content:encoded><![CDATA[
-arXiv:2506.02589v1 Announce Type: new 
-Abstract: This paper addresses the challenge of Named Entity Recognition (NER) for person names within the specialized domain of Russian news texts concerning cultural events. The study utilizes the unique SPbLitGuide dataset, a collection of event announcements from Saint Petersburg spanning 1999 to 2019. A comparative evaluation of diverse NER models is presented, encompassing established transformer-based architectures such as DeepPavlov, RoBERTa, and SpaCy, alongside recent Large Language Models (LLMs) including GPT-3.5, GPT-4, and GPT-4o. Key findings highlight the superior performance of GPT-4o when provided with specific prompting for JSON output, achieving an F1 score of 0.93. Furthermore, GPT-4 demonstrated the highest precision at 0.99. The research contributes to a deeper understanding of current NER model capabilities and limitations when applied to morphologically rich languages like Russian within the cultural heritage domain, offering insights for researchers and practitioners. Follow-up evaluation with GPT-4.1 (April 2025) achieves F1=0.94 for both simple and structured prompts, demonstrating rapid progress across model families and simplified deployment requirements.
-]]></content:encoded>
-<pubDate>Wed, 04 Jun 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>On Generalization across Measurement Systems: LLMs Entail More Test-Time Compute for Underrepresented Cultures</title>
-<link>https://arxiv.org/abs/2506.02591</link>
-<guid>https://arxiv.org/abs/2506.02591</guid>
-<content:encoded><![CDATA[
-arXiv:2506.02591v1 Announce Type: new 
-Abstract: Measurement systems (e.g., currencies) differ across cultures, but the conversions between them are well defined so that humans can state facts using any measurement system of their choice. Being available to users from diverse cultural backgrounds, large language models (LLMs) should also be able to provide accurate information irrespective of the measurement system at hand. Using newly compiled datasets we test if this is the case for seven open-source LLMs, addressing three key research questions: (RQ1) What is the default system used by LLMs for each type of measurement? (RQ2) Do LLMs' answers and their accuracy vary across different measurement systems? (RQ3) Can LLMs mitigate potential challenges w.r.t. underrepresented systems via reasoning? Our findings show that LLMs default to the measurement system predominantly used in the data. Additionally, we observe considerable instability and variance in performance across different measurement systems. While this instability can in part be mitigated by employing reasoning methods such as chain-of-thought (CoT), this implies longer responses and thereby significantly increases test-time compute (and inference costs), marginalizing users from cultural backgrounds that use underrepresented measurement systems.
-]]></content:encoded>
-<pubDate>Wed, 04 Jun 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Beyond the Surface: Measuring Self-Preference in LLM Judgments</title>
-<link>https://arxiv.org/abs/2506.02592</link>
-<guid>https://arxiv.org/abs/2506.02592</guid>
-<content:encoded><![CDATA[
-arXiv:2506.02592v1 Announce Type: new 
-Abstract: Recent studies show that large language models (LLMs) exhibit self-preference bias when serving as judges, meaning they tend to favor their own responses over those generated by other models. Existing methods typically measure this bias by calculating the difference between the scores a judge model assigns to its own responses and those it assigns to responses from other models. However, this approach conflates self-preference bias with response quality, as higher-quality responses from the judge model may also lead to positive score differences, even in the absence of bias. To address this issue, we introduce gold judgments as proxies for the actual quality of responses and propose the DBG score, which measures self-preference bias as the difference between the scores assigned by the judge model to its own responses and the corresponding gold judgments. Since gold judgments reflect true response quality, the DBG score mitigates the confounding effect of response quality on bias measurement. Using the DBG score, we conduct comprehensive experiments to assess self-preference bias across LLMs of varying versions, sizes, and reasoning abilities. Additionally, we investigate two factors that influence and help alleviate self-preference bias: response text style and the post-training data of judge models. Finally, we explore potential underlying mechanisms of self-preference bias from an attention-based perspective. Our code and data are available at https://github.com/zhiyuanc2001/self-preference.
 ]]></content:encoded>
 <pubDate>Wed, 04 Jun 2025 00:00:00 -0400</pubDate>
 </item>
