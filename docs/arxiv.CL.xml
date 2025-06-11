@@ -4,18 +4,18 @@
 <title>cs.CL updates on arXiv.org</title>
 <link>http://rss.arxiv.org/rss/cs.CL</link>
 
+
 <item>
 <title>BehaviorBox: Automated Discovery of Fine-Grained Performance Differences Between Language Models</title>
 <link>https://arxiv.org/abs/2506.02204</link>
 <guid>https://arxiv.org/abs/2506.02204</guid>
 <content:encoded><![CDATA[
-<div> methodology, automated comparison, language models, performance-aware contextual embeddings, BehaviorBox <br>
+<div> methodology, automated comparison, language models, performance-aware contextual embeddings, BehaviorBox <br />
 Summary:
 BehaviorBox is a methodology for automated comparison of language models using performance-aware contextual embeddings. It extracts fine-grained features of text where one model outperforms another, such as specific word groups or contexts. The method identifies differences in ease of generation between models, providing insights into where and why one model succeeds over another. BehaviorBox is applied to compare models of different sizes, families, and training methods, revealing meaningful performance differences that are not captured by traditional measures like corpus-level perplexity. This approach enhances language model evaluation by highlighting specific contexts and features that showcase the strengths and weaknesses of different models. <div>
 arXiv:2506.02204v2 Announce Type: replace 
 Abstract: Language model evaluation is a daunting task: prompts are brittle, corpus-level perplexities are vague, and the choice of benchmarks are endless. Finding examples that show meaningful, generalizable differences between two LMs is crucial to understanding where one model succeeds and another fails. Can this process be done automatically? In this work, we propose methodology for automated comparison of language models that uses performance-aware contextual embeddings to find fine-grained features of text where one LM outperforms another. Our method, which we name BehaviorBox, extracts coherent features that demonstrate differences with respect to the ease of generation between two LMs. Specifically, BehaviorBox finds features that describe groups of words in fine-grained contexts, such as "conditional 'were' in the phrase 'if you were'" and "exclamation marks after emotional statements", where one model outperforms another within a particular datatset. We apply BehaviorBox to compare models that vary in size, model family, and post-training, and enumerate insights into specific contexts that illustrate meaningful differences in performance which cannot be found by measures such as corpus-level perplexity alone.
 ]]></content:encoded>
-<pubDate>Wed, 11 Jun 2025 00:00:00 -0400</pubDate>
 <pubDate>Wed, 11 Jun 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -25,14 +25,12 @@ Abstract: Language model evaluation is a daunting task: prompts are brittle, cor
 <content:encoded><![CDATA[
 <div> benchmark, language agents, long-horizon, decision-making tasks, Atari games 
 
-Summary:<br><br>TextAtari is introduced as a benchmark for assessing language agents on extended decision-making tasks, with up to 100,000 steps. It involves translating visual representations of Atari games into text descriptions to test the agents' capabilities at the intersection of sequential decision-making and natural language processing. The benchmark comprises nearly 100 diverse tasks of varying complexity and planning horizons, represented in text form via an unsupervised learning framework, AtariARI. Three large language models are evaluated across different agent frameworks to analyze the impact of prior knowledge on performance in long-horizon challenges. Through various scenarios, the study investigates the influence of semantic understanding, instruction comprehension, and expert demonstrations on agent decision-making. The findings indicate significant performance disparities between language agents and human players in tasks requiring extensive planning, highlighting difficulties in sequential reasoning, state tracking, and strategic planning over tens of thousands of steps. TextAtari offers standardized evaluation procedures, baseline implementations, and a platform for further research in integrating language models with planning algorithms. <div>
+Summary:<br /><br />TextAtari is introduced as a benchmark for assessing language agents on extended decision-making tasks, with up to 100,000 steps. It involves translating visual representations of Atari games into text descriptions to test the agents' capabilities at the intersection of sequential decision-making and natural language processing. The benchmark comprises nearly 100 diverse tasks of varying complexity and planning horizons, represented in text form via an unsupervised learning framework, AtariARI. Three large language models are evaluated across different agent frameworks to analyze the impact of prior knowledge on performance in long-horizon challenges. Through various scenarios, the study investigates the influence of semantic understanding, instruction comprehension, and expert demonstrations on agent decision-making. The findings indicate significant performance disparities between language agents and human players in tasks requiring extensive planning, highlighting difficulties in sequential reasoning, state tracking, and strategic planning over tens of thousands of steps. TextAtari offers standardized evaluation procedures, baseline implementations, and a platform for further research in integrating language models with planning algorithms. <div>
 arXiv:2506.04098v2 Announce Type: replace 
 Abstract: We present TextAtari, a benchmark for evaluating language agents on very long-horizon decision-making tasks spanning up to 100,000 steps. By translating the visual state representations of classic Atari games into rich textual descriptions, TextAtari creates a challenging test bed that bridges sequential decision-making with natural language processing. The benchmark includes nearly 100 distinct tasks with varying complexity, action spaces, and planning horizons, all rendered as text through an unsupervised representation learning framework (AtariARI). We evaluate three open-source large language models (Qwen2.5-7B, Gemma-7B, and Llama3.1-8B) across three agent frameworks (zero-shot, few-shot chain-of-thought, and reflection reasoning) to assess how different forms of prior knowledge affect performance on these long-horizon challenges. Four scenarios-Basic, Obscured, Manual Augmentation, and Reference-based-investigate the impact of semantic understanding, instruction comprehension, and expert demonstrations on agent decision-making. Our results reveal significant performance gaps between language agents and human players in extensive planning tasks, highlighting challenges in sequential reasoning, state tracking, and strategic planning across tens of thousands of steps. TextAtari provides standardized evaluation protocols, baseline implementations, and a framework for advancing research at the intersection of language models and planning. Our code is available at https://github.com/Lww007/Text-Atari-Agents.
 ]]></content:encoded>
 <pubDate>Wed, 11 Jun 2025 00:00:00 -0400</pubDate>
-<pubDate>Wed, 11 Jun 2025 00:00:00 -0400</pubDate>
 </item>
-
 <item>
 <title>Conservative Bias in Large Language Models: Measuring Relation Predictions</title>
 <link>https://arxiv.org/abs/2506.08120</link>
@@ -11351,26 +11349,6 @@ Abstract: Navigation instruction generation for visually impaired (VI) individua
 <content:encoded><![CDATA[
 arXiv:2506.04072v1 Announce Type: new 
 Abstract: Practicing conversations with large language models (LLMs) presents a promising alternative to traditional in-person language learning. However, most LLMs generate text at a near-native level of complexity, making them ill-suited for beginner learners (CEFR: A1-A2). In this paper, we investigate whether controllable generation techniques -- specifically modular methods that do not require model fine-tuning -- can adapt LLM outputs to better support absolute beginners. We evaluate these methods through both automatic metrics and a user study with university-level learners of Japanese. Our findings show that while prompting alone fails to control output difficulty, the use of future discriminators (Yang and Klein, 2021) significantly improves output comprehensibility (from 40.4\% to 84.3\%). We further introduce a novel token-level evaluation metric, Token Miss Rate (TMR), that quantifies the proportion of incomprehensible tokens per utterance and correlates strongly with human judgments. To support future research in AI-assisted language learning, we release our code, models, annotation tools, and dataset.
-]]></content:encoded>
-<pubDate>Thu, 05 Jun 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Acoustically Precise Hesitation Tagging Is Essential for End-to-End Verbatim Transcription Systems</title>
-<link>https://arxiv.org/abs/2506.04076</link>
-<guid>https://arxiv.org/abs/2506.04076</guid>
-<content:encoded><![CDATA[
-arXiv:2506.04076v1 Announce Type: new 
-Abstract: Verbatim transcription for automatic speaking assessment demands accurate capture of disfluencies, crucial for downstream tasks like error analysis and feedback. However, many ASR systems discard or generalize hesitations, losing important acoustic details. We fine-tune Whisper models on the Speak & Improve 2025 corpus using low-rank adaptation (LoRA), without recourse to external audio training data. We compare three annotation schemes: removing hesitations (Pure), generic tags (Rich), and acoustically precise fillers inferred by Gemini 2.0 Flash from existing audio-transcript pairs (Extra). Our challenge system achieved 6.47% WER (Pure) and 5.81% WER (Extra). Post-challenge experiments reveal that fine-tuning Whisper Large V3 Turbo with the "Extra" scheme yielded a 5.5% WER, an 11.3% relative improvement over the "Pure" scheme (6.2% WER). This demonstrates that explicit, realistic filled-pause labeling significantly enhances ASR accuracy for verbatim L2 speech transcription.
-]]></content:encoded>
-<pubDate>Thu, 05 Jun 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>A Novel Data Augmentation Approach for Automatic Speaking Assessment on Opinion Expressions</title>
-<link>https://arxiv.org/abs/2506.04077</link>
-<guid>https://arxiv.org/abs/2506.04077</guid>
-<content:encoded><![CDATA[
-arXiv:2506.04077v1 Announce Type: new 
-Abstract: Automated speaking assessment (ASA) on opinion expressions is often hampered by the scarcity of labeled recordings, which restricts prompt diversity and undermines scoring reliability. To address this challenge, we propose a novel training paradigm that leverages a large language models (LLM) to generate diverse responses of a given proficiency level, converts responses into synthesized speech via speaker-aware text-to-speech synthesis, and employs a dynamic importance loss to adaptively reweight training instances based on feature distribution differences between synthesized and real speech. Subsequently, a multimodal large language model integrates aligned textual features with speech signals to predict proficiency scores directly. Experiments conducted on the LTTC dataset show that our approach outperforms methods relying on real data or conventional augmentation, effectively mitigating low-resource constraints and enabling ASA on opinion expressions with cross-modal information.
 ]]></content:encoded>
 <pubDate>Thu, 05 Jun 2025 00:00:00 -0400</pubDate>
 </item>
