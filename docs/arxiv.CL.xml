@@ -4,6 +4,7 @@
 <title>cs.CL updates on arXiv.org</title>
 <link>http://rss.arxiv.org/rss/cs.CL</link>
 
+
 <item>
 <title>Rethinking Text-based Protein Understanding: Retrieval or LLM?</title>
 <link>https://arxiv.org/abs/2505.20354</link>
@@ -19,23 +20,20 @@ arXiv:2505.20354v3 Announce Type: replace
 Abstract: In recent years, protein-text models have gained significant attention for their potential in protein generation and understanding. Current approaches focus on integrating protein-related knowledge into large language models through continued pretraining and multi-modal alignment, enabling simultaneous comprehension of textual descriptions and protein sequences. Through a thorough analysis of existing model architectures and text-based protein understanding benchmarks, we identify significant data leakage issues present in current benchmarks. Moreover, conventional metrics derived from natural language processing fail to accurately assess the model's performance in this domain. To address these limitations, we reorganize existing datasets and introduce a novel evaluation framework based on biological entities. Motivated by our observation, we propose a retrieval-enhanced method, which significantly outperforms fine-tuned LLMs for protein-to-text generation and shows accuracy and efficiency in training-free scenarios. Our code and data can be seen at https://github.com/IDEA-XL/RAPM.
 ]]></content:encoded>
 <pubDate>Thu, 12 Jun 2025 00:00:00 -0400</pubDate>
-<pubDate>Thu, 12 Jun 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
 <title>TableEval: A Real-World Benchmark for Complex, Multilingual, and Multi-Structured Table Question Answering</title>
 <link>https://arxiv.org/abs/2506.03949</link>
 <guid>https://arxiv.org/abs/2506.03949</guid>
 <content:encoded><![CDATA[
-<div> LLMs, TableQA, TableEval, SEAT, benchmark <br>
-Summary:<br>
-LLMs have made great strides in natural language processing, but face challenges in TableQA due to complex real-world scenarios. The TableEval benchmark addresses these issues by including diverse table structures and data from various domains and languages. SEAT evaluation framework ensures semantic accuracy by aligning model responses with reference answers at the sub-question level, showing high agreement with human judgment. Experiments on TableEval highlight gaps in state-of-the-art LLMs' performance on complex TableQA tasks, providing insights for future enhancements. The dataset is available at: https://github.com/wenge-research/TableEval. <br> <div>
+<div> LLMs, TableQA, TableEval, SEAT, benchmark <br />
+Summary:<br />
+LLMs have made great strides in natural language processing, but face challenges in TableQA due to complex real-world scenarios. The TableEval benchmark addresses these issues by including diverse table structures and data from various domains and languages. SEAT evaluation framework ensures semantic accuracy by aligning model responses with reference answers at the sub-question level, showing high agreement with human judgment. Experiments on TableEval highlight gaps in state-of-the-art LLMs' performance on complex TableQA tasks, providing insights for future enhancements. The dataset is available at: https://github.com/wenge-research/TableEval. <br /> <div>
 arXiv:2506.03949v2 Announce Type: replace 
 Abstract: LLMs have shown impressive progress in natural language processing. However, they still face significant challenges in TableQA, where real-world complexities such as diverse table structures, multilingual data, and domain-specific reasoning are crucial. Existing TableQA benchmarks are often limited by their focus on simple flat tables and suffer from data leakage. Furthermore, most benchmarks are monolingual and fail to capture the cross-lingual and cross-domain variability in practical applications. To address these limitations, we introduce TableEval, a new benchmark designed to evaluate LLMs on realistic TableQA tasks. Specifically, TableEval includes tables with various structures (such as concise, hierarchical, and nested tables) collected from four domains (including government, finance, academia, and industry reports). Besides, TableEval features cross-lingual scenarios with tables in Simplified Chinese, Traditional Chinese, and English. To minimize the risk of data leakage, we collect all data from recent real-world documents. Considering that existing TableQA metrics fail to capture semantic accuracy, we further propose SEAT, a new evaluation framework that assesses the alignment between model responses and reference answers at the sub-question level. Experimental results have shown that SEAT achieves high agreement with human judgment. Extensive experiments on TableEval reveal critical gaps in the ability of state-of-the-art LLMs to handle these complex, real-world TableQA tasks, offering insights for future improvements. We make our dataset available here: https://github.com/wenge-research/TableEval.
 ]]></content:encoded>
 <pubDate>Thu, 12 Jun 2025 00:00:00 -0400</pubDate>
-<pubDate>Thu, 12 Jun 2025 00:00:00 -0400</pubDate>
 </item>
-
 <item>
 <title>LLM-as-a-qualitative-judge: automating error analysis in natural language generation</title>
 <link>https://arxiv.org/abs/2506.09147</link>
@@ -11354,26 +11352,6 @@ Abstract: Speech foundation models trained at a massive scale, both in terms of 
 <content:encoded><![CDATA[
 arXiv:2502.12436v3 Announce Type: replace 
 Abstract: An increasingly common socio-technical problem is people being taken in by offers that sound ``too good to be true'', where persuasion and trust shape decision-making. This paper investigates how \abr{ai} can help detect these deceptive scenarios. We analyze how humans strategically deceive each other in \textit{Diplomacy}, a board game that requires both natural language communication and strategic reasoning. This requires extracting logical forms of proposed agreements in player communications and computing the relative rewards of the proposal using agents' value functions. Combined with text-based features, this can improve our deception detection. Our method detects human deception with a high precision when compared to a Large Language Model approach that flags many true messages as deceptive. Future human-\abr{ai} interaction tools can build on our methods for deception detection by triggering \textit{friction} to give users a chance of interrogating suspicious proposals.
-]]></content:encoded>
-<pubDate>Fri, 06 Jun 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Cramming 1568 Tokens into a Single Vector and Back Again: Exploring the Limits of Embedding Space Capacity</title>
-<link>https://arxiv.org/abs/2502.13063</link>
-<guid>https://arxiv.org/abs/2502.13063</guid>
-<content:encoded><![CDATA[
-arXiv:2502.13063v2 Announce Type: replace 
-Abstract: A range of recent works addresses the problem of compression of sequence of tokens into a shorter sequence of real-valued vectors to be used as inputs instead of token embeddings or key-value cache. These approaches are focused on reduction of the amount of compute in existing language models rather than minimization of number of bits needed to store text. Despite relying on powerful models as encoders, the maximum attainable lossless compression ratio is typically not higher than x10. This fact is highly intriguing because, in theory, the maximum information capacity of large real-valued vectors is far beyond the presented rates even for 16-bit precision and a modest vector size. In this work, we explore the limits of compression by replacing the encoder with a per-sample optimization procedure. We show that vectors with compression ratios up to x1500 exist, which highlights two orders of magnitude gap between existing and practically attainable solutions. Furthermore, we empirically show that the compression limits are determined not by the length of the input but by the amount of uncertainty to be reduced, namely, the cross-entropy loss on this sequence without any conditioning. The obtained limits highlight the substantial gap between the theoretical capacity of input embeddings and their practical utilization, suggesting significant room for optimization in model design.
-]]></content:encoded>
-<pubDate>Fri, 06 Jun 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>A Survey on Data Contamination for Large Language Models</title>
-<link>https://arxiv.org/abs/2502.14425</link>
-<guid>https://arxiv.org/abs/2502.14425</guid>
-<content:encoded><![CDATA[
-arXiv:2502.14425v2 Announce Type: replace 
-Abstract: Recent advancements in Large Language Models (LLMs) have demonstrated significant progress in various areas, such as text generation and code synthesis. However, the reliability of performance evaluation has come under scrutiny due to data contamination-the unintended overlap between training and test datasets. This overlap has the potential to artificially inflate model performance, as LLMs are typically trained on extensive datasets scraped from publicly available sources. These datasets often inadvertently overlap with the benchmarks used for evaluation, leading to an overestimation of the models' true generalization capabilities. In this paper, we first examine the definition and impacts of data contamination. Secondly, we review methods for contamination-free evaluation, focusing on three strategies: data updating-based methods, data rewriting-based methods, and prevention-based methods. Specifically, we highlight dynamic benchmarks and LLM-driven evaluation methods. Finally, we categorize contamination detecting methods based on model information dependency: white-Box, gray-Box, and black-Box detection approaches. Our survey highlights the requirements for more rigorous evaluation protocols and proposes future directions for addressing data contamination challenges.
 ]]></content:encoded>
 <pubDate>Fri, 06 Jun 2025 00:00:00 -0400</pubDate>
 </item>

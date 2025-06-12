@@ -4,6 +4,7 @@
 <title>cs.CV updates on arXiv.org</title>
 <link>http://rss.arxiv.org/rss/cs.CV</link>
 
+
 <item>
 <title>ContentV: Efficient Training of Video Generation Models with Limited Compute</title>
 <link>https://arxiv.org/abs/2506.05343</link>
@@ -12,14 +13,12 @@
 <div> Keywords: video generation, ContentV, efficient training, text-to-video model, reinforcement learning
 
 Summary:
-ContentV is an 8B-parameter text-to-video model that achieves state-of-the-art performance on VBench after training on 256 x 64GB Neural Processing Units for four weeks. The model generates high-quality videos from text prompts using a minimalist architecture that maximizes reuse of pre-trained image generation models. It also employs a multi-stage training strategy leveraging flow matching for efficiency and utilizes a cost-effective reinforcement learning with human feedback framework to improve generation quality without additional human annotations. The code and models for ContentV are available at https://contentv.github.io. <br><br>Summary: <div>
+ContentV is an 8B-parameter text-to-video model that achieves state-of-the-art performance on VBench after training on 256 x 64GB Neural Processing Units for four weeks. The model generates high-quality videos from text prompts using a minimalist architecture that maximizes reuse of pre-trained image generation models. It also employs a multi-stage training strategy leveraging flow matching for efficiency and utilizes a cost-effective reinforcement learning with human feedback framework to improve generation quality without additional human annotations. The code and models for ContentV are available at https://contentv.github.io. <br /><br />Summary: <div>
 arXiv:2506.05343v2 Announce Type: replace 
 Abstract: Recent advances in video generation demand increasingly efficient training recipes to mitigate escalating computational costs. In this report, we present ContentV, an 8B-parameter text-to-video model that achieves state-of-the-art performance (85.14 on VBench) after training on 256 x 64GB Neural Processing Units (NPUs) for merely four weeks. ContentV generates diverse, high-quality videos across multiple resolutions and durations from text prompts, enabled by three key innovations: (1) A minimalist architecture that maximizes reuse of pre-trained image generation models for video generation; (2) A systematic multi-stage training strategy leveraging flow matching for enhanced efficiency; and (3) A cost-effective reinforcement learning with human feedback framework that improves generation quality without requiring additional human annotations. All the code and models are available at: https://contentv.github.io.
 ]]></content:encoded>
 <pubDate>Thu, 12 Jun 2025 00:00:00 -0400</pubDate>
-<pubDate>Thu, 12 Jun 2025 00:00:00 -0400</pubDate>
 </item>
-
 <item>
 <title>ReStNet: A Reusable &amp; Stitchable Network for Dynamic Adaptation on IoT Devices</title>
 <link>https://arxiv.org/abs/2506.09066</link>
@@ -11084,20 +11083,6 @@ The article introduces HoliSafe, a comprehensive safety dataset and benchmark fo
 <br /><br />Summary: <div>
 arXiv:2506.04704v1 Announce Type: new 
 Abstract: Despite emerging efforts to enhance the safety of Vision-Language Models (VLMs), current approaches face two main shortcomings. 1) Existing safety-tuning datasets and benchmarks only partially consider how image-text interactions can yield harmful content, often overlooking contextually unsafe outcomes from seemingly benign pairs. This narrow coverage leaves VLMs vulnerable to jailbreak attacks in unseen configurations. 2) Prior methods rely primarily on data-centric tuning, with limited architectural innovations to intrinsically strengthen safety. We address these gaps by introducing a holistic safety dataset and benchmark, HoliSafe, that spans all five safe/unsafe image-text combinations, providing a more robust basis for both training and evaluation. We further propose SafeLLaVA, a novel VLM augmented with a learnable safety meta token and a dedicated safety head. The meta token encodes harmful visual cues during training, intrinsically guiding the language model toward safer responses, while the safety head offers interpretable harmfulness classification aligned with refusal rationales. Experiments show that SafeLLaVA, trained on HoliSafe, achieves state-of-the-art safety performance across multiple VLM benchmarks. Additionally, the HoliSafe benchmark itself reveals critical vulnerabilities in existing models. We hope that HoliSafe and SafeLLaVA will spur further research into robust and interpretable VLM safety, expanding future avenues for multimodal alignment.
-]]></content:encoded>
-<pubDate>Fri, 06 Jun 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Line of Sight: On Linear Representations in VLLMs</title>
-<link>https://arxiv.org/abs/2506.04706</link>
-<guid>https://arxiv.org/abs/2506.04706</guid>
-<content:encoded><![CDATA[
-<div> linearly decodable features, VLLM, ImageNet classes, Sparse Autoencoders, multimodal
-
-Summary:
-Linearly decodable features representative of ImageNet classes are found in the residual stream of the LlaVA-Next model, showcasing the multimodal capabilities of models trained on embeddings of visual inputs. Targeted edits on the model output demonstrate the causal nature of these features. Training multimodal Sparse Autoencoders results in a dictionary of highly interpretable text and image features, enhancing the diversity of studied linear features. Despite initial disjoint representations across modalities, model representations become more shared in deeper layers, suggesting convergence towards a unified representation space. <div>
-arXiv:2506.04706v1 Announce Type: new 
-Abstract: Language models can be equipped with multimodal capabilities by fine-tuning on embeddings of visual inputs. But how do such multimodal models represent images in their hidden activations? We explore representations of image concepts within LlaVA-Next, a popular open-source VLLM. We find a diverse set of ImageNet classes represented via linearly decodable features in the residual stream. We show that the features are causal by performing targeted edits on the model output. In order to increase the diversity of the studied linear features, we train multimodal Sparse Autoencoders (SAEs), creating a highly interpretable dictionary of text and image features. We find that although model representations across modalities are quite disjoint, they become increasingly shared in deeper layers.
 ]]></content:encoded>
 <pubDate>Fri, 06 Jun 2025 00:00:00 -0400</pubDate>
 </item>

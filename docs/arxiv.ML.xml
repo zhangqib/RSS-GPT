@@ -4,18 +4,18 @@
 <title>cs.LG updates on arXiv.org</title>
 <link>http://rss.arxiv.org/rss/cs.LG</link>
 
+
 <item>
 <title>Effective Regularization Through Loss-Function Metalearning</title>
 <link>https://arxiv.org/abs/2010.00788</link>
 <guid>https://arxiv.org/abs/2010.00788</guid>
 <content:encoded><![CDATA[
-<div> Evolutionary computation, neural network architectures, TaylorGLO method, loss functions, regularization<br>
-<br>
-Summary: Evolutionary computation techniques, such as the TaylorGLO method, optimize neural network architectures by creating customized loss functions. These functions effectively improve performance, accelerate training, and enhance data utilization by discouraging overfitting. The theoretical analysis in this paper shows that evolved loss functions strike a balance between minimizing error and preventing overfitting, leading to more robust networks. This principle can also be applied to understand other regularization techniques like label smoothing. By utilizing the constraint identified in this analysis, more effective loss functions can be designed, resulting in networks that are better able to handle adversarial inputs. This study serves as an important step towards comprehending regularization techniques and highlights the efficacy of evolutionary neural architecture search. <br><br> <div>
+<div> Evolutionary computation, neural network architectures, TaylorGLO method, loss functions, regularization<br />
+<br />
+Summary: Evolutionary computation techniques, such as the TaylorGLO method, optimize neural network architectures by creating customized loss functions. These functions effectively improve performance, accelerate training, and enhance data utilization by discouraging overfitting. The theoretical analysis in this paper shows that evolved loss functions strike a balance between minimizing error and preventing overfitting, leading to more robust networks. This principle can also be applied to understand other regularization techniques like label smoothing. By utilizing the constraint identified in this analysis, more effective loss functions can be designed, resulting in networks that are better able to handle adversarial inputs. This study serves as an important step towards comprehending regularization techniques and highlights the efficacy of evolutionary neural architecture search. <br /><br /> <div>
 arXiv:2010.00788v5 Announce Type: replace 
 Abstract: Evolutionary computation can be used to optimize several different aspects of neural network architectures. For instance, the TaylorGLO method discovers novel, customized loss functions, resulting in improved performance, faster training, and improved data utilization. A likely reason is that such functions discourage overfitting, leading to effective regularization. This paper demonstrates theoretically that this is indeed the case for TaylorGLO. Learning rule decomposition reveals that evolved loss functions balance two factors: the pull toward zero error, and a push away from it to avoid overfitting. This is a general principle that may be used to understand other regularization techniques as well (as demonstrated in this paper for label smoothing). The theoretical analysis leads to a constraint that can be utilized to find more effective loss functions in practice; the mechanism also results in networks that are more robust (as demonstrated in this paper with adversarial inputs). The analysis in this paper thus constitutes a first step towards understanding regularization, and demonstrates the power of evolutionary neural architecture search in general.
 ]]></content:encoded>
-<pubDate>Thu, 12 Jun 2025 00:00:00 -0400</pubDate>
 <pubDate>Thu, 12 Jun 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -26,11 +26,10 @@ Abstract: Evolutionary computation can be used to optimize several different asp
 <div> Contextual Bandit, Prompt-based generative models, Online learning, Shared context variables, Random Fourier features
 
 Summary:
-The study focuses on selecting the best sample generation scheme from various prompt-based generative models by considering the specific characteristics of different text prompts. The proposed PAK-UCB algorithm operates in a contextual bandit setting with shared context variables, predicting the optimal data generation model for a given input prompt through kernel-based functions. Moreover, the integration of random Fourier features (RFF) speeds up the online learning process of PAK-UCB. Experimental results on real and simulated text-to-image and image-to-text generative models demonstrate the effectiveness of RFF-UCB in identifying the top-performing generation model across different sample types. The research provides a valuable contribution to the field of sample generation and offers a practical solution for efficiently selecting the most appropriate generative model based on the characteristics of input prompts.<br><br>Summary: <div>
+The study focuses on selecting the best sample generation scheme from various prompt-based generative models by considering the specific characteristics of different text prompts. The proposed PAK-UCB algorithm operates in a contextual bandit setting with shared context variables, predicting the optimal data generation model for a given input prompt through kernel-based functions. Moreover, the integration of random Fourier features (RFF) speeds up the online learning process of PAK-UCB. Experimental results on real and simulated text-to-image and image-to-text generative models demonstrate the effectiveness of RFF-UCB in identifying the top-performing generation model across different sample types. The research provides a valuable contribution to the field of sample generation and offers a practical solution for efficiently selecting the most appropriate generative model based on the characteristics of input prompts.<br /><br />Summary: <div>
 arXiv:2410.13287v4 Announce Type: replace 
 Abstract: Selecting a sample generation scheme from multiple prompt-based generative models, including large language models (LLMs) and prompt-guided image and video generation models, is typically addressed by choosing the model that maximizes an averaged evaluation score. However, this score-based selection overlooks the possibility that different models achieve the best generation performance for different types of text prompts. An online identification of the best generation model for various input prompts can reduce the costs associated with querying sub-optimal models. In this work, we explore the possibility of varying rankings of text-based generative models for different text prompts and propose an online learning framework to predict the best data generation model for a given input prompt. The proposed PAK-UCB algorithm addresses a contextual bandit (CB) setting with shared context variables across the arms, utilizing the generated data to update kernel-based functions that predict the score of each model available for unseen text prompts. Additionally, we leverage random Fourier features (RFF) to accelerate the online learning process of PAK-UCB. Our numerical experiments on real and simulated text-to-image and image-to-text generative models show that RFF-UCB performs successfully in identifying the best generation model across different sample types. The code is available at: github.com/yannxiaoyanhu/dgm-online-select.
 ]]></content:encoded>
-<pubDate>Thu, 12 Jun 2025 00:00:00 -0400</pubDate>
 <pubDate>Thu, 12 Jun 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -46,9 +45,7 @@ arXiv:2503.04793v4 Announce Type: replace-cross
 Abstract: Learning reward models from human preference datasets and subsequently optimizing language models via reinforcement learning has emerged as a fundamental paradigm for aligning LLMs with human preferences. The performance of the reward model plays a crucial role in the effectiveness of alignment. Previous reward models operate at a coarse-grained level, requiring the generation of a complete response to obtain a reward value. The sparse reward may present challenges for downstream reinforcement learning. While recent efforts have attempted to learn token-level reward models, the lack of explicit semantic information makes it difficult to model the credit of every individual token. In this paper, we propose assigning scores to every sentence, introducing an intermediate-grained reward model. By segmenting the complete response into sentences and applying differential operations to reward output at the start and end positions of each sentence, we can effectively model the rewards of sentences. Moreover, a novel attention mechanism is introduced to aggregate the scores of all sentences into a response-level score, which allows it to be trained using the Bradley-Terry model. On common benchmarks, our method outperforms the response-level reward model by 2.7% on RewardBench (for reward modeling evaluation) and surpasses all baselines on AlpacaEval (for alignment evaluation).
 ]]></content:encoded>
 <pubDate>Thu, 12 Jun 2025 00:00:00 -0400</pubDate>
-<pubDate>Thu, 12 Jun 2025 00:00:00 -0400</pubDate>
 </item>
-
 <item>
 <title>Llama-Affinity: A Predictive Antibody Antigen Binding Model Integrating Antibody Sequences with Llama3 Backbone Architecture</title>
 <link>https://arxiv.org/abs/2506.09052</link>
@@ -10847,36 +10844,6 @@ Abstract: Foundation model fine-tuning faces a fundamental challenge: existing A
 <content:encoded><![CDATA[
 arXiv:2506.07952v1 Announce Type: cross 
 Abstract: Submodular functions, defined on continuous or discrete domains, arise in numerous applications. We study the minimization of the difference of two submodular (DS) functions, over both domains, extending prior work restricted to set functions. We show that all functions on discrete domains and all smooth functions on continuous domains are DS. For discrete domains, we observe that DS minimization is equivalent to minimizing the difference of two convex (DC) functions, as in the set function case. We propose a novel variant of the DC Algorithm (DCA) and apply it to the resulting DC Program, obtaining comparable theoretical guarantees as in the set function case. The algorithm can be applied to continuous domains via discretization. Experiments demonstrate that our method outperforms baselines in integer compressive sensing and integer least squares.
-]]></content:encoded>
-<pubDate>Tue, 10 Jun 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Language Models over Canonical Byte-Pair Encodings</title>
-<link>https://arxiv.org/abs/2506.07956</link>
-<guid>https://arxiv.org/abs/2506.07956</guid>
-<content:encoded><![CDATA[
-arXiv:2506.07956v1 Announce Type: cross 
-Abstract: Modern language models represent probability distributions over character strings as distributions over (shorter) token strings derived via a deterministic tokenizer, such as byte-pair encoding. While this approach is highly effective at scaling up language models to large corpora, its current incarnations have a concerning property: the model assigns nonzero probability mass to an exponential number of $\it{noncanonical}$ token encodings of each character string -- these are token strings that decode to valid character strings but are impossible under the deterministic tokenizer (i.e., they will never be seen in any training corpus, no matter how large). This misallocation is both erroneous, as noncanonical strings never appear in training data, and wasteful, diverting probability mass away from plausible outputs. These are avoidable mistakes! In this work, we propose methods to enforce canonicality in token-level language models, ensuring that only canonical token strings are assigned positive probability. We present two approaches: (1) canonicality by conditioning, leveraging test-time inference strategies without additional training, and (2) canonicality by construction, a model parameterization that guarantees canonical outputs but requires training. We demonstrate that fixing canonicality mistakes improves the likelihood of held-out data for several models and corpora.
-]]></content:encoded>
-<pubDate>Tue, 10 Jun 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Real-time Localization of a Soccer Ball from a Single Camera</title>
-<link>https://arxiv.org/abs/2506.07981</link>
-<guid>https://arxiv.org/abs/2506.07981</guid>
-<content:encoded><![CDATA[
-arXiv:2506.07981v1 Announce Type: cross 
-Abstract: We propose a computationally efficient method for real-time three-dimensional football trajectory reconstruction from a single broadcast camera. In contrast to previous work, our approach introduces a multi-mode state model with $W$ discrete modes to significantly accelerate optimization while preserving centimeter-level accuracy -- even in cases of severe occlusion, motion blur, and complex backgrounds. The system operates on standard CPUs and achieves low latency suitable for live broadcast settings. Extensive evaluation on a proprietary dataset of 6K-resolution Russian Premier League matches demonstrates performance comparable to multi-camera systems, without the need for specialized or costly infrastructure. This work provides a practical method for accessible and accurate 3D ball tracking in professional football environments.
-]]></content:encoded>
-<pubDate>Tue, 10 Jun 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>CXR-LT 2024: A MICCAI challenge on long-tailed, multi-label, and zero-shot disease classification from chest X-ray</title>
-<link>https://arxiv.org/abs/2506.07984</link>
-<guid>https://arxiv.org/abs/2506.07984</guid>
-<content:encoded><![CDATA[
-arXiv:2506.07984v1 Announce Type: cross 
-Abstract: The CXR-LT series is a community-driven initiative designed to enhance lung disease classification using chest X-rays (CXR). It tackles challenges in open long-tailed lung disease classification and enhances the measurability of state-of-the-art techniques. The first event, CXR-LT 2023, aimed to achieve these goals by providing high-quality benchmark CXR data for model development and conducting comprehensive evaluations to identify ongoing issues impacting lung disease classification performance. Building on the success of CXR-LT 2023, the CXR-LT 2024 expands the dataset to 377,110 chest X-rays (CXRs) and 45 disease labels, including 19 new rare disease findings. It also introduces a new focus on zero-shot learning to address limitations identified in the previous event. Specifically, CXR-LT 2024 features three tasks: (i) long-tailed classification on a large, noisy test set, (ii) long-tailed classification on a manually annotated "gold standard" subset, and (iii) zero-shot generalization to five previously unseen disease findings. This paper provides an overview of CXR-LT 2024, detailing the data curation process and consolidating state-of-the-art solutions, including the use of multimodal models for rare disease detection, advanced generative approaches to handle noisy labels, and zero-shot learning strategies for unseen diseases. Additionally, the expanded dataset enhances disease coverage to better represent real-world clinical settings, offering a valuable resource for future research. By synthesizing the insights and innovations of participating teams, we aim to advance the development of clinically realistic and generalizable diagnostic models for chest radiography.
 ]]></content:encoded>
 <pubDate>Tue, 10 Jun 2025 00:00:00 -0400</pubDate>
 </item>
