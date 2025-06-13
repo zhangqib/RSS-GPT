@@ -4,19 +4,19 @@
 <title>cs.CE updates on arXiv.org</title>
 <link>http://rss.arxiv.org/rss/cs.CE</link>
 
+
 <item>
 <title>Exploring EEG Responses during Observation of Actions Performed by Human Actor and Humanoid Robot</title>
 <link>https://arxiv.org/abs/2506.10170</link>
 <guid>https://arxiv.org/abs/2506.10170</guid>
 <content:encoded><![CDATA[
-<div> action observation therapy humanoid robots EEG sensorimotor brain activity<br>
-<br>
-Summary: <br>
+<div> action observation therapy humanoid robots EEG sensorimotor brain activity<br />
+<br />
+Summary: <br />
 This pilot study investigated the potential of humanoid robots in supporting action observation therapy for motor and language function in neurological rehabilitation. Three healthy participants were monitored using EEG while observing actions performed by a human actor and a robot. Analysis of their brain activity revealed variability in ERSP patterns, including power suppression in sensorimotor mu and beta rhythms. One participant showed a stronger response to robot conditions compared to human conditions. Positive correlations in ERSP across all conditions implied common cognitive processes or neural networks in the mirror neuron system during action observation. Overall, the results support the feasibility of using EEG to explore differences in neural responses to observing robot- and human-induced actions. <div>
 arXiv:2506.10170v1 Announce Type: new 
 Abstract: Action observation (AO) therapy is a promising rehabilitative treatment for motor and language function in individuals recovering from neurological conditions, such as stroke. This pilot study aimed to investigate the potential of humanoid robots to support AO therapy in rehabilitation settings. The brain activity of three healthy right-handed participants was monitored with electroencephalography (EEG) while they observed eight different actions performed by two agents, a human actor and a robot, using their left and right arms. Their event-related spectral perturbations (ERSPs, changes in the spectral power of neural oscillations in response to an event or stimulus, compared to baseline) in sensorimotor regions were analyzed. The single-subject analysis showed variability in ERSP patterns among all participants, including power suppression in sensorimotor mu and beta rhythms. One participant showed stronger responses to "robot" AO conditions than to "human" conditions. Strong and positive correlations in ERSP across all conditions were observed for almost all participants and channels, implying common cognitive processes or neural networks at play in the mirror neuron system during AO. The results support the feasibility of using EEG to explore differences in neural responses to observation of robot- and human-induced actions.
 ]]></content:encoded>
-<pubDate>Fri, 13 Jun 2025 00:00:00 -0400</pubDate>
 <pubDate>Fri, 13 Jun 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -24,14 +24,13 @@ Abstract: Action observation (AO) therapy is a promising rehabilitative treatmen
 <link>https://arxiv.org/abs/2506.10224</link>
 <guid>https://arxiv.org/abs/2506.10224</guid>
 <content:encoded><![CDATA[
-<div> Regularized kernel interpolation, reduced-order modeling, interpretable models, reproducing kernel Hilbert space, a posteriori error bound <br>
-<br>
-Summary: <br>
+<div> Regularized kernel interpolation, reduced-order modeling, interpretable models, reproducing kernel Hilbert space, a posteriori error bound <br />
+<br />
+Summary: <br />
 This paper introduces a novel non-intrusive reduced-order modeling technique using regularized kernel interpolation. Unlike traditional methods that rely on least-squares regression, this approach utilizes a reproducing kernel Hilbert space to capture the dynamics of a reduced-order model (ROM) in an interpretable manner. By incorporating carefully selected feature maps into the kernel, the resulting ROMs closely mimic the structure of the full-order model. The flexibility of the approach allows for the inclusion of both structured features and general nonlinear terms in the kernel, providing a comprehensive representation of the system dynamics. Additionally, the authors derive a computable a posteriori error bound that combines error estimates from traditional projection-based ROMs and kernel interpolants. Numerical experiments showcase the effectiveness of the approach compared to operator inference techniques using proper orthogonal decomposition and quadratic manifold dimension reduction. <div>
 arXiv:2506.10224v1 Announce Type: new 
 Abstract: This paper develops an interpretable, non-intrusive reduced-order modeling technique using regularized kernel interpolation. Existing non-intrusive approaches approximate the dynamics of a reduced-order model (ROM) by solving a data-driven least-squares regression problem for low-dimensional matrix operators. Our approach instead leverages regularized kernel interpolation, which yields an optimal approximation of the ROM dynamics from a user-defined reproducing kernel Hilbert space. We show that our kernel-based approach can produce interpretable ROMs whose structure mirrors full-order model structure by embedding judiciously chosen feature maps into the kernel. The approach is flexible and allows a combination of informed structure through feature maps and closure terms via more general nonlinear terms in the kernel. We also derive a computable a posteriori error bound that combines standard error estimates for intrusive projection-based ROMs and kernel interpolants. The approach is demonstrated in several numerical experiments that include comparisons to operator inference using both proper orthogonal decomposition and quadratic manifold dimension reduction.
 ]]></content:encoded>
-<pubDate>Fri, 13 Jun 2025 00:00:00 -0400</pubDate>
 <pubDate>Fri, 13 Jun 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -39,13 +38,12 @@ Abstract: This paper develops an interpretable, non-intrusive reduced-order mode
 <link>https://arxiv.org/abs/2506.10711</link>
 <guid>https://arxiv.org/abs/2506.10711</guid>
 <content:encoded><![CDATA[
-<div> refiner models, diffusion models, PDEs, spectral space, Kuramoto-Sivashinsky equation <br>
+<div> refiner models, diffusion models, PDEs, spectral space, Kuramoto-Sivashinsky equation <br />
 Summary: 
 The article discusses the challenge of generating accurate and stable long rollouts for time-dependent Partial Differential Equations (PDEs). A refiner model called PDERefiner has been developed, utilizing diffusion models to refine outputs for each time step, with a focus on high-frequency accuracy. While this approach works well for some PDEs like the 1-D Kuramoto-Sivashinsky equation by degrading the amplitude of the high-frequency part, it may not be as effective for more complex cases like the Navier-Stokes equation. To address this, adjustments were made in the spectral space, leading to the development of PDE-SpectralRefiner with a v-prediction technique for Blurring diffusion models. This enhancement improved the accuracy of the outputs for both one-step Mean Squared Error (MSE) loss and rollout loss across different model backbones, such as U-Net and neural operators. <div>
 arXiv:2506.10711v1 Announce Type: new 
 Abstract: Generating accurate and stable long rollouts is a notorious challenge for time-dependent PDEs (Partial Differential Equations). Recently, motivated by the importance of high-frequency accuracy, a refiner model called PDERefiner utilizes diffusion models to refine outputs for every time step, since the denoising process could increase the correctness of modeling high frequency part. For 1-D Kuramoto-Sivashinsky equation, refiner models can degrade the amplitude of high frequency part better than not doing refinement process. However, for some other cases, the spectrum might be more complicated. For example, for a harder PDE like Navior-Stokes equation, diffusion models could over-degrade the higher frequency part. This motivates us to release the constraint that each frequency weighs the same. We enhance our refiner model with doing adjustments on spectral space, which recovers Blurring diffusion models. We developed a new v-prediction technique for Blurring diffusion models, recovering the MSE training objective on the first refinement step. We show that in this case, for different model backbones, such as U-Net and neural operators, the outputs of PDE-SpectralRefiner are more accurate for both one-step MSE loss and rollout loss.
 ]]></content:encoded>
-<pubDate>Fri, 13 Jun 2025 00:00:00 -0400</pubDate>
 <pubDate>Fri, 13 Jun 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -53,16 +51,14 @@ Abstract: Generating accurate and stable long rollouts is a notorious challenge 
 <link>https://arxiv.org/abs/2506.10880</link>
 <guid>https://arxiv.org/abs/2506.10880</guid>
 <content:encoded><![CDATA[
-<div> wavelength, integral equations, boundary element method, scattering phenomena, discretization<br>
-Summary:<br>
+<div> wavelength, integral equations, boundary element method, scattering phenomena, discretization<br />
+Summary:<br />
 The study explores the common practice of using integral equations discretized by the boundary element method to model propagation and scattering phenomena. It focuses on approximating the scatterer's boundary with mesh elements of size around a fraction of the incident wave's wavelength. By analyzing operator matrix spectra, the research reveals a discrepancy compared to continuous operators that increases as the simulation frequency rises. This challenges the conventional assumption that discretizing boundaries at a fraction of the wavelength, like λ/10, ensures constant solution accuracy at higher frequencies. <div>
 arXiv:2506.10880v1 Announce Type: new 
 Abstract: When modeling propagation and scattering phenomena using integral equations discretized by the boundary element method, it is common practice to approximate the boundary of the scatterer with a mesh comprising elements of size approximately equal to a fraction of the wavelength $\lambda$ of the incident wave, e.g., $\lambda/10$. In this work, by analyzing the spectra of the operator matrices, we show a discrepancy with respect to the continuous operators which grows with the simulation frequency, challenging the common belief that the aforementioned widely used discretization approach is sufficient to maintain the accuracy of the solution constant when increasing the frequency.
 ]]></content:encoded>
 <pubDate>Fri, 13 Jun 2025 00:00:00 -0400</pubDate>
-<pubDate>Fri, 13 Jun 2025 00:00:00 -0400</pubDate>
 </item>
-
 <item>
 <title>Transaction Categorization with Relational Deep Learning in QuickBooks</title>
 <link>https://arxiv.org/abs/2506.09234</link>
