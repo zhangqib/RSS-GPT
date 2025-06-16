@@ -4,25 +4,24 @@
 <title>cs.CL updates on arXiv.org</title>
 <link>http://rss.arxiv.org/rss/cs.CL</link>
 
+
 <item>
 <title>Cartridges: Lightweight and general-purpose long context representations via self-study</title>
 <link>https://arxiv.org/abs/2506.06266</link>
 <guid>https://arxiv.org/abs/2506.06266</guid>
 <content:encoded><![CDATA[
-<div> Large language models, Cartridge, self-study, in-context learning (ICL), memory consumption<br>
-Summary:<br>
-- Large language models are commonly used to answer queries based on large text corpuses using in-context learning (ICL).<br>
-- The memory consumption of the key-value (KV) cache in current models can be reduced by training a smaller KV cache, called a Cartridge, offline on each corpus.<br>
-- Training a Cartridge with next-token prediction is not as effective as ICL, so a new approach called self-study, which involves training with a context-distillation objective using synthetic conversations, is proposed.<br>
-- Cartridges trained with self-study achieve comparable performance to ICL, but are much more cost-effective to serve.<br>
-- Self-study extends the effective context length of the model and allows for composability of Cartridges at inference time without the need for retraining. <br> <div>
+<div> Large language models, Cartridge, self-study, in-context learning (ICL), memory consumption<br />
+Summary:<br />
+- Large language models are commonly used to answer queries based on large text corpuses using in-context learning (ICL).<br />
+- The memory consumption of the key-value (KV) cache in current models can be reduced by training a smaller KV cache, called a Cartridge, offline on each corpus.<br />
+- Training a Cartridge with next-token prediction is not as effective as ICL, so a new approach called self-study, which involves training with a context-distillation objective using synthetic conversations, is proposed.<br />
+- Cartridges trained with self-study achieve comparable performance to ICL, but are much more cost-effective to serve.<br />
+- Self-study extends the effective context length of the model and allows for composability of Cartridges at inference time without the need for retraining. <br /> <div>
 arXiv:2506.06266v3 Announce Type: replace 
 Abstract: Large language models are often used to answer queries grounded in large text corpora (e.g. codebases, legal documents, or chat histories) by placing the entire corpus in the context window and leveraging in-context learning (ICL). Although current models support contexts of 100K-1M tokens, this setup is costly to serve because the memory consumption of the KV cache scales with input length. We explore an alternative: training a smaller KV cache offline on each corpus. At inference time, we load this trained KV cache, which we call a Cartridge, and decode a response. Critically, the cost of training a Cartridge can be amortized across all the queries referencing the same corpus. However, we find that the naive approach of training the Cartridge with next-token prediction on the corpus is not competitive with ICL. Instead, we propose self-study, a training recipe in which we generate synthetic conversations about the corpus and train the Cartridge with a context-distillation objective. We find that Cartridges trained with self-study replicate the functionality of ICL, while being significantly cheaper to serve. On challenging long-context benchmarks, Cartridges trained with self-study match ICL performance while using 38.6x less memory and enabling 26.4x higher throughput. Self-study also extends the model's effective context length (e.g. from 128k to 484k tokens on MTOB) and surprisingly, leads to Cartridges that can be composed at inference time without retraining.
 ]]></content:encoded>
 <pubDate>Mon, 16 Jun 2025 00:00:00 -0400</pubDate>
-<pubDate>Mon, 16 Jun 2025 00:00:00 -0400</pubDate>
 </item>
-
 <item>
 <title>TeleEval-OS: Performance evaluations of large language models for operations scheduling</title>
 <link>https://arxiv.org/abs/2506.11017</link>
@@ -11346,16 +11345,6 @@ Abstract: Token embeddings play a crucial role in language modeling but, despite
 <content:encoded><![CDATA[
 arXiv:2505.18668v3 Announce Type: replace-cross 
 Abstract: Infographic charts are a powerful medium for communicating abstract data by combining visual elements (e.g., charts, images) with textual information. However, their visual and structural richness poses challenges for large vision-language models (LVLMs), which are typically trained on plain charts. To bridge this gap, we introduce ChartGalaxy, a million-scale dataset designed to advance the understanding and generation of infographic charts. The dataset is constructed through an inductive process that identifies 75 chart types, 330 chart variations, and 68 layout templates from real infographic charts and uses them to create synthetic ones programmatically. We showcase the utility of this dataset through: 1) improving infographic chart understanding via fine-tuning, 2) benchmarking code generation for infographic charts, and 3) enabling example-based infographic chart generation. By capturing the visual and structural complexity of real design, ChartGalaxy provides a useful resource for enhancing multimodal reasoning and generation in LVLMs.
-]]></content:encoded>
-<pubDate>Tue, 10 Jun 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Can MLLMs Guide Me Home? A Benchmark Study on Fine-Grained Visual Reasoning from Transit Maps</title>
-<link>https://arxiv.org/abs/2505.18675</link>
-<guid>https://arxiv.org/abs/2505.18675</guid>
-<content:encoded><![CDATA[
-arXiv:2505.18675v2 Announce Type: replace-cross 
-Abstract: Multimodal large language models (MLLMs) have recently achieved significant progress in visual tasks, including semantic scene understanding and text-image alignment, with reasoning variants enhancing performance on complex tasks involving mathematics and logic. However, their capacity for reasoning tasks involving fine-grained visual understanding remains insufficiently evaluated. To address this gap, we introduce ReasonMap, a benchmark designed to assess the fine-grained visual understanding and spatial reasoning abilities of MLLMs. ReasonMap encompasses high-resolution transit maps from 30 cities across 13 countries and includes 1,008 question-answer pairs spanning two question types and three templates. Furthermore, we design a two-level evaluation pipeline that properly assesses answer correctness and quality. Comprehensive evaluations of 15 popular MLLMs, including both base and reasoning variants, reveal a counterintuitive pattern: among open-source models, base models outperform reasoning ones, while the opposite trend is observed in closed-source models. Additionally, performance generally degrades when visual inputs are masked, indicating that while MLLMs can leverage prior knowledge to answer some questions, fine-grained visual reasoning tasks still require genuine visual perception for strong performance. Our benchmark study offers new insights into visual reasoning and contributes to investigating the gap between open-source and closed-source models.
 ]]></content:encoded>
 <pubDate>Tue, 10 Jun 2025 00:00:00 -0400</pubDate>
 </item>

@@ -4,6 +4,7 @@
 <title>cs.LG updates on arXiv.org</title>
 <link>http://rss.arxiv.org/rss/cs.LG</link>
 
+
 <item>
 <title>e3: Learning to Explore Enables Extrapolation of Test-Time Compute for LLMs</title>
 <link>https://arxiv.org/abs/2506.09026</link>
@@ -14,14 +15,12 @@
 Summary: 
 The research focuses on improving LLM reasoning through test-time scaling and in-context exploration to enable extrapolation capabilities for better performance on challenging problems beyond the training token budget. The proposed e3 recipe involves training the LLM to chain operations like verification and generation, amplifying exploration through negative gradients from incorrect traces, and coupling task difficulty with token budget via a structured curriculum. The e3-1.7B model outperforms existing models in AIME'25 and HMMT'25 scores, achieving 2x extrapolation of the training token budget. This model excels in pass@1 scores and enhances pass@k performance compared to the base model. The study highlights the importance of in-context exploration in enhancing LLM reasoning and sets a new standard for performance in reasoning tasks. 
 
-<br><br>Summary: <div>
+<br /><br />Summary: <div>
 arXiv:2506.09026v2 Announce Type: replace 
 Abstract: Test-time scaling offers a promising path to improve LLM reasoning by utilizing more compute at inference time; however, the true promise of this paradigm lies in extrapolation (i.e., improvement in performance on hard problems as LLMs keep "thinking" for longer, beyond the maximum token budget they were trained on). Surprisingly, we find that most existing reasoning models do not extrapolate well. We show that one way to enable extrapolation is by training the LLM to perform in-context exploration: training the LLM to effectively spend its test time budget by chaining operations (such as generation, verification, refinement, etc.), or testing multiple hypotheses before it commits to an answer. To enable in-context exploration, we identify three key ingredients as part of our recipe e3: (1) chaining skills that the base LLM has asymmetric competence in, e.g., chaining verification (easy) with generation (hard), as a way to implement in-context search; (2) leveraging "negative" gradients from incorrect traces to amplify exploration during RL, resulting in longer search traces that chains additional asymmetries; and (3) coupling task difficulty with training token budget during training via a specifically-designed curriculum to structure in-context exploration. Our recipe e3 produces the best known 1.7B model according to AIME'25 and HMMT'25 scores, and extrapolates to 2x the training token budget. Our e3-1.7B model not only attains high pass@1 scores, but also improves pass@k over the base model.
 ]]></content:encoded>
 <pubDate>Mon, 16 Jun 2025 00:00:00 -0400</pubDate>
-<pubDate>Mon, 16 Jun 2025 00:00:00 -0400</pubDate>
 </item>
-
 <item>
 <title>Developing a Dyslexia Indicator Using Eye Tracking</title>
 <link>https://arxiv.org/abs/2506.11004</link>
@@ -11052,16 +11051,6 @@ Abstract: Missing data imputation in tabular datasets remains a pivotal challeng
 <content:encoded><![CDATA[
 arXiv:2506.08850v1 Announce Type: new 
 Abstract: Soft real-time applications are becoming increasingly complex, posing significant challenges for scheduling offloaded tasks in edge computing environments while meeting task timing constraints. Moreover, the exponential growth of the search space, presence of multiple objectives and parameters, and highly dynamic nature of edge computing environments further exacerbate the complexity of task scheduling. As a result, schedulers based on heuristic and metaheuristic algorithms frequently encounter difficulties in generating optimal or near-optimal task schedules due to their constrained ability to adapt to the dynamic conditions and complex environmental characteristics of edge computing. Accordingly, reinforcement learning algorithms have been incorporated into schedulers to address the complexity and dynamic conditions inherent in task scheduling in edge computing. However, a significant limitation of reinforcement learning algorithms is the prolonged learning time required to adapt to new environments and to address medium- and large-scale problems. This challenge arises from the extensive global action space and frequent random exploration of irrelevant actions. Therefore, this study proposes Agile Reinforcement learning (aRL), in which the RL-agent performs informed exploration and executes only relevant actions. Consequently, the predictability of the RL-agent is enhanced, leading to rapid adaptation and convergence, which positions aRL as a suitable candidate for scheduling the tasks of soft real-time applications in edge computing. The experiments demonstrate that the combination of informed exploration and action-masking methods enables aRL to achieve a higher hit-ratio and converge faster than the baseline approaches.
-]]></content:encoded>
-<pubDate>Wed, 11 Jun 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Adapting to Heterophilic Graph Data with Structure-Guided Neighbor Discovery</title>
-<link>https://arxiv.org/abs/2506.08871</link>
-<guid>https://arxiv.org/abs/2506.08871</guid>
-<content:encoded><![CDATA[
-arXiv:2506.08871v1 Announce Type: new 
-Abstract: Graph Neural Networks (GNNs) often struggle with heterophilic data, where connected nodes may have dissimilar labels, as they typically assume homophily and rely on local message passing. To address this, we propose creating alternative graph structures by linking nodes with similar structural attributes (e.g., role-based or global), thereby fostering higher label homophily on these new graphs. We theoretically prove that GNN performance can be improved by utilizing graphs with fewer false positive edges (connections between nodes of different classes) and that considering multiple graph views increases the likelihood of finding such beneficial structures. Building on these insights, we introduce Structure-Guided GNN (SG-GNN), an architecture that processes the original graph alongside the newly created structural graphs, adaptively learning to weigh their contributions. Extensive experiments on various benchmark datasets, particularly those with heterophilic characteristics, demonstrate that our SG-GNN achieves state-of-the-art or highly competitive performance, highlighting the efficacy of exploiting structural information to guide GNNs.
 ]]></content:encoded>
 <pubDate>Wed, 11 Jun 2025 00:00:00 -0400</pubDate>
 </item>
