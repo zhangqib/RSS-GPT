@@ -4,6 +4,7 @@
 <title>cs.CV updates on arXiv.org</title>
 <link>http://rss.arxiv.org/rss/cs.CV</link>
 
+
 <item>
 <title>RARL: Improving Medical VLM Reasoning and Generalization with Reinforcement Learning and LoRA under Data and Hardware Constraints</title>
 <link>https://arxiv.org/abs/2506.06600</link>
@@ -12,11 +13,10 @@
 <div> Keywords: vision-language models, medical applications, reinforcement learning, reasoning capabilities, computational efficiency
 
 Summary:
-The article introduces the Reasoning-Aware Reinforcement Learning framework (RARL) aimed at improving the performance of vision-language models (VLMs) in medical applications. The framework addresses limitations in generalization, transparency, and computational efficiency faced by current medical VLMs. RARL fine-tunes a base model using Low-Rank Adaptation and custom reward functions to enhance diagnostic accuracy and reasoning quality. The model is trained on a single GPU, demonstrating feasibility in resource-constrained environments. Evaluation using an LLM-as-judge framework shows RARL outperforms supervised fine-tuning by 7.78% in reasoning-focused tasks while requiring fewer resources. The approach also demonstrates improved generalization on unseen datasets, achieving a 27% performance increase over supervised fine-tuning. Diversity prompting and reasoning prompting during training and inference are shown to be essential for enhancing VLM performance. The study highlights the potential of reasoning-guided learning and prompting in steering medical VLMs towards transparent, accurate, and resource-efficient clinical decision-making.<br><br>Summary: <div>
+The article introduces the Reasoning-Aware Reinforcement Learning framework (RARL) aimed at improving the performance of vision-language models (VLMs) in medical applications. The framework addresses limitations in generalization, transparency, and computational efficiency faced by current medical VLMs. RARL fine-tunes a base model using Low-Rank Adaptation and custom reward functions to enhance diagnostic accuracy and reasoning quality. The model is trained on a single GPU, demonstrating feasibility in resource-constrained environments. Evaluation using an LLM-as-judge framework shows RARL outperforms supervised fine-tuning by 7.78% in reasoning-focused tasks while requiring fewer resources. The approach also demonstrates improved generalization on unseen datasets, achieving a 27% performance increase over supervised fine-tuning. Diversity prompting and reasoning prompting during training and inference are shown to be essential for enhancing VLM performance. The study highlights the potential of reasoning-guided learning and prompting in steering medical VLMs towards transparent, accurate, and resource-efficient clinical decision-making.<br /><br />Summary: <div>
 arXiv:2506.06600v2 Announce Type: replace 
 Abstract: The growing integration of vision-language models (VLMs) in medical applications offers promising support for diagnostic reasoning. However, current medical VLMs often face limitations in generalization, transparency, and computational efficiency-barriers that hinder deployment in real-world, resource-constrained settings. To address these challenges, we propose a Reasoning-Aware Reinforcement Learning framework, \textbf{RARL}, that enhances the reasoning capabilities of medical VLMs while remaining efficient and adaptable to low-resource environments. Our approach fine-tunes a lightweight base model, Qwen2-VL-2B-Instruct, using Low-Rank Adaptation and custom reward functions that jointly consider diagnostic accuracy and reasoning quality. Training is performed on a single NVIDIA A100-PCIE-40GB GPU, demonstrating the feasibility of deploying such models in constrained environments. We evaluate the model using an LLM-as-judge framework that scores both correctness and explanation quality. Experimental results show that RARL significantly improves VLM performance in medical image analysis and clinical reasoning, outperforming supervised fine-tuning on reasoning-focused tasks by approximately 7.78%, while requiring fewer computational resources. Additionally, we demonstrate the generalization capabilities of our approach on unseen datasets, achieving around 27% improved performance compared to supervised fine-tuning and about 4% over traditional RL fine-tuning. Our experiments also illustrate that diversity prompting during training and reasoning prompting during inference are crucial for enhancing VLM performance. Our findings highlight the potential of reasoning-guided learning and reasoning prompting to steer medical VLMs toward more transparent, accurate, and resource-efficient clinical decision-making. Code and data are publicly available.
 ]]></content:encoded>
-<pubDate>Tue, 17 Jun 2025 00:00:00 -0400</pubDate>
 <pubDate>Tue, 17 Jun 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -24,13 +24,12 @@ Abstract: The growing integration of vision-language models (VLMs) in medical ap
 <link>https://arxiv.org/abs/2506.06962</link>
 <guid>https://arxiv.org/abs/2506.06962</guid>
 <content:encoded><![CDATA[
-<div> retrieval augmentation, autoregressive, image generation, patch level, context-aware <br>
+<div> retrieval augmentation, autoregressive, image generation, patch level, context-aware <br />
 Summary:
-The Autoregressive Retrieval Augmentation (AR-RAG) paradigm enhances image generation by incorporating knearest neighbor retrievals at the patch level, as opposed to static retrievals before generation. AR-RAG performs context-aware retrievals at each generation step, using prior-generated patches as queries to retrieve and incorporate relevant patch-level visual references. Two frameworks, Distribution-Augmentation in Decoding (DAiD) and Feature-Augmentation in Decoding (FAiD), are proposed to implement AR-RAG. DAiD merges predicted and retrieved patch distributions, while FAiD fine-tunes retrieved patch features to augment image generation efficiently. AR-RAG outperforms existing models on benchmarks like Midjourney-30K, GenEval, and DPG-Bench, offering significant performance improvements in image generation tasks. <br><br> <div>
+The Autoregressive Retrieval Augmentation (AR-RAG) paradigm enhances image generation by incorporating knearest neighbor retrievals at the patch level, as opposed to static retrievals before generation. AR-RAG performs context-aware retrievals at each generation step, using prior-generated patches as queries to retrieve and incorporate relevant patch-level visual references. Two frameworks, Distribution-Augmentation in Decoding (DAiD) and Feature-Augmentation in Decoding (FAiD), are proposed to implement AR-RAG. DAiD merges predicted and retrieved patch distributions, while FAiD fine-tunes retrieved patch features to augment image generation efficiently. AR-RAG outperforms existing models on benchmarks like Midjourney-30K, GenEval, and DPG-Bench, offering significant performance improvements in image generation tasks. <br /><br /> <div>
 arXiv:2506.06962v3 Announce Type: replace 
 Abstract: We introduce Autoregressive Retrieval Augmentation (AR-RAG), a novel paradigm that enhances image generation by autoregressively incorporating knearest neighbor retrievals at the patch level. Unlike prior methods that perform a single, static retrieval before generation and condition the entire generation on fixed reference images, AR-RAG performs context-aware retrievals at each generation step, using prior-generated patches as queries to retrieve and incorporate the most relevant patch-level visual references, enabling the model to respond to evolving generation needs while avoiding limitations (e.g., over-copying, stylistic bias, etc.) prevalent in existing methods. To realize AR-RAG, we propose two parallel frameworks: (1) Distribution-Augmentation in Decoding (DAiD), a training-free plug-and-use decoding strategy that directly merges the distribution of model-predicted patches with the distribution of retrieved patches, and (2) Feature-Augmentation in Decoding (FAiD), a parameter-efficient fine-tuning method that progressively smooths the features of retrieved patches via multi-scale convolution operations and leverages them to augment the image generation process. We validate the effectiveness of AR-RAG on widely adopted benchmarks, including Midjourney-30K, GenEval and DPG-Bench, demonstrating significant performance gains over state-of-the-art image generation models.
 ]]></content:encoded>
-<pubDate>Tue, 17 Jun 2025 00:00:00 -0400</pubDate>
 <pubDate>Tue, 17 Jun 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -40,12 +39,11 @@ Abstract: We introduce Autoregressive Retrieval Augmentation (AR-RAG), a novel p
 <content:encoded><![CDATA[
 <div> audio-visual understanding, multimodal models, video question answering, AV-HaystacksQA, multi-video retrieval
 
-Summary:<br><br>
-This study focuses on the challenges faced by large multimodal models (LMMs) in complex reasoning across extensive video collections. A new task called AV-HaystacksQA is introduced to address the limitations of existing benchmarks for video question answering. The AVHaystacks benchmark, comprising 3100 annotated QA pairs, evaluates LMM capabilities in multi-video retrieval and temporal grounding tasks. The novel multi-agent framework MAGNET is proposed to improve performance in the QA task on AVHaystacks, achieving significant relative improvements. Two new metrics, STEM and MTGS, are introduced for robust evaluation of multi-video retrieval and temporal grounding. The framework and benchmarks provided in this study aim to enhance audio-visual understanding and reasoning in practical applications. <br><br>Summary: <div>
+Summary:<br /><br />
+This study focuses on the challenges faced by large multimodal models (LMMs) in complex reasoning across extensive video collections. A new task called AV-HaystacksQA is introduced to address the limitations of existing benchmarks for video question answering. The AVHaystacks benchmark, comprising 3100 annotated QA pairs, evaluates LMM capabilities in multi-video retrieval and temporal grounding tasks. The novel multi-agent framework MAGNET is proposed to improve performance in the QA task on AVHaystacks, achieving significant relative improvements. Two new metrics, STEM and MTGS, are introduced for robust evaluation of multi-video retrieval and temporal grounding. The framework and benchmarks provided in this study aim to enhance audio-visual understanding and reasoning in practical applications. <br /><br />Summary: <div>
 arXiv:2506.07016v2 Announce Type: replace 
 Abstract: Large multimodal models (LMMs) have shown remarkable progress in audio-visual understanding, yet they struggle with real-world scenarios that require complex reasoning across extensive video collections. Existing benchmarks for video question answering remain limited in scope, typically involving one clip per query, which falls short of representing the challenges of large-scale, audio-visual retrieval and reasoning encountered in practical applications. To bridge this gap, we introduce a novel task named AV-HaystacksQA, where the goal is to identify salient segments across different videos in response to a query and link them together to generate the most informative answer. To this end, we present AVHaystacks, an audio-visual benchmark comprising 3100 annotated QA pairs designed to assess the capabilities of LMMs in multi-video retrieval and temporal grounding task. Additionally, we propose a model-agnostic, multi-agent framework MAGNET to address this challenge, achieving up to 89% and 65% relative improvements over baseline methods on BLEU@4 and GPT evaluation scores in QA task on our proposed AVHaystacks. To enable robust evaluation of multi-video retrieval and temporal grounding for optimal response generation, we introduce two new metrics, STEM, which captures alignment errors between a ground truth and a predicted step sequence and MTGS, to facilitate balanced and interpretable evaluation of segment-level grounding performance. Project: https://schowdhury671.github.io/magnet_project/
 ]]></content:encoded>
-<pubDate>Tue, 17 Jun 2025 00:00:00 -0400</pubDate>
 <pubDate>Tue, 17 Jun 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -58,11 +56,10 @@ Abstract: Large multimodal models (LMMs) have shown remarkable progress in audio
 Summary:
 In this work, the authors address the limitations of saliency methods in providing reliable explanations for model predictions. They introduce a diagnostic test for class sensitivity to evaluate a method's ability to differentiate between competing class labels on the same input. Through experiments, they discover that many existing saliency methods produce similar explanations regardless of the class label, indicating a lack of reliability. This behavior is consistent across different architectures and datasets, suggesting a structural issue rather than a model-specific one. To address this issue, the authors propose a new method called CASE, which isolates features that are uniquely discriminative for the predicted class. Evaluation tests show that CASE produces more faithful and class-specific explanations compared to existing methods. This work highlights the importance of considering class sensitivity when assessing the reliability of saliency methods for interpreting model predictions. 
 
-<br><br>Summary: <div>
+<br /><br />Summary: <div>
 arXiv:2506.07327v3 Announce Type: replace 
 Abstract: Saliency methods are widely used to visualize which input features are deemed relevant to a model's prediction. However, their visual plausibility can obscure critical limitations. In this work, we propose a diagnostic test for class sensitivity: a method's ability to distinguish between competing class labels on the same input. Through extensive experiments, we show that many widely used saliency methods produce nearly identical explanations regardless of the class label, calling into question their reliability. We find that class-insensitive behavior persists across architectures and datasets, suggesting the failure mode is structural rather than model-specific. Motivated by these findings, we introduce CASE, a contrastive explanation method that isolates features uniquely discriminative for the predicted class. We evaluate CASE using the proposed diagnostic and a perturbation-based fidelity test, and show that it produces faithful and more class-specific explanations than existing methods.
 ]]></content:encoded>
-<pubDate>Tue, 17 Jun 2025 00:00:00 -0400</pubDate>
 <pubDate>Tue, 17 Jun 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -78,21 +75,19 @@ arXiv:2506.07431v2 Announce Type: replace
 Abstract: Accurate ultrasound image segmentation is a prerequisite for precise biometrics and accurate assessment. Relying on manual delineation introduces significant errors and is time-consuming. However, existing segmentation models are designed based on objects in natural scenes, making them difficult to adapt to ultrasound objects with high noise and high similarity. This is particularly evident in small object segmentation, where a pronounced jagged effect occurs. Therefore, this paper proposes a fetal femur and cranial ultrasound image segmentation model based on feature perception and Mamba enhancement to address these challenges. Specifically, a longitudinal and transverse independent viewpoint scanning convolution block and a feature perception module were designed to enhance the ability to capture local detail information and improve the fusion of contextual information. Combined with the Mamba-optimized residual structure, this design suppresses the interference of raw noise and enhances local multi-dimensional scanning. The system builds global information and local feature dependencies, and is trained with a combination of different optimizers to achieve the optimal solution. After extensive experimental validation, the FAMSeg network achieved the fastest loss reduction and the best segmentation performance across images of varying sizes and orientations.
 ]]></content:encoded>
 <pubDate>Tue, 17 Jun 2025 00:00:00 -0400</pubDate>
-<pubDate>Tue, 17 Jun 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
 <title>Genesis: Multimodal Driving Scene Generation with Spatio-Temporal and Cross-Modal Consistency</title>
 <link>https://arxiv.org/abs/2506.07497</link>
 <guid>https://arxiv.org/abs/2506.07497</guid>
 <content:encoded><![CDATA[
-<div> Keywords: Genesis, multi-view driving videos, LiDAR sequences, spatio-temporal consistency, cross-modal consistency <br>
-Summary: <br>
-The article introduces Genesis, a framework for generating multi-view driving videos and LiDAR sequences with spatio-temporal and cross-modal consistency. Genesis utilizes a two-stage architecture combining a video diffusion model with 3D-VAE encoding and a LiDAR generator with NeRF-based rendering. These modalities share a latent space for coherent evolution. The DataCrafter module provides structured semantics through captioning, offering scene-level and instance-level supervision. Experiment results on the nuScenes benchmark show that Genesis outperforms existing methods in video and LiDAR metrics. The generated data benefits tasks like segmentation and 3D detection, proving its semantic fidelity and practical utility. <br>
+<div> Keywords: Genesis, multi-view driving videos, LiDAR sequences, spatio-temporal consistency, cross-modal consistency <br />
+Summary: <br />
+The article introduces Genesis, a framework for generating multi-view driving videos and LiDAR sequences with spatio-temporal and cross-modal consistency. Genesis utilizes a two-stage architecture combining a video diffusion model with 3D-VAE encoding and a LiDAR generator with NeRF-based rendering. These modalities share a latent space for coherent evolution. The DataCrafter module provides structured semantics through captioning, offering scene-level and instance-level supervision. Experiment results on the nuScenes benchmark show that Genesis outperforms existing methods in video and LiDAR metrics. The generated data benefits tasks like segmentation and 3D detection, proving its semantic fidelity and practical utility. <br />
 Summary: <div>
 arXiv:2506.07497v3 Announce Type: replace 
 Abstract: We present Genesis, a unified framework for joint generation of multi-view driving videos and LiDAR sequences with spatio-temporal and cross-modal consistency. Genesis employs a two-stage architecture that integrates a DiT-based video diffusion model with 3D-VAE encoding, and a BEV-aware LiDAR generator with NeRF-based rendering and adaptive sampling. Both modalities are directly coupled through a shared latent space, enabling coherent evolution across visual and geometric domains. To guide the generation with structured semantics, we introduce DataCrafter, a captioning module built on vision-language models that provides scene-level and instance-level supervision. Extensive experiments on the nuScenes benchmark demonstrate that Genesis achieves state-of-the-art performance across video and LiDAR metrics (FVD 16.95, FID 4.24, Chamfer 0.611), and benefits downstream tasks including segmentation and 3D detection, validating the semantic fidelity and practical utility of the generated data.
 ]]></content:encoded>
-<pubDate>Tue, 17 Jun 2025 00:00:00 -0400</pubDate>
 <pubDate>Tue, 17 Jun 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -105,11 +100,10 @@ Abstract: We present Genesis, a unified framework for joint generation of multi-
 Summary: 
 SPTI is a novel method for generating high resolution differentially private (DP) synthetic images by leveraging text generation models instead of image domain models. It involves summarizing private images into textual descriptions, generating DP text, and reconstructing images from the text. SPTI does not require model training and achieves higher quality synthetic images compared to existing DP approaches. On LSUN Bedroom dataset, SPTI achieves an FID of 26.71 at epsilon 1.0, outperforming Private Evolution. On MM CelebA HQ, SPTI reaches an FID of 33.27 at epsilon 1.0, surpassing DP fine tuning baselines. This method provides a resource-efficient and proprietary model compatible framework for generating high resolution DP synthetic images, making private visual datasets more accessible. 
 
-<br><br>Summary: <div>
+<br /><br />Summary: <div>
 arXiv:2506.07555v2 Announce Type: replace 
 Abstract: Generating high fidelity, differentially private (DP) synthetic images offers a promising route to share and analyze sensitive visual data without compromising individual privacy. However, existing DP image synthesis methods struggle to produce high resolution outputs that faithfully capture the structure of the original data. In this paper, we introduce a novel method, referred to as Synthesis via Private Textual Intermediaries (SPTI), that can generate high resolution DP images with easy adoption. The key idea is to shift the challenge of DP image synthesis from the image domain to the text domain by leveraging state of the art DP text generation methods. SPTI first summarizes each private image into a concise textual description using image to text models, then applies a modified Private Evolution algorithm to generate DP text, and finally reconstructs images using text to image models. Notably, SPTI requires no model training, only inference with off the shelf models. Given a private dataset, SPTI produces synthetic images of substantially higher quality than prior DP approaches. On the LSUN Bedroom dataset, SPTI attains an FID less than or equal to 26.71 under epsilon equal to 1.0, improving over Private Evolution FID of 40.36. Similarly, on MM CelebA HQ, SPTI achieves an FID less than or equal to 33.27 at epsilon equal to 1.0, compared to 57.01 from DP fine tuning baselines. Overall, our results demonstrate that Synthesis via Private Textual Intermediaries provides a resource efficient and proprietary model compatible framework for generating high resolution DP synthetic images, greatly expanding access to private visual datasets.
 ]]></content:encoded>
-<pubDate>Tue, 17 Jun 2025 00:00:00 -0400</pubDate>
 <pubDate>Tue, 17 Jun 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -125,7 +119,6 @@ arXiv:2506.07603v2 Announce Type: replace
 Abstract: Surgical video understanding is pivotal for enabling automated intraoperative decision-making, skill assessment, and postoperative quality improvement. However, progress in developing surgical video foundation models (FMs) remains hindered by the scarcity of large-scale, diverse datasets for pretraining and systematic evaluation. In this paper, we introduce \textbf{SurgBench}, a unified surgical video benchmarking framework comprising a pretraining dataset, \textbf{SurgBench-P}, and an evaluation benchmark, \textbf{SurgBench-E}. SurgBench offers extensive coverage of diverse surgical scenarios, with SurgBench-P encompassing 53 million frames across 22 surgical procedures and 11 specialties, and SurgBench-E providing robust evaluation across six categories (phase classification, camera motion, tool recognition, disease diagnosis, action classification, and organ detection) spanning 72 fine-grained tasks. Extensive experiments reveal that existing video FMs struggle to generalize across varied surgical video analysis tasks, whereas pretraining on SurgBench-P yields substantial performance improvements and superior cross-domain generalization to unseen procedures and modalities. Our dataset and code are available upon request.
 ]]></content:encoded>
 <pubDate>Tue, 17 Jun 2025 00:00:00 -0400</pubDate>
-<pubDate>Tue, 17 Jun 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
 <title>Heart Rate Classification in ECG Signals Using Machine Learning and Deep Learning</title>
@@ -134,17 +127,16 @@ Abstract: Surgical video understanding is pivotal for enabling automated intraop
 <content:encoded><![CDATA[
 <div> machine learning, ECG signals, classification, hand-crafted features, deep learning
 
-Summary:<br>
+Summary:<br />
 - The study compares two approaches for classifying heartbeats from ECG signals: traditional machine learning with hand-crafted features and deep learning with transformed images of ECG beats.
 - The dataset was preprocessed to ensure consistency and relevance for analysis.
 - Traditional machine learning models such as LightGBM outperformed image-based CNN approaches in classifying heartbeats.
 - Hand-crafted features like heart rate variability and mean/variance captured temporal and morphological variations better than image-based representations.
-- Future research could improve classification accuracy by considering multi-lead ECG signals and temporal dependencies across consecutive beats.<br><br> <div>
+- Future research could improve classification accuracy by considering multi-lead ECG signals and temporal dependencies across consecutive beats.<br /><br /> <div>
 arXiv:2506.06349v2 Announce Type: replace-cross 
 Abstract: This study addresses the classification of heartbeats from ECG signals through two distinct approaches: traditional machine learning utilizing hand-crafted features and deep learning via transformed images of ECG beats. The dataset underwent preprocessing steps, including downsampling, filtering, and normalization, to ensure consistency and relevance for subsequent analysis. In the first approach, features such as heart rate variability (HRV), mean, variance, and RR intervals were extracted to train various classifiers, including SVM, Random Forest, AdaBoost, LSTM, Bi-directional LSTM, and LightGBM. The second approach involved transforming ECG signals into images using Gramian Angular Field (GAF), Markov Transition Field (MTF), and Recurrence Plots (RP), with these images subsequently classified using CNN architectures like VGG and Inception.
   Experimental results demonstrate that the LightGBM model achieved the highest performance, with an accuracy of 99% and an F1 score of 0.94, outperforming the image-based CNN approach (F1 score of 0.85). Models such as SVM and AdaBoost yielded significantly lower scores, indicating limited suitability for this task. The findings underscore the superior ability of hand-crafted features to capture temporal and morphological variations in ECG signals compared to image-based representations of individual beats. Future investigations may benefit from incorporating multi-lead ECG signals and temporal dependencies across successive beats to enhance classification accuracy further.
 ]]></content:encoded>
-<pubDate>Tue, 17 Jun 2025 00:00:00 -0400</pubDate>
 <pubDate>Tue, 17 Jun 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -155,14 +147,12 @@ Abstract: This study addresses the classification of heartbeats from ECG signals
 <div> diffusion model, anomalous trajectory detection, GPS spoofing, generative models, kinematic constraints
 
 Summary:
-The article addresses the challenge of detecting anomalous trajectories indicative of GPS spoofing in trajectory data, with applications in combating illegal activities in international waters. It highlights the limitations of existing anomaly detection methods in considering spatiotemporal dependencies and physical laws. To overcome these limitations, a physics-informed diffusion model that integrates kinematic constraints is proposed. Experimental results on real-world datasets in maritime and urban domains demonstrate higher prediction accuracy and lower error rates compared to existing methods. The implementation of the proposed framework is made available online. This research contributes to enhancing anomaly detection and trajectory generation techniques by incorporating fine-scale spatiotemporal dependencies and prior physical knowledge. <br><br>Summary: <div>
+The article addresses the challenge of detecting anomalous trajectories indicative of GPS spoofing in trajectory data, with applications in combating illegal activities in international waters. It highlights the limitations of existing anomaly detection methods in considering spatiotemporal dependencies and physical laws. To overcome these limitations, a physics-informed diffusion model that integrates kinematic constraints is proposed. Experimental results on real-world datasets in maritime and urban domains demonstrate higher prediction accuracy and lower error rates compared to existing methods. The implementation of the proposed framework is made available online. This research contributes to enhancing anomaly detection and trajectory generation techniques by incorporating fine-scale spatiotemporal dependencies and prior physical knowledge. <br /><br />Summary: <div>
 arXiv:2506.06999v2 Announce Type: replace-cross 
 Abstract: Given trajectory data, a domain-specific study area, and a user-defined threshold, we aim to find anomalous trajectories indicative of possible GPS spoofing (e.g., fake trajectory). The problem is societally important to curb illegal activities in international waters, such as unauthorized fishing and illicit oil transfers. The problem is challenging due to advances in AI generated in deep fakes generation (e.g., additive noise, fake trajectories) and lack of adequate amount of labeled samples for ground-truth verification. Recent literature shows promising results for anomalous trajectory detection using generative models despite data sparsity. However, they do not consider fine-scale spatiotemporal dependencies and prior physical knowledge, resulting in higher false-positive rates. To address these limitations, we propose a physics-informed diffusion model that integrates kinematic constraints to identify trajectories that do not adhere to physical laws. Experimental results on real-world datasets in the maritime and urban domains show that the proposed framework results in higher prediction accuracy and lower estimation error rate for anomaly detection and trajectory generation methods, respectively. Our implementation is available at https://github.com/arunshar/Physics-Informed-Diffusion-Probabilistic-Model.
 ]]></content:encoded>
 <pubDate>Tue, 17 Jun 2025 00:00:00 -0400</pubDate>
-<pubDate>Tue, 17 Jun 2025 00:00:00 -0400</pubDate>
 </item>
-
 <item>
 <title>Multiple Object Tracking in Video SAR: A Benchmark and Tracking Baseline</title>
 <link>https://arxiv.org/abs/2506.12105</link>
@@ -11201,106 +11191,6 @@ Abstract: This paper proposes an innovative technique for representing multidime
 <content:encoded><![CDATA[
 arXiv:2504.07549v2 Announce Type: replace 
 Abstract: Reconstructing spatially and temporally coherent videos from time-varying measurements is a fundamental challenge in many scientific domains. A major difficulty arises from the sparsity of measurements, which hinders accurate recovery of temporal dynamics. Existing image diffusion-based methods rely on extracting temporal consistency directly from measurements, limiting their effectiveness on scientific tasks with high spatiotemporal uncertainty. We address this difficulty by proposing a plug-and-play framework that incorporates a learned spatiotemporal diffusion prior. Due to its plug-and-play nature, our framework can be flexibly applied to different video inverse problems without the need for task-specific design and temporal heuristics. We further demonstrate that a spatiotemporal diffusion model can be trained efficiently with limited video data. We validate our approach on two challenging scientific video reconstruction tasks: black hole video reconstruction and dynamic MRI. While baseline methods struggle to provide temporally coherent reconstructions, our approach achieves significantly improved recovery of the spatiotemporal structure of the underlying ground truth videos.
-]]></content:encoded>
-<pubDate>Wed, 11 Jun 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>LMPOcc: 3D Semantic Occupancy Prediction Utilizing Long-Term Memory Prior from Historical Traversals</title>
-<link>https://arxiv.org/abs/2504.13596</link>
-<guid>https://arxiv.org/abs/2504.13596</guid>
-<content:encoded><![CDATA[
-arXiv:2504.13596v2 Announce Type: replace 
-Abstract: Vision-based 3D semantic occupancy prediction is critical for autonomous driving, enabling unified modeling of static infrastructure and dynamic agents. In practice, autonomous vehicles may repeatedly traverse identical geographic locations under varying environmental conditions, such as weather fluctuations and illumination changes. Existing methods in 3D occupancy prediction predominantly integrate adjacent temporal contexts. However, these works neglect to leverage perceptual information, which is acquired from historical traversals of identical geographic locations. In this paper, we propose Longterm Memory Prior Occupancy (LMPOcc), the first 3D occupancy prediction methodology that exploits long-term memory priors derived from historical traversal perceptual outputs. We introduce a plug-and-play architecture that integrates long-term memory priors to enhance local perception while simultaneously constructing global occupancy representations. To adaptively aggregate prior features and current features, we develop an efficient lightweight Current-Prior Fusion module. Moreover, we propose a model-agnostic prior format to ensure compatibility across diverse occupancy prediction baselines. LMPOcc achieves state-of-the-art performance validated on the Occ3D-nuScenes benchmark, especially on static semantic categories. Additionally, experimental results demonstrate LMPOcc's ability to construct global occupancy through multi-vehicle crowdsourcing.
-]]></content:encoded>
-<pubDate>Wed, 11 Jun 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Dense Geometry Supervision for Underwater Depth Estimation</title>
-<link>https://arxiv.org/abs/2504.18233</link>
-<guid>https://arxiv.org/abs/2504.18233</guid>
-<content:encoded><![CDATA[
-arXiv:2504.18233v2 Announce Type: replace 
-Abstract: The field of monocular depth estimation is continually evolving with the advent of numerous innovative models and extensions. However, research on monocular depth estimation methods specifically for underwater scenes remains limited, compounded by a scarcity of relevant data and methodological support. This paper proposes a novel approach to address the existing challenges in current monocular depth estimation methods for underwater environments. We construct an economically efficient dataset suitable for underwater scenarios by employing multi-view depth estimation to generate supervisory signals and corresponding enhanced underwater images. we introduces a texture-depth fusion module, designed according to the underwater optical imaging principles, which aims to effectively exploit and integrate depth information from texture cues. Experimental results on the FLSea dataset demonstrate that our approach significantly improves the accuracy and adaptability of models in underwater settings. This work offers a cost-effective solution for monocular underwater depth estimation and holds considerable promise for practical applications.
-]]></content:encoded>
-<pubDate>Wed, 11 Jun 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>SpatialReasoner: Towards Explicit and Generalizable 3D Spatial Reasoning</title>
-<link>https://arxiv.org/abs/2504.20024</link>
-<guid>https://arxiv.org/abs/2504.20024</guid>
-<content:encoded><![CDATA[
-arXiv:2504.20024v2 Announce Type: replace 
-Abstract: Despite recent advances on multi-modal models, 3D spatial reasoning remains a challenging task for state-of-the-art open-source and proprietary models. Recent studies explore data-driven approaches and achieve enhanced spatial reasoning performance by fine-tuning models on 3D-related visual question-answering data. However, these methods typically perform spatial reasoning in an implicit manner and often fail on questions that are trivial to humans, even with long chain-of-thought reasoning. In this work, we introduce SpatialReasoner, a novel large vision-language model (LVLM) that addresses 3D spatial reasoning with explicit 3D representations shared between multiple stages--3D perception, computation, and reasoning. Explicit 3D representations provide a coherent interface that supports advanced 3D spatial reasoning and improves the generalization ability to novel question types. Furthermore, by analyzing the explicit 3D representations in multi-step reasoning traces of SpatialReasoner, we study the factual errors and identify key shortcomings of current LVLMs. Results show that our SpatialReasoner achieves improved performance on a variety of spatial reasoning benchmarks, outperforming Gemini 2.0 by 9.2% on 3DSRBench, and generalizes better when evaluating on novel 3D spatial reasoning questions. Our study bridges the 3D parsing capabilities of prior visual foundation models with the powerful reasoning abilities of large language models, opening new directions for 3D spatial reasoning.
-]]></content:encoded>
-<pubDate>Wed, 11 Jun 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>SpatialLLM: A Compound 3D-Informed Design towards Spatially-Intelligent Large Multimodal Models</title>
-<link>https://arxiv.org/abs/2505.00788</link>
-<guid>https://arxiv.org/abs/2505.00788</guid>
-<content:encoded><![CDATA[
-arXiv:2505.00788v3 Announce Type: replace 
-Abstract: Humans naturally understand 3D spatial relationships, enabling complex reasoning like predicting collisions of vehicles from different directions. Current large multimodal models (LMMs), however, lack of this capability of 3D spatial reasoning. This limitation stems from the scarcity of 3D training data and the bias in current model designs toward 2D data. In this paper, we systematically study the impact of 3D-informed data, architecture, and training setups, introducing SpatialLLM, a large multi-modal model with advanced 3D spatial reasoning abilities. To address data limitations, we develop two types of 3D-informed training datasets: (1) 3D-informed probing data focused on object's 3D location and orientation, and (2) 3D-informed conversation data for complex spatial relationships. Notably, we are the first to curate VQA data that incorporate 3D orientation relationships on real images. Furthermore, we systematically integrate these two types of training data with the architectural and training designs of LMMs, providing a roadmap for optimal design aimed at achieving superior 3D reasoning capabilities. Our SpatialLLM advances machines toward highly capable 3D-informed reasoning, surpassing GPT-4o performance by 8.7%. Our systematic empirical design and the resulting findings offer valuable insights for future research in this direction. Our project page is available at: https://3d-spatial-reasoning.github.io/spatial-llm/
-]]></content:encoded>
-<pubDate>Wed, 11 Jun 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>CAD-Llama: Leveraging Large Language Models for Computer-Aided Design Parametric 3D Model Generation</title>
-<link>https://arxiv.org/abs/2505.04481</link>
-<guid>https://arxiv.org/abs/2505.04481</guid>
-<content:encoded><![CDATA[
-arXiv:2505.04481v2 Announce Type: replace 
-Abstract: Recently, Large Language Models (LLMs) have achieved significant success, prompting increased interest in expanding their generative capabilities beyond general text into domain-specific areas. This study investigates the generation of parametric sequences for computer-aided design (CAD) models using LLMs. This endeavor represents an initial step towards creating parametric 3D shapes with LLMs, as CAD model parameters directly correlate with shapes in three-dimensional space. Despite the formidable generative capacities of LLMs, this task remains challenging, as these models neither encounter parametric sequences during their pretraining phase nor possess direct awareness of 3D structures. To address this, we present CAD-Llama, a framework designed to enhance pretrained LLMs for generating parametric 3D CAD models. Specifically, we develop a hierarchical annotation pipeline and a code-like format to translate parametric 3D CAD command sequences into Structured Parametric CAD Code (SPCC), incorporating hierarchical semantic descriptions. Furthermore, we propose an adaptive pretraining approach utilizing SPCC, followed by an instruction tuning process aligned with CAD-specific guidelines. This methodology aims to equip LLMs with the spatial knowledge inherent in parametric sequences. Experimental results demonstrate that our framework significantly outperforms prior autoregressive methods and existing LLM baselines.
-]]></content:encoded>
-<pubDate>Wed, 11 Jun 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>EAM: Enhancing Anything with Diffusion Transformers for Blind Super-Resolution</title>
-<link>https://arxiv.org/abs/2505.05209</link>
-<guid>https://arxiv.org/abs/2505.05209</guid>
-<content:encoded><![CDATA[
-arXiv:2505.05209v2 Announce Type: replace 
-Abstract: Utilizing pre-trained Text-to-Image (T2I) diffusion models to guide Blind Super-Resolution (BSR) has become a predominant approach in the field. While T2I models have traditionally relied on U-Net architectures, recent advancements have demonstrated that Diffusion Transformers (DiT) achieve significantly higher performance in this domain. In this work, we introduce Enhancing Anything Model (EAM), a novel BSR method that leverages DiT and outperforms previous U-Net-based approaches. We introduce a novel block, $\Psi$-DiT, which effectively guides the DiT to enhance image restoration. This block employs a low-resolution latent as a separable flow injection control, forming a triple-flow architecture that effectively leverages the prior knowledge embedded in the pre-trained DiT. To fully exploit the prior guidance capabilities of T2I models and enhance their generalization in BSR, we introduce a progressive Masked Image Modeling strategy, which also reduces training costs. Additionally, we propose a subject-aware prompt generation strategy that employs a robust multi-modal model in an in-context learning framework. This strategy automatically identifies key image areas, provides detailed descriptions, and optimizes the utilization of T2I diffusion priors. Our experiments demonstrate that EAM achieves state-of-the-art results across multiple datasets, outperforming existing methods in both quantitative metrics and visual quality.
-]]></content:encoded>
-<pubDate>Wed, 11 Jun 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Zero-Shot Gaze-based Volumetric Medical Image Segmentation</title>
-<link>https://arxiv.org/abs/2505.15256</link>
-<guid>https://arxiv.org/abs/2505.15256</guid>
-<content:encoded><![CDATA[
-arXiv:2505.15256v2 Announce Type: replace 
-Abstract: Accurate segmentation of anatomical structures in volumetric medical images is crucial for clinical applications, including disease monitoring and cancer treatment planning. Contemporary interactive segmentation models, such as Segment Anything Model 2 (SAM-2) and its medical variant (MedSAM-2), rely on manually provided prompts like bounding boxes and mouse clicks. In this study, we introduce eye gaze as a novel informational modality for interactive segmentation, marking the application of eye-tracking for 3D medical image segmentation. We evaluate the performance of using gaze-based prompts with SAM-2 and MedSAM-2 using both synthetic and real gaze data. Compared to bounding boxes, gaze-based prompts offer a time-efficient interaction approach with slightly lower segmentation quality. Our findings highlight the potential of using gaze as a complementary input modality for interactive 3D medical image segmentation.
-]]></content:encoded>
-<pubDate>Wed, 11 Jun 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Delving into RL for Image Generation with CoT: A Study on DPO vs. GRPO</title>
-<link>https://arxiv.org/abs/2505.17017</link>
-<guid>https://arxiv.org/abs/2505.17017</guid>
-<content:encoded><![CDATA[
-arXiv:2505.17017v2 Announce Type: replace 
-Abstract: Recent advancements underscore the significant role of Reinforcement Learning (RL) in enhancing the Chain-of-Thought (CoT) reasoning capabilities of large language models (LLMs). Two prominent RL algorithms, Direct Preference Optimization (DPO) and Group Relative Policy Optimization (GRPO), are central to these developments, showcasing different pros and cons. Autoregressive image generation, also interpretable as a sequential CoT reasoning process, presents unique challenges distinct from LLM-based CoT reasoning. These encompass ensuring text-image consistency, improving image aesthetic quality, and designing sophisticated reward models, rather than relying on simpler rule-based rewards. While recent efforts have extended RL to this domain, these explorations typically lack an in-depth analysis of the domain-specific challenges and the characteristics of different RL strategies. To bridge this gap, we provide the first comprehensive investigation of the GRPO and DPO algorithms in autoregressive image generation, evaluating their in-domain performance and out-of-domain generalization, while scrutinizing the impact of different reward models on their respective capabilities. Our findings reveal that GRPO and DPO exhibit distinct advantages, and crucially, that reward models possessing stronger intrinsic generalization capabilities potentially enhance the generalization potential of the applied RL algorithms. Furthermore, we systematically explore three prevalent scaling strategies to enhance both their in-domain and out-of-domain proficiency, deriving unique insights into efficiently scaling performance for each paradigm. We hope our study paves a new path for inspiring future work on developing more effective RL algorithms to achieve robust CoT reasoning in the realm of autoregressive image generation. Code is released at https://github.com/ZiyuGuo99/Image-Generation-CoT
-]]></content:encoded>
-<pubDate>Wed, 11 Jun 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>How Do Images Align and Complement LiDAR? Towards a Harmonized Multi-modal 3D Panoptic Segmentation</title>
-<link>https://arxiv.org/abs/2505.18956</link>
-<guid>https://arxiv.org/abs/2505.18956</guid>
-<content:encoded><![CDATA[
-arXiv:2505.18956v2 Announce Type: replace 
-Abstract: LiDAR-based 3D panoptic segmentation often struggles with the inherent sparsity of data from LiDAR sensors, which makes it challenging to accurately recognize distant or small objects. Recently, a few studies have sought to overcome this challenge by integrating LiDAR inputs with camera images, leveraging the rich and dense texture information provided by the latter. While these approaches have shown promising results, they still face challenges, such as misalignment during data augmentation and the reliance on post-processing steps. To address these issues, we propose Image-Assists-LiDAR (IAL), a novel multi-modal 3D panoptic segmentation framework. In IAL, we first introduce a modality-synchronized data augmentation strategy, PieAug, to ensure alignment between LiDAR and image inputs from the start. Next, we adopt a transformer decoder to directly predict panoptic segmentation results. To effectively fuse LiDAR and image features into tokens for the decoder, we design a Geometric-guided Token Fusion (GTF) module. Additionally, we leverage the complementary strengths of each modality as priors for query initialization through a Prior-based Query Generation (PQG) module, enhancing the decoder's ability to generate accurate instance masks. Our IAL framework achieves state-of-the-art performance compared to previous multi-modal 3D panoptic segmentation methods on two widely used benchmarks. Code and models are publicly available at .
-]]></content:encoded>
-<pubDate>Wed, 11 Jun 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>ZigzagPointMamba: Spatial-Semantic Mamba for Point Cloud Understanding</title>
-<link>https://arxiv.org/abs/2505.21381</link>
-<guid>https://arxiv.org/abs/2505.21381</guid>
-<content:encoded><![CDATA[
-arXiv:2505.21381v2 Announce Type: replace 
-Abstract: State Space models (SSMs) such as PointMamba enable efficient feature extraction for point cloud self-supervised learning with linear complexity, outperforming Transformers in computational efficiency. However, existing PointMamba-based methods depend on complex token ordering and random masking, which disrupt spatial continuity and local semantic correlations. We propose ZigzagPointMamba to tackle these challenges. The core of our approach is a simple zigzag scan path that globally sequences point cloud tokens, enhancing spatial continuity by preserving the proximity of spatially adjacent point tokens. Nevertheless, random masking undermines local semantic modeling in self-supervised learning. To address this, we introduce a Semantic-Siamese Masking Strategy (SMS), which masks semantically similar tokens to facilitate reconstruction by integrating local features of original and similar tokens. This overcomes the dependence on isolated local features and enables robust global semantic modeling. Our pre-trained ZigzagPointMamba weights significantly improve downstream tasks, achieving a 1.59% mIoU gain on ShapeNetPart for part segmentation, a 0.4% higher accuracy on ModelNet40 for classification, and 0.19%, 1.22%, and 0.72% higher accuracies respectively for the classification tasks on the OBJ-BG, OBJ-ONLY, and PB-T50-RS subsets of ScanObjectNN.
 ]]></content:encoded>
 <pubDate>Wed, 11 Jun 2025 00:00:00 -0400</pubDate>
 </item>

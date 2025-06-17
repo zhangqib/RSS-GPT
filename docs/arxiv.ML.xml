@@ -4,19 +4,19 @@
 <title>cs.LG updates on arXiv.org</title>
 <link>http://rss.arxiv.org/rss/cs.LG</link>
 
+
 <item>
 <title>The Remarkable Robustness of LLMs: Stages of Inference?</title>
 <link>https://arxiv.org/abs/2406.19384</link>
 <guid>https://arxiv.org/abs/2406.19384</guid>
 <content:encoded><![CDATA[
-<div> investigate, Large Language Models, robustness, structural interventions, inference<br>
-<br>
+<div> investigate, Large Language Models, robustness, structural interventions, inference<br />
+<br />
 Summary: 
 The study explores the robustness of Large Language Models (LLMs) to structural interventions during inference. Surprisingly, even after deleting or swapping adjacent layers, the models maintain 72-95% of their initial top-1 prediction accuracy without any further adjustments. The research reveals that the sensitivity to interventions is not consistent across all layers, with the early and final layers experiencing the most significant impact while the middle layers show greater resilience. This observation leads to the identification of four stages of inference in LLMs: detokenization, feature engineering, prediction ensembling, and residual sharpening. These stages highlight how local context is integrated, features are refined, hidden states are aggregated, and irrelevant features are suppressed during the inference process. By combining behavioral and mechanistic evidence, a framework is provided to interpret depth-dependent computations in LLMs. <div>
 arXiv:2406.19384v3 Announce Type: replace 
 Abstract: We investigate the robustness of Large Language Models (LLMs) to structural interventions by deleting and swapping adjacent layers during inference. Surprisingly, models retain 72-95% of their original top-1 prediction accuracy without any fine-tuning. We find that performance degradation is not uniform across layers: interventions to the early and final layers cause the most degradation, while the model is remarkably robust to dropping middle layers. This pattern of localized sensitivity motivates our hypothesis of four stages of inference, observed across diverse model families and sizes: (1) detokenization, where local context is integrated to lift raw token embeddings into higher-level representations; (2) feature engineering, where task- and entity-specific features are iteratively refined; (3) prediction ensembling, where hidden states are aggregated into plausible next-token predictions; and (4) residual sharpening, where irrelevant features are suppressed to finalize the output distribution. Synthesizing behavioral and mechanistic evidence, we provide a framework for interpreting depth-dependent computations in LLMs.
 ]]></content:encoded>
-<pubDate>Tue, 17 Jun 2025 00:00:00 -0400</pubDate>
 <pubDate>Tue, 17 Jun 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -25,11 +25,10 @@ Abstract: We investigate the robustness of Large Language Models (LLMs) to struc
 <guid>https://arxiv.org/abs/2410.23884</guid>
 <content:encoded><![CDATA[
 <div> causal reasoning, large language models, world knowledge, logical reasoning, autonomous decision-making 
-Summary:<br><br>The article explores how large language models (LLMs) perform causal reasoning in narratives. It finds that LLMs often use simplistic heuristics and rely on memorized world knowledge rather than contextual understanding. The study shows that simple task modifications can improve reasoning accuracy. Evaluation across various causal structures reveals patterns in LLM behavior. This research lays the foundation for enhancing LLMs' ability to engage in principled causal inference.<br>Summary: <div>
+Summary:<br /><br />The article explores how large language models (LLMs) perform causal reasoning in narratives. It finds that LLMs often use simplistic heuristics and rely on memorized world knowledge rather than contextual understanding. The study shows that simple task modifications can improve reasoning accuracy. Evaluation across various causal structures reveals patterns in LLM behavior. This research lays the foundation for enhancing LLMs' ability to engage in principled causal inference.<br />Summary: <div>
 arXiv:2410.23884v5 Announce Type: replace 
 Abstract: The ability to robustly identify causal relationships is essential for autonomous decision-making and adaptation to novel scenarios. However, accurately inferring causal structure requires integrating both world knowledge and abstract logical reasoning. In this work, we investigate the interaction between these two capabilities through the representative task of causal reasoning over narratives. Through controlled synthetic, semi-synthetic, and real-world experiments, we find that state-of-the-art large language models (LLMs) often rely on superficial heuristics -- for example, inferring causality from event order or recalling memorized world knowledge without attending to context. Furthermore, we show that simple reformulations of the task can elicit more robust reasoning behavior. Our evaluation spans a range of causal structures, from linear chains to complex graphs involving colliders and forks. These findings uncover systematic patterns in how LLMs perform causal reasoning and lay the groundwork for developing methods that better align LLM behavior with principled causal inference.
 ]]></content:encoded>
-<pubDate>Tue, 17 Jun 2025 00:00:00 -0400</pubDate>
 <pubDate>Tue, 17 Jun 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -37,13 +36,12 @@ Abstract: The ability to robustly identify causal relationships is essential for
 <link>https://arxiv.org/abs/2505.23032</link>
 <guid>https://arxiv.org/abs/2505.23032</guid>
 <content:encoded><![CDATA[
-<div> Bayesian framework, Prior-data Fitted Networks, neural scaling laws, uncertainty quantification, meta-learning <br>
-Summary: <br>
+<div> Bayesian framework, Prior-data Fitted Networks, neural scaling laws, uncertainty quantification, meta-learning <br />
+Summary: <br />
 This study introduces a Bayesian framework using Prior-data Fitted Networks (PFNs) to extrapolate neural scaling laws. By creating a prior distribution that samples synthetic functions resembling real-world scaling laws, the PFN can meta-learn extrapolation. The method outperforms existing point estimation and Bayesian approaches, particularly in data-limited scenarios like Bayesian active learning. This approach allows for reliable and uncertainty-aware extrapolation, crucial for decision-making applications involving neural scaling and resource investment. <div>
 arXiv:2505.23032v3 Announce Type: replace 
 Abstract: Scaling has been a major driver of recent advancements in deep learning. Numerous empirical studies have found that scaling laws often follow the power-law and proposed several variants of power-law functions to predict the scaling behavior at larger scales. However, existing methods mostly rely on point estimation and do not quantify uncertainty, which is crucial for real-world applications involving decision-making problems such as determining the expected performance improvements achievable by investing additional computational resources. In this work, we explore a Bayesian framework based on Prior-data Fitted Networks (PFNs) for neural scaling law extrapolation. Specifically, we design a prior distribution that enables the sampling of infinitely many synthetic functions resembling real-world neural scaling laws, allowing our PFN to meta-learn the extrapolation. We validate the effectiveness of our approach on real-world neural scaling laws, comparing it against both the existing point estimation methods and Bayesian approaches. Our method demonstrates superior performance, particularly in data-limited scenarios such as Bayesian active learning, underscoring its potential for reliable, uncertainty-aware extrapolation in practical applications.
 ]]></content:encoded>
-<pubDate>Tue, 17 Jun 2025 00:00:00 -0400</pubDate>
 <pubDate>Tue, 17 Jun 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -58,21 +56,19 @@ arXiv:2506.05668v3 Announce Type: replace
 Abstract: In this paper, we introduce the Radon-Nikodym Estimator (RNE), a flexible, plug-and-play framework for diffusion inference-time density estimation and control, based on the concept of the density ratio between path distributions. RNE connects and unifies a variety of existing density estimation and inference-time control methods under a single and intuitive perspective, stemming from basic variational inference and probabilistic principles therefore offering both theoretical clarity and practical versatility. Experiments demonstrate that RNE delivers strong results in diffusion density estimation, and offers broad applicability to inference-time control tasks -- such as annealing, diffusion model composition, and reward-tilting -- with promising inference-time scaling performance.
 ]]></content:encoded>
 <pubDate>Tue, 17 Jun 2025 00:00:00 -0400</pubDate>
-<pubDate>Tue, 17 Jun 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
 <title>Sparse Interpretable Deep Learning with LIES Networks for Symbolic Regression</title>
 <link>https://arxiv.org/abs/2506.08267</link>
 <guid>https://arxiv.org/abs/2506.08267</guid>
 <content:encoded><![CDATA[
-<div> Neural network, Symbolic regression, Interpretability, Formula extraction, Sparse formulae <br>
-<br>
+<div> Neural network, Symbolic regression, Interpretability, Formula extraction, Sparse formulae <br />
+<br />
 Summary: 
 The article introduces LIES, a neural network architecture for symbolic regression that promotes interpretability by optimizing primitive activations for symbolic expressions. A framework is developed to extract concise formulae from LIES networks using oversampling and a tailored loss function. Additional pruning strategies are applied post-training to simplify expressions further. Experimental results show LIES outperforms existing methods in producing accurate and sparse symbolic formulae. Ablation studies highlight the significance of each design component. <div>
 arXiv:2506.08267v2 Announce Type: replace 
 Abstract: Symbolic regression (SR) aims to discover closed-form mathematical expressions that accurately describe data, offering interpretability and analytical insight beyond standard black-box models. Existing SR methods often rely on population-based search or autoregressive modeling, which struggle with scalability and symbolic consistency. We introduce LIES (Logarithm, Identity, Exponential, Sine), a fixed neural network architecture with interpretable primitive activations that are optimized to model symbolic expressions. We develop a framework to extract compact formulae from LIES networks by training with an appropriate oversampling strategy and a tailored loss function to promote sparsity and to prevent gradient instability. After training, it applies additional pruning strategies to further simplify the learned expressions into compact formulae. Our experiments on SR benchmarks show that the LIES framework consistently produces sparse and accurate symbolic formulae outperforming all baselines. We also demonstrate the importance of each design component through ablation studies.
 ]]></content:encoded>
-<pubDate>Tue, 17 Jun 2025 00:00:00 -0400</pubDate>
 <pubDate>Tue, 17 Jun 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -88,7 +84,6 @@ arXiv:2506.08298v2 Announce Type: replace
 Abstract: The growing interests and applications of graph learning in diverse domains have propelled the development of a unified model generalizing well across different graphs and tasks, known as the Graph Foundation Model (GFM). Existing research has leveraged text-attributed graphs (TAGs) to tackle the heterogeneity in node features among graphs. However, they primarily focus on homogeneous TAGs (HoTAGs), leaving heterogeneous TAGs (HeTAGs), where multiple types of nodes/edges reside, underexplored. To enhance the capabilities and applications of GFM, we introduce H$^2$GFM, a novel framework designed to generalize across both HoTAGs and HeTAGs. Our model projects diverse meta-relations among graphs under a unified textual space, and employs a context encoding to capture spatial and higher-order semantic relationships. To achieve robust node representations, we propose a novel context-adaptive graph transformer (CGT), effectively capturing information from both context neighbors and their relationships. Furthermore, we employ a mixture of CGT experts to capture the heterogeneity in structural patterns among graph types. Comprehensive experiments on a wide range of HoTAGs and HeTAGs as well as learning scenarios demonstrate the effectiveness of our model.
 ]]></content:encoded>
 <pubDate>Tue, 17 Jun 2025 00:00:00 -0400</pubDate>
-<pubDate>Tue, 17 Jun 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
 <title>Variational Inference Optimized Using the Curved Geometry of Coupled Free Energy</title>
@@ -103,7 +98,6 @@ arXiv:2506.09091v2 Announce Type: replace
 Abstract: We introduce an optimization framework for variational inference based on the coupled free energy, extending variational inference techniques to account for the curved geometry of the coupled exponential family. This family includes important heavy-tailed distributions such as the generalized Pareto and the Student's t. By leveraging the coupled free energy, which is equal to the coupled evidence lower bound (ELBO) of the inverted probabilities, we improve the accuracy and robustness of the learned model. The coupled generalization of Fisher Information metric and the affine connection. The method is applied to the design of a coupled variational autoencoder (CVAE). By using the coupling for both the distributions and cost functions, the reconstruction metric is derived to still be the mean-square average loss with modified constants. The novelty comes from sampling the heavy-tailed latent distribution with its associated coupled probability, which has faster decaying tails. The result is the ability to train a model robust against severe outliers, while assuring that the training process is stable. The Wasserstein-2 or Fr\'echet Inception Distance of the reconstructed CelebA images shows the CVAE has a 3\% improvement over the VAE after 5 epochs of training.
 ]]></content:encoded>
 <pubDate>Tue, 17 Jun 2025 00:00:00 -0400</pubDate>
-<pubDate>Tue, 17 Jun 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
 <title>Intra-Trajectory Consistency for Reward Modeling</title>
@@ -115,11 +109,10 @@ Abstract: We introduce an optimization framework for variational inference based
 Summary:
 Reinforcement learning with large language models relies on reward models to improve performance, especially in scenarios like reinforcement learning from human feedback. Current reward modeling based on overall response scores may struggle to identify specific components within response trajectories that correlate with scores, leading to poor generalization. This paper proposes leveraging generation probabilities to establish reward consistency across processes in response trajectories, providing fine-grained signals for reward learning. An intra-trajectory consistency regularization is introduced to ensure that adjacent processes with higher generation probabilities maintain more consistent rewards. Application of this regularization improves the performance of the outcome reward model on RewardBench and induces better policies aligned with desired policy objectives. The trained reward model also achieves improved results in best-of-N (BON) inference-time verification tasks. The code implementing the proposed methodology is available on GitHub. 
 
-<br><br>Summary: <div>
+<br /><br />Summary: <div>
 arXiv:2506.09096v3 Announce Type: replace 
 Abstract: Reward models are critical for improving large language models (LLMs), particularly in reinforcement learning from human feedback (RLHF) or inference-time verification. Current reward modeling typically relies on scores of overall responses to learn the outcome rewards for the responses. However, since the response-level scores are coarse-grained supervision signals, the reward model struggles to identify the specific components within a response trajectory that truly correlate with the scores, leading to poor generalization on unseen responses. In this paper, we propose to leverage generation probabilities to establish reward consistency between processes in the response trajectory, which allows the response-level supervisory signal to propagate across processes, thereby providing additional fine-grained signals for reward learning. Building on analysis under the Bayesian framework, we develop an intra-trajectory consistency regularization to enforce that adjacent processes with higher next-token generation probability maintain more consistent rewards. We apply the proposed regularization to the advanced outcome reward model, improving its performance on RewardBench. Besides, we show that the reward model trained with the proposed regularization induces better DPO-aligned policies and achieves better best-of-N (BON) inference-time verification results. Our code is provided in https://github.com/chaoyang101/ICRM.
 ]]></content:encoded>
-<pubDate>Tue, 17 Jun 2025 00:00:00 -0400</pubDate>
 <pubDate>Tue, 17 Jun 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -134,7 +127,6 @@ Location Preference Optimization (LPO) is introduced as a novel approach to enha
 arXiv:2506.09373v2 Announce Type: replace 
 Abstract: The advent of autonomous agents is transforming interactions with Graphical User Interfaces (GUIs) by employing natural language as a powerful intermediary. Despite the predominance of Supervised Fine-Tuning (SFT) methods in current GUI agents for achieving spatial localization, these methods face substantial challenges due to their limited capacity to accurately perceive positional data. Existing strategies, such as reinforcement learning, often fail to assess positional accuracy effectively, thereby restricting their utility. In response, we introduce Location Preference Optimization (LPO), a novel approach that leverages locational data to optimize interaction preferences. LPO uses information entropy to predict interaction positions by focusing on zones rich in information. Besides, it further introduces a dynamic location reward function based on physical distance, reflecting the varying importance of interaction positions. Supported by Group Relative Preference Optimization (GRPO), LPO facilitates an extensive exploration of GUI environments and significantly enhances interaction precision. Comprehensive experiments demonstrate LPO's superior performance, achieving SOTA results across both offline benchmarks and real-world online evaluations. Our code will be made publicly available soon, at https://github.com/AIDC-AI/LPO.
 ]]></content:encoded>
-<pubDate>Tue, 17 Jun 2025 00:00:00 -0400</pubDate>
 <pubDate>Tue, 17 Jun 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -151,11 +143,10 @@ Summary:
 - A generalized form of these properties that considers group representation is also examined.
 - The theoretical concepts are applied to real-world scenarios, such as LLM and hospital quality evaluation, demonstrating the practical implications of the research. 
 
-<br><br>Summary: <div>
+<br /><br />Summary: <div>
 arXiv:2506.09813v2 Announce Type: replace 
 Abstract: A common problem in LLM evaluation is how to choose a subset of metrics from a full suite of possible metrics. Subset selection is usually done for efficiency or interpretability reasons, and the goal is often to select a ``representative'' subset of metrics. However, ``representative'' is rarely clearly defined. In this work, we use ideas from social choice theory to formalize two notions of representation for the selection of a subset of evaluation metrics. We first introduce positional representation, which guarantees every alternative is sufficiently represented at every position cutoff. We then introduce positional proportionality, which guarantees no alternative is proportionally over- or under-represented by more than a small error at any position. We prove upper and lower bounds on the smallest number of metrics needed to guarantee either of these properties in the worst case. We also study a generalized form of each property that allows for additional input on groups of metrics that must be represented. Finally, we tie theory to practice through real-world case studies on both LLM evaluation and hospital quality evaluation.
 ]]></content:encoded>
-<pubDate>Tue, 17 Jun 2025 00:00:00 -0400</pubDate>
 <pubDate>Tue, 17 Jun 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -163,17 +154,16 @@ Abstract: A common problem in LLM evaluation is how to choose a subset of metric
 <link>https://arxiv.org/abs/2506.01413</link>
 <guid>https://arxiv.org/abs/2506.01413</guid>
 <content:encoded><![CDATA[
-<div> Keywords: large language models, instruction following, complex instructions, reinforcement learning, reasoning <br>
-<br>
+<div> Keywords: large language models, instruction following, complex instructions, reinforcement learning, reasoning <br />
+<br />
 Summary:  
-This study addresses the challenges faced by large language models (LLMs) in following complex instructions, proposing a method to enhance their capabilities. The traditional chain-of-thought (CoT) approach is found to be ineffective as it only paraphrases instructions without deep reasoning. The proposed method focuses on decomposing complex instructions, acquiring data systematically, and using reinforcement learning (RL) with rule-centric rewards to cultivate reasoning skills. By incentivizing reasoning for test-time compute scaling and utilizing sample-wise contrast and behavior cloning, the method enhances LLM performance significantly. Evaluations on seven benchmarks show a 11.74% improvement in performance for a 1.5B LLM compared to an 8B LLM. The study demonstrates the effectiveness of the proposed method in improving LLMs' ability to follow complex instructions. <br>
-<br> 
+This study addresses the challenges faced by large language models (LLMs) in following complex instructions, proposing a method to enhance their capabilities. The traditional chain-of-thought (CoT) approach is found to be ineffective as it only paraphrases instructions without deep reasoning. The proposed method focuses on decomposing complex instructions, acquiring data systematically, and using reinforcement learning (RL) with rule-centric rewards to cultivate reasoning skills. By incentivizing reasoning for test-time compute scaling and utilizing sample-wise contrast and behavior cloning, the method enhances LLM performance significantly. Evaluations on seven benchmarks show a 11.74% improvement in performance for a 1.5B LLM compared to an 8B LLM. The study demonstrates the effectiveness of the proposed method in improving LLMs' ability to follow complex instructions. <br />
+<br /> 
 Summary: <div>
 arXiv:2506.01413v3 Announce Type: replace-cross 
 Abstract: Existing large language models (LLMs) face challenges of following complex instructions, especially when multiple constraints are present and organized in paralleling, chaining, and branching structures. One intuitive solution, namely chain-of-thought (CoT), is expected to universally improve capabilities of LLMs. However, we find that the vanilla CoT exerts a negative impact on performance due to its superficial reasoning pattern of simply paraphrasing the instructions. It fails to peel back the compositions of constraints for identifying their relationship across hierarchies of types and dimensions. To this end, we propose a systematic method to boost LLMs in dealing with complex instructions via incentivizing reasoning for test-time compute scaling. First, we stem from the decomposition of complex instructions under existing taxonomies and propose a reproducible data acquisition method. Second, we exploit reinforcement learning (RL) with verifiable rule-centric reward signals to cultivate reasoning specifically for instruction following. We address the shallow, non-essential nature of reasoning under complex instructions via sample-wise contrast for superior CoT enforcement. We also exploit behavior cloning of experts to facilitate steady distribution shift from fast-thinking LLMs to skillful reasoners. Extensive evaluations on seven comprehensive benchmarks confirm the validity of the proposed method, where a 1.5B LLM achieves 11.74% gains with performance comparable to a 8B LLM. Codes and data will be available later (under review).
   Keywords: reinforcement learning with verifiable rewards (RLVR), instruction following, complex instructions
 ]]></content:encoded>
-<pubDate>Tue, 17 Jun 2025 00:00:00 -0400</pubDate>
 <pubDate>Tue, 17 Jun 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -188,23 +178,20 @@ arXiv:2506.09401v2 Announce Type: replace-cross
 Abstract: It is known that recursive training from generative models can lead to the so called `collapse' of the simulated probability distribution. This note shows that one in fact gets two different asymptotic behaviours depending on whether an external source, howsoever minor, is also contributing samples.
 ]]></content:encoded>
 <pubDate>Tue, 17 Jun 2025 00:00:00 -0400</pubDate>
-<pubDate>Tue, 17 Jun 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
 <title>Incorporating Linguistic Constraints from External Knowledge Source for Audio-Visual Target Speech Extraction</title>
 <link>https://arxiv.org/abs/2506.09792</link>
 <guid>https://arxiv.org/abs/2506.09792</guid>
 <content:encoded><![CDATA[
-<div> linguistic constraints, pre-trained speech-language models, audio-visual target speaker extraction, pre-trained language models, speech perception <br>
-Summary: <br>
-This study explores the use of pre-trained speech-language models (PSLMs) and pre-trained language models (PLMs) to improve audio-visual target speaker extraction (AV-TSE) by incorporating linguistic constraints as additional supervision signals. The proposed approach enhances speech quality and intelligibility without added computational cost during inference. The method shows consistent performance improvements in both multi-language settings and scenarios where visual cues are impaired. By leveraging linguistic knowledge, such as syntax and semantics, similar to how humans support speech perception, the AV-TSE model benefits from auxiliary sources of information provided by PSLMs and PLMs. The study demonstrates the robustness of the approach and its potential to enhance AV-TSE models for extracting target speakers in audio-visual data. <br> <div>
+<div> linguistic constraints, pre-trained speech-language models, audio-visual target speaker extraction, pre-trained language models, speech perception <br />
+Summary: <br />
+This study explores the use of pre-trained speech-language models (PSLMs) and pre-trained language models (PLMs) to improve audio-visual target speaker extraction (AV-TSE) by incorporating linguistic constraints as additional supervision signals. The proposed approach enhances speech quality and intelligibility without added computational cost during inference. The method shows consistent performance improvements in both multi-language settings and scenarios where visual cues are impaired. By leveraging linguistic knowledge, such as syntax and semantics, similar to how humans support speech perception, the AV-TSE model benefits from auxiliary sources of information provided by PSLMs and PLMs. The study demonstrates the robustness of the approach and its potential to enhance AV-TSE models for extracting target speakers in audio-visual data. <br /> <div>
 arXiv:2506.09792v2 Announce Type: replace-cross 
 Abstract: Audio-visual target speaker extraction (AV-TSE) models primarily rely on target visual cues to isolate the target speaker's voice from others. We know that humans leverage linguistic knowledge, such as syntax and semantics, to support speech perception. Inspired by this, we explore the potential of pre-trained speech-language models (PSLMs) and pre-trained language models (PLMs) as auxiliary knowledge sources for AV-TSE. In this study, we propose incorporating the linguistic constraints from PSLMs or PLMs for the AV-TSE model as additional supervision signals. Without introducing any extra computational cost during inference, the proposed approach consistently improves speech quality and intelligibility. Furthermore, we evaluate our method in multi-language settings and visual cue-impaired scenarios and show robust performance gains.
 ]]></content:encoded>
 <pubDate>Tue, 17 Jun 2025 00:00:00 -0400</pubDate>
-<pubDate>Tue, 17 Jun 2025 00:00:00 -0400</pubDate>
 </item>
-
 <item>
 <title>FlexQuant: A Flexible and Efficient Dynamic Precision Switching Framework for LLM Quantization</title>
 <link>https://arxiv.org/abs/2506.12024</link>
@@ -10888,138 +10875,6 @@ arXiv:2006.12367v4 Announce Type: replace
 Abstract: Lipschitz bandits is a prominent version of multi-armed bandits that studies large, structured action spaces such as the $[0,1]$ interval, where similar actions are guaranteed to have similar rewards. A central theme here is the adaptive discretization of the action space, which gradually ``zooms in'' on the more promising regions thereof. The goal is to take advantage of ``nicer'' problem instances, while retaining near-optimal worst-case performance. While the stochastic version of the problem is well-understood, the general version with adversarial rewards is not.
   We provide the first algorithm (\emph{Adversarial Zooming}) for adaptive discretization in the adversarial version, and derive instance-dependent regret bounds. In particular, we recover the worst-case optimal regret bound for the adversarial version, and the instance-dependent regret bound for the stochastic version.
   We apply our algorithm to several fundamental applications -- including dynamic pricing and auction reserve tuning -- all under adversarial reward models. While these domains often violate Lipschitzness, our analysis only requires a weaker version thereof, allowing for meaningful regret bounds without additional smoothness assumptions. Notably, we extend our results to multi-product dynamic pricing with non-smooth reward structures, a setting which does not even satisfy one-sided Lipschitzness.
-]]></content:encoded>
-<pubDate>Fri, 13 Jun 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Three iterations of $(d-1)$-WL test distinguish non isometric clouds of $d$-dimensional points</title>
-<link>https://arxiv.org/abs/2303.12853</link>
-<guid>https://arxiv.org/abs/2303.12853</guid>
-<content:encoded><![CDATA[
-arXiv:2303.12853v4 Announce Type: replace 
-Abstract: The Weisfeiler--Lehman (WL) test is a fundamental iterative algorithm for checking isomorphism of graphs. It has also been observed that it underlies the design of several graph neural network architectures, whose capabilities and performance can be understood in terms of the expressive power of this test. Motivated by recent developments in machine learning applications to datasets involving three-dimensional objects, we study when the WL test is {\em complete} for clouds of euclidean points represented by complete distance graphs, i.e., when it can distinguish, up to isometry, any arbitrary such cloud. %arbitrary clouds of euclidean points represented by complete distance graphs. % How many dimensions of the Weisfeiler--Lehman test is enough to distinguish any two non-isometric point clouds in $d$-dimensional Euclidean space, assuming that these point clouds are given as complete graphs labeled by distances between the points? This question is important for understanding, which architectures of graph neural networks are capable of fully exploiting the spacial structure of a point cloud.
-  Our main result states that the $(d-1)$-dimensional WL test is complete for point clouds in $d$-dimensional Euclidean space, for any $d\ge 2$, and that only three iterations of the test suffice. We also observe that the $d$-dimensional WL test only requires one iteration to achieve completeness.
-  Our paper thus provides complete understanding of the 3-dimensional case: it was shown in previous works that 1-WL is not complete in $\mathbb{R}^3$, and we show that 2-WL is complete there. We also strengthen the lower bound for 1-WL by showing that it is unable to recognize planar point clouds in $\mathbb{R}^3$. Finally, we show that 2-WL is not complete in $\mathbb{R}^6$, leaving as an open question, whether it is complete in $\mathbb{R}^{d}$ for $d = 4,5$.
-]]></content:encoded>
-<pubDate>Fri, 13 Jun 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Noise Balance and Stationary Distribution of Stochastic Gradient Descent</title>
-<link>https://arxiv.org/abs/2308.06671</link>
-<guid>https://arxiv.org/abs/2308.06671</guid>
-<content:encoded><![CDATA[
-arXiv:2308.06671v2 Announce Type: replace 
-Abstract: The stochastic gradient descent (SGD) algorithm is the algorithm we use to train neural networks. However, it remains poorly understood how the SGD navigates the highly nonlinear and degenerate loss landscape of a neural network. In this work, we show that the minibatch noise of SGD regularizes the solution towards a noise-balanced solution whenever the loss function contains a rescaling parameter symmetry. Because the difference between a simple diffusion process and SGD dynamics is the most significant when symmetries are present, our theory implies that the loss function symmetries constitute an essential probe of how SGD works. We then apply this result to derive the stationary distribution of stochastic gradient flow for a diagonal linear network with arbitrary depth and width. The stationary distribution exhibits complicated nonlinear phenomena such as phase transitions, broken ergodicity, and fluctuation inversion. These phenomena are shown to exist uniquely in deep networks, implying a fundamental difference between deep and shallow models.
-]]></content:encoded>
-<pubDate>Fri, 13 Jun 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>A Unified Framework to Enforce, Discover, and Promote Symmetry in Machine Learning</title>
-<link>https://arxiv.org/abs/2311.00212</link>
-<guid>https://arxiv.org/abs/2311.00212</guid>
-<content:encoded><![CDATA[
-arXiv:2311.00212v3 Announce Type: replace 
-Abstract: Symmetry is present throughout nature and continues to play an increasingly central role in physics and machine learning. Fundamental symmetries, such as Poincar\'{e} invariance, allow physical laws discovered in laboratories on Earth to be extrapolated to the farthest reaches of the universe. Symmetry is essential to achieving this extrapolatory power in machine learning applications. For example, translation invariance in image classification allows models with fewer parameters, such as convolutional neural networks, to be trained on smaller data sets and achieve state-of-the-art performance. In this paper, we provide a unifying theoretical and methodological framework for incorporating symmetry into machine learning models in three ways: 1. enforcing known symmetry when training a model; 2. discovering unknown symmetries of a given model or data set; and 3. promoting symmetry during training by learning a model that breaks symmetries within a user-specified group of candidates when there is sufficient evidence in the data. We show that these tasks can be cast within a common mathematical framework whose central object is the Lie derivative associated with fiber-linear Lie group actions on vector bundles. We extend and unify several existing results by showing that enforcing and discovering symmetry are linear-algebraic tasks that are dual with respect to the bilinear structure of the Lie derivative. We also propose a novel way to promote symmetry by introducing a class of convex regularization functions based on the Lie derivative and nuclear norm relaxation to penalize symmetry breaking during training of machine learning models. We explain how these ideas can be applied to a wide range of machine learning models including basis function regression, dynamical systems discovery, neural networks, and neural operators acting on fields.
-]]></content:encoded>
-<pubDate>Fri, 13 Jun 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Meta-learning Optimizers for Communication-Efficient Learning</title>
-<link>https://arxiv.org/abs/2312.02204</link>
-<guid>https://arxiv.org/abs/2312.02204</guid>
-<content:encoded><![CDATA[
-arXiv:2312.02204v2 Announce Type: replace 
-Abstract: Communication-efficient variants of SGD, specifically local SGD, have received a great deal of interest in recent years. These approaches compute multiple gradient steps locally on each worker, before averaging model parameters, helping relieve the critical communication bottleneck in distributed deep learning training. Although many variants of these approaches have been proposed, they can sometimes lag behind state-of-the-art adaptive optimizers for deep learning. In this work, we investigate if the recent progress in the emerging area of learned optimizers can potentially close this gap in homogeneous data and homogeneous device settings while remaining communication-efficient. Specifically, we meta-learn how to perform global updates given an update from local SGD iterations. Our results demonstrate that learned optimizers can substantially outperform local SGD and its sophisticated variants while maintaining their communication efficiency. Our learned optimizers can even generalize to unseen and much larger datasets and architectures, including ImageNet and ViTs, and to unseen modalities such as language modeling. We therefore show the potential of learned optimizers for improving communication-efficient distributed learning.
-]]></content:encoded>
-<pubDate>Fri, 13 Jun 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Improved Algorithm for Deep Active Learning under Imbalance via Optimal Separation</title>
-<link>https://arxiv.org/abs/2312.09196</link>
-<guid>https://arxiv.org/abs/2312.09196</guid>
-<content:encoded><![CDATA[
-arXiv:2312.09196v4 Announce Type: replace 
-Abstract: Class imbalance severely impacts machine learning performance on minority classes in real-world applications. While various solutions exist, active learning offers a fundamental fix by strategically collecting balanced, informative labeled examples from abundant unlabeled data. We introduce DIRECT, an algorithm that identifies class separation boundaries and selects the most uncertain nearby examples for annotation. By reducing the problem to one-dimensional active learning, DIRECT leverages established theory to handle batch labeling and label noise -- another common challenge in data annotation that particularly affects active learning methods. Our work presents the first comprehensive study of active learning under both class imbalance and label noise. Extensive experiments on imbalanced datasets show DIRECT reduces annotation costs by over 60\% compared to state-of-the-art active learning methods and over 80\% versus random sampling, while maintaining robustness to label noise.
-]]></content:encoded>
-<pubDate>Fri, 13 Jun 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Near-Optimal Algorithms for Constrained k-Center Clustering with Instance-level Background Knowledge</title>
-<link>https://arxiv.org/abs/2401.12533</link>
-<guid>https://arxiv.org/abs/2401.12533</guid>
-<content:encoded><![CDATA[
-arXiv:2401.12533v4 Announce Type: replace 
-Abstract: Center-based clustering has attracted significant research interest from both theory and practice. In many practical applications, input data often contain background knowledge that can be used to improve clustering results. In this work, we build on widely adopted $k$-center clustering and model its input background knowledge as must-link (ML) and cannot-link (CL) constraint sets. However, most clustering problems including $k$-center are inherently $\mathcal{NP}$-hard, while the more complex constrained variants are known to suffer severer approximation and computation barriers that significantly limit their applicability. By employing a suite of techniques including reverse dominating sets, linear programming (LP) integral polyhedron, and LP duality, we arrive at the first efficient approximation algorithm for constrained $k$-center with the best possible ratio of 2. We also construct competitive baseline algorithms and empirically evaluate our approximation algorithm against them on a variety of real datasets. The results validate our theoretical findings and demonstrate the great advantages of our algorithm in terms of clustering cost, clustering quality, and running time.
-]]></content:encoded>
-<pubDate>Fri, 13 Jun 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Mitigating Object Hallucination in Large Vision-Language Models via Image-Grounded Guidance</title>
-<link>https://arxiv.org/abs/2402.08680</link>
-<guid>https://arxiv.org/abs/2402.08680</guid>
-<content:encoded><![CDATA[
-arXiv:2402.08680v2 Announce Type: replace 
-Abstract: The advancement of Large Vision-Language Models (LVLMs) has increasingly highlighted the critical issue of their tendency to hallucinate non-existing objects in the images. To address this issue, previous works focused on using specially curated datasets or powerful LLMs to rectify the outputs of LVLMs. However, these approaches require either costly training or fine-tuning, or API access to proprietary LLMs for post-generation correction. In response to these limitations, we propose Mitigating hallucinAtion via image-gRounded guIdaNcE (MARINE), a framework that is both training-free and API-free. MARINE effectively and efficiently reduces object hallucinations during inference by introducing image-grounded guidance to LVLMs. This is achieved by leveraging open-source vision models to extract object-level information, thereby enhancing the precision of LVLM-generated content. Our framework's flexibility further allows for the integration of multiple vision models, enabling more reliable and robust object-level guidance. Through comprehensive evaluations across 5 popular LVLMs with diverse evaluation metrics and benchmarks, we demonstrate the effectiveness of MARINE, which even outperforms existing fine-tuning-based methods. Remarkably, it reduces hallucinations consistently in GPT-4V-assisted evaluation while maintaining the detailedness of LVLMs' generations. We release our code at https://github.com/Linxi-ZHAO/MARINE.
-]]></content:encoded>
-<pubDate>Fri, 13 Jun 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Privacy-aware Berrut Approximated Coded Computing for Federated Learning</title>
-<link>https://arxiv.org/abs/2405.01704</link>
-<guid>https://arxiv.org/abs/2405.01704</guid>
-<content:encoded><![CDATA[
-arXiv:2405.01704v3 Announce Type: replace 
-Abstract: Federated Learning (FL) is an interesting strategy that enables the collaborative training of an AI model among different data owners without revealing their private datasets. Even so, FL has some privacy vulnerabilities that have been tried to be overcome by applying some techniques like Differential Privacy (DP), Homomorphic Encryption (HE), or Secure Multi-Party Computation (SMPC). However, these techniques have some important drawbacks that might narrow their range of application: problems to work with non-linear functions and to operate large matrix multiplications and high communication and computational costs to manage semi-honest nodes. In this context, we propose a solution to guarantee privacy in FL schemes that simultaneously solves the previously mentioned problems. Our proposal is based on the Berrut Approximated Coded Computing, a technique from the Coded Distributed Computing paradigm, adapted to a Secret Sharing configuration, to provide input privacy to FL in a scalable way. It can be applied for computing non-linear functions and treats the special case of distributed matrix multiplication, a key primitive at the core of many automated learning tasks. Because of these characteristics, it could be applied in a wide range of FL scenarios, since it is independent of the machine learning models or aggregation algorithms used in the FL scheme. We provide analysis of the achieved privacy and complexity of our solution and, due to the extensive numerical results performed, a good trade-off between privacy and precision can be observed.
-]]></content:encoded>
-<pubDate>Fri, 13 Jun 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>TimeBridge: Better Diffusion Prior Design with Bridge Models for Time Series Generation</title>
-<link>https://arxiv.org/abs/2408.06672</link>
-<guid>https://arxiv.org/abs/2408.06672</guid>
-<content:encoded><![CDATA[
-arXiv:2408.06672v2 Announce Type: replace 
-Abstract: Time series generation is widely used in real-world applications such as simulation, data augmentation, and hypothesis testing. Recently, diffusion models have emerged as the de facto approach to time series generation, enabling diverse synthesis scenarios. However, the fixed standard-Gaussian diffusion prior may be ill-suited for general time series data, such as temporal order and fixed points. In this paper, we propose TimeBridge, a framework that flexibly synthesizes time series data by using diffusion bridges to learn paths between a chosen prior and the data distribution. We then explore several prior designs tailored to time series synthesis. Our framework covers (i) data- and time-dependent priors for unconditional generation and (ii) scale-preserving priors for conditional generation. Experiments show that our framework with data-driven priors outperforms standard diffusion models on time series generation.
-]]></content:encoded>
-<pubDate>Fri, 13 Jun 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>M3-JEPA: Multimodal Alignment via Multi-gate MoE based on the Joint-Predictive Embedding Architecture</title>
-<link>https://arxiv.org/abs/2409.05929</link>
-<guid>https://arxiv.org/abs/2409.05929</guid>
-<content:encoded><![CDATA[
-arXiv:2409.05929v5 Announce Type: replace 
-Abstract: Current multimodal learning strategies primarily optimize in the original token space. Such a framework is easy to incorporate with the backbone of pretrained language model, but might result in modality collapse. To alleviate such issues, we leverage the joint embedding predictive architecture (JEPA) on the multimodal tasks, which converts the input embedding into the output embedding space by a predictor and then conducts the cross-modal alignment on the latent space. We implement this predictor by a Multi-Gate Mixture of Experts (MMoE) and name the framework as M3-JEPA, accordingly. The gating function disentangles the modality-specific and shared information and derives information-theoretic optimality. The framework is implemented with both contrastive and regularization loss, and solved by alternative gradient descent (AGD) between different multimodal tasks. By thoroughly designed experiments, we show that M3-JEPA can obtain state-of-the-art performance on different modalities and tasks, generalize to unseen datasets and domains, and is computationally efficient in both training and inference. Our observation suggests that M3-JEPA might become a new basis to self-supervised learning in the open world.
-]]></content:encoded>
-<pubDate>Fri, 13 Jun 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Neural Networks Generalize on Low Complexity Data</title>
-<link>https://arxiv.org/abs/2409.12446</link>
-<guid>https://arxiv.org/abs/2409.12446</guid>
-<content:encoded><![CDATA[
-arXiv:2409.12446v3 Announce Type: replace 
-Abstract: We show that feedforward neural networks with ReLU activation generalize on low complexity data, suitably defined. Given i.i.d.~data generated from a simple programming language, the minimum description length (MDL) feedforward neural network which interpolates the data generalizes with high probability. We define this simple programming language, along with a notion of description length of such networks. We provide several examples on basic computational tasks, such as checking primality of a natural number. For primality testing, our theorem shows the following and more. Suppose that we draw an i.i.d.~sample of $n$ numbers uniformly at random from $1$ to $N$. For each number $x_i$, let $y_i = 1$ if $x_i$ is a prime and $0$ if it is not. Then, the interpolating MDL network accurately answers, with probability $1- O((\ln N)/n)$, whether a newly drawn number between $1$ and $N$ is a prime or not. Note that the network is not designed to detect primes; minimum description learning discovers a network which does so. Extensions to noisy data are also discussed, suggesting that MDL neural network interpolators can demonstrate tempered overfitting.
-]]></content:encoded>
-<pubDate>Fri, 13 Jun 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>RmGPT: A Foundation Model with Generative Pre-trained Transformer for Fault Diagnosis and Prognosis in Rotating Machinery</title>
-<link>https://arxiv.org/abs/2409.17604</link>
-<guid>https://arxiv.org/abs/2409.17604</guid>
-<content:encoded><![CDATA[
-arXiv:2409.17604v2 Announce Type: replace 
-Abstract: In industry, the reliability of rotating machinery is critical for production efficiency and safety. Current methods of Prognostics and Health Management (PHM) often rely on task-specific models, which face significant challenges in handling diverse datasets with varying signal characteristics, fault modes and operating conditions. Inspired by advancements in generative pretrained models, we propose RmGPT, a unified model for diagnosis and prognosis tasks. RmGPT introduces a novel generative token-based framework, incorporating Signal Tokens, Prompt Tokens, Time-Frequency Task Tokens and Fault Tokens to handle heterogeneous data within a unified model architecture. We leverage self-supervised learning for robust feature extraction and introduce a next signal token prediction pretraining strategy, alongside efficient prompt learning for task-specific adaptation. Extensive experiments demonstrate that RmGPT significantly outperforms state-of-the-art algorithms, achieving near-perfect accuracy in diagnosis tasks and exceptionally low errors in prognosis tasks. Notably, RmGPT excels in few-shot learning scenarios, achieving 82\% accuracy in 16-class one-shot experiments, highlighting its adaptability and robustness. This work establishes RmGPT as a powerful PHM foundation model for rotating machinery, advancing the scalability and generalizability of PHM solutions. \textbf{Code is available at: https://github.com/Pandalin98/RmGPT.
-]]></content:encoded>
-<pubDate>Fri, 13 Jun 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Simplicity bias and optimization threshold in two-layer ReLU networks</title>
-<link>https://arxiv.org/abs/2410.02348</link>
-<guid>https://arxiv.org/abs/2410.02348</guid>
-<content:encoded><![CDATA[
-arXiv:2410.02348v2 Announce Type: replace 
-Abstract: Understanding generalization of overparametrized neural networks remains a fundamental challenge in machine learning. Most of the literature mostly studies generalization from an interpolation point of view, taking convergence of parameters towards a global minimum of the training loss for granted. While overparametrized architectures indeed interpolated the data for typical classification tasks, this interpolation paradigm does not seem valid anymore for more complex tasks such as in-context learning or diffusion. Instead for such tasks, it has been empirically observed that the trained models goes from global minima to spurious local minima of the training loss as the number of training samples becomes larger than some level we call optimization threshold. While the former yields a poor generalization to the true population loss, the latter was observed to actually correspond to the minimiser of this true loss. This paper explores theoretically this phenomenon in the context of two-layer ReLU networks. We demonstrate that, despite overparametrization, networks often converge toward simpler solutions rather than interpolating the training data, which can lead to a drastic improvement on the test loss with respect to interpolating solutions. Our analysis relies on the so called early alignment phase, during which neurons align towards specific directions. This directional alignment, which occurs in the early stage of training, leads to a simplicity bias, wherein the network approximates the ground truth model without converging to the global minimum of the training loss. Our results suggest that this bias, resulting in an optimization threshold from which interpolation is not reached anymore, is beneficial and enhances the generalization of trained models.
 ]]></content:encoded>
 <pubDate>Fri, 13 Jun 2025 00:00:00 -0400</pubDate>
 </item>

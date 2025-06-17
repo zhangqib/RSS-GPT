@@ -4,6 +4,7 @@
 <title>cs.CL updates on arXiv.org</title>
 <link>http://rss.arxiv.org/rss/cs.CL</link>
 
+
 <item>
 <title>Reasoning with RAGged events: RAG-Enhanced Event Knowledge Base Construction and reasoning with proof-assistants</title>
 <link>https://arxiv.org/abs/2506.07042</link>
@@ -13,11 +14,10 @@
 
 Summary: This paper presents a novel approach to automatically extract structured computational representations of historical events from narrative text. By leveraging multiple LLMs and employing different enhancement strategies, such as base generation, knowledge graph enhancement, and Retrieval-Augmented Generation (RAG), the study demonstrates significant improvements in event extraction performance. The evaluation conducted on historical texts from Thucydides shows that base generation with Claude and GPT-4 offers high coverage and historical breadth, while RAG enhancement enhances precision in coordinate accuracy and metadata completeness. The study also highlights the impact of model architecture on enhancement sensitivity, with larger models showing robust performance and incremental improvements with RAG. Additionally, the development of an automated translation pipeline to convert extracted RDF representations into Coq proof assistant specifications enables higher-order reasoning capabilities, including multi-step causal verification, temporal arithmetic, and formal proofs about historical causation. The Coq formalization validates the legitimacy of event types discovered by RAG, ensuring domain-specific semantic structures are represented accurately. 
 
-<br><br>Summary: <div>
+<br /><br />Summary: <div>
 arXiv:2506.07042v2 Announce Type: replace 
 Abstract: Extracting structured computational representations of historical events from narrative text remains computationally expensive when constructed manually. While RDF/OWL reasoners enable graph-based reasoning, they are limited to fragments of first-order logic, preventing deeper temporal and semantic analysis. This paper addresses both challenges by developing automatic historical event extraction models using multiple LLMs (GPT-4, Claude, Llama 3.2) with three enhancement strategies: pure base generation, knowledge graph enhancement, and Retrieval-Augmented Generation (RAG). We conducted comprehensive evaluations using historical texts from Thucydides. Our findings reveal that enhancement strategies optimize different performance dimensions rather than providing universal improvements. For coverage and historical breadth, base generation achieves optimal performance with Claude and GPT-4 extracting comprehensive events. However, for precision, RAG enhancement improves coordinate accuracy and metadata completeness. Model architecture fundamentally determines enhancement sensitivity: larger models demonstrate robust baseline performance with incremental RAG improvements, while Llama 3.2 shows extreme variance from competitive performance to complete failure. We then developed an automated translation pipeline converting extracted RDF representations into Coq proof assistant specifications, enabling higher-order reasoning beyond RDF capabilities including multi-step causal verification, temporal arithmetic with BC dates, and formal proofs about historical causation. The Coq formalization validates that RAG-discovered event types represent legitimate domain-specific semantic structures rather than ontological violations.
 ]]></content:encoded>
-<pubDate>Tue, 17 Jun 2025 00:00:00 -0400</pubDate>
 <pubDate>Tue, 17 Jun 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -30,11 +30,10 @@ Abstract: Extracting structured computational representations of historical even
 Summary: 
 GA LLM is a novel framework that merges Genetic Algorithms and Large Language Models for structured generation tasks within strict constraints. Output content, like plans or reports, is seen as genes, with evolutionary operations guided by the language model for enhancements. The language model provides domain expertise and diverse variations, while the genetic algorithm ensures coherence and global optimization. GA LLM excels in tasks like itinerary planning, academic outlining, and business reporting, consistently delivering well-organized and requirement-compliant outcomes. Its adaptable structure allows seamless integration into new tasks. Compared to solely relying on a language model, GA LLM outperforms in constraint fulfillment and solution quality by leveraging the strengths of both elements. 
 
-<br><br>Summary: <div>
+<br /><br />Summary: <div>
 arXiv:2506.07483v2 Announce Type: replace 
 Abstract: GA LLM is a hybrid framework that combines Genetic Algorithms with Large Language Models to handle structured generation tasks under strict constraints. Each output, such as a plan or report, is treated as a gene, and evolutionary operations like selection, crossover, and mutation are guided by the language model to iteratively improve solutions. The language model provides domain knowledge and creative variation, while the genetic algorithm ensures structural integrity and global optimization. GA LLM has proven effective in tasks such as itinerary planning, academic outlining, and business reporting, consistently producing well structured and requirement satisfying results. Its modular design also makes it easy to adapt to new tasks. Compared to using a language model alone, GA LLM achieves better constraint satisfaction and higher quality solutions by combining the strengths of both components.
 ]]></content:encoded>
-<pubDate>Tue, 17 Jun 2025 00:00:00 -0400</pubDate>
 <pubDate>Tue, 17 Jun 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -44,12 +43,11 @@ Abstract: GA LLM is a hybrid framework that combines Genetic Algorithms with Lar
 <content:encoded><![CDATA[
 <div> Keywords: Large language model, multi-agent systems, memory architecture, G-Memory, collaboration trajectories
 
-Summary:<br>
-The article introduces G-Memory, a hierarchical memory system for multi-agent systems (MAS) inspired by organizational memory theory. G-Memory manages MAS interactions through a three-tier graph hierarchy, allowing for the retrieval of high-level insights and fine-grained interaction trajectories. This enables the system to leverage cross-trial knowledge and compactly encode prior collaboration experiences. The entire hierarchy evolves with new collaborative trajectories, facilitating the progressive evolution of agent teams. Extensive experiments across various benchmarks and frameworks show that G-Memory improves success rates in action tasks and accuracy in knowledge QA without modifications to existing frameworks. G-Memory addresses the limitations of current MAS memory mechanisms, providing a more sophisticated and customized memory architecture for enhanced collaborative capabilities. <br><br>Summary: <div>
+Summary:<br />
+The article introduces G-Memory, a hierarchical memory system for multi-agent systems (MAS) inspired by organizational memory theory. G-Memory manages MAS interactions through a three-tier graph hierarchy, allowing for the retrieval of high-level insights and fine-grained interaction trajectories. This enables the system to leverage cross-trial knowledge and compactly encode prior collaboration experiences. The entire hierarchy evolves with new collaborative trajectories, facilitating the progressive evolution of agent teams. Extensive experiments across various benchmarks and frameworks show that G-Memory improves success rates in action tasks and accuracy in knowledge QA without modifications to existing frameworks. G-Memory addresses the limitations of current MAS memory mechanisms, providing a more sophisticated and customized memory architecture for enhanced collaborative capabilities. <br /><br />Summary: <div>
 arXiv:2506.07398v2 Announce Type: replace-cross 
 Abstract: Large language model (LLM)-powered multi-agent systems (MAS) have demonstrated cognitive and execution capabilities that far exceed those of single LLM agents, yet their capacity for self-evolution remains hampered by underdeveloped memory architectures. Upon close inspection, we are alarmed to discover that prevailing MAS memory mechanisms (1) are overly simplistic, completely disregarding the nuanced inter-agent collaboration trajectories, and (2) lack cross-trial and agent-specific customization, in stark contrast to the expressive memory developed for single agents. To bridge this gap, we introduce G-Memory, a hierarchical, agentic memory system for MAS inspired by organizational memory theory, which manages the lengthy MAS interaction via a three-tier graph hierarchy: insight, query, and interaction graphs. Upon receiving a new user query, G-Memory performs bi-directional memory traversal to retrieve both $\textit{high-level, generalizable insights}$ that enable the system to leverage cross-trial knowledge, and $\textit{fine-grained, condensed interaction trajectories}$ that compactly encode prior collaboration experiences. Upon task execution, the entire hierarchy evolves by assimilating new collaborative trajectories, nurturing the progressive evolution of agent teams. Extensive experiments across five benchmarks, three LLM backbones, and three popular MAS frameworks demonstrate that G-Memory improves success rates in embodied action and accuracy in knowledge QA by up to $20.89\%$ and $10.12\%$, respectively, without any modifications to the original frameworks. Our codes are available at https://github.com/bingreeky/GMemory.
 ]]></content:encoded>
-<pubDate>Tue, 17 Jun 2025 00:00:00 -0400</pubDate>
 <pubDate>Tue, 17 Jun 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -60,14 +58,12 @@ Abstract: Large language model (LLM)-powered multi-agent systems (MAS) have demo
 <div> Keyword: large language models, training algorithm, Orthogonal Equivalence Transformation, neurons, scalability
 
 Summary:
-Large language models (LLMs) are crucial for advances in artificial intelligence, but training them effectively is challenging. The proposed training algorithm, POET, utilizes Orthogonal Equivalence Transformation to optimize neurons by reparameterizing them with learnable orthogonal matrices and a fixed random weight matrix. POET preserves spectral properties of weight matrices, enhancing stability and generalization in objective function optimization. Efficient approximations make POET flexible and scalable for training large neural networks. Extensive experiments demonstrate the effectiveness and scalability of POET in training LLMs. <br><br>Summary: <div>
+Large language models (LLMs) are crucial for advances in artificial intelligence, but training them effectively is challenging. The proposed training algorithm, POET, utilizes Orthogonal Equivalence Transformation to optimize neurons by reparameterizing them with learnable orthogonal matrices and a fixed random weight matrix. POET preserves spectral properties of weight matrices, enhancing stability and generalization in objective function optimization. Efficient approximations make POET flexible and scalable for training large neural networks. Extensive experiments demonstrate the effectiveness and scalability of POET in training LLMs. <br /><br />Summary: <div>
 arXiv:2506.08001v2 Announce Type: replace-cross 
 Abstract: While large language models (LLMs) are driving the rapid advancement of artificial intelligence, effectively and reliably training these large models remains one of the field's most significant challenges. To address this challenge, we propose POET, a novel reParameterized training algorithm that uses Orthogonal Equivalence Transformation to optimize neurons. Specifically, POET reparameterizes each neuron with two learnable orthogonal matrices and a fixed random weight matrix. Because of its provable preservation of spectral properties of weight matrices, POET can stably optimize the objective function with improved generalization. We further develop efficient approximations that make POET flexible and scalable for training large-scale neural networks. Extensive experiments validate the effectiveness and scalability of POET in training LLMs.
 ]]></content:encoded>
 <pubDate>Tue, 17 Jun 2025 00:00:00 -0400</pubDate>
-<pubDate>Tue, 17 Jun 2025 00:00:00 -0400</pubDate>
 </item>
-
 <item>
 <title>Focusing on Students, not Machines: Grounded Question Generation and Automated Answer Grading</title>
 <link>https://arxiv.org/abs/2506.12066</link>
@@ -11604,61 +11600,6 @@ Summary:
 Outcome-rewarded Large Language Models (LLMs) have shown exceptional success in solving mathematical problems. However, their ability to provide correct answers often relies on flawed reasoning, a phenomenon known as reward hacking. The introduction of the MathOlympiadEval dataset exposes the discrepancy between the accuracy of LLMs' answers and the soundness of their reasoning processes. Existing methods struggle to detect these reasoning errors accurately. To address this issue, a new methodology called ParaStepVerifier is proposed for precise verification of mathematical solutions, effectively identifying incorrect reasoning steps. Empirical results highlight the superiority of ParaStepVerifier in detecting flawed solutions, particularly in complex, multi-step problems. This approach offers a more reliable way to evaluate and train LLMs with authentic mathematical reasoning. <br /><br />Summary: <div>
 arXiv:2506.06877v1 Announce Type: new 
 Abstract: Outcome-rewarded Large Language Models (LLMs) have demonstrated remarkable success in mathematical problem-solving. However, this success often masks a critical issue: models frequently achieve correct answers through fundamentally unsound reasoning processes, a phenomenon indicative of reward hacking. We introduce MathOlympiadEval, a new dataset with fine-grained annotations, which reveals a significant gap between LLMs' answer correctness and their low process correctness. Existing automated methods like LLM-as-a-judge struggle to reliably detect these reasoning flaws. To address this, we propose ParaStepVerifier, a novel methodology for meticulous, step-by-step verification of mathematical solutions. ParaStepVerifier identifies incorrect reasoning steps. Empirical results demonstrate that ParaStepVerifier substantially improves the accuracy of identifying flawed solutions compared to baselines, especially for complex, multi-step problems. This offers a more robust path towards evaluating and training LLMs with genuine mathematical reasoning.
-]]></content:encoded>
-<pubDate>Tue, 10 Jun 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Mixture of Small and Large Models for Chinese Spelling Check</title>
-<link>https://arxiv.org/abs/2506.06887</link>
-<guid>https://arxiv.org/abs/2506.06887</guid>
-<content:encoded><![CDATA[
-<div> Keywords: Chinese Spelling Check, Large Language Models, Error Correction, Beam Search Decoding, Domain Adaptation
-
-Summary:
-This paper introduces a novel dynamic mixture approach for improving Chinese Spelling Check tasks using a combination of small models and Large Language Models (LLMs) during beam search decoding. The proposed approach effectively balances the precise corrections from small models with the fluency of LLMs, without the need for LLM fine-tuning. By combining probability distributions from both types of models, the method enhances error correction capabilities and eliminates edit pattern overfitting. This approach also simplifies domain adaptation and saves time and resources. Experimental results show that the mixture approach achieves state-of-the-art performance across multiple datasets. The code for the approach is available on GitHub for further exploration and implementation.<br /><br />Summary: <div>
-arXiv:2506.06887v1 Announce Type: new 
-Abstract: In the era of large language models (LLMs), the Chinese Spelling Check (CSC) task has seen various LLM methods developed, yet their performance remains unsatisfactory. In contrast, fine-tuned BERT-based models, relying on high-quality in-domain data, show excellent performance but suffer from edit pattern overfitting. This paper proposes a novel dynamic mixture approach that effectively combines the probability distributions of small models and LLMs during the beam search decoding phase, achieving a balanced enhancement of precise corrections from small models and the fluency of LLMs. This approach also eliminates the need for fine-tuning LLMs, saving significant time and resources, and facilitating domain adaptation. Comprehensive experiments demonstrate that our mixture approach significantly boosts error correction capabilities, achieving state-of-the-art results across multiple datasets. Our code is available at https://github.com/zhqiao-nlp/MSLLM.
-]]></content:encoded>
-<pubDate>Tue, 10 Jun 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Automatic Speech Recognition of African American English: Lexical and Contextual Effects</title>
-<link>https://arxiv.org/abs/2506.06888</link>
-<guid>https://arxiv.org/abs/2506.06888</guid>
-<content:encoded><![CDATA[
-<div> Keywords: African American English, Automatic Speech Recognition, Consonant Cluster Reduction, ING-reduction, Language Model <br />
-Summary: 
-The study investigates the impact of Consonant Cluster Reduction (CCR) and ING-reduction on Automatic Speech Recognition (ASR) models for African American English. The analysis shows that these features have a small but significant effect on Word Error Rate (WER). Additionally, the study compares end-to-end ASR systems with and without an external Language Model (LM) and finds that systems without LMs are more influenced by the lexical neighborhood effect and less by contextual predictability. The Corpus of Regional African American Language (CORAAL) was used for the transcription, and the Montreal Forced Aligner (MFA) was utilized to detect CCR and ING-reduction. The results suggest the importance of considering phonetic and phonological features of AAE in designing ASR systems, and highlight the differences in performance between systems with and without LMs. <br /><br />Summary: <div>
-arXiv:2506.06888v1 Announce Type: new 
-Abstract: Automatic Speech Recognition (ASR) models often struggle with the phonetic, phonological, and morphosyntactic features found in African American English (AAE). This study focuses on two key AAE variables: Consonant Cluster Reduction (CCR) and ING-reduction. It examines whether the presence of CCR and ING-reduction increases ASR misrecognition. Subsequently, it investigates whether end-to-end ASR systems without an external Language Model (LM) are more influenced by lexical neighborhood effect and less by contextual predictability compared to systems with an LM. The Corpus of Regional African American Language (CORAAL) was transcribed using wav2vec 2.0 with and without an LM. CCR and ING-reduction were detected using the Montreal Forced Aligner (MFA) with pronunciation expansion. The analysis reveals a small but significant effect of CCR and ING on Word Error Rate (WER) and indicates a stronger presence of lexical neighborhood effect in ASR systems without LMs.
-]]></content:encoded>
-<pubDate>Tue, 10 Jun 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Hybrid Extractive Abstractive Summarization for Multilingual Sentiment Analysis</title>
-<link>https://arxiv.org/abs/2506.06929</link>
-<guid>https://arxiv.org/abs/2506.06929</guid>
-<content:encoded><![CDATA[
-<div> extraction, abstractive summarization, multilingual sentiment analysis, computational efficiency, cultural adaptation  
-Summary:  
-The proposed hybrid approach for multilingual sentiment analysis combines extractive and abstractive summarization techniques to address the limitations of standalone methods. By integrating TF-IDF-based extraction with a fine-tuned XLM-R abstractive module, enhanced by dynamic thresholding and cultural adaptation, the model achieves significant improvements over baselines. It achieves high accuracy levels of 0.90 for English and 0.84 for low-resource languages while also demonstrating 22% greater computational efficiency compared to traditional methods. The practical applications of this approach include real-time brand monitoring and cross-cultural discourse analysis. Future work will focus on optimizing the model for low-resource languages through 8-bit quantization.  
-Summary: <div>
-arXiv:2506.06929v1 Announce Type: new 
-Abstract: We propose a hybrid approach for multilingual sentiment analysis that combines extractive and abstractive summarization to address the limitations of standalone methods. The model integrates TF-IDF-based extraction with a fine-tuned XLM-R abstractive module, enhanced by dynamic thresholding and cultural adaptation. Experiments across 10 languages show significant improvements over baselines, achieving 0.90 accuracy for English and 0.84 for low-resource languages. The approach also demonstrates 22% greater computational efficiency than traditional methods. Practical applications include real-time brand monitoring and cross-cultural discourse analysis. Future work will focus on optimization for low-resource languages via 8-bit quantization.
-]]></content:encoded>
-<pubDate>Tue, 10 Jun 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>DiscoSum: Discourse-aware News Summarization</title>
-<link>https://arxiv.org/abs/2506.06930</link>
-<guid>https://arxiv.org/abs/2506.06930</guid>
-<content:encoded><![CDATA[
-<div> discourse structure, text summarization, news articles, news discourse schema, DiscoSum
-
-Summary:
-The article introduces a new approach to text summarization that involves incorporating discourse structure, particularly for news articles. A novel dataset is presented where news articles are summarized multiple times across various social media platforms. A new news discourse schema is developed to describe summarization structures, and an algorithm called DiscoSum is introduced for structure-aware summarization using beam search technique. Results from both human and automatic evaluations show that this approach effectively maintains narrative fidelity and meets structural requirements.<br /><br />Summary: <div>
-arXiv:2506.06930v1 Announce Type: new 
-Abstract: Recent advances in text summarization have predominantly leveraged large language models to generate concise summaries. However, language models often do not maintain long-term discourse structure, especially in news articles, where organizational flow significantly influences reader engagement. We introduce a novel approach to integrating discourse structure into summarization processes, focusing specifically on news articles across various media. We present a novel summarization dataset where news articles are summarized multiple times in different ways across different social media platforms (e.g. LinkedIn, Facebook, etc.). We develop a novel news discourse schema to describe summarization structures and a novel algorithm, DiscoSum, which employs beam search technique for structure-aware summarization, enabling the transformation of news stories to meet different stylistic and structural demands. Both human and automatic evaluation results demonstrate the efficacy of our approach in maintaining narrative fidelity and meeting structural requirements.
 ]]></content:encoded>
 <pubDate>Tue, 10 Jun 2025 00:00:00 -0400</pubDate>
 </item>

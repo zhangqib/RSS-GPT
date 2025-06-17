@@ -4,19 +4,19 @@
 <title>cs.AI updates on arXiv.org</title>
 <link>http://rss.arxiv.org/rss/cs.AI</link>
 
+
 <item>
 <title>The Remarkable Robustness of LLMs: Stages of Inference?</title>
 <link>https://arxiv.org/abs/2406.19384</link>
 <guid>https://arxiv.org/abs/2406.19384</guid>
 <content:encoded><![CDATA[
-<div> investigation, Large Language Models, robustness, structural interventions, inference <br>
-<br>
+<div> investigation, Large Language Models, robustness, structural interventions, inference <br />
+<br />
 Summary: 
 The study delves into the resilience of Large Language Models (LLMs) when subjected to structural interventions such as deleting and swapping adjacent layers during inference. Surprisingly, the models showcase a preservation of 72-95% of their original top-1 prediction accuracy without requiring any fine-tuning. It is observed that performance degradation varies across layers, with early and final layers being most affected while middle layers exhibit remarkable robustness. The research identifies four distinct stages of inference common across different model sizes and families. These stages include detokenization, feature engineering, prediction ensembling, and residual sharpening. By integrating behavioral and mechanistic evidence, the study offers a comprehensive framework for understanding the depth-dependent computations in LLMs. <div>
 arXiv:2406.19384v3 Announce Type: replace-cross 
 Abstract: We investigate the robustness of Large Language Models (LLMs) to structural interventions by deleting and swapping adjacent layers during inference. Surprisingly, models retain 72-95% of their original top-1 prediction accuracy without any fine-tuning. We find that performance degradation is not uniform across layers: interventions to the early and final layers cause the most degradation, while the model is remarkably robust to dropping middle layers. This pattern of localized sensitivity motivates our hypothesis of four stages of inference, observed across diverse model families and sizes: (1) detokenization, where local context is integrated to lift raw token embeddings into higher-level representations; (2) feature engineering, where task- and entity-specific features are iteratively refined; (3) prediction ensembling, where hidden states are aggregated into plausible next-token predictions; and (4) residual sharpening, where irrelevant features are suppressed to finalize the output distribution. Synthesizing behavioral and mechanistic evidence, we provide a framework for interpreting depth-dependent computations in LLMs.
 ]]></content:encoded>
-<pubDate>Tue, 17 Jun 2025 00:00:00 -0400</pubDate>
 <pubDate>Tue, 17 Jun 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -24,12 +24,11 @@ Abstract: We investigate the robustness of Large Language Models (LLMs) to struc
 <link>https://arxiv.org/abs/2505.23032</link>
 <guid>https://arxiv.org/abs/2505.23032</guid>
 <content:encoded><![CDATA[
-<div> Bayesian framework, Prior-data Fitted Networks (PFNs), neural scaling law extrapolation, uncertainty-aware extrapolation, data-limited scenarios <br>
+<div> Bayesian framework, Prior-data Fitted Networks (PFNs), neural scaling law extrapolation, uncertainty-aware extrapolation, data-limited scenarios <br />
 Summary: This study introduces a Bayesian approach utilizing Prior-data Fitted Networks (PFNs) for neural scaling law extrapolation. The method incorporates a prior distribution that allows for the generation of numerous synthetic functions resembling real-world neural scaling laws, enabling the meta-learning of extrapolation. Compared to existing point estimation methods and Bayesian approaches, the proposed PFN demonstrates superior performance, especially in data-limited scenarios such as Bayesian active learning. By quantifying uncertainty, the PFN offers reliable extrapolation results, essential for decision-making applications involving resource investment. <div>
 arXiv:2505.23032v3 Announce Type: replace-cross 
 Abstract: Scaling has been a major driver of recent advancements in deep learning. Numerous empirical studies have found that scaling laws often follow the power-law and proposed several variants of power-law functions to predict the scaling behavior at larger scales. However, existing methods mostly rely on point estimation and do not quantify uncertainty, which is crucial for real-world applications involving decision-making problems such as determining the expected performance improvements achievable by investing additional computational resources. In this work, we explore a Bayesian framework based on Prior-data Fitted Networks (PFNs) for neural scaling law extrapolation. Specifically, we design a prior distribution that enables the sampling of infinitely many synthetic functions resembling real-world neural scaling laws, allowing our PFN to meta-learn the extrapolation. We validate the effectiveness of our approach on real-world neural scaling laws, comparing it against both the existing point estimation methods and Bayesian approaches. Our method demonstrates superior performance, particularly in data-limited scenarios such as Bayesian active learning, underscoring its potential for reliable, uncertainty-aware extrapolation in practical applications.
 ]]></content:encoded>
-<pubDate>Tue, 17 Jun 2025 00:00:00 -0400</pubDate>
 <pubDate>Tue, 17 Jun 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -42,12 +41,11 @@ Abstract: Scaling has been a major driver of recent advancements in deep learnin
 Summary:
 Existing large language models struggle with following complex instructions due to challenges in understanding multiple constraints organized in different structures. The chain-of-thought approach, while intuitive, falls short as it only paraphrases instructions without deeply understanding their relationships. A proposed method uses reinforcement learning with verifiable rewards to enhance reasoning for instruction following. By decomposing complex instructions, applying rule-centric rewards, and leveraging behavior cloning, the method improves LLM performance significantly. In evaluations across seven benchmarks, a 1.5B LLM achieved an 11.74% increase in performance with results comparable to an 8B LLM. This approach shows promise in enhancing LLM capabilities for handling complex instructions effectively. 
 
-<br><br>Summary: <div>
+<br /><br />Summary: <div>
 arXiv:2506.01413v3 Announce Type: replace-cross 
 Abstract: Existing large language models (LLMs) face challenges of following complex instructions, especially when multiple constraints are present and organized in paralleling, chaining, and branching structures. One intuitive solution, namely chain-of-thought (CoT), is expected to universally improve capabilities of LLMs. However, we find that the vanilla CoT exerts a negative impact on performance due to its superficial reasoning pattern of simply paraphrasing the instructions. It fails to peel back the compositions of constraints for identifying their relationship across hierarchies of types and dimensions. To this end, we propose a systematic method to boost LLMs in dealing with complex instructions via incentivizing reasoning for test-time compute scaling. First, we stem from the decomposition of complex instructions under existing taxonomies and propose a reproducible data acquisition method. Second, we exploit reinforcement learning (RL) with verifiable rule-centric reward signals to cultivate reasoning specifically for instruction following. We address the shallow, non-essential nature of reasoning under complex instructions via sample-wise contrast for superior CoT enforcement. We also exploit behavior cloning of experts to facilitate steady distribution shift from fast-thinking LLMs to skillful reasoners. Extensive evaluations on seven comprehensive benchmarks confirm the validity of the proposed method, where a 1.5B LLM achieves 11.74% gains with performance comparable to a 8B LLM. Codes and data will be available later (under review).
   Keywords: reinforcement learning with verifiable rewards (RLVR), instruction following, complex instructions
 ]]></content:encoded>
-<pubDate>Tue, 17 Jun 2025 00:00:00 -0400</pubDate>
 <pubDate>Tue, 17 Jun 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -63,7 +61,6 @@ arXiv:2506.08185v2 Announce Type: replace-cross
 Abstract: Surgeons exhibit distinct operating styles shaped by training, experience, and motor behavior-yet most surgical AI systems overlook this personalization signal. We propose a novel agentic modeling approach for surgeon-specific behavior prediction in robotic surgery, combining a discrete diffusion framework with a vision-language-action (VLA) pipeline. Gesture prediction is framed as a structured sequence denoising task, conditioned on multimodal inputs including surgical video, intent language, and personalized embeddings of surgeon identity and skill. These embeddings are encoded through natural language prompts using third-party language models, allowing the model to retain individual behavioral style without exposing explicit identity. We evaluate our method on the JIGSAWS dataset and demonstrate that it accurately reconstructs gesture sequences while learning meaningful motion fingerprints unique to each surgeon. To quantify the privacy implications of personalization, we perform membership inference attacks and find that more expressive embeddings improve task performance but simultaneously increase susceptibility to identity leakage. These findings demonstrate that while personalized embeddings improve performance, they also increase vulnerability to identity leakage, revealing the importance of balancing personalization with privacy risk in surgical modeling. Code is available at: https://github.com/huixin-zhan-ai/Surgeon_style_fingerprinting.
 ]]></content:encoded>
 <pubDate>Tue, 17 Jun 2025 00:00:00 -0400</pubDate>
-<pubDate>Tue, 17 Jun 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
 <title>Sparse Interpretable Deep Learning with LIES Networks for Symbolic Regression</title>
@@ -75,11 +72,10 @@ Abstract: Surgeons exhibit distinct operating styles shaped by training, experie
 Summary: 
 The study introduces the LIES framework, a neural network architecture designed for symbolic regression. LIES incorporates interpretable primitive activations such as Logarithm, Identity, Exponential, and Sine functions to optimize the modeling of symbolic expressions. A novel training approach involving oversampling and a specialized loss function is employed to encourage sparsity and prevent gradient instability. Post-training, additional pruning strategies are applied to simplify the learned expressions further into compact formulae. Experimental results on symbolic regression benchmarks demonstrate that the LIES framework consistently generates sparse and accurate symbolic formulae, outperforming existing methods. Ablation studies validate the significance of each component of the framework in achieving these results. The LIES framework presents a promising approach to symbolic regression, offering improved interpretability and analytical insight compared to conventional black-box models. 
 
-<br><br>Summary: <div>
+<br /><br />Summary: <div>
 arXiv:2506.08267v2 Announce Type: replace-cross 
 Abstract: Symbolic regression (SR) aims to discover closed-form mathematical expressions that accurately describe data, offering interpretability and analytical insight beyond standard black-box models. Existing SR methods often rely on population-based search or autoregressive modeling, which struggle with scalability and symbolic consistency. We introduce LIES (Logarithm, Identity, Exponential, Sine), a fixed neural network architecture with interpretable primitive activations that are optimized to model symbolic expressions. We develop a framework to extract compact formulae from LIES networks by training with an appropriate oversampling strategy and a tailored loss function to promote sparsity and to prevent gradient instability. After training, it applies additional pruning strategies to further simplify the learned expressions into compact formulae. Our experiments on SR benchmarks show that the LIES framework consistently produces sparse and accurate symbolic formulae outperforming all baselines. We also demonstrate the importance of each design component through ablation studies.
 ]]></content:encoded>
-<pubDate>Tue, 17 Jun 2025 00:00:00 -0400</pubDate>
 <pubDate>Tue, 17 Jun 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -87,13 +83,12 @@ Abstract: Symbolic regression (SR) aims to discover closed-form mathematical exp
 <link>https://arxiv.org/abs/2506.08500</link>
 <guid>https://arxiv.org/abs/2506.08500</guid>
 <content:encoded><![CDATA[
-<div> conflict resolution, Retrieval Augmented Generation, knowledge conflict types, benchmark, large language models <br>
+<div> conflict resolution, Retrieval Augmented Generation, knowledge conflict types, benchmark, large language models <br />
 Summary: 
-This article introduces a taxonomy of knowledge conflict types in Retrieval Augmented Generation (RAG) and proposes desired model behavior for each type. The authors present CONFLICTS, a benchmark with expert annotations of conflict types in RAG settings, to assess how models address knowledge conflicts. Experimental results show that large language models struggle to resolve conflicts between retrieved sources. Prompting models to explicitly reason about conflicts improves response quality. However, there is still significant room for improvement in this area. The CONFLICTS benchmark provides a valuable tool for tracking progress in addressing knowledge conflicts and highlights the need for further research in enhancing model performance in handling conflicting information. <br> <div>
+This article introduces a taxonomy of knowledge conflict types in Retrieval Augmented Generation (RAG) and proposes desired model behavior for each type. The authors present CONFLICTS, a benchmark with expert annotations of conflict types in RAG settings, to assess how models address knowledge conflicts. Experimental results show that large language models struggle to resolve conflicts between retrieved sources. Prompting models to explicitly reason about conflicts improves response quality. However, there is still significant room for improvement in this area. The CONFLICTS benchmark provides a valuable tool for tracking progress in addressing knowledge conflicts and highlights the need for further research in enhancing model performance in handling conflicting information. <br /> <div>
 arXiv:2506.08500v2 Announce Type: replace-cross 
 Abstract: Retrieval Augmented Generation (RAG) is a commonly used approach for enhancing large language models (LLMs) with relevant and up-to-date information. However, the retrieved sources can often contain conflicting information and it remains unclear how models should address such discrepancies. In this work, we first propose a novel taxonomy of knowledge conflict types in RAG, along with the desired model behavior for each type. We then introduce CONFLICTS, a high-quality benchmark with expert annotations of conflict types in a realistic RAG setting. CONFLICTS is the first benchmark that enables tracking progress on how models address a wide range of knowledge conflicts. We conduct extensive experiments on this benchmark, showing that LLMs often struggle to appropriately resolve conflicts between sources. While prompting LLMs to explicitly reason about the potential conflict in the retrieved documents significantly improves the quality and appropriateness of their responses, substantial room for improvement in future research remains.
 ]]></content:encoded>
-<pubDate>Tue, 17 Jun 2025 00:00:00 -0400</pubDate>
 <pubDate>Tue, 17 Jun 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -106,11 +101,10 @@ Abstract: Retrieval Augmented Generation (RAG) is a commonly used approach for e
 Summary: 
 The article introduces an attention-based method utilizing learned binary attention masks to ensure that only attended image regions influence predictions. Contextual factors can impact object perception, leading to biased representations, especially in out-of-distribution backgrounds. The proposed two-stage framework addresses this challenge by first processing the full image to identify object parts and task-relevant regions. The second stage uses input attention masking to focus its analysis on these regions, filtering out potentially irrelevant information. Both stages are jointly trained, allowing the second stage to refine the first. Experimental results across various benchmarks demonstrate that this approach enhances robustness against spurious correlations and out-of-distribution backgrounds. The code for the method is available on GitHub for reference. 
 
-<br><br>Summary: <div>
+<br /><br />Summary: <div>
 arXiv:2506.08915v2 Announce Type: replace-cross 
 Abstract: We introduce an attention-based method that uses learned binary attention masks to ensure that only attended image regions influence the prediction. Context can strongly affect object perception, sometimes leading to biased representations, particularly when objects appear in out-of-distribution backgrounds. At the same time, many image-level object-centric tasks require identifying relevant regions, often requiring context. To address this conundrum, we propose a two-stage framework: stage 1 processes the full image to discover object parts and identify task-relevant regions, while stage 2 leverages input attention masking to restrict its receptive field to these regions, enabling a focused analysis while filtering out potentially spurious information. Both stages are trained jointly, allowing stage 2 to refine stage 1. Extensive experiments across diverse benchmarks demonstrate that our approach significantly improves robustness against spurious correlations and out-of-distribution backgrounds. Code: https://github.com/ananthu-aniraj/ifam
 ]]></content:encoded>
-<pubDate>Tue, 17 Jun 2025 00:00:00 -0400</pubDate>
 <pubDate>Tue, 17 Jun 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -118,14 +112,13 @@ Abstract: We introduce an attention-based method that uses learned binary attent
 <link>https://arxiv.org/abs/2506.08955</link>
 <guid>https://arxiv.org/abs/2506.08955</guid>
 <content:encoded><![CDATA[
-<div> framework, segmentation, annotations, pseudo-labels, feature grouping<br>
-<br>
-Summary:<br>
-In this paper, a unified mean-teacher framework, SEE, is introduced for Incompletely-Supervised Concealed Object Segmentation (ISCOS). The framework leverages the Segment Anything Model (SAM) to generate pseudo-labels from coarse masks produced by the teacher model, addressing the issue of incomplete supervision. Strategies for pseudo-label generation, storage, and supervision are implemented to ensure robust network training. A hybrid-granularity feature grouping module is designed to tackle the challenge of intrinsic similarity by clustering similar features and promoting segmentation coherence. Experimental results show state-of-the-art performance in ISCOS tasks, demonstrating the effectiveness of the proposed approach. SEE can be seamlessly integrated into existing models to enhance their performance. <br><br>Summary: <div>
+<div> framework, segmentation, annotations, pseudo-labels, feature grouping<br />
+<br />
+Summary:<br />
+In this paper, a unified mean-teacher framework, SEE, is introduced for Incompletely-Supervised Concealed Object Segmentation (ISCOS). The framework leverages the Segment Anything Model (SAM) to generate pseudo-labels from coarse masks produced by the teacher model, addressing the issue of incomplete supervision. Strategies for pseudo-label generation, storage, and supervision are implemented to ensure robust network training. A hybrid-granularity feature grouping module is designed to tackle the challenge of intrinsic similarity by clustering similar features and promoting segmentation coherence. Experimental results show state-of-the-art performance in ISCOS tasks, demonstrating the effectiveness of the proposed approach. SEE can be seamlessly integrated into existing models to enhance their performance. <br /><br />Summary: <div>
 arXiv:2506.08955v2 Announce Type: replace-cross 
 Abstract: Incompletely-Supervised Concealed Object Segmentation (ISCOS) involves segmenting objects that seamlessly blend into their surrounding environments, utilizing incompletely annotated data, such as weak and semi-annotations, for model training. This task remains highly challenging due to (1) the limited supervision provided by the incompletely annotated training data, and (2) the difficulty of distinguishing concealed objects from the background, which arises from the intrinsic similarities in concealed scenarios. In this paper, we introduce the first unified method for ISCOS to address these challenges. To tackle the issue of incomplete supervision, we propose a unified mean-teacher framework, SEE, that leverages the vision foundation model, ``\emph{Segment Anything Model (SAM)}'', to generate pseudo-labels using coarse masks produced by the teacher model as prompts. To mitigate the effect of low-quality segmentation masks, we introduce a series of strategies for pseudo-label generation, storage, and supervision. These strategies aim to produce informative pseudo-labels, store the best pseudo-labels generated, and select the most reliable components to guide the student model, thereby ensuring robust network training. Additionally, to tackle the issue of intrinsic similarity, we design a hybrid-granularity feature grouping module that groups features at different granularities and aggregates these results. By clustering similar features, this module promotes segmentation coherence, facilitating more complete segmentation for both single-object and multiple-object images. We validate the effectiveness of our approach across multiple ISCOS tasks, and experimental results demonstrate that our method achieves state-of-the-art performance. Furthermore, SEE can serve as a plug-and-play solution, enhancing the performance of existing models.
 ]]></content:encoded>
-<pubDate>Tue, 17 Jun 2025 00:00:00 -0400</pubDate>
 <pubDate>Tue, 17 Jun 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -136,11 +129,10 @@ Abstract: Incompletely-Supervised Concealed Object Segmentation (ISCOS) involves
 <div> quantization, profiling, lightweight LLMs, edge systems, efficiency  
 Summary:  
 EdgeProfiler introduces a fast profiling framework for evaluating lightweight Large Language Models (LLMs) on edge systems. The framework profiles compact LLMs using aggressive quantization techniques and strict memory constraints to address challenges in resource-constrained edge settings. Analytical modeling estimates latency, FLOPs, and energy consumption, with findings showing that 4-bit quantization reduces model memory usage by 60-70% while maintaining accuracy within 2-5% of full-precision baselines. Inference speeds improve by 2-3x compared to FP16 baselines on various edge devices, and power modeling estimates a 35-50% reduction in energy consumption for INT4 configurations. This enables practical deployment on hardware like Raspberry Pi 4/5 and Jetson Orin Nano Super, highlighting the importance of efficient profiling tailored to lightweight LLMs in edge environments for balancing accuracy, energy efficiency, and computational feasibility.  
-<br><br>Summary:   <div>
+<br /><br />Summary:   <div>
 arXiv:2506.09061v2 Announce Type: replace-cross 
 Abstract: This paper introduces EdgeProfiler, a fast profiling framework designed for evaluating lightweight Large Language Models (LLMs) on edge systems. While LLMs offer remarkable capabilities in natural language understanding and generation, their high computational, memory, and power requirements often confine them to cloud environments. EdgeProfiler addresses these challenges by providing a systematic methodology for assessing LLM performance in resource-constrained edge settings. The framework profiles compact LLMs, including TinyLLaMA, Gemma3.1B, Llama3.2-1B, and DeepSeek-r1-1.5B, using aggressive quantization techniques and strict memory constraints. Analytical modeling is used to estimate latency, FLOPs, and energy consumption. The profiling reveals that 4-bit quantization reduces model memory usage by approximately 60-70%, while maintaining accuracy within 2-5% of full-precision baselines. Inference speeds are observed to improve by 2-3x compared to FP16 baselines across various edge devices. Power modeling estimates a 35-50% reduction in energy consumption for INT4 configurations, enabling practical deployment on hardware such as Raspberry Pi 4/5 and Jetson Orin Nano Super. Our findings emphasize the importance of efficient profiling tailored to lightweight LLMs in edge environments, balancing accuracy, energy efficiency, and computational feasibility.
 ]]></content:encoded>
-<pubDate>Tue, 17 Jun 2025 00:00:00 -0400</pubDate>
 <pubDate>Tue, 17 Jun 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -158,7 +150,6 @@ arXiv:2506.09095v3 Announce Type: replace-cross
 Abstract: Foundation models (FMs) are changing the way medical images are analyzed by learning from large collections of unlabeled data. Instead of relying on manually annotated examples, FMs are pre-trained to learn general-purpose visual features that can later be adapted to specific clinical tasks with little additional supervision. In this review, we examine how FMs are being developed and applied in pathology, radiology, and ophthalmology, drawing on evidence from over 150 studies. We explain the core components of FM pipelines, including model architectures, self-supervised learning methods, and strategies for downstream adaptation. We also review how FMs are being used in each imaging domain and compare design choices across applications. Finally, we discuss key challenges and open questions to guide future research.
 ]]></content:encoded>
 <pubDate>Tue, 17 Jun 2025 00:00:00 -0400</pubDate>
-<pubDate>Tue, 17 Jun 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
 <title>Intra-Trajectory Consistency for Reward Modeling</title>
@@ -168,11 +159,10 @@ Abstract: Foundation models (FMs) are changing the way medical images are analyz
 <div> Bayesian framework, reward modeling, reinforcement learning, language models, response trajectory  
 Summary:  
 Reward models are essential for improving large language models, especially in reinforcement learning and inference-time verification. Current reward modeling faces challenges in identifying specific components within response trajectories that correlate with overall scores, leading to poor generalization on new responses. To address this, a new approach using generation probabilities to establish reward consistency across processes in response trajectories is proposed. By enforcing intra-trajectory consistency regularization, adjacent processes with higher next-token generation probabilities maintain more consistent rewards. This improves the performance of the outcome reward model on RewardBench and induces better policies aligned with DPO. The model trained with this regularization also achieves improved best-of-N (BON) inference-time verification results. The code for implementation is available on GitHub at https://github.com/chaoyang101/ICRM.  
-<br><br>Summary: <div>
+<br /><br />Summary: <div>
 arXiv:2506.09096v3 Announce Type: replace-cross 
 Abstract: Reward models are critical for improving large language models (LLMs), particularly in reinforcement learning from human feedback (RLHF) or inference-time verification. Current reward modeling typically relies on scores of overall responses to learn the outcome rewards for the responses. However, since the response-level scores are coarse-grained supervision signals, the reward model struggles to identify the specific components within a response trajectory that truly correlate with the scores, leading to poor generalization on unseen responses. In this paper, we propose to leverage generation probabilities to establish reward consistency between processes in the response trajectory, which allows the response-level supervisory signal to propagate across processes, thereby providing additional fine-grained signals for reward learning. Building on analysis under the Bayesian framework, we develop an intra-trajectory consistency regularization to enforce that adjacent processes with higher next-token generation probability maintain more consistent rewards. We apply the proposed regularization to the advanced outcome reward model, improving its performance on RewardBench. Besides, we show that the reward model trained with the proposed regularization induces better DPO-aligned policies and achieves better best-of-N (BON) inference-time verification results. Our code is provided in https://github.com/chaoyang101/ICRM.
 ]]></content:encoded>
-<pubDate>Tue, 17 Jun 2025 00:00:00 -0400</pubDate>
 <pubDate>Tue, 17 Jun 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -183,11 +173,10 @@ Abstract: Reward models are critical for improving large language models (LLMs),
 <div> latent multi-head attention, small language models, efficiency-quality trade-offs, rotary positional embeddings, memory savings
 
 Summary:
-The study explores latent multi-head attention (MLA) for small language models, comparing it with standard multi-head attention (MHA) and MLA with rotary positional embeddings (MLA+RoPE). The research demonstrates that MLA+RoPE with half-rank latent dimensions achieves a significant memory reduction without sacrificing validation loss. Rotary positional embeddings play a crucial role in improving MLA performance in small models. MLA with reduced rank dimensions shows a speedup in inference on NVIDIA A100 GPUs while maintaining memory savings. GPT-4 evaluations indicate that the proposed approach achieves the highest quality scores in grammar, creativity, and consistency metrics. The study presents a Pareto improvement for memory-constrained deployment, showcasing the potential of MLA in enhancing the efficiency and quality of small language models. <br><br>Summary: <div>
+The study explores latent multi-head attention (MLA) for small language models, comparing it with standard multi-head attention (MHA) and MLA with rotary positional embeddings (MLA+RoPE). The research demonstrates that MLA+RoPE with half-rank latent dimensions achieves a significant memory reduction without sacrificing validation loss. Rotary positional embeddings play a crucial role in improving MLA performance in small models. MLA with reduced rank dimensions shows a speedup in inference on NVIDIA A100 GPUs while maintaining memory savings. GPT-4 evaluations indicate that the proposed approach achieves the highest quality scores in grammar, creativity, and consistency metrics. The study presents a Pareto improvement for memory-constrained deployment, showcasing the potential of MLA in enhancing the efficiency and quality of small language models. <br /><br />Summary: <div>
 arXiv:2506.09342v2 Announce Type: replace-cross 
 Abstract: We present the first comprehensive study of latent multi-head attention (MLA) for small language models, revealing interesting efficiency-quality trade-offs. Training 30M-parameter GPT models on 100,000 synthetic stories, we benchmark three architectural variants: standard multi-head attention (MHA), MLA, and MLA with rotary positional embeddings (MLA+RoPE). Our key finding is that MLA+RoPE with half-rank latent dimensions (r = d/2) achieves a 45% KV-cache memory reduction while incurring only a 0.3% increase in validation loss (essentially matching MHA quality)- a Pareto improvement for memory constrained deployment. We further show that RoPE is crucial for MLA in small models: without it, MLA underperforms vanilla attention by 3-5%, but with RoPE, it surpasses vanilla by 2%. Inference benchmarks on NVIDIA A100 GPUs reveal that MLA with r=d/2 achieves a 1.4 times speedup over full-rank MLA while maintaining the memory savings. GPT-4 evaluations corroborate perplexity results, with ours achieving the highest quality scores (7.4/10) across grammar, creativity, and consistency metrics. Code and models will be released upon acceptance.
 ]]></content:encoded>
-<pubDate>Tue, 17 Jun 2025 00:00:00 -0400</pubDate>
 <pubDate>Tue, 17 Jun 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -200,11 +189,10 @@ Abstract: We present the first comprehensive study of latent multi-head attentio
 Summary:
 Location Preference Optimization (LPO) is introduced as a novel approach for improving interaction precision in Graphical User Interfaces (GUIs) by leveraging locational data. LPO uses information entropy to predict interaction positions by focusing on information-rich zones and introduces a dynamic location reward function based on physical distance. This approach, coupled with Group Relative Preference Optimization (GRPO), enhances interaction precision and allows for extensive exploration of GUI environments. Experimental results showcase the superior performance of LPO, achieving state-of-the-art results in both offline benchmarks and real-world online evaluations. The code for LPO will soon be made publicly available on https://github.com/AIDC-AI/LPO. 
 
-<br><br>Summary: <div>
+<br /><br />Summary: <div>
 arXiv:2506.09373v2 Announce Type: replace-cross 
 Abstract: The advent of autonomous agents is transforming interactions with Graphical User Interfaces (GUIs) by employing natural language as a powerful intermediary. Despite the predominance of Supervised Fine-Tuning (SFT) methods in current GUI agents for achieving spatial localization, these methods face substantial challenges due to their limited capacity to accurately perceive positional data. Existing strategies, such as reinforcement learning, often fail to assess positional accuracy effectively, thereby restricting their utility. In response, we introduce Location Preference Optimization (LPO), a novel approach that leverages locational data to optimize interaction preferences. LPO uses information entropy to predict interaction positions by focusing on zones rich in information. Besides, it further introduces a dynamic location reward function based on physical distance, reflecting the varying importance of interaction positions. Supported by Group Relative Preference Optimization (GRPO), LPO facilitates an extensive exploration of GUI environments and significantly enhances interaction precision. Comprehensive experiments demonstrate LPO's superior performance, achieving SOTA results across both offline benchmarks and real-world online evaluations. Our code will be made publicly available soon, at https://github.com/AIDC-AI/LPO.
 ]]></content:encoded>
-<pubDate>Tue, 17 Jun 2025 00:00:00 -0400</pubDate>
 <pubDate>Tue, 17 Jun 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -212,15 +200,13 @@ Abstract: The advent of autonomous agents is transforming interactions with Grap
 <link>https://arxiv.org/abs/2506.09827</link>
 <guid>https://arxiv.org/abs/2506.09827</guid>
 <content:encoded><![CDATA[
-<div> EmoNet-Voice, speech emotion detection, benchmark dataset, human expert annotations, synthetic audio snippets <br>
-Summary: EmoNet-Voice introduces a new resource for speech emotion detection, providing a large-scale pre-training dataset (EmoNet-Voice Big) and a benchmark dataset (EmoNet-Voice Bench). The datasets feature a wide range of emotions and intensity levels. Synthetic audio snippets were created to simulate actors portraying emotions, validated by psychology experts. The approach allows for inclusion of sensitive emotional states not present in existing datasets. The Empathic Insight Voice models achieved high agreement with human experts. Evaluation of SER models revealed that detecting high-arousal emotions like anger is easier than low-arousal states like concentration. This work addresses the need for robust benchmarks in evaluating emotional understanding capabilities of AI systems in text-to-speech and audio generation models.<br><br>Summary: <div>
+<div> EmoNet-Voice, speech emotion detection, benchmark dataset, human expert annotations, synthetic audio snippets <br />
+Summary: EmoNet-Voice introduces a new resource for speech emotion detection, providing a large-scale pre-training dataset (EmoNet-Voice Big) and a benchmark dataset (EmoNet-Voice Bench). The datasets feature a wide range of emotions and intensity levels. Synthetic audio snippets were created to simulate actors portraying emotions, validated by psychology experts. The approach allows for inclusion of sensitive emotional states not present in existing datasets. The Empathic Insight Voice models achieved high agreement with human experts. Evaluation of SER models revealed that detecting high-arousal emotions like anger is easier than low-arousal states like concentration. This work addresses the need for robust benchmarks in evaluating emotional understanding capabilities of AI systems in text-to-speech and audio generation models.<br /><br />Summary: <div>
 arXiv:2506.09827v2 Announce Type: replace-cross 
 Abstract: The advancement of text-to-speech and audio generation models necessitates robust benchmarks for evaluating the emotional understanding capabilities of AI systems. Current speech emotion recognition (SER) datasets often exhibit limitations in emotional granularity, privacy concerns, or reliance on acted portrayals. This paper introduces EmoNet-Voice, a new resource for speech emotion detection, which includes EmoNet-Voice Big, a large-scale pre-training dataset (featuring over 4,500 hours of speech across 11 voices, 40 emotions, and 4 languages), and EmoNet-Voice Bench, a novel benchmark dataset with human expert annotations. EmoNet-Voice is designed to evaluate SER models on a fine-grained spectrum of 40 emotion categories with different levels of intensities. Leveraging state-of-the-art voice generation, we curated synthetic audio snippets simulating actors portraying scenes designed to evoke specific emotions. Crucially, we conducted rigorous validation by psychology experts who assigned perceived intensity labels. This synthetic, privacy-preserving approach allows for the inclusion of sensitive emotional states often absent in existing datasets. Lastly, we introduce Empathic Insight Voice models that set a new standard in speech emotion recognition with high agreement with human experts. Our evaluations across the current model landscape exhibit valuable findings, such as high-arousal emotions like anger being much easier to detect than low-arousal states like concentration.
 ]]></content:encoded>
 <pubDate>Tue, 17 Jun 2025 00:00:00 -0400</pubDate>
-<pubDate>Tue, 17 Jun 2025 00:00:00 -0400</pubDate>
 </item>
-
 <item>
 <title>The Amazon Nova Family of Models: Technical Report and Model Card</title>
 <link>https://arxiv.org/abs/2506.12103</link>
@@ -10846,146 +10832,6 @@ Abstract: Recent copyright agreements between AI companies and content creators 
 <content:encoded><![CDATA[
 arXiv:2502.20490v5 Announce Type: replace-cross 
 Abstract: Human activity is moderated by norms; however, supervision for normative reasoning is sparse, particularly where norms are physically- or socially-grounded. We thus present EGONORMIA $\|\epsilon\|$, comprising 1,853 (200 for EGONORMIA-verified) multiple choice questions (MCQs) grounded within egocentric videos of human interactions, enabling the evaluation and improvement of normative reasoning in vision-language models (VLMs). EGONORMIA spans seven norm categories: safety, privacy, proxemics, politeness, cooperation, coordination/proactivity, and communication/legibility. To compile this dataset at scale, we propose a novel pipeline to generate grounded MCQs from raw egocentric video. Our work demonstrates that current state-of-the-art VLMs lack robust grounded norm understanding, scoring a maximum of 54% on EGONORMIA and 65% on EGONORMIA-verified, with performance across norm categories indicating significant risks of safety and privacy when VLMs are used in real-world agents. We additionally explore methods for improving normative understanding, demonstrating that a naive retrieval-based generation (RAG) method using EGONORMIA can enhance normative reasoning in VLMs.
-]]></content:encoded>
-<pubDate>Fri, 13 Jun 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Generative Uncertainty in Diffusion Models</title>
-<link>https://arxiv.org/abs/2502.20946</link>
-<guid>https://arxiv.org/abs/2502.20946</guid>
-<content:encoded><![CDATA[
-arXiv:2502.20946v2 Announce Type: replace-cross 
-Abstract: Diffusion models have recently driven significant breakthroughs in generative modeling. While state-of-the-art models produce high-quality samples on average, individual samples can still be low quality. Detecting such samples without human inspection remains a challenging task. To address this, we propose a Bayesian framework for estimating generative uncertainty of synthetic samples. We outline how to make Bayesian inference practical for large, modern generative models and introduce a new semantic likelihood (evaluated in the latent space of a feature extractor) to address the challenges posed by high-dimensional sample spaces. Through our experiments, we demonstrate that the proposed generative uncertainty effectively identifies poor-quality samples and significantly outperforms existing uncertainty-based methods. Notably, our Bayesian framework can be applied post-hoc to any pretrained diffusion or flow matching model (via the Laplace approximation), and we propose simple yet effective techniques to minimize its computational overhead during sampling.
-]]></content:encoded>
-<pubDate>Fri, 13 Jun 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>An energy-efficient learning solution for the Agile Earth Observation Satellite Scheduling Problem</title>
-<link>https://arxiv.org/abs/2503.04803</link>
-<guid>https://arxiv.org/abs/2503.04803</guid>
-<content:encoded><![CDATA[
-arXiv:2503.04803v2 Announce Type: replace-cross 
-Abstract: The Agile Earth Observation Satellite Scheduling Problem (AEOSSP) entails finding the subset of observation targets to be scheduled along the satellite's orbit while meeting operational constraints of time, energy and memory. The problem of deciding what and when to observe is inherently complex, and becomes even more challenging when considering several issues that compromise the quality of the captured images, such as cloud occlusion, atmospheric turbulence, and image resolution. This paper presents a Deep Reinforcement Learning (DRL) approach for addressing the AEOSSP with time-dependent profits, integrating these three factors to optimize the use of energy and memory resources. The proposed method involves a dual decision-making process: selecting the sequence of targets and determining the optimal observation time for each. Our results demonstrate that the proposed algorithm reduces the capture of images that fail to meet quality requirements by > 60% and consequently decreases energy waste from attitude maneuvers by up to 78%, all while maintaining strong observation performance.
-]]></content:encoded>
-<pubDate>Fri, 13 Jun 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Social Bias Benchmark for Generation: A Comparison of Generation and QA-Based Evaluations</title>
-<link>https://arxiv.org/abs/2503.06987</link>
-<guid>https://arxiv.org/abs/2503.06987</guid>
-<content:encoded><![CDATA[
-arXiv:2503.06987v2 Announce Type: replace-cross 
-Abstract: Measuring social bias in large language models (LLMs) is crucial, but existing bias evaluation methods struggle to assess bias in long-form generation. We propose a Bias Benchmark for Generation (BBG), an adaptation of the Bias Benchmark for QA (BBQ), designed to evaluate social bias in long-form generation by having LLMs generate continuations of story prompts. Building our benchmark in English and Korean, we measure the probability of neutral and biased generations across ten LLMs. We also compare our long-form story generation evaluation results with multiple-choice BBQ evaluation, showing that the two approaches produce inconsistent results.
-]]></content:encoded>
-<pubDate>Fri, 13 Jun 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Large Language Models for Outpatient Referral: Problem Definition, Benchmarking and Challenges</title>
-<link>https://arxiv.org/abs/2503.08292</link>
-<guid>https://arxiv.org/abs/2503.08292</guid>
-<content:encoded><![CDATA[
-arXiv:2503.08292v3 Announce Type: replace-cross 
-Abstract: Large language models (LLMs) are increasingly applied to outpatient referral tasks across healthcare systems. However, there is a lack of standardized evaluation criteria to assess their effectiveness, particularly in dynamic, interactive scenarios. In this study, we systematically examine the capabilities and limitations of LLMs in managing tasks within Intelligent Outpatient Referral (IOR) systems and propose a comprehensive evaluation framework specifically designed for such systems. This framework comprises two core tasks: static evaluation, which focuses on evaluating the ability of predefined outpatient referrals, and dynamic evaluation, which evaluates capabilities of refining outpatient referral recommendations through iterative dialogues. Our findings suggest that LLMs offer limited advantages over BERT-like models, but show promise in asking effective questions during interactive dialogues.
-]]></content:encoded>
-<pubDate>Fri, 13 Jun 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>CompMarkGS: Robust Watermarking for Compressed 3D Gaussian Splatting</title>
-<link>https://arxiv.org/abs/2503.12836</link>
-<guid>https://arxiv.org/abs/2503.12836</guid>
-<content:encoded><![CDATA[
-arXiv:2503.12836v5 Announce Type: replace-cross 
-Abstract: 3D Gaussian Splatting (3DGS) is increasingly adopted in various academic and commercial applications due to its real-time and high-quality rendering capabilities, emphasizing the growing need for copyright protection technologies for 3DGS. However, the large model size of 3DGS requires developing efficient compression techniques. This highlights the necessity of an integrated framework that addresses copyright protection and data compression for 3D content. Nevertheless, existing 3DGS watermarking methods significantly degrade watermark performance under 3DGS compression methods, particularly quantization-based approaches that achieve superior compression performance. To ensure reliable watermark detection under compression, we propose a compression-tolerant anchor-based 3DGS watermarking, which preserves watermark integrity and rendering quality. This is achieved by introducing anchor-based 3DGS watermarking. We embed the watermark into the anchor attributes, particularly the anchor feature, to enhance security and rendering quality. We also propose a quantization distortion layer that injects quantization noise during training, preserving the watermark after quantization-based compression. Moreover, we employ a frequency-aware anchor growing strategy that improves rendering quality and watermark performance by effectively identifying Gaussians in high-frequency regions. Extensive experiments demonstrate that our proposed method preserves the watermark even under compression and maintains high rendering quality.
-]]></content:encoded>
-<pubDate>Fri, 13 Jun 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Computation Mechanism Behind LLM Position Generalization</title>
-<link>https://arxiv.org/abs/2503.13305</link>
-<guid>https://arxiv.org/abs/2503.13305</guid>
-<content:encoded><![CDATA[
-arXiv:2503.13305v2 Announce Type: replace-cross 
-Abstract: Most written natural languages are composed of sequences of words and sentences. Similar to humans, large language models (LLMs) exhibit flexibility in handling textual positions - a phenomenon we term position generalization. They can understand texts with position perturbations and generalize to longer texts than those encountered during training with the latest techniques. These phenomena suggest that LLMs handle positions tolerantly, but how LLMs computationally process positional relevance remains largely unexplored. This work connects the linguistic phenomenon with LLMs' computational mechanisms. We show how LLMs enforce certain computational mechanisms for the aforementioned tolerance in position perturbations. Despite the complex design of the self-attention mechanism, this work reveals that LLMs learn a counterintuitive disentanglement of attention logits. Their values show a 0.959 linear correlation with an approximation of the arithmetic sum of positional relevance and semantic importance. Furthermore, we identify a prevalent pattern in intermediate features, which we prove theoretically enables this effect. The pattern, which is different from how randomly initialized parameters would behave, suggests that it is a learned behavior rather than a natural result of the model architecture. Based on these findings, we provide computational explanations and criteria for LLMs' position flexibilities. This work takes a pioneering step in linking position generalization with modern LLMs' internal mechanisms.
-]]></content:encoded>
-<pubDate>Fri, 13 Jun 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>PLAY2PROMPT: Zero-shot Tool Instruction Optimization for LLM Agents via Tool Play</title>
-<link>https://arxiv.org/abs/2503.14432</link>
-<guid>https://arxiv.org/abs/2503.14432</guid>
-<content:encoded><![CDATA[
-arXiv:2503.14432v2 Announce Type: replace-cross 
-Abstract: Large language models (LLMs) are increasingly integrated with specialized external tools, yet many tasks demand zero-shot tool usage with minimal or noisy documentation. Existing solutions rely on manual rewriting or labeled data for validation, making them inapplicable in true zero-shot settings. To address these challenges, we propose PLAY2PROMPT, an automated framework that systematically "plays" with each tool to explore its input-output behaviors. Through this iterative trial-and-error process, PLAY2PROMPT refines tool documentation and generates usage examples without any labeled data. These examples not only guide LLM inference but also serve as validation to further enhance tool utilization. Extensive experiments on real-world tasks demonstrate that PLAY2PROMPT significantly improves zero-shot tool performance across both open and closed models, offering a scalable and effective solution for domain-specific tool integration.
-]]></content:encoded>
-<pubDate>Fri, 13 Jun 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Content ARCs: Decentralized Content Rights in the Age of Generative AI</title>
-<link>https://arxiv.org/abs/2503.14519</link>
-<guid>https://arxiv.org/abs/2503.14519</guid>
-<content:encoded><![CDATA[
-arXiv:2503.14519v3 Announce Type: replace-cross 
-Abstract: The rise of Generative AI (GenAI) has sparked significant debate over balancing the interests of creative rightsholders and AI developers. As GenAI models are trained on vast datasets that often include copyrighted material, questions around fair compensation and proper attribution have become increasingly urgent. To address these challenges, this paper proposes a framework called Content ARCs (Authenticity, Rights, Compensation). By combining open standards for provenance and dynamic licensing with data attribution, and decentralized technologies, Content ARCs create a mechanism for managing rights and compensating creators for using their work in AI training. We characterize several nascent works in the AI data licensing space within Content ARCs and identify where challenges remain to fully implement the end-to-end framework.
-]]></content:encoded>
-<pubDate>Fri, 13 Jun 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Expert Race: A Flexible Routing Strategy for Scaling Diffusion Transformer with Mixture of Experts</title>
-<link>https://arxiv.org/abs/2503.16057</link>
-<guid>https://arxiv.org/abs/2503.16057</guid>
-<content:encoded><![CDATA[
-arXiv:2503.16057v3 Announce Type: replace-cross 
-Abstract: Diffusion models have emerged as mainstream framework in visual generation. Building upon this success, the integration of Mixture of Experts (MoE) methods has shown promise in enhancing model scalability and performance. In this paper, we introduce Race-DiT, a novel MoE model for diffusion transformers with a flexible routing strategy, Expert Race. By allowing tokens and experts to compete together and select the top candidates, the model learns to dynamically assign experts to critical tokens. Additionally, we propose per-layer regularization to address challenges in shallow layer learning, and router similarity loss to prevent mode collapse, ensuring better expert utilization. Extensive experiments on ImageNet validate the effectiveness of our approach, showcasing significant performance gains while promising scaling properties.
-]]></content:encoded>
-<pubDate>Fri, 13 Jun 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>On the Geometry of Receiver Operating Characteristic and Precision-Recall Curves</title>
-<link>https://arxiv.org/abs/2504.02169</link>
-<guid>https://arxiv.org/abs/2504.02169</guid>
-<content:encoded><![CDATA[
-arXiv:2504.02169v2 Announce Type: replace-cross 
-Abstract: We study the geometry of Receiver Operating Characteristic (ROC) and Precision-Recall (PR) curves in binary classification problems. The key finding is that many of the most commonly used binary classification metrics are merely functions of the composition function $G := F_p \circ F_n^{-1}$, where $F_p(\cdot)$ and $F_n(\cdot)$ are the class-conditional cumulative distribution functions of the classifier scores in the positive and negative classes, respectively. This geometric perspective facilitates the selection of operating points, understanding the effect of decision thresholds, and comparison between classifiers. It also helps explain how the shapes and geometry of ROC/PR curves reflect classifier behavior, providing objective tools for building classifiers optimized for specific applications with context-specific constraints. We further explore the conditions for classifier dominance, present analytical and numerical examples demonstrating the effects of class separability and variance on ROC and PR geometries, and derive a link between the positive-to-negative class leakage function $G(\cdot)$ and the Kullback--Leibler divergence. The framework highlights practical considerations, such as model calibration, cost-sensitive optimization, and operating point selection under real-world capacity constraints, enabling more informed approaches to classifier deployment and decision-making.
-]]></content:encoded>
-<pubDate>Fri, 13 Jun 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>A Minimalist Approach to LLM Reasoning: from Rejection Sampling to Reinforce</title>
-<link>https://arxiv.org/abs/2504.11343</link>
-<guid>https://arxiv.org/abs/2504.11343</guid>
-<content:encoded><![CDATA[
-arXiv:2504.11343v2 Announce Type: replace-cross 
-Abstract: Reinforcement learning (RL) has become a prevailing approach for fine-tuning large language models (LLMs) on complex reasoning tasks. Among recent methods, GRPO stands out for its empirical success in training models such as DeepSeek-R1, yet the sources of its effectiveness remain poorly understood. In this work, we revisit GRPO from a reinforce-like algorithm perspective and analyze its core components. Surprisingly, we find that a simple rejection sampling baseline, RAFT, which trains only on positively rewarded samples, yields competitive performance than GRPO and PPO. Our ablation studies reveal that GRPO's main advantage arises from discarding prompts with entirely incorrect responses, rather than from its reward normalization. Motivated by this insight, we propose Reinforce-Rej, a minimal extension of policy gradient that filters both entirely incorrect and entirely correct samples. Reinforce-Rej improves KL efficiency and stability, serving as a lightweight yet effective alternative to more complex RL algorithms. We advocate RAFT as a robust and interpretable baseline, and suggest that future advances should focus on more principled designs for incorporating negative samples, rather than relying on them indiscriminately. Our findings provide guidance for future work in reward-based LLM post-training.
-]]></content:encoded>
-<pubDate>Fri, 13 Jun 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Elucidating the Design Space of Multimodal Protein Language Models</title>
-<link>https://arxiv.org/abs/2504.11454</link>
-<guid>https://arxiv.org/abs/2504.11454</guid>
-<content:encoded><![CDATA[
-arXiv:2504.11454v3 Announce Type: replace-cross 
-Abstract: Multimodal protein language models (PLMs) integrate sequence and token-based structural information, serving as a powerful foundation for protein modeling, generation, and design. However, the reliance on tokenizing 3D structures into discrete tokens causes substantial loss of fidelity about fine-grained structural details and correlations. In this paper, we systematically elucidate the design space of multimodal PLMs to overcome their limitations. We identify tokenization loss and inaccurate structure token predictions by the PLMs as major bottlenecks. To address these, our proposed design space covers improved generative modeling, structure-aware architectures and representation learning, and data exploration. Our advancements approach finer-grained supervision, demonstrating that token-based multimodal PLMs can achieve robust structural modeling. The effective design methods dramatically improve the structure generation diversity, and notably, folding abilities of our 650M model by reducing the RMSD from 5.52 to 2.36 on PDB testset, even outperforming 3B baselines and on par with the specialized folding models. Project page and code: https://bytedance.github.io/dplm/dplm-2.1/.
-]]></content:encoded>
-<pubDate>Fri, 13 Jun 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>MAYA: Addressing Inconsistencies in Generative Password Guessing through a Unified Benchmark</title>
-<link>https://arxiv.org/abs/2504.16651</link>
-<guid>https://arxiv.org/abs/2504.16651</guid>
-<content:encoded><![CDATA[
-arXiv:2504.16651v2 Announce Type: replace-cross 
-Abstract: Recent advances in generative models have led to their application in password guessing, with the aim of replicating the complexity, structure, and patterns of human-created passwords. Despite their potential, inconsistencies and inadequate evaluation methodologies in prior research have hindered meaningful comparisons and a comprehensive, unbiased understanding of their capabilities. This paper introduces MAYA, a unified, customizable, plug-and-play benchmarking framework designed to facilitate the systematic characterization and benchmarking of generative password-guessing models in the context of trawling attacks. Using MAYA, we conduct a comprehensive assessment of six state-of-the-art approaches, which we re-implemented and adapted to ensure standardization. Our evaluation spans eight real-world password datasets and covers an exhaustive set of advanced testing scenarios, totaling over 15,000 compute hours. Our findings indicate that these models effectively capture different aspects of human password distribution and exhibit strong generalization capabilities. However, their effectiveness varies significantly with long and complex passwords. Through our evaluation, sequential models consistently outperform other generative architectures and traditional password-guessing tools, demonstrating unique capabilities in generating accurate and complex guesses. Moreover, the diverse password distributions learned by the models enable a multi-model attack that outperforms the best individual model. By releasing MAYA, we aim to foster further research, providing the community with a new tool to consistently and reliably benchmark generative password-guessing models. Our framework is publicly available at https://github.com/williamcorrias/MAYA-Password-Benchmarking.
-]]></content:encoded>
-<pubDate>Fri, 13 Jun 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Token-Efficient RL for LLM Reasoning</title>
-<link>https://arxiv.org/abs/2504.20834</link>
-<guid>https://arxiv.org/abs/2504.20834</guid>
-<content:encoded><![CDATA[
-arXiv:2504.20834v4 Announce Type: replace-cross 
-Abstract: We propose reinforcement learning (RL) strategies tailored for reasoning in large language models (LLMs) under strict memory and compute limits, with a particular focus on compatibility with LoRA fine-tuning. Building on early policy gradient methods with baseline subtraction, we design critic-free methods that operate on a small, informative subset of output tokens to reduce memory usage and stabilize training. We introduce S-GRPO, a stochastic variant of Group Relative Policy Optimization, and T-SPMO, a token-level prefix matching approach for fine-grained credit assignment. Applied to Qwen2-1.5B, our methods raise accuracy on the SVAMP benchmark from 46% to over 70% and show strong performance on multi-digit multiplication. Surprisingly, full-token GRPO under LoRA fails to improve over the base model, suggesting that selective token-level optimization may act as an implicit regularizer in low-parameter training regimes.
 ]]></content:encoded>
 <pubDate>Fri, 13 Jun 2025 00:00:00 -0400</pubDate>
 </item>
