@@ -4,6 +4,7 @@
 <title>cs.CL updates on arXiv.org</title>
 <link>http://rss.arxiv.org/rss/cs.CL</link>
 
+
 <item>
 <title>Wait, We Don't Need to "Wait"! Removing Thinking Tokens Improves Reasoning Efficiency</title>
 <link>https://arxiv.org/abs/2506.08343</link>
@@ -23,23 +24,20 @@ arXiv:2506.08343v2 Announce Type: replace
 Abstract: Recent advances in large reasoning models have enabled complex, step-by-step reasoning but often introduce significant overthinking, resulting in verbose and redundant outputs that hinder efficiency. In this study, we examine whether explicit self-reflection, signaled by tokens such as "Wait" and "Hmm", is necessary for advanced reasoning. We propose NoWait, a simple yet effective approach that disables explicit self-reflection by suppressing these tokens during inference. Extensive experiments on ten benchmarks across textual, visual, and video reasoning tasks show that NoWait reduces chain-of-thought trajectory length by up to 27%-51% in five R1-style model series, without compromising model utility. NoWait thus offers a plug-and-play solution for efficient and utility-preserving multimodal reasoning.
 ]]></content:encoded>
 <pubDate>Thu, 19 Jun 2025 00:00:00 -0400</pubDate>
-<pubDate>Thu, 19 Jun 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
 <title>Router-R1: Teaching LLMs Multi-Round Routing and Aggregation via Reinforcement Learning</title>
 <link>https://arxiv.org/abs/2506.09033</link>
 <guid>https://arxiv.org/abs/2506.09033</guid>
 <content:encoded><![CDATA[
-<div> Reinforcement Learning, Large Language Models, Router-R1, Multi-LLM Routing, Generalization<br>
-Summary:<br>
-The article introduces Router-R1, a reinforcement learning-based framework that addresses the limitations of existing LLM routers in handling complex tasks by routing user queries to multiple LLMs. Router-R1 models multi-LLM routing as a sequential decision process, allowing the router to alternate between internal deliberation and dynamic model invocation. It incorporates a rule-based reward system to optimize performance and cost, enabling better performance-cost trade-offs through reinforcement learning. By conditioning only on basic model descriptors, Router-R1 demonstrates strong generalization to unseen model selection scenarios. Experimental results on various QA benchmarks show that Router-R1 outperforms several baseline methods, achieving superior performance while effectively managing costs and maintaining robust generalization capabilities.<br> <div>
+<div> Reinforcement Learning, Large Language Models, Router-R1, Multi-LLM Routing, Generalization<br />
+Summary:<br />
+The article introduces Router-R1, a reinforcement learning-based framework that addresses the limitations of existing LLM routers in handling complex tasks by routing user queries to multiple LLMs. Router-R1 models multi-LLM routing as a sequential decision process, allowing the router to alternate between internal deliberation and dynamic model invocation. It incorporates a rule-based reward system to optimize performance and cost, enabling better performance-cost trade-offs through reinforcement learning. By conditioning only on basic model descriptors, Router-R1 demonstrates strong generalization to unseen model selection scenarios. Experimental results on various QA benchmarks show that Router-R1 outperforms several baseline methods, achieving superior performance while effectively managing costs and maintaining robust generalization capabilities.<br /> <div>
 arXiv:2506.09033v2 Announce Type: replace 
 Abstract: The rapid emergence of diverse large language models (LLMs) has spurred the development of LLM routers that assign user queries to the most suitable model. However, existing LLM routers typically perform a single-round, one-to-one mapping (\textit{i.e.}, assigning each query to a single model in isolation), which limits their capability to tackle complex tasks that demand the complementary strengths of multiple LLMs. In this paper, we present \textbf{Router-R1}, a reinforcement learning (RL)-based framework that formulates multi-LLM routing and aggregation as a sequential decision process. Router-R1 instantiates the router itself as a capable LLM, leveraging its reasoning ability to interleave "think" actions (internal deliberation) with "route" actions (dynamic model invocation), and integrates each response into its evolving context. To facilitate learning, we employ a lightweight rule-based reward comprising format rewards, final outcome rewards, and a novel cost reward for optimizing the balance between performance and cost, opening a pathway toward enhancing performance-cost trade-offs via RL. Router-R1 also conditions only on simple model descriptors such as pricing, latency, and example performance, enabling strong generalization to unseen model selection. Experiments on seven general and multi-hop QA benchmarks show that Router-R1 outperforms several strong baselines, achieving superior performance while maintaining robust generalization and cost management.
 ]]></content:encoded>
 <pubDate>Thu, 19 Jun 2025 00:00:00 -0400</pubDate>
-<pubDate>Thu, 19 Jun 2025 00:00:00 -0400</pubDate>
 </item>
-
 <item>
 <title>Adverse Event Extraction from Discharge Summaries: A New Dataset, Annotation Scheme, and Initial Findings</title>
 <link>https://arxiv.org/abs/2506.14900</link>
@@ -11573,26 +11571,6 @@ Abstract: Instruction-following has emerged as a crucial capability for large la
 <content:encoded><![CDATA[
 arXiv:2505.16234v2 Announce Type: replace 
 Abstract: While large language models (LLMs) can solve PhD-level reasoning problems over long context inputs, they still struggle with a seemingly simpler task: following explicit length instructions-e.g., write a 10,000-word novel. Additionally, models often generate far too short outputs, terminate prematurely, or even refuse the request. Existing benchmarks focus primarily on evaluating generations quality, but often overlook whether the generations meet length constraints. To this end, we introduce Length Instruction Following Evaluation Benchmark (LIFEBench) to comprehensively evaluate LLMs' ability to follow length instructions across diverse tasks and a wide range of specified lengths. LIFEBench consists of 10,800 instances across 4 task categories in both English and Chinese, covering length constraints ranging from 16 to 8192 words. We evaluate 26 widely-used LLMs and find that most models reasonably follow short-length instructions but deteriorate sharply beyond a certain threshold. Surprisingly, almost all models fail to reach the vendor-claimed maximum output lengths in practice, as further confirmed by our evaluations extending up to 32K words. Even long-context LLMs, despite their extended input-output windows, counterintuitively fail to improve length-instructions following. Notably, Reasoning LLMs outperform even specialized long-text generation models, achieving state-of-the-art length following. Overall, LIFEBench uncovers fundamental limitations in current LLMs' length instructions following ability, offering critical insights for future progress.
-]]></content:encoded>
-<pubDate>Thu, 12 Jun 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Discovering Forbidden Topics in Language Models</title>
-<link>https://arxiv.org/abs/2505.17441</link>
-<guid>https://arxiv.org/abs/2505.17441</guid>
-<content:encoded><![CDATA[
-arXiv:2505.17441v3 Announce Type: replace 
-Abstract: Refusal discovery is the task of identifying the full set of topics that a language model refuses to discuss. We introduce this new problem setting and develop a refusal discovery method, Iterated Prefill Crawler (IPC), that uses token prefilling to find forbidden topics. We benchmark IPC on Tulu-3-8B, an open-source model with public safety tuning data. Our crawler manages to retrieve 31 out of 36 topics within a budget of 1000 prompts. Next, we scale the crawler to a frontier model using the prefilling option of Claude-Haiku. Finally, we crawl three widely used open-weight models: Llama-3.3-70B and two of its variants finetuned for reasoning: DeepSeek-R1-70B and Perplexity-R1-1776-70B. DeepSeek-R1-70B reveals patterns consistent with censorship tuning: The model exhibits "thought suppression" behavior that indicates memorization of CCP-aligned responses. Although Perplexity-R1-1776-70B is robust to censorship, IPC elicits CCP-aligned refusals answers in the quantized model. Our findings highlight the critical need for refusal discovery methods to detect biases, boundaries, and alignment failures of AI systems.
-]]></content:encoded>
-<pubDate>Thu, 12 Jun 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Decoding Knowledge Attribution in Mixture-of-Experts: A Framework of Basic-Refinement Collaboration and Efficiency Analysis</title>
-<link>https://arxiv.org/abs/2505.24593</link>
-<guid>https://arxiv.org/abs/2505.24593</guid>
-<content:encoded><![CDATA[
-arXiv:2505.24593v2 Announce Type: replace 
-Abstract: The interpretability of Mixture-of-Experts (MoE) models, especially those with heterogeneous designs, remains underexplored. Existing attribution methods for dense models fail to capture dynamic routing-expert interactions in sparse MoE architectures. To address this issue, we propose a cross-level attribution algorithm to analyze sparse MoE architectures (Qwen 1.5-MoE, OLMoE, Mixtral-8x7B) against dense models (Qwen 1.5-7B, Llama-7B, Mistral-7B). Results show MoE models achieve 37% higher per-layer efficiency via a "mid-activation, late-amplification" pattern: early layers screen experts, while late layers refine knowledge collaboratively. Ablation studies reveal a "basic-refinement" framework--shared experts handle general tasks (entity recognition), while routed experts specialize in domain-specific processing (geographic attributes). Semantic-driven routing is evidenced by strong correlations between attention heads and experts (r=0.68), enabling task-aware coordination. Notably, architectural depth dictates robustness: deep Qwen 1.5-MoE mitigates expert failures (e.g., 43% MRR drop in geographic tasks when blocking top-10 experts) through shared expert redundancy, whereas shallow OLMoE suffers severe degradation (76% drop). Task sensitivity further guides design: core-sensitive tasks (geography) require concentrated expertise, while distributed-tolerant tasks (object attributes) leverage broader participation. These insights advance MoE interpretability, offering principles to balance efficiency, specialization, and robustness.
 ]]></content:encoded>
 <pubDate>Thu, 12 Jun 2025 00:00:00 -0400</pubDate>
 </item>
