@@ -4,6 +4,7 @@
 <title>cs.CL updates on arXiv.org</title>
 <link>http://rss.arxiv.org/rss/cs.CL</link>
 
+
 <item>
 <title>LogProber: Disentangling confidence from contamination in LLM responses</title>
 <link>https://arxiv.org/abs/2408.14352</link>
@@ -12,11 +13,10 @@
 <div> Machine learning, contamination, Large Language Models (LLMs), detection, LogProber  
 Summary:  
 Contamination in machine learning refers to the challenge of testing data leaking into the training set, particularly problematic in assessing Large Language Models (LLMs) trained on extensive text corpora. Existing methods for detecting contamination in short text sequences have limitations. The LogProber algorithm presented in this paper focuses on familiarity with questions rather than answers, offering efficient contamination detection in a black box setting. The study compares LogProber with other approaches, highlighting its strengths and weaknesses. It demonstrates how different forms of contamination may remain undetected based on detection algorithm design. This research underscores the importance of developing effective tools to accurately track LLM performance evolution and emphasizes the need for robust contamination detection mechanisms in machine learning evaluation.  
-<br><br>Summary: <div>
+<br /><br />Summary: <div>
 arXiv:2408.14352v3 Announce Type: replace 
 Abstract: In machine learning, contamination refers to situations where testing data leak into the training set. The issue is particularly relevant for the evaluation of the performance of Large Language Models (LLMs), which are generally trained on gargantuan, and generally opaque, corpora of text scraped from the world wide web. Developing tools to detect contamination is therefore crucial to be able to fairly and properly track the evolution of the performance of LLMs. To date, only a few recent studies have attempted to address the issue of quantifying and detecting contamination in short text sequences, such as those commonly found in benchmarks. However, these methods have limitations that can sometimes render them impractical. In the present paper, we introduce LogProber, a novel, efficient algorithm that we show to be able to detect contamination in a black box setting that tries to tackle some of these drawbacks by focusing on the familiarity with the question rather than the answer. Here, we explore the properties of the proposed method in comparison with concurrent approaches, identify its advantages and limitations, and illustrate how different forms of contamination can go undetected depending on the design of the detection algorithm.
 ]]></content:encoded>
-<pubDate>Mon, 23 Jun 2025 00:00:00 -0400</pubDate>
 <pubDate>Mon, 23 Jun 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -24,16 +24,14 @@ Abstract: In machine learning, contamination refers to situations where testing 
 <link>https://arxiv.org/abs/2506.09707</link>
 <guid>https://arxiv.org/abs/2506.09707</guid>
 <content:encoded><![CDATA[
-<div> fidelity, Prolonged Exposure therapy, automatic localization, audio-language model, LoRA<br>
-Summary:<br>
+<div> fidelity, Prolonged Exposure therapy, automatic localization, audio-language model, LoRA<br />
+Summary:<br />
 This study introduces a method for automatically detecting key elements of Prolonged Exposure therapy from session audio and transcripts. By fine-tuning a pre-trained audio-language model, the proposed approach can identify the start and stop times of therapist fidelity elements in PE sessions. The model, trained on a dataset of 313 real sessions, achieves a mean absolute error of 5.3 seconds for fidelity element localization. The study explores the impact of window size and model adaptation on the accuracy of fidelity tracking, highlighting the importance of context granularity and model fine-tuning. This scalable framework has the potential to support clinician training, supervision, and quality assurance in PE therapy. <div>
 arXiv:2506.09707v2 Announce Type: replace-cross 
 Abstract: Prolonged Exposure (PE) therapy is an effective treatment for post-traumatic stress disorder (PTSD), but evaluating therapist fidelity remains labor-intensive due to the need for manual review of session recordings. We present a method for the automatic temporal localization of key PE fidelity elements -- identifying their start and stop times -- directly from session audio and transcripts. Our approach fine-tunes a large pre-trained audio-language model, Qwen2-Audio, using Low-Rank Adaptation (LoRA) to process focused 30-second windows of audio-transcript input. Fidelity labels for three core protocol phases -- therapist orientation (P1), imaginal exposure (P2), and post-imaginal processing (P3) -- are generated via LLM-based prompting and verified by trained raters. The model is trained to predict normalized boundary offsets using soft supervision guided by task-specific prompts. On a dataset of 313 real PE sessions, our best configuration (LoRA rank 8, 30s windows) achieves a mean absolute error (MAE) of 5.3 seconds across tasks. We further analyze the effects of window size and LoRA rank, highlighting the importance of context granularity and model adaptation. This work introduces a scalable framework for fidelity tracking in PE therapy, with potential to support clinician training, supervision, and quality assurance.
 ]]></content:encoded>
 <pubDate>Mon, 23 Jun 2025 00:00:00 -0400</pubDate>
-<pubDate>Mon, 23 Jun 2025 00:00:00 -0400</pubDate>
 </item>
-
 <item>
 <title>Veracity: An Open-Source AI Fact-Checking System</title>
 <link>https://arxiv.org/abs/2506.15794</link>
@@ -11545,26 +11543,6 @@ Abstract: Recent advancements in Multimodal Emotion Recognition (MER) face chall
 <content:encoded><![CDATA[
 arXiv:2506.10521v1 Announce Type: cross 
 Abstract: Scientific discoveries increasingly rely on complex multimodal reasoning based on information-intensive scientific data and domain-specific expertise. Empowered by expert-level scientific benchmarks, scientific Multimodal Large Language Models (MLLMs) hold the potential to significantly enhance this discovery process in realistic workflows. However, current scientific benchmarks mostly focus on evaluating the knowledge understanding capabilities of MLLMs, leading to an inadequate assessment of their perception and reasoning abilities. To address this gap, we present the Scientists' First Exam (SFE) benchmark, designed to evaluate the scientific cognitive capacities of MLLMs through three interconnected levels: scientific signal perception, scientific attribute understanding, scientific comparative reasoning. Specifically, SFE comprises 830 expert-verified VQA pairs across three question types, spanning 66 multimodal tasks across five high-value disciplines. Extensive experiments reveal that current state-of-the-art GPT-o3 and InternVL-3 achieve only 34.08% and 26.52% on SFE, highlighting significant room for MLLMs to improve in scientific realms. We hope the insights obtained in SFE will facilitate further developments in AI-enhanced scientific discoveries.
-]]></content:encoded>
-<pubDate>Fri, 13 Jun 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Encoding call-by-push-value in the pi-calculus</title>
-<link>https://arxiv.org/abs/2506.10584</link>
-<guid>https://arxiv.org/abs/2506.10584</guid>
-<content:encoded><![CDATA[
-arXiv:2506.10584v1 Announce Type: cross 
-Abstract: In this report we define an encoding of Levys call-by-push-value lambda-calculus (CBPV) in the pi-calculus, and prove that our encoding is both sound and complete. We present informal (by-hand) proofs of soundness, completeness, and all required lemmas. The encoding is specialized to the internal pi-calculus (pi-i-calculus) to circumvent certain challenges associated with using de Bruijn index in a formalization, and it also helps with bisimulation as early-, late- and open-bisimulation coincide in this setting, furthermore bisimulation is a congruence. Additionally, we argue that our encoding also satisfies the five criteria for good encodings proposed by Gorla, as well as show similarities between Milners and our encoding. This paper includes encodings from CBPV in the pi-i-calculus, asynchronous polyadic pi-calculus and the local pi-calculus. We begin a formalization of the proof in Coq for the soundness and completeness of the encoding in the pi-i-calculus. Not all lemmas used in the formalization are themselves formally proven. However, we argue that the non-proven lemmas are reasonable, as they are proven by hand, or amount to Coq formalities that are straightforward given informal arguments.
-]]></content:encoded>
-<pubDate>Fri, 13 Jun 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Deep Learning-Based Digitization of Overlapping ECG Images with Open-Source Python Code</title>
-<link>https://arxiv.org/abs/2506.10617</link>
-<guid>https://arxiv.org/abs/2506.10617</guid>
-<content:encoded><![CDATA[
-arXiv:2506.10617v1 Announce Type: cross 
-Abstract: This paper addresses the persistent challenge of accurately digitizing paper-based electrocardiogram (ECG) recordings, with a particular focus on robustly handling single leads compromised by signal overlaps-a common yet under-addressed issue in existing methodologies. We propose a two-stage pipeline designed to overcome this limitation. The first stage employs a U-Net based segmentation network, trained on a dataset enriched with overlapping signals and fortified with custom data augmentations, to accurately isolate the primary ECG trace. The subsequent stage converts this refined binary mask into a time-series signal using established digitization techniques, enhanced by an adaptive grid detection module for improved versatility across different ECG formats and scales. Our experimental results demonstrate the efficacy of our approach. The U-Net architecture achieves an IoU of 0.87 for the fine-grained segmentation task. Crucially, our proposed digitization method yields superior performance compared to a well-established baseline technique across both non-overlapping and challenging overlapping ECG samples. For non-overlapping signals, our method achieved a Mean Squared Error (MSE) of 0.0010 and a Pearson Correlation Coefficient (rho) of 0.9644, compared to 0.0015 and 0.9366, respectively, for the baseline. On samples with signal overlap, our method achieved an MSE of 0.0029 and a rho of 0.9641, significantly improving upon the baseline's 0.0178 and 0.8676. This work demonstrates an effective strategy to significantly enhance digitization accuracy, especially in the presence of signal overlaps, thereby laying a strong foundation for the reliable conversion of analog ECG records into analyzable digital data for contemporary research and clinical applications. The implementation is publicly available at this GitHub repository: https://github.com/masoudrahimi39/ECG-code.
 ]]></content:encoded>
 <pubDate>Fri, 13 Jun 2025 00:00:00 -0400</pubDate>
 </item>

@@ -4,6 +4,7 @@
 <title>cs.CV updates on arXiv.org</title>
 <link>http://rss.arxiv.org/rss/cs.CV</link>
 
+
 <item>
 <title>Improving Out-of-Distribution Detection via Dynamic Covariance Calibration</title>
 <link>https://arxiv.org/abs/2506.09399</link>
@@ -14,11 +15,10 @@
 Summary:
 Out-of-Distribution (OOD) detection is crucial for ensuring the reliability of AI systems. While prior methods using subspace-based techniques have shown effectiveness in detecting OOD data by extracting information geometry, they struggle to handle the influence of ill-distributed samples on data geometry. In this paper, a novel approach is proposed that dynamically adjusts the prior covariance matrix in response to real-time input features, thereby refining its information. By reducing covariance along the direction of input features and constraining adjustments to the residual space, the method preserves essential data characteristics while avoiding unintended effects on principal directions. Evaluation on pre-trained models for the CIFAR dataset and ImageNet-1k, including the DINO model, demonstrates significant improvements in OOD detection performance. The code for the proposed approach is available on GitHub for further exploration and implementation. 
 
-Summary: <br><br>Keywords: Out-of-Distribution Detection, Prior Information, Information Geometry, Covariance Matrix, Dynamic Update <div>
+Summary: <br /><br />Keywords: Out-of-Distribution Detection, Prior Information, Information Geometry, Covariance Matrix, Dynamic Update <div>
 arXiv:2506.09399v2 Announce Type: replace 
 Abstract: Out-of-Distribution (OOD) detection is essential for the trustworthiness of AI systems. Methods using prior information (i.e., subspace-based methods) have shown effective performance by extracting information geometry to detect OOD data with a more appropriate distance metric. However, these methods fail to address the geometry distorted by ill-distributed samples, due to the limitation of statically extracting information geometry from the training distribution. In this paper, we argue that the influence of ill-distributed samples can be corrected by dynamically adjusting the prior geometry in response to new data. Based on this insight, we propose a novel approach that dynamically updates the prior covariance matrix using real-time input features, refining its information. Specifically, we reduce the covariance along the direction of real-time input features and constrain adjustments to the residual space, thus preserving essential data characteristics and avoiding effects on unintended directions in the principal space. We evaluate our method on two pre-trained models for the CIFAR dataset and five pre-trained models for ImageNet-1k, including the self-supervised DINO model. Extensive experiments demonstrate that our approach significantly enhances OOD detection across various models. The code is released at https://github.com/workerbcd/ooddcc.
 ]]></content:encoded>
-<pubDate>Mon, 23 Jun 2025 00:00:00 -0400</pubDate>
 <pubDate>Mon, 23 Jun 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -29,11 +29,10 @@ Abstract: Out-of-Distribution (OOD) detection is essential for the trustworthine
 <div> Keywords: Video editing, diffusion models, first-frame-guided editing, LoRA tuning, Image-to-Video models
 
 Summary:
-The article introduces a mask-based LoRA tuning method that enhances pretrained Image-to-Video models for flexible and efficient video editing. This approach allows for control over the first frame while maintaining adaptability for subsequent frames, improving upon existing techniques that lack flexibility. By incorporating additional references and visual anchors for content guidance, the model can better navigate the editing process. The spatial mask utilized in the LoRA tuning strategy enables region-specific learning, ensuring that each area receives appropriate input from both the input video and reference images. Experimental results demonstrate the superior performance of the proposed method compared to current state-of-the-art approaches. The project page provides further details and insights into the implementation of this innovative video editing technique.<br><br>Summary: <div>
+The article introduces a mask-based LoRA tuning method that enhances pretrained Image-to-Video models for flexible and efficient video editing. This approach allows for control over the first frame while maintaining adaptability for subsequent frames, improving upon existing techniques that lack flexibility. By incorporating additional references and visual anchors for content guidance, the model can better navigate the editing process. The spatial mask utilized in the LoRA tuning strategy enables region-specific learning, ensuring that each area receives appropriate input from both the input video and reference images. Experimental results demonstrate the superior performance of the proposed method compared to current state-of-the-art approaches. The project page provides further details and insights into the implementation of this innovative video editing technique.<br /><br />Summary: <div>
 arXiv:2506.10082v2 Announce Type: replace 
 Abstract: Video editing using diffusion models has achieved remarkable results in generating high-quality edits for videos. However, current methods often rely on large-scale pretraining, limiting flexibility for specific edits. First-frame-guided editing provides control over the first frame, but lacks flexibility over subsequent frames. To address this, we propose a mask-based LoRA (Low-Rank Adaptation) tuning method that adapts pretrained Image-to-Video (I2V) models for flexible video editing. Our approach preserves background regions while enabling controllable edits propagation. This solution offers efficient and adaptable video editing without altering the model architecture. To better steer this process, we incorporate additional references, such as alternate viewpoints or representative scene states, which serve as visual anchors for how content should unfold. We address the control challenge using a mask-driven LoRA tuning strategy that adapts a pre-trained image-to-video model to the editing context. The model must learn from two distinct sources: the input video provides spatial structure and motion cues, while reference images offer appearance guidance. A spatial mask enables region-specific learning by dynamically modulating what the model attends to, ensuring that each area draws from the appropriate source. Experimental results show our method achieves superior video editing performance compared to state-of-the-art methods. Project Page: https://cjeen.github.io/LoraEditPaper
 ]]></content:encoded>
-<pubDate>Mon, 23 Jun 2025 00:00:00 -0400</pubDate>
 <pubDate>Mon, 23 Jun 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -49,9 +48,7 @@ arXiv:2506.10730v3 Announce Type: replace
 Abstract: Recently, the rapid advancements of vision-language models, such as CLIP, leads to significant progress in zero-/few-shot anomaly detection (ZFSAD) tasks. However, most existing CLIP-based ZFSAD methods commonly assume prior knowledge of categories and rely on carefully crafted prompts tailored to specific scenarios. While such meticulously designed text prompts effectively capture semantic information in the textual space, they fall short of distinguishing normal and anomalous instances within the joint embedding space. Moreover, these ZFSAD methods are predominantly explored in industrial scenarios, with few efforts conducted to medical tasks. To this end, we propose an innovative framework for ZFSAD tasks in medical domain, denoted as IQE-CLIP. We reveal that query embeddings, which incorporate both textual and instance-aware visual information, are better indicators for abnormalities. Specifically, we first introduce class-based prompting tokens and learnable prompting tokens for better adaptation of CLIP to the medical domain. Then, we design an instance-aware query module (IQM) to extract region-level contextual information from both text prompts and visual features, enabling the generation of query embeddings that are more sensitive to anomalies. Extensive experiments conducted on six medical datasets demonstrate that IQE-CLIP achieves state-of-the-art performance on both zero-shot and few-shot tasks. We release our code and data at https://github.com/hongh0/IQE-CLIP/.
 ]]></content:encoded>
 <pubDate>Mon, 23 Jun 2025 00:00:00 -0400</pubDate>
-<pubDate>Mon, 23 Jun 2025 00:00:00 -0400</pubDate>
 </item>
-
 <item>
 <title>A Strong View-Free Baseline Approach for Single-View Image Guided Point Cloud Completion</title>
 <link>https://arxiv.org/abs/2506.15747</link>
@@ -11311,36 +11308,6 @@ Abstract: Virtual try-on technology has become increasingly important in the fas
 <content:encoded><![CDATA[
 arXiv:2506.03082v2 Announce Type: replace 
 Abstract: Surgical simulation plays a pivotal role in training novice surgeons, accelerating their learning curve and reducing intra-operative errors. However, conventional simulation tools fall short in providing the necessary photorealism and the variability of human anatomy. In response, current methods are shifting towards generative model-based simulators. Yet, these approaches primarily focus on using increasingly complex conditioning for precise synthesis while neglecting the fine-grained human control aspect. To address this gap, we introduce SG2VID, the first diffusion-based video model that leverages Scene Graphs for both precise video synthesis and fine-grained human control. We demonstrate SG2VID's capabilities across three public datasets featuring cataract and cholecystectomy surgery. While SG2VID outperforms previous methods both qualitatively and quantitatively, it also enables precise synthesis, providing accurate control over tool and anatomy's size and movement, entrance of new tools, as well as the overall scene layout. We qualitatively motivate how SG2VID can be used for generative augmentation and present an experiment demonstrating its ability to improve a downstream phase detection task when the training set is extended with our synthetic videos. Finally, to showcase SG2VID's ability to retain human control, we interact with the Scene Graphs to generate new video samples depicting major yet rare intra-operative irregularities.
-]]></content:encoded>
-<pubDate>Mon, 16 Jun 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>DualX-VSR: Dual Axial Spatial$\times$Temporal Transformer for Real-World Video Super-Resolution without Motion Compensation</title>
-<link>https://arxiv.org/abs/2506.04830</link>
-<guid>https://arxiv.org/abs/2506.04830</guid>
-<content:encoded><![CDATA[
-arXiv:2506.04830v2 Announce Type: replace 
-Abstract: Transformer-based models like ViViT and TimeSformer have advanced video understanding by effectively modeling spatiotemporal dependencies. Recent video generation models, such as Sora and Vidu, further highlight the power of transformers in long-range feature extraction and holistic spatiotemporal modeling. However, directly applying these models to real-world video super-resolution (VSR) is challenging, as VSR demands pixel-level precision, which can be compromised by tokenization and sequential attention mechanisms. While recent transformer-based VSR models attempt to address these issues using smaller patches and local attention, they still face limitations such as restricted receptive fields and dependence on optical flow-based alignment, which can introduce inaccuracies in real-world settings. To overcome these issues, we propose Dual Axial Spatial$\times$Temporal Transformer for Real-World Video Super-Resolution (DualX-VSR), which introduces a novel dual axial spatial$\times$temporal attention mechanism that integrates spatial and temporal information along orthogonal directions. DualX-VSR eliminates the need for motion compensation, offering a simplified structure that provides a cohesive representation of spatiotemporal information. As a result, DualX-VSR achieves high fidelity and superior performance in real-world VSR task.
-]]></content:encoded>
-<pubDate>Mon, 16 Jun 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>PATS: Proficiency-Aware Temporal Sampling for Multi-View Sports Skill Assessment</title>
-<link>https://arxiv.org/abs/2506.04996</link>
-<guid>https://arxiv.org/abs/2506.04996</guid>
-<content:encoded><![CDATA[
-arXiv:2506.04996v2 Announce Type: replace 
-Abstract: Automated sports skill assessment requires capturing fundamental movement patterns that distinguish expert from novice performance, yet current video sampling methods disrupt the temporal continuity essential for proficiency evaluation. To this end, we introduce Proficiency-Aware Temporal Sampling (PATS), a novel sampling strategy that preserves complete fundamental movements within continuous temporal segments for multi-view skill assessment. PATS adaptively segments videos to ensure each analyzed portion contains full execution of critical performance components, repeating this process across multiple segments to maximize information coverage while maintaining temporal coherence. Evaluated on the EgoExo4D benchmark with SkillFormer, PATS surpasses the state-of-the-art accuracy across all viewing configurations (+0.65% to +3.05%) and delivers substantial gains in challenging domains (+26.22% bouldering, +2.39% music, +1.13% basketball). Systematic analysis reveals that PATS successfully adapts to diverse activity characteristics-from high-frequency sampling for dynamic sports to fine-grained segmentation for sequential skills-demonstrating its effectiveness as an adaptive approach to temporal sampling that advances automated skill assessment for real-world applications.
-]]></content:encoded>
-<pubDate>Mon, 16 Jun 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Manipulating Feature Visualizations with Gradient Slingshots</title>
-<link>https://arxiv.org/abs/2401.06122</link>
-<guid>https://arxiv.org/abs/2401.06122</guid>
-<content:encoded><![CDATA[
-arXiv:2401.06122v3 Announce Type: replace-cross 
-Abstract: Feature Visualization (FV) is a widely used technique for interpreting the concepts learned by Deep Neural Networks (DNNs), which synthesizes input patterns that maximally activate a given feature. Despite its popularity, the trustworthiness of FV explanations has received limited attention. In this paper, we introduce a novel method, Gradient Slingshots, that enables manipulation of FV without modifying the model architecture or significantly degrading its performance. By shaping new trajectories in the off-distribution regions of the activation landscape of a feature, we coerce the optimization process to converge in a predefined visualization. We evaluate our approach on several DNN architectures, demonstrating its ability to replace faithfuls FV with arbitrary targets. These results expose a critical vulnerability: auditors relying solely on FV may accept entirely fabricated explanations. To mitigate this risk, we propose a straightforward defense and quantitatively demonstrate its effectiveness.
 ]]></content:encoded>
 <pubDate>Mon, 16 Jun 2025 00:00:00 -0400</pubDate>
 </item>
