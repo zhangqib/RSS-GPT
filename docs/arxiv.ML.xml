@@ -4,6 +4,7 @@
 <title>cs.LG updates on arXiv.org</title>
 <link>http://rss.arxiv.org/rss/cs.LG</link>
 
+
 <item>
 <title>Evaluating Rank-N-Contrast: Continuous and Robust Representations for Regression</title>
 <link>https://arxiv.org/abs/2411.16298</link>
@@ -12,11 +13,10 @@
 <div> rank-n-contrast, deep regression models, continuous representations, performance, robustness
 
 Summary: 
-This evaluation assesses the original "Rank-N-Contrast" paper from 2023, focusing on the limitations of deep regression models in capturing the continuous nature of sample orders. The Rank-N-Contrast (RNC) framework addresses this issue by contrasting samples based on their rankings in the target space, leading to improved performance and robustness. The study validates RNC's theoretical and empirical benefits and extends the evaluation to include an additional regression dataset. Robustness tests using a holdout method demonstrate the model's ability to generalize to unseen data and achieve state-of-the-art performance. Overall, this replication study confirms the original findings and highlights the broad applicability and robustness of the RNC framework.<br><br>Summary: <div>
+This evaluation assesses the original "Rank-N-Contrast" paper from 2023, focusing on the limitations of deep regression models in capturing the continuous nature of sample orders. The Rank-N-Contrast (RNC) framework addresses this issue by contrasting samples based on their rankings in the target space, leading to improved performance and robustness. The study validates RNC's theoretical and empirical benefits and extends the evaluation to include an additional regression dataset. Robustness tests using a holdout method demonstrate the model's ability to generalize to unseen data and achieve state-of-the-art performance. Overall, this replication study confirms the original findings and highlights the broad applicability and robustness of the RNC framework.<br /><br />Summary: <div>
 arXiv:2411.16298v3 Announce Type: replace 
 Abstract: This document is an evaluation of the original "Rank-N-Contrast" (arXiv:2210.01189v2) paper published in 2023. This evaluation is done for academic purposes. Deep regression models often fail to capture the continuous nature of sample orders, creating fragmented representations and suboptimal performance. To address this, we reproduced the Rank-N-Contrast (RNC) framework, which learns continuous representations by contrasting samples by their rankings in the target space. Our study validates RNC's theoretical and empirical benefits, including improved performance and robustness. We extended the evaluation to an additional regression dataset and conducted robustness tests using a holdout method, where a specific range of continuous data was excluded from the training set. This approach assessed the model's ability to generalize to unseen data and achieve state-of-the-art performance. This replication study validates the original findings and broadens the understanding of RNC's applicability and robustness.
 ]]></content:encoded>
-<pubDate>Tue, 24 Jun 2025 00:00:00 -0400</pubDate>
 <pubDate>Tue, 24 Jun 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -27,11 +27,10 @@ Abstract: This document is an evaluation of the original "Rank-N-Contrast" (arXi
 <div> Keywords: Large Language Models, safety, secondary risks, risk primitives, SecLens
 
 Summary:
-Large Language Models (LLMs) are increasingly being used in critical applications, leading to the need for ensuring their safety and alignment with societal functions. This study introduces the concept of secondary risks, which are non-adversarial failures arising from imperfect generalization during benign interactions. These risks manifest in harmful or misleading behaviors that evade standard safety mechanisms. The authors propose two risk primitives, verbose response, and speculative advice, to define these failure patterns and develop SecLens, a search framework to elicit secondary risk behaviors. Extensive evaluations on popular models demonstrate the prevalence of secondary risks, their transferability across models, and modality independence. The study emphasizes the urgency for enhanced safety mechanisms to address benign yet harmful behaviors of LLMs in real-world applications.<br><br>Summary: <div>
+Large Language Models (LLMs) are increasingly being used in critical applications, leading to the need for ensuring their safety and alignment with societal functions. This study introduces the concept of secondary risks, which are non-adversarial failures arising from imperfect generalization during benign interactions. These risks manifest in harmful or misleading behaviors that evade standard safety mechanisms. The authors propose two risk primitives, verbose response, and speculative advice, to define these failure patterns and develop SecLens, a search framework to elicit secondary risk behaviors. Extensive evaluations on popular models demonstrate the prevalence of secondary risks, their transferability across models, and modality independence. The study emphasizes the urgency for enhanced safety mechanisms to address benign yet harmful behaviors of LLMs in real-world applications.<br /><br />Summary: <div>
 arXiv:2506.12382v2 Announce Type: replace 
 Abstract: Ensuring the safety and alignment of Large Language Models is a significant challenge with their growing integration into critical applications and societal functions. While prior research has primarily focused on jailbreak attacks, less attention has been given to non-adversarial failures that subtly emerge during benign interactions. We introduce secondary risks a novel class of failure modes marked by harmful or misleading behaviors during benign prompts. Unlike adversarial attacks, these risks stem from imperfect generalization and often evade standard safety mechanisms. To enable systematic evaluation, we introduce two risk primitives verbose response and speculative advice that capture the core failure patterns. Building on these definitions, we propose SecLens, a black-box, multi-objective search framework that efficiently elicits secondary risk behaviors by optimizing task relevance, risk activation, and linguistic plausibility. To support reproducible evaluation, we release SecRiskBench, a benchmark dataset of 650 prompts covering eight diverse real-world risk categories. Experimental results from extensive evaluations on 16 popular models demonstrate that secondary risks are widespread, transferable across models, and modality independent, emphasizing the urgent need for enhanced safety mechanisms to address benign yet harmful LLM behaviors in real-world deployments.
 ]]></content:encoded>
-<pubDate>Tue, 24 Jun 2025 00:00:00 -0400</pubDate>
 <pubDate>Tue, 24 Jun 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -39,14 +38,13 @@ Abstract: Ensuring the safety and alignment of Large Language Models is a signif
 <link>https://arxiv.org/abs/2506.14003</link>
 <guid>https://arxiv.org/abs/2506.14003</guid>
 <content:encoded><![CDATA[
-<div> vulnerability, unlearning, language models, trace detection, privacy<br>
-<br>
-Summary:<br>
+<div> vulnerability, unlearning, language models, trace detection, privacy<br />
+<br />
+Summary:<br />
 Machine unlearning (MU) is crucial for protecting data privacy and mitigating sociotechnical harms in large language models (LLMs). However, a new vulnerability called unlearning trace detection has been identified post-unlearning, where persistent "fingerprints" are left behind in LLMs. These traces can be detected through model behavior and internal representations, even when prompted with forget-irrelevant inputs. Traces are found in intermediate activations and propagate to the final layer, forming learnable manifolds in activation space. Forget-relevant prompts enable over 90% accuracy in detecting unlearning traces, posing a risk of reverse-engineering forgotten information. The study highlights the need for enhanced security measures in LLMs to prevent the exploitation of unlearning vulnerabilities. <div>
 arXiv:2506.14003v2 Announce Type: replace 
 Abstract: Machine unlearning (MU) for large language models (LLMs), commonly referred to as LLM unlearning, seeks to remove specific undesirable data or knowledge from a trained model, while maintaining its performance on standard tasks. While unlearning plays a vital role in protecting data privacy, enforcing copyright, and mitigating sociotechnical harms in LLMs, we identify a new vulnerability post-unlearning: unlearning trace detection. We discover that unlearning leaves behind persistent ''fingerprints'' in LLMs, detectable traces in both model behavior and internal representations. These traces can be identified from output responses, even when prompted with forget-irrelevant inputs. Specifically, a simple supervised classifier can reliably determine whether a model has undergone unlearning based solely on its textual outputs. Further analysis shows that these traces are embedded in intermediate activations and propagate nonlinearly to the final layer, forming low-dimensional, learnable manifolds in activation space. Through extensive experiments, we show that forget-relevant prompts enable over 90% accuracy in detecting unlearning traces across all model sizes. Even with forget-irrelevant inputs, large LLMs maintain high detectability, demonstrating the broad applicability of unlearning trace detection. These findings reveal that unlearning leaves measurable signatures, introducing a new risk of reverse-engineering forgotten information when a model is identified as unlearned given an input query. Codes are available at https://github.com/OPTML-Group/Unlearn-Trace.
 ]]></content:encoded>
-<pubDate>Tue, 24 Jun 2025 00:00:00 -0400</pubDate>
 <pubDate>Tue, 24 Jun 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -54,13 +52,12 @@ Abstract: Machine unlearning (MU) for large language models (LLMs), commonly ref
 <link>https://arxiv.org/abs/2506.14020</link>
 <guid>https://arxiv.org/abs/2506.14020</guid>
 <content:encoded><![CDATA[
-<div> Graph generation, flow-based models, Markov random fields, optimal transport displacement, BWFlow <br>
+<div> Graph generation, flow-based models, Markov random fields, optimal transport displacement, BWFlow <br />
 Summary: 
 The article discusses the limitations of current graph generation methods that model the evolution of nodes and edges independently with linear interpolations in Euclidean space. It proposes a new approach, BWFlow, that models the joint evolution of nodes and edges using Markov random fields (MRF) to better capture the non-Euclidean structure and interconnected patterns of graphs. By leveraging optimal transport displacement between MRF objects, BWFlow designs a probability path for graph generation that respects the underlying geometry of graphs and ensures smooth velocities. Experimental evaluations show that BWFlow outperforms existing methods in graph generation, achieving competitive performance, stable training, and guaranteed sampling convergence. <div>
 arXiv:2506.14020v2 Announce Type: replace 
 Abstract: Graph generation has emerged as a critical task in fields ranging from molecule design to drug discovery. Contemporary approaches, notably diffusion and flow-based models, have achieved solid graph generative performance through constructing a probability path that interpolates between a reference distribution and the data distribution. However, these methods typically model the evolution of individual nodes and edges independently and use linear interpolations to build the path assuming that the data lie in Euclidean space. We show that this is suboptimal given the intrinsic non-Euclidean structure and interconnected patterns of graphs, and it poses risks to the sampling convergence. To build a better probability path, we model the joint evolution of the nodes and edges by representing graphs as connected systems parameterized by Markov random fields (MRF). We then leverage the optimal transport displacement between MRF objects to design the probability path for graph generation. Based on this, we introduce BWFlow, a flow-matching framework for graph generation that respects the underlying geometry of graphs and provides smooth velocities in the probability path. The novel framework can be adapted to both continuous and discrete flow-matching algorithms. Experimental evaluations in plain graph generation and 2D/3D molecule generation validate the effectiveness of BWFlow in graph generation with competitive performance, stable training, and guaranteed sampling convergence.
 ]]></content:encoded>
-<pubDate>Tue, 24 Jun 2025 00:00:00 -0400</pubDate>
 <pubDate>Tue, 24 Jun 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -73,11 +70,10 @@ Abstract: Graph generation has emerged as a critical task in fields ranging from
 Summary:
 The article introduces a novel approach called model MoE-ization for multi-task adaptation of large-scale foundation models. This method aims to address issues such as task conflict and oblivion in adaptation scenarios. By applying singular value decomposition (SVD) to the weight matrix of a pre-trained model and introducing a learnable router, the method transforms the weight matrix into a Mixture of Orthogonal Rank-one Experts (MoORE). Each expert in MoORE corresponds to an outer product of left and right singular vectors, ensuring orthogonality among the experts. Unlike existing methods like LoRA, MoORE maintains the original weight matrix's column space and guarantees resistance to conflicts among new tasks and oblivion of original tasks. Experimental results across various datasets demonstrate the superior performance of MoORE in terms of conflict- and oblivion-resistance in multi-task adaptation scenarios. The code for the experiments is available on GitHub at https://github.com/DaShenZi721/MoORE.
 
-<br><br>Summary: <div>
+<br /><br />Summary: <div>
 arXiv:2506.14436v2 Announce Type: replace 
 Abstract: Adapting large-scale foundation models in multi-task scenarios often suffers from task conflict and oblivion. To mitigate such issues, we propose a novel ''model MoE-ization'' strategy that leads to a conflict- and oblivion-resistant multi-task adaptation method. Given a weight matrix of a pre-trained model, our method applies SVD to it and introduces a learnable router to adjust its singular values based on tasks and samples. Accordingly, the weight matrix becomes a Mixture of Orthogonal Rank-one Experts (MoORE), in which each expert corresponds to the outer product of a left singular vector and the corresponding right one. We can improve the model capacity by imposing a learnable orthogonal transform on the right singular vectors. Unlike low-rank adaptation (LoRA) and its MoE-driven variants, MoORE guarantees the experts' orthogonality and maintains the column space of the original weight matrix. These two properties make the adapted model resistant to the conflicts among the new tasks and the oblivion of its original tasks, respectively. Experiments on various datasets demonstrate that MoORE outperforms existing multi-task adaptation methods consistently, showing its superiority in terms of conflict- and oblivion-resistance. The code of the experiments is available at https://github.com/DaShenZi721/MoORE.
 ]]></content:encoded>
-<pubDate>Tue, 24 Jun 2025 00:00:00 -0400</pubDate>
 <pubDate>Tue, 24 Jun 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -88,11 +84,10 @@ Abstract: Adapting large-scale foundation models in multi-task scenarios often s
 <div> Keywords: Shortcut learning, Semantic distribution, Debiasing approach, Siamese network, Model generalization
 
 Summary:
-SCISSOR is a debiasing approach that aims to address shortcut learning in AI models by remapping the semantic space to discourage latent clusters that are exploited as shortcuts. By focusing on imbalances in the semantic distribution of sample embeddings, SCISSOR improves model robustness and generalization to out-of-distribution data. The approach does not require data augmentation or rewriting, making it a practical solution for enhancing model performance. SCISSOR outperforms baselines across various benchmarks, showing significant improvements in F1 scores for computer vision and NLP tasks. The evaluation on different models demonstrates the effectiveness of SCISSOR in mitigating shortcut learning and enhancing the bias resistance of AI systems. Overall, this study highlights the importance of addressing semantic biases in model training to foster more robust and generalizable AI systems.<br><br>Summary: <div>
+SCISSOR is a debiasing approach that aims to address shortcut learning in AI models by remapping the semantic space to discourage latent clusters that are exploited as shortcuts. By focusing on imbalances in the semantic distribution of sample embeddings, SCISSOR improves model robustness and generalization to out-of-distribution data. The approach does not require data augmentation or rewriting, making it a practical solution for enhancing model performance. SCISSOR outperforms baselines across various benchmarks, showing significant improvements in F1 scores for computer vision and NLP tasks. The evaluation on different models demonstrates the effectiveness of SCISSOR in mitigating shortcut learning and enhancing the bias resistance of AI systems. Overall, this study highlights the importance of addressing semantic biases in model training to foster more robust and generalizable AI systems.<br /><br />Summary: <div>
 arXiv:2506.14587v2 Announce Type: replace 
 Abstract: Shortcut learning undermines model generalization to out-of-distribution data. While the literature attributes shortcuts to biases in superficial features, we show that imbalances in the semantic distribution of sample embeddings induce spurious semantic correlations, compromising model robustness. To address this issue, we propose SCISSOR (Semantic Cluster Intervention for Suppressing ShORtcut), a Siamese network-based debiasing approach that remaps the semantic space by discouraging latent clusters exploited as shortcuts. Unlike prior data-debiasing approaches, SCISSOR eliminates the need for data augmentation and rewriting. We evaluate SCISSOR on 6 models across 4 benchmarks: Chest-XRay and Not-MNIST in computer vision, and GYAFC and Yelp in NLP tasks. Compared to several baselines, SCISSOR reports +5.3 absolute points in F1 score on GYAFC, +7.3 on Yelp, +7.7 on Chest-XRay, and +1 on Not-MNIST. SCISSOR is also highly advantageous for lightweight models with ~9.5% improvement on F1 for ViT on computer vision datasets and ~11.9% for BERT on NLP. Our study redefines the landscape of model generalization by addressing overlooked semantic biases, establishing SCISSOR as a foundational framework for mitigating shortcut learning and fostering more robust, bias-resistant AI systems.
 ]]></content:encoded>
-<pubDate>Tue, 24 Jun 2025 00:00:00 -0400</pubDate>
 <pubDate>Tue, 24 Jun 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -105,11 +100,10 @@ Abstract: Shortcut learning undermines model generalization to out-of-distributi
 Summary:
 Dataset purification is a proactive defense strategy against backdoor attacks on deep neural networks. Existing purification methods assume that backdoor connections are simpler to learn than benign features, but this is not always the case in attacks such as all-to-all and untargeted attacks. FLARE is a universal purification method that aggregates abnormal activations from all hidden layers to cluster datasets effectively. By selecting an optimal subspace and assessing cluster stability, FLARE can identify and remove poisoned samples from datasets. Extensive evaluations on benchmark datasets demonstrate FLARE's effectiveness against 22 backdoor attacks, including A2O, A2A, and UT attacks, as well as its robustness to adaptive attacks. The code for FLARE is available on GitHub for further implementation and testing. 
 
-<br><br>Summary: <div>
+<br /><br />Summary: <div>
 arXiv:2411.19479v3 Announce Type: replace-cross 
 Abstract: Deep neural networks (DNNs) are susceptible to backdoor attacks, where adversaries poison datasets with adversary-specified triggers to implant hidden backdoors, enabling malicious manipulation of model predictions. Dataset purification serves as a proactive defense by removing malicious training samples to prevent backdoor injection at its source. We first reveal that the current advanced purification methods rely on a latent assumption that the backdoor connections between triggers and target labels in backdoor attacks are simpler to learn than the benign features. We demonstrate that this assumption, however, does not always hold, especially in all-to-all (A2A) and untargeted (UT) attacks. As a result, purification methods that analyze the separation between the poisoned and benign samples in the input-output space or the final hidden layer space are less effective. We observe that this separability is not confined to a single layer but varies across different hidden layers. Motivated by this understanding, we propose FLARE, a universal purification method to counter various backdoor attacks. FLARE aggregates abnormal activations from all hidden layers to construct representations for clustering. To enhance separation, FLARE develops an adaptive subspace selection algorithm to isolate the optimal space for dividing an entire dataset into two clusters. FLARE assesses the stability of each cluster and identifies the cluster with higher stability as poisoned. Extensive evaluations on benchmark datasets demonstrate the effectiveness of FLARE against 22 representative backdoor attacks, including all-to-one (A2O), all-to-all (A2A), and untargeted (UT) attacks, and its robustness to adaptive attacks. Codes are available at \href{https://github.com/THUYimingLi/BackdoorBox}{BackdoorBox} and \href{https://github.com/vtu81/backdoor-toolbox}{backdoor-toolbox}.
 ]]></content:encoded>
-<pubDate>Tue, 24 Jun 2025 00:00:00 -0400</pubDate>
 <pubDate>Tue, 24 Jun 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -125,20 +119,18 @@ arXiv:2506.13783v2 Announce Type: replace-cross
 Abstract: How does the threat of infectious disease influence sociality among generative agents? We used generative agent-based modeling (GABM), powered by large language models, to experimentally test hypotheses about the behavioral immune system. Across three simulation runs, generative agents who read news about an infectious disease outbreak showed significantly reduced social engagement compared to agents who received no such news, including lower attendance at a social gathering, fewer visits to third places (e.g., cafe, store, park), and fewer conversations throughout the town. In interview responses, agents explicitly attributed their behavioral changes to disease-avoidance motivations. A validity check further indicated that they could distinguish between infectious and noninfectious diseases, selectively reducing social engagement only when there was a risk of infection. Our findings highlight the potential of GABM as an experimental tool for exploring complex human social dynamics at scale.
 ]]></content:encoded>
 <pubDate>Tue, 24 Jun 2025 00:00:00 -0400</pubDate>
-<pubDate>Tue, 24 Jun 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
 <title>AlphaDecay: Module-wise Weight Decay for Heavy-Tailed Balancing in LLMs</title>
 <link>https://arxiv.org/abs/2506.14562</link>
 <guid>https://arxiv.org/abs/2506.14562</guid>
 <content:encoded><![CDATA[
-<div> decay, language models, regularization, Heavy-Tailed Self-Regularization, spectral properties <br>
-Summary: <br>
-The paper introduces AlphaDecay, a method for adapting weight decay strengths in large language models (LLMs) based on the spectral properties of each module. It leverages the Heavy-Tailed Self-Regularization theory to analyze the empirical spectral density of weight correlation matrices and assign decay rates accordingly. Modules with heavier-tailed spectra, indicating stronger feature learning, receive weaker decay, while modules with lighter-tailed spectra get stronger decay. This adaptive approach aims to balance the spectral differences across modules, leading to improved performance in pre-training tasks. Experimental results on LLMs of various sizes demonstrate that AlphaDecay outperforms uniform and other adaptive decay methods in terms of perplexity and generalization. The code for AlphaDecay is available on GitHub for further exploration and implementation. <br> <div>
+<div> decay, language models, regularization, Heavy-Tailed Self-Regularization, spectral properties <br />
+Summary: <br />
+The paper introduces AlphaDecay, a method for adapting weight decay strengths in large language models (LLMs) based on the spectral properties of each module. It leverages the Heavy-Tailed Self-Regularization theory to analyze the empirical spectral density of weight correlation matrices and assign decay rates accordingly. Modules with heavier-tailed spectra, indicating stronger feature learning, receive weaker decay, while modules with lighter-tailed spectra get stronger decay. This adaptive approach aims to balance the spectral differences across modules, leading to improved performance in pre-training tasks. Experimental results on LLMs of various sizes demonstrate that AlphaDecay outperforms uniform and other adaptive decay methods in terms of perplexity and generalization. The code for AlphaDecay is available on GitHub for further exploration and implementation. <br /> <div>
 arXiv:2506.14562v2 Announce Type: replace-cross 
 Abstract: Weight decay is a standard regularization technique for training large language models (LLMs). While it is common to assign a uniform decay rate to every layer, this approach overlooks the structural diversity of LLMs and the varying spectral properties across modules. In this paper, we introduce AlphaDecay, a simple yet effective method that adaptively assigns different weight decay strengths to each module of an LLM. Our approach is guided by Heavy-Tailed Self-Regularization (HT-SR) theory, which analyzes the empirical spectral density (ESD) of weight correlation matrices to quantify "heavy-tailedness." Modules exhibiting more pronounced heavy-tailed ESDs, reflecting stronger feature learning, are assigned weaker decay, while modules with lighter-tailed spectra receive stronger decay. Our method leverages tailored weight decay assignments to balance the module-wise differences in spectral properties, leading to improved performance. Extensive pre-training tasks with various model sizes from 60M to 1B demonstrate that AlphaDecay achieves better perplexity and generalization than conventional uniform decay and other adaptive decay baselines. Our code is available at https://github.com/hed-ucas/AlphaDecay.
 ]]></content:encoded>
-<pubDate>Tue, 24 Jun 2025 00:00:00 -0400</pubDate>
 <pubDate>Tue, 24 Jun 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -146,14 +138,13 @@ Abstract: Weight decay is a standard regularization technique for training large
 <link>https://arxiv.org/abs/2506.14665</link>
 <guid>https://arxiv.org/abs/2506.14665</guid>
 <content:encoded><![CDATA[
-<div> machine learning, density functional theory, electronic structure, chemical accuracy, predictive modeling <br>
-<br>
-Summary: <br>
+<div> machine learning, density functional theory, electronic structure, chemical accuracy, predictive modeling <br />
+<br />
+Summary: <br />
 The article introduces Skala, a deep learning-based exchange-correlation (XC) functional for Density Functional Theory (DFT) in electronic structure calculations. DFT is widely used but relies on approximations for the XC functional. Skala bypasses hand-crafted features by learning directly from data and achieves chemical accuracy for small molecule atomization energies, maintaining computational efficiency. It is trained on a large dataset of high-accuracy reference data, improving systematically with more diverse chemistry training data. Skala, with additional tailored high-accuracy data, competes with best hybrid functionals for general main group chemistry, at semi-local DFT cost. Continual dataset expansion can enhance predictive power for first-principles simulations. <div>
 arXiv:2506.14665v3 Announce Type: replace-cross 
 Abstract: Density Functional Theory (DFT) is the most widely used electronic structure method for predicting the properties of molecules and materials. Although DFT is, in principle, an exact reformulation of the Schr\"odinger equation, practical applications rely on approximations to the unknown exchange-correlation (XC) functional. Most existing XC functionals are constructed using a limited set of increasingly complex, hand-crafted features that improve accuracy at the expense of computational efficiency. Yet, no current approximation achieves the accuracy and generality for predictive modeling of laboratory experiments at chemical accuracy -- typically defined as errors below 1 kcal/mol. In this work, we present Skala, a modern deep learning-based XC functional that bypasses expensive hand-designed features by learning representations directly from data. Skala achieves chemical accuracy for atomization energies of small molecules while retaining the computational efficiency typical of semi-local DFT. This performance is enabled by training on an unprecedented volume of high-accuracy reference data generated using computationally intensive wavefunction-based methods. Notably, Skala systematically improves with additional training data covering diverse chemistry. By incorporating a modest amount of additional high-accuracy data tailored to chemistry beyond atomization energies, Skala achieves accuracy competitive with the best-performing hybrid functionals across general main group chemistry, at the cost of semi-local DFT. As the training dataset continues to expand, Skala is poised to further enhance the predictive power of first-principles simulations.
 ]]></content:encoded>
-<pubDate>Tue, 24 Jun 2025 00:00:00 -0400</pubDate>
 <pubDate>Tue, 24 Jun 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -169,9 +160,7 @@ arXiv:2506.14753v2 Announce Type: replace-cross
 Abstract: Diffusion models are well known for their ability to generate a high-fidelity image for an input prompt through an iterative denoising process. Unfortunately, the high fidelity also comes at a high computational cost due the inherently sequential generative process. In this work, we seek to optimally balance quality and computational cost, and propose a framework to allow the amount of computation to vary for each prompt, depending on its complexity. Each prompt is automatically routed to the most appropriate text-to-image generation function, which may correspond to a distinct number of denoising steps of a diffusion model, or a disparate, independent text-to-image model. Unlike uniform cost reduction techniques (e.g., distillation, model quantization), our approach achieves the optimal trade-off by learning to reserve expensive choices (e.g., 100+ denoising steps) only for a few complex prompts, and employ more economical choices (e.g., small distilled model) for less sophisticated prompts. We empirically demonstrate on COCO and DiffusionDB that by learning to route to nine already-trained text-to-image models, our approach is able to deliver an average quality that is higher than that achievable by any of these models alone.
 ]]></content:encoded>
 <pubDate>Tue, 24 Jun 2025 00:00:00 -0400</pubDate>
-<pubDate>Tue, 24 Jun 2025 00:00:00 -0400</pubDate>
 </item>
-
 <item>
 <title>MMET: A Multi-Input and Multi-Scale Transformer for Efficient PDEs Solving</title>
 <link>https://arxiv.org/abs/2506.17230</link>
@@ -10878,117 +10867,6 @@ Abstract: The success of autoregressive models largely depends on the effectiven
 <content:encoded><![CDATA[
 arXiv:2506.15113v1 Announce Type: cross 
 Abstract: Ensuring equitable public transit access remains challenging, particularly in densely populated cities like New York City (NYC), where low-income and minority communities often face limited transit accessibility. Bike-sharing systems (BSS) can bridge these equity gaps by providing affordable first- and last-mile connections. However, strategically expanding BSS into underserved neighborhoods is difficult due to uncertain bike-sharing demand at newly planned ("cold-start") station locations and limitations in traditional accessibility metrics that may overlook realistic bike usage potential. We introduce Transit for All (TFA), a spatial computing framework designed to guide the equitable expansion of BSS through three components: (1) spatially-informed bike-sharing demand prediction at cold-start stations using region representation learning that integrates multimodal geospatial data, (2) comprehensive transit accessibility assessment leveraging our novel weighted Public Transport Accessibility Level (wPTAL) by combining predicted bike-sharing demand with conventional transit accessibility metrics, and (3) strategic recommendations for new bike station placements that consider potential ridership and equity enhancement. Using NYC as a case study, we identify transit accessibility gaps that disproportionately impact low-income and minority communities in historically underserved neighborhoods. Our results show that strategically placing new stations guided by wPTAL notably reduces disparities in transit access related to economic and demographic factors. From our study, we demonstrate that TFA provides practical guidance for urban planners to promote equitable transit and enhance the quality of life in underserved urban communities.
-]]></content:encoded>
-<pubDate>Thu, 19 Jun 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Advancing Loss Functions in Recommender Systems: A Comparative Study with a R\'enyi Divergence-Based Solution</title>
-<link>https://arxiv.org/abs/2506.15120</link>
-<guid>https://arxiv.org/abs/2506.15120</guid>
-<content:encoded><![CDATA[
-arXiv:2506.15120v1 Announce Type: cross 
-Abstract: Loss functions play a pivotal role in optimizing recommendation models. Among various loss functions, Softmax Loss (SL) and Cosine Contrastive Loss (CCL) are particularly effective. Their theoretical connections and differences warrant in-depth exploration. This work conducts comprehensive analyses of these losses, yielding significant insights: 1) Common strengths -- both can be viewed as augmentations of traditional losses with Distributional Robust Optimization (DRO), enhancing robustness to distributional shifts; 2) Respective limitations -- stemming from their use of different distribution distance metrics in DRO optimization, SL exhibits high sensitivity to false negative instances, whereas CCL suffers from low data utilization. To address these limitations, this work proposes a new loss function, DrRL, which generalizes SL and CCL by leveraging R\'enyi-divergence in DRO optimization. DrRL incorporates the advantageous structures of both SL and CCL, and can be demonstrated to effectively mitigate their limitations. Extensive experiments have been conducted to validate the superiority of DrRL on both recommendation accuracy and robustness.
-]]></content:encoded>
-<pubDate>Thu, 19 Jun 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>In-Context Learning for Gradient-Free Receiver Adaptation: Principles, Applications, and Theory</title>
-<link>https://arxiv.org/abs/2506.15176</link>
-<guid>https://arxiv.org/abs/2506.15176</guid>
-<content:encoded><![CDATA[
-arXiv:2506.15176v1 Announce Type: cross 
-Abstract: In recent years, deep learning has facilitated the creation of wireless receivers capable of functioning effectively in conditions that challenge traditional model-based designs. Leveraging programmable hardware architectures, deep learning-based receivers offer the potential to dynamically adapt to varying channel environments. However, current adaptation strategies, including joint training, hypernetwork-based methods, and meta-learning, either demonstrate limited flexibility or necessitate explicit optimization through gradient descent. This paper presents gradient-free adaptation techniques rooted in the emerging paradigm of in-context learning (ICL). We review architectural frameworks for ICL based on Transformer models and structured state-space models (SSMs), alongside theoretical insights into how sequence models effectively learn adaptation from contextual information. Further, we explore the application of ICL to cell-free massive MIMO networks, providing both theoretical analyses and empirical evidence. Our findings indicate that ICL represents a principled and efficient approach to real-time receiver adaptation using pilot signals and auxiliary contextual information-without requiring online retraining.
-]]></content:encoded>
-<pubDate>Thu, 19 Jun 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Classification of Multi-Parametric Body MRI Series Using Deep Learning</title>
-<link>https://arxiv.org/abs/2506.15182</link>
-<guid>https://arxiv.org/abs/2506.15182</guid>
-<content:encoded><![CDATA[
-arXiv:2506.15182v1 Announce Type: cross 
-Abstract: Multi-parametric magnetic resonance imaging (mpMRI) exams have various series types acquired with different imaging protocols. The DICOM headers of these series often have incorrect information due to the sheer diversity of protocols and occasional technologist errors. To address this, we present a deep learning-based classification model to classify 8 different body mpMRI series types so that radiologists read the exams efficiently. Using mpMRI data from various institutions, multiple deep learning-based classifiers of ResNet, EfficientNet, and DenseNet are trained to classify 8 different MRI series, and their performance is compared. Then, the best-performing classifier is identified, and its classification capability under the setting of different training data quantities is studied. Also, the model is evaluated on the out-of-training-distribution datasets. Moreover, the model is trained using mpMRI exams obtained from different scanners in two training strategies, and its performance is tested. Experimental results show that the DenseNet-121 model achieves the highest F1-score and accuracy of 0.966 and 0.972 over the other classification models with p-value$<$0.05. The model shows greater than 0.95 accuracy when trained with over 729 studies of the training data, whose performance improves as the training data quantities grew larger. On the external data with the DLDS and CPTAC-UCEC datasets, the model yields 0.872 and 0.810 accuracy for each. These results indicate that in both the internal and external datasets, the DenseNet-121 model attains high accuracy for the task of classifying 8 body MRI series types.
-]]></content:encoded>
-<pubDate>Thu, 19 Jun 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Context-Aware Deep Lagrangian Networks for Model Predictive Control</title>
-<link>https://arxiv.org/abs/2506.15249</link>
-<guid>https://arxiv.org/abs/2506.15249</guid>
-<content:encoded><![CDATA[
-arXiv:2506.15249v1 Announce Type: cross 
-Abstract: Controlling a robot based on physics-informed dynamic models, such as deep Lagrangian networks (DeLaN), can improve the generalizability and interpretability of the resulting behavior. However, in complex environments, the number of objects to potentially interact with is vast, and their physical properties are often uncertain. This complexity makes it infeasible to employ a single global model. Therefore, we need to resort to online system identification of context-aware models that capture only the currently relevant aspects of the environment. While physical principles such as the conservation of energy may not hold across varying contexts, ensuring physical plausibility for any individual context-aware model can still be highly desirable, particularly when using it for receding horizon control methods such as Model Predictive Control (MPC). Hence, in this work, we extend DeLaN to make it context-aware, combine it with a recurrent network for online system identification, and integrate it with a MPC for adaptive, physics-informed control. We also combine DeLaN with a residual dynamics model to leverage the fact that a nominal model of the robot is typically available. We evaluate our method on a 7-DOF robot arm for trajectory tracking under varying loads. Our method reduces the end-effector tracking error by 39%, compared to a 21% improvement achieved by a baseline that uses an extended Kalman filter.
-]]></content:encoded>
-<pubDate>Thu, 19 Jun 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Minimizing Structural Vibrations via Guided Flow Matching Design Optimization</title>
-<link>https://arxiv.org/abs/2506.15263</link>
-<guid>https://arxiv.org/abs/2506.15263</guid>
-<content:encoded><![CDATA[
-arXiv:2506.15263v1 Announce Type: cross 
-Abstract: Structural vibrations are a source of unwanted noise in engineering systems like cars, trains or airplanes. Minimizing these vibrations is crucial for improving passenger comfort. This work presents a novel design optimization approach based on guided flow matching for reducing vibrations by placing beadings (indentations) in plate-like structures. Our method integrates a generative flow matching model and a surrogate model trained to predict structural vibrations. During the generation process, the flow matching model pushes towards manufacturability while the surrogate model pushes to low-vibration solutions. The flow matching model and its training data implicitly define the design space, enabling a broader exploration of potential solutions as no optimization of manually-defined design parameters is required. We apply our method to a range of differentiable optimization objectives, including direct optimization of specific eigenfrequencies through careful construction of the objective function. Results demonstrate that our method generates diverse and manufacturable plate designs with reduced structural vibrations compared to designs from random search, a criterion-based design heuristic and genetic optimization. The code and data are available from https://github.com/ecker-lab/Optimizing_Vibrating_Plates.
-]]></content:encoded>
-<pubDate>Thu, 19 Jun 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>ConLID: Supervised Contrastive Learning for Low-Resource Language Identification</title>
-<link>https://arxiv.org/abs/2506.15304</link>
-<guid>https://arxiv.org/abs/2506.15304</guid>
-<content:encoded><![CDATA[
-arXiv:2506.15304v1 Announce Type: cross 
-Abstract: Language identification (LID) is a critical step in curating multilingual LLM pretraining corpora from web crawls. While many studies on LID model training focus on collecting diverse training data to improve performance, low-resource languages -- often limited to single-domain data, such as the Bible -- continue to perform poorly. To resolve these class imbalance and bias issues, we propose a novel supervised contrastive learning (SCL) approach to learn domain-invariant representations for low-resource languages. Through an extensive analysis, we show that our approach improves LID performance on out-of-domain data for low-resource languages by 3.2%, demonstrating its effectiveness in enhancing LID models.
-]]></content:encoded>
-<pubDate>Thu, 19 Jun 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Proximal Operators of Sorted Nonconvex Penalties</title>
-<link>https://arxiv.org/abs/2506.15315</link>
-<guid>https://arxiv.org/abs/2506.15315</guid>
-<content:encoded><![CDATA[
-arXiv:2506.15315v1 Announce Type: cross 
-Abstract: This work studies the problem of sparse signal recovery with automatic grouping of variables. To this end, we investigate sorted nonsmooth penalties as a regularization approach for generalized linear models. We focus on a family of sorted nonconvex penalties which generalizes the Sorted L1 Norm (SLOPE). These penalties are designed to promote clustering of variables due to their sorted nature, while the nonconvexity reduces the shrinkage of coefficients. Our goal is to provide efficient ways to compute their proximal operator, enabling the use of popular proximal algorithms to solve composite optimization problems with this choice of sorted penalties. We distinguish between two classes of problems: the weakly convex case where computing the proximal operator remains a convex problem, and the nonconvex case where computing the proximal operator becomes a challenging nonconvex combinatorial problem. For the weakly convex case (e.g. sorted MCP and SCAD), we explain how the Pool Adjacent Violators (PAV) algorithm can exactly compute the proximal operator. For the nonconvex case (e.g. sorted Lq with q in ]0,1[), we show that a slight modification of this algorithm turns out to be remarkably efficient to tackle the computation of the proximal operator. We also present new theoretical insights on the minimizers of the nonconvex proximal problem. We demonstrate the practical interest of using such penalties on several experiments.
-]]></content:encoded>
-<pubDate>Thu, 19 Jun 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Performative Validity of Recourse Explanations</title>
-<link>https://arxiv.org/abs/2506.15366</link>
-<guid>https://arxiv.org/abs/2506.15366</guid>
-<content:encoded><![CDATA[
-arXiv:2506.15366v1 Announce Type: cross 
-Abstract: When applicants get rejected by an algorithmic decision system, recourse explanations provide actionable suggestions for how to change their input features to get a positive evaluation. A crucial yet overlooked phenomenon is that recourse explanations are performative: When many applicants act according to their recommendations, their collective behavior may change statistical regularities in the data and, once the model is refitted, also the decision boundary. Consequently, the recourse algorithm may render its own recommendations invalid, such that applicants who make the effort of implementing their recommendations may be rejected again when they reapply. In this work, we formally characterize the conditions under which recourse explanations remain valid under performativity. A key finding is that recourse actions may become invalid if they are influenced by or if they intervene on non-causal variables. Based on our analysis, we caution against the use of standard counterfactual explanations and causal recourse methods, and instead advocate for recourse methods that recommend actions exclusively on causal variables.
-]]></content:encoded>
-<pubDate>Thu, 19 Jun 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Multi-Timescale Gradient Sliding for Distributed Optimization</title>
-<link>https://arxiv.org/abs/2506.15387</link>
-<guid>https://arxiv.org/abs/2506.15387</guid>
-<content:encoded><![CDATA[
-arXiv:2506.15387v1 Announce Type: cross 
-Abstract: We propose two first-order methods for convex, non-smooth, distributed optimization problems, hereafter called Multi-Timescale Gradient Sliding (MT-GS) and its accelerated variant (AMT-GS). Our MT-GS and AMT-GS can take advantage of similarities between (local) objectives to reduce the communication rounds, are flexible so that different subsets (of agents) can communicate at different, user-picked rates, and are fully deterministic. These three desirable features are achieved through a block-decomposable primal-dual formulation, and a multi-timescale variant of the sliding method introduced in Lan et al. (2020), Lan (2016), where different dual blocks are updated at potentially different rates.
-  To find an $\epsilon$-suboptimal solution, the complexities of our algorithms achieve optimal dependency on $\epsilon$: MT-GS needs $O(\overline{r}A/\epsilon)$ communication rounds and $O(\overline{r}/\epsilon^2)$ subgradient steps for Lipchitz objectives, and AMT-GS needs $O(\overline{r}A/\sqrt{\epsilon\mu})$ communication rounds and $O(\overline{r}/(\epsilon\mu))$ subgradient steps if the objectives are also $\mu$-strongly convex. Here, $\overline{r}$ measures the ``average rate of updates'' for dual blocks, and $A$ measures similarities between (subgradients of) local functions. In addition, the linear dependency of communication rounds on $A$ is optimal (Arjevani and Shamir 2015), thereby providing a positive answer to the open question whether such dependency is achievable for non-smooth objectives (Arjevani and Shamir 2015).
-]]></content:encoded>
-<pubDate>Thu, 19 Jun 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>NERO: Explainable Out-of-Distribution Detection with Neuron-level Relevance</title>
-<link>https://arxiv.org/abs/2506.15404</link>
-<guid>https://arxiv.org/abs/2506.15404</guid>
-<content:encoded><![CDATA[
-arXiv:2506.15404v1 Announce Type: cross 
-Abstract: Ensuring reliability is paramount in deep learning, particularly within the domain of medical imaging, where diagnostic decisions often hinge on model outputs. The capacity to separate out-of-distribution (OOD) samples has proven to be a valuable indicator of a model's reliability in research. In medical imaging, this is especially critical, as identifying OOD inputs can help flag potential anomalies that might otherwise go undetected. While many OOD detection methods rely on feature or logit space representations, recent works suggest these approaches may not fully capture OOD diversity. To address this, we propose a novel OOD scoring mechanism, called NERO, that leverages neuron-level relevance at the feature layer. Specifically, we cluster neuron-level relevance for each in-distribution (ID) class to form representative centroids and introduce a relevance distance metric to quantify a new sample's deviation from these centroids, enhancing OOD separability. Additionally, we refine performance by incorporating scaled relevance in the bias term and combining feature norms. Our framework also enables explainable OOD detection. We validate its effectiveness across multiple deep learning architectures on the gastrointestinal imaging benchmarks Kvasir and GastroVision, achieving improvements over state-of-the-art OOD detection methods.
-]]></content:encoded>
-<pubDate>Thu, 19 Jun 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>All is Not Lost: LLM Recovery without Checkpoints</title>
-<link>https://arxiv.org/abs/2506.15461</link>
-<guid>https://arxiv.org/abs/2506.15461</guid>
-<content:encoded><![CDATA[
-arXiv:2506.15461v1 Announce Type: cross 
-Abstract: Training LLMs on decentralized and wimpy computation nodes, e.g., multiple on-spot instances, lowers the training cost and enables model democratization. The inevitable challenge here is the churn of nodes due to failures and the operator's scheduling policies, leading to losing a stage - a part of the model. The conventional approaches to recover from failures are to either use checkpointing, where periodically a copy of the entire model is sent to an additional storage, or redundant computation. These approaches yield significant communication and/or computation overhead even in non-failure cases and scale poorly in settings with large models. In this paper, we propose, CheckFree, an efficient recovery method where a failing stage is substituted by a weighted average of the closest neighboring stages. In contrast to the state of the art, CheckFree requires no additional computation or storage. However, because of the nature of averaging neighbouring stages, it can only recover failures of intermediate stages. We further extend our method to CheckFree+ with out-of-order pipeline execution to tolerate crashes of the first and last stages. Thanks to out-of-order pipelining, behaviour of those stages is mimicked by their neighboring ones, which allows CheckFree+ to recover them by simply copying the weights from the immediate neighbour. To be able to recover the (de)embedding layers, CheckFree+ copies those layers to the neighboring stages, which requires relatively small storage overhead. We extensively evaluate our method on LLaMa models of model sizes from 124M to 1.5B with varying failure frequencies. In the case of low and medium failure rates (5-10%), CheckFree and CheckFree+ outperform both checkpointing and redundant computation in terms of convergence in wall-clock time by over 12%. Both of our proposals can be run via our code available at: https://github.com/gensyn-ai/CheckFree.
 ]]></content:encoded>
 <pubDate>Thu, 19 Jun 2025 00:00:00 -0400</pubDate>
 </item>

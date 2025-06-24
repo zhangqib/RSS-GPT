@@ -5,21 +5,34 @@
 <link>http://rss.arxiv.org/rss/cs.CL</link>
 
 <item>
+<title>Agent-RLVR: Training Software Engineering Agents via Guidance and Environment Rewards</title>
+<link>https://arxiv.org/abs/2506.11425</link>
+<guid>https://arxiv.org/abs/2506.11425</guid>
+<content:encoded><![CDATA[
+<div> Agent-RLVR, reinforcement learning, agentic environments, software engineering tasks, guidance<br>
+Summary:<br>
+Agent-RLVR is a framework designed to enhance reinforcement learning in challenging agentic environments, particularly focusing on software engineering tasks. By incorporating agent guidance mechanisms inspired by human pedagogy, the framework steers the agent towards successful trajectories using diverse informational cues. This approach enables the agent to navigate complex solution spaces, learn from errors, and improve through active exploration. In the training loop, agents initially attempt tasks, validate their trajectories with unit tests, and receive guidance for improvement. Through this process, Agent-RLVR significantly improves the performance of LLMs in software engineering benchmarks. The guided trajectories also prove beneficial for test-time reward model training, further boosting performance. Overall, Agent-RLVR lays the foundation for effectively training agents with reinforcement learning in real-world environments where traditional RL methods face challenges.<br> <div>
+arXiv:2506.11425v2 Announce Type: replace 
+Abstract: Reinforcement Learning from Verifiable Rewards (RLVR) has been widely adopted as the de facto method for enhancing the reasoning capabilities of large language models and has demonstrated notable success in verifiable domains like math and competitive programming tasks. However, the efficacy of RLVR diminishes significantly when applied to agentic environments. These settings, characterized by multi-step, complex problem solving, lead to high failure rates even for frontier LLMs, as the reward landscape is too sparse for effective model training via conventional RLVR. In this work, we introduce Agent-RLVR, a framework that makes RLVR effective in challenging agentic settings, with an initial focus on software engineering tasks. Inspired by human pedagogy, Agent-RLVR introduces agent guidance, a mechanism that actively steers the agent towards successful trajectories by leveraging diverse informational cues. These cues, ranging from high-level strategic plans to dynamic feedback on the agent's errors and environmental interactions, emulate a teacher's guidance, enabling the agent to navigate difficult solution spaces and promotes active self-improvement via additional environment exploration. In the Agent-RLVR training loop, agents first attempt to solve tasks to produce initial trajectories, which are then validated by unit tests and supplemented with agent guidance. Agents then reattempt with guidance, and the agent policy is updated with RLVR based on the rewards of these guided trajectories. Agent-RLVR elevates the pass@1 performance of Qwen-2.5-72B-Instruct from 9.4% to 22.4% on SWE-Bench Verified. We find that our guidance-augmented RLVR data is additionally useful for test-time reward model training, shown by further boosting pass@1 to 27.8%. Agent-RLVR lays the groundwork for training agents with RLVR in complex, real-world environments where conventional RL methods struggle.
+]]></content:encoded>
+<pubDate>Tue, 24 Jun 2025 00:00:00 -0400</pubDate>
+<pubDate>Tue, 24 Jun 2025 00:00:00 -0400</pubDate>
+</item>
+
+<item>
 <title>Deep Binding of Language Model Virtual Personas: a Study on Approximating Political Partisan Misperceptions</title>
 <link>https://arxiv.org/abs/2504.11673</link>
 <guid>https://arxiv.org/abs/2504.11673</guid>
 <content:encoded><![CDATA[
 <div> Keywords: large language models, in-group/out-group biases, virtual personas, synthetic user backstories, political science studies
 
-Summary:<br>
+Summary:<br />
 Large language models (LLMs) are increasingly being used to estimate user responses in surveys and polls, but it's unclear if their responses are from a deep in-group perspective or a shallow out-group perspective. To address this, the study explores known in-group/out-group biases using a novel methodology to create virtual personas with detailed synthetic user backstories. These backstories closely replicate human response distributions and effect sizes related to in-group/out-group biases. By enhancing the fidelity of LLMs in understanding socially understood attitudes, this research expands their utility in various political science studies, including research on polarization dynamics, inter-group conflict, and democratic backsliding. This approach allows for a broader range of human studies to benefit from the capabilities of LLMs. <div>
 arXiv:2504.11673v3 Announce Type: replace 
 Abstract: Large language models (LLMs) are increasingly capable of simulating human behavior, offering cost-effective ways to estimate user responses to various surveys and polls. However, the questions in these surveys usually reflect socially understood attitudes: the patterns of attitudes of old/young, liberal/conservative, as understood by both members and non-members of those groups. It is not clear whether the LLM binding is \emph{deep}, meaning the LLM answers as a member of a particular in-group would, or \emph{shallow}, meaning the LLM responds as an out-group member believes an in-group member would. To explore this difference, we use questions that expose known in-group/out-group biases. This level of fidelity is critical for applying LLMs to various political science studies, including timely topics on polarization dynamics, inter-group conflict, and democratic backsliding. To this end, we propose a novel methodology for constructing virtual personas with synthetic user ``backstories" generated as extended, multi-turn interview transcripts. Our generated backstories are longer, rich in detail, and consistent in authentically describing a singular individual, compared to previous methods. We show that virtual personas conditioned on our backstories closely replicate human response distributions (up to an 87\% improvement as measured by Wasserstein Distance) and produce effect sizes that closely match those observed in the original studies of in-group/out-group biases. Altogether, our work extends the applicability of LLMs beyond estimating socially understood responses, enabling their use in a broader range of human studies.
 ]]></content:encoded>
 <pubDate>Tue, 24 Jun 2025 00:00:00 -0400</pubDate>
-<pubDate>Tue, 24 Jun 2025 00:00:00 -0400</pubDate>
 </item>
-
 <item>
 <title>Outcome-Based Education: Evaluating Students' Perspectives Using Transformer</title>
 <link>https://arxiv.org/abs/2506.17223</link>
@@ -11610,16 +11623,6 @@ Abstract: The incidence rate of early-onset colorectal cancer (EoCRC, age < 45) 
 <content:encoded><![CDATA[
 arXiv:2506.11418v1 Announce Type: new 
 Abstract: Large language models (LLMs) with extended context windows have become increasingly prevalent for tackling complex tasks. However, the substantial Key-Value (KV) cache required for long-context LLMs poses significant deployment challenges. Existing approaches either discard potentially critical information needed for future generations or offer limited efficiency gains due to high computational overhead. In this paper, we introduce Chelsea, a simple yet effective framework for online KV cache clustering. Our approach is based on the observation that key states exhibit high similarity along the sequence dimension. To enable efficient clustering, we divide the sequence into chunks and propose Chunked Soft Matching, which employs an alternating partition strategy within each chunk and identifies clusters based on similarity. Chelsea then merges the KV cache within each cluster into a single centroid. Additionally, we provide a theoretical analysis of the computational complexity and the optimality of the intra-chunk partitioning strategy. Extensive experiments across various models and long-context benchmarks demonstrate that Chelsea achieves up to 80% reduction in KV cache memory usage while maintaining comparable model performance. Moreover, with minimal computational overhead, Chelsea accelerates the decoding stage of inference by up to 3.19$\times$ and reduces end-to-end latency by up to 2.72$\times$.
-]]></content:encoded>
-<pubDate>Mon, 16 Jun 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Agent-RLVR: Training Software Engineering Agents via Guidance and Environment Rewards</title>
-<link>https://arxiv.org/abs/2506.11425</link>
-<guid>https://arxiv.org/abs/2506.11425</guid>
-<content:encoded><![CDATA[
-arXiv:2506.11425v1 Announce Type: new 
-Abstract: Reinforcement Learning from Verifiable Rewards (RLVR) has been widely adopted as the de facto method for enhancing the reasoning capabilities of large language models and has demonstrated notable success in verifiable domains like math and competitive programming tasks. However, the efficacy of RLVR diminishes significantly when applied to agentic environments. These settings, characterized by multi-step, complex problem solving, lead to high failure rates even for frontier LLMs, as the reward landscape is too sparse for effective model training via conventional RLVR. In this work, we introduce Agent-RLVR, a framework that makes RLVR effective in challenging agentic settings, with an initial focus on software engineering tasks. Inspired by human pedagogy, Agent-RLVR introduces agent guidance, a mechanism that actively steers the agent towards successful trajectories by leveraging diverse informational cues. These cues, ranging from high-level strategic plans to dynamic feedback on the agent's errors and environmental interactions, emulate a teacher's guidance, enabling the agent to navigate difficult solution spaces and promotes active self-improvement via additional environment exploration. In the Agent-RLVR training loop, agents first attempt to solve tasks to produce initial trajectories, which are then validated by unit tests and supplemented with agent guidance. Agents then reattempt with guidance, and the agent policy is updated with RLVR based on the rewards of these guided trajectories. Agent-RLVR elevates the pass@1 performance of Qwen-2.5-72B-Instruct from 9.4% to 22.4% on SWE-Bench Verified. We find that our guidance-augmented RLVR data is additionally useful for test-time reward model training, shown by further boosting pass@1 to 27.8%. Agent-RLVR lays the groundwork for training agents with RLVR in complex, real-world environments where conventional RL methods struggle.
 ]]></content:encoded>
 <pubDate>Mon, 16 Jun 2025 00:00:00 -0400</pubDate>
 </item>
