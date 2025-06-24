@@ -4,6 +4,7 @@
 <title>cs.AI updates on arXiv.org</title>
 <link>http://rss.arxiv.org/rss/cs.AI</link>
 
+
 <item>
 <title>Med-REFL: Medical Reasoning Enhancement via Self-Corrected Fine-grained Reflection</title>
 <link>https://arxiv.org/abs/2506.13793</link>
@@ -14,14 +15,12 @@
 Summary:
 Med-REFL addresses the challenge of inadequate reflection in medical reasoning by employing a tree-of-thought approach to decompose questions into fine-grained reasoning paths. This method quantitatively evaluates each step and subsequent reflection, enabling automatic optimization data generation to correct errors without relying on costly expert annotations. Experimental results on the MedQA-USMLE benchmark show consistent improvements with average gains of 4.11% and an additional boost of 4.13% for state-of-the-art 7B/8B models. Med-REFL demonstrates strong generalization and robustness across various medical question-answering datasets, emphasizing the importance of prioritizing reflection quality for accurate and trustworthy reasoning in medical AI applications.
 
-<br><br>Summary: Med-REFL proposes a novel method to enhance medical reasoning by focusing on fine-grained reflection, leading to improved performance on medical question-answering benchmarks. The approach involves quantitatively evaluating reasoning paths and correcting errors without expert annotations, showcasing strong generalization and robustness across multiple datasets. <div>
+<br /><br />Summary: Med-REFL proposes a novel method to enhance medical reasoning by focusing on fine-grained reflection, leading to improved performance on medical question-answering benchmarks. The approach involves quantitatively evaluating reasoning paths and correcting errors without expert annotations, showcasing strong generalization and robustness across multiple datasets. <div>
 arXiv:2506.13793v2 Announce Type: replace 
 Abstract: Large reasoning models have recently made significant strides in mathematical and code reasoning, yet their success has not transferred smoothly to the medical domain. While multiple factors contribute to this disparity, a critical issue is the inadequate focus on the quality of intermediate reflection steps, which is particularly crucial in high-stakes medical scenarios. To address this challenge, we propose Med-REFL, a \underline{\textbf{Med}}ical \underline{\textbf{R}}easoning \underline{\textbf{E}}nhancement via self-corrected \underline{\textbf{F}}ine-grained ref\underline{\textbf{L}}ection. Our method leverages a tree-of-thought approach to decompose medical questions into fine-grained reasoning paths, quantitatively evaluating each step and its subsequent reflections. These assessments enable automatic construction of direct preference optimization data, reducing reliance on expensive expert annotations while guiding models to identify and correct reasoning errors. Experimental results on the MedQA-USMLE benchmark demonstrate Med-REFL achieves consistent improvements, with average gains up to 4.11\%. Notably, it further boosts the state-of-the-art performance of 7B/8B models by an additional 4.13\%. Furthermore, Med-REFL exhibits strong generalization capabilities and robustness across several challenging medical question-answering datasets. Our work illustrates that prioritizing reflection quality leads to more accurate and trustworthy reasoning in medical AI applications. Checkpoints, code, and data can be found in https://github.com/TianYin123/Med-REFL.
 ]]></content:encoded>
 <pubDate>Tue, 24 Jun 2025 00:00:00 -0400</pubDate>
-<pubDate>Tue, 24 Jun 2025 00:00:00 -0400</pubDate>
 </item>
-
 <item>
 <title>MM-R5: MultiModal Reasoning-Enhanced ReRanker via Reinforcement Learning for Document Retrieval</title>
 <link>https://arxiv.org/abs/2506.12364</link>
@@ -10867,22 +10866,6 @@ arXiv:2506.09507v3 Announce Type: replace-cross
 Abstract: Transformers exhibit proficiency in capturing long-range dependencies, whereas State Space Models (SSMs) facilitate linear-time sequence modeling. Notwithstanding their synergistic potential, the integration of these architectures presents a significant challenge, primarily attributable to a fundamental incongr inuity their respective positional encoding mechanisms: Transformers rely on explicit Rotary Position Embeddings (RoPE), while SSMs leverage implicit positional representations via convolutions. This divergence often precipitates discontinuities and suboptimal performance.To address this impediment, we propose a unified rotary position embedding (Unified RoPE) methodology, thereby establishing a consistent positional encoding framework for both self-attention and state-space components. Using this Unified RoPE, we introduce TransXSSM, a hybrid architecture that coherently integrates the Transformer and SSM layers under this unified positional encoding scheme. At a 4 sequenceK length, TransXSSM exhibits training and inference speeds that are 42.3% and 29.5% faster, respectively, relative to standard Transformer models. It also delivers higher accuracy: under comparable settings, it surpasses a Transformer baseline by over 4% on language modeling benchmarks.TransXSSM furthermore scales more effectively: TransXSSM-1.3B gains 7.22% in average accuracy over its 320M version (versus about 6% gains for equivalent Transformers or SSMs). Our results show that unified positional encoding resolves positional incompatibility in hybrid models, enabling efficient, high-performance long-context modeling.
 ]]></content:encoded>
 <pubDate>Thu, 19 Jun 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>A Conjecture on a Fundamental Trade-Off between Certainty and Scope in Symbolic and Generative AI</title>
-<link>https://arxiv.org/abs/2506.10130</link>
-<guid>https://arxiv.org/abs/2506.10130</guid>
-<content:encoded><![CDATA[
-<div> conjecture, trade-off, Artificial Intelligence (AI), information-theoretic, underdetermination
-
-Summary:
-This article introduces a conjecture highlighting the trade-off between provable correctness and data-mapping capacity in AI systems. It contrasts deductively watertight guarantees of classical symbolic AI with the error risk of contemporary generative models. The conjecture reframes engineering ambitions and philosophical expectations for AI, acknowledging the inherent tension and implications. It proposes an information-theoretic formulation, situating it within epistemological and technological debates. The analysis explores underdetermination, epistemic risk, and moral responsibility in relation to the conjecture. It suggests a need to reconsider evaluation standards, governance frameworks, and hybrid system design in light of the trade-off. Lastly, it emphasizes the importance of proving or refuting the conjecture for the future development of trustworthy AI. 
-
-<br /><br />Summary: <div>
-arXiv:2506.10130v2 Announce Type: replace 
-Abstract: This article introduces a conjecture that formalises a fundamental trade-off between provable correctness and broad data-mapping capacity in Artificial Intelligence (AI) systems. When an AI system is engineered for deductively watertight guarantees (demonstrable certainty about the error-free nature of its outputs) -- as in classical symbolic AI -- its operational domain must be narrowly circumscribed and pre-structured. Conversely, a system that can input high-dimensional data to produce rich information outputs -- as in contemporary generative models -- necessarily relinquishes the possibility of zero-error performance, incurring an irreducible risk of errors or misclassification. By making this previously implicit trade-off explicit and open to rigorous verification, the conjecture significantly reframes both engineering ambitions and philosophical expectations for AI. After reviewing the historical motivations for this tension, the article states the conjecture in information-theoretic form and contextualises it within broader debates in epistemology, formal verification, and the philosophy of technology. It then offers an analysis of its implications and consequences, drawing on notions of underdetermination, prudent epistemic risk, and moral responsibility. The discussion clarifies how, if correct, the conjecture would help reshape evaluation standards, governance frameworks, and hybrid system design. The conclusion underscores the importance of eventually proving or refuting the inequality for the future of trustworthy AI.
-]]></content:encoded>
-<pubDate>Wed, 18 Jun 2025 00:00:00 -0400</pubDate>
 </item>
 </channel>
 </rss>
