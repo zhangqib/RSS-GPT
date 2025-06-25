@@ -4,19 +4,19 @@
 <title>cs.CV updates on arXiv.org</title>
 <link>http://rss.arxiv.org/rss/cs.CV</link>
 
+
 <item>
 <title>MAMMA: Markerless &amp; Automatic Multi-Person Motion Action Capture</title>
 <link>https://arxiv.org/abs/2506.13040</link>
 <guid>https://arxiv.org/abs/2506.13040</guid>
 <content:encoded><![CDATA[
-<div> markerless motion-capture, SMPL-X parameters, multi-view video, two-person interaction sequences, dense 2D landmarks <br>
-<br>
+<div> markerless motion-capture, SMPL-X parameters, multi-view video, two-person interaction sequences, dense 2D landmarks <br />
+<br />
 Summary: 
 The article introduces MAMMA, a markerless motion-capture pipeline that accurately captures SMPL-X parameters from multi-view video of two-person interactions. Traditional motion-capture systems rely on physical markers, which can be costly and time-consuming. MAMMA uses a method that predicts dense 2D surface landmarks based on segmentation masks, allowing for person-specific correspondence estimation even under heavy occlusion. The system employs a novel architecture using learnable queries for each landmark, enabling accurate capture of complex interactions. A large synthetic dataset with diverse human motions is used to train the network, generating high-variability sequences with rich body contact and occlusion. MAMMA offers competitive reconstruction quality to commercial marker-based solutions without requiring extensive manual cleanup. Additionally, the article addresses the lack of benchmarks for dense-landmark prediction and markerless motion capture by introducing evaluation settings using real multi-view sequences. The dataset, benchmark, method, training code, and pre-trained model weights will be released for research purposes. <div>
 arXiv:2506.13040v2 Announce Type: replace 
 Abstract: We present MAMMA, a markerless motion-capture pipeline that accurately recovers SMPL-X parameters from multi-view video of two-person interaction sequences. Traditional motion-capture systems rely on physical markers. Although they offer high accuracy, their requirements of specialized hardware, manual marker placement, and extensive post-processing make them costly and time-consuming. Recent learning-based methods attempt to overcome these limitations, but most are designed for single-person capture, rely on sparse keypoints, or struggle with occlusions and physical interactions. In this work, we introduce a method that predicts dense 2D surface landmarks conditioned on segmentation masks, enabling person-specific correspondence estimation even under heavy occlusion. We employ a novel architecture that exploits learnable queries for each landmark. We demonstrate that our approach can handle complex person--person interaction and offers greater accuracy than existing methods. To train our network, we construct a large, synthetic multi-view dataset combining human motions from diverse sources, including extreme poses, hand motions, and close interactions. Our dataset yields high-variability synthetic sequences with rich body contact and occlusion, and includes SMPL-X ground-truth annotations with dense 2D landmarks. The result is a system capable of capturing human motion without the need for markers. Our approach offers competitive reconstruction quality compared to commercial marker-based motion-capture solutions, without the extensive manual cleanup. Finally, we address the absence of common benchmarks for dense-landmark prediction and markerless motion capture by introducing two evaluation settings built from real multi-view sequences. We will release our dataset, benchmark, method, training code, and pre-trained model weights for research purposes.
 ]]></content:encoded>
-<pubDate>Wed, 25 Jun 2025 00:00:00 -0400</pubDate>
 <pubDate>Wed, 25 Jun 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -32,9 +32,7 @@ arXiv:2506.13097v3 Announce Type: replace
 Abstract: Prototype-based reconstruction methods for unsupervised anomaly detection utilize a limited set of learnable prototypes which only aggregates insufficient normal information, resulting in undesirable reconstruction. However, increasing the number of prototypes may lead to anomalies being well reconstructed through the attention mechanism, which we refer to as the "Soft Identity Mapping" problem. In this paper, we propose Pro-AD to address these issues and fully utilize the prototypes to boost the performance of anomaly detection. Specifically, we first introduce an expanded set of learnable prototypes to provide sufficient capacity for semantic information. Then we employ a Dynamic Bidirectional Decoder which integrates the process of the normal information aggregation and the target feature reconstruction via prototypes, with the aim of allowing the prototypes to aggregate more comprehensive normal semantic information from different levels of the image features and the target feature reconstruction to not only utilize its contextual information but also dynamically leverage the learned comprehensive prototypes. Additionally, to prevent the anomalies from being well reconstructed using sufficient semantic information through the attention mechanism, Pro-AD introduces a Prototype-based Constraint that applied within the target feature reconstruction process of the decoder, which further improves the performance of our approach. Extensive experiments on multiple challenging benchmarks demonstrate that our Pro-AD achieve state-of-the-art performance, highlighting its superior robustness and practical effectiveness for Multi-class Unsupervised Anomaly Detection task.
 ]]></content:encoded>
 <pubDate>Wed, 25 Jun 2025 00:00:00 -0400</pubDate>
-<pubDate>Wed, 25 Jun 2025 00:00:00 -0400</pubDate>
 </item>
-
 <item>
 <title>Correspondence-Free Multiview Point Cloud Registration via Depth-Guided Joint Optimisation</title>
 <link>https://arxiv.org/abs/2506.18922</link>
@@ -11317,26 +11315,6 @@ Abstract: Recent advances in single-view 3D scene reconstruction have highlighte
 <content:encoded><![CDATA[
 arXiv:2505.04097v2 Announce Type: replace-cross 
 Abstract: A three-dimensional convolutional neural network was developed to classify T1-weighted brain MRI scans as healthy or Alzheimer. The network comprises 3D convolution, pooling, batch normalization, dense ReLU layers, and a sigmoid output. Using stochastic noise injection and five-fold cross-validation, the model achieved test set accuracy of 0.912 and area under the ROC curve of 0.961, an improvement of approximately 0.027 over resizing alone. Sensitivity and specificity both exceeded 0.90. These results align with prior work reporting up to 0.10 gain via synthetic augmentation. The findings demonstrate the effectiveness of simple augmentation for 3D MRI classification and motivate future exploration of advanced augmentation methods and architectures such as 3D U-Net and vision transformers.
-]]></content:encoded>
-<pubDate>Wed, 18 Jun 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>H$^3$DP: Triply-Hierarchical Diffusion Policy for Visuomotor Learning</title>
-<link>https://arxiv.org/abs/2505.07819</link>
-<guid>https://arxiv.org/abs/2505.07819</guid>
-<content:encoded><![CDATA[
-arXiv:2505.07819v2 Announce Type: replace-cross 
-Abstract: Visuomotor policy learning has witnessed substantial progress in robotic manipulation, with recent approaches predominantly relying on generative models to model the action distribution. However, these methods often overlook the critical coupling between visual perception and action prediction. In this work, we introduce $\textbf{Triply-Hierarchical Diffusion Policy}~(\textbf{H$^{\mathbf{3}}$DP})$, a novel visuomotor learning framework that explicitly incorporates hierarchical structures to strengthen the integration between visual features and action generation. H$^{3}$DP contains $\mathbf{3}$ levels of hierarchy: (1) depth-aware input layering that organizes RGB-D observations based on depth information; (2) multi-scale visual representations that encode semantic features at varying levels of granularity; and (3) a hierarchically conditioned diffusion process that aligns the generation of coarse-to-fine actions with corresponding visual features. Extensive experiments demonstrate that H$^{3}$DP yields a $\mathbf{+27.5\%}$ average relative improvement over baselines across $\mathbf{44}$ simulation tasks and achieves superior performance in $\mathbf{4}$ challenging bimanual real-world manipulation tasks. Project Page: https://lyy-iiis.github.io/h3dp/.
-]]></content:encoded>
-<pubDate>Wed, 18 Jun 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Scaling Computer-Use Grounding via User Interface Decomposition and Synthesis</title>
-<link>https://arxiv.org/abs/2505.13227</link>
-<guid>https://arxiv.org/abs/2505.13227</guid>
-<content:encoded><![CDATA[
-arXiv:2505.13227v2 Announce Type: replace-cross 
-Abstract: Graphical user interface (GUI) grounding, the ability to map natural language instructions to specific actions on graphical user interfaces, remains a critical bottleneck in computer use agent development. Current benchmarks oversimplify grounding tasks as short referring expressions, failing to capture the complexity of real-world interactions that require software commonsense, layout understanding, and fine-grained manipulation capabilities. To address these limitations, we introduce OSWorld-G, a comprehensive benchmark comprising 564 finely annotated samples across diverse task types including text matching, element recognition, layout understanding, and precise manipulation. Additionally, we synthesize and release the largest computer use grounding dataset Jedi, which contains 4 million examples through multi-perspective decoupling of tasks. Our multi-scale models trained on Jedi demonstrate its effectiveness by outperforming existing approaches on ScreenSpot-v2, ScreenSpot-Pro, and our OSWorld-G. Furthermore, we demonstrate that improved grounding with Jedi directly enhances agentic capabilities of general foundation models on complex computer tasks, improving from 5% to 27% on OSWorld. Through detailed ablation studies, we identify key factors contributing to grounding performance and verify that combining specialized data for different interface elements enables compositional generalization to novel interfaces. All benchmark, data, checkpoints, and code are open-sourced and available at https://osworld-grounding.github.io.
 ]]></content:encoded>
 <pubDate>Wed, 18 Jun 2025 00:00:00 -0400</pubDate>
 </item>
