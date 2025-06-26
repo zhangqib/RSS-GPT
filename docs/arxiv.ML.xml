@@ -4,19 +4,19 @@
 <title>cs.LG updates on arXiv.org</title>
 <link>http://rss.arxiv.org/rss/cs.LG</link>
 
+
 <item>
 <title>TabArena: A Living Benchmark for Machine Learning on Tabular Data</title>
 <link>https://arxiv.org/abs/2506.16791</link>
 <guid>https://arxiv.org/abs/2506.16791</guid>
 <content:encoded><![CDATA[
-<div> TabArena, deep learning, foundation models, tabular benchmarking, standardized<br>
-<br>
-Summary: <br>
+<div> TabArena, deep learning, foundation models, tabular benchmarking, standardized<br />
+<br />
+Summary: <br />
 TabArena is introduced as a continuously maintained living tabular benchmarking system, addressing the need for updated benchmarks in the rapidly evolving field of deep learning for tabular data. The study highlights the impact of validation methods and hyperparameter ensembling on benchmarking models effectively. While gradient-boosted trees remain competitive, deep learning methods and foundation models demonstrate significant progress, especially with ensembling techniques. The use of ensembles across models has advanced the state-of-the-art in tabular machine learning, showcasing the strengths of individual models and the benefits of combining them. The launch of TabArena includes a public leaderboard, reproducible code, and maintenance protocols, making it a valuable resource for researchers and practitioners in the field. <div>
 arXiv:2506.16791v2 Announce Type: replace 
 Abstract: With the growing popularity of deep learning and foundation models for tabular data, the need for standardized and reliable benchmarks is higher than ever. However, current benchmarks are static. Their design is not updated even if flaws are discovered, model versions are updated, or new models are released. To address this, we introduce TabArena, the first continuously maintained living tabular benchmarking system. To launch TabArena, we manually curate a representative collection of datasets and well-implemented models, conduct a large-scale benchmarking study to initialize a public leaderboard, and assemble a team of experienced maintainers. Our results highlight the influence of validation method and ensembling of hyperparameter configurations to benchmark models at their full potential. While gradient-boosted trees are still strong contenders on practical tabular datasets, we observe that deep learning methods have caught up under larger time budgets with ensembling. At the same time, foundation models excel on smaller datasets. Finally, we show that ensembles across models advance the state-of-the-art in tabular machine learning and investigate the contributions of individual models. We launch TabArena with a public leaderboard, reproducible code, and maintenance protocols to create a living benchmark available at https://tabarena.ai.
 ]]></content:encoded>
-<pubDate>Thu, 26 Jun 2025 00:00:00 -0400</pubDate>
 <pubDate>Thu, 26 Jun 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -24,13 +24,12 @@ Abstract: With the growing popularity of deep learning and foundation models for
 <link>https://arxiv.org/abs/2506.17219</link>
 <guid>https://arxiv.org/abs/2506.17219</guid>
 <content:encoded><![CDATA[
-<div> Keywords: Reinforcement learning, large language models, internal feedback, entropy, math reasoning <br>
+<div> Keywords: Reinforcement learning, large language models, internal feedback, entropy, math reasoning <br />
 Summary: 
-Reinforcement learning methods have been used to enhance the reasoning abilities of large language models (LLMs). This study focuses on Reinforcement Learning from Internal Feedback (RLIF), which relies on intrinsic signals from the model itself instead of external rewards. The researchers explore various internal feedback strategies using unsupervised reward proxies like token-level entropy and trajectory-level entropy. Results show that RLIF can improve the reasoning performance of base LLMs early in training, even surpassing other techniques. However, as training progresses, performance begins to decline. RLIF is found to offer minimal benefits for instruction-tuned models, indicating diminishing returns on intrinsic feedback. By analyzing model weights, the study provides insights into why RLIF's training behaviors change over time. Practical guidelines are also provided for incorporating internal feedback signals into LLM training, aiming to inform more effective strategies for post-training LLMs. <br><br> <div>
+Reinforcement learning methods have been used to enhance the reasoning abilities of large language models (LLMs). This study focuses on Reinforcement Learning from Internal Feedback (RLIF), which relies on intrinsic signals from the model itself instead of external rewards. The researchers explore various internal feedback strategies using unsupervised reward proxies like token-level entropy and trajectory-level entropy. Results show that RLIF can improve the reasoning performance of base LLMs early in training, even surpassing other techniques. However, as training progresses, performance begins to decline. RLIF is found to offer minimal benefits for instruction-tuned models, indicating diminishing returns on intrinsic feedback. By analyzing model weights, the study provides insights into why RLIF's training behaviors change over time. Practical guidelines are also provided for incorporating internal feedback signals into LLM training, aiming to inform more effective strategies for post-training LLMs. <br /><br /> <div>
 arXiv:2506.17219v2 Announce Type: replace 
 Abstract: Reinforcement learning has emerged as a powerful paradigm for post-training large language models (LLMs) to improve reasoning. Approaches like Reinforcement Learning from Human Feedback (RLHF) and Reinforcement Learning with Verifiable Rewards (RLVR) have shown strong results, but they require extensive external supervision. We investigate an alternative class of methods, Reinforcement Learning from Internal Feedback (RLIF), which relies solely on intrinsic model-derived signals instead of external rewards. In particular, we leverage unsupervised reward proxies such as token-level entropy, trajectory-level entropy, and self-certainty. Our theoretical analysis shows these internal objectives are partially equivalent, and we empirically evaluate various RLIF strategies on challenging math reasoning benchmarks. Experimental results demonstrate that RLIF can boost the reasoning performance of base LLMs at the beginning phase of the training, matching or surpassing RLVR techniques on these tasks. However, when training progresses, performance degrades even below the model before training. Moreover, we find that RLIF yields little improvement for instruction-tuned models, indicating diminishing returns of intrinsic feedback once an LLM is already instruction-tuned. We further analyze this limitation by mixing model weights and explain the reason of RLIF's training behaviors, providing practical guidelines for integrating internal feedback signals into LLM training. We hope our analysis of internal feedback will inform more principled and effective strategies for LLM post-training.
 ]]></content:encoded>
-<pubDate>Thu, 26 Jun 2025 00:00:00 -0400</pubDate>
 <pubDate>Thu, 26 Jun 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -38,16 +37,14 @@ Abstract: Reinforcement learning has emerged as a powerful paradigm for post-tra
 <link>https://arxiv.org/abs/2506.16394</link>
 <guid>https://arxiv.org/abs/2506.16394</guid>
 <content:encoded><![CDATA[
-<div> heterogeneous parameter components, distributed M-estimation, re-normalized Wald test, extreme contrast test, communication-efficient <br>
-Summary: <br>
-The study focuses on identifying heterogeneous parameter components in distributed M-estimation with minimal data transmission. Two methods are explored: the re-normalized Wald test, consistent for small K and dense heterogeneity, and the extreme contrast test (ECT), consistent for large K and sparse heterogeneity. ECT, using sample splitting, avoids bias accumulation and is communication-efficient. A combined approach enhances power across varying levels of heterogeneity sparsity. Extensive numerical experiments compare Family-wise Error Rate (FWER) and power of the methods. A case study illustrates method implementation and validity. The research contributes practical, efficient techniques for identifying heterogeneous parameter components in distributed M-estimation, exhibiting consistency and robust power in different data scenarios. <br> <div>
+<div> heterogeneous parameter components, distributed M-estimation, re-normalized Wald test, extreme contrast test, communication-efficient <br />
+Summary: <br />
+The study focuses on identifying heterogeneous parameter components in distributed M-estimation with minimal data transmission. Two methods are explored: the re-normalized Wald test, consistent for small K and dense heterogeneity, and the extreme contrast test (ECT), consistent for large K and sparse heterogeneity. ECT, using sample splitting, avoids bias accumulation and is communication-efficient. A combined approach enhances power across varying levels of heterogeneity sparsity. Extensive numerical experiments compare Family-wise Error Rate (FWER) and power of the methods. A case study illustrates method implementation and validity. The research contributes practical, efficient techniques for identifying heterogeneous parameter components in distributed M-estimation, exhibiting consistency and robust power in different data scenarios. <br /> <div>
 arXiv:2506.16394v3 Announce Type: replace-cross 
 Abstract: We study methods for identifying heterogeneous parameter components in distributed M-estimation with minimal data transmission. One is based on a re-normalized Wald test, which is shown to be consistent as long as the number of distributed data blocks $K$ is of a smaller order of the minimum block sample size and the level of heterogeneity is dense. The second one is an extreme contrast test (ECT) based on the difference between the largest and smallest component-wise estimated parameters among data blocks. By introducing a sample splitting procedure, the ECT can avoid the bias accumulation arising from the M-estimation procedures, and exhibits consistency for $K$ being much larger than the sample size while the heterogeneity is sparse. The ECT procedure is easy to operate and communication-efficient. A combination of the Wald and the extreme contrast tests is formulated to attain more robust power under varying levels of sparsity of the heterogeneity. We also conduct intensive numerical experiments to compare the family-wise error rate (FWER) and the power of the proposed methods. Additionally, we conduct a case study to present the implementation and validity of the proposed methods.
 ]]></content:encoded>
 <pubDate>Thu, 26 Jun 2025 00:00:00 -0400</pubDate>
-<pubDate>Thu, 26 Jun 2025 00:00:00 -0400</pubDate>
 </item>
-
 <item>
 <title>Position: Machine Learning Conferences Should Establish a "Refutations and Critiques" Track</title>
 <link>https://arxiv.org/abs/2506.19882</link>
@@ -11096,36 +11093,6 @@ Abstract: This paper studies the optimistic variant of Fictitious Play for learn
 <content:encoded><![CDATA[
 arXiv:2506.16744v1 Announce Type: new 
 Abstract: Hand gestures are a primary output of the human motor system, yet the decoding of their neuromuscular signatures remains a bottleneck for basic neuroscience and assistive technologies such as prosthetics. Traditional human-machine interface pipelines rely on a single biosignal modality, but multimodal fusion can exploit complementary information from sensors. We systematically compare linear and attention-based fusion strategies across three architectures: a Multimodal MLP, a Multimodal Transformer, and a Hierarchical Transformer, evaluating performance on scenarios with unimodal and multimodal inputs. Experiments use two publicly available datasets: NinaPro DB2 (sEMG and accelerometer) and HD-sEMG 65-Gesture (high-density sEMG and force). Across both datasets, the Hierarchical Transformer with attention-based fusion consistently achieved the highest accuracy, surpassing the multimodal and best single-modality linear-fusion MLP baseline by over 10% on NinaPro DB2 and 3.7% on HD-sEMG. To investigate how modalities interact, we introduce an Isolation Network that selectively silences unimodal or cross-modal attention pathways, quantifying each group of token interactions' contribution to downstream decisions. Ablations reveal that cross-modal interactions contribute approximately 30% of the decision signal across transformer layers, highlighting the importance of attention-driven fusion in harnessing complementary modality information. Together, these findings reveal when and how multimodal fusion would enhance biosignal classification and also provides mechanistic insights of human muscle activities. The study would be beneficial in the design of sensor arrays for neurorobotic systems.
-]]></content:encoded>
-<pubDate>Mon, 23 Jun 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Off-Policy Actor-Critic for Adversarial Observation Robustness: Virtual Alternative Training via Symmetric Policy Evaluation</title>
-<link>https://arxiv.org/abs/2506.16753</link>
-<guid>https://arxiv.org/abs/2506.16753</guid>
-<content:encoded><![CDATA[
-arXiv:2506.16753v1 Announce Type: new 
-Abstract: Recently, robust reinforcement learning (RL) methods designed to handle adversarial input observations have received significant attention, motivated by RL's inherent vulnerabilities. While existing approaches have demonstrated reasonable success, addressing worst-case scenarios over long time horizons requires both minimizing the agent's cumulative rewards for adversaries and training agents to counteract them through alternating learning. However, this process introduces mutual dependencies between the agent and the adversary, making interactions with the environment inefficient and hindering the development of off-policy methods. In this work, we propose a novel off-policy method that eliminates the need for additional environmental interactions by reformulating adversarial learning as a soft-constrained optimization problem. Our approach is theoretically supported by the symmetric property of policy evaluation between the agent and the adversary. The implementation is available at https://github.com/nakanakakosuke/VALT_SAC.
-]]></content:encoded>
-<pubDate>Mon, 23 Jun 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Metapath-based Hyperbolic Contrastive Learning for Heterogeneous Graph Embedding</title>
-<link>https://arxiv.org/abs/2506.16754</link>
-<guid>https://arxiv.org/abs/2506.16754</guid>
-<content:encoded><![CDATA[
-arXiv:2506.16754v1 Announce Type: new 
-Abstract: The hyperbolic space, characterized by a constant negative curvature and exponentially expanding space, aligns well with the structural properties of heterogeneous graphs. However, although heterogeneous graphs inherently possess diverse power-law structures, most hyperbolic heterogeneous graph embedding models rely on a single hyperbolic space. This approach may fail to effectively capture the diverse power-law structures within heterogeneous graphs. To address this limitation, we propose a Metapath-based Hyperbolic Contrastive Learning framework (MHCL), which uses multiple hyperbolic spaces to capture diverse complex structures within heterogeneous graphs. Specifically, by learning each hyperbolic space to describe the distribution of complex structures corresponding to each metapath, it is possible to capture semantic information effectively. Since metapath embeddings represent distinct semantic information, preserving their discriminability is important when aggregating them to obtain node representations. Therefore, we use a contrastive learning approach to optimize MHCL and improve the discriminability of metapath embeddings. In particular, our contrastive learning method minimizes the distance between embeddings of the same metapath and maximizes the distance between those of different metapaths in hyperbolic space, thereby improving the separability of metapath embeddings with distinct semantic information. We conduct comprehensive experiments to evaluate the effectiveness of MHCL. The experimental results demonstrate that MHCL outperforms state-of-the-art baselines in various graph machine learning tasks, effectively capturing the complex structures of heterogeneous graphs.
-]]></content:encoded>
-<pubDate>Mon, 23 Jun 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>What Is the Point of Equality in Machine Learning Fairness? Beyond Equality of Opportunity</title>
-<link>https://arxiv.org/abs/2506.16782</link>
-<guid>https://arxiv.org/abs/2506.16782</guid>
-<content:encoded><![CDATA[
-arXiv:2506.16782v1 Announce Type: new 
-Abstract: Fairness in machine learning (ML) has become a rapidly growing area of research. But why, in the first place, is unfairness in ML morally wrong? And why should we care about improving fairness? Most fair-ML research implicitly appeals to distributive equality: the idea that desirable goods and benefits, such as opportunities (e.g., Barocas et al., 2023), should be equally distributed across society. Unfair ML models, then, are seen as wrong because they unequally distribute such benefits. This paper argues that this exclusive focus on distributive equality offers an incomplete and potentially misleading ethical foundation. Grounding ML fairness in egalitarianism -- the view that equality is a fundamental moral and social ideal -- requires challenging structural inequality: systematic, institutional, and durable arrangements that privilege some groups while disadvantaging others. Structural inequality manifests through ML systems in two primary forms: allocative harms (e.g., economic loss) and representational harms (e.g., stereotypes, erasure). While distributive equality helps address allocative harms, it fails to explain why representational harms are wrong -- why it is wrong for ML systems to reinforce social hierarchies that stratify people into superior and inferior groups -- and why ML systems should aim to foster a society where people relate as equals (i.e., relational equality). To address these limitations, the paper proposes a multifaceted egalitarian framework for ML fairness that integrates both distributive and relational equality. Drawing on critical social and political philosophy, this framework offers a more comprehensive ethical foundation for tackling the full spectrum of harms perpetuated by ML systems. The paper also outlines practical pathways for implementing the framework across the ML pipeline.
 ]]></content:encoded>
 <pubDate>Mon, 23 Jun 2025 00:00:00 -0400</pubDate>
 </item>
