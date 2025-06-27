@@ -4,6 +4,7 @@
 <title>cs.AI updates on arXiv.org</title>
 <link>http://rss.arxiv.org/rss/cs.AI</link>
 
+
 <item>
 <title>Exploring Big Five Personality and AI Capability Effects in LLM-Simulated Negotiation Dialogues</title>
 <link>https://arxiv.org/abs/2506.15928</link>
@@ -14,14 +15,12 @@
 Summary: 
 This paper introduces an evaluation framework for agentic AI systems in high-stakes negotiation settings, emphasizing the ability of AI agents to adapt to various human operators and stakeholders. Two experiments conducted in the Sotopia simulation testbed explore the impact of personality traits and AI agent characteristics on negotiation outcomes crucial for cross-team coordination and civil-military interactions. The first experiment assesses how personality traits such as Agreeableness and Extraversion influence negotiation results, revealing significant effects on believability, goal achievement, and knowledge acquisition. Sociocognitive lexical analysis of team communications uncovers subtle differences in agents' communication styles and opinions, offering valuable insights for enhancing AI systems' reliability in critical operational scenarios. The second experiment investigates the influence of human-AI job negotiations on mission effectiveness by manipulating human personality and AI system traits, highlighting the importance of AI agent trustworthiness. Overall, this work advances the evaluation of agentic AI workflows by incorporating social dynamics essential for achieving mission success. 
 
-<br><br>Summary: <div>
+<br /><br />Summary: <div>
 arXiv:2506.15928v2 Announce Type: replace 
 Abstract: This paper presents an evaluation framework for agentic AI systems in mission-critical negotiation contexts, addressing the need for AI agents that can adapt to diverse human operators and stakeholders. Using Sotopia as a simulation testbed, we present two experiments that systematically evaluated how personality traits and AI agent characteristics influence LLM-simulated social negotiation outcomes--a capability essential for a variety of applications involving cross-team coordination and civil-military interactions. Experiment 1 employs causal discovery methods to measure how personality traits impact price bargaining negotiations, through which we found that Agreeableness and Extraversion significantly affect believability, goal achievement, and knowledge acquisition outcomes. Sociocognitive lexical measures extracted from team communications detected fine-grained differences in agents' empathic communication, moral foundations, and opinion patterns, providing actionable insights for agentic AI systems that must operate reliably in high-stakes operational scenarios. Experiment 2 evaluates human-AI job negotiations by manipulating both simulated human personality and AI system characteristics, specifically transparency, competence, adaptability, demonstrating how AI agent trustworthiness impact mission effectiveness. These findings establish a repeatable evaluation methodology for experimenting with AI agent reliability across diverse operator personalities and human-agent team dynamics, directly supporting operational requirements for reliable AI systems. Our work advances the evaluation of agentic AI workflows by moving beyond standard performance metrics to incorporate social dynamics essential for mission success in complex operations.
 ]]></content:encoded>
 <pubDate>Fri, 27 Jun 2025 00:00:00 -0400</pubDate>
-<pubDate>Fri, 27 Jun 2025 00:00:00 -0400</pubDate>
 </item>
-
 <item>
 <title>The Singapore Consensus on Global AI Safety Research Priorities</title>
 <link>https://arxiv.org/abs/2506.20702</link>
@@ -11106,22 +11105,6 @@ Summary:
 Sysformer is a novel approach to enhance the safety of large language models (LLMs) by adapting system prompts based on user input. The model, trained to update system prompts in the LLM input embedding space, significantly improves the refusal rate for harmful prompts and compliance with safe prompts. Results show an up to 80% increase in refusal rate and up to 90% improvement in compliance with safe prompts across different LLMs and benchmarks. Sysformer also boosts robustness against jailbreaking attacks by up to 100%. This method offers a cost-effective way to safeguard LLMs and encourages further research into customizable system prompts.<br /><br />Summary: <div>
 arXiv:2506.15751v1 Announce Type: new 
 Abstract: As large language models (LLMs) are deployed in safety-critical settings, it is essential to ensure that their responses comply with safety standards. Prior research has revealed that LLMs often fail to grasp the notion of safe behaviors, resulting in either unjustified refusals to harmless prompts or the generation of harmful content. While substantial efforts have been made to improve their robustness, existing defenses often rely on costly fine-tuning of model parameters or employ suboptimal heuristic techniques. In this work, we take a novel approach to safeguard LLMs by learning to adapt the system prompts in instruction-tuned LLMs. While LLMs are typically pre-trained to follow a fixed system prompt, we investigate the impact of tailoring the system prompt to each specific user input on the safety of the responses. To this end, we propose $\textbf{Sysformer}$, a trans$\textbf{former}$ model that updates an initial $\textbf{sys}$tem prompt to a more robust system prompt in the LLM input embedding space while attending to the user prompt. While keeping the LLM parameters frozen, the Sysformer is trained to refuse to respond to a set of harmful prompts while responding ideally to a set of safe ones. Through extensive experiments on $5$ LLMs from different families and $2$ recent benchmarks, we demonstrate that Sysformer can significantly enhance the robustness of LLMs, leading to upto $80\%$ gain in the refusal rate on harmful prompts while enhancing the compliance with the safe prompts by upto $90\%$. Results also generalize well to sophisticated jailbreaking attacks, making LLMs upto $100\%$ more robust against different attack strategies. We hope our findings lead to cheaper safeguarding of LLMs and motivate future investigations into designing variable system prompts.
-]]></content:encoded>
-<pubDate>Mon, 23 Jun 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Linear-Time Primitives for Algorithm Development in Graphical Causal Inference</title>
-<link>https://arxiv.org/abs/2506.15758</link>
-<guid>https://arxiv.org/abs/2506.15758</guid>
-<content:encoded><![CDATA[
-<div> Framework, Graphical causal inference, Reachability, Rule table schema, Efficient
-
-Summary:
-CIfly is a framework designed for efficient algorithmic primitives in graphical causal inference, with a focus on isolating reachability as a core operation. By leveraging purpose-built state-space graphs constructed during traversal, CIfly simplifies many causal reasoning tasks to reachability, enabling linear time execution. It offers a more efficient alternative to moralization and latent projection, which are computationally equivalent to Boolean matrix multiplication. The open-source Rust implementation of CIfly allows parsing rule table text files and executing specified algorithms with high performance, accessible from Python and R. Various established causal inference tasks have been re-implemented within the CIfly framework, showcasing its utility. Moreover, new algorithms for instrumental variables have been developed, highlighting CIfly's flexibility and scalability as a backbone for graphical causal inference, guiding algorithm development and enabling easy and efficient deployment. 
-
-<br /><br />Summary: <div>
-arXiv:2506.15758v1 Announce Type: new 
-Abstract: We introduce CIfly, a framework for efficient algorithmic primitives in graphical causal inference that isolates reachability as a reusable core operation. It builds on the insight that many causal reasoning tasks can be reduced to reachability in purpose-built state-space graphs that can be constructed on the fly during traversal. We formalize a rule table schema for specifying such algorithms and prove they run in linear time. We establish CIfly as a more efficient alternative to the common primitives moralization and latent projection, which we show are computationally equivalent to Boolean matrix multiplication. Our open-source Rust implementation parses rule table text files and runs the specified CIfly algorithms providing high-performance execution accessible from Python and R. We demonstrate CIfly's utility by re-implementing a range of established causal inference tasks within the framework and by developing new algorithms for instrumental variables. These contributions position CIfly as a flexible and scalable backbone for graphical causal inference, guiding algorithm development and enabling easy and efficient deployment.
 ]]></content:encoded>
 <pubDate>Mon, 23 Jun 2025 00:00:00 -0400</pubDate>
 </item>

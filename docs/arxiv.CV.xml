@@ -4,6 +4,7 @@
 <title>cs.CV updates on arXiv.org</title>
 <link>http://rss.arxiv.org/rss/cs.CV</link>
 
+
 <item>
 <title>Fake it till You Make it: Reward Modeling as Discriminative Prediction</title>
 <link>https://arxiv.org/abs/2506.13846</link>
@@ -16,7 +17,6 @@ Reward modeling is crucial in reinforcement learning for improving visual genera
 arXiv:2506.13846v2 Announce Type: replace 
 Abstract: An effective reward model plays a pivotal role in reinforcement learning for post-training enhancement of visual generative models. However, current approaches of reward modeling suffer from implementation complexity due to their reliance on extensive human-annotated preference data or meticulously engineered quality dimensions that are often incomplete and engineering-intensive. Inspired by adversarial training in generative adversarial networks (GANs), this paper proposes GAN-RM, an efficient reward modeling framework that eliminates manual preference annotation and explicit quality dimension engineering. Our method trains the reward model through discrimination between a small set of representative, unpaired target samples(denoted as Preference Proxy Data) and model-generated ordinary outputs, requiring only a few hundred target samples. Comprehensive experiments demonstrate our GAN-RM's effectiveness across multiple key applications including test-time scaling implemented as Best-of-N sample filtering, post-training approaches like Supervised Fine-Tuning (SFT) and Direct Preference Optimization (DPO). Code and data will be released at https://github.com/Visualignment/GAN-RM.
 ]]></content:encoded>
-<pubDate>Fri, 27 Jun 2025 00:00:00 -0400</pubDate>
 <pubDate>Fri, 27 Jun 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -32,9 +32,7 @@ arXiv:2506.13897v3 Announce Type: replace
 Abstract: Despite LiDAR (Light Detection and Ranging) being an effective privacy-preserving alternative to RGB cameras to perceive human activities, it remains largely underexplored in the context of multi-modal contrastive pre-training for human activity understanding (e.g., human activity recognition (HAR), retrieval, or person re-identification (RE-ID)). To close this gap, our work explores learning the correspondence between LiDAR point clouds, human skeleton poses, IMU data, and text in a joint embedding space. More specifically, we present DeSPITE, a Deep Skeleton-Pointcloud-IMU-Text Embedding model, which effectively learns a joint embedding space across these four modalities. At the heart of our empirical exploration, we have combined the existing LIPD and Babel datasets, which enabled us to synchronize data of all four modalities, allowing us to explore the learning of a new joint embedding space. Our experiments demonstrate novel human activity understanding tasks for point cloud sequences enabled through DeSPITE, including Skeleton<->Pointcloud<->IMU matching, retrieval, and temporal moment retrieval. Furthermore, we show that DeSPITE is an effective pre-training strategy for point cloud HAR through experiments in MSR-Action3D and HMPEAR.
 ]]></content:encoded>
 <pubDate>Fri, 27 Jun 2025 00:00:00 -0400</pubDate>
-<pubDate>Fri, 27 Jun 2025 00:00:00 -0400</pubDate>
 </item>
-
 <item>
 <title>OTSurv: A Novel Multiple Instance Learning Framework for Survival Prediction with Heterogeneity-aware Optimal Transport</title>
 <link>https://arxiv.org/abs/2506.20741</link>
@@ -11277,26 +11275,6 @@ Abstract: Despite the tremendous success of deep learning in computer vision, mo
 <content:encoded><![CDATA[
 arXiv:2504.07836v3 Announce Type: replace 
 Abstract: Visual grounding (VG) aims to localize target objects in an image based on natural language descriptions. In this paper, we propose AerialVG, a new task focusing on visual grounding from aerial views. Compared to traditional VG, AerialVG poses new challenges, \emph{e.g.}, appearance-based grounding is insufficient to distinguish among multiple visually similar objects, and positional relations should be emphasized. Besides, existing VG models struggle when applied to aerial imagery, where high-resolution images cause significant difficulties. To address these challenges, we introduce the first AerialVG dataset, consisting of 5K real-world aerial images, 50K manually annotated descriptions, and 103K objects. Particularly, each annotation in AerialVG dataset contains multiple target objects annotated with relative spatial relations, requiring models to perform comprehensive spatial reasoning. Furthermore, we propose an innovative model especially for the AerialVG task, where a Hierarchical Cross-Attention is devised to focus on target regions, and a Relation-Aware Grounding module is designed to infer positional relations. Experimental results validate the effectiveness of our dataset and method, highlighting the importance of spatial reasoning in aerial visual grounding. The code and dataset will be released.
-]]></content:encoded>
-<pubDate>Mon, 23 Jun 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Boosting multi-demographic federated learning for chest radiograph analysis using general-purpose self-supervised representations</title>
-<link>https://arxiv.org/abs/2504.08584</link>
-<guid>https://arxiv.org/abs/2504.08584</guid>
-<content:encoded><![CDATA[
-arXiv:2504.08584v2 Announce Type: replace 
-Abstract: Reliable artificial intelligence (AI) models for medical image analysis often depend on large and diverse labeled datasets. Federated learning (FL) offers a decentralized and privacy-preserving approach to training but struggles in highly non-independent and identically distributed (non-IID) settings, where institutions with more representative data may experience degraded performance. Moreover, existing large-scale FL studies have been limited to adult datasets, neglecting the unique challenges posed by pediatric data, which introduces additional non-IID variability. To address these limitations, we analyzed n=398,523 adult chest radiographs from diverse institutions across multiple countries and n=9,125 pediatric images, leveraging transfer learning from general-purpose self-supervised image representations to classify pneumonia and cases with no abnormality. Using state-of-the-art vision transformers, we found that FL improved performance only for smaller adult datasets (P<0.001) but degraded performance for larger datasets (P<0.064) and pediatric cases (P=0.242). However, equipping FL with self-supervised weights significantly enhanced outcomes across pediatric cases (P=0.031) and most adult datasets (P<0.008), except the largest dataset (P=0.052). These findings underscore the potential of easily deployable general-purpose self-supervised image representations to address non-IID challenges in clinical FL applications and highlight their promise for enhancing patient outcomes and advancing pediatric healthcare, where data scarcity and variability remain persistent obstacles.
-]]></content:encoded>
-<pubDate>Mon, 23 Jun 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Collaborative Perception Datasets for Autonomous Driving: A Review</title>
-<link>https://arxiv.org/abs/2504.12696</link>
-<guid>https://arxiv.org/abs/2504.12696</guid>
-<content:encoded><![CDATA[
-arXiv:2504.12696v2 Announce Type: replace 
-Abstract: Collaborative perception has attracted growing interest from academia and industry due to its potential to enhance perception accuracy, safety, and robustness in autonomous driving through multi-agent information fusion. With the advancement of Vehicle-to-Everything (V2X) communication, numerous collaborative perception datasets have emerged, varying in cooperation paradigms, sensor configurations, data sources, and application scenarios. However, the absence of systematic summarization and comparative analysis hinders effective resource utilization and standardization of model evaluation. As the first comprehensive review focused on collaborative perception datasets, this work reviews and compares existing resources from a multi-dimensional perspective. We categorize datasets based on cooperation paradigms, examine their data sources and scenarios, and analyze sensor modalities and supported tasks. A detailed comparative analysis is conducted across multiple dimensions. We also outline key challenges and future directions, including dataset scalability, diversity, domain adaptation, standardization, privacy, and the integration of large language models. To support ongoing research, we provide a continuously updated online repository of collaborative perception datasets and related literature: https://github.com/frankwnb/Collaborative-Perception-Datasets-for-Autonomous-Driving.
 ]]></content:encoded>
 <pubDate>Mon, 23 Jun 2025 00:00:00 -0400</pubDate>
 </item>
