@@ -4,6 +4,7 @@
 <title>cs.AI updates on arXiv.org</title>
 <link>http://rss.arxiv.org/rss/cs.AI</link>
 
+
 <item>
 <title>Maximizing Confidence Alone Improves Reasoning</title>
 <link>https://arxiv.org/abs/2505.22660</link>
@@ -14,11 +15,10 @@
 Summary:
 In the realm of reinforcement learning, developing an effective reward function is a complex task. This paper introduces RENT, a novel approach called Reinforcement Learning via Entropy Minimization, that operates without external rewards or ground truth answers. Instead, RENT relies on the model's entropy as an intrinsic reward, focusing on reinforcing the thought processes that lead to high confidence in the model's generated answers. Through experiments on various reasoning benchmarks like GSM8K, MATH500, AMC, AIME, and GPQA using different model families such as Qwen, Mistral, and Llama, the efficacy of RENT is demonstrated. The unsupervised nature of RENT makes it applicable to diverse domains where external supervision is unavailable. By enhancing the model's reasoning abilities based on the entropy of its underlying distribution, RENT showcases promising results in advancing machine learning capabilities without conventional reward structures. 
 
-<br><br>Summary: <div>
+<br /><br />Summary: <div>
 arXiv:2505.22660v4 Announce Type: replace-cross 
 Abstract: Reinforcement learning (RL) has enabled machine learning models to achieve significant advances in many fields. Most recently, RL has empowered frontier language models to solve challenging math, science, and coding problems. However, central to any RL algorithm is the reward function, and reward engineering is a notoriously difficult problem in any domain. In this paper, we propose RENT: Reinforcement Learning via Entropy Minimization -- a fully unsupervised RL method that requires no external reward or ground-truth answers, and instead uses the model's entropy of its underlying distribution as an intrinsic reward. We find that by reinforcing the chains of thought that yield high model confidence on its generated answers, the model improves its reasoning ability. In our experiments, we showcase these improvements on an extensive suite of commonly-used reasoning benchmarks, including GSM8K, MATH500, AMC, AIME, and GPQA, and models of varying sizes from the Qwen, Mistral, and Llama families. The generality of our unsupervised learning method lends itself to applicability in a wide range of domains where external supervision is unavailable.
 ]]></content:encoded>
-<pubDate>Mon, 30 Jun 2025 00:00:00 -0400</pubDate>
 <pubDate>Mon, 30 Jun 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -27,15 +27,13 @@ Abstract: Reinforcement learning (RL) has enabled machine learning models to ach
 <guid>https://arxiv.org/abs/2505.24616</guid>
 <content:encoded><![CDATA[
 <div> benchmark, language models, Russian, evaluation methodology, generative capabilities 
-Summary:<br><br>
-The article introduces POLLUX, a benchmark for assessing the generative abilities of large language models (LLMs) in Russian. It presents a novel evaluation methodology that enhances interpretability by defining detailed criteria and scoring protocols for various task types. POLLUX includes a taxonomy of 35 task types across multiple domains, with 2,100 prompts categorized by difficulty. The dataset was constructed by experts from scratch to ensure quality. The benchmark also includes LLM evaluators trained for nuanced assessment of generative outputs. This approach enables transparent and criteria-driven evaluation, replacing expensive and less precise human judgments. Overall, POLLUX provides scalable evaluation and annotation tools for LLM development, improving the efficiency and accuracy of model assessment in diverse generative tasks. <br> <div>
+Summary:<br /><br />
+The article introduces POLLUX, a benchmark for assessing the generative abilities of large language models (LLMs) in Russian. It presents a novel evaluation methodology that enhances interpretability by defining detailed criteria and scoring protocols for various task types. POLLUX includes a taxonomy of 35 task types across multiple domains, with 2,100 prompts categorized by difficulty. The dataset was constructed by experts from scratch to ensure quality. The benchmark also includes LLM evaluators trained for nuanced assessment of generative outputs. This approach enables transparent and criteria-driven evaluation, replacing expensive and less precise human judgments. Overall, POLLUX provides scalable evaluation and annotation tools for LLM development, improving the efficiency and accuracy of model assessment in diverse generative tasks. <br /> <div>
 arXiv:2505.24616v3 Announce Type: replace-cross 
 Abstract: We introduce POLLUX, a comprehensive open-source benchmark designed to evaluate the generative capabilities of large language models (LLMs) in Russian. Our main contribution is a novel evaluation methodology that enhances the interpretability of LLM assessment. For each task type, we define a set of detailed criteria and develop a scoring protocol where models evaluate responses and provide justifications for their ratings. This enables transparent, criteria-driven evaluation beyond traditional resource-consuming, side-by-side human comparisons. POLLUX includes a detailed, fine-grained taxonomy of 35 task types covering diverse generative domains such as code generation, creative writing, and practical assistant use cases, totaling 2,100 manually crafted and professionally authored prompts. Each task is categorized by difficulty (easy/medium/hard), with experts constructing the dataset entirely from scratch. We also release a family of LLM-as-a-Judge (7B and 32B) evaluators trained for nuanced assessment of generative outputs. This approach provides scalable, interpretable evaluation and annotation tools for model development, effectively replacing costly and less precise human judgments.
 ]]></content:encoded>
 <pubDate>Mon, 30 Jun 2025 00:00:00 -0400</pubDate>
-<pubDate>Mon, 30 Jun 2025 00:00:00 -0400</pubDate>
 </item>
-
 <item>
 <title>SEEA-R1: Tree-Structured Reinforcement Fine-Tuning for Self-Evolving Embodied Agents</title>
 <link>https://arxiv.org/abs/2506.21669</link>
@@ -11297,26 +11295,6 @@ Abstract: Neural ray tracing (RT) has emerged as a promising paradigm for channe
 <content:encoded><![CDATA[
 arXiv:2506.18304v1 Announce Type: cross 
 Abstract: Deep reinforcement learning (DRL) has emerged as a promising paradigm for autonomous driving. However, despite their advanced capabilities, DRL-based policies remain highly vulnerable to adversarial attacks, posing serious safety risks in real-world deployments. Investigating such attacks is crucial for revealing policy vulnerabilities and guiding the development of more robust autonomous systems. While prior attack methods have made notable progress, they still face several challenges: 1) they often rely on high-frequency attacks, yet critical attack opportunities are typically context-dependent and temporally sparse, resulting in inefficient attack patterns; 2) restricting attack frequency can improve efficiency but often results in unstable training due to the adversary's limited exploration. To address these challenges, we propose an adaptive expert-guided adversarial attack method that enhances both the stability and efficiency of attack policy training. Our method first derives an expert policy from successful attack demonstrations using imitation learning, strengthened by an ensemble Mixture-of-Experts architecture for robust generalization across scenarios. This expert policy then guides a DRL-based adversary through a KL-divergence regularization term. Due to the diversity of scenarios, expert policies may be imperfect. To address this, we further introduce a performance-aware annealing strategy that gradually reduces reliance on the expert as the adversary improves. Extensive experiments demonstrate that our method achieves outperforms existing approaches in terms of collision rate, attack efficiency, and training stability, especially in cases where the expert policy is sub-optimal.
-]]></content:encoded>
-<pubDate>Tue, 24 Jun 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Spiffy: Efficient Implementation of CoLaNET for Raspberry Pi</title>
-<link>https://arxiv.org/abs/2506.18306</link>
-<guid>https://arxiv.org/abs/2506.18306</guid>
-<content:encoded><![CDATA[
-arXiv:2506.18306v1 Announce Type: cross 
-Abstract: This paper presents a lightweight software-based approach for running spiking neural networks (SNNs) without relying on specialized neuromorphic hardware or frameworks. Instead, we implement a specific SNN architecture (CoLaNET) in Rust and optimize it for common computing platforms. As a case study, we demonstrate our implementation, called Spiffy, on a Raspberry Pi using the MNIST dataset. Spiffy achieves 92% accuracy with low latency - just 0.9 ms per training step and 0.45 ms per inference step. The code is open-source.
-]]></content:encoded>
-<pubDate>Tue, 24 Jun 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>LettinGo: Explore User Profile Generation for Recommendation System</title>
-<link>https://arxiv.org/abs/2506.18309</link>
-<guid>https://arxiv.org/abs/2506.18309</guid>
-<content:encoded><![CDATA[
-arXiv:2506.18309v1 Announce Type: cross 
-Abstract: User profiling is pivotal for recommendation systems, as it transforms raw user interaction data into concise and structured representations that drive personalized recommendations. While traditional embedding-based profiles lack interpretability and adaptability, recent advances with large language models (LLMs) enable text-based profiles that are semantically richer and more transparent. However, existing methods often adhere to fixed formats that limit their ability to capture the full diversity of user behaviors. In this paper, we introduce LettinGo, a novel framework for generating diverse and adaptive user profiles. By leveraging the expressive power of LLMs and incorporating direct feedback from downstream recommendation tasks, our approach avoids the rigid constraints imposed by supervised fine-tuning (SFT). Instead, we employ Direct Preference Optimization (DPO) to align the profile generator with task-specific performance, ensuring that the profiles remain adaptive and effective. LettinGo operates in three stages: (1) exploring diverse user profiles via multiple LLMs, (2) evaluating profile quality based on their impact in recommendation systems, and (3) aligning the profile generation through pairwise preference data derived from task performance. Experimental results demonstrate that our framework significantly enhances recommendation accuracy, flexibility, and contextual awareness. This work enhances profile generation as a key innovation for next-generation recommendation systems.
 ]]></content:encoded>
 <pubDate>Tue, 24 Jun 2025 00:00:00 -0400</pubDate>
 </item>
