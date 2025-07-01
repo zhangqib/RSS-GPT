@@ -4,6 +4,7 @@
 <title>cs.CL updates on arXiv.org</title>
 <link>http://rss.arxiv.org/rss/cs.CL</link>
 
+
 <item>
 <title>PromptDSI: Prompt-based Rehearsal-free Continual Learning for Document Retrieval</title>
 <link>https://arxiv.org/abs/2406.12593</link>
@@ -11,14 +12,12 @@
 <content:encoded><![CDATA[
 <div> retrieval, document, continual learning, prompt-based, indexing 
 Summary: 
-PromptDSI is a novel approach for document retrieval that leverages continual learning without the need for full re-training. By utilizing learnable prompts within the Prompt-based Continual Learning framework, PromptDSI efficiently indexes new documents without accessing previous data. The removal of the initial forward pass in training reduces computation time without sacrificing performance. Additionally, a topic-aware prompt pool using neural topic embeddings improves stability and competitiveness with existing methods. In a rehearsal-free continual learning scenario, PromptDSI outperforms rehearsal-based approaches, matches cache-based solutions in reducing forgetting, and significantly enhances retrieval performance on new datasets. <br><br>Summary: <div>
+PromptDSI is a novel approach for document retrieval that leverages continual learning without the need for full re-training. By utilizing learnable prompts within the Prompt-based Continual Learning framework, PromptDSI efficiently indexes new documents without accessing previous data. The removal of the initial forward pass in training reduces computation time without sacrificing performance. Additionally, a topic-aware prompt pool using neural topic embeddings improves stability and competitiveness with existing methods. In a rehearsal-free continual learning scenario, PromptDSI outperforms rehearsal-based approaches, matches cache-based solutions in reducing forgetting, and significantly enhances retrieval performance on new datasets. <br /><br />Summary: <div>
 arXiv:2406.12593v4 Announce Type: replace-cross 
 Abstract: Differentiable Search Index (DSI) utilizes pre-trained language models to perform indexing and document retrieval via end-to-end learning without relying on external indexes. However, DSI requires full re-training to index new documents, causing significant computational inefficiencies. Continual learning (CL) offers a solution by enabling the model to incrementally update without full re-training. Existing CL solutions in document retrieval rely on memory buffers or generative models for rehearsal, which is infeasible when accessing previous training data is restricted due to privacy concerns. To this end, we introduce PromptDSI, a prompt-based, rehearsal-free continual learning approach for document retrieval. PromptDSI follows the Prompt-based Continual Learning (PCL) framework, using learnable prompts to efficiently index new documents without accessing previous documents or queries. To improve retrieval latency, we remove the initial forward pass of PCL, which otherwise greatly increases training and inference time, with a negligible trade-off in performance. Additionally, we introduce a novel topic-aware prompt pool that employs neural topic embeddings as fixed keys, eliminating the instability of prompt key optimization while maintaining competitive performance with existing PCL prompt pools. In a challenging rehearsal-free continual learning setup, we demonstrate that PromptDSI variants outperform rehearsal-based baselines, match the strong cache-based baseline in mitigating forgetting, and significantly improving retrieval performance on new corpora.
 ]]></content:encoded>
 <pubDate>Tue, 01 Jul 2025 00:00:00 -0400</pubDate>
-<pubDate>Tue, 01 Jul 2025 00:00:00 -0400</pubDate>
 </item>
-
 <item>
 <title>Psycholinguistic Word Features: a New Approach for the Evaluation of LLMs Alignment with Humans</title>
 <link>https://arxiv.org/abs/2506.22439</link>
@@ -11820,16 +11819,6 @@ Abstract: Graph Retrieval Augmented Generation (GraphRAG) has garnered increasin
 <content:encoded><![CDATA[
 arXiv:2506.06751v2 Announce Type: replace 
 Abstract: This paper evaluates geopolitical biases in LLMs with respect to various countries though an analysis of their interpretation of historical events with conflicting national perspectives (USA, UK, USSR, and China). We introduce a novel dataset with neutral event descriptions and contrasting viewpoints from different countries. Our findings show significant geopolitical biases, with models favoring specific national narratives. Additionally, simple debiasing prompts had a limited effect in reducing these biases. Experiments with manipulated participant labels reveal models' sensitivity to attribution, sometimes amplifying biases or recognizing inconsistencies, especially with swapped labels. This work highlights national narrative biases in LLMs, challenges the effectiveness of simple debiasing methods, and offers a framework and dataset for future geopolitical bias research.
-]]></content:encoded>
-<pubDate>Mon, 23 Jun 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>SDE-SQL: Enhancing Text-to-SQL Generation in Large Language Models via Self-Driven Exploration with SQL Probes</title>
-<link>https://arxiv.org/abs/2506.07245</link>
-<guid>https://arxiv.org/abs/2506.07245</guid>
-<content:encoded><![CDATA[
-arXiv:2506.07245v2 Announce Type: replace 
-Abstract: Recent advancements in large language models (LLMs) have significantly improved performance on the Text-to-SQL task. However, prior approaches typically rely on static, pre-processed database information provided at inference time, which limits the model's ability to fully understand the database contents. Without dynamic interaction, LLMs are constrained to fixed, human-provided context and cannot autonomously explore the underlying data. To address this limitation, we propose SDE-SQL, a framework that enables large language models to perform self-driven exploration of databases during inference. This is accomplished by generating and executing SQL probes, which allow the model to actively retrieve information from the database and iteratively update its understanding of the data. Unlike prior methods, SDE-SQL operates in a zero-shot setting, without relying on any question-SQL pairs as in-context demonstrations. When evaluated on the BIRD benchmark with Qwen2.5-72B-Instruct, SDE-SQL achieves an 8.02% relative improvement in execution accuracy over the vanilla Qwen2.5-72B-Instruct baseline, establishing a new state-of-the-art among methods based on open-source models without supervised fine-tuning (SFT) or model ensembling. Moreover, with SFT, the performance of SDE-SQL can be further enhanced, yielding an additional 0.52% improvement.
 ]]></content:encoded>
 <pubDate>Mon, 23 Jun 2025 00:00:00 -0400</pubDate>
 </item>
