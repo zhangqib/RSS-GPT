@@ -4,19 +4,19 @@
 <title>cs.LG updates on arXiv.org</title>
 <link>http://rss.arxiv.org/rss/cs.LG</link>
 
+
 <item>
 <title>ODE$_t$(ODE$_l$): Shortcutting the Time and Length in Diffusion and Flow Models for Faster Sampling</title>
 <link>https://arxiv.org/abs/2506.21714</link>
 <guid>https://arxiv.org/abs/2506.21714</guid>
 <content:encoded><![CDATA[
-<div> Transformer, continuous normalizing flows, diffusion models, sampling, ODE<br>
-<br>
+<div> Transformer, continuous normalizing flows, diffusion models, sampling, ODE<br />
+<br />
 Summary: 
 The article presents a new approach to improving the efficiency of continuous normalizing flows (CNFs) and diffusion models (DMs) by dynamically controlling the quality-complexity tradeoff during sampling. By rewiring transformer-based architecture blocks to solve an inner discretized ordinary differential equation (ODE), the model can adjust the number of time steps and transformer blocks used. Time- and length-wise consistency terms are employed during training to enhance flow matching. The ODE$_t$(ODE$_l$) approach is solver-agnostic in the time dimension, reducing latency and memory usage compared to previous methods. Image generation experiments on CelebA-HQ and ImageNet demonstrate latency reductions of up to 3 times and FID score improvements of up to 3.5 points for high-quality sampling. The code and model weights are released for reproducible experiments. <div>
 arXiv:2506.21714v2 Announce Type: replace 
 Abstract: Recently, continuous normalizing flows (CNFs) and diffusion models (DMs) have been studied using the unified theoretical framework. Although such models can generate high-quality data points from a noise distribution, the sampling demands multiple iterations to solve an ordinary differential equation (ODE) with high computational complexity. Most existing methods focus on reducing the number of time steps during the sampling process to improve efficiency. In this work, we explore a complementary direction in which the quality-complexity tradeoff can be dynamically controlled in terms of time steps and in the length of the neural network. We achieve this by rewiring the blocks in the transformer-based architecture to solve an inner discretized ODE w.r.t. its length. Then, we employ time- and length-wise consistency terms during flow matching training, and as a result, the sampling can be performed with an arbitrary number of time steps and transformer blocks. Unlike others, our ODE$_t$(ODE$_l$) approach is solver-agnostic in time dimension and decreases both latency and memory usage. Compared to the previous state of the art, image generation experiments on CelebA-HQ and ImageNet show a latency reduction of up to 3$\times$ in the most efficient sampling mode, and a FID score improvement of up to 3.5 points for high-quality sampling. We release our code and model weights with fully reproducible experiments.
 ]]></content:encoded>
-<pubDate>Fri, 04 Jul 2025 00:00:00 -0400</pubDate>
 <pubDate>Fri, 04 Jul 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -29,14 +29,12 @@ Abstract: Recently, continuous normalizing flows (CNFs) and diffusion models (DM
 Summary: 
 Modern Large Language Models like LLaMA, Qwen, and DeepSeek often face limitations with the Pre-LayerNorm Transformer architecture due to exponential activation variance across layers, leading to the domination of shortcuts over sub-layer outputs. To address this, the proposed Gradient-Preserving Activation Scaling (GPAS) technique scales down intermediate activations while preserving gradients to enhance training dynamics. GPAS consistently improves performance across different model sizes and also shows potential in enhancing alternative architectures like Sandwich-LN and DeepNorm. By maintaining activation information and avoiding gradient vanishing issues, GPAS offers versatility and efficacy in optimizing training processes for various settings. The availability of code on GitHub ensures accessibility and easy implementation for researchers and practitioners. 
 
-<br><br>Summary: <div>
+<br /><br />Summary: <div>
 arXiv:2506.22049v2 Announce Type: replace 
 Abstract: Modern Large Language Models, such as the LLaMA, Qwen and DeepSeek series, predominantly adopt the Pre-LayerNorm (Pre-LN) Transformer architecture. While being stable during pretraining and scalable to large model sizes, Pre-LN suffers from an exponential growth in activation variance across layers, causing the shortcut to dominate over sub-layer outputs in the residual connection and limiting the learning capacity of deeper layers. To mitigate this issue, we propose Gradient-Preserving Activation Scaling (GPAS), a simple technique that can be used in combination with existing approaches. GPAS works by scaling down the intermediate activations while keeping their gradients unchanged. This leaves information in the activations intact, and avoids the gradient vanishing problem associated with gradient downscaling. Extensive experiments across various model sizes from 71M to 1B show that GPAS achieves consistent performance gains. Beyond enhancing Pre-LN Transformers, GPAS also shows promise in improving alternative architectures such as Sandwich-LN and DeepNorm, demonstrating its versatility and potential for improving training dynamics in a wide range of settings. Our code is available at https://github.com/dandingsky/GPAS.
 ]]></content:encoded>
 <pubDate>Fri, 04 Jul 2025 00:00:00 -0400</pubDate>
-<pubDate>Fri, 04 Jul 2025 00:00:00 -0400</pubDate>
 </item>
-
 <item>
 <title>Learnable-Differentiable Finite Volume Solver for Accelerated Simulation of Flows</title>
 <link>https://arxiv.org/abs/2507.01975</link>
@@ -11073,27 +11071,6 @@ Abstract: Predictive modeling on tabular data is the cornerstone of many real-wo
 <content:encoded><![CDATA[
 arXiv:2505.22768v2 Announce Type: replace 
 Abstract: Time series forecasting remains a challenging task for foundation models due to temporal heterogeneity, high dimensionality, and the lack of inherent symbolic structure. In this work, we propose DRAGON (Discrete Representation and Augmented Graph encoding Over de BruijN Graphs), a novel encoder that introduces Multivariate de Bruijn Graphs (MdBGs) to bridge the gap between symbolic representations and neural modeling. DRAGON discretizes continuous input sequences and maps them onto a fixed graph structure, enabling dynamic context recovery via graph-based attention. Integrated as an auxiliary module within a dual-branch architecture, DRAGON augments conventional CNN-based encoders with symbolic, structure-aware representations. All code developed for this study is available at: https://github.com/KurbanIntelligenceLab/MultdBG-Time-Series-Library
-]]></content:encoded>
-<pubDate>Tue, 01 Jul 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Orthogonal Gradient Descent Improves Neural Calibration</title>
-<link>https://arxiv.org/abs/2506.04487</link>
-<guid>https://arxiv.org/abs/2506.04487</guid>
-<content:encoded><![CDATA[
-arXiv:2506.04487v2 Announce Type: replace 
-Abstract: We provide evidence that orthogonalizing gradients during training improves model calibration without sacrificing accuracy. On CIFAR-10 with 10\% labeled data, $\perp$Grad matches SGD in accuracy but yields consistently improved calibration metrics such as lower test loss, reduced softmax overconfidence, and higher predictive entropy. These benefits persist under input corruption (CIFAR-10C) and extended training, where $\perp$Grad models degrade more gracefully than SGD-trained counterparts. $\perp$Grad is optimizer-agnostic, incurs minimal overhead, and works well with post-hoc calibration techniques like temperature scaling.
-  Theoretically, we prove convergence of a simplified version of $\perp$Grad under mild assumptions and characterize its stationary points in positive homogeneous networks: $\perp$Grad converges to solutions where further loss reduction requires confidence scaling rather than decision boundary improvement. Code for this paper can be found at: https://github.com/evanshedges2/orthograd\_improves\_calibration.
-]]></content:encoded>
-<pubDate>Tue, 01 Jul 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Two-dimensional Taxonomy for N-ary Knowledge Representation Learning Methods</title>
-<link>https://arxiv.org/abs/2506.05626</link>
-<guid>https://arxiv.org/abs/2506.05626</guid>
-<content:encoded><![CDATA[
-arXiv:2506.05626v2 Announce Type: replace 
-Abstract: Real-world knowledge can take various forms, including structured, semi-structured, and unstructured data. Among these, knowledge graphs are a form of structured human knowledge that integrate heterogeneous data sources into structured representations but typically reduce complex n-ary relations to simple triples, thereby losing higher-order relational details. In contrast, hypergraphs naturally represent n-ary relations with hyperedges, which directly connect multiple entities together. Yet hypergraph representation learning often overlooks entity roles in hyperedges, limiting the finegrained semantic modelling. To address these issues, knowledge hypergraphs and hyper-relational knowledge graphs combine the advantages of knowledge graphs and hypergraphs to better capture the complex structures and role-specific semantics of real world knowledge. This survey provides a comprehensive review of methods handling n-ary relational data, covering both knowledge hypergraphs and hyper-relational knowledge graphs literatures. We propose a two-dimensional taxonomy: the first dimension categorises models based on their methodology, i.e., translation-based models, tensor factorisation-based models, deep neural network-based models, logic rules-based models, and hyperedge expansion-based models. The second dimension classifies models according to their awareness of entity roles and positions in n-ary relations, dividing them into aware-less, position-aware, and role-aware approaches. Finally, we discuss existing datasets, training settings and strategies, and outline open challenges to inspire future research.
 ]]></content:encoded>
 <pubDate>Tue, 01 Jul 2025 00:00:00 -0400</pubDate>
 </item>

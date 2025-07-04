@@ -4,6 +4,7 @@
 <title>cs.CV updates on arXiv.org</title>
 <link>http://rss.arxiv.org/rss/cs.CV</link>
 
+
 <item>
 <title>ODE$_t$(ODE$_l$): Shortcutting the Time and Length in Diffusion and Flow Models for Faster Sampling</title>
 <link>https://arxiv.org/abs/2506.21714</link>
@@ -17,9 +18,7 @@ arXiv:2506.21714v2 Announce Type: replace-cross
 Abstract: Recently, continuous normalizing flows (CNFs) and diffusion models (DMs) have been studied using the unified theoretical framework. Although such models can generate high-quality data points from a noise distribution, the sampling demands multiple iterations to solve an ordinary differential equation (ODE) with high computational complexity. Most existing methods focus on reducing the number of time steps during the sampling process to improve efficiency. In this work, we explore a complementary direction in which the quality-complexity tradeoff can be dynamically controlled in terms of time steps and in the length of the neural network. We achieve this by rewiring the blocks in the transformer-based architecture to solve an inner discretized ODE w.r.t. its length. Then, we employ time- and length-wise consistency terms during flow matching training, and as a result, the sampling can be performed with an arbitrary number of time steps and transformer blocks. Unlike others, our ODE$_t$(ODE$_l$) approach is solver-agnostic in time dimension and decreases both latency and memory usage. Compared to the previous state of the art, image generation experiments on CelebA-HQ and ImageNet show a latency reduction of up to 3$\times$ in the most efficient sampling mode, and a FID score improvement of up to 3.5 points for high-quality sampling. We release our code and model weights with fully reproducible experiments.
 ]]></content:encoded>
 <pubDate>Fri, 04 Jul 2025 00:00:00 -0400</pubDate>
-<pubDate>Fri, 04 Jul 2025 00:00:00 -0400</pubDate>
 </item>
-
 <item>
 <title>Large Language Models for Crash Detection in Video: A Survey of Methods, Datasets, and Challenges</title>
 <link>https://arxiv.org/abs/2507.02074</link>
@@ -11276,16 +11275,6 @@ Abstract: Image restoration is a key task in low-level computer vision that aims
 <content:encoded><![CDATA[
 arXiv:2506.22274v1 Announce Type: new 
 Abstract: Natural scenes provide us with rich contexts for object recognition and reference. In particular, knowing what type of scene one is looking at generates expectations about which objects will occur, and what their spatial configuration should be. Do Vision-Language Models (VLMs) learn to rely on scene contexts in a similar way, when generating references to objects? To address this question, we introduce the \textit{Common Objects Out-of-Context (COOCO)} dataset and test to what extent VLMs rely on scene context to refer to objects under different degrees of scene-object congruency, and different perturbations. Our findings show that models leverage scene context adaptively, depending on both the semantic relatedness between object and scene and the level of noise. In particular, models rely more on context under high target-scene congruence or when objects are degraded. Attention analysis reveals that successful object categorisation involves increased focus on the target in mid-level layers, especially under moderate noise, suggesting that VLMs dynamically balance local and contextual information for reference generation. We make our dataset, code and models available at \href{https://github.com/cs-nlp-uu/scenereg}{https://github.com/cs-nlp-uu/scenereg}.
-]]></content:encoded>
-<pubDate>Mon, 30 Jun 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Rethinking Visual Token Reduction in LVLMs under Cross-modal Misalignment</title>
-<link>https://arxiv.org/abs/2506.22283</link>
-<guid>https://arxiv.org/abs/2506.22283</guid>
-<content:encoded><![CDATA[
-arXiv:2506.22283v1 Announce Type: new 
-Abstract: Large Vision-Language Models (LVLMs) encode visual inputs as dense sequences of patch-level tokens to capture fine-grained semantics. These visual tokens often outnumber their textual counterparts by a large margin, leading to substantial computational overhead and limiting the scalability of LVLMs in practice. Previous efforts have explored visual token reduction either prior to or within the large language models (LLM). However, most in-LLM reduction approaches rely on text-conditioned interactions, implicitly assuming that textual tokens can reliably capture the importance of visual tokens. In this work, we revisit this assumption and reveal causal, semantic, and spatial forms of cross-modal misalignment. These misalignments undermine the effectiveness of text-guided visual token reduction. To address this, we introduce VisionDrop, a training-free, visual-only pruning framework that selects informative visual tokens based on intra-modal (visual-to-visual) attention, without relying on textual signals. To further suppress redundancy throughout the model hierarchy, we treat the visual encoder and the LLM as a unified system and design a progressive pruning pipeline. Our method performs dominant token selection and lightweight contextual merging at multiple stages, enabling fine-grained visual information to be retained even under aggressive token budgets. Extensive experiments across diverse benchmarks show that VisionDrop achieves consistent improvements over existing methods, despite requiring no additional training or complex modifications. Its simple yet effective design enables efficient inference while preserving strong performance across tasks.
 ]]></content:encoded>
 <pubDate>Mon, 30 Jun 2025 00:00:00 -0400</pubDate>
 </item>
