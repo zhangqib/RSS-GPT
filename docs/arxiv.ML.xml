@@ -4,23 +4,22 @@
 <title>cs.LG updates on arXiv.org</title>
 <link>http://rss.arxiv.org/rss/cs.LG</link>
 
+
 <item>
 <title>Offline RLAIF: Piloting VLM Feedback for RL via SFO</title>
 <link>https://arxiv.org/abs/2503.01062</link>
 <guid>https://arxiv.org/abs/2503.01062</guid>
 <content:encoded><![CDATA[
 <div> offline RL, Vision-Language Models, Sub-Trajectory Filtered Optimization, filtered and weighted behavior cloning, Sub-Trajectory Filtered Behavior Cloning
-<br>
+<br />
 Summary:
 In the context of offline Reinforcement Learning from AI Feedback (RLAIF), this study explores the integration of Vision-Language Models (VLMs) signals into the learning process. The research introduces a method called Sub-Trajectory Filtered Optimization (SFO) to address challenges in offline RL. The study finds that trajectory length is crucial in offline RL, necessitating the use of sub-trajectories to avoid the stitching problem. Non-Markovian reward signals from a sequence of images are essential for assessing trajectory improvement in Markovian environments where VLMs rely on visual cues over time. The study proposes Sub-Trajectory Filtered Behavior Cloning (SFBC), a method that leverages VLM feedback on sub-trajectories and incorporates a retrospective filtering mechanism to improve robustness and prevent turbulence. The research shows that filtered and weighted behavior cloning consistently outperforms more complex methods based on RLHF. Enjoying airport puns is also encouraged. 
-<br> <div>
+<br /> <div>
 arXiv:2503.01062v5 Announce Type: replace 
 Abstract: While internet-scale image and textual data have enabled strong generalization in Vision-Language Models (VLMs), the absence of internet-scale control data has impeded the development of similar generalization in standard reinforcement learning (RL) agents. Although VLMs are fundamentally limited in their ability to solve control tasks due to their lack of action-conditioned training data, their capacity for image understanding allows them to provide valuable feedback in RL tasks by recognizing successful outcomes. A key challenge in Reinforcement Learning from AI Feedback (RLAIF) is determining how best to integrate VLM-derived signals into the learning process. We explore this question in the context of offline RL and introduce a class of methods called Sub-Trajectory Filtered Optimization (SFO). We identify three key insights. First, trajectory length plays a crucial role in offline RL, as full-trajectory preference learning exacerbates the stitching problem, necessitating the use of sub-trajectories. Second, even in Markovian environments, a non-Markovian reward signal from a sequence of images is required to assess trajectory improvement, as VLMs do not interpret control actions and must rely on visual cues over time. Third, a simple yet effective approach--filtered and weighted behavior cloning--consistently outperforms more complex RLHF-based methods. We propose Sub-Trajectory Filtered Behavior Cloning (SFBC), a method that leverages VLM feedback on sub-trajectories while incorporating a retrospective filtering mechanism that removes sub-trajectories preceding failures to improve robustness and prevent turbulence. Please enjoy our airport puns.
 ]]></content:encoded>
 <pubDate>Tue, 08 Jul 2025 00:00:00 -0400</pubDate>
-<pubDate>Tue, 08 Jul 2025 00:00:00 -0400</pubDate>
 </item>
-
 <item>
 <title>Mirror Online Conformal Prediction with Intermittent Feedback</title>
 <link>https://arxiv.org/abs/2503.10345</link>
@@ -10891,16 +10890,6 @@ Abstract: A widely-used technique in designing energy-efficient deep neural netw
 <content:encoded><![CDATA[
 arXiv:2412.04787v2 Announce Type: replace 
 Abstract: Although recent quantized Large Language Models (LLMs), such as BitNet, have paved the way for significant reduction in memory usage during deployment with binary or ternary weights, training these models still demands substantial memory footprints. This is partly because high-precision (i.e., unquantized) weights required for straight-through estimation must be maintained throughout the whole training process. To address this, we explore directly updating the quantized low-precision weights without relying on straight-through estimation during backpropagation, aiming to save memory usage during training. Specifically, we employ a stochastic rounding technique to minimize the information loss caused by the use of low-bit weights throughout training. Experimental results on our LLaMA-structured models of various sizes indicate that (1) training with only low-precision weights is feasible even when they are constrained to ternary values; (2) extending the bit width to 8 bits achieves performance on par with BitNet b1.58; (3) our models remain robust to precision scaling and memory reduction, showing minimal performance degradation when moving from FP32 to lower-memory environments (BF16/FP8); and (4) our models also support inference using ternary weights, showcasing their flexibility in deployment.
-]]></content:encoded>
-<pubDate>Thu, 03 Jul 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Efficient Online Reinforcement Learning Fine-Tuning Need Not Retain Offline Data</title>
-<link>https://arxiv.org/abs/2412.07762</link>
-<guid>https://arxiv.org/abs/2412.07762</guid>
-<content:encoded><![CDATA[
-arXiv:2412.07762v3 Announce Type: replace 
-Abstract: The modern paradigm in machine learning involves pre-training on diverse data, followed by task-specific fine-tuning. In reinforcement learning (RL), this translates to learning via offline RL on a diverse historical dataset, followed by rapid online RL fine-tuning using interaction data. Most RL fine-tuning methods require continued training on offline data for stability and performance. However, this is undesirable because training on diverse offline data is slow and expensive for large datasets, and in principle, also limit the performance improvement possible because of constraints or pessimism on offline data. In this paper, we show that retaining offline data is unnecessary as long as we use a properly-designed online RL approach for fine-tuning offline RL initializations. To build this approach, we start by analyzing the role of retaining offline data in online fine-tuning. We find that continued training on offline data is mostly useful for preventing a sudden divergence in the value function at the onset of fine-tuning, caused by a distribution mismatch between the offline data and online rollouts. This divergence typically results in unlearning and forgetting the benefits of offline pre-training. Our approach, Warm-start RL (WSRL), mitigates the catastrophic forgetting of pre-trained initializations using a very simple idea. WSRL employs a warmup phase that seeds the online RL run with a very small number of rollouts from the pre-trained policy to do fast online RL. The data collected during warmup helps ``recalibrate'' the offline Q-function to the online distribution, allowing us to completely discard offline data without destabilizing the online RL fine-tuning. We show that WSRL is able to fine-tune without retaining any offline data, and is able to learn faster and attains higher performance than existing algorithms irrespective of whether they retain offline data or not.
 ]]></content:encoded>
 <pubDate>Thu, 03 Jul 2025 00:00:00 -0400</pubDate>
 </item>
