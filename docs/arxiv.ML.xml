@@ -5,6 +5,23 @@
 <link>http://rss.arxiv.org/rss/cs.LG</link>
 
 <item>
+<title>Offline RLAIF: Piloting VLM Feedback for RL via SFO</title>
+<link>https://arxiv.org/abs/2503.01062</link>
+<guid>https://arxiv.org/abs/2503.01062</guid>
+<content:encoded><![CDATA[
+<div> offline RL, Vision-Language Models, Sub-Trajectory Filtered Optimization, filtered and weighted behavior cloning, Sub-Trajectory Filtered Behavior Cloning
+<br>
+Summary:
+In the context of offline Reinforcement Learning from AI Feedback (RLAIF), this study explores the integration of Vision-Language Models (VLMs) signals into the learning process. The research introduces a method called Sub-Trajectory Filtered Optimization (SFO) to address challenges in offline RL. The study finds that trajectory length is crucial in offline RL, necessitating the use of sub-trajectories to avoid the stitching problem. Non-Markovian reward signals from a sequence of images are essential for assessing trajectory improvement in Markovian environments where VLMs rely on visual cues over time. The study proposes Sub-Trajectory Filtered Behavior Cloning (SFBC), a method that leverages VLM feedback on sub-trajectories and incorporates a retrospective filtering mechanism to improve robustness and prevent turbulence. The research shows that filtered and weighted behavior cloning consistently outperforms more complex methods based on RLHF. Enjoying airport puns is also encouraged. 
+<br> <div>
+arXiv:2503.01062v5 Announce Type: replace 
+Abstract: While internet-scale image and textual data have enabled strong generalization in Vision-Language Models (VLMs), the absence of internet-scale control data has impeded the development of similar generalization in standard reinforcement learning (RL) agents. Although VLMs are fundamentally limited in their ability to solve control tasks due to their lack of action-conditioned training data, their capacity for image understanding allows them to provide valuable feedback in RL tasks by recognizing successful outcomes. A key challenge in Reinforcement Learning from AI Feedback (RLAIF) is determining how best to integrate VLM-derived signals into the learning process. We explore this question in the context of offline RL and introduce a class of methods called Sub-Trajectory Filtered Optimization (SFO). We identify three key insights. First, trajectory length plays a crucial role in offline RL, as full-trajectory preference learning exacerbates the stitching problem, necessitating the use of sub-trajectories. Second, even in Markovian environments, a non-Markovian reward signal from a sequence of images is required to assess trajectory improvement, as VLMs do not interpret control actions and must rely on visual cues over time. Third, a simple yet effective approach--filtered and weighted behavior cloning--consistently outperforms more complex RLHF-based methods. We propose Sub-Trajectory Filtered Behavior Cloning (SFBC), a method that leverages VLM feedback on sub-trajectories while incorporating a retrospective filtering mechanism that removes sub-trajectories preceding failures to improve robustness and prevent turbulence. Please enjoy our airport puns.
+]]></content:encoded>
+<pubDate>Tue, 08 Jul 2025 00:00:00 -0400</pubDate>
+<pubDate>Tue, 08 Jul 2025 00:00:00 -0400</pubDate>
+</item>
+
+<item>
 <title>Mirror Online Conformal Prediction with Intermittent Feedback</title>
 <link>https://arxiv.org/abs/2503.10345</link>
 <guid>https://arxiv.org/abs/2503.10345</guid>
@@ -17,15 +34,14 @@ arXiv:2503.10345v5 Announce Type: replace
 Abstract: Online conformal prediction enables the runtime calibration of a pre-trained artificial intelligence model using feedback on its performance. Calibration is achieved through set predictions that are updated via online rules so as to ensure long-term coverage guarantees. While recent research has demonstrated the benefits of incorporating prior knowledge into the calibration process, this has come at the cost of replacing coverage guarantees with less tangible regret guarantees based on the quantile loss. This work introduces intermittent mirror online conformal prediction (IM-OCP), a novel runtime calibration framework that integrates prior knowledge, operates under potentially intermittent feedback, and features minimal memory complexity. IM-OCP guarantees long-term coverage and sub-linear regret, both of which hold deterministically for any given data sequence and in expectation with respect to the intermittent feedback.
 ]]></content:encoded>
 <pubDate>Tue, 08 Jul 2025 00:00:00 -0400</pubDate>
-<pubDate>Tue, 08 Jul 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
 <title>Discrete Diffusion in Large Language and Multimodal Models: A Survey</title>
 <link>https://arxiv.org/abs/2506.13759</link>
 <guid>https://arxiv.org/abs/2506.13759</guid>
 <content:encoded><![CDATA[
-<div> diffusion language models, diffusion multimodal language models, discrete, parallel decoding, attention<br>
-<br>Summary: 
+<div> diffusion language models, diffusion multimodal language models, discrete, parallel decoding, attention<br />
+<br />Summary: 
 This article provides a detailed survey of Discrete Diffusion Language Models (dLLMs) and Discrete Diffusion Multimodal Language Models (dMLLMs). Unlike autoregressive models, dLLMs and dMLLMs use a multi-token, parallel decoding approach with full attention and denoising-based generation. This allows for parallel generation, precise output control, and responsive perception. Recent advancements have led to industrial-scale proprietary d(M)LLMs and open-source academic models achieving comparable performance to autoregressive models with a 10x speedup in inference. The progress in these models is attributed to advancements in autoregressive models and the evolution of mathematical models underlying discrete diffusion. The article covers the historical development, mathematical frameworks, representative models, training techniques, inference methods, and applications in language, vision-language, and biological domains. Future research and deployment directions are also discussed. <div>
 arXiv:2506.13759v3 Announce Type: replace 
 Abstract: In this work, we provide a systematic survey of Discrete Diffusion Language Models (dLLMs) and Discrete Diffusion Multimodal Language Models (dMLLMs). Unlike autoregressive (AR) models, dLLMs and dMLLMs adopt a multi-token, parallel decoding paradigm using full attention and a denoising-based generation strategy. This paradigm naturally enables parallel generation, fine-grained output controllability, and dynamic, response-aware perception. These capabilities are previously difficult to achieve with AR models. Recently, a growing number of industrial-scale proprietary d(M)LLMs, as well as a large number of open-source academic d(M)LLMs, have demonstrated performance comparable to their autoregressive counterparts, while achieving up to 10x acceleration in inference speed.
@@ -33,7 +49,6 @@ Abstract: In this work, we provide a systematic survey of Discrete Diffusion Lan
   In this work, we present a comprehensive overview of the research in the dLLM and dMLLM domains. We trace the historical development of dLLMs and dMLLMs, formalize the underlying mathematical frameworks, and categorize representative models. We further analyze key techniques for training and inference, and summarize emerging applications across language, vision-language, and biological domains. We conclude by discussing future directions for research and deployment.
   Paper collection: https://github.com/LiQiiiii/DLLM-Survey
 ]]></content:encoded>
-<pubDate>Tue, 08 Jul 2025 00:00:00 -0400</pubDate>
 <pubDate>Tue, 08 Jul 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -44,11 +59,10 @@ Abstract: In this work, we provide a systematic survey of Discrete Diffusion Lan
 <div> mathematical derivation, supervised fine-tuning, preference learning, large language model, optimization
 
 Summary:
-In this article, the authors propose a framework that connects Supervised Fine-Tuning (SFT) and preference learning in post-training language models. They reveal that SFT and methods like Direct Preference Optimization (DPO) operate in the same optimal policy-reward subspace, with SFT being a form of implicit reward learning. A limitation of conventional SFT is identified, where the KL divergence term becomes constant during optimization, hindering model updates. To improve performance, the authors suggest a learning rate reduction technique that leads to significant gains in tasks involving instruction following. They also explore alternative SFT objectives derived from f-divergence functions to enhance model performance further. Additionally, the relationship between Large Language Model (LLM) logits and Q-functions is extended from preference learning to SFT, supported by mathematical derivations and experimental validation.<br><br>Summary: <div>
+In this article, the authors propose a framework that connects Supervised Fine-Tuning (SFT) and preference learning in post-training language models. They reveal that SFT and methods like Direct Preference Optimization (DPO) operate in the same optimal policy-reward subspace, with SFT being a form of implicit reward learning. A limitation of conventional SFT is identified, where the KL divergence term becomes constant during optimization, hindering model updates. To improve performance, the authors suggest a learning rate reduction technique that leads to significant gains in tasks involving instruction following. They also explore alternative SFT objectives derived from f-divergence functions to enhance model performance further. Additionally, the relationship between Large Language Model (LLM) logits and Q-functions is extended from preference learning to SFT, supported by mathematical derivations and experimental validation.<br /><br />Summary: <div>
 arXiv:2507.00018v2 Announce Type: replace 
 Abstract: Post-training processes are essential phases in grounding pre-trained language models to real-world tasks, with learning from demonstrations or preference signals playing a crucial role in this adaptation. We present a unified theoretical framework bridging Supervised Fine-Tuning (SFT) and preference learning in Large Language Model (LLM) post-training. Through rigorous mathematical derivation, we demonstrate that both SFT and preference learning methods like Direct Preference Optimization (DPO) operate within the same optimal policy-reward subspace, with SFT representing a special case of implicit reward learning. Our analysis reveals a critical limitation in conventional SFT: the KL divergence term in distribution matching becomes constant with respect to the policy during optimization, failing to constrain model updates. To address this, we propose a simple yet effective learning rate reduction approach that yields significant performance improvements (up to \textbf{25\%} relative gain and \textbf{6\%} absolute win rate increase in instruction following tasks. Additionally, we derive alternative SFT objectives from various f-divergence functions that preserve the KL term during optimization, further enhancing post-DPO model performance. Finally, we extend the theoretical relationship between LLM logits and Q-functions from preference learning to the SFT context, providing mathematical derivations and experimental validation.
 ]]></content:encoded>
-<pubDate>Tue, 08 Jul 2025 00:00:00 -0400</pubDate>
 <pubDate>Tue, 08 Jul 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -56,13 +70,12 @@ Abstract: Post-training processes are essential phases in grounding pre-trained 
 <link>https://arxiv.org/abs/2507.00022</link>
 <guid>https://arxiv.org/abs/2507.00022</guid>
 <content:encoded><![CDATA[
-<div> Keywords: GLU Attention, nonlinearity, model performance, convergence speed, open-sourced <br>
-<br>Summary: 
+<div> Keywords: GLU Attention, nonlinearity, model performance, convergence speed, open-sourced <br />
+<br />Summary: 
 The paper introduces GLU Attention, a novel attention mechanism that adds nonlinearity to Attention values, enhancing neural network performance. Experiments across text and vision modalities show improved model performance and faster convergence without additional parameters or significant computational costs. GLU Attention is lightweight and easily integrates with other technologies like Flash Attention, RoPE, and MHA variants such as GQA. The project is open-sourced on Github, facilitating further research and development in the field. <div>
 arXiv:2507.00022v2 Announce Type: replace 
 Abstract: Gated Linear Units (GLU) have shown great potential in enhancing neural network performance. In this paper, I introduce a novel attention mechanism called GLU Attention, which introduces nonlinearity into the values of Attention. My experiments demonstrate that GLU Attention improves both model performance and convergence speed across text and vision modalities with zero additional parameters and negligible computational costs. GLU Attention is lightweight and can seamlessly integrate with other technologies, such as Flash Attention, Rotary Position Embedding (RoPE), and various Multi-Head Attention (MHA) variants such as Grouped-Query Attention (GQA). This project is open-sourced at github.
 ]]></content:encoded>
-<pubDate>Tue, 08 Jul 2025 00:00:00 -0400</pubDate>
 <pubDate>Tue, 08 Jul 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -70,14 +83,13 @@ Abstract: Gated Linear Units (GLU) have shown great potential in enhancing neura
 <link>https://arxiv.org/abs/2507.00230</link>
 <guid>https://arxiv.org/abs/2507.00230</guid>
 <content:encoded><![CDATA[
-<div> Keywords: image reconstruction, Privacy-Preserving Federated Learning, Residual Dense Spatial Networks, differential privacy, watermarking <br>
-<br>
+<div> Keywords: image reconstruction, Privacy-Preserving Federated Learning, Residual Dense Spatial Networks, differential privacy, watermarking <br />
+<br />
 Summary: 
 The article introduces the Privacy-Preserving Federated Learning-based RDSN (PPFL-RDSN) framework for reconstructing high-quality images from low-resolution inputs. By combining Federated Learning, local differential privacy, and robust model watermarking, PPFL-RDSN ensures data security on local devices, protecting sensitive information and maintaining model authenticity. Empirical evaluations demonstrate that PPFL-RDSN achieves performance comparable to centralized methods while reducing computational costs and addressing security and privacy vulnerabilities. With a focus on secure and privacy-preserving collaborative computer vision applications, PPFL-RDSN offers a practical solution for maintaining data privacy and security in collaborative scenarios. <div>
 arXiv:2507.00230v2 Announce Type: replace 
 Abstract: Reconstructing high-quality images from low-resolution inputs using Residual Dense Spatial Networks (RDSNs) is crucial yet challenging, particularly in collaborative scenarios where centralized training poses significant privacy risks, including data leakage and inference attacks, as well as high computational costs. We propose a novel Privacy-Preserving Federated Learning-based RDSN (PPFL-RDSN) framework specifically tailored for lossy image reconstruction. PPFL-RDSN integrates Federated Learning (FL), local differential privacy, and robust model watermarking techniques, ensuring data remains secure on local devices, safeguarding sensitive information, and maintaining model authenticity without revealing underlying data. Empirical evaluations show that PPFL-RDSN achieves comparable performance to the state-of-the-art centralized methods while reducing computational burdens, and effectively mitigates security and privacy vulnerabilities, making it a practical solution for secure and privacy-preserving collaborative computer vision applications.
 ]]></content:encoded>
-<pubDate>Tue, 08 Jul 2025 00:00:00 -0400</pubDate>
 <pubDate>Tue, 08 Jul 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -85,14 +97,13 @@ Abstract: Reconstructing high-quality images from low-resolution inputs using Re
 <link>https://arxiv.org/abs/2507.00467</link>
 <guid>https://arxiv.org/abs/2507.00467</guid>
 <content:encoded><![CDATA[
-<div> Random Forest, ensemble learning, informative features, maximal diversity, refined classifier <br>
-<br>
+<div> Random Forest, ensemble learning, informative features, maximal diversity, refined classifier <br />
+<br />
 Summary: 
 The article introduces a Refined Random Forest Classifier that focuses on growing trees dynamically on informative features to reduce inference cost and model redundancy. The approach involves iteratively refining the model by removing the least informative features and determining the optimal number of new trees to grow. This is followed by correlation-based clustering to remove redundant trees and ensure maximal diversity. Experimental results on multiple benchmark datasets show that the proposed model outperforms the standard Random Forest in terms of classification accuracy. The research highlights the importance of selecting informative features and maximizing diversity in ensemble learning techniques like Random Forest to enhance performance across diverse domains. <div>
 arXiv:2507.00467v2 Announce Type: replace 
 Abstract: Random Forest (RF) is a widely used ensemble learning technique known for its robust classification performance across diverse domains. However, it often relies on hundreds of trees and all input features, leading to high inference cost and model redundancy. In this work, our goal is to grow trees dynamically only on informative features and then enforce maximal diversity by clustering and retaining uncorrelated trees. Therefore, we propose a Refined Random Forest Classifier that iteratively refines itself by first removing the least informative features and then analytically determines how many new trees should be grown, followed by correlation-based clustering to remove redundant trees. The classification accuracy of our model was compared against the standard RF on the same number of trees. Experiments on 8 multiple benchmark datasets, including binary and multiclass datasets, demonstrate that the proposed model achieves improved accuracy compared to standard RF.
 ]]></content:encoded>
-<pubDate>Tue, 08 Jul 2025 00:00:00 -0400</pubDate>
 <pubDate>Tue, 08 Jul 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -103,11 +114,10 @@ Abstract: Random Forest (RF) is a widely used ensemble learning technique known 
 <div> Keywords: spaceborne GNSS missions, deep learning, significant wave height retrieval, SCAWaveNet, CYGNSS data
 
 Summary: 
-The article introduces SCAWaveNet, a novel deep learning model for significant wave height (SWH) retrieval using spaceborne GNSS data. Unlike existing models, SCAWaveNet incorporates cross-channel information interaction through spatial-channel attention mechanisms. This enables the fusion of spatial and channel-wise information, improving SWH estimation accuracy. Results show that SCAWaveNet outperforms state-of-the-art models, with an average RMSE of 0.438 m when compared to ERA5 data and 0.432 m when compared to NDBC buoy observations. The model reduces RMSE by at least 3.52% and 5.68% on ERA5 and NDBC datasets, respectively. The code for SCAWaveNet is available on GitHub for further exploration and implementation. Overall, SCAWaveNet demonstrates promising advancements in SWH retrieval using deep learning techniques and spaceborne GNSS data.<br><br>Summary: <div>
+The article introduces SCAWaveNet, a novel deep learning model for significant wave height (SWH) retrieval using spaceborne GNSS data. Unlike existing models, SCAWaveNet incorporates cross-channel information interaction through spatial-channel attention mechanisms. This enables the fusion of spatial and channel-wise information, improving SWH estimation accuracy. Results show that SCAWaveNet outperforms state-of-the-art models, with an average RMSE of 0.438 m when compared to ERA5 data and 0.432 m when compared to NDBC buoy observations. The model reduces RMSE by at least 3.52% and 5.68% on ERA5 and NDBC datasets, respectively. The code for SCAWaveNet is available on GitHub for further exploration and implementation. Overall, SCAWaveNet demonstrates promising advancements in SWH retrieval using deep learning techniques and spaceborne GNSS data.<br /><br />Summary: <div>
 arXiv:2507.00701v2 Announce Type: replace 
 Abstract: Recent advancements in spaceborne GNSS missions have produced extensive global datasets, providing a robust basis for deep learning-based significant wave height (SWH) retrieval. While existing deep learning models predominantly utilize CYGNSS data with four-channel information, they often adopt single-channel inputs or simple channel concatenation without leveraging the benefits of cross-channel information interaction during training. To address this limitation, a novel spatial-channel attention-based network, namely SCAWaveNet, is proposed for SWH retrieval. Specifically, features from each channel of the DDMs are modeled as independent attention heads, enabling the fusion of spatial and channel-wise information. For auxiliary parameters, a lightweight attention mechanism is designed to assign weights along the spatial and channel dimensions. The final feature integrates both spatial and channel-level characteristics. Model performance is evaluated using four-channel CYGNSS data. When ERA5 is used as a reference, SCAWaveNet achieves an average RMSE of 0.438 m. When using buoy data from NDBC, the average RMSE reaches 0.432 m. Compared to state-of-the-art models, SCAWaveNet reduces the average RMSE by at least 3.52% on the ERA5 dataset and by 5.68% on the NDBC buoy observations. The code is available at https://github.com/Clifx9908/SCAWaveNet.
 ]]></content:encoded>
-<pubDate>Tue, 08 Jul 2025 00:00:00 -0400</pubDate>
 <pubDate>Tue, 08 Jul 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -115,13 +125,12 @@ Abstract: Recent advancements in spaceborne GNSS missions have produced extensiv
 <link>https://arxiv.org/abs/2405.16594</link>
 <guid>https://arxiv.org/abs/2405.16594</guid>
 <content:encoded><![CDATA[
-<div> Methodology, Conformal prediction, Covariate shift, Training-conditional coverage, PAC guarantees <br>
-<br>
-In this paper, the authors explore the training-conditional coverage in conformal prediction methods extended to the covariate shift setting. While existing results ensure marginal coverage above a nominal level, the training-conditional coverage has not been thoroughly investigated. The study provides upper bounds on the tail of the training-conditional coverage distribution, offering probably approximately correct (PAC) guarantees for these methods. The results establish a connection between prediction set quality and distributional changes' severity, potentially enabling the computation of more efficient prediction sets. This research contributes towards a deeper understanding of prediction methodologies in scenarios where the distribution of covariates differs between training and test data, enhancing the reliability and accuracy of predictive models in such settings. <br><br>Summary: <div>
+<div> Methodology, Conformal prediction, Covariate shift, Training-conditional coverage, PAC guarantees <br />
+<br />
+In this paper, the authors explore the training-conditional coverage in conformal prediction methods extended to the covariate shift setting. While existing results ensure marginal coverage above a nominal level, the training-conditional coverage has not been thoroughly investigated. The study provides upper bounds on the tail of the training-conditional coverage distribution, offering probably approximately correct (PAC) guarantees for these methods. The results establish a connection between prediction set quality and distributional changes' severity, potentially enabling the computation of more efficient prediction sets. This research contributes towards a deeper understanding of prediction methodologies in scenarios where the distribution of covariates differs between training and test data, enhancing the reliability and accuracy of predictive models in such settings. <br /><br />Summary: <div>
 arXiv:2405.16594v3 Announce Type: replace-cross 
 Abstract: Conformal prediction methodology has recently been extended to the covariate shift setting, where the distribution of covariates differs between training and test data. While existing results ensure that the prediction sets from these methods achieve marginal coverage above a nominal level, their coverage rate conditional on the training dataset (referred to as training-conditional coverage) remains unexplored. In this paper, we address this gap by deriving upper bounds on the tail of the training-conditional coverage distribution, offering probably approximately correct (PAC) guarantees for these methods. Our results quantify the relationship between the quality of the prediction sets and the severity of distributional changes, and can potentially be used to compute more efficient prediction sets.
 ]]></content:encoded>
-<pubDate>Tue, 08 Jul 2025 00:00:00 -0400</pubDate>
 <pubDate>Tue, 08 Jul 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -134,11 +143,10 @@ Abstract: Conformal prediction methodology has recently been extended to the cov
 Summary:
 The article discusses the challenges faced in deploying machine learning training pipelines into production and the importance of incorporating good software engineering practices to ensure software quality. The study focuses on the SPIRA project, which aims to create a Machine Learning-Enabled System (MLES) for pre-diagnosing respiratory insufficiency through speech analysis. It compares three versions of the project's Continuous Training subsystem, starting from a basic Big Ball of Mud design to a more structured Modular Monolith and finally to a microservices-based approach developed using test-driven techniques. Each version significantly improved the system's extensibility, maintainability, robustness, and resiliency. The study highlights the challenges encountered and lessons learned throughout the process, providing valuable insights for researchers and practitioners looking to optimize their ML pipelines for production deployment. 
 
-<br><br>Summary: <div>
+<br /><br />Summary: <div>
 arXiv:2506.06946v3 Announce Type: replace-cross 
 Abstract: Deploying a Machine Learning (ML) training pipeline into production requires good software engineering practices. Unfortunately, the typical data science workflow often leads to code that lacks critical software quality attributes. This experience report investigates this problem in SPIRA, a project whose goal is to create an ML-Enabled System (MLES) to pre-diagnose insufficiency respiratory via speech analysis. This paper presents an overview of the architecture of the MLES, then compares three versions of its Continuous Training subsystem: from a proof of concept Big Ball of Mud (v1), to a design pattern-based Modular Monolith (v2), to a test-driven set of Microservices (v3) Each version improved its overall extensibility, maintainability, robustness, and resiliency. The paper shares challenges and lessons learned in this process, offering insights for researchers and practitioners seeking to productionize their pipelines.
 ]]></content:encoded>
-<pubDate>Tue, 08 Jul 2025 00:00:00 -0400</pubDate>
 <pubDate>Tue, 08 Jul 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -154,7 +162,6 @@ arXiv:2506.22552v2 Announce Type: replace-cross
 Abstract: This work explores key conceptual limitations in data-driven modeling of multiscale dynamical systems, focusing on neural emulators and stochastic climate modeling. A skillful climate model should capture both stationary statistics and responses to external perturbations. While current autoregressive neural models often reproduce the former, they typically struggle with the latter. We begin by analyzing a low-dimensional dynamical system to expose, by analogy, fundamental limitations that persist in high-dimensional settings. Specifically, we construct neural stochastic models under two scenarios: one where the full state vector is observed, and another with only partial observations (i.e. a subset of variables). In the first case, the models accurately capture both equilibrium statistics and forced responses in ensemble mean and variance. In the more realistic case of partial observations, two key challenges emerge: (i) identifying the \textit{proper} variables to model, and (ii) parameterizing the influence of unobserved degrees of freedom. These issues are not specific to neural networks but reflect fundamental limitations of data-driven modeling and the need to target the slow dynamics of the system. We argue that physically grounded strategies -- such as coarse-graining and stochastic parameterizations -- are critical, both conceptually and practically, for the skillful emulation of complex systems like the coupled climate system. Building on these insights, we turn to a more realistic application: a stochastic reduced neural model of the sea surface temperature field and the net radiative flux at the top of the atmosphere, assessing its stationary statistics, response to temperature forcing, and interpretability.
 ]]></content:encoded>
 <pubDate>Tue, 08 Jul 2025 00:00:00 -0400</pubDate>
-<pubDate>Tue, 08 Jul 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
 <title>Minimax and Bayes Optimal Best-arm Identification: Adaptive Experimental Design for Treatment Choice</title>
@@ -163,11 +170,10 @@ Abstract: This work explores key conceptual limitations in data-driven modeling 
 <content:encoded><![CDATA[
 <div> adaptive experimental design, treatment choice, best-arm identification, adaptive procedure, treatment-allocation
 
-Summary:<br><br>This study explores adaptive experimental design for treatment choice, specifically fixed-budget best-arm identification. The process involves a treatment-allocation phase and a treatment-choice phase, aiming to efficiently identify the best treatment arm. The experiment includes a pilot phase to eliminate suboptimal arms and estimate outcome variances, followed by a phase allocating treatment arms based on these variances. The treatment-choice phase selects the arm with the highest sample mean as the best treatment. The designed experiment is proven to be both asymptotically minimax and Bayes optimal for simple regret, achieving efficiency limits without separate tuning. <div>
+Summary:<br /><br />This study explores adaptive experimental design for treatment choice, specifically fixed-budget best-arm identification. The process involves a treatment-allocation phase and a treatment-choice phase, aiming to efficiently identify the best treatment arm. The experiment includes a pilot phase to eliminate suboptimal arms and estimate outcome variances, followed by a phase allocating treatment arms based on these variances. The treatment-choice phase selects the arm with the highest sample mean as the best treatment. The designed experiment is proven to be both asymptotically minimax and Bayes optimal for simple regret, achieving efficiency limits without separate tuning. <div>
 arXiv:2506.24007v2 Announce Type: replace-cross 
 Abstract: This study investigates adaptive experimental design for treatment choice, also known as fixed-budget best-arm identification. We consider an adaptive procedure consisting of a treatment-allocation phase followed by a treatment-choice phase, and we design an adaptive experiment for this setup to efficiently identify the best treatment arm, defined as the one with the highest expected outcome. In our designed experiment, the treatment-allocation phase consists of two stages. The first stage is a pilot phase, where we allocate each treatment arm uniformly with equal proportions to eliminate clearly suboptimal arms and estimate outcome variances. In the second stage, we allocate treatment arms in proportion to the variances estimated in the first stage. After the treatment-allocation phase, the procedure enters the treatment-choice phase, where we choose the treatment arm with the highest sample mean as our estimate of the best treatment arm. We prove that this single design is simultaneously asymptotically minimax and Bayes optimal for the simple regret, with upper bounds that match our lower bounds up to exact constants. Therefore, our designed experiment achieves the sharp efficiency limits without requiring separate tuning for minimax and Bayesian objectives.
 ]]></content:encoded>
-<pubDate>Tue, 08 Jul 2025 00:00:00 -0400</pubDate>
 <pubDate>Tue, 08 Jul 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -175,14 +181,13 @@ Abstract: This study investigates adaptive experimental design for treatment cho
 <link>https://arxiv.org/abs/2507.00050</link>
 <guid>https://arxiv.org/abs/2507.00050</guid>
 <content:encoded><![CDATA[
-<div> IMU, Zero-shot HAR, SEZ-HARN, Explainable, Benchmark datasets <br>
-<br>
-Summary: <br>
+<div> IMU, Zero-shot HAR, SEZ-HARN, Explainable, Benchmark datasets <br />
+<br />
+Summary: <br />
 The paper introduces SEZ-HARN, a novel IMU-based ZS-HAR model that can recognize unseen activities and provide skeleton videos for explanation. It addresses the lack of comprehensive HAR datasets and model transparency issues. The SEZ-HARN model was evaluated on four benchmark datasets, showing competitive Zero-shot recognition accuracy and providing realistic and understandable explanations. It achieves a Zero-shot prediction accuracy within 3% of the best black-box model on the PAMAP2 dataset and maintains comparable performance on other datasets. SEZ-HARN offers a transparent and effective solution for HAR applications in healthcare and assisted living environments. <div>
 arXiv:2507.00050v2 Announce Type: replace-cross 
 Abstract: Human Activity Recognition (HAR), which uses data from Inertial Measurement Unit (IMU) sensors, has many practical applications in healthcare and assisted living environments. However, its use in real-world scenarios has been limited by the lack of comprehensive IMU-based HAR datasets that cover a wide range of activities and the lack of transparency in existing HAR models. Zero-shot HAR (ZS-HAR) overcomes the data limitations, but current models struggle to explain their decisions, making them less transparent. This paper introduces a novel IMU-based ZS-HAR model called the Self-Explainable Zero-shot Human Activity Recognition Network (SEZ-HARN). It can recognize activities not encountered during training and provide skeleton videos to explain its decision-making process. We evaluate the effectiveness of the proposed SEZ-HARN on four benchmark datasets PAMAP2, DaLiAc, HTD-MHAD and MHealth and compare its performance against three state-of-the-art black-box ZS-HAR models. The experiment results demonstrate that SEZ-HARN produces realistic and understandable explanations while achieving competitive Zero-shot recognition accuracy. SEZ-HARN achieves a Zero-shot prediction accuracy within 3\% of the best-performing black-box model on PAMAP2 while maintaining comparable performance on the other three datasets.
 ]]></content:encoded>
-<pubDate>Tue, 08 Jul 2025 00:00:00 -0400</pubDate>
 <pubDate>Tue, 08 Jul 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -190,17 +195,15 @@ Abstract: Human Activity Recognition (HAR), which uses data from Inertial Measur
 <link>https://arxiv.org/abs/2507.00683</link>
 <guid>https://arxiv.org/abs/2507.00683</guid>
 <content:encoded><![CDATA[
-<div> spin system, attention mechanism, large language models, effective Hamiltonian, logit gap criteria <br>
-<br>
+<div> spin system, attention mechanism, large language models, effective Hamiltonian, logit gap criteria <br />
+<br />
 Summary: 
-The article presents a physics-based framework proposed by Huo and Johnson that models the attention mechanism of Large Language Models (LLMs) as an interacting two-body spin system. By extracting Query-Key weight matrices from a GPT-2 model, the authors derive effective Hamiltonians for each attention head and calculate phase boundary logit gap criteria to predict token dominance in next-token distribution based on context. Evaluation on 144 heads shows a strong negative correlation between theoretical logit gaps and empirical token rankings, confirming the spin-bath analogy in the model. Targeted ablations further demonstrate a causal link between spin-bath predictions and shifts in output probabilities. This validation not only offers a physics-inspired interpretability lens but also lays the foundation for novel generative models that bridge condensed matter physics and AI. <br><br> <div>
+The article presents a physics-based framework proposed by Huo and Johnson that models the attention mechanism of Large Language Models (LLMs) as an interacting two-body spin system. By extracting Query-Key weight matrices from a GPT-2 model, the authors derive effective Hamiltonians for each attention head and calculate phase boundary logit gap criteria to predict token dominance in next-token distribution based on context. Evaluation on 144 heads shows a strong negative correlation between theoretical logit gaps and empirical token rankings, confirming the spin-bath analogy in the model. Targeted ablations further demonstrate a causal link between spin-bath predictions and shifts in output probabilities. This validation not only offers a physics-inspired interpretability lens but also lays the foundation for novel generative models that bridge condensed matter physics and AI. <br /><br /> <div>
 arXiv:2507.00683v2 Announce Type: replace-cross 
 Abstract: The recently proposed physics-based framework by Huo and Johnson~\cite{huo2024capturing} models the attention mechanism of Large Language Models (LLMs) as an interacting two-body spin system, offering a first-principles explanation for phenomena like repetition and bias. Building on this hypothesis, we extract the complete Query-Key weight matrices from a production-grade GPT-2 model and derive the corresponding effective Hamiltonian for every attention head. From these Hamiltonians we obtain analytic \textit{phase boundaries} logit gap criteria that predict which token should dominate the next-token distribution for a given context. A systematic evaluation on 144 heads across 20 factual-recall prompts reveals a strong negative correlation between the theoretical logit gaps and the model's empirical token rankings ($r\approx-0.70$, $p<10^{-3}$).Targeted ablations further show that suppressing the heads most aligned with the spin-bath predictions induces the anticipated shifts in output probabilities, confirming a causal link rather than a coincidental association. Taken together, our findings provide the first strong empirical evidence for the spin-bath analogy in a production-grade model. This validation not only furnishes a tractable, physics-inspired lens for interpretability but also provides the groundwork for novel generative models, bridging the gap between theoretical condensed matter physics and AI.
 ]]></content:encoded>
 <pubDate>Tue, 08 Jul 2025 00:00:00 -0400</pubDate>
-<pubDate>Tue, 08 Jul 2025 00:00:00 -0400</pubDate>
 </item>
-
 <item>
 <title>Lightweight LSTM Model for Energy Theft Detection via Input Data Reduction</title>
 <link>https://arxiv.org/abs/2507.02872</link>
@@ -10898,136 +10901,6 @@ Abstract: Although recent quantized Large Language Models (LLMs), such as BitNet
 <content:encoded><![CDATA[
 arXiv:2412.07762v3 Announce Type: replace 
 Abstract: The modern paradigm in machine learning involves pre-training on diverse data, followed by task-specific fine-tuning. In reinforcement learning (RL), this translates to learning via offline RL on a diverse historical dataset, followed by rapid online RL fine-tuning using interaction data. Most RL fine-tuning methods require continued training on offline data for stability and performance. However, this is undesirable because training on diverse offline data is slow and expensive for large datasets, and in principle, also limit the performance improvement possible because of constraints or pessimism on offline data. In this paper, we show that retaining offline data is unnecessary as long as we use a properly-designed online RL approach for fine-tuning offline RL initializations. To build this approach, we start by analyzing the role of retaining offline data in online fine-tuning. We find that continued training on offline data is mostly useful for preventing a sudden divergence in the value function at the onset of fine-tuning, caused by a distribution mismatch between the offline data and online rollouts. This divergence typically results in unlearning and forgetting the benefits of offline pre-training. Our approach, Warm-start RL (WSRL), mitigates the catastrophic forgetting of pre-trained initializations using a very simple idea. WSRL employs a warmup phase that seeds the online RL run with a very small number of rollouts from the pre-trained policy to do fast online RL. The data collected during warmup helps ``recalibrate'' the offline Q-function to the online distribution, allowing us to completely discard offline data without destabilizing the online RL fine-tuning. We show that WSRL is able to fine-tune without retaining any offline data, and is able to learn faster and attains higher performance than existing algorithms irrespective of whether they retain offline data or not.
-]]></content:encoded>
-<pubDate>Thu, 03 Jul 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>A Framework for Mining Collectively-Behaving Bots in MMORPGs</title>
-<link>https://arxiv.org/abs/2501.10461</link>
-<guid>https://arxiv.org/abs/2501.10461</guid>
-<content:encoded><![CDATA[
-arXiv:2501.10461v2 Announce Type: replace 
-Abstract: In MMORPGs (Massively Multiplayer Online Role-Playing Games), abnormal players (bots) using unauthorized automated programs to carry out pre-defined behaviors systematically and repeatedly are commonly observed. Bots usually engage in these activities to gain in-game money, which they eventually trade for real money outside the game. Such abusive activities negatively impact the in-game experiences of legitimate users since bots monopolize specific hunting areas and obtain valuable items. Thus, detecting abnormal players is a significant task for game companies. Motivated by the fact that bots tend to behave collectively with similar in-game trajectories due to the auto-programs, we developed BotTRep, a framework that comprises trajectory representation learning followed by clustering using a completely unlabeled in-game trajectory dataset. Our model aims to learn representations for in-game trajectory sequences so that players with contextually similar trajectories have closer embeddings. Then, by applying DBSCAN to these representations and visualizing the corresponding moving patterns, our framework ultimately assists game masters in identifying and banning bots.
-]]></content:encoded>
-<pubDate>Thu, 03 Jul 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>AirRadar: Inferring Nationwide Air Quality in China with Deep Neural Networks</title>
-<link>https://arxiv.org/abs/2501.13141</link>
-<guid>https://arxiv.org/abs/2501.13141</guid>
-<content:encoded><![CDATA[
-arXiv:2501.13141v2 Announce Type: replace 
-Abstract: Monitoring real-time air quality is essential for safeguarding public health and fostering social progress. However, the widespread deployment of air quality monitoring stations is constrained by their significant costs. To address this limitation, we introduce \emph{AirRadar}, a deep neural network designed to accurately infer real-time air quality in locations lacking monitoring stations by utilizing data from existing ones. By leveraging learnable mask tokens, AirRadar reconstructs air quality features in unmonitored regions. Specifically, it operates in two stages: first capturing spatial correlations and then adjusting for distribution shifts. We validate AirRadar's efficacy using a year-long dataset from 1,085 monitoring stations across China, demonstrating its superiority over multiple baselines, even with varying degrees of unobserved data. The source code can be accessed at https://github.com/CityMind-Lab/AirRadar.
-]]></content:encoded>
-<pubDate>Thu, 03 Jul 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>DGenNO: A Novel Physics-aware Neural Operator for Solving Forward and Inverse PDE Problems based on Deep, Generative Probabilistic Modeling</title>
-<link>https://arxiv.org/abs/2502.06250</link>
-<guid>https://arxiv.org/abs/2502.06250</guid>
-<content:encoded><![CDATA[
-arXiv:2502.06250v3 Announce Type: replace 
-Abstract: Solving parametric partial differential equations (PDEs) and associated PDE-based, inverse problems is a central task in engineering and physics, yet existing neural operator methods struggle with high-dimensional, discontinuous inputs and require large amounts of {\em labeled} training data. We propose the Deep Generative Neural Operator (DGenNO), a physics-aware framework that addresses these challenges by leveraging a deep, generative, probabilistic model in combination with a set of lower-dimensional, latent variables that simultaneously encode PDE-inputs and PDE-outputs. This formulation can make use of unlabeled data and significantly improves inverse problem-solving, particularly for discontinuous or discrete-valued input functions. DGenNO enforces physics constraints without labeled data by incorporating as virtual observables, weak-form residuals based on compactly supported radial basis functions (CSRBFs). These relax regularity constraints and eliminate higher-order derivatives from the objective function. We also introduce MultiONet, a novel neural operator architecture, which is a more expressive generalization of the popular DeepONet that significantly enhances the approximating power of the proposed model. These innovations make DGenNO particularly effective for challenging forward and inverse, PDE-based problems, such as those involving multi-phase media. Numerical experiments demonstrate that DGenNO achieves higher accuracy across multiple benchmarks while exhibiting robustness to noise and strong generalization to out-of-distribution cases. Its adaptability, and the ability to handle sparse, noisy data while providing probabilistic estimates, make DGenNO a powerful tool for scientific and engineering applications.
-]]></content:encoded>
-<pubDate>Thu, 03 Jul 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>optimizn: a Python Library for Developing Customized Optimization Algorithms</title>
-<link>https://arxiv.org/abs/2503.00033</link>
-<guid>https://arxiv.org/abs/2503.00033</guid>
-<content:encoded><![CDATA[
-arXiv:2503.00033v2 Announce Type: replace 
-Abstract: Combinatorial optimization problems are prevalent across a wide variety of domains. These problems are often nuanced, their optimal solutions might not be efficiently obtainable, and they may require lots of time and compute resources to solve (they are NP-hard). It follows that the best course of action for solving these problems is to use general optimization algorithm paradigms to quickly and easily develop algorithms that are customized to these problems and can produce good solutions in a reasonable amount of time. In this paper, we present optimizn, a Python library for developing customized optimization algorithms under general optimization algorithm paradigms (simulated annealing, branch and bound). Additionally, optimizn offers continuous training, with which users can run their algorithms on a regular cadence, retain the salient aspects of previous runs, and use them in subsequent runs to potentially produce solutions that get closer and closer to optimality. An earlier version of this paper was peer reviewed and published internally at Microsoft.
-]]></content:encoded>
-<pubDate>Thu, 03 Jul 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>SFO: Piloting VLM Feedback for Offline RL</title>
-<link>https://arxiv.org/abs/2503.01062</link>
-<guid>https://arxiv.org/abs/2503.01062</guid>
-<content:encoded><![CDATA[
-arXiv:2503.01062v4 Announce Type: replace 
-Abstract: While internet-scale image and textual data have enabled strong generalization in Vision-Language Models (VLMs), the absence of internet-scale control data has impeded the development of similar generalization in standard reinforcement learning (RL) agents. Although VLMs are fundamentally limited in their ability to solve control tasks due to their lack of action-conditioned training data, their capacity for image understanding allows them to provide valuable feedback in RL tasks by recognizing successful outcomes. A key challenge in Reinforcement Learning from AI Feedback (RLAIF) is determining how best to integrate VLM-derived signals into the learning process. We explore this question in the context of offline RL and introduce a class of methods called sub-trajectory filtered optimization. We identify three key insights. First, trajectory length plays a crucial role in offline RL, as full-trajectory preference learning exacerbates the stitching problem, necessitating the use of sub-trajectories. Second, even in Markovian environments, a non-Markovian reward signal from a sequence of images is required to assess trajectory improvement, as VLMs do not interpret control actions and must rely on visual cues over time. Third, a simple yet effective approach--filtered and weighted behavior cloning--consistently outperforms more complex reinforcement learning from human feedback-based methods. We propose sub-trajectory filtered behavior cloning, a method that leverages VLM feedback on sub-trajectories while incorporating a retrospective filtering mechanism that removes sub-trajectories preceding failures to improve robustness and prevent turbulence. This study is preliminary; we provide initial evidence through evaluations on a toy control domain. Please enjoy our airport puns.
-]]></content:encoded>
-<pubDate>Thu, 03 Jul 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Truthful Elicitation of Imprecise Forecasts</title>
-<link>https://arxiv.org/abs/2503.16395</link>
-<guid>https://arxiv.org/abs/2503.16395</guid>
-<content:encoded><![CDATA[
-arXiv:2503.16395v3 Announce Type: replace 
-Abstract: The quality of probabilistic forecasts is crucial for decision-making under uncertainty. While proper scoring rules incentivize truthful reporting of precise forecasts, they fall short when forecasters face epistemic uncertainty about their beliefs, limiting their use in safety-critical domains where decision-makers (DMs) prioritize proper uncertainty management. To address this, we propose a framework for scoring imprecise forecasts -- forecasts given as a set of beliefs. Despite existing impossibility results for deterministic scoring rules, we enable truthful elicitation by drawing connection to social choice theory and introducing a two-way communication framework where DMs first share their aggregation rules (e.g., averaging or min-max) used in downstream decisions for resolving forecast ambiguity. This, in turn, helps forecasters resolve indecision during elicitation. We further show that truthful elicitation of imprecise forecasts is achievable using proper scoring rules randomized over the aggregation procedure. Our approach allows DM to elicit and integrate the forecaster's epistemic uncertainty into their decision-making process, thus improving credibility.
-]]></content:encoded>
-<pubDate>Thu, 03 Jul 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Recursive Training Loops in LLMs: How training data properties modulate distribution shift in generated data?</title>
-<link>https://arxiv.org/abs/2504.03814</link>
-<guid>https://arxiv.org/abs/2504.03814</guid>
-<content:encoded><![CDATA[
-arXiv:2504.03814v3 Announce Type: replace 
-Abstract: Large language models (LLMs) are increasingly used in the creation of online content, creating feedback loops as subsequent generations of models will be trained on this synthetic data. Such loops were shown to lead to distribution shifts - models misrepresenting the true underlying distributions of human data (also called model collapse). However, how human data properties affect such shifts remains poorly understood. In this paper, we provide the first empirical examination of the effect of such properties on the outcome of recursive training. We first confirm that using different human datasets leads to distribution shifts of different magnitudes. Through exhaustive manipulation of dataset properties combined with regression analyses, we then identify a set of properties predicting distribution shift magnitudes. Lexical diversity is found to amplify these shifts, while semantic diversity and data quality mitigate them. Furthermore, we find that these influences are highly modular: data scrapped from a given internet domain has little influence on the content generated for another domain. Finally, experiments on political bias reveal that human data properties affect whether the initial bias will be amplified or reduced. Overall, our results portray a novel view, where different parts of internet may undergo different types of distribution shift.
-]]></content:encoded>
-<pubDate>Thu, 03 Jul 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Efficient Split Federated Learning for Large Language Models over Communication Networks</title>
-<link>https://arxiv.org/abs/2504.14667</link>
-<guid>https://arxiv.org/abs/2504.14667</guid>
-<content:encoded><![CDATA[
-arXiv:2504.14667v2 Announce Type: replace 
-Abstract: Fine-tuning pre-trained large language models (LLMs) in a distributed manner poses significant challenges on resource-constrained edge networks. To address this challenge, we propose SflLLM, a novel framework that integrates split federated learning with parameter-efficient fine-tuning techniques. By leveraging model splitting and low-rank adaptation (LoRA), SflLLM reduces the computational burden on edge devices. Furthermore, the introduction of a federated server facilitates parallel training and enhances data privacy. To accommodate heterogeneous communication conditions and diverse computational capabilities of edge devices, as well as the impact of LoRA rank selection on model convergence and training cost, we formulate a joint optimization problem of both communication and computation resource. The formulated problem jointly optimizes subchannel allocation, power control, model splitting point selection, and LoRA rank configuration, aimed at minimizing total training delay. An iterative optimization algorithm is proposed to solve this problem efficiently. Specifically, a greedy heuristic is employed for subchannel allocation, the power control subproblem is reformulated as a convex optimization problem using auxiliary variables, and an exhaustive search is adopted for optimal split position and rank selection. Simulation results demonstrate that the proposed SflLLM framework achieves comparable model accuracy while significantly reducing client-side computational requirements. Furthermore, the proposed resource allocation scheme and adaptive LoRA rank selection strategy notably reduce the training latency compared to conventional approaches.
-]]></content:encoded>
-<pubDate>Thu, 03 Jul 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>LZ Penalty: An information-theoretic repetition penalty for autoregressive language models</title>
-<link>https://arxiv.org/abs/2504.20131</link>
-<guid>https://arxiv.org/abs/2504.20131</guid>
-<content:encoded><![CDATA[
-arXiv:2504.20131v2 Announce Type: replace 
-Abstract: We introduce the LZ penalty, a penalty specialized for reducing degenerate repetitions in autoregressive language models without loss of capability. The penalty is based on the codelengths in the LZ77 universal lossless compression algorithm. Through the lens of the prediction-compression duality, decoding the LZ penalty has the interpretation of sampling from the residual distribution after removing the information that is highly compressible. We demonstrate the LZ penalty enables state-of-the-art open-source reasoning models to operate with greedy (temperature zero) decoding without loss of capability and without instances of degenerate repetition. Both the industry-standard frequency penalty and repetition penalty are ineffective, incurring degenerate repetition rates of up to 4%.
-]]></content:encoded>
-<pubDate>Thu, 03 Jul 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Enhancing Robustness to Missing Modalities through Clustered Federated Learning</title>
-<link>https://arxiv.org/abs/2505.06911</link>
-<guid>https://arxiv.org/abs/2505.06911</guid>
-<content:encoded><![CDATA[
-arXiv:2505.06911v2 Announce Type: replace 
-Abstract: In the era of big data, data mining has become indispensable for uncovering hidden patterns and insights from vast and complex datasets. The integration of multimodal data sources further enhances its potential. Multimodal Federated Learning (MFL) is a distributed approach that enhances the efficiency and quality of multimodal learning, ensuring collaborative work and privacy protection. However, missing modalities pose a significant challenge in MFL, often due to data quality issues or privacy policies across the clients. In this work, we present MMiC, a framework for Mitigating Modality incompleteness in MFL within the Clusters. MMiC replaces partial parameters within client models inside clusters to mitigate the impact of missing modalities. Furthermore, it leverages the Banzhaf Power Index to optimize client selection under these conditions. Finally, MMiC employs an innovative approach to dynamically control global aggregation by utilizing Markovitz Portfolio Optimization. Extensive experiments demonstrate that MMiC consistently outperforms existing federated learning architectures in both global and personalized performance on multimodal datasets with missing modalities, confirming the effectiveness of our proposed solution.
-]]></content:encoded>
-<pubDate>Thu, 03 Jul 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Scaling Up Liquid-Resistance Liquid-Capacitance Networks for Efficient Sequence Modeling</title>
-<link>https://arxiv.org/abs/2505.21717</link>
-<guid>https://arxiv.org/abs/2505.21717</guid>
-<content:encoded><![CDATA[
-arXiv:2505.21717v3 Announce Type: replace 
-Abstract: We present LrcSSM, a $\textit{nonlinear}$ recurrent model that processes long sequences as fast as today's linear state-space layers. By forcing the state-transition matrix to be diagonal and learned at every step, the full sequence can be solved in parallel with a single prefix-scan, giving $\mathcal{O}(TD)$ time and memory and only $\mathcal{O}(\log T)$ sequential depth, for input-sequence length $T$ and a state dimension $D$. Moreover, LrcSSM offers a formal gradient-stability guarantee that other input-varying systems such as Liquid-S4 and Mamba do not provide. Lastly, for network depth $L$, as the forward and backward passes cost $\Theta(T\,D\,L)$ FLOPs, with its low sequential depth and parameter count $\Theta(D\,L)$, the model follows the compute-optimal scaling law regime ($\beta \approx 0.42$) recently observed for Mamba, outperforming quadratic-attention Transformers at equal compute while avoiding the memory overhead of FFT-based long convolutions. We show that on a series of long-range forecasting tasks, LrcSSM outperforms LRU, S5 and Mamba.
-]]></content:encoded>
-<pubDate>Thu, 03 Jul 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Grower-in-the-Loop Interactive Reinforcement Learning for Greenhouse Climate Control</title>
-<link>https://arxiv.org/abs/2505.23355</link>
-<guid>https://arxiv.org/abs/2505.23355</guid>
-<content:encoded><![CDATA[
-arXiv:2505.23355v2 Announce Type: replace 
-Abstract: Climate control is crucial for greenhouse production as it directly affects crop growth and resource use. Reinforcement learning (RL) has received increasing attention in this field, but still faces challenges, including limited training efficiency and high reliance on initial learning conditions. Interactive RL, which combines human (grower) input with the RL agent's learning, offers a potential solution to overcome these challenges. However, interactive RL has not yet been applied to greenhouse climate control and may face challenges related to imperfect inputs. Therefore, this paper aims to explore the possibility and performance of applying interactive RL with imperfect inputs into greenhouse climate control, by: (1) developing three representative interactive RL algorithms tailored for greenhouse climate control (reward shaping, policy shaping and control sharing); (2) analyzing how input characteristics are often contradicting, and how the trade-offs between them make grower's inputs difficult to perfect; (3) proposing a neural network-based approach to enhance the robustness of interactive RL agents under limited input availability; (4) conducting a comprehensive evaluation of the three interactive RL algorithms with imperfect inputs in a simulated greenhouse environment. The demonstration shows that interactive RL incorporating imperfect grower inputs has the potential to improve the performance of the RL agent. RL algorithms that influence action selection, such as policy shaping and control sharing, perform better when dealing with imperfect inputs, achieving 8.4% and 6.8% improvement in profit, respectively. In contrast, reward shaping, an algorithm that manipulates the reward function, is sensitive to imperfect inputs and leads to a 9.4% decrease in profit. This highlights the importance of selecting an appropriate mechanism when incorporating imperfect inputs.
-]]></content:encoded>
-<pubDate>Thu, 03 Jul 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Non-collective Calibrating Strategy for Time Series Forecasting</title>
-<link>https://arxiv.org/abs/2506.03176</link>
-<guid>https://arxiv.org/abs/2506.03176</guid>
-<content:encoded><![CDATA[
-arXiv:2506.03176v2 Announce Type: replace 
-Abstract: Deep learning-based approaches have demonstrated significant advancements in time series forecasting. Despite these ongoing developments, the complex dynamics of time series make it challenging to establish the rule of thumb for designing the golden model architecture. In this study, we argue that refining existing advanced models through a universal calibrating strategy can deliver substantial benefits with minimal resource costs, as opposed to elaborating and training a new model from scratch. We first identify a multi-target learning conflict in the calibrating process, which arises when optimizing variables across time steps, leading to the underutilization of the model's learning capabilities. To address this issue, we propose an innovative calibrating strategy called Socket+Plug (SoP). This approach retains an exclusive optimizer and early-stopping monitor for each predicted target within each Plug while keeping the fully trained Socket backbone frozen. The model-agnostic nature of SoP allows it to directly calibrate the performance of any trained deep forecasting models, regardless of their specific architectures. Extensive experiments on various time series benchmarks and a spatio-temporal meteorological ERA5 dataset demonstrate the effectiveness of SoP, achieving up to a 22% improvement even when employing a simple MLP as the Plug (highlighted in Figure 1). Code is available at https://github.com/hanyuki23/SoP.
 ]]></content:encoded>
 <pubDate>Thu, 03 Jul 2025 00:00:00 -0400</pubDate>
 </item>
