@@ -4,6 +4,7 @@
 <title>cs.LG updates on arXiv.org</title>
 <link>http://rss.arxiv.org/rss/cs.LG</link>
 
+
 <item>
 <title>Escaping Plato's Cave: JAM for Aligning Independently Trained Vision and Language Models</title>
 <link>https://arxiv.org/abs/2507.01201</link>
@@ -17,9 +18,7 @@ arXiv:2507.01201v3 Announce Type: replace
 Abstract: Independently trained vision and language models inhabit disjoint representational spaces, shaped by their respective modalities, objectives, and architectures. Yet an emerging hypothesis - the Platonic Representation Hypothesis - suggests that such models may nonetheless converge toward a shared statistical model of reality. This compatibility, if it exists, raises a fundamental question: can we move beyond post-hoc statistical detection of alignment and explicitly optimize for it between such disjoint representations? We cast this Platonic alignment problem as a multi-objective optimization task - preserve each modality's native structure while aligning for mutual coherence. We introduce the Joint Autoencoder Modulator (JAM) framework that jointly trains modality-specific autoencoders on the latent representations of pre-trained single modality models, encouraging alignment through both reconstruction and cross-modal objectives. By analogy, this framework serves as a method to escape Plato's Cave, enabling the emergence of shared structure from disjoint inputs. We evaluate this framework across three critical design axes: (i) the alignment objective - comparing contrastive loss (Con), its hard-negative variant (NegCon), and our Spread loss, (ii) the layer depth at which alignment is most effective, and (iii) the impact of foundation model scale on representational convergence. Our findings show that our lightweight Pareto-efficient framework reliably induces alignment, even across frozen, independently trained representations, offering both theoretical insight and practical pathways for transforming generalist unimodal foundations into specialist multimodal models.
 ]]></content:encoded>
 <pubDate>Wed, 09 Jul 2025 00:00:00 -0400</pubDate>
-<pubDate>Wed, 09 Jul 2025 00:00:00 -0400</pubDate>
 </item>
-
 <item>
 <title>Rethinking Over-Smoothing in Graph Neural Networks: A Perspective from Anderson Localization</title>
 <link>https://arxiv.org/abs/2507.05263</link>
@@ -10887,16 +10886,6 @@ Abstract: In this work, we present a series of structure transformation attacks 
 <content:encoded><![CDATA[
 arXiv:2502.13450v2 Announce Type: replace 
 Abstract: We introduce Interleaved Gibbs Diffusion (IGD), a novel generative modeling framework for discrete-continuous data, focusing on problems with important, implicit and unspecified constraints in the data. Most prior works on discrete and discrete-continuous diffusion assume a factorized denoising distribution, which can hinder the modeling of strong dependencies between random variables in such problems. We empirically demonstrate a significant improvement in 3-SAT performance out of the box by switching to a Gibbs-sampling style discrete diffusion model which does not assume factorizability. Motivated by this, we introduce IGD which generalizes discrete time Gibbs sampling type Markov chain for the case of discrete-continuous generation. IGD allows for seamless integration between discrete and continuous denoisers while theoretically guaranteeing exact reversal of a suitable forward process. Further, it provides flexibility in the choice of denoisers, allows conditional generation via state-space doubling and inference time refinement. Empirical evaluations on three challenging generation tasks - molecule structures, layouts and tabular data - demonstrate state-of-the-art performance. Notably, IGD achieves state-of-the-art results without relying on domain-specific inductive biases like equivariant diffusion or auxiliary losses. We explore a wide range of modeling, and interleaving strategies along with hyperparameters in each of these problems.
-]]></content:encoded>
-<pubDate>Fri, 04 Jul 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Neural Graph Matching Improves Retrieval Augmented Generation in Molecular Machine Learning</title>
-<link>https://arxiv.org/abs/2502.17874</link>
-<guid>https://arxiv.org/abs/2502.17874</guid>
-<content:encoded><![CDATA[
-arXiv:2502.17874v2 Announce Type: replace 
-Abstract: Molecular machine learning has gained popularity with the advancements of geometric deep learning. In parallel, retrieval-augmented generation has become a principled approach commonly used with language models. However, the optimal integration of retrieval augmentation into molecular machine learning remains unclear. Graph neural networks stand to benefit from clever matching to understand the structural alignment of retrieved molecules to a query molecule. Neural graph matching offers a compelling solution by explicitly modeling node and edge affinities between two structural graphs while employing a noise-robust, end-to-end neural network to learn affinity metrics. We apply this approach to mass spectrum simulation and introduce MARASON, a novel model that incorporates neural graph matching to enhance a fragmentation-based neural network. Experimental results highlight the effectiveness of our design, with MARASON achieving 28% top-1 accuracy, a substantial improvement over the non-retrieval state-of-the-art accuracy of 19%. Moreover, MARASON outperforms both naive retrieval-augmented generation methods and traditional graph matching approaches. Code is publicly available at https://github.com/coleygroup/ms-pred
 ]]></content:encoded>
 <pubDate>Fri, 04 Jul 2025 00:00:00 -0400</pubDate>
 </item>
