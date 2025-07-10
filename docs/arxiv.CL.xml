@@ -4,6 +4,7 @@
 <title>cs.CL updates on arXiv.org</title>
 <link>http://rss.arxiv.org/rss/cs.CL</link>
 
+
 <item>
 <title>DeepTalk: Towards Seamless and Smart Speech Interaction with Adaptive Modality-Specific MoE</title>
 <link>https://arxiv.org/abs/2506.21864</link>
@@ -14,14 +15,12 @@
 Summary:
 DeepTalk introduces an adaptive modality expert learning framework for native multimodal large language models (MLLMs) that addresses issues of catastrophic forgetting and performance degradation. By using a Mixture of Experts (MoE) architecture, DeepTalk distinguishes modality experts based on their modality load within the language model, allowing for specialized single-modality training and joint multimodal collaborative training. This approach results in only a 5.5% performance drop compared to the original large language model, significantly lower than typical native MLLMs which see over a 20% drop in performance. The end-to-end dialogue latency remains within 0.5 seconds, ensuring a seamless speech interaction experience. DeepTalk's integration of speech and text generation preserves rich paralinguistic features such as emotion and prosody, allowing for smoother interactions compared to modular and aligned MLLMs. This framework is released with code and models available on GitHub for further exploration and implementation. 
 
-<br><br>Summary: <div>
+<br /><br />Summary: <div>
 arXiv:2506.21864v2 Announce Type: replace 
 Abstract: Native multimodal large language models (MLLMs) restructure a single large language model (LLM) into a spoken language model (SLM) capable of both speech and text generation. Compared to modular and aligned MLLMs, native MLLMs preserve richer paralinguistic features such as emotion and prosody, and generate speech responses directly within the backbone LLM rather than using a separate speech decoder. This integration also results in lower response latency and smoother interaction. However, native MLLMs suffer from catastrophic forgetting and performance degradation because the available paired speech-text data is insufficient to support the pretraining of MLLMs compared to the vast amount of text data required to pretrain text LLMs. To address this issue, we propose DeepTalk, a framework for adaptive modality expert learning based on a Mixture of Experts (MoE) architecture. DeepTalk first adaptively distinguishes modality experts according to their modality load within the LLM. Each modality expert then undergoes specialized single-modality training, followed by joint multimodal collaborative training. As a result, DeepTalk incurs only a 5.5% performance drop compared to the original LLM, which is significantly lower than the average performance drop of over 20% typically seen in native MLLMs (such as GLM-4-Voice), and is on par with modular MLLMs. Meanwhile, the end-to-end dialogue latency remains within 0.5 seconds, ensuring a seamless and intelligent speech interaction experience. Code and models are released at https://github.com/talkking/DeepTalk.
 ]]></content:encoded>
 <pubDate>Thu, 10 Jul 2025 00:00:00 -0400</pubDate>
-<pubDate>Thu, 10 Jul 2025 00:00:00 -0400</pubDate>
 </item>
-
 <item>
 <title>Gemini 2.5: Pushing the Frontier with Advanced Reasoning, Multimodality, Long Context, and Next Generation Agentic Capabilities</title>
 <link>https://arxiv.org/abs/2507.06261</link>
@@ -11801,21 +11800,6 @@ BIOPARS-BENCH dataset introduced from over 10,000 scientific articles and medica
 <br /><br />Summary: <div>
 arXiv:2506.21567v1 Announce Type: new 
 Abstract: Large Language Models (LLMs) have recently gained attention in the life sciences due to their capacity to model, extract, and apply complex biological information. Beyond their classical use as chatbots, these systems are increasingly used for complex analysis and problem-solving in specialized fields, including bioinformatics. First, we introduce BIOPARS-BENCH, a dataset from over 10,000 scientific articles, textbooks, and medical websites. BioParsQA was also introduced to evaluate the proposed model, which consists of 5,231 Persian medical questions and answers. This study then introduces BioPars, a simple but accurate measure designed to assess LLMs for three main abilities: acquiring subject-specific knowledge, interpreting and synthesizing such knowledge, and demonstrating proper evidence. Comparing ChatGPT, Llama, and Galactica, our study highlights their ability to remember and retrieve learned knowledge but also reveals shortcomings in addressing higher-level, real-world questions and fine-grained inferences. These findings indicate the need for further fine-tuning to address the capabilities of LLM in bioinformatics tasks. To our knowledge, BioPars is the first application of LLM in Persian medical QA, especially for generating long answers. Evaluation of four selected medical QA datasets shows that BioPars has achieved remarkable results compared to comparative approaches. The model on BioParsQA achieved a ROUGE-L score of 29.99, which is an improvement over GPT-4 1.0. The model achieved a BERTScore of 90.87 with the MMR method. The MoverScore and BLEURT values were also higher in this model than the other three models. In addition, the reported scores for the model are MoverScore=60.43 and BLEURT=50.78. BioPars is an ongoing project and all resources related to its development will be made available via the following GitHub repository: https://github.com/amirap80/BioPars.
-]]></content:encoded>
-<pubDate>Mon, 30 Jun 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Assessing RAG and HyDE on 1B vs. 4B-Parameter Gemma LLMs for Personal Assistants Integretion</title>
-<link>https://arxiv.org/abs/2506.21568</link>
-<guid>https://arxiv.org/abs/2506.21568</guid>
-<content:encoded><![CDATA[
-<div> augmentation strategies, Retrieval-Augmented Generation, Hypothetical Document Embeddings, Gemma LLMs, resource efficiency, privacy-first personal assistant
-
-Summary:
-Resource efficiency is a significant challenge for implementing large language models (LLMs) in edge and privacy-sensitive applications. This study assesses the effectiveness of two augmentation strategies - Retrieval-Augmented Generation (RAG) and Hypothetical Document Embeddings (HyDE) - on compact Gemma LLMs with 1 billion and 4 billion parameters in a privacy-focused personal assistant system. RAG consistently reduces latency and eliminates factual hallucinations in user-specific and domain-specific queries. HyDE improves semantic relevance, especially for physics queries, but increases response time and hallucination rates in personal-data retrieval. The comparison between 1 billion and 4 billion models shows marginal throughput gains for RAG but increased computational overhead and variability for HyDE. RAG emerges as the preferred choice for on-device personal assistants using small-scale LLMs. 
-<br /><br />Summary: <div>
-arXiv:2506.21568v1 Announce Type: new 
-Abstract: Resource efficiency is a critical barrier to deploying large language models (LLMs) in edge and privacy-sensitive applications. This study evaluates the efficacy of two augmentation strategies--Retrieval-Augmented Generation (RAG) and Hypothetical Document Embeddings (HyDE)--on compact Gemma LLMs of 1 billion and 4 billion parameters, within the context of a privacy-first personal assistant. We implement short-term memory via MongoDB and long-term semantic storage via Qdrant, orchestrated through FastAPI and LangChain, and expose the system through a React.js frontend. Across both model scales, RAG consistently reduces latency by up to 17\% and eliminates factual hallucinations when responding to user-specific and domain-specific queries. HyDE, by contrast, enhances semantic relevance--particularly for complex physics prompts--but incurs a 25--40\% increase in response time and a non-negligible hallucination rate in personal-data retrieval. Comparing 1 B to 4 B models, we observe that scaling yields marginal throughput gains for baseline and RAG pipelines, but magnifies HyDE's computational overhead and variability. Our findings position RAG as the pragmatic choice for on-device personal assistants powered by small-scale LLMs.
 ]]></content:encoded>
 <pubDate>Mon, 30 Jun 2025 00:00:00 -0400</pubDate>
 </item>

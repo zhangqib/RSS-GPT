@@ -4,6 +4,7 @@
 <title>cs.CV updates on arXiv.org</title>
 <link>http://rss.arxiv.org/rss/cs.CV</link>
 
+
 <item>
 <title>Modality-agnostic, patient-specific digital twins modeling temporally varying digestive motion</title>
 <link>https://arxiv.org/abs/2507.01909</link>
@@ -14,11 +15,10 @@
 Summary: 
 The study introduces a novel approach using patient-specific digital twins to assess the accuracy of deformable image registration (DIR) methods for highly mobile gastrointestinal (GI) organs. Through a semi-automated pipeline, 21 motion phases were simulated from static 3D patient scans, enabling the evaluation of six DIR methods. The pipeline successfully synthesized digital twins modeling realistic GI motion, achieving motion amplitudes and Jacobian determinant values comparable to real-patient data. Detailed quantitative metrics were extracted for DIR performance assessment, including target registration error and Dice similarity coefficient. Additionally, the pipeline allowed for the evaluation of dose warping accuracy, enabling rigorous testing of DIR tools in dynamic and anatomically complex regions. This approach provides a comprehensive framework for assessing spatial and dosimetric accuracies in GI organs. 
 
-<br><br>Summary: <div>
+<br /><br />Summary: <div>
 arXiv:2507.01909v3 Announce Type: replace 
 Abstract: Objective: Clinical implementation of deformable image registration (DIR) requires voxel-based spatial accuracy metrics such as manually identified landmarks, which are challenging to implement for highly mobile gastrointestinal (GI) organs. To address this, patient-specific digital twins (DT) modeling temporally varying motion were created to assess the accuracy of DIR methods. Approach: 21 motion phases simulating digestive GI motion as 4D sequences were generated from static 3D patient scans using published analytical GI motion models through a semi-automated pipeline. Eleven datasets, including six T2w FSE MRI (T2w MRI), two T1w 4D golden-angle stack-of-stars, and three contrast-enhanced CT scans. The motion amplitudes of the DTs were assessed against real patient stomach motion amplitudes extracted from independent 4D MRI datasets. The generated DTs were then used to assess six different DIR methods using target registration error, Dice similarity coefficient, and the 95th percentile Hausdorff distance using summary metrics and voxel-level granular visualizations. Finally, for a subset of T2w MRI scans from patients treated with MR-guided radiation therapy, dose distributions were warped and accumulated to assess dose warping errors, including evaluations of DIR performance in both low- and high-dose regions for patient-specific error estimation. Main results: Our proposed pipeline synthesized DTs modeling realistic GI motion, achieving mean and maximum motion amplitudes and a mean log Jacobian determinant within 0.8 mm and 0.01, respectively, similar to published real-patient gastric motion data. It also enables the extraction of detailed quantitative DIR performance metrics and rigorous validation of dose mapping accuracy. Significance: The pipeline enables rigorously testing DIR tools for dynamic, anatomically complex regions enabling granular spatial and dosimetric accuracies.
 ]]></content:encoded>
-<pubDate>Thu, 10 Jul 2025 00:00:00 -0400</pubDate>
 <pubDate>Thu, 10 Jul 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -26,16 +26,14 @@ Abstract: Objective: Clinical implementation of deformable image registration (D
 <link>https://arxiv.org/abs/2507.01945</link>
 <guid>https://arxiv.org/abs/2507.01945</guid>
 <content:encoded><![CDATA[
-<div> colorization, animation, long-term, global-local paradigm, video generation<br>
-<br>Summary:
+<div> colorization, animation, long-term, global-local paradigm, video generation<br />
+<br />Summary:
 The study introduces LongAnimation, a framework for automated long animation colorization based on a dynamic global-local paradigm. It addresses the limitations of existing studies by incorporating global color-consistent features through the SketchDiT and Dynamic Global-Local Memory (DGLM) modules. The DGLM module dynamically compresses historical global features and fuses them with current generation features to maintain long-term color consistency. A Color Consistency Reward is introduced to refine color consistency, and a color consistency fusion technique is proposed for smooth video segment transitions during inference. Extensive experiments demonstrate the effectiveness of LongAnimation in maintaining both short-term and long-term color consistency in open-domain animation colorization tasks. The code for LongAnimation is available at the provided link. <div>
 arXiv:2507.01945v2 Announce Type: replace 
 Abstract: Animation colorization is a crucial part of real animation industry production. Long animation colorization has high labor costs. Therefore, automated long animation colorization based on the video generation model has significant research value. Existing studies are limited to short-term colorization. These studies adopt a local paradigm, fusing overlapping features to achieve smooth transitions between local segments. However, the local paradigm neglects global information, failing to maintain long-term color consistency. In this study, we argue that ideal long-term color consistency can be achieved through a dynamic global-local paradigm, i.e., dynamically extracting global color-consistent features relevant to the current generation. Specifically, we propose LongAnimation, a novel framework, which mainly includes a SketchDiT, a Dynamic Global-Local Memory (DGLM), and a Color Consistency Reward. The SketchDiT captures hybrid reference features to support the DGLM module. The DGLM module employs a long video understanding model to dynamically compress global historical features and adaptively fuse them with the current generation features. To refine the color consistency, we introduce a Color Consistency Reward. During inference, we propose a color consistency fusion to smooth the video segment transition. Extensive experiments on both short-term (14 frames) and long-term (average 500 frames) animations show the effectiveness of LongAnimation in maintaining short-term and long-term color consistency for open-domain animation colorization task. The code can be found at https://cn-makers.github.io/long_animation_web/.
 ]]></content:encoded>
 <pubDate>Thu, 10 Jul 2025 00:00:00 -0400</pubDate>
-<pubDate>Thu, 10 Jul 2025 00:00:00 -0400</pubDate>
 </item>
-
 <item>
 <title>Unveiling the Underwater World: CLIP Perception Model-Guided Underwater Image Enhancement</title>
 <link>https://arxiv.org/abs/2507.06234</link>
@@ -11125,33 +11123,6 @@ Summary:
 Activation Reward Models (Activation RMs) are introduced as a novel few-shot reward modeling method utilizing activation steering to create well-aligned reward signals with minimal supervision. They outperform existing approaches like LLM-as-a-judge and token probability scoring. Activation RMs are effective in mitigating reward hacking behaviors, making them valuable for safety-critical applications. The PreferenceHack benchmark is proposed to test reward models on reward hacking in a paired preference format. Activation RM achieves state-of-the-art performance on this benchmark, surpassing GPT-4o. This innovative method addresses the challenge of aligning LLMs and LMMs with human preferences, improving the quality of generative outputs for real-world applications. <div>
 arXiv:2507.01368v1 Announce Type: new 
 Abstract: Aligning Large Language Models (LLMs) and Large Multimodal Models (LMMs) to human preferences is a central challenge in improving the quality of the models' generative outputs for real-world applications. A common approach is to use reward modeling to encode preferences, enabling alignment via post-training using reinforcement learning. However, traditional reward modeling is not easily adaptable to new preferences because it requires a separate reward model, commonly trained on large preference datasets. To address this, we introduce Activation Reward Models (Activation RMs) -- a novel few-shot reward modeling method that leverages activation steering to construct well-aligned reward signals using minimal supervision and no additional model finetuning. Activation RMs outperform existing few-shot reward modeling approaches such as LLM-as-a-judge with in-context learning, voting-based scoring, and token probability scoring on standard reward modeling benchmarks. Furthermore, we demonstrate the effectiveness of Activation RMs in mitigating reward hacking behaviors, highlighting their utility for safety-critical applications. Toward this end, we propose PreferenceHack, a novel few-shot setting benchmark, the first to test reward models on reward hacking in a paired preference format. Finally, we show that Activation RM achieves state-of-the-art performance on this benchmark, surpassing even GPT-4o.
-]]></content:encoded>
-<pubDate>Thu, 03 Jul 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Active Measurement: Efficient Estimation at Scale</title>
-<link>https://arxiv.org/abs/2507.01372</link>
-<guid>https://arxiv.org/abs/2507.01372</guid>
-<content:encoded><![CDATA[
-<div> active measurement, AI framework, scientific discovery, Monte Carlo estimate, estimation error
-
-Summary:
-The article introduces active measurement, a human-in-the-loop AI framework designed to enhance scientific measurement processes. This approach leverages AI models to predict measurements for individual units, which are then sampled for human labeling through importance sampling. With each round of human labels, the AI model is refined, leading to improved accuracy and more precise estimates of total measurements through unbiased Monte Carlo estimation. Active measurement offers greater precision even with imperfect AI models, requiring minimal human effort when the model is highly accurate. The study presents new estimators, weighting schemes, and confidence intervals to demonstrate the effectiveness of active measurement in reducing estimation errors compared to traditional methods across various measurement tasks. <div>
-arXiv:2507.01372v1 Announce Type: new 
-Abstract: AI has the potential to transform scientific discovery by analyzing vast datasets with little human effort. However, current workflows often do not provide the accuracy or statistical guarantees that are needed. We introduce active measurement, a human-in-the-loop AI framework for scientific measurement. An AI model is used to predict measurements for individual units, which are then sampled for human labeling using importance sampling. With each new set of human labels, the AI model is improved and an unbiased Monte Carlo estimate of the total measurement is refined. Active measurement can provide precise estimates even with an imperfect AI model, and requires little human effort when the AI model is very accurate. We derive novel estimators, weighting schemes, and confidence intervals, and show that active measurement reduces estimation error compared to alternatives in several measurement tasks.
-]]></content:encoded>
-<pubDate>Thu, 03 Jul 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>MUG: Pseudo Labeling Augmented Audio-Visual Mamba Network for Audio-Visual Video Parsing</title>
-<link>https://arxiv.org/abs/2507.01384</link>
-<guid>https://arxiv.org/abs/2507.01384</guid>
-<content:encoded><![CDATA[
-<div> audio-visual video parsing, weakly-supervised, MUG, AV-Mamba, pseudo labeling<br />
-Summary:<br />
-The study introduces a new method for weakly-supervised audio-visual video parsing (AVVP) using the MUG network. By emphasizing the uniqueness of each segment and filtering out noise from alternate modalities, MUG enhances segment-level and event-level predictions. Unimodal pseudo-labels are annotated and combined randomly across modalities to generate new data. The AV-Mamba network processes features and interactions, improving segment perception and reducing modal noise. Experimental results on the LLP dataset show an improvement in visual and audio segment-level metrics by 2.1% and 1.2% respectively. The code for the proposed method is available on GitHub for further exploration. <div>
-arXiv:2507.01384v1 Announce Type: new 
-Abstract: The weakly-supervised audio-visual video parsing (AVVP) aims to predict all modality-specific events and locate their temporal boundaries. Despite significant progress, due to the limitations of the weakly-supervised and the deficiencies of the model architecture, existing methods are lacking in simultaneously improving both the segment-level prediction and the event-level prediction. In this work, we propose a audio-visual Mamba network with pseudo labeling aUGmentation (MUG) for emphasising the uniqueness of each segment and excluding the noise interference from the alternate modalities. Specifically, we annotate some of the pseudo-labels based on previous work. Using unimodal pseudo-labels, we perform cross-modal random combinations to generate new data, which can enhance the model's ability to parse various segment-level event combinations. For feature processing and interaction, we employ a audio-visual mamba network. The AV-Mamba enhances the ability to perceive different segments and excludes additional modal noise while sharing similar modal information. Our extensive experiments demonstrate that MUG improves state-of-the-art results on LLP dataset in all metrics (e.g,, gains of 2.1% and 1.2% in terms of visual Segment-level and audio Segment-level metrics). Our code is available at https://github.com/WangLY136/MUG.
 ]]></content:encoded>
 <pubDate>Thu, 03 Jul 2025 00:00:00 -0400</pubDate>
 </item>
