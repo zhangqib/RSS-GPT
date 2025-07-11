@@ -4,6 +4,7 @@
 <title>cs.CV updates on arXiv.org</title>
 <link>http://rss.arxiv.org/rss/cs.CV</link>
 
+
 <item>
 <title>Beyond Spatial Frequency: Pixel-wise Temporal Frequency-based Deepfake Video Detection</title>
 <link>https://arxiv.org/abs/2507.02398</link>
@@ -17,9 +18,7 @@ arXiv:2507.02398v2 Announce Type: replace
 Abstract: We introduce a deepfake video detection approach that exploits pixel-wise temporal inconsistencies, which traditional spatial frequency-based detectors often overlook. Traditional detectors represent temporal information merely by stacking spatial frequency spectra across frames, resulting in the failure to detect temporal artifacts in the pixel plane. Our approach performs a 1D Fourier transform on the time axis for each pixel, extracting features highly sensitive to temporal inconsistencies, especially in areas prone to unnatural movements. To precisely locate regions containing the temporal artifacts, we introduce an attention proposal module trained in an end-to-end manner. Additionally, our joint transformer module effectively integrates pixel-wise temporal frequency features with spatio-temporal context features, expanding the range of detectable forgery artifacts. Our framework represents a significant advancement in deepfake video detection, providing robust performance across diverse and challenging detection scenarios.
 ]]></content:encoded>
 <pubDate>Fri, 11 Jul 2025 00:00:00 -0400</pubDate>
-<pubDate>Fri, 11 Jul 2025 00:00:00 -0400</pubDate>
 </item>
-
 <item>
 <title>Multi-level Mixture of Experts for Multimodal Entity Linking</title>
 <link>https://arxiv.org/abs/2507.07108</link>
@@ -11110,20 +11109,6 @@ Summary:
 <br /><br />Summary: <div>
 arXiv:2507.02288v1 Announce Type: new 
 Abstract: Domain Generalization (DG) seeks to develop a versatile model capable of performing effectively on unseen target domains. Notably, recent advances in pre-trained Visual Foundation Models (VFMs), such as CLIP, have demonstrated considerable potential in enhancing the generalization capabilities of deep learning models. Despite the increasing attention toward VFM-based domain prompt tuning within DG, the effective design of prompts capable of disentangling invariant features across diverse domains remains a critical challenge. In this paper, we propose addressing this challenge by leveraging the controllable and flexible language prompt of the VFM. Noting that the text modality of VFMs is naturally easier to disentangle, we introduce a novel framework for text feature-guided visual prompt tuning. This framework first automatically disentangles the text prompt using a large language model (LLM) and then learns domain-invariant visual representation guided by the disentangled text feature. However, relying solely on language to guide visual feature disentanglement has limitations, as visual features can sometimes be too complex or nuanced to be fully captured by descriptive text. To address this, we introduce Worst Explicit Representation Alignment (WERA), which extends text-guided visual prompts by incorporating an additional set of abstract prompts. These prompts enhance source domain diversity through stylized image augmentations, while alignment constraints ensure that visual representations remain consistent across both the original and augmented distributions. Experiments conducted on major DG datasets, including PACS, VLCS, OfficeHome, DomainNet, and TerraInc, demonstrate that our proposed method outperforms state-of-the-art DG methods.
-]]></content:encoded>
-<pubDate>Fri, 04 Jul 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>ViRefSAM: Visual Reference-Guided Segment Anything Model for Remote Sensing Segmentation</title>
-<link>https://arxiv.org/abs/2507.02294</link>
-<guid>https://arxiv.org/abs/2507.02294</guid>
-<content:encoded><![CDATA[
-<div> reference images, few-shot learning, remote sensing, segmentation, ViRefSAM
-
-Summary: 
-ViRefSAM addresses challenges in remote sensing image segmentation by introducing a framework that leverages few annotated reference images to guide the Segment Anything Model (SAM) without the need for manual prompts. The framework includes a Visual Contextual Prompt Encoder to extract semantic clues from reference images and generate object-aware prompts, as well as a Dynamic Target Alignment Adapter to inject class-specific semantics into target image features. By dynamically focusing on task-relevant regions, ViRefSAM enables automatic segmentation of class-consistent objects in remote sensing images, outperforming existing few-shot segmentation methods on various datasets. <div>
-arXiv:2507.02294v1 Announce Type: new 
-Abstract: The Segment Anything Model (SAM), with its prompt-driven paradigm, exhibits strong generalization in generic segmentation tasks. However, applying SAM to remote sensing (RS) images still faces two major challenges. First, manually constructing precise prompts for each image (e.g., points or boxes) is labor-intensive and inefficient, especially in RS scenarios with dense small objects or spatially fragmented distributions. Second, SAM lacks domain adaptability, as it is pre-trained primarily on natural images and struggles to capture RS-specific semantics and spatial characteristics, especially when segmenting novel or unseen classes. To address these issues, inspired by few-shot learning, we propose ViRefSAM, a novel framework that guides SAM utilizing only a few annotated reference images that contain class-specific objects. Without requiring manual prompts, ViRefSAM enables automatic segmentation of class-consistent objects across RS images. Specifically, ViRefSAM introduces two key components while keeping SAM's original architecture intact: (1) a Visual Contextual Prompt Encoder that extracts class-specific semantic clues from reference images and generates object-aware prompts via contextual interaction with target images; and (2) a Dynamic Target Alignment Adapter, integrated into SAM's image encoder, which mitigates the domain gap by injecting class-specific semantics into target image features, enabling SAM to dynamically focus on task-relevant regions. Extensive experiments on three few-shot segmentation benchmarks, including iSAID-5$^i$, LoveDA-2$^i$, and COCO-20$^i$, demonstrate that ViRefSAM enables accurate and automatic segmentation of unseen classes by leveraging only a few reference images and consistently outperforms existing few-shot segmentation methods across diverse datasets.
 ]]></content:encoded>
 <pubDate>Fri, 04 Jul 2025 00:00:00 -0400</pubDate>
 </item>

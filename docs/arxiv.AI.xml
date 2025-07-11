@@ -4,18 +4,18 @@
 <title>cs.AI updates on arXiv.org</title>
 <link>http://rss.arxiv.org/rss/cs.AI</link>
 
+
 <item>
 <title>Multi-modal Representations for Fine-grained Multi-label Critical View of Safety Recognition</title>
 <link>https://arxiv.org/abs/2507.05007</link>
 <guid>https://arxiv.org/abs/2507.05007</guid>
 <content:encoded><![CDATA[
-<div> Keywords: CVS recognition, multi-modal model, adaptation strategy, textual prompts, surgical tasks <br>
-Summary: <br>
-The study focuses on automating the recognition of Critical View of Safety (CVS) criteria in laparoscopic cholecystectomy using text as a powerful tool in multi-modal surgical foundation models. Existing models for CVS recognition rely on labor-intensive spatial annotations for vision-only models, making the task complex. The proposed CVS-AdaptNet utilizes a multi-label adaptation strategy to improve fine-grained binary classification across multiple labels by aligning image embeddings with textual descriptions. It outperforms the image-only baseline and achieves a mean Average Precision (mAP) of 57.6 on the Endoscapes-CVS201 dataset. The multi-label, multi-modal framework, enhanced by textual prompts, proves beneficial for CVS recognition. Text-specific inference methods are also proposed for analyzing image-text alignment. The study showcases the potential of adapting generalist models to specialized surgical tasks, although further research is needed to match spatial annotation-based methods. <br><br> <div>
+<div> Keywords: CVS recognition, multi-modal model, adaptation strategy, textual prompts, surgical tasks <br />
+Summary: <br />
+The study focuses on automating the recognition of Critical View of Safety (CVS) criteria in laparoscopic cholecystectomy using text as a powerful tool in multi-modal surgical foundation models. Existing models for CVS recognition rely on labor-intensive spatial annotations for vision-only models, making the task complex. The proposed CVS-AdaptNet utilizes a multi-label adaptation strategy to improve fine-grained binary classification across multiple labels by aligning image embeddings with textual descriptions. It outperforms the image-only baseline and achieves a mean Average Precision (mAP) of 57.6 on the Endoscapes-CVS201 dataset. The multi-label, multi-modal framework, enhanced by textual prompts, proves beneficial for CVS recognition. Text-specific inference methods are also proposed for analyzing image-text alignment. The study showcases the potential of adapting generalist models to specialized surgical tasks, although further research is needed to match spatial annotation-based methods. <br /><br /> <div>
 arXiv:2507.05007v2 Announce Type: replace-cross 
 Abstract: The Critical View of Safety (CVS) is crucial for safe laparoscopic cholecystectomy, yet assessing CVS criteria remains a complex and challenging task, even for experts. Traditional models for CVS recognition depend on vision-only models learning with costly, labor-intensive spatial annotations. This study investigates how text can be harnessed as a powerful tool for both training and inference in multi-modal surgical foundation models to automate CVS recognition. Unlike many existing multi-modal models, which are primarily adapted for multi-class classification, CVS recognition requires a multi-label framework. Zero-shot evaluation of existing multi-modal surgical models shows a significant performance gap for this task. To address this, we propose CVS-AdaptNet, a multi-label adaptation strategy that enhances fine-grained, binary classification across multiple labels by aligning image embeddings with textual descriptions of each CVS criterion using positive and negative prompts. By adapting PeskaVLP, a state-of-the-art surgical foundation model, on the Endoscapes-CVS201 dataset, CVS-AdaptNet achieves 57.6 mAP, improving over the ResNet50 image-only baseline (51.5 mAP) by 6 points. Our results show that CVS-AdaptNet's multi-label, multi-modal framework, enhanced by textual prompts, boosts CVS recognition over image-only methods. We also propose text-specific inference methods, that helps in analysing the image-text alignment. While further work is needed to match state-of-the-art spatial annotation-based methods, this approach highlights the potential of adapting generalist models to specialized surgical tasks. Code: https://github.com/CAMMA-public/CVS-AdaptNet
 ]]></content:encoded>
-<pubDate>Fri, 11 Jul 2025 00:00:00 -0400</pubDate>
 <pubDate>Fri, 11 Jul 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -23,16 +23,14 @@ Abstract: The Critical View of Safety (CVS) is crucial for safe laparoscopic cho
 <link>https://arxiv.org/abs/2507.05020</link>
 <guid>https://arxiv.org/abs/2507.05020</guid>
 <content:encoded><![CDATA[
-<div> Keywords: Surgical AI, multi-task learning, Vision-Language Models, SPML, annotation burden <br>
-Summary:<br>
-The article introduces MML-SurgAdapt, a multi-task framework for surgical AI using Vision-Language Models like CLIP. It addresses the challenge of handling multiple surgical tasks within a single procedure by using Single Positive Multi-Label (SPML) learning to integrate data effectively. By leveraging SPML, the framework can train models with only one positive label per instance, reducing annotation burden by 23% and enabling efficient learning despite incomplete annotations. MML-SurgAdapt performs well on combined surgical datasets and outperforms existing SPML frameworks. It is the first to apply SPML to integrate data from multiple surgical tasks, offering a scalable and efficient solution for multi-task learning in surgical computer vision. This approach not only handles noisy annotations but also eases the annotation burden on clinicians, making it a valuable tool for improving surgical AI applications. <br> <div>
+<div> Keywords: Surgical AI, multi-task learning, Vision-Language Models, SPML, annotation burden <br />
+Summary:<br />
+The article introduces MML-SurgAdapt, a multi-task framework for surgical AI using Vision-Language Models like CLIP. It addresses the challenge of handling multiple surgical tasks within a single procedure by using Single Positive Multi-Label (SPML) learning to integrate data effectively. By leveraging SPML, the framework can train models with only one positive label per instance, reducing annotation burden by 23% and enabling efficient learning despite incomplete annotations. MML-SurgAdapt performs well on combined surgical datasets and outperforms existing SPML frameworks. It is the first to apply SPML to integrate data from multiple surgical tasks, offering a scalable and efficient solution for multi-task learning in surgical computer vision. This approach not only handles noisy annotations but also eases the annotation burden on clinicians, making it a valuable tool for improving surgical AI applications. <br /> <div>
 arXiv:2507.05020v2 Announce Type: replace-cross 
 Abstract: Surgical AI often involves multiple tasks within a single procedure, like phase recognition or assessing the Critical View of Safety in laparoscopic cholecystectomy. Traditional models, built for one task at a time, lack flexibility, requiring a separate model for each. To address this, we introduce MML-SurgAdapt, a unified multi-task framework with Vision-Language Models (VLMs), specifically CLIP, to handle diverse surgical tasks through natural language supervision. A key challenge in multi-task learning is the presence of partial annotations when integrating different tasks. To overcome this, we employ Single Positive Multi-Label (SPML) learning, which traditionally reduces annotation burden by training models with only one positive label per instance. Our framework extends this approach to integrate data from multiple surgical tasks within a single procedure, enabling effective learning despite incomplete or noisy annotations. We demonstrate the effectiveness of our model on a combined dataset consisting of Cholec80, Endoscapes2023, and CholecT50, utilizing custom prompts. Extensive evaluation shows that MML-SurgAdapt performs comparably to task-specific benchmarks, with the added advantage of handling noisy annotations. It also outperforms the existing SPML frameworks for the task. By reducing the required labels by 23%, our approach proposes a more scalable and efficient labeling process, significantly easing the annotation burden on clinicians. To our knowledge, this is the first application of SPML to integrate data from multiple surgical tasks, presenting a novel and generalizable solution for multi-task learning in surgical computer vision. Implementation is available at: https://github.com/CAMMA-public/MML-SurgAdapt
 ]]></content:encoded>
 <pubDate>Fri, 11 Jul 2025 00:00:00 -0400</pubDate>
-<pubDate>Fri, 11 Jul 2025 00:00:00 -0400</pubDate>
 </item>
-
 <item>
 <title>Autonomous Control Leveraging LLMs: An Agentic Framework for Next-Generation Industrial Automation</title>
 <link>https://arxiv.org/abs/2507.07115</link>
@@ -11087,26 +11085,6 @@ arXiv:2507.04817v1 Announce Type: cross
 Abstract: Precise control over speech characteristics, such as pitch, duration, and speech rate, remains a significant challenge in the field of voice conversion. The ability to manipulate parameters like pitch and syllable rate is an important element for effective identity conversion, but can also be used independently for voice transformation, achieving goals that were historically addressed by vocoder-based methods.
   In this work, we explore a convolutional neural network-based approach that aims to provide means for modifying fundamental frequency (F0), phoneme sequences, intensity, and speaker identity. Rather than relying on disentanglement techniques, our model is explicitly conditioned on these factors to generate mel spectrograms, which are then converted into waveforms using a universal neural vocoder. Accordingly, during inference, F0 contours, phoneme sequences, and speaker embeddings can be freely adjusted, allowing for intuitively controlled voice transformations.
   We evaluate our approach on speaker conversion and expressive speech tasks using both perceptual and objective metrics. The results suggest that the proposed method offers substantial flexibility, while maintaining high intelligibility and speaker similarity.
-]]></content:encoded>
-<pubDate>Tue, 08 Jul 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Towards Human-in-the-Loop Onset Detection: A Transfer Learning Approach for Maracatu</title>
-<link>https://arxiv.org/abs/2507.04858</link>
-<guid>https://arxiv.org/abs/2507.04858</guid>
-<content:encoded><![CDATA[
-arXiv:2507.04858v1 Announce Type: cross 
-Abstract: We explore transfer learning strategies for musical onset detection in the Afro-Brazilian Maracatu tradition, which features complex rhythmic patterns that challenge conventional models. We adapt two Temporal Convolutional Network architectures: one pre-trained for onset detection (intra-task) and another for beat tracking (inter-task). Using only 5-second annotated snippets per instrument, we fine-tune these models through layer-wise retraining strategies for five traditional percussion instruments. Our results demonstrate significant improvements over baseline performance, with F1 scores reaching up to 0.998 in the intra-task setting and improvements of over 50 percentage points in best-case scenarios. The cross-task adaptation proves particularly effective for time-keeping instruments, where onsets naturally align with beat positions. The optimal fine-tuning configuration varies by instrument, highlighting the importance of instrument-specific adaptation strategies. This approach addresses the challenges of underrepresented musical traditions, offering an efficient human-in-the-loop methodology that minimizes annotation effort while maximizing performance. Our findings contribute to more inclusive music information retrieval tools applicable beyond Western musical contexts.
-]]></content:encoded>
-<pubDate>Tue, 08 Jul 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>A Novel Approach for Estimating Positive Lyapunov Exponents in One-Dimensional Chaotic Time Series Using Machine Learning</title>
-<link>https://arxiv.org/abs/2507.04868</link>
-<guid>https://arxiv.org/abs/2507.04868</guid>
-<content:encoded><![CDATA[
-arXiv:2507.04868v1 Announce Type: cross 
-Abstract: Understanding and quantifying chaos in nonlinear dynamical systems remains a fundamental challenge in science and engineering. The Lyapunov exponent is a key measure of chaotic behavior, but its accurate estimation from experimental data is often hindered by methodological and computational limitations. In this work, we present a novel machine-learning-based approach for estimating the positive Lyapunov exponent (MLE) from one-dimensional time series, using the growth of out-of-sample prediction errors as a proxy for trajectory divergence. Our method demonstrates high scientific relevance, offering a robust, data-driven alternative to traditional analytic techniques. Through comprehensive testing on several canonical chaotic maps - including the logistic, sine, cubic, and Chebyshev maps - we achieved a coefficient of determination R2pos > 0.9 between predicted and theoretical MLE values for time series as short as M = 200 points. The best accuracy was observed for the Chebyshev map (R2pos = 0.999). Notably, the proposed method maintains high computational efficiency and generalizes well across various machine learning algorithms. These results highlight the significance of our approach for practical chaos analysis in both synthetic and experimental settings, opening new possibilities for robust nonlinear dynamics assessment when only time series data are available.
 ]]></content:encoded>
 <pubDate>Tue, 08 Jul 2025 00:00:00 -0400</pubDate>
 </item>
