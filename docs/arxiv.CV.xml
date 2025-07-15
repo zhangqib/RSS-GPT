@@ -4,6 +4,7 @@
 <title>cs.CV updates on arXiv.org</title>
 <link>http://rss.arxiv.org/rss/cs.CV</link>
 
+
 <item>
 <title>Information-Bottleneck Driven Binary Neural Network for Change Detection</title>
 <link>https://arxiv.org/abs/2507.03504</link>
@@ -12,14 +13,12 @@
 <div> Keywords: Binarized Change Detection, Binary Neural Network, Information Bottleneck, Detection Performance, State-of-the-art
 
 Summary: 
-BiCD introduces a binary neural network (BNN) for change detection, addressing limitations of conventional binarization approaches. By incorporating an auxiliary objective based on the Information Bottleneck (IB) principle, BiCD enhances the representation and feature separability of BNNs, leading to improved detection accuracy. The auxiliary module serves as an approximation target for calculating mutual information, enabling the optimization strategy to minimize both reconstruction loss and change detection loss. Experimental results on street-view and remote sensing datasets demonstrate BiCD's effectiveness, establishing a new benchmark for BNN-based change detection and achieving state-of-the-art performance in the field.<br><br>Summary: <div>
+BiCD introduces a binary neural network (BNN) for change detection, addressing limitations of conventional binarization approaches. By incorporating an auxiliary objective based on the Information Bottleneck (IB) principle, BiCD enhances the representation and feature separability of BNNs, leading to improved detection accuracy. The auxiliary module serves as an approximation target for calculating mutual information, enabling the optimization strategy to minimize both reconstruction loss and change detection loss. Experimental results on street-view and remote sensing datasets demonstrate BiCD's effectiveness, establishing a new benchmark for BNN-based change detection and achieving state-of-the-art performance in the field.<br /><br />Summary: <div>
 arXiv:2507.03504v2 Announce Type: replace 
 Abstract: In this paper, we propose Binarized Change Detection (BiCD), the first binary neural network (BNN) designed specifically for change detection. Conventional network binarization approaches, which directly quantize both weights and activations in change detection models, severely limit the network's ability to represent input data and distinguish between changed and unchanged regions. This results in significantly lower detection accuracy compared to real-valued networks. To overcome these challenges, BiCD enhances both the representational power and feature separability of BNNs, improving detection performance. Specifically, we introduce an auxiliary objective based on the Information Bottleneck (IB) principle, guiding the encoder to retain essential input information while promoting better feature discrimination. Since directly computing mutual information under the IB principle is intractable, we design a compact, learnable auxiliary module as an approximation target, leading to a simple yet effective optimization strategy that minimizes both reconstruction loss and standard change detection loss. Extensive experiments on street-view and remote sensing datasets demonstrate that BiCD establishes a new benchmark for BNN-based change detection, achieving state-of-the-art performance in this domain.
 ]]></content:encoded>
 <pubDate>Tue, 15 Jul 2025 00:00:00 -0400</pubDate>
-<pubDate>Tue, 15 Jul 2025 00:00:00 -0400</pubDate>
 </item>
-
 <item>
 <title>An Efficient Deep Learning Framework for Brain Stroke Diagnosis Using Computed Tomography (CT) Images</title>
 <link>https://arxiv.org/abs/2507.03558</link>
@@ -11277,16 +11276,6 @@ Abstract: To advance real-world fashion image editing, we analyze existing two-s
 <content:encoded><![CDATA[
 arXiv:2507.03427v1 Announce Type: new 
 Abstract: Existing defense methods fail to defend against unknown attacks and thus raise generalization issue of adversarial robustness. To remedy this problem, we attempt to delve into some underlying common characteristics among various attacks for generality. In this work, we reveal the commonly overlooked low entropy prior (LE) implied in various adversarial samples, and shed light on the universal robustness against unseen attacks in inference phase. LE prior is elaborated as two properties across various attacks as shown in Fig. 1 and Fig. 2: 1) low entropy misclassification for adversarial samples and 2) lower entropy prediction for higher attack intensity. This phenomenon stands in stark contrast to the naturally distributed samples. The LE prior can instruct existing test-time defense methods, thus we propose a two-stage REAL approach: Rectify Adversarial sample based on LE prior for test-time adversarial rectification. Specifically, to align adversarial samples more closely with clean samples, we propose to first rectify adversarial samples misclassified with low entropy by reverse maximizing prediction entropy, thereby eliminating their adversarial nature. To ensure the rectified samples can be correctly classified with low entropy, we carry out secondary rectification by forward minimizing prediction entropy, thus creating a Max-Min entropy optimization scheme. Further, based on the second property, we propose an attack-aware weighting mechanism to adaptively adjust the strengths of Max-Min entropy objectives. Experiments on several datasets show that REAL can greatly improve the performance of existing sample rectification models.
-]]></content:encoded>
-<pubDate>Tue, 08 Jul 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Unlearning the Noisy Correspondence Makes CLIP More Robust</title>
-<link>https://arxiv.org/abs/2507.03434</link>
-<guid>https://arxiv.org/abs/2507.03434</guid>
-<content:encoded><![CDATA[
-arXiv:2507.03434v1 Announce Type: new 
-Abstract: The data appetite for Vision-Language Models (VLMs) has continuously scaled up from the early millions to billions today, which faces an untenable trade-off with data quality and inevitably introduces Noisy Correspondence (NC) samples. Undoubtedly, such semantically unrelated data significantly impairs the performance of VLMs. Previous efforts mainly address this challenge by estimating refined alignment for more precise guidance. However, such resource-intensive pipelines that train VLMs from scratch struggle to meet realistic data demands. In this paper, we present a brand new perspective that seeks to directly eliminate the harmful effects of NC in pre-trained VLMs. Specifically, we propose NCU, a Noisy Correspondence Unlearning fine-tuning framework that efficiently enhances VLMs' robustness by forgetting learned noisy knowledge. The key to NCU is learning the hardest negative information, which can provide explicit unlearning direction for both false positives and false negatives. Such twin goals unlearning process can be formalized into one unified optimal transport objective for fast fine-tuning. We validate our approach with the prevailing CLIP model over various downstream tasks. Remarkably, NCU surpasses the robust pre-trained method on zero-shot transfer while with lower computational overhead. The code will be released upon acceptance.
 ]]></content:encoded>
 <pubDate>Tue, 08 Jul 2025 00:00:00 -0400</pubDate>
 </item>
