@@ -4,6 +4,221 @@
 <title>cs.CE updates on arXiv.org</title>
 <link>http://rss.arxiv.org/rss/cs.CE</link>
 
+<item>
+<title>StockSim: A Dual-Mode Order-Level Simulator for Evaluating Multi-Agent LLMs in Financial Markets</title>
+<link>https://arxiv.org/abs/2507.09255</link>
+<guid>https://arxiv.org/abs/2507.09255</guid>
+<content:encoded><![CDATA[
+<div> simulation platform, large language models, financial decision-making, StockSim, open-source
+Summary:
+StockSim is an open-source simulation platform designed for evaluating large language models (LLMs) in realistic financial decision-making scenarios. It offers a comprehensive system that accurately models market dynamics and supports various simulation modes with different levels of detail. By incorporating real-world factors like latency and order-book microstructure, StockSim allows for more insightful assessment of LLM-based trading agents. Its extensible agent framework supports diverse trading strategies and multi-agent coordination, making it a valuable tool for NLP research on reasoning under uncertainty and sequential decision-making.
+<br><br>Summary: <div>
+arXiv:2507.09255v1 Announce Type: new 
+Abstract: We present StockSim, an open-source simulation platform for systematic evaluation of large language models (LLMs) in realistic financial decision-making scenarios. Unlike previous toolkits that offer limited scope, StockSim delivers a comprehensive system that fully models market dynamics and supports diverse simulation modes of varying granularity. It incorporates critical real-world factors, such as latency, slippage, and order-book microstructure, that were previously neglected, enabling more faithful and insightful assessment of LLM-based trading agents. An extensible, role-based agent framework supports heterogeneous trading strategies and multi-agent coordination, making StockSim a uniquely capable testbed for NLP research on reasoning under uncertainty and sequential decision-making. We open-source all our code at https: //github.com/harrypapa2002/StockSim.
+]]></content:encoded>
+<pubDate>Tue, 15 Jul 2025 00:00:00 -0400</pubDate>
+<pubDate>Tue, 15 Jul 2025 00:00:00 -0400</pubDate>
+</item>
+<item>
+<title>GeoWarp: An automatically differentiable and GPU-accelerated implicit MPM framework for geomechanics based on NVIDIA Warp</title>
+<link>https://arxiv.org/abs/2507.09435</link>
+<guid>https://arxiv.org/abs/2507.09435</guid>
+<content:encoded><![CDATA[
+<div> Keywords: material point method, implicit formulation, geomechanics, GPU parallelism, automatic differentiation
+
+Summary:
+GeoWarp is introduced as an implicit material point method (MPM) framework for geomechanics. It utilizes GPU parallelism and automatic differentiation to compute Jacobian matrices without manual derivation, overcoming the limitations of explicit MPM formulations. The framework includes a sparse Jacobian construction algorithm that takes advantage of localized particle-grid interactions inherent in MPM. GeoWarp is verified through examples in large-deformation elastoplasticity and coupled poromechanics, showcasing its robustness, scalability, and extensibility for differentiable implicit MPM simulation in computational geomechanics. By leveraging GPU parallelism and automatic differentiation, GeoWarp provides a powerful tool for simulating large-deformation and history-dependent behavior in geomechanical systems, making it a valuable asset in the field of computational geomechanics. 
+
+<br><br>Summary: <div>
+arXiv:2507.09435v1 Announce Type: new 
+Abstract: The material point method (MPM), a hybrid Lagrangian-Eulerian particle method, is increasingly used to simulate large-deformation and history-dependent behavior of geomaterials. While explicit time integration dominates current MPM implementations due to its algorithmic simplicity, such schemes are unsuitable for quasi-static and long-term processes typical in geomechanics. Implicit MPM formulations are free of these limitations but remain less adopted, largely due to the difficulty of computing the Jacobian matrix required for Newton-type solvers, especially when consistent tangent operators should be derived for complex constitutive models. In this paper, we introduce GeoWarp -- an implicit MPM framework for geomechanics built on NVIDIA Warp -- that exploits GPU parallelism and reverse-mode automatic differentiation to compute Jacobians without manual derivation. To enhance efficiency, we develop a sparse Jacobian construction algorithm that leverages the localized particle-grid interactions intrinsic to MPM. The framework is verified through forward and inverse examples in large-deformation elastoplasticity and coupled poromechanics. Results demonstrate that GeoWarp provides a robust, scalable, and extensible platform for differentiable implicit MPM simulation in computational geomechanics.
+]]></content:encoded>
+<pubDate>Tue, 15 Jul 2025 00:00:00 -0400</pubDate>
+<pubDate>Tue, 15 Jul 2025 00:00:00 -0400</pubDate>
+</item>
+<item>
+<title>EV-STLLM: Electric vehicle charging forecasting based on spatio-temporal large language models with multi-frequency and multi-scale information fusion</title>
+<link>https://arxiv.org/abs/2507.09527</link>
+<guid>https://arxiv.org/abs/2507.09527</guid>
+<content:encoded><![CDATA[
+<div> VMD, ICEEMDAN, FIG, ReliefF, EV-STLLM <br>
+Summary: <br>
+The paper proposes a novel EV spatio-temporal large language model (EV-STLLM) for accurate prediction of electric vehicle (EV) charging demand and station occupancy. The framework consists of two modules: a data processing module using VMD and ICEEMDAN for data denoising and multi-frequency decomposition, FIG for extracting multi-scale information, and ReliefF for feature selection; a forecasting module using EV-STLLM for direct prediction. The model integrates adjacency matrices from regional station networks and spatio-temporal-frequency embedding information to capture data characteristics. The PFGA module maintains sequential feature modeling capabilities and incorporates EV domain knowledge. Experiments on real-world data from Shenzhen show superior accuracy compared to existing methods. <div>
+arXiv:2507.09527v1 Announce Type: new 
+Abstract: With the proliferation of electric vehicles (EVs), accurate charging demand and station occupancy forecasting are critical for optimizing urban energy and the profit of EVs aggregator. Existing approaches in this field usually struggle to capture the complex spatio-temporal dependencies in EV charging behaviors, and their limited model parameters hinder their ability to learn complex data distribution representations from large datasets. To this end, we propose a novel EV spatio-temporal large language model (EV-STLLM) for accurate prediction. Our proposed framework is divided into two modules. In the data processing module, we utilize variational mode decomposition (VMD) for data denoising, and improved complete ensemble empirical mode decomposition with adaptive noise (ICEEMDAN) for data multi-frequency decomposition. Fuzzy information granulation (FIG) for extracting multi-scale information. Additionally, ReliefF is used for feature selection to mitigate redundancy. In the forecasting module, the EV-STLLM is used to directly achieve EV charging and occupancy forecasting. Firstly, we fully capture the intrinsic spatio-temporal characteristics of the data by integrating adjacency matrices derived from the regional stations network and spatio-temporal-frequency embedding information. Then, the partially frozen graph attention (PFGA) module is utilized to maintain the sequential feature modeling capabilities of the pre-trained large model while incorporating EV domain knowledge. Extensive experiments using real-world data from Shenzhen, China, demonstrate that our proposed framework can achieve superior accuracy and robustness compared to the state-of-the-art benchmarks.
+]]></content:encoded>
+<pubDate>Tue, 15 Jul 2025 00:00:00 -0400</pubDate>
+<pubDate>Tue, 15 Jul 2025 00:00:00 -0400</pubDate>
+</item>
+<item>
+<title>Physics-informed machine learning surrogate for scalable simulation of thermal histories during wire-arc directed energy deposition</title>
+<link>https://arxiv.org/abs/2507.09591</link>
+<guid>https://arxiv.org/abs/2507.09591</guid>
+<content:encoded><![CDATA[
+<div> large-scale structural engineering, wire-arc directed energy deposition, finite element method, physics-informed neural networks, metal additive manufacturing <br> 
+Summary: <br> 
+The study focuses on wire-arc directed energy deposition (DED) for large-scale structural engineering applications. Traditional finite element method (FEM) simulations for thermal history prediction during deposition are computationally intensive. Physics-informed neural networks (PINNs) offer an alternative by combining physical knowledge with machine learning. The study investigates the scalability of PINNs, emphasizing efficient collocation points sampling to reduce computational time. Results show that PINNs can significantly decrease effort by up to 98.6% while maintaining accuracy and providing "super-resolution." The research suggests future enhancements for PINN performance in the context of metal additive manufacturing. <br> <div>
+arXiv:2507.09591v1 Announce Type: new 
+Abstract: Wire-arc directed energy deposition (DED) has emerged as a promising additive manufacturing (AM) technology for large-scale structural engineering applications. However, the complex thermal dynamics inherent to the process present challenges in ensuring structural integrity and mechanical properties of fabricated thick walls and plates. While finite element method (FEM) simulations have been conventionally employed to predict thermal history during deposition, their computational demand remains prohibitively high for actual large-scale applications. Given the necessity of multiple repetitive simulations for heat management and the determination of an optimal printing strategy, FEM simulation quickly becomes entirely infeasible. Instead, advancements have been made in using trained neural networks as surrogate models for rapid prediction. However, traditional data-driven approaches necessitate large amounts of relevant and verifiable external data, during the training and validation of the neural network. Regarding large-scale wire-arc DED, none of these data sources are readily available in quantities sufficient for an accurate surrogate. The introduction of physics-informed neural networks (PINNs) has opened up an alternative simulation strategy by leveraging the existing physical knowledge of the phenomena with advanced machine learning methods. Despite their theoretical advantages, PINNs have seen limited application in the context of large-scale wire-arc DED for structural engineering. This study investigates the scalability of PINNs, focusing on efficient collocation points sampling, a critical factor controlling both the training time and model performance. Results show PINNs can reduce computational time and effort by up to 98.6%, while maintaining the desired accuracy and offering "super-resolution". Future directions for enhancing PINN performance in metal AM are discussed.
+]]></content:encoded>
+<pubDate>Tue, 15 Jul 2025 00:00:00 -0400</pubDate>
+<pubDate>Tue, 15 Jul 2025 00:00:00 -0400</pubDate>
+</item>
+<item>
+<title>What Matters Most? A Quantitative Meta-Analysis of AI-Based Predictors for Startup Success</title>
+<link>https://arxiv.org/abs/2507.09675</link>
+<guid>https://arxiv.org/abs/2507.09675</guid>
+<content:encoded><![CDATA[
+<div> Keywords: machine learning, startup success, predictor importance, meta-analysis, context
+
+Summary: 
+- The study conducts a meta-analysis to synthesize predictor importance in AI-based startup evaluation, analyzing 13 empirical studies and identifying 58 unique predictors.
+- The most powerful predictors for startup success are Firm Characteristics, Investor Structure, Digital and Social Traction, and Funding History.
+- Predictor importance varies depending on the startup's goals and stage, with context influencing the hierarchy of factors.
+- Factors predicting near-term funding milestones focus on immediate deal context, while long-term exits prioritize firm and investor characteristics.
+- The study suggests a potential "convenience bias" in the literature, where predictor importance may be linked to data accessibility.
+<br><br>Summary: <div>
+arXiv:2507.09675v1 Announce Type: new 
+Abstract: Background: Predicting startup success with machine learning is a rapidly growing field, yet findings on key predictors are often fragmented and context-specific. This makes it difficult to discern robust patterns and highlights a need for a systematic synthesis of the evidence.
+  Methods: This study conducts a quantitative meta-analysis to synthesize the literature on predictor importance in AI-based startup evaluation. We performed a systematic review to identify a final sample of 13 empirical studies that report rankable feature importance. From these papers, we extracted and categorized 58 unique predictors, synthesizing their importance using a Weighted Importance Score (WIS) that balances a feature's average rank with its frequency of appearance. We also conducted a moderator analysis to investigate how predictor importance changes with context (e.g., success definition).
+  Results: Our aggregate analysis reveals that the most consistently powerful predictors are a quartet of foundational attributes: Firm Characteristics (e.g., age, location), Investor Structure (e.g., investor quality), Digital and Social Traction (e.g., online momentum), and Funding History. The moderator analysis further reveals that this hierarchy is highly context-dependent. For instance, predicting near-term funding milestones elevates the importance of the deal's immediate context, while predicting long-term exits prioritizes fundamental firm and investor characteristics.
+  Conclusion: The factors that best predict startup success are not universal but are contingent on the startup's goals, stage, and the data used for evaluation. Our findings point to a potential "convenience bias" in the literature, where predictor importance may be tied to data accessibility. We conclude by underscoring the need for standardized reporting practices to enable more robust, cumulative knowledge building in the field.
+]]></content:encoded>
+<pubDate>Tue, 15 Jul 2025 00:00:00 -0400</pubDate>
+<pubDate>Tue, 15 Jul 2025 00:00:00 -0400</pubDate>
+</item>
+<item>
+<title>Legendre Polynomials and Their Use for Karhunen-Lo\`eve Expansion</title>
+<link>https://arxiv.org/abs/2507.09825</link>
+<guid>https://arxiv.org/abs/2507.09825</guid>
+<content:encoded><![CDATA[
+<div> Legendre polynomials, recurrence relation, Gaussian random fields, Karhunen-Loève expansions, computational framework<br>
+<br>
+Summary:<br>
+This paper presents a pedagogical review of the derivation of the three-term recurrence relation for Legendre polynomials, aimed at undergraduate students. It also introduces a computational framework for Karhunen-Loève expansions of isotropic Gaussian random fields on hyper-rectangular domains. The framework utilizes Legendre polynomials and associated Gaussian quadrature techniques, ensuring efficiency in higher spatial dimensions. The approach approximates a covariance kernel using a non-negative mixture of squared-exponentials and employs a separable kernel for efficient Legendre-Galerkin discretization. Structural properties like even/odd parity structure in submatrices and a Duffy-type transformation for assembly reduce memory usage and arithmetic cost. The paper includes algorithms and numerical experiments in an open-source repository, reproducing all figures and tables provided in the work. <div>
+arXiv:2507.09825v1 Announce Type: new 
+Abstract: This paper makes two main contributions. First, we present a pedagogical review of the derivation of the three-term recurrence relation for Legendre polynomials, without relying on the classical Legendre differential equation, Rodrigues' formula, or generating functions. This exposition is designed to be accessible to undergraduate students.
+  Second, we develop a computational framework for Karhunen-Lo\`eve expansions of isotropic Gaussian random fields on hyper-rectangular domains. The framework leverages Legendre polynomials and their associated Gaussian quadrature, and it remains efficient even in higher spatial dimensions.
+  A covariance kernel is first approximated by a non-negative mixture of squared-exponentials, obtained via a Newton-optimized fit with a theoretically informed initialization. The resulting separable kernel enables a Legendre-Galerkin discretization in the form of a Kronecker product over single dimensions, with submatrices that exhibit even/odd parity structure. For assembly, we introduce a Duffy-type transformation followed by quadrature. These structural properties significantly reduce both memory usage and arithmetic cost compared to naive approaches. All algorithms and numerical experiments are provided in an open-source repository that reproduces every figure and table in this work.
+]]></content:encoded>
+<pubDate>Tue, 15 Jul 2025 00:00:00 -0400</pubDate>
+<pubDate>Tue, 15 Jul 2025 00:00:00 -0400</pubDate>
+</item>
+<item>
+<title>Non-smooth optimization meets automated material model discovery</title>
+<link>https://arxiv.org/abs/2507.10196</link>
+<guid>https://arxiv.org/abs/2507.10196</guid>
+<content:encoded><![CDATA[
+<div> Automated material model discovery, Non-smooth L1-norm regularization, Minimization algorithms, Sparse regression problem, Regularization path computation<br>
+<br>
+Summary: 
+This study explores the minimization of functions with non-smooth L1-norm regularization for automated material model discovery. It investigates the minimization of functions involving a metric quantifying the model-data mismatch and a regularization parameter determining solution sparsity. The study covers cases where the metric function is quadratic or non-quadratic, proposing efficient algorithms for solving the minimization problem and computing the entire regularization path. Algorithms discussed include coordinate descent, LARS for determining critical regularization values, proximal gradient method ISTA for non-quadratic scenarios, and a pathwise extension of ISTA. These algorithms are applied to discover hyperelastic material models from tension and shear data, showcasing their effectiveness in automated material model discovery in mechanics.
+<br> <div>
+arXiv:2507.10196v1 Announce Type: new 
+Abstract: Automated material model discovery disrupts the tedious and time-consuming cycle of iteratively calibrating and modifying manually designed models. Non-smooth L1-norm regularization is the backbone of automated model discovery; however, the current literature on automated material model discovery offers limited insights into the robust and efficient minimization of non-smooth objective functions. In this work, we examine the minimization of functions of the form f(w) + a ||w||_1, where w are the material model parameters, f is a metric that quantifies the mismatch between the material model and the observed data, and a is a regularization parameter that determines the sparsity of the solution. We investigate both the straightforward case where f is quadratic and the more complex scenario where it is non-quadratic or even non-convex. Importantly, we do not only focus on methods that solve the sparse regression problem for a given value of the regularization parameter a, but propose methods to efficiently compute the entire regularization path, facilitating the selection of a suitable a. Specifically, we present four algorithms and discuss their roles for automated material model discovery in mechanics: First, we recapitulate a well-known coordinate descent algorithm that solves the minimization problem assuming that f is quadratic for a given value of a, also known as the LASSO. Second, we discuss the algorithm LARS, which automatically determines the critical values of a, at which material parameters in w are set to zero. Third, we propose to use the proximal gradient method ISTA for automated material model discovery if f is not quadratic, and fourth, we suggest a pathwise extension of ISTA for computing the regularization path. We demonstrate the applicability of all algorithms for the discovery of hyperelastic material models from uniaxial tension and simple shear data.
+]]></content:encoded>
+<pubDate>Tue, 15 Jul 2025 00:00:00 -0400</pubDate>
+<pubDate>Tue, 15 Jul 2025 00:00:00 -0400</pubDate>
+</item>
+<item>
+<title>FinTeam: A Multi-Agent Collaborative Intelligence System for Comprehensive Financial Scenarios</title>
+<link>https://arxiv.org/abs/2507.10448</link>
+<guid>https://arxiv.org/abs/2507.10448</guid>
+<content:encoded><![CDATA[
+<div> Keywords: Financial report generation, LLM models, multi-agent collaborative system, real financial scenarios, human evaluation
+
+Summary:
+Financial report generation tasks are complex and require extensive data analysis across various areas of finance. Existing Language Model models are limited in their ability to comprehensively analyze real financial scenarios. To address this, the FinTeam system was developed with a collaborative workflow involving four specialized agents: document analyzer, analyst, accountant, and consultant. Trained on specific financial expertise datasets, these agents work together to produce comprehensive financial reports. Evaluation results show that FinTeam outperformed baseline models like GPT-4o and Xuanyuan, achieving a 62.00% acceptance rate. The system also demonstrated an average improvement of 7.43% on FinCUGE and a 2.06% accuracy boost on FinEval. The project code is available on GitHub for further exploration. 
+
+<br><br>Summary: 
+- Financial report generation tasks are complex and require extensive data analysis.
+- The FinTeam system utilizes a collaborative workflow with specialized agents trained on specific financial expertise.
+- Evaluation results show that FinTeam outperformed baseline models and achieved a high acceptance rate.
+- The system demonstrated improvements on key financial evaluation metrics.
+- The project code is available on GitHub for further exploration. <div>
+arXiv:2507.10448v1 Announce Type: new 
+Abstract: Financial report generation tasks range from macro- to micro-economics analysis, also requiring extensive data analysis. Existing LLM models are usually fine-tuned on simple QA tasks and cannot comprehensively analyze real financial scenarios. Given the complexity, financial companies often distribute tasks among departments. Inspired by this, we propose FinTeam, a financial multi-agent collaborative system, with a workflow with four LLM agents: document analyzer, analyst, accountant, and consultant. We train these agents with specific financial expertise using constructed datasets. We evaluate FinTeam on comprehensive financial tasks constructed from real online investment forums, including macroeconomic, industry, and company analysis. The human evaluation shows that by combining agents, the financial reports generate from FinTeam achieved a 62.00% acceptance rate, outperforming baseline models like GPT-4o and Xuanyuan. Additionally, FinTeam's agents demonstrate a 7.43% average improvement on FinCUGE and a 2.06% accuracy boost on FinEval. Project is available at https://github.com/FudanDISC/DISC-FinLLM/.
+]]></content:encoded>
+<pubDate>Tue, 15 Jul 2025 00:00:00 -0400</pubDate>
+<pubDate>Tue, 15 Jul 2025 00:00:00 -0400</pubDate>
+</item>
+<item>
+<title>Central Bank Digital Currencies: A Survey</title>
+<link>https://arxiv.org/abs/2507.08880</link>
+<guid>https://arxiv.org/abs/2507.08880</guid>
+<content:encoded><![CDATA[
+<div> Keywords: Central Bank Digital Currencies, CBDC design taxonomy, ledger technology, consensus mechanisms, CBDC ecosystem
+
+Summary:
+Central banks are exploring the implementation of Central Bank Digital Currencies (CBDCs) due to advancements in digital payment technologies. A review of 135 research papers from 2018 to 2025 examines CBDC design taxonomy and ecosystem frameworks. The study refines key architectural elements, investigates ledger technologies, consensus mechanisms, offline payments, and digital wallet integration. A comparative analysis of 26 existing CBDC systems across system architecture, ledger technology, access model, and application domain reveals trends like a two-tier architecture, distributed ledger technology (DLT), and token-based access model. There is a growing focus on using CBDCs for cross-border payments to improve efficiency. Recommendations for future research are provided. 
+
+<br><br>Summary: <div>
+arXiv:2507.08880v1 Announce Type: cross 
+Abstract: With the advancement of digital payment technologies, central banks worldwide have increasingly begun to explore the implementation of Central Bank Digital Currencies (CBDCs). This paper presents a comprehensive review of the latest developments in CBDC system design and implementation. By analyzing 135 research papers published between 2018 and 2025, the study provides an in-depth examination of CBDC design taxonomy and ecosystem frameworks. Grounded in the CBDC Design Pyramid, the paper refines and expands key architectural elements by thoroughly investigating innovations in ledger technologies, the selection of consensus mechanisms, and challenges associated with offline payments and digital wallet integration. Furthermore, it conceptualizes a CBDC ecosystem. A detailed comparative analysis of 26 existing CBDC systems is conducted across four dimensions: system architecture, ledger technology, access model, and application domain. The findings reveal that the most common configuration consists of a two-tier architecture, distributed ledger technology (DLT), and a token-based access model. However, no dominant trend has emerged regarding application domains. Notably, recent research shows a growing focus on leveraging CBDCs for cross-border payments to resolve inefficiencies and structural delays in current systems. Finally, the paper offers several forward-looking recommendations for future research.
+]]></content:encoded>
+<pubDate>Tue, 15 Jul 2025 00:00:00 -0400</pubDate>
+<pubDate>Tue, 15 Jul 2025 00:00:00 -0400</pubDate>
+</item>
+<item>
+<title>Toward Developing Machine-Learning-Aided Tools for the Thermomechanical Monitoring of Nuclear Reactor Components</title>
+<link>https://arxiv.org/abs/2507.09443</link>
+<guid>https://arxiv.org/abs/2507.09443</guid>
+<content:encoded><![CDATA[
+<div> Predictive Maintenance, Nuclear Power Plants, Convolutional Neural Network, Computational Thermomechanical Model, Fuel Rod<br>
+Summary:<br>
+Proactive maintenance strategies, like Predictive Maintenance, are crucial for Nuclear Power Plants as they help in reducing downtime caused by unexpected component failures. This study explores the use of a Convolutional Neural Network combined with a computational thermomechanical model to estimate the temperature, stress, and strain of a Pressurized Water Reactor fuel rod during operation using limited temperature measurements. The datasets for training, validation, and testing were generated through simulations involving a nuclear fuel performance code and a Thermal-Hydraulics Module. The CNN was trained for over 1,000 epochs and showed accurate temperature distribution predictions, further used in a thermomechanical model to determine stress and strain distribution within the fuel rod. This methodology has the potential to aid in the development of Predictive Maintenance tools for real-time monitoring of nuclear reactors. <br> <div>
+arXiv:2507.09443v1 Announce Type: cross 
+Abstract: Proactive maintenance strategies, such as Predictive Maintenance (PdM), play an important role in the operation of Nuclear Power Plants (NPPs), particularly due to their capacity to reduce offline time by preventing unexpected shutdowns caused by component failures.
+  In this work, we explore the use of a Convolutional Neural Network (CNN) architecture combined with a computational thermomechanical model to calculate the temperature, stress, and strain of a Pressurized Water Reactor (PWR) fuel rod during operation. This estimation relies on a limited number of temperature measurements from the cladding's outer surface. This methodology can potentially aid in developing PdM tools for nuclear reactors by enabling real-time monitoring of such systems.
+  The training, validation, and testing datasets were generated through coupled simulations involving BISON, a finite element-based nuclear fuel performance code, and the MOOSE Thermal-Hydraulics Module (MOOSE-THM). We conducted eleven simulations, varying the peak linear heat generation rates. Of these, eight were used for training, two for validation, and one for testing.
+  The CNN was trained for over 1,000 epochs without signs of overfitting, achieving highly accurate temperature distribution predictions. These were then used in a thermomechanical model to determine the stress and strain distribution within the fuel rod.
+]]></content:encoded>
+<pubDate>Tue, 15 Jul 2025 00:00:00 -0400</pubDate>
+<pubDate>Tue, 15 Jul 2025 00:00:00 -0400</pubDate>
+</item>
+<item>
+<title>When the Weak Becomes Strong: Effective Observables via Time-Symmetric Quantum Selection</title>
+<link>https://arxiv.org/abs/2507.09716</link>
+<guid>https://arxiv.org/abs/2507.09716</guid>
+<content:encoded><![CDATA[
+<div> weak values, time-symmetric quantum mechanics, sequential composition, state-conditioned observable, interference information
+
+Summary: In this study, the authors explore the sequential composition of weak values within time-symmetric quantum mechanics. They analyze the combination of forward and reverse weak measurements, showing that their product corresponds to the normalized expectation value of a state-conditioned observable. This observable encodes interference information, especially when the initial state is a superposition. The concept extends to mixed states by using a density matrix, connecting to generalized quantum measurements. Practical applications in quantum computing include error detection and the inference of weak value phases through strong measurements in the case of pure states. <div>
+arXiv:2507.09716v1 Announce Type: cross 
+Abstract: We investigate the sequential composition of weak values in the framework of time-symmetric quantum mechanics. Specifically, we consider a forward'' weak measurement from a preselected state $\ket{\psi}$ to a post-selected state $\ket{\phi}$, followed by a reverse'' weak measurement. We show that the product of these two weak values corresponds to the normalized expectation value of a strong, state-conditioned observable $B = A P_\psi A$, where $P_\psi = \ket{\psi}\bra{\psi}$ is the projector onto the preselected state. Analyzing the structure of $B$, we demonstrate how it encodes interference information, particularly when $\ket{\psi}$ is a superposition rather than an eigenstate of $A$. This formulation extends naturally to mixed states by replacing $P_\psi$ with a generic density matrix $\rho$, linking the construction to the formalism of generalized quantum measurements. We illustrate practical applications in quantum information, including state-specific error witnessing in quantum computing, and show how the phase of a weak value can be inferred via strong measurements in the pure-state case.
+]]></content:encoded>
+<pubDate>Tue, 15 Jul 2025 00:00:00 -0400</pubDate>
+<pubDate>Tue, 15 Jul 2025 00:00:00 -0400</pubDate>
+</item>
+<item>
+<title>A Coincidence of Wants Mechanism for Swap Trade Execution in Decentralized Exchanges</title>
+<link>https://arxiv.org/abs/2507.10149</link>
+<guid>https://arxiv.org/abs/2507.10149</guid>
+<content:encoded><![CDATA[
+<div> cycle, Coincidence of Wants, decentralized exchange, asset matrix, liquidity providing
+
+Summary:
+The article presents a novel framework for identifying and completing Coincidence of Wants (CoW) cycles in decentralized exchange (DEX) aggregators. Unlike existing auction based systems like CoWSwap, this approach uses an asset matrix formulation to verify feasibility, utilize oracle prices, and adhere to formal conservation laws. It also introduces bridging orders to execute slippage-free and capital preserving swap orders, offering a delta-neutral strategy for liquidity providing market makers. By leveraging graph traversal and imbalance correction, the algorithm efficiently discovers CoW cycles in real-world Arbitrum swap data and can seamlessly insert synthetic orders for atomic cycle closure. This structured CoW cycle execution demonstrates the potential for enhanced liquidity management and improved order processing in decentralized exchange ecosystems. <div>
+arXiv:2507.10149v1 Announce Type: cross 
+Abstract: We propose a mathematically rigorous framework for identifying and completing Coincidence of Wants (CoW) cycles in decentralized exchange (DEX) aggregators. Unlike existing auction based systems such as CoWSwap, our approach introduces an asset matrix formulation that not only verifies feasibility using oracle prices and formal conservation laws but also completes partial CoW cycles of swap orders that are discovered using graph traversal and are settled using imbalance correction. We define bridging orders and show that the resulting execution is slippage free and capital preserving for LPs. Applied to real world Arbitrum swap data, our algorithm demonstrates efficient discovery of CoW cycles and supports the insertion of synthetic orders for atomic cycle closure. This work can be thought of as the detailing of a potential delta-neutral strategy by liquidity providing market makers: a structured CoW cycle execution.
+]]></content:encoded>
+<pubDate>Tue, 15 Jul 2025 00:00:00 -0400</pubDate>
+<pubDate>Tue, 15 Jul 2025 00:00:00 -0400</pubDate>
+</item>
+<item>
+<title>Foundation Model for Composite Microstructures: Reconstruction, Stiffness, and Nonlinear Behavior Prediction</title>
+<link>https://arxiv.org/abs/2411.06565</link>
+<guid>https://arxiv.org/abs/2411.06565</guid>
+<content:encoded><![CDATA[
+<div> Keywords: Material Masked Autoencoder, self-supervised learning, Vision Transformer, microstructural features, composite images <br>
+Summary: 
+The Material Masked Autoencoder (MMAE) is introduced as a self-supervised Vision Transformer pre-trained on a large dataset of short-fiber composite images. The MMAE captures essential microstructural features and has broad applicability across tasks. Through fine-tuning on limited data, the MMAE can predict homogenized stiffness components effectively. The MMAE combined with an interaction-based material network (IMN) allows for inferring physically interpretable parameters and enables the extrapolation of nonlinear stress-strain responses. These results demonstrate the potential of microstructure foundation models in dealing with complex systems like 3D composites and experimental datasets. The MMAE represents a promising approach for advancing research in material science and lays the foundation for future extensions to more intricate systems. <br><br>Summary: <div>
+arXiv:2411.06565v4 Announce Type: replace 
+Abstract: We present the Material Masked Autoencoder (MMAE), a self-supervised Vision Transformer pretrained on a large corpus of short-fiber composite images via masked image reconstruction. The pretrained MMAE learns latent representations that capture essential microstructural features and are broadly transferable across tasks. We demonstrate two key applications: (i) predicting homogenized stiffness components through fine-tuning on limited data, and (ii) inferring physically interpretable parameters by coupling MMAE with an interaction-based material network (IMN), thereby enabling extrapolation of nonlinear stress-strain responses. These results highlight the promise of microstructure foundation models and lay the groundwork for future extensions to more complex systems, such as 3D composites and experimental datasets.
+]]></content:encoded>
+<pubDate>Tue, 15 Jul 2025 00:00:00 -0400</pubDate>
+<pubDate>Tue, 15 Jul 2025 00:00:00 -0400</pubDate>
+</item>
 
 <item>
 <title>EP-GAT: Energy-based Parallel Graph Attention Neural Network for Stock Trend Classification</title>
