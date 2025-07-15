@@ -5,12 +5,28 @@
 <link>http://rss.arxiv.org/rss/cs.CV</link>
 
 <item>
+<title>Information-Bottleneck Driven Binary Neural Network for Change Detection</title>
+<link>https://arxiv.org/abs/2507.03504</link>
+<guid>https://arxiv.org/abs/2507.03504</guid>
+<content:encoded><![CDATA[
+<div> Keywords: Binarized Change Detection, Binary Neural Network, Information Bottleneck, Detection Performance, State-of-the-art
+
+Summary: 
+BiCD introduces a binary neural network (BNN) for change detection, addressing limitations of conventional binarization approaches. By incorporating an auxiliary objective based on the Information Bottleneck (IB) principle, BiCD enhances the representation and feature separability of BNNs, leading to improved detection accuracy. The auxiliary module serves as an approximation target for calculating mutual information, enabling the optimization strategy to minimize both reconstruction loss and change detection loss. Experimental results on street-view and remote sensing datasets demonstrate BiCD's effectiveness, establishing a new benchmark for BNN-based change detection and achieving state-of-the-art performance in the field.<br><br>Summary: <div>
+arXiv:2507.03504v2 Announce Type: replace 
+Abstract: In this paper, we propose Binarized Change Detection (BiCD), the first binary neural network (BNN) designed specifically for change detection. Conventional network binarization approaches, which directly quantize both weights and activations in change detection models, severely limit the network's ability to represent input data and distinguish between changed and unchanged regions. This results in significantly lower detection accuracy compared to real-valued networks. To overcome these challenges, BiCD enhances both the representational power and feature separability of BNNs, improving detection performance. Specifically, we introduce an auxiliary objective based on the Information Bottleneck (IB) principle, guiding the encoder to retain essential input information while promoting better feature discrimination. Since directly computing mutual information under the IB principle is intractable, we design a compact, learnable auxiliary module as an approximation target, leading to a simple yet effective optimization strategy that minimizes both reconstruction loss and standard change detection loss. Extensive experiments on street-view and remote sensing datasets demonstrate that BiCD establishes a new benchmark for BNN-based change detection, achieving state-of-the-art performance in this domain.
+]]></content:encoded>
+<pubDate>Tue, 15 Jul 2025 00:00:00 -0400</pubDate>
+<pubDate>Tue, 15 Jul 2025 00:00:00 -0400</pubDate>
+</item>
+
+<item>
 <title>An Efficient Deep Learning Framework for Brain Stroke Diagnosis Using Computed Tomography (CT) Images</title>
 <link>https://arxiv.org/abs/2507.03558</link>
 <guid>https://arxiv.org/abs/2507.03558</guid>
 <content:encoded><![CDATA[
-<div> machine learning, brain stroke detection, CT scan images, pre-trained models, classification accuracy <br>
-Summary: <br>
+<div> machine learning, brain stroke detection, CT scan images, pre-trained models, classification accuracy <br />
+Summary: <br />
 - The study focuses on using machine learning models to predict brain strokes early through CT scan images.
 - Various pre-trained deep learning models and advanced optimization strategies are utilized for feature extraction and classification.
 - Feature engineering techniques such as BFO, PCA, and LDA are employed to further improve model performance.
@@ -20,20 +36,18 @@ arXiv:2507.03558v2 Announce Type: replace
 Abstract: Brain stroke is a leading cause of mortality and long-term disability worldwide, underscoring the need for precise and rapid prediction techniques. Computed Tomography (CT) scan is considered one of the most effective methods for diagnosing brain strokes. Most stroke classification techniques use a single slice-level prediction mechanism, requiring radiologists to manually select the most critical CT slice from the original CT volume. Although clinical evaluations are often used in traditional diagnostic procedures, machine learning (ML) has opened up new avenues for improving stroke diagnosis. To supplement traditional diagnostic techniques, this study investigates machine learning models for early brain stroke prediction using CT scan images. This research proposes a novel machine learning approach to brain stroke detection, focusing on optimizing classification performance with pre-trained deep learning models and advanced optimization strategies. Pre-trained models, including DenseNet201, InceptionV3, MobileNetV2, ResNet50, and Xception, are used for feature extraction. Feature engineering techniques, including BFO, PCA, and LDA, further enhance model performance. These features are then classified using machine learning algorithms, including SVC, RF, XGB, DT, LR, KNN, and GNB. Our experiments demonstrate that the combination of MobileNetV2, LDA, and SVC achieved the highest classification accuracy of 97.93%, significantly outperforming other model-optimizer-classifier combinations. The results underline the effectiveness of integrating lightweight pre-trained models with robust optimization and classification techniques for brain stroke diagnosis.
 ]]></content:encoded>
 <pubDate>Tue, 15 Jul 2025 00:00:00 -0400</pubDate>
-<pubDate>Tue, 15 Jul 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
 <title>From Video to EEG: Adapting Joint Embedding Predictive Architecture to Uncover Visual Concepts in Brain Signal Analysis</title>
 <link>https://arxiv.org/abs/2507.03633</link>
 <guid>https://arxiv.org/abs/2507.03633</guid>
 <content:encoded><![CDATA[
-<div> EEG, signals, brain activity, spatiotemporal dependencies, self-supervised learning <br>
-<br>
-Summary: The article introduces EEG-VJEPA, a novel approach for EEG classification that utilizes the Video Joint Embedding Predictive Architecture (V-JEPA). By treating EEG signals as video-like sequences, EEG-VJEPA learns spatiotemporal representations effectively. It addresses the challenges of limited labeled data and high dimensionality in EEG analysis. The model outperforms existing state-of-the-art models in classification accuracy, while also capturing physiologically relevant spatial and temporal signal patterns. This provides interpretable embeddings that can enhance human-AI collaboration in diagnostic workflows. Overall, EEG-VJEPA shows promise for scalable and trustworthy EEG analysis in real-world clinical settings. <br> <div>
+<div> EEG, signals, brain activity, spatiotemporal dependencies, self-supervised learning <br />
+<br />
+Summary: The article introduces EEG-VJEPA, a novel approach for EEG classification that utilizes the Video Joint Embedding Predictive Architecture (V-JEPA). By treating EEG signals as video-like sequences, EEG-VJEPA learns spatiotemporal representations effectively. It addresses the challenges of limited labeled data and high dimensionality in EEG analysis. The model outperforms existing state-of-the-art models in classification accuracy, while also capturing physiologically relevant spatial and temporal signal patterns. This provides interpretable embeddings that can enhance human-AI collaboration in diagnostic workflows. Overall, EEG-VJEPA shows promise for scalable and trustworthy EEG analysis in real-world clinical settings. <br /> <div>
 arXiv:2507.03633v4 Announce Type: replace 
 Abstract: EEG signals capture brain activity with high temporal and low spatial resolution, supporting applications such as neurological diagnosis, cognitive monitoring, and brain-computer interfaces. However, effective analysis is hindered by limited labeled data, high dimensionality, and the absence of scalable models that fully capture spatiotemporal dependencies. Existing self-supervised learning (SSL) methods often focus on either spatial or temporal features, leading to suboptimal representations. To this end, we propose EEG-VJEPA, a novel adaptation of the Video Joint Embedding Predictive Architecture (V-JEPA) for EEG classification. By treating EEG as video-like sequences, EEG-VJEPA learns semantically meaningful spatiotemporal representations using joint embeddings and adaptive masking. To our knowledge, this is the first work that exploits V-JEPA for EEG classification and explores the visual concepts learned by the model. Evaluations on the publicly available Temple University Hospital (TUH) Abnormal EEG dataset show that EEG-VJEPA outperforms existing state-of-the-art models in classification accuracy. Beyond classification accuracy, EEG-VJEPA captures physiologically relevant spatial and temporal signal patterns, offering interpretable embeddings that may support human-AI collaboration in diagnostic workflows. These findings position EEG-VJEPA as a promising framework for scalable, trustworthy EEG analysis in real-world clinical settings.
 ]]></content:encoded>
-<pubDate>Tue, 15 Jul 2025 00:00:00 -0400</pubDate>
 <pubDate>Tue, 15 Jul 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -49,7 +63,6 @@ arXiv:2507.03924v2 Announce Type: replace
 Abstract: Recent methods have shown that pre-trained diffusion models can be fine-tuned to enable generative inverse rendering by learning image-conditioned noise-to-intrinsic mapping. Despite their remarkable progress, they struggle to robustly produce high-quality results as the noise-to-intrinsic paradigm essentially utilizes noisy images with deteriorated structure and appearance for intrinsic prediction, while it is common knowledge that structure and appearance information in an image are crucial for inverse rendering. To address this issue, we present DNF-Intrinsic, a robust yet efficient inverse rendering approach fine-tuned from a pre-trained diffusion model, where we propose to take the source image rather than Gaussian noise as input to directly predict deterministic intrinsic properties via flow matching. Moreover, we design a generative renderer to constrain that the predicted intrinsic properties are physically faithful to the source image. Experiments on both synthetic and real-world datasets show that our method clearly outperforms existing state-of-the-art methods.
 ]]></content:encoded>
 <pubDate>Tue, 15 Jul 2025 00:00:00 -0400</pubDate>
-<pubDate>Tue, 15 Jul 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
 <title>Colorectal Cancer Tumor Grade Segmentation in Digital Histopathology Images: From Giga to Mini Challenge</title>
@@ -64,7 +77,6 @@ arXiv:2507.04681v2 Announce Type: replace
 Abstract: Colorectal cancer (CRC) is the third most diagnosed cancer and the second leading cause of cancer-related death worldwide. Accurate histopathological grading of CRC is essential for prognosis and treatment planning but remains a subjective process prone to observer variability and limited by global shortages of trained pathologists. To promote automated and standardized solutions, we organized the ICIP Grand Challenge on Colorectal Cancer Tumor Grading and Segmentation using the publicly available METU CCTGS dataset. The dataset comprises 103 whole-slide images with expert pixel-level annotations for five tissue classes. Participants submitted segmentation masks via Codalab, evaluated using metrics such as macro F-score and mIoU. Among 39 participating teams, six outperformed the Swin Transformer baseline (62.92 F-score). This paper presents an overview of the challenge, dataset, and the top-performing methods
 ]]></content:encoded>
 <pubDate>Tue, 15 Jul 2025 00:00:00 -0400</pubDate>
-<pubDate>Tue, 15 Jul 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
 <title>Structure-Guided Diffusion Models for High-Fidelity Portrait Shadow Removal</title>
@@ -78,11 +90,10 @@ Summary:
 - A structure-guided inpainting diffusion model is then trained using the structure map to remove shadows in a generative manner.  
 - A detail restoration diffusion model is used to refine the shadow removal result by restoring fine-scale details that may not be captured in the structure map.  
 - Extensive experiments show that the proposed method outperforms existing methods and addresses common issues such as facial identity tampering, shadow residuals, color distortion, structure blurring, and loss of details.  
-<br><br> <div>
+<br /><br /> <div>
 arXiv:2507.04692v2 Announce Type: replace 
 Abstract: We present a diffusion-based portrait shadow removal approach that can robustly produce high-fidelity results. Unlike previous methods, we cast shadow removal as diffusion-based inpainting. To this end, we first train a shadow-independent structure extraction network on a real-world portrait dataset with various synthetic lighting conditions, which allows to generate a shadow-independent structure map including facial details while excluding the unwanted shadow boundaries. The structure map is then used as condition to train a structure-guided inpainting diffusion model for removing shadows in a generative manner. Finally, to restore the fine-scale details (e.g., eyelashes, moles and spots) that may not be captured by the structure map, we take the gradients inside the shadow regions as guidance and train a detail restoration diffusion model to refine the shadow removal result. Extensive experiments on the benchmark datasets show that our method clearly outperforms existing methods, and is effective to avoid previously common issues such as facial identity tampering, shadow residual, color distortion, structure blurring, and loss of details. Our code is available at https://github.com/wanchang-yu/Structure-Guided-Diffusion-for-Portrait-Shadow-Removal.
 ]]></content:encoded>
-<pubDate>Tue, 15 Jul 2025 00:00:00 -0400</pubDate>
 <pubDate>Tue, 15 Jul 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -100,7 +111,6 @@ Abstract: We introduce RIPE, an innovative reinforcement learning-based framewor
   Comprehensive evaluations on standard benchmarks demonstrate that RIPE simplifies data preparation while achieving competitive performance compared to state-of-the-art techniques, marking a significant advancement in robust keypoint extraction and description. To support further research, we have made our code publicly available at https://github.com/fraunhoferhhi/RIPE.
 ]]></content:encoded>
 <pubDate>Tue, 15 Jul 2025 00:00:00 -0400</pubDate>
-<pubDate>Tue, 15 Jul 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
 <title>Hear-Your-Click: Interactive Object-Specific Video-to-Audio Generation</title>
@@ -109,11 +119,10 @@ Abstract: We introduce RIPE, an innovative reinforcement learning-based framewor
 <content:encoded><![CDATA[
 <div> Object-aware, Interactive, Audio-visual, Framework, Generation
 Summary:
-Hear-Your-Click is an interactive Video-to-audio (V2A) framework that allows users to generate sounds for specific objects by clicking on the frame. The framework utilizes Object-aware Contrastive Audio-Visual Fine-tuning (OCAV) with a Mask-guided Visual Encoder (MVE) to obtain object-level visual features aligned with audio. Two data augmentation strategies, Random Video Stitching (RVS) and Mask-guided Loudness Modulation (MLM), are tailored to enhance the model's sensitivity to segmented objects. A new evaluation metric, the CAV score, is introduced to measure audio-visual correspondence. Extensive experiments show that Hear-Your-Click provides more precise control and improves generation performance across various metrics.<br><br>Summary: <div>
+Hear-Your-Click is an interactive Video-to-audio (V2A) framework that allows users to generate sounds for specific objects by clicking on the frame. The framework utilizes Object-aware Contrastive Audio-Visual Fine-tuning (OCAV) with a Mask-guided Visual Encoder (MVE) to obtain object-level visual features aligned with audio. Two data augmentation strategies, Random Video Stitching (RVS) and Mask-guided Loudness Modulation (MLM), are tailored to enhance the model's sensitivity to segmented objects. A new evaluation metric, the CAV score, is introduced to measure audio-visual correspondence. Extensive experiments show that Hear-Your-Click provides more precise control and improves generation performance across various metrics.<br /><br />Summary: <div>
 arXiv:2507.04959v2 Announce Type: replace 
 Abstract: Video-to-audio (V2A) generation shows great potential in fields such as film production. Despite significant advances, current V2A methods relying on global video information struggle with complex scenes and generating audio tailored to specific objects. To address these limitations, we introduce Hear-Your-Click, an interactive V2A framework enabling users to generate sounds for specific objects by clicking on the frame. To achieve this, we propose Object-aware Contrastive Audio-Visual Fine-tuning (OCAV) with a Mask-guided Visual Encoder (MVE) to obtain object-level visual features aligned with audio. Furthermore, we tailor two data augmentation strategies, Random Video Stitching (RVS) and Mask-guided Loudness Modulation (MLM), to enhance the model's sensitivity to segmented objects. To measure audio-visual correspondence, we designed a new evaluation metric, the CAV score. Extensive experiments demonstrate that our framework offers more precise control and improves generation performance across various metrics. Project Page: https://github.com/SynapGrid/Hear-Your-Click
 ]]></content:encoded>
-<pubDate>Tue, 15 Jul 2025 00:00:00 -0400</pubDate>
 <pubDate>Tue, 15 Jul 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -123,7 +132,7 @@ Abstract: Video-to-audio (V2A) generation shows great potential in fields such a
 <content:encoded><![CDATA[
 <div> medical vision-language, foundation models, healthcare AI applications, MedGemma, artificial intelligence
 
-Summary:<br>
+Summary:<br />
 Artificial intelligence has great potential in healthcare but faces challenges due to diverse data and privacy concerns. MedGemma is introduced as a collection of medical vision-language foundation models based on Gemma, exceeding performance of generative models and approaching task-specific models. MedGemma demonstrates advanced medical understanding on images and text, achieving improvements in various medical tasks. Fine-tuning MedGemma further enhances performance in subdomains, reducing errors and reaching state-of-the-art levels in certain classifications. MedSigLIP, a medically-tuned vision encoder, powers the visual understanding capabilities of MedGemma. The MedGemma collection provides a strong foundation for medical research and downstream applications, potentially accelerating medical development. The collection, tutorials, and model weights can be accessed at the provided link. 
 
 Summary: <div>
@@ -131,9 +140,7 @@ arXiv:2507.05201v3 Announce Type: replace-cross
 Abstract: Artificial intelligence (AI) has significant potential in healthcare applications, but its training and deployment faces challenges due to healthcare's diverse data, complex tasks, and the need to preserve privacy. Foundation models that perform well on medical tasks and require less task-specific tuning data are critical to accelerate the development of healthcare AI applications. We introduce MedGemma, a collection of medical vision-language foundation models based on Gemma 3 4B and 27B. MedGemma demonstrates advanced medical understanding and reasoning on images and text, significantly exceeding the performance of similar-sized generative models and approaching the performance of task-specific models, while maintaining the general capabilities of the Gemma 3 base models. For out-of-distribution tasks, MedGemma achieves 2.6-10% improvement on medical multimodal question answering, 15.5-18.1% improvement on chest X-ray finding classification, and 10.8% improvement on agentic evaluations compared to the base models. Fine-tuning MedGemma further improves performance in subdomains, reducing errors in electronic health record information retrieval by 50% and reaching comparable performance to existing specialized state-of-the-art methods for pneumothorax classification and histopathology patch classification. We additionally introduce MedSigLIP, a medically-tuned vision encoder derived from SigLIP. MedSigLIP powers the visual understanding capabilities of MedGemma and as an encoder achieves comparable or better performance than specialized medical image encoders. Taken together, the MedGemma collection provides a strong foundation of medical image and text capabilities, with potential to significantly accelerate medical research and development of downstream applications. The MedGemma collection, including tutorials and model weights, can be found at https://goo.gle/medgemma.
 ]]></content:encoded>
 <pubDate>Tue, 15 Jul 2025 00:00:00 -0400</pubDate>
-<pubDate>Tue, 15 Jul 2025 00:00:00 -0400</pubDate>
 </item>
-
 <item>
 <title>View Invariant Learning for Vision-Language Navigation in Continuous Environments</title>
 <link>https://arxiv.org/abs/2507.08831</link>
@@ -11280,86 +11287,6 @@ Abstract: Existing defense methods fail to defend against unknown attacks and th
 <content:encoded><![CDATA[
 arXiv:2507.03434v1 Announce Type: new 
 Abstract: The data appetite for Vision-Language Models (VLMs) has continuously scaled up from the early millions to billions today, which faces an untenable trade-off with data quality and inevitably introduces Noisy Correspondence (NC) samples. Undoubtedly, such semantically unrelated data significantly impairs the performance of VLMs. Previous efforts mainly address this challenge by estimating refined alignment for more precise guidance. However, such resource-intensive pipelines that train VLMs from scratch struggle to meet realistic data demands. In this paper, we present a brand new perspective that seeks to directly eliminate the harmful effects of NC in pre-trained VLMs. Specifically, we propose NCU, a Noisy Correspondence Unlearning fine-tuning framework that efficiently enhances VLMs' robustness by forgetting learned noisy knowledge. The key to NCU is learning the hardest negative information, which can provide explicit unlearning direction for both false positives and false negatives. Such twin goals unlearning process can be formalized into one unified optimal transport objective for fast fine-tuning. We validate our approach with the prevailing CLIP model over various downstream tasks. Remarkably, NCU surpasses the robust pre-trained method on zero-shot transfer while with lower computational overhead. The code will be released upon acceptance.
-]]></content:encoded>
-<pubDate>Tue, 08 Jul 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Radar Tracker: Moving Instance Tracking in Sparse and Noisy Radar Point Clouds</title>
-<link>https://arxiv.org/abs/2507.03441</link>
-<guid>https://arxiv.org/abs/2507.03441</guid>
-<content:encoded><![CDATA[
-arXiv:2507.03441v1 Announce Type: new 
-Abstract: Robots and autonomous vehicles should be aware of what happens in their surroundings. The segmentation and tracking of moving objects are essential for reliable path planning, including collision avoidance. We investigate this estimation task for vehicles using radar sensing. We address moving instance tracking in sparse radar point clouds to enhance scene interpretation. We propose a learning-based radar tracker incorporating temporal offset predictions to enable direct center-based association and enhance segmentation performance by including additional motion cues. We implement attention-based tracking for sparse radar scans to include appearance features and enhance performance. The final association combines geometric and appearance features to overcome the limitations of center-based tracking to associate instances reliably. Our approach shows an improved performance on the moving instance tracking benchmark of the RadarScenes dataset compared to the current state of the art.
-]]></content:encoded>
-<pubDate>Tue, 08 Jul 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Helping CLIP See Both the Forest and the Trees: A Decomposition and Description Approach</title>
-<link>https://arxiv.org/abs/2507.03458</link>
-<guid>https://arxiv.org/abs/2507.03458</guid>
-<content:encoded><![CDATA[
-arXiv:2507.03458v1 Announce Type: new 
-Abstract: Vision-Language Models (VLMs) like CLIP achieve cross-modal semantic alignment through contrastive learning, exhibiting robust zero-shot generalization. Traditional prompt engineering, however, predominantly relies on coarse-grained category labels, neglecting fine-grained local semantics. Existing approaches assume that VLMs inherently recognize localized visual details and attempt to enhance classification by augmenting text prompts with attribute descriptors generated by large language models. However, our systematic experiments reveal critical limitations: CLIP's strong bias toward global image patterns hinders its ability to process localized visual descriptors. To address this fundamental constraint, we propose a simple, effective, and plug-and-play solution that enables CLIP to ``See Both the Forest and the Trees." Specifically, we employ stochastic multi-crop augmentation to activate CLIP's latent capacity for localized feature analysis. By cropping only partial regions, the approach effectively constrains the model's receptive field and recalibrates its attention mechanism, thereby mitigating its inherent bias. We evaluate the proposed method under zero-shot, few-shot, and test-time adaptation settings, and extensive experiments demonstrate that D&amp;D achieves promising performance.
-]]></content:encoded>
-<pubDate>Tue, 08 Jul 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Radar Velocity Transformer: Single-scan Moving Object Segmentation in Noisy Radar Point Clouds</title>
-<link>https://arxiv.org/abs/2507.03463</link>
-<guid>https://arxiv.org/abs/2507.03463</guid>
-<content:encoded><![CDATA[
-arXiv:2507.03463v1 Announce Type: new 
-Abstract: The awareness about moving objects in the surroundings of a self-driving vehicle is essential for safe and reliable autonomous navigation. The interpretation of LiDAR and camera data achieves exceptional results but typically requires to accumulate and process temporal sequences of data in order to extract motion information. In contrast, radar sensors, which are already installed in most recent vehicles, can overcome this limitation as they directly provide the Doppler velocity of the detections and, hence incorporate instantaneous motion information within a single measurement. % In this paper, we tackle the problem of moving object segmentation in noisy radar point clouds. We also consider differentiating parked from moving cars, to enhance scene understanding. Instead of exploiting temporal dependencies to identify moving objects, we develop a novel transformer-based approach to perform single-scan moving object segmentation in sparse radar scans accurately. The key to our Radar Velocity Transformer is to incorporate the valuable velocity information throughout each module of the network, thereby enabling the precise segmentation of moving and non-moving objects. Additionally, we propose a transformer-based upsampling, which enhances the performance by adaptively combining information and overcoming the limitation of interpolation of sparse point clouds. Finally, we create a new radar moving object segmentation benchmark based on the RadarScenes dataset and compare our approach to other state-of-the-art methods. Our network runs faster than the frame rate of the sensor and shows superior segmentation results using only single-scan radar data.
-]]></content:encoded>
-<pubDate>Tue, 08 Jul 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Information-Bottleneck Driven Binary Neural Network for Change Detection</title>
-<link>https://arxiv.org/abs/2507.03504</link>
-<guid>https://arxiv.org/abs/2507.03504</guid>
-<content:encoded><![CDATA[
-arXiv:2507.03504v1 Announce Type: new 
-Abstract: In this paper, we propose Binarized Change Detection (BiCD), the first binary neural network (BNN) designed specifically for change detection. Conventional network binarization approaches, which directly quantize both weights and activations in change detection models, severely limit the network's ability to represent input data and distinguish between changed and unchanged regions. This results in significantly lower detection accuracy compared to real-valued networks. To overcome these challenges, BiCD enhances both the representational power and feature separability of BNNs, improving detection performance. Specifically, we introduce an auxiliary objective based on the Information Bottleneck (IB) principle, guiding the encoder to retain essential input information while promoting better feature discrimination. Since directly computing mutual information under the IB principle is intractable, we design a compact, learnable auxiliary module as an approximation target, leading to a simple yet effective optimization strategy that minimizes both reconstruction loss and standard change detection loss. Extensive experiments on street-view and remote sensing datasets demonstrate that BiCD establishes a new benchmark for BNN-based change detection, achieving state-of-the-art performance in this domain.
-]]></content:encoded>
-<pubDate>Tue, 08 Jul 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Multimodal Alignment with Cross-Attentive GRUs for Fine-Grained Video Understanding</title>
-<link>https://arxiv.org/abs/2507.03531</link>
-<guid>https://arxiv.org/abs/2507.03531</guid>
-<content:encoded><![CDATA[
-arXiv:2507.03531v1 Announce Type: new 
-Abstract: Fine-grained video classification requires understanding complex spatio-temporal and semantic cues that often exceed the capacity of a single modality. In this paper, we propose a multimodal framework that fuses video, image, and text representations using GRU-based sequence encoders and cross-modal attention mechanisms. The model is trained using a combination of classification or regression loss, depending on the task, and is further regularized through feature-level augmentation and autoencoding techniques. To evaluate the generality of our framework, we conduct experiments on two challenging benchmarks: the DVD dataset for real-world violence detection and the Aff-Wild2 dataset for valence-arousal estimation. Our results demonstrate that the proposed fusion strategy significantly outperforms unimodal baselines, with cross-attention and feature augmentation contributing notably to robustness and performance.
-]]></content:encoded>
-<pubDate>Tue, 08 Jul 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>PhenoBench: A Comprehensive Benchmark for Cell Phenotyping</title>
-<link>https://arxiv.org/abs/2507.03532</link>
-<guid>https://arxiv.org/abs/2507.03532</guid>
-<content:encoded><![CDATA[
-arXiv:2507.03532v1 Announce Type: new 
-Abstract: Digital pathology has seen the advent of a wealth of foundational models (FM), yet to date their performance on cell phenotyping has not been benchmarked in a unified manner. We therefore propose PhenoBench: A comprehensive benchmark for cell phenotyping on Hematoxylin and Eosin (H&amp;E) stained histopathology images. We provide both PhenoCell, a new H&amp;E dataset featuring 14 granular cell types identified by using multiplexed imaging, and ready-to-use fine-tuning and benchmarking code that allows the systematic evaluation of multiple prominent pathology FMs in terms of dense cell phenotype predictions in different generalization scenarios. We perform extensive benchmarking of existing FMs, providing insights into their generalization behavior under technical vs. medical domain shifts. Furthermore, while FMs achieve macro F1 scores > 0.70 on previously established benchmarks such as Lizard and PanNuke, on PhenoCell, we observe scores as low as 0.20. This indicates a much more challenging task not captured by previous benchmarks, establishing PhenoCell as a prime asset for future benchmarking of FMs and supervised models alike. Code and data are available on GitHub.
-]]></content:encoded>
-<pubDate>Tue, 08 Jul 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>CLOT: Closed Loop Optimal Transport for Unsupervised Action Segmentation</title>
-<link>https://arxiv.org/abs/2507.03539</link>
-<guid>https://arxiv.org/abs/2507.03539</guid>
-<content:encoded><![CDATA[
-arXiv:2507.03539v1 Announce Type: new 
-Abstract: Unsupervised action segmentation has recently pushed its limits with ASOT, an optimal transport (OT)-based method that simultaneously learns action representations and performs clustering using pseudo-labels. Unlike other OT-based approaches, ASOT makes no assumptions on the action ordering, and it is able to decode a temporally consistent segmentation from a noisy cost matrix between video frames and action labels. However, the resulting segmentation lacks segment-level supervision, which limits the effectiveness of the feedback between frames and action representations. To address this limitation, we propose Closed Loop Optimal Transport (CLOT), a novel OT-based framework that introduces a multi-level cyclic feature learning mechanism. Leveraging its encoder-decoder architecture, CLOT learns pseudo-labels alongside frame and segment embeddings by solving two separate OT problems. It then refines both frame embeddings and pseudo-labels through cross-attention between the learned frame and segment embeddings, integrating a third OT problem. Experimental results on four benchmark datasets demonstrate the benefits of cyclical learning for unsupervised action segmentation.
-]]></content:encoded>
-<pubDate>Tue, 08 Jul 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Foundation versus Domain-specific Models: Performance Comparison, Fusion, and Explainability in Face Recognition</title>
-<link>https://arxiv.org/abs/2507.03541</link>
-<guid>https://arxiv.org/abs/2507.03541</guid>
-<content:encoded><![CDATA[
-arXiv:2507.03541v1 Announce Type: new 
-Abstract: In this paper, we address the following question: How do generic foundation models (e.g., CLIP, BLIP, LLaVa, DINO) compare against a domain-specific face recognition model (viz., AdaFace or ArcFace) on the face recognition task? Through a series of experiments involving several foundation models and benchmark datasets, we are able to report the following findings: (a) In all datasets considered, domain-specific models outperformed zero-shot foundation models. (b) The performance of zero-shot generic foundation models improves on over-segmented face images than tightly cropped faces thereby suggesting the importance of contextual clues. For example, at a False Match Rate (FMR) of 0.01%, the True Match Rate (TMR) of OpenCLIP improved from 64.97% to 81.73% on the LFW dataset as the face crop increased from 112x112 to 250x250 while the TMR of domain-specific AdaFace dropped from 99.09% to 77.31%. (c) A simple score-level fusion of a foundation model with a domain-specific FR model improved the accuracy at low FMRs. For example, the TMR of AdaFace when fused with BLIP improved from 72.64% to 83.31% at an FMR of 0.0001% on the IJB-B dataset and from 73.17% to 85.81% on the IJB-C dataset. (d) Foundation models, such as ChatGPT, can be used to impart explainability to the FR pipeline (e.g., ``Despite minor lighting and head tilt differences, the two left-profile images show high consistency in forehead slope, nose shape, chin contour...''). In some instances, foundation models are even able to resolve low-confidence decisions made by AdaFace (e.g., ``Although AdaFace assigns a low similarity score of 0.21, both images exhibit visual similarity...and the pair is likely of the same person''), thereby reiterating the importance of combining domain-specific FR models with generic foundation models in a judicious manner.
 ]]></content:encoded>
 <pubDate>Tue, 08 Jul 2025 00:00:00 -0400</pubDate>
 </item>
