@@ -4,6 +4,7 @@
 <title>cs.CV updates on arXiv.org</title>
 <link>http://rss.arxiv.org/rss/cs.CV</link>
 
+
 <item>
 <title>FA-Seg: A Fast and Accurate Diffusion-Based Method for Open-Vocabulary Segmentation</title>
 <link>https://arxiv.org/abs/2506.23323</link>
@@ -14,14 +15,12 @@
 Summary: 
 FA-Seg is a novel framework for open-vocabulary semantic segmentation that utilizes diffusion models to achieve fast and accurate segmentation without the need for training. It addresses the challenge of balancing computation costs with segmentation quality by introducing a dual-prompt mechanism for attention extraction, a Hierarchical Attention Refinement Method (HARD) for enhancing semantic precision through multi-resolution attention fusion, and a Test-Time Flipping (TTF) scheme to improve spatial consistency. By performing segmentation for all classes at once and only requiring a (1+1)-step from a pretrained model, FA-Seg achieves state-of-the-art performance with 43.8% average mIoU across multiple benchmark datasets. This framework not only demonstrates superior inference efficiency but also provides a strong foundation for extendability, bridging the gap between segmentation quality and efficiency in open-vocabulary segmentation tasks. The source code for FA-Seg will be made available as open-source after acceptance of the paper. 
 
-<br><br>Summary: <div>
+<br /><br />Summary: <div>
 arXiv:2506.23323v3 Announce Type: replace 
 Abstract: Open-vocabulary semantic segmentation (OVSS) aims to segment objects from arbitrary text categories without requiring densely annotated datasets. Although contrastive learning based models enable zero-shot segmentation, they often lose fine spatial precision at pixel level, due to global representation bias. In contrast, diffusion-based models naturally encode fine-grained spatial features via attention mechanisms that capture both global context and local details. However, they often face challenges in balancing the computation costs and the quality of the segmentation mask. In this work, we present FA-Seg, a Fast and Accurate training-free framework for open-vocabulary segmentation based on diffusion models. FA-Seg performs segmentation using only a (1+1)-step from a pretrained diffusion model. Moreover, instead of running multiple times for different classes, FA-Seg performs segmentation for all classes at once. To further enhance the segmentation quality, FA-Seg introduces three key components: (i) a dual-prompt mechanism for discriminative, class-aware attention extraction, (ii) a Hierarchical Attention Refinement Method (HARD) that enhances semantic precision via multi-resolution attention fusion, and (iii) a Test-Time Flipping (TTF) scheme designed to improve spatial consistency. Extensive experiments show that FA-Seg achieves state-of-the-art training-free performance, obtaining 43.8% average mIoU across PASCAL VOC, PASCAL Context, and COCO Object benchmarks while maintaining superior inference efficiency. Our results demonstrate that FA-Seg provides a strong foundation for extendability, bridging the gap between segmentation quality and inference efficiency. The source code will be open-sourced after this paper is accepted.
 ]]></content:encoded>
 <pubDate>Wed, 16 Jul 2025 00:00:00 -0400</pubDate>
-<pubDate>Wed, 16 Jul 2025 00:00:00 -0400</pubDate>
 </item>
-
 <item>
 <title>CWNet: Causal Wavelet Network for Low-Light Image Enhancement</title>
 <link>https://arxiv.org/abs/2507.10689</link>
@@ -11238,16 +11237,6 @@ Abstract: Computational pathology (CoPath) leverages histopathology images to en
 <content:encoded><![CDATA[
 arXiv:2507.05661v1 Announce Type: cross 
 Abstract: In autonomous robotic systems, precise localization is a prerequisite for safe navigation. However, in complex urban environments, GNSS positioning often suffers from signal occlusion and multipath effects, leading to unreliable absolute positioning. Traditional mapping approaches are constrained by storage requirements and computational inefficiency, limiting their applicability to resource-constrained robotic platforms. To address these challenges, we propose 3DGS-LSR: a large-scale relocalization framework leveraging 3D Gaussian Splatting (3DGS), enabling centimeter-level positioning using only a single monocular RGB image on the client side. We combine multi-sensor data to construct high-accuracy 3DGS maps in large outdoor scenes, while the robot-side localization requires just a standard camera input. Using SuperPoint and SuperGlue for feature extraction and matching, our core innovation is an iterative optimization strategy that refines localization results through step-by-step rendering, making it suitable for real-time autonomous navigation. Experimental validation on the KITTI dataset demonstrates our 3DGS-LSR achieves average positioning accuracies of 0.026m, 0.029m, and 0.081m in town roads, boulevard roads, and traffic-dense highways respectively, significantly outperforming other representative methods while requiring only monocular RGB input. This approach provides autonomous robots with reliable localization capabilities even in challenging urban environments where GNSS fails.
-]]></content:encoded>
-<pubDate>Wed, 09 Jul 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Tissue Concepts v2: a Supervised Foundation Model for whole slide images</title>
-<link>https://arxiv.org/abs/2507.05742</link>
-<guid>https://arxiv.org/abs/2507.05742</guid>
-<content:encoded><![CDATA[
-arXiv:2507.05742v1 Announce Type: cross 
-Abstract: Foundation models (FMs) are transforming the field of computational pathology by offering new approaches to analyzing histopathology images. Typically relying on weeks of training on large databases, the creation of FMs is a resource-intensive process in many ways. In this paper, we introduce the extension of our supervised foundation model, Tissue Concepts, to whole slide images, called Tissue Concepts v2 (TCv2), a supervised foundation model for whole slide images to address the issue above. TCv2 uses supervised, end-to-end multitask learning on slide-level labels. Training TCv2 uses a fraction of the training resources compared to self-supervised training. The presented model shows superior performance compared to SSL-trained models in cancer subtyping benchmarks and is fully trained on freely available data. Furthermore, a shared trained attention module provides an additional layer of explainability across different tasks.
 ]]></content:encoded>
 <pubDate>Wed, 09 Jul 2025 00:00:00 -0400</pubDate>
 </item>

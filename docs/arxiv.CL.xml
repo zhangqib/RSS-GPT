@@ -4,22 +4,21 @@
 <title>cs.CL updates on arXiv.org</title>
 <link>http://rss.arxiv.org/rss/cs.CL</link>
 
+
 <item>
 <title>Traveling Across Languages: Benchmarking Cross-Lingual Consistency in Multimodal LLMs</title>
 <link>https://arxiv.org/abs/2505.15075</link>
 <guid>https://arxiv.org/abs/2505.15075</guid>
 <content:encoded><![CDATA[
-<div> Keywords: multimodal large language models, cross-lingual consistency, KnowRecall, VisRecall, cultural knowledge <br>
-<br>
-Summary: <br>
-Multimodal large language models (MLLMs) have advanced real-world applications, but face challenges in achieving consistent performance across languages, especially when incorporating cultural knowledge. To address this, two benchmarks, KnowRecall and VisRecall, were introduced to assess cross-lingual consistency in MLLMs. KnowRecall evaluates factual knowledge consistency in 15 languages with cultural and historical questions about global landmarks. VisRecall measures visual memory consistency by tasking models with describing landmark appearances in 9 languages without visual aid. Experimental results demonstrate that even state-of-the-art MLLMs struggle with cross-lingual consistency, highlighting the need for more robust and culturally-aware approaches in developing truly multilingual models. <br> <div>
+<div> Keywords: multimodal large language models, cross-lingual consistency, KnowRecall, VisRecall, cultural knowledge <br />
+<br />
+Summary: <br />
+Multimodal large language models (MLLMs) have advanced real-world applications, but face challenges in achieving consistent performance across languages, especially when incorporating cultural knowledge. To address this, two benchmarks, KnowRecall and VisRecall, were introduced to assess cross-lingual consistency in MLLMs. KnowRecall evaluates factual knowledge consistency in 15 languages with cultural and historical questions about global landmarks. VisRecall measures visual memory consistency by tasking models with describing landmark appearances in 9 languages without visual aid. Experimental results demonstrate that even state-of-the-art MLLMs struggle with cross-lingual consistency, highlighting the need for more robust and culturally-aware approaches in developing truly multilingual models. <br /> <div>
 arXiv:2505.15075v3 Announce Type: replace 
 Abstract: The rapid evolution of multimodal large language models (MLLMs) has significantly enhanced their real-world applications. However, achieving consistent performance across languages, especially when integrating cultural knowledge, remains a significant challenge. To better assess this issue, we introduce two new benchmarks: KnowRecall and VisRecall, which evaluate cross-lingual consistency in MLLMs. KnowRecall is a visual question answering benchmark designed to measure factual knowledge consistency in 15 languages, focusing on cultural and historical questions about global landmarks. VisRecall assesses visual memory consistency by asking models to describe landmark appearances in 9 languages without access to images. Experimental results reveal that state-of-the-art MLLMs, including proprietary ones, still struggle to achieve cross-lingual consistency. This underscores the need for more robust approaches that produce truly multilingual and culturally aware models.
 ]]></content:encoded>
 <pubDate>Wed, 16 Jul 2025 00:00:00 -0400</pubDate>
-<pubDate>Wed, 16 Jul 2025 00:00:00 -0400</pubDate>
 </item>
-
 <item>
 <title>Truth Sleuth and Trend Bender: AI Agents to fact-check YouTube videos and influence opinions</title>
 <link>https://arxiv.org/abs/2507.10577</link>
@@ -11604,20 +11603,6 @@ Summary:<br /><br />
 Access to high-quality labeled data is crucial in supervised learning, but label variation (LV) poses a challenge, especially in natural language processing. Human label variation (HLV) occurs when there are plausible differences in annotations, which is often overlooked. Active learning (AL) is used to optimize annotation budgets but relies on simplifying assumptions that may not hold true when considering HLV. The paper examines the need to separate LV into signal (HLV) and noise (annotation error) and proposes a framework to incorporate HLV in the AL loop. This framework includes aspects such as instance selection, annotator choice, and label representation. The integration of large language models (LLM) as annotators is also discussed. The goal is to establish a conceptual foundation for HLV-aware active learning that reflects the complexities of real-world annotation processes. <div>
 arXiv:2507.02593v1 Announce Type: new 
 Abstract: Access to high-quality labeled data remains a limiting factor in applied supervised learning. While label variation (LV), i.e., differing labels for the same instance, is common, especially in natural language processing, annotation frameworks often still rest on the assumption of a single ground truth. This overlooks human label variation (HLV), the occurrence of plausible differences in annotations, as an informative signal. Similarly, active learning (AL), a popular approach to optimizing the use of limited annotation budgets in training ML models, often relies on at least one of several simplifying assumptions, which rarely hold in practice when acknowledging HLV. In this paper, we examine foundational assumptions about truth and label nature, highlighting the need to decompose observed LV into signal (e.g., HLV) and noise (e.g., annotation error). We survey how the AL and (H)LV communities have addressed -- or neglected -- these distinctions and propose a conceptual framework for incorporating HLV throughout the AL loop, including instance selection, annotator choice, and label representation. We further discuss the integration of large language models (LLM) as annotators. Our work aims to lay a conceptual foundation for HLV-aware active learning, better reflecting the complexities of real-world annotation.
-]]></content:encoded>
-<pubDate>Fri, 04 Jul 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>MPF: Aligning and Debiasing Language Models post Deployment via Multi Perspective Fusion</title>
-<link>https://arxiv.org/abs/2507.02595</link>
-<guid>https://arxiv.org/abs/2507.02595</guid>
-<content:encoded><![CDATA[
-<div> alignment, bias mitigation, language models, multiperspective fusion, interpretable
-
-Summary: 
-The article introduces Multiperspective Fusion (MPF), a posttraining alignment framework for large language models (LLMs) that aims to mitigate biases. Developed as a response to the increasing need for bias mitigation, MPF is built on the SAGED pipeline and leverages multiperspective generations to align biases in LLM outputs with humanlike baselines. By decomposing baselines into interpretable perspective components, MPF guides generation through sampling and balancing responses. Empirical results show that MPF can align LLM sentiment distributions with counterfactual baselines and specific HR bias baselines, reducing KL divergence, calibration error, and showcasing generalization to new questions. The method is scalable, interpretable, and compatible with deployed LLMs, requiring no extensive prompt engineering or finetuning. <div>
-arXiv:2507.02595v1 Announce Type: new 
-Abstract: Multiperspective Fusion (MPF) is a novel posttraining alignment framework for large language models (LLMs) developed in response to the growing need for easy bias mitigation. Built on top of the SAGED pipeline, an automated system for constructing bias benchmarks and extracting interpretable baseline distributions, MPF leverages multiperspective generations to expose and align biases in LLM outputs with nuanced, humanlike baselines. By decomposing baseline, such as sentiment distributions from HR professionals, into interpretable perspective components, MPF guides generation through sampling and balancing of responses, weighted by the probabilities obtained in the decomposition. Empirically, we demonstrate its ability to align LLM sentiment distributions with both counterfactual baselines (absolute equality) and the HR baseline (biased for Top Univeristy), resulting in small KL divergence, reduction of calibration error and generalization to unseen questions. This shows that MPF offers a scalable and interpretable method for alignment and bias mitigation, compatible with deployed LLMs and requiring no extensive prompt engineering or finetuning.
 ]]></content:encoded>
 <pubDate>Fri, 04 Jul 2025 00:00:00 -0400</pubDate>
 </item>
