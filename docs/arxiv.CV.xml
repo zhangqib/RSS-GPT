@@ -4,23 +4,22 @@
 <title>cs.CV updates on arXiv.org</title>
 <link>http://rss.arxiv.org/rss/cs.CV</link>
 
+
 <item>
 <title>CultureCLIP: Empowering CLIP with Cultural Awareness through Synthetic Images and Contextualized Captions</title>
 <link>https://arxiv.org/abs/2507.06210</link>
 <guid>https://arxiv.org/abs/2507.06210</guid>
 <content:encoded><![CDATA[
 <div> Keywords: pretrained vision-language models, cultural data, synthetic dataset, contrastive learning, cultural distinctions
-<br>
+<br />
 Summary:
 In this study, researchers address the limitations of pretrained vision-language models (VLMs) in capturing nuanced, context-dependent visual cues related to cultural meanings. They introduce a data curation pipeline to construct CulTwin, a synthetic cultural dataset consisting of paired concept-caption-image triplets highlighting subtle cultural differences. By fine-tuning CLIP on CulTwin, CultureCLIP is developed, which aligns cultural concepts with contextually enhanced captions and synthetic images through tailored contrastive learning. Experimental results on culture-specific benchmarks demonstrate that CultureCLIP outperforms base CLIP, achieving significant improvements in fine-grained concept recognition while preserving generalization abilities. This validates the effectiveness of the data synthesis and VLM training paradigm in capturing subtle cultural distinctions. 
-<br><br>Summary: <div>
+<br /><br />Summary: <div>
 arXiv:2507.06210v2 Announce Type: replace 
 Abstract: Pretrained vision-language models (VLMs) such as CLIP excel in general multimodal comprehension but often struggle to capture nuanced, context-dependent visual cues. This makes it difficult to distinguish between similar-looking concepts with potentially different cultural meanings. Such deficiencies are mainly due to a limited amount of high-quality cultural data, contextual information, and the lack of negative examples that highlight subtle differences. To mitigate this, we design a data curation pipeline leveraging open-sourced VLMs and text-to-image models to construct CulTwin, a synthetic cultural dataset. This dataset consists of paired concept-caption-image triplets, where concepts visually resemble each other but are culturally different. Then, we fine-tune CLIP on CulTwin to develop CultureCLIP, which aligns cultural concepts with contextually enhanced captions and synthetic images through tailored contrastive learning. Experiments on culture-specific benchmarks show that CultureCLIP outperforms the base CLIP, achieving up to a notable 5.49% improvement in fine-grained concept recognition on certain tasks while preserving CLIP's original generalization ability, validating the effectiveness of our data synthesis and VLM backbone training paradigm in capturing subtle cultural distinctions.
 ]]></content:encoded>
 <pubDate>Thu, 17 Jul 2025 00:00:00 -0400</pubDate>
-<pubDate>Thu, 17 Jul 2025 00:00:00 -0400</pubDate>
 </item>
-
 <item>
 <title>An Memory-Efficient Framework for Deformable Transformer with Neural Architecture Search</title>
 <link>https://arxiv.org/abs/2507.11549</link>
@@ -11247,16 +11246,6 @@ Abstract: The success of machine learning algorithms is inherently related to th
 <content:encoded><![CDATA[
 arXiv:2507.06363v1 Announce Type: cross 
 Abstract: In recent years, artificial intelligence has significantly advanced medical image segmentation. However, challenges remain, including efficient 3D medical image processing across diverse modalities and handling data variability. In this work, we introduce Hierarchical Soft Mixture-of-Experts (HoME), a two-level token-routing layer for efficient long-context modeling, specifically designed for 3D medical image segmentation. Built on the Mamba state-space model (SSM) backbone, HoME enhances sequential modeling through sparse, adaptive expert routing. The first stage employs a Soft Mixture-of-Experts (SMoE) layer to partition input sequences into local groups, routing tokens to specialized per-group experts for localized feature extraction. The second stage aggregates these outputs via a global SMoE layer, enabling cross-group information fusion and global context refinement. This hierarchical design, combining local expert routing with global expert refinement improves generalizability and segmentation performance, surpassing state-of-the-art results across datasets from the three most commonly used 3D medical imaging modalities and data quality.
-]]></content:encoded>
-<pubDate>Thu, 10 Jul 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Secure and Storage-Efficient Deep Learning Models for Edge AI Using Automatic Weight Generation</title>
-<link>https://arxiv.org/abs/2507.06380</link>
-<guid>https://arxiv.org/abs/2507.06380</guid>
-<content:encoded><![CDATA[
-arXiv:2507.06380v1 Announce Type: cross 
-Abstract: Complex neural networks require substantial memory to store a large number of synaptic weights. This work introduces WINGs (Automatic Weight Generator for Secure and Storage-Efficient Deep Learning Models), a novel framework that dynamically generates layer weights in a fully connected neural network (FC) and compresses the weights in convolutional neural networks (CNNs) during inference, significantly reducing memory requirements without sacrificing accuracy. WINGs framework uses principal component analysis (PCA) for dimensionality reduction and lightweight support vector regression (SVR) models to predict layer weights in the FC networks, removing the need for storing full-weight matrices and achieving substantial memory savings. It also preferentially compresses the weights in low-sensitivity layers of CNNs using PCA and SVR with sensitivity analysis. The sensitivity-aware design also offers an added level of security, as any bit-flip attack with weights in compressed layers has an amplified and readily detectable effect on accuracy. WINGs achieves 53x compression for the FC layers and 28x for AlexNet with MNIST dataset, and 18x for Alexnet with CIFAR-10 dataset with 1-2% accuracy loss. This significant reduction in memory results in higher throughput and lower energy for DNN inference, making it attractive for resource-constrained edge applications.
 ]]></content:encoded>
 <pubDate>Thu, 10 Jul 2025 00:00:00 -0400</pubDate>
 </item>

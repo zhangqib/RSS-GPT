@@ -4,19 +4,19 @@
 <title>cs.LG updates on arXiv.org</title>
 <link>http://rss.arxiv.org/rss/cs.LG</link>
 
+
 <item>
 <title>Uncertainty Quantification for Motor Imagery BCI -- Machine Learning vs. Deep Learning</title>
 <link>https://arxiv.org/abs/2507.07511</link>
 <guid>https://arxiv.org/abs/2507.07511</guid>
 <content:encoded><![CDATA[
-<div> Keywords: Brain-computer interfaces, Uncertainty quantification, Machine Learning classifier, Motor Imagery, Deep Learning<br>
-Summary: <br>
-The study compares the uncertainty quantification ability of different BCI classifiers, including CSP-LDA, MDRM, Deep Ensembles, Direct Uncertainty Quantification, and CNNs. It found that CSP-LDA and MDRM provide the best uncertainty estimates, with MDRM being initially underconfident but improved with MDRM-T through Temperature Scaling. While Deep Ensembles and CNNs offer superior classifications, they exhibit overconfidence in comparison to CSP-LDA and MDRM. All models successfully differentiate between easy and difficult estimates, enabling the rejection of ambiguous samples to enhance the accuracy of Motor Imagery BCIs. This research highlights the importance of uncertainty quantification in improving the reliability and performance of BCIs for real-world applications. <br> <div>
+<div> Keywords: Brain-computer interfaces, Uncertainty quantification, Machine Learning classifier, Motor Imagery, Deep Learning<br />
+Summary: <br />
+The study compares the uncertainty quantification ability of different BCI classifiers, including CSP-LDA, MDRM, Deep Ensembles, Direct Uncertainty Quantification, and CNNs. It found that CSP-LDA and MDRM provide the best uncertainty estimates, with MDRM being initially underconfident but improved with MDRM-T through Temperature Scaling. While Deep Ensembles and CNNs offer superior classifications, they exhibit overconfidence in comparison to CSP-LDA and MDRM. All models successfully differentiate between easy and difficult estimates, enabling the rejection of ambiguous samples to enhance the accuracy of Motor Imagery BCIs. This research highlights the importance of uncertainty quantification in improving the reliability and performance of BCIs for real-world applications. <br /> <div>
 arXiv:2507.07511v2 Announce Type: replace 
 Abstract: Brain-computer interfaces (BCIs) turn brain signals into functionally useful output, but they are not always accurate. A good Machine Learning classifier should be able to indicate how confident it is about a given classification, by giving a probability for its classification. Standard classifiers for Motor Imagery BCIs do give such probabilities, but research on uncertainty quantification has been limited to Deep Learning. We compare the uncertainty quantification ability of established BCI classifiers using Common Spatial Patterns (CSP-LDA) and Riemannian Geometry (MDRM) to specialized methods in Deep Learning (Deep Ensembles and Direct Uncertainty Quantification) as well as standard Convolutional Neural Networks (CNNs).
   We found that the overconfidence typically seen in Deep Learning is not a problem in CSP-LDA and MDRM. We found that MDRM is underconfident, which we solved by adding Temperature Scaling (MDRM-T). CSP-LDA and MDRM-T give the best uncertainty estimates, but Deep Ensembles and standard CNNs give the best classifications. We show that all models are able to separate between easy and difficult estimates, so that we can increase the accuracy of a Motor Imagery BCI by rejecting samples that are ambiguous.
 ]]></content:encoded>
-<pubDate>Thu, 17 Jul 2025 00:00:00 -0400</pubDate>
 <pubDate>Thu, 17 Jul 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -24,16 +24,14 @@ Abstract: Brain-computer interfaces (BCIs) turn brain signals into functionally 
 <link>https://arxiv.org/abs/2507.07883</link>
 <guid>https://arxiv.org/abs/2507.07883</guid>
 <content:encoded><![CDATA[
-<div> Keywords: Multi-task learning, Sharpness-aware minimization, Task conflicts, Global-local perturbation, Efficiency <br>
+<div> Keywords: Multi-task learning, Sharpness-aware minimization, Task conflicts, Global-local perturbation, Efficiency <br />
 Summary: 
-Multi-task learning (MTL) allows a single model to learn multiple tasks simultaneously, improving data efficiency and reducing computation costs. However, a key challenge in MTL optimization is task conflicts, where gradients from different tasks differ, impacting model performance. Sharpness-aware minimization (SAM) addresses this issue by reducing the sharpness of the loss landscape. Integrating SAM into MTL poses challenges in combining global and local information efficiently. To tackle this, SAMO is proposed, a lightweight Sharpness-Aware Multi-task Optimization approach that leverages a joint global-local perturbation. SAMO approximates local perturbations using forward passes and normalizes them layerwise for improved efficiency. Extensive experiments on multi-task benchmarks showcase the effectiveness and efficiency of SAMO in mitigating task conflicts.Code for SAMO is available on GitHub for further exploration and implementation. <br> <div>
+Multi-task learning (MTL) allows a single model to learn multiple tasks simultaneously, improving data efficiency and reducing computation costs. However, a key challenge in MTL optimization is task conflicts, where gradients from different tasks differ, impacting model performance. Sharpness-aware minimization (SAM) addresses this issue by reducing the sharpness of the loss landscape. Integrating SAM into MTL poses challenges in combining global and local information efficiently. To tackle this, SAMO is proposed, a lightweight Sharpness-Aware Multi-task Optimization approach that leverages a joint global-local perturbation. SAMO approximates local perturbations using forward passes and normalizes them layerwise for improved efficiency. Extensive experiments on multi-task benchmarks showcase the effectiveness and efficiency of SAMO in mitigating task conflicts.Code for SAMO is available on GitHub for further exploration and implementation. <br /> <div>
 arXiv:2507.07883v3 Announce Type: replace 
 Abstract: Multi-task learning (MTL) enables a joint model to capture commonalities across multiple tasks, reducing computation costs and improving data efficiency. However, a major challenge in MTL optimization is task conflicts, where the task gradients differ in direction or magnitude, limiting model performance compared to single-task counterparts. Sharpness-aware minimization (SAM) minimizes task loss while simultaneously reducing the sharpness of the loss landscape. Our empirical observations show that SAM effectively mitigates task conflicts in MTL. Motivated by these findings, we explore integrating SAM into MTL but face two key challenges. While both the average loss gradient and individual task gradients-referred to as global and local information-contribute to SAM, how to combine them remains unclear. Moreover, directly computing each task gradient introduces significant computational and memory overheads. To address these challenges, we propose SAMO, a lightweight \textbf{S}harpness-\textbf{A}ware \textbf{M}ulti-task \textbf{O}ptimization approach, that leverages a joint global-local perturbation. The local perturbations are approximated using only forward passes and are layerwise normalized to improve efficiency. Extensive experiments on a suite of multi-task benchmarks demonstrate both the effectiveness and efficiency of our method. Code is available at https://github.com/OptMN-Lab/SAMO.
 ]]></content:encoded>
 <pubDate>Thu, 17 Jul 2025 00:00:00 -0400</pubDate>
-<pubDate>Thu, 17 Jul 2025 00:00:00 -0400</pubDate>
 </item>
-
 <item>
 <title>Recurrent U-Net-Based Graph Neural Network (RUGNN) for Accurate Deformation Predictions in Sheet Material Forming</title>
 <link>https://arxiv.org/abs/2507.11547</link>
@@ -10786,26 +10784,6 @@ Abstract: Segment Anything Model 2 (SAM 2) has demonstrated strong performance i
 <content:encoded><![CDATA[
 arXiv:2507.08616v1 Announce Type: cross 
 Abstract: Large-language models (LLMs) have demonstrated powerful problem-solving capabilities, in particular when organized in multi-agent systems. However, the advent of such systems also raises several questions on the ability of a complex network of agents to effectively self-organize and collaborate. While measuring performance on standard reasoning benchmarks indicates how well multi-agent systems can solve reasoning tasks, it is unclear whether these systems are able to leverage their topology effectively. Here, we propose AgentsNet, a new benchmark for multi-agent reasoning. By drawing inspiration from classical problems in distributed systems and graph theory, AgentsNet measures the ability of multi-agent systems to collaboratively form strategies for problem-solving, self-organization, and effective communication given a network topology. We evaluate a variety of baseline methods on AgentsNet including homogeneous networks of agents which first have to agree on basic protocols for organization and communication. We find that some frontier LLMs are already demonstrating strong performance for small networks but begin to fall off once the size of the network scales. While existing multi-agent benchmarks cover at most 2-5 agents, AgentsNet is practically unlimited in size and can scale with new generations of LLMs. As such, we also probe frontier models in a setup with up to 100 agents.
-]]></content:encoded>
-<pubDate>Mon, 14 Jul 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Entangled Threats: A Unified Kill Chain Model for Quantum Machine Learning Security</title>
-<link>https://arxiv.org/abs/2507.08623</link>
-<guid>https://arxiv.org/abs/2507.08623</guid>
-<content:encoded><![CDATA[
-arXiv:2507.08623v1 Announce Type: cross 
-Abstract: Quantum Machine Learning (QML) systems inherit vulnerabilities from classical machine learning while introducing new attack surfaces rooted in the physical and algorithmic layers of quantum computing. Despite a growing body of research on individual attack vectors - ranging from adversarial poisoning and evasion to circuit-level backdoors, side-channel leakage, and model extraction - these threats are often analyzed in isolation, with unrealistic assumptions about attacker capabilities and system environments. This fragmentation hampers the development of effective, holistic defense strategies. In this work, we argue that QML security requires more structured modeling of the attack surface, capturing not only individual techniques but also their relationships, prerequisites, and potential impact across the QML pipeline. We propose adapting kill chain models, widely used in classical IT and cybersecurity, to the quantum machine learning context. Such models allow for structured reasoning about attacker objectives, capabilities, and possible multi-stage attack paths - spanning reconnaissance, initial access, manipulation, persistence, and exfiltration. Based on extensive literature analysis, we present a detailed taxonomy of QML attack vectors mapped to corresponding stages in a quantum-aware kill chain framework that is inspired by the MITRE ATLAS for classical machine learning. We highlight interdependencies between physical-level threats (like side-channel leakage and crosstalk faults), data and algorithm manipulation (such as poisoning or circuit backdoors), and privacy attacks (including model extraction and training data inference). This work provides a foundation for more realistic threat modeling and proactive security-in-depth design in the emerging field of quantum machine learning.
-]]></content:encoded>
-<pubDate>Mon, 14 Jul 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Safe Deep Reinforcement Learning for Resource Allocation with Peak Age of Information Violation Guarantees</title>
-<link>https://arxiv.org/abs/2507.08653</link>
-<guid>https://arxiv.org/abs/2507.08653</guid>
-<content:encoded><![CDATA[
-arXiv:2507.08653v1 Announce Type: cross 
-Abstract: In Wireless Networked Control Systems (WNCSs), control and communication systems must be co-designed due to their strong interdependence. This paper presents a novel optimization theory-based safe deep reinforcement learning (DRL) framework for ultra-reliable WNCSs, ensuring constraint satisfaction while optimizing performance, for the first time in the literature. The approach minimizes power consumption under key constraints, including Peak Age of Information (PAoI) violation probability, transmit power, and schedulability in the finite blocklength regime. PAoI violation probability is uniquely derived by combining stochastic maximum allowable transfer interval (MATI) and maximum allowable packet delay (MAD) constraints in a multi-sensor network. The framework consists of two stages: optimization theory and safe DRL. The first stage derives optimality conditions to establish mathematical relationships among variables, simplifying and decomposing the problem. The second stage employs a safe DRL model where a teacher-student framework guides the DRL agent (student). The control mechanism (teacher) evaluates compliance with system constraints and suggests the nearest feasible action when needed. Extensive simulations show that the proposed framework outperforms rule-based and other optimization theory based DRL benchmarks, achieving faster convergence, higher rewards, and greater stability.
 ]]></content:encoded>
 <pubDate>Mon, 14 Jul 2025 00:00:00 -0400</pubDate>
 </item>
