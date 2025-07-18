@@ -4,21 +4,20 @@
 <title>cs.CL updates on arXiv.org</title>
 <link>http://rss.arxiv.org/rss/cs.CL</link>
 
+
 <item>
 <title>SmartThinker: Learning to Compress and Preserve Reasoning by Step-Level Length Control</title>
 <link>https://arxiv.org/abs/2507.04348</link>
 <guid>https://arxiv.org/abs/2507.04348</guid>
 <content:encoded><![CDATA[
-<div> SmartThinker, Large reasoning models, efficiency, redundancy, reasoning processes <br>
-Summary: <br>
-The article introduces SmartThinker, a novel framework designed to enhance the efficiency of Large reasoning models (LRMs) by allowing fine-grained control over the length of reasoning chains. Previous approaches to reduce redundancy in LRMs often resulted in a suboptimal trade-off between accuracy and efficiency. SmartThinker addresses this issue through a two-stage learnable framework. In the first stage, the model is adapted to a short-form reasoning mode through rejection sampling and supervised fine-tuning. The second stage utilizes Step-Level Length Control Policy Optimization (SCPO) to adjust the model output distribution based on the importance of each reasoning step. SCPO includes components such as an online importance estimator and a step-level reward function to implement differentiated length control across reasoning steps. Empirical results across various reasoning benchmarks show that SmartThinker effectively reduces redundant reasoning while maintaining comparable or improved performance compared to existing methods. <br> <div>
+<div> SmartThinker, Large reasoning models, efficiency, redundancy, reasoning processes <br />
+Summary: <br />
+The article introduces SmartThinker, a novel framework designed to enhance the efficiency of Large reasoning models (LRMs) by allowing fine-grained control over the length of reasoning chains. Previous approaches to reduce redundancy in LRMs often resulted in a suboptimal trade-off between accuracy and efficiency. SmartThinker addresses this issue through a two-stage learnable framework. In the first stage, the model is adapted to a short-form reasoning mode through rejection sampling and supervised fine-tuning. The second stage utilizes Step-Level Length Control Policy Optimization (SCPO) to adjust the model output distribution based on the importance of each reasoning step. SCPO includes components such as an online importance estimator and a step-level reward function to implement differentiated length control across reasoning steps. Empirical results across various reasoning benchmarks show that SmartThinker effectively reduces redundant reasoning while maintaining comparable or improved performance compared to existing methods. <br /> <div>
 arXiv:2507.04348v2 Announce Type: replace-cross 
 Abstract: Large reasoning models (LRMs) have exhibited remarkable reasoning capabilities through inference-time scaling, but this progress has also introduced considerable redundancy and inefficiency into their reasoning processes, resulting in substantial computational waste. Previous work has attempted to mitigate this issue by penalizing the overall length of generated samples during reinforcement learning (RL), with the goal of encouraging a more concise chains of thought. However, we observe that such global length penalty often lead to excessive compression of critical reasoning steps while preserving unnecessary details in simpler ones, yielding a suboptimal trade-off between accuracy and efficiency. To address this issue, we propose SmartThinker, a two-stage learnable framework designed to enable fine-grained control over the length of reasoning chains based on the importance of each individual step. In the first stage, SmartThinker adapts a reasoning model to a short-form reasoning mode through rejection sampling combined with supervised fine-tuning (SFT). In the second stage, SmartThinker applies Step-Level Length Control Policy Optimization (SCPO) to refine the model output distribution, which increases the proportion of length allocated to critical steps while reducing redundancy in less important ones. SCPO consists of four core components: an online importance estimator, a step-level length control reward function, a step-level generalized advantage estimation (S-GAE) and a difficulty-adaptive clipping strategy. Working in concert, these components enable SCPO to implement differentiated length control across reasoning steps. Empirical results across multiple reasoning benchmarks and various backbone models demonstrate that SmartThinker significantly reduces redundant reasoning while achieving comparable or even superior performance to existing methods.
 ]]></content:encoded>
 <pubDate>Fri, 18 Jul 2025 00:00:00 -0400</pubDate>
-<pubDate>Fri, 18 Jul 2025 00:00:00 -0400</pubDate>
 </item>
-
 <item>
 <title>Modeling Open-World Cognition as On-Demand Synthesis of Probabilistic Models</title>
 <link>https://arxiv.org/abs/2507.12547</link>
@@ -12035,16 +12034,6 @@ Abstract: Relation extraction is a crucial task in natural language processing, 
 <content:encoded><![CDATA[
 arXiv:2507.04854v1 Announce Type: new 
 Abstract: Access to consumer grievance redressal in India is often hindered by procedural complexity, legal jargon, and jurisdictional challenges. To address this, we present $\textbf{Grahak-Nyay}$ (Justice-to-Consumers), a chatbot that streamlines the process using open-source Large Language Models (LLMs) and Retrieval-Augmented Generation (RAG). Grahak-Nyay simplifies legal complexities through a concise and up-to-date knowledge base. We introduce three novel datasets: $\textit{GeneralQA}$ (general consumer law), $\textit{SectoralQA}$ (sector-specific knowledge) and $\textit{SyntheticQA}$ (for RAG evaluation), along with $\textit{NyayChat}$, a dataset of 300 annotated chatbot conversations. We also introduce $\textit{Judgments}$ data sourced from Indian Consumer Courts to aid the chatbot in decision making and to enhance user trust. We also propose $\textbf{HAB}$ metrics ($\textbf{Helpfulness, Accuracy, Brevity}$) to evaluate chatbot performance. Legal domain experts validated Grahak-Nyay's effectiveness. Code and datasets will be released.
-]]></content:encoded>
-<pubDate>Tue, 08 Jul 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Building Open-Retrieval Conversational Question Answering Systems by Generating Synthetic Data and Decontextualizing User Questions</title>
-<link>https://arxiv.org/abs/2507.04884</link>
-<guid>https://arxiv.org/abs/2507.04884</guid>
-<content:encoded><![CDATA[
-arXiv:2507.04884v1 Announce Type: new 
-Abstract: We consider open-retrieval conversational question answering (OR-CONVQA), an extension of question answering where system responses need to be (i) aware of dialog history and (ii) grounded in documents (or document fragments) retrieved per question. Domain-specific OR-CONVQA training datasets are crucial for real-world applications, but hard to obtain. We propose a pipeline that capitalizes on the abundance of plain text documents in organizations (e.g., product documentation) to automatically produce realistic OR-CONVQA dialogs with annotations. Similarly to real-world humanannotated OR-CONVQA datasets, we generate in-dialog question-answer pairs, self-contained (decontextualized, e.g., no referring expressions) versions of user questions, and propositions (sentences expressing prominent information from the documents) the system responses are grounded in. We show how the synthetic dialogs can be used to train efficient question rewriters that decontextualize user questions, allowing existing dialog-unaware retrievers to be utilized. The retrieved information and the decontextualized question are then passed on to an LLM that generates the system's response.
 ]]></content:encoded>
 <pubDate>Tue, 08 Jul 2025 00:00:00 -0400</pubDate>
 </item>
