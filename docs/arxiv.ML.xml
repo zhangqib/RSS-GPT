@@ -4,21 +4,20 @@
 <title>cs.LG updates on arXiv.org</title>
 <link>http://rss.arxiv.org/rss/cs.LG</link>
 
+
 <item>
 <title>A General Framework for Inference-time Scaling and Steering of Diffusion Models</title>
 <link>https://arxiv.org/abs/2501.06848</link>
 <guid>https://arxiv.org/abs/2501.06848</guid>
 <content:encoded><![CDATA[
-<div> diffusion models, Feynman-Kac steering, rewards, text-to-image, text attributes <br>
-Summary:<br>
-The article discusses the challenges in generating samples with user-specified properties using diffusion models and proposes a solution called Feynman-Kac (FK) steering. FK steering is an inference-time framework that involves sampling multiple interacting diffusion processes, or particles, and resampling them based on rewards defined by potential functions. These potentials guide the particles towards high-reward samples. The study evaluates FK steering on text-to-image and text diffusion models, showing that it outperforms fine-tuned models in terms of prompt fidelity and sample quality. FK steering allows for faster sampling, controllability of attributes like toxicity, and generates more linguistically acceptable outputs. The results highlight the effectiveness of inference-time scaling and steering of diffusion models, even with off-the-shelf rewards, in improving sample quality and controllability. The code for FK steering is available for further exploration. <br> <div>
+<div> diffusion models, Feynman-Kac steering, rewards, text-to-image, text attributes <br />
+Summary:<br />
+The article discusses the challenges in generating samples with user-specified properties using diffusion models and proposes a solution called Feynman-Kac (FK) steering. FK steering is an inference-time framework that involves sampling multiple interacting diffusion processes, or particles, and resampling them based on rewards defined by potential functions. These potentials guide the particles towards high-reward samples. The study evaluates FK steering on text-to-image and text diffusion models, showing that it outperforms fine-tuned models in terms of prompt fidelity and sample quality. FK steering allows for faster sampling, controllability of attributes like toxicity, and generates more linguistically acceptable outputs. The results highlight the effectiveness of inference-time scaling and steering of diffusion models, even with off-the-shelf rewards, in improving sample quality and controllability. The code for FK steering is available for further exploration. <br /> <div>
 arXiv:2501.06848v5 Announce Type: replace 
 Abstract: Diffusion models produce impressive results in modalities ranging from images and video to protein design and text. However, generating samples with user-specified properties remains a challenge. Recent research proposes fine-tuning models to maximize rewards that capture desired properties, but these methods require expensive training and are prone to mode collapse. In this work, we present Feynman-Kac (FK) steering, an inference-time framework for steering diffusion models with reward functions. FK steering works by sampling a system of multiple interacting diffusion processes, called particles, and resampling particles at intermediate steps based on scores computed using functions called potentials. Potentials are defined using rewards for intermediate states and are selected such that a high value indicates that the particle will yield a high-reward sample. We explore various choices of potentials, intermediate rewards, and samplers. We evaluate FK steering on text-to-image and text diffusion models. For steering text-to-image models with a human preference reward, we find that FK steering a 0.8B parameter model outperforms a 2.6B parameter fine-tuned model on prompt fidelity, with faster sampling and no training. For steering text diffusion models with rewards for text quality and specific text attributes, we find that FK steering generates lower perplexity, more linguistically acceptable outputs and enables gradient-free control of attributes like toxicity. Our results demonstrate that inference-time scaling and steering of diffusion models - even with off-the-shelf rewards - can provide significant sample quality gains and controllability benefits. Code is available at https://github.com/zacharyhorvitz/Fk-Diffusion-Steering .
 ]]></content:encoded>
 <pubDate>Mon, 21 Jul 2025 00:00:00 -0400</pubDate>
-<pubDate>Mon, 21 Jul 2025 00:00:00 -0400</pubDate>
 </item>
-
 <item>
 <title>Physical models realizing the transformer architecture of large language models</title>
 <link>https://arxiv.org/abs/2507.13354</link>
@@ -11225,16 +11224,6 @@ Abstract: Vision-Language Navigation in Continuous Environments (VLNCE), where a
 <content:encoded><![CDATA[
 arXiv:2507.08849v1 Announce Type: cross 
 Abstract: Machine Learning models are increasingly used in businesses to detect faults and anomalies in complex systems. In this work, we take this approach a step further: beyond merely detecting anomalies, we aim to identify the optimal control strategy that restores the system to a safe state with minimal disruption. We frame this challenge as a counterfactual problem: given a Machine Learning model that classifies system states as either good or anomalous, our goal is to determine the minimal adjustment to the system's control variables (i.e., its current status) that is necessary to return it to the good state. To achieve this, we leverage a mathematical model that finds the optimal counterfactual solution while respecting system specific constraints. Notably, most counterfactual analysis in the literature focuses on individual cases where a person seeks to alter their status relative to a decision made by a classifier, such as for loan approval or medical diagnosis. Our work addresses a fundamentally different challenge: optimizing counterfactuals for a complex energy system, specifically an offshore wind turbine oil type transformer. This application not only advances counterfactual optimization in a new domain but also opens avenues for broader research in this area. Our tests on real world data provided by our industrial partner show that our methodology easily adapts to user preferences and brings savings in the order of 3 million euros per year in a typical farm.
-]]></content:encoded>
-<pubDate>Tue, 15 Jul 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>DiffNMR: Diffusion Models for Nuclear Magnetic Resonance Spectra Elucidation</title>
-<link>https://arxiv.org/abs/2507.08854</link>
-<guid>https://arxiv.org/abs/2507.08854</guid>
-<content:encoded><![CDATA[
-arXiv:2507.08854v1 Announce Type: cross 
-Abstract: Nuclear Magnetic Resonance (NMR) spectroscopy is a central characterization method for molecular structure elucidation, yet interpreting NMR spectra to deduce molecular structures remains challenging due to the complexity of spectral data and the vastness of the chemical space. In this work, we introduce DiffNMR, a novel end-to-end framework that leverages a conditional discrete diffusion model for de novo molecular structure elucidation from NMR spectra. DiffNMR refines molecular graphs iteratively through a diffusion-based generative process, ensuring global consistency and mitigating error accumulation inherent in autoregressive methods. The framework integrates a two-stage pretraining strategy that aligns spectral and molecular representations via diffusion autoencoder (Diff-AE) and contrastive learning, the incorporation of retrieval initialization and similarity filtering during inference, and a specialized NMR encoder with radial basis function (RBF) encoding for chemical shifts, preserving continuity and chemical correlation. Experimental results demonstrate that DiffNMR achieves competitive performance for NMR-based structure elucidation, offering an efficient and robust solution for automated molecular analysis.
 ]]></content:encoded>
 <pubDate>Tue, 15 Jul 2025 00:00:00 -0400</pubDate>
 </item>

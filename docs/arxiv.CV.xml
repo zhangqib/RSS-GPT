@@ -4,21 +4,20 @@
 <title>cs.CV updates on arXiv.org</title>
 <link>http://rss.arxiv.org/rss/cs.CV</link>
 
+
 <item>
 <title>Understanding Dataset Bias in Medical Imaging: A Case Study on Chest X-rays</title>
 <link>https://arxiv.org/abs/2507.07722</link>
 <guid>https://arxiv.org/abs/2507.07722</guid>
 <content:encoded><![CDATA[
-<div> Keywords: dataset bias, chest X-ray, medical imaging, open-source datasets, network architectures <br>
-Summary: <br>
-This work explores the existence of dataset bias in popular open-source chest X-ray datasets through the task of "Name That Dataset". The study applies simple transformations to the datasets and analyzes the biases detected. By investigating datasets such as NIH, CheXpert, MIMIC-CXR, and PadChest, the research aims to identify any biases and encourage more explainable research in medical imaging. Given the importance of AI applications in medical imaging, it is essential to ensure that modern methods are focusing on relevant pathology rather than taking shortcuts. The study also highlights the challenges of releasing medical images due to their sensitive nature and underscores the need for more open-source datasets in the medical domain. The code for this research is available on GitHub for further exploration and utilization. <br> <div>
+<div> Keywords: dataset bias, chest X-ray, medical imaging, open-source datasets, network architectures <br />
+Summary: <br />
+This work explores the existence of dataset bias in popular open-source chest X-ray datasets through the task of "Name That Dataset". The study applies simple transformations to the datasets and analyzes the biases detected. By investigating datasets such as NIH, CheXpert, MIMIC-CXR, and PadChest, the research aims to identify any biases and encourage more explainable research in medical imaging. Given the importance of AI applications in medical imaging, it is essential to ensure that modern methods are focusing on relevant pathology rather than taking shortcuts. The study also highlights the challenges of releasing medical images due to their sensitive nature and underscores the need for more open-source datasets in the medical domain. The code for this research is available on GitHub for further exploration and utilization. <br /> <div>
 arXiv:2507.07722v4 Announce Type: replace 
 Abstract: Recent works have revisited the infamous task ``Name That Dataset'', demonstrating that non-medical datasets contain underlying biases and that the dataset origin task can be solved with high accuracy. In this work, we revisit the same task applied to popular open-source chest X-ray datasets. Medical images are naturally more difficult to release for open-source due to their sensitive nature, which has led to certain open-source datasets being extremely popular for research purposes. By performing the same task, we wish to explore whether dataset bias also exists in these datasets. To extend our work, we apply simple transformations to the datasets, repeat the same task, and perform an analysis to identify and explain any detected biases. Given the importance of AI applications in medical imaging, it's vital to establish whether modern methods are taking shortcuts or are focused on the relevant pathology. We implement a range of different network architectures on the datasets: NIH, CheXpert, MIMIC-CXR and PadChest. We hope this work will encourage more explainable research being performed in medical imaging and the creation of more open-source datasets in the medical domain. Our code can be found here: https://github.com/eedack01/x_ray_ds_bias.
 ]]></content:encoded>
 <pubDate>Mon, 21 Jul 2025 00:00:00 -0400</pubDate>
-<pubDate>Mon, 21 Jul 2025 00:00:00 -0400</pubDate>
 </item>
-
 <item>
 <title>Open-Vocabulary Object Detection in UAV Imagery: A Review and Future Perspectives</title>
 <link>https://arxiv.org/abs/2507.13359</link>
@@ -11257,16 +11256,6 @@ Abstract: This study presents a hybrid model for classifying handwritten digits 
 <content:encoded><![CDATA[
 arXiv:2507.08772v1 Announce Type: new 
 Abstract: Recent advances in 3D generation have transitioned from multi-view 2D rendering approaches to 3D-native latent diffusion frameworks that exploit geometric priors in ground truth data. Despite progress, three key limitations persist: (1) Single-latent representations fail to capture complex multi-part geometries, causing detail degradation; (2) Holistic latent coding neglects part independence and interrelationships critical for compositional design; (3) Global conditioning mechanisms lack fine-grained controllability. Inspired by human 3D design workflows, we propose CoPart - a part-aware diffusion framework that decomposes 3D objects into contextual part latents for coherent multi-part generation. This paradigm offers three advantages: i) Reduces encoding complexity through part decomposition; ii) Enables explicit part relationship modeling; iii) Supports part-level conditioning. We further develop a mutual guidance strategy to fine-tune pre-trained diffusion models for joint part latent denoising, ensuring both geometric coherence and foundation model priors. To enable large-scale training, we construct Partverse - a novel 3D part dataset derived from Objaverse through automated mesh segmentation and human-verified annotations. Extensive experiments demonstrate CoPart's superior capabilities in part-level editing, articulated object generation, and scene composition with unprecedented controllability.
-]]></content:encoded>
-<pubDate>Mon, 14 Jul 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>CLiFT: Compressive Light-Field Tokens for Compute-Efficient and Adaptive Neural Rendering</title>
-<link>https://arxiv.org/abs/2507.08776</link>
-<guid>https://arxiv.org/abs/2507.08776</guid>
-<content:encoded><![CDATA[
-arXiv:2507.08776v1 Announce Type: new 
-Abstract: This paper proposes a neural rendering approach that represents a scene as "compressed light-field tokens (CLiFTs)", retaining rich appearance and geometric information of a scene. CLiFT enables compute-efficient rendering by compressed tokens, while being capable of changing the number of tokens to represent a scene or render a novel view with one trained network. Concretely, given a set of images, multi-view encoder tokenizes the images with the camera poses. Latent-space K-means selects a reduced set of rays as cluster centroids using the tokens. The multi-view ``condenser'' compresses the information of all the tokens into the centroid tokens to construct CLiFTs. At test time, given a target view and a compute budget (i.e., the number of CLiFTs), the system collects the specified number of nearby tokens and synthesizes a novel view using a compute-adaptive renderer. Extensive experiments on RealEstate10K and DL3DV datasets quantitatively and qualitatively validate our approach, achieving significant data reduction with comparable rendering quality and the highest overall rendering score, while providing trade-offs of data size, rendering quality, and rendering speed.
 ]]></content:encoded>
 <pubDate>Mon, 14 Jul 2025 00:00:00 -0400</pubDate>
 </item>
