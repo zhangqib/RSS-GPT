@@ -4,6 +4,53 @@
 <title>cs.CE updates on arXiv.org</title>
 <link>http://rss.arxiv.org/rss/cs.CE</link>
 
+<item>
+<title>Graph Neural Network Surrogates for Contacting Deformable Bodies with Necessary and Sufficient Contact Detection</title>
+<link>https://arxiv.org/abs/2507.13459</link>
+<guid>https://arxiv.org/abs/2507.13459</guid>
+<content:encoded><![CDATA[
+<div> Graph neural network, surrogate modeling, contact mechanics, soft deformable bodies, computational cost 
+Summary: 
+The article introduces a graph neural network architecture for surrogate modeling in nonlinear boundary value problems in mechanics, focusing on contact between soft deformable bodies. This approach incorporates continuous collision detection and sufficient conditions for contact, improving generalization of the network. The framework is tested on soft tissue mechanics problems, such as predicting the closed state of a bioprosthetic aortic valve, demonstrating better generalization with additional contact terms in the loss function. The network can handle complex contact scenarios with varying reference geometries but comes with high computational costs during training. Despite this, the implementation results in significant speedups for inference, showing up to a thousand-fold improvement on benchmark problems. Overall, the graph neural network offers promising advancements in efficiently solving contact mechanics problems involving soft deformable bodies. 
+<br><br>Summary: <div>
+arXiv:2507.13459v1 Announce Type: new 
+Abstract: Surrogate models for the rapid inference of nonlinear boundary value problems in mechanics are helpful in a broad range of engineering applications. However, effective surrogate modeling of applications involving the contact of deformable bodies, especially in the context of varying geometries, is still an open issue. In particular, existing methods are confined to rigid body contact or, at best, contact between rigid and soft objects with well-defined contact planes. Furthermore, they employ contact or collision detection filters that serve as a rapid test but use only the necessary and not sufficient conditions for detection. In this work, we present a graph neural network architecture that utilizes continuous collision detection and, for the first time, incorporates sufficient conditions designed for contact between soft deformable bodies. We test its performance on two benchmarks, including a problem in soft tissue mechanics of predicting the closed state of a bioprosthetic aortic valve. We find a regularizing effect on adding additional contact terms to the loss function, leading to better generalization of the network. These benefits hold for simple contact at similar planes and element normal angles, and complex contact at differing planes and element normal angles. We also demonstrate that the framework can handle varying reference geometries. However, such benefits come with high computational costs during training, resulting in a trade-off that may not always be favorable. We quantify the training cost and the resulting inference speedups on various hardware architectures. Importantly, our graph neural network implementation results in up to a thousand-fold speedup for our benchmark problems at inference.
+]]></content:encoded>
+<pubDate>Mon, 21 Jul 2025 00:00:00 -0400</pubDate>
+<pubDate>Mon, 21 Jul 2025 00:00:00 -0400</pubDate>
+</item>
+<item>
+<title>A multi-strategy improved snake optimizer for three-dimensional UAV path planning and engineering problems</title>
+<link>https://arxiv.org/abs/2507.14043</link>
+<guid>https://arxiv.org/abs/2507.14043</guid>
+<content:encoded><![CDATA[
+<div> Algorithm, Snake Optimizer, Multi-strategy, Levy flight, UAV path planning
+
+Summary:
+The study introduces the Multi-strategy Improved Snake Optimizer (MISO) to enhance the Snake Optimizer algorithm by addressing issues such as slow convergence and local optima traps. MISO incorporates adaptive random disturbance and Levy flight strategies to prevent local optima trapping and improve global optimum exploration. A unique position update strategy combining elite leadership and Brownian motion accelerates convergence speed while maintaining precision. Experimental validation against 30 CEC2017 test functions and the CEC2022 test suite showcases MISO's effectiveness compared to 11 popular algorithms. Application of MISO to UAV 3D path planning and engineering design problems demonstrates superior solution quality and stability, highlighting its potential for practical use.
+
+<br><br>Summary: <div>
+arXiv:2507.14043v1 Announce Type: cross 
+Abstract: Metaheuristic algorithms have gained widespread application across various fields owing to their ability to generate diverse solutions. One such algorithm is the Snake Optimizer (SO), a progressive optimization approach. However, SO suffers from the issues of slow convergence speed and susceptibility to local optima. In light of these shortcomings, we propose a novel Multi-strategy Improved Snake Optimizer (MISO). Firstly, we propose a new adaptive random disturbance strategy based on sine function to alleviate the risk of getting trapped in a local optimum. Secondly, we introduce adaptive Levy flight strategy based on scale factor and leader and endow the male snake leader with flight capability, which makes it easier for the algorithm to leap out of the local optimum and find the global optimum. More importantly, we put forward a position update strategy combining elite leadership and Brownian motion, effectively accelerating the convergence speed while ensuring precision. Finally, to demonstrate the performance of MISO, we utilize 30 CEC2017 test functions and the CEC2022 test suite, comparing it with 11 popular algorithms across different dimensions to validate its effectiveness. Moreover, Unmanned Aerial Vehicle (UAV) has been widely used in various fields due to its advantages of low cost, high mobility and easy operation. However, the UAV path planning problem is crucial for flight safety and efficiency, and there are still challenges in establishing and optimizing the path model. Therefore, we apply MISO to the UAV 3D path planning problem as well as 6 engineering design problems to assess its feasibility in practical applications. The experimental results demonstrate that MISO exceeds other competitive algorithms in terms of solution quality and stability, establishing its strong potential for application.
+]]></content:encoded>
+<pubDate>Mon, 21 Jul 2025 00:00:00 -0400</pubDate>
+<pubDate>Mon, 21 Jul 2025 00:00:00 -0400</pubDate>
+</item>
+<item>
+<title>A Paradigm Shift to Assembly-like Finite Element Model Updating</title>
+<link>https://arxiv.org/abs/2502.02592</link>
+<guid>https://arxiv.org/abs/2502.02592</guid>
+<content:encoded><![CDATA[
+<div> Validation, Finite Element Model, Aircraft, Computational Efficiency, Assembly-Like Approach
+<br>
+Summary: 
+The article introduces a new assembly-like approach for updating finite element models in aeronautics, crucial for developing aircraft with modern flexible wings. This method updates the model as parts are assembled, offering significant computational efficiency by requiring 20% fewer iterations and fewer parameters compared to the traditional one-shot approach. The proposed approach maintains fidelity to the global method while reducing computational burden, making it a promising technique for complex structures. <div>
+arXiv:2502.02592v2 Announce Type: replace 
+Abstract: In general, there is a mismatch between a finite element model of a structure and its real behaviour. In aeronautics, this mismatch must be small because finite element models are a fundamental part of the development of an aircraft and of increasing importance with the trend to more flexible wings in modern designs. Finite element model updating can be computationally expensive for complex structures and surrogate models can be employed to reduce the computational burden. A novel approach for finite element model updating, namely assembly-like, is proposed and validated using real experimental data. The assembly-like model updating framework implies that the model is updated as parts are assembled. Benchmarking against the classical global, or one-shot, approach demonstrates that the proposed method is more computationally efficient since it takes 20% fewer iterations to obtain convergence, also using fewer parameters for the model evaluations. Despite the increase in computational performance, the new approach retains the fidelity of the global approach.
+]]></content:encoded>
+<pubDate>Mon, 21 Jul 2025 00:00:00 -0400</pubDate>
+<pubDate>Mon, 21 Jul 2025 00:00:00 -0400</pubDate>
+</item>
 
 <item>
 <title>Vector-level Feedforward Control of LPBF Melt Pool Area Using a Physics-Based Thermal Model</title>

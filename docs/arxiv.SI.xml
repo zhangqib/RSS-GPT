@@ -4,6 +4,166 @@
 <title>cs.SI updates on arXiv.org</title>
 <link>http://rss.arxiv.org/rss/cs.SI</link>
 
+<item>
+<title>Leveraging the Spatial Hierarchy: Coarse-to-fine Trajectory Generation via Cascaded Hybrid Diffusion</title>
+<link>https://arxiv.org/abs/2507.13366</link>
+<guid>https://arxiv.org/abs/2507.13366</guid>
+<content:encoded><![CDATA[
+<div> framework, trajectory, synthesis, privacy-preserving, mobility <br>
+Summary: <br>
+The paper introduces Cardiff, a novel trajectory synthesizing framework for generating fine-grained and privacy-preserving urban mobility data. Cardiff utilizes a cascaded hybrid diffusion-based approach, decomposing the generation process into segment-level and GPS-level synthesis for realistic trajectories. The segment-level encodes road segments into latent embeddings and employs a denoising network for synthesis, while the GPS-level network uses noise augmentation for high-fidelity generation. Cardiff offers a balance between privacy preservation and utility, outperforming existing methods on real-world trajectory datasets in various metrics. <div>
+arXiv:2507.13366v1 Announce Type: new 
+Abstract: Urban mobility data has significant connections with economic growth and plays an essential role in various smart-city applications. However, due to privacy concerns and substantial data collection costs, fine-grained human mobility trajectories are difficult to become publicly available on a large scale. A promising solution to address this issue is trajectory synthesizing. However, existing works often ignore the inherent structural complexity of trajectories, unable to handle complicated high-dimensional distributions and generate realistic fine-grained trajectories. In this paper, we propose Cardiff, a coarse-to-fine Cascaded hybrid diffusion-based trajectory synthesizing framework for fine-grained and privacy-preserving mobility generation. By leveraging the hierarchical nature of urban mobility, Cardiff decomposes the generation process into two distinct levels, i.e., discrete road segment-level and continuous fine-grained GPS-level: (i) In the segment-level, to reduce computational costs and redundancy in raw trajectories, we first encode the discrete road segments into low-dimensional latent embeddings and design a diffusion transformer-based latent denoising network for segment-level trajectory synthesis. (ii) Taking the first stage of generation as conditions, we then design a fine-grained GPS-level conditional denoising network with a noise augmentation mechanism to achieve robust and high-fidelity generation. Additionally, the Cardiff framework not only progressively generates high-fidelity trajectories through cascaded denoising but also flexibly enables a tunable balance between privacy preservation and utility. Experimental results on three large real-world trajectory datasets demonstrate that our method outperforms state-of-the-art baselines in various metrics.
+]]></content:encoded>
+<pubDate>Mon, 21 Jul 2025 00:00:00 -0400</pubDate>
+<pubDate>Mon, 21 Jul 2025 00:00:00 -0400</pubDate>
+</item>
+<item>
+<title>Scalable Attribute-Missing Graph Clustering via Neighborhood Differentiatio</title>
+<link>https://arxiv.org/abs/2507.13368</link>
+<guid>https://arxiv.org/abs/2507.13368</guid>
+<content:encoded><![CDATA[
+<div> neighborhood search, multiple views, graph clustering, attribute-missing, performance improvement
+
+Summary: 
+The paper presents a new method called CMV-ND for deep graph clustering (DGC) on large-scale attribute-missing graphs. It preprocesses structural information into multiple non-redundant views through recursive neighborhood search and neighborhood differentiation strategies. By constructing complementary views from differential hop representations and node features, CMV-ND effectively enhances the performance of existing multi-view clustering and DGC methods. Experimental results on six graph datasets validate the significant performance improvement achieved by CMV-ND in various industrial scenarios like community detection and recommendation.<br><br>Summary: <div>
+arXiv:2507.13368v1 Announce Type: new 
+Abstract: Deep graph clustering (DGC), which aims to unsupervisedly separate the nodes in an attribute graph into different clusters, has seen substantial potential in various industrial scenarios like community detection and recommendation. However, the real-world attribute graphs, e.g., social networks interactions, are usually large-scale and attribute-missing. To solve these two problems, we propose a novel DGC method termed \underline{\textbf{C}}omplementary \underline{\textbf{M}}ulti-\underline{\textbf{V}}iew \underline{\textbf{N}}eighborhood \underline{\textbf{D}}ifferentiation (\textit{CMV-ND}), which preprocesses graph structural information into multiple views in a complete but non-redundant manner. First, to ensure completeness of the structural information, we propose a recursive neighborhood search that recursively explores the local structure of the graph by completely expanding node neighborhoods across different hop distances. Second, to eliminate the redundancy between neighborhoods at different hops, we introduce a neighborhood differential strategy that ensures no overlapping nodes between the differential hop representations. Then, we construct $K+1$ complementary views from the $K$ differential hop representations and the features of the target node. Last, we apply existing multi-view clustering or DGC methods to the views. Experimental results on six widely used graph datasets demonstrate that CMV-ND significantly improves the performance of various methods.
+]]></content:encoded>
+<pubDate>Mon, 21 Jul 2025 00:00:00 -0400</pubDate>
+<pubDate>Mon, 21 Jul 2025 00:00:00 -0400</pubDate>
+</item>
+<item>
+<title>H-NeiFi: Non-Invasive and Consensus-Efficient Multi-Agent Opinion Guidance</title>
+<link>https://arxiv.org/abs/2507.13370</link>
+<guid>https://arxiv.org/abs/2507.13370</guid>
+<content:encoded><![CDATA[
+<div> Keywords: social media, opinion evolution, consensus, non-intrusive, multi-agent reinforcement learning
+
+Summary: 
+The article introduces the H-NeiFi framework, a hierarchical and non-intrusive approach to guiding opinion evolution on social media towards global consensus. By considering social roles and behavioral characteristics, the framework aims to optimize information propagation paths without directly modifying user views or enforcing connections. Through a dynamic two-layer model and non-intrusive neighbor filtering method, H-NeiFi adaptsively controls user communication channels to enhance consensus speed by 22.0% to 30.7% and maintain global convergence even in the absence of experts. Utilizing multi-agent reinforcement learning, the framework offers a long-term reward function to guide opinions naturally and efficiently while preserving user interaction autonomy. This approach presents a new paradigm for social network governance, addressing challenges in promoting global consensus without intruding on individual opinions. 
+
+Summary: <div>
+arXiv:2507.13370v1 Announce Type: new 
+Abstract: The openness of social media enables the free exchange of opinions, but it also presents challenges in guiding opinion evolution towards global consensus. Existing methods often directly modify user views or enforce cross-group connections. These intrusive interventions undermine user autonomy, provoke psychological resistance, and reduce the efficiency of global consensus. Additionally, due to the lack of a long-term perspective, promoting local consensus often exacerbates divisions at the macro level. To address these issues, we propose the hierarchical, non-intrusive opinion guidance framework, H-NeiFi. It first establishes a two-layer dynamic model based on social roles, considering the behavioral characteristics of both experts and non-experts. Additionally, we introduce a non-intrusive neighbor filtering method that adaptively controls user communication channels. Using multi-agent reinforcement learning (MARL), we optimize information propagation paths through a long-term reward function, avoiding direct interference with user interactions. Experiments show that H-NeiFi increases consensus speed by 22.0% to 30.7% and maintains global convergence even in the absence of experts. This approach enables natural and efficient consensus guidance by protecting user interaction autonomy, offering a new paradigm for social network governance.
+]]></content:encoded>
+<pubDate>Mon, 21 Jul 2025 00:00:00 -0400</pubDate>
+<pubDate>Mon, 21 Jul 2025 00:00:00 -0400</pubDate>
+</item>
+<item>
+<title>Patterns, Models, and Challenges in Online Social Media: A Survey</title>
+<link>https://arxiv.org/abs/2507.13379</link>
+<guid>https://arxiv.org/abs/2507.13379</guid>
+<content:encoded><![CDATA[
+<div> keywords: digital platforms, individual behavior, collective behavior, online social systems, model validation
+Summary:
+The article discusses the impact of digital platforms on observing individual and collective behavior through interaction data. It highlights the need for consolidation in the field due to methodological heterogeneity and weak integration across domains. The survey systematically synthesizes empirical findings and formal models to understand platform-level regularities and methodological architectures. It emphasizes the importance of current modeling frameworks in accounting for observed dynamics in online social systems. The goal is to establish a shared empirical baseline and identify structural constraints for more robust analyses. The article aims to pave the way for improved, comparable, and actionable analyses of online social systems.<br><br>Summary: <div>
+arXiv:2507.13379v1 Announce Type: new 
+Abstract: The rise of digital platforms has enabled the large scale observation of individual and collective behavior through high resolution interaction data. This development has opened new analytical pathways for investigating how information circulates, how opinions evolve, and how coordination emerges in online environments. Yet despite a growing body of research, the field remains fragmented and marked by methodological heterogeneity, limited model validation, and weak integration across domains. This survey offers a systematic synthesis of empirical findings and formal models. We examine platform-level regularities, assess the methodological architectures that generate them, and evaluate the extent to which current modeling frameworks account for observed dynamics. The goal is to consolidate a shared empirical baseline and clarify the structural constraints that shape inference in this domain, laying the groundwork for more robust, comparable, and actionable analyses of online social systems.
+]]></content:encoded>
+<pubDate>Mon, 21 Jul 2025 00:00:00 -0400</pubDate>
+<pubDate>Mon, 21 Jul 2025 00:00:00 -0400</pubDate>
+</item>
+<item>
+<title>Characterizing the Dynamics of Conspiracy Related German Telegram Conversations during COVID-19</title>
+<link>https://arxiv.org/abs/2507.13398</link>
+<guid>https://arxiv.org/abs/2507.13398</guid>
+<content:encoded><![CDATA[
+<div> Keywords: conspiracy theories, Telegram chats, COVID-19, misinformation, information flow
+
+Summary:
+Conspiracy theories have seen a surge on German-language Telegram chats during the COVID-19 pandemic, raising concerns about their impact on trust, democracy, and public health. The study analyzed the structure of these chats, revealing spikes in activity during key pandemic events and highlighting the role of societal stressors in amplifying conspiratorial beliefs. Information flow was observed from larger national or transnational discourse to localized discussions, with a small number of key actors driving the dissemination of content. The top 10% of chats accounted for a majority of forwarded content, but they operated independently with minimal interconnection. A concerning finding was that a significant proportion of shared links pointed to untrustworthy sources, indicating Telegram's role in spreading misinformation. This research sheds light on how conspiracy-related discussions on the platform serve as vectors for the spread of false information.<br><br>Summary: <div>
+arXiv:2507.13398v1 Announce Type: new 
+Abstract: Conspiracy theories have long drawn public attention, but their explosive growth on platforms like Telegram during the COVID-19 pandemic raises pressing questions about their impact on societal trust, democracy, and public health. We provide a geographical, temporal and network analysis of the structure of of conspiracy-related German-language Telegram chats in a novel large-scale data set. We examine how information flows between regional user groups and influential broadcasting channels, revealing the interplay between decentralized discussions and content spread driven by a small number of key actors.
+  Our findings reveal that conspiracy-related activity spikes during major COVID-19-related events, correlating with societal stressors and mirroring prior research on how crises amplify conspiratorial beliefs. By analysing the interplay between regional, national and transnational chats, we uncover how information flows from larger national or transnational discourse to localised, community-driven discussions. Furthermore, we find that the top 10% of chats account for 94% of all forwarded content, portraying the large influence of a few actors in disseminating information. However, these chats operate independently, with minimal interconnection between each other, primarily forwarding messages to low-traffic groups. Notably, 43% of links shared in the data set point to untrustworthy sources as identified by NewsGuard, a proportion far exceeding their share on other platforms and in other discourse contexts, underscoring the role of conspiracy-related discussions on Telegram as vector for the spread of misinformation.
+]]></content:encoded>
+<pubDate>Mon, 21 Jul 2025 00:00:00 -0400</pubDate>
+<pubDate>Mon, 21 Jul 2025 00:00:00 -0400</pubDate>
+</item>
+<item>
+<title>Linking Multi-Site Sex Ad Data at the Individual Level to Aid Counter-Trafficking Efforts</title>
+<link>https://arxiv.org/abs/2507.13477</link>
+<guid>https://arxiv.org/abs/2507.13477</guid>
+<content:encoded><![CDATA[
+<div> Keywords: sex trafficking, adult service websites, counter-trafficking efforts, data linking, artificial intelligence<br>
+<br>
+Summary: 
+The study focuses on the use of adult service websites (ASWs) for sex trafficking and the challenges in collecting and linking data from these sites. The closure of Backpage.com has led to the expansion of ASWs outside US jurisdiction, making it difficult to gather intelligence for counter-trafficking efforts. The researchers have developed an end-to-end process using network science, information systems, and artificial intelligence to link and filter sex ad data efficiently. This process has been successful in identifying over 60 potential victims of sex trafficking, helping them transition out of the exploitative life. The key component of the process is an edge filtering procedure that removes erroneous links in the data. Compared to existing approaches, their process is more computationally efficient and provides more actionable intelligence. The proposed process is a valuable tool in transforming disparate sex ad data into actionable intelligence to combat sex trafficking and save lives.<br><br> <div>
+arXiv:2507.13477v1 Announce Type: new 
+Abstract: The Internet facilitates sex trafficking through adult service websites (ASWs) that host online advertisements for sexual services (sex ads). Since the closure of the popular site Backpage.com, the ecosystem of ASWs has expanded to include multiple competing sites that are hosted outside US jurisdiction. Gaining intelligence for counter-trafficking efforts requires collecting, linking, and cleaning the data from multiple sites. However, high ad volumes, disparate data types, and the existence of generic and misappropriated data make this process challenging. We present an end-to-end process for linking sex ad data and filtering potentially erroneous links. Outputs of the developed process have been used to inform counter-trafficking operations that have helped identify more than 60 potential victims of sex trafficking, some of whom are getting help to transition out of the life. Our process leverages concepts and techniques from network science, information systems, and artificial intelligence to link ads across sites at the level of an individual or unique posting entity. Our approach is computationally efficient, allowing millions of ads to be processed in under an hour. A key component of our process is an edge filtering procedure that identifies and removes potentially erroneous links in a graph representation of sex ad data. A comparison of the proposed process to an existing approach shows that our process is typically more computationally efficient and yields substantial increases in the number of individuals for which we can derive actionable intelligence. The proposed process is an efficient and effective approach for transforming the high volumes of disparate data from sex ads into intelligence that can save lives. It has been refined over years of collaboration with practitioners and represents a strong foundation upon which further counter-trafficking tools can be built.
+]]></content:encoded>
+<pubDate>Mon, 21 Jul 2025 00:00:00 -0400</pubDate>
+<pubDate>Mon, 21 Jul 2025 00:00:00 -0400</pubDate>
+</item>
+<item>
+<title>LLM-Based Community Surveys for Operational Decision Making in Interconnected Utility Infrastructures</title>
+<link>https://arxiv.org/abs/2507.13577</link>
+<guid>https://arxiv.org/abs/2507.13577</guid>
+<content:encoded><![CDATA[
+<div> Keywords: interdependent infrastructure systems, hetero-functional graph, community preferences, Large Language Model, learning algorithms 
+
+Summary:
+Interdependent infrastructure systems and communities are represented using a hetero-functional graph (HFG) to encode dependencies between functionalities. This graph establishes a partial order of functionalities to guide repair decisions during disasters. However, integrating community preferences is crucial to refine this order and enhance resilience. To accomplish this, a Large Language Model (LLM) is used as a proxy survey tool to gather community feedback on preferred repair sequences. Simulated personas representing diverse disaster experiences provide input on prioritizing infrastructure repair needs across communities. Learning algorithms are then employed to generate a global order based on aggregated responses from these LLM-generated personas. This approach combines technical criteria with community input to optimize repair strategies and enhance disaster resilience.<br><br>Summary: Interdependent infrastructure systems are represented using a HFG, allowing for a partial order of repair functionalities. Community preferences are integrated via LLM proxy surveys to refine this order and improve resilience. Simulated personas provide diverse input on prioritizing repair needs, culminating in a global order generated by learning algorithms. <div>
+arXiv:2507.13577v1 Announce Type: new 
+Abstract: We represent interdependent infrastructure systems and communities alike with a hetero-functional graph (HFG) that encodes the dependencies between functionalities. This graph naturally imposes a partial order of functionalities that can inform the sequence of repair decisions to be made during a disaster across affected communities. However, using such technical criteria alone provides limited guidance at the point where the functionalities directly impact the communities, since these can be repaired in any order without violating the system constraints. To address this gap and improve resilience, we integrate community preferences to refine this partial order from the HFG into a total order. Our strategy involves getting the communities' opinions on their preferred sequence for repair crews to address infrastructure issues, considering potential constraints on resources. Due to the delay and cost associated with real-world survey data, we utilize a Large Language Model (LLM) as a proxy survey tool. We use the LLM to craft distinct personas representing individuals, each with varied disaster experiences. We construct diverse disaster scenarios, and each simulated persona provides input on prioritizing infrastructure repair needs across various communities. Finally, we apply learning algorithms to generate a global order based on the aggregated responses from these LLM-generated personas.
+]]></content:encoded>
+<pubDate>Mon, 21 Jul 2025 00:00:00 -0400</pubDate>
+<pubDate>Mon, 21 Jul 2025 00:00:00 -0400</pubDate>
+</item>
+<item>
+<title>Duplicating Deceit: Inauthentic Behavior Among Indian Misinformation Duplicators on X/Twitter</title>
+<link>https://arxiv.org/abs/2507.13636</link>
+<guid>https://arxiv.org/abs/2507.13636</guid>
+<content:encoded><![CDATA[
+<div> Keywords: inauthentic duplication, social media, misinformation, TweeXster, duplication campaigns
+
+Summary:
+This paper examines the issue of inauthentic duplication on social media, specifically focusing on the spread of misinformation through multiple accounts sharing identical false tweets. The study utilizes a dataset from AltNews, an Indian fact-checking organization, containing over 12 million posts from 5,493 accounts known to be involved in duplicating such content. Surprisingly, the research reveals that less than 1% of these accounts exhibit bot-like behavior, dispelling the common misconception that bots are solely responsible for the dissemination of false information. The authors introduce TweeXster, a framework designed to detect and analyze duplication campaigns, which uncovers clusters of accounts engaged in the repeated and sometimes revived sharing of deceptive or harmful content. This research sheds light on the complex dynamics of misinformation spread on social media and offers a novel approach to combatting such campaigns. 
+
+<br><br>Summary: <div>
+arXiv:2507.13636v1 Announce Type: new 
+Abstract: This paper investigates inauthentic duplication on social media, where multiple accounts share identical misinformation tweets. Leveraging a dataset of misinformation verified by AltNews, an Indian fact-checking organization, we analyze over 12 million posts from 5,493 accounts known to have duplicated such content. Contrary to common assumptions that bots are primarily responsible for spreading false information, fewer than 1\% of these accounts exhibit bot-like behavior. We present TweeXster, a framework for detecting and analyzing duplication campaigns, revealing clusters of accounts involved in repeated and sometimes revived dissemination of false or abusive content.
+]]></content:encoded>
+<pubDate>Mon, 21 Jul 2025 00:00:00 -0400</pubDate>
+<pubDate>Mon, 21 Jul 2025 00:00:00 -0400</pubDate>
+</item>
+<item>
+<title>Automated Route-based Conflation Between Linear Referencing System Maps And OpenStreetMap Using Open-source Tools</title>
+<link>https://arxiv.org/abs/2507.13939</link>
+<guid>https://arxiv.org/abs/2507.13939</guid>
+<content:encoded><![CDATA[
+<div> conflation, basemaps, LRS, OpenStreetMap, automated<br>
+<br>
+Summary: 
+This paper introduces an automated open-source process for conflation of two basemaps - the Virginia Department of Transportation's linear reference system (LRS) basemap and OpenStreetMap (OSM) for Virginia. The process involves loading one LRS route at a time, determining the direction of travel, interpolating to fill gaps, and using Valhalla's map-matching algorithm with a Hidden Markov Model (HMM) and Viterbi search to find corresponding points on OSM. Key contributions include successful conflation of Virginia's LRS map with OSM using an automated method, a replicable open-source processing pipeline, and achieving over 98% successful matches. This approach improves upon existing automated conflation processes and eliminates the need for proprietary licenses. <br><br>Summary: <div>
+arXiv:2507.13939v1 Announce Type: new 
+Abstract: Transportation researchers and planners utilize a wide range of roadway metrics that are usually associated with different basemaps. Conflation is an important process for transferring these metrics onto a single basemap. However, conflation is often an expensive and time-consuming process based on proprietary algorithms that require manual verification.
+  In this paper, an automated open-source process is used to conflate two basemaps: the linear reference system (LRS) basemap produced by the Virginia Department of Transportation and the OpenStreetMap (OSM) basemap for Virginia. This process loads one LRS route at a time, determines the correct direction of travel, interpolates to fill gaps larger than 12 meters, and then uses Valhalla's map-matching algorithm to find the corresponding points along OSM's segments. Valhalla's map-matching process uses a Hidden Markov Model (HMM) and Viterbi search-based approach to find the most likely OSM segments matching the LRS route.
+  This work has three key contributions. First, it conflates the Virginia roadway network LRS map with OSM using an automated conflation method based on HMM and Viterbi search. Second, it demonstrates a novel open-source processing pipeline that could be replicated without the need for proprietary licenses. Finally, the overall conflation process yields over 98% successful matches, which is an improvement over most automated processes currently available for this type of conflation.
+]]></content:encoded>
+<pubDate>Mon, 21 Jul 2025 00:00:00 -0400</pubDate>
+<pubDate>Mon, 21 Jul 2025 00:00:00 -0400</pubDate>
+</item>
+<item>
+<title>Rumour Spreading Depends on the Latent Geometry and Degree Distribution in Social Network Models</title>
+<link>https://arxiv.org/abs/2408.01268</link>
+<guid>https://arxiv.org/abs/2408.01268</guid>
+<content:encoded><![CDATA[
+<div> power-law distribution, rumour spreading, ultra-small-world models, geometric inhomogeneous random graphs, metric geometry 
+
+Summary: 
+- The study investigates rumour spreading in ultra-small-world models with power-law distribution degrees, focusing on Geometric Inhomogeneous Random Graphs (GIRGs).
+- Rumour spreading speed varies in GIRGs with Euclidean geometry, showing slow, fast (polylogarithmic), or ultra-fast rates based on power law exponent and geometry strength.
+- Rumour spreading in GIRGs doesn't align with graph distance rates, indicating that faster spreading may occur even with short graph distances.
+- Non-metric geometry always leads to at least fast rumour spreading, depicting social connections based on single attributes like familial kinship.
+- In Euclidean geometry, efficient rumour transmission pathways differ from known paths, showcasing chains of vertices with specific degree structures. <div>
+arXiv:2408.01268v3 Announce Type: replace-cross 
+Abstract: We study push-pull rumour spreading in ultra-small-world models for social networks where the degrees follow a power-law distribution. In a non-geometric setting, Fountoulakis, Panagiotou and Sauerwald have shown that rumours always spread ultra-fast (SODA 2012), i.e. in doubly logarithmic time. On the other hand, Janssen and Mehrabian have found that rumours spread slowly (polynomial time) in a spatial preferential attachment model (SIDMA 2017). We study the question systematically for the model of Geometric Inhomogeneous Random Graphs (GIRGs). Our results are two-fold: first, with Euclidean geometry slow, fast (polylogarithmic) and ultra-fast rumour spreading may occur, depending on the exponent of the power law and the strength of the geometry in the networks, and we fully characterise the phase boundaries in between. The regimes do not coincide with the graph distance regimes, i.e., polylogarithmic or even polynomial rumour spreading may occur even if graph distances are doubly logarithmic. We expect these results to hold with little effort for related models, e.g. Scale-Free Percolation. Second, we show that rumour spreading is always (at least) fast in a non-metric geometry. The considered non-metric geometry allows to model social connections where resemblance of vertices in a single attribute, such as familial kinship, already strongly indicates the presence of an edge. Euclidean geometry fails to capture such ties.
+  For some regimes in the Euclidean setting, the efficient pathways for spreading rumours differ from previously identified paths. For example, a vertex of degree $d$ can transmit the rumour to a vertex of larger degree by a chain of length $3$, where one of the two intermediaries has constant degree, and the other has degree $d^{c}$ for some constant $c<1$. Similar but longer chains of vertices, all having non-constant degree, turn out to be useful as well.
+]]></content:encoded>
+<pubDate>Mon, 21 Jul 2025 00:00:00 -0400</pubDate>
+<pubDate>Mon, 21 Jul 2025 00:00:00 -0400</pubDate>
+</item>
 
 <item>
 <title>Identification of Authoritative Nodes and Dismantling of Illicit Networks Using a Novel Metric for Measuring Strength of a Graph</title>
