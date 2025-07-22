@@ -5,16 +5,47 @@
 <link>http://rss.arxiv.org/rss/cs.CV</link>
 
 <item>
+<title>Prompt2DEM: High-Resolution DEMs for Urban and Open Environments from Global Prompts Using a Monocular Foundation Model</title>
+<link>https://arxiv.org/abs/2507.09681</link>
+<guid>https://arxiv.org/abs/2507.09681</guid>
+<content:encoded><![CDATA[
+<div> Keywords: deep learning, high-resolution DEMs, elevation mapping, LiDAR, hydrological analysis
+
+Summary:
+This paper introduces a new framework for estimating high-resolution Digital Elevation Models (DEMs) using deep learning techniques. The framework utilizes a prompt-based monocular depth estimation approach to achieve absolute global elevation mapping. By fine-tuning a vision transformer encoder with LiDAR-derived DEMs and using a versatile prompting strategy, the framework can estimate DEMs with a 100x resolution gain, surpassing previous methods. Evaluations across diverse landscapes in the U.S. demonstrate robust generalization and accuracy, with results showing improvements over existing data sources such as SRTM. The framework is scalable and can be applied to large regions, making it suitable for various applications including hazard and environmental studies. The code and pretrained models are publicly available for further research and development. 
+
+<br><br>Summary: <div>
+arXiv:2507.09681v2 Announce Type: replace 
+Abstract: High-resolution elevation estimations are essential to understand catchment and hillslope hydrology, study urban morphology and dynamics, and monitor the growth, decline, and mortality of terrestrial ecosystems. Various deep learning approaches (e.g., super-resolution techniques, monocular depth estimation) have been developed to create high-resolution Digital Elevation Models (DEMs). However, super-resolution techniques are limited by the upscaling factor, and monocular depth estimation lacks global elevation context, making its conversion to a seamless DEM restricted. The recently introduced technique of prompt-based monocular depth estimation has opened new opportunities to extract estimates of absolute elevation in a global context. We present here a framework for the estimation of high-resolution DEMs as a new paradigm for absolute global elevation mapping. It is exemplified using low-resolution Shuttle Radar Topography Mission (SRTM) elevation data as prompts and high-resolution RGB imagery from the National Agriculture Imagery Program (NAIP). The approach fine-tunes a vision transformer encoder with LiDAR-derived DEMs and employs a versatile prompting strategy, enabling tasks such as DEM estimation, void filling, and updating. Our framework achieves a 100x resolution gain (from 30-m to 30-cm), surpassing prior methods by an order of magnitude. Evaluations across three diverse U.S. landscapes show robust generalization, capturing urban structures and fine-scale terrain features with < 5 m MAE relative to LiDAR, improving over SRTM by up to 18%. Hydrological analysis confirms suitability for hazard and environmental studies. We demonstrate scalability by applying the framework to large regions in the U.S. and Israel. All code and pretrained models are publicly available at: https://osherr1996.github.io/prompt2dem_propage/.
+]]></content:encoded>
+<pubDate>Tue, 22 Jul 2025 00:00:00 -0400</pubDate>
+<pubDate>Tue, 22 Jul 2025 00:00:00 -0400</pubDate>
+</item>
+<item>
+<title>NegRefine: Refining Negative Label-Based Zero-Shot OOD Detection</title>
+<link>https://arxiv.org/abs/2507.09795</link>
+<guid>https://arxiv.org/abs/2507.09795</guid>
+<content:encoded><![CDATA[
+<div> Vision-Language Models, CLIP, zero-shot OOD detection, negative label-based methods, NegRefine
+Summary:
+NegRefine is a novel framework for zero-shot out-of-distribution (OOD) detection that enhances the performance of existing methods like NegLabel and CSP. It addresses limitations such as misclassifying in-distribution samples as OOD by refining the negative label set to exclude subcategory labels and proper nouns. By incorporating a multi-matching-aware scoring function, NegRefine dynamically adjusts the contributions of multiple labels matching an image, leading to improved separation between in-distribution and OOD samples. The framework is evaluated on large-scale benchmarks, including ImageNet-1K, demonstrating its effectiveness in enhancing OOD detection performance. NegRefine's code is publicly available on GitHub for further exploration and use. <br><br>Summary: <div>
+arXiv:2507.09795v2 Announce Type: replace 
+Abstract: Recent advancements in Vision-Language Models like CLIP have enabled zero-shot OOD detection by leveraging both image and textual label information. Among these, negative label-based methods such as NegLabel and CSP have shown promising results by utilizing a lexicon of words to define negative labels for distinguishing OOD samples. However, these methods suffer from detecting in-distribution samples as OOD due to negative labels that are subcategories of in-distribution labels or proper nouns. They also face limitations in handling images that match multiple in-distribution and negative labels. We propose NegRefine, a novel negative label refinement framework for zero-shot OOD detection. By introducing a filtering mechanism to exclude subcategory labels and proper nouns from the negative label set and incorporating a multi-matching-aware scoring function that dynamically adjusts the contributions of multiple labels matching an image, NegRefine ensures a more robust separation between in-distribution and OOD samples. We evaluate NegRefine on large-scale benchmarks, including ImageNet-1K. The code is available at https://github.com/ah-ansari/NegRefine.
+]]></content:encoded>
+<pubDate>Tue, 22 Jul 2025 00:00:00 -0400</pubDate>
+<pubDate>Tue, 22 Jul 2025 00:00:00 -0400</pubDate>
+</item>
+
+<item>
 <title>RegGS: Unposed Sparse Views Gaussian Splatting with 3DGS Registration</title>
 <link>https://arxiv.org/abs/2507.08136</link>
 <guid>https://arxiv.org/abs/2507.08136</guid>
 <content:encoded><![CDATA[
-<div> Gaussian Splatting, 3D reconstruction, Sparse views, Registration-based framework, Optimal transport <br>
-Summary: <br>RegGS is a framework proposed for reconstructing scenes from unposed sparse views using a registration-based approach. It aligns local 3D Gaussians generated by a feed-forward network into a globally consistent representation, overcoming the limitations of optimization-based and feed-forward Gaussian methods. The framework utilizes an entropy-regularized Sinkhorn algorithm to solve the optimal transport Mixture 2-Wasserstein distance for alignment of Gaussian mixture models in $\mathrm{Sim}(3)$ space. By integrating the Mixture 2-Wasserstein distance, photometric consistency, and depth geometry, RegGS enables accurate pose estimation and high-quality novel-view synthesis through a coarse-to-fine registration process. Experimental results on the RE10K and ACID datasets demonstrate the effectiveness of RegGS in registering local Gaussians with high fidelity and achieving precise pose estimation. The project page for RegGS can be found at https://3dagentworld.github.io/reggs/. <div>
+<div> Gaussian Splatting, 3D reconstruction, Sparse views, Registration-based framework, Optimal transport <br />
+Summary: <br />RegGS is a framework proposed for reconstructing scenes from unposed sparse views using a registration-based approach. It aligns local 3D Gaussians generated by a feed-forward network into a globally consistent representation, overcoming the limitations of optimization-based and feed-forward Gaussian methods. The framework utilizes an entropy-regularized Sinkhorn algorithm to solve the optimal transport Mixture 2-Wasserstein distance for alignment of Gaussian mixture models in $\mathrm{Sim}(3)$ space. By integrating the Mixture 2-Wasserstein distance, photometric consistency, and depth geometry, RegGS enables accurate pose estimation and high-quality novel-view synthesis through a coarse-to-fine registration process. Experimental results on the RE10K and ACID datasets demonstrate the effectiveness of RegGS in registering local Gaussians with high fidelity and achieving precise pose estimation. The project page for RegGS can be found at https://3dagentworld.github.io/reggs/. <div>
 arXiv:2507.08136v2 Announce Type: replace 
 Abstract: 3D Gaussian Splatting (3DGS) has demonstrated its potential in reconstructing scenes from unposed images. However, optimization-based 3DGS methods struggle with sparse views due to limited prior knowledge. Meanwhile, feed-forward Gaussian approaches are constrained by input formats, making it challenging to incorporate more input views. To address these challenges, we propose RegGS, a 3D Gaussian registration-based framework for reconstructing unposed sparse views. RegGS aligns local 3D Gaussians generated by a feed-forward network into a globally consistent 3D Gaussian representation. Technically, we implement an entropy-regularized Sinkhorn algorithm to efficiently solve the optimal transport Mixture 2-Wasserstein $(\text{MW}_2)$ distance, which serves as an alignment metric for Gaussian mixture models (GMMs) in $\mathrm{Sim}(3)$ space. Furthermore, we design a joint 3DGS registration module that integrates the $\text{MW}_2$ distance, photometric consistency, and depth geometry. This enables a coarse-to-fine registration process while accurately estimating camera poses and aligning the scene. Experiments on the RE10K and ACID datasets demonstrate that RegGS effectively registers local Gaussians with high fidelity, achieving precise pose estimation and high-quality novel-view synthesis. Project page: https://3dagentworld.github.io/reggs/.
 ]]></content:encoded>
-<pubDate>Tue, 22 Jul 2025 00:00:00 -0400</pubDate>
 <pubDate>Tue, 22 Jul 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -22,14 +53,13 @@ Abstract: 3D Gaussian Splatting (3DGS) has demonstrated its potential in reconst
 <link>https://arxiv.org/abs/2507.08416</link>
 <guid>https://arxiv.org/abs/2507.08416</guid>
 <content:encoded><![CDATA[
-<div> Instance Decomposition, Complete Reconstruction, Spatial Contrastive Learning, In-situ Generation, 3D Perception<br>
-<br>
-Summary:<br>
+<div> Instance Decomposition, Complete Reconstruction, Spatial Contrastive Learning, In-situ Generation, 3D Perception<br />
+<br />
+Summary:<br />
 Humans can effortlessly complete occluded objects in cluttered environments, a skill that robots struggle to replicate. Current reconstruction techniques fail to distinguish complete objects from partial observations. This paper introduces InstaScene, a novel approach to holistic 3D scene perception. By utilizing spatial contrastive learning, the system traces instances across views for precise decomposition, enhancing semantic understanding in complex scenes. In-situ generation leverages observations and geometric cues to guide 3D generative models, ensuring the reconstruction of complete and realistic objects. Experimental results on real-world and synthetic scenes demonstrate the method's superior accuracy in scene decomposition and object completion, producing visually authentic and geometrically faithful results. <div>
 arXiv:2507.08416v2 Announce Type: replace 
 Abstract: Humans can naturally identify and mentally complete occluded objects in cluttered environments. However, imparting similar cognitive ability to robotics remains challenging even with advanced reconstruction techniques, which models scenes as undifferentiated wholes and fails to recognize complete object from partial observations. In this paper, we propose InstaScene, a new paradigm towards holistic 3D perception of complex scenes with a primary goal: decomposing arbitrary instances while ensuring complete reconstruction. To achieve precise decomposition, we develop a novel spatial contrastive learning by tracing rasterization of each instance across views, significantly enhancing semantic supervision in cluttered scenes. To overcome incompleteness from limited observations, we introduce in-situ generation that harnesses valuable observations and geometric cues, effectively guiding 3D generative models to reconstruct complete instances that seamlessly align with the real world. Experiments on scene decomposition and object completion across complex real-world and synthetic scenes demonstrate that our method achieves superior decomposition accuracy while producing geometrically faithful and visually intact objects.
 ]]></content:encoded>
-<pubDate>Tue, 22 Jul 2025 00:00:00 -0400</pubDate>
 <pubDate>Tue, 22 Jul 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -37,13 +67,12 @@ Abstract: Humans can naturally identify and mentally complete occluded objects i
 <link>https://arxiv.org/abs/2507.08729</link>
 <guid>https://arxiv.org/abs/2507.08729</guid>
 <content:encoded><![CDATA[
-<div> Dataset, Multi-camera vehicle tracking, Roundabout scenarios, High-resolution, Anomaly detection<br>
-<br>
+<div> Dataset, Multi-camera vehicle tracking, Roundabout scenarios, High-resolution, Anomaly detection<br />
+<br />
 Summary: The article introduces RoundaboutHD, a high-resolution multi-camera vehicle tracking dataset designed to represent real-world roundabout scenarios. The dataset includes 40 minutes of labelled video footage captured by four high-resolution cameras, with a total of 512 annotated vehicle identities across different camera views. It offers rich cross-camera association data, temporal consistency, and increased challenges like occlusions and nonlinear movement. Subsets for object detection, single-camera tracking, and image-based vehicle re-identification tasks are also available. Vehicle model information and camera geometry data are included. Baseline results for vehicle detection, tracking, re-identification, and multi-camera tracking are provided. The dataset and evaluation code are publicly available for research purposes. <div>
 arXiv:2507.08729v2 Announce Type: replace 
 Abstract: The multi-camera vehicle tracking (MCVT) framework holds significant potential for smart city applications, including anomaly detection, traffic density estimation, and suspect vehicle tracking. However, current publicly available datasets exhibit limitations, such as overly simplistic scenarios, low-resolution footage, and insufficiently diverse conditions, creating a considerable gap between academic research and real-world scenario. To fill this gap, we introduce RoundaboutHD, a comprehensive, high-resolution multi-camera vehicle tracking benchmark dataset specifically designed to represent real-world roundabout scenarios. RoundaboutHD provides a total of 40 minutes of labelled video footage captured by four non-overlapping, high-resolution (4K resolution, 15 fps) cameras. In total, 512 unique vehicle identities are annotated across different camera views, offering rich cross-camera association data. RoundaboutHD offers temporal consistency video footage and enhanced challenges, including increased occlusions and nonlinear movement inside the roundabout. In addition to the full MCVT dataset, several subsets are also available for object detection, single camera tracking, and image-based vehicle re-identification (ReID) tasks. Vehicle model information and camera modelling/ geometry information are also included to support further analysis. We provide baseline results for vehicle detection, single-camera tracking, image-based vehicle re-identification, and multi-camera tracking. The dataset and the evaluation code are publicly available at: https://github.com/siri-rouser/RoundaboutHD.git
 ]]></content:encoded>
-<pubDate>Tue, 22 Jul 2025 00:00:00 -0400</pubDate>
 <pubDate>Tue, 22 Jul 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -51,13 +80,12 @@ Abstract: The multi-camera vehicle tracking (MCVT) framework holds significant p
 <link>https://arxiv.org/abs/2507.09993</link>
 <guid>https://arxiv.org/abs/2507.09993</guid>
 <content:encoded><![CDATA[
-<div> Keywords: Camera-based object detection, Adversarial attacks, 3D Gaussian-based Adversarial Attack, Physical filtering, Transferability<br>
-Summary: <br>
+<div> Keywords: Camera-based object detection, Adversarial attacks, 3D Gaussian-based Adversarial Attack, Physical filtering, Transferability<br />
+Summary: <br />
 Camera-based object detection systems in autonomous driving face adversarial threats in real-world environments. Current 2D and 3D physical attacks struggle to balance physical realism and attack robustness due to their focus on texture optimization. To address this, a novel framework called 3D Gaussian-based Adversarial Attack (3DGAA) is proposed. This method leverages the full 14-dimensional parameterization of 3D Gaussian Splatting (3DGS) to optimize geometry and appearance for physically realistic adversarial object generation. By jointly perturbing geometric and appearance attributes, 3DGAA produces transferable adversarial objects that are physically realistic. The inclusion of a physical filtering module preserves geometric fidelity while a physical augmentation module enhances attack generalization in complex physical scenarios. Experimental results on virtual benchmarks and physical-world setups demonstrate that 3DGAA significantly outperforms existing 3D physical attacks, reducing detection mAP from 87.21% to 7.38% while maintaining high transferability across various physical conditions. <div>
 arXiv:2507.09993v2 Announce Type: replace 
 Abstract: Camera-based object detection systems play a vital role in autonomous driving, yet they remain vulnerable to adversarial threats in real-world environments. Existing 2D and 3D physical attacks, due to their focus on texture optimization, often struggle to balance physical realism and attack robustness. In this work, we propose 3D Gaussian-based Adversarial Attack (3DGAA), a novel adversarial object generation framework that leverages the full 14-dimensional parameterization of 3D Gaussian Splatting (3DGS) to jointly optimize geometry and appearance in physically realizable ways. Unlike prior works that rely on patches or texture optimization, 3DGAA jointly perturbs both geometric attributes (shape, scale, rotation) and appearance attributes (color, opacity) to produce physically realistic and transferable adversarial objects. We further introduce a physical filtering module that filters outliers to preserve geometric fidelity, and a physical augmentation module that simulates complex physical scenarios to enhance attack generalization under real-world conditions. We evaluate 3DGAA on both virtual benchmarks and physical-world setups using miniature vehicle models. Experimental results show that 3DGAA achieves to reduce the detection mAP from 87.21\% to 7.38\%, significantly outperforming existing 3D physical attacks. Moreover, our method maintains high transferability across different physical conditions, demonstrating a new state-of-the-art in physically realizable adversarial attacks.
 ]]></content:encoded>
-<pubDate>Tue, 22 Jul 2025 00:00:00 -0400</pubDate>
 <pubDate>Tue, 22 Jul 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -73,7 +101,6 @@ arXiv:2507.10203v2 Announce Type: replace
 Abstract: Multimodal learning often encounters the under-optimized problem and may perform worse than unimodal learning. Existing approaches attribute this issue to imbalanced learning across modalities and tend to address it through gradient balancing. However, this paper argues that balanced learning is not the optimal setting for multimodal learning. With bias-variance analysis, we prove that imbalanced dependency on each modality obeying the inverse ratio of their variances contributes to optimal performance. To this end, we propose the Asymmetric Representation Learning(ARL) strategy to assist multimodal learning via imbalanced optimization. ARL introduces auxiliary regularizers for each modality encoder to calculate their prediction variance. ARL then calculates coefficients via the unimodal variance to re-weight the optimization of each modality, forcing the modality dependence ratio to be inversely proportional to the modality variance ratio. Moreover, to minimize the generalization error, ARL further introduces the prediction bias of each modality and jointly optimizes them with multimodal loss. Notably, all auxiliary regularizers share parameters with the multimodal model and rely only on the modality representation. Thus the proposed ARL strategy introduces no extra parameters and is independent of the structures and fusion methods of the multimodal model. Finally, extensive experiments on various datasets validate the effectiveness and versatility of ARL. Code is available at \href{https://github.com/shicaiwei123/ICCV2025-ARL}{https://github.com/shicaiwei123/ICCV2025-ARL}
 ]]></content:encoded>
 <pubDate>Tue, 22 Jul 2025 00:00:00 -0400</pubDate>
-<pubDate>Tue, 22 Jul 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
 <title>From Wardrobe to Canvas: Wardrobe Polyptych LoRA for Part-level Controllable Human Image Generation</title>
@@ -87,7 +114,6 @@ The article introduces Wardrobe Polyptych LoRA, a novel part-level controllable 
 arXiv:2507.10217v2 Announce Type: replace 
 Abstract: Recent diffusion models achieve personalization by learning specific subjects, allowing learned attributes to be integrated into generated images. However, personalized human image generation remains challenging due to the need for precise and consistent attribute preservation (e.g., identity, clothing details). Existing subject-driven image generation methods often require either (1) inference-time fine-tuning with few images for each new subject or (2) large-scale dataset training for generalization. Both approaches are computationally expensive and impractical for real-time applications. To address these limitations, we present Wardrobe Polyptych LoRA, a novel part-level controllable model for personalized human image generation. By training only LoRA layers, our method removes the computational burden at inference while ensuring high-fidelity synthesis of unseen subjects. Our key idea is to condition the generation on the subject's wardrobe and leverage spatial references to reduce information loss, thereby improving fidelity and consistency. Additionally, we introduce a selective subject region loss, which encourages the model to disregard some of reference images during training. Our loss ensures that generated images better align with text prompts while maintaining subject integrity. Notably, our Wardrobe Polyptych LoRA requires no additional parameters at the inference stage and performs generation using a single model trained on a few training samples. We construct a new dataset and benchmark tailored for personalized human image generation. Extensive experiments show that our approach significantly outperforms existing techniques in fidelity and consistency, enabling realistic and identity-preserving full-body synthesis.
 ]]></content:encoded>
-<pubDate>Tue, 22 Jul 2025 00:00:00 -0400</pubDate>
 <pubDate>Tue, 22 Jul 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -103,9 +129,7 @@ arXiv:2507.09024v2 Announce Type: replace-cross
 Abstract: Data-hungry neuro-AI modelling requires ever larger neuroimaging datasets. CNeuroMod-THINGS meets this need by capturing neural representations for a wide set of semantic concepts using well-characterized images in a new densely-sampled, large-scale fMRI dataset. Importantly, CNeuroMod-THINGS exploits synergies between two existing projects: the THINGS initiative (THINGS) and the Courtois Project on Neural Modelling (CNeuroMod). THINGS has developed a common set of thoroughly annotated images broadly sampling natural and man-made objects which is used to acquire a growing collection of large-scale multimodal neural responses. Meanwhile, CNeuroMod is acquiring hundreds of hours of fMRI data from a core set of participants during controlled and naturalistic tasks, including visual tasks like movie watching and videogame playing. For CNeuroMod-THINGS, four CNeuroMod participants each completed 33-36 sessions of a continuous recognition paradigm using approximately 4000 images from the THINGS stimulus set spanning 720 categories. We report behavioural and neuroimaging metrics that showcase the quality of the data. By bridging together large existing resources, CNeuroMod-THINGS expands our capacity to model broad slices of the human visual experience.
 ]]></content:encoded>
 <pubDate>Tue, 22 Jul 2025 00:00:00 -0400</pubDate>
-<pubDate>Tue, 22 Jul 2025 00:00:00 -0400</pubDate>
 </item>
-
 <item>
 <title>Comparative Analysis of Algorithms for the Fitting of Tessellations to 3D Image Data</title>
 <link>https://arxiv.org/abs/2507.14268</link>
@@ -11492,76 +11516,6 @@ Abstract: Human-machine interaction through augmented reality (AR) and virtual r
 <content:encoded><![CDATA[
 arXiv:2507.09672v1 Announce Type: new 
 Abstract: WiFi-based human pose estimation has emerged as a promising non-visual alternative approaches due to its pene-trability and privacy advantages. This paper presents VST-Pose, a novel deep learning framework for accurate and continuous pose estimation using WiFi channel state information. The proposed method introduces ViSTA-Former, a spatiotemporal attention backbone with dual-stream architecture that adopts a dual-stream architecture to separately capture temporal dependencies and structural relationships among body joints. To enhance sensitivity to subtle human motions, a velocity modeling branch is integrated into the framework, which learns short-term keypoint dis-placement patterns and improves fine-grained motion representation. We construct a 2D pose dataset specifically designed for smart home care scenarios and demonstrate that our method achieves 92.2% accuracy on the PCK@50 metric, outperforming existing methods by 8.3% in PCK@50 on the self-collected dataset. Further evaluation on the public MMFi dataset confirms the model's robustness and effectiveness in 3D pose estimation tasks. The proposed system provides a reliable and privacy-aware solution for continuous human motion analysis in indoor environments. Our codes are available in https://github.com/CarmenQing/VST-Pose.
-]]></content:encoded>
-<pubDate>Tue, 15 Jul 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Prompt2DEM: High-Resolution DEMs for Urban and Open Environments from Global Prompts Using a Monocular Foundation Model</title>
-<link>https://arxiv.org/abs/2507.09681</link>
-<guid>https://arxiv.org/abs/2507.09681</guid>
-<content:encoded><![CDATA[
-arXiv:2507.09681v1 Announce Type: new 
-Abstract: High-resolution elevation estimations are essential to understand catchment and hillslope hydrology, study urban morphology and dynamics, and monitor the growth, decline, and mortality of terrestrial ecosystems. Various deep learning approaches (e.g., super-resolution techniques, monocular depth estimation) have been developed to create high-resolution Digital Elevation Models (DEMs). However, super-resolution techniques are limited by the upscaling factor, and monocular depth estimation lacks global elevation context, making its conversion to a seamless DEM restricted. The recently introduced technique of prompt-based monocular depth estimation has opened new opportunities to extract estimates of absolute elevation in a global context. We present here a framework for the estimation of high-resolution DEMs as a new paradigm for absolute global elevation mapping. It is exemplified using low-resolution Shuttle Radar Topography Mission (SRTM) elevation data as prompts and high-resolution RGB imagery from the National Agriculture Imagery Program (NAIP). The approach fine-tunes a vision transformer encoder with LiDAR-derived DEMs and employs a versatile prompting strategy, enabling tasks such as DEM estimation, void filling, and updating. Our framework achieves a 100x resolution gain (from 30-m to 30-cm), surpassing prior methods by an order of magnitude. Evaluations across three diverse U.S. landscapes show robust generalization, capturing urban structures and fine-scale terrain features with < 5 m MAE relative to LiDAR, improving over SRTM by up to 18%. Hydrological analysis confirms suitability for hazard and environmental studies. We demonstrate scalability by applying the framework to large regions in the U.S. and Israel. All code and pretrained models are publicly available at: https://osherr1996.github.io/prompt2dem_propage/.
-]]></content:encoded>
-<pubDate>Tue, 15 Jul 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>ExpStar: Towards Automatic Commentary Generation for Multi-discipline Scientific Experiments</title>
-<link>https://arxiv.org/abs/2507.09693</link>
-<guid>https://arxiv.org/abs/2507.09693</guid>
-<content:encoded><![CDATA[
-arXiv:2507.09693v1 Announce Type: new 
-Abstract: Experiment commentary is crucial in describing the experimental procedures, delving into underlying scientific principles, and incorporating content-related safety guidelines. In practice, human teachers rely heavily on subject-specific expertise and invest significant time preparing such commentary. To address this challenge, we introduce the task of automatic commentary generation across multi-discipline scientific experiments. While recent progress in large multimodal models (LMMs) has demonstrated promising capabilities in video understanding and reasoning, their ability to generate fine-grained and insightful experiment commentary remains largely underexplored. In this paper, we make the following contributions: (i) We construct \textit{ExpInstruct}, the first dataset tailored for experiment commentary generation, featuring over 7\textit{K} step-level commentaries across 21 scientific subjects from 3 core disciplines (\ie, science, healthcare and engineering). Each sample includes procedural descriptions along with potential scientific principles (\eg, chemical equations and physical laws) and safety guidelines. (ii) We propose ExpStar, an automatic experiment commentary generation model that leverages a retrieval-augmented mechanism to adaptively access, evaluate, and utilize external knowledge. (iii) Extensive experiments show that our ExpStar substantially outperforms 14 leading LMMs, which highlights the superiority of our dataset and model. We believe that ExpStar holds great potential for advancing AI-assisted scientific experiment instruction.
-]]></content:encoded>
-<pubDate>Tue, 15 Jul 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Token Compression Meets Compact Vision Transformers: A Survey and Comparative Evaluation for Edge AI</title>
-<link>https://arxiv.org/abs/2507.09702</link>
-<guid>https://arxiv.org/abs/2507.09702</guid>
-<content:encoded><![CDATA[
-arXiv:2507.09702v1 Announce Type: new 
-Abstract: Token compression techniques have recently emerged as powerful tools for accelerating Vision Transformer (ViT) inference in computer vision. Due to the quadratic computational complexity with respect to the token sequence length, these methods aim to remove less informative tokens before the attention layers to improve inference throughput. While numerous studies have explored various accuracy-efficiency trade-offs on large-scale ViTs, two critical gaps remain. First, there is a lack of unified survey that systematically categorizes and compares token compression approaches based on their core strategies (e.g., pruning, merging, or hybrid) and deployment settings (e.g., fine-tuning vs. plug-in). Second, most benchmarks are limited to standard ViT models (e.g., ViT-B, ViT-L), leaving open the question of whether such methods remain effective when applied to structurally compressed transformers, which are increasingly deployed on resource-constrained edge devices. To address these gaps, we present the first systematic taxonomy and comparative study of token compression methods, and we evaluate representative techniques on both standard and compact ViT architectures. Our experiments reveal that while token compression methods are effective for general-purpose ViTs, they often underperform when directly applied to compact designs. These findings not only provide practical insights but also pave the way for future research on adapting token optimization techniques to compact transformer-based networks for edge AI and AI agent applications.
-]]></content:encoded>
-<pubDate>Tue, 15 Jul 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Advancing Text-to-3D Generation with Linearized Lookahead Variational Score Distillation</title>
-<link>https://arxiv.org/abs/2507.09748</link>
-<guid>https://arxiv.org/abs/2507.09748</guid>
-<content:encoded><![CDATA[
-arXiv:2507.09748v1 Announce Type: new 
-Abstract: Text-to-3D generation based on score distillation of pre-trained 2D diffusion models has gained increasing interest, with variational score distillation (VSD) as a remarkable example. VSD proves that vanilla score distillation can be improved by introducing an extra score-based model, which characterizes the distribution of images rendered from 3D models, to correct the distillation gradient. Despite the theoretical foundations, VSD, in practice, is likely to suffer from slow and sometimes ill-posed convergence. In this paper, we perform an in-depth investigation of the interplay between the introduced score model and the 3D model, and find that there exists a mismatching problem between LoRA and 3D distributions in practical implementation. We can simply adjust their optimization order to improve the generation quality. By doing so, the score model looks ahead to the current 3D state and hence yields more reasonable corrections. Nevertheless, naive lookahead VSD may suffer from unstable training in practice due to the potential over-fitting. To address this, we propose to use a linearized variant of the model for score distillation, giving rise to the Linearized Lookahead Variational Score Distillation ($L^2$-VSD). $L^2$-VSD can be realized efficiently with forward-mode autodiff functionalities of existing deep learning libraries. Extensive experiments validate the efficacy of $L^2$-VSD, revealing its clear superiority over prior score distillation-based methods. We also show that our method can be seamlessly incorporated into any other VSD-based text-to-3D framework.
-]]></content:encoded>
-<pubDate>Tue, 15 Jul 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Pairwise Alignment &amp; Compatibility for Arbitrarily Irregular Image Fragments</title>
-<link>https://arxiv.org/abs/2507.09767</link>
-<guid>https://arxiv.org/abs/2507.09767</guid>
-<content:encoded><![CDATA[
-arXiv:2507.09767v1 Announce Type: new 
-Abstract: Pairwise compatibility calculation is at the core of most fragments-reconstruction algorithms, in particular those designed to solve different types of the jigsaw puzzle problem. However, most existing approaches fail, or aren't designed to deal with fragments of realistic geometric properties one encounters in real-life puzzles. And in all other cases, compatibility methods rely strongly on the restricted shapes of the fragments. In this paper, we propose an efficient hybrid (geometric and pictorial) approach for computing the optimal alignment for pairs of fragments, without any assumptions about their shapes, dimensions, or pictorial content. We introduce a new image fragments dataset generated via a novel method for image fragmentation and a formal erosion model that mimics real-world archaeological erosion, along with evaluation metrics for the compatibility task. We then embed our proposed compatibility into an archaeological puzzle-solving framework and demonstrate state-of-the-art neighborhood-level precision and recall on the RePAIR 2D dataset, directly reflecting compatibility performance improvements.
-]]></content:encoded>
-<pubDate>Tue, 15 Jul 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>NegRefine: Refining Negative Label-Based Zero-Shot OOD Detection</title>
-<link>https://arxiv.org/abs/2507.09795</link>
-<guid>https://arxiv.org/abs/2507.09795</guid>
-<content:encoded><![CDATA[
-arXiv:2507.09795v1 Announce Type: new 
-Abstract: Recent advancements in Vision-Language Models like CLIP have enabled zero-shot OOD detection by leveraging both image and textual label information. Among these, negative label-based methods such as NegLabel and CSP have shown promising results by utilizing a lexicon of words to define negative labels for distinguishing OOD samples. However, these methods suffer from detecting in-distribution samples as OOD due to negative labels that are subcategories of in-distribution labels or proper nouns. They also face limitations in handling images that match multiple in-distribution and negative labels. We propose NegRefine, a novel negative label refinement framework for zero-shot OOD detection. By introducing a filtering mechanism to exclude subcategory labels and proper nouns from the negative label set and incorporating a multi-matching-aware scoring function that dynamically adjusts the contributions of multiple labels matching an image, NegRefine ensures a more robust separation between in-distribution and OOD samples. We evaluate NegRefine on large-scale benchmarks, including ImageNet-1K. Source code is available at https://github.com/ah-ansari/NegRefine.
-]]></content:encoded>
-<pubDate>Tue, 15 Jul 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>VRU-Accident: A Vision-Language Benchmark for Video Question Answering and Dense Captioning for Accident Scene Understanding</title>
-<link>https://arxiv.org/abs/2507.09815</link>
-<guid>https://arxiv.org/abs/2507.09815</guid>
-<content:encoded><![CDATA[
-arXiv:2507.09815v1 Announce Type: new 
-Abstract: Ensuring the safety of vulnerable road users (VRUs), such as pedestrians and cyclists, is a critical challenge for autonomous driving systems, as crashes involving VRUs often result in severe or fatal consequences. While multimodal large language models (MLLMs) have shown promise in enhancing scene understanding and decision making in autonomous vehicles, there is currently no standardized benchmark to quantitatively evaluate their reasoning abilities in complex, safety-critical scenarios involving VRUs. To address this gap, we present VRU-Accident, a large-scale vision-language benchmark designed to evaluate MLLMs in high-risk traffic scenarios involving VRUs. VRU-Accident comprises 1K real-world dashcam accident videos, annotated with 6K multiple-choice question-answer pairs across six safety-critical categories (with 24K candidate options and 3.4K unique answer choices), as well as 1K dense scene descriptions. Unlike prior works, our benchmark focuses explicitly on VRU-vehicle accidents, providing rich, fine-grained annotations that capture both spatial-temporal dynamics and causal semantics of accidents. To assess the current landscape of MLLMs, we conduct a comprehensive evaluation of 17 state-of-the-art models on the multiple-choice VQA task and on the dense captioning task. Our findings reveal that while MLLMs perform reasonably well on visually grounded attributes, they face significant challenges in reasoning and describing accident causes, types, and preventability.
 ]]></content:encoded>
 <pubDate>Tue, 15 Jul 2025 00:00:00 -0400</pubDate>
 </item>
