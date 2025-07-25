@@ -4,6 +4,7 @@
 <title>cs.CL updates on arXiv.org</title>
 <link>http://rss.arxiv.org/rss/cs.CL</link>
 
+
 <item>
 <title>Weak-to-Strong Jailbreaking on Large Language Models</title>
 <link>https://arxiv.org/abs/2401.17256</link>
@@ -11,11 +12,10 @@
 <content:encoded><![CDATA[
 <div> jailbreak attack, large language models, weak-to-strong attack, misalignment rate, defense strategy
 Summary:
-The research addresses the vulnerability of large language models (LLMs) to jailbreak attacks, which can result in the generation of harmful or biased text. Existing jailbreaking methods are computationally costly, prompting the proposal of the weak-to-strong jailbreaking attack as an efficient inference time attack for aligned LLMs. This attack leverages two smaller models to modify the decoding probabilities of a larger safe model, increasing the misalignment rate dramatically. The study evaluates the attack on five open-source LLMs, demonstrating its effectiveness with minimal computational overhead. The research highlights the need for urgent safety measures in aligning LLMs and proposes a defense strategy, although developing more robust defenses presents a challenge. The code for replicating the attack method is available for further exploration. <br><br>Summary: <div>
+The research addresses the vulnerability of large language models (LLMs) to jailbreak attacks, which can result in the generation of harmful or biased text. Existing jailbreaking methods are computationally costly, prompting the proposal of the weak-to-strong jailbreaking attack as an efficient inference time attack for aligned LLMs. This attack leverages two smaller models to modify the decoding probabilities of a larger safe model, increasing the misalignment rate dramatically. The study evaluates the attack on five open-source LLMs, demonstrating its effectiveness with minimal computational overhead. The research highlights the need for urgent safety measures in aligning LLMs and proposes a defense strategy, although developing more robust defenses presents a challenge. The code for replicating the attack method is available for further exploration. <br /><br />Summary: <div>
 arXiv:2401.17256v5 Announce Type: replace 
 Abstract: Large language models (LLMs) are vulnerable to jailbreak attacks - resulting in harmful, unethical, or biased text generations. However, existing jailbreaking methods are computationally costly. In this paper, we propose the weak-to-strong jailbreaking attack, an efficient inference time attack for aligned LLMs to produce harmful text. Our key intuition is based on the observation that jailbroken and aligned models only differ in their initial decoding distributions. The weak-to-strong attack's key technical insight is using two smaller models (a safe and an unsafe one) to adversarially modify a significantly larger safe model's decoding probabilities. We evaluate the weak-to-strong attack on 5 diverse open-source LLMs from 3 organizations. The results show our method can increase the misalignment rate to over 99% on two datasets with just one forward pass per example. Our study exposes an urgent safety issue that needs to be addressed when aligning LLMs. As an initial attempt, we propose a defense strategy to protect against such attacks, but creating more advanced defenses remains challenging. The code for replicating the method is available at https://github.com/XuandongZhao/weak-to-strong
 ]]></content:encoded>
-<pubDate>Fri, 25 Jul 2025 00:00:00 -0400</pubDate>
 <pubDate>Fri, 25 Jul 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -23,17 +23,15 @@ Abstract: Large language models (LLMs) are vulnerable to jailbreak attacks - res
 <link>https://arxiv.org/abs/2507.08621</link>
 <guid>https://arxiv.org/abs/2507.08621</guid>
 <content:encoded><![CDATA[
-<div> Argument mining, large language models, argument classification, dataset analysis, model comparison<br>
-<br>
+<div> Argument mining, large language models, argument classification, dataset analysis, model comparison<br />
+<br />
 Summary: 
-This study explores the use of large language models (LLMs) in argument mining, specifically focusing on argument classification. Various LLMs, including GPT and Deepseek, are tested on argument datasets such as Args.me and UKP. The results show that ChatGPT-4o performs the best in argument classification benchmarks, while Deepseek-R1 excels among models with reasoning capabilities. Despite their accuracy, both models still make errors, with common errors discussed. This analysis is the first to extensively examine these datasets using LLMs and prompt algorithms, revealing weaknesses in the current prompt algorithms for argument analysis and suggesting directions for improvement. The study provides valuable insights into the strengths and limitations of LLMs in argument mining and classification. <br> <div>
+This study explores the use of large language models (LLMs) in argument mining, specifically focusing on argument classification. Various LLMs, including GPT and Deepseek, are tested on argument datasets such as Args.me and UKP. The results show that ChatGPT-4o performs the best in argument classification benchmarks, while Deepseek-R1 excels among models with reasoning capabilities. Despite their accuracy, both models still make errors, with common errors discussed. This analysis is the first to extensively examine these datasets using LLMs and prompt algorithms, revealing weaknesses in the current prompt algorithms for argument analysis and suggesting directions for improvement. The study provides valuable insights into the strengths and limitations of LLMs in argument mining and classification. <br /> <div>
 arXiv:2507.08621v2 Announce Type: replace 
 Abstract: Argument mining (AM) is an interdisciplinary research field that integrates insights from logic, philosophy, linguistics, rhetoric, law, psychology, and computer science. It involves the automatic identification and extraction of argumentative components, such as premises and claims, and the detection of relationships between them, such as support, attack, or neutrality. Recently, the field has advanced significantly, especially with the advent of large language models (LLMs), which have enhanced the efficiency of analyzing and extracting argument semantics compared to traditional methods and other deep learning models. There are many benchmarks for testing and verifying the quality of LLM, but there is still a lack of research and results on the operation of these models in publicly available argument classification databases. This paper presents a study of a selection of LLM's, using diverse datasets such as Args.me and UKP. The models tested include versions of GPT, Llama, and DeepSeek, along with reasoning-enhanced variants incorporating the Chain-of-Thoughts algorithm. The results indicate that ChatGPT-4o outperforms the others in the argument classification benchmarks. In case of models incorporated with reasoning capabilities, the Deepseek-R1 shows its superiority. However, despite their superiority, GPT-4o and Deepseek-R1 still make errors. The most common errors are discussed for all models. To our knowledge, the presented work is the first broader analysis of the mentioned datasets using LLM and prompt algorithms. The work also shows some weaknesses of known prompt algorithms in argument analysis, while indicating directions for their improvement. The added value of the work is the in-depth analysis of the available argument datasets and the demonstration of their shortcomings.
 ]]></content:encoded>
 <pubDate>Fri, 25 Jul 2025 00:00:00 -0400</pubDate>
-<pubDate>Fri, 25 Jul 2025 00:00:00 -0400</pubDate>
 </item>
-
 <item>
 <title>Shop-R1: Rewarding LLMs to Simulate Human Behavior in Online Shopping via Reinforcement Learning</title>
 <link>https://arxiv.org/abs/2507.17842</link>
@@ -12324,27 +12322,6 @@ Abstract: Medical Visual Question Answering (MedVQA) is a promising tool to assi
 <content:encoded><![CDATA[
 arXiv:2507.08037v1 Announce Type: new 
 Abstract: Recent advancements in large language models (LLMs) underscore the need for stronger reasoning capabilities to solve complex problems effectively. While Chain-of-Thought (CoT) reasoning has been a step forward, it remains insufficient for many domains. A promising alternative is explicit high-level plan generation, but existing approaches largely assume that LLMs can produce effective plans through few-shot prompting alone, without additional training. In this work, we challenge this assumption and introduce CRISP (Complex Reasoning with Interpretable Step-based Plans), a multi-domain dataset of high-level plans for mathematical reasoning and code generation. The plans in CRISP are automatically generated and rigorously validated--both intrinsically, using an LLM as a judge, and extrinsically, by evaluating their impact on downstream task performance. We demonstrate that fine-tuning a small model on CRISP enables it to generate higher-quality plans than much larger models using few-shot prompting, while significantly outperforming Chain-of-Thought reasoning. Furthermore, our out-of-domain evaluation reveals that fine-tuning on one domain improves plan generation in the other, highlighting the generalizability of learned planning capabilities.
-]]></content:encoded>
-<pubDate>Mon, 14 Jul 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>AblationBench: Evaluating Automated Planning of Ablations in Empirical AI Research</title>
-<link>https://arxiv.org/abs/2507.08038</link>
-<guid>https://arxiv.org/abs/2507.08038</guid>
-<content:encoded><![CDATA[
-arXiv:2507.08038v1 Announce Type: new 
-Abstract: Autonomous agents built on language models (LMs) are showing increasing popularity in many fields, including scientific research. AI co-scientists aim to support or automate parts of the research process using these agents. A key component of empirical AI research is the design of ablation experiments. To this end, we introduce AblationBench, a benchmark suite for evaluating agents on ablation planning tasks in empirical AI research. It includes two tasks: AuthorAblation, which helps authors propose ablation experiments based on a method section and contains 83 instances, and ReviewerAblation, which helps reviewers find missing ablations in a full paper and contains 350 instances. For both tasks, we develop LM-based judges that serve as an automatic evaluation framework. Our experiments with frontier LMs show that these tasks remain challenging, with the best-performing LM system identifying only 29% of the original ablations on average. Lastly, we analyze the limitations of current LMs on these tasks, and find that chain-of-thought prompting outperforms the currently existing agent-based approach.
-]]></content:encoded>
-<pubDate>Mon, 14 Jul 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Krul: Efficient State Restoration for Multi-turn Conversations with Dynamic Cross-layer KV Sharing</title>
-<link>https://arxiv.org/abs/2507.08045</link>
-<guid>https://arxiv.org/abs/2507.08045</guid>
-<content:encoded><![CDATA[
-arXiv:2507.08045v1 Announce Type: new 
-Abstract: Efficient state restoration in multi-turn conversations with large language models (LLMs) remains a critical challenge, primarily due to the overhead of recomputing or loading full key-value (KV) caches for all historical tokens. To address this, existing approaches compress KV caches across adjacent layers with highly similar attention patterns. However, these methods often apply a fixed compression scheme across all conversations, selecting the same layer pairs for compression without considering conversation-specific attention dynamics. This static strategy overlooks variability in attention pattern similarity across different conversations, which can lead to noticeable accuracy degradation.
-  We present Krul, a multi-turn LLM inference system that enables accurate and efficient KV cache restoration. Krul dynamically selects compression strategies based on attention similarity across layer pairs and uses a recomputation-loading pipeline to restore the KV cache. It introduces three key innovations: 1) a preemptive compression strategy selector to preserve critical context for future conversation turns and selects a customized strategy for the conversation; 2) a token-wise heterogeneous attention similarity estimator to mitigate the attention similarity computation and storage overhead during model generation; 3) a bubble-free restoration scheduler to reduce potential bubbles brought by the imbalance of recomputing and loading stream due to compressed KV caches. Empirical evaluations on real-world tasks demonstrate that Krul achieves a 1.5x-2.68x reduction in time-to-first-token (TTFT) and a 1.33x-2.35x reduction in KV cache storage compared to state-of-the-art methods without compromising generation quality.
 ]]></content:encoded>
 <pubDate>Mon, 14 Jul 2025 00:00:00 -0400</pubDate>
 </item>
