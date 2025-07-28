@@ -4,18 +4,18 @@
 <title>cs.LG updates on arXiv.org</title>
 <link>http://rss.arxiv.org/rss/cs.LG</link>
 
+
 <item>
 <title>Plan for Speed: Dilated Scheduling for Masked Diffusion Language Models</title>
 <link>https://arxiv.org/abs/2506.19037</link>
 <guid>https://arxiv.org/abs/2506.19037</guid>
 <content:encoded><![CDATA[
-<div> Masked diffusion language models (MDLMs), Dilated Unmasking Scheduler (DUS), non-autoregressive text generation, parallel unmasking strategies, planner-model-free method.<br>
-<br>
+<div> Masked diffusion language models (MDLMs), Dilated Unmasking Scheduler (DUS), non-autoregressive text generation, parallel unmasking strategies, planner-model-free method.<br />
+<br />
 Summary: Masked diffusion language models promise fast, non-autoregressive text generation, but existing samplers can reduce to slow, autoregressive behavior. The Dilated Unmasking Scheduler (DUS) proposes a planner-model-free method that partitions sequence positions into non-adjacent dilated groups to unmask them in parallel, minimizing joint entropy gain. DUS outperforms confidence-based planners across math, code, and general-knowledge benchmarks, without modifying the denoiser, revealing the true speed-quality frontier of MDLMs. <div>
 arXiv:2506.19037v3 Announce Type: replace-cross 
 Abstract: Masked diffusion language models (MDLMs) promise fast, non-autoregressive text generation, yet existing samplers, which pick tokens to unmask based on model confidence, ignore interactions when unmasking multiple positions in parallel and effectively reduce to slow, autoregressive behavior. We propose the Dilated Unmasking Scheduler (DUS), an inference-only, planner-model-free method that partitions sequence positions into non-adjacent dilated groups and unmasked them in parallel so as to minimize an upper bound on joint entropy gain at each denoising step. By explicitly trading off the number of network calls against generation quality, DUS recovers most of the performance lost under traditional parallel unmasking strategies. Across math (GSM8K, MATH500), code (HumanEval, MBPP) and general-knowledge benchmarks (BBH, MMLU-Pro), DUS outperforms confidence-based planners, without modifying the underlying denoiser, and reveals the true speed-quality frontier of MDLMs.
 ]]></content:encoded>
-<pubDate>Mon, 28 Jul 2025 00:00:00 -0400</pubDate>
 <pubDate>Mon, 28 Jul 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -23,17 +23,15 @@ Abstract: Masked diffusion language models (MDLMs) promise fast, non-autoregress
 <link>https://arxiv.org/abs/2507.04790</link>
 <guid>https://arxiv.org/abs/2507.04790</guid>
 <content:encoded><![CDATA[
-<div> Motion planning, autonomous robot driving, trajectory datasets, domain adaptation, ensemble learning<br>
-<br>
-Summary:<br>
+<div> Motion planning, autonomous robot driving, trajectory datasets, domain adaptation, ensemble learning<br />
+<br />
+Summary:<br />
 Motion planning is crucial for autonomous robot driving. However, effectively utilizing trajectory datasets for a target domain is challenging due to differences in agent interactions and environments. Conventional approaches like domain adaptation and ensemble learning face issues such as domain imbalance and high computational costs. To overcome these challenges, the Interaction-Merged Motion Planning (IMMP) approach is proposed. IMMP involves pre-merging to capture agent behaviors and interactions from different domains and merging to create an adaptable model transferring diverse interactions efficiently. The method is tested on planning benchmarks, showing superior performance to conventional methods. <div>
 arXiv:2507.04790v3 Announce Type: replace-cross 
 Abstract: Motion planning is a crucial component of autonomous robot driving. While various trajectory datasets exist, effectively utilizing them for a target domain remains challenging due to differences in agent interactions and environmental characteristics. Conventional approaches, such as domain adaptation or ensemble learning, leverage multiple source datasets but suffer from domain imbalance, catastrophic forgetting, and high computational costs. To address these challenges, we propose Interaction-Merged Motion Planning (IMMP), a novel approach that leverages parameter checkpoints trained on different domains during adaptation to the target domain. IMMP follows a two-step process: pre-merging to capture agent behaviors and interactions, sufficiently extracting diverse information from the source domain, followed by merging to construct an adaptable model that efficiently transfers diverse interactions to the target domain. Our method is evaluated on various planning benchmarks and models, demonstrating superior performance compared to conventional approaches.
 ]]></content:encoded>
 <pubDate>Mon, 28 Jul 2025 00:00:00 -0400</pubDate>
-<pubDate>Mon, 28 Jul 2025 00:00:00 -0400</pubDate>
 </item>
-
 <item>
 <title>Diffusion Models for Solving Inverse Problems via Posterior Sampling with Piecewise Guidance</title>
 <link>https://arxiv.org/abs/2507.18654</link>
@@ -11253,26 +11251,6 @@ Abstract: In recent decades, hypergraphs and their analysis through Topological 
 <content:encoded><![CDATA[
 arXiv:2507.15803v1 Announce Type: cross 
 Abstract: Pixel-level vision tasks, such as semantic segmentation, require extensive and high-quality annotated data, which is costly to obtain. Semi-supervised semantic segmentation (SSSS) has emerged as a solution to alleviate the labeling burden by leveraging both labeled and unlabeled data through self-training techniques. Meanwhile, the advent of foundational segmentation models pre-trained on massive data, has shown the potential to generalize across domains effectively. This work explores whether a foundational segmentation model can address label scarcity in the pixel-level vision task as an annotator for unlabeled images. Specifically, we investigate the efficacy of using SEEM, a Segment Anything Model (SAM) variant fine-tuned for textual input, to generate predictive masks for unlabeled data. To address the shortcomings of using SEEM-generated masks as supervision, we propose ConformalSAM, a novel SSSS framework which first calibrates the foundation model using the target domain's labeled data and then filters out unreliable pixel labels of unlabeled data so that only high-confidence labels are used as supervision. By leveraging conformal prediction (CP) to adapt foundation models to target data through uncertainty calibration, ConformalSAM exploits the strong capability of the foundational segmentation model reliably which benefits the early-stage learning, while a subsequent self-reliance training strategy mitigates overfitting to SEEM-generated masks in the later training stage. Our experiment demonstrates that, on three standard benchmarks of SSSS, ConformalSAM achieves superior performance compared to recent SSSS methods and helps boost the performance of those methods as a plug-in.
-]]></content:encoded>
-<pubDate>Tue, 22 Jul 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Diffusion models for multivariate subsurface generation and efficient probabilistic inversion</title>
-<link>https://arxiv.org/abs/2507.15809</link>
-<guid>https://arxiv.org/abs/2507.15809</guid>
-<content:encoded><![CDATA[
-arXiv:2507.15809v1 Announce Type: cross 
-Abstract: Diffusion models offer stable training and state-of-the-art performance for deep generative modeling tasks. Here, we consider their use in the context of multivariate subsurface modeling and probabilistic inversion. We first demonstrate that diffusion models enhance multivariate modeling capabilities compared to variational autoencoders and generative adversarial networks. In diffusion modeling, the generative process involves a comparatively large number of time steps with update rules that can be modified to account for conditioning data. We propose different corrections to the popular Diffusion Posterior Sampling approach by Chung et al. (2023). In particular, we introduce a likelihood approximation accounting for the noise-contamination that is inherent in diffusion modeling. We assess performance in a multivariate geological scenario involving facies and correlated acoustic impedance. Conditional modeling is demonstrated using both local hard data (well logs) and nonlinear geophysics (fullstack seismic data). Our tests show significantly improved statistical robustness, enhanced sampling of the posterior probability density function and reduced computational costs, compared to the original approach. The method can be used with both hard and indirect conditioning data, individually or simultaneously. As the inversion is included within the diffusion process, it is faster than other methods requiring an outer-loop around the generative model, such as Markov chain Monte Carlo.
-]]></content:encoded>
-<pubDate>Tue, 22 Jul 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>LLM Economist: Large Population Models and Mechanism Design in Multi-Agent Generative Simulacra</title>
-<link>https://arxiv.org/abs/2507.15815</link>
-<guid>https://arxiv.org/abs/2507.15815</guid>
-<content:encoded><![CDATA[
-arXiv:2507.15815v1 Announce Type: cross 
-Abstract: We present the LLM Economist, a novel framework that uses agent-based modeling to design and assess economic policies in strategic environments with hierarchical decision-making. At the lower level, bounded rational worker agents -- instantiated as persona-conditioned prompts sampled from U.S. Census-calibrated income and demographic statistics -- choose labor supply to maximize text-based utility functions learned in-context. At the upper level, a planner agent employs in-context reinforcement learning to propose piecewise-linear marginal tax schedules anchored to the current U.S. federal brackets. This construction endows economic simulacra with three capabilities requisite for credible fiscal experimentation: (i) optimization of heterogeneous utilities, (ii) principled generation of large, demographically realistic agent populations, and (iii) mechanism design -- the ultimate nudging problem -- expressed entirely in natural language. Experiments with populations of up to one hundred interacting agents show that the planner converges near Stackelberg equilibria that improve aggregate social welfare relative to Saez solutions, while a periodic, persona-level voting procedure furthers these gains under decentralized governance. These results demonstrate that large language model-based agents can jointly model, simulate, and govern complex economic systems, providing a tractable test bed for policy evaluation at the societal scale to help build better civilizations.
 ]]></content:encoded>
 <pubDate>Tue, 22 Jul 2025 00:00:00 -0400</pubDate>
 </item>
