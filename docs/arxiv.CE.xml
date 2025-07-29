@@ -4,6 +4,108 @@
 <title>cs.CE updates on arXiv.org</title>
 <link>http://rss.arxiv.org/rss/cs.CE</link>
 
+<item>
+<title>IFD: A Large-Scale Benchmark for Insider Filing Violation Detection</title>
+<link>https://arxiv.org/abs/2507.20162</link>
+<guid>https://arxiv.org/abs/2507.20162</guid>
+<content:encoded><![CDATA[
+<div> Dataset, Insider trading, Form 4 filings, Regulatory compliance, MaBoost <br>
+Summary: 
+The article introduces the Insider Filing Delay (IFD) dataset, the largest dataset for insider disclosure behavior, covering over one million Form 4 transactions from 2002 to 2025. It addresses the challenge of insider trading violations and delayed disclosures in financial markets by presenting IFD as a benchmark for detecting strategic disclosure violations. The MaBoost framework, a hybrid model combining Mamba-based state space encoder with XGBoost, achieves high accuracy and interpretability in identifying high-risk behavioral patterns. Experiments show that MaBoost outperforms previous approaches, with an F1-score of up to 99.47% under regulatory settings. IFD serves as a realistic and reproducible benchmark for developing AI models in financial compliance, regulatory forensics, and interpretable time-series classification. The dataset and codes are publicly available for further research and analysis. <br> <div>
+arXiv:2507.20162v1 Announce Type: new 
+Abstract: Insider trading violations, particularly delayed disclosures of Form 4 filings, remain a persistent challenge for financial market surveillance. Despite regulatory requirements such as the two-business-day rule of the Securities and Exchange Commission (SEC), enforcement is limited by the lack of large-scale, labeled datasets and task-specific benchmarks. In this paper, we introduce Insider Filing Delay (IFD), the first and largest publicly available dataset for insider disclosure behavior, comprising over one million Form 4 transactions spanning two decades (2002-2025), with structured annotations on delay status, insider roles, governance factors, and firm-level financial indicators. IFD enables the first large-scale formulation of strategic disclosure violation detection as a binary classification task grounded in regulatory compliance. To demonstrate the utility of IFD, we propose MaBoost, a hybrid framework combining a Mamba-based state space encoder with XGBoost, achieving high accuracy and interpretability in identifying high-risk behavioral patterns. Experiments across statistical baselines, deep learning models, and large language models confirm that MaBoost outperforms prior approaches, achieving an F1-score of up to 99.47% under constrained regulatory settings. IFD provides a realistic, reproducible, and behavior-rich benchmark for developing AI models in financial compliance, regulatory forensics, and interpretable time-series classification. All data and codes are available: https://github.com/CH-YellowOrange/MaBoost-and-IFD.
+]]></content:encoded>
+<pubDate>Tue, 29 Jul 2025 00:00:00 -0400</pubDate>
+<pubDate>Tue, 29 Jul 2025 00:00:00 -0400</pubDate>
+</item>
+<item>
+<title>Learning Explainable Stock Predictions with Tweets Using Mixture of Experts</title>
+<link>https://arxiv.org/abs/2507.20535</link>
+<guid>https://arxiv.org/abs/2507.20535</guid>
+<content:encoded><![CDATA[
+<div> Keywords: Stock price movements, Textual information, LLMs, FTS-Text-MoE model, Financial time series prediction
+
+Summary: 
+The FTS-Text-MoE model proposed in this study aims to improve stock price prediction by integrating numerical data with key summaries from news and social media using point embeddings. This model utilizes a Mixture of Experts Transformer decoder to process both data types, reducing computational costs by activating only a subset of model parameters. Multi-resolution prediction heads allow for flexible forecasting of financial time series at different scales. Experimental results demonstrate that FTS-Text-MoE outperforms baseline methods in terms of investment returns and Sharpe ratio, showcasing its superior accuracy and ability to predict future market trends. This approach addresses limitations in prompt-based methods and enhances financial analysis by leveraging factual textual data alongside historical price data. <div>
+arXiv:2507.20535v1 Announce Type: new 
+Abstract: Stock price movements are influenced by many factors, and alongside historical price data, tex-tual information is a key source. Public news and social media offer valuable insights into market sentiment and emerging events. These sources are fast-paced, diverse, and significantly impact future stock trends. Recently, LLMs have enhanced financial analysis, but prompt-based methods still have limitations, such as input length restrictions and difficulties in predicting sequences of varying lengths. Additionally, most models rely on dense computational layers, which are resource-intensive. To address these challenges, we propose the FTS- Text-MoE model, which combines numerical data with key summaries from news and tweets using point embeddings, boosting prediction accuracy through the integration of factual textual data. The model uses a Mixture of Experts (MoE) Transformer decoder to process both data types. By activating only a subset of model parameters, it reduces computational costs. Furthermore, the model features multi-resolution prediction heads, enabling flexible forecasting of financial time series at different scales. Experimental results show that FTS-Text-MoE outperforms baseline methods in terms of investment returns and Sharpe ratio, demonstrating its superior accuracy and ability to predict future market trends.
+]]></content:encoded>
+<pubDate>Tue, 29 Jul 2025 00:00:00 -0400</pubDate>
+<pubDate>Tue, 29 Jul 2025 00:00:00 -0400</pubDate>
+</item>
+<item>
+<title>Exascale Implicit Kinetic Plasma Simulations on El~Capitan for Solving the Micro-Macro Coupling in Magnetospheric Physics</title>
+<link>https://arxiv.org/abs/2507.20719</link>
+<guid>https://arxiv.org/abs/2507.20719</guid>
+<content:encoded><![CDATA[
+<div> Keywords: kinetic simulations, magnetospheres, Particle-in-Cell method, AMD Instinct MI300A Accelerated Processing Units, multi-scale coupling <br>
+Summary: 
+Our study presents fully kinetic, implicit Particle-in-Cell (PIC) simulations of global magnetospheres using El Capitan's AMD Instinct MI300A Accelerated Processing Units. This computational approach addresses the challenge of resolving the multi-scale coupling between microscopic and macroscopic dynamics in planetary magnetospheres. The implicit scheme of iPIC3D allows for larger time steps and grid spacing compared to explicit methods, without compromising accuracy. This capability enables the simulation of magnetospheres while preserving fine-scale electron physics crucial for processes like magnetic reconnection and plasma turbulence. Our innovations in algorithmic and technological aspects, including GPU-optimized kernels and data compression techniques, support the simulation of global-scale dynamics in small-to-medium planetary magnetospheres like Mercury and Ganymede. This advancement extends the reach of fully kinetic PIC codes to systems previously beyond their capabilities.  <br><br>Summary: <div>
+arXiv:2507.20719v1 Announce Type: new 
+Abstract: Our fully kinetic, implicit Particle-in-Cell (PIC) simulations of global magnetospheres on up to 32,768 of El Capitan's AMD Instinct MI300A Accelerated Processing Units (APUs) represent an unprecedented computational capability that addresses a fundamental challenge in space physics: resolving the multi-scale coupling between microscopic (electron-scale) and macroscopic (global-scale) dynamics in planetary magnetospheres. The implicit scheme of iPIC3D supports time steps and grid spacing that are up to 10 times larger than those of explicit methods, without sacrificing physical accuracy. This enables the simulation of magnetospheres while preserving fine-scale electron physics, which is critical for key processes such as magnetic reconnection and plasma turbulence. Our algorithmic and technological innovations include GPU-optimized kernels, particle control, and physics-aware data compression using Gaussian Mixture Models. With simulation domains spanning 100-1,000 ion skin depths, we reach the global scale of small-to-medium planetary magnetospheres, such as those of Mercury and Ganymede, which supports fully kinetic treatment of global-scale dynamics in systems previously out of reach for fully kinetic PIC codes.
+]]></content:encoded>
+<pubDate>Tue, 29 Jul 2025 00:00:00 -0400</pubDate>
+<pubDate>Tue, 29 Jul 2025 00:00:00 -0400</pubDate>
+</item>
+<item>
+<title>Programmable Virtual Humans Toward Human Physiologically-Based Drug Discovery</title>
+<link>https://arxiv.org/abs/2507.19568</link>
+<guid>https://arxiv.org/abs/2507.19568</guid>
+<content:encoded><![CDATA[
+<div> AI, drug discovery, virtual experiments, programmable virtual humans, translational gap
+Summary:
+Artificial intelligence in drug discovery has primarily focused on digitizing existing experiments without addressing the challenges of predicting drug effects in humans. Biomedical digital twins, while useful in late-phase development, lack the resolution for early-stage discovery. To overcome this disconnect, programmable virtual humans have emerged as a solution, utilizing AI, high-throughput assays, and omics data to simulate drug actions in the human body. By bridging the translational gap, programmable virtual humans offer a new paradigm for drug discovery centered on human physiology. While offering transformative potential, key opportunities and challenges must be addressed for their realization. <div>
+arXiv:2507.19568v1 Announce Type: cross 
+Abstract: Artificial intelligence (AI) has sparked immense interest in drug discovery, but most current approaches only digitize existing high-throughput experiments. They remain constrained by conventional pipelines. As a result, they do not address the fundamental challenges of predicting drug effects in humans. Similarly, biomedical digital twins, largely grounded in real-world data and mechanistic models, are tailored for late-phase drug development and lack the resolution to model molecular interactions or their systemic consequences, limiting their impact in early-stage discovery. This disconnect between early discovery and late development is one of the main drivers of high failure rates in drug discovery. The true promise of AI lies not in augmenting current experiments but in enabling virtual experiments that are impossible in the real world: testing novel compounds directly in silico in the human body. Recent advances in AI, high-throughput perturbation assays, and single-cell and spatial omics across species now make it possible to construct programmable virtual humans: dynamic, multiscale models that simulate drug actions from molecular to phenotypic levels. By bridging the translational gap, programmable virtual humans offer a transformative path to optimize therapeutic efficacy and safety earlier than ever before. This perspective introduces the concept of programmable virtual humans, explores their roles in a new paradigm of drug discovery centered on human physiology, and outlines key opportunities, challenges, and roadmaps for their realization.
+]]></content:encoded>
+<pubDate>Tue, 29 Jul 2025 00:00:00 -0400</pubDate>
+<pubDate>Tue, 29 Jul 2025 00:00:00 -0400</pubDate>
+</item>
+<item>
+<title>Taming Domain Shift in Multi-source CT-Scan Classification via Input-Space Standardization</title>
+<link>https://arxiv.org/abs/2507.19858</link>
+<guid>https://arxiv.org/abs/2507.19858</guid>
+<content:encoded><![CDATA[
+<div> Keywords: Multi-source CT-scan, domain shifts, cross-source generalization, input-space standardization, medical imaging
+
+Summary:
+Spatial-Slice Feature Learning (SSFL++) and Kernel-Density-based Slice Sampling (KDS) preprocessing pipelines address domain shifts in multi-source CT-scan classification. This study investigates the mechanisms behind the domain robustness of these pipelines and how they manage the trade-off between local discriminability and cross-source generalization. SSFL++ and KDS preprocess the input data, reducing inter-source variance and aligning inputs into a consistent target space to mitigate domain shift. This alignment simplifies the learning task for network optimization and consistently improves performance across different architectures. Experimental validation confirmed the effectiveness of the preprocessing approach, leading to a first-place finish in a competitive challenge. This study highlights the practicality and robustness of input-space standardization in multi-institutional medical imaging.<br><br>Summary: Input-space standardization through SSFL++ and KDS preprocessing pipelines effectively addresses domain shifts in multi-source CT-scan classification. By reducing inter-source variance and aligning inputs into a consistent target space, these pipelines improve performance across architectures, simplifying the learning task and supporting cross-source generalization. Experimental validation and a first-place finish in a competitive challenge demonstrate the effectiveness and practicality of this preprocessing approach for multi-institutional medical imaging. <div>
+arXiv:2507.19858v1 Announce Type: cross 
+Abstract: Multi-source CT-scan classification suffers from domain shifts that impair cross-source generalization. While preprocessing pipelines combining Spatial-Slice Feature Learning (SSFL++) and Kernel-Density-based Slice Sampling (KDS) have shown empirical success, the mechanisms underlying their domain robustness remain underexplored. This study analyzes how this input-space standardization manages the trade-off between local discriminability and cross-source generalization. The SSFL++ and KDS pipeline performs spatial and temporal standardization to reduce inter-source variance, effectively mapping disparate inputs into a consistent target space. This preemptive alignment mitigates domain shift and simplifies the learning task for network optimization. Experimental validation demonstrates consistent improvements across architectures, proving the benefits stem from the preprocessing itself. The approach's effectiveness was validated by securing first place in a competitive challenge, supporting input-space standardization as a robust and practical solution for multi-institutional medical imaging.
+]]></content:encoded>
+<pubDate>Tue, 29 Jul 2025 00:00:00 -0400</pubDate>
+<pubDate>Tue, 29 Jul 2025 00:00:00 -0400</pubDate>
+</item>
+<item>
+<title>AQUA: A Large Language Model for Aquaculture &amp; Fisheries</title>
+<link>https://arxiv.org/abs/2507.20520</link>
+<guid>https://arxiv.org/abs/2507.20520</guid>
+<content:encoded><![CDATA[
+<div> Keywords: Aquaculture, artificial intelligence, large language model, AQUA, AQUADAPT 
+
+Summary: 
+Aquaculture is vital for global food security and economies. Challenges like disease outbreaks, inefficient feeding, and hatchery issues persist. Existing machine learning methods lack domain-specific solutions for aquaculture. AQUA, the first large language model tailored for aquaculture, aims to support farmers and researchers. AQUADAPT, an Agentic Framework, generates high-quality synthetic data combining expert knowledge and automated evaluation techniques. This innovation paves the way for LLM-driven advancements in aquaculture research, advisory systems, and decision-making tools. <div>
+arXiv:2507.20520v1 Announce Type: cross 
+Abstract: Aquaculture plays a vital role in global food security and coastal economies by providing sustainable protein sources. As the industry expands to meet rising demand, it faces growing challenges such as disease outbreaks, inefficient feeding practices, rising labor costs, logistical inefficiencies, and critical hatchery issues, including high mortality rates and poor water quality control. Although artificial intelligence has made significant progress, existing machine learning methods fall short of addressing the domain-specific complexities of aquaculture. To bridge this gap, we introduce AQUA, the first large language model (LLM) tailored for aquaculture, designed to support farmers, researchers, and industry practitioners. Central to this effort is AQUADAPT (Data Acquisition, Processing and Tuning), an Agentic Framework for generating and refining high-quality synthetic data using a combination of expert knowledge, largescale language models, and automated evaluation techniques. Our work lays the foundation for LLM-driven innovations in aquaculture research, advisory systems, and decision-making tools.
+]]></content:encoded>
+<pubDate>Tue, 29 Jul 2025 00:00:00 -0400</pubDate>
+<pubDate>Tue, 29 Jul 2025 00:00:00 -0400</pubDate>
+</item>
+<item>
+<title>PySHRED: A Python package for SHallow REcurrent Decoding for sparse sensing, model reduction and scientific discovery</title>
+<link>https://arxiv.org/abs/2507.20954</link>
+<guid>https://arxiv.org/abs/2507.20954</guid>
+<content:encoded><![CDATA[
+<div> Python package, SHRED, deep learning strategy, dynamical systems, spatiotemporal data<br>
+<br>
+Summary: <br>
+PySHRED is a Python package that implements SHRED, a deep learning strategy for modeling high-dimensional dynamical systems and spatiotemporal data. The version 1.0 release of PySHRED includes data preprocessors and cutting-edge SHRED methods designed for handling real-world data that may be noisy, multi-scale, parameterized, high-dimensional, and nonlinear. The package is easy to install, well-documented, and includes extensive code examples. It is modularly-structured to support future additions and is released under the MIT license. PySHRED provides extensions for robust sensing, reduced order modeling, and physics discovery, making it a valuable tool for researchers analyzing complex systems. The codebase is available on GitHub, allowing for collaboration and further development in the field of deep learning for dynamical systems. <div>
+arXiv:2507.20954v1 Announce Type: cross 
+Abstract: SHallow REcurrent Decoders (SHRED) provide a deep learning strategy for modeling high-dimensional dynamical systems and/or spatiotemporal data from dynamical system snapshot observations. PySHRED is a Python package that implements SHRED and several of its major extensions, including for robust sensing, reduced order modeling and physics discovery. In this paper, we introduce the version 1.0 release of PySHRED, which includes data preprocessors and a number of cutting-edge SHRED methods specifically designed to handle real-world data that may be noisy, multi-scale, parameterized, prohibitively high-dimensional, and strongly nonlinear. The package is easy to install, thoroughly-documented, supplemented with extensive code examples, and modularly-structured to support future additions. The entire codebase is released under the MIT license and is available at https://github.com/pyshred-dev/pyshred.
+]]></content:encoded>
+<pubDate>Tue, 29 Jul 2025 00:00:00 -0400</pubDate>
+<pubDate>Tue, 29 Jul 2025 00:00:00 -0400</pubDate>
+</item>
 
 <item>
 <title>Higher-order transmissibility and its linear approximation for in-service crack identification in train wheelset axles</title>
