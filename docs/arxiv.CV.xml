@@ -4,6 +4,7 @@
 <title>cs.CV updates on arXiv.org</title>
 <link>http://rss.arxiv.org/rss/cs.CV</link>
 
+
 <item>
 <title>C2-Evo: Co-Evolving Multimodal Data and Model for Self-Improving Reasoning</title>
 <link>https://arxiv.org/abs/2507.16518</link>
@@ -13,14 +14,12 @@
 Summary:
 C2-Evo is introduced as an automatic, closed-loop self-improving framework for enhancing multimodal large language models (MLLMs) through joint evolution of training data and model capabilities. This framework addresses core challenges faced by existing self-improving models, such as discrepancies in data complexity and mismatched difficulty levels between tasks and models. C2-Evo operates through two evolution loops: a cross-modal data evolution loop and a data-model evolution loop. The former expands the base dataset by generating complex multimodal problems combining structured textual sub-problems with geometric diagrams, while the latter adaptively selects and fine-tunes generated problems based on the model's performance. This iterative refinement process results in significant performance gains across various mathematical reasoning benchmarks. The code, models, and datasets associated with C2-Evo are set to be released, allowing for further research and implementation in the field of multimodal large language models. 
 
-<br><br>Summary: <div>
+<br /><br />Summary: <div>
 arXiv:2507.16518v2 Announce Type: replace 
 Abstract: Recent advances in multimodal large language models (MLLMs) have shown impressive reasoning capabilities. However, further enhancing existing MLLMs necessitates high-quality vision-language datasets with carefully curated task complexities, which are both costly and challenging to scale. Although recent self-improving models that iteratively refine themselves offer a feasible solution, they still suffer from two core challenges: (i) most existing methods augment visual or textual data separately, resulting in discrepancies in data complexity (e.g., over-simplified diagrams paired with redundant textual descriptions); and (ii) the evolution of data and models is also separated, leading to scenarios where models are exposed to tasks with mismatched difficulty levels. To address these issues, we propose C2-Evo, an automatic, closed-loop self-improving framework that jointly evolves both training data and model capabilities. Specifically, given a base dataset and a base model, C2-Evo enhances them by a cross-modal data evolution loop and a data-model evolution loop. The former loop expands the base dataset by generating complex multimodal problems that combine structured textual sub-problems with iteratively specified geometric diagrams, while the latter loop adaptively selects the generated problems based on the performance of the base model, to conduct supervised fine-tuning and reinforcement learning alternately. Consequently, our method continuously refines its model and training data, and consistently obtains considerable performance gains across multiple mathematical reasoning benchmarks. Our code, models, and datasets will be released.
 ]]></content:encoded>
 <pubDate>Wed, 30 Jul 2025 00:00:00 -0400</pubDate>
-<pubDate>Wed, 30 Jul 2025 00:00:00 -0400</pubDate>
 </item>
-
 <item>
 <title>GAITEX: Human motion dataset from impaired gait and rehabilitation exercises of inertial and optical sensor data</title>
 <link>https://arxiv.org/abs/2507.21069</link>
@@ -11232,16 +11231,6 @@ Abstract: Understanding video content is pivotal for advancing real-world applic
 <content:encoded><![CDATA[
 arXiv:2501.06438v2 Announce Type: replace 
 Abstract: This paper presents Qffusion, a dual-frame-guided framework for portrait video editing. Specifically, we consider a design principle of ``animation for editing'', and train Qffusion as a general animation framework from two still reference images while we can use it for portrait video editing easily by applying modified start and end frames as references during inference. Leveraging the powerful generative power of Stable Diffusion, we propose a Quadrant-grid Arrangement (QGA) scheme for latent re-arrangement, which arranges the latent codes of two reference images and that of four facial conditions into a four-grid fashion, separately. Then, we fuse features of these two modalities and use self-attention for both appearance and temporal learning, where representations at different times are jointly modeled under QGA. Our Qffusion can achieve stable video editing without additional networks or complex training stages, where only the input format of Stable Diffusion is modified. Further, we propose a Quadrant-grid Propagation (QGP) inference strategy, which enjoys a unique advantage on stable arbitrary-length video generation by processing reference and condition frames recursively. Through extensive experiments, Qffusion consistently outperforms state-of-the-art techniques on portrait video editing. Project page: https://qffusion.github.io/page/.
-]]></content:encoded>
-<pubDate>Thu, 24 Jul 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>NVS-SQA: Exploring Self-Supervised Quality Representation Learning for Neurally Synthesized Scenes without References</title>
-<link>https://arxiv.org/abs/2501.06488</link>
-<guid>https://arxiv.org/abs/2501.06488</guid>
-<content:encoded><![CDATA[
-arXiv:2501.06488v2 Announce Type: replace 
-Abstract: Neural View Synthesis (NVS), such as NeRF and 3D Gaussian Splatting, effectively creates photorealistic scenes from sparse viewpoints, typically evaluated by quality assessment methods like PSNR, SSIM, and LPIPS. However, these full-reference methods, which compare synthesized views to reference views, may not fully capture the perceptual quality of neurally synthesized scenes (NSS), particularly due to the limited availability of dense reference views. Furthermore, the challenges in acquiring human perceptual labels hinder the creation of extensive labeled datasets, risking model overfitting and reduced generalizability. To address these issues, we propose NVS-SQA, a NSS quality assessment method to learn no-reference quality representations through self-supervision without reliance on human labels. Traditional self-supervised learning predominantly relies on the "same instance, similar representation" assumption and extensive datasets. However, given that these conditions do not apply in NSS quality assessment, we employ heuristic cues and quality scores as learning objectives, along with a specialized contrastive pair preparation process to improve the effectiveness and efficiency of learning. The results show that NVS-SQA outperforms 17 no-reference methods by a large margin (i.e., on average 109.5% in SRCC, 98.6% in PLCC, and 91.5% in KRCC over the second best) and even exceeds 16 full-reference methods across all evaluation metrics (i.e., 22.9% in SRCC, 19.1% in PLCC, and 18.6% in KRCC over the second best).
 ]]></content:encoded>
 <pubDate>Thu, 24 Jul 2025 00:00:00 -0400</pubDate>
 </item>

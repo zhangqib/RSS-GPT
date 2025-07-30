@@ -4,21 +4,21 @@
 <title>cs.AI updates on arXiv.org</title>
 <link>http://rss.arxiv.org/rss/cs.AI</link>
 
+
 <item>
 <title>Machine learning-based multimodal prognostic models integrating pathology images and high-throughput omic data for overall survival prediction in cancer: a systematic review</title>
 <link>https://arxiv.org/abs/2507.16876</link>
 <guid>https://arxiv.org/abs/2507.16876</guid>
 <content:encoded><![CDATA[
-<div> Keywords: multimodal machine learning, histopathology, molecular data, cancer prognostication, overall survival<br>
+<div> Keywords: multimodal machine learning, histopathology, molecular data, cancer prognostication, overall survival<br />
 Summary: 
-Multimodal machine learning integrating histopathology and molecular data for cancer prognostication is a rapidly advancing field, with promising results from studies combining whole slide images (WSIs) and high-throughput omics data. A systematic review of 48 studies across 19 cancer types showed that multimodal models typically outperformed unimodal ones in predicting overall survival, with reported c-indices ranging from 0.550 to 0.857. However, all studies exhibited unclear or high bias, lacked external validation, and had limited focus on clinical utility. The research highlighted the need for improved methodological rigor, broader datasets, and thorough clinical evaluation in the integration of WSI and omics data for survival prediction. Funded by NPIC and supported by the UKRI Industrial Strategy Challenge Fund, the study underscores the importance of advancing multimodal approaches for better cancer prognostication.<br><br> <div>
+Multimodal machine learning integrating histopathology and molecular data for cancer prognostication is a rapidly advancing field, with promising results from studies combining whole slide images (WSIs) and high-throughput omics data. A systematic review of 48 studies across 19 cancer types showed that multimodal models typically outperformed unimodal ones in predicting overall survival, with reported c-indices ranging from 0.550 to 0.857. However, all studies exhibited unclear or high bias, lacked external validation, and had limited focus on clinical utility. The research highlighted the need for improved methodological rigor, broader datasets, and thorough clinical evaluation in the integration of WSI and omics data for survival prediction. Funded by NPIC and supported by the UKRI Industrial Strategy Challenge Fund, the study underscores the importance of advancing multimodal approaches for better cancer prognostication.<br /><br /> <div>
 arXiv:2507.16876v2 Announce Type: replace-cross 
 Abstract: Multimodal machine learning integrating histopathology and molecular data shows promise for cancer prognostication. We systematically reviewed studies combining whole slide images (WSIs) and high-throughput omics to predict overall survival. Searches of EMBASE, PubMed, and Cochrane CENTRAL (12/08/2024), plus citation screening, identified eligible studies. Data extraction used CHARMS; bias was assessed with PROBAST+AI; synthesis followed SWiM and PRISMA 2020. Protocol: PROSPERO (CRD42024594745).
   Forty-eight studies (all since 2017) across 19 cancer types met criteria; all used The Cancer Genome Atlas. Approaches included regularised Cox regression (n=4), classical ML (n=13), and deep learning (n=31). Reported c-indices ranged 0.550-0.857; multimodal models typically outperformed unimodal ones. However, all studies showed unclear/high bias, limited external validation, and little focus on clinical utility.
   Multimodal WSI-omics survival prediction is a fast-growing field with promising results but needs improved methodological rigor, broader datasets, and clinical evaluation.
   Funded by NPIC, Leeds Teaching Hospitals NHS Trust, UK (Project 104687), supported by UKRI Industrial Strategy Challenge Fund.
 ]]></content:encoded>
-<pubDate>Wed, 30 Jul 2025 00:00:00 -0400</pubDate>
 <pubDate>Wed, 30 Jul 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -31,14 +31,12 @@ Abstract: Multimodal machine learning integrating histopathology and molecular d
 Summary:
 Reinforcement learning (RL) plays a crucial role in fine-tuning large language models (LLMs) for complex tasks. A surprising finding reveals that RL fine-tuning primarily modifies a small subnetwork (5-30% of weights) rather than most parameters. This phenomenon, called RL-induced parameter update sparsity, is observed across various RL algorithms and model families. The updated subnetworks show significant overlap across different conditions, suggesting a transferable structure in the pretrained model. Targeting this sparse subnetwork alone can restore full model performance with near-identical parameters. The sparsity arises due to RL operating close to the model's original distribution, requiring only focused changes. Traditional techniques like KL penalties and gradient clipping have limited impact on this sparsity pattern. These findings challenge the assumption that RL fine-tuning involves updating most parameters and offer insights for more efficient RL methods, linking sparsity to the lottery ticket hypothesis. 
 
-<br><br>Summary: <div>
+<br /><br />Summary: <div>
 arXiv:2507.17107v2 Announce Type: replace-cross 
 Abstract: Reinforcement learning (RL) is a key post-pretraining step for aligning large language models (LLMs) with complex tasks and human preferences. While it is often assumed that RL fine-tuning requires updating most of a model's parameters, we challenge this assumption with a surprising finding: RL fine-tuning consistently modifies only a small subnetwork (typically 5-30% of weights), leaving most parameters unchanged. We call this phenomenon RL-induced parameter update sparsity. It arises naturally, without any sparsity constraints or parameter-efficient tuning, and appears across multiple RL algorithms (e.g., PPO, DPO, SimPO, PRIME) and model families (e.g., OpenAI, Meta, and open-source LLMs). Moreover, the subnetworks updated by RL show substantial overlap across different seeds, datasets, and algorithms-far exceeding chance-suggesting a partially transferable structure in the pretrained model. We show that fine-tuning only this sparse subnetwork recovers full model performance and yields parameters nearly identical to the fully fine-tuned model. Our analysis suggests this sparsity emerges because RL operates near the model's original distribution, requiring only targeted changes. KL penalties, gradient clipping, and on-policy dynamics have limited effect on the sparsity pattern. These findings shed new light on how RL adapts models: not by shifting all weights, but by focusing training on a small, consistently updated subnetwork. This insight enables more efficient RL methods and reframes sparsity through the lens of the lottery ticket hypothesis.
 ]]></content:encoded>
 <pubDate>Wed, 30 Jul 2025 00:00:00 -0400</pubDate>
-<pubDate>Wed, 30 Jul 2025 00:00:00 -0400</pubDate>
 </item>
-
 <item>
 <title>SynLang and Symbiotic Epistemology: A Manifesto for Conscious Human-AI Collaboration</title>
 <link>https://arxiv.org/abs/2507.21067</link>
@@ -11087,26 +11085,6 @@ Abstract: Argument mining (AM) is an interdisciplinary research field that integ
 <content:encoded><![CDATA[
 arXiv:2507.09682v2 Announce Type: replace-cross 
 Abstract: We propose a novel approach, OrQstrator, which is a modular framework for conducting quantum circuit optimization in the Noisy Intermediate-Scale Quantum (NISQ) era. Our framework is powered by Deep Reinforcement Learning (DRL). Our orchestration engine intelligently selects among three complementary circuit optimizers: A DRL-based circuit rewriter trained to reduce depth and gate count via learned rewrite sequences; a domain-specific optimizer that performs efficient local gate resynthesis and numeric optimization; a parameterized circuit instantiator that improves compilation by optimizing template circuits during gate set translation. These modules are coordinated by a central orchestration engine that learns coordination policies based on circuit structure, hardware constraints, and backend-aware performance features such as gate count, depth, and expected fidelity. The system outputs an optimized circuit for hardware-aware transpilation and execution, leveraging techniques from an existing state-of-the-art approach, called the NISQ Analyzer, to adapt to backend constraints.
-]]></content:encoded>
-<pubDate>Fri, 25 Jul 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Task Priors: Enhancing Model Evaluation by Considering the Entire Space of Downstream Tasks</title>
-<link>https://arxiv.org/abs/2507.09871</link>
-<guid>https://arxiv.org/abs/2507.09871</guid>
-<content:encoded><![CDATA[
-arXiv:2507.09871v2 Announce Type: replace-cross 
-Abstract: The grand goal of AI research, and particularly Self Supervised Learning (SSL), is to produce systems that can successfully solve any possible task. In contrast, current evaluation methods available to AI researchers typically rely on a fixed collection of hand-picked downstream benchmarks. Hence, a large amount of effort is put into designing and searching for large collection of evaluation tasks that can serve as a proxy of our grand goal. We argue that such a rigid evaluation protocol creates a silent bottleneck in AI research. To remedy that, we define a probabilistic space of downstream tasks obtained by adopting a distribution of tasks and by defining Task Priors. Under this view, one can evaluate a model's performance over the set of all possible downstream tasks. Our framework is the first to provide answers to key questions such as (i) what is the average performance of my model over all possible downstream tasks weighted by the probability to encounter each task? or (ii) what is the variance of my model's performance across all downstream tasks under the defined Task Priors? Beyond establishing a new standard for evaluation, we believe that Task Priors will accelerate the pace of research in SSL - where downstream task evaluation is the sole qualitative signal that researchers have access to.
-]]></content:encoded>
-<pubDate>Fri, 25 Jul 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>A PBN-RL-XAI Framework for Discovering a "Hit-and-Run" Therapeutic Strategy in Melanoma</title>
-<link>https://arxiv.org/abs/2507.10136</link>
-<guid>https://arxiv.org/abs/2507.10136</guid>
-<content:encoded><![CDATA[
-arXiv:2507.10136v4 Announce Type: replace-cross 
-Abstract: Innate resistance to anti-PD-1 immunotherapy remains a major clinical challenge in metastatic melanoma, with the underlying molecular networks being poorly understood. To address this, we constructed a dynamic Probabilistic Boolean Network model using transcriptomic data from patient tumor biopsies to elucidate the regulatory logic governing therapy response. We then employed a reinforcement learning agent to systematically discover optimal, multi-step therapeutic interventions and used explainable artificial intelligence to mechanistically interpret the agent's control policy. The analysis revealed that a precisely timed, 4-step temporary inhibition of the lysyl oxidase like 2 protein (LOXL2) was the most effective strategy. Our explainable analysis showed that this ''hit-and-run" intervention is sufficient to erase the molecular signature driving resistance, allowing the network to self-correct without requiring sustained intervention. This study presents a novel, time-dependent therapeutic hypothesis for overcoming immunotherapy resistance and provides a powerful computational framework for identifying non-obvious intervention protocols in complex biological systems.
 ]]></content:encoded>
 <pubDate>Fri, 25 Jul 2025 00:00:00 -0400</pubDate>
 </item>
