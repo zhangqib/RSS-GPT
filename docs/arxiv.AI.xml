@@ -4,6 +4,7 @@
 <title>cs.AI updates on arXiv.org</title>
 <link>http://rss.arxiv.org/rss/cs.AI</link>
 
+
 <item>
 <title>Scaling RL to Long Videos</title>
 <link>https://arxiv.org/abs/2507.07966</link>
@@ -12,12 +13,11 @@
 <div> Dataset, Framework, Reinforcement Learning, Video Reasoning, Training Infrastructure
 
 Summary:
-<br><br>
+<br /><br />
 The article introduces a full-stack framework that enhances the reasoning capabilities of vision-language models (VLMs) on long videos using reinforcement learning. This framework addresses challenges of long video reasoning by combining a large-scale dataset called LongVideo-Reason, a two-stage training pipeline with chain-of-thought supervised fine-tuning and reinforcement learning, and a training infrastructure named Multi-modal Reinforcement Sequence Parallelism (MR-SP). The LongVILA-R1-7B model demonstrates strong performance on video benchmarks, achieving high accuracy on VideoMME datasets and outperforming previous models. The MR-SP system enables efficient training on long videos, achieving up to 2.1x speedup. The training system is publicly available and supports reinforcement learning on various modalities and models, including video and image generation models. With the ability to process up to 8,192 video frames per video and configurable FPS settings, this framework shows promise in advancing video reasoning capabilities in vision-language models. <div>
 arXiv:2507.07966v3 Announce Type: replace-cross 
 Abstract: We introduce a full-stack framework that scales up reasoning in vision-language models (VLMs) to long videos, leveraging reinforcement learning. We address the unique challenges of long video reasoning by integrating three critical components: (1) a large-scale dataset, LongVideo-Reason, comprising 104K long video QA pairs with high-quality reasoning annotations across diverse domains such as sports, games, and vlogs; (2) a two-stage training pipeline that extends VLMs with chain-of-thought supervised fine-tuning (CoT-SFT) and reinforcement learning (RL); and (3) a training infrastructure for long video RL, named Multi-modal Reinforcement Sequence Parallelism (MR-SP), which incorporates sequence parallelism and a vLLM-based engine tailored for long video, using cached video embeddings for efficient rollout and prefilling. In our experiments, LongVILA-R1-7B achieves strong performance on video benchmarks, reaching 65.1% and 71.1% accuracy on VideoMME without and with subtitles, respectively, and consistently outperforming LongVILA-7B across multiple benchmarks. Moreover, LongVILA-R1-7B supports processing up to 8,192 video frames per video, and configurable FPS settings. Notably, our MR-SP system achieves up to 2.1x speedup on long video RL training. In addition, we release our training system for public availability that supports RL training on various modalities (video, text, and audio), various models (VILA and Qwen series), and even image and video generation models. On a single A100 node (8 GPUs), it supports RL training on hour-long videos (e.g., 3,600 frames).
 ]]></content:encoded>
-<pubDate>Thu, 31 Jul 2025 00:00:00 -0400</pubDate>
 <pubDate>Thu, 31 Jul 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -28,14 +28,12 @@ Abstract: We introduce a full-stack framework that scales up reasoning in vision
 <div> Keywords: Pancreatic cancer, Endoscopic ultrasound, Deep learning, Medical image segmentation, TextSAM-EUS
 
 Summary: 
-Pancreatic cancer diagnosis and treatment rely on endoscopic ultrasound (EUS) for targeted biopsy and radiotherapy. However, the complexity of EUS images makes segmentation of pancreatic tumors challenging for fully supervised deep learning models. In this study, a lightweight text-driven adaptation of the Segment Anything Model (SAM), called TextSAM-EUS, is introduced for automatic pancreatic tumor segmentation in EUS. The approach leverages text prompt learning and a LoRA-based architecture adaptation to achieve high segmentation accuracy without the need for manual geometric prompts at inference. TextSAM-EUS outperforms existing state-of-the-art DL models and foundation models in terms of Dice and normalized surface distance. By incorporating prompt learning into SAM-based medical image segmentation, TextSAM-EUS provides a practical and efficient solution for automatic EUS segmentation. The code for TextSAM-EUS is available on GitHub for the research community to utilize. <br><br>Summary: <div>
+Pancreatic cancer diagnosis and treatment rely on endoscopic ultrasound (EUS) for targeted biopsy and radiotherapy. However, the complexity of EUS images makes segmentation of pancreatic tumors challenging for fully supervised deep learning models. In this study, a lightweight text-driven adaptation of the Segment Anything Model (SAM), called TextSAM-EUS, is introduced for automatic pancreatic tumor segmentation in EUS. The approach leverages text prompt learning and a LoRA-based architecture adaptation to achieve high segmentation accuracy without the need for manual geometric prompts at inference. TextSAM-EUS outperforms existing state-of-the-art DL models and foundation models in terms of Dice and normalized surface distance. By incorporating prompt learning into SAM-based medical image segmentation, TextSAM-EUS provides a practical and efficient solution for automatic EUS segmentation. The code for TextSAM-EUS is available on GitHub for the research community to utilize. <br /><br />Summary: <div>
 arXiv:2507.18082v3 Announce Type: replace-cross 
 Abstract: Pancreatic cancer carries a poor prognosis and relies on endoscopic ultrasound (EUS) for targeted biopsy and radiotherapy. However, the speckle noise, low contrast, and unintuitive appearance of EUS make segmentation of pancreatic tumors with fully supervised deep learning (DL) models both error-prone and dependent on large, expert-curated annotation datasets. To address these challenges, we present TextSAM-EUS, a novel, lightweight, text-driven adaptation of the Segment Anything Model (SAM) that requires no manual geometric prompts at inference. Our approach leverages text prompt learning (context optimization) through the BiomedCLIP text encoder in conjunction with a LoRA-based adaptation of SAM's architecture to enable automatic pancreatic tumor segmentation in EUS, tuning only 0.86% of the total parameters. On the public Endoscopic Ultrasound Database of the Pancreas, TextSAM-EUS with automatic prompts attains 82.69% Dice and 85.28% normalized surface distance (NSD), and with manual geometric prompts reaches 83.10% Dice and 85.70% NSD, outperforming both existing state-of-the-art (SOTA) supervised DL models and foundation models (e.g., SAM and its variants). As the first attempt to incorporate prompt learning in SAM-based medical image segmentation, TextSAM-EUS offers a practical option for efficient and robust automatic EUS segmentation. Code is available at https://github.com/HealthX-Lab/TextSAM-EUS .
 ]]></content:encoded>
 <pubDate>Thu, 31 Jul 2025 00:00:00 -0400</pubDate>
-<pubDate>Thu, 31 Jul 2025 00:00:00 -0400</pubDate>
 </item>
-
 <item>
 <title>When Truthful Representations Flip Under Deceptive Instructions?</title>
 <link>https://arxiv.org/abs/2507.22149</link>
@@ -11151,41 +11149,6 @@ ConDiFi introduces a benchmark that evaluates both divergent and convergent thin
 arXiv:2507.18368v1 Announce Type: new 
 Abstract: Most reasoning benchmarks for LLMs emphasize factual accuracy or step-by-step logic. In finance, however, professionals must not only converge on optimal decisions but also generate creative, plausible futures under uncertainty. We introduce ConDiFi, a benchmark that jointly evaluates divergent and convergent thinking in LLMs for financial tasks.
   ConDiFi features 607 macro-financial prompts for divergent reasoning and 990 multi-hop adversarial MCQs for convergent reasoning. Using this benchmark, we evaluated 14 leading models and uncovered striking differences. Despite high fluency, GPT-4o underperforms on Novelty and Actionability. In contrast, models like DeepSeek-R1 and Cohere Command R+ rank among the top for generating actionable, insights suitable for investment decisions. ConDiFi provides a new perspective to assess reasoning capabilities essential to safe and strategic deployment of LLMs in finance.
-]]></content:encoded>
-<pubDate>Fri, 25 Jul 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Revisiting LLM Reasoning via Information Bottleneck</title>
-<link>https://arxiv.org/abs/2507.18391</link>
-<guid>https://arxiv.org/abs/2507.18391</guid>
-<content:encoded><![CDATA[
-<div> Keywords: Large language models, reinforcement learning, reasoning capabilities, information bottleneck, regularization
-
-Summary:
-In this paper, the authors introduce a theoretical framework called IB-aware Reasoning Optimization (IBRO) for enhancing the reasoning capabilities of Large Language Models (LLMs). This framework is grounded in the Information Bottleneck (IB) principle and aims to incentivize LLMs to produce informative and generalizable reasoning trajectories. By introducing IB regularization, which is a lightweight technique that seamlessly integrates into existing reinforcement learning-based post-training frameworks, the authors demonstrate consistent improvements in LLM reasoning performance across multiple mathematical reasoning benchmarks and reinforcement learning algorithms. The approach is designed to encourage reasoning trajectories to be both informative about the final correct answer and generalizable across diverse prompts, leading to more principled and effective methodologies for enhancing LLM reasoning capabilities.<br /><br />Summary: <div>
-arXiv:2507.18391v1 Announce Type: new 
-Abstract: Large language models (LLMs) have recently demonstrated remarkable progress in reasoning capabilities through reinforcement learning with verifiable rewards (RLVR). By leveraging simple rule-based rewards, RL effectively incentivizes LLMs to produce extended chain-of-thought (CoT) reasoning trajectories, progressively guiding them toward correct answers. However, existing approaches remain largely heuristic and intuition-driven, limiting the development of principled methodologies. In this paper, we present a theoretical characterization of LLM reasoning grounded in information bottleneck (IB) principle, introducing IB-aware reasoning optimization (IBRO), a framework that encourages reasoning trajectories to be both informative about the final correct answer and generalizable across diverse prompts. We derive a practical token-level surrogate objective and propose an efficient approximation, resulting in the lightweight IB regularization method. This technique integrates seamlessly into existing RL-based post-training frameworks without additional computational overhead, requiring only a one-line code modification. Empirically, we validate IB regularization across multiple mathematical reasoning benchmarks and RL algorithms, demonstrating consistent improvements in LLM reasoning performance.
-]]></content:encoded>
-<pubDate>Fri, 25 Jul 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Optimising Call Centre Operations using Reinforcement Learning: Value Iteration versus Proximal Policy Optimisation</title>
-<link>https://arxiv.org/abs/2507.18398</link>
-<guid>https://arxiv.org/abs/2507.18398</guid>
-<content:encoded><![CDATA[
-<div> Keywords: Reinforcement Learning, call routing, call centres, Value Iteration, Proximal Policy Optimization
-
-Summary:
-Reinforcement Learning methods are applied to optimize call routing in call centres to minimize client waiting time and staff idle time. Two approaches are compared: a model-based method using Value Iteration with known system dynamics and a model-free approach using Proximal Policy Optimization learning from experience. A theoretical and simulation model is used to frame the problem as a Markov Decision Process within a Skills-Based Routing framework. The simulation model combines Discrete Event Simulation with OpenAI Gym environment. Random, Value Iteration, and Proximal Policy Optimization policies are evaluated using the simulation model. Despite longer training time, Proximal Policy Optimization consistently achieves the highest rewards, lowest client waiting time, and staff idle time across 1,000 test episodes. 
-
-<br /><br />Summary: 
-- Reinforcement Learning is used to optimize call routing in call centers.
-- Two methods are compared: model-based using Value Iteration and model-free using Proximal Policy Optimization.
-- The problem is framed as a Markov Decision Process within a Skills-Based Routing framework.
-- Proximal Policy Optimization consistently achieves the highest rewards, lowest client waiting time, and staff idle time.
-- Despite requiring longer training time, PPO outperforms other policies after 1,000 test episodes. <div>
-arXiv:2507.18398v1 Announce Type: new 
-Abstract: This paper investigates the application of Reinforcement Learning (RL) to optimise call routing in call centres to minimise client waiting time and staff idle time. Two methods are compared: a model-based approach using Value Iteration (VI) under known system dynamics, and a model-free approach using Proximal Policy Optimisation (PPO) that learns from experience. For the model-based approach, a theoretical model is used, while a simulation model combining Discrete Event Simulation (DES) with the OpenAI Gym environment is developed for model-free learning. Both models frame the problem as a Markov Decision Process (MDP) within a Skills-Based Routing (SBR) framework, with Poisson client arrivals and exponentially distributed service and abandonment times. For policy evaluation, random, VI, and PPO policies are evaluated using the simulation model. After 1,000 test episodes, PPO consistently achives the highest rewards, along with the lowest client waiting time and staff idle time, despite requiring longer training time.
 ]]></content:encoded>
 <pubDate>Fri, 25 Jul 2025 00:00:00 -0400</pubDate>
 </item>
