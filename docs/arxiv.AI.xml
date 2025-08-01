@@ -4,18 +4,18 @@
 <title>cs.AI updates on arXiv.org</title>
 <link>http://rss.arxiv.org/rss/cs.AI</link>
 
+
 <item>
 <title>Automated Code Review Using Large Language Models at Ericsson: An Experience Report</title>
 <link>https://arxiv.org/abs/2507.19115</link>
 <guid>https://arxiv.org/abs/2507.19115</guid>
 <content:encoded><![CDATA[
-<div> Code review, quality assurance, software development, automated code review, large language models <br>
-Summary: <br>
+<div> Code review, quality assurance, software development, automated code review, large language models <br />
+Summary: <br />
 Code review is essential for ensuring software quality, but it can be time-consuming for experienced developers. Automating code review using Large Language Models (LLMs) can help alleviate this burden, allowing developers to focus on writing code. The paper discusses the development of a lightweight tool that combines LLMs and static program analysis for automating code review at Ericsson. Preliminary experiments with experienced developers showed promising results, indicating the tool's effectiveness in assisting with code reviews. This approach has the potential to enhance the efficiency and accuracy of code review processes in software development. <div>
 arXiv:2507.19115v2 Announce Type: replace-cross 
 Abstract: Code review is one of the primary means of assuring the quality of released software along with testing and static analysis. However, code review requires experienced developers who may not always have the time to perform an in-depth review of code. Thus, automating code review can help alleviate the cognitive burden on experienced software developers allowing them to focus on their primary activities of writing code to add new features and fix bugs. In this paper, we describe our experience in using Large Language Models towards automating the code review process in Ericsson. We describe the development of a lightweight tool using LLMs and static program analysis. We then describe our preliminary experiments with experienced developers in evaluating our code review tool and the encouraging results.
 ]]></content:encoded>
-<pubDate>Fri, 01 Aug 2025 00:00:00 -0400</pubDate>
 <pubDate>Fri, 01 Aug 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -26,14 +26,12 @@ Abstract: Code review is one of the primary means of assuring the quality of rel
 <div> Keywords: pedestrian trajectory prediction, PatchTraj, time-frequency joint modeling, dynamic patch partitioning, hierarchical feature aggregation
 
 Summary:
-PatchTraj is a novel framework designed for pedestrian trajectory prediction in autonomous driving and robotics. It addresses the limitations of existing methods by integrating time-frequency joint modeling and dynamic patch partitioning. By decomposing trajectories into raw time sequences and frequency components, PatchTraj captures both local motion details and long-range dependencies. The framework employs adaptive embedding with scale-aware feature extraction and hierarchical feature aggregation to model hierarchical motion patterns effectively. Cross-modal attention enhances feature fusion, resulting in accurate predictions using a Transformer architecture. Experimental results on various datasets demonstrate that PatchTraj achieves state-of-the-art performance, with significant improvements seen on the JRDB dataset. These results highlight the framework's potential for enhancing embodied intelligence in trajectory prediction tasks.<br><br>Summary: <div>
+PatchTraj is a novel framework designed for pedestrian trajectory prediction in autonomous driving and robotics. It addresses the limitations of existing methods by integrating time-frequency joint modeling and dynamic patch partitioning. By decomposing trajectories into raw time sequences and frequency components, PatchTraj captures both local motion details and long-range dependencies. The framework employs adaptive embedding with scale-aware feature extraction and hierarchical feature aggregation to model hierarchical motion patterns effectively. Cross-modal attention enhances feature fusion, resulting in accurate predictions using a Transformer architecture. Experimental results on various datasets demonstrate that PatchTraj achieves state-of-the-art performance, with significant improvements seen on the JRDB dataset. These results highlight the framework's potential for enhancing embodied intelligence in trajectory prediction tasks.<br /><br />Summary: <div>
 arXiv:2507.19119v3 Announce Type: replace-cross 
 Abstract: Pedestrian trajectory prediction is crucial for autonomous driving and robotics. While existing point-based and grid-based methods expose two main limitations: insufficiently modeling human motion dynamics, as they fail to balance local motion details with long-range spatiotemporal dependencies, and the time representations lack interaction with their frequency components in jointly modeling trajectory sequences. To address these challenges, we propose PatchTraj, a dynamic patch-based framework that integrates time-frequency joint modeling for trajectory prediction. Specifically, we decompose the trajectory into raw time sequences and frequency components, and employ dynamic patch partitioning to perform multi-scale segmentation, capturing hierarchical motion patterns. Each patch undergoes adaptive embedding with scale-aware feature extraction, followed by hierarchical feature aggregation to model both fine-grained and long-range dependencies. The outputs of the two branches are further enhanced via cross-modal attention, facilitating complementary fusion of temporal and spectral cues. The resulting enhanced embeddings exhibit strong expressive power, enabling accurate predictions even when using a vanilla Transformer architecture. Extensive experiments on ETH-UCY, SDD, NBA, and JRDB datasets demonstrate that our method achieves state-of-the-art performance. Notably, on the egocentric JRDB dataset, PatchTraj attains significant relative improvements of 26.7% in ADE and 17.4% in FDE, underscoring its substantial potential in embodied intelligence.
 ]]></content:encoded>
 <pubDate>Fri, 01 Aug 2025 00:00:00 -0400</pubDate>
-<pubDate>Fri, 01 Aug 2025 00:00:00 -0400</pubDate>
 </item>
-
 <item>
 <title>Unifying Post-hoc Explanations of Knowledge Graph Completions</title>
 <link>https://arxiv.org/abs/2507.22951</link>
@@ -11042,26 +11040,6 @@ Abstract: Foundation models have revolutionized AI, yet they struggle with zero-
 <content:encoded><![CDATA[
 arXiv:2507.04385v2 Announce Type: replace-cross 
 Abstract: Probabilistic circuits (PCs) are powerful probabilistic models that enable exact and tractable inference, making them highly suitable for probabilistic reasoning and inference tasks. While dominant in neural networks, representation learning with PCs remains underexplored, with prior approaches relying on external neural embeddings or activation-based encodings. To address this gap, we introduce autoencoding probabilistic circuits (APCs), a novel framework leveraging the tractability of PCs to model probabilistic embeddings explicitly. APCs extend PCs by jointly modeling data and embeddings, obtaining embedding representations through tractable probabilistic inference. The PC encoder allows the framework to natively handle arbitrary missing data and is seamlessly integrated with a neural decoder in a hybrid, end-to-end trainable architecture enabled by differentiable sampling. Our empirical evaluation demonstrates that APCs outperform existing PC-based autoencoding methods in reconstruction quality, generate embeddings competitive with, and exhibit superior robustness in handling missing data compared to neural autoencoders. These results highlight APCs as a powerful and flexible representation learning method that exploits the probabilistic inference capabilities of PCs, showing promising directions for robust inference, out-of-distribution detection, and knowledge distillation.
-]]></content:encoded>
-<pubDate>Tue, 29 Jul 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Emergent Semantics Beyond Token Embeddings: Transformer LMs with Frozen Visual Unicode Representations</title>
-<link>https://arxiv.org/abs/2507.04886</link>
-<guid>https://arxiv.org/abs/2507.04886</guid>
-<content:encoded><![CDATA[
-arXiv:2507.04886v2 Announce Type: replace-cross 
-Abstract: Understanding the locus of semantic representation in large language models (LLMs) is crucial for interpretability and architectural innovation. The dominant paradigm posits that trainable input embeddings serve as foundational "meaning vectors." This paper challenges that view. We construct Transformer models where the embedding layer is entirely frozen, with vectors derived not from data, but from the visual structure of Unicode glyphs. These non-semantic, precomputed visual embeddings are fixed throughout training. Our method is compatible with any tokenizer, including a novel Unicode-centric tokenizer we introduce to ensure universal text coverage. Despite the absence of trainable, semantically initialized embeddings, our models converge, generate coherent text, and, critically, outperform architecturally identical models with trainable embeddings on the MMLU reasoning benchmark. We attribute this to "representational interference" in conventional models, where the embedding layer is burdened with learning both structural and semantic features. Our results indicate that high-level semantics are not inherent to input embeddings but are an emergent property of the Transformer's compositional architecture and data scale. This reframes the role of embeddings from meaning containers to structural primitives. We release all code and models to foster further research.
-]]></content:encoded>
-<pubDate>Tue, 29 Jul 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Critiques of World Models</title>
-<link>https://arxiv.org/abs/2507.05169</link>
-<guid>https://arxiv.org/abs/2507.05169</guid>
-<content:encoded><![CDATA[
-arXiv:2507.05169v3 Announce Type: replace-cross 
-Abstract: World Model, the supposed algorithmic surrogate of the real-world environment which biological agents experience with and act upon, has been an emerging topic in recent years because of the rising needs to develop virtual agents with artificial (general) intelligence. There has been much debate on what a world model really is, how to build it, how to use it, and how to evaluate it. In this essay, starting from the imagination in the famed Sci-Fi classic Dune, and drawing inspiration from the concept of "hypothetical thinking" in psychology literature, we offer critiques of several schools of thoughts on world modeling, and argue the primary goal of a world model to be simulating all actionable possibilities of the real world for purposeful reasoning and acting. Building on the critiques, we propose a new architecture for a general-purpose world model, based on hierarchical, multi-level, and mixed continuous/discrete representations, and a generative and self-supervision learning framework, with an outlook of a Physical, Agentic, and Nested (PAN) AGI system enabled by such a model.
 ]]></content:encoded>
 <pubDate>Tue, 29 Jul 2025 00:00:00 -0400</pubDate>
 </item>
