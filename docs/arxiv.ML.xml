@@ -4,6 +4,7 @@
 <title>cs.LG updates on arXiv.org</title>
 <link>http://rss.arxiv.org/rss/cs.LG</link>
 
+
 <item>
 <title>Geometric Multi-color Message Passing Graph Neural Networks for Blood-brain Barrier Permeability Prediction</title>
 <link>https://arxiv.org/abs/2507.18926</link>
@@ -13,14 +14,12 @@
 
 Summary:
 The paper introduces the geometric multi-color message-passing graph neural network (GMC-MPNN) for accurate prediction of blood-brain barrier permeability in CNS drug development. It incorporates atomic-level geometric features and long-range interactions, enhancing standard message-passing architectures. GMC-MPNN constructs weighted colored subgraphs based on atom types to capture spatial relationships and chemical context. Evaluation on benchmark datasets shows superior performance in classifying compounds and regressing permeability values, outperforming existing models. An ablation study highlights the model's ability to learn from common and rare functional motifs. By integrating spatial geometry, GMC-MPNN sets a new performance benchmark, offering a more accurate and generalizable tool for drug discovery pipelines.
-<br><br>Summary: <div>
+<br /><br />Summary: <div>
 arXiv:2507.18926v2 Announce Type: replace 
 Abstract: Accurate prediction of blood-brain barrier permeability (BBBP) is essential for central nervous system (CNS) drug development. While graph neural networks (GNNs) have advanced molecular property prediction, they often rely on molecular topology and neglect the three-dimensional geometric information crucial for modeling transport mechanisms. This paper introduces the geometric multi-color message-passing graph neural network (GMC-MPNN), a novel framework that enhances standard message-passing architectures by explicitly incorporating atomic-level geometric features and long-range interactions. Our model constructs weighted colored subgraphs based on atom types to capture the spatial relationships and chemical context that govern BBB permeability. We evaluated GMC-MPNN on three benchmark datasets for both classification and regression tasks, using rigorous scaffold-based splitting to ensure a robust assessment of generalization. The results demonstrate that GMC-MPNN consistently outperforms existing state-of-the-art models, achieving superior performance in both classifying compounds as permeable/non-permeable (AUC-ROC of 0.9704 and 0.9685) and in regressing continuous permeability values (RMSE of 0.4609, Pearson correlation of 0.7759). An ablation study further quantified the impact of specific atom-pair interactions, revealing that the model's predictive power derives from its ability to learn from both common and rare, but chemically significant, functional motifs. By integrating spatial geometry into the graph representation, GMC-MPNN sets a new performance benchmark and offers a more accurate and generalizable tool for drug discovery pipelines.
 ]]></content:encoded>
 <pubDate>Mon, 04 Aug 2025 00:00:00 -0400</pubDate>
-<pubDate>Mon, 04 Aug 2025 00:00:00 -0400</pubDate>
 </item>
-
 <item>
 <title>Predicting Large-scale Urban Network Dynamics with Energy-informed Graph Neural Diffusion</title>
 <link>https://arxiv.org/abs/2508.00037</link>
@@ -11371,16 +11370,6 @@ Abstract: Modern generative models exhibit unprecedented capabilities to generat
 <content:encoded><![CDATA[
 arXiv:2311.13349v3 Announce Type: replace 
 Abstract: Deep learning models deployed on edge devices frequently encounter resource variability, which arises from fluctuating energy levels, timing constraints, or prioritization of other critical tasks within the system. State-of-the-art machine learning pipelines generate resource-agnostic models that are not capable to adapt at runtime. In this work, we introduce Resource-Efficient Deep Subnetworks (REDS) to tackle model adaptation to variable resources. In contrast to the state-of-the-art, REDS leverages structured sparsity constructively by exploiting permutation invariance of neurons, which allows for hardware-specific optimizations. Specifically, REDS achieves computational efficiency by (1) skipping sequential computational blocks identified by a novel iterative knapsack optimizer, and (2) taking advantage of data cache by re-arranging the order of operations in REDS computational graph. REDS supports conventional deep networks frequently deployed on the edge and provides computational benefits even for small and simple networks. We evaluate REDS on eight benchmark architectures trained on the Visual Wake Words, Google Speech Commands, Fashion-MNIST, CIFAR-10 and ImageNet-1K datasets, and test on four off-the-shelf mobile and embedded hardware platforms. We provide a theoretical result and empirical evidence demonstrating REDS' outstanding performance in terms of submodels' test set accuracy, and demonstrate an adaptation time in response to dynamic resource constraints of under 40$\mu$s, utilizing a fully-connected network on Arduino Nano 33 BLE.
-]]></content:encoded>
-<pubDate>Tue, 29 Jul 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>The Feature Speed Formula: a flexible approach to scale hyper-parameters of deep neural networks</title>
-<link>https://arxiv.org/abs/2311.18718</link>
-<guid>https://arxiv.org/abs/2311.18718</guid>
-<content:encoded><![CDATA[
-arXiv:2311.18718v4 Announce Type: replace 
-Abstract: Deep learning succeeds by doing hierarchical feature learning, yet tuning hyper-parameters (HP) such as initialization scales, learning rates etc., only give indirect control over this behavior. In this paper, we introduce a key notion to predict and control feature learning: the angle $\theta_\ell$ between the feature updates and the backward pass (at layer index $\ell$). We show that the magnitude of feature updates after one GD step, at any training time, can be expressed via a simple and general \emph{feature speed formula} in terms of this angle $\theta_\ell$, the loss decay, and the magnitude of the backward pass. This angle $\theta_\ell$ is controlled by the conditioning of the layer-to-layer Jacobians and at random initialization, it is determined by the spectrum of a certain kernel, which coincides with the Neural Tangent Kernel when $\ell=\text{depth}$. Given $\theta_\ell$, the feature speed formula provides us with rules to adjust HPs (scales and learning rates) so as to satisfy certain dynamical properties, such as feature learning and loss decay. We investigate the implications of our approach for ReLU MLPs and ResNets in the large width-then-depth limit. Relying on prior work, we show that in ReLU MLPs with iid initialization, the angle degenerates with depth as $\cos(\theta_\ell)=\Theta(1/\sqrt{\ell})$. In contrast, ResNets with branch scale $O(1/\sqrt{\text{depth}})$ maintain a non-degenerate angle $\cos(\theta_\ell)=\Theta(1)$. We use these insights to recover key properties of known HP scalings and also to introduce a new HP scaling for large depth ReLU MLPs with favorable theoretical properties.
 ]]></content:encoded>
 <pubDate>Tue, 29 Jul 2025 00:00:00 -0400</pubDate>
 </item>
