@@ -4,6 +4,7 @@
 <title>cs.LG updates on arXiv.org</title>
 <link>http://rss.arxiv.org/rss/cs.LG</link>
 
+
 <item>
 <title>Your Attention Matters: to Improve Model Robustness to Noise and Spurious Correlations</title>
 <link>https://arxiv.org/abs/2507.20453</link>
@@ -12,11 +13,10 @@
 <div> Keywords: self-attention, Transformer architectures, data corruption, Doubly Stochastic attention, robustness
 
 Summary: 
-Self-attention mechanisms are crucial for Transformer architectures' success, but their robustness to noise and spurious correlations is not well understood. This study evaluates different self-attention mechanisms in Vision Transformers under various data corruption scenarios. Testing on CIFAR-10, CIFAR-100, and Imagenette datasets reveals that Doubly Stochastic attention is the most robust, consistently outperforming other mechanisms by 0.1%-5.1% when data is corrupted during training or testing. These findings provide insights for selecting self-attention mechanisms in settings with imperfect data.<br><br>Summary: <div>
+Self-attention mechanisms are crucial for Transformer architectures' success, but their robustness to noise and spurious correlations is not well understood. This study evaluates different self-attention mechanisms in Vision Transformers under various data corruption scenarios. Testing on CIFAR-10, CIFAR-100, and Imagenette datasets reveals that Doubly Stochastic attention is the most robust, consistently outperforming other mechanisms by 0.1%-5.1% when data is corrupted during training or testing. These findings provide insights for selecting self-attention mechanisms in settings with imperfect data.<br /><br />Summary: <div>
 arXiv:2507.20453v2 Announce Type: replace 
 Abstract: Self-attention mechanisms are foundational to Transformer architectures, supporting their impressive success in a wide range of tasks. While there are many self-attention variants, their robustness to noise and spurious correlations has not been well studied. This study evaluates Softmax, Sigmoid, Linear, Doubly Stochastic, and Cosine attention within Vision Transformers under different data corruption scenarios. Through testing across the CIFAR-10, CIFAR-100, and Imagenette datasets, we show that Doubly Stochastic attention is the most robust. It consistently outperformed the next best mechanism by $0.1\%-5.1\%$ when training data, or both training and testing data, were corrupted. Our findings inform self-attention selection in contexts with imperfect data. The code used is available at https://github.com/ctamayor/NeurIPS-Robustness-ViT.
 ]]></content:encoded>
-<pubDate>Tue, 05 Aug 2025 00:00:00 -0400</pubDate>
 <pubDate>Tue, 05 Aug 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -24,13 +24,12 @@ Abstract: Self-attention mechanisms are foundational to Transformer architecture
 <link>https://arxiv.org/abs/2507.21183</link>
 <guid>https://arxiv.org/abs/2507.21183</guid>
 <content:encoded><![CDATA[
-<div> Prior reward knowledge, Preference Optimization, Maximum a Posteriori (MaP), Direct Preference Optimization (DPO), alignment<br>
-<br>
+<div> Prior reward knowledge, Preference Optimization, Maximum a Posteriori (MaP), Direct Preference Optimization (DPO), alignment<br />
+<br />
 Summary: Maximum a Posteriori Preference Optimization (MaPPO) is introduced as a framework for learning from preferences in large language models (LLMs). It incorporates prior reward knowledge into the optimization objective, extending the existing paradigm of Direct Preference Optimization (DPO) by using MaP. This approach improves alignment by avoiding oversimplified binary classification of responses. MaPPO does not require additional hyperparameters and supports preference optimization in both offline and online settings. It can be used as a plugin with consistent improvement over DPO variants. Empirical evaluations on standard benchmarks show that MaPPO enhances alignment performance without sacrificing computational efficiency. <div>
 arXiv:2507.21183v2 Announce Type: replace 
 Abstract: As the era of large language models (LLMs) on behalf of users unfolds, Preference Optimization (PO) methods have become a central approach to aligning LLMs with human preferences and improving performance. We propose Maximum a Posteriori Preference Optimization (MaPPO), a framework for learning from preferences that explicitly incorporates prior reward knowledge into the optimization objective. While existing methods such as Direct Preference Optimization (DPO) and its variants treat preference learning as a Maximum Likelihood Estimation (MLE) problem, MaPPO extends this paradigm by integrating prior reward estimates into a principled Maximum a Posteriori (MaP) objective. This not only generalizes DPO and its variants, but also enhances alignment by mitigating the oversimplified binary classification of responses. More importantly, MaPPO introduces no additional hyperparameter, and supports preference optimization in both offline and online settings. In addition, MaPPO can be used as a plugin with consistent improvement on DPO variants, including widely used SimPO, IPO, and CPO. Extensive empirical evaluations of different model sizes and model series on three standard benchmarks, including MT-Bench, AlpacaEval 2.0, and Arena-Hard, demonstrate consistent improvements in alignment performance without sacrificing computational efficiency.
 ]]></content:encoded>
-<pubDate>Tue, 05 Aug 2025 00:00:00 -0400</pubDate>
 <pubDate>Tue, 05 Aug 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -46,7 +45,6 @@ arXiv:2507.21394v2 Announce Type: replace
 Abstract: Sequence modeling is crucial for AI to understand temporal data and detect complex time-dependent patterns. While recurrent neural networks (RNNs), convolutional neural networks (CNNs), and Transformers have advanced in capturing long-range dependencies, they struggle with achieving high accuracy with very long sequences due to limited memory retention (fixed context window). State-Space Models (SSMs) leverage exponentially decaying memory enabling lengthy context window and so they process very long data sequences more efficiently than recurrent and Transformer-based models. Unlike traditional neural models like CNNs and RNNs, SSM-based models require solving differential equations through continuous integration, making training and inference both compute- and memory-intensive on conventional CPUs and GPUs. In this paper we introduce a specialized hardware accelerator, EpochCore, for accelerating SSMs. EpochCore is based on systolic arrays (SAs) and is designed to enhance the energy efficiency and throughput of inference of SSM-based models for long-range sequence tasks. Within the SA, we propose a versatile processing element (PE) called LIMA-PE to perform traditional and specialized MAC operations to support traditional DNNs and SSMs. To complement the EpochCore microarchitecture, we propose a novel dataflow, ProDF, which enables highly efficient execution of SSM-based models. By leveraging the LIMA-PE microarchitecture and ProDF, EpochCore achieves on average 250x gains in performance and 45x improvement in energy efficiency, at the expense of 2x increase in area cost over traditional SA-based accelerators, and around ~2,000x improvement in latency/inference on LRA datasets compared to GPU kernel operations.
 ]]></content:encoded>
 <pubDate>Tue, 05 Aug 2025 00:00:00 -0400</pubDate>
-<pubDate>Tue, 05 Aug 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
 <title>GSCache: Real-Time Radiance Caching for Volume Path Tracing using 3D Gaussian Splatting</title>
@@ -61,7 +59,6 @@ arXiv:2507.19718v2 Announce Type: replace-cross
 Abstract: Real-time path tracing is rapidly becoming the standard for rendering in entertainment and professional applications. In scientific visualization, volume rendering plays a crucial role in helping researchers analyze and interpret complex 3D data. Recently, photorealistic rendering techniques have gained popularity in scientific visualization, yet they face significant challenges. One of the most prominent issues is slow rendering performance and high pixel variance caused by Monte Carlo integration. In this work, we introduce a novel radiance caching approach for path-traced volume rendering. Our method leverages advances in volumetric scene representation and adapts 3D Gaussian splatting to function as a multi-level, path-space radiance cache. This cache is designed to be trainable on the fly, dynamically adapting to changes in scene parameters such as lighting configurations and transfer functions. By incorporating our cache, we achieve less noisy, higher-quality images without increasing rendering costs. To evaluate our approach, we compare it against a baseline path tracer that supports uniform sampling and next-event estimation and the state-of-the-art for neural radiance caching. Through both quantitative and qualitative analyses, we demonstrate that our path-space radiance cache is a robust solution that is easy to integrate and significantly enhances the rendering quality of volumetric visualization applications while maintaining comparable computational efficiency.
 ]]></content:encoded>
 <pubDate>Tue, 05 Aug 2025 00:00:00 -0400</pubDate>
-<pubDate>Tue, 05 Aug 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
 <title>Handoff Design in User-Centric Cell-Free Massive MIMO Networks Using DRL</title>
@@ -71,11 +68,10 @@ Abstract: Real-time path tracing is rapidly becoming the standard for rendering 
 <div> mobile users, user-centric clustering, handoff operations, deep reinforcement learning, soft actor-critic
 
 Summary: 
-The paper proposes a solution using deep reinforcement learning (DRL) to predict and manage connections for mobile users in user-centric cell-free massive MIMO networks. The Soft Actor-Critic algorithm is utilized with continuous action space representation to train a deep neural network for handoff (HO) policy. A novel reward function is introduced to balance attainable rate and HO overhead. Two variants are developed with either mobility direction-assisted (DA) observations or history-assisted (HA) observations. Simulation results demonstrate the scalability of the continuous action space approach and the ability of the HO policy to minimize overhead by timing HO initiation. The solution achieves a real-time response time of less than 0.4 ms. <br><br> <div>
+The paper proposes a solution using deep reinforcement learning (DRL) to predict and manage connections for mobile users in user-centric cell-free massive MIMO networks. The Soft Actor-Critic algorithm is utilized with continuous action space representation to train a deep neural network for handoff (HO) policy. A novel reward function is introduced to balance attainable rate and HO overhead. Two variants are developed with either mobility direction-assisted (DA) observations or history-assisted (HA) observations. Simulation results demonstrate the scalability of the continuous action space approach and the ability of the HO policy to minimize overhead by timing HO initiation. The solution achieves a real-time response time of less than 0.4 ms. <br /><br /> <div>
 arXiv:2507.20966v2 Announce Type: replace-cross 
 Abstract: In the user-centric cell-free massive MIMO (UC-mMIMO) network scheme, user mobility necessitates updating the set of serving access points to maintain the user-centric clustering. Such updates are typically performed through handoff (HO) operations; however, frequent HOs lead to overheads associated with the allocation and release of resources. This paper presents a deep reinforcement learning (DRL)-based solution to predict and manage these connections for mobile users. Our solution employs the Soft Actor-Critic algorithm, with continuous action space representation, to train a deep neural network to serve as the HO policy. We present a novel proposition for a reward function that integrates a HO penalty in order to balance the attainable rate and the associated overhead related to HOs. We develop two variants of our system; the first one uses mobility direction-assisted (DA) observations that are based on the user movement pattern, while the second one uses history-assisted (HA) observations that are based on the history of the large-scale fading (LSF). Simulation results show that our DRL-based continuous action space approach is more scalable than discrete space counterpart, and that our derived HO policy automatically learns to gather HOs in specific time slots to minimize the overhead of initiating HOs. Our solution can also operate in real time with a response time less than 0.4 ms.
 ]]></content:encoded>
-<pubDate>Tue, 05 Aug 2025 00:00:00 -0400</pubDate>
 <pubDate>Tue, 05 Aug 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -83,13 +79,12 @@ Abstract: In the user-centric cell-free massive MIMO (UC-mMIMO) network scheme, 
 <link>https://arxiv.org/abs/2507.21448</link>
 <guid>https://arxiv.org/abs/2507.21448</guid>
 <content:encoded><![CDATA[
-<div> Keywords: Speech enhancement, audio-visual speech recognition, active speaker detection, real-time system, open-source implementation<br>
-Summary:<br>
-The paper introduces RAVEN, a real-time audio-visual speech enhancement (AVSE) system that enhances the on-screen target speaker while suppressing interference and background noise. Visual embeddings from audio-visual speech recognition (AVSR) and active speaker detection (ASD) models play a crucial role in improving AVSE performance in various SNR conditions and multi-speaker settings. Concatenating embeddings from AVSR and ASD models is particularly effective in low-SNR, multi-speaker environments, while AVSR embeddings alone work best in noise-only scenarios. The study also presents a real-time streaming system that operates on a computer CPU and provides a video demonstration along with an open-source code repository. This marks the first open-source implementation of a real-time AVSE system, offering a valuable resource for researchers and developers in the field. <br> <div>
+<div> Keywords: Speech enhancement, audio-visual speech recognition, active speaker detection, real-time system, open-source implementation<br />
+Summary:<br />
+The paper introduces RAVEN, a real-time audio-visual speech enhancement (AVSE) system that enhances the on-screen target speaker while suppressing interference and background noise. Visual embeddings from audio-visual speech recognition (AVSR) and active speaker detection (ASD) models play a crucial role in improving AVSE performance in various SNR conditions and multi-speaker settings. Concatenating embeddings from AVSR and ASD models is particularly effective in low-SNR, multi-speaker environments, while AVSR embeddings alone work best in noise-only scenarios. The study also presents a real-time streaming system that operates on a computer CPU and provides a video demonstration along with an open-source code repository. This marks the first open-source implementation of a real-time AVSE system, offering a valuable resource for researchers and developers in the field. <br /> <div>
 arXiv:2507.21448v2 Announce Type: replace-cross 
 Abstract: Speech enhancement in audio-only settings remains challenging, particularly in the presence of interfering speakers. This paper presents a simple yet effective real-time audio-visual speech enhancement (AVSE) system, RAVEN, which isolates and enhances the on-screen target speaker while suppressing interfering speakers and background noise. We investigate how visual embeddings learned from audio-visual speech recognition (AVSR) and active speaker detection (ASD) contribute to AVSE across different SNR conditions and numbers of interfering speakers. Our results show concatenating embeddings from AVSR and ASD models provides the greatest improvement in low-SNR, multi-speaker environments, while AVSR embeddings alone perform best in noise-only scenarios. In addition, we develop a real-time streaming system that operates on a computer CPU and we provide a video demonstration and code repository. To our knowledge, this is the first open-source implementation of a real-time AVSE system.
 ]]></content:encoded>
-<pubDate>Tue, 05 Aug 2025 00:00:00 -0400</pubDate>
 <pubDate>Tue, 05 Aug 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -103,14 +98,12 @@ Summary:
 
 The study evaluates the effectiveness of modern deepfake detectors using a novel testing procedure designed to replicate real-world conditions. A dataset containing over 500,000 high-quality deepfake images generated using state-of-the-art techniques was created for evaluation. The analysis revealed that detecting deepfakes remains a challenging task, with less than half of the detectors achieving an AUC score above 60% and the lowest score being 50%. Moreover, the study demonstrated that simple image manipulations such as JPEG compression or enhancement could significantly impact the performance of the detection models. The findings highlight the ongoing need for advancements in deepfake detection technology to combat the evolving threat posed by fake media. The code and data from the study are publicly available for further research and development. 
 
-<br><br>Summary: <div>
+<br /><br />Summary: <div>
 arXiv:2507.21905v2 Announce Type: replace-cross 
 Abstract: Deepfakes powered by advanced machine learning models present a significant and evolving threat to identity verification and the authenticity of digital media. Although numerous detectors have been developed to address this problem, their effectiveness has yet to be tested when applied to real-world data. In this work we evaluate modern deepfake detectors, introducing a novel testing procedure designed to mimic real-world scenarios for deepfake detection. Using state-of-the-art deepfake generation methods, we create a comprehensive dataset containing more than 500,000 high-quality deepfake images. Our analysis shows that detecting deepfakes still remains a challenging task. The evaluation shows that in fewer than half of the deepfake detectors tested achieved an AUC score greater than 60%, with the lowest being 50%. We demonstrate that basic image manipulations, such as JPEG compression or image enhancement, can significantly reduce model performance. All code and data are publicly available at https://github.com/SumSubstance/Deepfake-Detectors-in-the-Wild.
 ]]></content:encoded>
 <pubDate>Tue, 05 Aug 2025 00:00:00 -0400</pubDate>
-<pubDate>Tue, 05 Aug 2025 00:00:00 -0400</pubDate>
 </item>
-
 <item>
 <title>PCS Workflow for Veridical Data Science in the Age of AI</title>
 <link>https://arxiv.org/abs/2508.00835</link>
@@ -11124,80 +11117,6 @@ Abstract: We introduce the Cooperative Network Architecture (CNA), a model that 
 <content:encoded><![CDATA[
 arXiv:2407.10247v2 Announce Type: replace-cross 
 Abstract: The integration of Artificial Intelligence (AI) into corporate strategy has become critical for organizations seeking to maintain a competitive advantage in the digital age. As AI transforms business models, operations, and decision-making, the need for dedicated executive leadership to guide, govern, and orchestrate this transformation becomes increasingly evident. This paper examines emerging future scenarios across three domains: the AI Economy, the AI Organization, and Competition in the Age of AI. These domains reveal environmental, structural, and strategic tensions that existing C-suite roles struggle to resolve. In response, the paper develops a theory-informed framework for the Chief AI Officer (CAIO), outlining the distinct functions and capabilities required to guide and govern AI at scale. Drawing on illustrative cases and emerging practice, this conceptualization clarifies the CAIOs unique role within the executive landscape and presents a forward-looking research agenda. This paper advances the discourse on AI leadership by offering a theory-driven rationale for the strategic integration of AI at the executive level and by positioning the Chief AI Officer as a distinct and necessary role within modern organizations.
-]]></content:encoded>
-<pubDate>Thu, 31 Jul 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Neutral Residues: Revisiting Adapters for Model Extension</title>
-<link>https://arxiv.org/abs/2410.02744</link>
-<guid>https://arxiv.org/abs/2410.02744</guid>
-<content:encoded><![CDATA[
-arXiv:2410.02744v2 Announce Type: replace-cross 
-Abstract: We address the problem of extending a pretrained large language model to a new domain that was not seen during training. Standard techniques, such as finetuning or low-rank adaptation (LoRA) are successful at domain adaptation, but do not formally add capacity to the model. This often leads to a trade-off, between performing well on the new domain vs. degrading performance on the original domain. Here, we revisit and improve adapters to extend LLMs from three angles: data, architecture and training procedure, which are advantageously considered jointly. The resulting method, called neutral residues, modifies adapters in a way that leads each new residual block to output near-zeros on the original domain. This solution leads to strong results when adapting a state-of-the-art model originally trained on English to a new language. Neutral residues significantly outperform competing approaches such as finetuning, LoRA or vanilla adapters in terms of the trade-off between learning the new language and not forgetting English.
-]]></content:encoded>
-<pubDate>Thu, 31 Jul 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Effective Non-Random Extreme Learning Machine</title>
-<link>https://arxiv.org/abs/2411.16229</link>
-<guid>https://arxiv.org/abs/2411.16229</guid>
-<content:encoded><![CDATA[
-arXiv:2411.16229v2 Announce Type: replace-cross 
-Abstract: The Extreme Learning Machine (ELM) is a growing statistical technique widely applied to regression problems. In essence, ELMs are single-layer neural networks where the hidden layer weights are randomly sampled from a specific distribution, while the output layer weights are learned from the data. Two of the key challenges with this approach are the architecture design, specifically determining the optimal number of neurons in the hidden layer, and the method's sensitivity to the random initialization of hidden layer weights.
-  This paper introduces a new and enhanced learning algorithm for regression tasks, the Effective Non-Random ELM (ENR-ELM), which simplifies the architecture design and eliminates the need for random hidden layer weight selection. The proposed method incorporates concepts from signal processing, such as basis functions and projections, into the ELM framework. We introduce two versions of the ENR-ELM: the approximated ENR-ELM and the incremental ENR-ELM. Experimental results on both synthetic and real datasets demonstrate that our method overcomes the problems of traditional ELM while maintaining comparable predictive performance.
-]]></content:encoded>
-<pubDate>Thu, 31 Jul 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>SyncDiff: Synchronized Motion Diffusion for Multi-Body Human-Object Interaction Synthesis</title>
-<link>https://arxiv.org/abs/2412.20104</link>
-<guid>https://arxiv.org/abs/2412.20104</guid>
-<content:encoded><![CDATA[
-arXiv:2412.20104v5 Announce Type: replace-cross 
-Abstract: Synthesizing realistic human-object interaction motions is a critical problem in VR/AR and human animation. Unlike the commonly studied scenarios involving a single human or hand interacting with one object, we address a more generic multi-body setting with arbitrary numbers of humans, hands, and objects. This complexity introduces significant challenges in synchronizing motions due to the high correlations and mutual influences among bodies. To address these challenges, we introduce SyncDiff, a novel method for multi-body interaction synthesis using a synchronized motion diffusion strategy. SyncDiff employs a single diffusion model to capture the joint distribution of multi-body motions. To enhance motion fidelity, we propose a frequency-domain motion decomposition scheme. Additionally, we introduce a new set of alignment scores to emphasize the synchronization of different body motions. SyncDiff jointly optimizes both data sample likelihood and alignment likelihood through an explicit synchronization strategy. Extensive experiments across four datasets with various multi-body configurations demonstrate the superiority of SyncDiff over existing state-of-the-art motion synthesis methods.
-]]></content:encoded>
-<pubDate>Thu, 31 Jul 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Application of Vision-Language Model to Pedestrians Behavior and Scene Understanding in Autonomous Driving</title>
-<link>https://arxiv.org/abs/2501.06680</link>
-<guid>https://arxiv.org/abs/2501.06680</guid>
-<content:encoded><![CDATA[
-arXiv:2501.06680v2 Announce Type: replace-cross 
-Abstract: Vision-language models (VLMs) have become a promising approach to enhancing perception and decision-making in autonomous driving. The gap remains in applying VLMs to understand complex scenarios interacting with pedestrians and efficient vehicle deployment. In this paper, we propose a knowledge distillation method that transfers knowledge from large-scale vision-language foundation models to efficient vision networks, and we apply it to pedestrian behavior prediction and scene understanding tasks, achieving promising results in generating more diverse and comprehensive semantic attributes. We also utilize multiple pre-trained models and ensemble techniques to boost the model's performance. We further examined the effectiveness of the model after knowledge distillation; the results show significant metric improvements in open-vocabulary perception and trajectory prediction tasks, which can potentially enhance the end-to-end performance of autonomous driving.
-]]></content:encoded>
-<pubDate>Thu, 31 Jul 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Skull-stripping induces shortcut learning in MRI-based Alzheimer's disease classification</title>
-<link>https://arxiv.org/abs/2501.15831</link>
-<guid>https://arxiv.org/abs/2501.15831</guid>
-<content:encoded><![CDATA[
-arXiv:2501.15831v3 Announce Type: replace-cross 
-Abstract: Objectives:  High classification accuracy of Alzheimer's disease (AD) from structural MRI has been achieved using deep neural networks, yet the specific image features contributing to these decisions remain unclear. In this study, the contributions of T1-weighted (T1w) gray-white matter texture, volumetric information, and preprocessing -- particularly skull-stripping -- were systematically assessed.
-  Methods: A dataset of 990 matched T1w MRIs from AD patients and cognitively normal controls from the ADNI database were used. Preprocessing was varied through skull-stripping and intensity binarization to isolate texture and shape contributions. A 3D convolutional neural network was trained on each configuration, and classification performance was compared using exact McNemar tests with discrete Bonferroni-Holm correction. Feature relevance was analyzed using Layer-wise Relevance Propagation, image similarity metrics, and spectral clustering of relevance maps.
-  Results: Despite substantial differences in image content, classification accuracy, sensitivity, and specificity remained stable across preprocessing conditions. Models trained on binarized images preserved performance, indicating minimal reliance on gray-white matter texture. Instead, volumetric features -- particularly brain contours introduced through skull-stripping -- were consistently used by the models.
-  Conclusions: This behavior reflects a shortcut learning phenomenon, where preprocessing artifacts act as potentially unintended cues. The resulting Clever Hans effect emphasizes the critical importance of interpretability tools to reveal hidden biases and to ensure robust and trustworthy deep learning in medical imaging.
-]]></content:encoded>
-<pubDate>Thu, 31 Jul 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>The Ball-Proximal (="Broximal") Point Method: a New Algorithm, Convergence Theory, and Applications</title>
-<link>https://arxiv.org/abs/2502.02002</link>
-<guid>https://arxiv.org/abs/2502.02002</guid>
-<content:encoded><![CDATA[
-arXiv:2502.02002v2 Announce Type: replace-cross 
-Abstract: Non-smooth and non-convex global optimization poses significant challenges across various applications, where standard gradient-based methods often struggle. We propose the Ball-Proximal Point Method, Broximal Point Method, or Ball Point Method (BPM) for short - a novel algorithmic framework inspired by the classical Proximal Point Method (PPM) (Rockafellar, 1976), which, as we show, sheds new light on several foundational optimization paradigms and phenomena, including non-convex and non-smooth optimization, acceleration, smoothing, adaptive stepsize selection, and trust-region methods. At the core of BPM lies the ball-proximal ("broximal") operator, which arises from the classical proximal operator by replacing the quadratic distance penalty by a ball constraint. Surprisingly, and in sharp contrast with the sublinear rate of PPM in the nonsmooth convex regime, we prove that BPM converges linearly and in a finite number of steps in the same regime. Furthermore, by introducing the concept of ball-convexity, we prove that BPM retains the same global convergence guarantees under weaker assumptions, making it a powerful tool for a broader class of potentially non-convex optimization problems. Just like PPM plays the role of a conceptual method inspiring the development of practically efficient algorithms and algorithmic elements, e.g., gradient descent, adaptive step sizes, acceleration (Ahn & Sra, 2020), and "W" in AdamW (Zhuang et al., 2022), we believe that BPM should be understood in the same manner: as a blueprint and inspiration for further development.
-]]></content:encoded>
-<pubDate>Thu, 31 Jul 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Scoring Verifiers: Evaluating Synthetic Verification for Code and Reasoning</title>
-<link>https://arxiv.org/abs/2502.13820</link>
-<guid>https://arxiv.org/abs/2502.13820</guid>
-<content:encoded><![CDATA[
-arXiv:2502.13820v3 Announce Type: replace-cross 
-Abstract: Synthetic verification techniques such as generating test cases and reward modelling are common ways to enhance the coding capabilities of large language models (LLM) beyond predefined tests. Additionally, code verification has recently found great success as a critical component in improving reasoning capability of LLMs via reinforcement learning. In this paper, we propose an approach which can transform existing coding benchmarks into scoring and ranking datasets to evaluate the effectiveness of synthetic verifiers. We also propose multiple metrics to measure different aspects of the synthetic verifiers with the proposed benchmarks. By employing the proposed approach, we release four new benchmarks (HE-R, HE-R+, MBPP-R, and MBPP-R+), and analyzed synthetic verification methods with standard, reasoning-based, and reward-based LLMs. Our experiments show that reasoning can significantly improve test case generation and that scaling the number of test cases enhances the verification accuracy.
 ]]></content:encoded>
 <pubDate>Thu, 31 Jul 2025 00:00:00 -0400</pubDate>
 </item>
