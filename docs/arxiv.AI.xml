@@ -4,18 +4,18 @@
 <title>cs.AI updates on arXiv.org</title>
 <link>http://rss.arxiv.org/rss/cs.AI</link>
 
+
 <item>
 <title>MoCHA: Advanced Vision-Language Reasoning with MoE Connector and Hierarchical Group Attention</title>
 <link>https://arxiv.org/abs/2507.22805</link>
 <guid>https://arxiv.org/abs/2507.22805</guid>
 <content:encoded><![CDATA[
-<div> Vision large language models, MoCHA, visual framework, vision backbones, MoECs module, Hierarchical Group Attention (HGA), Phi2-2.7B, Vicuna-7B <br>
+<div> Vision large language models, MoCHA, visual framework, vision backbones, MoECs module, Hierarchical Group Attention (HGA), Phi2-2.7B, Vicuna-7B <br />
 Summary:
-The study introduces MoCHA, a novel visual framework that integrates four vision backbones and a sparse Mixture of Experts Connectors (MoECs) module to extract complementary visual features while dynamically selecting experts. It also incorporates a Hierarchical Group Attention (HGA) with intra- and inter-group operations and an adaptive gating strategy to enhance visual feature utilization. MoCHA outperforms existing models on tasks like hallucination mitigation and following visual instructions, surpassing CuMo (Mistral-7B) in performance. Ablation studies confirm the effectiveness of MoECs and HGA in boosting MoCHA's overall performance. This innovative approach addresses the challenges of high training costs and difficulty in extracting visual details in visual large language models. <br><br>Summary: <div>
+The study introduces MoCHA, a novel visual framework that integrates four vision backbones and a sparse Mixture of Experts Connectors (MoECs) module to extract complementary visual features while dynamically selecting experts. It also incorporates a Hierarchical Group Attention (HGA) with intra- and inter-group operations and an adaptive gating strategy to enhance visual feature utilization. MoCHA outperforms existing models on tasks like hallucination mitigation and following visual instructions, surpassing CuMo (Mistral-7B) in performance. Ablation studies confirm the effectiveness of MoECs and HGA in boosting MoCHA's overall performance. This innovative approach addresses the challenges of high training costs and difficulty in extracting visual details in visual large language models. <br /><br />Summary: <div>
 arXiv:2507.22805v2 Announce Type: replace-cross 
 Abstract: Vision large language models (VLLMs) are focusing primarily on handling complex and fine-grained visual information by incorporating advanced vision encoders and scaling up visual models. However, these approaches face high training and inference costs, as well as challenges in extracting visual details, effectively bridging across modalities. In this work, we propose a novel visual framework, MoCHA, to address these issues. Our framework integrates four vision backbones (i.e., CLIP, SigLIP, DINOv2 and ConvNeXt) to extract complementary visual features and is equipped with a sparse Mixture of Experts Connectors (MoECs) module to dynamically select experts tailored to different visual dimensions. To mitigate redundant or insufficient use of the visual information encoded by the MoECs module, we further design a Hierarchical Group Attention (HGA) with intra- and inter-group operations and an adaptive gating strategy for encoded visual features. We train MoCHA on two mainstream LLMs (e.g., Phi2-2.7B and Vicuna-7B) and evaluate their performance across various benchmarks. Notably, MoCHA outperforms state-of-the-art open-weight models on various tasks. For example, compared to CuMo (Mistral-7B), our MoCHA (Phi2-2.7B) presents outstanding abilities to mitigate hallucination by showing improvements of 3.25% in POPE and to follow visual instructions by raising 153 points on MME. Finally, ablation studies further confirm the effectiveness and robustness of the proposed MoECs and HGA in improving the overall performance of MoCHA.
 ]]></content:encoded>
-<pubDate>Wed, 06 Aug 2025 00:00:00 -0400</pubDate>
 <pubDate>Wed, 06 Aug 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -26,13 +26,12 @@ Abstract: Vision large language models (VLLMs) are focusing primarily on handlin
 <div> Autonomous cars, XYZ-Drive model, vision-language integration, goal-centered attention, MD-NEX Outdoor-Driving benchmark
 
 Summary:
-XYZ-Drive is a vision-language model that integrates geometric accuracy and semantic understanding for autonomous driving tasks. It uses a goal-centered cross-attention layer to fuse information from front-camera frames, overhead maps, and waypoint tokens to generate steering and speed commands. The model outperforms existing methods on the MD-NEX Outdoor-Driving benchmark, achieving high success rates and efficiency. Ablations show the importance of integrating vision, waypoint, and map modalities, as well as the benefits of fine-tuning the transformer model. The study highlights the significance of early, token-level fusion of intent and map layout for accurate, transparent, and real-time driving. Coarsening map resolution negatively impacts performance, indicating the importance of maintaining detailed map information for safe navigation. <br><br>Summary: <div>
+XYZ-Drive is a vision-language model that integrates geometric accuracy and semantic understanding for autonomous driving tasks. It uses a goal-centered cross-attention layer to fuse information from front-camera frames, overhead maps, and waypoint tokens to generate steering and speed commands. The model outperforms existing methods on the MD-NEX Outdoor-Driving benchmark, achieving high success rates and efficiency. Ablations show the importance of integrating vision, waypoint, and map modalities, as well as the benefits of fine-tuning the transformer model. The study highlights the significance of early, token-level fusion of intent and map layout for accurate, transparent, and real-time driving. Coarsening map resolution negatively impacts performance, indicating the importance of maintaining detailed map information for safe navigation. <br /><br />Summary: <div>
 arXiv:2507.23064v2 Announce Type: replace-cross 
 Abstract: Autonomous cars need geometric accuracy and semantic understanding to navigate complex environments, yet most stacks handle them separately. We present XYZ-Drive, a single vision-language model that reads a front-camera frame, a 25m $\times$ 25m overhead map, and the next waypoint, then outputs steering and speed. A lightweight goal-centered cross-attention layer lets waypoint tokens highlight relevant image and map patches, supporting both action and textual explanations, before the fused tokens enter a partially fine-tuned LLaMA-3.2 11B model.
   On the MD-NEX Outdoor-Driving benchmark XYZ-Drive attains 95% success and 0.80 Success weighted by Path Length (SPL), surpassing PhysNav-DG by 15%. and halving collisions, all while significantly improving efficiency by using only a single branch. Sixteen ablations explain the gains. Removing any modality (vision, waypoint, map) drops success by up to 11%, confirming their complementary roles and rich connections. Replacing goal-centered attention with simple concatenation cuts 3% in performance, showing query-based fusion injects map knowledge more effectively. Keeping the transformer frozen loses 5%, showing the importance of fine-tuning when applying VLMs for specific tasks such as autonomous driving. Coarsening map resolution from 10 cm to 40 cm blurs lane edges and raises crash rate.
   Overall, these results demonstrate that early, token-level fusion of intent and map layout enables accurate, transparent, real-time driving.
 ]]></content:encoded>
-<pubDate>Wed, 06 Aug 2025 00:00:00 -0400</pubDate>
 <pubDate>Wed, 06 Aug 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -42,15 +41,13 @@ Abstract: Autonomous cars need geometric accuracy and semantic understanding to 
 <content:encoded><![CDATA[
 <div> framework, compositional layout, content editing, RewardDPO, Reward-Refine
 
-Summary:<br>
+Summary:<br />
 SMART-Editor is a framework for compositional layout and content editing across structured and unstructured domains. The model uses Reward-Refine and RewardDPO strategies to maintain global coherence while making edits. An evaluation benchmark, SMARTEdit-Bench, covers various edit scenarios. SMART-Editor surpasses strong baselines like InstructPix2Pix and HIVE, with RewardDPO achieving up to 15% improvements in structured settings and Reward-Refine showing benefits in natural image editing. Both automatic and human evaluations confirm the effectiveness of reward-guided planning in generating visually aligned and semantically consistent edits. <div>
 arXiv:2507.23095v2 Announce Type: replace-cross 
 Abstract: We present SMART-Editor, a framework for compositional layout and content editing across structured (posters, websites) and unstructured (natural images) domains. Unlike prior models that perform local edits, SMART-Editor preserves global coherence through two strategies: Reward-Refine, an inference-time rewardguided refinement method, and RewardDPO, a training-time preference optimization approach using reward-aligned layout pairs. To evaluate model performance, we introduce SMARTEdit-Bench, a benchmark covering multi-domain, cascading edit scenarios. SMART-Editor outperforms strong baselines like InstructPix2Pix and HIVE, with RewardDPO achieving up to 15% gains in structured settings and Reward-Refine showing advantages on natural images. Automatic and human evaluations confirm the value of reward-guided planning in producing semantically consistent and visually aligned edits.
 ]]></content:encoded>
 <pubDate>Wed, 06 Aug 2025 00:00:00 -0400</pubDate>
-<pubDate>Wed, 06 Aug 2025 00:00:00 -0400</pubDate>
 </item>
-
 <item>
 <title>Efficient Agents: Building Effective Agents While Reducing Cost</title>
 <link>https://arxiv.org/abs/2508.02694</link>
@@ -11032,52 +11029,6 @@ Summary:
 This paper explores the impact of different prompt translation strategies in multilingual classification tasks using retrieval-augmented generation (RAG)-enhanced Large Language Models (LLMs). The study focuses on optimizing prompting strategies to improve knowledge sharing across languages and enhance performance on classification tasks. Two common practices, pre-translation to create a mono-lingual prompt and cross-lingual prompting for direct inference, are evaluated. The experimental results indicate that an optimized prompting strategy can significantly enhance knowledge sharing and improve performance in multilingual systems. This emphasizes the importance of leveraging multilingual resource sharing and cross-lingual prompt optimization, especially for low-resource languages. The findings suggest that with the right prompting strategy, multilingual LLMs can effectively bridge language barriers and enhance the capabilities of multilingual systems. <br /><br />Summary: <div>
 arXiv:2507.22923v1 Announce Type: cross 
 Abstract: Despite advances in the multilingual capabilities of Large Language Models (LLMs), their performance varies substantially across different languages and tasks. In multilingual retrieval-augmented generation (RAG)-based systems, knowledge bases (KB) are often shared from high-resource languages (such as English) to low-resource ones, resulting in retrieved information from the KB being in a different language than the rest of the context. In such scenarios, two common practices are pre-translation to create a mono-lingual prompt and cross-lingual prompting for direct inference. However, the impact of these choices remains unclear. In this paper, we systematically evaluate the impact of different prompt translation strategies for classification tasks with RAG-enhanced LLMs in multilingual systems. Experimental results show that an optimized prompting strategy can significantly improve knowledge sharing across languages, therefore improve the performance on the downstream classification task. The findings advocate for a broader utilization of multilingual resource sharing and cross-lingual prompt optimization for non-English languages, especially the low-resource ones.
-]]></content:encoded>
-<pubDate>Fri, 01 Aug 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Hierarchical Memory for High-Efficiency Long-Term Reasoning in LLM Agents</title>
-<link>https://arxiv.org/abs/2507.22925</link>
-<guid>https://arxiv.org/abs/2507.22925</guid>
-<content:encoded><![CDATA[
-<div> memory, Large Language Model Agents, reasoning capabilities, hierarchical memory, task settings
-
-Summary:<br />
-The article introduces a novel architecture, Hierarchical Memory (H-MEM), for Large Language Model Agents (LLM Agents) to enhance their long-term memory capabilities. H-MEM organizes memory in a multi-level structure based on semantic abstraction levels, with each memory vector containing positional index encoding for efficient retrieval. An index-based routing mechanism facilitates layer-by-layer memory retrieval during reasoning without exhaustive similarity computations. Experimental evaluation on the LoCoMo dataset across five task settings shows that H-MEM consistently outperforms five baseline methods, demonstrating its effectiveness in long-term dialogue scenarios. <div>
-arXiv:2507.22925v1 Announce Type: cross 
-Abstract: Long-term memory is one of the key factors influencing the reasoning capabilities of Large Language Model Agents (LLM Agents). Incorporating a memory mechanism that effectively integrates past interactions can significantly enhance decision-making and contextual coherence of LLM Agents. While recent works have made progress in memory storage and retrieval, such as encoding memory into dense vectors for similarity-based search or organizing knowledge in the form of graph, these approaches often fall short in structured memory organization and efficient retrieval. To address these limitations, we propose a Hierarchical Memory (H-MEM) architecture for LLM Agents that organizes and updates memory in a multi-level fashion based on the degree of semantic abstraction. Each memory vector is embedded with a positional index encoding pointing to its semantically related sub-memories in the next layer. During the reasoning phase, an index-based routing mechanism enables efficient, layer-by-layer retrieval without performing exhaustive similarity computations. We evaluate our method on five task settings from the LoCoMo dataset. Experimental results show that our approach consistently outperforms five baseline methods, demonstrating its effectiveness in long-term dialogue scenarios.
-]]></content:encoded>
-<pubDate>Fri, 01 Aug 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>How does Chain of Thought Think? Mechanistic Interpretability of Chain-of-Thought Reasoning with Sparse Autoencoding</title>
-<link>https://arxiv.org/abs/2507.22928</link>
-<guid>https://arxiv.org/abs/2507.22928</guid>
-<content:encoded><![CDATA[
-<div> Keywords: Chain-of-thought prompting, Large Language Models, Feature-level causal study, Activation sparsity, Modular internal computation
-
-Summary: 
-Chain-of-thought (CoT) prompting has been shown to improve accuracy on multi-step tasks for Large Language Models (LLMs). This study investigates the faithfulness of CoT-generated "thoughts" by analyzing monosemantic features extracted from Pythia-70M and Pythia-2.8B models while solving math problems under CoT and plain prompting. The results show that CoT significantly boosts answer log-probabilities in the larger model but not in the smaller one, indicating a scale threshold. CoT also leads to higher activation sparsity and feature interpretability scores in the larger model, suggesting more modular internal computation. The models' confidence in generating correct answers improves with CoT prompting. The study demonstrates that useful CoT information is distributed widely across features, supporting CoT as a structured prompting method that induces more interpretable internal structures in high-capacity LLMs. 
-
-Summary: <div>
-arXiv:2507.22928v1 Announce Type: cross 
-Abstract: Chain-of-thought (CoT) prompting boosts Large Language Models accuracy on multi-step tasks, yet whether the generated "thoughts" reflect the true internal reasoning process is unresolved. We present the first feature-level causal study of CoT faithfulness. Combining sparse autoencoders with activation patching, we extract monosemantic features from Pythia-70M and Pythia-2.8B while they tackle GSM8K math problems under CoT and plain (noCoT) prompting. Swapping a small set of CoT-reasoning features into a noCoT run raises answer log-probabilities significantly in the 2.8B model, but has no reliable effect in 70M, revealing a clear scale threshold. CoT also leads to significantly higher activation sparsity and feature interpretability scores in the larger model, signalling more modular internal computation. For example, the model's confidence in generating correct answers improves from 1.2 to 4.3. We introduce patch-curves and random-feature patching baselines, showing that useful CoT information is not only present in the top-K patches but widely distributed. Overall, our results indicate that CoT can induce more interpretable internal structures in high-capacity LLMs, validating its role as a structured prompting method.
-]]></content:encoded>
-<pubDate>Fri, 01 Aug 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Enhancing RAG Efficiency with Adaptive Context Compression</title>
-<link>https://arxiv.org/abs/2507.22931</link>
-<guid>https://arxiv.org/abs/2507.22931</guid>
-<content:encoded><![CDATA[
-<div> Keywords: retrieval-augmented generation, context compression, adaptive, efficiency, accuracy
-
-Summary: 
-The article introduces Adaptive Context Compression for Retrieval-augmented Generation (ACC-RAG), a framework designed to optimize the efficiency of large language models (LLMs) that incorporate external knowledge through retrieval. ACC-RAG dynamically adjusts compression rates based on the complexity of the input, enhancing inference efficiency without compromising accuracy. By combining a hierarchical compressor with a context selector, ACC-RAG selects and retains essential information similar to human reading behavior. The framework has been evaluated on Wikipedia and five question answering datasets, outperforming fixed-rate methods and achieving over four times faster inference compared to standard retrieval-augmented generation. ACC-RAG demonstrates improved accuracy while significantly reducing inference time, making it a promising approach for enhancing the performance of LLMs in information retrieval tasks. 
-
-<br /><br />Summary: <div>
-arXiv:2507.22931v1 Announce Type: cross 
-Abstract: Retrieval-augmented generation (RAG) enhances large language models (LLMs) with external knowledge but incurs significant inference costs due to lengthy retrieved contexts. While context compression mitigates this issue, existing methods apply fixed compression rates, over-compressing simple queries or under-compressing complex ones. We propose Adaptive Context Compression for RAG (ACC-RAG), a framework that dynamically adjusts compression rates based on input complexity, optimizing inference efficiency without sacrificing accuracy. ACC-RAG combines a hierarchical compressor (for multi-granular embeddings) with a context selector to retain minimal sufficient information, akin to human skimming. Evaluated on Wikipedia and five QA datasets, ACC-RAG outperforms fixed-rate methods and matches/unlocks over 4 times faster inference versus standard RAG while maintaining or improving accuracy.
 ]]></content:encoded>
 <pubDate>Fri, 01 Aug 2025 00:00:00 -0400</pubDate>
 </item>

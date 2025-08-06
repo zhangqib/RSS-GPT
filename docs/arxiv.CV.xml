@@ -4,6 +4,7 @@
 <title>cs.CV updates on arXiv.org</title>
 <link>http://rss.arxiv.org/rss/cs.CV</link>
 
+
 <item>
 <title>KAN or MLP? Point Cloud Shows the Way Forward</title>
 <link>https://arxiv.org/abs/2504.13593</link>
@@ -14,11 +15,10 @@
 Summary: 
 PointKAN introduces Kolmogorov-Arnold Networks (KANs) to enhance hierarchical feature representation in point cloud analysis. It includes a Geometric Affine Module (GAM) for robustness to geometric variations and a parallel Local Feature Processing (LFP) structure for extracting group-level features and global context. The Global Feature Processing (GFP) combines and processes features to capture complete geometric information. Efficient-KANs in PointKAN-elite variant reduce parameters while maintaining accuracy. PointKAN outperforms PointMLP on benchmark datasets like ModelNet40 and achieves high performance in Few-shot Learning tasks. It also reduces parameter counts and computational complexity, showcasing the potential of KANs-based architectures in 3D vision research. 
 
-<br><br>Summary: <div>
+<br /><br />Summary: <div>
 arXiv:2504.13593v3 Announce Type: replace 
 Abstract: Multi-Layer Perceptrons (MLPs) have become one of the fundamental architectural component in point cloud analysis due to its effective feature learning mechanism. However, when processing complex geometric structures in point clouds, MLPs' fixed activation functions struggle to efficiently capture local geometric features, while suffering from poor parameter efficiency and high model redundancy. In this paper, we propose PointKAN, which applies Kolmogorov-Arnold Networks (KANs) to point cloud analysis tasks to investigate their efficacy in hierarchical feature representation. First, we introduce a Geometric Affine Module (GAM) to transform local features, improving the model's robustness to geometric variations. Next, in the Local Feature Processing (LFP), a parallel structure extracts both group-level features and global context, providing a rich representation of both fine details and overall structure. Finally, these features are combined and processed in the Global Feature Processing (GFP). By repeating these operations, the receptive field gradually expands, enabling the model to capture complete geometric information of the point cloud. To overcome the high parameter counts and computational inefficiency of standard KANs, we develop Efficient-KANs in the PointKAN-elite variant, which significantly reduces parameters while maintaining accuracy. Experimental results demonstrate that PointKAN outperforms PointMLP on benchmark datasets such as ModelNet40, ScanObjectNN, and ShapeNetPart, with particularly strong performance in Few-shot Learning task. Additionally, PointKAN achieves substantial reductions in parameter counts and computational complexity (FLOPs). This work highlights the potential of KANs-based architectures in 3D vision and opens new avenues for research in point cloud understanding.
 ]]></content:encoded>
-<pubDate>Wed, 06 Aug 2025 00:00:00 -0400</pubDate>
 <pubDate>Wed, 06 Aug 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -33,11 +33,10 @@ Summary:
 - Parameterization using low-dimensional bases and predetermined augmentations are proposed to improve distillation efficiency.
 - Utilizing a lightweight network to model connections among representations enhances the compactness of distilled pairs.
 - Extensive experiments confirm the effectiveness of the proposed approach in distillation efficiency, cross-architecture generalization, and transfer learning performance. 
-<br><br>Summary: <div>
+<br /><br />Summary: <div>
 arXiv:2507.21455v2 Announce Type: replace 
 Abstract: Although larger datasets are crucial for training large deep models, the rapid growth of dataset size has brought a significant challenge in terms of considerable training costs, which even results in prohibitive computational expenses. Dataset Distillation becomes a popular technique recently to reduce the dataset size via learning a highly compact set of representative exemplars, where the model trained with these exemplars ideally should have comparable performance with respect to the one trained with the full dataset. While most of existing works upon dataset distillation focus on supervised datasets, we instead aim to distill images and their self-supervisedly trained representations into a distilled set. This procedure, named as Self-Supervised Dataset Distillation, effectively extracts rich information from real datasets, yielding the distilled sets with enhanced cross-architecture generalizability. Particularly, in order to preserve the key characteristics of original dataset more faithfully and compactly, several novel techniques are proposed: 1) we introduce an innovative parameterization upon images and representations via distinct low-dimensional bases, where the base selection for parameterization is experimentally shown to play a crucial role; 2) we tackle the instability induced by the randomness of data augmentation -- a key component in self-supervised learning but being underestimated in the prior work of self-supervised dataset distillation -- by utilizing predetermined augmentations; 3) we further leverage a lightweight network to model the connections among the representations of augmented views from the same image, leading to more compact pairs of distillation. Extensive experiments conducted on various datasets validate the superiority of our approach in terms of distillation efficiency, cross-architecture generalization, and transfer learning performance.
 ]]></content:encoded>
-<pubDate>Wed, 06 Aug 2025 00:00:00 -0400</pubDate>
 <pubDate>Wed, 06 Aug 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -50,14 +49,12 @@ Abstract: Although larger datasets are crucial for training large deep models, t
 Summary: 
 The paper introduces MoCHA, a novel visual framework that integrates four vision backbones and a sparse Mixture of Experts Connectors (MoECs) module to effectively handle complex visual information. MoCHA also employs a Hierarchical Group Attention (HGA) mechanism with intra- and inter-group operations to refine visual features and an adaptive gating strategy for feature selection. Training MoCHA on mainstream Large Language Models (LLMs) such as Phi2-2.7B and Vicuna-7B shows superior performance compared to state-of-the-art models like CuMo (Mistral-7B) in tasks like mitigating hallucination and following visual instructions. Ablation studies confirm the effectiveness of the MoECs and HGA components in enhancing MoCHA's overall performance. The proposed framework demonstrates advancements in bridging modalities and extracting visual details efficiently. 
 
-<br><br>Summary: <div>
+<br /><br />Summary: <div>
 arXiv:2507.22805v2 Announce Type: replace 
 Abstract: Vision large language models (VLLMs) are focusing primarily on handling complex and fine-grained visual information by incorporating advanced vision encoders and scaling up visual models. However, these approaches face high training and inference costs, as well as challenges in extracting visual details, effectively bridging across modalities. In this work, we propose a novel visual framework, MoCHA, to address these issues. Our framework integrates four vision backbones (i.e., CLIP, SigLIP, DINOv2 and ConvNeXt) to extract complementary visual features and is equipped with a sparse Mixture of Experts Connectors (MoECs) module to dynamically select experts tailored to different visual dimensions. To mitigate redundant or insufficient use of the visual information encoded by the MoECs module, we further design a Hierarchical Group Attention (HGA) with intra- and inter-group operations and an adaptive gating strategy for encoded visual features. We train MoCHA on two mainstream LLMs (e.g., Phi2-2.7B and Vicuna-7B) and evaluate their performance across various benchmarks. Notably, MoCHA outperforms state-of-the-art open-weight models on various tasks. For example, compared to CuMo (Mistral-7B), our MoCHA (Phi2-2.7B) presents outstanding abilities to mitigate hallucination by showing improvements of 3.25% in POPE and to follow visual instructions by raising 153 points on MME. Finally, ablation studies further confirm the effectiveness and robustness of the proposed MoECs and HGA in improving the overall performance of MoCHA.
 ]]></content:encoded>
 <pubDate>Wed, 06 Aug 2025 00:00:00 -0400</pubDate>
-<pubDate>Wed, 06 Aug 2025 00:00:00 -0400</pubDate>
 </item>
-
 <item>
 <title>PyCAT4: A Hierarchical Vision Transformer-based Framework for 3D Human Pose Estimation</title>
 <link>https://arxiv.org/abs/2508.02806</link>
@@ -11057,36 +11054,6 @@ Abstract: Advanced end-to-end autonomous driving systems predict other vehicles'
 <content:encoded><![CDATA[
 arXiv:2503.11806v2 Announce Type: replace 
 Abstract: We present a novel human-in-the-loop approach to estimate 3D scene layout that uses human feedback from an egocentric standpoint. We study this approach through introduction of a novel local correction task, where users identify local errors and prompt a model to automatically correct them. Building on SceneScript, a state-of-the-art framework for 3D scene layout estimation that leverages structured language, we propose a solution that structures this problem as "infilling", a task studied in natural language processing. We train a multi-task version of SceneScript that maintains performance on global predictions while significantly improving its local correction ability. We integrate this into a human-in-the-loop system, enabling a user to iteratively refine scene layout estimates via a low-friction "one-click fix'' workflow. Our system enables the final refined layout to diverge from the training distribution, allowing for more accurate modelling of complex layouts.
-]]></content:encoded>
-<pubDate>Fri, 01 Aug 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>VisNumBench: Evaluating Number Sense of Multimodal Large Language Models</title>
-<link>https://arxiv.org/abs/2503.14939</link>
-<guid>https://arxiv.org/abs/2503.14939</guid>
-<content:encoded><![CDATA[
-arXiv:2503.14939v2 Announce Type: replace 
-Abstract: Can Multimodal Large Language Models (MLLMs) develop an intuitive number sense similar to humans? Targeting this problem, we introduce Visual Number Benchmark (VisNumBench) to evaluate the number sense abilities of MLLMs across a wide range of visual numerical tasks. VisNumBench consists of about 1,900 multiple-choice question-answer pairs derived from both synthetic and real-world visual data, covering seven visual numerical attributes and four types of visual numerical estimation tasks. Our experiments on VisNumBench led to the following key findings: (i) The 17 MLLMs we tested, including open-source models such as Qwen2.5-VL and InternVL2.5, as well as proprietary models like GPT-4o and Gemini 2.0 Flash, perform significantly below human levels in number sense-related tasks. (ii) Multimodal mathematical models and multimodal chain-of-thought (CoT) models did not exhibit significant improvements in number sense abilities. (iii) Stronger MLLMs with larger parameter sizes and broader general abilities demonstrate modest gains in number sense abilities. We believe VisNumBench will serve as a valuable resource for the research community, encouraging further advancements in enhancing MLLMs' number sense abilities. Code and dataset are available at https://wwwtttjjj.github.io/VisNumBench/.
-]]></content:encoded>
-<pubDate>Fri, 01 Aug 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>LLaVA-MORE: A Comparative Study of LLMs and Visual Backbones for Enhanced Visual Instruction Tuning</title>
-<link>https://arxiv.org/abs/2503.15621</link>
-<guid>https://arxiv.org/abs/2503.15621</guid>
-<content:encoded><![CDATA[
-arXiv:2503.15621v2 Announce Type: replace 
-Abstract: Recent progress in Multimodal Large Language Models (MLLMs) has highlighted the critical roles of both the visual backbone and the underlying language model. While prior work has primarily focused on scaling these components to billions of parameters, the trade-offs between model size, architecture, and performance remain underexplored. Additionally, inconsistencies in training data and evaluation protocols have hindered direct comparisons, making it difficult to derive optimal design choices. In this paper, we introduce LLaVA-MORE, a new family of MLLMs that integrates recent language models with diverse visual backbones. To ensure fair comparisons, we employ a unified training protocol applied consistently across all architectures. Our analysis systematically explores both small- and medium-scale LLMs -- including Phi-4, LLaMA-3.1, and Gemma-2 -- to evaluate multimodal reasoning, generation, and instruction following, while examining the relationship between model size and performance. Beyond evaluating the LLM impact on final results, we conduct a comprehensive study of various visual encoders, ranging from CLIP-based architectures to alternatives such as DINOv2, SigLIP, and SigLIP2. Additional experiments investigate the effects of increased image resolution and variations in pre-training datasets. Overall, our results provide insights into the design of more effective MLLMs, offering a reproducible evaluation framework that facilitates direct comparisons and can guide future model development. Our source code and trained models are publicly available at: https://github.com/aimagelab/LLaVA-MORE.
-]]></content:encoded>
-<pubDate>Fri, 01 Aug 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Learning 3D Scene Analogies with Neural Contextual Scene Maps</title>
-<link>https://arxiv.org/abs/2503.15897</link>
-<guid>https://arxiv.org/abs/2503.15897</guid>
-<content:encoded><![CDATA[
-arXiv:2503.15897v2 Announce Type: replace 
-Abstract: Understanding scene contexts is crucial for machines to perform tasks and adapt prior knowledge in unseen or noisy 3D environments. As data-driven learning is intractable to comprehensively encapsulate diverse ranges of layouts and open spaces, we propose teaching machines to identify relational commonalities in 3D spaces. Instead of focusing on point-wise or object-wise representations, we introduce 3D scene analogies, which are smooth maps between 3D scene regions that align spatial relationships. Unlike well-studied single instance-level maps, these scene-level maps smoothly link large scene regions, potentially enabling unique applications in trajectory transfer in AR/VR, long demonstration transfer for imitation learning, and context-aware object rearrangement. To find 3D scene analogies, we propose neural contextual scene maps, which extract descriptor fields summarizing semantic and geometric contexts, and holistically align them in a coarse-to-fine manner for map estimation. This approach reduces reliance on individual feature points, making it robust to input noise or shape variations. Experiments demonstrate the effectiveness of our approach in identifying scene analogies and transferring trajectories or object placements in diverse indoor scenes, indicating its potential for robotics and AR/VR applications. Project page including the code is available through this link: https://82magnolia.github.io/3d_scene_analogies/.
 ]]></content:encoded>
 <pubDate>Fri, 01 Aug 2025 00:00:00 -0400</pubDate>
 </item>
