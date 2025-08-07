@@ -5,6 +5,24 @@
 <link>http://rss.arxiv.org/rss/cs.CV</link>
 
 <item>
+<title>HiPrune: Training-Free Visual Token Pruning via Hierarchical Attention in Vision-Language Models</title>
+<link>https://arxiv.org/abs/2508.00553</link>
+<guid>https://arxiv.org/abs/2508.00553</guid>
+<content:encoded><![CDATA[
+<div> Hierarchical attention structure, Vision-Language Models, Token pruning, Computational efficiency, Model-agnostic.
+
+Summary: 
+The paper introduces HiPrune, a novel token pruning framework for Vision-Language Models (VLMs) that leverages the hierarchical attention structure within vision encoders. It categorizes tokens into Anchor tokens, Buffer tokens, and Register tokens based on their attention patterns in different layers. HiPrune does not require retraining and can be integrated seamlessly with any ViT-based VLM. Experimental results on various datasets show that HiPrune achieves state-of-the-art pruning performance, preserving high task accuracy with significantly fewer tokens. It also reduces inference FLOPs and latency by up to 9 times, demonstrating strong generalization across different models and tasks. The code for HiPrune is available on GitHub at https://github.com/Danielement321/HiPrune. 
+
+Summary: <div>
+arXiv:2508.00553v2 Announce Type: replace 
+Abstract: Vision-Language Models (VLMs) encode images into lengthy sequences of visual tokens, leading to excessive computational overhead and limited inference efficiency. While prior efforts prune or merge tokens to address this issue, they often rely on special tokens (e.g., CLS) or require task-specific training, hindering scalability across architectures. In this paper, we propose HiPrune, a training-free and model-agnostic token Pruning framework that exploits the Hierarchical attention structure within vision encoders. We identify that middle layers attend to object-centric regions, while deep layers capture global contextual features. Based on this observation, HiPrune selects three types of informative tokens: (1) Anchor tokens with high attention in object-centric layers, (2) Buffer tokens adjacent to anchors for spatial continuity, and (3) Register tokens with strong attention in deep layers for global summarization. Our method requires no retraining and integrates seamlessly with any ViT-based VLM. Extensive experiments on LLaVA-1.5, LLaVA-NeXT, and Qwen2.5-VL demonstrate that HiPrune achieves state-of-the-art pruning performance, preserving up to 99.3% task accuracy with only 33.3% tokens, and maintaining 99.5% accuracy with just 11.1% tokens. Meanwhile, it reduces inference FLOPs and latency by up to 9$\times$, showcasing strong generalization across models and tasks. Code is available at https://github.com/Danielement321/HiPrune.
+]]></content:encoded>
+<pubDate>Thu, 07 Aug 2025 00:00:00 -0400</pubDate>
+<pubDate>Thu, 07 Aug 2025 00:00:00 -0400</pubDate>
+</item>
+
+<item>
 <title>Sign Spotting Disambiguation using Large Language Models</title>
 <link>https://arxiv.org/abs/2507.03703</link>
 <guid>https://arxiv.org/abs/2507.03703</guid>
@@ -12,11 +30,10 @@
 <div> sign spotting, localization, continuous sign language video, dataset annotations, data scarcity
 
 Summary:
-Large Language Models (LLMs) are integrated into a novel, training-free framework to improve sign spotting in sign language videos. Global spatio-temporal and hand shape features are extracted and matched against a large-scale sign dictionary using dynamic time warping and cosine similarity. This approach offers vocabulary flexibility without needing model retraining. An LLM performs gloss disambiguation through beam search to reduce noise and ambiguity without fine-tuning. Extensive experiments on synthetic and real-world datasets show higher accuracy and sentence fluency compared to traditional methods, demonstrating the potential of LLMs in advancing sign spotting.<br><br>Summary: <div>
+Large Language Models (LLMs) are integrated into a novel, training-free framework to improve sign spotting in sign language videos. Global spatio-temporal and hand shape features are extracted and matched against a large-scale sign dictionary using dynamic time warping and cosine similarity. This approach offers vocabulary flexibility without needing model retraining. An LLM performs gloss disambiguation through beam search to reduce noise and ambiguity without fine-tuning. Extensive experiments on synthetic and real-world datasets show higher accuracy and sentence fluency compared to traditional methods, demonstrating the potential of LLMs in advancing sign spotting.<br /><br />Summary: <div>
 arXiv:2507.03703v3 Announce Type: replace 
 Abstract: Sign spotting, the task of identifying and localizing individual signs within continuous sign language video, plays a pivotal role in scaling dataset annotations and addressing the severe data scarcity issue in sign language translation. While automatic sign spotting holds great promise for enabling frame-level supervision at scale, it grapples with challenges such as vocabulary inflexibility and ambiguity inherent in continuous sign streams. Hence, we introduce a novel, training-free framework that integrates Large Language Models (LLMs) to significantly enhance sign spotting quality. Our approach extracts global spatio-temporal and hand shape features, which are then matched against a large-scale sign dictionary using dynamic time warping and cosine similarity. This dictionary-based matching inherently offers superior vocabulary flexibility without requiring model retraining. To mitigate noise and ambiguity from the matching process, an LLM performs context-aware gloss disambiguation via beam search, notably without fine-tuning. Extensive experiments on both synthetic and real-world sign language datasets demonstrate our method's superior accuracy and sentence fluency compared to traditional approaches, highlighting the potential of LLMs in advancing sign spotting.
 ]]></content:encoded>
-<pubDate>Thu, 07 Aug 2025 00:00:00 -0400</pubDate>
 <pubDate>Thu, 07 Aug 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -27,11 +44,10 @@ Abstract: Sign spotting, the task of identifying and localizing individual signs
 <div> Keywords: Text-Video Retrieval, multi-modal large language models, Bidirectional Likelihood Estimation, Candidate Prior Normalization, relevance.
 
 Summary: 
-The study focuses on improving Text-Video Retrieval by addressing candidate prior bias when using multi-modal large language models (MLLMs). The proposed framework, BLiM, integrates query and candidate likelihoods to generate text from videos and video features from text. Additionally, Candidate Prior Normalization (CPN) is introduced to counter candidate prior bias in candidate likelihood without requiring training data. Through experiments on four benchmarks, BLiM with CPN achieves a 6.4 R@1 improvement over existing models, emphasizing the relevance between queries and candidates. The study also demonstrates CPN's effectiveness in enhancing visual understanding across various multi-modal tasks, reducing dependence on textual priors. The code for BLiM is available on GitHub for further exploration. <br><br>Summary: <div>
+The study focuses on improving Text-Video Retrieval by addressing candidate prior bias when using multi-modal large language models (MLLMs). The proposed framework, BLiM, integrates query and candidate likelihoods to generate text from videos and video features from text. Additionally, Candidate Prior Normalization (CPN) is introduced to counter candidate prior bias in candidate likelihood without requiring training data. Through experiments on four benchmarks, BLiM with CPN achieves a 6.4 R@1 improvement over existing models, emphasizing the relevance between queries and candidates. The study also demonstrates CPN's effectiveness in enhancing visual understanding across various multi-modal tasks, reducing dependence on textual priors. The code for BLiM is available on GitHub for further exploration. <br /><br />Summary: <div>
 arXiv:2507.23284v2 Announce Type: replace 
 Abstract: Text-Video Retrieval aims to find the most relevant text (or video) candidate given a video (or text) query from large-scale online databases. Recent work leverages multi-modal large language models (MLLMs) to improve retrieval, especially for long or complex query-candidate pairs. However, we observe that the naive application of MLLMs, i.e., retrieval based on candidate likelihood, introduces candidate prior bias, favoring candidates with inherently higher priors over those more relevant to the query. To this end, we propose a novel retrieval framework, Bidirectional Likelihood Estimation with MLLM (BLiM), which leverages both query and candidate likelihoods by training the model to generate text from a given video as well as video features from a given text. Furthermore, we introduce Candidate Prior Normalization (CPN), a simple yet effective training-free score calibration module designed to mitigate candidate prior bias in candidate likelihood. On four Text-Video Retrieval benchmarks, our BLiM equipped with CPN outperforms previous state-of-the-art models by 6.4 R@1 on average, effectively alleviating candidate prior bias and emphasizing query-candidate relevance. Our in-depth analysis across various multi-modal tasks beyond retrieval highlights the broad applicability of CPN which enhances visual understanding by reducing reliance on textual priors. Code is available at https://github.com/mlvlab/BLiM.
 ]]></content:encoded>
-<pubDate>Thu, 07 Aug 2025 00:00:00 -0400</pubDate>
 <pubDate>Thu, 07 Aug 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -44,14 +60,12 @@ Abstract: Text-Video Retrieval aims to find the most relevant text (or video) ca
 Summary:
 XSpecMesh is a novel acceleration technique for auto-regressive mesh generation models that allows for predicting multiple tokens in parallel within a single forward pass, resulting in a 1.7x speedup during inference without compromising quality. The method utilizes a lightweight, multi-head speculative decoding scheme to expedite the generation process. A verification and resampling strategy is implemented to ensure the predicted tokens meet quality standards, with any outliers being resampled by the backbone model. Furthermore, a distillation strategy is employed to train the lightweight decoding heads by distilling knowledge from the backbone model, enhancing the alignment of prediction distributions and improving the success rate of speculative predictions. Extensive experiments confirm the effectiveness of XSpecMesh in accelerating mesh generation while maintaining top-notch quality standards. The code for XSpecMesh will be made available for public use. 
 
-<br><br>Summary: <div>
+<br /><br />Summary: <div>
 arXiv:2507.23777v2 Announce Type: replace-cross 
 Abstract: Current auto-regressive models can generate high-quality, topologically precise meshes; however, they necessitate thousands-or even tens of thousands-of next-token predictions during inference, resulting in substantial latency. We introduce XSpecMesh, a quality-preserving acceleration method for auto-regressive mesh generation models. XSpecMesh employs a lightweight, multi-head speculative decoding scheme to predict multiple tokens in parallel within a single forward pass, thereby accelerating inference. We further propose a verification and resampling strategy: the backbone model verifies each predicted token and resamples any tokens that do not meet the quality criteria. In addition, we propose a distillation strategy that trains the lightweight decoding heads by distilling from the backbone model, encouraging their prediction distributions to align and improving the success rate of speculative predictions. Extensive experiments demonstrate that our method achieves a 1.7x speedup without sacrificing generation quality. Our code will be released.
 ]]></content:encoded>
 <pubDate>Thu, 07 Aug 2025 00:00:00 -0400</pubDate>
-<pubDate>Thu, 07 Aug 2025 00:00:00 -0400</pubDate>
 </item>
-
 <item>
 <title>Text2VR: Automated instruction Generation in Virtual Reality using Large language Models for Assembly Task</title>
 <link>https://arxiv.org/abs/2508.03699</link>
@@ -11028,36 +11042,6 @@ Abstract: Underwater fish detection (UFD) remains a challenging task in computer
 <content:encoded><![CDATA[
 arXiv:2508.00548v1 Announce Type: new 
 Abstract: Different from color correction and transfer, color grading involves adjusting colors for artistic or storytelling purposes in a video, which is used to establish a specific look or mood. However, due to the complexity of the process and the need for specialized editing skills, video color grading remains primarily the domain of professional colorists. In this paper, we present a reference-based video color grading framework. Our key idea is explicitly generating a look-up table (LUT) for color attribute alignment between reference scenes and input video via a diffusion model. As a training objective, we enforce that high-level features of the reference scenes like look, mood, and emotion should be similar to that of the input video. Our LUT-based approach allows for color grading without any loss of structural details in the whole video frames as well as achieving fast inference. We further build a pipeline to incorporate a user-preference via text prompts for low-level feature enhancement such as contrast and brightness, etc. Experimental results, including extensive user studies, demonstrate the effectiveness of our approach for video color grading. Codes are publicly available at https://github.com/seunghyuns98/VideoColorGrading.
-]]></content:encoded>
-<pubDate>Mon, 04 Aug 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Your other Left! Vision-Language Models Fail to Identify Relative Positions in Medical Images</title>
-<link>https://arxiv.org/abs/2508.00549</link>
-<guid>https://arxiv.org/abs/2508.00549</guid>
-<content:encoded><![CDATA[
-arXiv:2508.00549v1 Announce Type: new 
-Abstract: Clinical decision-making relies heavily on understanding relative positions of anatomical structures and anomalies. Therefore, for Vision-Language Models (VLMs) to be applicable in clinical practice, the ability to accurately determine relative positions on medical images is a fundamental prerequisite. Despite its importance, this capability remains highly underexplored. To address this gap, we evaluate the ability of state-of-the-art VLMs, GPT-4o, Llama3.2, Pixtral, and JanusPro, and find that all models fail at this fundamental task. Inspired by successful approaches in computer vision, we investigate whether visual prompts, such as alphanumeric or colored markers placed on anatomical structures, can enhance performance. While these markers provide moderate improvements, results remain significantly lower on medical images compared to observations made on natural images. Our evaluations suggest that, in medical imaging, VLMs rely more on prior anatomical knowledge than on actual image content for answering relative position questions, often leading to incorrect conclusions. To facilitate further research in this area, we introduce the MIRP , Medical Imaging Relative Positioning, benchmark dataset, designed to systematically evaluate the capability to identify relative positions in medical images.
-]]></content:encoded>
-<pubDate>Mon, 04 Aug 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>DBLP: Noise Bridge Consistency Distillation For Efficient And Reliable Adversarial Purification</title>
-<link>https://arxiv.org/abs/2508.00552</link>
-<guid>https://arxiv.org/abs/2508.00552</guid>
-<content:encoded><![CDATA[
-arXiv:2508.00552v1 Announce Type: new 
-Abstract: Recent advances in deep neural networks (DNNs) have led to remarkable success across a wide range of tasks. However, their susceptibility to adversarial perturbations remains a critical vulnerability. Existing diffusion-based adversarial purification methods often require intensive iterative denoising, severely limiting their practical deployment. In this paper, we propose Diffusion Bridge Distillation for Purification (DBLP), a novel and efficient diffusion-based framework for adversarial purification. Central to our approach is a new objective, noise bridge distillation, which constructs a principled alignment between the adversarial noise distribution and the clean data distribution within a latent consistency model (LCM). To further enhance semantic fidelity, we introduce adaptive semantic enhancement, which fuses multi-scale pyramid edge maps as conditioning input to guide the purification process. Extensive experiments across multiple datasets demonstrate that DBLP achieves state-of-the-art (SOTA) robust accuracy, superior image quality, and around 0.2s inference time, marking a significant step toward real-time adversarial purification.
-]]></content:encoded>
-<pubDate>Mon, 04 Aug 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>HiPrune: Training-Free Visual Token Pruning via Hierarchical Attention in Vision-Language Models</title>
-<link>https://arxiv.org/abs/2508.00553</link>
-<guid>https://arxiv.org/abs/2508.00553</guid>
-<content:encoded><![CDATA[
-arXiv:2508.00553v1 Announce Type: new 
-Abstract: Vision-Language Models (VLMs) encode images into lengthy sequences of visual tokens, leading to excessive computational overhead and limited inference efficiency. While prior efforts prune or merge tokens to address this issue, they often rely on special tokens (e.g., CLS) or require task-specific training, hindering scalability across architectures. In this paper, we propose HiPrune, a training-free and model-agnostic token Pruning framework that exploits the Hierarchical attention structure within vision encoders. We identify that middle layers attend to object-centric regions, while deep layers capture global contextual features. Based on this observation, HiPrune selects three types of informative tokens: (1) Anchor tokens with high attention in object-centric layers, (2) Buffer tokens adjacent to anchors for spatial continuity, and (3) Register tokens with strong attention in deep layers for global summarization. Our method requires no retraining and integrates seamlessly with any ViT-based VLM. Extensive experiments on LLaVA-1.5, LLaVA-NeXT, and Qwen2.5-VL demonstrate that HiPrune achieves state-of-the-art pruning performance, preserving up to 99.3% task accuracy with only 33.3% tokens, and maintaining 99.5% accuracy with just 11.1% tokens. Meanwhile, it reduces inference FLOPs and latency by up to 9$\times$, showcasing strong generalization across models and tasks. Code is available at https://github.com/Danielement321/HiPrune.
 ]]></content:encoded>
 <pubDate>Mon, 04 Aug 2025 00:00:00 -0400</pubDate>
 </item>
