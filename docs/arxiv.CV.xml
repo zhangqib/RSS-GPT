@@ -4,6 +4,7 @@
 <title>cs.CV updates on arXiv.org</title>
 <link>http://rss.arxiv.org/rss/cs.CV</link>
 
+
 <item>
 <title>HiPrune: Training-Free Visual Token Pruning via Hierarchical Attention in Vision-Language Models</title>
 <link>https://arxiv.org/abs/2508.00553</link>
@@ -19,9 +20,7 @@ arXiv:2508.00553v2 Announce Type: replace
 Abstract: Vision-Language Models (VLMs) encode images into lengthy sequences of visual tokens, leading to excessive computational overhead and limited inference efficiency. While prior efforts prune or merge tokens to address this issue, they often rely on special tokens (e.g., CLS) or require task-specific training, hindering scalability across architectures. In this paper, we propose HiPrune, a training-free and model-agnostic token Pruning framework that exploits the Hierarchical attention structure within vision encoders. We identify that middle layers attend to object-centric regions, while deep layers capture global contextual features. Based on this observation, HiPrune selects three types of informative tokens: (1) Anchor tokens with high attention in object-centric layers, (2) Buffer tokens adjacent to anchors for spatial continuity, and (3) Register tokens with strong attention in deep layers for global summarization. Our method requires no retraining and integrates seamlessly with any ViT-based VLM. Extensive experiments on LLaVA-1.5, LLaVA-NeXT, and Qwen2.5-VL demonstrate that HiPrune achieves state-of-the-art pruning performance, preserving up to 99.3% task accuracy with only 33.3% tokens, and maintaining 99.5% accuracy with just 11.1% tokens. Meanwhile, it reduces inference FLOPs and latency by up to 9$\times$, showcasing strong generalization across models and tasks. Code is available at https://github.com/Danielement321/HiPrune.
 ]]></content:encoded>
 <pubDate>Thu, 07 Aug 2025 00:00:00 -0400</pubDate>
-<pubDate>Thu, 07 Aug 2025 00:00:00 -0400</pubDate>
 </item>
-
 <item>
 <title>Sign Spotting Disambiguation using Large Language Models</title>
 <link>https://arxiv.org/abs/2507.03703</link>
@@ -11032,16 +11031,6 @@ Abstract: Spatiotemporal video grounding aims to localize target entities in vid
 <content:encoded><![CDATA[
 arXiv:2508.00528v1 Announce Type: new 
 Abstract: Underwater fish detection (UFD) remains a challenging task in computer vision due to low object resolution, significant background interference, and high visual similarity between targets and surroundings. Existing approaches primarily focus on local feature enhancement or incorporate complex attention mechanisms to highlight small objects, often at the cost of increased model complexity and reduced efficiency. To address these limitations, we propose an efficient path aggregation network (EPANet), which leverages complementary feature integration to achieve accurate and lightweight UFD. EPANet consists of two key components: an efficient path aggregation feature pyramid network (EPA-FPN) and a multi-scale diverse-division short path bottleneck (MS-DDSP bottleneck). The EPA-FPN introduces long-range skip connections across disparate scales to improve semantic-spatial complementarity, while cross-layer fusion paths are adopted to enhance feature integration efficiency. The MS-DDSP bottleneck extends the conventional bottleneck structure by introducing finer-grained feature division and diverse convolutional operations, thereby increasing local feature diversity and representation capacity. Extensive experiments on benchmark UFD datasets demonstrate that EPANet outperforms state-of-the-art methods in terms of detection accuracy and inference speed, while maintaining comparable or even lower parameter complexity.
-]]></content:encoded>
-<pubDate>Mon, 04 Aug 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Video Color Grading via Look-Up Table Generation</title>
-<link>https://arxiv.org/abs/2508.00548</link>
-<guid>https://arxiv.org/abs/2508.00548</guid>
-<content:encoded><![CDATA[
-arXiv:2508.00548v1 Announce Type: new 
-Abstract: Different from color correction and transfer, color grading involves adjusting colors for artistic or storytelling purposes in a video, which is used to establish a specific look or mood. However, due to the complexity of the process and the need for specialized editing skills, video color grading remains primarily the domain of professional colorists. In this paper, we present a reference-based video color grading framework. Our key idea is explicitly generating a look-up table (LUT) for color attribute alignment between reference scenes and input video via a diffusion model. As a training objective, we enforce that high-level features of the reference scenes like look, mood, and emotion should be similar to that of the input video. Our LUT-based approach allows for color grading without any loss of structural details in the whole video frames as well as achieving fast inference. We further build a pipeline to incorporate a user-preference via text prompts for low-level feature enhancement such as contrast and brightness, etc. Experimental results, including extensive user studies, demonstrate the effectiveness of our approach for video color grading. Codes are publicly available at https://github.com/seunghyuns98/VideoColorGrading.
 ]]></content:encoded>
 <pubDate>Mon, 04 Aug 2025 00:00:00 -0400</pubDate>
 </item>
