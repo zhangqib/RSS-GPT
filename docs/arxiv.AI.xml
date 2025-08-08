@@ -4,6 +4,7 @@
 <title>cs.AI updates on arXiv.org</title>
 <link>http://rss.arxiv.org/rss/cs.AI</link>
 
+
 <item>
 <title>Scaling LLM Planning: NL2FLOW for Parametric Problem Generation and Rigorous Evaluation</title>
 <link>https://arxiv.org/abs/2507.02253</link>
@@ -16,7 +17,6 @@ Summary: <div>
 arXiv:2507.02253v3 Announce Type: replace 
 Abstract: Effective agent performance relies on the ability to compose tools and agents into effective workflows. However, progress in Large Language Model (LLM) planning and reasoning is limited by the scarcity of scalable, reliable evaluation data. This study addresses this limitation by identifying a suitable workflow domain for LLM application. I introduce NL2Flow, a fully automated system for parametrically generating planning problems, which are expressed in natural language, a structured intermediate representation, and formal PDDL, and rigorously evaluating the quality of generated plans. NL2Flow generates a dataset of 2296 low-difficulty problems in automated workflow generation and evaluates multiple open-sourced, instruct-tuned LLMs without task-specific optimization or architectural modifications. Results reveal that the highest performing model achieved 86% success in generating valid plans and 69% in generating optimal plans, specifically for problems with feasible plans. Regression analysis shows that the influence of problem characteristics on plan generation is contingent on both model and prompt design. To investigate the potential of LLMs as natural language-to-JSON translators for workflow definition, and to facilitate integration with downstream symbolic computation tools and a symbolic planner, I evaluated the LLM's translation performance on natural language workflow descriptions. I observed that translating natural language into a JSON representation of a workflow problem yielded a lower success rate than generating a plan directly, suggesting that unnecessary decomposition of the reasoning task may degrade performance and highlighting the benefit of models capable of reasoning directly from natural language to action. As LLM reasoning scales to increasingly complex problems, understanding the shifting bottlenecks and sources of error within these systems will be crucial.
 ]]></content:encoded>
-<pubDate>Fri, 08 Aug 2025 00:00:00 -0400</pubDate>
 <pubDate>Fri, 08 Aug 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -32,7 +32,6 @@ arXiv:2506.01109v3 Announce Type: replace-cross
 Abstract: Accurate 3D fruit counting in orchards is challenging due to heavy occlusion, semantic ambiguity between fruits and surrounding structures, and the high computational cost of volumetric reconstruction. Existing pipelines often rely on multi-view 2D segmentation and dense volumetric sampling, which lead to accumulated fusion errors and slow inference. We introduce FruitLangGS, a language-guided 3D fruit counting framework that reconstructs orchard-scale scenes using an adaptive-density Gaussian Splatting pipeline with radius-aware pruning and tile-based rasterization, enabling scalable 3D representation. During inference, compressed CLIP-aligned semantic vectors embedded in each Gaussian are filtered via a dual-threshold cosine similarity mechanism, retrieving Gaussians relevant to target prompts while suppressing common distractors (e.g., foliage), without requiring retraining or image-space masks. The selected Gaussians are then sampled into dense point clouds and clustered geometrically to estimate fruit instances, remaining robust under severe occlusion and viewpoint variation. Experiments on nine different orchard-scale datasets demonstrate that FruitLangGS consistently outperforms existing pipelines in instance counting recall, avoiding multi-view segmentation fusion errors and achieving up to 99.7% recall on Pfuji-Size_Orch2018 orchard dataset. Ablation studies further confirm that language-conditioned semantic embedding and dual-threshold prompt filtering are essential for suppressing distractors and improving counting accuracy under heavy occlusion. Beyond fruit counting, the same framework enables prompt-driven 3D semantic retrieval without retraining, highlighting the potential of language-guided 3D perception for scalable agricultural scene understanding.
 ]]></content:encoded>
 <pubDate>Fri, 08 Aug 2025 00:00:00 -0400</pubDate>
-<pubDate>Fri, 08 Aug 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
 <title>CUPID: Evaluating Personalized and Contextualized Alignment of LLMs from Interactions</title>
@@ -43,11 +42,10 @@ Abstract: Accurate 3D fruit counting in orchards is challenging due to heavy occ
 Summary: 
 Personalization of Large Language Models (LLMs) often assumes static user preferences across all tasks. However, humans have dynamic preferences that change with context. The CUPID benchmark evaluates LLMs' ability to infer and apply contextual preferences based on interaction histories. Results show that current LLMs struggle to accurately infer preferences and relevant context, with performance below 50% precision and 65% recall. This highlights the need to enhance LLM capabilities for more personalized interactions. CUPID serves as a valuable resource to drive improvements in contextually personalized responses. 
 
-<br><br>Summary: <div>
+<br /><br />Summary: <div>
 arXiv:2508.01674v2 Announce Type: replace-cross 
 Abstract: Personalization of Large Language Models (LLMs) often assumes users hold static preferences that reflect globally in all tasks. In reality, humans hold dynamic preferences that change depending on the context. As users interact with an LLM in various contexts, they naturally reveal their contextual preferences, which a model must infer and apply in future contexts to ensure alignment. To assess this, we introduce CUPID, a benchmark of 756 human-curated interaction session histories between users and LLM-based chat assistants. In each interaction session, the user provides a request in a specific context and expresses their preference through multi-turn feedback. Given a new user request and prior interaction sessions, our benchmark assesses whether LLMs can infer the preference relevant to this request and generate a response that satisfies this preference. With CUPID, we evaluated 10 open and proprietary LLMs, revealing that state-of-the-art LLMs struggle to infer preferences from multi-turn interactions and fail to discern what previous context is relevant to a new request -- under 50% precision and 65% recall. Our work highlights the need to advance LLM capabilities for more contextually personalized interactions and proposes CUPID as a resource to drive these improvements.
 ]]></content:encoded>
-<pubDate>Fri, 08 Aug 2025 00:00:00 -0400</pubDate>
 <pubDate>Fri, 08 Aug 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -57,12 +55,11 @@ Abstract: Personalization of Large Language Models (LLMs) often assumes users ho
 <content:encoded><![CDATA[
 <div> benchmark, VLMs, spatiotemporal reasoning, motion continuity, visual intelligence 
 
-Summary:<br>
+Summary:<br />
 The paper introduces VLM4D, a benchmark designed to assess VLMs' spatiotemporal reasoning abilities. It emphasizes dynamic interactions like object movements, rotations, and perspective shifts crucial for real-world understanding. Current VLMs struggle with integrating visual cues and maintaining temporal coherence, falling short compared to human baselines. Promising directions like 4D feature field reconstruction and supervised spatiotemporal fine-tuning show potential in enhancing spatiotemporal comprehension. The benchmark comprises diverse videos with question-answer pairs to evaluate translational and rotational motions, perspective awareness, and motion continuity. The aim is to encourage research in improving VLMs' spatial and temporal grounding for better visual intelligence in dynamic environments. <div>
 arXiv:2508.02095v2 Announce Type: replace-cross 
 Abstract: Vision language models (VLMs) have shown remarkable capabilities in integrating linguistic and visual reasoning but remain fundamentally limited in understanding dynamic spatiotemporal interactions. Humans effortlessly track and reason about object movements, rotations, and perspective shifts-abilities essential for robust dynamic real-world understanding yet notably lacking in current VLMs. In this paper, we introduce VLM4D, the first benchmark specifically designed to evaluate the spatiotemporal reasoning capabilities of VLMs. Our benchmark comprises diverse real-world and synthetic videos accompanied by carefully curated question-answer pairs emphasizing translational and rotational motions, perspective awareness, and motion continuity. Through comprehensive evaluations of state-of-the-art open and closed-source VLMs, we identify significant performance gaps compared to human baselines, highlighting fundamental deficiencies in existing models. Extensive analysis reveals that VLMs struggle particularly with integrating multiple visual cues and maintaining temporal coherence. We further explore promising directions, such as leveraging 4D feature field reconstruction and targeted spatiotemporal supervised fine-tuning, demonstrating their effectiveness in enhancing spatiotemporal comprehension. Our work aims to encourage deeper exploration into improving VLMs' spatial and temporal grounding, paving the way towards more capable and reliable visual intelligence for dynamic environments.
 ]]></content:encoded>
-<pubDate>Fri, 08 Aug 2025 00:00:00 -0400</pubDate>
 <pubDate>Fri, 08 Aug 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -70,13 +67,12 @@ Abstract: Vision language models (VLMs) have shown remarkable capabilities in in
 <link>https://arxiv.org/abs/2508.02247</link>
 <guid>https://arxiv.org/abs/2508.02247</guid>
 <content:encoded><![CDATA[
-<div> Generative modeling, high-frequency limit order book, byte streams, market dynamics, autoregressive prediction<br>
-Summary:<br>
+<div> Generative modeling, high-frequency limit order book, byte streams, market dynamics, autoregressive prediction<br />
+Summary:<br />
 ByteGen is a novel generative model for high-frequency limit order book dynamics that operates directly on raw byte streams. It uses a compact 32-byte binary format to represent market messages without information loss, eliminating the need for feature engineering and tokenization. The model, based on the H-Net architecture, successfully reproduces key financial market characteristics like realistic price distributions and bursty event timing. Trained on CME Bitcoin futures data, ByteGen achieves competitive performance on market quality metrics without the biases of tokenization. This approach represents a promising paradigm for modeling complex financial systems by learning directly from byte space. <div>
 arXiv:2508.02247v2 Announce Type: replace-cross 
 Abstract: Generative modeling of high-frequency limit order book (LOB) dynamics is a critical yet unsolved challenge in quantitative finance, essential for robust market simulation and strategy backtesting. Existing approaches are often constrained by simplifying stochastic assumptions or, in the case of modern deep learning models like Transformers, rely on tokenization schemes that affect the high-precision, numerical nature of financial data through discretization and binning. To address these limitations, we introduce ByteGen, a novel generative model that operates directly on the raw byte streams of LOB events. Our approach treats the problem as an autoregressive next-byte prediction task, for which we design a compact and efficient 32-byte packed binary format to represent market messages without information loss. The core novelty of our work is the complete elimination of feature engineering and tokenization, enabling the model to learn market dynamics from its most fundamental representation. We achieve this by adapting the H-Net architecture, a hybrid Mamba-Transformer model that uses a dynamic chunking mechanism to discover the inherent structure of market messages without predefined rules. Our primary contributions are: 1) the first end-to-end, byte-level framework for LOB modeling; 2) an efficient packed data representation; and 3) a comprehensive evaluation on high-frequency data. Trained on over 34 million events from CME Bitcoin futures, ByteGen successfully reproduces key stylized facts of financial markets, generating realistic price distributions, heavy-tailed returns, and bursty event timing. Our findings demonstrate that learning directly from byte space is a promising and highly flexible paradigm for modeling complex financial systems, achieving competitive performance on standard market quality metrics without the biases of tokenization.
 ]]></content:encoded>
-<pubDate>Fri, 08 Aug 2025 00:00:00 -0400</pubDate>
 <pubDate>Fri, 08 Aug 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -92,9 +88,7 @@ arXiv:2508.02317v3 Announce Type: replace-cross
 Abstract: Recent advances in large language models (LLMs) have driven impressive progress in omni-modal understanding and generation. However, training omni-modal LLMs remains a significant challenge due to the heterogeneous model architectures required to process diverse modalities, necessitating sophisticated system design for efficient large-scale training. Existing frameworks typically entangle model definition with parallel logic, incurring limited scalability and substantial engineering overhead for end-to-end omni-modal training. We present VeOmni, a modular and efficient training framework to accelerate the development of omni-modal LLMs. VeOmni introduces model-centric distributed recipes that decouples communication from computation, enabling efficient 3D parallelism on omni-modal LLMs. VeOmni also features a flexible configuration interface supporting seamless integration of new modalities with minimal code change. Using VeOmni, a omni-modal mixture-of-experts (MoE) model with 30B parameters can be trained with over 2,800 tokens/sec/GPU throughput and scale to 160K context lengths via 3D parallelism on 128 GPUs, showcasing its superior efficiency and scalability for training large omni-modal LLMs.
 ]]></content:encoded>
 <pubDate>Fri, 08 Aug 2025 00:00:00 -0400</pubDate>
-<pubDate>Fri, 08 Aug 2025 00:00:00 -0400</pubDate>
 </item>
-
 <item>
 <title>Prescriptive Agents based on Rag for Automated Maintenance (PARAM)</title>
 <link>https://arxiv.org/abs/2508.04714</link>
@@ -11087,66 +11081,6 @@ Abstract: This work proposes a novel technique Augmented Reinforcement Learning 
 <content:encoded><![CDATA[
 arXiv:2508.01615v1 Announce Type: cross 
 Abstract: The scarcity of large-scale and high-quality electronic health records (EHRs) remains a major bottleneck in biomedical research, especially as large foundation models become increasingly data-hungry. Synthesizing substantial volumes of de-identified and high-fidelity data from existing datasets has emerged as a promising solution. However, existing methods suffer from a series of limitations: they struggle to model the intrinsic properties of heterogeneous multimodal EHR data (e.g., continuous, discrete, and textual modalities), capture the complex dependencies among them, and robustly handle pervasive data incompleteness. These challenges are particularly acute in Traditional Chinese Medicine (TCM). To this end, we propose TCDiff (Triplex Cascaded Diffusion Network), a novel EHR generation framework that cascades three diffusion networks to learn the features of real-world EHR data, formatting a multi-stage generative process: Reference Modalities Diffusion, Cross-Modal Bridging, and Target Modality Diffusion. Furthermore, to validate our proposed framework, besides two public datasets, we also construct and introduce TCM-SZ1, a novel multimodal EHR dataset for benchmarking. Experimental results show that TCDiff consistently outperforms state-of-the-art baselines by an average of 10% in data fidelity under various missing rate, while maintaining competitive privacy guarantees. This highlights the effectiveness, robustness, and generalizability of our approach in real-world healthcare scenarios.
-]]></content:encoded>
-<pubDate>Tue, 05 Aug 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>EAC-MoE: Expert-Selection Aware Compressor for Mixture-of-Experts Large Language Models</title>
-<link>https://arxiv.org/abs/2508.01625</link>
-<guid>https://arxiv.org/abs/2508.01625</guid>
-<content:encoded><![CDATA[
-arXiv:2508.01625v1 Announce Type: cross 
-Abstract: Mixture-of-Experts (MoE) has demonstrated promising potential in scaling LLMs. However, it is hindered by two critical challenges: (1) substantial GPU memory consumption to load all experts; (2) low activated parameters cannot be equivalently translated into inference acceleration effects. In this work, we propose EAC-MoE, an Expert-Selection Aware Compressor for MoE-LLMs, which deeply aligns with the characteristics of MoE from the perspectives of quantization and pruning, and introduces two modules to address these two challenges respectively: (1) The expert selection bias caused by low-bit quantization is a major factor contributing to the performance degradation in MoE-LLMs. Based on this, we propose Quantization with Expert-Selection Calibration (QESC), which mitigates the expert selection bias by calibrating the routers within the MoE; (2) There are always certain experts that are not crucial for the corresponding tasks, yet causing inference latency. Therefore, we propose Pruning based on Expert-Selection Frequency (PESF), which significantly improves inference speed by pruning less frequently used experts for current task. Extensive experiments demonstrate that our approach significantly reduces memory usage and improves inference speed with minimal performance degradation.
-]]></content:encoded>
-<pubDate>Tue, 05 Aug 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>OpenMed NER: Open-Source, Domain-Adapted State-of-the-Art Transformers for Biomedical NER Across 12 Public Datasets</title>
-<link>https://arxiv.org/abs/2508.01630</link>
-<guid>https://arxiv.org/abs/2508.01630</guid>
-<content:encoded><![CDATA[
-arXiv:2508.01630v1 Announce Type: cross 
-Abstract: Named-entity recognition (NER) is fundamental to extracting structured information from the >80% of healthcare data that resides in unstructured clinical notes and biomedical literature. Despite recent advances with large language models, achieving state-of-the-art performance across diverse entity types while maintaining computational efficiency remains a significant challenge. We introduce OpenMed NER, a suite of open-source, domain-adapted transformer models that combine lightweight domain-adaptive pre-training (DAPT) with parameter-efficient Low-Rank Adaptation (LoRA). Our approach performs cost-effective DAPT on a 350k-passage corpus compiled from ethically sourced, publicly available research repositories and de-identified clinical notes (PubMed, arXiv, and MIMIC-III) using DeBERTa-v3, PubMedBERT, and BioELECTRA backbones. This is followed by task-specific fine-tuning with LoRA, which updates less than 1.5% of model parameters. We evaluate our models on 12 established biomedical NER benchmarks spanning chemicals, diseases, genes, and species. OpenMed NER achieves new state-of-the-art micro-F1 scores on 10 of these 12 datasets, with substantial gains across diverse entity types. Our models advance the state-of-the-art on foundational disease and chemical benchmarks (e.g., BC5CDR-Disease, +2.70 pp), while delivering even larger improvements of over 5.3 and 9.7 percentage points on more specialized gene and clinical cell line corpora. This work demonstrates that strategically adapted open-source models can surpass closed-source solutions. This performance is achieved with remarkable efficiency: training completes in under 12 hours on a single GPU with a low carbon footprint (< 1.2 kg CO2e), producing permissively licensed, open-source checkpoints designed to help practitioners facilitate compliance with emerging data protection and AI regulations, such as the EU AI Act.
-]]></content:encoded>
-<pubDate>Tue, 05 Aug 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Learning Unified System Representations for Microservice Tail Latency Prediction</title>
-<link>https://arxiv.org/abs/2508.01635</link>
-<guid>https://arxiv.org/abs/2508.01635</guid>
-<content:encoded><![CDATA[
-arXiv:2508.01635v1 Announce Type: cross 
-Abstract: Microservice architectures have become the de facto standard for building scalable cloud-native applications, yet their distributed nature introduces significant challenges in performance monitoring and resource management. Traditional approaches often rely on per-request latency metrics, which are highly sensitive to transient noise and fail to reflect the holistic behavior of complex, concurrent workloads. In contrast, window-level P95 tail latency provides a stable and meaningful signal that captures both system-wide trends and user-perceived performance degradation. We identify two key shortcomings in existing methods: (i) inadequate handling of heterogeneous data, where traffic-side features propagate across service dependencies and resource-side signals reflect localized bottlenecks, and (ii) the lack of principled architectural designs that effectively distinguish and integrate these complementary modalities. To address these challenges, we propose USRFNet, a deep learning network that explicitly separates and models traffic-side and resource-side features. USRFNet employs GNNs to capture service interactions and request propagation patterns, while gMLP modules independently model cluster resource dynamics. These representations are then fused into a unified system embedding to predict window-level P95 latency with high accuracy. We evaluate USRFNet on real-world microservice benchmarks under large-scale stress testing conditions, demonstrating substantial improvements in prediction accuracy over state-of-the-art baselines.
-]]></content:encoded>
-<pubDate>Tue, 05 Aug 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Semantic Encryption: Secure and Effective Interaction with Cloud-based Large Language Models via Semantic Transformation</title>
-<link>https://arxiv.org/abs/2508.01638</link>
-<guid>https://arxiv.org/abs/2508.01638</guid>
-<content:encoded><![CDATA[
-arXiv:2508.01638v1 Announce Type: cross 
-Abstract: The increasing adoption of Cloud-based Large Language Models (CLLMs) has raised significant concerns regarding data privacy during user interactions. While existing approaches primarily focus on encrypting sensitive information, they often overlook the logical structure of user inputs. This oversight can lead to reduced data utility and degraded performance of CLLMs. To address these limitations and enable secure yet effective interactions, we propose Semantic Encryption (SE)-a plug-and-play framework designed to preserve both privacy and utility. SE consists of two key components: Semantic Encoding and Semantic Decoding. In the encoding phase, a lightweight local model transforms the original user input into an alternative semantic context that maintains the original intent and logical structure while obfuscating sensitive information. This transformed input is then processed by the CLLM, which generates a response based on the transformed semantic context. To maintain a seamless user experience, the decoding phase will reconstruct the CLLM's response back into the original semantic context by referencing the locally stored user input. Extensive experimental evaluations demonstrate that SE effectively protects data privacy without compromising data utility or user experience, offering a practical solution for secure interaction with CLLMs. Particularly, the proposed SE demonstrates a significant improvement over the state-of-the-art InferDPT, surpassing it across various evaluated metrics and datasets.
-]]></content:encoded>
-<pubDate>Tue, 05 Aug 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>DRKF: Decoupled Representations with Knowledge Fusion for Multimodal Emotion Recognition</title>
-<link>https://arxiv.org/abs/2508.01644</link>
-<guid>https://arxiv.org/abs/2508.01644</guid>
-<content:encoded><![CDATA[
-arXiv:2508.01644v1 Announce Type: cross 
-Abstract: Multimodal emotion recognition (MER) aims to identify emotional states by integrating and analyzing information from multiple modalities. However, inherent modality heterogeneity and inconsistencies in emotional cues remain key challenges that hinder performance. To address these issues, we propose a Decoupled Representations with Knowledge Fusion (DRKF) method for MER. DRKF consists of two main modules: an Optimized Representation Learning (ORL) Module and a Knowledge Fusion (KF) Module. ORL employs a contrastive mutual information estimation method with progressive modality augmentation to decouple task-relevant shared representations and modality-specific features while mitigating modality heterogeneity. KF includes a lightweight self-attention-based Fusion Encoder (FE) that identifies the dominant modality and integrates emotional information from other modalities to enhance the fused representation. To handle potential errors from incorrect dominant modality selection under emotionally inconsistent conditions, we introduce an Emotion Discrimination Submodule (ED), which enforces the fused representation to retain discriminative cues of emotional inconsistency. This ensures that even if the FE selects an inappropriate dominant modality, the Emotion Classification Submodule (EC) can still make accurate predictions by leveraging preserved inconsistency information. Experiments show that DRKF achieves state-of-the-art (SOTA) performance on IEMOCAP, MELD, and M3ED. The source code is publicly available at https://github.com/PANPANKK/DRKF.
-]]></content:encoded>
-<pubDate>Tue, 05 Aug 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>SPARTA: Advancing Sparse Attention in Spiking Neural Networks via Spike-Timing-Based Prioritization</title>
-<link>https://arxiv.org/abs/2508.01646</link>
-<guid>https://arxiv.org/abs/2508.01646</guid>
-<content:encoded><![CDATA[
-arXiv:2508.01646v1 Announce Type: cross 
-Abstract: Current Spiking Neural Networks (SNNs) underutilize the temporal dynamics inherent in spike-based processing, relying primarily on rate coding while overlooking precise timing information that provides rich computational cues. We propose SPARTA (Spiking Priority Attention with Resource-Adaptive Temporal Allocation), a framework that leverages heterogeneous neuron dynamics and spike-timing information to enable efficient sparse attention. SPARTA prioritizes tokens based on temporal cues, including firing patterns, spike timing, and inter-spike intervals, achieving 65.4% sparsity through competitive gating. By selecting only the most salient tokens, SPARTA reduces attention complexity from O(N^2) to O(K^2) with k << n, while maintaining high accuracy. Our method achieves state-of-the-art performance on DVS-Gesture (98.78%) and competitive results on CIFAR10-DVS (83.06%) and CIFAR-10 (95.3%), demonstrating that exploiting spike timing dynamics improves both computational efficiency and accuracy.
 ]]></content:encoded>
 <pubDate>Tue, 05 Aug 2025 00:00:00 -0400</pubDate>
 </item>

@@ -4,19 +4,19 @@
 <title>cs.LG updates on arXiv.org</title>
 <link>http://rss.arxiv.org/rss/cs.LG</link>
 
+
 <item>
 <title>RACE-IT: A Reconfigurable Analog Computing Engine for In-Memory Transformer Acceleration</title>
 <link>https://arxiv.org/abs/2312.06532</link>
 <guid>https://arxiv.org/abs/2312.06532</guid>
 <content:encoded><![CDATA[
-<div> Keywords: Transformer models, In-memory Computing, Analog Content Addressable Memories, RACE-IT accelerator, DNN architectures<br>
-Summary: <br>
-This research introduces the RACE-IT accelerator, utilizing Reconfigurable Analog Computing Engine (RACE) based on Analog Content Addressable Memories (ACAMs). The accelerator is designed to efficiently execute core operations of Transformer models in the analog domain, addressing the computational challenges posed by complex activation functions and matrix multiplications. The flexibility of the RACE allows for adaptation to various DNN architectures without hardware modifications. Performance comparisons with GPUs and existing IMC accelerators demonstrate significant improvements in speed and energy efficiency, with RACE-IT outperforming these alternatives by wide margins. The proposed accelerator offers a promising solution for accelerating Transformer models while minimizing computational resource requirements. <br> 
+<div> Keywords: Transformer models, In-memory Computing, Analog Content Addressable Memories, RACE-IT accelerator, DNN architectures<br />
+Summary: <br />
+This research introduces the RACE-IT accelerator, utilizing Reconfigurable Analog Computing Engine (RACE) based on Analog Content Addressable Memories (ACAMs). The accelerator is designed to efficiently execute core operations of Transformer models in the analog domain, addressing the computational challenges posed by complex activation functions and matrix multiplications. The flexibility of the RACE allows for adaptation to various DNN architectures without hardware modifications. Performance comparisons with GPUs and existing IMC accelerators demonstrate significant improvements in speed and energy efficiency, with RACE-IT outperforming these alternatives by wide margins. The proposed accelerator offers a promising solution for accelerating Transformer models while minimizing computational resource requirements. <br /> 
 Summary: <div>
 arXiv:2312.06532v3 Announce Type: replace-cross 
 Abstract: Transformer models represent the cutting edge of Deep Neural Networks (DNNs) and excel in a wide range of machine learning tasks. However, processing these models demands significant computational resources and results in a substantial memory footprint. While In-memory Computing (IMC)offers promise for accelerating Vector-Matrix Multiplications(VMMs) with high computational parallelism and minimal data movement, employing it for other crucial DNN operators remains a formidable task. This challenge is exacerbated by the extensive use of complex activation functions, Softmax, and data-dependent matrix multiplications (DMMuls) within Transformer models. To address this challenge, we introduce a Reconfigurable Analog Computing Engine (RACE) by enhancing Analog Content Addressable Memories (ACAMs) to support broader operations. Based on the RACE, we propose the RACE-IT accelerator (meaning RACE for In-memory Transformers) to enable efficient analog-domain execution of all core operations of Transformer models. Given the flexibility of our proposed RACE in supporting arbitrary computations, RACE-IT is well-suited for adapting to emerging and non-traditional DNN architectures without requiring hardware modifications. We compare RACE-IT with various accelerators. Results show that RACE-IT increases performance by 453x and 15x, and reduces energy by 354x and 122x over the state-of-the-art GPUs and existing Transformer-specific IMC accelerators, respectively.
 ]]></content:encoded>
-<pubDate>Fri, 08 Aug 2025 00:00:00 -0400</pubDate>
 <pubDate>Fri, 08 Aug 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -26,11 +26,10 @@ Abstract: Transformer models represent the cutting edge of Deep Neural Networks 
 <content:encoded><![CDATA[
 <div> benchmark, language models, untrustworthy content, Synthetic Media Literacy Test, hallucination
 Summary: 
-The paper introduces the Synthetic Media Literacy Test (SMeL Test) to evaluate language models' ability to filter out untrustworthy information online. Various instruction-tuned large language models (LLMs), including reasoning models, were tested, revealing that no model consistently succeeded in detecting unreliable content. The study found that even the best API model tested exhibited hallucinations up to 70% of the time. Surprisingly, larger and more advanced models did not consistently outperform smaller ones in this context. The research highlights the prevalence of untrustworthy content on the internet and the importance of developing strategies to combat misinformation and deception. <br><br>Summary: <div>
+The paper introduces the Synthetic Media Literacy Test (SMeL Test) to evaluate language models' ability to filter out untrustworthy information online. Various instruction-tuned large language models (LLMs), including reasoning models, were tested, revealing that no model consistently succeeded in detecting unreliable content. The study found that even the best API model tested exhibited hallucinations up to 70% of the time. Surprisingly, larger and more advanced models did not consistently outperform smaller ones in this context. The research highlights the prevalence of untrustworthy content on the internet and the importance of developing strategies to combat misinformation and deception. <br /><br />Summary: <div>
 arXiv:2508.02074v2 Announce Type: replace-cross 
 Abstract: The internet is rife with unattributed, deliberately misleading, or otherwise untrustworthy content. Though large language models (LLMs) are often tasked with autonomous web browsing, the extent to which they have learned the simple heuristics human researchers use to navigate this noisy environment is not currently known. In this paper, we introduce the Synthetic Media Literacy Test (SMeL Test), a minimal benchmark that tests the ability of language models to actively filter out untrustworthy information in context. We benchmark a variety of commonly used instruction-tuned LLMs, including reasoning models, and find that no model consistently succeeds; while reasoning in particular is associated with higher scores, even the best API model we test hallucinates up to 70% of the time. Remarkably, larger and more capable models do not necessarily outperform their smaller counterparts. We hope our work sheds more light on this important form of hallucination and guides the development of new methods to combat it.
 ]]></content:encoded>
-<pubDate>Fri, 08 Aug 2025 00:00:00 -0400</pubDate>
 <pubDate>Fri, 08 Aug 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -46,7 +45,6 @@ arXiv:2508.02247v2 Announce Type: replace-cross
 Abstract: Generative modeling of high-frequency limit order book (LOB) dynamics is a critical yet unsolved challenge in quantitative finance, essential for robust market simulation and strategy backtesting. Existing approaches are often constrained by simplifying stochastic assumptions or, in the case of modern deep learning models like Transformers, rely on tokenization schemes that affect the high-precision, numerical nature of financial data through discretization and binning. To address these limitations, we introduce ByteGen, a novel generative model that operates directly on the raw byte streams of LOB events. Our approach treats the problem as an autoregressive next-byte prediction task, for which we design a compact and efficient 32-byte packed binary format to represent market messages without information loss. The core novelty of our work is the complete elimination of feature engineering and tokenization, enabling the model to learn market dynamics from its most fundamental representation. We achieve this by adapting the H-Net architecture, a hybrid Mamba-Transformer model that uses a dynamic chunking mechanism to discover the inherent structure of market messages without predefined rules. Our primary contributions are: 1) the first end-to-end, byte-level framework for LOB modeling; 2) an efficient packed data representation; and 3) a comprehensive evaluation on high-frequency data. Trained on over 34 million events from CME Bitcoin futures, ByteGen successfully reproduces key stylized facts of financial markets, generating realistic price distributions, heavy-tailed returns, and bursty event timing. Our findings demonstrate that learning directly from byte space is a promising and highly flexible paradigm for modeling complex financial systems, achieving competitive performance on standard market quality metrics without the biases of tokenization.
 ]]></content:encoded>
 <pubDate>Fri, 08 Aug 2025 00:00:00 -0400</pubDate>
-<pubDate>Fri, 08 Aug 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
 <title>CAMA: Enhancing Mathematical Reasoning in Large Language Models with Causal Knowledge</title>
@@ -54,7 +52,7 @@ Abstract: Generative modeling of high-frequency limit order book (LOB) dynamics 
 <guid>https://arxiv.org/abs/2508.02583</guid>
 <content:encoded><![CDATA[
 <div> framework, causal reasoning, mathematical structure, large language models, performance improvement
-Summary:<br>
+Summary:<br />
 - The article introduces CAMA, a two-stage causal framework designed to enhance the performance of Large Language Models (LLMs) in complex mathematical reasoning tasks.
 - In the learning stage, CAMA constructs a Mathematical Causal Graph (MCG) using LLM priors and causal discovery algorithms applied to question-solution pairs.
 - The MCG encodes essential knowledge points and their causal dependencies, refined through iterative feedback.
@@ -65,9 +63,7 @@ arXiv:2508.02583v2 Announce Type: replace-cross
 Abstract: Large Language Models (LLMs) have demonstrated strong performance across a wide range of tasks, yet they still struggle with complex mathematical reasoning, a challenge fundamentally rooted in deep structural dependencies. To address this challenge, we propose \textbf{CA}usal \textbf{MA}thematician (\textbf{CAMA}), a two-stage causal framework that equips LLMs with explicit, reusable mathematical structure. In the learning stage, CAMA first constructs the \textbf{M}athematical \textbf{C}ausal \textbf{G}raph (\textbf{MCG}), a high-level representation of solution strategies, by combining LLM priors with causal discovery algorithms applied to a corpus of question-solution pairs. The resulting MCG encodes essential knowledge points and their causal dependencies. To better align the graph with downstream reasoning tasks, CAMA further refines the MCG through iterative feedback derived from a selected subset of the question-solution pairs. In the reasoning stage, given a new question, CAMA dynamically extracts a task-relevant subgraph from the MCG, conditioned on both the question content and the LLM's intermediate reasoning trace. This subgraph, which encodes the most pertinent knowledge points and their causal dependencies, is then injected back into the LLM to guide its reasoning process. Empirical results on real-world datasets show that CAMA significantly improves LLM performance on challenging mathematical problems. Furthermore, our experiments demonstrate that structured guidance consistently outperforms unstructured alternatives, and that incorporating asymmetric causal relationships yields greater improvements than using symmetric associations alone.
 ]]></content:encoded>
 <pubDate>Fri, 08 Aug 2025 00:00:00 -0400</pubDate>
-<pubDate>Fri, 08 Aug 2025 00:00:00 -0400</pubDate>
 </item>
-
 <item>
 <title>NAEx: A Plug-and-Play Framework for Explaining Network Alignment</title>
 <link>https://arxiv.org/abs/2508.04731</link>
@@ -11065,46 +11061,6 @@ Abstract: All-day smart glasses are likely to emerge as platforms capable of con
 <content:encoded><![CDATA[
 arXiv:2508.01928v1 Announce Type: cross 
 Abstract: Instance segmentation is critical in biomedical imaging to accurately distinguish individual objects like cells, which often overlap and vary in size. Recent query-based methods, where object queries guide segmentation, have shown strong performance. While U-Net has been a go-to architecture in medical image segmentation, its potential in query-based approaches remains largely unexplored. In this work, we present IAUNet, a novel query-based U-Net architecture. The core design features a full U-Net architecture, enhanced by a novel lightweight convolutional Pixel decoder, making the model more efficient and reducing the number of parameters. Additionally, we propose a Transformer decoder that refines object-specific features across multiple scales. Finally, we introduce the 2025 Revvity Full Cell Segmentation Dataset, a unique resource with detailed annotations of overlapping cell cytoplasm in brightfield images, setting a new benchmark for biomedical instance segmentation. Experiments on multiple public datasets and our own show that IAUNet outperforms most state-of-the-art fully convolutional, transformer-based, and query-based models and cell segmentation-specific models, setting a strong baseline for cell instance segmentation tasks. Code is available at https://github.com/SlavkoPrytula/IAUNet
-]]></content:encoded>
-<pubDate>Tue, 05 Aug 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Less is More: AMBER-AFNO -- a New Benchmark for Lightweight 3D Medical Image Segmentation</title>
-<link>https://arxiv.org/abs/2508.01941</link>
-<guid>https://arxiv.org/abs/2508.01941</guid>
-<content:encoded><![CDATA[
-arXiv:2508.01941v1 Announce Type: cross 
-Abstract: This work presents the results of a methodological transfer from remote sensing to healthcare, adapting AMBER -- a transformer-based model originally designed for multiband images, such as hyperspectral data -- to the task of 3D medical datacube segmentation. In this study, we use the AMBER architecture with Adaptive Fourier Neural Operators (AFNO) in place of the multi-head self-attention mechanism. While existing models rely on various forms of attention to capture global context, AMBER-AFNO achieves this through frequency-domain mixing, enabling a drastic reduction in model complexity. This design reduces the number of trainable parameters by over 80% compared to UNETR++, while maintaining a FLOPs count comparable to other state-of-the-art architectures. Model performance is evaluated on two benchmark 3D medical datasets -- ACDC and Synapse -- using standard metrics such as Dice Similarity Coefficient (DSC) and Hausdorff Distance (HD), demonstrating that AMBER-AFNO achieves competitive or superior accuracy with significant gains in training efficiency, inference speed, and memory usage.
-]]></content:encoded>
-<pubDate>Tue, 05 Aug 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Agent-Based Feature Generation from Clinical Notes for Outcome Prediction</title>
-<link>https://arxiv.org/abs/2508.01956</link>
-<guid>https://arxiv.org/abs/2508.01956</guid>
-<content:encoded><![CDATA[
-arXiv:2508.01956v1 Announce Type: cross 
-Abstract: Electronic health records (EHRs) contain rich unstructured clinical notes that could enhance predictive modeling, yet extracting meaningful features from these notes remains challenging. Current approaches range from labor-intensive manual clinician feature generation (CFG) to fully automated representational feature generation (RFG) that lack interpretability and clinical relevance. Here we introduce SNOW (Scalable Note-to-Outcome Workflow), a modular multi-agent system powered by large language models (LLMs) that autonomously generates structured clinical features from unstructured notes without human intervention. We evaluated SNOW against manual CFG, clinician-guided LLM approaches, and RFG methods for predicting 5-year prostate cancer recurrence in 147 patients from Stanford Healthcare. While manual CFG achieved the highest performance (AUC-ROC: 0.771), SNOW matched this performance (0.761) without requiring any clinical expertise, significantly outperforming both baseline features alone (0.691) and all RFG approaches. The clinician-guided LLM method also performed well (0.732) but still required expert input. SNOW's specialized agents handle feature discovery, extraction, validation, post-processing, and aggregation, creating interpretable features that capture complex clinical information typically accessible only through manual review. Our findings demonstrate that autonomous LLM systems can replicate expert-level feature engineering at scale, potentially transforming how clinical ML models leverage unstructured EHR data while maintaining the interpretability essential for clinical deployment.
-]]></content:encoded>
-<pubDate>Tue, 05 Aug 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Prompting Large Language Models to Detect Dementia Family Caregivers</title>
-<link>https://arxiv.org/abs/2508.01999</link>
-<guid>https://arxiv.org/abs/2508.01999</guid>
-<content:encoded><![CDATA[
-arXiv:2508.01999v1 Announce Type: cross 
-Abstract: Social media, such as Twitter, provides opportunities for caregivers of dementia patients to share their experiences and seek support for a variety of reasons. Availability of this information online also paves the way for the development of internet-based interventions in their support. However, for this purpose, tweets written by caregivers of dementia patients must first be identified. This paper demonstrates our system for the SMM4H 2025 shared task 3, which focuses on detecting tweets posted by individuals who have a family member with dementia. The task is outlined as a binary classification problem, differentiating between tweets that mention dementia in the context of a family member and those that do not. Our solution to this problem explores large language models (LLMs) with various prompting methods. Our results show that a simple zero-shot prompt on a fine-tuned model yielded the best results. Our final system achieved a macro F1-score of 0.95 on the validation set and the test set. Our full code is available on GitHub.
-]]></content:encoded>
-<pubDate>Tue, 05 Aug 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Convolutions are Competitive with Transformers for Encrypted Traffic Classification with Pre-training</title>
-<link>https://arxiv.org/abs/2508.02001</link>
-<guid>https://arxiv.org/abs/2508.02001</guid>
-<content:encoded><![CDATA[
-arXiv:2508.02001v1 Announce Type: cross 
-Abstract: Encrypted traffic classification is vital for modern network management and security. To reduce reliance on handcrafted features and labeled data, recent methods focus on learning generic representations through pre-training on large-scale unlabeled data. However, current pre-trained models face two limitations originating from the adopted Transformer architecture: (1) Limited model efficiency due to the self-attention mechanism with quadratic complexity; (2) Unstable traffic scalability to longer byte sequences, as the explicit positional encodings fail to generalize to input lengths not seen during pre-training. In this paper, we investigate whether convolutions, with linear complexity and implicit positional encoding, are competitive with Transformers in encrypted traffic classification with pre-training. We first conduct a systematic comparison, and observe that convolutions achieve higher efficiency and scalability, with lower classification performance. To address this trade-off, we propose NetConv, a novel pre-trained convolution model for encrypted traffic classification. NetConv employs stacked traffic convolution layers, which enhance the ability to capture localized byte-sequence patterns through window-wise byte scoring and sequence-wise byte gating. We design a continuous byte masking pre-training task to help NetConv learn protocol-specific patterns. Experimental results on four tasks demonstrate that NetConv improves average classification performance by 6.88% and model throughput by 7.41X over existing pre-trained models.
 ]]></content:encoded>
 <pubDate>Tue, 05 Aug 2025 00:00:00 -0400</pubDate>
 </item>

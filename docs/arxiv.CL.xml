@@ -4,6 +4,7 @@
 <title>cs.CL updates on arXiv.org</title>
 <link>http://rss.arxiv.org/rss/cs.CL</link>
 
+
 <item>
 <title>Efficient Attention Mechanisms for Large Language Models: A Survey</title>
 <link>https://arxiv.org/abs/2507.19595</link>
@@ -11,14 +12,12 @@
 <content:encoded><![CDATA[
 <div> Keywords: Transformer-based architectures, efficient attention mechanisms, linear attention methods, sparse attention techniques, large-scale pre-trained language models
 
-Summary:<br><br>Transformer-based architectures are commonly used in large language models, but the quadratic time and memory complexity of self-attention present challenges for long-context modeling. Recent research has introduced two types of efficient attention mechanisms to address this issue. Linear attention methods achieve linear complexity through various techniques, while sparse attention techniques limit attention computation to selected subsets of tokens to enhance efficiency. This survey provides a comprehensive overview of these developments, considering algorithmic innovations and hardware-level considerations. The incorporation of efficient attention into large-scale pre-trained language models is also analyzed, including architectures using only efficient attention and hybrid designs combining local and global components. By bridging theory and practical deployment, this survey aims to be a valuable resource for advancing scalable and efficient language model design.<br> <div>
+Summary:<br /><br />Transformer-based architectures are commonly used in large language models, but the quadratic time and memory complexity of self-attention present challenges for long-context modeling. Recent research has introduced two types of efficient attention mechanisms to address this issue. Linear attention methods achieve linear complexity through various techniques, while sparse attention techniques limit attention computation to selected subsets of tokens to enhance efficiency. This survey provides a comprehensive overview of these developments, considering algorithmic innovations and hardware-level considerations. The incorporation of efficient attention into large-scale pre-trained language models is also analyzed, including architectures using only efficient attention and hybrid designs combining local and global components. By bridging theory and practical deployment, this survey aims to be a valuable resource for advancing scalable and efficient language model design.<br /> <div>
 arXiv:2507.19595v2 Announce Type: replace 
 Abstract: Transformer-based architectures have become the prevailing backbone of large language models. However, the quadratic time and memory complexity of self-attention remains a fundamental obstacle to efficient long-context modeling. To address this limitation, recent research has introduced two principal categories of efficient attention mechanisms. Linear attention methods achieve linear complexity through kernel approximations, recurrent formulations, or fastweight dynamics, thereby enabling scalable inference with reduced computational overhead. Sparse attention techniques, in contrast, limit attention computation to selected subsets of tokens based on fixed patterns, block-wise routing, or clustering strategies, enhancing efficiency while preserving contextual coverage. This survey provides a systematic and comprehensive overview of these developments, integrating both algorithmic innovations and hardware-level considerations. In addition, we analyze the incorporation of efficient attention into largescale pre-trained language models, including both architectures built entirely on efficient attention and hybrid designs that combine local and global components. By aligning theoretical foundations with practical deployment strategies, this work aims to serve as a foundational reference for advancing the design of scalable and efficient language models.
 ]]></content:encoded>
 <pubDate>Fri, 08 Aug 2025 00:00:00 -0400</pubDate>
-<pubDate>Fri, 08 Aug 2025 00:00:00 -0400</pubDate>
 </item>
-
 <item>
 <title>Enhancing Dialogue Annotation with Speaker Characteristics Leveraging a Frozen LLM</title>
 <link>https://arxiv.org/abs/2508.04795</link>
@@ -12053,16 +12052,6 @@ Abstract: Large Language Models (LLMs) have enabled remarkable progress in natur
 <content:encoded><![CDATA[
 arXiv:2506.05413v2 Announce Type: replace 
 Abstract: We present SmoothRot, a novel post-training quantization technique to enhance the efficiency of 4-bit quantization in Large Language Models (LLMs). SmoothRot addresses the critical challenge of massive activation outliers, by integrating channel-wise scaling with Hadamard transformations. Our technique effectively transforms extreme outliers into quantization-friendly activations, significantly improving quantization accuracy. Experiments conducted on popular LLMs (LLaMA2 7B, LLaMA3.1 8B, and Mistral 7B) demonstrate that SmoothRot consistently reduces the performance gap between quantized and FP16 models by approximately 10-30\% across language generation and zero-shot reasoning tasks, without introducing additional inference latency. Code is available at https://github.com/czakop/smoothrot.
-]]></content:encoded>
-<pubDate>Wed, 30 Jul 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>HIRAG: Hierarchical-Thought Instruction-Tuning Retrieval-Augmented Generation</title>
-<link>https://arxiv.org/abs/2507.05714</link>
-<guid>https://arxiv.org/abs/2507.05714</guid>
-<content:encoded><![CDATA[
-arXiv:2507.05714v2 Announce Type: replace 
-Abstract: Retrieval-augmented generation (RAG) has become a fundamental paradigm for addressing the challenges faced by large language models in handling real-time information and domain-specific problems. Traditional RAG systems primarily rely on the in-context learning (ICL) capabilities of the large language model itself. Still, in-depth research on the specific capabilities needed by the RAG generation model is lacking, leading to challenges with inconsistent document quality and retrieval system imperfections. Even the limited studies that fine-tune RAG generative models often \textit{lack a granular focus on RAG task} or \textit{a deeper utilization of chain-of-thought processes}. To address this, we propose that RAG models should possess three progressively hierarchical abilities (1) Filtering: the ability to select relevant information; (2) Combination: the ability to combine semantic information across paragraphs; and (3) RAG-specific reasoning: the ability to further process external knowledge using internal knowledge. Thus, we introduce our new RAG instruction fine-tuning method, Hierarchical-Thought Instruction-Tuning Retrieval-Augmented Generation (HIRAG) incorporates a "think before answering" strategy. This method enhances the model's open-book examination capability by utilizing multi-level progressive chain-of-thought. Experiments show that the HIRAG training strategy significantly improves the model's performance on datasets such as RGB, PopQA, MuSiQue, HotpotQA, and PubmedQA.
 ]]></content:encoded>
 <pubDate>Wed, 30 Jul 2025 00:00:00 -0400</pubDate>
 </item>

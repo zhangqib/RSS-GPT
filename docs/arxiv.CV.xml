@@ -4,6 +4,7 @@
 <title>cs.CV updates on arXiv.org</title>
 <link>http://rss.arxiv.org/rss/cs.CV</link>
 
+
 <item>
 <title>CountingFruit: Language-Guided 3D Fruit Counting with Semantic Gaussian Splatting</title>
 <link>https://arxiv.org/abs/2506.01109</link>
@@ -12,11 +13,10 @@
 <div> Keywords: 3D fruit counting, orchard-scale scenes, Gaussian Splatting, language-guided framework, semantic retrieval
 
 Summary:
-FruitLangGS is a novel framework for accurate 3D fruit counting in orchards. It overcomes challenges such as occlusion and semantic ambiguity through adaptive-density Gaussian Splatting and tile-based rasterization. The use of compressed CLIP-aligned semantic vectors with dual-threshold cosine similarity filtering enables efficient retrieval of relevant information while suppressing distractors. FruitLangGS outperforms existing pipelines in instance counting recall, achieving up to 99.7% recall on orchard datasets. The framework remains robust under severe occlusion and viewpoint variation. Ablation studies confirm the importance of language-conditioned semantic embedding and prompt filtering for accuracy improvement. FruitLangGS not only enhances fruit counting accuracy but also enables prompt-driven 3D semantic retrieval without retraining, showcasing the potential of language-guided 3D perception in agricultural scene understanding.<br><br>Summary: <div>
+FruitLangGS is a novel framework for accurate 3D fruit counting in orchards. It overcomes challenges such as occlusion and semantic ambiguity through adaptive-density Gaussian Splatting and tile-based rasterization. The use of compressed CLIP-aligned semantic vectors with dual-threshold cosine similarity filtering enables efficient retrieval of relevant information while suppressing distractors. FruitLangGS outperforms existing pipelines in instance counting recall, achieving up to 99.7% recall on orchard datasets. The framework remains robust under severe occlusion and viewpoint variation. Ablation studies confirm the importance of language-conditioned semantic embedding and prompt filtering for accuracy improvement. FruitLangGS not only enhances fruit counting accuracy but also enables prompt-driven 3D semantic retrieval without retraining, showcasing the potential of language-guided 3D perception in agricultural scene understanding.<br /><br />Summary: <div>
 arXiv:2506.01109v3 Announce Type: replace 
 Abstract: Accurate 3D fruit counting in orchards is challenging due to heavy occlusion, semantic ambiguity between fruits and surrounding structures, and the high computational cost of volumetric reconstruction. Existing pipelines often rely on multi-view 2D segmentation and dense volumetric sampling, which lead to accumulated fusion errors and slow inference. We introduce FruitLangGS, a language-guided 3D fruit counting framework that reconstructs orchard-scale scenes using an adaptive-density Gaussian Splatting pipeline with radius-aware pruning and tile-based rasterization, enabling scalable 3D representation. During inference, compressed CLIP-aligned semantic vectors embedded in each Gaussian are filtered via a dual-threshold cosine similarity mechanism, retrieving Gaussians relevant to target prompts while suppressing common distractors (e.g., foliage), without requiring retraining or image-space masks. The selected Gaussians are then sampled into dense point clouds and clustered geometrically to estimate fruit instances, remaining robust under severe occlusion and viewpoint variation. Experiments on nine different orchard-scale datasets demonstrate that FruitLangGS consistently outperforms existing pipelines in instance counting recall, avoiding multi-view segmentation fusion errors and achieving up to 99.7% recall on Pfuji-Size_Orch2018 orchard dataset. Ablation studies further confirm that language-conditioned semantic embedding and dual-threshold prompt filtering are essential for suppressing distractors and improving counting accuracy under heavy occlusion. Beyond fruit counting, the same framework enables prompt-driven 3D semantic retrieval without retraining, highlighting the potential of language-guided 3D perception for scalable agricultural scene understanding.
 ]]></content:encoded>
-<pubDate>Fri, 08 Aug 2025 00:00:00 -0400</pubDate>
 <pubDate>Fri, 08 Aug 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -26,7 +26,7 @@ Abstract: Accurate 3D fruit counting in orchards is challenging due to heavy occ
 <content:encoded><![CDATA[
 <div> Keywords: human animation, multi-task, multi-modal, EchoMimicV3, efficient framework
 
-Summary:<br><br>
+Summary:<br /><br />
 - Recent work on human animation has focused on using large-scale video models to improve performance.
 - However, these methods suffer from slow inference speed and high computational demands, limiting practical use.
 - Traditional approaches use separate models for each animation task, increasing costs in multi-task scenarios.
@@ -37,7 +37,6 @@ arXiv:2507.03905v4 Announce Type: replace
 Abstract: Recent work on human animation usually incorporates large-scale video models, thereby achieving more vivid performance. However, the practical use of such methods is hindered by the slow inference speed and high computational demands. Moreover, traditional work typically employs separate models for each animation task, increasing costs in multi-task scenarios and worsening the dilemma. To address these limitations, we introduce EchoMimicV3, an efficient framework that unifies multi-task and multi-modal human animation. At the core of EchoMimicV3 lies a threefold design: a Soup-of-Tasks paradigm, a Soup-of-Modals paradigm, and a novel training and inference strategy. The Soup-of-Tasks leverages multi-task mask inputs and a counter-intuitive task allocation strategy to achieve multi-task gains without multi-model pains. Meanwhile, the Soup-of-Modals introduces a Coupled-Decoupled Multi-Modal Cross Attention module to inject multi-modal conditions, complemented by a Multi-Modal Timestep Phase-aware Dynamical Allocation mechanism to modulate multi-modal mixtures. Besides, we propose Negative Direct Preference Optimization, Phase-aware Negative Classifier-Free Guidance (CFG), and Long Video CFG, which ensure stable training and inference. Extensive experiments and analyses demonstrate that EchoMimicV3, with a minimal model size of 1.3 billion parameters, achieves competitive performance in both quantitative and qualitative evaluations.
 ]]></content:encoded>
 <pubDate>Fri, 08 Aug 2025 00:00:00 -0400</pubDate>
-<pubDate>Fri, 08 Aug 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
 <title>Exploring the Feasibility of Deep Learning Techniques for Accurate Gender Classification from Eye Images</title>
@@ -46,7 +45,7 @@ Abstract: Recent work on human animation usually incorporates large-scale video 
 <content:encoded><![CDATA[
 <div> periocular region, gender classification, color images, Convolutional Neural Network, accuracy
 
-Summary: <br>
+Summary: <br />
 - Gender classification using color images of the periocular region is crucial in various fields such as security, human-machine interaction, surveillance, and advertising.
 - Factors like cosmetics and disguise can affect the accuracy of gender classification, making the periocular region a valuable focus for extracting key features.
 - A sophisticated Convolutional Neural Network (CNN) model was introduced to evaluate the effectiveness of the periocular region for gender classification.
@@ -56,9 +55,7 @@ arXiv:2508.00135v2 Announce Type: replace
 Abstract: Gender classification has emerged as a crucial aspect in various fields, including security, human-machine interaction, surveillance, and advertising. Nonetheless, the accuracy of this classification can be influenced by factors such as cosmetics and disguise. Consequently, our study is dedicated to addressing this concern by concentrating on gender classification using color images of the periocular region. The periocular region refers to the area surrounding the eye, including the eyelids, eyebrows, and the region between them. It contains valuable visual cues that can be used to extract key features for gender classification. This paper introduces a sophisticated Convolutional Neural Network (CNN) model that utilizes color image databases to evaluate the effectiveness of the periocular region for gender classification. To validate the model's performance, we conducted tests on two eye datasets, namely CVBL and (Female and Male). The recommended architecture achieved an outstanding accuracy of 99% on the previously unused CVBL dataset while attaining a commendable accuracy of 96% with a small number of learnable parameters (7,235,089) on the (Female and Male) dataset. To ascertain the effectiveness of our proposed model for gender classification using the periocular region, we evaluated its performance through an extensive range of metrics and compared it with other state-of-the-art approaches. The results unequivocally demonstrate the efficacy of our model, thereby suggesting its potential for practical application in domains such as security and surveillance.
 ]]></content:encoded>
 <pubDate>Fri, 08 Aug 2025 00:00:00 -0400</pubDate>
-<pubDate>Fri, 08 Aug 2025 00:00:00 -0400</pubDate>
 </item>
-
 <item>
 <title>RetinexDual: Retinex-based Dual Nature Approach for Generalized Ultra-High-Definition Image Restoration</title>
 <link>https://arxiv.org/abs/2508.04797</link>
@@ -11061,36 +11058,6 @@ Abstract: The recent development in multimodal learning has greatly advanced the
 <content:encoded><![CDATA[
 arXiv:2411.14796v3 Announce Type: replace 
 Abstract: The shared topology of human skeletons motivated the recent investigation of graph convolutional network (GCN) solutions for action recognition. However, most of the existing GCNs rely on the binary connection of two neighboring vertices (joints) formed by an edge (bone), overlooking the potential of constructing multi-vertex convolution structures. Although some studies have attempted to utilize hyper-graphs to represent the topology, they rely on a fixed construction strategy, which limits their adaptivity in uncovering the intricate latent relationships within the action. In this paper, we address this oversight and explore the merits of an adaptive hyper-graph convolutional network (Hyper-GCN) to achieve the aggregation of rich semantic information conveyed by skeleton vertices. In particular, our Hyper-GCN adaptively optimises the hyper-graphs during training, revealing the action-driven multi-vertex relations. Besides, virtual connections are often designed to support efficient feature aggregation, implicitly extending the spectrum of dependencies within the skeleton. By injecting virtual connections into hyper-graphs, the semantic clues of diverse action categories can be highlighted. The results of experiments conducted on the NTU-60, NTU-120, and NW-UCLA datasets demonstrate the merits of our Hyper-GCN, compared to the state-of-the-art methods. The code is available at https://github.com/6UOOON9/Hyper-GCN.
-]]></content:encoded>
-<pubDate>Tue, 05 Aug 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>KinMo: Kinematic-aware Human Motion Understanding and Generation</title>
-<link>https://arxiv.org/abs/2411.15472</link>
-<guid>https://arxiv.org/abs/2411.15472</guid>
-<content:encoded><![CDATA[
-arXiv:2411.15472v3 Announce Type: replace 
-Abstract: Current human motion synthesis frameworks rely on global action descriptions, creating a modality gap that limits both motion understanding and generation capabilities. A single coarse description, such as run, fails to capture details such as variations in speed, limb positioning, and kinematic dynamics, leading to ambiguities between text and motion modalities. To address this challenge, we introduce KinMo, a unified framework built on a hierarchical describable motion representation that extends beyond global actions by incorporating kinematic group movements and their interactions. We design an automated annotation pipeline to generate high-quality, fine-grained descriptions for this decomposition, resulting in the KinMo dataset and offering a scalable and cost-efficient solution for dataset enrichment. To leverage these structured descriptions, we propose Hierarchical Text-Motion Alignment that progressively integrates additional motion details, thereby improving semantic motion understanding. Furthermore, we introduce a coarse-to-fine motion generation procedure to leverage enhanced spatial understanding to improve motion synthesis. Experimental results show that KinMo significantly improves motion understanding, demonstrated by enhanced text-motion retrieval performance and enabling more fine-grained motion generation and editing capabilities. Project Page: https://andypinxinliu.github.io/KinMo
-]]></content:encoded>
-<pubDate>Tue, 05 Aug 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>TKG-DM: Training-free Chroma Key Content Generation Diffusion Model</title>
-<link>https://arxiv.org/abs/2411.15580</link>
-<guid>https://arxiv.org/abs/2411.15580</guid>
-<content:encoded><![CDATA[
-arXiv:2411.15580v3 Announce Type: replace 
-Abstract: Diffusion models have enabled the generation of high-quality images with a strong focus on realism and textual fidelity. Yet, large-scale text-to-image models, such as Stable Diffusion, struggle to generate images where foreground objects are placed over a chroma key background, limiting their ability to separate foreground and background elements without fine-tuning. To address this limitation, we present a novel Training-Free Chroma Key Content Generation Diffusion Model (TKG-DM), which optimizes the initial random noise to produce images with foreground objects on a specifiable color background. Our proposed method is the first to explore the manipulation of the color aspects in initial noise for controlled background generation, enabling precise separation of foreground and background without fine-tuning. Extensive experiments demonstrate that our training-free method outperforms existing methods in both qualitative and quantitative evaluations, matching or surpassing fine-tuned models. Finally, we successfully extend it to other tasks (e.g., consistency models and text-to-video), highlighting its transformative potential across various generative applications where independent control of foreground and background is crucial.
-]]></content:encoded>
-<pubDate>Tue, 05 Aug 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>$\textit{Revelio}$: Interpreting and leveraging semantic information in diffusion models</title>
-<link>https://arxiv.org/abs/2411.16725</link>
-<guid>https://arxiv.org/abs/2411.16725</guid>
-<content:encoded><![CDATA[
-arXiv:2411.16725v3 Announce Type: replace 
-Abstract: We study $\textit{how}$ rich visual semantic information is represented within various layers and denoising timesteps of different diffusion architectures. We uncover monosemantic interpretable features by leveraging k-sparse autoencoders (k-SAE). We substantiate our mechanistic interpretations via transfer learning using light-weight classifiers on off-the-shelf diffusion models' features. On $4$ datasets, we demonstrate the effectiveness of diffusion features for representation learning. We provide an in-depth analysis of how different diffusion architectures, pre-training datasets, and language model conditioning impacts visual representation granularity, inductive biases, and transfer learning capabilities. Our work is a critical step towards deepening interpretability of black-box diffusion models. Code and visualizations available at: https://github.com/revelio-diffusion/revelio
 ]]></content:encoded>
 <pubDate>Tue, 05 Aug 2025 00:00:00 -0400</pubDate>
 </item>
