@@ -4,21 +4,20 @@
 <title>cs.CV updates on arXiv.org</title>
 <link>http://rss.arxiv.org/rss/cs.CV</link>
 
+
 <item>
 <title>CMIC: Content-Adaptive Mamba for Learned Image Compression</title>
 <link>https://arxiv.org/abs/2508.02192</link>
 <guid>https://arxiv.org/abs/2508.02192</guid>
 <content:encoded><![CDATA[
-<div> Keywords: Learned image compression, Mamba-style state-space models, Content-Adaptive Mamba, global dependencies, rate-distortion performance <br>
+<div> Keywords: Learned image compression, Mamba-style state-space models, Content-Adaptive Mamba, global dependencies, rate-distortion performance <br />
 Summary: 
-Content-Adaptive Mamba (CAM) improves on traditional Mamba models by incorporating content-aware token reorganization and a prompt dictionary to better capture global dependencies. CAM prioritizes proximity in feature space over Euclidean space, allowing for more dynamic content exploitation. By integrating global priors, CAM mitigates issues with strict causality and long-range decay in token interactions. Leveraging CAM, the Content-Adaptive Mamba-based Learned image compression (CMIC) model achieves state-of-the-art rate-distortion performance, outperforming VTM-21.0 on Kodak, Tecnick, and CLIC benchmarks by significant margins of -15.91%, -21.34%, and -17.58% BD-rate respectively. This innovation demonstrates the potential for improved image compression techniques through dynamic state-space models. <br><br>Summary: <div>
+Content-Adaptive Mamba (CAM) improves on traditional Mamba models by incorporating content-aware token reorganization and a prompt dictionary to better capture global dependencies. CAM prioritizes proximity in feature space over Euclidean space, allowing for more dynamic content exploitation. By integrating global priors, CAM mitigates issues with strict causality and long-range decay in token interactions. Leveraging CAM, the Content-Adaptive Mamba-based Learned image compression (CMIC) model achieves state-of-the-art rate-distortion performance, outperforming VTM-21.0 on Kodak, Tecnick, and CLIC benchmarks by significant margins of -15.91%, -21.34%, and -17.58% BD-rate respectively. This innovation demonstrates the potential for improved image compression techniques through dynamic state-space models. <br /><br />Summary: <div>
 arXiv:2508.02192v3 Announce Type: replace 
 Abstract: Recent Learned image compression (LIC) leverages Mamba-style state-space models (SSMs) for global receptive fields with linear complexity. However, vanilla Mamba is content-agnostic, relying on fixed and predefined selective scans, which restricts its ability to dynamically and fully exploit content dependencies. We introduce Content-Adaptive Mamba (CAM), a dynamic SSM that addresses two critical limitations. First, it employs content-aware token reorganization, clustering and reordering tokens based on content similarity to prioritize proximity in feature space over Euclidean space. Second, it integrates global priors into SSM via a prompt dictionary, effectively mitigating the strict causality and long-range decay in the token interactions of Mamba. These innovations enable CAM to better capture global dependencies while preserving computational efficiency. Leveraging CAM, our Content-Adaptive Mamba-based LIC model (CMIC) achieves state-of-the-art rate-distortion performance, surpassing VTM-21.0 by -15.91\%, -21.34\%, and -17.58\% BD-rate on Kodak, Tecnick, and CLIC benchmarks, respectively.
 ]]></content:encoded>
 <pubDate>Mon, 11 Aug 2025 00:00:00 -0400</pubDate>
-<pubDate>Mon, 11 Aug 2025 00:00:00 -0400</pubDate>
 </item>
-
 <item>
 <title>Boosting Adversarial Transferability via Residual Perturbation Attack</title>
 <link>https://arxiv.org/abs/2508.05689</link>
@@ -11314,16 +11313,6 @@ Abstract: We present a novel multi-altitude camera pose estimation system, addre
 <content:encoded><![CDATA[
 arXiv:2508.01966v1 Announce Type: new 
 Abstract: One-stage object detectors such as the YOLO family achieve state-of-the-art performance in real-time vision applications but remain heavily reliant on large-scale labeled datasets for training. In this work, we present a systematic study of contrastive self-supervised learning (SSL) as a means to reduce this dependency by pretraining YOLOv5 and YOLOv8 backbones on unlabeled images using the SimCLR framework. Our approach introduces a simple yet effective pipeline that adapts YOLO's convolutional backbones as encoders, employs global pooling and projection heads, and optimizes a contrastive loss using augmentations of the COCO unlabeled dataset (120k images). The pretrained backbones are then fine-tuned on a cyclist detection task with limited labeled data. Experimental results show that SSL pretraining leads to consistently higher mAP, faster convergence, and improved precision-recall performance, especially in low-label regimes. For example, our SimCLR-pretrained YOLOv8 achieves a mAP@50:95 of 0.7663, outperforming its supervised counterpart despite using no annotations during pretraining. These findings establish a strong baseline for applying contrastive SSL to one-stage detectors and highlight the potential of unlabeled data as a scalable resource for label-efficient object detection.
-]]></content:encoded>
-<pubDate>Tue, 05 Aug 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>On-the-Fly Object-aware Representative Point Selection in Point Cloud</title>
-<link>https://arxiv.org/abs/2508.01980</link>
-<guid>https://arxiv.org/abs/2508.01980</guid>
-<content:encoded><![CDATA[
-arXiv:2508.01980v1 Announce Type: new 
-Abstract: Point clouds are essential for object modeling and play a critical role in assisting driving tasks for autonomous vehicles (AVs). However, the significant volume of data generated by AVs creates challenges for storage, bandwidth, and processing cost. To tackle these challenges, we propose a representative point selection framework for point cloud downsampling, which preserves critical object-related information while effectively filtering out irrelevant background points. Our method involves two steps: (1) Object Presence Detection, where we introduce an unsupervised density peak-based classifier and a supervised Na\"ive Bayes classifier to handle diverse scenarios, and (2) Sampling Budget Allocation, where we propose a strategy that selects object-relevant points while maintaining a high retention rate of object information. Extensive experiments on the KITTI and nuScenes datasets demonstrate that our method consistently outperforms state-of-the-art baselines in both efficiency and effectiveness across varying sampling rates. As a model-agnostic solution, our approach integrates seamlessly with diverse downstream models, making it a valuable and scalable addition to the 3D point cloud downsampling toolkit for AV applications.
 ]]></content:encoded>
 <pubDate>Tue, 05 Aug 2025 00:00:00 -0400</pubDate>
 </item>

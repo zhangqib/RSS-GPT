@@ -4,6 +4,7 @@
 <title>cs.LG updates on arXiv.org</title>
 <link>http://rss.arxiv.org/rss/cs.LG</link>
 
+
 <item>
 <title>SPARTA: Advancing Sparse Attention in Spiking Neural Networks via Spike-Timing-Based Prioritization</title>
 <link>https://arxiv.org/abs/2508.01646</link>
@@ -11,11 +12,10 @@
 <content:encoded><![CDATA[
 <div> spiking neural networks, SNNs, temporal dynamics, spike-timing information, attention mechanism
 Summary:
-SPARTA, a novel framework for Spiking Neural Networks, incorporates temporal dynamics and precise timing information to enable efficient sparse attention mechanisms. By leveraging heterogeneous neuron dynamics and prioritizing tokens based on temporal cues, such as firing patterns and inter-spike intervals, SPARTA achieves 65.4% sparsity through competitive gating. This approach reduces attention complexity significantly, from O(N^2) to O(K^2), by selecting only the most salient tokens while maintaining high accuracy. The proposed method outperforms existing models on datasets like DVS-Gesture (98.78%) and achieves competitive results on CIFAR10-DVS (83.06%) and CIFAR-10 (95.3%). Utilizing spike timing dynamics not only enhances computational efficiency but also improves overall accuracy in spike-based processing, illustrating the potential benefits of leveraging temporal information in SNNs.<br><br>Summary: <div>
+SPARTA, a novel framework for Spiking Neural Networks, incorporates temporal dynamics and precise timing information to enable efficient sparse attention mechanisms. By leveraging heterogeneous neuron dynamics and prioritizing tokens based on temporal cues, such as firing patterns and inter-spike intervals, SPARTA achieves 65.4% sparsity through competitive gating. This approach reduces attention complexity significantly, from O(N^2) to O(K^2), by selecting only the most salient tokens while maintaining high accuracy. The proposed method outperforms existing models on datasets like DVS-Gesture (98.78%) and achieves competitive results on CIFAR10-DVS (83.06%) and CIFAR-10 (95.3%). Utilizing spike timing dynamics not only enhances computational efficiency but also improves overall accuracy in spike-based processing, illustrating the potential benefits of leveraging temporal information in SNNs.<br /><br />Summary: <div>
 arXiv:2508.01646v2 Announce Type: replace 
 Abstract: Current Spiking Neural Networks (SNNs) underutilize the temporal dynamics inherent in spike-based processing, relying primarily on rate coding while overlooking precise timing information that provides rich computational cues. We propose SPARTA (Spiking Priority Attention with Resource-Adaptive Temporal Allocation), a framework that leverages heterogeneous neuron dynamics and spike-timing information to enable efficient sparse attention. SPARTA prioritizes tokens based on temporal cues, including firing patterns, spike timing, and inter-spike intervals, achieving 65.4% sparsity through competitive gating. By selecting only the most salient tokens, SPARTA reduces attention complexity from O(N^2) to O(K^2) with k << n, while maintaining high accuracy. Our method achieves state-of-the-art performance on DVS-Gesture (98.78%) and competitive results on CIFAR10-DVS (83.06%) and CIFAR-10 (95.3%), demonstrating that exploiting spike timing dynamics improves both computational efficiency and accuracy.
 ]]></content:encoded>
-<pubDate>Mon, 11 Aug 2025 00:00:00 -0400</pubDate>
 <pubDate>Mon, 11 Aug 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -28,14 +28,12 @@ Abstract: Current Spiking Neural Networks (SNNs) underutilize the temporal dynam
 Summary:
 Fleet upgrade strategies are crucial for optimizing utility, cost, and sustainability in large machine and vehicle fleets. Conventional fleet optimization methods based on integer programming face challenges in scalability and computational cost. This study introduces an extended integer programming approach and a machine learning-based method to address these challenges. The machine learning approach transforms the optimization problem into a mixed discrete-continuous problem, leading to near-optimal solutions with improved scalability and computational performance. A real-world automotive industry case study validates the effectiveness of the machine learning approach in optimizing fleet renewal and upgrade decisions. Overall, this research provides practical solutions for large-scale fleet management, balancing efficiency, cost-effectiveness, and sustainability. 
 
-<br><br>Summary: <div>
+<br /><br />Summary: <div>
 arXiv:2508.00915v2 Announce Type: replace-cross 
 Abstract: Rental-based business models and increasing sustainability requirements intensify the need for efficient strategies to manage large machine and vehicle fleet renewal and upgrades. Optimized fleet upgrade strategies maximize overall utility, cost, and sustainability. However, conventional fleet optimization does not account for upgrade options and is based on integer programming with exponential runtime scaling, which leads to substantial computational cost when dealing with large fleets and repeated decision-making processes. This contribution firstly suggests an extended integer programming approach that determines optimal renewal and upgrade decisions. The computational burden is addressed by a second, alternative machine learning-based method that transforms the task to a mixed discrete-continuous optimization problem. Both approaches are evaluated in a real-world automotive industry case study, which shows that the machine learning approach achieves near-optimal solutions with significant improvements in the scalability and overall computational performance, thus making it a practical alternative for large-scale fleet management.
 ]]></content:encoded>
 <pubDate>Mon, 11 Aug 2025 00:00:00 -0400</pubDate>
-<pubDate>Mon, 11 Aug 2025 00:00:00 -0400</pubDate>
 </item>
-
 <item>
 <title>Diagrams-to-Dynamics (D2D): Exploring Causal Loop Diagram Leverage Points under Uncertainty</title>
 <link>https://arxiv.org/abs/2508.05659</link>
@@ -11304,26 +11302,6 @@ Abstract: Indoor localization plays a pivotal role in supporting a wide array of
 <content:encoded><![CDATA[
 arXiv:2508.01519v1 Announce Type: new 
 Abstract: Gradient-based optimization of neural differential equations and other parameterized dynamical systems fundamentally relies on the ability to differentiate numerical solutions with respect to model parameters. In stiff systems, it has been observed that sensitivities to parameters controlling fast-decaying modes become vanishingly small during training, leading to optimization difficulties. In this paper, we show that this vanishing gradient phenomenon is not an artifact of any particular method, but a universal feature of all A-stable and L-stable stiff numerical integration schemes. We analyze the rational stability function for general stiff integration schemes and demonstrate that the relevant parameter sensitivities, governed by the derivative of the stability function, decay to zero for large stiffness. Explicit formulas for common stiff integration schemes are provided, which illustrate the mechanism in detail. Finally, we rigorously prove that the slowest possible rate of decay for the derivative of the stability function is $O(|z|^{-1})$, revealing a fundamental limitation: all A-stable time-stepping methods inevitably suppress parameter gradients in stiff regimes, posing a significant barrier for training and parameter identification in stiff neural ODEs.
-]]></content:encoded>
-<pubDate>Tue, 05 Aug 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Prototype Learning to Create Refined Interpretable Digital Phenotypes from ECGs</title>
-<link>https://arxiv.org/abs/2508.01521</link>
-<guid>https://arxiv.org/abs/2508.01521</guid>
-<content:encoded><![CDATA[
-arXiv:2508.01521v1 Announce Type: new 
-Abstract: Prototype-based neural networks offer interpretable predictions by comparing inputs to learned, representative signal patterns anchored in training data. While such models have shown promise in the classification of physiological data, it remains unclear whether their prototypes capture an underlying structure that aligns with broader clinical phenotypes. We use a prototype-based deep learning model trained for multi-label ECG classification using the PTB-XL dataset. Then without modification we performed inference on the MIMIC-IV clinical database. We assess whether individual prototypes, trained solely for classification, are associated with hospital discharge diagnoses in the form of phecodes in this external population. Individual prototypes demonstrate significantly stronger and more specific associations with clinical outcomes compared to the classifier's class predictions, NLP-extracted concepts, or broader prototype classes across all phecode categories. Prototype classes with mixed significance patterns exhibit significantly greater intra-class distances (p $<$ 0.0001), indicating the model learned to differentiate clinically meaningful variations within diagnostic categories. The prototypes achieve strong predictive performance across diverse conditions, with AUCs ranging from 0.89 for atrial fibrillation to 0.91 for heart failure, while also showing substantial signal for non-cardiac conditions such as sepsis and renal disease. These findings suggest that prototype-based models can support interpretable digital phenotyping from physiologic time-series data, providing transferable intermediate phenotypes that capture clinically meaningful physiologic signatures beyond their original training objectives.
-]]></content:encoded>
-<pubDate>Tue, 05 Aug 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Unsupervised Learning for the Elementary Shortest Path Problem</title>
-<link>https://arxiv.org/abs/2508.01557</link>
-<guid>https://arxiv.org/abs/2508.01557</guid>
-<content:encoded><![CDATA[
-arXiv:2508.01557v1 Announce Type: new 
-Abstract: The Elementary Shortest-Path Problem(ESPP) seeks a minimum cost path from s to t that visits each vertex at most once. The presence of negative-cost cycles renders the problem NP-hard. We present a probabilistic method for finding near-optimal ESPP, enabled by an unsupervised graph neural network that jointly learns node value estimates and edge-selection probabilities via a surrogate loss function. The loss provides a high probability certificate of finding near-optimal ESPP solutions by simultaneously reducing negative-cost cycles and embedding the desired algorithmic alignment. At inference time, a decoding algorithm transforms the learned edge probabilities into an elementary path. Experiments on graphs of up to 100 nodes show that the proposed method surpasses both unsupervised baselines and classical heuristics, while exhibiting high performance in cross-size and cross-topology generalization on unseen synthetic graphs.
 ]]></content:encoded>
 <pubDate>Tue, 05 Aug 2025 00:00:00 -0400</pubDate>
 </item>
