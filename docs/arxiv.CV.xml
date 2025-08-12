@@ -4,18 +4,18 @@
 <title>cs.CV updates on arXiv.org</title>
 <link>http://rss.arxiv.org/rss/cs.CV</link>
 
+
 <item>
 <title>WSI-LLaVA: A Multimodal Large Language Model for Whole Slide Image</title>
 <link>https://arxiv.org/abs/2412.02141</link>
 <guid>https://arxiv.org/abs/2412.02141</guid>
 <content:encoded><![CDATA[
-<div> WSI-Bench, morphology-aware benchmark, computational pathology, Multi-modal Large Language Models (MLLMs), whole slide images (WSIs)<br>
-Summary:<br>
-Recent advancements in computational pathology have led to the development of patch-level Multi-modal Large Language Models (MLLMs). However, these models face limitations in analyzing whole slide images (WSIs) comprehensively and may miss crucial morphological features essential for accurate diagnosis. To address these challenges, a novel framework called WSI-LLaVA is introduced, designed for gigapixel WSI understanding. It includes a three-stage training approach, specialized WSI metrics (WSI-Precision and WSI-Relevance), and focuses on morphological analysis for improved diagnostic accuracy. Experimental results show that WSI-LLaVA surpasses existing models in all capability dimensions and highlights the importance of morphological understanding in diagnostic accuracy. <br> <div>
+<div> WSI-Bench, morphology-aware benchmark, computational pathology, Multi-modal Large Language Models (MLLMs), whole slide images (WSIs)<br />
+Summary:<br />
+Recent advancements in computational pathology have led to the development of patch-level Multi-modal Large Language Models (MLLMs). However, these models face limitations in analyzing whole slide images (WSIs) comprehensively and may miss crucial morphological features essential for accurate diagnosis. To address these challenges, a novel framework called WSI-LLaVA is introduced, designed for gigapixel WSI understanding. It includes a three-stage training approach, specialized WSI metrics (WSI-Precision and WSI-Relevance), and focuses on morphological analysis for improved diagnostic accuracy. Experimental results show that WSI-LLaVA surpasses existing models in all capability dimensions and highlights the importance of morphological understanding in diagnostic accuracy. <br /> <div>
 arXiv:2412.02141v4 Announce Type: replace 
 Abstract: Recent advancements in computational pathology have produced patch-level Multi-modal Large Language Models (MLLMs), but these models are limited by their inability to analyze whole slide images (WSIs) comprehensively and their tendency to bypass crucial morphological features that pathologists rely on for diagnosis. To address these challenges, we first introduce WSI-Bench, a large-scale morphology-aware benchmark containing 180k VQA pairs from 9,850 WSIs across 30 cancer types, designed to evaluate MLLMs' understanding of morphological characteristics crucial for accurate diagnosis. Building upon this benchmark, we present WSI-LLaVA, a novel framework for gigapixel WSI understanding that employs a three-stage training approach: WSI-text alignment, feature space alignment, and task-specific instruction tuning. To better assess model performance in pathological contexts, we develop two specialized WSI metrics: WSI-Precision and WSI-Relevance. Experimental results demonstrate that WSI-LLaVA outperforms existing models across all capability dimensions, with a significant improvement in morphological analysis, establishing a clear correlation between morphological understanding and diagnostic accuracy.
 ]]></content:encoded>
-<pubDate>Tue, 12 Aug 2025 00:00:00 -0400</pubDate>
 <pubDate>Tue, 12 Aug 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -24,12 +24,11 @@ Abstract: Recent advancements in computational pathology have produced patch-lev
 <guid>https://arxiv.org/abs/2508.01591</guid>
 <content:encoded><![CDATA[
 <div> propose, Self-Navigated Residual Mamba, anomaly detection, industrial, framework
-Summary:<br>
-SNARM is a novel framework for universal industrial anomaly detection that utilizes self-referential learning within test images. It enhances anomaly discrimination by comparing test patches with adaptively selected in-image references. The method computes inter-residuals features by contrasting test image patches with a training feature bank. Self-generated reference patches with small-norm residuals are used to compute intra-residuals, amplifying discriminative signals. These features are fed into a Mamba module with multiple heads, dynamically navigated by residual properties. Results are obtained by aggregating the outputs in an ensemble learning paradigm. SNARM achieves state-of-the-art performance on various benchmarks, showing notable improvements in all metrics including Image-AUROC, Pixel-AURC, PRO, and AP.<br> <div>
+Summary:<br />
+SNARM is a novel framework for universal industrial anomaly detection that utilizes self-referential learning within test images. It enhances anomaly discrimination by comparing test patches with adaptively selected in-image references. The method computes inter-residuals features by contrasting test image patches with a training feature bank. Self-generated reference patches with small-norm residuals are used to compute intra-residuals, amplifying discriminative signals. These features are fed into a Mamba module with multiple heads, dynamically navigated by residual properties. Results are obtained by aggregating the outputs in an ensemble learning paradigm. SNARM achieves state-of-the-art performance on various benchmarks, showing notable improvements in all metrics including Image-AUROC, Pixel-AURC, PRO, and AP.<br /> <div>
 arXiv:2508.01591v2 Announce Type: replace 
 Abstract: In this paper, we propose Self-Navigated Residual Mamba (SNARM), a novel framework for universal industrial anomaly detection that leverages ``self-referential learning'' within test images to enhance anomaly discrimination. Unlike conventional methods that depend solely on pre-trained features from normal training data, SNARM dynamically refines anomaly detection by iteratively comparing test patches against adaptively selected in-image references. Specifically, we first compute the ``inter-residuals'' features by contrasting test image patches with the training feature bank. Patches exhibiting small-norm residuals (indicating high normality) are then utilized as self-generated reference patches to compute ``intra-residuals'', amplifying discriminative signals. These inter- and intra-residual features are concatenated and fed into a novel Mamba module with multiple heads, which are dynamically navigated by residual properties to focus on anomalous regions. Finally, AD results are obtained by aggregating the outputs of a self-navigated Mamba in an ensemble learning paradigm. Extensive experiments on MVTec AD, MVTec 3D, and VisA benchmarks demonstrate that SNARM achieves state-of-the-art (SOTA) performance, with notable improvements in all metrics, including Image-AUROC, Pixel-AURC, PRO, and AP.
 ]]></content:encoded>
-<pubDate>Tue, 12 Aug 2025 00:00:00 -0400</pubDate>
 <pubDate>Tue, 12 Aug 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -45,7 +44,6 @@ arXiv:2508.01713v2 Announce Type: replace
 Abstract: Robot-assisted surgeries rely on accurate and real-time scene understanding to safely guide surgical instruments. However, segmentation models trained on static datasets face key limitations when deployed in these dynamic and evolving surgical environments. Class-incremental semantic segmentation (CISS) allows models to continually adapt to new classes while avoiding catastrophic forgetting of prior knowledge, without training on previous data. In this work, we build upon the recently introduced Taxonomy-Oriented Poincar\'e-regularized Incremental Class Segmentation (TOPICS) approach and propose an enhanced variant, termed TOPICS+, specifically tailored for robust segmentation of surgical scenes. Concretely, we incorporate the Dice loss into the hierarchical loss formulation to handle strong class imbalances, introduce hierarchical pseudo-labeling, and design tailored label taxonomies for robotic surgery environments. We also propose six novel CISS benchmarks designed for robotic surgery environments including multiple incremental steps and several semantic categories to emulate realistic class-incremental settings in surgical environments. In addition, we introduce a refined set of labels with more than 144 classes on the Syn-Mediverse synthetic dataset, hosted online as an evaluation benchmark. We make the code and trained models publicly available at http://topics.cs.uni-freiburg.de.
 ]]></content:encoded>
 <pubDate>Tue, 12 Aug 2025 00:00:00 -0400</pubDate>
-<pubDate>Tue, 12 Aug 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
 <title>Less is More: Token-Efficient Video-QA via Adaptive Frame-Pruning and Semantic Graph Integration</title>
@@ -54,11 +52,10 @@ Abstract: Robot-assisted surgeries rely on accurate and real-time scene understa
 <content:encoded><![CDATA[
 <div> Adaptive Frame-Pruning, Video Question Answering, Multimodal Large Language Models, Keyframe Selection Methods, Reduce Token Cost
 Summary:
-Adaptive Frame-Pruning (AFP) is proposed as a solution for the challenges faced in applying Multimodal Large Language Models (MLLMs) to Video Question Answering. Excessive frames can degrade performance due to context dilution, while keyframe selection methods still yield temporal redundancy termed 'visual echoes.' AFP intelligently prunes selected keyframes using adaptive hierarchical clustering and merges visual echoes into single representatives. A lightweight, text-based semantic graph is introduced to compensate for information loss with minimal token overhead. Extensive experiments show a drastic reduction in required frames and total input tokens, enhancing efficiency and often improving accuracy over baselines using more frames. The code for AFP will be released upon publication. <br><br>Summary: Adaptive Frame-Pruning tackles challenges in MLLMs for Video Question Answering with intelligent frame selection and a semantic graph, leading to efficiency improvements and enhanced accuracy over baselines. <div>
+Adaptive Frame-Pruning (AFP) is proposed as a solution for the challenges faced in applying Multimodal Large Language Models (MLLMs) to Video Question Answering. Excessive frames can degrade performance due to context dilution, while keyframe selection methods still yield temporal redundancy termed 'visual echoes.' AFP intelligently prunes selected keyframes using adaptive hierarchical clustering and merges visual echoes into single representatives. A lightweight, text-based semantic graph is introduced to compensate for information loss with minimal token overhead. Extensive experiments show a drastic reduction in required frames and total input tokens, enhancing efficiency and often improving accuracy over baselines using more frames. The code for AFP will be released upon publication. <br /><br />Summary: Adaptive Frame-Pruning tackles challenges in MLLMs for Video Question Answering with intelligent frame selection and a semantic graph, leading to efficiency improvements and enhanced accuracy over baselines. <div>
 arXiv:2508.03337v3 Announce Type: replace 
 Abstract: The practical application of Multimodal Large Language Models (MLLMs) to Video Question Answering (Video-QA) is severely hindered by the high token cost of processing numerous video frames. While increasing the number of sampled frames is a common strategy, we observe a "less is more" phenomenon where excessive frames can paradoxically degrade performance due to context dilution. Concurrently, state-of-the-art keyframe selection methods, while effective, still yield significant temporal redundancy, which we term 'visual echoes'. To address these dual challenges, we propose Adaptive Frame-Pruning (AFP), a novel post-processing method that intelligently prunes the selected keyframes. AFP employs an adaptive hierarchical clustering algorithm on a fused ResNet-50 and CLIP feature space to identify and merge these echoes into single representatives. To compensate for information loss, we then introduce a lightweight, text-based semantic graph that provides critical context with minimal token overhead. Conducting extensive experiments on the LongVideoBench and VideoMME benchmarks across multiple leading MLLMs, our full approach demonstrates a drastic reduction in required frames by up to 86.9% and total input tokens by up to 83.2%. Crucially, by providing a concise, high-quality set of frames, our method not only enhances efficiency but often improves accuracy over baselines that use more frames. The code will be released upon publication.
 ]]></content:encoded>
-<pubDate>Tue, 12 Aug 2025 00:00:00 -0400</pubDate>
 <pubDate>Tue, 12 Aug 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -66,14 +63,13 @@ Abstract: The practical application of Multimodal Large Language Models (MLLMs) 
 <link>https://arxiv.org/abs/2508.03483</link>
 <guid>https://arxiv.org/abs/2508.03483</guid>
 <content:encoded><![CDATA[
-<div> Keywords: text-to-image generation, demographic bias, SODA, visual attributes, generative models<br>
-Summary:<br>
-The article explores demographic bias in generated objects, using the SODA framework to analyze biases in objects generated with demographic cues compared to neutral prompts. The study involved 2,700 images from three advanced models across five object categories. Results revealed strong associations between specific demographic groups and visual attributes, highlighting recurring color patterns linked to gender or ethnicity cues. These patterns not only reinforce known stereotypes but also uncover subtle biases. Some models were found to produce less diverse outputs, exacerbating visual disparities when compared to neutral prompts. The proposed auditing framework serves as a vital tool in identifying and addressing embedded stereotypes in generative models, aiming for a more responsible development of AI systems.<br> 
+<div> Keywords: text-to-image generation, demographic bias, SODA, visual attributes, generative models<br />
+Summary:<br />
+The article explores demographic bias in generated objects, using the SODA framework to analyze biases in objects generated with demographic cues compared to neutral prompts. The study involved 2,700 images from three advanced models across five object categories. Results revealed strong associations between specific demographic groups and visual attributes, highlighting recurring color patterns linked to gender or ethnicity cues. These patterns not only reinforce known stereotypes but also uncover subtle biases. Some models were found to produce less diverse outputs, exacerbating visual disparities when compared to neutral prompts. The proposed auditing framework serves as a vital tool in identifying and addressing embedded stereotypes in generative models, aiming for a more responsible development of AI systems.<br /> 
 Summary: <div>
 arXiv:2508.03483v2 Announce Type: replace 
 Abstract: While prior research on text-to-image generation has predominantly focused on biases in human depictions, we investigate a more subtle yet pervasive phenomenon: demographic bias in generated objects (e.g., cars). We introduce SODA (Stereotyped Object Diagnostic Audit), a novel framework for systematically measuring such biases. Our approach compares visual attributes of objects generated with demographic cues (e.g., "for young people'') to those from neutral prompts, across 2,700 images produced by three state-of-the-art models (GPT Image-1, Imagen 4, and Stable Diffusion) in five object categories. Through a comprehensive analysis, we uncover strong associations between specific demographic groups and visual attributes, such as recurring color patterns prompted by gender or ethnicity cues. These patterns reflect and reinforce not only well-known stereotypes but also more subtle and unintuitive biases. We also observe that some models generate less diverse outputs, which in turn amplifies the visual disparities compared to neutral prompts. Our proposed auditing framework offers a practical approach for testing, revealing how stereotypes still remain embedded in today's generative models. We see this as an essential step toward more systematic and responsible AI development.
 ]]></content:encoded>
-<pubDate>Tue, 12 Aug 2025 00:00:00 -0400</pubDate>
 <pubDate>Tue, 12 Aug 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -91,7 +87,6 @@ arXiv:2508.03643v3 Announce Type: replace
 Abstract: Reconstructing and semantically interpreting 3D scenes from sparse 2D views remains a fundamental challenge in computer vision. Conventional methods often decouple semantic understanding from reconstruction or necessitate costly per-scene optimization, thereby restricting their scalability and generalizability. In this paper, we introduce Uni3R, a novel feed-forward framework that jointly reconstructs a unified 3D scene representation enriched with open-vocabulary semantics, directly from unposed multi-view images. Our approach leverages a Cross-View Transformer to robustly integrate information across arbitrary multi-view inputs, which then regresses a set of 3D Gaussian primitives endowed with semantic feature fields. This unified representation facilitates high-fidelity novel view synthesis, open-vocabulary 3D semantic segmentation, and depth prediction, all within a single, feed-forward pass. Extensive experiments demonstrate that Uni3R establishes a new state-of-the-art across multiple benchmarks, including 25.07 PSNR on RE10K and 55.84 mIoU on ScanNet. Our work signifies a novel paradigm towards generalizable, unified 3D scene reconstruction and understanding. The code is available at https://github.com/HorizonRobotics/Uni3R.
 ]]></content:encoded>
 <pubDate>Tue, 12 Aug 2025 00:00:00 -0400</pubDate>
-<pubDate>Tue, 12 Aug 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
 <title>Unveiling the Potential of iMarkers: Invisible Fiducial Markers for Advanced Robotics</title>
@@ -99,17 +94,15 @@ Abstract: Reconstructing and semantically interpreting 3D scenes from sparse 2D 
 <guid>https://arxiv.org/abs/2501.15505</guid>
 <content:encoded><![CDATA[
 <div> fiducial markers, robotics, navigation, object recognition, sensors
-<br>
+<br />
 iMarkers are introduced as unobtrusive fiducial markers exclusively detectable by robots with specialized sensors, addressing the issue of disrupting visual aesthetics in environments. The markers offer customization of visibility range and encoding algorithms, with hardware designs and software algorithms developed for detection. Evaluations show iMarkers' effectiveness compared to conventional and blended fiducial markers in diverse robotics scenarios, confirming adaptability and robustness in detection and recognition stages.
-<br><br>Summary: 
+<br /><br />Summary: 
 iMarkers, innovative fiducial markers detectable only by robots with specialized sensors, offer customization in visibility range and encoding algorithms. Hardware designs and software algorithms are developed for detection, showing effectiveness in various robotics scenarios. Evaluations demonstrate adaptability and robustness in detection and recognition stages, making iMarkers a promising solution for enhancing robotics tasks without disrupting visual aesthetics in environments. <div>
 arXiv:2501.15505v4 Announce Type: replace-cross 
 Abstract: Fiducial markers are widely used in various robotics tasks, facilitating enhanced navigation, object recognition, and scene understanding. Despite their advantages for robots and Augmented Reality (AR) applications, they often disrupt the visual aesthetics of environments because they are visible to humans, making them unsuitable for non-intrusive use cases. To address this gap, this paper presents "iMarkers"-innovative, unobtrusive fiducial markers detectable exclusively by robots equipped with specialized sensors. These markers offer high flexibility in production, allowing customization of their visibility range and encoding algorithms to suit various demands. The paper also introduces the hardware designs and software algorithms developed for detecting iMarkers, highlighting their adaptability and robustness in the detection and recognition stages. Various evaluations have demonstrated the effectiveness of iMarkers compared to conventional (printed) and blended fiducial markers and confirmed their applicability in diverse robotics scenarios.
 ]]></content:encoded>
 <pubDate>Tue, 12 Aug 2025 00:00:00 -0400</pubDate>
-<pubDate>Tue, 12 Aug 2025 00:00:00 -0400</pubDate>
 </item>
-
 <item>
 <title>Med-GRIM: Enhanced Zero-Shot Medical VQA using prompt-embedded Multimodal Graph RAG</title>
 <link>https://arxiv.org/abs/2508.06496</link>
@@ -11078,76 +11071,6 @@ Abstract: Existing pedestrian attribute recognition methods are generally develo
 <content:encoded><![CDATA[
 arXiv:2504.18087v2 Announce Type: replace 
 Abstract: Recent advances in Talking Head Generation (THG) have achieved impressive lip synchronization and visual quality through diffusion models; yet existing methods struggle to generate emotionally expressive portraits while preserving speaker identity. We identify three critical limitations in current emotional talking head generation: insufficient utilization of audio's inherent emotional cues, identity leakage in emotion representations, and isolated learning of emotion correlations. To address these challenges, we propose a novel framework dubbed as DICE-Talk, following the idea of disentangling identity with emotion, and then cooperating emotions with similar characteristics. First, we develop a disentangled emotion embedder that jointly models audio-visual emotional cues through cross-modal attention, representing emotions as identity-agnostic Gaussian distributions. Second, we introduce a correlation-enhanced emotion conditioning module with learnable Emotion Banks that explicitly capture inter-emotion relationships through vector quantization and attention-based feature aggregation. Third, we design an emotion discrimination objective that enforces affective consistency during the diffusion process through latent-space classification. Extensive experiments on MEAD and HDTF datasets demonstrate our method's superiority, outperforming state-of-the-art approaches in emotion accuracy while maintaining competitive lip-sync performance. Qualitative results and user studies further confirm our method's ability to generate identity-preserving portraits with rich, correlated emotional expressions that naturally adapt to unseen identities.
-]]></content:encoded>
-<pubDate>Thu, 07 Aug 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>CMT: A Cascade MAR with Topology Predictor for Multimodal Conditional CAD Generation</title>
-<link>https://arxiv.org/abs/2504.20830</link>
-<guid>https://arxiv.org/abs/2504.20830</guid>
-<content:encoded><![CDATA[
-arXiv:2504.20830v2 Announce Type: replace 
-Abstract: While accurate and user-friendly Computer-Aided Design (CAD) is crucial for industrial design and manufacturing, existing methods still struggle to achieve this due to their over-simplified representations or architectures incapable of supporting multimodal design requirements. In this paper, we attempt to tackle this problem from both methods and datasets aspects. First, we propose a cascade MAR with topology predictor (CMT), the first multimodal framework for CAD generation based on Boundary Representation (B-Rep). Specifically, the cascade MAR can effectively capture the ``edge-counters-surface'' priors that are essential in B-Reps, while the topology predictor directly estimates topology in B-Reps from the compact tokens in MAR. Second, to facilitate large-scale training, we develop a large-scale multimodal CAD dataset, mmABC, which includes over 1.3 million B-Rep models with multimodal annotations, including point clouds, text descriptions, and multi-view images. Extensive experiments show the superior of CMT in both conditional and unconditional CAD generation tasks. For example, we improve Coverage and Valid ratio by +10.68% and +10.3%, respectively, compared to state-of-the-art methods on ABC in unconditional generation. CMT also improves +4.01 Chamfer on image conditioned CAD generation on mmABC.
-]]></content:encoded>
-<pubDate>Thu, 07 Aug 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Quaternion Sparse Decomposition for Multi-focus Color Image Fusion</title>
-<link>https://arxiv.org/abs/2505.02365</link>
-<guid>https://arxiv.org/abs/2505.02365</guid>
-<content:encoded><![CDATA[
-arXiv:2505.02365v2 Announce Type: replace 
-Abstract: Multi-focus color image fusion refers to integrating multiple partially focused color images to create a single all-in-focus color image. However, existing methods struggle with complex real-world scenarios due to limitations in handling color information and intricate textures. To address these challenges, this paper proposes a quaternion multi-focus color image fusion framework to perform high-quality color image fusion completely in the quaternion domain. This framework introduces 1) a quaternion sparse decomposition model to jointly learn fine-scale image details and structure information of color images in an iterative fashion for high-precision focus detection, 2) a quaternion base-detail fusion strategy to individually fuse base-scale and detail-scale results across multiple color images for preserving structure and detail information, and 3) a quaternion structural similarity refinement strategy to adaptively select optimal patches from initial fusion results and obtain the final fused result for preserving fine details and ensuring spatially consistent outputs. Extensive experiments demonstrate that the proposed framework outperforms state-of-the-art methods.
-]]></content:encoded>
-<pubDate>Thu, 07 Aug 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>PROM: Prioritize Reduction of Multiplications Over Lower Bit-Widths for Efficient CNNs</title>
-<link>https://arxiv.org/abs/2505.03254</link>
-<guid>https://arxiv.org/abs/2505.03254</guid>
-<content:encoded><![CDATA[
-arXiv:2505.03254v2 Announce Type: replace 
-Abstract: Convolutional neural networks (CNNs) are crucial for computer vision tasks on resource-constrained devices. Quantization effectively compresses these models, reducing storage size and energy cost. However, in modern depthwise-separable architectures, the computational cost is distributed unevenly across its components, with pointwise operations being the most expensive. By applying a general quantization scheme to this imbalanced cost distribution, existing quantization approaches fail to fully exploit potential efficiency gains. To this end, we introduce PROM, a straightforward approach for quantizing modern depthwise-separable convolutional networks by selectively using two distinct bit-widths. Specifically, pointwise convolutions are quantized to ternary weights, while the remaining modules use 8-bit weights, which is achieved through a simple quantization-aware training procedure. Additionally, by quantizing activations to 8-bit, our method transforms pointwise convolutions with ternary weights into int8 additions, which enjoy broad support across hardware platforms and effectively eliminates the need for expensive multiplications. Applying PROM to MobileNetV2 reduces the model's energy cost by more than an order of magnitude (23.9x) and its storage size by 2.7x compared to the float16 baseline while retaining similar classification performance on ImageNet. Our method advances the Pareto frontier for energy consumption vs. top-1 accuracy for quantized convolutional models on ImageNet. PROM addresses the challenges of quantizing depthwise-separable convolutional networks to both ternary and 8-bit weights, offering a simple way to reduce energy cost and storage size.
-]]></content:encoded>
-<pubDate>Thu, 07 Aug 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>False Promises in Medical Imaging AI? Assessing Validity of Outperformance Claims</title>
-<link>https://arxiv.org/abs/2505.04720</link>
-<guid>https://arxiv.org/abs/2505.04720</guid>
-<content:encoded><![CDATA[
-arXiv:2505.04720v2 Announce Type: replace 
-Abstract: Performance comparisons are fundamental in medical imaging Artificial Intelligence (AI) research, often driving claims of superiority based on relative improvements in common performance metrics. However, such claims frequently rely solely on empirical mean performance. In this paper, we investigate whether newly proposed methods genuinely outperform the state of the art by analyzing a representative cohort of medical imaging papers. We quantify the probability of false claims based on a Bayesian approach that leverages reported results alongside empirically estimated model congruence to estimate whether the relative ranking of methods is likely to have occurred by chance. According to our results, the majority (>80%) of papers claims outperformance when introducing a new method. Our analysis further revealed a high probability (>5%) of false outperformance claims in 86% of classification papers and 53% of segmentation papers. These findings highlight a critical flaw in current benchmarking practices: claims of outperformance in medical imaging AI are frequently unsubstantiated, posing a risk of misdirecting future research efforts.
-]]></content:encoded>
-<pubDate>Thu, 07 Aug 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>BrainSegDMlF: A Dynamic Fusion-enhanced SAM for Brain Lesion Segmentation</title>
-<link>https://arxiv.org/abs/2505.06133</link>
-<guid>https://arxiv.org/abs/2505.06133</guid>
-<content:encoded><![CDATA[
-arXiv:2505.06133v2 Announce Type: replace 
-Abstract: The segmentation of substantial brain lesions is a significant and challenging task in the field of medical image segmentation. Substantial brain lesions in brain imaging exhibit high heterogeneity, with indistinct boundaries between lesion regions and normal brain tissue. Small lesions in single slices are difficult to identify, making the accurate and reproducible segmentation of abnormal regions, as well as their feature description, highly complex. Existing methods have the following limitations: 1) They rely solely on single-modal information for learning, neglecting the multi-modal information commonly used in diagnosis. This hampers the ability to comprehensively acquire brain lesion information from multiple perspectives and prevents the effective integration and utilization of multi-modal data inputs, thereby limiting a holistic understanding of lesions. 2) They are constrained by the amount of data available, leading to low sensitivity to small lesions and difficulty in detecting subtle pathological changes. 3) Current SAM-based models rely on external prompts, which cannot achieve automatic segmentation and, to some extent, affect diagnostic efficiency.To address these issues, we have developed a large-scale fully automated segmentation model specifically designed for brain lesion segmentation, named BrainSegDMLF. This model has the following features: 1) Dynamic Modal Interactive Fusion (DMIF) module that processes and integrates multi-modal data during the encoding process, providing the SAM encoder with more comprehensive modal information. 2) Layer-by-Layer Upsampling Decoder, enabling the model to extract rich low-level and high-level features even with limited data, thereby detecting the presence of small lesions. 3) Automatic segmentation masks, allowing the model to generate lesion masks automatically without requiring manual prompts.
-]]></content:encoded>
-<pubDate>Thu, 07 Aug 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>MARRS: Masked Autoregressive Unit-based Reaction Synthesis</title>
-<link>https://arxiv.org/abs/2505.11334</link>
-<guid>https://arxiv.org/abs/2505.11334</guid>
-<content:encoded><![CDATA[
-arXiv:2505.11334v2 Announce Type: replace 
-Abstract: This work aims at a challenging task: human action-reaction synthesis, i.e., generating human reactions conditioned on the action sequence of another person. Currently, autoregressive modeling approaches with vector quantization (VQ) have achieved remarkable performance in motion generation tasks. However, VQ has inherent disadvantages, including quantization information loss, low codebook utilization, etc. In addition, while dividing the body into separate units can be beneficial, the computational complexity needs to be considered. Also, the importance of mutual perception among units is often neglected. In this work, we propose MARRS, a novel framework designed to generate coordinated and fine-grained reaction motions using continuous representations. Initially, we present the Unit-distinguished Motion Variational AutoEncoder (UD-VAE), which segments the entire body into distinct body and hand units, encoding each independently. Subsequently, we propose Action-Conditioned Fusion (ACF), which involves randomly masking a subset of reactive tokens and extracting specific information about the body and hands from the active tokens. Furthermore, we introduce Adaptive Unit Modulation (AUM) to facilitate interaction between body and hand units by using the information from one unit to adaptively modulate the other. Finally, for the diffusion model, we employ a compact MLP as a noise predictor for each distinct body unit and incorporate the diffusion loss to model the probability distribution of each token. Both quantitative and qualitative results demonstrate that our method achieves superior performance. The code will be released upon acceptance.
-]]></content:encoded>
-<pubDate>Thu, 07 Aug 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Expert-Like Reparameterization of Heterogeneous Pyramid Receptive Fields in Efficient CNNs for Fair Medical Image Classification</title>
-<link>https://arxiv.org/abs/2505.13039</link>
-<guid>https://arxiv.org/abs/2505.13039</guid>
-<content:encoded><![CDATA[
-arXiv:2505.13039v2 Announce Type: replace 
-Abstract: Efficient convolutional neural network (CNN) architecture design has attracted growing research interests. However, they typically apply single receptive field (RF), small asymmetric RFs, or pyramid RFs to learn different feature representations, still encountering two significant challenges in medical image classification tasks: 1) They have limitations in capturing diverse lesion characteristics efficiently, e.g., tiny, coordination, small and salient, which have unique roles on the classification results, especially imbalanced medical image classification. 2) The predictions generated by those CNNs are often unfair/biased, bringing a high risk when employing them to real-world medical diagnosis conditions. To tackle these issues, we develop a new concept, Expert-Like Reparameterization of Heterogeneous Pyramid Receptive Fields (ERoHPRF), to simultaneously boost medical image classification performance and fairness. This concept aims to mimic the multi-expert consultation mode by applying the well-designed heterogeneous pyramid RF bag to capture lesion characteristics with varying significances effectively via convolution operations with multiple heterogeneous kernel sizes. Additionally, ERoHPRF introduces an expert-like structural reparameterization technique to merge its parameters with the two-stage strategy, ensuring competitive computation cost and inference speed through comparisons to a single RF. To manifest the effectiveness and generalization ability of ERoHPRF, we incorporate it into mainstream efficient CNN architectures. The extensive experiments show that our proposed ERoHPRF maintains a better trade-off than state-of-the-art methods in terms of medical image classification, fairness, and computation overhead. The code of this paper is available at https://github.com/XiaoLing12138/Expert-Like-Reparameterization-of-Heterogeneous-Pyramid-Receptive-Fields.
 ]]></content:encoded>
 <pubDate>Thu, 07 Aug 2025 00:00:00 -0400</pubDate>
 </item>
