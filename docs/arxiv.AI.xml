@@ -4,18 +4,18 @@
 <title>cs.AI updates on arXiv.org</title>
 <link>http://rss.arxiv.org/rss/cs.AI</link>
 
+
 <item>
 <title>SEAgent: Self-Evolving Computer Use Agent with Autonomous Learning from Experience</title>
 <link>https://arxiv.org/abs/2508.04700</link>
 <guid>https://arxiv.org/abs/2508.04700</guid>
 <content:encoded><![CDATA[
-<div> framework, computer-use agents, experiential learning, autonomous evolution, software environments<br>
-Summary:<br>
-The SEAgent framework addresses the challenge of large vision-language models struggling with unfamiliar and specialized software. It enables computer-use agents to autonomously evolve through experiential learning in novel software environments. SEAgent incorporates a World State Model for trajectory assessment, a Curriculum Generator for task generation, and a policy updating mechanism through experiential learning techniques. A specialist-to-generalist training strategy facilitates the development of a stronger generalist CUA by integrating individual experiential insights. The unified agent outperforms ensembles of specialist agents on specialized software, achieving a significant 23.2% improvement in success rate over a competitive open-source CUA. The validation of SEAgent in five novel software environments within OS-World demonstrates its effectiveness in mastering unfamiliar software through autonomous evolution. <br>Summary: <div>
+<div> framework, computer-use agents, experiential learning, autonomous evolution, software environments<br />
+Summary:<br />
+The SEAgent framework addresses the challenge of large vision-language models struggling with unfamiliar and specialized software. It enables computer-use agents to autonomously evolve through experiential learning in novel software environments. SEAgent incorporates a World State Model for trajectory assessment, a Curriculum Generator for task generation, and a policy updating mechanism through experiential learning techniques. A specialist-to-generalist training strategy facilitates the development of a stronger generalist CUA by integrating individual experiential insights. The unified agent outperforms ensembles of specialist agents on specialized software, achieving a significant 23.2% improvement in success rate over a competitive open-source CUA. The validation of SEAgent in five novel software environments within OS-World demonstrates its effectiveness in mastering unfamiliar software through autonomous evolution. <br />Summary: <div>
 arXiv:2508.04700v2 Announce Type: replace 
 Abstract: Repurposing large vision-language models (LVLMs) as computer use agents (CUAs) has led to substantial breakthroughs, primarily driven by human-labeled data. However, these models often struggle with novel and specialized software, particularly in scenarios lacking human annotations. To address this challenge, we propose SEAgent, an agentic self-evolving framework enabling CUAs to autonomously evolve through interactions with unfamiliar software. Specifically, SEAgent empowers computer-use agents to autonomously master novel software environments via experiential learning, where agents explore new software, learn through iterative trial-and-error, and progressively tackle auto-generated tasks organized from simple to complex. To achieve this goal, we design a World State Model for step-wise trajectory assessment, along with a Curriculum Generator that generates increasingly diverse and challenging tasks. The agent's policy is updated through experiential learning, comprised of adversarial imitation of failure actions and Group Relative Policy Optimization (GRPO) on successful ones. Furthermore, we introduce a specialist-to-generalist training strategy that integrates individual experiential insights from specialist agents, facilitating the development of a stronger generalist CUA capable of continuous autonomous evolution. This unified agent ultimately achieves performance surpassing ensembles of individual specialist agents on their specialized software. We validate the effectiveness of SEAgent across five novel software environments within OS-World. Our approach achieves a significant improvement of 23.2% in success rate, from 11.3% to 34.5%, over a competitive open-source CUA, i.e., UI-TARS.
 ]]></content:encoded>
-<pubDate>Wed, 13 Aug 2025 00:00:00 -0400</pubDate>
 <pubDate>Wed, 13 Aug 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -31,9 +31,7 @@ arXiv:2508.05387v3 Announce Type: replace-cross
 Abstract: Modern RL-based post-training for large language models (LLMs) co-locate trajectory sampling and policy optimisation on the same GPU cluster, forcing the system to switch between inference and training workloads. This serial context switching violates the single-program-multiple-data (SPMD) assumption underlying today's distributed training systems. We present Echo, the RL system that cleanly decouples these two phases across heterogeneous "inference" and "training" swarms while preserving statistical efficiency. Echo introduces two lightweight synchronization protocols: a sequential pull mode that refreshes policy weights according to API call for minimal bias, and an asynchronous push-pull mode that streams version-tagged rollouts through a replay buffer to maximise hardware utilisation. Training four representative RL workloads with Qwen3-4B, Qwen2.5-7B, Qwen3-30B-A3B-Thinking-2507 and Qwen3-32B on a geographically distributed cluster, Echo matches a fully co-located Verl baseline in convergence speed and final reward while off-loading trajectory generation to commodity edge hardware. These promising results demonstrate that large-scale RL for LLMs could achieve datacentre-grade performance using decentralised, heterogeneous resources.
 ]]></content:encoded>
 <pubDate>Wed, 13 Aug 2025 00:00:00 -0400</pubDate>
-<pubDate>Wed, 13 Aug 2025 00:00:00 -0400</pubDate>
 </item>
-
 <item>
 <title>Topos Theory for Generative AI and LLMs</title>
 <link>https://arxiv.org/abs/2508.08293</link>
@@ -11056,26 +11054,6 @@ Abstract: Timely and effective incident response is key to managing the growing 
 <content:encoded><![CDATA[
 arXiv:2508.05198v1 Announce Type: cross 
 Abstract: In the realm of music recommendation, sequential recommenders have shown promise in capturing the dynamic nature of music consumption. A key characteristic of this domain is repetitive listening, where users frequently replay familiar tracks. To capture these repetition patterns, recent research has introduced Personalised Popularity Scores (PPS), which quantify user-specific preferences based on historical frequency. While PPS enhances relevance in recommendation, it often reinforces already-known content, limiting the system's ability to surface novel or serendipitous items - key elements for fostering long-term user engagement and satisfaction. To address this limitation, we build upon RecJPQ, a Transformer-based framework initially developed to improve scalability in large-item catalogues through sub-item decomposition. We repurpose RecJPQ's sub-item architecture to model personalised popularity at a finer granularity. This allows us to capture shared repetition patterns across sub-embeddings - latent structures not accessible through item-level popularity alone. We propose a novel integration of sub-ID-level personalised popularity within the RecJPQ framework, enabling explicit control over the trade-off between accuracy and personalised novelty. Our sub-ID-level PPS method (sPPS) consistently outperforms item-level PPS by achieving significantly higher personalised novelty without compromising recommendation accuracy. Code and experiments are publicly available at https://github.com/sisinflab/Sub-id-Popularity.
-]]></content:encoded>
-<pubDate>Fri, 08 Aug 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>EvoGraph: Hybrid Directed Graph Evolution toward Software 3.0</title>
-<link>https://arxiv.org/abs/2508.05199</link>
-<guid>https://arxiv.org/abs/2508.05199</guid>
-<content:encoded><![CDATA[
-arXiv:2508.05199v1 Announce Type: cross 
-Abstract: We introduce **EvoGraph**, a framework that enables software systems to evolve their own source code, build pipelines, documentation, and tickets. EvoGraph represents every artefact in a typed directed graph, applies learned mutation operators driven by specialized small language models (SLMs), and selects survivors with a multi-objective fitness. On three benchmarks, EvoGraph fixes 83% of known security vulnerabilities, translates COBOL to Java with 93% functional equivalence (test verified), and maintains documentation freshness within two minutes. Experiments show a 40% latency reduction and a sevenfold drop in feature lead time compared with strong baselines. We extend our approach to **evoGraph**, leveraging language-specific SLMs for modernizing .NET, Lisp, CGI, ColdFusion, legacy Python, and C codebases, achieving 82-96% semantic equivalence across languages while reducing computational costs by 90% compared to large language models. EvoGraph's design responds to empirical failure modes in legacy modernization, such as implicit contracts, performance preservation, and integration evolution. Our results suggest a practical path toward Software 3.0, where systems adapt continuously yet remain under measurable control.
-]]></content:encoded>
-<pubDate>Fri, 08 Aug 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>FAITH: A Framework for Assessing Intrinsic Tabular Hallucinations in finance</title>
-<link>https://arxiv.org/abs/2508.05201</link>
-<guid>https://arxiv.org/abs/2508.05201</guid>
-<content:encoded><![CDATA[
-arXiv:2508.05201v1 Announce Type: cross 
-Abstract: Hallucination remains a critical challenge for deploying Large Language Models (LLMs) in finance. Accurate extraction and precise calculation from tabular data are essential for reliable financial analysis, since even minor numerical errors can undermine decision-making and regulatory compliance. Financial applications have unique requirements, often relying on context-dependent, numerical, and proprietary tabular data that existing hallucination benchmarks rarely capture. In this study, we develop a rigorous and scalable framework for evaluating intrinsic hallucinations in financial LLMs, conceptualized as a context-aware masked span prediction task over real-world financial documents. Our main contributions are: (1) a novel, automated dataset creation paradigm using a masking strategy; (2) a new hallucination evaluation dataset derived from S&amp;P 500 annual reports; and (3) a comprehensive evaluation of intrinsic hallucination patterns in state-of-the-art LLMs on financial tabular data. Our work provides a robust methodology for in-house LLM evaluation and serves as a critical step toward building more trustworthy and reliable financial Generative AI systems.
 ]]></content:encoded>
 <pubDate>Fri, 08 Aug 2025 00:00:00 -0400</pubDate>
 </item>

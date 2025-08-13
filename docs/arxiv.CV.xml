@@ -4,6 +4,7 @@
 <title>cs.CV updates on arXiv.org</title>
 <link>http://rss.arxiv.org/rss/cs.CV</link>
 
+
 <item>
 <title>How Does Bilateral Ear Symmetry Affect Deep Ear Features?</title>
 <link>https://arxiv.org/abs/2508.04614</link>
@@ -14,7 +15,7 @@
 Summary:
 In this study, the impact of bilateral ear symmetry on the effectiveness of convolutional neural networks (CNNs) for ear recognition is explored. A side classifier is developed to automatically classify ear images as left or right, and the influence of incorporating side information during training and testing is investigated. Cross-dataset evaluations on five datasets reveal that treating left and right ears separately can improve performance significantly. Ablation studies on alignment strategies, input sizes, and hyperparameter settings offer practical insights into training CNN-based ear recognition systems on large-scale datasets for higher verification rates. This research highlights the importance of considering bilateral symmetry in CNN-based ear recognition systems to enhance accuracy and effectiveness. 
 
-<br><br>Summary: 
+<br /><br />Summary: 
 - Investigated impact of bilateral ear symmetry on CNN-based ear recognition
 - Developed a side classifier and explored incorporating side information
 - Cross-dataset evaluations showed performance improvements when treating left and right ears separately 
@@ -23,7 +24,6 @@ In this study, the impact of bilateral ear symmetry on the effectiveness of conv
 arXiv:2508.04614v2 Announce Type: replace 
 Abstract: Ear recognition has gained attention as a reliable biometric technique due to the distinctive characteristics of human ears. With the increasing availability of large-scale datasets, convolutional neural networks (CNNs) have been widely adopted to learn features directly from raw ear images, outperforming traditional hand-crafted methods. However, the effect of bilateral ear symmetry on the features learned by CNNs has received little attention in recent studies. In this paper, we investigate how bilateral ear symmetry influences the effectiveness of CNN-based ear recognition. To this end, we first develop an ear side classifier to automatically categorize ear images as either left or right. We then explore the impact of incorporating this side information during both training and test. Cross-dataset evaluations are conducted on five datasets. Our results suggest that treating left and right ears separately during training and testing can lead to notable performance improvements. Furthermore, our ablation studies on alignment strategies, input sizes, and various hyperparameter settings provide practical insights into training CNN-based ear recognition systems on large-scale datasets to achieve higher verification rates.
 ]]></content:encoded>
-<pubDate>Wed, 13 Aug 2025 00:00:00 -0400</pubDate>
 <pubDate>Wed, 13 Aug 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -34,11 +34,10 @@ Abstract: Ear recognition has gained attention as a reliable biometric technique
 <div> Keywords: diabetic foot ulcers, segmentation, FUTransUNet, Vision Transformers, automated analysis
 
 Summary:
-FUTransUNet, a hybrid model integrating Vision Transformers with U-Net, addresses challenges in diabetic foot ulcer segmentation. The model combines global contextual features with fine-grained spatial resolution through skip connections and decoding pathway. Trained on FUSeg dataset, FUTransUNet achieves high Dice Coefficient, IoU, and low loss values. Grad-CAM visualizations provide transparency by highlighting model focus areas during predictions. The hybrid approach successfully integrates global and local feature extraction paradigms, offering a robust, accurate, explainable, and interpretable solution for automated foot ulcer analysis. The model demonstrates reliability and high fidelity in DFU segmentation, with potential to enhance real-world wound assessment and patient care.<br><br>Summary: FUTransUNet combines Vision Transformers with U-Net for diabetic foot ulcer segmentation, achieving high accuracy and transparency through Grad-CAM visualizations. The hybrid model integrates global and local feature extraction, offering a robust and reliable solution for automated foot ulcer analysis, with implications for improving patient care. <div>
+FUTransUNet, a hybrid model integrating Vision Transformers with U-Net, addresses challenges in diabetic foot ulcer segmentation. The model combines global contextual features with fine-grained spatial resolution through skip connections and decoding pathway. Trained on FUSeg dataset, FUTransUNet achieves high Dice Coefficient, IoU, and low loss values. Grad-CAM visualizations provide transparency by highlighting model focus areas during predictions. The hybrid approach successfully integrates global and local feature extraction paradigms, offering a robust, accurate, explainable, and interpretable solution for automated foot ulcer analysis. The model demonstrates reliability and high fidelity in DFU segmentation, with potential to enhance real-world wound assessment and patient care.<br /><br />Summary: FUTransUNet combines Vision Transformers with U-Net for diabetic foot ulcer segmentation, achieving high accuracy and transparency through Grad-CAM visualizations. The hybrid model integrates global and local feature extraction, offering a robust and reliable solution for automated foot ulcer analysis, with implications for improving patient care. <div>
 arXiv:2508.03758v2 Announce Type: replace-cross 
 Abstract: Automated segmentation of diabetic foot ulcers (DFUs) plays a critical role in clinical diagnosis, therapeutic planning, and longitudinal wound monitoring. However, this task remains challenging due to the heterogeneous appearance, irregular morphology, and complex backgrounds associated with ulcer regions in clinical photographs. Traditional convolutional neural networks (CNNs), such as U-Net, provide strong localization capabilities but struggle to model long-range spatial dependencies due to their inherently limited receptive fields. To address this, we propose FUTransUNet, a hybrid architecture that integrates the global attention mechanism of Vision Transformers (ViTs) into the U-Net framework. This combination allows the model to extract global contextual features while maintaining fine-grained spatial resolution through skip connections and an effective decoding pathway. We trained and validated FUTransUNet on the public Foot Ulcer Segmentation Challenge (FUSeg) dataset. FUTransUNet achieved a training Dice Coefficient of 0.8679, an IoU of 0.7672, and a training loss of 0.0053. On the validation set, the model achieved a Dice Coefficient of 0.8751, an IoU of 0.7780, and a validation loss of 0.009045. To ensure clinical transparency, we employed Grad-CAM visualizations, which highlighted model focus areas during prediction. These quantitative outcomes clearly demonstrate that our hybrid approach successfully integrates global and local feature extraction paradigms, thereby offering a highly robust, accurate, explainable, and interpretable solution and clinically translatable solution for automated foot ulcer analysis. The approach offers a reliable, high-fidelity solution for DFU segmentation, with implications for improving real-world wound assessment and patient care.
 ]]></content:encoded>
-<pubDate>Wed, 13 Aug 2025 00:00:00 -0400</pubDate>
 <pubDate>Wed, 13 Aug 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -46,17 +45,15 @@ Abstract: Automated segmentation of diabetic foot ulcers (DFUs) plays a critical
 <link>https://arxiv.org/abs/2508.04700</link>
 <guid>https://arxiv.org/abs/2508.04700</guid>
 <content:encoded><![CDATA[
-<div> framework, computer-use agents, experiential learning, autonomous evolution, software environments<br>
-<br>
-Summary:<br>
+<div> framework, computer-use agents, experiential learning, autonomous evolution, software environments<br />
+<br />
+Summary:<br />
 SEAgent is a framework designed to empower computer-use agents to autonomously master novel software environments through experiential learning. It includes a World State Model for assessing trajectories, a Curriculum Generator for generating tasks, and a training strategy that integrates experiential insights from specialist agents. The agent's policy is updated through experiential learning, combining adversarial imitation of failure actions and Group Relative Policy Optimization (GRPO) on successful actions. SEAgent achieves a significant improvement in success rate over a competitive open-source CUA, UI-TARS, by 23.2%. It outperforms ensembles of individual specialist agents on their specialized software, demonstrating the effectiveness of the autonomous evolution approach in tackling unfamiliar software environments. <div>
 arXiv:2508.04700v2 Announce Type: replace-cross 
 Abstract: Repurposing large vision-language models (LVLMs) as computer use agents (CUAs) has led to substantial breakthroughs, primarily driven by human-labeled data. However, these models often struggle with novel and specialized software, particularly in scenarios lacking human annotations. To address this challenge, we propose SEAgent, an agentic self-evolving framework enabling CUAs to autonomously evolve through interactions with unfamiliar software. Specifically, SEAgent empowers computer-use agents to autonomously master novel software environments via experiential learning, where agents explore new software, learn through iterative trial-and-error, and progressively tackle auto-generated tasks organized from simple to complex. To achieve this goal, we design a World State Model for step-wise trajectory assessment, along with a Curriculum Generator that generates increasingly diverse and challenging tasks. The agent's policy is updated through experiential learning, comprised of adversarial imitation of failure actions and Group Relative Policy Optimization (GRPO) on successful ones. Furthermore, we introduce a specialist-to-generalist training strategy that integrates individual experiential insights from specialist agents, facilitating the development of a stronger generalist CUA capable of continuous autonomous evolution. This unified agent ultimately achieves performance surpassing ensembles of individual specialist agents on their specialized software. We validate the effectiveness of SEAgent across five novel software environments within OS-World. Our approach achieves a significant improvement of 23.2% in success rate, from 11.3% to 34.5%, over a competitive open-source CUA, i.e., UI-TARS.
 ]]></content:encoded>
 <pubDate>Wed, 13 Aug 2025 00:00:00 -0400</pubDate>
-<pubDate>Wed, 13 Aug 2025 00:00:00 -0400</pubDate>
 </item>
-
 <item>
 <title>Evaluation of State-of-the-Art Deep Learning Techniques for Plant Disease and Pest Detection</title>
 <link>https://arxiv.org/abs/2508.08317</link>
@@ -11337,36 +11334,6 @@ Abstract: Underwater image enhancement (UIE) techniques aim to improve visual qu
 <content:encoded><![CDATA[
 arXiv:2508.04124v1 Announce Type: new 
 Abstract: As litter pollution continues to rise globally, developing automated tools capable of detecting litter effectively remains a significant challenge. This study presents a novel approach that combines, for the first time, privileged information with deep learning object detection to improve litter detection while maintaining model efficiency. We evaluate our method across five widely used object detection models, addressing challenges such as detecting small litter and objects partially obscured by grass or stones. In addition to this, a key contribution of our work can also be attributed to formulating a means of encoding bounding box information as a binary mask, which can be fed to the detection model to refine detection guidance. Through experiments on both within-dataset evaluation on the renowned SODA dataset and cross-dataset evaluation on the BDW and UAVVaste litter detection datasets, we demonstrate consistent performance improvements across all models. Our approach not only bolsters detection accuracy within the training sets but also generalises well to other litter detection contexts. Crucially, these improvements are achieved without increasing model complexity or adding extra layers, ensuring computational efficiency and scalability. Our results suggest that this methodology offers a practical solution for litter detection, balancing accuracy and efficiency in real-world applications.
-]]></content:encoded>
-<pubDate>Thu, 07 Aug 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>SVC 2025: the First Multimodal Deception Detection Challenge</title>
-<link>https://arxiv.org/abs/2508.04129</link>
-<guid>https://arxiv.org/abs/2508.04129</guid>
-<content:encoded><![CDATA[
-arXiv:2508.04129v1 Announce Type: new 
-Abstract: Deception detection is a critical task in real-world applications such as security screening, fraud prevention, and credibility assessment. While deep learning methods have shown promise in surpassing human-level performance, their effectiveness often depends on the availability of high-quality and diverse deception samples. Existing research predominantly focuses on single-domain scenarios, overlooking the significant performance degradation caused by domain shifts. To address this gap, we present the SVC 2025 Multimodal Deception Detection Challenge, a new benchmark designed to evaluate cross-domain generalization in audio-visual deception detection. Participants are required to develop models that not only perform well within individual domains but also generalize across multiple heterogeneous datasets. By leveraging multimodal data, including audio, video, and text, this challenge encourages the design of models capable of capturing subtle and implicit deceptive cues. Through this benchmark, we aim to foster the development of more adaptable, explainable, and practically deployable deception detection systems, advancing the broader field of multimodal learning. By the conclusion of the workshop competition, a total of 21 teams had submitted their final results. https://sites.google.com/view/svc-mm25 for more information.
-]]></content:encoded>
-<pubDate>Thu, 07 Aug 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>DS$^2$Net: Detail-Semantic Deep Supervision Network for Medical Image Segmentation</title>
-<link>https://arxiv.org/abs/2508.04131</link>
-<guid>https://arxiv.org/abs/2508.04131</guid>
-<content:encoded><![CDATA[
-arXiv:2508.04131v1 Announce Type: new 
-Abstract: Deep Supervision Networks exhibit significant efficacy for the medical imaging community. Nevertheless, existing work merely supervises either the coarse-grained semantic features or fine-grained detailed features in isolation, which compromises the fact that these two types of features hold vital relationships in medical image analysis. We advocate the powers of complementary feature supervision for medical image segmentation, by proposing a Detail-Semantic Deep Supervision Network (DS$^2$Net). DS$^2$Net navigates both low-level detailed and high-level semantic feature supervision through Detail Enhance Module (DEM) and Semantic Enhance Module (SEM). DEM and SEM respectively harness low-level and high-level feature maps to create detail and semantic masks for enhancing feature supervision. This is a novel shift from single-view deep supervision to multi-view deep supervision. DS$^2$Net is also equipped with a novel uncertainty-based supervision loss that adaptively assigns the supervision strength of features within distinct scales based on their uncertainty, thus circumventing the sub-optimal heuristic design that typifies previous works. Through extensive experiments on six benchmarks captured under either colonoscopy, ultrasound and microscope, we demonstrate that DS$^2$Net consistently outperforms state-of-the-art methods for medical image analysis.
-]]></content:encoded>
-<pubDate>Thu, 07 Aug 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>UniFGVC: Universal Training-Free Few-Shot Fine-Grained Vision Classification via Attribute-Aware Multimodal Retrieval</title>
-<link>https://arxiv.org/abs/2508.04136</link>
-<guid>https://arxiv.org/abs/2508.04136</guid>
-<content:encoded><![CDATA[
-arXiv:2508.04136v1 Announce Type: new 
-Abstract: Few-shot fine-grained visual classification (FGVC) aims to leverage limited data to enable models to discriminate subtly distinct categories. Recent works mostly finetuned the pre-trained visual language models to achieve performance gain, yet suffering from overfitting and weak generalization. To deal with this, we introduce UniFGVC, a universal training-free framework that reformulates few-shot FGVC as multimodal retrieval. First, we propose the Category-Discriminative Visual Captioner (CDV-Captioner) to exploit the open-world knowledge of multimodal large language models (MLLMs) to generate a structured text description that captures the fine-grained attribute features distinguishing closely related classes. CDV-Captioner uses chain-of-thought prompting and visually similar reference images to reduce hallucination and enhance discrimination of generated captions. Using it we can convert each image into an image-description pair, enabling more comprehensive feature representation, and construct the multimodal category templates using few-shot samples for the subsequent retrieval pipeline. Then, off-the-shelf vision and text encoders embed query and template pairs, and FGVC is accomplished by retrieving the nearest template in the joint space. UniFGVC ensures broad compatibility with diverse MLLMs and encoders, offering reliable generalization and adaptability across few-shot FGVC scenarios. Extensive experiments on 12 FGVC benchmarks demonstrate its consistent superiority over prior few-shot CLIP-based methods and even several fully-supervised MLLMs-based approaches.
 ]]></content:encoded>
 <pubDate>Thu, 07 Aug 2025 00:00:00 -0400</pubDate>
 </item>
