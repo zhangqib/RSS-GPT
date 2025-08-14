@@ -4,6 +4,7 @@
 <title>cs.CL updates on arXiv.org</title>
 <link>http://rss.arxiv.org/rss/cs.CL</link>
 
+
 <item>
 <title>Is Chain-of-Thought Reasoning of LLMs a Mirage? A Data Distribution Lens</title>
 <link>https://arxiv.org/abs/2508.01191</link>
@@ -16,14 +17,12 @@ Summary:
 - CoT reasoning is analyzed through a data distribution lens to understand its limitations in generating human-like reasoning paths.
 - The research dissects CoT reasoning based on task, length, and format dimensions, revealing its brittleness when pushed beyond training data distributions.
 - DataAlchemy, an isolated environment, is used to train LLMs from scratch and systematically probe them under varying distribution conditions.
-- The findings suggest that CoT reasoning may not be as robust as previously thought, highlighting the challenge of achieving genuine and generalizable reasoning in LLMs.<br><br>Summary: <div>
+- The findings suggest that CoT reasoning may not be as robust as previously thought, highlighting the challenge of achieving genuine and generalizable reasoning in LLMs.<br /><br />Summary: <div>
 arXiv:2508.01191v3 Announce Type: replace-cross 
 Abstract: Chain-of-Thought (CoT) prompting has been shown to improve Large Language Model (LLM) performance on various tasks. With this approach, LLMs appear to produce human-like reasoning steps before providing answers (a.k.a., CoT reasoning), which often leads to the perception that they engage in deliberate inferential processes. However, some initial findings suggest that CoT reasoning may be more superficial than it appears, motivating us to explore further. In this paper, we study CoT reasoning via a data distribution lens and investigate if CoT reasoning reflects a structured inductive bias learned from in-distribution data, allowing the model to conditionally generate reasoning paths that approximate those seen during training. Thus, its effectiveness is fundamentally bounded by the degree of distribution discrepancy between the training data and the test queries. With this lens, we dissect CoT reasoning via three dimensions: task, length, and format. To investigate each dimension, we design DataAlchemy, an isolated and controlled environment to train LLMs from scratch and systematically probe them under various distribution conditions. Our results reveal that CoT reasoning is a brittle mirage that vanishes when it is pushed beyond training distributions. This work offers a deeper understanding of why and when CoT reasoning fails, emphasizing the ongoing challenge of achieving genuine and generalizable reasoning.
 ]]></content:encoded>
 <pubDate>Thu, 14 Aug 2025 00:00:00 -0400</pubDate>
-<pubDate>Thu, 14 Aug 2025 00:00:00 -0400</pubDate>
 </item>
-
 <item>
 <title>ParallelSearch: Train your LLMs to Decompose Query and Search Sub-queries in Parallel with Reinforcement Learning</title>
 <link>https://arxiv.org/abs/2508.09303</link>
@@ -12044,16 +12043,6 @@ Abstract: Tasks that require character-level reasoning, such as counting or loca
 <content:encoded><![CDATA[
 arXiv:2508.02618v1 Announce Type: new 
 Abstract: The reward model (RM), as the core component of reinforcement learning from human feedback (RLHF) for large language models (LLMs), responsible for providing reward signals to generated responses. However, mainstream preference modeling in RM is inadequate in terms of token-level interaction, making its judgment signals vulnerable to being hacked by misallocated attention to context. This stems from two fundamental limitations: (1) Current preference modeling employs decoder-only architectures, where the unidirectional causal attention mechanism leads to forward-decaying intra-sequence attention within the prompt-response sequence. (2) The independent Siamese-encoding paradigm induces the absence of token-level inter-sequence attention between chosen and rejected sequences. To address this "attention hacking", we propose "Interaction Distillation", a novel training framework for more adequate preference modeling through attention-level optimization. The method introduces an interaction-based natural language understanding model as the teacher to provide sophisticated token interaction patterns via comprehensive attention, and guides the preference modeling to simulate teacher model's interaction pattern through an attentional alignment objective. Through extensive experiments, interaction distillation has demonstrated its ability to provide more stable and generalizable reward signals compared to state-of-the-art RM optimization methods that target data noise, highlighting the attention hacking constitute a more fundamental limitation in RM.
-]]></content:encoded>
-<pubDate>Tue, 05 Aug 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Pointer: Linear-Complexity Long-Range Modeling without Pre-training</title>
-<link>https://arxiv.org/abs/2508.02631</link>
-<guid>https://arxiv.org/abs/2508.02631</guid>
-<content:encoded><![CDATA[
-arXiv:2508.02631v1 Announce Type: new 
-Abstract: We introduce Pointer, a novel architecture that achieves linear $O(NK)$ complexity for long-range sequence modeling while maintaining superior performance without requiring pre-training. Unlike standard attention mechanisms that compute $O(N^2)$ pairwise interactions, our approach uses layer-wise pointer chaining where each layer's pointer selection depends on previous layer's pointer positions, creating explicit long-distance connections through pointer chains. We demonstrate that this architecture achieves $2$--$10\times$ speedup on long sequences compared to standard transformers, maintains $>95\%$ accuracy on copy tasks at distances up to 2048 tokens, and learns interpretable pointer patterns that reveal structured dependency modeling. Our experiments on efficiency benchmarks, long-range dependency tasks, and interpretability analysis show that Pointer offers a compelling alternative to attention mechanisms for scenarios requiring efficient long-range modeling without pre-training dependencies.
 ]]></content:encoded>
 <pubDate>Tue, 05 Aug 2025 00:00:00 -0400</pubDate>
 </item>
