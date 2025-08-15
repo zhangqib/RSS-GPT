@@ -4,18 +4,18 @@
 <title>cs.LG updates on arXiv.org</title>
 <link>http://rss.arxiv.org/rss/cs.LG</link>
 
+
 <item>
 <title>A Graph-Based Framework for Exploring Mathematical Patterns in Physics: A Proof of Concept</title>
 <link>https://arxiv.org/abs/2508.05724</link>
 <guid>https://arxiv.org/abs/2508.05724</guid>
 <content:encoded><![CDATA[
-<div> Graph-based framework, neural networks, symbolic analysis, physics equations, mathematical patterns <br>
-<br>
-Summary: This study introduces a novel graph-based framework that combines neural networks and symbolic analysis to explore mathematical relationships in physics equations. By starting with a large set of equations and focusing on advanced physics topics, the framework successfully identifies cross-domain connections and validates established theories. The system serves a dual purpose of generating hypotheses and auditing knowledge, producing hundreds of potential connections between different physics domains. Through symbolic analysis, the framework verifies theory consistencies, synthesizes new concepts, and highlights potential research areas. The intentional over-generation of candidates ensures thorough exploration of mathematical possibilities, even identifying errors that can be used for redundancy identification and knowledge base assessment. Overall, the framework transforms complex combinatorial spaces into manageable streams of mathematical patterns for further analysis. <br> <div>
+<div> Graph-based framework, neural networks, symbolic analysis, physics equations, mathematical patterns <br />
+<br />
+Summary: This study introduces a novel graph-based framework that combines neural networks and symbolic analysis to explore mathematical relationships in physics equations. By starting with a large set of equations and focusing on advanced physics topics, the framework successfully identifies cross-domain connections and validates established theories. The system serves a dual purpose of generating hypotheses and auditing knowledge, producing hundreds of potential connections between different physics domains. Through symbolic analysis, the framework verifies theory consistencies, synthesizes new concepts, and highlights potential research areas. The intentional over-generation of candidates ensures thorough exploration of mathematical possibilities, even identifying errors that can be used for redundancy identification and knowledge base assessment. Overall, the framework transforms complex combinatorial spaces into manageable streams of mathematical patterns for further analysis. <br /> <div>
 arXiv:2508.05724v2 Announce Type: replace 
 Abstract: The vast corpus of physics equations forms an implicit network of mathematical relationships that traditional analysis cannot fully explore. This work introduces a graph-based framework combining neural networks with symbolic analysis to systematically discover and validate mathematical patterns across physics domains. Starting from 659 equations, we performed rigorous semantic disambiguation to resolve notational polysemy affecting 213 equations, then focused on 400 advanced physics equations by excluding elementary mechanics to emphasize inter-branch connections of modern physics. This corpus was represented as a weighted knowledge graph where a Graph Attention Network achieved 97.4% AUC in link prediction, significantly outperforming classical baselines. The framework's primary value emerges from its dual capability: generating hypotheses and auditing knowledge. First, it functions as a hypothesis generator, producing hundreds of candidate cross-domain connections, from blackbody radiation coupled with Navier-Stokes equations to radioactive decay linked with electromagnetic induction. Second, through symbolic analysis of 30 equation clusters, it serves as a computational auditor that verified established theory consistencies, synthesized the Magnetic Reynolds Number from electromagnetic-fluid coupling, and revealed how even parsing errors could potentially point toward legitimate research like analog gravity. This proof-of-concept intentionally over-generates candidates to ensure comprehensive exploration of mathematical possibility space. Even tautologies and errors serve scientific purposes: redundancy identification and knowledge base quality assessment. The system transforms the intractable combinatorial space into a filtered stream of mathematical patterns for human interpretation.
 ]]></content:encoded>
-<pubDate>Fri, 15 Aug 2025 00:00:00 -0400</pubDate>
 <pubDate>Fri, 15 Aug 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -23,19 +23,18 @@ Abstract: The vast corpus of physics equations forms an implicit network of math
 <link>https://arxiv.org/abs/2508.05977</link>
 <guid>https://arxiv.org/abs/2508.05977</guid>
 <content:encoded><![CDATA[
-<div> Keywords: scientific machine learning, reinforcement learning, reward functions, semantic alignment, language embedding<br>
-Summary:<br>
-- The article addresses the challenge of designing effective reward functions in scientific machine learning, especially in environments with complex task goals.<br>
-- Existing reward functions in reinforcement learning are often based on heuristics, manual engineering, or task-specific tuning.<br>
-- The proposed method aligns rewards by comparing the current state with a target semantic instruction using SBERT.<br>
-- Feedback to the policy is based on the cosine similarity between the goal textual description and the statement description in the episode.<br>
-- Evaluation in various environments demonstrates that semantic rewards can guide learning effectively, even without hand-crafted reward functions.<br>
-- The study shows a correlation between the language embedding space and the conventional Euclidean space, paving the way for integrating larger language models and control applications seamlessly. <br> 
+<div> Keywords: scientific machine learning, reinforcement learning, reward functions, semantic alignment, language embedding<br />
+Summary:<br />
+- The article addresses the challenge of designing effective reward functions in scientific machine learning, especially in environments with complex task goals.<br />
+- Existing reward functions in reinforcement learning are often based on heuristics, manual engineering, or task-specific tuning.<br />
+- The proposed method aligns rewards by comparing the current state with a target semantic instruction using SBERT.<br />
+- Feedback to the policy is based on the cosine similarity between the goal textual description and the statement description in the episode.<br />
+- Evaluation in various environments demonstrates that semantic rewards can guide learning effectively, even without hand-crafted reward functions.<br />
+- The study shows a correlation between the language embedding space and the conventional Euclidean space, paving the way for integrating larger language models and control applications seamlessly. <br /> 
 Summary: <div>
 arXiv:2508.05977v2 Announce Type: replace 
 Abstract: In the domain of scientific machine learning, designing effective reward functions remains a challenge in reinforcement learning (RL), particularly in environments where task goals are difficult to specify numerically. Reward functions in existing work are predominantly based on heuristics, manual engineering, or task-specific tuning. In this work, we introduce a semantically aligned reinforcement learning method where rewards are computed by aligning the current state with a target semantic instruction using a Sentence-Bidirectional Encoder Representations from Transformers (SBERT). Instead of relying on manually defined reward functions, the policy receives feedback based on the reward, which is a cosine similarity between the goal textual description and the statement description in the episode. We evaluated our approach in several environments and showed that semantic reward can guide learning to achieve competitive control behavior, even in the absence of hand-crafted reward functions. Our study demonstrates a correlation between the language embedding space and the conventional Euclidean space. This framework opens new horizons for aligning agent behavior with natural language goals and lays the groundwork for a more seamless integration of larger language models (LLMs) and fluid control applications.
 ]]></content:encoded>
-<pubDate>Fri, 15 Aug 2025 00:00:00 -0400</pubDate>
 <pubDate>Fri, 15 Aug 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -46,11 +45,10 @@ Abstract: In the domain of scientific machine learning, designing effective rewa
 <div> Reinforcement Learning, preference optimization, sample efficiency, primacy bias, LLM finetuning
 Summary: 
 The article introduces LLM optimization with Reset Replay (LoRR), a plugin designed to improve sample efficiency in preference-based optimization frameworks. LoRR allows for training at a high replay number, maximizing the usefulness of collected data batches. To combat overfitting, LoRR incorporates a periodic reset strategy that preserves network plasticity by reusing initial data. Additionally, LoRR uses a hybrid optimization objective combining supervised fine-tuning and preference-based losses to enhance data exploitation. Experimental results show that LoRR significantly enhances the performance of preference optimization methods on math and general reasoning benchmarks. A DPO approach augmented with LoRR achieves comparable performance on math tasks, surpassing some complex RL-based algorithms. This demonstrates LoRR's practicality, sample efficiency, and effectiveness in improving LLM performance with limited data. 
-<br><br>Summary: <div>
+<br /><br />Summary: <div>
 arXiv:2508.06412v2 Announce Type: replace 
 Abstract: Recent advancements in post-training Large Language Models (LLMs), particularly through Reinforcement Learning (RL) and preference optimization methods, are key drivers for enhancing their reasoning capabilities. However, these methods are often plagued by low sample efficiency and a susceptibility to primacy bias, where overfitting to initial experiences degrades policy quality and damages the learning process. To address these challenges, we introduce LLM optimization with Reset Replay (LoRR), a general and powerful plugin designed to enhance sample efficiency in any preference-based optimization framework. LoRR core mechanism enables training at a high replay number, maximizing the utility of each collected data batch. To counteract the risk of overfitting inherent in high-replay training, LoRR incorporates a periodic reset strategy with reusing initial data, which preserves network plasticity. Furthermore, it leverages a hybrid optimization objective, combining supervised fine-tuning (SFT) and preference-based losses to further bolster data exploitation. Our extensive experiments demonstrate that LoRR significantly boosts the performance of various preference optimization methods on both mathematical and general reasoning benchmarks. Notably, an iterative DPO approach augmented with LoRR achieves comparable performance on challenging math tasks, outperforming some complex and computationally intensive RL-based algorithms. These findings highlight that LoRR offers a practical, sample-efficient, and highly effective paradigm for LLM finetuning, unlocking greater performance from limited data.
 ]]></content:encoded>
-<pubDate>Fri, 15 Aug 2025 00:00:00 -0400</pubDate>
 <pubDate>Fri, 15 Aug 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -63,11 +61,10 @@ Abstract: Recent advancements in post-training Large Language Models (LLMs), par
 Summary:
 This paper presents a two-tiered anomaly detection approach for SQL using the DistilBERT model, combining unsupervised and supervised machine learning techniques. The unsupervised method identifies out-of-scope queries by flagging embedding vectors distant from normal user behavior patterns, while the supervised method uses fine-tuned transformer-based models to detect internal attacks with high precision through role-labeled classification. The approach minimizes the need for data labeling and effectively safeguards critical database systems from both internal and external threats. By leveraging DistilBERT's efficiency and pre-trained capabilities, this method accurately identifies anomalous activities that may resemble normal behavior, thereby addressing the limitations of existing detection methods in capturing abnormal database access behaviors. Overall, this approach provides a robust solution for combating sophisticated attacks on database systems. 
 
-<br><br>Summary: <div>
+<br /><br />Summary: <div>
 arXiv:2508.05690v2 Announce Type: replace-cross 
 Abstract: Database systems are extensively used to store critical data across various domains. However, the frequency of abnormal database access behaviors, such as database intrusion by internal and external attacks, continues to rise. Internal masqueraders often have greater organizational knowledge, making it easier to mimic employee behavior effectively. In contrast, external masqueraders may behave differently due to their lack of familiarity with the organization. Current approaches lack the granularity needed to detect anomalies at the operational level, frequently misclassifying entire sequences of operations as anomalies, even though most operations are likely to represent normal behavior. On the other hand, some anomalous behaviors often resemble normal activities, making them difficult for existing detection methods to identify. This paper introduces a two-tiered anomaly detection approach for Structured Query Language (SQL) using the Bidirectional Encoder Representations from Transformers (BERT) model, specifically DistilBERT, a more efficient, pre-trained version. Our method combines both unsupervised and supervised machine learning techniques to accurately identify anomalous activities while minimizing the need for data labeling. First, the unsupervised method uses ensemble anomaly detectors that flag embedding vectors distant from learned normal patterns of typical user behavior across the database (out-of-scope queries). Second, the supervised method uses fine-tuned transformer-based models to detect internal attacks with high precision (in-scope queries), using role-labeled classification, even on limited labeled SQL data. Our findings make a significant contribution by providing an effective solution for safeguarding critical database systems from sophisticated threats.
 ]]></content:encoded>
-<pubDate>Fri, 15 Aug 2025 00:00:00 -0400</pubDate>
 <pubDate>Fri, 15 Aug 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -78,14 +75,12 @@ Abstract: Database systems are extensively used to store critical data across va
 <div> Blockchain-enabled federated learning, scalability, security, performance, coordination structures, consensus mechanisms, storage architectures, trust models
 
 Summary:
-Blockchain-enabled federated learning (BCFL) addresses trust, privacy, and coordination challenges in collaborative AI systems. The chapter provides a thorough analysis of BCFL systems through a taxonomy examining coordination structures, consensus mechanisms, storage architectures, and trust models. It evaluates trade-offs in scalability, security, and performance from centralized to decentralized networks. Consensus mechanisms like Proof of Quality and Proof of Federated Learning repurpose computational work for productive machine learning tasks. Multi-tier storage architectures balance blockchain's constraints with neural networks' needs. The TrustMesh framework demonstrates practical implementation with distributed image classification training for IoT devices. Real-world deployments in healthcare, financial services, and IoT security show BCFL systems achieve performance comparable to centralized methods with enhanced security and trustless collaborative intelligence. <br><br>Summary: <div>
+Blockchain-enabled federated learning (BCFL) addresses trust, privacy, and coordination challenges in collaborative AI systems. The chapter provides a thorough analysis of BCFL systems through a taxonomy examining coordination structures, consensus mechanisms, storage architectures, and trust models. It evaluates trade-offs in scalability, security, and performance from centralized to decentralized networks. Consensus mechanisms like Proof of Quality and Proof of Federated Learning repurpose computational work for productive machine learning tasks. Multi-tier storage architectures balance blockchain's constraints with neural networks' needs. The TrustMesh framework demonstrates practical implementation with distributed image classification training for IoT devices. Real-world deployments in healthcare, financial services, and IoT security show BCFL systems achieve performance comparable to centralized methods with enhanced security and trustless collaborative intelligence. <br /><br />Summary: <div>
 arXiv:2508.06406v3 Announce Type: replace-cross 
 Abstract: Blockchain-enabled federated learning (BCFL) addresses fundamental challenges of trust, privacy, and coordination in collaborative AI systems. This chapter provides comprehensive architectural analysis of BCFL systems through a systematic four-dimensional taxonomy examining coordination structures, consensus mechanisms, storage architectures, and trust models. We analyze design patterns from blockchain-verified centralized coordination to fully decentralized peer-to-peer networks, evaluating trade-offs in scalability, security, and performance. Through detailed examination of consensus mechanisms designed for federated learning contexts, including Proof of Quality and Proof of Federated Learning, we demonstrate how computational work can be repurposed from arbitrary cryptographic puzzles to productive machine learning tasks. The chapter addresses critical storage challenges by examining multi-tier architectures that balance blockchain's transaction constraints with neural networks' large parameter requirements while maintaining cryptographic integrity. A technical case study of the TrustMesh framework illustrates practical implementation considerations in BCFL systems through distributed image classification training, demonstrating effective collaborative learning across IoT devices with highly non-IID data distributions while maintaining complete transparency and fault tolerance. Analysis of real-world deployments across healthcare consortiums, financial services, and IoT security applications validates the practical viability of BCFL systems, achieving performance comparable to centralized approaches while providing enhanced security guarantees and enabling new models of trustless collaborative intelligence.
 ]]></content:encoded>
 <pubDate>Fri, 15 Aug 2025 00:00:00 -0400</pubDate>
-<pubDate>Fri, 15 Aug 2025 00:00:00 -0400</pubDate>
 </item>
-
 <item>
 <title>OpenFPL: An open-source forecasting method rivaling state-of-the-art Fantasy Premier League services</title>
 <link>https://arxiv.org/abs/2508.09992</link>
@@ -11019,56 +11014,6 @@ Abstract: Optimizing credit limits, interest rates, and loan terms is crucial fo
 <content:encoded><![CDATA[
 arXiv:2005.09112v5 Announce Type: replace-cross 
 Abstract: Measles, a highly contagious disease declared eliminated in the United States in 2000 after decades of successful vaccination campaigns, resurged in 2025, with 1,356 confirmed cases reported as of August 5, 2025. Given its rapid spread among susceptible individuals, fast and reliable diagnostic systems are critical for early prevention and containment. In this work, we applied transfer learning to fine-tune a pretrained Data-efficient Image Transformer (DeiT) model for distinguishing measles rashes from other skin conditions. Trained on a diverse, curated skin rash image dataset, the DeiT model achieved a median classification accuracy of 96.38%, precision of 96.24%, recall of 96.38%, and an F1-score of 96.23%, demonstrating high effectiveness in accurate detection to aid outbreak control. We also compared the DeiT model with a convolutional neural network, ResNet-50, and discussed the directions for future research.
-]]></content:encoded>
-<pubDate>Tue, 12 Aug 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Highly Fast Text Segmentation With Pairwise Markov Chains</title>
-<link>https://arxiv.org/abs/2102.11037</link>
-<guid>https://arxiv.org/abs/2102.11037</guid>
-<content:encoded><![CDATA[
-arXiv:2102.11037v3 Announce Type: replace-cross 
-Abstract: Natural Language Processing (NLP) models' current trend consists of using increasingly more extra-data to build the best models as possible. It implies more expensive computational costs and training time, difficulties for deployment, and worries about these models' carbon footprint reveal a critical problem in the future. Against this trend, our goal is to develop NLP models requiring no extra-data and minimizing training time. To do so, in this paper, we explore Markov chain models, Hidden Markov Chain (HMC) and Pairwise Markov Chain (PMC), for NLP segmentation tasks. We apply these models for three classic applications: POS Tagging, Named-Entity-Recognition, and Chunking. We develop an original method to adapt these models for text segmentation's specific challenges to obtain relevant performances with very short training and execution times. PMC achieves equivalent results to those obtained by Conditional Random Fields (CRF), one of the most applied models for these tasks when no extra-data are used. Moreover, PMC has training times 30 times shorter than the CRF ones, which validates this model given our objectives.
-]]></content:encoded>
-<pubDate>Tue, 12 Aug 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Online Learning and Optimization for Queues with Unknown Demand Curve and Service Distribution</title>
-<link>https://arxiv.org/abs/2303.03399</link>
-<guid>https://arxiv.org/abs/2303.03399</guid>
-<content:encoded><![CDATA[
-arXiv:2303.03399v2 Announce Type: replace-cross 
-Abstract: We investigate an optimization problem in a queueing system where the service provider selects the optimal service fee p and service capacity \mu to maximize the cumulative expected profit (the service revenue minus the capacity cost and delay penalty). The conventional predict-then-optimize (PTO) approach takes two steps: first, it estimates the model parameters (e.g., arrival rate and service-time distribution) from data; second, it optimizes a model based on the estimated parameters. A major drawback of PTO is that its solution accuracy can often be highly sensitive to the parameter estimation errors because PTO is unable to properly link these errors (step 1) to the quality of the optimized solutions (step 2). To remedy this issue, we develop an online learning framework that automatically incorporates the aforementioned parameter estimation errors in the solution prescription process; it is an integrated method that can "learn" the optimal solution without needing to set up the parameter estimation as a separate step as in PTO. Effectiveness of our online learning approach is substantiated by (i) theoretical results including the algorithm convergence and analysis of the regret ("cost" to pay over time for the algorithm to learn the optimal policy), and (ii) engineering confirmation via simulation experiments of a variety of representative examples. We also provide careful comparisons for PTO and the online learning method.
-]]></content:encoded>
-<pubDate>Tue, 12 Aug 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Empathy Detection from Text, Audiovisual, Audio or Physiological Signals: A Systematic Review of Task Formulations and Machine Learning Methods</title>
-<link>https://arxiv.org/abs/2311.00721</link>
-<guid>https://arxiv.org/abs/2311.00721</guid>
-<content:encoded><![CDATA[
-arXiv:2311.00721v5 Announce Type: replace-cross 
-Abstract: Empathy indicates an individual's ability to understand others. Over the past few years, empathy has drawn attention from various disciplines, including but not limited to Affective Computing, Cognitive Science, and Psychology. Detecting empathy has potential applications in society, healthcare and education. Despite being a broad and overlapping topic, the avenue of empathy detection leveraging Machine Learning remains underexplored from a systematic literature review perspective. We collected 849 papers from 10 well-known academic databases, systematically screened them and analysed the final 82 papers. Our analyses reveal several prominent task formulations - including empathy on localised utterances or overall expressions, unidirectional or parallel empathy, and emotional contagion - in monadic, dyadic and group interactions. Empathy detection methods are summarised based on four input modalities - text, audiovisual, audio and physiological signals - thereby presenting modality-specific network architecture design protocols. We discuss challenges, research gaps and potential applications in the Affective Computing-based empathy domain, which can facilitate new avenues of exploration. We further enlist the public availability of datasets and codes. This paper, therefore, provides a structured overview of recent advancements and remaining challenges towards developing a robust empathy detection system that could meaningfully contribute to enhancing human well-being.
-]]></content:encoded>
-<pubDate>Tue, 12 Aug 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>A Deep Learning Based Resource Allocator for Communication Networks with Dynamic User Utility Demands</title>
-<link>https://arxiv.org/abs/2311.04600</link>
-<guid>https://arxiv.org/abs/2311.04600</guid>
-<content:encoded><![CDATA[
-arXiv:2311.04600v3 Announce Type: replace-cross 
-Abstract: Deep learning (DL) based resource allocation (RA) has recently gained significant attention due to its performance efficiency. However, most related studies assume an ideal case where the number of users and their utility demands, e.g., data rate constraints, are fixed, and the designed DL-based RA scheme exploits a policy trained only for these fixed parameters. Consequently, computationally complex policy retraining is required whenever these parameters change. In this paper, we introduce a DL-based resource allocator (ALCOR) that allows users to adjust their utility demands freely, such as based on their application layer requirements. ALCOR employs deep neural networks (DNNs) as the policy in a time-sharing problem. The underlying optimization algorithm iteratively optimizes the on-off status of users to satisfy their utility demands in expectation. The policy performs unconstrained RA (URA) -- RA without considering user utility demands -- among active users to maximize the sum utility (SU) at each time instant. Depending on the chosen URA scheme, ALCOR can perform RA in either a centralized or distributed scenario. The derived convergence analyses provide theoretical guarantees for ALCOR's convergence, and numerical experiments corroborate its effectiveness compared to meta-learning and reinforcement learning approaches.
-]]></content:encoded>
-<pubDate>Tue, 12 Aug 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Training 3D ResNets to Extract BSM Physics Parameters from Simulated Data</title>
-<link>https://arxiv.org/abs/2311.13060</link>
-<guid>https://arxiv.org/abs/2311.13060</guid>
-<content:encoded><![CDATA[
-arXiv:2311.13060v4 Announce Type: replace-cross 
-Abstract: We report on a novel application of computer vision techniques to extract beyond the Standard Model parameters directly from high energy physics flavor data. We propose a novel data representation that transforms the angular and kinematic distributions into ``quasi-images", which are used to train a convolutional neural network to perform regression tasks, similar to fitting. As a proof-of-concept, we train a 34-layer Residual Neural Network to regress on these images and determine information about the Wilson Coefficient $C_{9}$ in Monte Carlo simulations of $B^0 \rightarrow K^{*0}\mu^{+}\mu^{-}$ decays. The method described here can be generalized and may find applicability across a variety of experiments.
 ]]></content:encoded>
 <pubDate>Tue, 12 Aug 2025 00:00:00 -0400</pubDate>
 </item>

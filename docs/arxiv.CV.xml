@@ -4,18 +4,18 @@
 <title>cs.CV updates on arXiv.org</title>
 <link>http://rss.arxiv.org/rss/cs.CV</link>
 
+
 <item>
 <title>TD3Net: A temporal densely connected multi-dilated convolutional network for lipreading</title>
 <link>https://arxiv.org/abs/2506.16073</link>
 <guid>https://arxiv.org/abs/2506.16073</guid>
 <content:encoded><![CDATA[
-<div> Keywords: lipreading, temporal convolutional networks, dense skip connections, multi-dilated convolutional network, receptive field<br>
-Summary:<br>
+<div> Keywords: lipreading, temporal convolutional networks, dense skip connections, multi-dilated convolutional network, receptive field<br />
+Summary:<br />
 The proposed TD3Net addresses limitations in traditional word-level lipreading approaches by combining dense skip connections and multi-dilated temporal convolutions in the backend architecture. This results in a wide and dense receptive field without blind spots, allowing for better modeling of complex temporal representations. Experimental results on the LRW and LRW-1000 datasets show that TD3Net achieves comparable performance to state-of-the-art methods while requiring fewer parameters and lower floating-point operations. The method effectively utilizes diverse temporal features while maintaining temporal continuity, showcasing significant advantages in lipreading systems. The code for TD3Net is available on the GitHub repository. <div>
 arXiv:2506.16073v3 Announce Type: replace 
 Abstract: The word-level lipreading approach typically employs a two-stage framework with separate frontend and backend architectures to model dynamic lip movements. Each component has been extensively studied, and in the backend architecture, temporal convolutional networks (TCNs) have been widely adopted in state-of-the-art methods. Recently, dense skip connections have been introduced in TCNs to mitigate the limited density of the receptive field, thereby improving the modeling of complex temporal representations. However, their performance remains constrained owing to potential information loss regarding the continuous nature of lip movements, caused by blind spots in the receptive field. To address this limitation, we propose TD3Net, a temporal densely connected multi-dilated convolutional network that combines dense skip connections and multi-dilated temporal convolutions as the backend architecture. TD3Net covers a wide and dense receptive field without blind spots by applying different dilation factors to skip-connected features. Experimental results on a word-level lipreading task using two large publicly available datasets, Lip Reading in the Wild (LRW) and LRW-1000, indicate that the proposed method achieves performance comparable to state-of-the-art methods. It achieved higher accuracy with fewer parameters and lower floating-point operations compared to existing TCN-based backend architectures. Moreover, visualization results suggest that our approach effectively utilizes diverse temporal features while preserving temporal continuity, presenting notable advantages in lipreading systems. The code is available at our GitHub repository (https://github.com/Leebh-kor/TD3Net).
 ]]></content:encoded>
-<pubDate>Fri, 15 Aug 2025 00:00:00 -0400</pubDate>
 <pubDate>Fri, 15 Aug 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -23,16 +23,14 @@ Abstract: The word-level lipreading approach typically employs a two-stage frame
 <link>https://arxiv.org/abs/2508.06259</link>
 <guid>https://arxiv.org/abs/2508.06259</guid>
 <content:encoded><![CDATA[
-<div> Attention Correction, Spatial Understanding, Fine-grained Perception, SIFThinker, Visual Reasoning<br>
-Summary: <br>
-The paper introduces SIFThinker, a spatially-aware framework for multimodal large language models that improves complex visual tasks by incorporating attention correction with spatial cues. SIFThinker mimics human visual perception and enables image region focusing through depth-enhanced bounding boxes and natural language. The reverse-expansion-forward-inference strategy is utilized to create interleaved image-text chains of thought for process-level supervision, resulting in the SIF-50K dataset. Additionally, the GRPO-SIF training paradigm integrates depth-informed visual grounding into a unified reasoning pipeline, enhancing the model's ability to correct and focus on prompt-relevant regions. Experimental results demonstrate that SIFThinker outperforms existing methods in spatial understanding and fine-grained visual perception while maintaining strong overall performance. The code for SIFThinker is available on GitHub for further exploration and implementation. <br> <div>
+<div> Attention Correction, Spatial Understanding, Fine-grained Perception, SIFThinker, Visual Reasoning<br />
+Summary: <br />
+The paper introduces SIFThinker, a spatially-aware framework for multimodal large language models that improves complex visual tasks by incorporating attention correction with spatial cues. SIFThinker mimics human visual perception and enables image region focusing through depth-enhanced bounding boxes and natural language. The reverse-expansion-forward-inference strategy is utilized to create interleaved image-text chains of thought for process-level supervision, resulting in the SIF-50K dataset. Additionally, the GRPO-SIF training paradigm integrates depth-informed visual grounding into a unified reasoning pipeline, enhancing the model's ability to correct and focus on prompt-relevant regions. Experimental results demonstrate that SIFThinker outperforms existing methods in spatial understanding and fine-grained visual perception while maintaining strong overall performance. The code for SIFThinker is available on GitHub for further exploration and implementation. <br /> <div>
 arXiv:2508.06259v2 Announce Type: replace 
 Abstract: Current multimodal large language models (MLLMs) still face significant challenges in complex visual tasks (e.g., spatial understanding, fine-grained perception). Prior methods have tried to incorporate visual reasoning, however, they fail to leverage attention correction with spatial cues to iteratively refine their focus on prompt-relevant regions. In this paper, we introduce SIFThinker, a spatially-aware "think-with-images" framework that mimics human visual perception. Specifically, SIFThinker enables attention correcting and image region focusing by interleaving depth-enhanced bounding boxes and natural language. Our contributions are twofold: First, we introduce a reverse-expansion-forward-inference strategy that facilitates the generation of interleaved image-text chains of thought for process-level supervision, which in turn leads to the construction of the SIF-50K dataset. Besides, we propose GRPO-SIF, a reinforced training paradigm that integrates depth-informed visual grounding into a unified reasoning pipeline, teaching the model to dynamically correct and focus on prompt-relevant regions. Extensive experiments demonstrate that SIFThinker outperforms state-of-the-art methods in spatial understanding and fine-grained visual perception, while maintaining strong general capabilities, highlighting the effectiveness of our method. Code: https://github.com/zhangquanchen/SIFThinker.
 ]]></content:encoded>
 <pubDate>Fri, 15 Aug 2025 00:00:00 -0400</pubDate>
-<pubDate>Fri, 15 Aug 2025 00:00:00 -0400</pubDate>
 </item>
-
 <item>
 <title>Stochastic-based Patch Filtering for Few-Shot Learning</title>
 <link>https://arxiv.org/abs/2508.10066</link>
@@ -11037,33 +11035,6 @@ This paper introduces a new approach to artistic style transfer that focuses on 
 <br /><br />Summary: <div>
 arXiv:2508.05769v1 Announce Type: new 
 Abstract: Artistic style transfer has long been possible with the advancements of convolution- and transformer-based neural networks. Most algorithms apply the artistic style transfer to the whole image, but individual users may only need to apply a style transfer to a specific region in the image. The standard practice is to simply mask the image after the stylization. This work shows that this approach tends to improperly capture the style features in the region of interest. We propose a partial-convolution-based style transfer network that accurately applies the style features exclusively to the region of interest. Additionally, we present network-internal blending techniques that account for imperfections in the region selection. We show that this visually and quantitatively improves stylization using examples from the SA-1B dataset. Code is publicly available at https://github.com/davidmhart/StyleTransferMasked.
-]]></content:encoded>
-<pubDate>Mon, 11 Aug 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>MAISI-v2: Accelerated 3D High-Resolution Medical Image Synthesis with Rectified Flow and Region-specific Contrastive Loss</title>
-<link>https://arxiv.org/abs/2508.05772</link>
-<guid>https://arxiv.org/abs/2508.05772</guid>
-<content:encoded><![CDATA[
-<div> Keywords: medical image synthesis, diffusion models, accelerated generation, region-specific contrastive loss, data augmentation <br />
-Summary: <br />
-Medical image synthesis plays a vital role in both clinical and research settings. While diffusion models are a popular approach, existing methods face challenges such as limited generalizability, slow inference, and weak alignment with input conditions. The newly proposed MAISI-v2 framework addresses these issues by integrating rectified flow for faster and higher quality image generation. Additionally, a novel region-specific contrastive loss enhances condition fidelity, particularly in region of interest. Experiment results demonstrate that MAISI-v2 achieves state-of-the-art image quality with significant acceleration for the latent diffusion model. Furthermore, the synthetic images generated can be utilized for data augmentation, as shown in a downstream segmentation experiment. The release of code, training details, model weights, and a GUI demo aims to promote reproducibility and community collaboration. <br /> <div>
-arXiv:2508.05772v1 Announce Type: new 
-Abstract: Medical image synthesis is an important topic for both clinical and research applications. Recently, diffusion models have become a leading approach in this area. Despite their strengths, many existing methods struggle with (1) limited generalizability that only work for specific body regions or voxel spacings, (2) slow inference, which is a common issue for diffusion models, and (3) weak alignment with input conditions, which is a critical issue for medical imaging. MAISI, a previously proposed framework, addresses generalizability issues but still suffers from slow inference and limited condition consistency. In this work, we present MAISI-v2, the first accelerated 3D medical image synthesis framework that integrates rectified flow to enable fast and high quality generation. To further enhance condition fidelity, we introduce a novel region-specific contrastive loss to enhance the sensitivity to region of interest. Our experiments show that MAISI-v2 can achieve SOTA image quality with $33 \times$ acceleration for latent diffusion model. We also conducted a downstream segmentation experiment to show that the synthetic images can be used for data augmentation. We release our code, training details, model weights, and a GUI demo to facilitate reproducibility and promote further development within the community.
-]]></content:encoded>
-<pubDate>Mon, 11 Aug 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Few-Shot Deployment of Pretrained MRI Transformers in Brain Imaging Tasks</title>
-<link>https://arxiv.org/abs/2508.05783</link>
-<guid>https://arxiv.org/abs/2508.05783</guid>
-<content:encoded><![CDATA[
-<div> few-shot deployment, pretrained MRI transformers, brain imaging tasks, Masked Autoencoder, data scarcity
-
-Summary:
-The study introduces a framework for deploying pretrained MRI transformers in diverse brain imaging tasks with limited annotated data. By utilizing the Masked Autoencoder (MAE) pretraining strategy on a large-scale brain MRI dataset, highly transferable latent representations are obtained, enabling generalization across tasks and datasets. For classification tasks, a frozen MAE encoder combined with a lightweight linear head achieves state-of-the-art accuracy in MRI sequence identification with minimal supervision. The MAE-FUnet hybrid architecture, which fuses multiscale CNN features with pretrained MAE embeddings, outperforms strong baselines in skull stripping and anatomical segmentation tasks under data-limited conditions. Extensive evaluations show efficiency, stability, and scalability, making the framework suitable for low-resource clinical settings and broader neuroimaging applications.<br /><br />Summary: <div>
-arXiv:2508.05783v1 Announce Type: new 
-Abstract: Machine learning using transformers has shown great potential in medical imaging, but its real-world applicability remains limited due to the scarcity of annotated data. In this study, we propose a practical framework for the few-shot deployment of pretrained MRI transformers in diverse brain imaging tasks. By utilizing the Masked Autoencoder (MAE) pretraining strategy on a large-scale, multi-cohort brain MRI dataset comprising over 31 million slices, we obtain highly transferable latent representations that generalize well across tasks and datasets. For high-level tasks such as classification, a frozen MAE encoder combined with a lightweight linear head achieves state-of-the-art accuracy in MRI sequence identification with minimal supervision. For low-level tasks such as segmentation, we propose MAE-FUnet, a hybrid architecture that fuses multiscale CNN features with pretrained MAE embeddings. This model consistently outperforms other strong baselines in both skull stripping and multi-class anatomical segmentation under data-limited conditions. With extensive quantitative and qualitative evaluations, our framework demonstrates efficiency, stability, and scalability, suggesting its suitability for low-resource clinical environments and broader neuroimaging applications.
 ]]></content:encoded>
 <pubDate>Mon, 11 Aug 2025 00:00:00 -0400</pubDate>
 </item>
