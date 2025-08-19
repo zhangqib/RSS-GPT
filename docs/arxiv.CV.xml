@@ -4,17 +4,17 @@
 <title>cs.CV updates on arXiv.org</title>
 <link>http://rss.arxiv.org/rss/cs.CV</link>
 
+
 <item>
 <title>SafePLUG: Empowering Multimodal LLMs with Pixel-Level Insight and Temporal Grounding for Traffic Accident Understanding</title>
 <link>https://arxiv.org/abs/2508.06763</link>
 <guid>https://arxiv.org/abs/2508.06763</guid>
 <content:encoded><![CDATA[
 <div> framework, traffic accident, multimodal, fine-grained, understanding
-Summary: <br><br>SafePLUG is a novel framework designed to enhance the capabilities of Multimodal Large Language Models (MLLMs) for traffic accident understanding. It provides Pixel-Level Understanding and temporal Grounding for comprehensive analysis of traffic accidents, addressing the limitations of existing models in handling fine-grained visual details and localized scene components. The framework supports arbitrary-shaped visual prompts for region-aware question answering, pixel-level segmentation based on language instructions, and recognition of temporally anchored events in traffic accident scenarios. A new dataset with multimodal question-answer pairs, detailed pixel-level annotations, and temporal event boundaries has been curated to facilitate model training and evaluation. Experimental results demonstrate that SafePLUG delivers strong performance across various tasks, including region-based question answering, pixel-level segmentation, temporal event localization, and accident event understanding. The framework holds potential to improve driving safety and enhance situational awareness in smart transportation systems.<nav>_BASEPATH_</nav> <div>
+Summary: <br /><br />SafePLUG is a novel framework designed to enhance the capabilities of Multimodal Large Language Models (MLLMs) for traffic accident understanding. It provides Pixel-Level Understanding and temporal Grounding for comprehensive analysis of traffic accidents, addressing the limitations of existing models in handling fine-grained visual details and localized scene components. The framework supports arbitrary-shaped visual prompts for region-aware question answering, pixel-level segmentation based on language instructions, and recognition of temporally anchored events in traffic accident scenarios. A new dataset with multimodal question-answer pairs, detailed pixel-level annotations, and temporal event boundaries has been curated to facilitate model training and evaluation. Experimental results demonstrate that SafePLUG delivers strong performance across various tasks, including region-based question answering, pixel-level segmentation, temporal event localization, and accident event understanding. The framework holds potential to improve driving safety and enhance situational awareness in smart transportation systems.<nav>_BASEPATH_</nav> <div>
 arXiv:2508.06763v2 Announce Type: replace 
 Abstract: Multimodal large language models (MLLMs) have achieved remarkable progress across a range of vision-language tasks and demonstrate strong potential for traffic accident understanding. However, existing MLLMs in this domain primarily focus on coarse-grained image-level or video-level comprehension and often struggle to handle fine-grained visual details or localized scene components, limiting their applicability in complex accident scenarios. To address these limitations, we propose SafePLUG, a novel framework that empowers MLLMs with both Pixel-Level Understanding and temporal Grounding for comprehensive traffic accident analysis. SafePLUG supports both arbitrary-shaped visual prompts for region-aware question answering and pixel-level segmentation based on language instructions, while also enabling the recognition of temporally anchored events in traffic accident scenarios. To advance the development of MLLMs for traffic accident understanding, we curate a new dataset containing multimodal question-answer pairs centered on diverse accident scenarios, with detailed pixel-level annotations and temporal event boundaries. Experimental results show that SafePLUG achieves strong performance on multiple tasks, including region-based question answering, pixel-level segmentation, temporal event localization, and accident event understanding. These capabilities lay a foundation for fine-grained understanding of complex traffic scenes, with the potential to improve driving safety and enhance situational awareness in smart transportation systems. The code, dataset, and model checkpoints will be made publicly available at: https://zihaosheng.github.io/SafePLUG
 ]]></content:encoded>
-<pubDate>Tue, 19 Aug 2025 00:00:00 -0400</pubDate>
 <pubDate>Tue, 19 Aug 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -22,8 +22,8 @@ Abstract: Multimodal large language models (MLLMs) have achieved remarkable prog
 <link>https://arxiv.org/abs/2508.06816</link>
 <guid>https://arxiv.org/abs/2508.06816</guid>
 <content:encoded><![CDATA[
-<div> Keywords: lesion segmentation, melanocytic tumors, dermoscopic images, dual-resolution architecture, automated skin cancer screening<br>
-Summary: <br>
+<div> Keywords: lesion segmentation, melanocytic tumors, dermoscopic images, dual-resolution architecture, automated skin cancer screening<br />
+Summary: <br />
 - The study focuses on improving lesion segmentation in dermoscopic images, specifically targeting melanocytic tumors, by developing a novel dual-resolution architecture inspired by ResNet.
 - The proposed approach integrates a high-resolution stream for fine boundary details and a pooled stream for multi-scale contextual information, enhancing lesion recognition accuracy.
 - Boundary-aware residual connections and a channel attention mechanism are utilized to inject edge information and adapt the model's sensitivity to color and texture variations in dermoscopic images.
@@ -34,7 +34,6 @@ Summary:  <div>
 arXiv:2508.06816v2 Announce Type: replace 
 Abstract: Lesion segmentation, in contrast to natural scene segmentation, requires handling subtle variations in texture and color, frequent imaging artifacts (such as hairs, rulers, and bubbles), and a critical need for precise boundary localization to aid in accurate diagnosis. The accurate delineation of melanocytic tumors in dermoscopic images is a crucial component of automated skin cancer screening systems and clinical decision support. In this paper, we present a novel dual-resolution architecture inspired by ResNet, specifically tailored for the segmentation of melanocytic tumors. Our approach incorporates a high-resolution stream that preserves fine boundary details, alongside a complementary pooled stream that captures multi-scale contextual information for robust lesion recognition. These two streams are closely integrated through boundary-aware residual connections, which inject edge information into deep feature maps, and a channel attention mechanism that adapts the model's sensitivity to color and texture variations in dermoscopic images. To tackle common imaging artifacts and the challenges posed by small clinical datasets, we introduce a lightweight artifact suppression block and a multi-task training strategy. This strategy combines the Dice-Tversky loss with an explicit boundary loss and a contrastive regularizer to enhance feature stability. This unified design enables the model to generate pixel-accurate segmentation masks without the need for extensive post-processing or complex pre-training. Extensive evaluation on public dermoscopic benchmarks reveals that our method significantly enhances boundary precision and clinically relevant segmentation metrics, outperforming traditional encoder-decoder baselines. This makes our approach a valuable component for building automated melanoma assessment systems.
 ]]></content:encoded>
-<pubDate>Tue, 19 Aug 2025 00:00:00 -0400</pubDate>
 <pubDate>Tue, 19 Aug 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -50,7 +49,6 @@ arXiv:2508.06819v2 Announce Type: replace
 Abstract: The task of parsing subcutaneous vessels in clinical images is often hindered by the high cost and limited availability of ground truth data, as well as the challenge of low contrast and noisy vessel appearances across different patients and imaging modalities. In this work, we propose a novel weakly supervised training framework specifically designed for subcutaneous vessel segmentation. This method utilizes low-cost, sparse annotations such as centerline traces, dot markers, or short scribbles to guide the learning process. These sparse annotations are expanded into dense probabilistic supervision through a differentiable random walk label propagation model, which integrates vesselness cues and tubular continuity priors driven by image data. The label propagation process results in per-pixel hitting probabilities and uncertainty estimates, which are incorporated into an uncertainty-weighted loss function to prevent overfitting in ambiguous areas. Notably, the label propagation model is trained jointly with a CNN-based segmentation network, allowing the system to learn vessel boundaries and continuity constraints without the need for explicit edge supervision. Additionally, we introduce a topology-aware regularizer that encourages centerline connectivity and penalizes irrelevant branches, further enhancing clinical applicability. Our experiments on clinical subcutaneous imaging datasets demonstrate that our approach consistently outperforms both naive sparse-label training and traditional dense pseudo-labeling methods, yielding more accurate vascular maps and better-calibrated uncertainty, which is crucial for clinical decision-making. This method significantly reduces the annotation workload while maintaining clinically relevant vessel topology.
 ]]></content:encoded>
 <pubDate>Tue, 19 Aug 2025 00:00:00 -0400</pubDate>
-<pubDate>Tue, 19 Aug 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
 <title>AugLift: Boosting Generalization in Lifting-based 3D Human Pose Estimation</title>
@@ -59,7 +57,7 @@ Abstract: The task of parsing subcutaneous vessels in clinical images is often h
 <content:encoded><![CDATA[
 <div> Keywords: Lifting-based methods, 3D Human Pose Estimation, AugLift, generalization performance, keypoint detection
 
-Summary:<br>
+Summary:<br />
 - The paper introduces AugLift, a method to improve the generalization performance of lifting-based 3D Human Pose Estimation.
 - AugLift enriches the input with keypoint confidence scores and depth estimates, improving generalization without extra data or sensors.
 - It can be integrated into existing lifting architectures easily and boosts performance on unseen datasets by 10.1% and in-distribution performance by 4.0%.
@@ -72,7 +70,6 @@ Abstract: Lifting-based methods for 3D Human Pose Estimation (HPE), which predic
   Our extensive experiments across four datasets demonstrate that AugLift boosts cross-dataset performance on unseen datasets by an average of $10.1\%$, while also improving in-distribution performance by $4.0\%$. These gains are consistent across various lifting architectures, highlighting the robustness of our method. Our analysis suggests that these sparse, keypoint-aligned cues provide robust frame-level context, offering a practical way to significantly improve the generalization of any lifting-based pose estimation model. Code will be made publicly available.
 ]]></content:encoded>
 <pubDate>Tue, 19 Aug 2025 00:00:00 -0400</pubDate>
-<pubDate>Tue, 19 Aug 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
 <title>Planner-Refiner: Dynamic Space-Time Refinement for Vision-Language Alignment in Videos</title>
@@ -84,11 +81,10 @@ Abstract: Lifting-based methods for 3D Human Pose Estimation (HPE), which predic
 Summary:
 The article introduces the Planner-Refiner framework, designed to address the challenges of vision-language alignment in video, such as evolving entities, action chains, and semantic gaps. The framework uses a Planner module to schedule language guidance and a Refiner module to iteratively refine visual elements' representations based on linguistic prompts. By processing noun-phrase and verb-phrase pairs, the Refiner directs visual tokens' attention across space and time in a single-step process. A recurrent system chains these steps and feeds the final representation into task-specific heads for alignment generation. The effectiveness of Planner-Refiner is demonstrated on two video-language alignment tasks, showing superior performance compared to state-of-the-art methods, especially with complex prompts. A new benchmark, MeViS-X, is introduced to assess models' ability with long queries. Overall, Planner-Refiner shows promise for improving vision-language alignment in video tasks. 
 
-<br><br>Summary: <div>
+<br /><br />Summary: <div>
 arXiv:2508.07330v2 Announce Type: replace 
 Abstract: Vision-language alignment in video must address the complexity of language, evolving interacting entities, their action chains, and semantic gaps between language and vision. This work introduces Planner-Refiner, a framework to overcome these challenges. Planner-Refiner bridges the semantic gap by iteratively refining visual elements' space-time representation, guided by language until semantic gaps are minimal. A Planner module schedules language guidance by decomposing complex linguistic prompts into short sentence chains. The Refiner processes each short sentence, a noun-phrase and verb-phrase pair, to direct visual tokens' self-attention across space then time, achieving efficient single-step refinement. A recurrent system chains these steps, maintaining refined visual token representations. The final representation feeds into task-specific heads for alignment generation. We demonstrate Planner-Refiner's effectiveness on two video-language alignment tasks: Referring Video Object Segmentation and Temporal Grounding with varying language complexity. We further introduce a new MeViS-X benchmark to assess models' capability with long queries. Superior performance versus state-of-the-art methods on these benchmarks shows the approach's potential, especially for complex prompts.
 ]]></content:encoded>
-<pubDate>Tue, 19 Aug 2025 00:00:00 -0400</pubDate>
 <pubDate>Tue, 19 Aug 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -96,13 +92,12 @@ Abstract: Vision-language alignment in video must address the complexity of lang
 <link>https://arxiv.org/abs/2508.07402</link>
 <guid>https://arxiv.org/abs/2508.07402</guid>
 <content:encoded><![CDATA[
-<div> Parameter-efficient fine-tuning, vision foundation models, image forgery detection, adversarial attacks, ForensicsSAM <br>
-Summary:<br>
-In the paper, the authors introduce ForensicsSAM, an approach that enhances the fine-tuning of large vision models for image forgery detection tasks by addressing vulnerability to adversarial attacks. Three key ideas guide ForensicsSAM's design: injecting forgery experts into transformer blocks to improve forgery artifact detection, incorporating a lightweight adversary detector to identify adversarial images, and integrating adversary experts to counter feature shifts caused by adversarial noise. Extensive experiments show that ForensicsSAM outperforms existing methods in resisting adversarial attacks while maintaining high performance in image forgery detection and localization tasks. The approach is made available on GitHub for further exploration and development. <br> <div>
+<div> Parameter-efficient fine-tuning, vision foundation models, image forgery detection, adversarial attacks, ForensicsSAM <br />
+Summary:<br />
+In the paper, the authors introduce ForensicsSAM, an approach that enhances the fine-tuning of large vision models for image forgery detection tasks by addressing vulnerability to adversarial attacks. Three key ideas guide ForensicsSAM's design: injecting forgery experts into transformer blocks to improve forgery artifact detection, incorporating a lightweight adversary detector to identify adversarial images, and integrating adversary experts to counter feature shifts caused by adversarial noise. Extensive experiments show that ForensicsSAM outperforms existing methods in resisting adversarial attacks while maintaining high performance in image forgery detection and localization tasks. The approach is made available on GitHub for further exploration and development. <br /> <div>
 arXiv:2508.07402v2 Announce Type: replace 
 Abstract: Parameter-efficient fine-tuning (PEFT) has emerged as a popular strategy for adapting large vision foundation models, such as the Segment Anything Model (SAM) and LLaVA, to downstream tasks like image forgery detection and localization (IFDL). However, existing PEFT-based approaches overlook their vulnerability to adversarial attacks. In this paper, we show that highly transferable adversarial images can be crafted solely via the upstream model, without accessing the downstream model or training data, significantly degrading the IFDL performance. To address this, we propose ForensicsSAM, a unified IFDL framework with built-in adversarial robustness. Our design is guided by three key ideas: (1) To compensate for the lack of forgery-relevant knowledge in the frozen image encoder, we inject forgery experts into each transformer block to enhance its ability to capture forgery artifacts. These forgery experts are always activated and shared across any input images. (2) To detect adversarial images, we design an light-weight adversary detector that learns to capture structured, task-specific artifact in RGB domain, enabling reliable discrimination across various attack methods. (3) To resist adversarial attacks, we inject adversary experts into the global attention layers and MLP modules to progressively correct feature shifts induced by adversarial noise. These adversary experts are adaptively activated by the adversary detector, thereby avoiding unnecessary interference with clean images. Extensive experiments across multiple benchmarks demonstrate that ForensicsSAM achieves superior resistance to various adversarial attack methods, while also delivering state-of-the-art performance in image-level forgery detection and pixel-level forgery localization. The resource is available at https://github.com/siriusPRX/ForensicsSAM.
 ]]></content:encoded>
-<pubDate>Tue, 19 Aug 2025 00:00:00 -0400</pubDate>
 <pubDate>Tue, 19 Aug 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -117,20 +112,18 @@ arXiv:2508.07501v2 Announce Type: replace
 Abstract: Good form is the difference between strength and strain, yet for the fast-growing community of at-home fitness enthusiasts, expert feedback is often out of reach. FormCoach transforms a simple camera into an always-on, interactive AI training partner, capable of spotting subtle form errors and delivering tailored corrections in real time, leveraging vision-language models (VLMs). We showcase this capability through a web interface and benchmark state-of-the-art VLMs on a dataset of 1,700 expert-annotated user-reference video pairs spanning 22 strength and mobility exercises. To accelerate research in AI-driven coaching, we release both the dataset and an automated, rubric-based evaluation pipeline, enabling standardized comparison across models. Our benchmarks reveal substantial gaps compared to human-level coaching, underscoring both the challenges and opportunities in integrating nuanced, context-aware movement analysis into interactive AI systems. By framing form correction as a collaborative and creative process between humans and machines, FormCoach opens a new frontier in embodied AI.
 ]]></content:encoded>
 <pubDate>Tue, 19 Aug 2025 00:00:00 -0400</pubDate>
-<pubDate>Tue, 19 Aug 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
 <title>Boosting Active Defense Persistence: A Two-Stage Defense Framework Combining Interruption and Poisoning Against Deepfake</title>
 <link>https://arxiv.org/abs/2508.07795</link>
 <guid>https://arxiv.org/abs/2508.07795</guid>
 <content:encoded><![CDATA[
-<div> Keywords: Active defense, deepfake technology, Two-Stage Defense Framework, adversarial perturbations, data poisoning<br>
-Summary: <br>
-The article discusses the challenge of short-lived effectiveness of active defense strategies against deepfake technology due to attackers retraining their models on protected images. To address this issue, the authors propose a Two-Stage Defense Framework (TSDF) that uses dual-function adversarial perturbations. These perturbations serve two purposes - distorting forged content directly and acting as a poisoning vehicle to disrupt the data preparation process for attackers' model retraining. By poisoning the data source, TSDF aims to prevent the attacker's model from adapting to the defense, ensuring long-term effectiveness. Experimental results show that traditional defense methods degrade when faced with adversarial retraining, while TSDF demonstrates strong dual defense capabilities, improving the persistence of active defense. The code for TSDF will be available on GitHub for further research and implementation. <br> <div>
+<div> Keywords: Active defense, deepfake technology, Two-Stage Defense Framework, adversarial perturbations, data poisoning<br />
+Summary: <br />
+The article discusses the challenge of short-lived effectiveness of active defense strategies against deepfake technology due to attackers retraining their models on protected images. To address this issue, the authors propose a Two-Stage Defense Framework (TSDF) that uses dual-function adversarial perturbations. These perturbations serve two purposes - distorting forged content directly and acting as a poisoning vehicle to disrupt the data preparation process for attackers' model retraining. By poisoning the data source, TSDF aims to prevent the attacker's model from adapting to the defense, ensuring long-term effectiveness. Experimental results show that traditional defense methods degrade when faced with adversarial retraining, while TSDF demonstrates strong dual defense capabilities, improving the persistence of active defense. The code for TSDF will be available on GitHub for further research and implementation. <br /> <div>
 arXiv:2508.07795v2 Announce Type: replace 
 Abstract: Active defense strategies have been developed to counter the threat of deepfake technology. However, a primary challenge is their lack of persistence, as their effectiveness is often short-lived. Attackers can bypass these defenses by simply collecting protected samples and retraining their models. This means that static defenses inevitably fail when attackers retrain their models, which severely limits practical use. We argue that an effective defense not only distorts forged content but also blocks the model's ability to adapt, which occurs when attackers retrain their models on protected images. To achieve this, we propose an innovative Two-Stage Defense Framework (TSDF). Benefiting from the intensity separation mechanism designed in this paper, the framework uses dual-function adversarial perturbations to perform two roles. First, it can directly distort the forged results. Second, it acts as a poisoning vehicle that disrupts the data preparation process essential for an attacker's retraining pipeline. By poisoning the data source, TSDF aims to prevent the attacker's model from adapting to the defensive perturbations, thus ensuring the defense remains effective long-term. Comprehensive experiments show that the performance of traditional interruption methods degrades sharply when it is subjected to adversarial retraining. However, our framework shows a strong dual defense capability, which can improve the persistence of active defense. Our code will be available at https://github.com/vpsg-research/TSDF.
 ]]></content:encoded>
-<pubDate>Tue, 19 Aug 2025 00:00:00 -0400</pubDate>
 <pubDate>Tue, 19 Aug 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -138,17 +131,16 @@ Abstract: Active defense strategies have been developed to counter the threat of
 <link>https://arxiv.org/abs/2508.08038</link>
 <guid>https://arxiv.org/abs/2508.08038</guid>
 <content:encoded><![CDATA[
-<div> Keywords: depth estimation, radar-camera fusion, text generation, weather-aware fusion, autonomous driving<br>
-Summary:<br>
+<div> Keywords: depth estimation, radar-camera fusion, text generation, weather-aware fusion, autonomous driving<br />
+Summary:<br />
 - The paper addresses the need for accurate depth estimation in autonomous driving by proposing a radar-camera fusion algorithm that incorporates text generation and weather-aware fusion techniques.
 - Existing algorithms do not consider weather conditions, despite radars being more robust than cameras under adverse weather, leading to inaccuracies in depth estimation.
 - The introduced TRIDE algorithm enhances text feature extraction by integrating radar point information, improving accuracy across different algorithms on the KITTI dataset.
 - A weather-aware fusion block is introduced to adaptively adjust radar weighting based on current weather conditions, mitigating the impact of weather on sensor performance.
-- Benchmarking on the nuScenes dataset shows that the proposed method outperforms state-of-the-art algorithms, achieving a 12.87% improvement in Mean Absolute Error (MAE) and a 9.08% improvement in Root Mean Square Error (RMSE). <br> <div>
+- Benchmarking on the nuScenes dataset shows that the proposed method outperforms state-of-the-art algorithms, achieving a 12.87% improvement in Mean Absolute Error (MAE) and a 9.08% improvement in Root Mean Square Error (RMSE). <br /> <div>
 arXiv:2508.08038v2 Announce Type: replace 
 Abstract: Depth estimation, essential for autonomous driving, seeks to interpret the 3D environment surrounding vehicles. The development of radar sensors, known for their cost-efficiency and robustness, has spurred interest in radar-camera fusion-based solutions. However, existing algorithms fuse features from these modalities without accounting for weather conditions, despite radars being known to be more robust than cameras under adverse weather. Additionally, while Vision-Language models have seen rapid advancement, utilizing language descriptions alongside other modalities for depth estimation remains an open challenge. This paper first introduces a text-generation strategy along with feature extraction and fusion techniques that can assist monocular depth estimation pipelines, leading to improved accuracy across different algorithms on the KITTI dataset. Building on this, we propose TRIDE, a radar-camera fusion algorithm that enhances text feature extraction by incorporating radar point information. To address the impact of weather on sensor performance, we introduce a weather-aware fusion block that adaptively adjusts radar weighting based on current weather conditions. Our method, benchmarked on the nuScenes dataset, demonstrates performance gains over the state-of-the-art, achieving a 12.87% improvement in MAE and a 9.08% improvement in RMSE. Code: https://github.com/harborsarah/TRIDE
 ]]></content:encoded>
-<pubDate>Tue, 19 Aug 2025 00:00:00 -0400</pubDate>
 <pubDate>Tue, 19 Aug 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -159,14 +151,12 @@ Abstract: Depth estimation, essential for autonomous driving, seeks to interpret
 <div> alignment, needle, ultrasound, robotic, vibration 
 Summary:
 This paper presents a method to address the challenge of precise needle alignment in robotic ultrasound-guided procedures. The proposed approach leverages periodic needle vibration to enhance needle detection robustness, even when visibility is low. A vibration-based energy metric is used to guide the repositioning of the ultrasound probe to correct misalignments in translation and rotation between the imaging plane and the needle insertion plane. Experiments conducted on ex-vivo porcine tissue samples using a dual-arm robotic system demonstrate the effectiveness of the method, achieving a translational error of 0.41$\pm$0.27 mm and a rotational error of 0.51$\pm$0.19 degrees. This technique shows promise in improving the accuracy and reliability of needle alignment in challenging ultrasound imaging scenarios, offering potential benefits for more precise and successful percutaneous needle insertions in clinical settings. 
-<br><br>Summary: <div>
+<br /><br />Summary: <div>
 arXiv:2508.06921v2 Announce Type: replace-cross 
 Abstract: Precise needle alignment is essential for percutaneous needle insertion in robotic ultrasound-guided procedures. However, inherent challenges such as speckle noise, needle-like artifacts, and low image resolution make robust needle detection difficult, particularly when visibility is reduced or lost. In this paper, we propose a method to restore needle alignment when the ultrasound imaging plane and the needle insertion plane are misaligned. Unlike many existing approaches that rely heavily on needle visibility in ultrasound images, our method uses a more robust feature by periodically vibrating the needle using a mechanical system. Specifically, we propose a vibration-based energy metric that remains effective even when the needle is fully out of plane. Using this metric, we develop a control strategy to reposition the ultrasound probe in response to misalignments between the imaging plane and the needle insertion plane in both translation and rotation. Experiments conducted on ex-vivo porcine tissue samples using a dual-arm robotic ultrasound-guided needle insertion system demonstrate the effectiveness of the proposed approach. The experimental results show the translational error of 0.41$\pm$0.27 mm and the rotational error of 0.51$\pm$0.19 degrees.
 ]]></content:encoded>
 <pubDate>Tue, 19 Aug 2025 00:00:00 -0400</pubDate>
-<pubDate>Tue, 19 Aug 2025 00:00:00 -0400</pubDate>
 </item>
-
 <item>
 <title>A Deep Learning-Based CCTV System for Automatic Smoking Detection in Fire Exit Zones</title>
 <link>https://arxiv.org/abs/2508.11696</link>
@@ -11296,106 +11286,6 @@ Abstract: Many studies have been conducted to solve the problem of approximating
 <content:encoded><![CDATA[
 arXiv:2506.08835v2 Announce Type: replace 
 Abstract: The increasing ubiquity of text-to-image (T2I) models as tools for visual content generation raises concerns about their ability to accurately represent diverse cultural contexts -- where missed cues can stereotype communities and undermine usability. In this work, we present the first study to systematically quantify the alignment of T2I models and evaluation metrics with respect to both explicit (stated) as well as implicit (unstated, implied by the prompt's cultural context) cultural expectations. To this end, we introduce CulturalFrames, a novel benchmark designed for rigorous human evaluation of cultural representation in visual generations. Spanning 10 countries and 5 socio-cultural domains, CulturalFrames comprises 983 prompts, 3637 corresponding images generated by 4 state-of-the-art T2I models, and over 10k detailed human annotations. We find that across models and countries, cultural expectations are missed an average of 44% of the time. Among these failures, explicit expectations are missed at a surprisingly high average rate of 68%, while implicit expectation failures are also significant, averaging 49%. Furthermore, we show that existing T2I evaluation metrics correlate poorly with human judgments of cultural alignment, irrespective of their internal reasoning. Collectively, our findings expose critical gaps, provide a concrete testbed, and outline actionable directions for developing culturally informed T2I models and metrics that improve global usability.
-]]></content:encoded>
-<pubDate>Wed, 13 Aug 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Argus Inspection: Do Multimodal Large Language Models Possess the Eye of Panoptes?</title>
-<link>https://arxiv.org/abs/2506.14805</link>
-<guid>https://arxiv.org/abs/2506.14805</guid>
-<content:encoded><![CDATA[
-arXiv:2506.14805v2 Announce Type: replace 
-Abstract: As Multimodal Large Language Models (MLLMs) continue to evolve, their cognitive and reasoning capabilities have seen remarkable progress. However, challenges in visual fine-grained perception and commonsense causal inference persist. This paper introduces Argus Inspection, a multimodal benchmark with two levels of difficulty, emphasizing detailed visual recognition while incorporating real-world commonsense understanding to evaluate causal reasoning abilities. Expanding on it, we present the Eye of Panoptes framework, which integrates a binary parametric Sigmoid metric with an indicator function, enabling a more holistic evaluation of MLLMs' responses in opinion-based reasoning tasks. Experiments conducted on 26 mainstream MLLMs reveal that the highest performance in visual fine-grained reasoning reaches only 0.46, highlighting considerable potential for enhancement. Our research offers valuable perspectives for the continued refinement of MLLMs.
-]]></content:encoded>
-<pubDate>Wed, 13 Aug 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>MUG: Pseudo Labeling Augmented Audio-Visual Mamba Network for Audio-Visual Video Parsing</title>
-<link>https://arxiv.org/abs/2507.01384</link>
-<guid>https://arxiv.org/abs/2507.01384</guid>
-<content:encoded><![CDATA[
-arXiv:2507.01384v2 Announce Type: replace 
-Abstract: The weakly-supervised audio-visual video parsing (AVVP) aims to predict all modality-specific events and locate their temporal boundaries. Despite significant progress, due to the limitations of the weakly-supervised and the deficiencies of the model architecture, existing methods are lacking in simultaneously improving both the segment-level prediction and the event-level prediction. In this work, we propose a audio-visual Mamba network with pseudo labeling aUGmentation (MUG) for emphasising the uniqueness of each segment and excluding the noise interference from the alternate modalities. Specifically, we annotate some of the pseudo-labels based on previous work. Using unimodal pseudo-labels, we perform cross-modal random combinations to generate new data, which can enhance the model's ability to parse various segment-level event combinations. For feature processing and interaction, we employ a audio-visual mamba network. The AV-Mamba enhances the ability to perceive different segments and excludes additional modal noise while sharing similar modal information. Our extensive experiments demonstrate that MUG improves state-of-the-art results on LLP dataset in all metrics (e.g,, gains of 2.1% and 1.2% in terms of visual Segment-level and audio Segment-level metrics). Our code is available at https://github.com/WangLY136/MUG.
-]]></content:encoded>
-<pubDate>Wed, 13 Aug 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>See the Forest and the Trees: A Synergistic Reasoning Framework for Knowledge-Based Visual Question Answering</title>
-<link>https://arxiv.org/abs/2507.17659</link>
-<guid>https://arxiv.org/abs/2507.17659</guid>
-<content:encoded><![CDATA[
-arXiv:2507.17659v2 Announce Type: replace 
-Abstract: Multimodal Large Language Models (MLLMs) have pushed the frontiers of Knowledge-Based Visual Question Answering (KBVQA), yet their reasoning is fundamentally bottlenecked by a reliance on uni-dimensional evidence. This "seeing only the trees, but not the forest" approach prevents robust, multi-faceted understanding. Inspired by the principle of seeing both the forest and trees, we propose Synergos-VQA, a novel synergistic reasoning framework. At its core, Synergos-VQA concurrently generates and fuses three complementary evidence streams at inference time: (1) Holistic Evidence to perceive the entire scene (the "forest"), (2) Structural Evidence from a prototype-driven module to identify key objects (the "trees"), and (3) Causal Evidence from a counterfactual probe to ensure the reasoning is robustly grounded. By synergistically fusing this multi-faceted evidence, our framework achieves a more comprehensive and reliable reasoning process. Extensive experiments show that Synergos-VQA decisively establishes a new state-of-the-art on three challenging benchmarks, including OK-VQA and A-OKVQA. Furthermore, our approach demonstrates strong plug-and-play capabilities, significantly boosting various open-source MLLMs and proving that superior methodological design can outperform sheer model scale.
-]]></content:encoded>
-<pubDate>Wed, 13 Aug 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>RemoteReasoner: Towards Unifying Geospatial Reasoning Workflow</title>
-<link>https://arxiv.org/abs/2507.19280</link>
-<guid>https://arxiv.org/abs/2507.19280</guid>
-<content:encoded><![CDATA[
-arXiv:2507.19280v2 Announce Type: replace 
-Abstract: Remote sensing imagery presents vast, inherently unstructured spatial data, necessitating sophisticated reasoning to interpret complex user intents and contextual relationships beyond simple recognition tasks. In this paper, we aim to construct an Earth observation workflow to handle complex queries by reasoning about spatial context and user intent. As a reasoning workflow, it should autonomously explore and construct its own inference paths, rather than being confined to predefined ground-truth sequences. Ideally, its architecture ought to be unified yet generalized, possessing capabilities to perform diverse reasoning tasks through one model without requiring additional fine-tuning. Existing remote sensing approaches rely on supervised fine-tuning paradigms and task-specific heads, limiting both autonomous reasoning and unified generalization. To this end, we propose RemoteReasoner, a unified workflow for geospatial reasoning. The design of RemoteReasoner integrates a multi-modal large language model (MLLM) for interpreting user instructions and localizing targets, together with task transformation strategies that enable multi-granularity tasks, including object-, region-, and pixel-level. In contrast to existing methods, our framework is trained with reinforcement learning (RL) to endow the MLLM sufficient reasoning autonomy. At the inference stage, our transformation strategies enable diverse task output formats without requiring task-specific decoders or further fine-tuning. Experiments demonstrated that RemoteReasoner achieves state-of-the-art (SOTA) performance across multi-granularity reasoning tasks. Furthermore, it retains the MLLM's inherent generalization capability, demonstrating robust performance on unseen tasks and out-of-distribution categories.
-]]></content:encoded>
-<pubDate>Wed, 13 Aug 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>DriveIndia: An Object Detection Dataset for Diverse Indian Traffic Scenes</title>
-<link>https://arxiv.org/abs/2507.19912</link>
-<guid>https://arxiv.org/abs/2507.19912</guid>
-<content:encoded><![CDATA[
-arXiv:2507.19912v3 Announce Type: replace 
-Abstract: We introduce DriveIndia, a large-scale object detection dataset purpose-built to capture the complexity and unpredictability of Indian traffic environments. The dataset contains 66,986 high-resolution images annotated in YOLO format across 24 traffic-relevant object categories, encompassing diverse conditions such as varied weather (fog, rain), illumination changes, heterogeneous road infrastructure, and dense, mixed traffic patterns and collected over 120+ hours and covering 3,400+ kilometers across urban, rural, and highway routes. DriveIndia offers a comprehensive benchmark for real-world autonomous driving challenges. We provide baseline results using state-of-the-art YOLO family models, with the top-performing variant achieving a mAP50 of 78.7%. Designed to support research in robust, generalizable object detection under uncertain road conditions, DriveIndia will be publicly available via the TiHAN-IIT Hyderabad dataset repository https://tihan.iith.ac.in/TiAND.html (Terrestrial Datasets -> Camera Dataset).
-]]></content:encoded>
-<pubDate>Wed, 13 Aug 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>On the Reliability of Vision-Language Models Under Adversarial Frequency-Domain Perturbations</title>
-<link>https://arxiv.org/abs/2507.22398</link>
-<guid>https://arxiv.org/abs/2507.22398</guid>
-<content:encoded><![CDATA[
-arXiv:2507.22398v2 Announce Type: replace 
-Abstract: Vision-Language Models (VLMs) are increasingly used as perceptual modules for visual content reasoning, including through captioning and DeepFake detection. In this work, we expose a critical vulnerability of VLMs when exposed to subtle, structured perturbations in the frequency domain. Specifically, we highlight how these feature transformations undermine authenticity/DeepFake detection and automated image captioning tasks. We design targeted image transformations, operating in the frequency domain to systematically adjust VLM outputs when exposed to frequency-perturbed real and synthetic images. We demonstrate that the perturbation injection method generalizes across five state-of-the-art VLMs which includes different-parameter Qwen2/2.5 and BLIP models. Experimenting across ten real and generated image datasets reveals that VLM judgments are sensitive to frequency-based cues and may not wholly align with semantic content. Crucially, we show that visually-imperceptible spatial frequency transformations expose the fragility of VLMs deployed for automated image captioning and authenticity detection tasks. Our findings under realistic, black-box constraints challenge the reliability of VLMs, underscoring the need for robust multimodal perception systems.
-]]></content:encoded>
-<pubDate>Wed, 13 Aug 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Half-Physics: Enabling Kinematic 3D Human Model with Physical Interactions</title>
-<link>https://arxiv.org/abs/2507.23778</link>
-<guid>https://arxiv.org/abs/2507.23778</guid>
-<content:encoded><![CDATA[
-arXiv:2507.23778v2 Announce Type: replace 
-Abstract: While current general-purpose 3D human models (e.g., SMPL-X) efficiently represent accurate human shape and pose, they lacks the ability to physically interact with the environment due to the kinematic nature. As a result, kinematic-based interaction models often suffer from issues such as interpenetration and unrealistic object dynamics. To address this limitation, we introduce a novel approach that embeds SMPL-X into a tangible entity capable of dynamic physical interactions with its surroundings. Specifically, we propose a "half-physics" mechanism that transforms 3D kinematic motion into a physics simulation. Our approach maintains kinematic control over inherent SMPL-X poses while ensuring physically plausible interactions with scenes and objects, effectively eliminating penetration and unrealistic object dynamics. Unlike reinforcement learning-based methods, which demand extensive and complex training, our half-physics method is learning-free and generalizes to any body shape and motion; meanwhile, it operates in real time. Moreover, it preserves the fidelity of the original kinematic motion while seamlessly integrating physical interactions
-]]></content:encoded>
-<pubDate>Wed, 13 Aug 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Context-based Motion Retrieval using Open Vocabulary Methods for Autonomous Driving</title>
-<link>https://arxiv.org/abs/2508.00589</link>
-<guid>https://arxiv.org/abs/2508.00589</guid>
-<content:encoded><![CDATA[
-arXiv:2508.00589v2 Announce Type: replace 
-Abstract: Autonomous driving systems must operate reliably in safety-critical scenarios, particularly those involving unusual or complex behavior by Vulnerable Road Users (VRUs). Identifying these edge cases in driving datasets is essential for robust evaluation and generalization, but retrieving such rare human behavior scenarios within the long tail of large-scale datasets is challenging. To support targeted evaluation of autonomous driving systems in diverse, human-centered scenarios, we propose a novel context-aware motion retrieval framework. Our method combines Skinned Multi-Person Linear (SMPL)-based motion sequences and corresponding video frames before encoding them into a shared multimodal embedding space aligned with natural language. Our approach enables the scalable retrieval of human behavior and their context through text queries. This work also introduces our dataset WayMoCo, an extension of the Waymo Open Dataset. It contains automatically labeled motion and scene context descriptions derived from generated pseudo-ground-truth SMPL sequences and corresponding image data. Our approach outperforms state-of-the-art models by up to 27.5% accuracy in motion-context retrieval, when evaluated on the WayMoCo dataset.
-]]></content:encoded>
-<pubDate>Wed, 13 Aug 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>A Data-driven Loss Weighting Scheme across Heterogeneous Tasks for Image Denoising</title>
-<link>https://arxiv.org/abs/2301.06081</link>
-<guid>https://arxiv.org/abs/2301.06081</guid>
-<content:encoded><![CDATA[
-arXiv:2301.06081v3 Announce Type: replace-cross 
-Abstract: In a variational denoising model, weight in the data fidelity term plays the role of enhancing the noise-removal capability. It is profoundly correlated with noise information, while also balancing the data fidelity and regularization terms. However, the difficulty of assigning weight is expected to be substantial when the noise pattern is beyond independent identical Gaussian distribution, e.g., impulse noise, stripe noise, or a mixture of several patterns, etc. Furthermore, how to leverage weight to balance the data fidelity and regularization terms is even less evident. In this work, we propose a data-driven loss weighting (DLW) scheme to address these issues. Specifically, DLW trains a parameterized weight function (i.e., a neural network) that maps the noisy image to the weight. The training is achieved by a bilevel optimization framework, where the lower level problem is solving several denoising models with the same weight predicted by the weight function and the upper level problem minimizes the distance between the restored image and the clean image. In this way, information from both the noise and the regularization can be efficiently extracted to determine the weight function. DLW also facilitates the easy implementation of a trained weight function on denoising models. Numerical results verify the remarkable performance of DLW on improving the ability of various variational denoising models to handle different complex noise. This implies that DLW has the ability to transfer the noise knowledge at the model level to heterogeneous tasks beyond the training ones and the generalization theory underlying DLW is studied, validating its intrinsic transferability.
-]]></content:encoded>
-<pubDate>Wed, 13 Aug 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Style transfer between Microscopy and Magnetic Resonance Imaging via Generative Adversarial Network in small sample size settings</title>
-<link>https://arxiv.org/abs/2310.10414</link>
-<guid>https://arxiv.org/abs/2310.10414</guid>
-<content:encoded><![CDATA[
-arXiv:2310.10414v3 Announce Type: replace-cross 
-Abstract: Cross-modal augmentation of Magnetic Resonance Imaging (MRI) and microscopic imaging based on the same tissue samples is promising because it can allow histopathological analysis in the absence of an underlying invasive biopsy procedure. Here, we tested a method for generating microscopic histological images from MRI scans of the human corpus callosum using conditional generative adversarial network (cGAN) architecture. To our knowledge, this is the first multimodal translation of the brain MRI to histological volumetric representation of the same sample. The technique was assessed by training paired image translation models taking sets of images from MRI scans and microscopy. The use of cGAN for this purpose is challenging because microscopy images are large in size and typically have low sample availability. The current work demonstrates that the framework reliably synthesizes histology images from MRI scans of corpus callosum, emphasizing the network's ability to train on high resolution histologies paired with relatively lower-resolution MRI scans. With the ultimate goal of avoiding biopsies, the proposed tool can be used for educational purposes.
 ]]></content:encoded>
 <pubDate>Wed, 13 Aug 2025 00:00:00 -0400</pubDate>
 </item>
