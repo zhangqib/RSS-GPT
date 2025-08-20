@@ -4,18 +4,18 @@
 <title>cs.AI updates on arXiv.org</title>
 <link>http://rss.arxiv.org/rss/cs.AI</link>
 
+
 <item>
 <title>Fine-Grained Safety Neurons with Training-Free Continual Projection to Reduce LLM Fine Tuning Risks</title>
 <link>https://arxiv.org/abs/2508.09190</link>
 <guid>https://arxiv.org/abs/2508.09190</guid>
 <content:encoded><![CDATA[
-<div> Fine-Grained Safety Neurons, Training-Free Continual Projection, large language models, alignment mechanisms, safety risks <br>
-Summary: <br>
+<div> Fine-Grained Safety Neurons, Training-Free Continual Projection, large language models, alignment mechanisms, safety risks <br />
+Summary: <br />
 The article proposes the Fine-Grained Safety Neurons (FGSN) with Training-Free Continual Projection method to address safety risks in fine-tuned large language models. FGSN integrates safety layers and neurons, localizing fine-grained safety neurons while minimizing interference with task neurons. By projecting safety neuron parameters onto safety directions, model safety is improved while aligning with human preferences. Extensive experiments show significant reductions in harmfulness scores and attack success rates with minimal parameter changes, preserving model utility. Task-specific, multi-dimensional heterogeneous safety neuron cluster optimization ensures continual defense and generalization against emerging safety concerns. <div>
 arXiv:2508.09190v2 Announce Type: replace-cross 
 Abstract: Fine-tuning as service injects domain-specific knowledge into large language models (LLMs), while challenging the original alignment mechanisms and introducing safety risks. A series of defense strategies have been proposed for the alignment, fine-tuning, and post-fine-tuning phases, where most post-fine-tuning defenses rely on coarse-grained safety layer mapping. These methods lack a comprehensive consideration of both safety layers and fine-grained neurons, limiting their ability to efficiently balance safety and utility. To address this, we propose the Fine-Grained Safety Neurons (FGSN) with Training-Free Continual Projection method to reduce the fine-tuning safety risks. FGSN inherently integrates the multi-scale interactions between safety layers and neurons, localizing sparser and more precise fine-grained safety neurons while minimizing interference with downstream task neurons. We then project the safety neuron parameters onto safety directions, improving model safety while aligning more closely with human preferences. Extensive experiments across multiple fine-tuned LLM models demonstrate that our method significantly reduce harmfulness scores and attack success rates with minimal parameter modifications, while preserving the model's utility. Furthermore, by introducing a task-specific, multi-dimensional heterogeneous safety neuron cluster optimization mechanism, we achieve continual defense and generalization capability against unforeseen emerging safety concerns.
 ]]></content:encoded>
-<pubDate>Wed, 20 Aug 2025 00:00:00 -0400</pubDate>
 <pubDate>Wed, 20 Aug 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -23,16 +23,14 @@ Abstract: Fine-tuning as service injects domain-specific knowledge into large la
 <link>https://arxiv.org/abs/2508.09288</link>
 <guid>https://arxiv.org/abs/2508.09288</guid>
 <content:encoded><![CDATA[
-<div> Keywords: Large language models, Contextual Integrity Verification, prompt injection attacks, security architecture, token-level similarity<br>
+<div> Keywords: Large language models, Contextual Integrity Verification, prompt injection attacks, security architecture, token-level similarity<br />
 Summary: 
-Contextual Integrity Verification (CIV) is proposed as a security architecture to protect large language models (LLMs) from prompt injection attacks by attaching provenance labels to tokens and enforcing a source-trust lattice. This method guarantees per-token non-interference on frozen models, preventing lower-trust tokens from influencing higher-trust representations. CIV successfully achieves a 0% attack success rate on benchmark tests while maintaining token-level similarity and model perplexity on benign tasks. Although there is a latency overhead, CIV is a lightweight patch that does not require fine-tuning, making it easy to integrate into existing models like Llama-3-8B and Mistral-7B. The authors provide a reference implementation, an automated certification harness, and the Elite-Attack corpus to support reproducible research. <br><br>Summary: <div>
+Contextual Integrity Verification (CIV) is proposed as a security architecture to protect large language models (LLMs) from prompt injection attacks by attaching provenance labels to tokens and enforcing a source-trust lattice. This method guarantees per-token non-interference on frozen models, preventing lower-trust tokens from influencing higher-trust representations. CIV successfully achieves a 0% attack success rate on benchmark tests while maintaining token-level similarity and model perplexity on benign tasks. Although there is a latency overhead, CIV is a lightweight patch that does not require fine-tuning, making it easy to integrate into existing models like Llama-3-8B and Mistral-7B. The authors provide a reference implementation, an automated certification harness, and the Elite-Attack corpus to support reproducible research. <br /><br />Summary: <div>
 arXiv:2508.09288v2 Announce Type: replace-cross 
 Abstract: Large language models (LLMs) remain acutely vulnerable to prompt injection and related jailbreak attacks; heuristic guardrails (rules, filters, LLM judges) are routinely bypassed. We present Contextual Integrity Verification (CIV), an inference-time security architecture that attaches cryptographically signed provenance labels to every token and enforces a source-trust lattice inside the transformer via a pre-softmax hard attention mask (with optional FFN/residual gating). CIV provides deterministic, per-token non-interference guarantees on frozen models: lower-trust tokens cannot influence higher-trust representations. On benchmarks derived from recent taxonomies of prompt-injection vectors (Elite-Attack + SoK-246), CIV attains 0% attack success rate under the stated threat model while preserving 93.1% token-level similarity and showing no degradation in model perplexity on benign tasks; we note a latency overhead attributable to a non-optimized data path. Because CIV is a lightweight patch -- no fine-tuning required -- we demonstrate drop-in protection for Llama-3-8B and Mistral-7B. We release a reference implementation, an automated certification harness, and the Elite-Attack corpus to support reproducible research.
 ]]></content:encoded>
 <pubDate>Wed, 20 Aug 2025 00:00:00 -0400</pubDate>
-<pubDate>Wed, 20 Aug 2025 00:00:00 -0400</pubDate>
 </item>
-
 <item>
 <title>Chain-of-Agents: End-to-End Agent Foundation Models via Multi-Agent Distillation and Agentic RL</title>
 <link>https://arxiv.org/abs/2508.13167</link>
@@ -11180,32 +11178,6 @@ Summary:
 <br /><br /> <div>
 arXiv:2508.09161v1 Announce Type: cross 
 Abstract: Accurate energy consumption forecasting is essential for efficient resource management and sustainability in the building sector. Deep learning models are highly successful but struggle with limited historical data and become unusable when historical data are unavailable, such as in newly constructed buildings. On the other hand, physics-based models, such as EnergyPlus, simulate energy consumption without relying on historical data but require extensive building parameter specifications and considerable time to model a building. This paper introduces a Physics-Guided Memory Network (PgMN), a neural network that integrates predictions from deep learning and physics-based models to address their limitations. PgMN comprises a Parallel Projection Layers to process incomplete inputs, a Memory Unit to account for persistent biases, and a Memory Experience Module to optimally extend forecasts beyond their input range and produce output. Theoretical evaluation shows that components of PgMN are mathematically valid for performing their respective tasks. The PgMN was evaluated on short-term energy forecasting at an hourly resolution, critical for operational decision-making in smart grid and smart building systems. Experimental validation shows accuracy and applicability of PgMN in diverse scenarios such as newly constructed buildings, missing data, sparse historical data, and dynamic infrastructure changes. This paper provides a promising solution for energy consumption forecasting in dynamic building environments, enhancing model applicability in scenarios where historical data are limited or unavailable or when physics-based models are inadequate.
-]]></content:encoded>
-<pubDate>Thu, 14 Aug 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Energy-Efficient Stochastic Computing (SC) Neural Networks for Internet of Things Devices With Layer-Wise Adjustable Sequence Length (ASL)</title>
-<link>https://arxiv.org/abs/2508.09163</link>
-<guid>https://arxiv.org/abs/2508.09163</guid>
-<content:encoded><![CDATA[
-<div> Adjustable Sequence Length, Stochastic computing, Neural networks, Mixed-precision, IoT<br />
-Summary: <br />
-Stochastic computing (SC) is an efficient low-power option for neural networks (NNs) in resource-limited scenarios like IoT. This article introduces Adjustable Sequence Length (ASL), a mixed-precision scheme specifically for SC NNs. It shows that truncation noise can propagate through layers, and an extended sensitivity analysis validates theoretical predictions. Two truncation strategies are proposed – coarse-grained and fine-grained – applying different sequence lengths at each layer. Evaluations on a pipelined SC MLP show ASL can reduce energy and latency overheads by over 60% with minimal accuracy loss. The ASL scheme is feasible for IoT applications and offers advantages in SC designs through mixed-precision truncation.<br /> <div>
-arXiv:2508.09163v1 Announce Type: cross 
-Abstract: Stochastic computing (SC) has emerged as an efficient low-power alternative for deploying neural networks (NNs) in resource-limited scenarios, such as the Internet of Things (IoT). By encoding values as serial bitstreams, SC significantly reduces energy dissipation compared to conventional floating-point (FP) designs; however, further improvement of layer-wise mixed-precision implementation for SC remains unexplored. This article introduces Adjustable Sequence Length (ASL), a novel scheme that applies mixed-precision concepts specifically to SC NNs. By introducing an operator-norm-based theoretical model, this article shows that truncation noise can cumulatively propagate through the layers by the estimated amplification factors. An extended sensitivity analysis is presented, using random forest (RF) regression to evaluate multilayer truncation effects and validate the alignment of theoretical predictions with practical network behaviors. To accommodate different application scenarios, this article proposes two truncation strategies (coarse-grained and fine-grained), which apply diverse sequence length configurations at each layer. Evaluations on a pipelined SC MLP synthesized at 32nm demonstrate that ASL can reduce energy and latency overheads by up to over 60% with negligible accuracy loss. It confirms the feasibility of the ASL scheme for IoT applications and highlights the distinct advantages of mixed-precision truncation in SC designs.
-]]></content:encoded>
-<pubDate>Thu, 14 Aug 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Multimodal RAG Enhanced Visual Description</title>
-<link>https://arxiv.org/abs/2508.09170</link>
-<guid>https://arxiv.org/abs/2508.09170</guid>
-<content:encoded><![CDATA[
-<div> Keyword: multimodal inputs, large multimodal models, Retrieval-Augmented Generation, modality alignment, image description<br />
-Summary:<br />
-The article discusses the challenges of training large multimodal models (LMMs) due to a modality gap between textual and visual representations. The proposed approach, Retrieval-Augmented Generation (RAG), aims to bridge this gap through a linear mapping that enables efficient retrieval of textual descriptions for images. By using existing textual descriptions as input prompts, the language model can generate new descriptions without the need for extensive fine-tuning. An iterative distillation technique optimizes the mapping by generating synthetic descriptions for training. Experimental results on benchmark datasets show significant improvements in image description capabilities using this approach. <div>
-arXiv:2508.09170v1 Announce Type: cross 
-Abstract: Textual descriptions for multimodal inputs entail recurrent refinement of queries to produce relevant output images. Despite efforts to address challenges such as scaling model size and data volume, the cost associated with pre-training and fine-tuning remains substantial. However, pre-trained large multimodal models (LMMs) encounter a modality gap, characterised by a misalignment between textual and visual representations within a common embedding space. Although fine-tuning can potentially mitigate this gap, it is typically expensive and impractical due to the requirement for extensive domain-driven data. To overcome this challenge, we propose a lightweight training-free approach utilising Retrieval-Augmented Generation (RAG) to extend across the modality using a linear mapping, which can be computed efficiently. During inference, this mapping is applied to images embedded by an LMM enabling retrieval of closest textual descriptions from the training set. These textual descriptions, in conjunction with an instruction, cater as an input prompt for the language model to generate new textual descriptions. In addition, we introduce an iterative technique for distilling the mapping by generating synthetic descriptions via the language model facilitating optimisation for standard utilised image description measures. Experimental results on two benchmark multimodal datasets demonstrate significant improvements.
 ]]></content:encoded>
 <pubDate>Thu, 14 Aug 2025 00:00:00 -0400</pubDate>
 </item>

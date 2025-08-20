@@ -4,6 +4,7 @@
 <title>cs.CV updates on arXiv.org</title>
 <link>http://rss.arxiv.org/rss/cs.CV</link>
 
+
 <item>
 <title>MAViS: A Multi-Agent Framework for Long-Sequence Video Storytelling</title>
 <link>https://arxiv.org/abs/2508.08487</link>
@@ -17,9 +18,7 @@ arXiv:2508.08487v2 Announce Type: replace
 Abstract: Despite recent advances, long-sequence video generation frameworks still suffer from significant limitations: poor assistive capability, suboptimal visual quality, and limited expressiveness. To mitigate these limitations, we propose MAViS, an end-to-end multi-agent collaborative framework for long-sequence video storytelling. MAViS orchestrates specialized agents across multiple stages, including script writing, shot designing, character modeling, keyframe generation, video animation, and audio generation. In each stage, agents operate under the 3E Principle -- Explore, Examine, and Enhance -- to ensure the completeness of intermediate outputs. Considering the capability limitations of current generative models, we propose the Script Writing Guidelines to optimize compatibility between scripts and generative tools. Experimental results demonstrate that MAViS achieves state-of-the-art performance in assistive capability, visual quality, and video expressiveness. Its modular framework further enables scalability with diverse generative models and tools. With just a brief user prompt, MAViS is capable of producing high-quality, expressive long-sequence video storytelling, enriching inspirations and creativity for users. To the best of our knowledge, MAViS is the only framework that provides multimodal design output -- videos with narratives and background music.
 ]]></content:encoded>
 <pubDate>Wed, 20 Aug 2025 00:00:00 -0400</pubDate>
-<pubDate>Wed, 20 Aug 2025 00:00:00 -0400</pubDate>
 </item>
-
 <item>
 <title>YOLO11-CR: a Lightweight Convolution-and-Attention Framework for Accurate Fatigue Driving Detection</title>
 <link>https://arxiv.org/abs/2508.13205</link>
@@ -11268,16 +11267,6 @@ Abstract: Styled motion in-betweening is crucial for computer animation and gami
 <content:encoded><![CDATA[
 arXiv:2503.18339v5 Announce Type: replace 
 Abstract: Zero-shot quantization (ZSQ) enables neural network compression without original training data, making it a promising solution for restricted data access scenarios. To compensate for the lack of data, recent ZSQ methods typically rely on synthetic inputs generated from the full-precision model. However, these synthetic inputs often lead to activation distortion, especially under low-bit settings. To mitigate this, existing methods typically employ per-channel scaling, but they still struggle due to the severe computational overhead during the accumulation process. To overcome this critical bottleneck, we propose GranQ, a novel activation quantization framework that introduces an efficient pre-scaling strategy. Unlike conventional channel-wise methods that repeatedly perform scaling operations during accumulation, GranQ applies scaling factors in a pre-scaling step through fully vectorized computation, eliminating runtime scaling overhead. This design enables GranQ to maintain fine-grained quantization accuracy while significantly reducing computational burden, particularly in low-bit quantization settings. Extensive experiments under quantization-aware training (QAT) settings demonstrate that GranQ consistently outperforms state-of-the-art ZSQ methods across CIFAR and ImageNet. In particular, our method achieves up to 5.45% higher accuracy in the 3-bit setting on CIFAR-100 and even surpasses the full-precision baseline on CIFAR-10. Furthermore, GranQ achieves significant speedup in quantization latency over conventional per-channel methods, demonstrating improved efficiency. With these findings, we anticipate that GranQ will inspire future research beyond conventional ZSQ approaches centered on data generation and model fine-tuning. The official code is available at https://github.com/anonymus-orange/GranQ.
-]]></content:encoded>
-<pubDate>Thu, 14 Aug 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Video SimpleQA: Towards Factuality Evaluation in Large Video Language Models</title>
-<link>https://arxiv.org/abs/2503.18923</link>
-<guid>https://arxiv.org/abs/2503.18923</guid>
-<content:encoded><![CDATA[
-arXiv:2503.18923v2 Announce Type: replace 
-Abstract: Recent advancements in Large Video Language Models (LVLMs) have highlighted their potential for multi-modal understanding, yet evaluating their factual grounding in videos remains a critical unsolved challenge. To address this gap, we introduce Video SimpleQA, the first comprehensive benchmark tailored for factuality evaluation in video contexts. Our work differs from existing video benchmarks through the following key features: 1) Knowledge required: demanding integration of external knowledge beyond the video's explicit narrative; 2) Multi-hop fact-seeking question: Each question involves multiple explicit facts and requires strict factual grounding without hypothetical or subjective inferences. We also include per-hop single-fact-based sub-QAs alongside final QAs to enable fine-grained, stepby-step evaluation; 3) Short-form definitive answer: Answers are crafted as unambiguous and definitively correct in a short format with minimal scoring variance; 4) Temporal grounded required: Requiring answers to rely on one or more temporal segments in videos, rather than single frames. We extensively evaluate 33 state-of-the-art LVLMs and summarize key findings as follows: 1) Current LVLMs exhibit notable deficiencies in factual adherence, with the best-performing model o3 merely achieving an F-score of 66.3%; 2) Most LVLMs are overconfident in what they generate, with self-stated confidence exceeding actual accuracy; 3) Retrieval-augmented generation demonstrates consistent improvements at the cost of additional inference time overhead; 4) Multi-hop QA demonstrates substantially degraded performance compared to single-hop sub-QAs, with first-hop object or event recognition emerging as the primary bottleneck. We position Video SimpleQA as the cornerstone benchmark for video factuality assessment, aiming to steer LVLM development toward verifiable grounding in real-world contexts.
 ]]></content:encoded>
 <pubDate>Thu, 14 Aug 2025 00:00:00 -0400</pubDate>
 </item>
