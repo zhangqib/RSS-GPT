@@ -4,22 +4,21 @@
 <title>cs.LG updates on arXiv.org</title>
 <link>http://rss.arxiv.org/rss/cs.LG</link>
 
+
 <item>
 <title>Sharp Generalization for Nonparametric Regression in Interpolation Space by Over-Parameterized Neural Networks Trained with Preconditioned Gradient Descent and Early-Stopping</title>
 <link>https://arxiv.org/abs/2407.11353</link>
 <guid>https://arxiv.org/abs/2407.11353</guid>
 <content:encoded><![CDATA[
-<div> over-parameterized two-layer neural networks, nonparametric regression, Preconditioned Gradient Descent, interpolation space, sharp regression rate <br>
-<br>
+<div> over-parameterized two-layer neural networks, nonparametric regression, Preconditioned Gradient Descent, interpolation space, sharp regression rate <br />
+<br />
 Summary: 
 This study explores nonparametric regression using over-parameterized two-layer neural networks trained with a novel Preconditioned Gradient Descent (PGD) algorithm. The research focuses on scenarios where training features are randomly drawn from the unit sphere in $\mathbb{R}^d$, and the target function belongs to an interpolation space commonly examined in statistical learning theory. By employing PGD with early stopping, the study achieves a sharp regression rate of $\mathcal O(n^{-\frac{2\alpha s'}{2\alpha s'+1}})$ when the target function is in the interpolation space $[\mathcal H_K]^{s'}$ with $s' \ge 3. This rate surpasses the nearly-optimal rate in existing literature and standard kernel regression rates. The analysis involves decomposing the network output into an RKHS function and a residual function, and leveraging local Rademacher complexity theory to control the complexity of the function class. The results indicate that PGD allows neural networks to surpass the linear NTK regime and enhance generalization by introducing a new integral kernel of lower complexity. <div>
 arXiv:2407.11353v3 Announce Type: replace-cross 
 Abstract: We study nonparametric regression using an over-parameterized two-layer neural networks trained with algorithmic guarantees in this paper. We consider the setting where the training features are drawn uniformly from the unit sphere in $\mathbb{R}^d$, and the target function lies in an interpolation space commonly studied in statistical learning theory. We demonstrate that training the neural network with a novel Preconditioned Gradient Descent (PGD) algorithm, equipped with early stopping, achieves a sharp regression rate of $\mathcal O(n^{-\frac{2\alpha s'}{2\alpha s'+1}})$ when the target function is in the interpolation space $[\mathcal H_K]^{s'}$ with $s' \ge 3$. This rate is even sharper than the currently known nearly-optimal rate of $\mathcal O(n^{-\frac{2\alpha s'}{2\alpha s'+1}})\log^2(1/\delta)$~\citep{Li2024-edr-general-domain}, where $n$ is the size of the training data and $\delta \in (0,1)$ is a small probability. This rate is also sharper than the standard kernel regression rate of $\mathcal O(n^{-\frac{2\alpha}{2\alpha+1}})$ obtained under the regular Neural Tangent Kernel (NTK) regime when training the neural network with the vanilla gradient descent (GD), where $2\alpha = d/(d-1)$. Our analysis is based on two key technical contributions. First, we present a principled decomposition of the network output at each PGD step into a function in the reproducing kernel Hilbert space (RKHS) of a newly induced integral kernel, and a residual function with small $L^{\infty}$-norm. Second, leveraging this decomposition, we apply local Rademacher complexity theory to tightly control the complexity of the function class comprising all the neural network functions obtained in the PGD iterates. Our results further suggest that PGD enables the neural network to escape the linear NTK regime and achieve improved generalization by inducing a new integral kernel of lower kernel complexity.
 ]]></content:encoded>
 <pubDate>Thu, 21 Aug 2025 00:00:00 -0400</pubDate>
-<pubDate>Thu, 21 Aug 2025 00:00:00 -0400</pubDate>
 </item>
-
 <item>
 <title>Deep Learning for School Dropout Detection: A Comparison of Tabular and Graph-Based Models for Predicting At-Risk Students</title>
 <link>https://arxiv.org/abs/2508.14057</link>
@@ -11228,16 +11227,6 @@ Abstract: Among the many challenges mothers undergo after childbirth, postpartum
 <content:encoded><![CDATA[
 arXiv:2508.10026v1 Announce Type: cross 
 Abstract: Large language models (LLMs) empowered by chain-of-thought reasoning have achieved impressive accuracy on complex tasks but suffer from excessive inference costs and latency when applied uniformly to all problems. We propose SABER (Switchable and Balanced Training for Efficient LLM Reasoning), a reinforcement learning framework that endows LLMs with user-controllable, token-budgeted reasoning. SABER first profiles each training example's base-model thinking token usage and assigns it to one of the predefined budget tiers. During fine-tuning, the model is guided by system prompts and length-aware rewards to respect its assigned budget. In parallel, we incorporate no-think examples to ensure the model remains reliable even when explicit reasoning is turned off. SABER further supports four discrete inference modes - NoThink, FastThink, CoreThink, and DeepThink, enabling flexible trade-offs between latency and reasoning depth. Extensive evaluations on math reasoning (MATH, GSM8K), code generation (MBPP), and logical reasoning (LiveBench-Reasoning) demonstrate that SABER achieves high accuracy under tight budgets, graceful degradation, and effective cross-scale and cross-domain generalization. In particular, SABER-FastThink cuts reasoning length by 65.4% and yields a 3.6% accuracy gain compared with the base model on the MATH benchmark.
-]]></content:encoded>
-<pubDate>Fri, 15 Aug 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>PREF: Reference-Free Evaluation of Personalised Text Generation in LLMs</title>
-<link>https://arxiv.org/abs/2508.10028</link>
-<guid>https://arxiv.org/abs/2508.10028</guid>
-<content:encoded><![CDATA[
-arXiv:2508.10028v1 Announce Type: cross 
-Abstract: Personalised text generation is essential for user-centric information systems, yet most evaluation methods overlook the individuality of users. We introduce \textbf{PREF}, a \textbf{P}ersonalised \textbf{R}eference-free \textbf{E}valuation \textbf{F}ramework that jointly measures general output quality and user-specific alignment without requiring gold personalised references. PREF operates in a three-step pipeline: (1) a coverage stage uses a large language model (LLM) to generate a comprehensive, query-specific guideline covering universal criteria such as factuality, coherence, and completeness; (2) a preference stage re-ranks and selectively augments these factors using the target user's profile, stated or inferred preferences, and context, producing a personalised evaluation rubric; and (3) a scoring stage applies an LLM judge to rate candidate answers against this rubric, ensuring baseline adequacy while capturing subjective priorities. This separation of coverage from preference improves robustness, transparency, and reusability, and allows smaller models to approximate the personalised quality of larger ones. Experiments on the PrefEval benchmark, including implicit preference-following tasks, show that PREF achieves higher accuracy, better calibration, and closer alignment with human judgments than strong baselines. By enabling scalable, interpretable, and user-aligned evaluation, PREF lays the groundwork for more reliable assessment and development of personalised language generation systems.
 ]]></content:encoded>
 <pubDate>Fri, 15 Aug 2025 00:00:00 -0400</pubDate>
 </item>
