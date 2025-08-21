@@ -4,6 +4,84 @@
 <title>cs.SI updates on arXiv.org</title>
 <link>http://rss.arxiv.org/rss/cs.SI</link>
 
+<item>
+<title>HDBMS: A Context-Aware Hybrid Graph Traversal Algorithm for Efficient Information Discovery in Social Networks</title>
+<link>https://arxiv.org/abs/2508.14092</link>
+<guid>https://arxiv.org/abs/2508.14092</guid>
+<content:encoded><![CDATA[
+<div> Algorithm, Graph traversal, Hybrid, Probabilistic, Information retrieval
+
+Summary: 
+The paper introduces a new graph-searching algorithm, the Hybrid Depth-Breadth Meaningful Search (HDBMS), that combines Depth-First Search and Breadth-First Search techniques with probabilistic node transitions. HDBMS dynamically adapts its exploration strategy based on the likelihood of nodes containing desired information, leading to contextually relevant search paths. Experimental results on directed graphs show that HDBMS maintains computational efficiency while outperforming traditional algorithms in identifying meaningful paths. By integrating probabilistic decision-making, HDBMS creates an adaptive traversal order that balances exploration across depth and breadth, making it effective for applications like information retrieval, social network analysis, and recommendation systems. The algorithm's robustness in scenarios with unpredictable valuable connections positions it as a powerful alternative to conventional graph-searching methods. 
+
+<br><br>Summary: <div>
+arXiv:2508.14092v1 Announce Type: new 
+Abstract: Graph-searching algorithms play a crucial role in various computational domains, enabling efficient exploration and pathfinding in structured data. Traditional approaches, such as Depth-First Search (DFS) and Breadth-First Search (BFS), follow rigid traversal patterns -- DFS explores branches exhaustively, while BFS expands level by level. In this paper, we propose the Hybrid Depth-Breadth Meaningful Search (HDBMS) algorithm, a novel graph traversal method that dynamically adapts its exploration strategy based on probabilistic node transitions. Unlike conventional methods, HDBMS prioritizes traversal paths by estimating the likelihood that a node contains the desired information, ensuring a more contextually relevant search. Through extensive experimentation on diverse directed graphs with varying structural properties, we demonstrate that HDBMS not only maintains competitive computational efficiency but also outperforms traditional algorithms in identifying meaningful paths. By integrating probabilistic decision-making, HDBMS constructs an adaptive and structured traversal order that balances exploration across depth and breadth, making it particularly effective in applications such as information retrieval, social network analysis, and recommendation systems. Our results highlight the robustness of HDBMS in scenarios where the most valuable connections emerge unpredictably, positioning it as a powerful alternative to traditional graph-searching techniques.
+]]></content:encoded>
+<pubDate>Thu, 21 Aug 2025 00:00:00 -0400</pubDate>
+<pubDate>Thu, 21 Aug 2025 00:00:00 -0400</pubDate>
+</item>
+<item>
+<title>Non-Dissipative Graph Propagation for Non-Local Community Detection</title>
+<link>https://arxiv.org/abs/2508.14097</link>
+<guid>https://arxiv.org/abs/2508.14097</guid>
+<content:encoded><![CDATA[
+<div> Community detection, graphs, heterophilic, graph neural networks, unsupervised<br>
+Summary:<br>
+Community detection in heterophilic graphs is challenging due to distantly connected similar nodes. Graph neural networks struggle with this due to local message passing. The Unsupervised Antisymmetric Graph Neural Network (uAGNN) tackles this by propagating long-range information effectively using non-dissipative dynamical systems. uAGNN utilizes antisymmetric weight matrices to capture both local and global structures, outperforming traditional methods in high and medium heterophilic settings. Extensive experiments show uAGNN's potential as a powerful tool for unsupervised community detection in diverse graph environments.<br> <div>
+arXiv:2508.14097v1 Announce Type: new 
+Abstract: Community detection in graphs aims to cluster nodes into meaningful groups, a task particularly challenging in heterophilic graphs, where nodes sharing similarities and membership to the same community are typically distantly connected. This is particularly evident when this task is tackled by graph neural networks, since they rely on an inherently local message passing scheme to learn the node representations that serve to cluster nodes into communities. In this work, we argue that the ability to propagate long-range information during message passing is key to effectively perform community detection in heterophilic graphs. To this end, we introduce the Unsupervised Antisymmetric Graph Neural Network (uAGNN), a novel unsupervised community detection approach leveraging non-dissipative dynamical systems to ensure stability and to propagate long-range information effectively. By employing antisymmetric weight matrices, uAGNN captures both local and global graph structures, overcoming the limitations posed by heterophilic scenarios. Extensive experiments across ten datasets demonstrate uAGNN's superior performance in high and medium heterophilic settings, where traditional methods fail to exploit long-range dependencies. These results highlight uAGNN's potential as a powerful tool for unsupervised community detection in diverse graph environments.
+]]></content:encoded>
+<pubDate>Thu, 21 Aug 2025 00:00:00 -0400</pubDate>
+<pubDate>Thu, 21 Aug 2025 00:00:00 -0400</pubDate>
+</item>
+<item>
+<title>CoBAD: Modeling Collective Behaviors for Human Mobility Anomaly Detection</title>
+<link>https://arxiv.org/abs/2508.14088</link>
+<guid>https://arxiv.org/abs/2508.14088</guid>
+<content:encoded><![CDATA[
+<div> Keywords: anomaly detection, human mobility, collective behaviors, spatiotemporal dependencies, attention mechanism
+
+Summary:<br>
+Anomalies in human mobility play a crucial role in applications like public safety and urban planning. This study introduces the concept of collective anomaly detection, which focuses on irregularities in collective mobility behaviors rather than individual patterns. A novel model called CoBAD is proposed to address this challenge by leveraging Collective Event Sequences and a two-stage attention mechanism to capture spatiotemporal dependencies among individuals. CoBAD is trained on large-scale collective behavior data and can detect unexpected co-occurrence anomalies and absence anomalies, which have not been extensively explored in previous work. Experimental results on large mobility datasets show that CoBAD outperforms existing baselines by a significant margin, demonstrating improvements in AUCROC and AUCPR. The source code for CoBAD is publicly available for further research and development.<br> 
+
+Summary: <div>
+arXiv:2508.14088v1 Announce Type: cross 
+Abstract: Detecting anomalies in human mobility is essential for applications such as public safety and urban planning. While traditional anomaly detection methods primarily focus on individual movement patterns (e.g., a child should stay at home at night), collective anomaly detection aims to identify irregularities in collective mobility behaviors across individuals (e.g., a child is at home alone while the parents are elsewhere) and remains an underexplored challenge. Unlike individual anomalies, collective anomalies require modeling spatiotemporal dependencies between individuals, introducing additional complexity. To address this gap, we propose CoBAD, a novel model designed to capture Collective Behaviors for human mobility Anomaly Detection. We first formulate the problem as unsupervised learning over Collective Event Sequences (CES) with a co-occurrence event graph, where CES represents the event sequences of related individuals. CoBAD then employs a two-stage attention mechanism to model both the individual mobility patterns and the interactions across multiple individuals. Pre-trained on large-scale collective behavior data through masked event and link reconstruction tasks, CoBAD is able to detect two types of collective anomalies: unexpected co-occurrence anomalies and absence anomalies, the latter of which has been largely overlooked in prior work. Extensive experiments on large-scale mobility datasets demonstrate that CoBAD significantly outperforms existing anomaly detection baselines, achieving an improvement of 13%-18% in AUCROC and 19%-70% in AUCPR. All source code is available at https://github.com/wenhaomin/CoBAD.
+]]></content:encoded>
+<pubDate>Thu, 21 Aug 2025 00:00:00 -0400</pubDate>
+<pubDate>Thu, 21 Aug 2025 00:00:00 -0400</pubDate>
+</item>
+<item>
+<title>The Small-World Beneath LEO Satellite Coverage: Ground Hubs in Multi-Shell Constellations</title>
+<link>https://arxiv.org/abs/2508.14335</link>
+<guid>https://arxiv.org/abs/2508.14335</guid>
+<content:encoded><![CDATA[
+<div> small-world characteristics, GS relays, feeder links, betweenness analysis, spatial coverage
+
+Summary:<br><br>This paper examines a six-shell mega-constellation with over 10,000 satellites and 198 gateway stations, focusing on routing efficiency and inter-shell communication. The analysis reveals that the constellation displays strong small-world properties, facilitating efficient routing despite its large size. Gateway stations play a crucial role in enhancing connectivity between shells by bridging disconnected components. Feeder links help reduce average path length, improving long-distance communication feasibility. Further, betweenness analysis highlights load imbalances among gateway stations, emphasizing the need for traffic-aware management strategies. The mega-constellation demonstrates excellent spatial coverage and resilience, maintaining connectivity and low routing costs even in the event of gateway station failures. These findings shed light on the design principles of existing mega-constellations and offer valuable insights for the future development of satellite network infrastructures.<br> <div>
+arXiv:2508.14335v1 Announce Type: cross 
+Abstract: In recent years, the emergence of large-scale Low-Earth-Orbit (LEO) satellite constellations has introduced unprecedented opportunities for global connectivity. However, routing efficiency and inter-shell communication remain key challenges in multi-shell architectures. This paper investigates the structural properties and network dynamics of a representative six-shell mega-constellation composed of 10,956 satellites and 198 gateway stations (GSs). Leveraging tools from complex network analysis, we identify several critical findings: (1) the constellation exhibits strong small-world characteristics, enabling efficient routing despite large network diameters; (2) GS relays play a pivotal role in enhancing inter-shell connectivity by bridging otherwise disconnected components; (3) feeder links significantly reduce average path length, making long-haul communication more feasible; (4) betweenness analysis reveals load imbalances among GSs, indicating the need for traffic-aware management strategies; (5) the architecture offers excellent spatial coverage and resilience, maintaining connectivity and low routing costs even under GS failures. These insights not only explain the design rationale behind current mega-constellations like SpaceX Starlink, but also provide valuable guidance for the evolution of future satellite network infrastructures.
+]]></content:encoded>
+<pubDate>Thu, 21 Aug 2025 00:00:00 -0400</pubDate>
+<pubDate>Thu, 21 Aug 2025 00:00:00 -0400</pubDate>
+</item>
+<item>
+<title>Messengers: Breaking Echo Chambers in Collective Opinion Dynamics with Homophily</title>
+<link>https://arxiv.org/abs/2406.06440</link>
+<guid>https://arxiv.org/abs/2406.06440</guid>
+<content:encoded><![CDATA[
+<div> consensus, collective estimation, social interactions, echo chambers, agent-based simulations
+<br>
+Summary:
+Collective estimation in decision-making involves agents reaching consensus on a continuous quantity through social interactions. However, achieving precise consensus is challenging due to the co-evolution of opinions and the interaction network. Homophilic networks may facilitate estimation in well-connected systems, but disproportionate interactions with like-minded neighbors can lead to the emergence of echo chambers, hindering consensus. Limited exposure to differing opinions and seeking reaffirming information can trap agents in these echo chambers. To address this, agents can adopt a stubborn state (Messengers) to physically transport their opinions and connect clusters. A Dichotomous Markov Process is proposed to govern probabilistic switching between behavioral states, promoting diverse collective behaviors ranging from task specialization to generalization. Messengers help the collective escape local minima, break echo chambers, and ultimately promote consensus. 
+<br> <div>
+arXiv:2406.06440v3 Announce Type: replace 
+Abstract: Collective estimation is a variant of collective decision-making where agents reach consensus on a continuous quantity through social interactions. Achieving precise consensus is complex due to the co-evolution of opinions and the interaction network. While homophilic networks may facilitate estimation in well-connected systems, disproportionate interactions with like-minded neighbors lead to the emergence of echo chambers and prevent consensus. Our agent-based simulations confirm that, besides limited exposure to attitude-challenging opinions, seeking reaffirming information entrap agents in echo chambers. To overcome this, agents can adopt a stubborn state (Messengers) that carry data and connect clusters by physically transporting their opinion. We propose a generic approach based on a Dichotomous Markov Process, which governs probabilistic switching between behavioral states and generates diverse collective behaviors. We study a continuum between task specialization (no switching), to generalization (slow or rapid switching). Messengers help the collective escape local minima, break echo chambers, and promote consensus.
+]]></content:encoded>
+<pubDate>Thu, 21 Aug 2025 00:00:00 -0400</pubDate>
+<pubDate>Thu, 21 Aug 2025 00:00:00 -0400</pubDate>
+</item>
 
 <item>
 <title>Time Profile of U.S. Neighborhoods: Datasets of Time Use at Social Infrastructure Places</title>
