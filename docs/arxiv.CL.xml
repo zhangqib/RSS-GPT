@@ -4,22 +4,21 @@
 <title>cs.CL updates on arXiv.org</title>
 <link>http://rss.arxiv.org/rss/cs.CL</link>
 
+
 <item>
 <title>ReasonRank: Empowering Passage Ranking with Strong Reasoning Ability</title>
 <link>https://arxiv.org/abs/2508.07050</link>
 <guid>https://arxiv.org/abs/2508.07050</guid>
 <content:encoded><![CDATA[
-<div> framework, DeepSeek-R1, self-consistency data filtering, supervised fine-tuning, reinforcement learning <br>
-<br>
+<div> framework, DeepSeek-R1, self-consistency data filtering, supervised fine-tuning, reinforcement learning <br />
+<br />
 Summary:
 The paper introduces a framework for synthesizing training data for reasoning-intensive listwise ranking models, using diverse domains and DeepSeek-R1 for label generation. A self-consistency data filtering mechanism ensures data quality. A two-stage post-training approach is proposed, involving supervised fine-tuning for reasoning pattern learning and reinforcement learning for ranking enhancement. A multi-view ranking reward is designed during the reinforcement learning stage for improved listwise ranking. Extensive experiments show that the proposed reasoning-intensive reranker, ReasonRank, outperforms existing baselines and achieves state-of-the-art performance on the BRIGHT leaderboard. The model also exhibits lower latency than the Rank1 reranker. The codes are available on GitHub. <div>
 arXiv:2508.07050v2 Announce Type: replace-cross 
 Abstract: Large Language Model (LLM) based listwise ranking has shown superior performance in many passage ranking tasks. With the development of Large Reasoning Models, many studies have demonstrated that step-by-step reasoning during test-time helps improve listwise ranking performance. However, due to the scarcity of reasoning-intensive training data, existing rerankers perform poorly in many complex ranking scenarios and the ranking ability of reasoning-intensive rerankers remains largely underdeveloped. In this paper, we first propose an automated reasoning-intensive training data synthesis framework, which sources training queries and passages from diverse domains and applies DeepSeek-R1 to generate high-quality training labels. A self-consistency data filtering mechanism is designed to ensure the data quality. To empower the listwise reranker with strong reasoning ability, we further propose a two-stage post-training approach, which includes a cold-start supervised fine-tuning (SFT) stage for reasoning pattern learning and a reinforcement learning (RL) stage for further ranking ability enhancement. During the RL stage, based on the nature of listwise ranking, we design a multi-view ranking reward, which is more effective than a ranking metric-based reward. Extensive experiments demonstrate that our trained reasoning-intensive reranker \textbf{ReasonRank} outperforms existing baselines significantly and also achieves much lower latency than pointwise reranker Rank1. \textbf{Through further experiments, our ReasonRank has achieved state-of-the-art (SOTA) performance 40.6 on the BRIGHT leaderboard\footnote{https://brightbenchmark.github.io/}.} Our codes are available at https://github.com/8421BCD/ReasonRank.
 ]]></content:encoded>
 <pubDate>Mon, 25 Aug 2025 00:00:00 -0400</pubDate>
-<pubDate>Mon, 25 Aug 2025 00:00:00 -0400</pubDate>
 </item>
-
 <item>
 <title>KG-o1: Enhancing Multi-hop Question Answering in Large Language Models via Knowledge Graph Integration</title>
 <link>https://arxiv.org/abs/2508.15790</link>
@@ -12354,16 +12353,6 @@ Abstract: Open Semantic Mapping (OSM) is a key technology in robotic perception,
 <content:encoded><![CDATA[
 arXiv:2504.06949v2 Announce Type: replace-cross 
 Abstract: The recently proposed Forgetting Transformer (FoX) incorporates a forget gate into softmax attention and has shown consistently better or on-par performance compared to the standard RoPE-based Transformer. Notably, many attention heads in FoX tend to forget quickly, causing their output at each timestep to rely primarily on local context. Based on this observation, we propose Adaptive Computation Pruning (ACP) for FoX, a method that dynamically prunes computations involving input-output dependencies that are strongly decayed by the forget gate. In particular, our method performs provably safe pruning via a dynamically set pruning threshold that guarantees the pruned attention weights are negligible. We apply ACP to language model pretraining with FoX and show it consistently reduces the number of FLOPs and memory accesses in softmax attention by around 70% across different model sizes and context lengths, resulting in a roughly 50% to 70% reduction in attention runtime (or a 2-3$\times$ speedup) and a roughly 10% to 40% increase in end-to-end training throughput. Furthermore, longer context lengths yield greater computational savings. All these speed improvements are achieved without any performance degradation. Our code is available at https://github.com/zhixuan-lin/forgetting-transformer.
-]]></content:encoded>
-<pubDate>Wed, 13 Aug 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Mitigating Hallucination in Large Vision-Language Models via Adaptive Attention Calibration</title>
-<link>https://arxiv.org/abs/2505.21472</link>
-<guid>https://arxiv.org/abs/2505.21472</guid>
-<content:encoded><![CDATA[
-arXiv:2505.21472v2 Announce Type: replace-cross 
-Abstract: Large vision-language models (LVLMs) achieve impressive performance on multimodal tasks but often suffer from hallucination, and confidently describe objects or attributes not present in the image. Current training-free interventions struggle to maintain accuracy in open-ended and long-form generation scenarios. We introduce the Confidence-Aware Attention Calibration (CAAC) framework to address this challenge by targeting two key biases: spatial perception bias, which distributes attention disproportionately across image tokens, and modality bias, which shifts focus from visual to textual inputs over time. CAAC employs a two-step approach: Visual-Token Calibration (VTC) to balance attention across visual tokens, and Adaptive Attention Re-Scaling (AAR) to reinforce visual grounding guided by the model's confidence. This confidence-driven adjustment ensures consistent visual alignment during generation. Experiments on CHAIR, AMBER, and POPE benchmarks demonstrate that CAAC outperforms baselines, particularly in long-form generations, effectively reducing hallucination.
 ]]></content:encoded>
 <pubDate>Wed, 13 Aug 2025 00:00:00 -0400</pubDate>
 </item>

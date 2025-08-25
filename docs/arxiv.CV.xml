@@ -4,6 +4,7 @@
 <title>cs.CV updates on arXiv.org</title>
 <link>http://rss.arxiv.org/rss/cs.CV</link>
 
+
 <item>
 <title>Unlocking Robust Semantic Segmentation Performance via Label-only Elastic Deformations against Implicit Label Noise</title>
 <link>https://arxiv.org/abs/2508.10383</link>
@@ -12,14 +13,12 @@
 <div> Keywords: Image segmentation, Label noise, Data augmentation, NSegment+, Semantic segmentation
 
 Summary:
-NSegment+ is a novel augmentation framework introduced in this study to address subtle label imperfections in image segmentation. The method decouples image and label transformations to enhance model performance. By applying controlled elastic deformations only to segmentation labels, NSegment+ encourages models to learn robust representations of object structures despite minor label inconsistencies. Extensive experiments on various datasets show consistent improvements in mean Intersection over Union (mIoU) scores. NSegment+ achieves mIoU gains of up to +3.39 on PASCAL VOC, highlighting the importance of addressing implicit label noise. When combined with other training techniques such as CutMix and Label Smoothing, the performance gains can be further amplified. This study underscores the significance of addressing realistic noise in image segmentation tasks to improve model generalization capacity and overall performance.<br><br>Summary: <div>
+NSegment+ is a novel augmentation framework introduced in this study to address subtle label imperfections in image segmentation. The method decouples image and label transformations to enhance model performance. By applying controlled elastic deformations only to segmentation labels, NSegment+ encourages models to learn robust representations of object structures despite minor label inconsistencies. Extensive experiments on various datasets show consistent improvements in mean Intersection over Union (mIoU) scores. NSegment+ achieves mIoU gains of up to +3.39 on PASCAL VOC, highlighting the importance of addressing implicit label noise. When combined with other training techniques such as CutMix and Label Smoothing, the performance gains can be further amplified. This study underscores the significance of addressing realistic noise in image segmentation tasks to improve model generalization capacity and overall performance.<br /><br />Summary: <div>
 arXiv:2508.10383v2 Announce Type: replace 
 Abstract: While previous studies on image segmentation focus on handling severe (or explicit) label noise, real-world datasets also exhibit subtle (or implicit) label imperfections. These arise from inherent challenges, such as ambiguous object boundaries and annotator variability. Although not explicitly present, such mild and latent noise can still impair model performance. Typical data augmentation methods, which apply identical transformations to the image and its label, risk amplifying these subtle imperfections and limiting the model's generalization capacity. In this paper, we introduce NSegment+, a novel augmentation framework that decouples image and label transformations to address such realistic noise for semantic segmentation. By introducing controlled elastic deformations only to segmentation labels while preserving the original images, our method encourages models to focus on learning robust representations of object structures despite minor label inconsistencies. Extensive experiments demonstrate that NSegment+ consistently improves performance, achieving mIoU gains of up to +2.29, +2.38, +1.75, and +3.39 in average on Vaihingen, LoveDA, Cityscapes, and PASCAL VOC, respectively-even without bells and whistles, highlighting the importance of addressing implicit label noise. These gains can be further amplified when combined with other training tricks, including CutMix and Label Smoothing.
 ]]></content:encoded>
 <pubDate>Mon, 25 Aug 2025 00:00:00 -0400</pubDate>
-<pubDate>Mon, 25 Aug 2025 00:00:00 -0400</pubDate>
 </item>
-
 <item>
 <title>Text-Driven 3D Hand Motion Generation from Sign Language Data</title>
 <link>https://arxiv.org/abs/2508.15902</link>
@@ -11524,16 +11523,6 @@ Abstract: Gaussian splatting has gained attention for its efficient representati
 <content:encoded><![CDATA[
 arXiv:2412.20002v3 Announce Type: replace 
 Abstract: Transformer-based models have improved visual tracking, but most still cannot run in real time on resource-limited devices, especially for unmanned aerial vehicle (UAV) tracking. To achieve a better balance between performance and efficiency, we propose AVTrack, an adaptive computation tracking framework that adaptively activates transformer blocks through an Activation Module (AM), which dynamically optimizes the ViT architecture by selectively engaging relevant components. To address extreme viewpoint variations, we propose to learn view-invariant representations via mutual information (MI) maximization. In addition, we propose AVTrack-MD, an enhanced tracker incorporating a novel MI maximization-based multi-teacher knowledge distillation framework. Leveraging multiple off-the-shelf AVTrack models as teachers, we maximize the MI between their aggregated softened features and the corresponding softened feature of the student model, improving the generalization and performance of the student, especially under noisy conditions. Extensive experiments show that AVTrack-MD achieves performance comparable to AVTrack's performance while reducing model complexity and boosting average tracking speed by over 17\%. Codes is available at: https://github.com/wuyou3474/AVTrack.
-]]></content:encoded>
-<pubDate>Mon, 18 Aug 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Towards Consumer-Grade Cybersickness Prediction: Multi-Model Alignment for Real-Time Vision-Only Inference</title>
-<link>https://arxiv.org/abs/2501.01212</link>
-<guid>https://arxiv.org/abs/2501.01212</guid>
-<content:encoded><![CDATA[
-arXiv:2501.01212v2 Announce Type: replace 
-Abstract: Cybersickness remains a major obstacle to the widespread adoption of immersive virtual reality (VR), particularly in consumer-grade environments. While prior methods rely on invasive signals such as electroencephalography (EEG) for high predictive accuracy, these approaches require specialized hardware and are impractical for real-world applications. In this work, we propose a scalable, deployable framework for personalized cybersickness prediction leveraging only non-invasive signals readily available from commercial VR headsets, including head motion, eye tracking, and physiological responses. Our model employs a modality-specific graph neural network enhanced with a Difference Attention Module to extract temporal-spatial embeddings capturing dynamic changes across modalities. A cross-modal alignment module jointly trains the video encoder to learn personalized traits by aligning video features with sensor-derived representations. Consequently, the model accurately predicts individual cybersickness using only video input during inference. Experimental results show our model achieves 88.4\% accuracy, closely matching EEG-based approaches (89.16\%), while reducing deployment complexity. With an average inference latency of 90ms, our framework supports real-time applications, ideal for integration into consumer-grade VR platforms without compromising personalization or performance. The code will be relesed at https://github.com/U235-Aurora/PTGNN.
 ]]></content:encoded>
 <pubDate>Mon, 18 Aug 2025 00:00:00 -0400</pubDate>
 </item>
