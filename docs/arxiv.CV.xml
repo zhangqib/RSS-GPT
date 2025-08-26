@@ -4,6 +4,7 @@
 <title>cs.CV updates on arXiv.org</title>
 <link>http://rss.arxiv.org/rss/cs.CV</link>
 
+
 <item>
 <title>Odo: Depth-Guided Diffusion for Identity-Preserving Body Reshaping</title>
 <link>https://arxiv.org/abs/2508.13065</link>
@@ -18,11 +19,10 @@ Summary:
 - The lack of large-scale datasets has hindered progress in human shape editing, but this dataset aims to address this limitation.
 - Shape editing techniques have lagged behind pose editing methods, but Odo shows promising results in enabling intuitive and realistic body transformations. 
 
-<br><br>Summary: <div>
+<br /><br />Summary: <div>
 arXiv:2508.13065v2 Announce Type: replace 
 Abstract: Human shape editing enables controllable transformation of a person's body shape, such as thin, muscular, or overweight, while preserving pose, identity, clothing, and background. Unlike human pose editing, which has advanced rapidly, shape editing remains relatively underexplored. Current approaches typically rely on 3D morphable models or image warping, often introducing unrealistic body proportions, texture distortions, and background inconsistencies due to alignment errors and deformations. A key limitation is the lack of large-scale, publicly available datasets for training and evaluating body shape manipulation methods. In this work, we introduce the first large-scale dataset of 18,573 images across 1523 subjects, specifically designed for controlled human shape editing. It features diverse variations in body shape, including fat, muscular and thin, captured under consistent identity, clothing, and background conditions. Using this dataset, we propose Odo, an end-to-end diffusion-based method that enables realistic and intuitive body reshaping guided by simple semantic attributes. Our approach combines a frozen UNet that preserves fine-grained appearance and background details from the input image with a ControlNet that guides shape transformation using target SMPL depth maps. Extensive experiments demonstrate that our method outperforms prior approaches, achieving per-vertex reconstruction errors as low as 7.5mm, significantly lower than the 13.6mm observed in baseline methods, while producing realistic results that accurately match the desired target shapes.
 ]]></content:encoded>
-<pubDate>Tue, 26 Aug 2025 00:00:00 -0400</pubDate>
 <pubDate>Tue, 26 Aug 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -33,11 +33,10 @@ Abstract: Human shape editing enables controllable transformation of a person's 
 <div> Keywords: real robots, training-free retrieval, image action trajectories, hierarchical search, real-time control
 
 Summary:
-RT-Cache proposes a novel approach for training-free retrieval-as-control in real robots, enabling them to repeat behaviors in new environments with minimal new data. The system caches diverse image action trajectories in a unified vector memory and retrieves and replays multi-step snippets at test time, eliminating the need for per-step model calls. A hierarchical search ensures quick lookups at a large scale, shifting the computational cost to storage and enabling real-time control on standard GPUs. Across various real-robot tasks and datasets, RT-Cache outperforms strong retrieval baselines with approximately double the success rate and 30% faster completion time. An anchoring study demonstrates immediate adaptation to more complex tasks without requiring fine-tuning. RT-Cache facilitates few-shot deployment and serves as a foundation for incorporating multimodal keys and integrating with high-level policies. This approach transforms experience into an append-only memory, offering scalability and simplicity in real-world robotic applications.<br><br>Summary: <div>
+RT-Cache proposes a novel approach for training-free retrieval-as-control in real robots, enabling them to repeat behaviors in new environments with minimal new data. The system caches diverse image action trajectories in a unified vector memory and retrieves and replays multi-step snippets at test time, eliminating the need for per-step model calls. A hierarchical search ensures quick lookups at a large scale, shifting the computational cost to storage and enabling real-time control on standard GPUs. Across various real-robot tasks and datasets, RT-Cache outperforms strong retrieval baselines with approximately double the success rate and 30% faster completion time. An anchoring study demonstrates immediate adaptation to more complex tasks without requiring fine-tuning. RT-Cache facilitates few-shot deployment and serves as a foundation for incorporating multimodal keys and integrating with high-level policies. This approach transforms experience into an append-only memory, offering scalability and simplicity in real-world robotic applications.<br /><br />Summary: <div>
 arXiv:2505.09040v3 Announce Type: replace-cross 
 Abstract: Real robots are expected to repeat the same behavior in new environments with very little new data, yet modern controllers either incur heavy per-step inference or require deployment-time fine-tuning. We propose RT-Cache, a training-free retrieval-as-control pipeline that caches diverse image action trajectories in a unified vector memory and, at test time, embeds the current frame to retrieve and replay multi-step snippets, replacing per-step model calls. A hierarchical search keeps lookups sub-second at million scale, shifting cost from compute to storage and enabling real-time control on modest GPUs. Across real-robot tasks and large open logs, RT-Cache achieves higher success and lower completion time than strong retrieval baselines (approximately x2 higher success and ~30% faster in our settings), and a single-episode anchoring study shows immediate adaptation to a more complex, contact-rich task without fine-tuning. RT-Cache turns experience into an append-only memory, offering a simple, scalable path to few-shot deployment today and a foundation for multimodal keys and optional integration with high-level policies. Project page: https://rt-cache.github.io/.
 ]]></content:encoded>
-<pubDate>Tue, 26 Aug 2025 00:00:00 -0400</pubDate>
 <pubDate>Tue, 26 Aug 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -45,13 +44,12 @@ Abstract: Real robots are expected to repeat the same behavior in new environmen
 <link>https://arxiv.org/abs/2508.12445</link>
 <guid>https://arxiv.org/abs/2508.12445</guid>
 <content:encoded><![CDATA[
-<div> Fractional Fourier Transform, Cross-Image Feature Matching, Deformable Image Registration, Transformer-Based Architecture, Medical Image Alignment <br>
-Summary: <br>
+<div> Fractional Fourier Transform, Cross-Image Feature Matching, Deformable Image Registration, Transformer-Based Architecture, Medical Image Alignment <br />
+Summary: <br />
 The article introduces FractMorph, a novel 3D dual-parallel transformer-based architecture for deformable image registration in medical imaging. By utilizing Fractional Cross-Attention blocks with multi-domain fractional Fourier transform branches, FractMorph can capture both local and global deformations simultaneously. This approach significantly improves feature matching between fixed and moving image streams, leading to state-of-the-art performance on the ACDC cardiac MRI dataset. FractMorph-Light, a lighter variant of the model, maintains high accuracy while reducing model complexity. The method shows promising results on a cerebral atlas-to-patient dataset, demonstrating its generalizability. The study highlights the efficiency and robustness of utilizing multi-domain spectral-spatial attention in transformers for modeling complex non-rigid deformations in medical images, eliminating the need for specialized tuning or hierarchical multi-scale networks. <div>
 arXiv:2508.12445v2 Announce Type: replace-cross 
 Abstract: Deformable image registration (DIR) is a crucial and challenging technique for aligning anatomical structures in medical images and is widely applied in diverse clinical applications. However, existing approaches often struggle to capture fine-grained local deformations and large-scale global deformations simultaneously within a unified framework. We present FractMorph, a novel 3D dual-parallel transformer-based architecture that enhances cross-image feature matching through multi-domain fractional Fourier transform (FrFT) branches. Each Fractional Cross-Attention (FCA) block applies parallel FrFTs at fractional angles of $0^\circ$, $45^\circ$, $90^\circ$, along with a log-magnitude branch, to effectively extract local, semi-global, and global features at the same time. These features are fused via cross-attention between the fixed and moving image streams. A lightweight U-Net style network then predicts a dense deformation field from the transformer-enriched features. On the intra-patient ACDC cardiac MRI dataset, FractMorph achieves state-of-the-art performance with an overall Dice Similarity Coefficient (DSC) of $86.45\%$, an average per-structure DSC of $75.15\%$, and a 95th-percentile Hausdorff distance (HD95) of $1.54~\mathrm{mm}$ on our data split. FractMorph-Light, a lightweight variant of our model with only 29.6M parameters, preserves high accuracy while halving model complexity. Furthermore, we demonstrate the generality of our approach with solid performance on a cerebral atlas-to-patient dataset. Our results demonstrate that multi-domain spectral-spatial attention in transformers can robustly and efficiently model complex non-rigid deformations in medical images using a single end-to-end network, without the need for scenario-specific tuning or hierarchical multi-scale networks. The source code is available at https://github.com/shayankebriti/FractMorph.
 ]]></content:encoded>
-<pubDate>Tue, 26 Aug 2025 00:00:00 -0400</pubDate>
 <pubDate>Tue, 26 Aug 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -62,14 +60,12 @@ Abstract: Deformable image registration (DIR) is a crucial and challenging techn
 <div> benchmark, MLLMs, hallucinations, egocentric videos, EgoIllusion  
 Summary:  
 EgoIllusion is a new benchmark created to evaluate hallucinations in multimodal large language models (MLLMs) specifically in egocentric videos. The benchmark consists of 1,400 videos with 8,000 human-annotated questions aimed at triggering hallucinations in both visual and auditory cues. Ten MLLMs were evaluated on EgoIllusion, with even powerful models like GPT-4o and Gemini achieving only 59% accuracy. This highlights the significant challenges MLLMs face in accurately interpreting egocentric video content without hallucinations. The benchmark aims to spur the development of more effective egocentric MLLMs with reduced hallucination rates. EgoIllusion will be open-sourced for reproducibility and serves as a foundation for future research in assessing the performance of MLLMs in complex multimodal tasks.  
-<br><br>Summary: <div>
+<br /><br />Summary: <div>
 arXiv:2508.12687v2 Announce Type: replace-cross 
 Abstract: Multimodal Large Language Models (MLLMs) have demonstrated remarkable performance in complex multimodal tasks. While MLLMs excel at visual perception and reasoning in third-person and egocentric videos, they are prone to hallucinations, generating coherent yet inaccurate responses. We present EgoIllusion, a first benchmark to evaluate MLLM hallucinations in egocentric videos. EgoIllusion comprises 1,400 videos paired with 8,000 human-annotated open and closed-ended questions designed to trigger hallucinations in both visual and auditory cues in egocentric videos. Evaluations across ten MLLMs reveal significant challenges, including powerful models like GPT-4o and Gemini, achieving only 59% accuracy. EgoIllusion lays the foundation in developing robust benchmarks to evaluate the effectiveness of MLLMs and spurs the development of better egocentric MLLMs with reduced hallucination rates. Our benchmark will be open-sourced for reproducibility.
 ]]></content:encoded>
 <pubDate>Tue, 26 Aug 2025 00:00:00 -0400</pubDate>
-<pubDate>Tue, 26 Aug 2025 00:00:00 -0400</pubDate>
 </item>
-
 <item>
 <title>Towards High-Precision Depth Sensing via Monocular-Aided iToF and RGB Integration</title>
 <link>https://arxiv.org/abs/2508.16579</link>
@@ -11507,46 +11503,6 @@ Abstract: Natural language explanations in visual question answering (VQA-NLE) a
 <content:encoded><![CDATA[
 arXiv:2508.12455v1 Announce Type: new 
 Abstract: Chest X-ray imaging is crucial for diagnosing pulmonary and cardiac diseases, yet its interpretation demands extensive clinical experience and suffers from inter-observer variability. While deep learning models offer high diagnostic accuracy, their black-box nature hinders clinical adoption in high-stakes medical settings. To address this, we propose X-Ray-CoT (Chest X-Ray Chain-of-Thought), a novel framework leveraging Vision-Language Large Models (LVLMs) for intelligent chest X-ray diagnosis and interpretable report generation. X-Ray-CoT simulates human radiologists' "chain-of-thought" by first extracting multi-modal features and visual concepts, then employing an LLM-based component with a structured Chain-of-Thought prompting strategy to reason and produce detailed natural language diagnostic reports. Evaluated on the CORDA dataset, X-Ray-CoT achieves competitive quantitative performance, with a Balanced Accuracy of 80.52% and F1 score of 78.65% for disease diagnosis, slightly surpassing existing black-box models. Crucially, it uniquely generates high-quality, explainable reports, as validated by preliminary human evaluations. Our ablation studies confirm the integral role of each proposed component, highlighting the necessity of multi-modal fusion and CoT reasoning for robust and transparent medical AI. This work represents a significant step towards trustworthy and clinically actionable AI systems in medical imaging.
-]]></content:encoded>
-<pubDate>Tue, 19 Aug 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Inverse-LLaVA: Eliminating Alignment Pre-training Through Text-to-Vision Mapping</title>
-<link>https://arxiv.org/abs/2508.12466</link>
-<guid>https://arxiv.org/abs/2508.12466</guid>
-<content:encoded><![CDATA[
-arXiv:2508.12466v1 Announce Type: new 
-Abstract: Traditional multimodal learning approaches require expensive alignment pre-training to bridge vision and language modalities, typically projecting visual features into discrete text token spaces. We challenge both fundamental assumptions underlying this paradigm by proposing Inverse-LLaVA, a novel approach that eliminates alignment pre-training entirely while inverting the conventional mapping direction. Rather than projecting visual features to text space, our method maps text embeddings into continuous visual representation space and performs fusion within transformer intermediate layers. Through selective additive components in attention mechanisms, we enable dynamic integration of visual and textual representations without requiring massive image-text alignment datasets. Comprehensive experiments across nine multimodal benchmarks demonstrate nuanced performance trade-offs: Inverse-LLaVA achieves notable improvements on reasoning-intensive and cognitive tasks (MM-VET: +0.2%, VizWiz: +1.8%, ScienceQA: +0.2%, cognitive reasoning: +27.2%), while showing expected decreases in perception tasks requiring memorized visual-text associations (celebrity recognition: -49.5%, OCR: -21.3%). These results provide the first empirical evidence that alignment pre-training is not necessary for effective multimodal learning, particularly for complex reasoning tasks. Our work establishes the feasibility of a new paradigm that reduces computational requirements by 45%, challenges conventional wisdom about modality fusion, and opens new research directions for efficient multimodal architectures that preserve modality-specific characteristics. Our project website with code and additional resources is available at https://inverse-llava.github.io.
-]]></content:encoded>
-<pubDate>Tue, 19 Aug 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Standardization of Neuromuscular Reflex Analysis -- Role of Fine-Tuned Vision-Language Model Consortium and OpenAI gpt-oss Reasoning LLM Enabled Decision Support System</title>
-<link>https://arxiv.org/abs/2508.12473</link>
-<guid>https://arxiv.org/abs/2508.12473</guid>
-<content:encoded><![CDATA[
-arXiv:2508.12473v1 Announce Type: new 
-Abstract: Accurate assessment of neuromuscular reflexes, such as the H-reflex, plays a critical role in sports science, rehabilitation, and clinical neurology. Traditional analysis of H-reflex EMG waveforms is subject to variability and interpretation bias among clinicians and researchers, limiting reliability and standardization. To address these challenges, we propose a Fine-Tuned Vision-Language Model (VLM) Consortium and a reasoning Large-Language Model (LLM)-enabled Decision Support System for automated H-reflex waveform interpretation and diagnosis. Our approach leverages multiple VLMs, each fine-tuned on curated datasets of H-reflex EMG waveform images annotated with clinical observations, recovery timelines, and athlete metadata. These models are capable of extracting key electrophysiological features and predicting neuromuscular states, including fatigue, injury, and recovery, directly from EMG images and contextual metadata. Diagnostic outputs from the VLM consortium are aggregated using a consensus-based method and refined by a specialized reasoning LLM, which ensures robust, transparent, and explainable decision support for clinicians and sports scientists. The end-to-end platform orchestrates seamless communication between the VLM ensemble and the reasoning LLM, integrating prompt engineering strategies and automated reasoning workflows using LLM Agents. Experimental results demonstrate that this hybrid system delivers highly accurate, consistent, and interpretable H-reflex assessments, significantly advancing the automation and standardization of neuromuscular diagnostics. To our knowledge, this work represents the first integration of a fine-tuned VLM consortium with a reasoning LLM for image-based H-reflex analysis, laying the foundation for next-generation AI-assisted neuromuscular assessment and athlete monitoring platforms.
-]]></content:encoded>
-<pubDate>Tue, 19 Aug 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Skin Cancer Classification: Hybrid CNN-Transformer Models with KAN-Based Fusion</title>
-<link>https://arxiv.org/abs/2508.12484</link>
-<guid>https://arxiv.org/abs/2508.12484</guid>
-<content:encoded><![CDATA[
-arXiv:2508.12484v1 Announce Type: new 
-Abstract: Skin cancer classification is a crucial task in medical image analysis, where precise differentiation between malignant and non-malignant lesions is essential for early diagnosis and treatment. In this study, we explore Sequential and Parallel Hybrid CNN-Transformer models with Convolutional Kolmogorov-Arnold Network (CKAN). Our approach integrates transfer learning and extensive data augmentation, where CNNs extract local spatial features, Transformers model global dependencies, and CKAN facilitates nonlinear feature fusion for improved representation learning. To assess generalization, we evaluate our models on multiple benchmark datasets (HAM10000,BCN20000 and PAD-UFES) under varying data distributions and class imbalances. Experimental results demonstrate that hybrid CNN-Transformer architectures effectively capture both spatial and contextual features, leading to improved classification performance. Additionally, the integration of CKAN enhances feature fusion through learnable activation functions, yielding more discriminative representations. Our proposed approach achieves competitive performance in skin cancer classification, demonstrating 92.81% accuracy and 92.47% F1-score on the HAM10000 dataset, 97.83% accuracy and 97.83% F1-score on the PAD-UFES dataset, and 91.17% accuracy with 91.79% F1- score on the BCN20000 dataset highlighting the effectiveness and generalizability of our model across diverse datasets. This study highlights the significance of feature representation and model design in advancing robust and accurate medical image classification.
-]]></content:encoded>
-<pubDate>Tue, 19 Aug 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Design and Validation of a Responsible Artificial Intelligence-based System for the Referral of Diabetic Retinopathy Patients</title>
-<link>https://arxiv.org/abs/2508.12506</link>
-<guid>https://arxiv.org/abs/2508.12506</guid>
-<content:encoded><![CDATA[
-arXiv:2508.12506v1 Announce Type: new 
-Abstract: Diabetic Retinopathy (DR) is a leading cause of vision loss in working-age individuals. Early detection of DR can reduce the risk of vision loss by up to 95%, but a shortage of retinologists and challenges in timely examination complicate detection. Artificial Intelligence (AI) models using retinal fundus photographs (RFPs) offer a promising solution. However, adoption in clinical settings is hindered by low-quality data and biases that may lead AI systems to learn unintended features. To address these challenges, we developed RAIS-DR, a Responsible AI System for DR screening that incorporates ethical principles across the AI lifecycle. RAIS-DR integrates efficient convolutional models for preprocessing, quality assessment, and three specialized DR classification models. We evaluated RAIS-DR against the FDA-approved EyeArt system on a local dataset of 1,046 patients, unseen by both systems. RAIS-DR demonstrated significant improvements, with F1 scores increasing by 5-12%, accuracy by 6-19%, and specificity by 10-20%. Additionally, fairness metrics such as Disparate Impact and Equal Opportunity Difference indicated equitable performance across demographic subgroups, underscoring RAIS-DR's potential to reduce healthcare disparities. These results highlight RAIS-DR as a robust and ethically aligned solution for DR screening in clinical settings. The code, weights of RAIS-DR are available at https://gitlab.com/inteligencia-gubernamental-jalisco/jalisco-retinopathy with RAIL.
 ]]></content:encoded>
 <pubDate>Tue, 19 Aug 2025 00:00:00 -0400</pubDate>
 </item>

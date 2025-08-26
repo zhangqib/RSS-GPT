@@ -4,18 +4,18 @@
 <title>cs.LG updates on arXiv.org</title>
 <link>http://rss.arxiv.org/rss/cs.LG</link>
 
+
 <item>
 <title>Correlations Are Ruining Your Gradient Descent</title>
 <link>https://arxiv.org/abs/2407.10780</link>
 <guid>https://arxiv.org/abs/2407.10780</guid>
 <content:encoded><![CDATA[
-<div> Keywords: gradient descent, data decorrelation, backpropagation, neural networks, distributed computing <br>
-<br>
-Summary: Natural gradient descent explores how considering the curvature of loss landscapes can enhance gradient vectors in neural networks. Correlations in data at linear transformations introduce non-orthonormal relationships between model parameters, necessitating data decorrelation methods at each network layer. Various existing decorrelation and whitening techniques are discussed, with a new method proposed for distributed computing and computational neuroscience. Implementing decorrelation in multi-layer networks accelerates training via backpropagation and improves the accuracy and convergence speed of approximate backpropagation methods. This advancement may revive discarded gradient descent approximations and offer insights for training analog and neuromorphic hardware. Decorrelation processes in neural networks could provide clues to their efficiency and functionality in the brain. <br> <div>
+<div> Keywords: gradient descent, data decorrelation, backpropagation, neural networks, distributed computing <br />
+<br />
+Summary: Natural gradient descent explores how considering the curvature of loss landscapes can enhance gradient vectors in neural networks. Correlations in data at linear transformations introduce non-orthonormal relationships between model parameters, necessitating data decorrelation methods at each network layer. Various existing decorrelation and whitening techniques are discussed, with a new method proposed for distributed computing and computational neuroscience. Implementing decorrelation in multi-layer networks accelerates training via backpropagation and improves the accuracy and convergence speed of approximate backpropagation methods. This advancement may revive discarded gradient descent approximations and offer insights for training analog and neuromorphic hardware. Decorrelation processes in neural networks could provide clues to their efficiency and functionality in the brain. <br /> <div>
 arXiv:2407.10780v4 Announce Type: replace 
 Abstract: Herein the topics of (natural) gradient descent, data decorrelation, and approximate methods for backpropagation are brought into a common discussion. Natural gradient descent illuminates how gradient vectors, pointing at directions of steepest descent, can be improved by considering the local curvature of loss landscapes. We extend this perspective and show that to fully solve the problem illuminated by natural gradients in neural networks, one must recognise that correlations in the data at any linear transformation, including node responses at every layer of a neural network, cause a non-orthonormal relationship between the model's parameters. To solve this requires a method for decorrelating inputs at each individual layer of a neural network. We describe a range of methods which have been proposed for decorrelation and whitening of node output, and expand on these to provide a novel method specifically useful for distributed computing and computational neuroscience. Implementing decorrelation within multi-layer neural networks, we can show that not only is training via backpropagation sped up significantly but also existing approximations of backpropagation, which have failed catastrophically in the past, benefit significantly in their accuracy and convergence speed. This has the potential to provide a route forward for approximate gradient descent methods which have previously been discarded, training approaches for analogue and neuromorphic hardware, and potentially insights as to the efficacy and utility of decorrelation processes in the brain.
 ]]></content:encoded>
-<pubDate>Tue, 26 Aug 2025 00:00:00 -0400</pubDate>
 <pubDate>Tue, 26 Aug 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -23,12 +23,11 @@ Abstract: Herein the topics of (natural) gradient descent, data decorrelation, a
 <link>https://arxiv.org/abs/2508.12121</link>
 <guid>https://arxiv.org/abs/2508.12121</guid>
 <content:encoded><![CDATA[
-<div> learning-rate, recurrent neural networks, gating mechanisms, gradient propagation, adaptive methods <br>
-Summary: This study explores how gating mechanisms in recurrent neural networks (RNNs) can implicitly induce adaptive learning-rate behavior, even with a fixed global learning rate. The research shows that gates in RNNs influence gradient propagation, modulate effective step sizes, and introduce anisotropy in parameter updates. By analyzing leaky-integrator and gated RNNs, the study reveals that gates act as data-driven preconditioners that adapt optimization trajectories in parameter space. The findings also highlight formal analogies with learning-rate schedules, momentum, and adaptive methods like Adam. Empirical simulations demonstrate that gates in RNNs lead to lag-dependent effective learning rates and directional concentration of gradient flow, comparable to the effects of Adam optimization. The research underscores the complementary nature of optimizer-driven and gate-driven adaptivity mechanisms, providing insights into why gated architectures are effective for robust trainability and stability in practice. <br><br> <div>
+<div> learning-rate, recurrent neural networks, gating mechanisms, gradient propagation, adaptive methods <br />
+Summary: This study explores how gating mechanisms in recurrent neural networks (RNNs) can implicitly induce adaptive learning-rate behavior, even with a fixed global learning rate. The research shows that gates in RNNs influence gradient propagation, modulate effective step sizes, and introduce anisotropy in parameter updates. By analyzing leaky-integrator and gated RNNs, the study reveals that gates act as data-driven preconditioners that adapt optimization trajectories in parameter space. The findings also highlight formal analogies with learning-rate schedules, momentum, and adaptive methods like Adam. Empirical simulations demonstrate that gates in RNNs lead to lag-dependent effective learning rates and directional concentration of gradient flow, comparable to the effects of Adam optimization. The research underscores the complementary nature of optimizer-driven and gate-driven adaptivity mechanisms, providing insights into why gated architectures are effective for robust trainability and stability in practice. <br /><br /> <div>
 arXiv:2508.12121v3 Announce Type: replace 
 Abstract: We study how gating mechanisms in recurrent neural networks (RNNs) implicitly induce adaptive learning-rate behavior, even when training is carried out with a fixed, global learning rate. This effect arises from the coupling between state-space time scales--parametrized by the gates--and parameter-space dynamics during gradient descent. By deriving exact Jacobians for leaky-integrator and gated RNNs, we obtain a first-order expansion that makes explicit how constant, scalar, and multi-dimensional gates reshape gradient propagation, modulate effective step sizes, and introduce anisotropy in parameter updates. These findings reveal that gates not only control information flow, but also act as data-driven preconditioners that adapt optimization trajectories in parameter space. We further draw formal analogies with learning-rate schedules, momentum, and adaptive methods such as Adam. Empirical simulations corroborate these claims: in several sequence tasks, we show that gates induce lag-dependent effective learning rates and directional concentration of gradient flow, with multi-gate models matching or exceeding the anisotropic structure produced by Adam. These results highlight that optimizer-driven and gate-driven adaptivity are complementary but not equivalent mechanisms. Overall, this work provides a unified dynamical systems perspective on how gating couples state evolution with parameter updates, explaining why gated architectures achieve robust trainability and stability in practice.
 ]]></content:encoded>
-<pubDate>Tue, 26 Aug 2025 00:00:00 -0400</pubDate>
 <pubDate>Tue, 26 Aug 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -41,11 +40,10 @@ Abstract: We study how gating mechanisms in recurrent neural networks (RNNs) imp
 Summary: 
 The study introduces a hybrid surrogate model for estimating parameters and power consumption in electric vehicles. The model combines a novel architecture called Spectral Parameter Operator with a Fourier Neural Operator backbone for global context and a differentiable physics module. It can predict time-varying motor and regenerative braking efficiencies, aerodynamic drag, rolling resistance, effective mass, and auxiliary power using only speed and acceleration data. By incorporating a physics-embedded approach, the model eliminates the need for separate physics-residual losses in estimating battery power. Evaluation on real-world data from Tesla and Kia electric vehicles shows high accuracy, with a mean absolute error of 0.2kW for Tesla vehicles and 0.8kW for the Kia EV9. The framework is interpretable, generalizes well to unseen conditions and sampling rates, and can be used for path optimization, eco-routing, on-board diagnostics, and prognostics health management. 
 
-<br><br>Summary: <div>
+<br /><br />Summary: <div>
 arXiv:2508.12602v2 Announce Type: replace 
 Abstract: We present a hybrid surrogate model for electric vehicle parameter estimation and power consumption. We combine our novel architecture Spectral Parameter Operator built on a Fourier Neural Operator backbone for global context and a differentiable physics module in the forward pass. From speed and acceleration alone, it outputs time-varying motor and regenerative braking efficiencies, as well as aerodynamic drag, rolling resistance, effective mass, and auxiliary power. These parameters drive a physics-embedded estimate of battery power, eliminating any separate physics-residual loss. The modular design lets representations converge to physically meaningful parameters that reflect the current state and condition of the vehicle. We evaluate on real-world logs from a Tesla Model 3, Tesla Model S, and the Kia EV9. The surrogate achieves a mean absolute error of 0.2kW (about 1% of average traction power at highway speeds) for Tesla vehicles and about 0.8kW on the Kia EV9. The framework is interpretable, and it generalizes well to unseen conditions, and sampling rates, making it practical for path optimization, eco-routing, on-board diagnostics, and prognostics health management.
 ]]></content:encoded>
-<pubDate>Tue, 26 Aug 2025 00:00:00 -0400</pubDate>
 <pubDate>Tue, 26 Aug 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -58,11 +56,10 @@ Abstract: We present a hybrid surrogate model for electric vehicle parameter est
 Summary:
 
 Federated Learning (FL) allows collaborative model training without sharing private data. This study focuses on FL scenarios with adversarial attacks on clients while the server is trusted and has a reliable side dataset. The approach only requires the server and one honest client to operate effectively, without prior knowledge of the number of malicious clients. Theoretical analysis shows bounded optimality gaps even under strong Byzantine attacks. Experimental results demonstrate the algorithm outperforming standard and robust FL baselines like Mean, Trimmed Mean, Median, Krum, and Multi-Krum across various attack strategies on MNIST, FMNIST, and CIFAR-10 benchmarks using the Flower framework.
-<br><br>Summary: <div>
+<br /><br />Summary: <div>
 arXiv:2508.12672v3 Announce Type: replace 
 Abstract: Federated Learning (FL) enables collaborative model training across multiple clients without sharing private data. We consider FL scenarios wherein FL clients are subject to adversarial (Byzantine) attacks, while the FL server is trusted (honest) and has a trustworthy side dataset. This may correspond to, e.g., cases where the server possesses trusted data prior to federation, or to the presence of a trusted client that temporarily assumes the server role. Our approach requires only two honest participants, i.e., the server and one client, to function effectively, without prior knowledge of the number of malicious clients. Theoretical analysis demonstrates bounded optimality gaps even under strong Byzantine attacks. Experimental results show that our algorithm significantly outperforms standard and robust FL baselines such as Mean, Trimmed Mean, Median, Krum, and Multi-Krum under various attack strategies including label flipping, sign flipping, and Gaussian noise addition across MNIST, FMNIST, and CIFAR-10 benchmarks using the Flower framework.
 ]]></content:encoded>
-<pubDate>Tue, 26 Aug 2025 00:00:00 -0400</pubDate>
 <pubDate>Tue, 26 Aug 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -80,11 +77,10 @@ Summary:
 - Regret bounds show that the methods reduce learning complexity associated with shared structure from $O(N)$ to sublinear $O(\sqrt{N}) based on the network size, with NetLinUCB and Net-SGD-UCB exhibiting strengths in different scenarios.
 - The effectiveness of the proposed methods is demonstrated across simulated pricing environments compared to standard benchmarks. 
 
-<br><br>Summary: <div>
+<br /><br />Summary: <div>
 arXiv:2508.13411v2 Announce Type: replace 
 Abstract: We consider contextual linear bandits over networks, a class of sequential decision-making problems where learning occurs simultaneously across multiple locations and the reward distributions share structural similarities while also exhibiting local differences. While classical contextual bandits assume either fully centralized data or entirely isolated learners, much remains unexplored in networked environments when information is partially shared. In this paper, we address this gap by developing two network-aware Upper Confidence Bound (UCB) algorithms, NetLinUCB and Net-SGD-UCB, which enable adaptive information sharing guided by dynamically updated network weights. Our approach decompose learning into global and local components and as a result allow agents to benefit from shared structure without full synchronization. Both algorithms incur lighter communication costs compared to a fully centralized setting as agents only share computed summaries regarding the homogeneous features. We establish regret bounds showing that our methods reduce the learning complexity associated with the shared structure from $O(N)$ to sublinear $O(\sqrt{N})$, where $N$ is the size of the network. The two algorithms reveal complementary strengths: NetLinUCB excels in low-noise regimes with fine-grained heterogeneity, while Net-SGD-UCB is robust to high-dimensional, high-variance contexts. We further demonstrate the effectiveness of our methods across simulated pricing environments compared to standard benchmarks.
 ]]></content:encoded>
-<pubDate>Tue, 26 Aug 2025 00:00:00 -0400</pubDate>
 <pubDate>Tue, 26 Aug 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -100,20 +96,18 @@ arXiv:2508.13898v2 Announce Type: replace
 Abstract: Modern GPUs are equipped with large amounts of high-bandwidth memory, enabling them to support mini-batch sizes of up to tens of thousands of training samples. However, most existing optimizers struggle to perform effectively at such a large batch size. As batch size increases, gradient noise decreases due to averaging over many samples, limiting the ability of first-order methods to escape sharp or suboptimal minima and reach the global minimum. Meanwhile, second-order methods like the natural gradient with Kronecker-Factored Approximate Curvature (KFAC) often require excessively high damping to remain stable at large batch sizes. This high damping effectively washes out the curvature information that gives these methods their advantage, reducing their performance to that of simple gradient descent. In this paper, we introduce Fisher-Orthogonal Projection (FOP), a novel technique that restores the effectiveness of the second-order method at very large batch sizes, enabling scalable training with improved generalization and faster convergence. FOP constructs a variance-aware update direction by leveraging gradients from two sub-batches, enhancing the average gradient with a component of the gradient difference that is orthogonal to the average under the Fisher-metric.
 ]]></content:encoded>
 <pubDate>Tue, 26 Aug 2025 00:00:00 -0400</pubDate>
-<pubDate>Tue, 26 Aug 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
 <title>Multi-User Contextual Cascading Bandits for Personalized Recommendation</title>
 <link>https://arxiv.org/abs/2508.13981</link>
 <guid>https://arxiv.org/abs/2508.13981</guid>
 <content:encoded><![CDATA[
-<div> Keywords: Multi-User Contextual Cascading Bandit, online advertising, Upper Confidence Bound with Backward Planning, Active Upper Confidence Bound with Backward Planning, regret bound<br>
-Summary:<br>
+<div> Keywords: Multi-User Contextual Cascading Bandit, online advertising, Upper Confidence Bound with Backward Planning, Active Upper Confidence Bound with Backward Planning, regret bound<br />
+Summary:<br />
 The article introduces a new Multi-User Contextual Cascading Bandit model for realistic online advertising scenarios. This model considers multiple users interacting with sequentially displayed items simultaneously and integrates cascading feedback, parallel context sessions, and heterogeneous arm-level rewards. The Upper Confidence Bound with Backward Planning (UCBBP) algorithm is proposed for this framework, with a regret bound of $\widetilde{O}(\sqrt{THN})$. Additionally, the Active Upper Confidence Bound with Backward Planning (AUCBBP) algorithm is introduced for scenarios with many users interacting simultaneously, showing improved efficiency in context scaling with a regret bound of $\widetilde{O}(\sqrt{T+HN})$. Numerical experiments validate the effectiveness of both algorithms across various settings. <div>
 arXiv:2508.13981v2 Announce Type: replace 
 Abstract: We introduce a Multi-User Contextual Cascading Bandit model, a new combinatorial bandit framework that captures realistic online advertising scenarios where multiple users interact with sequentially displayed items simultaneously. Unlike classical contextual bandits, MCCB integrates three key structural elements: (i) cascading feedback based on sequential arm exposure, (ii) parallel context sessions enabling selective exploration, and (iii) heterogeneous arm-level rewards. We first propose Upper Confidence Bound with Backward Planning (UCBBP), a UCB-style algorithm tailored to this setting, and prove that it achieves a regret bound of $\widetilde{O}(\sqrt{THN})$ over $T$ episodes, $H$ session steps, and $N$ contexts per episode. Motivated by the fact that many users interact with the system simultaneously, we introduce a second algorithm, termed Active Upper Confidence Bound with Backward Planning (AUCBBP), which shows a strict efficiency improvement in context scaling, i.e., user scaling, with a regret bound of $\widetilde{O}(\sqrt{T+HN})$. We validate our theoretical findings via numerical experiments, demonstrating the empirical effectiveness of both algorithms under various settings.
 ]]></content:encoded>
-<pubDate>Tue, 26 Aug 2025 00:00:00 -0400</pubDate>
 <pubDate>Tue, 26 Aug 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -129,20 +123,18 @@ arXiv:2508.11703v2 Announce Type: replace-cross
 Abstract: Algorithmic discovery has traditionally relied on human ingenuity and extensive experimentation. Here we investigate whether a prominent scientific computing algorithm, the Kalman Filter, can be discovered through an automated, data-driven, evolutionary process that relies on Cartesian Genetic Programming (CGP) and Large Language Models (LLM). We evaluate the contributions of both modalities (CGP and LLM) in discovering the Kalman filter under varying conditions. Our results demonstrate that our framework of CGP and LLM-assisted evolution converges to near-optimal solutions when Kalman optimality assumptions hold. When these assumptions are violated, our framework evolves interpretable alternatives that outperform the Kalman filter. These results demonstrate that combining evolutionary algorithms and generative models for interpretable, data-driven synthesis of simple computational modules is a potent approach for algorithmic discovery in scientific computing.
 ]]></content:encoded>
 <pubDate>Tue, 26 Aug 2025 00:00:00 -0400</pubDate>
-<pubDate>Tue, 26 Aug 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
 <title>An MLP Baseline for Handwriting Recognition Using Planar Curvature and Gradient Orientation</title>
 <link>https://arxiv.org/abs/2508.11803</link>
 <guid>https://arxiv.org/abs/2508.11803</guid>
 <content:encoded><![CDATA[
-<div> MLP classifier, handwritten character recognition, curvature magnitude, curvature sign, gradient orientation <br>
-<br>Summary:
+<div> MLP classifier, handwritten character recognition, curvature magnitude, curvature sign, gradient orientation <br />
+<br />Summary:
 This study explores the effectiveness of second-order geometric cues in driving a multilayer perceptron (MLP) classifier for handwritten character recognition (HCR), as an alternative to convolutional neural networks (CNNs). By utilizing handcrafted feature maps based on planar curvature magnitude, curvature sign, and gradient orientation as inputs, the curvature-orientation MLP achieves high accuracy rates of 97 percent on MNIST digits and 89 percent on EMNIST letters. These results highlight the discriminative power of curvature-based representations for handwritten characters and demonstrate that deep learning benefits can be realized using interpretable, hand-engineered features. The study suggests that MLPs, combined with curated geometric features, can be a viable approach for HCR tasks, offering a potential alternative to CNNs in certain scenarios. <div>
 arXiv:2508.11803v2 Announce Type: replace-cross 
 Abstract: This study investigates whether second-order geometric cues - planar curvature magnitude, curvature sign, and gradient orientation - are sufficient on their own to drive a multilayer perceptron (MLP) classifier for handwritten character recognition (HCR), offering an alternative to convolutional neural networks (CNNs). Using these three handcrafted feature maps as inputs, our curvature-orientation MLP achieves 97 percent accuracy on MNIST digits and 89 percent on EMNIST letters. These results underscore the discriminative power of curvature-based representations for handwritten character images and demonstrate that the advantages of deep learning can be realized even with interpretable, hand-engineered features.
 ]]></content:encoded>
-<pubDate>Tue, 26 Aug 2025 00:00:00 -0400</pubDate>
 <pubDate>Tue, 26 Aug 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -150,12 +142,11 @@ Abstract: This study investigates whether second-order geometric cues - planar c
 <link>https://arxiv.org/abs/2508.11857</link>
 <guid>https://arxiv.org/abs/2508.11857</guid>
 <content:encoded><![CDATA[
-<div> Tokenization, SupraTok, subword segmentation, multi-word semantic units, entropy-driven data curation<br>
-Summary: <br><br>SupraTok introduces a novel tokenization architecture aimed at improving efficiency in natural language processing. It incorporates cross-boundary pattern learning to discover multi-word semantic units, entropy-driven data curation for corpus quality optimization, and multi-phase curriculum learning for stable convergence. By extending Byte-Pair Encoding to learn "superword" tokens, SupraTok achieves 31% better English tokenization efficiency compared to existing tokenizers like OpenAI's o200k and Google's Gemma 3. It also maintains competitive performance across 38 languages and boosts model performance on benchmarks like HellaSWAG and MMLU without altering architecture. These results highlight the potential of efficient tokenization in enhancing language model performance, marking a significant step in improving natural language processing technologies. <br><br>Summary: <div>
+<div> Tokenization, SupraTok, subword segmentation, multi-word semantic units, entropy-driven data curation<br />
+Summary: <br /><br />SupraTok introduces a novel tokenization architecture aimed at improving efficiency in natural language processing. It incorporates cross-boundary pattern learning to discover multi-word semantic units, entropy-driven data curation for corpus quality optimization, and multi-phase curriculum learning for stable convergence. By extending Byte-Pair Encoding to learn "superword" tokens, SupraTok achieves 31% better English tokenization efficiency compared to existing tokenizers like OpenAI's o200k and Google's Gemma 3. It also maintains competitive performance across 38 languages and boosts model performance on benchmarks like HellaSWAG and MMLU without altering architecture. These results highlight the potential of efficient tokenization in enhancing language model performance, marking a significant step in improving natural language processing technologies. <br /><br />Summary: <div>
 arXiv:2508.11857v2 Announce Type: replace-cross 
 Abstract: Tokenization remains a fundamental yet underexplored bottleneck in natural language processing, with strategies largely static despite remarkable progress in model architectures. We present SupraTok, a novel tokenization architecture that reimagines subword segmentation through three innovations: cross-boundary pattern learning that discovers multi-word semantic units, entropy-driven data curation that optimizes training corpus quality, and multi-phase curriculum learning for stable convergence. Our approach extends Byte-Pair Encoding by learning "superword" tokens, coherent multi-word expressions that preserve semantic unity while maximizing compression efficiency. SupraTok achieves 31% improvement in English tokenization efficiency (5.91 versus 4.51 characters per token) compared to OpenAI's o200k tokenizer and 30% improvement over Google's Gemma 3 tokenizer (256k vocabulary), while maintaining competitive performance across 38 languages. When integrated with a GPT-2 scale model (124M parameters) trained on 10 billion tokens from the FineWeb-Edu dataset, SupraTok yields 8.4% improvement on HellaSWAG and 9.5% on MMLU benchmarks without architectural modifications. While these results are promising at this scale, further validation at larger model scales is needed. These findings suggest that efficient tokenization can complement architectural innovations as a path to improved language model performance.
 ]]></content:encoded>
-<pubDate>Tue, 26 Aug 2025 00:00:00 -0400</pubDate>
 <pubDate>Tue, 26 Aug 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -170,23 +161,20 @@ arXiv:2508.11902v2 Announce Type: replace-cross
 Abstract: We revisit the classical Sobel operator to ask a simple question: Are first-order edge maps sufficient to drive an all-dense multilayer perceptron (MLP) for handwritten character recognition (HCR), as an alternative to convolutional neural networks (CNNs)? Using only horizontal and vertical Sobel derivatives as input, we train an MLP on MNIST and EMNIST Letters. Despite its extreme simplicity, the resulting network reaches 98% accuracy on MNIST digits and 92% on EMNIST letters -- approaching CNNs while offering a smaller memory footprint and transparent features. Our findings highlight that much of the class-discriminative information in handwritten character images is already captured by first-order gradients, making edge-aware MLPs a compelling option for HCR.
 ]]></content:encoded>
 <pubDate>Tue, 26 Aug 2025 00:00:00 -0400</pubDate>
-<pubDate>Tue, 26 Aug 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
 <title>Unsupervised Urban Tree Biodiversity Mapping from Street-Level Imagery Using Spatially-Aware Visual Clustering</title>
 <link>https://arxiv.org/abs/2508.13814</link>
 <guid>https://arxiv.org/abs/2508.13814</guid>
 <content:encoded><![CDATA[
-<div> Keywords: urban tree biodiversity, unsupervised clustering, street-level imagery, Shannon and Simpson diversity, North American cities<br>
-Summary:<br>
+<div> Keywords: urban tree biodiversity, unsupervised clustering, street-level imagery, Shannon and Simpson diversity, North American cities<br />
+Summary:<br />
 This study introduces an unsupervised clustering framework that utilizes street-level imagery and spatial planting patterns to estimate urban tree biodiversity without the need for labeled data. By applying this method to eight North American cities, the researchers were able to accurately recover genus-level diversity patterns, achieving low Wasserstein distances to ground truth for Shannon and Simpson indices while preserving spatial autocorrelation. This approach offers a scalable and cost-effective means for mapping biodiversity in cities where detailed inventories are lacking, providing valuable insights for equitable access to green spaces and the adaptive management of urban ecosystems. <div>
 arXiv:2508.13814v3 Announce Type: replace-cross 
 Abstract: Urban tree biodiversity is critical for climate resilience, ecological stability, and livability in cities, yet most municipalities lack detailed knowledge of their canopies. Field-based inventories provide reliable estimates of Shannon and Simpson diversity but are costly and time-consuming, while supervised AI methods require labeled data that often fail to generalize across regions. We introduce an unsupervised clustering framework that integrates visual embeddings from street-level imagery with spatial planting patterns to estimate biodiversity without labels. Applied to eight North American cities, the method recovers genus-level diversity patterns with high fidelity, achieving low Wasserstein distances to ground truth for Shannon and Simpson indices and preserving spatial autocorrelation. This scalable, fine-grained approach enables biodiversity mapping in cities lacking detailed inventories and offers a pathway for continuous, low-cost monitoring to support equitable access to greenery and adaptive management of urban ecosystems.
 ]]></content:encoded>
 <pubDate>Tue, 26 Aug 2025 00:00:00 -0400</pubDate>
-<pubDate>Tue, 26 Aug 2025 00:00:00 -0400</pubDate>
 </item>
-
 <item>
 <title>Quantum-Inspired DRL Approach with LSTM and OU Noise for Cut Order Planning Optimization</title>
 <link>https://arxiv.org/abs/2508.16611</link>
@@ -11063,126 +11051,6 @@ Abstract: In this paper, we investigate the properties of the Sliced Wasserstein
 <content:encoded><![CDATA[
 arXiv:2502.13034v3 Announce Type: replace-cross 
 Abstract: In recent years, a substantial body of work in visually grounded natural language processing has focused on real-life multimodal scenarios such as describing content depicted in images or videos. However, comparatively less attention has been devoted to study the nature and degree of interaction between the different modalities in these scenarios. In this paper, we argue that any task dealing with natural language generation from sequences of images or frames is an instance of the broader, more general problem of modeling the intricate relationships between visual events unfolding over time and the features of the language used to interpret, describe, or narrate them. Therefore, solving these tasks requires models to be capable of identifying and managing such intricacies. We consider five seemingly different tasks, which we argue are compelling instances of this broader multimodal problem. Subsequently, we survey the modeling and evaluation approaches adopted for these tasks in recent years and examine the common set of challenges these tasks pose. Building on this perspective, we identify key open questions and propose several research directions for future investigation.
-]]></content:encoded>
-<pubDate>Thu, 21 Aug 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Learning to Solve Related Linear Systems</title>
-<link>https://arxiv.org/abs/2503.17265</link>
-<guid>https://arxiv.org/abs/2503.17265</guid>
-<content:encoded><![CDATA[
-arXiv:2503.17265v2 Announce Type: replace-cross 
-Abstract: Solving multiple parametrised related systems is an essential component of many numerical tasks, and learning from the already solved systems will make this process faster. In this work, we propose a novel probabilistic linear solver over the parameter space. This leverages information from the solved linear systems in a regression setting to provide an efficient posterior mean and covariance. We advocate using this as companion regression model for the preconditioned conjugate gradient method, and discuss the favourable properties of the posterior mean and covariance as the initial guess and preconditioner. We also provide several design choices for this companion solver. Numerical experiments showcase the benefits of using our novel solver in a hyperparameter optimisation problem.
-]]></content:encoded>
-<pubDate>Thu, 21 Aug 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Unsupervised Learning for Quadratic Assignment</title>
-<link>https://arxiv.org/abs/2503.20001</link>
-<guid>https://arxiv.org/abs/2503.20001</guid>
-<content:encoded><![CDATA[
-arXiv:2503.20001v2 Announce Type: replace-cross 
-Abstract: We introduce PLUME search, a data-driven framework that enhances search efficiency in combinatorial optimization through unsupervised learning. Unlike supervised or reinforcement learning, PLUME search learns directly from problem instances using a permutation-based loss with a non-autoregressive approach. We evaluate its performance on the quadratic assignment problem, a fundamental NP-hard problem that encompasses various combinatorial optimization problems. Experimental results demonstrate that PLUME search consistently improves solution quality. Furthermore, we study the generalization behavior and show that the learned model generalizes across different densities and sizes.
-]]></content:encoded>
-<pubDate>Thu, 21 Aug 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>PathGPT: Reframing Path Recommendation as a Natural Language Generation Task with Retrieval-Augmented Language Models</title>
-<link>https://arxiv.org/abs/2504.05846</link>
-<guid>https://arxiv.org/abs/2504.05846</guid>
-<content:encoded><![CDATA[
-arXiv:2504.05846v2 Announce Type: replace-cross 
-Abstract: Path recommendation (PR) aims to generate travel paths that are customized to a user's specific preferences and constraints. Conventional approaches often employ explicit optimization objectives or specialized machine learning architectures; however, these methods typically exhibit limited flexibility and generalizability, necessitating costly retraining to accommodate new scenarios. This paper introduces an alternative paradigm that conceptualizes PR as a natural language generation task. We present PathGPT, a retrieval-augmented large language model (LLM) system that leverages historical trajectory data and natural language user constraints to generate plausible paths. The proposed methodology first converts raw trajectory data into a human-interpretable textual format, which is then stored in a database. Subsequently, a hybrid retrieval system extracts path-specific context from this database to inform a pretrained LLM. The primary contribution of this work is a novel framework that demonstrates how integrating established information retrieval and generative model components can enable adaptive, zero-shot path generation across diverse scenarios. Extensive experiments on large-scale trajectory datasets indicate that PathGPT's performance is competitive with specialized, learning-based methods, underscoring its potential as a flexible and generalizable path generation system that avoids the need for retraining inherent in previous data-driven models.
-]]></content:encoded>
-<pubDate>Thu, 21 Aug 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Uncertainty Quantification for Language Models: A Suite of Black-Box, White-Box, LLM Judge, and Ensemble Scorers</title>
-<link>https://arxiv.org/abs/2504.19254</link>
-<guid>https://arxiv.org/abs/2504.19254</guid>
-<content:encoded><![CDATA[
-arXiv:2504.19254v3 Announce Type: replace-cross 
-Abstract: Hallucinations are a persistent problem with Large Language Models (LLMs). As these models become increasingly used in high-stakes domains, such as healthcare and finance, the need for effective hallucination detection is crucial. To this end, we outline a versatile framework for zero-resource hallucination detection that practitioners can apply to real-world use cases. To achieve this, we adapt a variety of existing uncertainty quantification (UQ) techniques, including black-box UQ, white-box UQ, and LLM-as-a-Judge, transforming them as necessary into standardized response-level confidence scores ranging from 0 to 1. To enhance flexibility, we propose a tunable ensemble approach that incorporates any combination of the individual confidence scores. This approach enables practitioners to optimize the ensemble for a specific use case for improved performance. To streamline implementation, the full suite of scorers is offered in this paper's companion Python toolkit, UQLM. To evaluate the performance of the various scorers, we conduct an extensive set of experiments using several LLM question-answering benchmarks. We find that our tunable ensemble typically surpasses its individual components and outperforms existing hallucination detection methods. Our results demonstrate the benefits of customized hallucination detection strategies for improving the accuracy and reliability of LLMs.
-]]></content:encoded>
-<pubDate>Thu, 21 Aug 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Robust Finite-Memory Policy Gradients for Hidden-Model POMDPs</title>
-<link>https://arxiv.org/abs/2505.09518</link>
-<guid>https://arxiv.org/abs/2505.09518</guid>
-<content:encoded><![CDATA[
-arXiv:2505.09518v3 Announce Type: replace-cross 
-Abstract: Partially observable Markov decision processes (POMDPs) model specific environments in sequential decision-making under uncertainty. Critically, optimal policies for POMDPs may not be robust against perturbations in the environment. Hidden-model POMDPs (HM-POMDPs) capture sets of different environment models, that is, POMDPs with a shared action and observation space. The intuition is that the true model is hidden among a set of potential models, and it is unknown which model will be the environment at execution time. A policy is robust for a given HM-POMDP if it achieves sufficient performance for each of its POMDPs. We compute such robust policies by combining two orthogonal techniques: (1) a deductive formal verification technique that supports tractable robust policy evaluation by computing a worst-case POMDP within the HM-POMDP, and (2) subgradient ascent to optimize the candidate policy for a worst-case POMDP. The empirical evaluation shows that, compared to various baselines, our approach (1) produces policies that are more robust and generalize better to unseen POMDPs, and (2) scales to HM-POMDPs that consist of over a hundred thousand environments.
-]]></content:encoded>
-<pubDate>Thu, 21 Aug 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Poisson Midpoint Method for Log Concave Sampling: Beyond the Strong Error Lower Bounds</title>
-<link>https://arxiv.org/abs/2506.07614</link>
-<guid>https://arxiv.org/abs/2506.07614</guid>
-<content:encoded><![CDATA[
-arXiv:2506.07614v3 Announce Type: replace-cross 
-Abstract: We study the problem of sampling from strongly log-concave distributions over $\mathbb{R}^d$ using the Poisson midpoint discretization (a variant of the randomized midpoint method) for overdamped/underdamped Langevin dynamics. We prove its convergence in the 2-Wasserstein distance ($W_2$), achieving a cubic speedup in dependence on the target accuracy ($\epsilon$) over the Euler-Maruyama discretization, surpassing existing bounds for randomized midpoint methods. Notably, in the case of underdamped Langevin dynamics, we demonstrate the complexity of $W_2$ convergence is much smaller than the complexity lower bounds for convergence in $L^2$ strong error established in the literature.
-]]></content:encoded>
-<pubDate>Thu, 21 Aug 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Multi-scale species richness estimation with deep learning</title>
-<link>https://arxiv.org/abs/2507.06358</link>
-<guid>https://arxiv.org/abs/2507.06358</guid>
-<content:encoded><![CDATA[
-arXiv:2507.06358v2 Announce Type: replace-cross 
-Abstract: Biodiversity assessments are critically affected by the spatial scale at which species richness is measured. How species richness accumulates with sampling area depends on natural and anthropogenic processes whose effects can change depending on the spatial scale considered. These accumulation dynamics, described by the species-area relationship (SAR), are challenging to assess because most biodiversity surveys are restricted to sampling areas much smaller than the scales at which these processes operate. Here, we combine sampling theory and deep learning to predict local species richness within arbitrarily large sampling areas, enabling for the first time to estimate spatial differences in SARs. We demonstrate our approach by predicting vascular plant species richness across Europe and evaluate predictions against an independent dataset of plant community inventories. The resulting model, named deep SAR, delivers multi-scale species richness maps, improving coarse grain richness estimates by 32% compared to conventional methods, while delivering finer grain estimates. Additional to its predictive capabilities, we show how our deep SAR model can provide fundamental insights on the multi-scale effects of key biodiversity processes. The capacity of our approach to deliver comprehensive species richness estimates across the full spectrum of ecologically relevant scales is essential for robust biodiversity assessments and forecasts under global change.
-]]></content:encoded>
-<pubDate>Thu, 21 Aug 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>DeepRetro: Retrosynthetic Pathway Discovery using Iterative LLM Reasoning</title>
-<link>https://arxiv.org/abs/2507.07060</link>
-<guid>https://arxiv.org/abs/2507.07060</guid>
-<content:encoded><![CDATA[
-arXiv:2507.07060v2 Announce Type: replace-cross 
-Abstract: The synthesis of complex natural products remains one of the grand challenges of organic chemistry. We present DeepRetro, a major advancement in computational retrosynthesis that enables the discovery of viable synthetic routes for complex molecules typically considered beyond the reach of existing retrosynthetic methods. DeepRetro is a novel, open-source framework that tightly integrates large language models (LLMs), traditional retrosynthetic engines, and expert human feedback in an iterative design loop. Prior approaches rely solely on template-based methods or unconstrained LLM outputs. In contrast, DeepRetro combines the precision of template-based methods with the generative flexibility of LLMs, controlled by rigorous chemical validity checks and enhanced by recursive refinement. This hybrid system dynamically explores and revises synthetic pathways, guided by both algorithmic checks and expert chemist feedback through an interactive user interface. While DeepRetro achieves strong performance on standard retrosynthesis benchmarks, its true strength lies in its ability to propose novel, viable pathways to highly complex natural products-targets that have historically eluded automated planning. Through detailed case studies, we illustrate how this approach enables new routes for total synthesis and facilitates human-machine collaboration in organic chemistry. Beyond retrosynthesis, DeepRetro represents a working model for how to leverage LLMs in scientific discovery. We provide a transparent account of the system's design, algorithms, and human-feedback loop, enabling broad adaptation across scientific domains. By releasing DeepRetro as an open-source tool, we aim to empower chemists to tackle increasingly ambitious synthetic targets, accelerating progress in drug discovery, materials design, and beyond.
-]]></content:encoded>
-<pubDate>Thu, 21 Aug 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>SketchDNN: Joint Continuous-Discrete Diffusion for CAD Sketch Generation</title>
-<link>https://arxiv.org/abs/2507.11579</link>
-<guid>https://arxiv.org/abs/2507.11579</guid>
-<content:encoded><![CDATA[
-arXiv:2507.11579v2 Announce Type: replace-cross 
-Abstract: We present SketchDNN, a generative model for synthesizing CAD sketches that jointly models both continuous parameters and discrete class labels through a unified continuous-discrete diffusion process. Our core innovation is Gaussian-Softmax diffusion, where logits perturbed with Gaussian noise are projected onto the probability simplex via a softmax transformation, facilitating blended class labels for discrete variables. This formulation addresses 2 key challenges, namely, the heterogeneity of primitive parameterizations and the permutation invariance of primitives in CAD sketches. Our approach significantly improves generation quality, reducing Fr\'echet Inception Distance (FID) from 16.04 to 7.80 and negative log-likelihood (NLL) from 84.8 to 81.33, establishing a new state-of-the-art in CAD sketch generation on the SketchGraphs dataset.
-]]></content:encoded>
-<pubDate>Thu, 21 Aug 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>LaViPlan : Language-Guided Visual Path Planning with RLVR</title>
-<link>https://arxiv.org/abs/2507.12911</link>
-<guid>https://arxiv.org/abs/2507.12911</guid>
-<content:encoded><![CDATA[
-arXiv:2507.12911v4 Announce Type: replace-cross 
-Abstract: Out-of-distribution (OOD) scenarios in autonomous driving pose critical challenges, as planners often fail to generalize beyond their training experience, leading to unsafe or unexpected behavior. Vision-Language Models (VLMs) have shown promise in handling such scenarios by providing high-level scene understanding and user-aligned decisions. However, existing VLMs often exhibit a misalignment between their language-based reasoning and the low-level trajectories required for action-level planning. In this paper, we propose LaViPlan, a framework that leverages Reinforcement Learning with Verifiable Rewards (RLVR) to fine-tune VLMs using planning-oriented metrics. Experimental results show that LaViPlan improves planning performance across both in-domain and out-of-domain datasets. While linguistic fidelity slightly decreases after RLVR-based fine-tuning, qualitative evaluation indicates that the outputs remain coherent. We also conduct ablation studies to analyze the effects of sampling ratio and reasoning guidance, highlighting how these design choices influence performance. These findings demonstrate the potential of RLVR as a post-training paradigm for aligning language-guided reasoning with action-level planning in autonomous driving.
-]]></content:encoded>
-<pubDate>Thu, 21 Aug 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Extending Foundational Monocular Depth Estimators to Fisheye Cameras with Calibration Tokens</title>
-<link>https://arxiv.org/abs/2508.04928</link>
-<guid>https://arxiv.org/abs/2508.04928</guid>
-<content:encoded><![CDATA[
-arXiv:2508.04928v3 Announce Type: replace-cross 
-Abstract: We propose a method to extend foundational monocular depth estimators (FMDEs), trained on perspective images, to fisheye images. Despite being trained on tens of millions of images, FMDEs are susceptible to the covariate shift introduced by changes in camera calibration (intrinsic, distortion) parameters, leading to erroneous depth estimates. Our method aligns the distribution of latent embeddings encoding fisheye images to those of perspective images, enabling the reuse of FMDEs for fisheye cameras without retraining or finetuning. To this end, we introduce a set of Calibration Tokens as a light-weight adaptation mechanism that modulates the latent embeddings for alignment. By exploiting the already expressive latent space of FMDEs, we posit that modulating their embeddings avoids the negative impact of artifacts and loss introduced in conventional recalibration or map projection to a canonical reference frame in the image space. Our method is self-supervised and does not require fisheye images but leverages publicly available large-scale perspective image datasets. This is done by recalibrating perspective images to fisheye images, and enforcing consistency between their estimates during training. We evaluate our approach with several FMDEs, on both indoors and outdoors, where we consistently improve over state-of-the-art methods using a single set of tokens for both. Code available at: https://github.com/JungHeeKim29/calibration-token.
-]]></content:encoded>
-<pubDate>Thu, 21 Aug 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Toward Errorless Training ImageNet-1k</title>
-<link>https://arxiv.org/abs/2508.04941</link>
-<guid>https://arxiv.org/abs/2508.04941</guid>
-<content:encoded><![CDATA[
-arXiv:2508.04941v3 Announce Type: replace-cross 
-Abstract: In this paper, we describe a feedforward artificial neural network trained on the ImageNet 2012 contest dataset [7] with the new method of [5] to an accuracy rate of 98.3% with a 99.69 Top-1 rate, and an average of 285.9 labels that are perfectly classified over the 10 batch partitions of the dataset. The best performing model uses 322,430,160 parameters, with 4 decimal places precision. We conjecture that the reason our model does not achieve a 100% accuracy rate is due to a double-labeling problem, by which there are duplicate images in the dataset with different labels.
 ]]></content:encoded>
 <pubDate>Thu, 21 Aug 2025 00:00:00 -0400</pubDate>
 </item>
