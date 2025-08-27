@@ -4,21 +4,20 @@
 <title>cs.LG updates on arXiv.org</title>
 <link>http://rss.arxiv.org/rss/cs.LG</link>
 
+
 <item>
 <title>NVIDIA Nemotron Nano 2: An Accurate and Efficient Hybrid Mamba-Transformer Reasoning Model</title>
 <link>https://arxiv.org/abs/2508.14444</link>
 <guid>https://arxiv.org/abs/2508.14444</guid>
 <content:encoded><![CDATA[
-<div> Transformer architecture, Nemotron-Nano-9B-v2, Mamba-2 layers, pre-training, reasoning benchmarks <br>
-Summary: <br> 
+<div> Transformer architecture, Nemotron-Nano-9B-v2, Mamba-2 layers, pre-training, reasoning benchmarks <br />
+Summary: <br /> 
 The article introduces Nemotron-Nano-9B-v2, a hybrid language model that combines Mamba-2 layers and the Transformer architecture to enhance throughput for reasoning tasks while maintaining high accuracy. The model is built on the Nemotron-H architecture and is capable of generating long thinking traces needed for reasoning efficiently. Nemotron-Nano-9B-v2 is derived from the pre-training of a 12-billion-parameter model (Nemotron-Nano-12B-v2-Base) on a vast amount of tokens using an FP8 training method. Through the Minitron compression strategy, the model is optimized for inference on a single NVIDIA A10G GPU. Compared to other models like Qwen3-8B, Nemotron-Nano-9B-v2 demonstrates similar or superior performance on reasoning benchmarks while achieving significantly higher inference throughput in scenarios involving 8k input and 16k output tokens. The research team has made the models and datasets available on Hugging Face for further exploration and experimentation. <div>
 arXiv:2508.14444v3 Announce Type: replace-cross 
 Abstract: We introduce Nemotron-Nano-9B-v2, a hybrid Mamba-Transformer language model designed to increase throughput for reasoning workloads while achieving state-of-the-art accuracy compared to similarly-sized models. Nemotron-Nano-9B-v2 builds on the Nemotron-H architecture, in which the majority of the self-attention layers in the common Transformer architecture are replaced with Mamba-2 layers, to achieve improved inference speed when generating the long thinking traces needed for reasoning. We create Nemotron-Nano-9B-v2 by first pre-training a 12-billion-parameter model (Nemotron-Nano-12B-v2-Base) on 20 trillion tokens using an FP8 training recipe. After aligning Nemotron-Nano-12B-v2-Base, we employ the Minitron strategy to compress and distill the model with the goal of enabling inference on up to 128k tokens on a single NVIDIA A10G GPU (22GiB of memory, bfloat16 precision). Compared to existing similarly-sized models (e.g., Qwen3-8B), we show that Nemotron-Nano-9B-v2 achieves on-par or better accuracy on reasoning benchmarks while achieving up to 6x higher inference throughput in reasoning settings like 8k input and 16k output tokens. We are releasing Nemotron-Nano-9B-v2, Nemotron-Nano12B-v2-Base, and Nemotron-Nano-9B-v2-Base checkpoints along with the majority of our pre- and post-training datasets on Hugging Face.
 ]]></content:encoded>
 <pubDate>Wed, 27 Aug 2025 00:00:00 -0400</pubDate>
-<pubDate>Wed, 27 Aug 2025 00:00:00 -0400</pubDate>
 </item>
-
 <item>
 <title>Reasoning Steps as Curriculum: Using Depth of Thought as a Difficulty Signal for Tuning LLMs</title>
 <link>https://arxiv.org/abs/2508.18279</link>
@@ -11087,16 +11086,6 @@ Abstract: Traditional physics-informed neural networks (PINNs) do not guarantee 
 <content:encoded><![CDATA[
 arXiv:2507.17255v2 Announce Type: replace 
 Abstract: Variational Autoencoder is typically understood from the perspective of probabilistic inference. In this work, we propose a new geometric reinterpretation which complements the probabilistic view and enhances its intuitiveness. We demonstrate that the proper construction of semantic manifolds arises primarily from the constraining effect of the KL divergence on the encoder. We view the latent representations as a Gaussian ball rather than deterministic points. Under the constraint of KL divergence, Gaussian ball regularizes the latent space, promoting a more uniform distribution of encodings. Furthermore, we show that reparameterization establishes a critical contractual mechanism between the encoder and decoder, enabling the decoder to learn how to reconstruct from these stochastic regions. We further connect this viewpoint with VQ-VAE, offering a unified perspective: VQ-VAE can be seen as an autoencoder where encodings are constrained to a set of cluster centers, with its generative capability arising from the compactness rather than its stochasticity. This geometric framework provides a new lens for understanding how VAE shapes the latent geometry to enable effective generation.
-]]></content:encoded>
-<pubDate>Fri, 22 Aug 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Forgetting: A New Mechanism Towards Better Large Language Model Fine-tuning</title>
-<link>https://arxiv.org/abs/2508.04329</link>
-<guid>https://arxiv.org/abs/2508.04329</guid>
-<content:encoded><![CDATA[
-arXiv:2508.04329v3 Announce Type: replace 
-Abstract: Supervised fine-tuning (SFT) plays a critical role for pretrained large language models (LLMs), notably enhancing their capacity to acquire domain-specific knowledge while preserving or potentially augmenting their general-purpose capabilities. However, the efficacy of SFT hinges on data quality as well as data volume, otherwise it may result in limited performance gains or even degradation relative to the associated baselines. To mitigate such reliance, we suggest categorizing tokens within each corpus into two parts -- positive and negative tokens -- based on whether they are useful to improve model performance. Positive tokens can be trained in common ways, whereas negative tokens, which may lack essential semantics or be misleading, should be explicitly forgotten. Overall, the token categorization facilitate the model to learn less informative message, and the forgetting process shapes a knowledge boundary to guide the model on what information to learn more precisely. We conduct experiments on well-established benchmarks, finding that this forgetting mechanism not only improves overall model performance and also facilitate more diverse model responses.
 ]]></content:encoded>
 <pubDate>Fri, 22 Aug 2025 00:00:00 -0400</pubDate>
 </item>

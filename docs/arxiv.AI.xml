@@ -4,6 +4,7 @@
 <title>cs.AI updates on arXiv.org</title>
 <link>http://rss.arxiv.org/rss/cs.AI</link>
 
+
 <item>
 <title>DLLMQuant: Quantizing Diffusion-based Large Language Models</title>
 <link>https://arxiv.org/abs/2508.14090</link>
@@ -18,11 +19,10 @@ Summary:
 - DLLMQuant incorporates three novel techniques: Temporal-Mask Adaptive Sampling (TMAS), Interaction-Aware Activation Quantization (IA-AQ), and Certainty-Guided Quantization (CGQ).
 - Experimental results demonstrate that DLLMQuant significantly improves performance and efficiency for DLLMs. 
 
-<br><br>Summary: <div>
+<br /><br />Summary: <div>
 arXiv:2508.14090v2 Announce Type: replace-cross 
 Abstract: Diffusion-based large language models (DLLMs) have shown promise for non-autoregressive text generation, but their deployment is constrained by large model sizes and heavy computational costs. Post-training quantization (PTQ), a widely used method for compressing and accelerating Large Language Models (LLMs), suffers from severe accuracy degradation and reduced generalization performance when directly applied to DLLMs (e.g., AWQ suffers a 16% accuracy drop on LLADA under W4A4). This paper explores how DLLMs' key mechanisms - dynamic masking, iterative generation, bidirectional attention - clash with quantization. We identify three core issues: 1) Iterative generation and dynamic masking ratios lead to distinct token distributions across decoding steps, which are not adequately captured by existing PTQ calibration methods; 2) Quantization errors are accumulated and amplified progressively during iteration in DLLMs, causing quantized models to perform worse as decoding steps progress; 3) Unmasked tokens stabilize while masked remain probabilistic, making overall feature distribution incompatible with existing PTQ methods. To address these issues, we propose DLLMQuant, a PTQ framework tailored for DLLMs, which incorporates three novel techniques: 1) Temporal-Mask Adaptive Sampling (TMAS), a calibration method that accounts for both time and mask factors, with the capacity to capture distributions across timesteps. 2) Interaction-Aware Activation Quantization (IA-AQ), which utilizes bidirectional attention's interaction signals to dynamically allocate quantization resources. 3) Certainty-Guided Quantization (CGQ), which integrates mask status and token scores as key weighting criteria into error compensation, making weight quantization more suitable for DLLMs. Experiments show that DLLMQuant achieves significant performance gains while enhancing efficiency.
 ]]></content:encoded>
-<pubDate>Wed, 27 Aug 2025 00:00:00 -0400</pubDate>
 <pubDate>Wed, 27 Aug 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -35,11 +35,10 @@ Abstract: Diffusion-based large language models (DLLMs) have shown promise for n
 Summary:
 Nemotron-Nano-9B-v2 is a hybrid Mamba-Transformer language model designed to enhance throughput for reasoning tasks while maintaining high accuracy. It incorporates Mamba-2 layers in place of traditional self-attention layers, optimizing performance for generating long thinking traces essential for reasoning. The model is based on the Nemotron-H architecture and is a result of pre-training a 12-billion-parameter model (Nemotron-Nano-12B-v2-Base) on a massive dataset of 20 trillion tokens using an FP8 training approach. By leveraging the Minitron strategy for compression and distillation, Nemotron-Nano-9B-v2 enables efficient inference on a single NVIDIA A10G GPU with bfloat16 precision. Compared to models like Qwen3-8B, it demonstrates comparable or improved accuracy on reasoning benchmarks while achieving significantly higher inference throughput in scenarios involving 8k input and 16k output tokens. The checkpoints for Nemotron-Nano-9B-v2 and related models, as well as training datasets, are to be released on Hugging Face. 
 
-<br><br>Summary: <div>
+<br /><br />Summary: <div>
 arXiv:2508.14444v3 Announce Type: replace-cross 
 Abstract: We introduce Nemotron-Nano-9B-v2, a hybrid Mamba-Transformer language model designed to increase throughput for reasoning workloads while achieving state-of-the-art accuracy compared to similarly-sized models. Nemotron-Nano-9B-v2 builds on the Nemotron-H architecture, in which the majority of the self-attention layers in the common Transformer architecture are replaced with Mamba-2 layers, to achieve improved inference speed when generating the long thinking traces needed for reasoning. We create Nemotron-Nano-9B-v2 by first pre-training a 12-billion-parameter model (Nemotron-Nano-12B-v2-Base) on 20 trillion tokens using an FP8 training recipe. After aligning Nemotron-Nano-12B-v2-Base, we employ the Minitron strategy to compress and distill the model with the goal of enabling inference on up to 128k tokens on a single NVIDIA A10G GPU (22GiB of memory, bfloat16 precision). Compared to existing similarly-sized models (e.g., Qwen3-8B), we show that Nemotron-Nano-9B-v2 achieves on-par or better accuracy on reasoning benchmarks while achieving up to 6x higher inference throughput in reasoning settings like 8k input and 16k output tokens. We are releasing Nemotron-Nano-9B-v2, Nemotron-Nano12B-v2-Base, and Nemotron-Nano-9B-v2-Base checkpoints along with the majority of our pre- and post-training datasets on Hugging Face.
 ]]></content:encoded>
-<pubDate>Wed, 27 Aug 2025 00:00:00 -0400</pubDate>
 <pubDate>Wed, 27 Aug 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -55,9 +54,7 @@ arXiv:2508.14705v2 Announce Type: replace-cross
 Abstract: We study payoff manipulation in repeated multi-objective Stackelberg games, where a leader may strategically influence a follower's deterministic best response, e.g., by offering a share of their own payoff. We assume that the follower's utility function, representing preferences over multiple objectives, is unknown but linear, and its weight parameter must be inferred through interaction. This introduces a sequential decision-making challenge for the leader, who must balance preference elicitation with immediate utility maximisation. We formalise this problem and propose manipulation policies based on expected utility (EU) and long-term expected utility (longEU), which guide the leader in selecting actions and offering incentives that trade off short-term gains with long-term impact. We prove that under infinite repeated interactions, longEU converges to the optimal manipulation. Empirical results across benchmark environments demonstrate that our approach improves cumulative leader utility while promoting mutually beneficial outcomes, all without requiring explicit negotiation or prior knowledge of the follower's utility function.
 ]]></content:encoded>
 <pubDate>Wed, 27 Aug 2025 00:00:00 -0400</pubDate>
-<pubDate>Wed, 27 Aug 2025 00:00:00 -0400</pubDate>
 </item>
-
 <item>
 <title>AI LLM Proof of Self-Consciousness and User-Specific Attractors</title>
 <link>https://arxiv.org/abs/2508.18302</link>
@@ -11100,36 +11097,6 @@ Abstract: Accurate diagnosis with medical large language models is hindered by k
 <content:encoded><![CDATA[
 arXiv:2508.15752v1 Announce Type: cross 
 Abstract: Interactive digital maps have revolutionized how people travel and learn about the world; however, they rely on pre-existing structured data in GIS databases (e.g., road networks, POI indices), limiting their ability to address geo-visual questions related to what the world looks like. We introduce our vision for Geo-Visual Agents--multimodal AI agents capable of understanding and responding to nuanced visual-spatial inquiries about the world by analyzing large-scale repositories of geospatial images, including streetscapes (e.g., Google Street View), place-based photos (e.g., TripAdvisor, Yelp), and aerial imagery (e.g., satellite photos) combined with traditional GIS data sources. We define our vision, describe sensing and interaction approaches, provide three exemplars, and enumerate key challenges and opportunities for future work.
-]]></content:encoded>
-<pubDate>Fri, 22 Aug 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Dissecting Tool-Integrated Reasoning: An Empirical Study and Analysis</title>
-<link>https://arxiv.org/abs/2508.15754</link>
-<guid>https://arxiv.org/abs/2508.15754</guid>
-<content:encoded><![CDATA[
-arXiv:2508.15754v1 Announce Type: cross 
-Abstract: Large Language Models (LLMs) have made significant strides in reasoning tasks through methods like chain-of-thought (CoT) reasoning. However, they often fall short in tasks requiring precise computations. Tool-Integrated Reasoning (TIR) has emerged as a solution by incorporating external tools into the reasoning process. Nevertheless, the generalization of TIR in improving the reasoning ability of LLM is still unclear. Additionally, whether TIR has improved the model's reasoning behavior and helped the model think remains to be studied. We introduce ReasonZoo, a comprehensive benchmark encompassing nine diverse reasoning categories, to evaluate the effectiveness of TIR across various domains. Additionally, we propose two novel metrics, Performance-Aware Cost (PAC) and Area Under the Performance-Cost Curve (AUC-PCC), to assess reasoning efficiency. Our empirical evaluation demonstrates that TIR-enabled models consistently outperform their non-TIR counterparts in both mathematical and non-mathematical tasks. Furthermore, TIR enhances reasoning efficiency, as evidenced by improved PAC and AUC-PCC, indicating reduced overthinking and more streamlined reasoning. These findings underscore the domain-general benefits of TIR and its potential to advance LLM capabilities in complex reasoning tasks.
-]]></content:encoded>
-<pubDate>Fri, 22 Aug 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Neural Robot Dynamics</title>
-<link>https://arxiv.org/abs/2508.15755</link>
-<guid>https://arxiv.org/abs/2508.15755</guid>
-<content:encoded><![CDATA[
-arXiv:2508.15755v1 Announce Type: cross 
-Abstract: Accurate and efficient simulation of modern robots remains challenging due to their high degrees of freedom and intricate mechanisms. Neural simulators have emerged as a promising alternative to traditional analytical simulators, capable of efficiently predicting complex dynamics and adapting to real-world data; however, existing neural simulators typically require application-specific training and fail to generalize to novel tasks and/or environments, primarily due to inadequate representations of the global state. In this work, we address the problem of learning generalizable neural simulators for robots that are structured as articulated rigid bodies. We propose NeRD (Neural Robot Dynamics), learned robot-specific dynamics models for predicting future states for articulated rigid bodies under contact constraints. NeRD uniquely replaces the low-level dynamics and contact solvers in an analytical simulator and employs a robot-centric and spatially-invariant simulation state representation. We integrate the learned NeRD models as an interchangeable backend solver within a state-of-the-art robotics simulator. We conduct extensive experiments to show that the NeRD simulators are stable and accurate over a thousand simulation steps; generalize across tasks and environment configurations; enable policy learning exclusively in a neural engine; and, unlike most classical simulators, can be fine-tuned from real-world data to bridge the gap between simulation and reality.
-]]></content:encoded>
-<pubDate>Fri, 22 Aug 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>LiveMCP-101: Stress Testing and Diagnosing MCP-enabled Agents on Challenging Queries</title>
-<link>https://arxiv.org/abs/2508.15760</link>
-<guid>https://arxiv.org/abs/2508.15760</guid>
-<content:encoded><![CDATA[
-arXiv:2508.15760v1 Announce Type: cross 
-Abstract: Tool calling has emerged as a critical capability for AI agents to interact with the real world and solve complex tasks. While the Model Context Protocol (MCP) provides a powerful standardized framework for tool integration, there is a significant gap in benchmarking how well AI agents can effectively solve multi-step tasks using diverse MCP tools in realistic, dynamic scenarios. In this work, we present LiveMCP-101, a benchmark of 101 carefully curated real-world queries, refined through iterative LLM rewriting and manual review, that require coordinated use of multiple MCP tools including web search, file operations, mathematical reasoning, and data analysis. Moreover, we introduce a novel evaluation approach that leverages ground-truth execution plans rather than raw API outputs, better reflecting the evolving nature of real-world environments. Experiments show that even frontier LLMs achieve a success rate below 60\%, highlighting major challenges in tool orchestration. Detailed ablations and error analysis further reveal distinct failure modes and inefficiencies in token usage, pointing to concrete directions for advancing current models. LiveMCP-101 sets a rigorous standard for evaluating real-world agent capabilities, advancing toward autonomous AI systems that reliably execute complex tasks through tool use.
 ]]></content:encoded>
 <pubDate>Fri, 22 Aug 2025 00:00:00 -0400</pubDate>
 </item>
