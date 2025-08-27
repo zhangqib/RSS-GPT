@@ -4,6 +4,36 @@
 <title>cs.CE updates on arXiv.org</title>
 <link>http://rss.arxiv.org/rss/cs.CE</link>
 
+<item>
+<title>Graph Neural Network-Based Topology Optimization for Self-Supporting Structures in Additive Manufacturing</title>
+<link>https://arxiv.org/abs/2508.19169</link>
+<guid>https://arxiv.org/abs/2508.19169</guid>
+<content:encoded><![CDATA[
+<div> machine learning, topology optimization, self-supporting structures, additive manufacturing, stress constraints
+<br>
+The paper introduces a novel machine learning-based framework for optimizing the topology of self-supporting structures for additive manufacturing. The framework utilizes a graph neural network (GNN) to predict material distributions over a finite element mesh, ensuring printability through an integrated AM filter. By minimizing structural compliance under volume and stress constraints, the framework generates stress-constrained manufacturable designs in various loading conditions. The stress constraint is enforced using a differentiable p-norm aggregation of von Mises stress to enhance mechanical reliability. The approach features a fully differentiable architecture, eliminating the need for explicit sensitivity derivation in the optimization loop. Numerical experiments demonstrate the efficacy of the framework in producing high-performance designs suitable for additive manufacturing with reduced post-processing requirements.
+<br><br>Summary: <div>
+arXiv:2508.19169v1 Announce Type: new 
+Abstract: This paper presents a machine learning-based framework for topology optimization of self-supporting structures, specifically tailored for additive manufacturing (AM). By employing a graph neural network (GNN) that acts as a neural field over the finite element mesh, the framework effectively learns and predicts continuous material distributions. An integrated AM filter ensures printability by eliminating unsupported overhangs, while the optimization process minimizes structural compliance under volume and stress constraints. The stress constraint is enforced using a differentiable p-norm aggregation of von Mises stress, promoting mechanical reliability in the optimized designs. A key advantage of the approach lies in its fully differentiable architecture, which leverages automatic differentiation throughout the optimization loop--eliminating the need for explicit sensitivity derivation for both the filter and the stress constraint. Numerical experiments demonstrate the ability of the framework to generate stress-constrained manufacturable topologies under various loading and boundary conditions, offering a practical pathway toward AM-ready high-performance designs with reduced post-processing requirements.
+]]></content:encoded>
+<pubDate>Wed, 27 Aug 2025 00:00:00 -0400</pubDate>
+<pubDate>Wed, 27 Aug 2025 00:00:00 -0400</pubDate>
+</item>
+<item>
+<title>Ab-initio Quantum Transport with the GW Approximation, 42,240 Atoms, and Sustained Exascale Performance</title>
+<link>https://arxiv.org/abs/2508.19138</link>
+<guid>https://arxiv.org/abs/2508.19138</guid>
+<content:encoded><![CDATA[
+<div> nanoscale electronic devices, nanoribbon field-effect transistors, NEGF, DFT, electron-electron interactions<br>
+<br>
+Summary:<br>
+Designing nanoscale electronic devices like nanoribbon field-effect transistors (NRFETs) requires advanced quantum mechanical modeling tools. Current approaches combine NEGF and DFT, but with ultra-small device dimensions, electron-electron interactions become crucial. The NEGF+GW scheme presented here extends existing solvers to handle NRFET geometries with dimensions comparable to experiments. The QuaTrEx package utilizes a novel domain decomposition scheme, can handle devices with up to 84,480 atoms, and scales efficiently on supercomputers like Alps and Frontier. It achieves exascale FP64 performance on 42,240 atoms, reaching 1.15 Eflop/s. <div>
+arXiv:2508.19138v1 Announce Type: cross 
+Abstract: Designing nanoscale electronic devices such as the currently manufactured nanoribbon field-effect transistors (NRFETs) requires advanced modeling tools capturing all relevant quantum mechanical effects. State-of-the-art approaches combine the non-equilibrium Green's function (NEGF) formalism and density functional theory (DFT). However, as device dimensions do not exceed a few nanometers anymore, electrons are confined in ultra-small volumes, giving rise to strong electron-electron interactions. To account for these critical effects, DFT+NEGF solvers should be extended with the GW approximation, which massively increases their computational intensity. Here, we present the first implementation of the NEGF+GW scheme capable of handling NRFET geometries with dimensions comparable to experiments. This package, called QuaTrEx, makes use of a novel spatial domain decomposition scheme, can treat devices made of up to 84,480 atoms, scales very well on the Alps and Frontier supercomputers (>80% weak scaling efficiency), and sustains an exascale FP64 performance on 42,240 atoms (1.15 Eflop/s).
+]]></content:encoded>
+<pubDate>Wed, 27 Aug 2025 00:00:00 -0400</pubDate>
+<pubDate>Wed, 27 Aug 2025 00:00:00 -0400</pubDate>
+</item>
 
 <item>
 <title>TOFLUX: A Differentiable Topology Optimization Framework for Multiphysics Fluidic Problems</title>
