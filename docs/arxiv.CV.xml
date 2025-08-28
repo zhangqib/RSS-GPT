@@ -4,21 +4,20 @@
 <title>cs.CV updates on arXiv.org</title>
 <link>http://rss.arxiv.org/rss/cs.CV</link>
 
+
 <item>
 <title>GeoSAM2: Unleashing the Power of SAM2 for 3D Part Segmentation</title>
 <link>https://arxiv.org/abs/2508.14036</link>
 <guid>https://arxiv.org/abs/2508.14036</guid>
 <content:encoded><![CDATA[
-<div> Keywords: GeoSAM2, 3D part segmentation, multi-view, 2D mask prediction, controllability <br>
-Summary: <br>
-GeoSAM2 is a novel framework for 3D part segmentation that uses multi-view 2D mask prediction and simple 2D prompts to guide part selection. By leveraging a shared backbone with added features for view-specific reasoning, the method achieves state-of-the-art performance without the need for text prompts or full 3D labels. The approach allows for fine-grained, part-specific control and precision in object-level part understanding. By aligning the paradigm of 3D segmentation with SAM2, the framework enables controllability and interpretable results, surpassing both slow optimization-based pipelines and fast feedforward approaches. The method showcases how interactive 2D inputs can enhance the accuracy and usability of 3D segmentation tasks. <br> <div>
+<div> Keywords: GeoSAM2, 3D part segmentation, multi-view, 2D mask prediction, controllability <br />
+Summary: <br />
+GeoSAM2 is a novel framework for 3D part segmentation that uses multi-view 2D mask prediction and simple 2D prompts to guide part selection. By leveraging a shared backbone with added features for view-specific reasoning, the method achieves state-of-the-art performance without the need for text prompts or full 3D labels. The approach allows for fine-grained, part-specific control and precision in object-level part understanding. By aligning the paradigm of 3D segmentation with SAM2, the framework enables controllability and interpretable results, surpassing both slow optimization-based pipelines and fast feedforward approaches. The method showcases how interactive 2D inputs can enhance the accuracy and usability of 3D segmentation tasks. <br /> <div>
 arXiv:2508.14036v2 Announce Type: replace 
 Abstract: We introduce GeoSAM2, a prompt-controllable framework for 3D part segmentation that casts the task as multi-view 2D mask prediction. Given a textureless object, we render normal and point maps from predefined viewpoints and accept simple 2D prompts - clicks or boxes - to guide part selection. These prompts are processed by a shared SAM2 backbone augmented with LoRA and residual geometry fusion, enabling view-specific reasoning while preserving pretrained priors. The predicted masks are back-projected to the object and aggregated across views. Our method enables fine-grained, part-specific control without requiring text prompts, per-shape optimization, or full 3D labels. In contrast to global clustering or scale-based methods, prompts are explicit, spatially grounded, and interpretable. We achieve state-of-the-art class-agnostic performance on PartObjaverse-Tiny and PartNetE, outperforming both slow optimization-based pipelines and fast but coarse feedforward approaches. Our results highlight a new paradigm: aligning the paradigm of 3D segmentation with SAM2, leveraging interactive 2D inputs to unlock controllability and precision in object-level part understanding.
 ]]></content:encoded>
 <pubDate>Thu, 28 Aug 2025 00:00:00 -0400</pubDate>
-<pubDate>Thu, 28 Aug 2025 00:00:00 -0400</pubDate>
 </item>
-
 <item>
 <title>Real-Time Intuitive AI Drawing System for Collaboration: Enhancing Human Creativity through Formal and Contextual Intent Integration</title>
 <link>https://arxiv.org/abs/2508.19254</link>
@@ -11431,16 +11430,6 @@ Abstract: Background: The aim of this study was to develop and evaluate a deep l
   Methods: Manual segmentation was performed on hepatobiliary phase MRI scans from 90 consecutive patients who underwent liver surgery between January 2020 and October 2023. A deep learning network (nnU-Net v1) was trained on 72 patients with an extra focus on thin structures and topography preservation. Performance was evaluated on an 18-patient test set by comparing automated and manual segmentations using Dice similarity coefficient (DSC). Following clinical integration, 10 segmentations (assessment dataset) were generated using the network and manually refined for clinical use to quantify required adjustments using DSC.
   Results: In the test set, DSCs were 0.97+/-0.01 for liver parenchyma, 0.80+/-0.04 for hepatic vein, 0.79+/-0.07 for biliary tree, 0.77+/-0.17 for tumors, and 0.74+/-0.06 for portal vein. Average tumor detection rate was 76.6+/-24.1%, with a median of one false-positive per patient. The assessment dataset showed minor adjustments were required for clinical use of the 3D models, with high DSCs for parenchyma (1.00+/-0.00), portal vein (0.98+/-0.01) and hepatic vein (0.95+/-0.07). Tumor segmentation exhibited greater variability (DSC 0.80+/-0.27). During prospective clinical use, the model detected three additional tumors initially missed by radiologists.
   Conclusions: The proposed nnU-Net-based segmentation method enables accurate and automated delineation of hepatic anatomy. This enables 3D planning to be applied efficiently as a standard-of-care for every patient undergoing liver surgery.
-]]></content:encoded>
-<pubDate>Thu, 21 Aug 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>STAS: Spatio-Temporal Adaptive Computation Time for Spiking Transformers</title>
-<link>https://arxiv.org/abs/2508.14138</link>
-<guid>https://arxiv.org/abs/2508.14138</guid>
-<content:encoded><![CDATA[
-arXiv:2508.14138v1 Announce Type: cross 
-Abstract: Spiking neural networks (SNNs) offer energy efficiency over artificial neural networks (ANNs) but suffer from high latency and computational overhead due to their multi-timestep operational nature. While various dynamic computation methods have been developed to mitigate this by targeting spatial, temporal, or architecture-specific redundancies, they remain fragmented. While the principles of adaptive computation time (ACT) offer a robust foundation for a unified approach, its application to SNN-based vision Transformers (ViTs) is hindered by two core issues: the violation of its temporal similarity prerequisite and a static architecture fundamentally unsuited for its principles. To address these challenges, we propose STAS (Spatio-Temporal Adaptive computation time for Spiking transformers), a framework that co-designs the static architecture and dynamic computation policy. STAS introduces an integrated spike patch splitting (I-SPS) module to establish temporal stability by creating a unified input representation, thereby solving the architectural problem of temporal dissimilarity. This stability, in turn, allows our adaptive spiking self-attention (A-SSA) module to perform two-dimensional token pruning across both spatial and temporal axes. Implemented on spiking Transformer architectures and validated on CIFAR-10, CIFAR-100, and ImageNet, STAS reduces energy consumption by up to 45.9%, 43.8%, and 30.1%, respectively, while simultaneously improving accuracy over SOTA models.
 ]]></content:encoded>
 <pubDate>Thu, 21 Aug 2025 00:00:00 -0400</pubDate>
 </item>

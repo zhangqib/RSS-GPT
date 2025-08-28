@@ -4,21 +4,20 @@
 <title>cs.LG updates on arXiv.org</title>
 <link>http://rss.arxiv.org/rss/cs.LG</link>
 
+
 <item>
 <title>A Systematic Survey of Model Extraction Attacks and Defenses: State-of-the-Art and Perspectives</title>
 <link>https://arxiv.org/abs/2508.15031</link>
 <guid>https://arxiv.org/abs/2508.15031</guid>
 <content:encoded><![CDATA[
-<div> Machine Learning, Model Extraction Attacks, Defenses, Computing Environments, AI Security<br>
-Summary:<br>
+<div> Machine Learning, Model Extraction Attacks, Defenses, Computing Environments, AI Security<br />
+Summary:<br />
 Machine learning models have become increasingly complex and powerful, leading to the development of Machine-Learning-as-a-Service (MLaaS) platforms that make these models more accessible. However, this accessibility also introduces vulnerabilities, such as Model Extraction Attacks (MEAs), where adversaries can replicate a target model's functionality through publicly exposed interfaces. This paper provides a comprehensive survey of MEAs and defense strategies, presenting a novel taxonomy to classify different attack mechanisms and defense approaches. The analysis covers various attack techniques, assesses their effectiveness, and discusses challenges faced by existing defenses. The study also evaluates MEAs in different computing environments and considers their technical, ethical, legal, and societal implications. Promising directions for future research are highlighted, and an online repository of related literature is maintained to aid researchers, practitioners, and policymakers in AI security and privacy. <div>
 arXiv:2508.15031v2 Announce Type: replace-cross 
 Abstract: Machine learning (ML) models have significantly grown in complexity and utility, driving advances across multiple domains. However, substantial computational resources and specialized expertise have historically restricted their wide adoption. Machine-Learning-as-a-Service (MLaaS) platforms have addressed these barriers by providing scalable, convenient, and affordable access to sophisticated ML models through user-friendly APIs. While this accessibility promotes widespread use of advanced ML capabilities, it also introduces vulnerabilities exploited through Model Extraction Attacks (MEAs). Recent studies have demonstrated that adversaries can systematically replicate a target model's functionality by interacting with publicly exposed interfaces, posing threats to intellectual property, privacy, and system security. In this paper, we offer a comprehensive survey of MEAs and corresponding defense strategies. We propose a novel taxonomy that classifies MEAs according to attack mechanisms, defense approaches, and computing environments. Our analysis covers various attack techniques, evaluates their effectiveness, and highlights challenges faced by existing defenses, particularly the critical trade-off between preserving model utility and ensuring security. We further assess MEAs within different computing paradigms and discuss their technical, ethical, legal, and societal implications, along with promising directions for future research. This systematic survey aims to serve as a valuable reference for researchers, practitioners, and policymakers engaged in AI security and privacy. Additionally, we maintain an online repository continuously updated with related literature at https://github.com/kzhao5/ModelExtractionPapers.
 ]]></content:encoded>
 <pubDate>Thu, 28 Aug 2025 00:00:00 -0400</pubDate>
-<pubDate>Thu, 28 Aug 2025 00:00:00 -0400</pubDate>
 </item>
-
 <item>
 <title>Physics-Informed Regression: Parameter Estimation in Parameter-Linear Nonlinear Dynamic Models</title>
 <link>https://arxiv.org/abs/2508.19249</link>
@@ -11088,16 +11087,6 @@ Abstract: Federated learning (FL) has emerged as a popular approach for collabor
 <content:encoded><![CDATA[
 arXiv:2508.00716v2 Announce Type: replace 
 Abstract: Graph Domain Adaptation (GDA) facilitates knowledge transfer from labeled source graphs to unlabeled target graphs by learning domain-invariant representations, which is essential in applications such as molecular property prediction and social network analysis. However, most existing GDA methods rely on the assumption of clean source labels, which rarely holds in real-world scenarios where annotation noise is pervasive. This label noise severely impairs feature alignment and degrades adaptation performance under domain shifts. To address this challenge, we propose Nested Graph Pseudo-Label Refinement (NeGPR), a novel framework tailored for graph-level domain adaptation with noisy labels. NeGPR first pretrains dual branches, i.e., semantic and topology branches, by enforcing neighborhood consistency in the feature space, thereby reducing the influence of noisy supervision. To bridge domain gaps, NeGPR employs a nested refinement mechanism in which one branch selects high-confidence target samples to guide the adaptation of the other, enabling progressive cross-domain learning. Furthermore, since pseudo-labels may still contain noise and the pre-trained branches are already overfitted to the noisy labels in the source domain, NeGPR incorporates a noise-aware regularization strategy. This regularization is theoretically proven to mitigate the adverse effects of pseudo-label noise, even under the presence of source overfitting, thus enhancing the robustness of the adaptation process. Extensive experiments on benchmark datasets demonstrate that NeGPR consistently outperforms state-of-the-art methods under severe label noise, achieving gains of up to 12.7% in accuracy.
-]]></content:encoded>
-<pubDate>Mon, 25 Aug 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Who's the Evil Twin? Differential Auditing for Undesired Behavior</title>
-<link>https://arxiv.org/abs/2508.06827</link>
-<guid>https://arxiv.org/abs/2508.06827</guid>
-<content:encoded><![CDATA[
-arXiv:2508.06827v2 Announce Type: replace 
-Abstract: Detecting hidden behaviors in neural networks poses a significant challenge due to minimal prior knowledge and potential adversarial obfuscation. We explore this problem by framing detection as an adversarial game between two teams: the red team trains two similar models, one trained solely on benign data and the other trained on data containing hidden harmful behavior, with the performance of both being nearly indistinguishable on the benign dataset. The blue team, with limited to no information about the harmful behaviour, tries to identify the compromised model. We experiment using CNNs and try various blue team strategies, including Gaussian noise analysis, model diffing, integrated gradients, and adversarial attacks under different levels of hints provided by the red team. Results show high accuracy for adversarial-attack-based methods (100\% correct prediction, using hints), which is very promising, whilst the other techniques yield more varied performance. During our LLM-focused rounds, we find that there are not many parallel methods that we could apply from our study with CNNs. Instead, we find that effective LLM auditing methods require some hints about the undesired distribution, which can then used in standard black-box and open-weight methods to probe the models further and reveal their misalignment. We open-source our auditing games (with the model and data) and hope that our findings contribute to designing better audits.
 ]]></content:encoded>
 <pubDate>Mon, 25 Aug 2025 00:00:00 -0400</pubDate>
 </item>
