@@ -4,6 +4,266 @@
 <title>cs.CE updates on arXiv.org</title>
 <link>http://rss.arxiv.org/rss/cs.CE</link>
 
+<item>
+<title>Kernel manifolds: nonlinear-augmentation dimensionality reduction using reproducing kernel Hilbert spaces</title>
+<link>https://arxiv.org/abs/2509.00224</link>
+<guid>https://arxiv.org/abs/2509.00224</guid>
+<content:encoded><![CDATA[
+<div> Kernel methods, Nonlinear dimensionality reduction, Quadratic manifold, Feature map, Reproducing kernel Hilbert space <br>
+<br>
+Summary: 
+This paper introduces a novel approach to dimensionality reduction called kernel methods-based nonlinear-augmentation dimensionality reduction as an extension of quadratic manifold (QM) dimensionality reduction. The method involves augmenting linear dimensionality reduction with a nonlinear correction term in the reconstruction map to improve accuracy. Unlike previous methods that use least-squares optimal polynomial correction terms, this approach learns an optimal nonlinear correction from a reproducing kernel Hilbert space defined by the user. It allows for the imposition of various nonlinear structures on the correction term, including polynomial and radial basis function-based structures. The method is computationally efficient and exhibits decreasing error as the latent space dimension increases. Comparisons with other dimensionality reduction techniques like proper orthogonal decomposition and existing QM approaches demonstrate the effectiveness of the proposed method on various datasets. <div>
+arXiv:2509.00224v1 Announce Type: new 
+Abstract: This paper generalizes recent advances on quadratic manifold (QM) dimensionality reduction by developing kernel methods-based nonlinear-augmentation dimensionality reduction. QMs, and more generally feature map-based nonlinear corrections, augment linear dimensionality reduction with a nonlinear correction term in the reconstruction map to overcome approximation accuracy limitations of purely linear approaches. While feature map-based approaches typically learn a least-squares optimal polynomial correction term, we generalize this approach by learning an optimal nonlinear correction from a user-defined reproducing kernel Hilbert space. Our approach allows one to impose arbitrary nonlinear structure on the correction term, including polynomial structure, and includes feature map and radial basis function-based corrections as special cases. Furthermore, our method has relatively low training cost and has monotonically decreasing error as the latent space dimension increases. We compare our approach to proper orthogonal decomposition and several recent QM approaches on data from several example problems.
+]]></content:encoded>
+<pubDate>Wed, 03 Sep 2025 00:00:00 -0400</pubDate>
+<pubDate>Wed, 03 Sep 2025 00:00:00 -0400</pubDate>
+</item>
+<item>
+<title>I-FENN with DeepONets: accelerating simulations in coupled multiphysics problems</title>
+<link>https://arxiv.org/abs/2509.00604</link>
+<guid>https://arxiv.org/abs/2509.00604</guid>
+<content:encoded><![CDATA[
+<div> Keywords: DeepONet, Finite Element Method, multiphysics simulations, thermoelasticity, poroelasticity
+
+Summary: 
+This article introduces a novel framework that integrates DeepONet with the Finite Element Method to address coupled thermoelasticity and poroelasticity problems efficiently. The framework, called I-FENN, employs neural networks as PDE solvers within FEM, resulting in a hybrid staggered solver. By decoupling multiphysics interactions, the framework reduces computational costs while maintaining flexibility across various scenarios. The modified DeepONet architecture allows for multiple inputs and an efficient strategy for enforcing boundary conditions on distinct boundaries. Numerical examples demonstrate the computational efficiency, accuracy, and generalization capabilities of the proposed work, even under unseen loading conditions. The computational savings increase with model complexity while maintaining high accuracy levels in challenging regions of the domain. Overall, the framework shows promise in tackling high-dimensional, large-scale coupled multiphysics simulations. 
+
+Summary: <div>
+arXiv:2509.00604v1 Announce Type: new 
+Abstract: Coupled multiphysics simulations for high-dimensional, large-scale problems can be prohibitively expensive due to their computational demands. This article presents a novel framework integrating a deep operator network (DeepONet) with the Finite Element Method (FEM) to address coupled thermoelasticity and poroelasticity problems. This integration occurs within the context of I-FENN, a framework where neural networks are directly employed as PDE solvers within FEM, resulting in a hybrid staggered solver. In this setup, the mechanical field is computed using FEM, while the other coupled field is predicted using a neural network (NN). By decoupling multiphysics interactions, the hybrid framework reduces computational cost by simplifying calculations and reducing the FEM unknowns, while maintaining flexibility across unseen scenarios. The proposed work introduces a new I-FENN architecture with extended generalizability due to the DeepONets ability to efficiently address several combinations of natural boundary conditions and body loads. A modified DeepONet architecture is introduced to accommodate multiple inputs, along with a streamlined strategy for enforcing boundary conditions on distinct boundaries. We showcase the applicability and merits of the proposed work through numerical examples covering thermoelasticity and poroelasticity problems, demonstrating computational efficiency, accuracy, and generalization capabilities. In all examples, the test cases involve unseen loading conditions. The computational savings scale with the model complexity while preserving an accuracy of more than 95\% in the non-trivial regions of the domain.
+]]></content:encoded>
+<pubDate>Wed, 03 Sep 2025 00:00:00 -0400</pubDate>
+<pubDate>Wed, 03 Sep 2025 00:00:00 -0400</pubDate>
+</item>
+<item>
+<title>A new definition of peridynamic damage for thermo-mechanical fracture modeling</title>
+<link>https://arxiv.org/abs/2509.01079</link>
+<guid>https://arxiv.org/abs/2509.01079</guid>
+<content:encoded><![CDATA[
+<div> Thermo-mechanical fracture modeling, thermal failure, heat conduction, continuum mechanics, peridynamic model<br>
+Summary: A novel thermo-mechanical fracture modeling approach is proposed, combining classical continuum mechanics and peridynamic models to address thermal failure issues. The model incorporates a CCM/PD alternating solution for accurate calculations using finite element discretization. A new definition of PD damage is introduced, considering both the number and distribution of broken bonds for capturing damage in various directions. Validation against analytical solutions and simulations of crack propagation demonstrate the model's effectiveness in simulating complex thermal fractures and understanding initiation and propagation mechanisms. <div>
+arXiv:2509.01079v1 Announce Type: new 
+Abstract: A thermo-mechanical fracture modeling is proposed to address thermal failure issues, where the temperature field is calculated by a heat conduction model based on classical continuum mechanics (CCM), while the deformation field with discontinuities is calculated by the peridynamic (PD) model. The model is calculated by a CCM/PD alternating solution based on the finite element discretization, which ensures the calculation accuracy and facilitates engineering applications. The original PD model defines damage solely based on the number of broken bonds in the vicinity of the material point, neglecting the distribution of these bonds. To address this limitation, a new definition of the PD damage accounting for both the number of broken bonds and their specific distribution is proposed. As a result, damage in various directions can be captured, enabling more realistic thermal fracture simulations based on a unified mesh discretization. The effectiveness of the proposed model is validated by comparing numerical examples with analytical solutions. Moreover, simulation results of quasi-static and dynamic crack propagation demonstrate the model's ability to aid in understanding the initiation and propagation mechanisms of complex thermal fractures.
+]]></content:encoded>
+<pubDate>Wed, 03 Sep 2025 00:00:00 -0400</pubDate>
+<pubDate>Wed, 03 Sep 2025 00:00:00 -0400</pubDate>
+</item>
+<item>
+<title>RAMS: Residual-based adversarial-gradient moving sample method for scientific machine learning in solving partial differential equations</title>
+<link>https://arxiv.org/abs/2509.01234</link>
+<guid>https://arxiv.org/abs/2509.01234</guid>
+<content:encoded><![CDATA[
+<div> Neural networks, PDEs, PINNs, SciML, RAMS 
+Summary: 
+Physics-informed neural networks (PINNs) and neural operators are powerful tools for solving PDEs. Increasing the training sample size enhances network performance but increases computational costs. To address this trade-off, the residual-based adversarial-gradient moving sample (RAMS) method is proposed. RAMS moves samples based on the adversarial gradient direction to maximize the PDE residual, improving sampling efficiency for high-dimensional problems. It can be integrated into existing sampling methods. Extensive experiments show RAMS's effectiveness in PINNs for high-dimensional PDEs and operator learning tasks, making it the first efficient adaptive sampling approach for operator learning in the SciML field. <br><br>Summary: <div>
+arXiv:2509.01234v1 Announce Type: new 
+Abstract: Physics-informed neural networks (PINNs) and neural operators, two leading scientific machine learning (SciML) paradigms, have emerged as powerful tools for solving partial differential equations (PDEs). Although increasing the training sample size generally enhances network performance, it also increases computational costs for physics-informed or data-driven training. To address this trade-off, different sampling strategies have been developed to sample more points in regions with high PDE residuals. However, existing sampling methods are computationally demanding for high-dimensional problems, such as high-dimensional PDEs or operator learning tasks. Here, we propose a residual-based adversarial-gradient moving sample (RAMS) method, which moves samples according to the adversarial gradient direction to maximize the PDE residual via gradient-based optimization. RAMS can be easily integrated into existing sampling methods. Extensive experiments, ranging from PINN applied to high-dimensional PDEs to physics-informed and data-driven operator learning problems, have been conducted to demonstrate the effectiveness of RAMS. Notably, RAMS represents the first efficient adaptive sampling approach for operator learning, marking a significant advancement in the SciML field.
+]]></content:encoded>
+<pubDate>Wed, 03 Sep 2025 00:00:00 -0400</pubDate>
+<pubDate>Wed, 03 Sep 2025 00:00:00 -0400</pubDate>
+</item>
+<item>
+<title>A continuum multi-species biofilm model with a novel interaction scheme</title>
+<link>https://arxiv.org/abs/2509.01274</link>
+<guid>https://arxiv.org/abs/2509.01274</guid>
+<content:encoded><![CDATA[
+<div> biofilms, microorganisms, mathematical modeling, biofilm interactions, antibiotic agents 
+
+Summary:
+This article introduces a comprehensive multi-species continuum-based biofilm model that aims to understand the interactions between different species of microorganisms within biofilms. The model, derived using Hamilton's principle of stationary action, can replicate various biofilm interactions with an arbitrary number of species and incorporates the effects of nutrient sources and antibiotic agents on biofilm behavior. By combining mathematical modeling with in vitro and in vivo experiments, researchers can gain more insights into biofilm dynamics while reducing costs. The model demonstrates good quantitative agreement with biofilm behavior, showcasing its potential utility for researchers looking to study biofilm systems. <div>
+arXiv:2509.01274v1 Announce Type: new 
+Abstract: Biofilms are complex structures which are inhabited by numerous amount of different species of microorganisms. Due to their ubiquity, they influence human life on an everyday basis. It is therefore important to understand the interactions between different biofilm components and reactions to outside conditions. For this purpose, mathematical models and in silico experiments have proven themselves to be fundamental. In combination with in vitro and in vivo experiments, they can give more insights and focus researchers' attention, reducing costs in the process. In this work, a comprehensive multi-species continuum-based biofilm model is presented. This model is capable of replicating a variety of different biofilm interactions with an arbitrary number of species, while still being comprehensive to encourage usage by researchers less familiar with mathematical modeling. In addition to a nutrient source, antibiotic agents and their effect on the biofilm can also be depicted. The model is derived using Hamilton's principle of stationary action, ensuring thermodynamic consistency automatically. The results show good quantitative agreement with biofilm behavior.
+]]></content:encoded>
+<pubDate>Wed, 03 Sep 2025 00:00:00 -0400</pubDate>
+<pubDate>Wed, 03 Sep 2025 00:00:00 -0400</pubDate>
+</item>
+<item>
+<title>Adaptive Alpha Weighting with PPO: Enhancing Prompt-Based LLM-Generated Alphas in Quant Trading</title>
+<link>https://arxiv.org/abs/2509.01393</link>
+<guid>https://arxiv.org/abs/2509.01393</guid>
+<content:encoded><![CDATA[
+<div> reinforcement learning, proximal policy optimization, large language model, formulaic alphas, stock trading strategies
+
+Summary:
+This paper presents a novel approach using reinforcement learning with Proximal Policy Optimization (PPO) to dynamically optimize the weights of multiple large language model-generated formulaic alphas for stock trading strategies. The study leverages a deepseek-r1-distill-llama-70b model to generate fifty alphas for five major stocks and applies PPO to adjust their weights in real time. The experimental results show that the PPO-optimized strategy outperforms an equal-weighted alpha portfolio and traditional benchmarks like Nikkei 225, S&P 500, and Hang Seng Index. This highlights the significance of using reinforcement learning in the allocation of alpha weights and demonstrates the potential of combining large language model-generated signals with adaptive optimization for robust financial forecasting and trading. <div>
+arXiv:2509.01393v1 Announce Type: new 
+Abstract: This paper proposes a reinforcement learning framework that employs Proximal Policy Optimization (PPO) to dynamically optimize the weights of multiple large language model (LLM)-generated formulaic alphas for stock trading strategies. Formulaic alphas are mathematically defined trading signals derived from price, volume, sentiment, and other data. Although recent studies have shown that LLMs can generate diverse and effective alphas, a critical challenge lies in how to adaptively integrate them under varying market conditions. To address this gap, we leverage the deepseek-r1-distill-llama-70b model to generate fifty alphas for five major stocks: Apple, HSBC, Pepsi, Toyota, and Tencent, and then use PPO to adjust their weights in real time. Experimental results demonstrate that the PPO-optimized strategy achieves strong returns and high Sharpe ratios across most stocks, outperforming both an equal-weighted alpha portfolio and traditional benchmarks such as the Nikkei 225, S&amp;P 500, and Hang Seng Index. The findings highlight the importance of reinforcement learning in the allocation of alpha weights and show the potential of combining LLM-generated signals with adaptive optimization for robust financial forecasting and trading.
+]]></content:encoded>
+<pubDate>Wed, 03 Sep 2025 00:00:00 -0400</pubDate>
+<pubDate>Wed, 03 Sep 2025 00:00:00 -0400</pubDate>
+</item>
+<item>
+<title>Revisit of Two-dimensional CEM on Crack Branching: from Single Crack-tip Tracking to Multiple Crack-tips Tracking</title>
+<link>https://arxiv.org/abs/2509.01827</link>
+<guid>https://arxiv.org/abs/2509.01827</guid>
+<content:encoded><![CDATA[
+<div> algorithm, crack tracking, fracture energy release rate, crack branching, GPU acceleration
+Summary:
+The article introduces the Multiple Crack-tips Tracking algorithm in two-dimensional Crack Element Model (MCT-2D-CEM) for predicting complex crack patterns in dynamic fracturing problems. The algorithm is developed to model advancements like crack branching and fragmentation. It utilizes a fracture energy release rate formulation for split elementary topology and includes benchmark examples to demonstrate its efficiency. The MCT-2D-CEM can also handle single crack propagation while introducing extra micro-cracks. The use of GPU acceleration in two-dimensional simulations ensures high computational efficiency, consistency, and accuracy. Overall, the algorithm offers a comprehensive solution for tracking and predicting advanced crack patterns in dynamic fracturing scenarios. 
+<br><br>Summary: <div>
+arXiv:2509.01827v1 Announce Type: new 
+Abstract: In this work, a Multiple Crack-tips Tracking algorithm in two-dimensional Crack Element Model (MCT-2D-CEM) is developed, aiming at modeling and predicting advanced and complicated crack patterns in two-dimensional dynamic fracturing problems, such as crack branching and fragmentation. Based on the developed fracture energy release rate formulation of split elementary topology, the Multiple Crack-tips Tracking algorithm is proposed and a series of benchmark examples are provided to validate effectiveness and efficiency in modeling crack branching and fragmentation. Besides, the proposed MCR-2D-CEM can still model single crack propagation but extra micro-cracks are introduced. GPU acceleration is employed in all two-dimensional simulations, providing high computational efficiency, consistency, and accuracy.
+]]></content:encoded>
+<pubDate>Wed, 03 Sep 2025 00:00:00 -0400</pubDate>
+<pubDate>Wed, 03 Sep 2025 00:00:00 -0400</pubDate>
+</item>
+<item>
+<title>Computational Fluid Dynamics Optimization of F1 Front Wing using Physics Informed Neural Networks</title>
+<link>https://arxiv.org/abs/2509.01963</link>
+<guid>https://arxiv.org/abs/2509.01963</guid>
+<content:encoded><![CDATA[
+<div> Neural Network, Computational Fluid Dynamics, Formula 1, Aerodynamics, Physics-Informed<br>
+<br>
+Summary: 
+A Physics-Informed Neural Network (PINN) is proposed for fast prediction of Formula 1 front wing aerodynamic coefficients in response to new FIA regulations. The hybrid loss function combines CFD data with fluid dynamics principles to ensure accurate predictions while reducing computational time. With high R-squared values for drag and lift coefficient prediction, the PINN model offers F1 teams an efficient tool for design space exploration within the budget and time constraints. The physics-informed framework maintains adherence to fundamental aerodynamic principles, making it a valuable asset for aerodynamic development in the F1 industry. <div>
+arXiv:2509.01963v1 Announce Type: new 
+Abstract: In response to recent FIA regulations reducing Formula 1 team wind tunnel hours (from 320 hours for last-place teams to 200 hours for championship leaders) and strict budget caps of 135 million USD per year, more efficient aerodynamic development tools are needed by teams. Conventional computational fluid dynamics (CFD) simulations, though offering high fidelity results, require large computational resources with typical simulation durations of 8-24 hours per configuration analysis. This article proposes a Physics-Informed Neural Network (PINN) for the fast prediction of Formula 1 front wing aerodynamic coefficients. The suggested methodology combines CFD simulation data from SimScale with first principles of fluid dynamics through a hybrid loss function that constrains both data fidelity and physical adherence based on Navier-Stokes equations. Training on force and moment data from 12 aerodynamic features, the PINN model records coefficient of determination (R-squared) values of 0.968 for drag coefficient and 0.981 for lift coefficient prediction while lowering computational time. The physics-informed framework guarantees that predictions remain adherent to fundamental aerodynamic principles, offering F1 teams an efficient tool for the fast exploration of design space within regulatory constraints.
+]]></content:encoded>
+<pubDate>Wed, 03 Sep 2025 00:00:00 -0400</pubDate>
+<pubDate>Wed, 03 Sep 2025 00:00:00 -0400</pubDate>
+</item>
+<item>
+<title>Autoencoder-based non-intrusive model order reduction in continuum mechanics</title>
+<link>https://arxiv.org/abs/2509.02237</link>
+<guid>https://arxiv.org/abs/2509.02237</guid>
+<content:encoded><![CDATA[
+<div> Autoencoder, reduced-order modeling, continuum mechanics, deep learning, surrogate models
+
+Summary:
+
+This article introduces a non-intrusive framework for reduced-order modeling in continuum mechanics using Autoencoder-based techniques. The framework comprises three stages: compression of high-dimensional finite element solutions into a latent space, mapping problem parameters to latent codes through regression networks, and reconstructing full-field solutions from input parameters. Two key extensions, including a force-augmented variant and a multi-field architecture, enhance the framework's capabilities, allowing for accurate predictions in complex scenarios such as thermo-mechanical coupling. The proposed method is validated on various benchmark problems and demonstrates accurate reconstructions of high-fidelity solutions without intruding on the original model. By combining deep learning with dimensionality reduction, this approach offers an efficient and extensible solution for building surrogate models in continuum mechanics. The publicly available implementation offers a foundation for integrating data-driven model order reduction into various applications, including uncertainty quantification, optimization, and digital twins.<br><br>Summary: <div>
+arXiv:2509.02237v1 Announce Type: new 
+Abstract: We propose a non-intrusive, Autoencoder-based framework for reduced-order modeling in continuum mechanics. Our method integrates three stages: (i) an unsupervised Autoencoder compresses high-dimensional finite element solutions into a compact latent space, (ii) a supervised regression network maps problem parameters to latent codes, and (iii) an end-to-end surrogate reconstructs full-field solutions directly from input parameters.
+  To overcome limitations of existing approaches, we propose two key extensions: a force-augmented variant that jointly predicts displacement fields and reaction forces at Neumann boundaries, and a multi-field architecture that enables coupled field predictions, such as in thermo-mechanical systems. The framework is validated on nonlinear benchmark problems involving heterogeneous composites, anisotropic elasticity with geometric variation, and thermo-mechanical coupling. Across all cases, it achieves accurate reconstructions of high-fidelity solutions while remaining fully non-intrusive.
+  These results highlight the potential of combining deep learning with dimensionality reduction to build efficient and extensible surrogate models. Our publicly available implementation provides a foundation for integrating data-driven model order reduction into uncertainty quantification, optimization, and digital twin applications.
+]]></content:encoded>
+<pubDate>Wed, 03 Sep 2025 00:00:00 -0400</pubDate>
+<pubDate>Wed, 03 Sep 2025 00:00:00 -0400</pubDate>
+</item>
+<item>
+<title>A Machine Learning-Fueled Modelfluid for Flowsheet Optimization</title>
+<link>https://arxiv.org/abs/2509.02242</link>
+<guid>https://arxiv.org/abs/2509.02242</guid>
+<content:encoded><![CDATA[
+<div> machine learning, process optimization, thermodynamic data, distillation, entrainer selection
+
+Summary:
+This article discusses the use of machine learning techniques to predict thermodynamic mixture properties for process optimization in chemical engineering. The authors present a novel modelfluid representation that integrates machine learning predicted data directly into flowsheet optimization, specifically tailored for distillation processes. The approach is built on physically interpretable features derived from vapor-liquid equilibrium phenomena, ensuring compatibility with existing simulation tools and optimization methods. The study demonstrates the accuracy and efficiency of this machine learning-fueled modelfluid by applying it to the problem of entrainer selection for azeotropic separation. Results show that the framework successfully identifies optimal entrainers with high fidelity compared to traditional models. This work provides a practical way to incorporate large-scale property prediction into process design, overcoming limitations of traditional thermodynamic models and complex equations of state.
+
+<br><br>Summary: <div>
+arXiv:2509.02242v1 Announce Type: new 
+Abstract: Process optimization in chemical engineering may be hindered by the limited availability of reliable thermodynamic data for fluid mixtures.
+  Remarkable progress is being made in predicting thermodynamic mixture properties by machine learning techniques. The vast information provided by these prediction methods enables new possibilities in process optimization.
+  This work introduces a novel modelfluid representation that is designed to seamlessly integrate these ML-predicted data directly into flowsheet optimization. Tailored for distillation, our approach is built on physically interpretable and continuous features derived from core vapor liquid equilibrium phenomena. This ensures compatibility with existing simulation tools and gradient-based optimization. We demonstrate the power and accuracy of this ML-fueled modelfluid by applying it to the problem of entrainer selection for an azeotropic separation. The results show that our framework successfully identifies optimal, thermodynamically consistent entrainers with high fidelity compared to conventional models.
+  Ultimately, this work provides a practical pathway to incorporate large-scale property prediction into efficient process design and optimization, overcoming the limitations of both traditional thermodynamic models and complex molecular-based equations of state.
+]]></content:encoded>
+<pubDate>Wed, 03 Sep 2025 00:00:00 -0400</pubDate>
+<pubDate>Wed, 03 Sep 2025 00:00:00 -0400</pubDate>
+</item>
+<item>
+<title>Electromechanical computational model of the human stomach</title>
+<link>https://arxiv.org/abs/2509.02486</link>
+<guid>https://arxiv.org/abs/2509.02486</guid>
+<content:encoded><![CDATA[
+<div> Keywords: gastric electromechanics, computational framework, peristalsis, motility disorders, organ scale
+
+Summary:
+The article presents a new computational framework for modeling human gastric electromechanics to study digestion and related motility disorders. It addresses the limitations of existing approaches by incorporating spatial heterogeneity, anisotropic deformations, and active-strain dynamics. The framework combines a rotation-free shell formulation with a constrained mixture material model, allowing for realistic simulation of gastric peristalsis. It can reproduce key features of gastric motility such as slow-wave entrainment, conduction velocity gradients, and peristaltic contractions. This new tool enables robust simulations of the entire stomach at the organ scale, offering promise for in-depth studies of both normal physiology and pathological conditions affecting gastric motility. <div>
+arXiv:2509.02486v1 Announce Type: new 
+Abstract: The stomach plays a central role in digestion through coordinated muscle contractions, known as gastric peristalsis, driven by slow-wave electrophysiology. Understanding this process is critical for treating motility disorders such as gastroparesis, dyspepsia, and gastroesophageal reflux disease. Computer simulations can be a valuable tool to deepen our understanding of these disorders and help to develop new therapies. However, existing approaches often neglect spatial heterogeneity, fail to capture large anisotropic deformations, or rely on computationally expensive three-dimensional formulations. We present here a computational framework of human gastric electromechanics, that combines a nonlinear, rotation-free shell formulation with a constrained mixture material model. The formulation incorporates active-strain, constituent-specific prestress, and spatially non-uniform parameter fields. Numerical examples demonstrate that the framework can reproduce characteristic features of gastric motility, including slow-wave entrainment, conduction velocity gradients, and large peristaltic contractions with physiologically realistic amplitudes. The proposed framework enables robust electromechanical simulations of the whole stomach at the organ scale. It thus provides a promising basis for future in silico studies of both physiological function and pathological motility disorders.
+]]></content:encoded>
+<pubDate>Wed, 03 Sep 2025 00:00:00 -0400</pubDate>
+<pubDate>Wed, 03 Sep 2025 00:00:00 -0400</pubDate>
+</item>
+<item>
+<title>Optimized Renewable Energy Planning MDP for Socially-Equitable Electricity Coverage in the US</title>
+<link>https://arxiv.org/abs/2509.00008</link>
+<guid>https://arxiv.org/abs/2509.00008</guid>
+<content:encoded><![CDATA[
+<div> optimization, renewable energy, social equity, electricity distribution, clean energy 
+
+Summary: 
+The study introduces a Markov Decision Process framework to optimize renewable energy allocation in the electricity distribution system while addressing social equity concerns. By considering budget constraints, energy demand variability, and social vulnerability indicators across major U.S. cities, the model evaluates policy alternatives for achieving equitable clean energy transitions. Numerical experiments show that an equity-focused approach can increase renewable energy penetration by 32.9% and reduce underserved low-income populations by 55% compared to conventional methods. The expert policy performed the best, while the Monte Carlo Tree Search baseline showed competitive performance with lower budget utilization. This study highlights that fair distribution of clean energy resources is possible without compromising system performance, offering a pathway to integrate social equity considerations with climate goals and provide inclusive access to clean power infrastructure. 
+
+<br><br>Summary: <div>
+arXiv:2509.00008v1 Announce Type: cross 
+Abstract: Traditional power grid infrastructure presents significant barriers to renewable energy integration and perpetuates energy access inequities, with low-income communities experiencing disproportionately longer power outages. This study develops a Markov Decision Process (MDP) framework to optimize renewable energy allocation while explicitly addressing social equity concerns in electricity distribution. The model incorporates budget constraints, energy demand variability, and social vulnerability indicators across eight major U.S. cities to evaluate policy alternatives for equitable clean energy transitions. Numerical experiments compare the MDP-based approach against baseline policies including random allocation, greedy renewable expansion, and expert heuristics. Results demonstrate that equity-focused optimization can achieve 32.9% renewable energy penetration while reducing underserved low-income populations by 55% compared to conventional approaches. The expert policy achieved the highest reward, while the Monte Carlo Tree Search baseline provided competitive performance with significantly lower budget utilization, demonstrating that fair distribution of clean energy resources is achievable without sacrificing overall system performance and providing ways for integrating social equity considerations with climate goals and inclusive access to clean power infrastructure.
+]]></content:encoded>
+<pubDate>Wed, 03 Sep 2025 00:00:00 -0400</pubDate>
+<pubDate>Wed, 03 Sep 2025 00:00:00 -0400</pubDate>
+</item>
+<item>
+<title>Estimating Parameter Fields in Multi-Physics PDEs from Scarce Measurements</title>
+<link>https://arxiv.org/abs/2509.00203</link>
+<guid>https://arxiv.org/abs/2509.00203</guid>
+<content:encoded><![CDATA[
+<div> parameterized partial differential equations, parameter estimation methods, sparse measurements, Neptune, parameter fields<br>
+<br>
+Summary: Neptune is a novel method for inferring parameter fields from sparse measurements of system responses in parameterized partial differential equations. It addresses challenges in accurately estimating parameters with nonlinear and spatiotemporal variations. Neptune outperforms existing methods like sparse identification and PINNs by reducing parameter estimation errors significantly and improving dynamic response prediction accuracy. It achieves reliable parameter inference from a small number of observations and exhibits superior extrapolation capabilities compared to PINNs. Neptune's performance in various physical and biomedical problems makes it a promising tool for applications in engineering and healthcare, offering data-efficient and robust parameter estimation for complex systems. <div>
+arXiv:2509.00203v1 Announce Type: cross 
+Abstract: Parameterized partial differential equations (PDEs) underpin the mathematical modeling of complex systems in diverse domains, including engineering, healthcare, and physics. A central challenge in using PDEs for real-world applications is to accurately infer the parameters, particularly when the parameters exhibit non-linear and spatiotemporal variations. Existing parameter estimation methods, such as sparse identification and physics-informed neural networks (PINNs), struggle in such cases, especially with nonlinear dynamics, multiphysics interactions, or limited observations of the system response. To address these challenges, we introduce Neptune, a general-purpose method capable of inferring parameter fields from sparse measurements of system responses. Neptune employs independent coordinate neural networks to continuously represent each parameter field in physical space or in state variables. Across various physical and biomedical problems, where direct parameter measurements are prohibitively expensive or unattainable, Neptune significantly outperforms existing methods, achieving robust parameter estimation from as few as 50 observations, reducing parameter estimation errors by two orders of magnitude and dynamic response prediction errors by a factor of ten compared to PINNs. Furthermore, Neptune exhibits superior extrapolation capabilities, enabling accurate predictions in regimes beyond training data where PINN fail. By facilitating reliable and data-efficient parameter inference, Neptune promises broad transformative impacts in engineering, healthcare, and beyond.
+]]></content:encoded>
+<pubDate>Wed, 03 Sep 2025 00:00:00 -0400</pubDate>
+<pubDate>Wed, 03 Sep 2025 00:00:00 -0400</pubDate>
+</item>
+<item>
+<title>Stabilization techniques for immersogeometric analysis of plate and shell problems in explicit dynamics</title>
+<link>https://arxiv.org/abs/2509.00522</link>
+<guid>https://arxiv.org/abs/2509.00522</guid>
+<content:encoded><![CDATA[
+<div> Finite element, plate, shell, immersed finite element, lumped mass matrix <br>
+<br>
+Summary: <br>
+The article discusses the challenges faced in dynamic analyses of slender structures using finite element plate and shell formulations due to high order partial differential equations and badly cut elements in immersed finite element discretizations. The critical time step in explicit dynamics is constrained, and lumping the mass matrix, while increasing the critical time step, can lead to spurious oscillations. The authors extend their previous work to enable stable immersogeometric analysis of plate and shell problems with lumped mass matrices by using polynomial extensions. This technique restores accuracy comparable to boundary-fitted discretizations, providing a solution to the issues faced in dynamic analysis of slender structures. <div>
+arXiv:2509.00522v1 Announce Type: cross 
+Abstract: Finite element plate and shell formulations are ubiquitous in structural analysis for modeling all kinds of slender structures, both for static and dynamic analyses. The latter are particularly challenging as the high order nature of the underlying partial differential equations and the slenderness of the structures all impose a stringent constraint on the critical time step in explicit dynamics. Unfortunately, badly cut elements in immersed finite element discretizations further aggravate the issue. While lumping the mass matrix often increases the critical time step, it might also trigger spurious oscillations in the approximate solution thereby compromising the numerical solution. In this article, we extend our previous work in \cite{voet2025stabilization} to allow stable immersogeometric analysis of plate and shell problems with lumped mass matrices. This technique is based on polynomial extensions and restores a level of accuracy comparable to boundary-fitted discretizations.
+]]></content:encoded>
+<pubDate>Wed, 03 Sep 2025 00:00:00 -0400</pubDate>
+<pubDate>Wed, 03 Sep 2025 00:00:00 -0400</pubDate>
+</item>
+<item>
+<title>On the Thermal Vulnerability of 3D-Stacked High-Bandwidth Memory Architectures</title>
+<link>https://arxiv.org/abs/2509.00633</link>
+<guid>https://arxiv.org/abs/2509.00633</guid>
+<content:encoded><![CDATA[
+<div> thermal vulnerabilities, memory wall, HBM architectures, performance degradation attacks, thermal wave<br>
+<br>
+Summary: 3D-stacked High Bandwidth Memory (HBM) architectures address the memory wall challenge but are vulnerable to thermal attacks due to vertical adjacency. Adversaries could exploit this by injecting intense heat pulses from adjacent memory banks, creating a convergent thermal wave that delays victim applications. These attacks do not access out-of-range memory, bypassing security tests and memory management policies. Detection is difficult as the attack mimics legitimate workloads. <div>
+arXiv:2509.00633v1 Announce Type: cross 
+Abstract: 3D-stacked High Bandwidth Memory (HBM) architectures provide high-performance memory interactions to address the well-known performance challenge, namely the memory wall. However, these architectures are susceptible to thermal vulnerabilities due to the inherent vertical adjacency that occurs during the manufacturing process of HBM architectures. We anticipate that adversaries may exploit the intense vertical and lateral adjacency to design and develop thermal performance degradation attacks on the memory banks that host data/instructions from victim applications. In such attacks, the adversary manages to inject short and intense heat pulses from vertically and/or laterally adjacent memory banks, creating a convergent thermal wave that maximizes impact and delays the victim application from accessing its data/instructions. As the attacking application does not access any out-of-range memory locations, it can bypass both design-time security tests and the operating system's memory management policies. In other words, since the attack mimics legitimate workloads, it will be challenging to detect.
+]]></content:encoded>
+<pubDate>Wed, 03 Sep 2025 00:00:00 -0400</pubDate>
+<pubDate>Wed, 03 Sep 2025 00:00:00 -0400</pubDate>
+</item>
+<item>
+<title>Resting-state fMRI Analysis using Quantum Time-series Transformer</title>
+<link>https://arxiv.org/abs/2509.00711</link>
+<guid>https://arxiv.org/abs/2509.00711</guid>
+<content:encoded><![CDATA[
+<div> fMRI, Quantum Time-series Transformer, neural biomarkers, computational complexity, interpretability analysis <br>
+Summary:<br>
+The article introduces a Quantum Time-series Transformer, a novel quantum-enhanced transformer architecture for analyzing resting-state fMRI data. It addresses the limitations of classical transformer models by reducing computational complexity, parameter counts, and data requirements. The Quantum Time-series Transformer outperforms traditional models in predictive performance, especially in small-sample scenarios, and reliably identifies neural biomarkers related to ADHD. By leveraging quantum techniques like Linear Combination of Unitaries and Quantum Singular Value Transformation, this approach shows promise in efficiently modeling complex brain dynamics and enhancing clinical interpretability in computational neuroscience. <div>
+arXiv:2509.00711v1 Announce Type: cross 
+Abstract: Resting-state functional magnetic resonance imaging (fMRI) has emerged as a pivotal tool for revealing intrinsic brain network connectivity and identifying neural biomarkers of neuropsychiatric conditions. However, classical self-attention transformer models--despite their formidable representational power--struggle with quadratic complexity, large parameter counts, and substantial data requirements. To address these barriers, we introduce a Quantum Time-series Transformer, a novel quantum-enhanced transformer architecture leveraging Linear Combination of Unitaries and Quantum Singular Value Transformation. Unlike classical transformers, Quantum Time-series Transformer operates with polylogarithmic computational complexity, markedly reducing training overhead and enabling robust performance even with fewer parameters and limited sample sizes. Empirical evaluation on the largest-scale fMRI datasets from the Adolescent Brain Cognitive Development Study and the UK Biobank demonstrates that Quantum Time-series Transformer achieves comparable or superior predictive performance compared to state-of-the-art classical transformer models, with especially pronounced gains in small-sample scenarios. Interpretability analyses using SHapley Additive exPlanations further reveal that Quantum Time-series Transformer reliably identifies clinically meaningful neural biomarkers of attention-deficit/hyperactivity disorder (ADHD). These findings underscore the promise of quantum-enhanced transformers in advancing computational neuroscience by more efficiently modeling complex spatio-temporal dynamics and improving clinical interpretability.
+]]></content:encoded>
+<pubDate>Wed, 03 Sep 2025 00:00:00 -0400</pubDate>
+<pubDate>Wed, 03 Sep 2025 00:00:00 -0400</pubDate>
+</item>
+<item>
+<title>Computational Modeling for Personalized Transcranial Electrical Stimulation: Theory, Tools, and Applications</title>
+<link>https://arxiv.org/abs/2509.01192</link>
+<guid>https://arxiv.org/abs/2509.01192</guid>
+<content:encoded><![CDATA[
+<div> Keywords: personalized tES, computational modeling, individualized stimulation optimization, head modeling, optimization algorithms<br>
+Summary:<br>
+The review focuses on the advancements in personalized transcranial electrical stimulation (tES) through computational modeling. It emphasizes the importance of individualized stimulation optimization due to the significant variability in brain anatomy and physiology among individuals. The review systematically examines recent developments in forward and inverse modeling techniques to simulate personalized electric fields and optimize stimulation parameters. It discusses the progress in constructing subject-specific head conductor models, utilizing optimization algorithms, and integrating multimodal brain data. Recent advancements have led to dynamic and individualized stimulation planning, moving away from traditional trial-and-error approaches. The review highlights the challenges, opportunities, and future directions in achieving precision neuromodulation in research and clinical settings. <div>
+arXiv:2509.01192v1 Announce Type: cross 
+Abstract: Objective. Personalized transcranial electrical stimulation (tES) has gained growing attention due to the substantial inter-individual variability in brain anatomy and physiology. While previous reviews have discussed the physiological mechanisms and clinical applications of tES, there remains a critical gap in up-to-date syntheses focused on the computational modeling frameworks that enable individualized stimulation optimization. Approach. This review presents a comprehensive overview of recent advances in computational techniques supporting personalized tES. We systematically examine developments in forward modeling for simulating individualized electric fields, as well as inverse modeling approaches for optimizing stimulation parameters. We critically evaluate progress in head modeling pipelines, optimization algorithms, and the integration of multimodal brain data. Main results. Recent advances have substantially accelerated the construction of subject-specific head conductor models and expanded the landscape of optimization methods, including multi-objective optimization and brain network-informed optimization. These advances allow for dynamic and individualized stimulation planning, moving beyond empirical trial-and-error approaches.Significance. By integrating the latest developments in computational modeling for personalized tES, this review highlights current challenges, emerging opportunities, and future directions for achieving precision neuromodulation in both research and clinical contexts.
+]]></content:encoded>
+<pubDate>Wed, 03 Sep 2025 00:00:00 -0400</pubDate>
+<pubDate>Wed, 03 Sep 2025 00:00:00 -0400</pubDate>
+</item>
 
 <item>
 <title>Data-Driven Bifurcation Handling in Physics-Based Reduced-Order Vascular Hemodynamic Models</title>
