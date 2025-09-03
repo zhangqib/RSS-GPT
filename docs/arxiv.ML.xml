@@ -4,6 +4,7 @@
 <title>cs.LG updates on arXiv.org</title>
 <link>http://rss.arxiv.org/rss/cs.LG</link>
 
+
 <item>
 <title>EEGDM: EEG Representation Learning via Generative Diffusion Model</title>
 <link>https://arxiv.org/abs/2508.14086</link>
@@ -12,11 +13,10 @@
 <div> Keywords: EEG, representation learning, Generative Diffusion Model, structured state-space model, latent fusion transformer 
 
 Summary: 
-EEG signals are challenging to interpret due to limited annotations and high variability, making meaningful representation learning difficult. Recent EEG foundation models (FMs) have shown promise but are computationally expensive with marginal performance gains as size increases. A new EEG representation learning framework, EEGDM, was proposed, utilizing a structured state-space model for diffusion pretraining (SSMDP) trained with Denoising Diffusion Probabilistic Model (DDPM) framework. Latent EEG representations were then used for classification tasks with the latent fusion transformer (LFT). Evaluation on multi-event datasets for epilepsy detection showed EEGDM outperformed existing methods, indicating its potential as an alternative to current FMs.<br><br>Summary: <div>
+EEG signals are challenging to interpret due to limited annotations and high variability, making meaningful representation learning difficult. Recent EEG foundation models (FMs) have shown promise but are computationally expensive with marginal performance gains as size increases. A new EEG representation learning framework, EEGDM, was proposed, utilizing a structured state-space model for diffusion pretraining (SSMDP) trained with Denoising Diffusion Probabilistic Model (DDPM) framework. Latent EEG representations were then used for classification tasks with the latent fusion transformer (LFT). Evaluation on multi-event datasets for epilepsy detection showed EEGDM outperformed existing methods, indicating its potential as an alternative to current FMs.<br /><br />Summary: <div>
 arXiv:2508.14086v3 Announce Type: replace 
 Abstract: While electroencephalogram (EEG) has been a crucial tool for monitoring the brain and diagnosing neurological disorders (e.g., epilepsy), learning meaningful representations from raw EEG signals remains challenging due to limited annotations and high signal variability. Recently, EEG foundation models (FMs) have shown promising potential by adopting transformer architectures and self-supervised pre-training methods from large language models (e.g., masked prediction) to learn representations from diverse EEG data, followed by fine-tuning on specific EEG tasks. Nonetheless, these large models often incurred high computational costs during both training and inference, with only marginal performance improvements as the model size increases. In this work, we proposed an EEG representation learning framework building upon Generative Diffusion Model (EEGDM). Specifically, we developed a structured state-space model for diffusion pretraining (SSMDP) to better capture the temporal dynamics of EEG signals and trained it using Denoising Diffusion Probabilistic Model (DDPM) framework. Subsequently, the resulting latent EEG representations were then used for downstream classification tasks via our proposed latent fusion transformer (LFT). To evaluate our method, we used multi-event datasets covering both interictal epileptiform discharges (TUEV) and seizure (CHB-MIT) detection, and compared EEGDM with current state-of-the-art approaches, including EEG FMs. Empirical results showed that our method outperformed the existing methods. These findings suggested that EEGDM offered a promising alternative to current FMs. Our source code and checkpoint are available at: https://github.com/jhpuah/EEGDM.
 ]]></content:encoded>
-<pubDate>Wed, 03 Sep 2025 00:00:00 -0400</pubDate>
 <pubDate>Wed, 03 Sep 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -29,11 +29,10 @@ Abstract: While electroencephalogram (EEG) has been a crucial tool for monitorin
 Summary: 
 Tri-Accel is a unified optimization framework that combines three acceleration strategies for deep neural networks: Precision-Adaptive Updates, Sparse Second-Order Signals, and Memory-Elastic Batch Scaling. By dynamically assigning mixed-precision levels, exploiting sparsity patterns, and adjusting batch size in real time, Tri-Accel achieves up to 9.9% reduction in training time and 13.3% lower memory usage while improving accuracy by +1.1 percentage points. The approach demonstrates adaptive learning behavior over the course of training, gradually improving efficiency. Compared to static mixed-precision training, Tri-Accel maintains 78.1% accuracy with reduced memory footprint from 0.35GB to 0.31GB. Implemented with custom Triton kernels, the framework enables automatic optimization without manual hyperparameter tuning, making it practical for diverse computational environments. This work showcases how algorithmic adaptivity and hardware awareness can enhance scalability in resource-constrained settings, facilitating more efficient neural network training on edge devices and cost-sensitive cloud deployments.
 
-<br><br>Summary: <div>
+<br /><br />Summary: <div>
 arXiv:2508.16905v2 Announce Type: replace 
 Abstract: Deep neural networks are increasingly bottlenecked by the cost of optimization, both in terms of GPU memory and compute time. Existing acceleration techniques, such as mixed precision, second-order methods, and batch size scaling, are typically used in isolation. We present Tri-Accel, a unified optimization framework that co-adapts three acceleration strategies along with adaptive parameters during training: (1) Precision-Adaptive Updates that dynamically assign mixed-precision levels to layers based on curvature and gradient variance; (2) Sparse Second-Order Signals that exploit Hessian/Fisher sparsity patterns to guide precision and step size decisions; and (3) Memory-Elastic Batch Scaling that adjusts batch size in real time according to VRAM availability. On CIFAR-10 with ResNet-18 and EfficientNet-B0, Tri-Accel achieves up to 9.9% reduction in training time and 13.3% lower memory usage, while improving accuracy by +1.1 percentage points over FP32 baselines. Tested on CIFAR-10/100, our approach demonstrates adaptive learning behavior, with efficiency gradually improving over the course of training as the system learns to allocate resources more effectively. Compared to static mixed-precision training, Tri-Accel maintains 78.1% accuracy while reducing memory footprint from 0.35GB to 0.31GB on standard hardware. The framework is implemented with custom Triton kernels, whose hardware-aware adaptation enables automatic optimization without manual hyperparameter tuning, making it practical for deployment across diverse computational environments. This work demonstrates how algorithmic adaptivity and hardware awareness can be combined to improve scalability in resource-constrained settings, paving the way for more efficient neural network training on edge devices and cost-sensitive cloud deployments.
 ]]></content:encoded>
-<pubDate>Wed, 03 Sep 2025 00:00:00 -0400</pubDate>
 <pubDate>Wed, 03 Sep 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -43,14 +42,13 @@ Abstract: Deep neural networks are increasingly bottlenecked by the cost of opti
 <content:encoded><![CDATA[
 <div> natural gradient, orthogonal projection, continual learning, ONG algorithm, Riemannian metric
 
-Summary:<br>
+Summary:<br />
 This paper introduces Orthogonal Natural Gradient Descent (ONG) as a method for continual learning. By incorporating the natural gradient and orthogonal projections, ONG aims to improve convergence by leveraging the underlying geometric structure of the problem. The ONG algorithm preconditions task-specific gradients with an EKFAC approximation of the inverse Fisher information matrix to update in the steepest descent direction under a Riemannian metric. To maintain performance on previous tasks, ONG projects the natural gradients onto the orthogonal complement of prior tasks' gradients. Preliminary results on the Permuted and Rotated MNIST benchmarks show promise but also highlight potential issues with the naive combination of natural gradients and orthogonal projections. Future work will focus on reconciling these geometric perspectives, providing formal convergence guarantees, and extending empirical validation to larger continual learning benchmarks. The anonymized code for ONG can be accessed through the provided link. 
 
 Summary: <div>
 arXiv:2508.17169v2 Announce Type: replace 
 Abstract: Orthogonal Gradient Descent (OGD) has emerged as a powerful method for continual learning. However, its Euclidean projections do not leverage the underlying information-geometric structure of the problem, which can lead to suboptimal convergence in learning tasks. To address this, we propose incorporating the natural gradient into OGD and present \textbf{ONG (Orthogonal Natural Gradient Descent)}. ONG preconditions each new task-specific gradient with an efficient EKFAC approximation of the inverse Fisher information matrix, yielding updates that follow the steepest descent direction under a Riemannian metric. To preserve performance on previously learned tasks, ONG projects these natural gradients onto the orthogonal complement of prior tasks' gradients. We provide an initial theoretical justification for this procedure, introduce the Orthogonal Natural Gradient Descent (ONG) algorithm, and present preliminary results on the Permuted and Rotated MNIST benchmarks. Our preliminary results, however, indicate that a naive combination of natural gradients and orthogonal projections can have potential issues. This finding motivates continued future work focused on robustly reconciling these geometric perspectives to develop a continual learning method, establishing a more rigorous theoretical foundation with formal convergence guarantees, and extending empirical validation to large-scale continual learning benchmarks. The anonymized version of our code can be found as the zip file here: https://drive.google.com/drive/folders/11PyU6M8pNgOUB5pwdGORtbnMtD8Shiw_?usp=sharing.
 ]]></content:encoded>
-<pubDate>Wed, 03 Sep 2025 00:00:00 -0400</pubDate>
 <pubDate>Wed, 03 Sep 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -66,20 +64,18 @@ arXiv:2508.17182v2 Announce Type: replace
 Abstract: Large Language Models (LLMs) often display overconfidence, presenting information with unwarranted certainty in high-stakes contexts. We investigate the internal basis of this behavior via mechanistic interpretability. Using open-sourced Llama 3.2 models fine-tuned on human annotated assertiveness datasets, we extract residual activations across all layers, and compute similarity metrics to localize assertive representations. Our analysis identifies layers most sensitive to assertiveness contrasts and reveals that high-assertive representations decompose into two orthogonal sub-components of emotional and logical clusters-paralleling the dual-route Elaboration Likelihood Model in Psychology. Steering vectors derived from these sub-components show distinct causal effects: emotional vectors broadly influence prediction accuracy, while logical vectors exert more localized effects. These findings provide mechanistic evidence for the multi-component structure of LLM assertiveness and highlight avenues for mitigating overconfident behavior.
 ]]></content:encoded>
 <pubDate>Wed, 03 Sep 2025 00:00:00 -0400</pubDate>
-<pubDate>Wed, 03 Sep 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
 <title>Mutual Information Surprise: Rethinking Unexpectedness in Autonomous Systems</title>
 <link>https://arxiv.org/abs/2508.17403</link>
 <guid>https://arxiv.org/abs/2508.17403</guid>
 <content:encoded><![CDATA[
-<div> Framework, Mutual Information Surprise, Autonomous systems, Reactive, Adaptive <br>
-Summary: <br>
+<div> Framework, Mutual Information Surprise, Autonomous systems, Reactive, Adaptive <br />
+Summary: <br />
 The article introduces Mutual Information Surprise (MIS) as a framework for autonomous systems to handle unexpected events by quantifying the impact of new observations on mutual information. This allows systems to monitor their learning progress and adjust their behavior dynamically. The Mutual Information Surprise reaction policy (MISRP) governs system behavior through sampling adjustment and process forking based on the detection of meaningful shifts in estimated mutual information. Empirical evaluations on synthetic domains and a pollution map estimation task demonstrate that strategies guided by MISRP outperform traditional surprise-based approaches in stability, responsiveness, and predictive accuracy. By shifting the focus of surprise from being reactive to reflective, MIS offers a potential pathway towards more self-aware and adaptive autonomous systems. <div>
 arXiv:2508.17403v2 Announce Type: replace 
 Abstract: Recent breakthroughs in autonomous experimentation have demonstrated remarkable physical capabilities, yet their cognitive control remains limited--often relying on static heuristics or classical optimization. A core limitation is the absence of a principled mechanism to detect and adapt to the unexpectedness. While traditional surprise measures--such as Shannon or Bayesian Surprise--offer momentary detection of deviation, they fail to capture whether a system is truly learning and adapting. In this work, we introduce Mutual Information Surprise (MIS), a new framework that redefines surprise not as anomaly detection, but as a signal of epistemic growth. MIS quantifies the impact of new observations on mutual information, enabling autonomous systems to reflect on their learning progression. We develop a statistical test sequence to detect meaningful shifts in estimated mutual information and propose a mutual information surprise reaction policy (MISRP) that dynamically governs system behavior through sampling adjustment and process forking. Empirical evaluations--on both synthetic domains and a dynamic pollution map estimation task--show that MISRP-governed strategies significantly outperform classical surprise-based approaches in stability, responsiveness, and predictive accuracy. By shifting surprise from reactive to reflective, MIS offers a path toward more self-aware and adaptive autonomous systems.
 ]]></content:encoded>
-<pubDate>Wed, 03 Sep 2025 00:00:00 -0400</pubDate>
 <pubDate>Wed, 03 Sep 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -94,7 +90,6 @@ arXiv:2508.18338v2 Announce Type: replace
 Abstract: Evaluation of statistical dependencies between two data samples is a basic problem of data science/machine learning, and HSIC (Hilbert-Schmidt Information Criterion)~\cite{HSIC} is considered the state-of-art method. However, for size $n$ data sample it requires multiplication of $n\times n$ matrices, what currently needs $\sim O(n^{2.37})$ computational complexity~\cite{mult}, making it impractical for large data samples. We discuss HCR (Hierarchical Correlation Reconstruction) as its linear cost practical alternative, in tests of even higher sensitivity to dependencies, and additionally providing actual joint distribution model for chosen significance level, by description of dependencies through features being mixed moments, starting with correlation and homoscedasticity. Also allowing to approximate mutual information as just sum of squares of such nontrivial mixed moments between two data samples. Such single dependence describing feature is calculated in $O(n)$ linear time. Their number to test varies with dimension $d$ - requiring $O(d^2)$ for pairwise dependencies, $O(d^3)$ if wanting to also consider more subtle triplewise, and so on.
 ]]></content:encoded>
 <pubDate>Wed, 03 Sep 2025 00:00:00 -0400</pubDate>
-<pubDate>Wed, 03 Sep 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
 <title>DrugReasoner: Interpretable Drug Approval Prediction with a Reasoning-augmented Language Model</title>
@@ -103,12 +98,11 @@ Abstract: Evaluation of statistical dependencies between two data samples is a b
 <content:encoded><![CDATA[
 <div> predictive accuracy, interpretability, drug approval, reasoning, LLaMA architecture
 
-Summary:<br>
+Summary:<br />
 DrugReasoner is a reasoning-based large language model (LLM) designed to predict the likelihood of small-molecule drug approval. By integrating molecular descriptors with comparative reasoning against similar approved and unapproved compounds, DrugReasoner provides step-by-step rationales and confidence scores for its predictions. The model achieved robust performance on both validation and test sets, outperforming traditional baselines and showing competitiveness with XGBoost. Additionally, on an external dataset, DrugReasoner surpassed baseline models and the ChemAP model, demonstrating its reliability in real-world scenarios. This study highlights the potential of reasoning-augmented LLMs in enhancing transparency and effectiveness in pharmaceutical decision-making. <div>
 arXiv:2508.18579v2 Announce Type: replace 
 Abstract: Drug discovery is a complex and resource-intensive process, making early prediction of approval outcomes critical for optimizing research investments. While classical machine learning and deep learning methods have shown promise in drug approval prediction, their limited interpretability constraints their impact. Here, we present DrugReasoner, a reasoning-based large language model (LLM) built on the LLaMA architecture and fine-tuned with group relative policy optimization (GRPO) to predict the likelihood of small-molecule approval. DrugReasoner integrates molecular descriptors with comparative reasoning against structurally similar approved and unapproved compounds, generating predictions alongside step-by-step rationales and confidence scores. DrugReasoner achieved robust performance with an AUC of 0.732 and an F1 score of 0.729 on the validation set and 0.725 and 0.718 on the test set, respectively. These results outperformed conventional baselines, including logistic regression, support vector machine, and k-nearest neighbors and had competitive performance relative to XGBoost. On an external independent dataset, DrugReasoner outperformed both baseline and the recently developed ChemAP model, achieving an AUC of 0.728 and an F1-score of 0.774, while maintaining high precision and balanced sensitivity, demonstrating robustness in real-world scenarios. These findings demonstrate that DrugReasoner not only delivers competitive predictive accuracy but also enhances transparency through its reasoning outputs, thereby addressing a key bottleneck in AI-assisted drug discovery. This study highlights the potential of reasoning-augmented LLMs as interpretable and effective tools for pharmaceutical decision-making.
 ]]></content:encoded>
-<pubDate>Wed, 03 Sep 2025 00:00:00 -0400</pubDate>
 <pubDate>Wed, 03 Sep 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -125,12 +119,11 @@ Summary:
 - Customized down sampling and dynamic sliding window mechanisms are implemented to enhance clinical applicability and real-time inference.
 - Validation on three ICU cohorts shows superior performance with accuracies ranging from 74.6% to 93.5%, outperforming traditional machine learning baselines.
 
-<br><br>Summary: 
+<br /><br />Summary: 
 The study introduces an end-to-end deep learning framework for early sepsis detection in ICU settings, addressing the challenges posed by irregular time-series data. By leveraging an unsupervised autoencoder and a multilayer perceptron classifier, the framework achieves high accuracy in predicting sepsis risk. Customized strategies for data preprocessing and real-time inference further enhance the model's clinical applicability. Validation results across diverse ICU cohorts demonstrate the framework's robustness and superior performance compared to traditional machine learning approaches, highlighting its potential for improving early sepsis detection in critical care environments. <div>
 arXiv:2508.18688v2 Announce Type: replace 
 Abstract: Sepsis is a life threatening condition that requires timely detection in intensive care settings. Traditional machine learning approaches, including Naive Bayes, Support Vector Machine (SVM), Random Forest, and XGBoost, often rely on manual feature engineering and struggle with irregular, incomplete time-series data commonly present in electronic health records. We introduce an end-to-end deep learning framework integrating an unsupervised autoencoder for automatic feature extraction with a multilayer perceptron classifier for binary sepsis risk prediction. To enhance clinical applicability, we implement a customized down sampling strategy that extracts high information density segments during training and a non-overlapping dynamic sliding window mechanism for real-time inference. Preprocessed time series data are represented as fixed dimension vectors with explicit missingness indicators, mitigating bias and noise. We validate our approach on three ICU cohorts. Our end-to-end model achieves accuracies of 74.6 percent, 80.6 percent, and 93.5 percent, respectively, consistently outperforming traditional machine learning baselines. These results demonstrate the framework's superior robustness, generalizability, and clinical utility for early sepsis detection across heterogeneous ICU environments.
 ]]></content:encoded>
-<pubDate>Wed, 03 Sep 2025 00:00:00 -0400</pubDate>
 <pubDate>Wed, 03 Sep 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -143,11 +136,10 @@ Abstract: Sepsis is a life threatening condition that requires timely detection 
 Summary:
 Flexible, goal-directed behavior requires a learned predictive model of the environment. This model can be extracted from an agent's policy and is essential for generalizing to multi-step tasks. Increasing agent performance and goal complexity necessitates more accurate world models. Having a world model is crucial for developing safe and general agents. It also helps in bounding agent capabilities in complex environments and enables the development of algorithms for extracting world models from agents. In conclusion, world models are a necessary component for achieving flexible and goal-directed behavior in agents. 
 
-<br><br>Summary: <div>
+<br /><br />Summary: <div>
 arXiv:2506.01622v4 Announce Type: replace-cross 
 Abstract: Are world models a necessary ingredient for flexible, goal-directed behaviour, or is model-free learning sufficient? We provide a formal answer to this question, showing that any agent capable of generalizing to multi-step goal-directed tasks must have learned a predictive model of its environment. We show that this model can be extracted from the agent's policy, and that increasing the agents performance or the complexity of the goals it can achieve requires learning increasingly accurate world models. This has a number of consequences: from developing safe and general agents, to bounding agent capabilities in complex environments, and providing new algorithms for eliciting world models from agents.
 ]]></content:encoded>
-<pubDate>Wed, 03 Sep 2025 00:00:00 -0400</pubDate>
 <pubDate>Wed, 03 Sep 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -155,13 +147,12 @@ Abstract: Are world models a necessary ingredient for flexible, goal-directed be
 <link>https://arxiv.org/abs/2507.12964</link>
 <guid>https://arxiv.org/abs/2507.12964</guid>
 <content:encoded><![CDATA[
-<div> fine-grained recognition, computer vision, wrist pathology, metadata integration, X-rays <br>
-<br>
+<div> fine-grained recognition, computer vision, wrist pathology, metadata integration, X-rays <br />
+<br />
 Summary: This study addresses the challenge of wrist pathology recognition by combining a fine-grained transformer approach, fine-grained pre-training, and metadata integration. By framing the problem as a fine-grained recognition task and leveraging patient metadata with X-rays, the study achieves a 2% improvement in diagnostic accuracy on a small custom curated dataset and over 10% on a larger fracture dataset. Unlike prior work, this study is the first to integrate metadata for wrist pathology recognition, showcasing the significance of multifaceted approaches in medical imaging. By using weights from a separate fine-grained dataset rather than a coarse-grained dataset like ImageNet, the study highlights the importance of diverse and comprehensive data sources in improving diagnostic accuracy and advancing computer vision applications in healthcare. <div>
 arXiv:2507.12964v4 Announce Type: replace-cross 
 Abstract: Wrist pathologies are frequently observed, particularly among children who constitute the majority of fracture cases. Computer vision presents a promising avenue, contingent upon the availability of extensive datasets, a notable challenge in medical imaging. Therefore, reliance solely on one modality, such as images, proves inadequate, especially in an era of diverse and plentiful data types. This study addresses the problem using a multifaceted approach: framing it as a fine-grained recognition task, fusing patient metadata with X-rays, and leveraging weights from a separate fine-grained dataset rather than from a coarse-grained dataset like ImageNet. Unlike prior work, this is the first application of metadata integration for wrist pathology recognition. Our results show that combining fine-grained transformer approach, fine-grained pre-training, and metadata integration improves diagnostic accuracy by 2% on small custom curated dataset and over 10% on a larger fracture dataset.
 ]]></content:encoded>
-<pubDate>Wed, 03 Sep 2025 00:00:00 -0400</pubDate>
 <pubDate>Wed, 03 Sep 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -169,16 +160,15 @@ Abstract: Wrist pathologies are frequently observed, particularly among children
 <link>https://arxiv.org/abs/2508.14444</link>
 <guid>https://arxiv.org/abs/2508.14444</guid>
 <content:encoded><![CDATA[
-<div> hybrid Mamba-Transformer, throughput, reasoning workloads, Nemotron-Nano-9B-v2, accuracy <br>
-<br>
+<div> hybrid Mamba-Transformer, throughput, reasoning workloads, Nemotron-Nano-9B-v2, accuracy <br />
+<br />
 Keywords: hybrid Mamba-Transformer, throughput, reasoning workloads, Nemotron-Nano-9B-v2, accuracy
 
 Summary:
-The article introduces Nemotron-Nano-9B-v2, a hybrid Mamba-Transformer language model designed to enhance throughput for reasoning tasks while maintaining high accuracy compared to models of similar size. By replacing self-attention layers with Mamba-2 layers, Nemotron-Nano-9B-v2 achieves improved inference speed for generating long thinking traces in reasoning. The model is based on the Nemotron-H architecture and is pre-trained on 20 trillion tokens using an FP8 training recipe. Through the Minitron strategy, the model is compressed and distilled to enable inference on up to 128k tokens on a single NVIDIA A10G GPU. Compared to models like Qwen3-8B, Nemotron-Nano-9B-v2 shows comparable or superior accuracy on reasoning benchmarks while achieving up to 6x higher inference throughput in scenarios with 8k input and 16k output tokens. The article also highlights the release of Nemotron-Nano-9B-v2, Nemotron-Nano12B-v2-Base, and Nemotron-Nano-9B-v2-Base checkpoints, along with pre- and post-training datasets on Hugging Face. <br><br>Summary: The Nemotron-Nano-9B-v2 hybrid Mamba-Transformer language model enhances throughput for reasoning tasks while maintaining high accuracy, utilizing Mamba-2 layers for improved inference speed. Pre-trained on 20 trillion tokens and compressed via the Minitron strategy, the model achieves high performance on reasoning benchmarks, offering up to 6x higher throughput than comparable models such as Qwen3-8B. Checkpoints and datasets are released on Hugging Face for community access. <div>
+The article introduces Nemotron-Nano-9B-v2, a hybrid Mamba-Transformer language model designed to enhance throughput for reasoning tasks while maintaining high accuracy compared to models of similar size. By replacing self-attention layers with Mamba-2 layers, Nemotron-Nano-9B-v2 achieves improved inference speed for generating long thinking traces in reasoning. The model is based on the Nemotron-H architecture and is pre-trained on 20 trillion tokens using an FP8 training recipe. Through the Minitron strategy, the model is compressed and distilled to enable inference on up to 128k tokens on a single NVIDIA A10G GPU. Compared to models like Qwen3-8B, Nemotron-Nano-9B-v2 shows comparable or superior accuracy on reasoning benchmarks while achieving up to 6x higher inference throughput in scenarios with 8k input and 16k output tokens. The article also highlights the release of Nemotron-Nano-9B-v2, Nemotron-Nano12B-v2-Base, and Nemotron-Nano-9B-v2-Base checkpoints, along with pre- and post-training datasets on Hugging Face. <br /><br />Summary: The Nemotron-Nano-9B-v2 hybrid Mamba-Transformer language model enhances throughput for reasoning tasks while maintaining high accuracy, utilizing Mamba-2 layers for improved inference speed. Pre-trained on 20 trillion tokens and compressed via the Minitron strategy, the model achieves high performance on reasoning benchmarks, offering up to 6x higher throughput than comparable models such as Qwen3-8B. Checkpoints and datasets are released on Hugging Face for community access. <div>
 arXiv:2508.14444v4 Announce Type: replace-cross 
 Abstract: We introduce Nemotron-Nano-9B-v2, a hybrid Mamba-Transformer language model designed to increase throughput for reasoning workloads while achieving state-of-the-art accuracy compared to similarly-sized models. Nemotron-Nano-9B-v2 builds on the Nemotron-H architecture, in which the majority of the self-attention layers in the common Transformer architecture are replaced with Mamba-2 layers, to achieve improved inference speed when generating the long thinking traces needed for reasoning. We create Nemotron-Nano-9B-v2 by first pre-training a 12-billion-parameter model (Nemotron-Nano-12B-v2-Base) on 20 trillion tokens using an FP8 training recipe. After aligning Nemotron-Nano-12B-v2-Base, we employ the Minitron strategy to compress and distill the model with the goal of enabling inference on up to 128k tokens on a single NVIDIA A10G GPU (22GiB of memory, bfloat16 precision). Compared to existing similarly-sized models (e.g., Qwen3-8B), we show that Nemotron-Nano-9B-v2 achieves on-par or better accuracy on reasoning benchmarks while achieving up to 6x higher inference throughput in reasoning settings like 8k input and 16k output tokens. We are releasing Nemotron-Nano-9B-v2, Nemotron-Nano12B-v2-Base, and Nemotron-Nano-9B-v2-Base checkpoints along with the majority of our pre- and post-training datasets on Hugging Face.
 ]]></content:encoded>
-<pubDate>Wed, 03 Sep 2025 00:00:00 -0400</pubDate>
 <pubDate>Wed, 03 Sep 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -191,11 +181,10 @@ Abstract: We introduce Nemotron-Nano-9B-v2, a hybrid Mamba-Transformer language 
 Summary: 
 The article presents a new open-source library, WHAR datasets, aimed at addressing the lack of standardization in Wearable Human Activity Recognition (WHAR) datasets. This library offers a standardized data format and configuration-driven design to simplify data handling, promoting reproducibility and efficiency in research workflows. Supporting 9 popular datasets and integrating with PyTorch and TensorFlow, the library is adaptable to new datasets. Two state-of-the-art models, TinyHar and MLP-HAR, were trained on included datasets, demonstrating the library's capability to replicate published results and facilitate experimentation and benchmarking. Preprocessing performance was evaluated, with observed speedups using multiprocessing up to 3.8x. This library holds promise for enhancing efficiency, reproducibility, and comparability in WHAR research. 
 
-<br><br>Summary: <div>
+<br /><br />Summary: <div>
 arXiv:2508.16604v2 Announce Type: replace-cross 
 Abstract: The lack of standardization across Wearable Human Activity Recognition (WHAR) datasets limits reproducibility, comparability, and research efficiency. We introduce WHAR datasets, an open-source library designed to simplify WHAR data handling through a standardized data format and a configuration-driven design, enabling reproducible and computationally efficient workflows with minimal manual intervention. The library currently supports 9 widely-used datasets, integrates with PyTorch and TensorFlow, and is easily extensible to new datasets. To demonstrate its utility, we trained two state-of-the-art models, TinyHar and MLP-HAR, on the included datasets, approximately reproducing published results and validating the library's effectiveness for experimentation and benchmarking. Additionally, we evaluated preprocessing performance and observed speedups of up to 3.8x using multiprocessing. We hope this library contributes to more efficient, reproducible, and comparable WHAR research.
 ]]></content:encoded>
-<pubDate>Wed, 03 Sep 2025 00:00:00 -0400</pubDate>
 <pubDate>Wed, 03 Sep 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -211,7 +200,6 @@ arXiv:2508.17440v2 Announce Type: replace-cross
 Abstract: Photonic computing promises energy-efficient acceleration for optimization and learning, yet discrete combinatorial search and continuous function approximation have largely required distinct devices and control stacks. Here we unify k-local Ising optimization and optical Kolmogorov-Arnold network (KAN) learning on a single photonic platform, establishing a critical convergence point in optical computing. We introduce an SLM-centric primitive that realizes, in one stroke, all-optical k-local Ising interactions and fully optical KAN layers. The key idea is to convert the structural nonlinearity of a nominally linear scatterer into a per-window computational resource by adding a single relay pass through the same spatial light modulator: a folded 4f relay re-images the first Fourier plane onto the SLM so that each selected clique or channel occupies a disjoint window with its own second pass phase patch. Propagation remains linear in the optical field, yet the measured intensity in each window becomes a freely programmable polynomial of the clique sum or projection amplitude. This yields native, per clique k-local couplings without nonlinear media and, in parallel, the many independent univariate nonlinearities required by KAN layers, all trainable with in-situ physical gradients using two frames (forward and adjoint). We outline implementations on spatial photonic Ising machines, injection-locked vertical cavity surface emitting laser (VCSEL) arrays, and Microsoft analog optical computers; in all cases the hardware change is one extra lens and a fold (or an on-chip 4f loop), enabling a minimal overhead, massively parallel route to high-order Ising optimization and trainable, all-optical KAN processing on one platform.
 ]]></content:encoded>
 <pubDate>Wed, 03 Sep 2025 00:00:00 -0400</pubDate>
-<pubDate>Wed, 03 Sep 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
 <title>Text Meets Topology: Rethinking Out-of-distribution Detection in Text-Rich Networks</title>
@@ -221,11 +209,10 @@ Abstract: Photonic computing promises energy-efficient acceleration for optimiza
 <div> attribute-level shifts, structural shifts, thematically-guided label shifts, domain-based divisions, TextTopoOOD framework
 
 Summary:
-The article introduces the TextTopoOOD framework for evaluating out-of-distribution (OOD) detection in text-rich networks, considering diverse OOD scenarios such as attribute-level shifts, structural shifts, thematically-guided label shifts, and domain-based divisions. The framework incorporates the TNT-OOD model, which uses a cross-attention module to fuse local structure into node-level text representations and a HyperNetwork to enhance ID/OOD distinction across textual and structural shifts. Experiments on 11 datasets highlight the nuanced challenge of TextTopoOOD for evaluating OOD detection in text-rich networks.<br><br>Summary: <div>
+The article introduces the TextTopoOOD framework for evaluating out-of-distribution (OOD) detection in text-rich networks, considering diverse OOD scenarios such as attribute-level shifts, structural shifts, thematically-guided label shifts, and domain-based divisions. The framework incorporates the TNT-OOD model, which uses a cross-attention module to fuse local structure into node-level text representations and a HyperNetwork to enhance ID/OOD distinction across textual and structural shifts. Experiments on 11 datasets highlight the nuanced challenge of TextTopoOOD for evaluating OOD detection in text-rich networks.<br /><br />Summary: <div>
 arXiv:2508.17690v2 Announce Type: replace-cross 
 Abstract: Out-of-distribution (OOD) detection remains challenging in text-rich networks, where textual features intertwine with topological structures. Existing methods primarily address label shifts or rudimentary domain-based splits, overlooking the intricate textual-structural diversity. For example, in social networks, where users represent nodes with textual features (name, bio) while edges indicate friendship status, OOD may stem from the distinct language patterns between bot and normal users. To address this gap, we introduce the TextTopoOOD framework for evaluating detection across diverse OOD scenarios: (1) attribute-level shifts via text augmentations and embedding perturbations; (2) structural shifts through edge rewiring and semantic connections; (3) thematically-guided label shifts; and (4) domain-based divisions. Furthermore, we propose TNT-OOD to model the complex interplay between Text aNd Topology using: 1) a novel cross-attention module to fuse local structure into node-level text representations, and 2) a HyperNetwork to generate node-specific transformation parameters. This aligns topological and semantic features of ID nodes, enhancing ID/OOD distinction across structural and textual shifts. Experiments on 11 datasets across four OOD scenarios demonstrate the nuanced challenge of TextTopoOOD for evaluating OOD detection in text-rich networks.
 ]]></content:encoded>
-<pubDate>Wed, 03 Sep 2025 00:00:00 -0400</pubDate>
 <pubDate>Wed, 03 Sep 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -233,16 +220,14 @@ Abstract: Out-of-distribution (OOD) detection remains challenging in text-rich n
 <link>https://arxiv.org/abs/2508.18921</link>
 <guid>https://arxiv.org/abs/2508.18921</guid>
 <content:encoded><![CDATA[
-<div> deep neural networks, financial forecasting, probability distributions, LSTM, risk assessment<br>
-Summary:<br>
-This study evaluates the use of deep neural networks in forecasting probability distributions of financial returns. The researchers employ 1D CNN and LSTM architectures to forecast parameters of Normal, Student's t, and skewed Student's t distributions, optimizing the parameters directly with custom loss functions. Testing the models on major equity indices, they find that the LSTM with skewed Student's t distribution performs best, accurately capturing heavy tails and asymmetry in financial returns. The models demonstrate competitive performance with traditional GARCH models for Value-at-Risk estimation, showcasing their potential as alternatives for financial risk assessment and portfolio management. Overall, the study highlights the effectiveness of deep learning models in providing accurate distributional forecasts for financial markets. <br> <div>
+<div> deep neural networks, financial forecasting, probability distributions, LSTM, risk assessment<br />
+Summary:<br />
+This study evaluates the use of deep neural networks in forecasting probability distributions of financial returns. The researchers employ 1D CNN and LSTM architectures to forecast parameters of Normal, Student's t, and skewed Student's t distributions, optimizing the parameters directly with custom loss functions. Testing the models on major equity indices, they find that the LSTM with skewed Student's t distribution performs best, accurately capturing heavy tails and asymmetry in financial returns. The models demonstrate competitive performance with traditional GARCH models for Value-at-Risk estimation, showcasing their potential as alternatives for financial risk assessment and portfolio management. Overall, the study highlights the effectiveness of deep learning models in providing accurate distributional forecasts for financial markets. <br /> <div>
 arXiv:2508.18921v2 Announce Type: replace-cross 
 Abstract: This study evaluates deep neural networks for forecasting probability distributions of financial returns. 1D convolutional neural networks (CNN) and Long Short-Term Memory (LSTM) architectures are used to forecast parameters of three probability distributions: Normal, Student's t, and skewed Student's t. Using custom negative log-likelihood loss functions, distribution parameters are optimized directly. The models are tested on six major equity indices (S\&amp;P 500, BOVESPA, DAX, WIG, Nikkei 225, and KOSPI) using probabilistic evaluation metrics including Log Predictive Score (LPS), Continuous Ranked Probability Score (CRPS), and Probability Integral Transform (PIT). Results show that deep learning models provide accurate distributional forecasts and perform competitively with classical GARCH models for Value-at-Risk estimation. The LSTM with skewed Student's t distribution performs best across multiple evaluation criteria, capturing both heavy tails and asymmetry in financial returns. This work shows that deep neural networks are viable alternatives to traditional econometric models for financial risk assessment and portfolio management.
 ]]></content:encoded>
 <pubDate>Wed, 03 Sep 2025 00:00:00 -0400</pubDate>
-<pubDate>Wed, 03 Sep 2025 00:00:00 -0400</pubDate>
 </item>
-
 <item>
 <title>Diagnosing Psychiatric Patients: Can Large Language and Machine Learning Models Perform Effectively in Emergency Cases?</title>
 <link>https://arxiv.org/abs/2509.00026</link>
@@ -11112,157 +11097,6 @@ Abstract: Evaluating instruction-tuned Large Language Models (LLMs) in Hindi is 
 <content:encoded><![CDATA[
 arXiv:2508.19841v1 Announce Type: cross 
 Abstract: We present a probabilistic, data-driven surrogate model for predicting the radiative properties of nanoparticle embedded scattering media. The model uses conditional normalizing flows, which learn the conditional distribution of optical outputs, including reflectance, absorbance, and transmittance, given input parameters such as the absorption coefficient, scattering coefficient, anisotropy factor, and particle size distribution. We generate training data using Monte Carlo radiative transfer simulations, with optical properties derived from Mie theory. Unlike conventional neural networks, the conditional normalizing flow model yields full posterior predictive distributions, enabling both accurate forecasts and principled uncertainty quantification. Our results demonstrate that this model achieves high predictive accuracy and reliable uncertainty estimates, establishing it as a powerful and efficient surrogate for radiative transfer simulations.
-]]></content:encoded>
-<pubDate>Thu, 28 Aug 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Multimodal Conditional MeshGAN for Personalized Aneurysm Growth Prediction</title>
-<link>https://arxiv.org/abs/2508.19862</link>
-<guid>https://arxiv.org/abs/2508.19862</guid>
-<content:encoded><![CDATA[
-arXiv:2508.19862v1 Announce Type: cross 
-Abstract: Personalized, accurate prediction of aortic aneurysm progression is essential for timely intervention but remains challenging due to the need to model both subtle local deformations and global anatomical changes within complex 3D geometries. We propose MCMeshGAN, the first multimodal conditional mesh-to-mesh generative adversarial network for 3D aneurysm growth prediction. MCMeshGAN introduces a dual-branch architecture combining a novel local KNN-based convolutional network (KCN) to preserve fine-grained geometric details and a global graph convolutional network (GCN) to capture long-range structural context, overcoming the over-smoothing limitations of deep GCNs. A dedicated condition branch encodes clinical attributes (age, sex) and the target time interval to generate anatomically plausible, temporally controlled predictions, enabling retrospective and prospective modeling. We curated TAAMesh, a new longitudinal thoracic aortic aneurysm mesh dataset consisting of 590 multimodal records (CT scans, 3D meshes, and clinical data) from 208 patients. Extensive experiments demonstrate that MCMeshGAN consistently outperforms state-of-the-art baselines in both geometric accuracy and clinically important diameter estimation. This framework offers a robust step toward clinically deployable, personalized 3D disease trajectory modeling. The source code for MCMeshGAN and the baseline methods is publicly available at https://github.com/ImperialCollegeLondon/MCMeshGAN.
-]]></content:encoded>
-<pubDate>Thu, 28 Aug 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>TrajFusionNet: Pedestrian Crossing Intention Prediction via Fusion of Sequential and Visual Trajectory Representations</title>
-<link>https://arxiv.org/abs/2508.19866</link>
-<guid>https://arxiv.org/abs/2508.19866</guid>
-<content:encoded><![CDATA[
-arXiv:2508.19866v1 Announce Type: cross 
-Abstract: With the introduction of vehicles with autonomous capabilities on public roads, predicting pedestrian crossing intention has emerged as an active area of research. The task of predicting pedestrian crossing intention involves determining whether pedestrians in the scene are likely to cross the road or not. In this work, we propose TrajFusionNet, a novel transformer-based model that combines future pedestrian trajectory and vehicle speed predictions as priors for predicting crossing intention. TrajFusionNet comprises two branches: a Sequence Attention Module (SAM) and a Visual Attention Module (VAM). The SAM branch learns from a sequential representation of the observed and predicted pedestrian trajectory and vehicle speed. Complementarily, the VAM branch enables learning from a visual representation of the predicted pedestrian trajectory by overlaying predicted pedestrian bounding boxes onto scene images. By utilizing a small number of lightweight modalities, TrajFusionNet achieves the lowest total inference time (including model runtime and data preprocessing) among current state-of-the-art approaches. In terms of performance, it achieves state-of-the-art results across the three most commonly used datasets for pedestrian crossing intention prediction.
-]]></content:encoded>
-<pubDate>Thu, 28 Aug 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Sky Background Building of Multi-objective Fiber spectra Based on Mutual Information Network</title>
-<link>https://arxiv.org/abs/2508.19875</link>
-<guid>https://arxiv.org/abs/2508.19875</guid>
-<content:encoded><![CDATA[
-arXiv:2508.19875v1 Announce Type: cross 
-Abstract: Sky background subtraction is a critical step in Multi-objective Fiber spectra process. However, current subtraction relies mainly on sky fiber spectra to build Super Sky. These average spectra are lacking in the modeling of the environment surrounding the objects. To address this issue, a sky background estimation model: Sky background building based on Mutual Information (SMI) is proposed. SMI based on mutual information and incremental training approach. It utilizes spectra from all fibers in the plate to estimate the sky background. SMI contains two main networks, the first network applies a wavelength calibration module to extract sky features from spectra, and can effectively solve the feature shift problem according to the corresponding emission position. The second network employs an incremental training approach to maximize mutual information between representations of different spectra to capturing the common component. Then, it minimizes the mutual information between adjoining spectra representations to obtain individual components. This network yields an individual sky background at each location of the object. To verify the effectiveness of the method in this paper, we conducted experiments on the spectra of LAMOST. Results show that SMI can obtain a better object sky background during the observation, especially in the blue end.
-]]></content:encoded>
-<pubDate>Thu, 28 Aug 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>On-chip wave chaos for photonic extreme learning</title>
-<link>https://arxiv.org/abs/2508.19878</link>
-<guid>https://arxiv.org/abs/2508.19878</guid>
-<content:encoded><![CDATA[
-arXiv:2508.19878v1 Announce Type: cross 
-Abstract: The increase in demand for scalable and energy efficient artificial neural networks has put the focus on novel hardware solutions. Integrated photonics offers a compact, parallel and ultra-fast information processing platform, specially suited for extreme learning machine (ELM) architectures. Here we experimentally demonstrate a chip-scale photonic ELM based on wave chaos interference in a stadium microcavity. By encoding the input information in the wavelength of an external single-frequency tunable laser source, we leverage the high sensitivity to wavelength of injection in such photonic resonators. We fabricate the microcavity with direct laser writing of SU-8 polymer on glass. A scattering wall surrounding the stadium operates as readout layer, collecting the light associated with the cavity's leaky modes. We report uncorrelated and aperiodic behavior in the speckles of the scattering barrier from a high resolution scan of the input wavelength. Finally, we characterize the system's performance at classification in four qualitatively different benchmark tasks. As we can control the number of output nodes of our ELM by measuring different parts of the scattering barrier, we demonstrate the capability to optimize our photonic ELM's readout size to the performance required for each task.
-]]></content:encoded>
-<pubDate>Thu, 28 Aug 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>The Information Dynamics of Generative Diffusion</title>
-<link>https://arxiv.org/abs/2508.19897</link>
-<guid>https://arxiv.org/abs/2508.19897</guid>
-<content:encoded><![CDATA[
-arXiv:2508.19897v1 Announce Type: cross 
-Abstract: Generative diffusion models have emerged as a powerful class of models in machine learning, yet a unified theoretical understanding of their operation is still developing. This perspective paper provides an integrated perspective on generative diffusion by connecting their dynamic, information-theoretic, and thermodynamic properties under a unified mathematical framework. We demonstrate that the rate of conditional entropy production during generation (i.e. the generative bandwidth) is directly governed by the expected divergence of the score function's vector field. This divergence, in turn, is linked to the branching of trajectories and generative bifurcations, which we characterize as symmetry-breaking phase transitions in the energy landscape. This synthesis offers a powerful insight: the process of generation is fundamentally driven by the controlled, noise-induced breaking of (approximate) symmetries, where peaks in information transfer correspond to critical transitions between possible outcomes. The score function acts as a dynamic non-linear filter that regulates the bandwidth of the noise by suppressing fluctuations that are incompatible with the data.
-]]></content:encoded>
-<pubDate>Thu, 28 Aug 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Experimental End-to-End Optimization of Directly Modulated Laser-based IM/DD Transmission</title>
-<link>https://arxiv.org/abs/2508.19910</link>
-<guid>https://arxiv.org/abs/2508.19910</guid>
-<content:encoded><![CDATA[
-arXiv:2508.19910v1 Announce Type: cross 
-Abstract: Directly modulated lasers (DMLs) are an attractive technology for short-reach intensity modulation and direct detection communication systems. However, their complex nonlinear dynamics make the modeling and optimization of DML-based systems challenging. In this paper, we study the end-to-end optimization of DML-based systems based on a data-driven surrogate model trained on experimental data. The end-to-end optimization includes the pulse shaping and equalizer filters, the bias current and the modulation radio-frequency (RF) power applied to the laser. The performance of the end-to-end optimization scheme is tested on the experimental setup and compared to 4 different benchmark schemes based on linear and nonlinear receiver-side equalization. The results show that the proposed end-to-end scheme is able to deliver better performance throughout the studied symbol rates and transmission distances while employing lower modulation RF power, fewer filter taps and utilizing a smaller signal bandwidth.
-]]></content:encoded>
-<pubDate>Thu, 28 Aug 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Large Language Models (LLMs) for Electronic Design Automation (EDA)</title>
-<link>https://arxiv.org/abs/2508.20030</link>
-<guid>https://arxiv.org/abs/2508.20030</guid>
-<content:encoded><![CDATA[
-arXiv:2508.20030v1 Announce Type: cross 
-Abstract: With the growing complexity of modern integrated circuits, hardware engineers are required to devote more effort to the full design-to-manufacturing workflow. This workflow involves numerous iterations, making it both labor-intensive and error-prone. Therefore, there is an urgent demand for more efficient Electronic Design Automation (EDA) solutions to accelerate hardware development. Recently, large language models (LLMs) have shown remarkable advancements in contextual comprehension, logical reasoning, and generative capabilities. Since hardware designs and intermediate scripts can be represented as text, integrating LLM for EDA offers a promising opportunity to simplify and even automate the entire workflow. Accordingly, this paper provides a comprehensive overview of incorporating LLMs into EDA, with emphasis on their capabilities, limitations, and future opportunities. Three case studies, along with their outlook, are introduced to demonstrate the capabilities of LLMs in hardware design, testing, and optimization. Finally, future directions and challenges are highlighted to further explore the potential of LLMs in shaping the next-generation EDA, providing valuable insights for researchers interested in leveraging advanced AI technologies for EDA.
-]]></content:encoded>
-<pubDate>Thu, 28 Aug 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Model Science: getting serious about verification, explanation and control of AI systems</title>
-<link>https://arxiv.org/abs/2508.20040</link>
-<guid>https://arxiv.org/abs/2508.20040</guid>
-<content:encoded><![CDATA[
-arXiv:2508.20040v1 Announce Type: cross 
-Abstract: The growing adoption of foundation models calls for a paradigm shift from Data Science to Model Science. Unlike data-centric approaches, Model Science places the trained model at the core of analysis, aiming to interact, verify, explain, and control its behavior across diverse operational contexts. This paper introduces a conceptual framework for a new discipline called Model Science, along with the proposal for its four key pillars: Verification, which requires strict, context-aware evaluation protocols; Explanation, which is understood as various approaches to explore of internal model operations; Control, which integrates alignment techniques to steer model behavior; and Interface, which develops interactive and visual explanation tools to improve human calibration and decision-making. The proposed framework aims to guide the development of credible, safe, and human-aligned AI systems.
-]]></content:encoded>
-<pubDate>Thu, 28 Aug 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>11Plus-Bench: Demystifying Multimodal LLM Spatial Reasoning with Cognitive-Inspired Analysis</title>
-<link>https://arxiv.org/abs/2508.20068</link>
-<guid>https://arxiv.org/abs/2508.20068</guid>
-<content:encoded><![CDATA[
-arXiv:2508.20068v1 Announce Type: cross 
-Abstract: For human cognitive process, spatial reasoning and perception are closely entangled, yet the nature of this interplay remains underexplored in the evaluation of multimodal large language models (MLLMs). While recent MLLM advancements show impressive performance on reasoning, their capacity for human-like spatial cognition remains an open question. In this work, we introduce a systematic evaluation framework to assess the spatial reasoning abilities of state-of-the-art MLLMs relative to human performance. Central to our work is 11Plus-Bench, a high-quality benchmark derived from realistic standardized spatial aptitude tests. 11Plus-Bench also features fine-grained expert annotations of both perceptual complexity and reasoning process, enabling detailed instance-level analysis of model behavior. Through extensive experiments across 14 MLLMs and human evaluation, we find that current MLLMs exhibit early signs of spatial cognition. Despite a large performance gap compared to humans, MLLMs' cognitive profiles resemble those of humans in that cognitive effort correlates strongly with reasoning-related complexity. However, instance-level performance in MLLMs remains largely random, whereas human correctness is highly predictable and shaped by abstract pattern complexity. These findings highlight both emerging capabilities and limitations in current MLLMs' spatial reasoning capabilities and provide actionable insights for advancing model design.
-]]></content:encoded>
-<pubDate>Thu, 28 Aug 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Discrete Diffusion VLA: Bringing Discrete Diffusion to Action Decoding in Vision-Language-Action Policies</title>
-<link>https://arxiv.org/abs/2508.20072</link>
-<guid>https://arxiv.org/abs/2508.20072</guid>
-<content:encoded><![CDATA[
-arXiv:2508.20072v1 Announce Type: cross 
-Abstract: Vision-Language-Action (VLA) models adapt large vision-language backbones to map images and instructions to robot actions. However, prevailing VLA decoders either generate actions autoregressively in a fixed left-to-right order or attach continuous diffusion or flow matching heads outside the backbone, demanding specialized training and iterative sampling that hinder a unified, scalable architecture. We present Discrete Diffusion VLA, a single-transformer policy that models discretized action chunks with discrete diffusion and is trained with the same cross-entropy objective as the VLM backbone. The design retains diffusion's progressive refinement paradigm while remaining natively compatible with the discrete token interface of VLMs. Our method achieves an adaptive decoding order that resolves easy action elements before harder ones and uses secondary remasking to revisit uncertain predictions across refinement rounds, which improves consistency and enables robust error correction. This unified decoder preserves pretrained vision language priors, supports parallel decoding, breaks the autoregressive bottleneck, and reduces the number of function evaluations. Discrete Diffusion VLA achieves 96.3% avg. SR on LIBERO, 71.2% visual matching on SimplerEnv Fractal and 49.3% overall on SimplerEnv Bridge, improving over both autoregressive and continuous diffusion baselines. These findings indicate that discrete-diffusion action decoder supports precise action modeling and consistent training, laying groundwork for scaling VLA to larger models and datasets.
-]]></content:encoded>
-<pubDate>Thu, 28 Aug 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Anomaly Detection in Networked Bandits</title>
-<link>https://arxiv.org/abs/2508.20076</link>
-<guid>https://arxiv.org/abs/2508.20076</guid>
-<content:encoded><![CDATA[
-arXiv:2508.20076v1 Announce Type: cross 
-Abstract: The nodes' interconnections on a social network often reflect their dependencies and information-sharing behaviors. Nevertheless, abnormal nodes, which significantly deviate from most of the network concerning patterns or behaviors, can lead to grave consequences. Therefore, it is imperative to design efficient online learning algorithms that robustly learn users' preferences while simultaneously detecting anomalies.
-  We introduce a novel bandit algorithm to address this problem. Through network knowledge, the method characterizes the users' preferences and residuals of feature information. By learning and analyzing these preferences and residuals, it develops a personalized recommendation strategy for each user and simultaneously detects anomalies. We rigorously prove an upper bound on the regret of the proposed algorithm and experimentally compare it with several state-of-the-art collaborative contextual bandit algorithms on both synthetic and real-world datasets.
-]]></content:encoded>
-<pubDate>Thu, 28 Aug 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Discrete-Guided Diffusion for Scalable and Safe Multi-Robot Motion Planning</title>
-<link>https://arxiv.org/abs/2508.20095</link>
-<guid>https://arxiv.org/abs/2508.20095</guid>
-<content:encoded><![CDATA[
-arXiv:2508.20095v1 Announce Type: cross 
-Abstract: Multi-Robot Motion Planning (MRMP) involves generating collision-free trajectories for multiple robots operating in a shared continuous workspace. While discrete multi-agent path finding (MAPF) methods are broadly adopted due to their scalability, their coarse discretization severely limits trajectory quality. In contrast, continuous optimization-based planners offer higher-quality paths but suffer from the curse of dimensionality, resulting in poor scalability with respect to the number of robots. This paper tackles the limitations of these two approaches by introducing a novel framework that integrates discrete MAPF solvers with constrained generative diffusion models. The resulting framework, called Discrete-Guided Diffusion (DGD), has three key characteristics: (1) it decomposes the original nonconvex MRMP problem into tractable subproblems with convex configuration spaces, (2) it combines discrete MAPF solutions with constrained optimization techniques to guide diffusion models capture complex spatiotemporal dependencies among robots, and (3) it incorporates a lightweight constraint repair mechanism to ensure trajectory feasibility. The proposed method sets a new state-of-the-art performance in large-scale, complex environments, scaling to 100 robots while achieving planning efficiency and high success rates.
-]]></content:encoded>
-<pubDate>Thu, 28 Aug 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>CODA: Coordinating the Cerebrum and Cerebellum for a Dual-Brain Computer Use Agent with Decoupled Reinforcement Learning</title>
-<link>https://arxiv.org/abs/2508.20096</link>
-<guid>https://arxiv.org/abs/2508.20096</guid>
-<content:encoded><![CDATA[
-arXiv:2508.20096v1 Announce Type: cross 
-Abstract: Autonomous agents for Graphical User Interfaces (GUIs) face significant challenges in specialized domains such as scientific computing, where both long-horizon planning and precise execution are required. Existing approaches suffer from a trade-off: generalist agents excel at planning but perform poorly in execution, while specialized agents demonstrate the opposite weakness. Recent compositional frameworks attempt to bridge this gap by combining a planner and an actor, but they are typically static and non-trainable, which prevents adaptation from experience. This is a critical limitation given the scarcity of high-quality data in scientific domains. To address these limitations, we introduce CODA, a novel and trainable compositional framework that integrates a generalist planner (Cerebrum) with a specialist executor (Cerebellum), trained via a dedicated two-stage pipeline. In the first stage, Specialization, we apply a decoupled GRPO approach to train an expert planner for each scientific application individually, bootstrapping from a small set of task trajectories. In the second stage, Generalization, we aggregate all successful trajectories from the specialized experts to build a consolidated dataset, which is then used for supervised fine-tuning of the final planner. This equips CODA with both robust execution and cross-domain generalization. Evaluated on four challenging applications from the ScienceBoard benchmark, CODA significantly outperforms baselines and establishes a new state of the art among open-source models.
-]]></content:encoded>
-<pubDate>Thu, 28 Aug 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Conditional Wasserstein Distances with Applications in Bayesian OT Flow Matching</title>
-<link>https://arxiv.org/abs/2403.18705</link>
-<guid>https://arxiv.org/abs/2403.18705</guid>
-<content:encoded><![CDATA[
-arXiv:2403.18705v3 Announce Type: replace 
-Abstract: In inverse problems, many conditional generative models approximate the posterior measure by minimizing a distance between the joint measure and its learned approximation. While this approach also controls the distance between the posterior measures in the case of the Kullback--Leibler divergence, this is in general not hold true for the Wasserstein distance. In this paper, we introduce a conditional Wasserstein distance via a set of restricted couplings that equals the expected Wasserstein distance of the posteriors. Interestingly, the dual formulation of the conditional Wasserstein-1 flow resembles losses in the conditional Wasserstein GAN literature in a quite natural way. We derive theoretical properties of the conditional Wasserstein distance, characterize the corresponding geodesics and velocity fields as well as the flow ODEs. Subsequently, we propose to approximate the velocity fields by relaxing the conditional Wasserstein distance. Based on this, we propose an extension of OT Flow Matching for solving Bayesian inverse problems and demonstrate its numerical advantages on an inverse problem and class-conditional image generation.
-]]></content:encoded>
-<pubDate>Thu, 28 Aug 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>FraGNNet: A Deep Probabilistic Model for Tandem Mass Spectrum Prediction</title>
-<link>https://arxiv.org/abs/2404.02360</link>
-<guid>https://arxiv.org/abs/2404.02360</guid>
-<content:encoded><![CDATA[
-arXiv:2404.02360v2 Announce Type: replace 
-Abstract: Compound identification from tandem mass spectrometry (MS/MS) data is a critical step in the analysis of complex mixtures. Typical solutions for the MS/MS spectrum to compound (MS2C) problem involve comparing the unknown spectrum against a library of known spectrum-molecule pairs, an approach that is limited by incomplete library coverage. Compound to MS/MS spectrum (C2MS) models can improve retrieval rates by augmenting real libraries with predicted MS/MS spectra. Unfortunately, many existing C2MS models suffer from problems with mass accuracy, generalization, or interpretability. We develop a new probabilistic method for C2MS prediction, FraGNNet, that can efficiently and accurately simulate MS/MS spectra with high mass accuracy. Our approach formulates the C2MS problem as learning a distribution over molecule fragments. FraGNNet achieves state-of-the-art performance in terms of prediction error and surpasses existing C2MS models as a tool for retrieval-based MS2C.
 ]]></content:encoded>
 <pubDate>Thu, 28 Aug 2025 00:00:00 -0400</pubDate>
 </item>

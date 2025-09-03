@@ -4,6 +4,7 @@
 <title>cs.CL updates on arXiv.org</title>
 <link>http://rss.arxiv.org/rss/cs.CL</link>
 
+
 <item>
 <title>MMReview: A Multidisciplinary and Multimodal Benchmark for LLM-Based Peer Review Automation</title>
 <link>https://arxiv.org/abs/2508.14146</link>
@@ -14,11 +15,10 @@
 Summary:
 The article introduces MMReview, a benchmark designed to evaluate the performance of Large Language Models (LLMs) and Multimodal LLMs in generating comprehensive and accurate review comments for academic publications. MMReview spans multiple disciplines and modalities, including expert-written review comments for 240 papers across 17 research domains in four major academic disciplines. It consists of 13 tasks grouped into four categories, testing the models' abilities in review generation, outcome formulation, alignment with human preferences, and robustness to adversarial input manipulation. Extensive experiments on open-source and closed-source models demonstrate the benchmark's thoroughness. MMReview aims to establish a standardized foundation for the development of automated peer review systems. 
 
-<br><br>Summary: <div>
+<br /><br />Summary: <div>
 arXiv:2508.14146v2 Announce Type: replace 
 Abstract: With the rapid growth of academic publications, peer review has become an essential yet time-consuming responsibility within the research community. Large Language Models (LLMs) have increasingly been adopted to assist in the generation of review comments; however, current LLM-based review tasks lack a unified evaluation benchmark to rigorously assess the models' ability to produce comprehensive, accurate, and human-aligned assessments, particularly in scenarios involving multimodal content such as figures and tables. To address this gap, we propose \textbf{MMReview}, a comprehensive benchmark that spans multiple disciplines and modalities. MMReview includes multimodal content and expert-written review comments for 240 papers across 17 research domains within four major academic disciplines: Artificial Intelligence, Natural Sciences, Engineering Sciences, and Social Sciences. We design a total of 13 tasks grouped into four core categories, aimed at evaluating the performance of LLMs and Multimodal LLMs (MLLMs) in step-wise review generation, outcome formulation, alignment with human preferences, and robustness to adversarial input manipulation. Extensive experiments conducted on 16 open-source models and 5 advanced closed-source models demonstrate the thoroughness of the benchmark. We envision MMReview as a critical step toward establishing a standardized foundation for the development of automated peer review systems.
 ]]></content:encoded>
-<pubDate>Wed, 03 Sep 2025 00:00:00 -0400</pubDate>
 <pubDate>Wed, 03 Sep 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -26,13 +26,12 @@ Abstract: With the rapid growth of academic publications, peer review has become
 <link>https://arxiv.org/abs/2508.14444</link>
 <guid>https://arxiv.org/abs/2508.14444</guid>
 <content:encoded><![CDATA[
-<div> Mamba-Transformer, Nemotron-Nano-9B-v2, reasoning workloads, state-of-the-art accuracy, throughput <br>
+<div> Mamba-Transformer, Nemotron-Nano-9B-v2, reasoning workloads, state-of-the-art accuracy, throughput <br />
 Summary:
 The article introduces Nemotron-Nano-9B-v2, a hybrid Mamba-Transformer language model designed to enhance throughput for reasoning tasks while maintaining high accuracy. This model, built on the Nemotron-H architecture, uses Mamba-2 layers instead of traditional self-attention layers to improve inference speed for generating long thinking traces required for reasoning. Nemotron-Nano-9B-v2 is created by pre-training a 12-billion-parameter model (Nemotron-Nano-12B-v2-Base) on 20 trillion tokens and compressing it using the Minitron strategy to enable inference on a single NVIDIA A10G GPU. Compared to similar models like Qwen3-8B, Nemotron-Nano-9B-v2 shows comparable or superior accuracy in reasoning benchmarks while achieving significantly higher inference throughput in scenarios with 8k input and 16k output tokens. The checkpoints for Nemotron-Nano-9B-v2, Nemotron-Nano-12B-v2-Base, and Nemotron-Nano-9B-v2-Base are released along with pre- and post-training datasets on Hugging Face.   <div>
 arXiv:2508.14444v4 Announce Type: replace 
 Abstract: We introduce Nemotron-Nano-9B-v2, a hybrid Mamba-Transformer language model designed to increase throughput for reasoning workloads while achieving state-of-the-art accuracy compared to similarly-sized models. Nemotron-Nano-9B-v2 builds on the Nemotron-H architecture, in which the majority of the self-attention layers in the common Transformer architecture are replaced with Mamba-2 layers, to achieve improved inference speed when generating the long thinking traces needed for reasoning. We create Nemotron-Nano-9B-v2 by first pre-training a 12-billion-parameter model (Nemotron-Nano-12B-v2-Base) on 20 trillion tokens using an FP8 training recipe. After aligning Nemotron-Nano-12B-v2-Base, we employ the Minitron strategy to compress and distill the model with the goal of enabling inference on up to 128k tokens on a single NVIDIA A10G GPU (22GiB of memory, bfloat16 precision). Compared to existing similarly-sized models (e.g., Qwen3-8B), we show that Nemotron-Nano-9B-v2 achieves on-par or better accuracy on reasoning benchmarks while achieving up to 6x higher inference throughput in reasoning settings like 8k input and 16k output tokens. We are releasing Nemotron-Nano-9B-v2, Nemotron-Nano12B-v2-Base, and Nemotron-Nano-9B-v2-Base checkpoints along with the majority of our pre- and post-training datasets on Hugging Face.
 ]]></content:encoded>
-<pubDate>Wed, 03 Sep 2025 00:00:00 -0400</pubDate>
 <pubDate>Wed, 03 Sep 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -40,13 +39,12 @@ Abstract: We introduce Nemotron-Nano-9B-v2, a hybrid Mamba-Transformer language 
 <link>https://arxiv.org/abs/2508.14880</link>
 <guid>https://arxiv.org/abs/2508.14880</guid>
 <content:encoded><![CDATA[
-<div> Keywords: Large Language Model, deep research agent, medical knowledge graphs, medical retrieval engine, state-of-the-art results <br>
+<div> Keywords: Large Language Model, deep research agent, medical knowledge graphs, medical retrieval engine, state-of-the-art results <br />
 Summary: 
-Recent advancements in Large Language Model (LLM)-based agents have led to impressive capabilities across various domains, particularly in deep research tasks. However, these models struggle in the medical domain due to a lack of dense medical knowledge and specialized retrieval tools. In response, a new medical deep research agent has been developed. This agent leverages medical knowledge graphs to synthesize complex question-answer pairs and integrates a private medical retrieval engine for accurate information synthesis. Through a two-stage training paradigm combining supervised fine-tuning and online reinforcement learning, the MedResearcher-R1-32B model achieves exceptional performance on medical benchmarks, outperforming larger proprietary systems in specialized domains while maintaining competitiveness in general deep research tasks. This research highlights the importance of domain-specific innovations in architecture, tool design, and training data construction for achieving superior results in specialized domains. <br><br> <div>
+Recent advancements in Large Language Model (LLM)-based agents have led to impressive capabilities across various domains, particularly in deep research tasks. However, these models struggle in the medical domain due to a lack of dense medical knowledge and specialized retrieval tools. In response, a new medical deep research agent has been developed. This agent leverages medical knowledge graphs to synthesize complex question-answer pairs and integrates a private medical retrieval engine for accurate information synthesis. Through a two-stage training paradigm combining supervised fine-tuning and online reinforcement learning, the MedResearcher-R1-32B model achieves exceptional performance on medical benchmarks, outperforming larger proprietary systems in specialized domains while maintaining competitiveness in general deep research tasks. This research highlights the importance of domain-specific innovations in architecture, tool design, and training data construction for achieving superior results in specialized domains. <br /><br /> <div>
 arXiv:2508.14880v3 Announce Type: replace 
 Abstract: Recent developments in Large Language Model (LLM)-based agents have shown impressive capabilities spanning multiple domains, exemplified by deep research systems that demonstrate superior performance on complex information-seeking and synthesis tasks. While general-purpose deep research agents have shown impressive capabilities, they struggle significantly with medical domain challenges, as evidenced by leading proprietary systems achieving limited accuracy on complex medical benchmarks. The key limitations are: (1) the model lacks sufficient dense medical knowledge for clinical reasoning, and (2) the framework is constrained by the absence of specialized retrieval tools tailored for medical contexts. We present a medical deep research agent that addresses these challenges through two core innovations. First, we develop a novel data synthesis framework using medical knowledge graphs, extracting the longest chains from subgraphs around rare medical entities to generate complex multi-hop question-answer pairs. Second, we integrate a custom-built private medical retrieval engine alongside general-purpose tools, enabling accurate medical information synthesis. Our approach generates 2100+ diverse trajectories across 12 medical specialties, each averaging 4.2 tool interactions. Through a two-stage training paradigm combining supervised fine-tuning and online reinforcement learning with composite rewards, our MedResearcher-R1-32B model demonstrates exceptional performance, establishing new state-of-the-art results on medical benchmarks while maintaining competitive performance on general deep research tasks. Our work demonstrates that strategic domain-specific innovations in architecture, tool design, and training data construction can enable smaller open-source models to outperform much larger proprietary systems in specialized domains.
 ]]></content:encoded>
-<pubDate>Wed, 03 Sep 2025 00:00:00 -0400</pubDate>
 <pubDate>Wed, 03 Sep 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -54,11 +52,10 @@ Abstract: Recent developments in Large Language Model (LLM)-based agents have sh
 <link>https://arxiv.org/abs/2508.15044</link>
 <guid>https://arxiv.org/abs/2508.15044</guid>
 <content:encoded><![CDATA[
-<div> Efficiency, large language models, test-time alignment, reward-shifted speculative sampling, weak-to-strong alignment<br>Summary:<br>This research focuses on enhancing the alignment of large language models (LLMs) with human preferences, particularly during test-time inference. A new algorithm called reward-shifted speculative sampling (SSS) is introduced, which utilizes a draft model aligned with human preferences to improve efficiency without modifying the target model. By exploiting the distributional shift between the draft and target models, the SSS algorithm achieves superior results in weak-to-strong alignment experiments at a reduced inference cost. The proposed approach addresses the challenge of test-time alignment by leveraging speculative sampling techniques, demonstrating both effectiveness and efficiency in improving LLM safety and reasoning capabilities. <div>
+<div> Efficiency, large language models, test-time alignment, reward-shifted speculative sampling, weak-to-strong alignment<br />Summary:<br />This research focuses on enhancing the alignment of large language models (LLMs) with human preferences, particularly during test-time inference. A new algorithm called reward-shifted speculative sampling (SSS) is introduced, which utilizes a draft model aligned with human preferences to improve efficiency without modifying the target model. By exploiting the distributional shift between the draft and target models, the SSS algorithm achieves superior results in weak-to-strong alignment experiments at a reduced inference cost. The proposed approach addresses the challenge of test-time alignment by leveraging speculative sampling techniques, demonstrating both effectiveness and efficiency in improving LLM safety and reasoning capabilities. <div>
 arXiv:2508.15044v2 Announce Type: replace 
 Abstract: Aligning large language models (LLMs) with human preferences has become a critical step in their development. Recent research has increasingly focused on test-time alignment, where additional compute is allocated during inference to enhance LLM safety and reasoning capabilities. However, these test-time alignment techniques often incur substantial inference costs, limiting their practical application. We are inspired by the speculative sampling acceleration, which leverages a small draft model to efficiently predict future tokens, to address the efficiency bottleneck of test-time alignment. We introduce the reward-shifted speculative sampling (SSS) algorithm, in which the draft model is aligned with human preferences, while the target model remains unchanged. We theoretically demonstrate that the distributional shift between the aligned draft model and the unaligned target model can be exploited to recover the RLHF optimal solution without actually obtaining it, by modifying the acceptance criterion and bonus token distribution. Our algorithm achieves superior gold reward scores at a significantly reduced inference cost in test-time weak-to-strong alignment experiments, thereby validating both its effectiveness and efficiency.
 ]]></content:encoded>
-<pubDate>Wed, 03 Sep 2025 00:00:00 -0400</pubDate>
 <pubDate>Wed, 03 Sep 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -74,9 +71,7 @@ arXiv:2508.15212v2 Announce Type: replace
 Abstract: Long-context inference in large language models (LLMs) is increasingly constrained by the KV cache bottleneck: memory usage grows linearly with sequence length, while attention computation scales quadratically. Existing approaches address this issue by compressing the KV cache along the temporal axis through strategies such as token eviction or merging to reduce memory and computational overhead. However, these methods often neglect fine-grained importance variations across feature dimensions (i.e., the channel axis), thereby limiting their ability to effectively balance efficiency and model accuracy. In reality, we observe that channel saliency varies dramatically across both queries and positions: certain feature channels carry near-zero information for a given query, while others spike in relevance. To address this oversight, we propose SPARK, a training-free plug-and-play method that applies unstructured sparsity by pruning KV at the channel level, while dynamically restoring the pruned entries during attention score computation. Notably, our approach is orthogonal to existing KV compression and quantization techniques, making it compatible for integration with them to achieve further acceleration. By reducing channel-level redundancy, SPARK enables processing of longer sequences within the same memory budget. For sequences of equal length, SPARK not only preserves or improves model accuracy but also reduces KV cache storage by over 30% compared to eviction-based methods. Furthermore, even with an aggressive pruning ratio of 80%, SPARK maintains performance with less degradation than 5% compared to the baseline eviction method, demonstrating its robustness and effectiveness. Our code will be available at https://github.com/Xnhyacinth/SparK.
 ]]></content:encoded>
 <pubDate>Wed, 03 Sep 2025 00:00:00 -0400</pubDate>
-<pubDate>Wed, 03 Sep 2025 00:00:00 -0400</pubDate>
 </item>
-
 <item>
 <title>MultiStream-LLM: Bridging Modalities for Robust Sign Language Translation</title>
 <link>https://arxiv.org/abs/2509.00030</link>
@@ -11815,56 +11810,6 @@ This paper introduces a method to locate significant neurons, termed concept neu
 <br /><br />Summary: <div>
 arXiv:2508.15875v1 Announce Type: new 
 Abstract: Locating neurons that are responsible for final predictions is important for opening the black-box large language models and understanding the inside mechanisms. Previous studies have tried to find mechanisms that operate at the neuron level but these methods fail to represent a concept and there is also scope for further optimization of compute required. In this paper, with the help of concept vectors, we propose a method for locating significant neurons that are responsible for representing certain concepts and term those neurons as concept neurons. If the number of neurons is n and the number of examples is m, we reduce the number of forward passes required from O(n*m) to just O(n) compared to the previous works and hence optimizing the time and computation required over previous works. We also compare our method with several baselines and previous methods and our results demonstrate better performance than most of the methods and are more optimal when compared to the state-of-the-art method. We, as part of our ablation studies, also try to optimize the search for the concept neurons by involving clustering methods. Finally, we apply our methods to find, turn off the neurons that we find, and analyze its implications in parts of hate speech and bias in LLMs, and we also evaluate our bias part in terms of Indian context. Our methodology, analysis and explanations facilitate understating of neuron-level responsibility for more broader and human-like concepts and also lay a path for future research in this direction of finding concept neurons and intervening them.
-]]></content:encoded>
-<pubDate>Mon, 25 Aug 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>DeepMEL: A Multi-Agent Collaboration Framework for Multimodal Entity Linking</title>
-<link>https://arxiv.org/abs/2508.15876</link>
-<guid>https://arxiv.org/abs/2508.15876</guid>
-<content:encoded><![CDATA[
-arXiv:2508.15876v1 Announce Type: new 
-Abstract: Multimodal Entity Linking (MEL) aims to associate textual and visual mentions with entities in a multimodal knowledge graph. Despite its importance, current methods face challenges such as incomplete contextual information, coarse cross-modal fusion, and the difficulty of jointly large language models (LLMs) and large visual models (LVMs). To address these issues, we propose DeepMEL, a novel framework based on multi-agent collaborative reasoning, which achieves efficient alignment and disambiguation of textual and visual modalities through a role-specialized division strategy. DeepMEL integrates four specialized agents, namely Modal-Fuser, Candidate-Adapter, Entity-Clozer and Role-Orchestrator, to complete end-to-end cross-modal linking through specialized roles and dynamic coordination. DeepMEL adopts a dual-modal alignment path, and combines the fine-grained text semantics generated by the LLM with the structured image representation extracted by the LVM, significantly narrowing the modal gap. We design an adaptive iteration strategy, combines tool-based retrieval and semantic reasoning capabilities to dynamically optimize the candidate set and balance recall and precision. DeepMEL also unifies MEL tasks into a structured cloze prompt to reduce parsing complexity and enhance semantic comprehension. Extensive experiments on five public benchmark datasets demonstrate that DeepMEL achieves state-of-the-art performance, improving ACC by 1%-57%. Ablation studies verify the effectiveness of all modules.
-]]></content:encoded>
-<pubDate>Mon, 25 Aug 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Annif at the GermEval-2025 LLMs4Subjects Task: Traditional XMTC Augmented by Efficient LLMs</title>
-<link>https://arxiv.org/abs/2508.15877</link>
-<guid>https://arxiv.org/abs/2508.15877</guid>
-<content:encoded><![CDATA[
-arXiv:2508.15877v1 Announce Type: new 
-Abstract: This paper presents the Annif system in the LLMs4Subjects shared task (Subtask 2) at GermEval-2025. The task required creating subject predictions for bibliographic records using large language models, with a special focus on computational efficiency. Our system, based on the Annif automated subject indexing toolkit, refines our previous system from the first LLMs4Subjects shared task, which produced excellent results. We further improved the system by using many small and efficient language models for translation and synthetic data generation and by using LLMs for ranking candidate subjects. Our system ranked 1st in the overall quantitative evaluation of and 1st in the qualitative evaluation of Subtask 2.
-]]></content:encoded>
-<pubDate>Mon, 25 Aug 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Jet-Nemotron: Efficient Language Model with Post Neural Architecture Search</title>
-<link>https://arxiv.org/abs/2508.15884</link>
-<guid>https://arxiv.org/abs/2508.15884</guid>
-<content:encoded><![CDATA[
-arXiv:2508.15884v1 Announce Type: new 
-Abstract: We present Jet-Nemotron, a new family of hybrid-architecture language models, which matches or exceeds the accuracy of leading full-attention models while significantly improving generation throughput. Jet-Nemotron is developed using Post Neural Architecture Search (PostNAS), a novel neural architecture exploration pipeline that enables efficient model design. Unlike prior approaches, PostNAS begins with a pre-trained full-attention model and freezes its MLP weights, allowing efficient exploration of attention block designs. The pipeline includes four key components: (1) learning optimal full-attention layer placement and elimination, (2) linear attention block selection, (3) designing new attention blocks, and (4) performing hardware-aware hyperparameter search. Our Jet-Nemotron-2B model achieves comparable or superior accuracy to Qwen3, Qwen2.5, Gemma3, and Llama3.2 across a comprehensive suite of benchmarks while delivering up to 53.6x generation throughput speedup and 6.1x prefilling speedup. It also achieves higher accuracy on MMLU and MMLU-Pro than recent advanced MoE full-attention models, such as DeepSeek-V3-Small and Moonlight, despite their larger scale with 15B total and 2.2B activated parameters.
-]]></content:encoded>
-<pubDate>Mon, 25 Aug 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Evaluating Structured Decoding for Text-to-Table Generation: Evidence from Three Datasets</title>
-<link>https://arxiv.org/abs/2508.15910</link>
-<guid>https://arxiv.org/abs/2508.15910</guid>
-<content:encoded><![CDATA[
-arXiv:2508.15910v1 Announce Type: new 
-Abstract: We present a comprehensive evaluation of structured decoding for text-to-table generation with large language models (LLMs). While previous work has primarily focused on unconstrained generation of tables, the impact of enforcing structural constraints during generation remains underexplored. We systematically compare schema-guided (structured) decoding to standard one-shot prompting across three diverse benchmarks - E2E, Rotowire, and Livesum - using open-source LLMs of up to 32B parameters, assessing the performance of table generation approaches in resource-constrained settings. Our experiments cover a wide range of evaluation metrics at cell, row, and table levels. Results demonstrate that structured decoding significantly enhances the validity and alignment of generated tables, particularly in scenarios demanding precise numerical alignment (Rotowire), but may degrade performance in contexts involving densely packed textual information (E2E) or extensive aggregation over lengthy texts (Livesum). We further analyze the suitability of different evaluation metrics and discuss the influence of model size.
-]]></content:encoded>
-<pubDate>Mon, 25 Aug 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Dancing with Deer: A Constructional Perspective on MWEs in the Era of LLMs</title>
-<link>https://arxiv.org/abs/2508.15977</link>
-<guid>https://arxiv.org/abs/2508.15977</guid>
-<content:encoded><![CDATA[
-arXiv:2508.15977v1 Announce Type: new 
-Abstract: In this chapter, we argue for the benefits of understanding multiword expressions from the perspective of usage-based, construction grammar approaches. We begin with a historical overview of how construction grammar was developed in order to account for idiomatic expressions using the same grammatical machinery as the non-idiomatic structures of language. We cover a comprehensive description of constructions, which are pairings of meaning with form of any size (morpheme, word, phrase), as well as how constructional approaches treat the acquisition and generalization of constructions. We describe a successful case study leveraging constructional templates for representing multiword expressions in English PropBank. Because constructions can be at any level or unit of form, we then illustrate the benefit of a constructional representation of multi-meaningful morphosyntactic unit constructions in Arapaho, a highly polysynthetic and agglutinating language. We include a second case study leveraging constructional templates for representing these multi-morphemic expressions in Uniform Meaning Representation. Finally, we demonstrate the similarities and differences between a usage-based explanation of a speaker learning a novel multiword expression, such as "dancing with deer," and that of a large language model. We present experiments showing that both models and speakers can generalize the meaning of novel multiword expressions based on a single exposure of usage. However, only speakers can reason over the combination of two such expressions, as this requires comparison of the novel forms to a speaker's lifetime of stored constructional exemplars, which are rich with cross-modal details.
 ]]></content:encoded>
 <pubDate>Mon, 25 Aug 2025 00:00:00 -0400</pubDate>
 </item>
