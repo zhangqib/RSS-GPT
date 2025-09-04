@@ -4,6 +4,7 @@
 <title>cs.SI updates on arXiv.org</title>
 <link>http://rss.arxiv.org/rss/cs.SI</link>
 
+
 <item>
 <title>On the Optimization of Methods for Establishing Well-Connected Communities</title>
 <link>https://arxiv.org/abs/2509.02590</link>
@@ -11,12 +12,11 @@
 <content:encoded><![CDATA[
 <div> Algorithm, Community detection, Well-Connected Clusters, Connectivity Modifier, HPE Chapel programming language
 
-Summary: <br>
+Summary: <br />
 Community detection is essential for identifying important structures within networks. Existing methods often struggle with disconnected clusters, hampering accuracy and reliability. The Well-Connected Clusters (WCC) and Connectivity Modifier (CM) algorithms are effective but too computationally demanding for large graphs. This study introduces optimized parallel versions of WCC and CM using the HPE Chapel language. By leveraging Chapel's parallel capabilities, the algorithms achieve significant performance improvements and scalability on modern multicore systems. Integrated into the Arkouda/Arachne framework, these implementations allow for efficient community detection on massive graphs exceeding 2 billion edges. For example, the algorithms successfully analyze the Open-Alex dataset with over 2 billion edges in mere minutes using 128 cores, a task previously deemed impossible. <div>
 arXiv:2509.02590v1 Announce Type: new 
 Abstract: Community detection plays a central role in uncovering meso scale structures in networks. However, existing methods often suffer from disconnected or weakly connected clusters, undermining interpretability and robustness. Well-Connected Clusters (WCC) and Connectivity Modifier (CM) algorithms are post-processing techniques that improve the accuracy of many clustering methods. However, they are computationally prohibitive on massive graphs. In this work, we present optimized parallel implementations of WCC and CM using the HPE Chapel programming language. First, we design fast and efficient parallel algorithms that leverage Chapel's parallel constructs to achieve substantial performance improvements and scalability on modern multicore architectures. Second, we integrate this software into Arkouda/Arachne, an open-source, high-performance framework for large-scale graph analytics. Our implementations uniquely enable well-connected community detection on massive graphs with more than 2 billion edges, providing a practical solution for connectivity-preserving clustering at web scale. For example, our implementations of WCC and CM enable community detection of the over 2-billion edge Open-Alex dataset in minutes using 128 cores, a result infeasible to compute previously.
 ]]></content:encoded>
-<pubDate>Thu, 04 Sep 2025 00:00:00 -0400</pubDate>
 <pubDate>Thu, 04 Sep 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -24,12 +24,11 @@ Abstract: Community detection plays a central role in uncovering meso scale stru
 <link>https://arxiv.org/abs/2509.02609</link>
 <guid>https://arxiv.org/abs/2509.02609</guid>
 <content:encoded><![CDATA[
-<div> Influential node identification, deep unsupervised framework, ReCC, contrastive learning mechanism, regular equivalence-based similarity<br>
-<br>Summary: <br>Identifying influential nodes in complex networks is essential but challenging due to the lack of labeled data. The proposed ReCC framework introduces a novel deep unsupervised approach that redefines node influence detection as a clustering problem. By utilizing a contrastive learning mechanism based on regular equivalence-based similarity, ReCC generates positive and negative samples without the need for labeled data. This approach, integrated into a graph convolutional network, effectively distinguishes influential nodes from non-influential ones. ReCC is pre-trained using network reconstruction loss and fine-tuned with a combined contrastive and clustering loss, enhancing node representations with structural metrics and regular equivalence-based similarities. Extensive experiments demonstrate ReCC outperforms existing methods across various benchmarks, offering a promising solution for influential node identification in real-world scenarios. <br> <div>
+<div> Influential node identification, deep unsupervised framework, ReCC, contrastive learning mechanism, regular equivalence-based similarity<br />
+<br />Summary: <br />Identifying influential nodes in complex networks is essential but challenging due to the lack of labeled data. The proposed ReCC framework introduces a novel deep unsupervised approach that redefines node influence detection as a clustering problem. By utilizing a contrastive learning mechanism based on regular equivalence-based similarity, ReCC generates positive and negative samples without the need for labeled data. This approach, integrated into a graph convolutional network, effectively distinguishes influential nodes from non-influential ones. ReCC is pre-trained using network reconstruction loss and fine-tuned with a combined contrastive and clustering loss, enhancing node representations with structural metrics and regular equivalence-based similarities. Extensive experiments demonstrate ReCC outperforms existing methods across various benchmarks, offering a promising solution for influential node identification in real-world scenarios. <br /> <div>
 arXiv:2509.02609v1 Announce Type: new 
 Abstract: Identifying influential nodes in complex networks is a fundamental task in network analysis with wide-ranging applications across domains. While deep learning has advanced node influence detection, existing supervised approaches remain constrained by their reliance on labeled data, limiting their applicability in real-world scenarios where labels are scarce or unavailable. While contrastive learning demonstrates significant potential for performance enhancement, existing approaches predominantly rely on multiple-embedding generation to construct positive/negative sample pairs. To overcome these limitations, we propose ReCC (\textit{r}egular \textit{e}quivalence-based \textit{c}ontrastive \textit{c}lustering), a novel deep unsupervised framework for influential node identification. We first reformalize influential node identification as a label-free deep clustering problem, then develop a contrastive learning mechanism that leverages regular equivalence-based similarity, which captures structural similarities between nodes beyond local neighborhoods, to generate positive and negative samples. This mechanism is integrated into a graph convolutional network to learn node embeddings that are used to differentiate influential from non-influential nodes. ReCC is pre-trained using network reconstruction loss and fine-tuned with a combined contrastive and clustering loss, with both phases being independent of labeled data. Additionally, ReCC enhances node representations by combining structural metrics with regular equivalence-based similarities. Extensive experiments demonstrate that ReCC outperforms state-of-the-art approaches across several benchmarks.
 ]]></content:encoded>
-<pubDate>Thu, 04 Sep 2025 00:00:00 -0400</pubDate>
 <pubDate>Thu, 04 Sep 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -42,13 +41,12 @@ Abstract: Identifying influential nodes in complex networks is a fundamental tas
 Summary:
 The article introduces a new algorithm for generating synthetic microblogging social networks that mimic real-world online social networks. The algorithm takes into account attributes-based homophily, stochastic link formation, clustering through triadic closure, and global reachability via long-range connections. By calibrating five hyperparameters, the algorithm aims to replicate five key structural properties observed in real social networks. The framework is validated by generating synthetic networks ranging from 10^3 to 10^6 nodes and comparing them against a real-world network. Results indicate that the proposed algorithm outperforms existing techniques in capturing the structural properties of real networks and generating attribute-driven communities that align with sociological expectations. The generated synthetic networks provide a realistic and scalable testbed for social researchers to conduct controlled experiments without relying on live digital platforms. 
 
-<br><br>Summary: <div>
+<br /><br />Summary: <div>
 arXiv:2509.02762v1 Announce Type: new 
 Abstract: Online social networks (OSNs) have become increasingly relevant for studying social behavior and information diffusion. Nevertheless, they are limited by restricted access to real OSN data due to privacy, legal, and platform-related constraints. In response, synthetic social networks serve as a viable approach to support controlled experimentation, but current generators reproduce only topology and overlook attribute-driven homophily and semantic realism.
   This work proposes a homophily-based algorithm that produces synthetic microblogging social networks such as X. The model creates a social graph for a given number of users, integrating semantic affinity among user attributes, stochastic variation in link formation, triadic closure to foster clustering, and long-range connections to ensure global reachability. A systematic grid search is used to calibrate five hyperparameters (affinity strength, noise, closure probability, distant link probability, and candidate pool size) for reaching five structural values observed in real social networks (density, clustering coefficient, LCC proportion, normalized shortest path, and modularity).
   The framework is validated by generating synthetic OSNs at four scales (10^3-10^6 nodes), and benchmarking them against a real-world Bluesky network comprising 4 million users. Comparative results show that the framework reliably reproduces the structural properties of the real network. Overall, the framework outperforms leading importance-sampling techniques applied to the same baseline. The generated graphs capture topological realism and yield attribute-driven communities that align with sociological expectations, providing a realistic, scalable testbed that liberates social researchers from relying on live digital platforms.
 ]]></content:encoded>
-<pubDate>Thu, 04 Sep 2025 00:00:00 -0400</pubDate>
 <pubDate>Thu, 04 Sep 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -56,14 +54,13 @@ Abstract: Online social networks (OSNs) have become increasingly relevant for st
 <link>https://arxiv.org/abs/2509.02809</link>
 <guid>https://arxiv.org/abs/2509.02809</guid>
 <content:encoded><![CDATA[
-<div> Keywords: movie success prediction, multi-task learning, sentiment analysis, SIR modeling, feature integration<br>
-<br>
-Summary: <br>
-This study introduces a hybrid framework for predicting the success of movies by combining multi-task learning, sentiment analysis using GPT, and SIR propagation modeling. The framework considers static production attributes, information dissemination, and audience sentiment simultaneously. Using 5,840 films and 300,000 user reviews, the framework achieves high predictive accuracy. Ablation analysis highlights the importance of selective feature combinations over a comprehensive model. Virality patterns between successful and unsuccessful films are identified, challenging existing assumptions. The framework's innovations include using epidemiological modeling for information diffusion, generating multidimensional sentiment features from GPT-based analysis, and employing a shared representation architecture to optimize success metrics. This research has implications for the film production industry and advances understanding of how audience engagement influences commercial outcomes. <br> <div>
+<div> Keywords: movie success prediction, multi-task learning, sentiment analysis, SIR modeling, feature integration<br />
+<br />
+Summary: <br />
+This study introduces a hybrid framework for predicting the success of movies by combining multi-task learning, sentiment analysis using GPT, and SIR propagation modeling. The framework considers static production attributes, information dissemination, and audience sentiment simultaneously. Using 5,840 films and 300,000 user reviews, the framework achieves high predictive accuracy. Ablation analysis highlights the importance of selective feature combinations over a comprehensive model. Virality patterns between successful and unsuccessful films are identified, challenging existing assumptions. The framework's innovations include using epidemiological modeling for information diffusion, generating multidimensional sentiment features from GPT-based analysis, and employing a shared representation architecture to optimize success metrics. This research has implications for the film production industry and advances understanding of how audience engagement influences commercial outcomes. <br /> <div>
 arXiv:2509.02809v1 Announce Type: new 
 Abstract: This study presents a hybrid framework for predicting movie success. The framework integrates multi-task learning (MTL), GPT-based sentiment analysis, and Susceptible-Infected-Recovered (SIR) propagation modeling. The study examines limitations in existing approaches. It models static production attributes, information dissemination, and audience sentiment at the same time. The framework uses 5,840 films from 2004 to 2024 and approximate 300,000 user reviews. It shows predictive performance with classification accuracy of 0.964 and regression metrics of MAE 0.388. Ablation analysis indicates component interactions. Selective feature combinations perform better than the comprehensive model. This result questions assumptions about feature integration. The model shows virality patterns between successful and unsuccessful films. Innovations include epidemiological modeling for information diffusion, multidimensional sentiment features from GPT-based analysis, and a shared representation architecture that optimizes multiple success metrics. The framework provides applications in the film production lifecycle. It also contributes to understanding how audience engagement leads to commercial outcomes.
 ]]></content:encoded>
-<pubDate>Thu, 04 Sep 2025 00:00:00 -0400</pubDate>
 <pubDate>Thu, 04 Sep 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -73,11 +70,10 @@ Abstract: This study presents a hybrid framework for predicting movie success. T
 <content:encoded><![CDATA[
 <div> GNN; temporal social networks; mobile connectivity data; ROLAND; EdgeBank
 Summary:
-Graph neural networks (GNNs) are powerful tools for analyzing complex networks, but their application to social networks using mobile connectivity data is understudied. This study explores four temporal GNN models for predicting phone call and SMS activity in a mobile communication network. The ROLAND temporal GNN outperforms a non-GNN baseline model, showcasing the potential of GNNs in analyzing temporal social networks. However, other GNN models performed worse than the baseline, highlighting the need for specialized GNN architectures. Further research is necessary to optimize GNNs for analyzing temporal social networks through mobile connectivity data.<br><br>Summary: <div>
+Graph neural networks (GNNs) are powerful tools for analyzing complex networks, but their application to social networks using mobile connectivity data is understudied. This study explores four temporal GNN models for predicting phone call and SMS activity in a mobile communication network. The ROLAND temporal GNN outperforms a non-GNN baseline model, showcasing the potential of GNNs in analyzing temporal social networks. However, other GNN models performed worse than the baseline, highlighting the need for specialized GNN architectures. Further research is necessary to optimize GNNs for analyzing temporal social networks through mobile connectivity data.<br /><br />Summary: <div>
 arXiv:2509.03319v1 Announce Type: new 
 Abstract: Graph neural networks (GNNs) have emerged as a state-of-the-art data-driven tool for modeling connectivity data of graph-structured complex networks and integrating information of their nodes and edges in space and time. However, as of yet, the analysis of social networks using the time series of people's mobile connectivity data has not been extensively investigated. In the present study, we investigate four snapshot - based temporal GNNs in predicting the phone call and SMS activity between users of a mobile communication network. In addition, we develop a simple non - GNN baseline model using recently proposed EdgeBank method. Our analysis shows that the ROLAND temporal GNN outperforms the baseline model in most cases, whereas the other three GNNs perform on average worse than the baseline. The results show that GNN based approaches hold promise in the analysis of temporal social networks through mobile connectivity data. However, due to the relatively small performance margin between ROLAND and the baseline model, further research is required on specialized GNN architectures for temporal social network analysis.
 ]]></content:encoded>
-<pubDate>Thu, 04 Sep 2025 00:00:00 -0400</pubDate>
 <pubDate>Thu, 04 Sep 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -86,13 +82,12 @@ Abstract: Graph neural networks (GNNs) have emerged as a state-of-the-art data-d
 <guid>https://arxiv.org/abs/2509.02969</guid>
 <content:encoded><![CDATA[
 <div> Challenge, Engagement Prediction, Short Videos, User-generated Content, Social Media Platforms
-<br>
+<br />
 Summary:
 The paper discusses the VQualA 2025 Challenge on Engagement Prediction for Short Videos, focusing on analyzing the popularity of user-generated content (UGC) short videos on social media platforms. The challenge utilizes a new UGC dataset with engagement metrics derived from real user interactions to promote robust modeling strategies capturing factors impacting user engagement. Participants explored various multi-modal features, including visual content, audio, and creator metadata. The challenge attracted 97 participants, receiving 15 valid test submissions, which significantly advanced progress in short-form UGC video engagement prediction. <div>
 arXiv:2509.02969v1 Announce Type: cross 
 Abstract: This paper presents an overview of the VQualA 2025 Challenge on Engagement Prediction for Short Videos, held in conjunction with ICCV 2025. The challenge focuses on understanding and modeling the popularity of user-generated content (UGC) short videos on social media platforms. To support this goal, the challenge uses a new short-form UGC dataset featuring engagement metrics derived from real-world user interactions. This objective of the Challenge is to promote robust modeling strategies that capture the complex factors influencing user engagement. Participants explored a variety of multi-modal features, including visual content, audio, and metadata provided by creators. The challenge attracted 97 participants and received 15 valid test submissions, contributing significantly to progress in short-form UGC video engagement prediction.
 ]]></content:encoded>
-<pubDate>Thu, 04 Sep 2025 00:00:00 -0400</pubDate>
 <pubDate>Thu, 04 Sep 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -108,24 +103,21 @@ arXiv:2502.01684v4 Announce Type: replace-cross
 Abstract: Graph representation learning has emerged as a cornerstone for tasks like node classification and link prediction, yet prevailing self-supervised learning (SSL) methods face challenges such as computational inefficiency, reliance on contrastive objectives, and representation collapse. Existing approaches often depend on feature reconstruction, negative sampling, or complex decoders, which introduce training overhead and hinder generalization. Further, current techniques which address such limitations fail to account for the contribution of node embeddings to a certain prediction in the absence of labeled nodes. To address these limitations, we propose a novel joint embedding predictive framework for graph SSL that eliminates contrastive objectives and negative sampling while preserving semantic and structural information. Additionally, we introduce a semantic-aware objective term that incorporates pseudo-labels derived from Gaussian Mixture Models (GMMs), enhancing node discriminability by evaluating latent feature contributions. Extensive experiments demonstrate that our framework outperforms state-of-the-art graph SSL methods across benchmarks, achieving superior performance without contrastive loss or complex decoders. Key innovations include (1) a non-contrastive, view-invariant joint embedding predictive architecture, (2) Leveraging single context and multiple targets relationship between subgraphs, and (3) GMM-based pseudo-label scoring to capture semantic contributions. This work advances graph SSL by offering a computationally efficient, collapse-resistant paradigm that bridges spatial and semantic graph features for downstream tasks. The code for our paper can be found at https://github.com/Deceptrax123/JPEB-GSSL
 ]]></content:encoded>
 <pubDate>Thu, 04 Sep 2025 00:00:00 -0400</pubDate>
-<pubDate>Thu, 04 Sep 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
 <title>Unsupervised Learning of Local Updates for Maximum Independent Set in Dynamic Graphs</title>
 <link>https://arxiv.org/abs/2505.13754</link>
 <guid>https://arxiv.org/abs/2505.13754</guid>
 <content:encoded><![CDATA[
-<div> Graph neural networks, unsupervised learning, Maximum Independent Sets, dynamic graphs, edge addition/deletion<br>
-<br>
-Summary:<br>
+<div> Graph neural networks, unsupervised learning, Maximum Independent Sets, dynamic graphs, edge addition/deletion<br />
+<br />
+Summary:<br />
 This paper introduces an unsupervised learning model to find Maximum Independent Sets (MaxIS) in dynamic graphs where edges evolve over time. The model combines graph neural networks (GNNs) with a learned update mechanism to determine nodes' MaxIS membership in response to edge changes. By parameterizing the model with an update radius, the tradeoff between performance and runtime for different graph topologies is explored. Evaluation on synthetic and real-world dynamic graphs shows competitive approximation ratios and scalability, with significant outperformance compared to existing learning-based methods. The model excels in solution quality, runtime, and memory usage, particularly on large graphs. When tested on graphs 100 times larger than the training data, the model produces MaxIS solutions larger than any other learning method while maintaining competitive runtimes. <div>
 arXiv:2505.13754v2 Announce Type: replace-cross 
 Abstract: We present the first unsupervised learning model for finding Maximum Independent Sets (MaxIS) in dynamic graphs where edges change over time. Our method combines structural learning from graph neural networks (GNNs) with a learned distributed update mechanism that, given an edge addition or deletion event, modifies nodes' internal memories and infers their MaxIS membership in a single, parallel step. We parameterize our model by the update mechanism's radius and investigate the resulting performance-runtime tradeoffs for various dynamic graph topologies. We evaluate our model against a mixed integer programming solver and the state-of-the-art learning-based methods for MaxIS on static graphs (ICML 2020; NeurIPS 2020, 2023). Across synthetic and empirical dynamic graphs of 50-1,000 nodes, our model achieves competitive approximation ratios with excellent scalability; on large graphs, it significantly outperforms the state-of-the-art learning methods in solution quality, runtime, and memory usage. When generalizing to graphs of 10,000 nodes (100x larger than the ones used for training), our model produces MaxIS solutions 1.05-1.18x larger than any other learning method, even while maintaining competitive runtimes.
 ]]></content:encoded>
 <pubDate>Thu, 04 Sep 2025 00:00:00 -0400</pubDate>
-<pubDate>Thu, 04 Sep 2025 00:00:00 -0400</pubDate>
 </item>
-
 <item>
 <title>Community Detection using Fortunato's Performance Measure</title>
 <link>https://arxiv.org/abs/2509.00938</link>
