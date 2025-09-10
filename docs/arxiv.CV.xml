@@ -4,6 +4,7 @@
 <title>cs.CV updates on arXiv.org</title>
 <link>http://rss.arxiv.org/rss/cs.CV</link>
 
+
 <item>
 <title>A Data-Free Analytical Quantization Scheme for Deep Learning Models</title>
 <link>https://arxiv.org/abs/2412.07391</link>
@@ -17,11 +18,10 @@ Summary:
 - Empirical results on real-world datasets showcase the effectiveness of the quantization scheme in preserving model accuracy.
 - The research contributes towards making CNN models more feasible for deployment on resource-constrained devices. 
 
-<br><br>Summary: <div>
+<br /><br />Summary: <div>
 arXiv:2412.07391v3 Announce Type: replace 
 Abstract: Despite the success of CNN models on a variety of Image classification and segmentation tasks, their extensive computational and storage demands pose considerable challenges for real-world deployment on resource-constrained devices. Quantization is one technique that aims to alleviate these large storage requirements and speed up the inference process by reducing the precision of model parameters to lower-bit representations. In this paper, we introduce a novel post-training quantization method for model weights. Our method finds optimal clipping thresholds and scaling factors along with mathematical guarantees that our method minimizes quantization noise. Empirical results on real-world datasets demonstrate that our quantization scheme significantly reduces model size and computational requirements while preserving model accuracy.
 ]]></content:encoded>
-<pubDate>Wed, 10 Sep 2025 00:00:00 -0400</pubDate>
 <pubDate>Wed, 10 Sep 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -37,9 +37,7 @@ arXiv:2509.01839v3 Announce Type: replace-cross
 Abstract: Currently, prominent Transformer architectures applied on graphs and meshes for shape analysis tasks employ traditional attention layers that heavily utilize spectral features requiring costly eigenvalue decomposition-based methods. To encode the mesh structure, these methods derive positional embeddings, that heavily rely on eigenvalue decomposition based operations, e.g. on the Laplacian matrix, or on heat-kernel signatures, which are then concatenated to the input features. This paper proposes a novel approach inspired by the explicit construction of the Hodge Laplacian operator in Discrete Exterior Calculus as a product of discrete Hodge operators and exterior derivatives, i.e. $(L := \star_0^{-1} d_0^T \star_1 d_0)$. We adjust the Transformer architecture in a novel deep learning layer that utilizes the multi-head attention mechanism to approximate Hodge matrices $\star_0$, $\star_1$ and $\star_2$ and learn families of discrete operators $L$ that act on mesh vertices, edges and faces. Our approach results in a computationally-efficient architecture that achieves comparable performance in mesh segmentation and classification tasks, through a direct learning framework, while eliminating the need for costly eigenvalue decomposition operations or complex preprocessing operations.
 ]]></content:encoded>
 <pubDate>Wed, 10 Sep 2025 00:00:00 -0400</pubDate>
-<pubDate>Wed, 10 Sep 2025 00:00:00 -0400</pubDate>
 </item>
-
 <item>
 <title>CellPainTR: Generalizable Representation Learning for Cross-Dataset Cell Painting Analysis</title>
 <link>https://arxiv.org/abs/2509.06986</link>
@@ -11492,26 +11490,6 @@ Abstract: Unstructured urban environments present unique challenges for scene un
 <content:encoded><![CDATA[
 arXiv:2509.02295v1 Announce Type: new 
 Abstract: Text-to-image diffusion models can generate stunning visuals, yet they often fail at tasks children find trivial--like placing a dog to the right of a teddy bear rather than to the left. When combinations get more unusual--a giraffe above an airplane--these failures become even more pronounced. Existing methods attempt to fix these spatial reasoning failures through model fine-tuning or test-time optimization with handcrafted losses that are suboptimal. Rather than imposing our assumptions about spatial encoding, we propose learning these objectives directly from the model's internal representations. We introduce Learn-to-Steer, a novel framework that learns data-driven objectives for test-time optimization rather than handcrafting them. Our key insight is to train a lightweight classifier that decodes spatial relationships from the diffusion model's cross-attention maps, then deploy this classifier as a learned loss function during inference. Training such classifiers poses a surprising challenge: they can take shortcuts by detecting linguistic traces rather than learning true spatial patterns. We solve this with a dual-inversion strategy that enforces geometric understanding. Our method dramatically improves spatial accuracy: from 0.20 to 0.61 on FLUX.1-dev and from 0.07 to 0.54 on SD2.1 across standard benchmarks. Moreover, our approach generalizes to multiple relations and significantly improves accuracy.
-]]></content:encoded>
-<pubDate>Wed, 03 Sep 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Hues and Cues: Human vs. CLIP</title>
-<link>https://arxiv.org/abs/2509.02305</link>
-<guid>https://arxiv.org/abs/2509.02305</guid>
-<content:encoded><![CDATA[
-arXiv:2509.02305v1 Announce Type: new 
-Abstract: Playing games is inherently human, and a lot of games are created to challenge different human characteristics. However, these tasks are often left out when evaluating the human-like nature of artificial models. The objective of this work is proposing a new approach to evaluate artificial models via board games. To this effect, we test the color perception and color naming capabilities of CLIP by playing the board game Hues & Cues and assess its alignment with humans. Our experiments show that CLIP is generally well aligned with human observers, but our approach brings to light certain cultural biases and inconsistencies when dealing with different abstraction levels that are hard to identify with other testing strategies. Our findings indicate that assessing models with different tasks like board games can make certain deficiencies in the models stand out in ways that are difficult to test with the commonly used benchmarks.
-]]></content:encoded>
-<pubDate>Wed, 03 Sep 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>OmniActor: A Generalist GUI and Embodied Agent for 2D&amp;3D Worlds</title>
-<link>https://arxiv.org/abs/2509.02322</link>
-<guid>https://arxiv.org/abs/2509.02322</guid>
-<content:encoded><![CDATA[
-arXiv:2509.02322v1 Announce Type: new 
-Abstract: Multimodal large language models are evolving toward multimodal agents capable of proactively executing tasks. Most agent research focuses on GUI or embodied scenarios, which correspond to agents interacting with 2D virtual worlds or 3D real worlds, respectively. However, many complex tasks typically require agents to interleavely interact with these two types of environment. We initially mix GUI and embodied data to train, but find the performance degeneration brought by the data conflict. Further analysis reveals that GUI and embodied data exhibit synergy and conflict at the shallow and deep layers, respectively, which resembles the cerebrum-cerebellum mechanism in the human brain. To this end, we propose a high-performance generalist agent OmniActor, designed from both structural and data perspectives. First, we propose Layer-heterogeneity MoE to eliminate the conflict between GUI and embodied data by separating deep-layer parameters, while leverage their synergy by sharing shallow-layer parameters. By successfully leveraging the synergy and eliminating the conflict, OmniActor outperforms agents only trained by GUI or embodied data in GUI or embodied tasks. Furthermore, we unify the action spaces of GUI and embodied tasks, and collect large-scale GUI and embodied data from various sources for training. This significantly improves OmniActor under different scenarios, especially in GUI tasks. The code will be publicly available.
 ]]></content:encoded>
 <pubDate>Wed, 03 Sep 2025 00:00:00 -0400</pubDate>
 </item>
