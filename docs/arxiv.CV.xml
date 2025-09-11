@@ -4,6 +4,7 @@
 <title>cs.CV updates on arXiv.org</title>
 <link>http://rss.arxiv.org/rss/cs.CV</link>
 
+
 <item>
 <title>Bidirectional Sparse Attention for Faster Video Diffusion Training</title>
 <link>https://arxiv.org/abs/2509.01085</link>
@@ -17,20 +18,18 @@ arXiv:2509.01085v2 Announce Type: replace
 Abstract: Video diffusion Transformer (DiT) models excel in generative quality but hit major computational bottlenecks when producing high-resolution, long-duration videos. The quadratic complexity of full attention leads to prohibitively high training and inference costs. Full attention inefficiency stems from two key challenges: excessive computation due to the inherent sparsity of Queries and Key-Value pairs, and redundant computation as fixed sparse patterns fail to leverage DiT's dynamic attention. To overcome this limitation, we propose a Bidirectional Sparse Attention (BSA) framework for faster video DiT training, the first to dynamically sparsify both Queries and Key-Value pairs within 3D full attention, thereby substantially improving training and inference efficiency. BSA addresses these issues through two key components. Query sparsity is optimized by selecting the most informative query tokens via semantic similarity and with a dynamic spatial-time training strategy, while KV sparsity is achieved by computing a statistical dynamic threshold to retain only the most salient KV blocks for computation. Extensive experiments demonstrate that BSA significantly accelerates DiT training across long sequences, reducing FLOPs by up to 20x and achieving 17.79x faster attention training, while preserving or even surpassing the generative quality of full attention.
 ]]></content:encoded>
 <pubDate>Thu, 11 Sep 2025 00:00:00 -0400</pubDate>
-<pubDate>Thu, 11 Sep 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
 <title>PrediTree: A Multi-Temporal Sub-meter Dataset of Multi-Spectral Imagery Aligned With Canopy Height Maps</title>
 <link>https://arxiv.org/abs/2509.01202</link>
 <guid>https://arxiv.org/abs/2509.01202</guid>
 <content:encoded><![CDATA[
-<div> LiDAR, canopy height maps, deep learning, forest monitoring, PrediTree<br>
-Summary:<br>
-The PrediTree dataset is introduced for training and evaluating tree height prediction models at sub-meter resolution. It combines high-resolution LiDAR-derived canopy height maps with multi-temporal and multi-spectral imagery from diverse forest ecosystems in France. This dataset enables the training of deep learning methods to predict tree growth based on past observations, filling a critical monitoring gap. An encoder-decoder framework is proposed to utilize the dataset, considering the relative time differences between the canopy height map and image acquisition dates. Experiments show that a U-Net architecture trained on PrediTree achieves the lowest error rate among tested models, outperforming ResNet-50 by 12% and reducing error by 30% compared to experiments with fewer bands. The dataset is publicly available, along with processing and training codebases for further research and applications. <br><br>Summary: <div>
+<div> LiDAR, canopy height maps, deep learning, forest monitoring, PrediTree<br />
+Summary:<br />
+The PrediTree dataset is introduced for training and evaluating tree height prediction models at sub-meter resolution. It combines high-resolution LiDAR-derived canopy height maps with multi-temporal and multi-spectral imagery from diverse forest ecosystems in France. This dataset enables the training of deep learning methods to predict tree growth based on past observations, filling a critical monitoring gap. An encoder-decoder framework is proposed to utilize the dataset, considering the relative time differences between the canopy height map and image acquisition dates. Experiments show that a U-Net architecture trained on PrediTree achieves the lowest error rate among tested models, outperforming ResNet-50 by 12% and reducing error by 30% compared to experiments with fewer bands. The dataset is publicly available, along with processing and training codebases for further research and applications. <br /><br />Summary: <div>
 arXiv:2509.01202v2 Announce Type: replace 
 Abstract: We present PrediTree, the first comprehensive open-source dataset designed for training and evaluating tree height prediction models at sub-meter resolution. This dataset combines very high-resolution (0.5m) LiDAR-derived canopy height maps, spatially aligned with multi-temporal and multi-spectral imagery, across diverse forest ecosystems in France, totaling 3,141,568 images. PrediTree addresses a critical gap in forest monitoring capabilities by enabling the training of deep learning methods that can predict tree growth based on multiple past observations. To make use of this PrediTree dataset, we propose an encoder-decoder framework that requires the multi-temporal multi-spectral imagery and the relative time differences in years between the canopy height map timestamp (target) and each image acquisition date for which this framework predicts the canopy height. The conducted experiments demonstrate that a U-Net architecture trained on the PrediTree dataset provides the highest masked mean squared error of $11.78\%$, outperforming the next-best architecture, ResNet-50, by around $12\%$, and cutting the error of the same experiments but on fewer bands (red, green, blue only), by around $30\%$. This dataset is publicly available on https://huggingface.co/datasets/hiyam-d/PrediTree, and both processing and training codebases are available on {GitHub}.
 ]]></content:encoded>
-<pubDate>Thu, 11 Sep 2025 00:00:00 -0400</pubDate>
 <pubDate>Thu, 11 Sep 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -43,7 +42,7 @@ Abstract: We present PrediTree, the first comprehensive open-source dataset desi
 Summary:
 The article introduces the Remote Sensing Change Caption (RSCC) dataset, a comprehensive benchmark consisting of over 62,000 pre- and post-disaster image pairs with detailed change captions. This dataset addresses the lack of temporal image pairs and textual annotations in existing remote sensing datasets, enabling a more accurate understanding of disaster impacts over time. By bridging the gap between temporal and semantic information in remote sensing data, RSCC facilitates the training and evaluation of vision-language models for disaster-aware bi-temporal analysis. The results demonstrate the dataset's effectiveness in supporting detailed disaster-related analysis and pave the way for enhanced vision-language applications in remote sensing. The code and dataset for RSCC are readily available for further research and development at https://github.com/Bili-Sakura/RSCC. 
 
-<br><br>Summary: 
+<br /><br />Summary: 
 - RSCC dataset comprises pre- and post-disaster image pairs with detailed change captions. 
 - It enables robust training of vision-language models for disaster monitoring. 
 - Addresses the lack of temporal image pairs and textual annotations in existing datasets. 
@@ -53,9 +52,7 @@ arXiv:2509.01907v3 Announce Type: replace
 Abstract: Remote sensing is critical for disaster monitoring, yet existing datasets lack temporal image pairs and detailed textual annotations. While single-snapshot imagery dominates current resources, it fails to capture dynamic disaster impacts over time. To address this gap, we introduce the Remote Sensing Change Caption (RSCC) dataset, a large-scale benchmark comprising 62,315 pre-/post-disaster image pairs (spanning earthquakes, floods, wildfires, and more) paired with rich, human-like change captions. By bridging the temporal and semantic divide in remote sensing data, RSCC enables robust training and evaluation of vision-language models for disaster-aware bi-temporal understanding. Our results highlight RSCC's ability to facilitate detailed disaster-related analysis, paving the way for more accurate, interpretable, and scalable vision-language applications in remote sensing. Code and dataset are available at https://github.com/Bili-Sakura/RSCC.
 ]]></content:encoded>
 <pubDate>Thu, 11 Sep 2025 00:00:00 -0400</pubDate>
-<pubDate>Thu, 11 Sep 2025 00:00:00 -0400</pubDate>
 </item>
-
 <item>
 <title>3D and 4D World Modeling: A Survey</title>
 <link>https://arxiv.org/abs/2509.07996</link>
@@ -11732,36 +11729,6 @@ Abstract: Low-light RAW video denoising is a fundamentally challenging task due 
 <content:encoded><![CDATA[
 arXiv:2509.00969v1 Announce Type: new 
 Abstract: Recent advancements in large video-language models have revolutionized video understanding tasks. However, their efficiency is significantly constrained by processing high volumes of visual tokens. Existing token compression strategies apply a fixed compression ratio, ignoring the variability in semantic density among different video clips. Consequently, this lead to inadequate representation of information-rich clips due to insufficient tokens and unnecessary computation on static or content-poor ones. To address this, we propose LangDC, a Language-aware Dynamic Token Compressor. LangDC leverages a lightweight language model to describe video clips, converting them into soft caption tokens as visual representations. Trained with our proposed semantic density-aware supervision, LangDC aims to 1) cover key visual cues necessary for downstream task reasoning and 2) dynamically adjust compression ratios based on scene richness, reflected by descriptions length. Our design mimics how humans dynamically express what they see: complex scenes (seeing more) elicit more detailed language to convey nuances (saying more), whereas simpler scenes are described with fewer words. Experimental results show that our method reduces FLOPs by 49% compared to VideoGPT+ while maintaining competitive performance. Furthermore, qualitative results demonstrate our approach adaptively adjusts the token compression ratio based on video segment richness.
-]]></content:encoded>
-<pubDate>Wed, 03 Sep 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Towards Integrating Multi-Spectral Imaging with Gaussian Splatting</title>
-<link>https://arxiv.org/abs/2509.00989</link>
-<guid>https://arxiv.org/abs/2509.00989</guid>
-<content:encoded><![CDATA[
-arXiv:2509.00989v1 Announce Type: new 
-Abstract: We present a study of how to integrate color (RGB) and multi-spectral imagery (red, green, red-edge, and near-infrared) into the 3D Gaussian Splatting (3DGS) framework, a state-of-the-art explicit radiance-field-based method for fast and high-fidelity 3D reconstruction from multi-view images. While 3DGS excels on RGB data, naive per-band optimization of additional spectra yields poor reconstructions due to inconsistently appearing geometry in the spectral domain. This problem is prominent, even though the actual geometry is the same, regardless of spectral modality. To investigate this, we evaluate three strategies: 1) Separate per-band reconstruction with no shared structure. 2) Splitting optimization, in which we first optimize RGB geometry, copy it, and then fit each new band to the model by optimizing both geometry and band representation. 3) Joint, in which the modalities are jointly optimized, optionally with an initial RGB-only phase. We showcase through quantitative metrics and qualitative novel-view renderings on multi-spectral datasets the effectiveness of our dedicated optimized Joint strategy, increasing overall spectral reconstruction as well as enhancing RGB results through spectral cross-talk. We therefore suggest integrating multi-spectral data directly into the spherical harmonics color components to compactly model each Gaussian's multi-spectral reflectance. Moreover, our analysis reveals several key trade-offs in when and how to introduce spectral bands during optimization, offering practical insights for robust multi-modal 3DGS reconstruction.
-]]></content:encoded>
-<pubDate>Wed, 03 Sep 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Weather-Dependent Variations in Driver Gaze Behavior: A Case Study in Rainy Conditions</title>
-<link>https://arxiv.org/abs/2509.01013</link>
-<guid>https://arxiv.org/abs/2509.01013</guid>
-<content:encoded><![CDATA[
-arXiv:2509.01013v1 Announce Type: new 
-Abstract: Rainy weather significantly increases the risk of road accidents due to reduced visibility and vehicle traction. Understanding how experienced drivers adapt their visual perception through gaze behavior under such conditions is critical for designing robust driver monitoring systems (DMS) and for informing advanced driver assistance systems (ADAS). This case study investigates the eye gaze behavior of a driver operating the same highway route under both clear and rainy conditions. To this end, gaze behavior was analyzed by a two-step clustering approach: first, clustering gaze points within 10-second intervals, and then aggregating cluster centroids into meta-clusters. This, along with Markov transition matrices and metrics such as fixation duration, gaze elevation, and azimuth distributions, reveals meaningful behavioral shifts. While the overall gaze behavior focused on the road with occasional mirror checks remains consistent, rainy conditions lead to more frequent dashboard glances, longer fixation durations, and higher gaze elevation, indicating increased cognitive focus. These findings offer valuable insight into visual attention patterns under adverse conditions and highlight the potential of leveraging gaze modeling to aid in the design of more robust ADAS and DMS.
-]]></content:encoded>
-<pubDate>Wed, 03 Sep 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>AI-driven Dispensing of Coral Reseeding Devices for Broad-scale Restoration of the Great Barrier Reef</title>
-<link>https://arxiv.org/abs/2509.01019</link>
-<guid>https://arxiv.org/abs/2509.01019</guid>
-<content:encoded><![CDATA[
-arXiv:2509.01019v1 Announce Type: new 
-Abstract: Coral reefs are on the brink of collapse, with climate change, ocean acidification, and pollution leading to a projected 70-90% loss of coral species within the next decade. Restoration efforts are crucial, but their success hinges on introducing automation to upscale efforts. We present automated deployment of coral re-seeding devices powered by artificial intelligence, computer vision, and robotics. Specifically, we perform automated substrate classification, enabling detection of areas of the seafloor suitable for coral growth, thus significantly reducing reliance on human experts and increasing the range and efficiency of restoration. Real-world testing of the algorithms on the Great Barrier Reef leads to deployment accuracy of 77.8%, sub-image patch classification of 89.1%, and real-time model inference at 5.5 frames per second. Further, we present and publicly contribute a large collection of annotated substrate image data to foster future research in this area.
 ]]></content:encoded>
 <pubDate>Wed, 03 Sep 2025 00:00:00 -0400</pubDate>
 </item>
