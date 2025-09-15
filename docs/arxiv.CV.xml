@@ -4,19 +4,19 @@
 <title>cs.CV updates on arXiv.org</title>
 <link>http://rss.arxiv.org/rss/cs.CV</link>
 
+
 <item>
 <title>Backdoor Poisoning Attack Against Face Spoofing Attack Detection Methods</title>
 <link>https://arxiv.org/abs/2509.03108</link>
 <guid>https://arxiv.org/abs/2509.03108</guid>
 <content:encoded><![CDATA[
-<div> Keywords: Face recognition, Spoofing attacks, Deep learning, Backdoor poisoning, Anti-spoofing detection <br>
-<br>
+<div> Keywords: Face recognition, Spoofing attacks, Deep learning, Backdoor poisoning, Anti-spoofing detection <br />
+<br />
 Summary: 
 This paper discusses the vulnerability of face recognition systems to spoofing attacks, where an attacker uses photos to gain unauthorized access. Existing methods for detecting such attacks rely heavily on deep learning and require ample training data. However, the authors introduce a novel backdoor poisoning attack method that can allow certain spoofing attacks to go undetected by embedding features from a spoofed image into a live one without any visual changes. This poses a significant threat to current anti-spoofing systems as it could lead to false positives. Through experiments on public datasets, the authors demonstrate that their proposed method is a realistic threat. <div>
 arXiv:2509.03108v2 Announce Type: replace 
 Abstract: Face recognition systems are robust against environmental changes and noise, and thus may be vulnerable to illegal authentication attempts using user face photos, such as spoofing attacks. To prevent such spoofing attacks, it is crucial to discriminate whether the input image is a live user image or a spoofed image prior to the face recognition process. Most existing spoofing attack detection methods utilize deep learning, which necessitates a substantial amount of training data. Consequently, if malicious data is injected into a portion of the training dataset, a specific spoofing attack may be erroneously classified as live, leading to false positives. In this paper, we propose a novel backdoor poisoning attack method to demonstrate the latent threat of backdoor poisoning within face anti-spoofing detection. The proposed method enables certain spoofing attacks to bypass detection by embedding features extracted from the spoofing attack's face image into a live face image without inducing any perceptible visual alterations. Through experiments conducted on public datasets, we demonstrate that the proposed method constitutes a realistic threat to existing spoofing attack detection systems.
 ]]></content:encoded>
-<pubDate>Mon, 15 Sep 2025 00:00:00 -0400</pubDate>
 <pubDate>Mon, 15 Sep 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -24,16 +24,14 @@ Abstract: Face recognition systems are robust against environmental changes and 
 <link>https://arxiv.org/abs/2509.03498</link>
 <guid>https://arxiv.org/abs/2509.03498</guid>
 <content:encoded><![CDATA[
-<div> transformer architecture, multimodal model, autoregressive modeling, Mixture-of-Experts, vision tokenizer <br>
-Summary: <br>
+<div> transformer architecture, multimodal model, autoregressive modeling, Mixture-of-Experts, vision tokenizer <br />
+Summary: <br />
 The article introduces OneCAT, a unified multimodal model that integrates understanding, generation, and editing in a pure decoder-only transformer architecture. By using a modality-specific Mixture-of-Experts structure trained with a single autoregressive objective, the need for external components like Vision Transformers or vision tokenizers during inference is eliminated, leading to efficiency gains for high-resolution inputs. The model also supports dynamic resolutions and incorporates a multi-scale visual autoregressive mechanism within the Large Language Model. OneCAT outperforms existing unified multimodal models in benchmarks for generation, editing, and understanding, showcasing the potential of pure autoregressive modeling as a strong foundation for multimodal intelligence. <div>
 arXiv:2509.03498v2 Announce Type: replace 
 Abstract: We introduce OneCAT, a unified multimodal model that seamlessly integrates understanding, generation, and editing within a novel, pure decoder-only transformer architecture. Our framework uniquely eliminates the need for external components such as Vision Transformers (ViT) or vision tokenizer during inference, leading to significant efficiency gains, especially for high-resolution inputs. This is achieved through a modality-specific Mixture-of-Experts (MoE) structure trained with a single autoregressive (AR) objective, which also natively supports dynamic resolutions. Furthermore, we pioneer a multi-scale visual autoregressive mechanism within the Large Language Model (LLM) that drastically reduces decoding steps compared to diffusion-based methods while maintaining state-of-the-art performance. Our findings demonstrate the powerful potential of pure autoregressive modeling as a sufficient and elegant foundation for unified multimodal intelligence. As a result, OneCAT sets a new performance standard, outperforming existing open-source unified multimodal models across benchmarks for multimodal generation, editing, and understanding.
 ]]></content:encoded>
 <pubDate>Mon, 15 Sep 2025 00:00:00 -0400</pubDate>
-<pubDate>Mon, 15 Sep 2025 00:00:00 -0400</pubDate>
 </item>
-
 <item>
 <title>Australian Supermarket Object Set (ASOS): A Benchmark Dataset of Physical Objects and 3D Models for Robotics and Computer Vision</title>
 <link>https://arxiv.org/abs/2509.09720</link>
@@ -11710,26 +11708,6 @@ Abstract: Deep learning has substantially advanced the field of Single Image Sup
 <content:encoded><![CDATA[
 arXiv:2505.07611v2 Announce Type: replace 
 Abstract: Traffic accident prediction and detection are critical for enhancing road safety, and vision-based traffic accident anticipation (Vision-TAA) has emerged as a promising approach in the era of deep learning. This paper reviews 147 recent studies, focusing on the application of supervised, unsupervised, and hybrid deep learning models for accident prediction, alongside the use of real-world and synthetic datasets. Current methodologies are categorized into four key approaches: image and video feature-based prediction, spatio-temporal feature-based prediction, scene understanding, and multi modal data fusion. While these methods demonstrate significant potential, challenges such as data scarcity, limited generalization to complex scenarios, and real-time performance constraints remain prevalent. This review highlights opportunities for future research, including the integration of multi modal data fusion, self-supervised learning, and Transformer-based architectures to enhance prediction accuracy and scalability. By synthesizing existing advancements and identifying critical gaps, this paper provides a foundational reference for developing robust and adaptive Vision-TAA systems, contributing to road safety and traffic management.
-]]></content:encoded>
-<pubDate>Fri, 05 Sep 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>From Embeddings to Accuracy: Comparing Foundation Models for Radiographic Classification</title>
-<link>https://arxiv.org/abs/2505.10823</link>
-<guid>https://arxiv.org/abs/2505.10823</guid>
-<content:encoded><![CDATA[
-arXiv:2505.10823v2 Announce Type: replace 
-Abstract: Foundation models provide robust embeddings for diverse tasks, including medical imaging. We evaluate embeddings from seven general and medical-specific foundation models (e.g., DenseNet121, BiomedCLIP, MedImageInsight, Rad-DINO, CXR-Foundation) for training lightweight adapters in multi-class radiography classification. Using a dataset of 8,842 radiographs across seven classes, we trained adapters with algorithms like K-Nearest Neighbors, logistic regression, SVM, random forest, and MLP. The combination of MedImageInsight embeddings with an SVM or MLP adapter achieved the highest mean area under the curve (mAUC) of 93.1%. This performance was statistically superior to other models, including MedSigLIP with an MLP (91.0%), Rad-DINO with an SVM (90.7%), and CXR-Foundation with logistic regression (88.6%). In contrast, models like BiomedCLIP (82.8%) and Med-Flamingo (78.5%) showed lower performance. Crucially, these lightweight adapters are computationally efficient, training in minutes and performing inference in seconds on a CPU, making them practical for clinical use. A fairness analysis of the top-performing MedImageInsight adapter revealed minimal performance disparities across patient gender (within 1.8%) and age groups (std. dev < 1.4%), with no significant statistical differences. These findings confirm that embeddings from specialized foundation models, particularly MedImageInsight, can power accurate, efficient, and equitable diagnostic tools using simple, lightweight adapters.
-]]></content:encoded>
-<pubDate>Fri, 05 Sep 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Integrating Intermediate Layer Optimization and Projected Gradient Descent for Solving Inverse Problems with Diffusion Models</title>
-<link>https://arxiv.org/abs/2505.20789</link>
-<guid>https://arxiv.org/abs/2505.20789</guid>
-<content:encoded><![CDATA[
-arXiv:2505.20789v3 Announce Type: replace 
-Abstract: Inverse problems (IPs) involve reconstructing signals from noisy observations. Recently, diffusion models (DMs) have emerged as a powerful framework for solving IPs, achieving remarkable reconstruction performance. However, existing DM-based methods frequently encounter issues such as heavy computational demands and suboptimal convergence. In this work, building upon the idea of the recent work DMPlug, we propose two novel methods, DMILO and DMILO-PGD, to address these challenges. Our first method, DMILO, employs intermediate layer optimization (ILO) to alleviate the memory burden inherent in DMPlug. Additionally, by introducing sparse deviations, we expand the range of DMs, enabling the exploration of underlying signals that may lie outside the range of the diffusion model. We further propose DMILO-PGD, which integrates ILO with projected gradient descent (PGD), thereby reducing the risk of suboptimal convergence. We provide an intuitive theoretical analysis of our approaches under appropriate conditions and validate their superiority through extensive experiments on diverse image datasets, encompassing both linear and nonlinear IPs. Our results demonstrate significant performance gains over state-of-the-art methods, highlighting the effectiveness of DMILO and DMILO-PGD in addressing common challenges in DM-based IP solvers.
 ]]></content:encoded>
 <pubDate>Fri, 05 Sep 2025 00:00:00 -0400</pubDate>
 </item>
