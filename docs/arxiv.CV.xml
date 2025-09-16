@@ -4,6 +4,7 @@
 <title>cs.CV updates on arXiv.org</title>
 <link>http://rss.arxiv.org/rss/cs.CV</link>
 
+
 <item>
 <title>MEPG:Multi-Expert Planning and Generation for Compositionally-Rich Image Generation</title>
 <link>https://arxiv.org/abs/2509.04126</link>
@@ -17,22 +18,19 @@ Abstract: Text-to-image diffusion models have achieved remarkable image quality,
   and style diversity.
 ]]></content:encoded>
 <pubDate>Tue, 16 Sep 2025 00:00:00 -0400</pubDate>
-<pubDate>Tue, 16 Sep 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
 <title>STADI: Fine-Grained Step-Patch Diffusion Parallelism for Heterogeneous GPUs</title>
 <link>https://arxiv.org/abs/2509.04719</link>
 <guid>https://arxiv.org/abs/2509.04719</guid>
 <content:encoded><![CDATA[
-<div> Framework, Diffusion Model, Parallel Inference, Heterogeneous GPU, Load Balancing <br>
-Summary: STADI is introduced as a novel framework for accelerating diffusion model inference in heterogeneous multi-GPU environments. It utilizes a hybrid scheduler to manage fine-grained parallelism across temporal and spatial dimensions. The framework incorporates a computation-aware step allocator to reduce denoising steps on slower GPUs and optimize execution synchronization. Additionally, an elastic patch parallelism mechanism is implemented to allocate image patches based on GPU computational capability, ensuring balanced workload distribution. Experimental results demonstrate STADI's effectiveness in improving load balancing and mitigating performance bottlenecks, reducing end-to-end inference latency by up to 45% compared to patch parallelism. The framework also showcases enhanced resource utilization on heterogeneous GPUs, showcasing significant advancements in parallel inference techniques. <br><br> <div>
+<div> Framework, Diffusion Model, Parallel Inference, Heterogeneous GPU, Load Balancing <br />
+Summary: STADI is introduced as a novel framework for accelerating diffusion model inference in heterogeneous multi-GPU environments. It utilizes a hybrid scheduler to manage fine-grained parallelism across temporal and spatial dimensions. The framework incorporates a computation-aware step allocator to reduce denoising steps on slower GPUs and optimize execution synchronization. Additionally, an elastic patch parallelism mechanism is implemented to allocate image patches based on GPU computational capability, ensuring balanced workload distribution. Experimental results demonstrate STADI's effectiveness in improving load balancing and mitigating performance bottlenecks, reducing end-to-end inference latency by up to 45% compared to patch parallelism. The framework also showcases enhanced resource utilization on heterogeneous GPUs, showcasing significant advancements in parallel inference techniques. <br /><br /> <div>
 arXiv:2509.04719v2 Announce Type: replace-cross 
 Abstract: The escalating adoption of diffusion models for applications such as image generation demands efficient parallel inference techniques to manage their substantial computational cost. However, existing diffusion parallelism inference schemes often underutilize resources in heterogeneous multi-GPU environments, where varying hardware capabilities or background tasks cause workload imbalance. This paper introduces Spatio-Temporal Adaptive Diffusion Inference (STADI), a novel framework to accelerate diffusion model inference in such settings. At its core is a hybrid scheduler that orchestrates fine-grained parallelism across both temporal and spatial dimensions. Temporally, STADI introduces a novel computation-aware step allocator applied after warmup phases, using a least-common-multiple-minimizing quantization technique to reduce denoising steps on slower GPUs and execution synchronization. To further minimize GPU idle periods, STADI executes an elastic patch parallelism mechanism that allocates variably sized image patches to GPUs according to their computational capability, ensuring balanced workload distribution through a complementary spatial mechanism. Extensive experiments on both load-imbalanced and heterogeneous multi-GPU clusters validate STADI's efficacy, demonstrating improved load balancing and mitigation of performance bottlenecks. Compared to patch parallelism, a state-of-the-art diffusion inference framework, our method significantly reduces end-to-end inference latency by up to 45% and significantly improves resource utilization on heterogeneous GPUs.
 ]]></content:encoded>
 <pubDate>Tue, 16 Sep 2025 00:00:00 -0400</pubDate>
-<pubDate>Tue, 16 Sep 2025 00:00:00 -0400</pubDate>
 </item>
-
 <item>
 <title>A Real-Time Diminished Reality Approach to Privacy in MR Collaboration</title>
 <link>https://arxiv.org/abs/2509.10466</link>
@@ -11460,27 +11458,6 @@ Abstract: Partially Relevant Video Retrieval (PRVR) aims to retrieve the target 
 <content:encoded><![CDATA[
 arXiv:2505.03569v2 Announce Type: replace 
 Abstract: Backgrounds in images play a major role in contributing to spurious correlations among different data points. Owing to aesthetic preferences of humans capturing the images, datasets can exhibit positional (location of the object within a given frame) and size (region-of-interest to image ratio) biases for different classes. In this paper, we show that these biases can impact how much a model relies on spurious features in the background to make its predictions. To better illustrate our findings, we propose a synthetic dataset derived from ImageNet-1k, Hard-Spurious-ImageNet, which contains images with various backgrounds, object positions, and object sizes. By evaluating the dataset on different pretrained models, we find that most models rely heavily on spurious features in the background when the region-of-interest (ROI) to image ratio is small and the object is far from the center of the image. Moreover, we also show that current methods that aim to mitigate harmful spurious features, do not take into account these factors, hence fail to achieve considerable performance gains for worst-group accuracies when the size and location of core features in an image change. The dataset and implementation code are available at https://github.com/Mishalfatima/Corner_Cases.
-]]></content:encoded>
-<pubDate>Tue, 09 Sep 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>HumaniBench: A Human-Centric Framework for Large Multimodal Models Evaluation</title>
-<link>https://arxiv.org/abs/2505.11454</link>
-<guid>https://arxiv.org/abs/2505.11454</guid>
-<content:encoded><![CDATA[
-arXiv:2505.11454v4 Announce Type: replace 
-Abstract: Large multimodal models (LMMs) have been widely tested on tasks like visual question answering (VQA), image captioning, and grounding, but lack rigorous evaluation for alignment with human-centered (HC) values such as fairness, ethics, and inclusivity. To address this gap, we introduce \textbf{HumaniBench}, a novel benchmark of 32,000 real-world image-question pairs and an evaluation suite. Labels are generated via an AI-assisted pipeline and validated by experts. HumaniBench assesses LMMs across seven key alignment principles: fairness, ethics, empathy, inclusivity, reasoning, robustness, and multilinguality, through diverse open-ended and closed-ended VQA tasks. Grounded in AI ethics and real-world needs, these principles provide a holistic lens for societal impact. Benchmarking results on different LMM shows that proprietary models generally lead in reasoning, fairness, and multilinguality, while open-source models excel in robustness and grounding. Most models struggle to balance accuracy with ethical and inclusive behavior. Techniques like Chain-of-Thought prompting and test-time scaling improve alignment. As the first benchmark tailored for HC alignment, HumaniBench offers a rigorous testbed to diagnose limitations, and promote responsible LMM development. All data and code are publicly available for reproducibility.
-  Keywords: HumaniBench, vision-language models, responsible AI benchmark, AI alignment evaluation, AI ethics assessment, fairness in AI models, visual question answering (VQA) benchmark, image captioning evaluation, visual grounding tasks, trustworthy AI models, Chain-of-Thought prompting, test-time scaling, ethical AI development tools.
-]]></content:encoded>
-<pubDate>Tue, 09 Sep 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Making Rotation Averaging Fast and Robust with Anisotropic Coordinate Descent</title>
-<link>https://arxiv.org/abs/2506.01940</link>
-<guid>https://arxiv.org/abs/2506.01940</guid>
-<content:encoded><![CDATA[
-arXiv:2506.01940v2 Announce Type: replace 
-Abstract: Anisotropic rotation averaging has recently been explored as a natural extension of respective isotropic methods. In the anisotropic formulation, uncertainties of the estimated relative rotations -- obtained via standard two-view optimization -- are propagated to the optimization of absolute rotations. The resulting semidefinite relaxations are able to recover global minima but scale poorly with the problem size. Local methods are fast and also admit robust estimation but are sensitive to initialization. They usually employ minimum spanning trees and therefore suffer from drift accumulation and can get trapped in poor local minima. In this paper, we attempt to bridge the gap between optimality, robustness and efficiency of anisotropic rotation averaging. We analyze a family of block coordinate descent methods initially proposed to optimize the standard chordal distances, and derive a much simpler formulation and an anisotropic extension obtaining a fast general solver. We integrate this solver into the extended anisotropic large-scale robust rotation averaging pipeline. The resulting algorithm achieves state-of-the-art performance on public structure-from-motion datasets. Project page: https://ylochman.github.io/acd
 ]]></content:encoded>
 <pubDate>Tue, 09 Sep 2025 00:00:00 -0400</pubDate>
 </item>

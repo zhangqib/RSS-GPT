@@ -5,6 +5,27 @@
 <link>http://rss.arxiv.org/rss/cs.LG</link>
 
 <item>
+<title>Toward Quantum Utility in Finance: A Robust Data-Driven Algorithm for Asset Clustering</title>
+<link>https://arxiv.org/abs/2509.07766</link>
+<guid>https://arxiv.org/abs/2509.07766</guid>
+<content:encoded><![CDATA[
+<div> algorithm, financial assets, portfolio optimization, signed correlation structures, quantum computing
+<br>
+Summary:<br>
+- The study focuses on clustering financial assets based on return correlations using the Graph-based Coalition Structure Generation algorithm (GCS-Q).
+- GCS-Q directly clusters signed, weighted graphs without requiring lossy transformations or fixed assumptions on the number of clusters.
+- The algorithm formulates partitioning steps as QUBO problems, enabling quantum annealing for efficient exploration of solution spaces.
+- Experimental validation on synthetic and real-world financial data shows GCS-Q outperforms classical algorithms like SPONGE and k-Medoids in clustering quality.
+- GCS-Q dynamically determines the number of clusters, demonstrating the practical utility of near-term quantum computing in graph-based unsupervised learning for financial applications. 
+<br><br>Summary: <div>
+arXiv:2509.07766v2 Announce Type: replace-cross 
+Abstract: Clustering financial assets based on return correlations is a fundamental task in portfolio optimization and statistical arbitrage. However, classical clustering methods often fall short when dealing with signed correlation structures, typically requiring lossy transformations and heuristic assumptions such as a fixed number of clusters. In this work, we apply the Graph-based Coalition Structure Generation algorithm (GCS-Q) to directly cluster signed, weighted graphs without relying on such transformations. GCS-Q formulates each partitioning step as a QUBO problem, enabling it to leverage quantum annealing for efficient exploration of exponentially large solution spaces. We validate our approach on both synthetic and real-world financial data, benchmarking against state-of-the-art classical algorithms such as SPONGE and k-Medoids. Our experiments demonstrate that GCS-Q consistently achieves higher clustering quality, as measured by Adjusted Rand Index and structural balance penalties, while dynamically determining the number of clusters. These results highlight the practical utility of near-term quantum computing for graph-based unsupervised learning in financial applications.
+]]></content:encoded>
+<pubDate>Tue, 16 Sep 2025 00:00:00 -0400</pubDate>
+<pubDate>Tue, 16 Sep 2025 00:00:00 -0400</pubDate>
+</item>
+
+<item>
 <title>Group Expectation Policy Optimization for Heterogeneous Reinforcement Learning</title>
 <link>https://arxiv.org/abs/2508.17850</link>
 <guid>https://arxiv.org/abs/2508.17850</guid>
@@ -12,11 +33,10 @@
 <div> decentralized training, reinforcement learning, large language models, heterogeneous distributed environments, importance sampling
 
 Summary:
-HeteroRL proposes an asynchronous RL architecture that separates rollout sampling from parameter learning to enable deployment across geographically distributed nodes. The proposed Group Expectation Policy Optimization (GEPO) addresses latency-induced KL divergence by reducing importance weight variance through refined sampling. GEPO achieves exponential variance reduction theoretically and maintains superior stability compared to existing methods like GRPO, even under high delays. Experimental results show less than 3% performance degradation with 1800-second delays, highlighting the potential for decentralized RL in heterogeneous networks. <br><br>Summary: <div>
+HeteroRL proposes an asynchronous RL architecture that separates rollout sampling from parameter learning to enable deployment across geographically distributed nodes. The proposed Group Expectation Policy Optimization (GEPO) addresses latency-induced KL divergence by reducing importance weight variance through refined sampling. GEPO achieves exponential variance reduction theoretically and maintains superior stability compared to existing methods like GRPO, even under high delays. Experimental results show less than 3% performance degradation with 1800-second delays, highlighting the potential for decentralized RL in heterogeneous networks. <br /><br />Summary: <div>
 arXiv:2508.17850v4 Announce Type: replace 
 Abstract: As single-center computing approaches power constraints, decentralized training is becoming essential. Reinforcement Learning (RL) post-training enhances Large Language Models (LLMs) but faces challenges in heterogeneous distributed environments due to its tightly-coupled sampling-learning alternation. We propose HeteroRL, an asynchronous RL architecture that decouples rollout sampling from parameter learning, enabling robust deployment across geographically distributed nodes under network delays. We identify that latency-induced KL divergence causes importance sampling failure due to high variance. To address this, we propose Group Expectation Policy Optimization (GEPO), which reduces importance weight variance through a refined sampling mechanism. Theoretically, GEPO achieves exponential variance reduction. Experiments show it maintains superior stability over methods like GRPO, with less than 3% performance degradation under 1800-second delays, demonstrating strong potential for decentralized RL in heterogeneous networks.
 ]]></content:encoded>
-<pubDate>Tue, 16 Sep 2025 00:00:00 -0400</pubDate>
 <pubDate>Tue, 16 Sep 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -32,7 +52,6 @@ arXiv:2509.06274v2 Announce Type: replace
 Abstract: Routing incoming queries to the most cost-effective LLM while maintaining response quality poses a fundamental challenge in optimizing performance-cost trade-offs for large-scale commercial systems. We present IPR\, a quality-constrained Intelligent Prompt Routing framework that dynamically selects optimal models based on predicted response quality and user-specified tolerance levels. IPR introduces three key innovations: (1) a modular architecture with lightweight quality estimators trained on 1.5M prompts annotated with calibrated quality scores, enabling fine-grained quality prediction across model families; (2) a user-controlled routing mechanism with tolerance parameter $\tau \in [0,1]$ that provides explicit control over quality-cost trade-offs; and (3) an extensible design using frozen encoders with model-specific adapters, reducing new model integration from days to hours. To rigorously train and evaluate IPR, we curate an industrial-level dataset IPRBench\footnote{IPRBench will be released upon legal approval.}, a comprehensive benchmark containing 1.5 million examples with response quality annotations across 11 LLM candidates. Deployed on a major cloud platform, IPR achieves 43.9\% cost reduction while maintaining quality parity with the strongest model in the Claude family and processes requests with sub-150ms latency.
 ]]></content:encoded>
 <pubDate>Tue, 16 Sep 2025 00:00:00 -0400</pubDate>
-<pubDate>Tue, 16 Sep 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
 <title>QualityFM: a Multimodal Physiological Signal Foundation Model with Self-Distillation for Signal Quality Challenges in Critically Ill Patients</title>
@@ -42,11 +61,10 @@ Abstract: Routing incoming queries to the most cost-effective LLM while maintain
 <div> Keywords: Photoplethysmogram, Electrocardiogram, QualityFM, multimodal foundation model, signal quality
 
 Summary:
-QualityFM is a novel multimodal foundation model designed to understand signal quality of physiological data in ICU and OR settings. Pre-trained on a large dataset, it utilizes a dual-track architecture and a self-distillation strategy to handle signals of varying quality. Incorporating a windowed sparse attention mechanism and a composite loss function, it preserves frequency-domain characteristics of the signals. Three models with different parameter counts are pre-trained and evaluated on tasks like ventricular tachycardia detection, atrial fibrillation identification, and arterial blood pressure estimation from PPG and ECG signals. The models demonstrate efficacy and practical value through transfer learning on these clinical tasks. <br><br>Summary: <div>
+QualityFM is a novel multimodal foundation model designed to understand signal quality of physiological data in ICU and OR settings. Pre-trained on a large dataset, it utilizes a dual-track architecture and a self-distillation strategy to handle signals of varying quality. Incorporating a windowed sparse attention mechanism and a composite loss function, it preserves frequency-domain characteristics of the signals. Three models with different parameter counts are pre-trained and evaluated on tasks like ventricular tachycardia detection, atrial fibrillation identification, and arterial blood pressure estimation from PPG and ECG signals. The models demonstrate efficacy and practical value through transfer learning on these clinical tasks. <br /><br />Summary: <div>
 arXiv:2509.06516v2 Announce Type: replace 
 Abstract: Photoplethysmogram (PPG) and electrocardiogram (ECG) are commonly recorded in intesive care unit (ICU) and operating room (OR). However, the high incidence of poor, incomplete, and inconsistent signal quality, can lead to false alarms or diagnostic inaccuracies. The methods explored so far suffer from limited generalizability, reliance on extensive labeled data, and poor cross-task transferability. To overcome these challenges, we introduce QualityFM, a novel multimodal foundation model for these physiological signals, designed to acquire a general-purpose understanding of signal quality. Our model is pre-trained on an large-scale dataset comprising over 21 million 30-second waveforms and 179,757 hours of data. Our approach involves a dual-track architecture that processes paired physiological signals of differing quality, leveraging a self-distillation strategy where an encoder for high-quality signals is used to guide the training of an encoder for low-quality signals. To efficiently handle long sequential signals and capture essential local quasi-periodic patterns, we integrate a windowed sparse attention mechanism within our Transformer-based model. Furthermore, a composite loss function, which combines direct distillation loss on encoder outputs with indirect reconstruction loss based on power and phase spectra, ensures the preservation of frequency-domain characteristics of the signals. We pre-train three models with varying parameter counts (9.6 M to 319 M) and demonstrate their efficacy and practical value through transfer learning on three distinct clinical tasks: false alarm of ventricular tachycardia detection, the identification of atrial fibrillation and the estimation of arterial blood pressure (ABP) from PPG and ECG signals.
 ]]></content:encoded>
-<pubDate>Tue, 16 Sep 2025 00:00:00 -0400</pubDate>
 <pubDate>Tue, 16 Sep 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -56,17 +74,16 @@ Abstract: Photoplethysmogram (PPG) and electrocardiogram (ECG) are commonly reco
 <content:encoded><![CDATA[
 <div> Keywords: Multimodal Large Language Models, visual perception, benchmark, Ishihara test, perceptual gap
 
-Summary:<br>
+Summary:<br />
 - The study introduces the HueManity benchmark to evaluate visual perception in Multimodal Large Language Models (MLLMs).
 - The dataset consists of images with embedded alphanumeric strings in Ishihara test-style dot patterns, challenging MLLMs on precise pattern recognition.
 - Evaluation of nine state-of-the-art MLLMs on HueManity reveals significant performance deficits compared to human and traditional computer vision baselines.
 - The best-performing MLLM achieved low accuracies on both numeric and alphanumeric tasks, highlighting a critical gap in MLLMs' visual capabilities.
 - Human participants and a fine-tuned ResNet50 model outperformed MLLMs, showcasing the need for improvement in MLLMs' perceptual robustness.
-<br><br>Summary: <div>
+<br /><br />Summary: <div>
 arXiv:2506.03194v4 Announce Type: replace-cross 
 Abstract: Multimodal Large Language Models (MLLMs) excel at high-level visual reasoning, but their performance on nuanced perceptual tasks remains surprisingly limited. We present HueManity, a benchmark designed to assess visual perception in MLLMs. The dataset comprises 83,850 images featuring two-character alphanumeric strings embedded in Ishihara test style dot patterns, challenging models on precise pattern recognition. Our evaluation of nine state-of-the-art MLLMs on HueManity demonstrates a significant performance deficit compared to human and traditional computer vision baselines. The best-performing MLLM achieved a 33.6% accuracy on the numeric `easy' task and a striking 3% on the alphanumeric `hard' task. In contrast, human participants achieved near-perfect scores (100% and 95.6%), and a fine-tuned ResNet50 model reached accuracies of 96.5% and 94.5%. These results highlight a critical gap in the visual capabilities of current MLLMs. Our analysis further explores potential architectural and training-paradigm factors contributing to this perceptual gap in MLLMs. We open-source HueManity dataset and code to foster further research in improving perceptual robustness of MLLMs.
 ]]></content:encoded>
-<pubDate>Tue, 16 Sep 2025 00:00:00 -0400</pubDate>
 <pubDate>Tue, 16 Sep 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -77,11 +94,10 @@ Abstract: Multimodal Large Language Models (MLLMs) excel at high-level visual re
 <div> Keywords: scams, social engineering, privacy-preserving, AI-in-the-loop, federated learning
 
 Summary: 
-Scams exploiting real-time social engineering are a persistent threat online, with existing defenses offering limited protection. A privacy-preserving, AI-in-the-loop framework has been proposed to proactively detect and disrupt scam conversations in real time. This system combines AI with a utility function to balance engagement and harm minimization, using federated learning for continual model updates without sharing raw data. Experimental evaluations demonstrate fluent and engaging responses, with human studies confirming gains in realism, safety, and effectiveness over strong baselines. Training models with FedAvg in federated settings sustains high engagement and relevance with low PII leakage. Strict moderation settings reduce the risk of exposing personal information but limit conversation engagement, while more relaxed settings improve scam detection at the expense of higher privacy risk. This framework is the first to integrate real-time scam-baiting, federated privacy preservation, and safety moderation into a proactive defense paradigm.<br><br>Summary: <div>
+Scams exploiting real-time social engineering are a persistent threat online, with existing defenses offering limited protection. A privacy-preserving, AI-in-the-loop framework has been proposed to proactively detect and disrupt scam conversations in real time. This system combines AI with a utility function to balance engagement and harm minimization, using federated learning for continual model updates without sharing raw data. Experimental evaluations demonstrate fluent and engaging responses, with human studies confirming gains in realism, safety, and effectiveness over strong baselines. Training models with FedAvg in federated settings sustains high engagement and relevance with low PII leakage. Strict moderation settings reduce the risk of exposing personal information but limit conversation engagement, while more relaxed settings improve scam detection at the expense of higher privacy risk. This framework is the first to integrate real-time scam-baiting, federated privacy preservation, and safety moderation into a proactive defense paradigm.<br /><br />Summary: <div>
 arXiv:2509.05362v2 Announce Type: replace-cross 
 Abstract: Scams exploiting real-time social engineering -- such as phishing, impersonation, and phone fraud -- remain a persistent and evolving threat across digital platforms. Existing defenses are largely reactive, offering limited protection during active interactions. We propose a privacy-preserving, AI-in-the-loop framework that proactively detects and disrupts scam conversations in real time. The system combines instruction-tuned artificial intelligence with a safety-aware utility function that balances engagement with harm minimization, and employs federated learning to enable continual model updates without raw data sharing. Experimental evaluations show that the system produces fluent and engaging responses (perplexity as low as 22.3, engagement $\approx$0.80), while human studies confirm significant gains in realism, safety, and effectiveness over strong baselines. In federated settings, models trained with FedAvg sustain up to 30 rounds while preserving high engagement ($\approx$0.80), strong relevance ($\approx$0.74), and low PII leakage ($\leq$0.0085). Even with differential privacy, novelty and safety remain stable, indicating that robust privacy can be achieved without sacrificing performance. The evaluation of guard models (LlamaGuard, LlamaGuard2/3, MD-Judge) shows a straightforward pattern: stricter moderation settings reduce the chance of exposing personal information, but they also limit how much the model engages in conversation. In contrast, more relaxed settings allow longer and richer interactions, which improve scam detection, but at the cost of higher privacy risk. To our knowledge, this is the first framework to unify real-time scam-baiting, federated privacy preservation, and calibrated safety moderation into a proactive defense paradigm.
 ]]></content:encoded>
-<pubDate>Tue, 16 Sep 2025 00:00:00 -0400</pubDate>
 <pubDate>Tue, 16 Sep 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -98,7 +114,6 @@ Abstract: We study reinforcement learning from human feedback under misspecifica
   The gap between what we optimize (proxy from human feedback) and what we want (true objective) is fundamentally limited by how common the problematic contexts are (alpha), how wrong the feedback is there (epsilon), and how much the true objectives disagree there (gamma). Murphy's Law for AI alignment: the gap always wins unless you actively route around misspecification.
 ]]></content:encoded>
 <pubDate>Tue, 16 Sep 2025 00:00:00 -0400</pubDate>
-<pubDate>Tue, 16 Sep 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
 <title>FineServe: Precision-Aware KV Slab and Two-Level Scheduling for Heterogeneous Precision LLM Serving</title>
@@ -107,12 +122,11 @@ Abstract: We study reinforcement learning from human feedback under misspecifica
 <content:encoded><![CDATA[
 <div> adaptive memory management, GPU sharing systems, mixed-precision models, inference serving framework, quantized large language models
 
-Summary:<br>
+Summary:<br />
 FineServe is a novel inference serving framework designed for mixed-precision Large Language Models (LLMs). It tackles the challenges faced by quantized models in terms of memory efficiency and resource scheduling to maximize throughput. FineServe introduces a precision-aware adaptive memory management technique called KV Slab, which dynamically allocates memory to reduce GPU memory fragmentation. It also implements a two-level scheduling framework with a global scheduler for model-GPU allocation based on various factors and a local scheduler for batch size adjustments. Experimental results show that FineServe outperforms state-of-the-art GPU sharing systems with up to 2.2x higher SLO attainment and 1.8x higher token generation throughput. <div>
 arXiv:2509.06261v2 Announce Type: replace-cross 
 Abstract: Recent advances in Post-Training Quantization (PTQ) techniques have significantly increased demand for serving quantized large language models (LLMs), enabling higher throughput and substantially reduced memory usage with minimal accuracy loss. Quantized models address memory constraints in LLMs and enhance GPU resource utilization through efficient GPU sharing. However, quantized models have smaller KV block sizes than non-quantized models, causing limited memory efficiency due to memory fragmentation. Also, distinct resource usage patterns between quantized and non-quantized models require efficient scheduling to maximize throughput. To address these challenges, we propose FineServe, an inference serving framework for mixed-precision LLMs. FineServe's key contributions include: (1) KV Slab, a precision-aware adaptive memory management technique dynamically allocating KV cache based on model quantization characteristics, significantly reducing GPU memory fragmentation, and (2) a two-level scheduling framework comprising a global scheduler that places models to GPUs based on request rates, latency SLOs, and memory constraints and efficiency, and a local scheduler that adaptively adjusts batch sizes according to real-time request fluctuations. Experimental results demonstrate that FineServe achieves up to 2.2x higher SLO attainment and 1.8x higher token generation throughput compared to the state-of-the-art GPU sharing systems.
 ]]></content:encoded>
-<pubDate>Tue, 16 Sep 2025 00:00:00 -0400</pubDate>
 <pubDate>Tue, 16 Sep 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -125,11 +139,10 @@ Abstract: Recent advances in Post-Training Quantization (PTQ) techniques have si
 Summary:
 This study presents a novel deep learning framework to accurately classify nitrogen stress severity in plants under combined stress conditions. The model utilizes four imaging modalities, including RGB, multispectral, and two infrared wavelengths, to capture plant responses across varying nitrogen availability levels, water stress, and weed pressures. A CNN-LSTM network is used to extract spatial features from images and capture temporal dependencies, achieving an impressive accuracy of 98%. Comparatively, a spatial-only CNN model achieved 80.45% accuracy. The results showcase the effectiveness of the CNN-LSTM approach in identifying subtle interactions between nitrogen deficiency, water stress, and weed pressure. This platform offers a promising tool for timely detection of nitrogen stress severity, facilitating better crop management and improving plant health. 
 
-<br><br>Summary: <div>
+<br /><br />Summary: <div>
 arXiv:2509.06625v2 Announce Type: replace-cross 
 Abstract: Plants in their natural habitats endure an array of interacting stresses, both biotic and abiotic, that rarely occur in isolation. Nutrient stress-particularly nitrogen deficiency-becomes even more critical when compounded with drought and weed competition, making it increasingly difficult to distinguish and address its effects. Early detection of nitrogen stress is therefore crucial for protecting plant health and implementing effective management strategies. This study proposes a novel deep learning framework to accurately classify nitrogen stress severity in a combined stress environment. Our model uses a unique blend of four imaging modalities-RGB, multispectral, and two infrared wavelengths-to capture a wide range of physiological plant responses from canopy images. These images, provided as time-series data, document plant health across three levels of nitrogen availability (low, medium, and high) under varying water stress and weed pressures. The core of our approach is a spatio-temporal deep learning pipeline that merges a Convolutional Neural Network (CNN) for extracting spatial features from images with a Long Short-Term Memory (LSTM) network to capture temporal dependencies. We also devised and evaluated a spatial-only CNN pipeline for comparison. Our CNN-LSTM pipeline achieved an impressive accuracy of 98%, impressively surpassing the spatial-only model's 80.45% and other previously reported machine learning method's 76%. These results bring actionable insights based on the power of our CNN-LSTM approach in effectively capturing the subtle and complex interactions between nitrogen deficiency, water stress, and weed pressure. This robust platform offers a promising tool for the timely and proactive identification of nitrogen stress severity, enabling better crop management and improved plant health.
 ]]></content:encoded>
-<pubDate>Tue, 16 Sep 2025 00:00:00 -0400</pubDate>
 <pubDate>Tue, 16 Sep 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -137,16 +150,14 @@ Abstract: Plants in their natural habitats endure an array of interacting stress
 <link>https://arxiv.org/abs/2509.06641</link>
 <guid>https://arxiv.org/abs/2509.06641</guid>
 <content:encoded><![CDATA[
-<div> IntentBench, WorldSense, Daily-Omni, multimodal reasoning, zero-shot reasoning <br>
-Summary:<br>
+<div> IntentBench, WorldSense, Daily-Omni, multimodal reasoning, zero-shot reasoning <br />
+Summary:<br />
 This paper introduces a zero-shot multimodal reasoning component that addresses issues of "shortcuts" and lack of contextual understanding in complex cross-modal reasoning of large models. The component is guided by human-like cognitive strategies centered on an "intent sketch" and consists of three modules: Intent Perceiver, Strategy Generator, and Strategy Selector. By following an "understand-plan-select" cognitive process, the component generates and filters "intent sketch" strategies to guide reasoning without requiring parameter fine-tuning. Information-theoretic analysis demonstrates that this approach can reduce conditional entropy and improve information utilization efficiency, preventing unintended shortcut reasoning. Experimental results on IntentBench, WorldSense, and Daily-Omni datasets show consistent improvements across different reasoning engines and pipeline combinations, with gains up to approximately 9.51 percentage points. The method's generality and robust gains highlight the practical value and portability of the "intent sketch" reasoning component in zero-shot scenarios. <div>
 arXiv:2509.06641v3 Announce Type: replace-cross 
 Abstract: Targeting the issues of "shortcuts" and insufficient contextual understanding in complex cross-modal reasoning of multimodal large models, this paper proposes a zero-shot multimodal reasoning component guided by human-like cognitive strategies centered on an "intent sketch". The component comprises a plug-and-play three-module pipeline-Intent Perceiver, Strategy Generator, and Strategy Selector-that explicitly constructs a "understand-plan-select" cognitive process. By generating and filtering "intent sketch" strategies to guide the final reasoning, it requires no parameter fine-tuning and achieves cross-model transfer solely through in-context engineering. Information-theoretic analysis shows that this process can reduce conditional entropy and improve information utilization efficiency, thereby suppressing unintended shortcut reasoning. Experiments on IntentBench, WorldSense, and Daily-Omni validate the method's generality and robust gains; compared with their respective baselines, the complete "three-module" scheme yields consistent improvements across different reasoning engines and pipeline combinations, with gains up to approximately 9.51 percentage points, demonstrating the practical value and portability of the "intent sketch" reasoning component in zero-shot scenarios.
 ]]></content:encoded>
 <pubDate>Tue, 16 Sep 2025 00:00:00 -0400</pubDate>
-<pubDate>Tue, 16 Sep 2025 00:00:00 -0400</pubDate>
 </item>
-
 <item>
 <title>The 1st International Workshop on Disentangled Representation Learning for Controllable Generation (DRL4Real): Methods and Results</title>
 <link>https://arxiv.org/abs/2509.10463</link>
@@ -11298,96 +11309,6 @@ Abstract: Background: Parkinson's disease remains a major neurodegenerative diso
 <content:encoded><![CDATA[
 arXiv:2509.07756v1 Announce Type: cross 
 Abstract: Next to decision tree and k-nearest neighbours algorithms deep convolutional neural networks (CNNs) are widely used to classify audio data in many domains like music, speech or environmental sounds. To train a specific CNN various spectral and rhythm features like mel-scaled spectrograms, mel-frequency cepstral coefficients (MFCC), cyclic tempograms, short-time Fourier transform (STFT) chromagrams, constant-Q transform (CQT) chromagrams and chroma energy normalized statistics (CENS) chromagrams can be used as digital image input data for the neural network. The performance of these spectral and rhythm features for audio category level as well as audio class level classification is investigated in detail with a deep CNN and the ESC-50 dataset with 2,000 labeled environmental audio recordings using an end-to-end deep learning pipeline. The evaluated metrics accuracy, precision, recall and F1 score for multiclass classification clearly show that the mel-scaled spectrograms and the mel-frequency cepstral coefficients (MFCC) perform significantly better then the other spectral and rhythm features investigated in this research for audio classification tasks using deep CNNs.
-]]></content:encoded>
-<pubDate>Wed, 10 Sep 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Toward Quantum Utility in Finance: A Robust Data-Driven Algorithm for Asset Clustering</title>
-<link>https://arxiv.org/abs/2509.07766</link>
-<guid>https://arxiv.org/abs/2509.07766</guid>
-<content:encoded><![CDATA[
-arXiv:2509.07766v1 Announce Type: cross 
-Abstract: Clustering financial assets based on return correlations is a fundamental task in portfolio optimization and statistical arbitrage. However, classical clustering methods often fall short when dealing with signed correlation structures, typically requiring lossy transformations and heuristic assumptions such as a fixed number of clusters. In this work, we apply the Graph-based Coalition Structure Generation algorithm (GCS-Q) to directly cluster signed, weighted graphs without relying on such transformations. GCS-Q formulates each partitioning step as a QUBO problem, enabling it to leverage quantum annealing for efficient exploration of exponentially large solution spaces. We validate our approach on both synthetic and real-world financial data, benchmarking against state-of-the-art classical algorithms such as SPONGE and k-Medoids. Our experiments demonstrate that GCS-Q consistently achieves higher clustering quality, as measured by Adjusted Rand Index and structural balance penalties, while dynamically determining the number of clusters. These results highlight the practical utility of near-term quantum computing for graph-based unsupervised learning in financial applications.
-]]></content:encoded>
-<pubDate>Wed, 10 Sep 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Quantum Computing for Large-scale Network Optimization: Opportunities and Challenges</title>
-<link>https://arxiv.org/abs/2509.07773</link>
-<guid>https://arxiv.org/abs/2509.07773</guid>
-<content:encoded><![CDATA[
-arXiv:2509.07773v1 Announce Type: cross 
-Abstract: The complexity of large-scale 6G-and-beyond networks demands innovative approaches for multi-objective optimization over vast search spaces, a task often intractable. Quantum computing (QC) emerges as a promising technology for efficient large-scale optimization. We present our vision of leveraging QC to tackle key classes of problems in future mobile networks. By analyzing and identifying common features, particularly their graph-centric representation, we propose a unified strategy involving QC algorithms. Specifically, we outline a methodology for optimization using quantum annealing as well as quantum reinforcement learning. Additionally, we discuss the main challenges that QC algorithms and hardware must overcome to effectively optimize future networks.
-]]></content:encoded>
-<pubDate>Wed, 10 Sep 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Decentralized Online Riemannian Optimization Beyond Hadamard Manifolds</title>
-<link>https://arxiv.org/abs/2509.07779</link>
-<guid>https://arxiv.org/abs/2509.07779</guid>
-<content:encoded><![CDATA[
-arXiv:2509.07779v1 Announce Type: cross 
-Abstract: We study decentralized online Riemannian optimization over manifolds with possibly positive curvature, going beyond the Hadamard manifold setting. Decentralized optimization techniques rely on a consensus step that is well understood in Euclidean spaces because of their linearity. However, in positively curved Riemannian spaces, a main technical challenge is that geodesic distances may not induce a globally convex structure. In this work, we first analyze a curvature-aware Riemannian consensus step that enables a linear convergence beyond Hadamard manifolds. Building on this step, we establish a $O(\sqrt{T})$ regret bound for the decentralized online Riemannian gradient descent algorithm. Then, we investigate the two-point bandit feedback setup, where we employ computationally efficient gradient estimators using smoothing techniques, and we demonstrate the same $O(\sqrt{T})$ regret bound through the subconvexity analysis of smoothed objectives.
-]]></content:encoded>
-<pubDate>Wed, 10 Sep 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Nuclear Data Adjustment for Nonlinear Applications in the OECD/NEA WPNCS SG14 Benchmark -- A Bayesian Inverse UQ-based Approach for Data Assimilation</title>
-<link>https://arxiv.org/abs/2509.07790</link>
-<guid>https://arxiv.org/abs/2509.07790</guid>
-<content:encoded><![CDATA[
-arXiv:2509.07790v1 Announce Type: cross 
-Abstract: The Organization for Economic Cooperation and Development (OECD) Working Party on Nuclear Criticality Safety (WPNCS) proposed a benchmark exercise to assess the performance of current nuclear data adjustment techniques applied to nonlinear applications and experiments with low correlation to applications. This work introduces Bayesian Inverse Uncertainty Quantification (IUQ) as a method for nuclear data adjustments in this benchmark, and compares IUQ to the more traditional methods of Generalized Linear Least Squares (GLLS) and Monte Carlo Bayes (MOCABA). Posterior predictions from IUQ showed agreement with GLLS and MOCABA for linear applications. When comparing GLLS, MOCABA, and IUQ posterior predictions to computed model responses using adjusted parameters, we observe that GLLS predictions fail to replicate computed response distributions for nonlinear applications, while MOCABA shows near agreement, and IUQ uses computed model responses directly. We also discuss observations on why experiments with low correlation to applications can be informative to nuclear data adjustments and identify some properties useful in selecting experiments for inclusion in nuclear data adjustment. Performance in this benchmark indicates potential for Bayesian IUQ in nuclear data adjustments.
-]]></content:encoded>
-<pubDate>Wed, 10 Sep 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Small Open Models Achieve Near Parity with Large Models in Low Resource Literary Translation at a Fraction of the Cost</title>
-<link>https://arxiv.org/abs/2509.07829</link>
-<guid>https://arxiv.org/abs/2509.07829</guid>
-<content:encoded><![CDATA[
-arXiv:2509.07829v1 Announce Type: cross 
-Abstract: Literary translation has recently gained attention as a distinct and complex task in machine translation research. However, the translation by small open models remains an open problem. We contribute to this ongoing research by introducing TINYFABULIST TRANSLATION FRAMEWORK (TF2), a unified framework for dataset creation, fine tuning, and evaluation in English-Romanian literary translations, centred on the creation and open release of both a compact, fine tuned language model (TF2-12B) and large scale synthetic parallel datasets (DS-TF2-EN-RO-3M and DS-TF2-EN-RO-15K). Building on DS-TF1-EN-3M (TF1), the largest collection of synthetic English fables to date, we address the need for rich, high quality literary datasets in low resource languages such as Romanian. Our pipeline first generates 15k high quality Romanian references from the TF1 pool using a high performing LLM. We then apply a two stage fine tuning process to a 12B parameter open weight model: (i) instruction tuning to capture genre specific narrative style, and (ii) adapter compression for efficient deployment. Evaluation combines corpus level BLEU and a five dimension LLM based rubric (accuracy, fluency, coherence, style, cultural adaptation) to provide a nuanced assessment of translation quality. Results show that our fine tuned model achieves fluency and adequacy competitive with top performing large proprietary models, while being open, accessible, and significantly more cost effective. Alongside the fine tuned model and both datasets, we publicly release all scripts and evaluation prompts. TF2 thus provides an end-to-end, reproducible pipeline for research on cost efficient translation, cross lingual narrative generation, and the broad adoption of open models for culturally significant literary content in low resource settings.
-]]></content:encoded>
-<pubDate>Wed, 10 Sep 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>GENUINE: Graph Enhanced Multi-level Uncertainty Estimation for Large Language Models</title>
-<link>https://arxiv.org/abs/2509.07925</link>
-<guid>https://arxiv.org/abs/2509.07925</guid>
-<content:encoded><![CDATA[
-arXiv:2509.07925v1 Announce Type: cross 
-Abstract: Uncertainty estimation is essential for enhancing the reliability of Large Language Models (LLMs), particularly in high-stakes applications. Existing methods often overlook semantic dependencies, relying on token-level probability measures that fail to capture structural relationships within the generated text. We propose GENUINE: Graph ENhanced mUlti-level uncertaINty Estimation for Large Language Models, a structure-aware framework that leverages dependency parse trees and hierarchical graph pooling to refine uncertainty quantification. By incorporating supervised learning, GENUINE effectively models semantic and structural relationships, improving confidence assessments. Extensive experiments across NLP tasks show that GENUINE achieves up to 29% higher AUROC than semantic entropy-based approaches and reduces calibration errors by over 15%, demonstrating the effectiveness of graph-based uncertainty modeling. The code is available at https://github.com/ODYSSEYWT/GUQ.
-]]></content:encoded>
-<pubDate>Wed, 10 Sep 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Accelerating Local AI on Consumer GPUs: A Hardware-Aware Dynamic Strategy for YOLOv10s</title>
-<link>https://arxiv.org/abs/2509.07928</link>
-<guid>https://arxiv.org/abs/2509.07928</guid>
-<content:encoded><![CDATA[
-arXiv:2509.07928v1 Announce Type: cross 
-Abstract: As local AI grows in popularity, there is a critical gap between the benchmark performance of object detectors and their practical viability on consumer-grade hardware. While models like YOLOv10s promise real-time speeds, these metrics are typically achieved on high-power, desktop-class GPUs. This paper reveals that on resource-constrained systems, such as laptops with RTX 4060 GPUs, performance is not compute-bound but is instead dominated by system-level bottlenecks, as illustrated by a simple bottleneck test. To overcome this hardware-level constraint, we introduce a Two-Pass Adaptive Inference algorithm, a model-independent approach that requires no architectural changes. This study mainly focuses on adaptive inference strategies and undertakes a comparative analysis of architectural early-exit and resolution-adaptive routing, highlighting their respective trade-offs within a unified evaluation framework. The system uses a fast, low-resolution pass and only escalates to a high-resolution model pass when detection confidence is low. On a 5000-image COCO dataset, our method achieves a 1.85x speedup over a PyTorch Early-Exit baseline, with a modest mAP loss of 5.51%. This work provides a practical and reproducible blueprint for deploying high-performance, real-time AI on consumer-grade devices by shifting the focus from pure model optimization to hardware-aware inference strategies that maximize throughput.
-]]></content:encoded>
-<pubDate>Wed, 10 Sep 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Smart Fast Finish: Preventing Overdelivery via Daily Budget Pacing at DoorDash</title>
-<link>https://arxiv.org/abs/2509.07929</link>
-<guid>https://arxiv.org/abs/2509.07929</guid>
-<content:encoded><![CDATA[
-arXiv:2509.07929v1 Announce Type: cross 
-Abstract: We present a budget pacing feature called Smart Fast Finish (SFF). SFF builds upon the industry standard Fast Finish (FF) feature in budget pacing systems that depletes remaining advertising budget as quickly as possible towards the end of some fixed time period. SFF dynamically updates system parameters such as start time and throttle rate depending on historical ad-campaign data. SFF is currently in use at DoorDash, one of the largest delivery platforms in the US, and is part of its budget pacing system. We show via online budget-split experimentation data and offline simulations that SFF is a robust solution for overdelivery mitigation when pacing budget.
-]]></content:encoded>
-<pubDate>Wed, 10 Sep 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Guided Reasoning in LLM-Driven Penetration Testing Using Structured Attack Trees</title>
-<link>https://arxiv.org/abs/2509.07939</link>
-<guid>https://arxiv.org/abs/2509.07939</guid>
-<content:encoded><![CDATA[
-arXiv:2509.07939v1 Announce Type: cross 
-Abstract: Recent advances in Large Language Models (LLMs) have driven interest in automating cybersecurity penetration testing workflows, offering the promise of faster and more consistent vulnerability assessment for enterprise systems. Existing LLM agents for penetration testing primarily rely on self-guided reasoning, which can produce inaccurate or hallucinated procedural steps. As a result, the LLM agent may undertake unproductive actions, such as exploiting unused software libraries or generating cyclical responses that repeat prior tactics. In this work, we propose a guided reasoning pipeline for penetration testing LLM agents that incorporates a deterministic task tree built from the MITRE ATT&amp;CK Matrix, a proven penetration testing kll chain, to constrain the LLM's reaoning process to explicitly defined tactics, techniques, and procedures. This anchors reasoning in proven penetration testing methodologies and filters out ineffective actions by guiding the agent towards more productive attack procedures. To evaluate our approach, we built an automated penetration testing LLM agent using three LLMs (Llama-3-8B, Gemini-1.5, and GPT-4) and applied it to navigate 10 HackTheBox cybersecurity exercises with 103 discrete subtasks representing real-world cyberattack scenarios. Our proposed reasoning pipeline guided the LLM agent through 71.8\%, 72.8\%, and 78.6\% of subtasks using Llama-3-8B, Gemini-1.5, and GPT-4, respectively. Comparatively, the state-of-the-art LLM penetration testing tool using self-guided reasoning completed only 13.5\%, 16.5\%, and 75.7\% of subtasks and required 86.2\%, 118.7\%, and 205.9\% more model queries. This suggests that incorporating a deterministic task tree into LLM reasoning pipelines can enhance the accuracy and efficiency of automated cybersecurity assessments
 ]]></content:encoded>
 <pubDate>Wed, 10 Sep 2025 00:00:00 -0400</pubDate>
 </item>

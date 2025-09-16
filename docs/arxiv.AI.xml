@@ -5,16 +5,37 @@
 <link>http://rss.arxiv.org/rss/cs.AI</link>
 
 <item>
+<title>Spectral and Rhythm Feature Performance Evaluation for Category and Class Level Audio Classification with Deep Convolutional Neural Networks</title>
+<link>https://arxiv.org/abs/2509.07756</link>
+<guid>https://arxiv.org/abs/2509.07756</guid>
+<content:encoded><![CDATA[
+<div> Keywords: deep convolutional neural networks, audio classification, spectral features, rhythm features, ESC-50 dataset
+
+Summary: 
+- The study explores the use of various spectral and rhythm features as input data for deep convolutional neural networks (CNNs) in classifying audio data from the ESC-50 dataset.
+- Spectral and rhythm features such as mel-scaled spectrograms and mel-frequency cepstral coefficients (MFCC) are evaluated for their performance in audio classification tasks.
+- The research compares the accuracy, precision, recall, and F1 score for multiclass classification using different features with a deep CNN.
+- Results indicate that mel-scaled spectrograms and MFCC outperform other investigated features, demonstrating superior performance in audio category and class level classification tasks.
+- The study highlights the importance of selecting appropriate spectral and rhythm features for optimal performance in audio classification using deep CNNs.
+
+<br><br>Summary: <div>
+arXiv:2509.07756v2 Announce Type: replace-cross 
+Abstract: Next to decision tree and k-nearest neighbours algorithms deep convolutional neural networks (CNNs) are widely used to classify audio data in many domains like music, speech or environmental sounds. To train a specific CNN various spectral and rhythm features like mel-scaled spectrograms, mel-frequency cepstral coefficients (MFCC), cyclic tempograms, short-time Fourier transform (STFT) chromagrams, constant-Q transform (CQT) chromagrams and chroma energy normalized statistics (CENS) chromagrams can be used as digital image input data for the neural network. The performance of these spectral and rhythm features for audio category level as well as audio class level classification is investigated in detail with a deep CNN and the ESC-50 dataset with 2,000 labeled environmental audio recordings using an end-to-end deep learning pipeline. The evaluated metrics accuracy, precision, recall and F1 score for multiclass classification clearly show that the mel-scaled spectrograms and the mel-frequency cepstral coefficients (MFCC) perform significantly better then the other spectral and rhythm features investigated in this research for audio classification tasks using deep CNNs.
+]]></content:encoded>
+<pubDate>Tue, 16 Sep 2025 00:00:00 -0400</pubDate>
+<pubDate>Tue, 16 Sep 2025 00:00:00 -0400</pubDate>
+</item>
+
+<item>
 <title>Navigating the Labyrinth: Evaluating LLMs' Ability to Reason About Search Problems</title>
 <link>https://arxiv.org/abs/2406.12172</link>
 <guid>https://arxiv.org/abs/2406.12172</guid>
 <content:encoded><![CDATA[
-<div> LLMs, SearchBench, search problems, GPT-4, A* search algorithm <br>
+<div> LLMs, SearchBench, search problems, GPT-4, A* search algorithm <br />
 Summary: Large Language Models struggle with logic and puzzle problems despite high performance in other benchmarks. A new benchmark, SearchBench, with 11 search problems highlights this challenge. LLMs like GPT-4 and o1-preview have low success rates on the SearchBench, requiring backtracking and considering multiple pathways. Prompting models to generate complete A* search algorithms improves performance significantly. The approach offloads iterative search and backtracking processes, boosting the rate of correct solutions to over 57% with the Multi-Stage-Multi-Try (MSMT) inference method. <div>
 arXiv:2406.12172v3 Announce Type: replace 
 Abstract: Large Language Models (LLMs) have recently achieved impressive performance in math and reasoning benchmarks. However, they often struggle with logic problems and puzzles that are relatively easy for humans. To further investigate this, we introduce a new benchmark, SearchBench, which contains 11 unique search problems inspired by intuitive puzzles. Each SearchBench problem type is equipped with automated pipelines to generate an arbitrary number of instances and analyze the feasibility, correctness, and optimality of LLM-generated solutions. We show that using step-by-step, language-only reasoning, even the most advanced LLMs fail to solve SearchBench; for example, OpenAI's frontier models GPT-4 and o1-preview solve only 1.4% and 18.6% of problems, respectively. The reason is that SearchBench problems require considering multiple pathways and performing backtracking, posing a significant challenge to auto-regressive models. Interestingly, performance is significantly boosted when we prompt models to generate a complete A* search algorithm - a comparatively more cognitively difficult task. This approach effectively offloads the iterative search and backtracking process from the models, which they struggle with in text. This in-context learning baseline is further enhanced via a Multi-Stage-Multi-Try (MSMT) inference method, increasing GPT-4's rate of correct solutions to over 57%.
 ]]></content:encoded>
-<pubDate>Tue, 16 Sep 2025 00:00:00 -0400</pubDate>
 <pubDate>Tue, 16 Sep 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -30,7 +51,6 @@ arXiv:2410.07553v4 Announce Type: replace
 Abstract: The rapid advances of multimodal agents built on large foundation models have largely overlooked their potential for language-based communication between agents in collaborative tasks. This oversight presents a critical gap in understanding their effectiveness in real-world deployments, particularly when communicating with humans. Existing agentic benchmarks fail to address key aspects of inter-agent communication and collaboration, particularly in scenarios where agents have unequal access to information and must work together to achieve tasks beyond the scope of individual capabilities. To fill this gap, we introduce COMMA: a novel puzzle benchmark designed to evaluate the collaborative performance of multimodal multi-agent systems through language communication. Our benchmark features a variety of multimodal puzzles, providing a comprehensive evaluation across four key categories of agentic capability in a communicative collaboration setting. Our findings reveal surprising weaknesses in state-of-the-art models, including strong proprietary models like GPT-4o and reasoning models like o4-mini. Many chain of thought reasoning models such as R1-Onevision and LLaVA-CoT struggle to outperform even a random baseline in agent-agent collaboration, indicating a potential growth area in their communication abilities.
 ]]></content:encoded>
 <pubDate>Tue, 16 Sep 2025 00:00:00 -0400</pubDate>
-<pubDate>Tue, 16 Sep 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
 <title>ASP-FZN: A Translation-based Constraint Answer Set Solver</title>
@@ -40,11 +60,10 @@ Abstract: The rapid advances of multimodal agents built on large foundation mode
 <div> solver, Constraint Answer Set Programming (CASP), linear constraints, FlatZinc language, performance
 Summary:
 The article introduces a solver called asp-fzn for Constraint Answer Set Programming (CASP) that incorporates linear constraints and translates CASP programs into the FlatZinc language. The solver supports a range of linear constraints, including common global constraints, and has shown competitive performance with state-of-the-art ASP solvers in benchmarks. Evaluation of asp-fzn on CASP problems from literature revealed promising results, with performance comparable to clingcon, a leading CASP solver. The solver's performance was particularly strong in plain ASP benchmarks and even outperformed clingcon in some CASP benchmarks. The study showcases the potential of asp-fzn in handling constraint programming challenges and highlights its competitive edge in the realm of ASP solvers. 
-<br><br>Summary: <div>
+<br /><br />Summary: <div>
 arXiv:2507.22774v3 Announce Type: replace 
 Abstract: We present the solver asp-fzn for Constraint Answer Set Programming (CASP), which extends ASP with linear constraints. Our approach is based on translating CASP programs into the solver-independent FlatZinc language that supports several Constraint Programming and Integer Programming backend solvers. Our solver supports a rich language of linear constraints, including some common global constraints. As for evaluation, we show that asp-fzn is competitive with state-of-the-art ASP solvers on benchmarks taken from past ASP competitions. Furthermore, we evaluate it on several CASP problems from the literature and compare its performance with clingcon, which is a prominent CASP solver that supports most of the asp-fzn language. The performance of asp-fzn is very promising as it is already competitive on plain ASP and even outperforms clingcon on some CASP benchmarks.
 ]]></content:encoded>
-<pubDate>Tue, 16 Sep 2025 00:00:00 -0400</pubDate>
 <pubDate>Tue, 16 Sep 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -52,14 +71,13 @@ Abstract: We present the solver asp-fzn for Constraint Answer Set Programming (C
 <link>https://arxiv.org/abs/2509.05381</link>
 <guid>https://arxiv.org/abs/2509.05381</guid>
 <content:encoded><![CDATA[
-<div> Reinforcement learning, human feedback, misspecification, calibration oracle, alignment<br>
-Summary:<br>
-The study focuses on reinforcement learning from human feedback under misspecification where feedback may be biased in certain contexts. It is shown that when feedback is biased on a fraction of contexts, any learning algorithm requires exponentially many samples to distinguish between two possible reward functions that differ only on these contexts. However, with a calibration oracle to identify unreliable feedback, the exponential barrier can be overcome with just a few queries. The gap between the optimized proxy from human feedback and the true objective is limited by the frequency of problematic contexts, the degree of feedback inaccuracy, and the disagreement in true objectives. The research highlights the importance of actively navigating around misspecification to address challenges in AI alignment. <br><br>Summary: <div>
+<div> Reinforcement learning, human feedback, misspecification, calibration oracle, alignment<br />
+Summary:<br />
+The study focuses on reinforcement learning from human feedback under misspecification where feedback may be biased in certain contexts. It is shown that when feedback is biased on a fraction of contexts, any learning algorithm requires exponentially many samples to distinguish between two possible reward functions that differ only on these contexts. However, with a calibration oracle to identify unreliable feedback, the exponential barrier can be overcome with just a few queries. The gap between the optimized proxy from human feedback and the true objective is limited by the frequency of problematic contexts, the degree of feedback inaccuracy, and the disagreement in true objectives. The research highlights the importance of actively navigating around misspecification to address challenges in AI alignment. <br /><br />Summary: <div>
 arXiv:2509.05381v3 Announce Type: replace 
 Abstract: We study reinforcement learning from human feedback under misspecification. Sometimes human feedback is systematically wrong on certain types of inputs, like a broken compass that points the wrong way in specific regions. We prove that when feedback is biased on a fraction alpha of contexts with bias strength epsilon, any learning algorithm needs exponentially many samples exp(n*alpha*epsilon^2) to distinguish between two possible "true" reward functions that differ only on these problematic contexts. However, if you can identify where feedback is unreliable (a "calibration oracle"), you can focus your limited questions there and overcome the exponential barrier with just O(1/(alpha*epsilon^2)) queries. This quantifies why alignment is hard: rare edge cases with subtly biased feedback create an exponentially hard learning problem unless you know where to look.
   The gap between what we optimize (proxy from human feedback) and what we want (true objective) is fundamentally limited by how common the problematic contexts are (alpha), how wrong the feedback is there (epsilon), and how much the true objectives disagree there (gamma). Murphy's Law for AI alignment: the gap always wins unless you actively route around misspecification.
 ]]></content:encoded>
-<pubDate>Tue, 16 Sep 2025 00:00:00 -0400</pubDate>
 <pubDate>Tue, 16 Sep 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -72,11 +90,10 @@ Abstract: We study reinforcement learning from human feedback under misspecifica
 Summary:
 This paper addresses the challenges of shortcuts and lack of contextual understanding in complex cross-modal reasoning by proposing a zero-shot multimodal reasoning component guided by human-like cognitive strategies centered on an "intent sketch". The component consists of three modules- Intent Perceiver, Strategy Generator, and Strategy Selector, enabling an explicit "understand-plan-select" cognitive process. By generating and filtering "intent sketch" strategies, the method achieves cross-model transfer without requiring parameter fine-tuning. Information-theoretic analysis demonstrates a reduction in conditional entropy and improved information utilization efficiency, thereby suppressing unintended shortcut reasoning. Experiments on various datasets validate the method's generalizability and robust gains, showing consistent improvements across different reasoning engines and pipeline combinations. The "three-module" scheme achieves gains of up to approximately 9.51 percentage points, highlighting the practical value and portability of the "intent sketch" reasoning component in zero-shot scenarios. 
 
-<br><br>Summary: <div>
+<br /><br />Summary: <div>
 arXiv:2509.06641v3 Announce Type: replace 
 Abstract: Targeting the issues of "shortcuts" and insufficient contextual understanding in complex cross-modal reasoning of multimodal large models, this paper proposes a zero-shot multimodal reasoning component guided by human-like cognitive strategies centered on an "intent sketch". The component comprises a plug-and-play three-module pipeline-Intent Perceiver, Strategy Generator, and Strategy Selector-that explicitly constructs a "understand-plan-select" cognitive process. By generating and filtering "intent sketch" strategies to guide the final reasoning, it requires no parameter fine-tuning and achieves cross-model transfer solely through in-context engineering. Information-theoretic analysis shows that this process can reduce conditional entropy and improve information utilization efficiency, thereby suppressing unintended shortcut reasoning. Experiments on IntentBench, WorldSense, and Daily-Omni validate the method's generality and robust gains; compared with their respective baselines, the complete "three-module" scheme yields consistent improvements across different reasoning engines and pipeline combinations, with gains up to approximately 9.51 percentage points, demonstrating the practical value and portability of the "intent sketch" reasoning component in zero-shot scenarios.
 ]]></content:encoded>
-<pubDate>Tue, 16 Sep 2025 00:00:00 -0400</pubDate>
 <pubDate>Tue, 16 Sep 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -89,11 +106,10 @@ Abstract: Targeting the issues of "shortcuts" and insufficient contextual unders
 Summary:
 The article introduces an evaluation framework for iterative refinement in large language models (LLMs) used in multi-turn workflows. The framework spans ideation, code, and math tasks and involves controlled 12-turn conversations with various prompts. The outcomes are scored using domain-appropriate checks and turn-level behavior is tracked using three families of metrics. The results show that gains from iteration are domain-dependent, with early improvements in ideation and code tasks and late-turn gains in math tasks guided by elaboration. Vague feedback often leads to plateauing or reversal of correctness, while targeted prompts consistently improve quality in different domains. Domain patterns also emerge, with ideation focusing on semantic meaning, code primarily increasing in size, and math showing potential for significant late-turn gains through elaborative iteration. The framework and metrics allow for measurable and comparable iteration strategies across models, indicating when to steer, stop, or switch strategies. 
 
-<br><br>Summary: <div>
+<br /><br />Summary: <div>
 arXiv:2509.06770v2 Announce Type: replace 
 Abstract: Large language models (LLMs) are now used in multi-turn workflows, but we still lack a clear way to measure when iteration helps and when it hurts. We present an evaluation framework for iterative refinement that spans ideation, code, and math. Our protocol runs controlled 12-turn conversations per task, utilizing a variety of prompts ranging from vague ``improve it'' feedback to targeted steering, and logs per-turn outputs. We score outcomes with domain-appropriate checks (unit tests for code; answer-equivalence plus reasoning-soundness for math; originality and feasibility for ideation) and track turn-level behavior with three families of metrics: semantic movement across turns, turn-to-turn change, and output size growth. Across models and tasks, gains are domain-dependent: they arrive early in ideas and code, but in math late turns matter when guided by elaboration. After the first few turns, vague feedback often plateaus or reverses correctness, while targeted prompts reliably shift the intended quality axis (novelty vs. feasibility in ideation; speed vs. readability in code; in math, elaboration outperforms exploration and drives late-turn gains). We also observe consistent domain patterns: ideation moves more in meaning across turns, code tends to grow in size with little semantic change, and math starts fixed but can break that path with late, elaborative iteration. Together, the framework and metrics make iteration measurable and comparable across models, and signal when to steer, stop, or switch strategies.
 ]]></content:encoded>
-<pubDate>Tue, 16 Sep 2025 00:00:00 -0400</pubDate>
 <pubDate>Tue, 16 Sep 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -106,11 +122,10 @@ Abstract: Large language models (LLMs) are now used in multi-turn workflows, but
 Summary:
 HybridMamba is a novel architecture that combines visual transformers with state-space temporal modeling to accurately detect traffic crashes in surveillance videos. This innovative approach incorporates multi-level token compression and hierarchical temporal processing to maintain computational efficiency without compromising temporal resolution. Tested on a large dataset from the Iowa Department of Transportation, HybridMamba achieves a mean absolute error of 1.50 seconds for 2-minute videos, with 65.2% of predictions within one second of the ground truth. It outperforms existing video-language models and demonstrates effective temporal localization across a range of video durations and environmental conditions. Though HybridMamba shows promise for precise crash time localization in traffic surveillance, challenges remain for its widespread deployment. 
 
-<br><br>Summary: <div>
+<br /><br />Summary: <div>
 arXiv:2504.03235v3 Announce Type: replace-cross 
 Abstract: Traffic crash detection in long-form surveillance videos is essential for improving emergency response and infrastructure planning, yet remains difficult due to the brief and infrequent nature of crash events. We present \textbf{HybridMamba}, a novel architecture integrating visual transformers with state-space temporal modeling to achieve high-precision crash time localization. Our approach introduces multi-level token compression and hierarchical temporal processing to maintain computational efficiency without sacrificing temporal resolution. Evaluated on a large-scale dataset from the Iowa Department of Transportation, HybridMamba achieves a mean absolute error of \textbf{1.50 seconds} for 2-minute videos ($p<0.01$ compared to baselines), with \textbf{65.2%} of predictions falling within one second of the ground truth. It outperforms recent video-language models (e.g., TimeChat, VideoLLaMA-2) by up to 3.95 seconds while using significantly fewer parameters (3B vs. 13--72B). Our results demonstrate effective temporal localization across various video durations (2--40 minutes) and diverse environmental conditions, highlighting HybridMamba's potential for fine-grained temporal localization in traffic surveillance while identifying challenges that remain for extended deployment.
 ]]></content:encoded>
-<pubDate>Tue, 16 Sep 2025 00:00:00 -0400</pubDate>
 <pubDate>Tue, 16 Sep 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -118,13 +133,12 @@ Abstract: Traffic crash detection in long-form surveillance videos is essential 
 <link>https://arxiv.org/abs/2506.03194</link>
 <guid>https://arxiv.org/abs/2506.03194</guid>
 <content:encoded><![CDATA[
-<div> Keywords: Multimodal Large Language Models, HueManity benchmark, visual perception, Ishihara test, performance deficit <br>
+<div> Keywords: Multimodal Large Language Models, HueManity benchmark, visual perception, Ishihara test, performance deficit <br />
 Summary: 
-The study introduces the HueManity benchmark aimed at evaluating visual perception in Multimodal Large Language Models (MLLMs) using images with alphanumeric strings embedded in Ishihara test style dot patterns. Evaluation of nine MLLMs on HueManity shows a significant performance gap compared to human and traditional computer vision models. The best MLLM achieved low accuracy on both numeric and alphanumeric tasks, highlighting the limitations in their visual capabilities. Human participants and a fine-tuned ResNet50 model outperformed MLLMs in pattern recognition tasks. The findings indicate a critical shortfall in MLLMs' ability to handle nuanced perceptual tasks. The analysis explores potential factors contributing to this gap, including architecture and training paradigms. The open-sourcing of the HueManity dataset and code aims to stimulate further research in enhancing the perceptual robustness of MLLMs.<br><br>Summary: <div>
+The study introduces the HueManity benchmark aimed at evaluating visual perception in Multimodal Large Language Models (MLLMs) using images with alphanumeric strings embedded in Ishihara test style dot patterns. Evaluation of nine MLLMs on HueManity shows a significant performance gap compared to human and traditional computer vision models. The best MLLM achieved low accuracy on both numeric and alphanumeric tasks, highlighting the limitations in their visual capabilities. Human participants and a fine-tuned ResNet50 model outperformed MLLMs in pattern recognition tasks. The findings indicate a critical shortfall in MLLMs' ability to handle nuanced perceptual tasks. The analysis explores potential factors contributing to this gap, including architecture and training paradigms. The open-sourcing of the HueManity dataset and code aims to stimulate further research in enhancing the perceptual robustness of MLLMs.<br /><br />Summary: <div>
 arXiv:2506.03194v4 Announce Type: replace-cross 
 Abstract: Multimodal Large Language Models (MLLMs) excel at high-level visual reasoning, but their performance on nuanced perceptual tasks remains surprisingly limited. We present HueManity, a benchmark designed to assess visual perception in MLLMs. The dataset comprises 83,850 images featuring two-character alphanumeric strings embedded in Ishihara test style dot patterns, challenging models on precise pattern recognition. Our evaluation of nine state-of-the-art MLLMs on HueManity demonstrates a significant performance deficit compared to human and traditional computer vision baselines. The best-performing MLLM achieved a 33.6% accuracy on the numeric `easy' task and a striking 3% on the alphanumeric `hard' task. In contrast, human participants achieved near-perfect scores (100% and 95.6%), and a fine-tuned ResNet50 model reached accuracies of 96.5% and 94.5%. These results highlight a critical gap in the visual capabilities of current MLLMs. Our analysis further explores potential architectural and training-paradigm factors contributing to this perceptual gap in MLLMs. We open-source HueManity dataset and code to foster further research in improving perceptual robustness of MLLMs.
 ]]></content:encoded>
-<pubDate>Tue, 16 Sep 2025 00:00:00 -0400</pubDate>
 <pubDate>Tue, 16 Sep 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -137,11 +151,10 @@ Abstract: Multimodal Large Language Models (MLLMs) excel at high-level visual re
 Summary: 
 This study introduces the integration of Augmented Intelligence (AuI) into Intelligent Tutoring Systems (ITS) to tackle challenges in Artificial Intelligence in Education (AIED), such as teacher engagement, AI reliability, and resource accessibility. The MathAIde system, developed with input from teachers and utilizing computer vision and AI, corrects math exercises from student images and offers feedback. The research process involved collaboration with teachers, prototyping, A/B testing, and a real-world case study. Results emphasize the significance of a teacher-centered, user-driven strategy, where AI proposes solutions while teachers make final decisions. The study underscores the efficiency, usability, and potential adoption of such systems in classrooms, particularly in resource-constrained settings. It offers valuable insights for designing ITSs that combine user needs and technological capabilities, showcasing the effectiveness of a mixed-methods, user-centric approach to implementing AuI in educational technologies. 
 
-<br><br>Summary: <div>
+<br /><br />Summary: <div>
 arXiv:2508.00103v4 Announce Type: replace-cross 
 Abstract: This study explores the integration of Augmented Intelligence (AuI) in Intelligent Tutoring Systems (ITS) to address challenges in Artificial Intelligence in Education (AIED), including teacher involvement, AI reliability, and resource accessibility. We present MathAIde, an ITS that uses computer vision and AI to correct mathematics exercises from student work photos and provide feedback. The system was designed through a collaborative process involving brainstorming with teachers, high-fidelity prototyping, A/B testing, and a real-world case study. Findings emphasize the importance of a teacher-centered, user-driven approach, where AI suggests remediation alternatives while teachers retain decision-making. Results highlight efficiency, usability, and adoption potential in classroom contexts, particularly in resource-limited environments. The study contributes practical insights into designing ITSs that balanceuser needs and technological feasibility, while advancing AIED research by demonstrating the effectiveness of a mixed-methods, user-centered approach to implementing AuI in educational technologies.
 ]]></content:encoded>
-<pubDate>Tue, 16 Sep 2025 00:00:00 -0400</pubDate>
 <pubDate>Tue, 16 Sep 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -154,11 +167,10 @@ Abstract: This study explores the integration of Augmented Intelligence (AuI) in
 Summary:
 The chapter delves into the concept of auditability in AI systems, emphasizing the need for independent assessment of compliance with ethical, legal, and technical standards throughout their lifecycle. It discusses the formalization of auditability through emerging regulatory frameworks like the EU AI Act, which require documentation, risk assessments, and governance structures. The analysis identifies various challenges facing AI auditability, including technical opacity, inconsistent documentation practices, lack of standardized audit tools and metrics, and conflicting principles within responsible AI frameworks. The discussion underscores the necessity for clear guidelines, harmonized international regulations, and robust socio-technical methodologies to implement auditability at scale. The chapter concludes by stressing the significance of multi-stakeholder collaboration and empowering auditors to establish an effective AI audit ecosystem, asserting that auditability should be integrated into AI development practices and governance structures to ensure alignment with ethical and legal requirements. 
 
-<br><br>Summary: <div>
+<br /><br />Summary: <div>
 arXiv:2509.00575v3 Announce Type: replace-cross 
 Abstract: Auditability is defined as the capacity of AI systems to be independently assessed for compliance with ethical, legal, and technical standards throughout their lifecycle. The chapter explores how auditability is being formalized through emerging regulatory frameworks, such as the EU AI Act, which mandate documentation, risk assessments, and governance structures. It analyzes the diverse challenges facing AI auditability, including technical opacity, inconsistent documentation practices, lack of standardized audit tools and metrics, and conflicting principles within existing responsible AI frameworks. The discussion highlights the need for clear guidelines, harmonized international regulations, and robust socio-technical methodologies to operationalize auditability at scale. The chapter concludes by emphasizing the importance of multi-stakeholder collaboration and auditor empowerment in building an effective AI audit ecosystem. It argues that auditability must be embedded in AI development practices and governance infrastructures to ensure that AI systems are not only functional but also ethically and legally aligned.
 ]]></content:encoded>
-<pubDate>Tue, 16 Sep 2025 00:00:00 -0400</pubDate>
 <pubDate>Tue, 16 Sep 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -169,11 +181,10 @@ Abstract: Auditability is defined as the capacity of AI systems to be independen
 <div> Keywords: scams, real-time social engineering, privacy-preserving, AI-in-the-loop framework, federated learning
 
 Summary: 
-Scams utilizing real-time social engineering techniques, such as phishing and impersonation, present a persistent threat online. A new proactive defense framework is proposed, leveraging AI and privacy-preserving techniques to detect and disrupt scam conversations in real time. The system combines AI with a safety-aware utility function, utilizing federated learning for continual model updates without raw data sharing. Experimental results show the system produces engaging responses with low PII leakage. Models trained with FedAvg sustain engagement and relevance while protecting privacy. Guard models offer a trade-off between privacy and effectiveness, with stricter settings limiting conversation engagement but reducing privacy risk. This framework integrates scam-baiting, privacy preservation, and safety moderation, offering a comprehensive defense against evolving online scams. <br><br>Summary: <div>
+Scams utilizing real-time social engineering techniques, such as phishing and impersonation, present a persistent threat online. A new proactive defense framework is proposed, leveraging AI and privacy-preserving techniques to detect and disrupt scam conversations in real time. The system combines AI with a safety-aware utility function, utilizing federated learning for continual model updates without raw data sharing. Experimental results show the system produces engaging responses with low PII leakage. Models trained with FedAvg sustain engagement and relevance while protecting privacy. Guard models offer a trade-off between privacy and effectiveness, with stricter settings limiting conversation engagement but reducing privacy risk. This framework integrates scam-baiting, privacy preservation, and safety moderation, offering a comprehensive defense against evolving online scams. <br /><br />Summary: <div>
 arXiv:2509.05362v2 Announce Type: replace-cross 
 Abstract: Scams exploiting real-time social engineering -- such as phishing, impersonation, and phone fraud -- remain a persistent and evolving threat across digital platforms. Existing defenses are largely reactive, offering limited protection during active interactions. We propose a privacy-preserving, AI-in-the-loop framework that proactively detects and disrupts scam conversations in real time. The system combines instruction-tuned artificial intelligence with a safety-aware utility function that balances engagement with harm minimization, and employs federated learning to enable continual model updates without raw data sharing. Experimental evaluations show that the system produces fluent and engaging responses (perplexity as low as 22.3, engagement $\approx$0.80), while human studies confirm significant gains in realism, safety, and effectiveness over strong baselines. In federated settings, models trained with FedAvg sustain up to 30 rounds while preserving high engagement ($\approx$0.80), strong relevance ($\approx$0.74), and low PII leakage ($\leq$0.0085). Even with differential privacy, novelty and safety remain stable, indicating that robust privacy can be achieved without sacrificing performance. The evaluation of guard models (LlamaGuard, LlamaGuard2/3, MD-Judge) shows a straightforward pattern: stricter moderation settings reduce the chance of exposing personal information, but they also limit how much the model engages in conversation. In contrast, more relaxed settings allow longer and richer interactions, which improve scam detection, but at the cost of higher privacy risk. To our knowledge, this is the first framework to unify real-time scam-baiting, federated privacy preservation, and calibrated safety moderation into a proactive defense paradigm.
 ]]></content:encoded>
-<pubDate>Tue, 16 Sep 2025 00:00:00 -0400</pubDate>
 <pubDate>Tue, 16 Sep 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -184,11 +195,10 @@ Abstract: Scams exploiting real-time social engineering -- such as phishing, imp
 <div> AI Adoption Index, Gulf Cooperation Council, public sector, governance models, policy directives
 
 Summary:
-The study focuses on developing an AI Adoption Index tailored to the Gulf Cooperation Council (GCC) countries' public sector. It combines theory-driven foundations with empirical evidence from a survey of government employees to identify key drivers of successful AI implementation in the region. The research highlights the importance of robust technical infrastructure and clear policy mandates in driving AI adoption, emphasizing their influence over organizational readiness. The developed index, comprising Technical Infrastructure, Organizational Readiness, and Governance Environment dimensions, provides a comprehensive tool for measuring AI maturity in the GCC context. The findings suggest that resource-rich environments and top-down policy directives play a significant role in driving rapid technology uptake. By offering actionable guidance for policymakers, the index aims to support ethical, regulatory, and sustainable AI-driven transformation in the GCC region and beyond. <br><br>Summary: <div>
+The study focuses on developing an AI Adoption Index tailored to the Gulf Cooperation Council (GCC) countries' public sector. It combines theory-driven foundations with empirical evidence from a survey of government employees to identify key drivers of successful AI implementation in the region. The research highlights the importance of robust technical infrastructure and clear policy mandates in driving AI adoption, emphasizing their influence over organizational readiness. The developed index, comprising Technical Infrastructure, Organizational Readiness, and Governance Environment dimensions, provides a comprehensive tool for measuring AI maturity in the GCC context. The findings suggest that resource-rich environments and top-down policy directives play a significant role in driving rapid technology uptake. By offering actionable guidance for policymakers, the index aims to support ethical, regulatory, and sustainable AI-driven transformation in the GCC region and beyond. <br /><br />Summary: <div>
 arXiv:2509.05474v3 Announce Type: replace-cross 
 Abstract: Artificial intelligence (AI) is rapidly transforming public-sector processes worldwide, yet standardized measures rarely address the unique drivers, governance models, and cultural nuances of the Gulf Cooperation Council (GCC) countries. This study employs a theory-driven foundation derived from an in-depth analysis of literature review and six National AI Strategies (NASs), coupled with a data-driven approach that utilizes a survey of 203 mid- and senior-level government employees and advanced statistical techniques (K-Means clustering, Principal Component Analysis, and Partial Least Squares Structural Equation Modeling). By combining policy insights with empirical evidence, the research develops and validates a novel AI Adoption Index specifically tailored to the GCC public sector. Findings indicate that robust technical infrastructure and clear policy mandates exert the strongest influence on successful AI implementations, overshadowing organizational readiness in early adoption stages. The combined model explains 70% of the variance in AI outcomes, suggesting that resource-rich environments and top-down policy directives can drive rapid but uneven technology uptake. By consolidating key dimensions (Technical Infrastructure (TI), Organizational Readiness (OR), and Governance Environment (GE)) into a single composite index, this study provides a holistic yet context-sensitive tool for benchmarking AI maturity. The index offers actionable guidance for policymakers seeking to harmonize large-scale deployments with ethical and regulatory standards. Beyond advancing academic discourse, these insights inform more strategic allocation of resources, cross-country cooperation, and capacity-building initiatives, thereby supporting sustained AI-driven transformation in the GCC region and beyond.
 ]]></content:encoded>
-<pubDate>Tue, 16 Sep 2025 00:00:00 -0400</pubDate>
 <pubDate>Tue, 16 Sep 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -203,7 +213,6 @@ arXiv:2509.05755v2 Announce Type: replace-cross
 Abstract: LLM-based agentic systems leverage large language models to handle user queries, make decisions, and execute external tools for complex tasks across domains like chatbots, customer service, and software engineering. A critical component of these systems is the Tool Invocation Prompt (TIP), which defines tool interaction protocols and guides LLMs to ensure the security and correctness of tool usage. Despite its importance, TIP security has been largely overlooked. This work investigates TIP-related security risks, revealing that major LLM-based systems like Cursor, Claude Code, and others are vulnerable to attacks such as remote code execution (RCE) and denial of service (DoS). Through a systematic TIP exploitation workflow (TEW), we demonstrate external tool behavior hijacking via manipulated tool invocations. We also propose defense mechanisms to enhance TIP security in LLM-based agentic systems.
 ]]></content:encoded>
 <pubDate>Tue, 16 Sep 2025 00:00:00 -0400</pubDate>
-<pubDate>Tue, 16 Sep 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
 <title>Multi-View Slot Attention Using Paraphrased Texts for Face Anti-Spoofing</title>
@@ -215,17 +224,16 @@ Abstract: LLM-based agentic systems leverage large language models to handle use
 Summary:
 The paper introduces MVP-FAS, a novel face anti-spoofing framework that enhances cross-domain performance by leveraging CLIP's patch embedding tokens more effectively. MVP-FAS incorporates two key modules, Multi-View Slot attention (MVS) and Multi-Text Patch Alignment (MTPA), to extract detailed spatial features and global context from diverse texts with multiple perspectives. By utilizing multiple paraphrased texts, the framework reduces reliance on domain-specific text prompts and improves semantic robustness. Experimental results demonstrate that MVP-FAS outperforms existing state-of-the-art methods on various cross-domain datasets. The code for implementing MVP-FAS is available on GitHub for further research and experimentation.
 
-Summary: <br>
-1. Introduces MVP-FAS for face anti-spoofing<br>
-2. Enhances cross-domain performance using CLIP's patch embedding tokens<br>
-3. Incorporates MVS and MTPA modules for feature extraction<br>
-4. Reduces dependence on domain-specific text prompts<br>
-5. Outperforms existing state-of-the-art methods in experiments with cross-domain datasets<br>
+Summary: <br />
+1. Introduces MVP-FAS for face anti-spoofing<br />
+2. Enhances cross-domain performance using CLIP's patch embedding tokens<br />
+3. Incorporates MVS and MTPA modules for feature extraction<br />
+4. Reduces dependence on domain-specific text prompts<br />
+5. Outperforms existing state-of-the-art methods in experiments with cross-domain datasets<br />
 6. Code for MVP-FAS implementation available on GitHub for further research. <div>
 arXiv:2509.06336v2 Announce Type: replace-cross 
 Abstract: Recent face anti-spoofing (FAS) methods have shown remarkable cross-domain performance by employing vision-language models like CLIP. However, existing CLIP-based FAS models do not fully exploit CLIP's patch embedding tokens, failing to detect critical spoofing clues. Moreover, these models rely on a single text prompt per class (e.g., 'live' or 'fake'), which limits generalization. To address these issues, we propose MVP-FAS, a novel framework incorporating two key modules: Multi-View Slot attention (MVS) and Multi-Text Patch Alignment (MTPA). Both modules utilize multiple paraphrased texts to generate generalized features and reduce dependence on domain-specific text. MVS extracts local detailed spatial features and global context from patch embeddings by leveraging diverse texts with multiple perspectives. MTPA aligns patches with multiple text representations to improve semantic robustness. Extensive experiments demonstrate that MVP-FAS achieves superior generalization performance, outperforming previous state-of-the-art methods on cross-domain datasets. Code: https://github.com/Elune001/MVP-FAS.
 ]]></content:encoded>
-<pubDate>Tue, 16 Sep 2025 00:00:00 -0400</pubDate>
 <pubDate>Tue, 16 Sep 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -236,11 +244,10 @@ Abstract: Recent face anti-spoofing (FAS) methods have shown remarkable cross-do
 <div> Keywords: Photoplethysmogram, Electrocardiogram, QualityFM, signal quality, transfer learning
 
 Summary:
-QualityFM is a novel multimodal foundation model designed to understand signal quality in physiological signals like PPG and ECG. It is pre-trained on a large dataset and uses a dual-track architecture to process signals of different quality, guided by a self-distillation strategy. A windowed sparse attention mechanism in a Transformer-based model helps handle long sequential signals, and a composite loss function preserves frequency-domain characteristics. Three models with varying parameter counts are pre-trained and demonstrate their effectiveness through transfer learning on clinical tasks: false alarm of ventricular tachycardia detection, identification of atrial fibrillation, and estimation of arterial blood pressure from PPG and ECG signals.<br><br>Summary: QualityFM is a novel model designed to understand signal quality in physiological signals like PPG and ECG. It uses a dual-track architecture guided by self-distillation, a windowed sparse attention mechanism, and a composite loss function to handle long sequential signals and preserve frequency-domain characteristics. Pre-trained models show efficacy in tasks such as false alarm detection, atrial fibrillation identification, and arterial blood pressure estimation. <div>
+QualityFM is a novel multimodal foundation model designed to understand signal quality in physiological signals like PPG and ECG. It is pre-trained on a large dataset and uses a dual-track architecture to process signals of different quality, guided by a self-distillation strategy. A windowed sparse attention mechanism in a Transformer-based model helps handle long sequential signals, and a composite loss function preserves frequency-domain characteristics. Three models with varying parameter counts are pre-trained and demonstrate their effectiveness through transfer learning on clinical tasks: false alarm of ventricular tachycardia detection, identification of atrial fibrillation, and estimation of arterial blood pressure from PPG and ECG signals.<br /><br />Summary: QualityFM is a novel model designed to understand signal quality in physiological signals like PPG and ECG. It uses a dual-track architecture guided by self-distillation, a windowed sparse attention mechanism, and a composite loss function to handle long sequential signals and preserve frequency-domain characteristics. Pre-trained models show efficacy in tasks such as false alarm detection, atrial fibrillation identification, and arterial blood pressure estimation. <div>
 arXiv:2509.06516v2 Announce Type: replace-cross 
 Abstract: Photoplethysmogram (PPG) and electrocardiogram (ECG) are commonly recorded in intesive care unit (ICU) and operating room (OR). However, the high incidence of poor, incomplete, and inconsistent signal quality, can lead to false alarms or diagnostic inaccuracies. The methods explored so far suffer from limited generalizability, reliance on extensive labeled data, and poor cross-task transferability. To overcome these challenges, we introduce QualityFM, a novel multimodal foundation model for these physiological signals, designed to acquire a general-purpose understanding of signal quality. Our model is pre-trained on an large-scale dataset comprising over 21 million 30-second waveforms and 179,757 hours of data. Our approach involves a dual-track architecture that processes paired physiological signals of differing quality, leveraging a self-distillation strategy where an encoder for high-quality signals is used to guide the training of an encoder for low-quality signals. To efficiently handle long sequential signals and capture essential local quasi-periodic patterns, we integrate a windowed sparse attention mechanism within our Transformer-based model. Furthermore, a composite loss function, which combines direct distillation loss on encoder outputs with indirect reconstruction loss based on power and phase spectra, ensures the preservation of frequency-domain characteristics of the signals. We pre-train three models with varying parameter counts (9.6 M to 319 M) and demonstrate their efficacy and practical value through transfer learning on three distinct clinical tasks: false alarm of ventricular tachycardia detection, the identification of atrial fibrillation and the estimation of arterial blood pressure (ABP) from PPG and ECG signals.
 ]]></content:encoded>
-<pubDate>Tue, 16 Sep 2025 00:00:00 -0400</pubDate>
 <pubDate>Tue, 16 Sep 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -253,14 +260,12 @@ Abstract: Photoplethysmogram (PPG) and electrocardiogram (ECG) are commonly reco
 Summary: 
 Plants face multiple stresses in their natural environments, with nutrient stress, particularly nitrogen deficiency, becoming critical when combined with drought and weed competition. Timely detection and classification of nitrogen stress severity are essential for effective plant health management. A novel deep learning framework was proposed that utilizes a combination of imaging modalities to accurately classify nitrogen stress severity in a combined stress environment. The model employs a unique blend of RGB, multispectral, and two infrared wavelengths to capture plant responses to varying levels of nitrogen availability, water stress, and weed pressures. A spatial-temporal deep learning pipeline, combining a Convolutional Neural Network (CNN) with a Long Short-Term Memory (LSTM) network, achieved an impressive accuracy of 98%, outperforming a spatial-only CNN pipeline and other machine learning methods. This robust platform provides actionable insights for improved crop management and plant health. 
 
-<br><br>Summary: <div>
+<br /><br />Summary: <div>
 arXiv:2509.06625v2 Announce Type: replace-cross 
 Abstract: Plants in their natural habitats endure an array of interacting stresses, both biotic and abiotic, that rarely occur in isolation. Nutrient stress-particularly nitrogen deficiency-becomes even more critical when compounded with drought and weed competition, making it increasingly difficult to distinguish and address its effects. Early detection of nitrogen stress is therefore crucial for protecting plant health and implementing effective management strategies. This study proposes a novel deep learning framework to accurately classify nitrogen stress severity in a combined stress environment. Our model uses a unique blend of four imaging modalities-RGB, multispectral, and two infrared wavelengths-to capture a wide range of physiological plant responses from canopy images. These images, provided as time-series data, document plant health across three levels of nitrogen availability (low, medium, and high) under varying water stress and weed pressures. The core of our approach is a spatio-temporal deep learning pipeline that merges a Convolutional Neural Network (CNN) for extracting spatial features from images with a Long Short-Term Memory (LSTM) network to capture temporal dependencies. We also devised and evaluated a spatial-only CNN pipeline for comparison. Our CNN-LSTM pipeline achieved an impressive accuracy of 98%, impressively surpassing the spatial-only model's 80.45% and other previously reported machine learning method's 76%. These results bring actionable insights based on the power of our CNN-LSTM approach in effectively capturing the subtle and complex interactions between nitrogen deficiency, water stress, and weed pressure. This robust platform offers a promising tool for the timely and proactive identification of nitrogen stress severity, enabling better crop management and improved plant health.
 ]]></content:encoded>
 <pubDate>Tue, 16 Sep 2025 00:00:00 -0400</pubDate>
-<pubDate>Tue, 16 Sep 2025 00:00:00 -0400</pubDate>
 </item>
-
 <item>
 <title>Situation Model of the Transport, Transport Emissions and Meteorological Conditions</title>
 <link>https://arxiv.org/abs/2509.10541</link>
@@ -11378,166 +11383,6 @@ Abstract: Hand gesture understanding is essential for several applications in hu
 <content:encoded><![CDATA[
 arXiv:2509.07526v1 Announce Type: cross 
 Abstract: Large language models (LLMs) have transformed NLP, yet their integration with audio remains underexplored -- despite audio's centrality to human communication. We introduce Falcon3-Audio, a family of Audio-Language Models (ALMs) built on instruction-tuned LLMs and Whisper encoders. Using a remarkably small amount of public audio data -- less than 30K hours (5K unique) -- Falcon3-Audio-7B matches the best reported performance among open-weight models on the MMAU benchmark, with a score of 64.14, matching R1-AQA, while distinguishing itself through superior data and parameter efficiency, single-stage training, and transparency. Notably, our smallest 1B model remains competitive with larger open models ranging from 2B to 13B parameters. Through extensive ablations, we find that common complexities -- such as curriculum learning, multiple audio encoders, and intricate cross-attention connectors -- are not required for strong performance, even compared to models trained on over 500K hours of data.
-]]></content:encoded>
-<pubDate>Wed, 10 Sep 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>FLeW: Facet-Level and Adaptive Weighted Representation Learning of Scientific Documents</title>
-<link>https://arxiv.org/abs/2509.07531</link>
-<guid>https://arxiv.org/abs/2509.07531</guid>
-<content:encoded><![CDATA[
-arXiv:2509.07531v1 Announce Type: cross 
-Abstract: Scientific document representation learning provides powerful embeddings for various tasks, while current methods face challenges across three approaches. 1) Contrastive training with citation-structural signals underutilizes citation information and still generates single-vector representations. 2) Fine-grained representation learning, which generates multiple vectors at the sentence or aspect level, requires costly integration and lacks domain generalization. 3) Task-aware learning depends on manually predefined task categorization, overlooking nuanced task distinctions and requiring extra training data for task-specific modules. To address these problems, we propose a new method that unifies the three approaches for better representations, namely FLeW. Specifically, we introduce a novel triplet sampling method that leverages citation intent and frequency to enhance citation-structural signals for training. Citation intents (background, method, result), aligned with the general structure of scientific writing, facilitate a domain-generalized facet partition for fine-grained representation learning. Then, we adopt a simple weight search to adaptively integrate three facet-level embeddings into a task-specific document embedding without task-aware fine-tuning. Experiments show the applicability and robustness of FLeW across multiple scientific tasks and fields, compared to prior models.
-]]></content:encoded>
-<pubDate>Wed, 10 Sep 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>HU-based Foreground Masking for 3D Medical Masked Image Modeling</title>
-<link>https://arxiv.org/abs/2509.07534</link>
-<guid>https://arxiv.org/abs/2509.07534</guid>
-<content:encoded><![CDATA[
-arXiv:2509.07534v1 Announce Type: cross 
-Abstract: While Masked Image Modeling (MIM) has revolutionized fields of computer vision, its adoption in 3D medical image computing has been limited by the use of random masking, which overlooks the density of anatomical objects. To address this limitation, we enhance the pretext task with a simple yet effective masking strategy. Leveraging Hounsfield Unit (HU) measurements, we implement an HU-based Foreground Masking, which focuses on the intensity distribution of visceral organs and excludes non-tissue regions, such as air and fluid, that lack diagnostically meaningful features. Extensive experiments on five public 3D medical imaging datasets demonstrate that our masking consistently improves performance, both in quality of segmentation and Dice score (BTCV:~84.64\%, Flare22:~92.43\%, MM-WHS:~90.67\%, Amos22:~88.64\%, BraTS:~78.55\%). These results underscore the importance of domain-centric MIM and suggest a promising direction for representation learning in medical image segmentation. Implementation is available at github.com/AISeedHub/SubFore/.
-]]></content:encoded>
-<pubDate>Wed, 10 Sep 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Avoiding Knowledge Edit Skipping in Multi-hop Question Answering with Guided Decomposition</title>
-<link>https://arxiv.org/abs/2509.07555</link>
-<guid>https://arxiv.org/abs/2509.07555</guid>
-<content:encoded><![CDATA[
-arXiv:2509.07555v1 Announce Type: cross 
-Abstract: In a rapidly evolving world where information updates swiftly, knowledge in large language models (LLMs) becomes outdated quickly. Retraining LLMs is not a cost-effective option, making knowledge editing (KE) without modifying parameters particularly necessary. We find that although existing retrieval-augmented generation (RAG)-based KE methods excel at editing simple knowledge, they struggle with KE in multi-hop question answering due to the issue of "edit skipping", which refers to skipping the relevant edited fact in inference. In addition to the diversity of natural language expressions of knowledge, edit skipping also arises from the mismatch between the granularity of LLMs in problem-solving and the facts in the edited memory. To address this issue, we propose a novel Iterative Retrieval-Augmented Knowledge Editing method with guided decomposition (IRAKE) through the guidance from single edited facts and entire edited cases. Experimental results demonstrate that IRAKE mitigates the failure of editing caused by edit skipping and outperforms state-of-the-art methods for KE in multi-hop question answering.
-]]></content:encoded>
-<pubDate>Wed, 10 Sep 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>$\Delta L$ Normalization: Rethink Loss Aggregation in RLVR</title>
-<link>https://arxiv.org/abs/2509.07558</link>
-<guid>https://arxiv.org/abs/2509.07558</guid>
-<content:encoded><![CDATA[
-arXiv:2509.07558v1 Announce Type: cross 
-Abstract: We propose $\Delta L$ Normalization, a simple yet effective loss aggregation method tailored to the characteristic of dynamic generation lengths in Reinforcement Learning with Verifiable Rewards (RLVR). Recently, RLVR has demonstrated strong potential in improving the reasoning capabilities of large language models (LLMs), but a major challenge lies in the large variability of response lengths during training, which leads to high gradient variance and unstable optimization. Although previous methods such as GRPO, DAPO, and Dr. GRPO introduce different loss normalization terms to address this issue, they either produce biased estimates or still suffer from high gradient variance. By analyzing the effect of varying lengths on policy loss both theoretically and empirically, we reformulate the problem as finding a minimum-variance unbiased estimator. Our proposed $\Delta L$ Normalization not only provides an unbiased estimate of the true policy loss but also minimizes gradient variance in theory. Extensive experiments show that it consistently achieves superior results across different model sizes, maximum lengths, and tasks. Our code will be made public at https://github.com/zerolllin/Delta-L-Normalization.
-]]></content:encoded>
-<pubDate>Wed, 10 Sep 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Towards Generalized Routing: Model and Agent Orchestration for Adaptive and Efficient Inference</title>
-<link>https://arxiv.org/abs/2509.07571</link>
-<guid>https://arxiv.org/abs/2509.07571</guid>
-<content:encoded><![CDATA[
-arXiv:2509.07571v1 Announce Type: cross 
-Abstract: The rapid advancement of large language models (LLMs) and domain-specific AI agents has greatly expanded the ecosystem of AI-powered services. User queries, however, are highly diverse and often span multiple domains and task types, resulting in a complex and heterogeneous landscape. This diversity presents a fundamental routing challenge: how to accurately direct each query to an appropriate execution unit while optimizing both performance and efficiency. To address this, we propose MoMA (Mixture of Models and Agents), a generalized routing framework that integrates both LLM and agent-based routing. Built upon a deep understanding of model and agent capabilities, MoMA effectively handles diverse queries through precise intent recognition and adaptive routing strategies, achieving an optimal balance between efficiency and cost. Specifically, we construct a detailed training dataset to profile the capabilities of various LLMs under different routing model structures, identifying the most suitable tasks for each LLM. During inference, queries are dynamically routed to the LLM with the best cost-performance efficiency. We also introduce an efficient agent selection strategy based on a context-aware state machine and dynamic masking. Experimental results demonstrate that the MoMA router offers superior cost-efficiency and scalability compared to existing approaches.
-]]></content:encoded>
-<pubDate>Wed, 10 Sep 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Attention Maps in 3D Shape Classification for Dental Stage Estimation with Class Node Graph Attention Networks</title>
-<link>https://arxiv.org/abs/2509.07581</link>
-<guid>https://arxiv.org/abs/2509.07581</guid>
-<content:encoded><![CDATA[
-arXiv:2509.07581v1 Announce Type: cross 
-Abstract: Deep learning offers a promising avenue for automating many recognition tasks in fields such as medicine and forensics. However, the black-box nature of these models hinders their adoption in high-stakes applications where trust and accountability are required. For 3D shape recognition tasks in particular, this paper introduces the Class Node Graph Attention Network (CGAT) architecture to address this need. Applied to 3D meshes of third molars derived from CBCT images, for Demirjian stage allocation, CGAT utilizes graph attention convolutions and an inherent attention mechanism, visualized via attention rollout, to explain its decision-making process. We evaluated the local mean curvature and distance to centroid node features, both individually and in combination, as well as model depth, finding that models incorporating directed edges to a global CLS node produced more intuitive attention maps, while also yielding desirable classification performance. We analyzed the attention-based explanations of the models, and their predictive performances to propose optimal settings for the CGAT. The combination of local mean curvature and distance to centroid as node features yielded a slight performance increase with 0.76 weighted F1 score, and more comprehensive attention visualizations. The CGAT architecture's ability to generate human-understandable attention maps can enhance trust and facilitate expert validation of model decisions. While demonstrated on dental data, CGAT is broadly applicable to graph-based classification and regression tasks, promoting wider adoption of transparent and competitive deep learning models in high-stakes environments.
-]]></content:encoded>
-<pubDate>Wed, 10 Sep 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>BALI: Enhancing Biomedical Language Representations through Knowledge Graph and Language Model Alignment</title>
-<link>https://arxiv.org/abs/2509.07588</link>
-<guid>https://arxiv.org/abs/2509.07588</guid>
-<content:encoded><![CDATA[
-arXiv:2509.07588v1 Announce Type: cross 
-Abstract: In recent years, there has been substantial progress in using pretrained Language Models (LMs) on a range of tasks aimed at improving the understanding of biomedical texts. Nonetheless, existing biomedical LLMs show limited comprehension of complex, domain-specific concept structures and the factual information encoded in biomedical Knowledge Graphs (KGs). In this work, we propose BALI (Biomedical Knowledge Graph and Language Model Alignment), a novel joint LM and KG pre-training method that augments an LM with external knowledge by the simultaneous learning of a dedicated KG encoder and aligning the representations of both the LM and the graph. For a given textual sequence, we link biomedical concept mentions to the Unified Medical Language System (UMLS) KG and utilize local KG subgraphs as cross-modal positive samples for these mentions. Our empirical findings indicate that implementing our method on several leading biomedical LMs, such as PubMedBERT and BioLinkBERT, improves their performance on a range of language understanding tasks and the quality of entity representations, even with minimal pre-training on a small alignment dataset sourced from PubMed scientific abstracts.
-]]></content:encoded>
-<pubDate>Wed, 10 Sep 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Can SSD-Mamba2 Unlock Reinforcement Learning for End-to-End Motion Control?</title>
-<link>https://arxiv.org/abs/2509.07593</link>
-<guid>https://arxiv.org/abs/2509.07593</guid>
-<content:encoded><![CDATA[
-arXiv:2509.07593v1 Announce Type: cross 
-Abstract: End-to-end reinforcement learning for motion control promises unified perception-action policies that scale across embodiments and tasks, yet most deployed controllers are either blind (proprioception-only) or rely on fusion backbones with unfavorable compute-memory trade-offs. Recurrent controllers struggle with long-horizon credit assignment, and Transformer-based fusion incurs quadratic cost in token length, limiting temporal and spatial context. We present a vision-driven cross-modal RL framework built on SSD-Mamba2, a selective state-space backbone that applies state-space duality (SSD) to enable both recurrent and convolutional scanning with hardware-aware streaming and near-linear scaling. Proprioceptive states and exteroceptive observations (e.g., depth tokens) are encoded into compact tokens and fused by stacked SSD-Mamba2 layers. The selective state-space updates retain long-range dependencies with markedly lower latency and memory use than quadratic self-attention, enabling longer look-ahead, higher token resolution, and stable training under limited compute. Policies are trained end-to-end under curricula that randomize terrain and appearance and progressively increase scene complexity. A compact, state-centric reward balances task progress, energy efficiency, and safety. Across diverse motion-control scenarios, our approach consistently surpasses strong state-of-the-art baselines in return, safety (collisions and falls), and sample efficiency, while converging faster at the same compute budget. These results suggest that SSD-Mamba2 provides a practical fusion backbone for scalable, foresightful, and efficient end-to-end motion control.
-]]></content:encoded>
-<pubDate>Wed, 10 Sep 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Transformer-Based Approach to Optimal Sensor Placement for Structural Health Monitoring of Probe Cards</title>
-<link>https://arxiv.org/abs/2509.07603</link>
-<guid>https://arxiv.org/abs/2509.07603</guid>
-<content:encoded><![CDATA[
-arXiv:2509.07603v1 Announce Type: cross 
-Abstract: This paper presents an innovative Transformer-based deep learning strategy for optimizing the placement of sensors aiming at structural health monitoring of semiconductor probe cards. Failures in probe cards, including substrate cracks and loosened screws, would critically affect semiconductor manufacturing yield and reliability. Some failure modes could be detected by equipping a probe card with adequate sensors. Frequency response functions from simulated failure scenarios are adopted within a finite element model of a probe card. A comprehensive dataset, enriched by physics-informed scenario expansion and physics-aware statistical data augmentation, is exploited to train a hybrid Convolutional Neural Network and Transformer model. The model achieves high accuracy (99.83%) in classifying the probe card health states (baseline, loose screw, crack) and an excellent crack detection recall (99.73%). Model robustness is confirmed through a rigorous framework of 3 repetitions of 10-fold stratified cross-validation. The attention mechanism also pinpoints critical sensor locations: an analysis of the attention weights offers actionable insights for designing efficient, cost-effective monitoring systems by optimizing sensor configurations. This research highlights the capability of attention-based deep learning to advance proactive maintenance, enhancing operational reliability and yield in semiconductor manufacturing.
-]]></content:encoded>
-<pubDate>Wed, 10 Sep 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Beyond Rebalancing: Benchmarking Binary Classifiers Under Class Imbalance Without Rebalancing Techniques</title>
-<link>https://arxiv.org/abs/2509.07605</link>
-<guid>https://arxiv.org/abs/2509.07605</guid>
-<content:encoded><![CDATA[
-arXiv:2509.07605v1 Announce Type: cross 
-Abstract: Class imbalance poses a significant challenge to supervised classification, particularly in critical domains like medical diagnostics and anomaly detection where minority class instances are rare. While numerous studies have explored rebalancing techniques to address this issue, less attention has been given to evaluating the performance of binary classifiers under imbalance when no such techniques are applied. Therefore, the goal of this study is to assess the performance of binary classifiers "as-is", without performing any explicit rebalancing. Specifically, we systematically evaluate the robustness of a diverse set of binary classifiers across both real-world and synthetic datasets, under progressively reduced minority class sizes, using one-shot and few-shot scenarios as baselines. Our approach also explores varying data complexities through synthetic decision boundary generation to simulate real-world conditions. In addition to standard classifiers, we include experiments using undersampling, oversampling strategies, and one-class classification (OCC) methods to examine their behavior under severe imbalance. The results confirm that classification becomes more difficult as data complexity increases and the minority class size decreases. While traditional classifiers deteriorate under extreme imbalance, advanced models like TabPFN and boosting-based ensembles retain relatively higher performance and better generalization compared to traditional classifiers. Visual interpretability and evaluation metrics further validate these findings. Our work offers valuable guidance on model selection for imbalanced learning, providing insights into classifier robustness without dependence on explicit rebalancing techniques.
-]]></content:encoded>
-<pubDate>Wed, 10 Sep 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>From Classical Data to Quantum Advantage -- Quantum Policy Evaluation on Quantum Hardware</title>
-<link>https://arxiv.org/abs/2509.07614</link>
-<guid>https://arxiv.org/abs/2509.07614</guid>
-<content:encoded><![CDATA[
-arXiv:2509.07614v1 Announce Type: cross 
-Abstract: Quantum policy evaluation (QPE) is a reinforcement learning (RL) algorithm which is quadratically more efficient than an analogous classical Monte Carlo estimation. It makes use of a direct quantum mechanical realization of a finite Markov decision process, in which the agent and the environment are modeled by unitary operators and exchange states, actions, and rewards in superposition. Previously, the quantum environment has been implemented and parametrized manually for an illustrative benchmark using a quantum simulator. In this paper, we demonstrate how these environment parameters can be learned from a batch of classical observational data through quantum machine learning (QML) on quantum hardware. The learned quantum environment is then applied in QPE to also compute policy evaluations on quantum hardware. Our experiments reveal that, despite challenges such as noise and short coherence times, the integration of QML and QPE shows promising potential for achieving quantum advantage in RL.
-]]></content:encoded>
-<pubDate>Wed, 10 Sep 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Variational Quantum Circuits in Offline Contextual Bandit Problems</title>
-<link>https://arxiv.org/abs/2509.07633</link>
-<guid>https://arxiv.org/abs/2509.07633</guid>
-<content:encoded><![CDATA[
-arXiv:2509.07633v1 Announce Type: cross 
-Abstract: This paper explores the application of variational quantum circuits (VQCs) for solving offline contextual bandit problems in industrial optimization tasks. Using the Industrial Benchmark (IB) environment, we evaluate the performance of quantum regression models against classical models. Our findings demonstrate that quantum models can effectively fit complex reward functions, identify optimal configurations via particle swarm optimization (PSO), and generalize well in noisy and sparse datasets. These results provide a proof of concept for utilizing VQCs in offline contextual bandit problems and highlight their potential in industrial optimization tasks.
-]]></content:encoded>
-<pubDate>Wed, 10 Sep 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Spectral Masking and Interpolation Attack (SMIA): A Black-box Adversarial Attack against Voice Authentication and Anti-Spoofing Systems</title>
-<link>https://arxiv.org/abs/2509.07677</link>
-<guid>https://arxiv.org/abs/2509.07677</guid>
-<content:encoded><![CDATA[
-arXiv:2509.07677v1 Announce Type: cross 
-Abstract: Voice Authentication Systems (VAS) use unique vocal characteristics for verification. They are increasingly integrated into high-security sectors such as banking and healthcare. Despite their improvements using deep learning, they face severe vulnerabilities from sophisticated threats like deepfakes and adversarial attacks. The emergence of realistic voice cloning complicates detection, as systems struggle to distinguish authentic from synthetic audio. While anti-spoofing countermeasures (CMs) exist to mitigate these risks, many rely on static detection models that can be bypassed by novel adversarial methods, leaving a critical security gap. To demonstrate this vulnerability, we propose the Spectral Masking and Interpolation Attack (SMIA), a novel method that strategically manipulates inaudible frequency regions of AI-generated audio. By altering the voice in imperceptible zones to the human ear, SMIA creates adversarial samples that sound authentic while deceiving CMs. We conducted a comprehensive evaluation of our attack against state-of-the-art (SOTA) models across multiple tasks, under simulated real-world conditions. SMIA achieved a strong attack success rate (ASR) of at least 82% against combined VAS/CM systems, at least 97.5% against standalone speaker verification systems, and 100% against countermeasures. These findings conclusively demonstrate that current security postures are insufficient against adaptive adversarial attacks. This work highlights the urgent need for a paradigm shift toward next-generation defenses that employ dynamic, context-aware frameworks capable of evolving with the threat landscape.
-]]></content:encoded>
-<pubDate>Wed, 10 Sep 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Enhancing Online Learning by Integrating Biosensors and Multimodal Learning Analytics for Detecting and Predicting Student Behavior: A Review</title>
-<link>https://arxiv.org/abs/2509.07742</link>
-<guid>https://arxiv.org/abs/2509.07742</guid>
-<content:encoded><![CDATA[
-arXiv:2509.07742v1 Announce Type: cross 
-Abstract: In modern online learning, understanding and predicting student behavior is crucial for enhancing engagement and optimizing educational outcomes. This systematic review explores the integration of biosensors and Multimodal Learning Analytics (MmLA) to analyze and predict student behavior during computer-based learning sessions. We examine key challenges, including emotion and attention detection, behavioral analysis, experimental design, and demographic considerations in data collection. Our study highlights the growing role of physiological signals, such as heart rate, brain activity, and eye-tracking, combined with traditional interaction data and self-reports to gain deeper insights into cognitive states and engagement levels. We synthesize findings from 54 key studies, analyzing commonly used methodologies such as advanced machine learning algorithms and multimodal data pre-processing techniques. The review identifies current research trends, limitations, and emerging directions in the field, emphasizing the transformative potential of biosensor-driven adaptive learning systems. Our findings suggest that integrating multimodal data can facilitate personalized learning experiences, real-time feedback, and intelligent educational interventions, ultimately advancing toward a more customized and adaptive online learning experience.
-]]></content:encoded>
-<pubDate>Wed, 10 Sep 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Spectral and Rhythm Feature Performance Evaluation for Category and Class Level Audio Classification with Deep Convolutional Neural Networks</title>
-<link>https://arxiv.org/abs/2509.07756</link>
-<guid>https://arxiv.org/abs/2509.07756</guid>
-<content:encoded><![CDATA[
-arXiv:2509.07756v1 Announce Type: cross 
-Abstract: Next to decision tree and k-nearest neighbours algorithms deep convolutional neural networks (CNNs) are widely used to classify audio data in many domains like music, speech or environmental sounds. To train a specific CNN various spectral and rhythm features like mel-scaled spectrograms, mel-frequency cepstral coefficients (MFCC), cyclic tempograms, short-time Fourier transform (STFT) chromagrams, constant-Q transform (CQT) chromagrams and chroma energy normalized statistics (CENS) chromagrams can be used as digital image input data for the neural network. The performance of these spectral and rhythm features for audio category level as well as audio class level classification is investigated in detail with a deep CNN and the ESC-50 dataset with 2,000 labeled environmental audio recordings using an end-to-end deep learning pipeline. The evaluated metrics accuracy, precision, recall and F1 score for multiclass classification clearly show that the mel-scaled spectrograms and the mel-frequency cepstral coefficients (MFCC) perform significantly better then the other spectral and rhythm features investigated in this research for audio classification tasks using deep CNNs.
-]]></content:encoded>
-<pubDate>Wed, 10 Sep 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>What Were You Thinking? An LLM-Driven Large-Scale Study of Refactoring Motivations in Open-Source Projects</title>
-<link>https://arxiv.org/abs/2509.07763</link>
-<guid>https://arxiv.org/abs/2509.07763</guid>
-<content:encoded><![CDATA[
-arXiv:2509.07763v1 Announce Type: cross 
-Abstract: Context. Code refactoring improves software quality without changing external behavior. Despite its advantages, its benefits are hindered by the considerable cost of time, resources, and continuous effort it demands. Aim. Understanding why developers refactor, and which metrics capture these motivations, may support wider and more effective use of refactoring in practice. Method. We performed a large-scale empirical study to analyze developers refactoring activity, leveraging Large Language Models (LLMs) to identify underlying motivations from version control data, comparing our findings with previous motivations reported in the literature. Results. LLMs matched human judgment in 80% of cases, but aligned with literature-based motivations in only 47%. They enriched 22% of motivations with more detailed rationale, often highlighting readability, clarity, and structural improvements. Most motivations were pragmatic, focused on simplification and maintainability. While metrics related to developer experience and code readability ranked highest, their correlation with motivation categories was weak. Conclusions. We conclude that LLMs effectively capture surface-level motivations but struggle with architectural reasoning. Their value lies in providing localized explanations, which, when combined with software metrics, can form hybrid approaches. Such integration offers a promising path toward prioritizing refactoring more systematically and balancing short-term improvements with long-term architectural goals.
 ]]></content:encoded>
 <pubDate>Wed, 10 Sep 2025 00:00:00 -0400</pubDate>
 </item>

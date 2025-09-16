@@ -4,6 +4,7 @@
 <title>cs.CL updates on arXiv.org</title>
 <link>http://rss.arxiv.org/rss/cs.CL</link>
 
+
 <item>
 <title>Adaptive Monitoring and Real-World Evaluation of Agentic AI Systems</title>
 <link>https://arxiv.org/abs/2509.00115</link>
@@ -18,11 +19,10 @@ Summary:
 - Simulations and real-world experiments show that AMDM improves anomaly detection latency and reduces false-positive rates compared to static thresholds.
 - The study provides code, data, and a reproducibility checklist for replication purposes. 
 
-<br><br>Summary: <div>
+<br /><br />Summary: <div>
 arXiv:2509.00115v3 Announce Type: replace-cross 
 Abstract: Agentic artificial intelligence (AI) -- multi-agent systems that combine large language models with external tools and autonomous planning -- are rapidly transitioning from research laboratories into high-stakes domains. Our earlier "Basic" paper introduced a five-axis framework and proposed preliminary metrics such as goal drift and harm reduction but did not provide an algorithmic instantiation or empirical evidence. This "Advanced" sequel fills that gap. First, we revisit recent benchmarks and industrial deployments to show that technical metrics still dominate evaluations: a systematic review of 84 papers from 2023--2025 found that 83% report capability metrics while only 30% consider human-centred or economic axes [2]. Second, we formalise an Adaptive Multi-Dimensional Monitoring (AMDM) algorithm that normalises heterogeneous metrics, applies per-axis exponentially weighted moving-average thresholds and performs joint anomaly detection via the Mahalanobis distance [7]. Third, we conduct simulations and real-world experiments. AMDM cuts anomaly-detection latency from 12.3 s to 5.6 s on simulated goal drift and reduces false-positive rates from 4.5% to 0.9% compared with static thresholds. We present a comparison table and ROC/PR curves, and we reanalyse case studies to surface missing metrics. Code, data and a reproducibility checklist accompany this paper to facilitate replication. The code supporting this work is available at https://github.com/Manishms18/Adaptive-Multi-Dimensional-Monitoring.
 ]]></content:encoded>
-<pubDate>Tue, 16 Sep 2025 00:00:00 -0400</pubDate>
 <pubDate>Tue, 16 Sep 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -38,9 +38,7 @@ arXiv:2509.00996v2 Announce Type: replace-cross
 Abstract: Considering deep neural networks as manifold mappers, the pretrain-then-fine-tune paradigm can be interpreted as a two-stage process: pretrain establishes a broad knowledge base, and fine-tune adjusts the model parameters to activate specific neural pathways to align with the target manifold. Although prior fine-tuning approaches demonstrate success, their rigid parameter space limits their ability to dynamically activate appropriate neural pathways, rendering them ill-equipped to adapt flexibly to the diverse and evolving data distributions. In light of this view, we propose a novel approach, Mixture of Expert Prompt Tuning (MEPT), as an effective and efficient manifold-mapping framework. MEPT leverages the Mixture of Experts architecture by integrating multiple prompt experts to adaptively learn diverse and non-stationary data distributions. Empirical evaluations demonstrate that MEPT outperforms several state-of-the-art parameter efficient baselines on SuperGLUE, achieving notable improvements in mean accuracy (e.g., 1.94%) while significantly reducing activated prompts by 79.25%. The effectiveness of MEPT is further supported by theoretical insights from manifold learning and validated through neural activation pathway visualization results. Our code is avaliable at https://runjia.tech/emnlp_mept/.
 ]]></content:encoded>
 <pubDate>Tue, 16 Sep 2025 00:00:00 -0400</pubDate>
-<pubDate>Tue, 16 Sep 2025 00:00:00 -0400</pubDate>
 </item>
-
 <item>
 <title>Uncovering the Vulnerability of Large Language Models in the Financial Domain via Risk Concealment</title>
 <link>https://arxiv.org/abs/2509.10546</link>
@@ -12186,36 +12184,6 @@ Summary:<br />
 The article introduces LimiX as a structured-data model for addressing tabular tasks through query-based conditional prediction. It treats structured data as a joint distribution and is pretrained using masked joint-distribution modeling with an episodic, context-conditional objective. LimiX surpasses strong baselines on 10 structured-data benchmarks, including classification, regression, imputation, and data generation tasks. The model achieves superior performance without task-specific architectures or bespoke training per task. LimiX provides a unified interface and is publicly accessible under the Apache 2.0 license. <div>
 arXiv:2509.03505v1 Announce Type: cross 
 Abstract: We argue that progress toward general intelligence requires complementary foundation models grounded in language, the physical world, and structured data. This report presents LimiX, the first installment of our large structured-data models (LDMs). LimiX treats structured data as a joint distribution over variables and missingness, thus capable of addressing a wide range of tabular tasks through query-based conditional prediction via a single model. LimiX is pretrained using masked joint-distribution modeling with an episodic, context-conditional objective, where the model predicts for query subsets conditioned on dataset-specific contexts, supporting rapid, training-free adaptation at inference. We evaluate LimiX across 10 large structured-data benchmarks with broad regimes of sample size, feature dimensionality, class number, categorical-to-numerical feature ratio, missingness, and sample-to-feature ratios. With a single model and a unified interface, LimiX consistently surpasses strong baselines including gradient-boosting trees, deep tabular networks, recent tabular foundation models, and automated ensembles, as shown in Figure 1 and Figure 2. The superiority holds across a wide range of tasks, such as classification, regression, missing value imputation, and data generation, often by substantial margins, while avoiding task-specific architectures or bespoke training per task. All LimiX models are publicly accessible under Apache 2.0.
-]]></content:encoded>
-<pubDate>Thu, 04 Sep 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Learn and Unlearn: Addressing Misinformation in Multilingual LLMs</title>
-<link>https://arxiv.org/abs/2406.13748</link>
-<guid>https://arxiv.org/abs/2406.13748</guid>
-<content:encoded><![CDATA[
-<div> Keywords: harmful information, multilingual large language models, unlearning methods, integrity, reliability
-
-Summary: 
-Harmful information can propagate through multilingual large language models (LLMs) regardless of the language it originates in. Standard unlearning techniques focusing on English data are ineffective in combating the spread of harmful content across languages and may inadvertently reinforce it. To effectively eliminate harmful content in all languages, addressing responses in both English and the original language is vital. This study emphasizes the necessity of comprehensive unlearning strategies that consider the diverse linguistic landscape of modern LLMs to improve their safety and reliability across languages. 
-
-<br /><br />Summary: <div>
-arXiv:2406.13748v3 Announce Type: replace 
-Abstract: This paper investigates the propagation of harmful information in multilingual large language models (LLMs) and evaluates the efficacy of various unlearning methods. We demonstrate that fake information, regardless of the language it is in, once introduced into these models through training data, can spread across different languages, compromising the integrity and reliability of the generated content. Our findings reveal that standard unlearning techniques, which typically focus on English data, are insufficient in mitigating the spread of harmful content in multilingual contexts and could inadvertently reinforce harmful content across languages. We show that only by addressing harmful responses in both English and the original language of the harmful data can we effectively eliminate generations for all languages. This underscores the critical need for comprehensive unlearning strategies that consider the multilingual nature of modern LLMs to enhance their safety and reliability across diverse linguistic landscapes.
-]]></content:encoded>
-<pubDate>Thu, 04 Sep 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>SampleAttention: Near-Lossless Acceleration of Long Context LLM Inference with Adaptive Structured Sparse Attention</title>
-<link>https://arxiv.org/abs/2406.15486</link>
-<guid>https://arxiv.org/abs/2406.15486</guid>
-<content:encoded><![CDATA[
-<div> Sparse Attention, Large Language Models, Time-to-First-Token Latency, SampleAttention, FlashAttention
-Summary:
-SampleAttention is proposed as a solution to the quadratic complexity issue of vanilla attention in Large Language Models (LLMs), reducing Time-to-First-Token (TTFT) latency by up to 2.42 times compared to FlashAttention. The approach dynamically captures head-specific sparse patterns at runtime with low overhead, utilizing a two-stage query-guided key-value filtering method to select key-values efficiently. By attending to a fixed percentage of adjacent tokens and capturing local window and column stripe patterns, SampleAttention can seamlessly replace vanilla attention in off-the-shelf LLMs with minimal accuracy loss. Theoretical and empirical foundations support the near-lossless sparse attention approach, highlighting the importance of capturing sparse patterns efficiently to improve model efficiency without sacrificing accuracy.
-<br /><br />Summary: <div>
-arXiv:2406.15486v3 Announce Type: replace 
-Abstract: Large language models (LLMs) now support extremely long context windows, but the quadratic complexity of vanilla attention results in significantly long Time-to-First-Token (TTFT) latency. Existing approaches to address this complexity require additional pretraining or finetuning, and often sacrifice model accuracy. In this paper, we first provide both theoretical and empirical foundations for near-lossless sparse attention. We find dynamically capturing head-specific sparse patterns at runtime with low overhead is crucial. To address this, we propose SampleAttention, an adaptive structured and near-lossless sparse attention. Leveraging observed significant sparse patterns, SampleAttention attends to a fixed percentage of adjacent tokens to capture local window patterns, and employs a two-stage query-guided key-value filtering approach, which adaptively select a minimum set of key-values with low overhead, to capture column stripe patterns. Comprehensive evaluations show that SampleAttention can seamlessly replace vanilla attention in off-the-shelf LLMs with nearly no accuracy loss, and reduces TTFT by up to $2.42\times$ compared with FlashAttention.
 ]]></content:encoded>
 <pubDate>Thu, 04 Sep 2025 00:00:00 -0400</pubDate>
 </item>
