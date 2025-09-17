@@ -4,6 +4,7 @@
 <title>cs.CV updates on arXiv.org</title>
 <link>http://rss.arxiv.org/rss/cs.CV</link>
 
+
 <item>
 <title>TinyDef-DETR: A DETR-based Framework for Defect Detection in Transmission Lines from UAV Imagery</title>
 <link>https://arxiv.org/abs/2509.06035</link>
@@ -14,11 +15,10 @@
 Summary: 
 TinyDef-DETR is a framework designed for accurate and efficient detection of transmission line defects from UAV-acquired images. It integrates edge-enhanced ResNet backbone, a space-to-depth module for downsampling, a cross-stage dual-domain multi-scale attention mechanism, and a Focaler-Wise-SIoU regression loss. These components work together to overcome the challenges of detecting small and ambiguous defects in complex backgrounds. The framework demonstrates superior detection performance, strong generalization capability, and modest computational overhead through extensive experiments on various datasets. TinyDef-DETR's accuracy and efficiency make it suitable for UAV-based defect detection on transmission lines, especially in challenging scenarios with small and ambiguous targets.
 
-<br><br>Summary: <div>
+<br /><br />Summary: <div>
 arXiv:2509.06035v3 Announce Type: replace 
 Abstract: Automated defect detection from UAV imagery of transmission lines is a challenging task due to the small size, ambiguity, and complex backgrounds of defects. This paper proposes TinyDef-DETR, a DETR-based framework designed to achieve accurate and efficient detection of transmission line defects from UAV-acquired images. The model integrates four major components: an edge-enhanced ResNet backbone to strengthen boundary-sensitive representations, a stride-free space-to-depth module to enable detail-preserving downsampling, a cross-stage dual-domain multi-scale attention mechanism to jointly model global context and local cues, and a Focaler-Wise-SIoU regression loss to improve the localization of small and difficult targets. Together, these designs effectively mitigate the limitations of conventional detectors. Extensive experiments on both public and real-world datasets demonstrate that TinyDef-DETR achieves superior detection performance and strong generalization capability, while maintaining modest computational overhead. The accuracy and efficiency of TinyDef-DETR make it a suitable method for UAV-based transmission line defect detection, particularly in scenarios involving small and ambiguous targets.
 ]]></content:encoded>
-<pubDate>Wed, 17 Sep 2025 00:00:00 -0400</pubDate>
 <pubDate>Wed, 17 Sep 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -30,14 +30,12 @@ Abstract: Automated defect detection from UAV imagery of transmission lines is a
 
 Summary: BranchGRPO introduces a novel method for improving human preference alignment in image and video generative models. It addresses the inefficiency of existing variants by restructuring the rollout process into a branching tree, where shared prefixes amortize computation and pruning removes low-value paths. The method includes a branching scheme for cost amortization, a reward fusion and advantage estimator for transforming sparse rewards into dense signals, and pruning strategies for efficient gradient computation. BranchGRPO outperforms DanceGRPO in image alignment scores by up to 16% while reducing training time by 55%. The hybrid variant, BranchGRPO-Mix, achieves even faster training without compromising alignment quality. On video generation tasks, BranchGRPO produces sharper and temporally consistent frames compared to DanceGRPO. This method shows promising results for improving alignment in generative models. 
 
-<br><br>Summary: <div>
+<br /><br />Summary: <div>
 arXiv:2509.06040v4 Announce Type: replace 
 Abstract: Recent progress in aligning image and video generative models with Group Relative Policy Optimization (GRPO) has improved human preference alignment, but existing variants remain inefficient due to sequential rollouts and large numbers of sampling steps, unreliable credit assignment: sparse terminal rewards are uniformly propagated across timesteps, failing to capture the varying criticality of decisions during denoising. In this paper, we present BranchGRPO, a method that restructures the rollout process into a branching tree, where shared prefixes amortize computation and pruning removes low-value paths and redundant depths. BranchGRPO introduces three contributions: (1) a branching scheme that amortizes rollout cost through shared prefixes while preserving exploration diversity; (2) a reward fusion and depth-wise advantage estimator that transforms sparse terminal rewards into dense step-level signals; and (3) pruning strategies that cut gradient computation but leave forward rollouts and exploration unaffected. On HPDv2.1 image alignment, BranchGRPO improves alignment scores by up to \textbf{16\%} over DanceGRPO, while reducing per-iteration training time by nearly \textbf{55\%}. A hybrid variant, BranchGRPO-Mix, further accelerates training to 4.7x faster than DanceGRPO without degrading alignment. On WanX video generation, it further achieves higher Video-Align scores with sharper and temporally consistent frames compared to DanceGRPO. Codes are available at \href{https://fredreic1849.github.io/BranchGRPO-Webpage/}{BranchGRPO}.
 ]]></content:encoded>
 <pubDate>Wed, 17 Sep 2025 00:00:00 -0400</pubDate>
-<pubDate>Wed, 17 Sep 2025 00:00:00 -0400</pubDate>
 </item>
-
 <item>
 <title>Artificial Intelligence in Breast Cancer Care: Transforming Preoperative Planning and Patient Education with 3D Reconstruction</title>
 <link>https://arxiv.org/abs/2509.12242</link>
@@ -11691,32 +11689,6 @@ This research introduces a novel distance-adaptive super-resolution framework th
 <br /> <div>
 arXiv:2509.05746v1 Announce Type: new 
 Abstract: Single image super-resolution traditionally assumes spatially-invariant degradation models, yet real-world imaging systems exhibit complex distance-dependent effects including atmospheric scattering, depth-of-field variations, and perspective distortions. This fundamental limitation necessitates spatially-adaptive reconstruction strategies that explicitly incorporate geometric scene understanding for optimal performance. We propose a rigorous variational framework that characterizes super-resolution as a spatially-varying inverse problem, formulating the degradation operator as a pseudodifferential operator with distance-dependent spectral characteristics that enable theoretical analysis of reconstruction limits across depth ranges. Our neural architecture implements discrete gradient flow dynamics through cascaded residual blocks with depth-conditional convolution kernels, ensuring convergence to stationary points of the theoretical energy functional while incorporating learned distance-adaptive regularization terms that dynamically adjust smoothness constraints based on local geometric structure. Spectral constraints derived from atmospheric scattering theory prevent bandwidth violations and noise amplification in far-field regions, while adaptive kernel generation networks learn continuous mappings from depth to reconstruction filters. Comprehensive evaluation across five benchmark datasets demonstrates state-of-the-art performance, achieving 36.89/0.9516 and 30.54/0.8721 PSNR/SSIM at 2 and 4 scales on KITTI outdoor scenes, outperforming existing methods by 0.44dB and 0.36dB respectively. This work establishes the first theoretically-grounded distance-adaptive super-resolution framework and demonstrates significant improvements on depth-variant scenarios while maintaining competitive performance across traditional benchmarks.
-]]></content:encoded>
-<pubDate>Tue, 09 Sep 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>InterAct: A Large-Scale Dataset of Dynamic, Expressive and Interactive Activities between Two People in Daily Scenarios</title>
-<link>https://arxiv.org/abs/2509.05747</link>
-<guid>https://arxiv.org/abs/2509.05747</guid>
-<content:encoded><![CDATA[
-<div> Dataset, interactive behaviors, motion sequences, multi-modal, facial expressions <br />
-Summary: 
-The article introduces a new dataset called InterAct, which focuses on capturing accurate interactive behaviors between two individuals in daily scenarios. Unlike previous works that often consider only one person or conversational gestures, InterAct simultaneously models the activities of two individuals engaged in objective-driven, dynamic interactions over longer durations. The dataset comprises 241 motion sequences where both individuals perform a realistic scenario with different roles and emotions, collaborating to complete a task or engage in interactive activities. The dataset captures diverse and complex movements, providing valuable insights into relatively long-term interaction patterns. The article also presents a diffusion-based method that estimates interactive facial expressions and body motions from speech inputs, regressing body motions hierarchically and fine-tuning facial expression accuracy. The dataset and code are made publicly available to facilitate further research. <br /> <div>
-arXiv:2509.05747v1 Announce Type: new 
-Abstract: We address the problem of accurate capture of interactive behaviors between two people in daily scenarios. Most previous works either only consider one person or solely focus on conversational gestures of two people, assuming the body orientation and/or position of each actor are constant or barely change over each interaction. In contrast, we propose to simultaneously model two people's activities, and target objective-driven, dynamic, and semantically consistent interactions which often span longer duration and cover bigger space. To this end, we capture a new multi-modal dataset dubbed InterAct, which is composed of 241 motion sequences where two people perform a realistic and coherent scenario for one minute or longer over a complete interaction. For each sequence, two actors are assigned different roles and emotion labels, and collaborate to finish one task or conduct a common interaction activity. The audios, body motions, and facial expressions of both persons are captured. InterAct contains diverse and complex motions of individuals and interesting and relatively long-term interaction patterns barely seen before. We also demonstrate a simple yet effective diffusion-based method that estimates interactive face expressions and body motions of two people from speech inputs. Our method regresses the body motions in a hierarchical manner, and we also propose a novel fine-tuning mechanism to improve the lip accuracy of facial expressions. To facilitate further research, the data and code is made available at https://hku-cg.github.io/interact/ .
-]]></content:encoded>
-<pubDate>Tue, 09 Sep 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Unleashing Hierarchical Reasoning: An LLM-Driven Framework for Training-Free Referring Video Object Segmentation</title>
-<link>https://arxiv.org/abs/2509.05751</link>
-<guid>https://arxiv.org/abs/2509.05751</guid>
-<content:encoded><![CDATA[
-<div> Keywords: Referring Video Object Segmentation, Language Models, Spatio-temporal grounding, Hierarchical reasoning, State-of-the-art performance<br />
-Summary:<br />
-Referring Video Object Segmentation (RVOS) is a challenging task that requires aligning text descriptions with dynamic visual content. Current methods struggle with complex descriptions and similar-looking objects. In response, the proposed PARSE-VOS framework utilizes Large Language Models (LLMs) for hierarchical reasoning across text and video domains. It parses natural language queries into structured commands and generates candidate trajectories guided by semantics. A hierarchical identification module performs coarse-to-fine reasoning, first using an LLM for motion reasoning and then triggering a pose verification stage if needed. PARSE-VOS achieved state-of-the-art performance on benchmarks like Ref-YouTube-VOS, Ref-DAVIS17, and MeViS. <div>
-arXiv:2509.05751v1 Announce Type: new 
-Abstract: Referring Video Object Segmentation (RVOS) aims to segment an object of interest throughout a video based on a language description. The prominent challenge lies in aligning static text with dynamic visual content, particularly when objects exhibiting similar appearances with inconsistent motion and poses. However, current methods often rely on a holistic visual-language fusion that struggles with complex, compositional descriptions. In this paper, we propose \textbf{PARSE-VOS}, a novel, training-free framework powered by Large Language Models (LLMs), for a hierarchical, coarse-to-fine reasoning across text and video domains. Our approach begins by parsing the natural language query into structured semantic commands. Next, we introduce a spatio-temporal grounding module that generates all candidate trajectories for all potential target objects, guided by the parsed semantics. Finally, a hierarchical identification module select the correct target through a two-stage reasoning process: it first performs coarse-grained motion reasoning with an LLM to narrow down candidates; if ambiguity remains, a fine-grained pose verification stage is conditionally triggered to disambiguate. The final output is an accurate segmentation mask for the target object. \textbf{PARSE-VOS} achieved state-of-the-art performance on three major benchmarks: Ref-YouTube-VOS, Ref-DAVIS17, and MeViS.
 ]]></content:encoded>
 <pubDate>Tue, 09 Sep 2025 00:00:00 -0400</pubDate>
 </item>
