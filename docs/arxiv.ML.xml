@@ -4,18 +4,18 @@
 <title>cs.LG updates on arXiv.org</title>
 <link>http://rss.arxiv.org/rss/cs.LG</link>
 
+
 <item>
 <title>Perfectly-Private Analog Secure Aggregation in Federated Learning</title>
 <link>https://arxiv.org/abs/2509.08683</link>
 <guid>https://arxiv.org/abs/2509.08683</guid>
 <content:encoded><![CDATA[
-<div> Keywords: federated learning, secure aggregation, secure multiparty computation, privacy, torus<br>
-Summary:<br>
-This paper addresses the privacy concerns in federated learning by proposing a novel secure parameter aggregation method using the torus. Traditional secure aggregation methods utilizing finite fields face accuracy complexity tradeoff issues, but the torus-based approach guarantees perfect privacy while maintaining model accuracy. By leveraging the uniform distribution on the torus, each party's data is kept private. Experimental results demonstrate that the new protocol performs similarly to non-secure aggregation models, with added privacy benefits. Additionally, the torus-based protocol outperforms finite field secure aggregation in terms of model accuracy and cosine similarity in some cases, making it a safer option. Overall, this innovative approach offers a solution to the challenges of maintaining privacy in federated learning without sacrificing accuracy. <br><br>Summary: <div>
+<div> Keywords: federated learning, secure aggregation, secure multiparty computation, privacy, torus<br />
+Summary:<br />
+This paper addresses the privacy concerns in federated learning by proposing a novel secure parameter aggregation method using the torus. Traditional secure aggregation methods utilizing finite fields face accuracy complexity tradeoff issues, but the torus-based approach guarantees perfect privacy while maintaining model accuracy. By leveraging the uniform distribution on the torus, each party's data is kept private. Experimental results demonstrate that the new protocol performs similarly to non-secure aggregation models, with added privacy benefits. Additionally, the torus-based protocol outperforms finite field secure aggregation in terms of model accuracy and cosine similarity in some cases, making it a safer option. Overall, this innovative approach offers a solution to the challenges of maintaining privacy in federated learning without sacrificing accuracy. <br /><br />Summary: <div>
 arXiv:2509.08683v2 Announce Type: replace 
 Abstract: In federated learning, multiple parties train models locally and share their parameters with a central server, which aggregates them to update a global model. To address the risk of exposing sensitive data through local models, secure aggregation via secure multiparty computation has been proposed to enhance privacy. At the same time, perfect privacy can only be achieved by a uniform distribution of the masked local models to be aggregated. This raises a problem when working with real valued data, as there is no measure on the reals that is invariant under the masking operation, and hence information leakage is bound to occur. Shifting the data to a finite field circumvents this problem, but as a downside runs into an inherent accuracy complexity tradeoff issue due to fixed point modular arithmetic as opposed to floating point numbers that can simultaneously handle numbers of varying magnitudes. In this paper, a novel secure parameter aggregation method is proposed that employs the torus rather than a finite field. This approach guarantees perfect privacy for each party's data by utilizing the uniform distribution on the torus, while avoiding accuracy losses. Experimental results show that the new protocol performs similarly to the model without secure aggregation while maintaining perfect privacy. Compared to the finite field secure aggregation, the torus-based protocol can in some cases significantly outperform it in terms of model accuracy and cosine similarity, hence making it a safer choice.
 ]]></content:encoded>
-<pubDate>Thu, 18 Sep 2025 00:00:00 -0400</pubDate>
 <pubDate>Thu, 18 Sep 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -31,9 +31,7 @@ arXiv:2504.00132v4 Announce Type: replace-cross
 Abstract: In-Context Learning (ICL) is an intriguing ability of large language models (LLMs). Despite a substantial amount of work on its behavioral aspects and how it emerges in miniature setups, it remains unclear which mechanism assembles task information from the individual examples in a fewshot prompt. We use causal interventions to identify information flow in Gemma-2 2B for five naturalistic ICL tasks. We find that the model infers task information using a two-step strategy we call contextualize-then-aggregate: In the lower layers, the model builds up representations of individual fewshot examples, which are contextualized by preceding examples through connections between fewshot input and output tokens across the sequence. In the higher layers, these representations are aggregated to identify the task and prepare prediction of the next output. The importance of the contextualization step differs between tasks, and it may become more important in the presence of ambiguous examples. Overall, by providing rigorous causal analysis, our results shed light on the mechanisms through which ICL happens in language models.
 ]]></content:encoded>
 <pubDate>Thu, 18 Sep 2025 00:00:00 -0400</pubDate>
-<pubDate>Thu, 18 Sep 2025 00:00:00 -0400</pubDate>
 </item>
-
 <item>
 <title>Unified Spatiotemopral Physics-Informed Learning (USPIL): A Framework for Modeling Complex Predator-Prey Dynamics</title>
 <link>https://arxiv.org/abs/2509.13425</link>
@@ -11262,36 +11260,6 @@ The paper introduces the Mixture of Subgraph Experts (MoSE) framework to improve
 <br /><br />Summary: <div>
 arXiv:2509.09337v1 Announce Type: new 
 Abstract: While graph neural networks (GNNs) have achieved great success in learning from graph-structured data, their reliance on local, pairwise message passing restricts their ability to capture complex, high-order subgraph patterns. leading to insufficient structural expressiveness. Recent efforts have attempted to enhance structural expressiveness by integrating random walk kernels into GNNs. However, these methods are inherently designed for graph-level tasks, which limits their applicability to other downstream tasks such as node classification. Moreover, their fixed kernel configurations hinder the model's flexibility in capturing diverse subgraph structures. To address these limitations, this paper proposes a novel Mixture of Subgraph Experts (MoSE) framework for flexible and expressive subgraph-based representation learning across diverse graph tasks. Specifically, MoSE extracts informative subgraphs via anonymous walks and dynamically routes them to specialized experts based on structural semantics, enabling the model to capture diverse subgraph patterns with improved flexibility and interpretability. We further provide a theoretical analysis of MoSE's expressivity within the Subgraph Weisfeiler-Lehman (SWL) Test, proving that it is more powerful than SWL. Extensive experiments, together with visualizations of learned subgraph experts, demonstrate that MoSE not only outperforms competitive baselines but also provides interpretable insights into structural patterns learned by the model.
-]]></content:encoded>
-<pubDate>Fri, 12 Sep 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Robust Non-Linear Correlations via Polynomial Regression</title>
-<link>https://arxiv.org/abs/2509.09380</link>
-<guid>https://arxiv.org/abs/2509.09380</guid>
-<content:encoded><![CDATA[
-<div> Hirschfeld-Gebelein-Rényi, correlation coefficient, algorithmic fairness, machine learning, polynomial kernels
-Summary: 
-The article introduces a novel computational approach for estimating the Hirschfeld-Gebelein-Rényi (HGR) correlation coefficient, which extends beyond linear correlations. Previous methods for estimating HGR in a differentiable manner raised concerns about bias-variance trade-off and robustness in real-world applications. The new approach relies on user-configurable polynomial kernels, offering greater robustness and faster computation while maintaining effectiveness. It addresses technical concerns and provides a reliable option for constrained machine learning applications, where HGR can serve as a loss regularizer. Additionally, experimental analysis validates the applicability of the approach, showing that its computation yields an insightful subgradient for loss regularization.
-<br /><br />Summary: <div>
-arXiv:2509.09380v1 Announce Type: new 
-Abstract: The Hirschfeld-Gebelein-R\'enyi (HGR) correlation coefficient is an extension of Pearson's correlation that is not limited to linear correlations, with potential applications in algorithmic fairness, scientific analysis, and causal discovery. Recently, novel algorithms to estimate HGR in a differentiable manner have been proposed to facilitate its use as a loss regularizer in constrained machine learning applications. However, the inherent uncomputability of HGR requires a bias-variance trade-off, which can possibly compromise the robustness of the proposed methods, hence raising technical concerns if applied in real-world scenarios. We introduce a novel computational approach for HGR that relies on user-configurable polynomial kernels, offering greater robustness compared to previous methods and featuring a faster yet almost equally effective restriction. Our approach provides significant advantages in terms of robustness and determinism, making it a more reliable option for real-world applications. Moreover, we present a brief experimental analysis to validate the applicability of our approach within a constrained machine learning framework, showing that its computation yields an insightful subgradient that can serve as a loss regularizer.
-]]></content:encoded>
-<pubDate>Fri, 12 Sep 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>MetaLLMix : An XAI Aided LLM-Meta-learning Based Approach for Hyper-parameters Optimization</title>
-<link>https://arxiv.org/abs/2509.09387</link>
-<guid>https://arxiv.org/abs/2509.09387</guid>
-<content:encoded><![CDATA[
-<div> MetaLLMiX; hyperparameter optimization; deep learning; LLM; medical imaging 
-
-Summary:
-MetaLLMiX is a zero-shot hyperparameter optimization framework that combines meta-learning, explainable AI, and efficient large language models (LLMs) reasoning. It leverages historical experiment outcomes with SHAP explanations to recommend optimal hyperparameters and pretrained models without additional trials. The framework also employs an LLM-as-judge evaluation to control output format, accuracy, and completeness. Experiments on eight medical imaging datasets using nine open-source lightweight LLMs demonstrate that MetaLLMiX achieves competitive or superior performance to traditional hyperparameter optimization (HPO) methods while significantly reducing computational cost. Local deployment of MetaLLMiX outperforms previous API-based approaches, achieving optimal results on the majority of tasks, with response time reductions of 99.6-99.9% and the fastest training times on six datasets (2.4-15.7x faster), while maintaining accuracy within 1-5% of best-performing baselines. 
-
-<br /><br />Summary: <div>
-arXiv:2509.09387v1 Announce Type: new 
-Abstract: Effective model and hyperparameter selection remains a major challenge in deep learning, often requiring extensive expertise and computation. While AutoML and large language models (LLMs) promise automation, current LLM-based approaches rely on trial and error and expensive APIs, which provide limited interpretability and generalizability. We propose MetaLLMiX, a zero-shot hyperparameter optimization framework combining meta-learning, explainable AI, and efficient LLM reasoning. By leveraging historical experiment outcomes with SHAP explanations, MetaLLMiX recommends optimal hyperparameters and pretrained models without additional trials. We further employ an LLM-as-judge evaluation to control output format, accuracy, and completeness. Experiments on eight medical imaging datasets using nine open-source lightweight LLMs show that MetaLLMiX achieves competitive or superior performance to traditional HPO methods while drastically reducing computational cost. Our local deployment outperforms prior API-based approaches, achieving optimal results on 5 of 8 tasks, response time reductions of 99.6-99.9%, and the fastest training times on 6 datasets (2.4-15.7x faster), maintaining accuracy within 1-5% of best-performing baselines.
 ]]></content:encoded>
 <pubDate>Fri, 12 Sep 2025 00:00:00 -0400</pubDate>
 </item>

@@ -4,6 +4,7 @@
 <title>cs.CV updates on arXiv.org</title>
 <link>http://rss.arxiv.org/rss/cs.CV</link>
 
+
 <item>
 <title>Reconstruction and Reenactment Separated Method for Realistic Gaussian Head</title>
 <link>https://arxiv.org/abs/2509.05582</link>
@@ -12,14 +13,12 @@
 <div> Keywords: reconstruction, reenactment, 3D Gaussians, avatar, high frame-rate rendering
 
 Summary: 
-This paper introduces a reconstruction and reenactment framework for 3D Gaussian heads, utilizing a single portrait image to generate a controllable avatar. The framework includes a large-scale one-shot Gaussian head generator trained in two stages for improved generalization and texture reconstruction. The system achieves high frame-rate rendering of 90 FPS at 512x512 resolution through an ultra-lightweight Gaussian avatar driven by control signals. Scaling up the reconstruction module enhances performance without impacting driving efficiency. Extensive experiments demonstrate the superiority of the proposed approach over existing state-of-the-art methods in terms of both quantitative and qualitative results. <br><br>Summary: <div>
+This paper introduces a reconstruction and reenactment framework for 3D Gaussian heads, utilizing a single portrait image to generate a controllable avatar. The framework includes a large-scale one-shot Gaussian head generator trained in two stages for improved generalization and texture reconstruction. The system achieves high frame-rate rendering of 90 FPS at 512x512 resolution through an ultra-lightweight Gaussian avatar driven by control signals. Scaling up the reconstruction module enhances performance without impacting driving efficiency. Extensive experiments demonstrate the superiority of the proposed approach over existing state-of-the-art methods in terms of both quantitative and qualitative results. <br /><br />Summary: <div>
 arXiv:2509.05582v2 Announce Type: replace 
 Abstract: In this paper, we explore a reconstruction and reenactment separated framework for 3D Gaussians head, which requires only a single portrait image as input to generate controllable avatar. Specifically, we developed a large-scale one-shot gaussian head generator built upon WebSSL and employed a two-stage training approach that significantly enhances the capabilities of generalization and high-frequency texture reconstruction. During inference, an ultra-lightweight gaussian avatar driven by control signals enables high frame-rate rendering, achieving 90 FPS at a resolution of 512x512. We further demonstrate that the proposed framework follows the scaling law, whereby increasing the parameter scale of the reconstruction module leads to improved performance. Moreover, thanks to the separation design, driving efficiency remains unaffected. Finally, extensive quantitative and qualitative experiments validate that our approach outperforms current state-of-the-art methods.
 ]]></content:encoded>
 <pubDate>Thu, 18 Sep 2025 00:00:00 -0400</pubDate>
-<pubDate>Thu, 18 Sep 2025 00:00:00 -0400</pubDate>
 </item>
-
 <item>
 <title>Proximity-Based Evidence Retrieval for Uncertainty-Aware Neural Networks</title>
 <link>https://arxiv.org/abs/2509.13338</link>
@@ -11702,16 +11701,6 @@ Abstract: Acquiring images in high resolution is often a challenging task. Espec
 <content:encoded><![CDATA[
 arXiv:2509.07809v1 Announce Type: new 
 Abstract: 3D Gaussian Splatting (3DGS) has enabled the creation of highly realistic 3D scene representations from sets of multi-view images. However, inpainting missing regions, whether due to occlusion or scene editing, remains a challenging task, often leading to blurry details, artifacts, and inconsistent geometry. In this work, we introduce SplatFill, a novel depth-guided approach for 3DGS scene inpainting that achieves state-of-the-art perceptual quality and improved efficiency. Our method combines two key ideas: (1) joint depth-based and object-based supervision to ensure inpainted Gaussians are accurately placed in 3D space and aligned with surrounding geometry, and (2) we propose a consistency-aware refinement scheme that selectively identifies and corrects inconsistent regions without disrupting the rest of the scene. Evaluations on the SPIn-NeRF dataset demonstrate that SplatFill not only surpasses existing NeRF-based and 3DGS-based inpainting methods in visual fidelity but also reduces training time by 24.5%. Qualitative results show our method delivers sharper details, fewer artifacts, and greater coherence across challenging viewpoints.
-]]></content:encoded>
-<pubDate>Wed, 10 Sep 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Point Linguist Model: Segment Any Object via Bridged Large 3D-Language Model</title>
-<link>https://arxiv.org/abs/2509.07825</link>
-<guid>https://arxiv.org/abs/2509.07825</guid>
-<content:encoded><![CDATA[
-arXiv:2509.07825v1 Announce Type: new 
-Abstract: 3D object segmentation with Large Language Models (LLMs) has become a prevailing paradigm due to its broad semantics, task flexibility, and strong generalization. However, this paradigm is hindered by representation misalignment: LLMs process high-level semantic tokens, whereas 3D point clouds convey only dense geometric structures. In prior methods, misalignment limits both input and output. At the input stage, dense point patches require heavy pre-alignment, weakening object-level semantics and confusing similar distractors. At the output stage, predictions depend only on dense features without explicit geometric cues, leading to a loss of fine-grained accuracy. To address these limitations, we present the Point Linguist Model (PLM), a general framework that bridges the representation gap between LLMs and dense 3D point clouds without requiring large-scale pre-alignment between 3D-text or 3D-images. Specifically, we introduce Object-centric Discriminative Representation (OcDR), which learns object-centric tokens that capture target semantics and scene relations under a hard negative-aware training objective. This mitigates the misalignment between LLM tokens and 3D points, enhances resilience to distractors, and facilitates semantic-level reasoning within LLMs. For accurate segmentation, we introduce the Geometric Reactivation Decoder (GRD), which predicts masks by combining OcDR tokens carrying LLM-inferred geometry with corresponding dense features, preserving comprehensive dense features throughout the pipeline. Extensive experiments show that PLM achieves significant improvements of +7.3 mIoU on ScanNetv2 and +6.0 mIoU on Multi3DRefer for 3D referring segmentation, with consistent gains across 7 benchmarks spanning 4 different tasks, demonstrating the effectiveness of comprehensive object-centric reasoning for robust 3D understanding.
 ]]></content:encoded>
 <pubDate>Wed, 10 Sep 2025 00:00:00 -0400</pubDate>
 </item>
