@@ -4,6 +4,7 @@
 <title>cs.CV updates on arXiv.org</title>
 <link>http://rss.arxiv.org/rss/cs.CV</link>
 
+
 <item>
 <title>Moment- and Power-Spectrum-Based Gaussianity Regularization for Text-to-Image Models</title>
 <link>https://arxiv.org/abs/2509.07027</link>
@@ -17,7 +18,6 @@ arXiv:2509.07027v3 Announce Type: replace
 Abstract: We propose a novel regularization loss that enforces standard Gaussianity, encouraging samples to align with a standard Gaussian distribution. This facilitates a range of downstream tasks involving optimization in the latent space of text-to-image models. We treat elements of a high-dimensional sample as one-dimensional standard Gaussian variables and define a composite loss that combines moment-based regularization in the spatial domain with power spectrum-based regularization in the spectral domain. Since the expected values of moments and power spectrum distributions are analytically known, the loss promotes conformity to these properties. To ensure permutation invariance, the losses are applied to randomly permuted inputs. Notably, existing Gaussianity-based regularizations fall within our unified framework: some correspond to moment losses of specific orders, while the previous covariance-matching loss is equivalent to our spectral loss but incurs higher time complexity due to its spatial-domain computation. We showcase the application of our regularization in generative modeling for test-time reward alignment with a text-to-image model, specifically to enhance aesthetics and text alignment. Our regularization outperforms previous Gaussianity regularization, effectively prevents reward hacking and accelerates convergence.
 ]]></content:encoded>
 <pubDate>Fri, 19 Sep 2025 00:00:00 -0400</pubDate>
-<pubDate>Fri, 19 Sep 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
 <title>Reconstruction Alignment Improves Unified Multimodal Models</title>
@@ -29,11 +29,10 @@ Abstract: We propose a novel regularization loss that enforces standard Gaussian
 Summary: 
 Unified multimodal models (UMMs) aim to combine visual understanding and generation in a single architecture. However, conventional training with image-text pairs often lacks fine-grained visual details in captions. In this study, a new method called Reconstruction Alignment (RecA) is introduced as a post-training technique for UMMs. RecA leverages visual understanding encoder embeddings as dense "text prompts" to improve generation quality without relying on sparse captions. By optimizing UMMs to reconstruct input images using self-supervised reconstruction loss, RecA effectively aligns understanding and generation. The results show that post-training with RecA significantly enhances image generation performance on various benchmarks, surpassing larger models while only requiring a fraction of the computational resources. This method demonstrates efficiency and effectiveness in improving UMMs across different architectures, making it a valuable tool in enhancing multimodal model performance. 
 
-<br><br>Summary: <div>
+<br /><br />Summary: <div>
 arXiv:2509.07295v2 Announce Type: replace 
 Abstract: Unified multimodal models (UMMs) unify visual understanding and generation within a single architecture. However, conventional training relies on image-text pairs (or sequences) whose captions are typically sparse and miss fine-grained visual details--even when they use hundreds of words to describe a simple image. We introduce Reconstruction Alignment (RecA), a resource-efficient post-training method that leverages visual understanding encoder embeddings as dense "text prompts," providing rich supervision without captions. Concretely, RecA conditions a UMM on its own visual understanding embeddings and optimizes it to reconstruct the input image with a self-supervised reconstruction loss, thereby realigning understanding and generation. Despite its simplicity, RecA is broadly applicable: across autoregressive, masked-autoregressive, and diffusion-based UMMs, it consistently improves generation and editing fidelity. With only 27 GPU-hours, post-training with RecA substantially improves image generation performance on GenEval (0.73$\rightarrow$0.90) and DPGBench (80.93$\rightarrow$88.15), while also boosting editing benchmarks (ImgEdit 3.38$\rightarrow$3.75, GEdit 6.94$\rightarrow$7.25). Notably, RecA surpasses much larger open-source models and applies broadly across diverse UMM architectures, establishing it as an efficient and general post-training alignment strategy for UMMs
 ]]></content:encoded>
-<pubDate>Fri, 19 Sep 2025 00:00:00 -0400</pubDate>
 <pubDate>Fri, 19 Sep 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -49,9 +48,7 @@ arXiv:2509.08661v2 Announce Type: replace
 Abstract: Isolated Sign Language Recognition (ISLR) is challenged by gestures that are morphologically similar yet semantically distinct, a problem rooted in the complex interplay between hand shape and motion trajectory. Existing methods, often relying on a single reference frame, struggle to resolve this geometric ambiguity. This paper introduces Dual-SignLanguageNet (DSLNet), a dual-reference, dual-stream architecture that decouples and models gesture morphology and trajectory in separate, complementary coordinate systems. The architecture processes these streams through specialized networks: a topology-aware graph convolution models the view-invariant shape from a wrist-centric frame, while a Finsler geometry-based encoder captures the context-aware trajectory from a facial-centric frame. These features are then integrated via a geometry-driven optimal transport fusion mechanism. DSLNet sets a new state-of-the-art, achieving 93.70%, 89.97%, and 99.79% accuracy on the challenging WLASL-100, WLASL-300, and LSA64 datasets, respectively, with significantly fewer parameters than competing models.
 ]]></content:encoded>
 <pubDate>Fri, 19 Sep 2025 00:00:00 -0400</pubDate>
-<pubDate>Fri, 19 Sep 2025 00:00:00 -0400</pubDate>
 </item>
-
 <item>
 <title>Class-invariant Test-Time Augmentation for Domain Generalization</title>
 <link>https://arxiv.org/abs/2509.14420</link>
@@ -11606,50 +11603,6 @@ Summary:
 The article introduces a novel approach, the Spherical Brownian Bridge Diffusion Model (SBDM), for accurate forecasting of individualized cortical thickness trajectories. The model addresses the challenges posed by the complex geometry of the cerebral cortex and the integration of multi-modal data. SBDM utilizes a bidirectional conditional Brownian bridge diffusion process to forecast cortical thickness at the vertex level of cortical surfaces. A new denoising model, the conditional spherical U-Net (CoS-UNet), is introduced to seamlessly integrate cortical surfaces and tabular conditions. Experimental results based on longitudinal datasets from the ADNI and OASIS demonstrate significantly reduced prediction errors compared to previous approaches. SBDM also enables the generation of individual factual and counterfactual cortical thickness trajectories, providing a framework for exploring hypothetical scenarios of cortical development. <br /><br />Summary: <div>
 arXiv:2509.08442v1 Announce Type: new 
 Abstract: Accurate forecasting of individualized, high-resolution cortical thickness (CTh) trajectories is essential for detecting subtle cortical changes, providing invaluable insights into neurodegenerative processes and facilitating earlier and more precise intervention strategies. However, CTh forecasting is a challenging task due to the intricate non-Euclidean geometry of the cerebral cortex and the need to integrate multi-modal data for subject-specific predictions. To address these challenges, we introduce the Spherical Brownian Bridge Diffusion Model (SBDM). Specifically, we propose a bidirectional conditional Brownian bridge diffusion process to forecast CTh trajectories at the vertex level of registered cortical surfaces. Our technical contribution includes a new denoising model, the conditional spherical U-Net (CoS-UNet), which combines spherical convolutions and dense cross-attention to integrate cortical surfaces and tabular conditions seamlessly. Compared to previous approaches, SBDM achieves significantly reduced prediction errors, as demonstrated by our experiments based on longitudinal datasets from the ADNI and OASIS. Additionally, we demonstrate SBDM's ability to generate individual factual and counterfactual CTh trajectories, offering a novel framework for exploring hypothetical scenarios of cortical development.
-]]></content:encoded>
-<pubDate>Thu, 11 Sep 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>First-order State Space Model for Lightweight Image Super-resolution</title>
-<link>https://arxiv.org/abs/2509.08458</link>
-<guid>https://arxiv.org/abs/2509.08458</guid>
-<content:encoded><![CDATA[
-<div> calculation process, State Space Model, lightweight super-resolution, First-order State Space Model, MambaIR 
-
-Summary:
-State space models (SSMs) like Mamba have shown promise in NLP and vision tasks. However, existing vision models based on Mamba focus more on network architecture and scan paths than on the SSM module. To explore SSMs' potential, researchers modified the calculation process of SSM to enhance performance on lightweight super-resolution tasks. They introduced the First-order State Space Model (FSSM) to improve the original Mamba module by incorporating token correlations. By applying a first-order hold condition and deriving a new discretized form, they analyzed cumulative error. Extensive experimental results demonstrated that FSSM improves the performance of MambaIR without increasing parameters, surpassing current lightweight super-resolution methods and achieving state-of-the-art results. <br /><br />Summary: <div>
-arXiv:2509.08458v1 Announce Type: new 
-Abstract: State space models (SSMs), particularly Mamba, have shown promise in NLP tasks and are increasingly applied to vision tasks. However, most Mamba-based vision models focus on network architecture and scan paths, with little attention to the SSM module. In order to explore the potential of SSMs, we modified the calculation process of SSM without increasing the number of parameters to improve the performance on lightweight super-resolution tasks. In this paper, we introduce the First-order State Space Model (FSSM) to improve the original Mamba module, enhancing performance by incorporating token correlations. We apply a first-order hold condition in SSMs, derive the new discretized form, and analyzed cumulative error. Extensive experimental results demonstrate that FSSM improves the performance of MambaIR on five benchmark datasets without additionally increasing the number of parameters, and surpasses current lightweight SR methods, achieving state-of-the-art results.
-]]></content:encoded>
-<pubDate>Thu, 11 Sep 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Maximally Useful and Minimally Redundant: The Key to Self Supervised Learning for Imbalanced Data</title>
-<link>https://arxiv.org/abs/2509.08469</link>
-<guid>https://arxiv.org/abs/2509.08469</guid>
-<content:encoded><![CDATA[
-<div> Keywords: contrastive self-supervised learning, imbalanced datasets, multi-view assumptions, mutual information, state-of-the-art accuracy
-
-Summary: 
-In this paper, the authors address the issue of imbalanced datasets in contrastive self-supervised learning. They propose a new framework that extends the traditional multi-view approach to incorporate more than two views, leveraging the concept of mutual information to enhance learning. By distinguishing between intra and inter discriminatory characteristics, the method aims to extract representative features of underrepresented classes. A novel loss function is introduced to filter out extreme features, leading to improved representation learning. Experimental results demonstrate the effectiveness of the more than two view objective, achieving state-of-the-art accuracy in self-supervised imbalanced dataset classification tasks. Specifically, significant performance gains are observed in Cifar10-LT, Cifar100-LT, and Imagenet-LT datasets using popular neural network architectures. The proposed approach shows promise in addressing the challenges posed by imbalanced datasets in self-supervised learning methodologies.<br /><br />Summary: <div>
-arXiv:2509.08469v1 Announce Type: new 
-Abstract: The robustness of contrastive self-supervised learning (CSSL) for imbalanced datasets is largely unexplored. CSSL usually makes use of \emph{multi-view} assumptions to learn discriminatory features via similar and dissimilar data samples. CSSL works well on balanced datasets, but does not generalize well for imbalanced datasets. In a very recent paper, as part of future work, Yann LeCun pointed out that the self-supervised multiview framework can be extended to cases involving \emph{more than two views}. Taking a cue from this insight we propose a theoretical justification based on the concept of \emph{mutual information} to support the \emph{more than two views} objective and apply it to the problem of dataset imbalance in self-supervised learning. The proposed method helps extract representative characteristics of the tail classes by segregating between \emph{intra} and \emph{inter} discriminatory characteristics. We introduce a loss function that helps us to learn better representations by filtering out extreme features. Experimental evaluation on a variety of self-supervised frameworks (both contrastive and non-contrastive) also prove that the \emph{more than two view} objective works well for imbalanced datasets. We achieve a new state-of-the-art accuracy in self-supervised imbalanced dataset classification (2\% improvement in Cifar10-LT using Resnet-18, 5\% improvement in Cifar100-LT using Resnet-18, 3\% improvement in Imagenet-LT (1k) using Resnet-50).
-]]></content:encoded>
-<pubDate>Thu, 11 Sep 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Prompt-Driven Image Analysis with Multimodal Generative AI: Detection, Segmentation, Inpainting, and Interpretation</title>
-<link>https://arxiv.org/abs/2509.08489</link>
-<guid>https://arxiv.org/abs/2509.08489</guid>
-<content:encoded><![CDATA[
-<div> detection, segmentation, inpainting, vision-language description, prompt-driven image analysis
-
-Summary:
-Prompt-driven image analysis involves converting natural-language instructions into multiple steps such as detection, segmentation, editing, and description. This study showcases a unified pipeline that combines open-vocabulary detection, promptable segmentation, text-conditioned inpainting, and vision-language description into a seamless workflow. The system allows for end-to-end processing from a single prompt, offers transparent debugging with intermediate artifacts, and supports interaction through both a user interface and a command-line interface. Integration choices are highlighted to enhance robustness, including threshold adjustments, mask inspection techniques, and resource-aware defaults. The study reveals high accuracy in detection and segmentation tasks, with inpainting consuming a significant portion of the total runtime. Recommendations are provided for tuning parameters and ensuring reliability through version pinning, artifact logging, and seed control. Overall, this work offers a reliable framework for integrating modern vision and multimodal models for tasks like object replacement and scene augmentation. 
-
-<br /><br />Summary: <div>
-arXiv:2509.08489v1 Announce Type: new 
-Abstract: Prompt-driven image analysis converts a single natural-language instruction into multiple steps: locate, segment, edit, and describe. We present a practical case study of a unified pipeline that combines open-vocabulary detection, promptable segmentation, text-conditioned inpainting, and vision-language description into a single workflow. The system works end to end from a single prompt, retains intermediate artifacts for transparent debugging (such as detections, masks, overlays, edited images, and before and after composites), and provides the same functionality through an interactive UI and a scriptable CLI for consistent, repeatable runs. We highlight integration choices that reduce brittleness, including threshold adjustments, mask inspection with light morphology, and resource-aware defaults. In a small, single-word prompt segment, detection and segmentation produced usable masks in over 90% of cases with an accuracy above 85% based on our criteria. On a high-end GPU, inpainting makes up 60 to 75% of total runtime under typical guidance and sampling settings, which highlights the need for careful tuning. The study offers implementation-guided advice on thresholds, mask tightness, and diffusion parameters, and details version pinning, artifact logging, and seed control to support replay. Our contribution is a transparent, reliable pattern for assembling modern vision and multimodal models behind a single prompt, with clear guardrails and operational practices that improve reliability in object replacement, scene augmentation, and removal.
 ]]></content:encoded>
 <pubDate>Thu, 11 Sep 2025 00:00:00 -0400</pubDate>
 </item>
