@@ -4,6 +4,7 @@
 <title>cs.LG updates on arXiv.org</title>
 <link>http://rss.arxiv.org/rss/cs.LG</link>
 
+
 <item>
 <title>Hardness, Structural Knowledge, and Opportunity: An Analytical Framework for Modular Performance Modeling</title>
 <link>https://arxiv.org/abs/2509.11000</link>
@@ -11,14 +12,12 @@
 <content:encoded><![CDATA[
 <div> Keywords: performance-influence models, structural knowledge, modular performance modeling, modeling hardness, system characteristics
 
-Summary:<br><br>Performance-influence models play a crucial role in understanding how configurations affect system performance. This paper focuses on the impact of structural knowledge and system characteristics on the creation of opportunities for improved modular performance modeling. It introduces the concept of modeling hardness as the inherent difficulty of performance modeling, which is influenced by the number of modules and configuration options per module. The study reveals that higher levels of structural knowledge and increased modeling hardness enhance the opportunity for improvement in performance modeling. The findings also suggest that the impact of these factors varies depending on the performance metric, with structural knowledge playing a more dominant role in ranking accuracy and modeling hardness being more crucial for prediction accuracy. This research provides valuable insights for system designers on strategically allocating time and selecting appropriate modeling approaches based on a system's characteristics and task objectives. <div>
+Summary:<br /><br />Performance-influence models play a crucial role in understanding how configurations affect system performance. This paper focuses on the impact of structural knowledge and system characteristics on the creation of opportunities for improved modular performance modeling. It introduces the concept of modeling hardness as the inherent difficulty of performance modeling, which is influenced by the number of modules and configuration options per module. The study reveals that higher levels of structural knowledge and increased modeling hardness enhance the opportunity for improvement in performance modeling. The findings also suggest that the impact of these factors varies depending on the performance metric, with structural knowledge playing a more dominant role in ranking accuracy and modeling hardness being more crucial for prediction accuracy. This research provides valuable insights for system designers on strategically allocating time and selecting appropriate modeling approaches based on a system's characteristics and task objectives. <div>
 arXiv:2509.11000v2 Announce Type: replace-cross 
 Abstract: Performance-influence models are beneficial for understanding how configurations affect system performance, but their creation is challenging due to the exponential growth of configuration spaces. While gray-box approaches leverage selective "structural knowledge" (like the module execution graph of the system) to improve modeling, the relationship between this knowledge, a system's characteristics (we call them "structural aspects"), and potential model improvements is not well understood. This paper addresses this gap by formally investigating how variations in structural aspects (e.g., the number of modules and options per module) and the level of structural knowledge impact the creation of "opportunities" for improved "modular performance modeling". We introduce and quantify the concept of modeling "hardness", defined as the inherent difficulty of performance modeling. Through controlled experiments with synthetic system models, we establish an "analytical matrix" to measure these concepts. Our findings show that modeling hardness is primarily driven by the number of modules and configuration options per module. More importantly, we demonstrate that both higher levels of structural knowledge and increased modeling hardness significantly enhance the opportunity for improvement. The impact of these factors varies by performance metric; for ranking accuracy (e.g., in debugging task), structural knowledge is more dominant, while for prediction accuracy (e.g., in resource management task), hardness plays a stronger role. These results provide actionable insights for system designers, guiding them to strategically allocate time and select appropriate modeling approaches based on a system's characteristics and a given task's objectives.
 ]]></content:encoded>
 <pubDate>Mon, 22 Sep 2025 00:00:00 -0400</pubDate>
-<pubDate>Mon, 22 Sep 2025 00:00:00 -0400</pubDate>
 </item>
-
 <item>
 <title>Pre-Forgettable Models: Prompt Learning as a Native Mechanism for Unlearning</title>
 <link>https://arxiv.org/abs/2509.15230</link>
@@ -11281,16 +11280,6 @@ Abstract: The proliferation of spectroscopic data across various scientific and 
 <content:encoded><![CDATA[
 arXiv:2509.11520v1 Announce Type: new 
 Abstract: Inference latency and trustworthiness of Deep Neural Networks (DNNs) are the bottlenecks in deploying them in critical applications like sensitive tasks. Early Exit (EE) DNNs overcome the latency issues by allowing samples to exit from intermediary layers if they attain `high' confidence scores on the predicted class. However, the DNNs are known to exhibit overconfidence, which can lead to many samples exiting early and render EE strategies untrustworthy. We use Selective Prediction (SP) to overcome this issue by checking the `hardness' of the samples rather than just relying on the confidence score alone. We propose SPEED, a novel approach that uses Deferral Classifiers (DCs) at each layer to check the hardness of samples before performing EEs. Specifically, the DCs identify if a sample is hard to predict at an intermediary layer, leading to hallucination, and defer it to an expert. Early detection of hard samples for inference prevents the wastage of computational resources and improves trust by deferring the hard samples to the expert. We demonstrate that EE aided with SP improves both accuracy and latency. Our method minimizes the risk of wrong prediction by $50\%$ with a speedup of $2.05\times$ as compared to the final layer. The anonymized source code is available at https://github.com/Div290/SPEED
-]]></content:encoded>
-<pubDate>Tue, 16 Sep 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>DARD: Dice Adversarial Robustness Distillation against Adversarial Attacks</title>
-<link>https://arxiv.org/abs/2509.11525</link>
-<guid>https://arxiv.org/abs/2509.11525</guid>
-<content:encoded><![CDATA[
-arXiv:2509.11525v1 Announce Type: new 
-Abstract: Deep learning models are vulnerable to adversarial examples, posing critical security challenges in real-world applications. While Adversarial Training (AT ) is a widely adopted defense mechanism to enhance robustness, it often incurs a trade-off by degrading performance on unperturbed, natural data. Recent efforts have highlighted that larger models exhibit enhanced robustness over their smaller counterparts. In this paper, we empirically demonstrate that such robustness can be systematically distilled from large teacher models into compact student models. To achieve better performance, we introduce Dice Adversarial Robustness Distillation (DARD), a novel method designed to transfer robustness through a tailored knowledge distillation paradigm. Additionally, we propose Dice Projected Gradient Descent (DPGD), an adversarial example generalization method optimized for effective attack. Our extensive experiments demonstrate that the DARD approach consistently outperforms adversarially trained networks with the same architecture, achieving superior robustness and standard accuracy.
 ]]></content:encoded>
 <pubDate>Tue, 16 Sep 2025 00:00:00 -0400</pubDate>
 </item>
