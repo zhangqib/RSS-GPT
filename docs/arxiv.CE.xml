@@ -4,20 +4,20 @@
 <title>cs.CE updates on arXiv.org</title>
 <link>http://rss.arxiv.org/rss/cs.CE</link>
 
+
 <item>
 <title>SPH-Net: A Co-Attention Hybrid Model for Accurate Stock Price Prediction</title>
 <link>https://arxiv.org/abs/2509.15414</link>
 <guid>https://arxiv.org/abs/2509.15414</guid>
 <content:encoded><![CDATA[
 <div> SPH-Net, Stock Price Prediction, Hybrid Neural Network, Deep Learning, Time Series Forecasting
-<br>
+<br />
 Summary: 
 SPH-Net is a new deep learning framework designed for stock price prediction that incorporates a co-attention mechanism. It utilizes a Vision Transformer for processing temporal patterns and an attention mechanism for feature extraction, capturing global and local dependencies in market data. The model is evaluated on eight stock datasets using six fundamental market indicators. Results show that SPH-Net outperforms existing models in stock prediction accuracy. Its success lies in effectively capturing complex temporal patterns and maintaining robustness against market noise. This improved accuracy can provide valuable decision-support for investors and financial analysts, improving investment strategies and risk assessment in volatile market conditions. 
-<br> <div>
+<br /> <div>
 arXiv:2509.15414v1 Announce Type: new 
 Abstract: Prediction of stock price movements presents a formidable challenge in financial analytics due to the inherent volatility, non-stationarity, and nonlinear characteristics of market data. This paper introduces SPH-Net (Stock Price Prediction Hybrid Neural Network), an innovative deep learning framework designed to enhance the accuracy of time series forecasting in financial markets. The proposed architecture employs a novel co-attention mechanism that initially processes temporal patterns through a Vision Transformer, followed by refined feature extraction via an attention mechanism, thereby capturing both global and local dependencies in market data. To rigorously evaluate the model's performance, we conduct comprehensive experiments on eight diverse stock datasets: AMD, Ebay, Facebook, FirstService Corp, Tesla, Google, Mondi ADR, and Matador Resources. Each dataset is standardized using six fundamental market indicators: Open, High, Low, Close, Adjusted Close, and Volume, representing a complete set of features for comprehensive market analysis. Experimental results demonstrate that SPH-Net consistently outperforms existing stock prediction models across all evaluation metrics. The model's superior performance stems from its ability to effectively capture complex temporal patterns while maintaining robustness against market noise. By significantly improving prediction accuracy in financial time series analysis, SPH-Net provides valuable decision-support capabilities for investors and financial analysts, potentially enabling more informed investment strategies and risk assessment in volatile market conditions.
 ]]></content:encoded>
-<pubDate>Mon, 22 Sep 2025 00:00:00 -0400</pubDate>
 <pubDate>Mon, 22 Sep 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -25,13 +25,12 @@ Abstract: Prediction of stock price movements presents a formidable challenge in
 <link>https://arxiv.org/abs/2509.15744</link>
 <guid>https://arxiv.org/abs/2509.15744</guid>
 <content:encoded><![CDATA[
-<div> sensitivity computations, dynamic optimization, adjoint method, superposition principle, CUDA implementation <br>
-Summary: <br>
-Dynamic optimization faces limitations due to memory requirements for sensitivity computations relying on full forward and adjoint wave fields. A new approach based on the adjoint method and superposition principle is introduced to approximate sensitivity computations for self-adjoint problems, enabling iterative computation and reducing memory burden to the number of degrees of freedom. This allows for sensitivity computations on GPUs with limited memory capacity, such as the A100 from NVIDIA. The approach is demonstrated on full waveform inversion and transient acoustic topology optimization, utilizing a highly efficient finite difference forward solver implemented in CUDA. However, the technique is limited to self-adjoint problems and does not account for phenomena like damping. <br> <div>
+<div> sensitivity computations, dynamic optimization, adjoint method, superposition principle, CUDA implementation <br />
+Summary: <br />
+Dynamic optimization faces limitations due to memory requirements for sensitivity computations relying on full forward and adjoint wave fields. A new approach based on the adjoint method and superposition principle is introduced to approximate sensitivity computations for self-adjoint problems, enabling iterative computation and reducing memory burden to the number of degrees of freedom. This allows for sensitivity computations on GPUs with limited memory capacity, such as the A100 from NVIDIA. The approach is demonstrated on full waveform inversion and transient acoustic topology optimization, utilizing a highly efficient finite difference forward solver implemented in CUDA. However, the technique is limited to self-adjoint problems and does not account for phenomena like damping. <br /> <div>
 arXiv:2509.15744v1 Announce Type: new 
 Abstract: Dynamic optimization is currently limited by sensitivity computations that require information from full forward and adjoint wave fields. Since the forward and adjoint solutions are computed in opposing time directions, the forward solution must be stored. This requires a substantial amount of memory for large-scale problems even when using check pointing or data compression techniques. As a result, the problem size is memory bound rather than bound by wall clock time, when working with modern GPU-based implementations that have limited memory capacity. To overcome this limitation, we introduce a new approach for approximate sensitivity computation based on the adjoint method (for self-adjoint problems) that relies on the principle of superposition. The approximation allows an iterative computation of the sensitivity, reducing the memory burden to that of the solution at a small number of time steps, i.e., to the number of degrees of freedom. This enables sensitivity computations for problems with billions of degrees of freedom on current GPUs, such as the A100 from NVIDIA (from 2020). We demonstrate the approach on full waveform inversion and transient acoustic topology optimization problems, relying on a highly efficient finite difference forward solver implemented in CUDA. Phenomena such as damping cannot be considered, as the approximation technique is limited to self-adjoint problems.
 ]]></content:encoded>
-<pubDate>Mon, 22 Sep 2025 00:00:00 -0400</pubDate>
 <pubDate>Mon, 22 Sep 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -47,7 +46,6 @@ arXiv:2509.15909v1 Announce Type: new
 Abstract: This paper presents the simulation of the operation of an electric forklift fleet within an intralogistics scenario. For this purpose, the open source simulation tool CARLA is used; according to our knowledge this is a novel approach in the context of logistics simulation. First, CARLA is used to generate and visualize a realistic 3D outdoor warehouse scenario, incorporating a number of randomly moving forklifts. In a next step, intralogistics transport tasks, such as pick-and-place, are simulated for the forklift fleet, including shortest-path finding. Furthermore, the capability to play back localization data, previously recorded from a ''real'' forklift fleet, is demonstrated.This play back is done in the original recreated environment, thereby enabling the visualization of the forklifts movements. Finally, the energy consumption of the forklift trucks is simulated by integrating a physical battery model that generates the state of charge (SOC) of each truck as a function of load and activity. To demonstrate the wide range of possible applications for the CARLA simulation platform, we describe two use cases. The first deals with the problem of detecting regions with critically high traffic densities, the second with optimal placement of charging stations for the forklift trucks. Both use cases are calculated for an exemplary warehouse model.
 ]]></content:encoded>
 <pubDate>Mon, 22 Sep 2025 00:00:00 -0400</pubDate>
-<pubDate>Mon, 22 Sep 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
 <title>Optimal Experimental Design of a Moving Sensor for Linear Bayesian Inverse Problems</title>
@@ -61,7 +59,6 @@ The article focuses on optimizing the path of a mobile sensor to reduce posterio
 arXiv:2509.15961v1 Announce Type: new 
 Abstract: We optimize the path of a mobile sensor to minimize the posterior uncertainty of a Bayesian inverse problem. Along its path, the sensor continuously takes measurements of the state, which is a physical quantity modeled as the solution of a partial differential equation (PDE) with uncertain parameters. Considering linear PDEs specifically, we derive the closed-form expression of the posterior covariance matrix of the model parameters as a function of the path, and formulate the optimal experimental design problem for minimizing the posterior's uncertainty. We discretize the problem such that the cost function remains consistent under temporal refinement. Additional constraints ensure that the path avoids obstacles and remains physically interpretable through a control parameterization. The constrained optimization problem is solved using an interior-point method. We present computational results for a convection-diffusion equation with unknown initial condition.
 ]]></content:encoded>
-<pubDate>Mon, 22 Sep 2025 00:00:00 -0400</pubDate>
 <pubDate>Mon, 22 Sep 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -77,14 +74,12 @@ Summary:
 - LARS efficiently solves the $\ell_1$-constrained problem, while OMP serves as a heuristic for $\ell_0$-regularized selection.  
 - The study broadens the range of viable discovery algorithms beyond typical $\ell_1$-based approaches like LASSO.  
 
-<br><br>Summary: <div>
+<br /><br />Summary: <div>
 arXiv:2509.16040v1 Announce Type: cross 
 Abstract: The automated discovery of constitutive models from data has recently emerged as a promising alternative to the traditional model calibration paradigm. In this work, we present a fully automated framework for constitutive model discovery that systematically pairs three sparse regression algorithms (Least Absolute Shrinkage and Selection Operator (LASSO), Least Angle Regression (LARS), and Orthogonal Matching Pursuit (OMP)) with three model selection criteria: $K$-fold cross-validation (CV), Akaike Information Criterion (AIC), and Bayesian Information Criterion (BIC). This pairing yields nine distinct algorithms for model discovery and enables a systematic exploration of the trade-off between sparsity, predictive performance, and computational cost. While LARS serves as an efficient path-based solver for the $\ell_1$-constrained problem, OMP is introduced as a tractable heuristic for $\ell_0$-regularized selection. The framework is applied to both isotropic and anisotropic hyperelasticity, utilizing both synthetic and experimental datasets. Results reveal that all nine algorithm-criterion combinations perform consistently well for the discovery of isotropic and anisotropic materials, yielding highly accurate constitutive models. These findings broaden the range of viable discovery algorithms beyond $\ell_1$-based approaches such as LASSO.
 ]]></content:encoded>
 <pubDate>Mon, 22 Sep 2025 00:00:00 -0400</pubDate>
-<pubDate>Mon, 22 Sep 2025 00:00:00 -0400</pubDate>
 </item>
-
 <item>
 <title>Multi-Objective Loss Balancing in Physics-Informed Neural Networks for Fluid Flow Applications</title>
 <link>https://arxiv.org/abs/2509.14437</link>
