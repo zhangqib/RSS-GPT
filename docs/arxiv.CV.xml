@@ -4,6 +4,7 @@
 <title>cs.CV updates on arXiv.org</title>
 <link>http://rss.arxiv.org/rss/cs.CV</link>
 
+
 <item>
 <title>Disentangling Content from Style to Overcome Shortcut Learning: A Hybrid Generative-Discriminative Learning Framework</title>
 <link>https://arxiv.org/abs/2509.11598</link>
@@ -17,7 +18,6 @@ arXiv:2509.11598v3 Announce Type: replace
 Abstract: Despite the remarkable success of Self-Supervised Learning (SSL), its generalization is fundamentally hindered by Shortcut Learning, where models exploit superficial features like texture instead of intrinsic structure. We experimentally verify this flaw within the generative paradigm (e.g., MAE) and argue it is a systemic issue also affecting discriminative methods, identifying it as the root cause of their failure on unseen domains. While existing methods often tackle this at a surface level by aligning or separating domain-specific features, they fail to alter the underlying learning mechanism that fosters shortcut dependency. To address this at its core, we propose HyGDL (Hybrid Generative-Discriminative Learning Framework), a hybrid framework that achieves explicit content-style disentanglement. Our approach is guided by the Invariance Pre-training Principle: forcing a model to learn an invariant essence by systematically varying a bias (e.g., style) at the input while keeping the supervision signal constant. HyGDL operates on a single encoder and analytically defines style as the component of a representation that is orthogonal to its style-invariant content, derived via vector projection. This is operationalized through a synergistic design: (1) a self-distillation objective learns a stable, style-invariant content direction; (2) an analytical projection then decomposes the representation into orthogonal content and style vectors; and (3) a style-conditioned reconstruction objective uses these vectors to restore the image, providing end-to-end supervision. Unlike prior methods that rely on implicit heuristics, this principled disentanglement allows HyGDL to learn truly robust representations, demonstrating superior performance on benchmarks designed to diagnose shortcut learning.
 ]]></content:encoded>
 <pubDate>Tue, 23 Sep 2025 00:00:00 -0400</pubDate>
-<pubDate>Tue, 23 Sep 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
 <title>SpecVLM: Fast Speculative Decoding in Vision-Language Models</title>
@@ -29,11 +29,10 @@ Abstract: Despite the remarkable success of Self-Supervised Learning (SSL), its 
 Summary:
 Speculative decoding is a powerful acceleration technique for autoregressive large language models (LLMs), but implementing it in vision-language models (VLMs) presents challenges due to the dominance of visual tokens in the prefill stage. The SpecVLM system introduces an elastic visual compressor that dynamically selects compression techniques to balance efficiency and accuracy in VLM inference. It also proposes an online-logit distillation protocol that trains the model with on-the-fly teacher logits and features, improving efficiency without the need for offline distillation corpora. The training-time scaling effect is observed to increase the model's efficiency over time. Empirically, SpecVLM achieves significant speedup in inference while maintaining output distribution fidelity, showcasing its effectiveness across various resolutions and task complexities. The code for SpecVLM is available on GitHub for further exploration and implementation. 
 
-<br><br>Summary: <div>
+<br /><br />Summary: <div>
 arXiv:2509.11815v2 Announce Type: replace 
 Abstract: Speculative decoding is a powerful way to accelerate autoregressive large language models (LLMs), but directly porting it to vision-language models (VLMs) faces unique systems constraints: the prefill stage is dominated by visual tokens whose count scales with image resolution and video length, inflating both compute and memory, especially the key-value (KV) cache. We study speculative decoding for VLMs and introduce SpecVLM, a practical system that (1) establishes a strong EAGLE-2-style baseline, EagleVLM, delivering 1.5--2.3x end-to-end speedups over full autoregressive inference, and (2) further accelerates VLM inference with an elastic visual compressor that adaptively selects among pruning, pooling, convolution, and resampler primitives to balance FLOPs/parameters and accuracy per input. To avoid costly offline distillation corpora, we propose an online-logit distillation protocol that trains the draft model with on-the-fly teacher logits and penultimate features using a combined cross-entropy and Smooth L1 objective, eliminating storage and preprocessing while remaining compute-efficient. This protocol reveals a training-time scaling effect: longer online training monotonically increases the draft model's average accepted length, improving speculative efficiency. Empirically, SpecVLM achieves additional acceleration, culminating in 2.5--2.9x end-to-end speedups within 5 epochs across LLaVA and MMMU, consistently over resolutions and task difficulties, while preserving the target model's output distribution (lossless decoding). Our code is available at https://github.com/haiduo/SpecVLM.
 ]]></content:encoded>
-<pubDate>Tue, 23 Sep 2025 00:00:00 -0400</pubDate>
 <pubDate>Tue, 23 Sep 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -41,13 +40,12 @@ Abstract: Speculative decoding is a powerful way to accelerate autoregressive la
 <link>https://arxiv.org/abs/2509.09926</link>
 <guid>https://arxiv.org/abs/2509.09926</guid>
 <content:encoded><![CDATA[
-<div> long-tailed learning, semi-supervised learning, fine-tuning, pseudo-labels, open-world scenarios<br>
-Summary:<br>
+<div> long-tailed learning, semi-supervised learning, fine-tuning, pseudo-labels, open-world scenarios<br />
+Summary:<br />
 The article introduces LoFT, a framework for Long-Tailed Semi-Supervised Learning (LTSSL) that extends the concept to foundation model fine-tuning. By fine-tuning foundation models, LoFT produces more reliable pseudo-labels, which enhances imbalanced learning. The framework also addresses open-world scenarios where out-of-distribution (OOD) samples are present in the unlabeled data, improving discriminative ability. Experimental results show that LoFT outperforms previous LTSSL methods, even with only 1% of the unlabeled data. <div>
 arXiv:2509.09926v2 Announce Type: replace-cross 
 Abstract: Long-tailed learning has garnered increasing attention due to its wide applicability in real-world scenarios. Among existing approaches, Long-Tailed Semi-Supervised Learning (LTSSL) has emerged as an effective solution by incorporating a large amount of unlabeled data into the imbalanced labeled dataset. However, most prior LTSSL methods are designed to train models from scratch, which often leads to issues such as overconfidence and low-quality pseudo-labels. To address these challenges, we extend LTSSL into the foundation model fine-tuning paradigm and propose a novel framework: LoFT (Long-tailed semi-supervised learning via parameter-efficient Fine-Tuning). We demonstrate that fine-tuned foundation models can generate more reliable pseudolabels, thereby benefiting imbalanced learning. Furthermore, we explore a more practical setting by investigating semi-supervised learning under open-world conditions, where the unlabeled data may include out-of-distribution (OOD) samples. To handle this problem, we propose LoFT-OW (LoFT under Open-World scenarios) to improve the discriminative ability. Experimental results on multiple benchmarks demonstrate that our method achieves superior performance compared to previous approaches, even when utilizing only 1\% of the unlabeled data compared with previous works.
 ]]></content:encoded>
-<pubDate>Tue, 23 Sep 2025 00:00:00 -0400</pubDate>
 <pubDate>Tue, 23 Sep 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -55,16 +53,14 @@ Abstract: Long-tailed learning has garnered increasing attention due to its wide
 <link>https://arxiv.org/abs/2509.11003</link>
 <guid>https://arxiv.org/abs/2509.11003</guid>
 <content:encoded><![CDATA[
-<div> Gaussian Splatting, sparse-view settings, alternating densification, overfitting, rendering quality,<br>
-<br>
+<div> Gaussian Splatting, sparse-view settings, alternating densification, overfitting, rendering quality,<br />
+<br />
 Summary: The article discusses the challenges faced by 3D Gaussian Splatting (3DGS) in sparse-view settings, leading to undesirable artifacts and overfitting. The proposed solution, AD-GS, introduces an alternating densification framework that controls model capacity growth by alternating high and low densification phases. During high densification, the model aggressively densifies followed by photometric loss-based training to capture fine-grained scene details. In low densification, Gaussians are pruned for opacity and their geometry is refined through pseudo-view consistency and edge-aware depth smoothness. This approach significantly improves rendering quality and geometric consistency compared to existing methods, as demonstrated through extensive experiments on challenging datasets. The source code for AD-GS is available on the project page. <div>
 arXiv:2509.11003v2 Announce Type: replace-cross 
 Abstract: 3D Gaussian Splatting (3DGS) has shown impressive results in real-time novel view synthesis. However, it often struggles under sparse-view settings, producing undesirable artifacts such as floaters, inaccurate geometry, and overfitting due to limited observations. We find that a key contributing factor is uncontrolled densification, where adding Gaussian primitives rapidly without guidance can harm geometry and cause artifacts. We propose AD-GS, a novel alternating densification framework that interleaves high and low densification phases. During high densification, the model densifies aggressively, followed by photometric loss based training to capture fine-grained scene details. Low densification then primarily involves aggressive opacity pruning of Gaussians followed by regularizing their geometry through pseudo-view consistency and edge-aware depth smoothness. This alternating approach helps reduce overfitting by carefully controlling model capacity growth while progressively refining the scene representation. Extensive experiments on challenging datasets demonstrate that AD-GS significantly improves rendering quality and geometric consistency compared to existing methods. The source code for our model can be found on our project page: https://gurutvapatle.github.io/publications/2025/ADGS.html .
 ]]></content:encoded>
 <pubDate>Tue, 23 Sep 2025 00:00:00 -0400</pubDate>
-<pubDate>Tue, 23 Sep 2025 00:00:00 -0400</pubDate>
 </item>
-
 <item>
 <title>Evaluation of Ensemble Learning Techniques for handwritten OCR Improvement</title>
 <link>https://arxiv.org/abs/2509.16221</link>
@@ -11248,46 +11244,6 @@ Abstract: Multimodal medical analysis combining image and tabular data has gaine
 <content:encoded><![CDATA[
 arXiv:2507.02844v2 Announce Type: replace 
 Abstract: With the emergence of strong vision language capabilities, multimodal large language models (MLLMs) have demonstrated tremendous potential for real-world applications. However, the security vulnerabilities exhibited by the visual modality pose significant challenges to deploying such models in open-world environments. Recent studies have successfully induced harmful responses from target MLLMs by encoding harmful textual semantics directly into visual inputs. However, in these approaches, the visual modality primarily serves as a trigger for unsafe behavior, often exhibiting semantic ambiguity and lacking grounding in realistic scenarios. In this work, we define a novel setting: vision-centric jailbreak, where visual information serves as a necessary component in constructing a complete and realistic jailbreak context. Building on this setting, we propose the VisCo (Visual Contextual) Attack. VisCo fabricates contextual dialogue using four distinct vision-focused strategies, dynamically generating auxiliary images when necessary to construct a vision-centric jailbreak scenario. To maximize attack effectiveness, it incorporates automatic toxicity obfuscation and semantic refinement to produce a final attack prompt that reliably triggers harmful responses from the target black-box MLLMs. Specifically, VisCo achieves a toxicity score of 4.78 and an Attack Success Rate (ASR) of 85% on MM-SafetyBench against GPT-4o, significantly outperforming the baseline, which achieves a toxicity score of 2.48 and an ASR of 22.2%. Code: https://github.com/Dtc7w3PQ/Visco-Attack.
-]]></content:encoded>
-<pubDate>Wed, 17 Sep 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Taming Anomalies with Down-Up Sampling Networks: Group Center Preserving Reconstruction for 3D Anomaly Detection</title>
-<link>https://arxiv.org/abs/2507.03903</link>
-<guid>https://arxiv.org/abs/2507.03903</guid>
-<content:encoded><![CDATA[
-arXiv:2507.03903v2 Announce Type: replace 
-Abstract: Reconstruction-based methods have demonstrated very promising results for 3D anomaly detection. However, these methods face great challenges in handling high-precision point clouds due to the large scale and complex structure. In this study, a Down-Up Sampling Network (DUS-Net) is proposed to reconstruct high-precision point clouds for 3D anomaly detection by preserving the group center geometric structure. The DUS-Net first introduces a Noise Generation module to generate noisy patches, which facilitates the diversity of training data and strengthens the feature representation for reconstruction. Then, a Down-sampling Network (Down-Net) is developed to learn an anomaly-free center point cloud from patches with noise injection. Subsequently, an Up-sampling Network (Up-Net) is designed to reconstruct high-precision point clouds by fusing multi-scale up-sampling features. Our method leverages group centers for construction, enabling the preservation of geometric structure and providing a more precise point cloud. Extensive experiments demonstrate the effectiveness of our proposed method, achieving state-of-the-art (SOTA) performance with an Object-level AUROC of 79.9% and 79.5%, and a Point-level AUROC of 71.2% and 84.7% on the Real3D-AD and Anomaly-ShapeNet datasets, respectively.
-]]></content:encoded>
-<pubDate>Wed, 17 Sep 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>ByDeWay: Boost Your multimodal LLM with DEpth prompting in a Training-Free Way</title>
-<link>https://arxiv.org/abs/2507.08679</link>
-<guid>https://arxiv.org/abs/2507.08679</guid>
-<content:encoded><![CDATA[
-arXiv:2507.08679v2 Announce Type: replace 
-Abstract: We introduce ByDeWay, a training-free framework designed to enhance the performance of Multimodal Large Language Models (MLLMs). ByDeWay uses a novel prompting strategy called Layered-Depth-Based Prompting (LDP), which improves spatial reasoning and grounding without modifying any model parameters. It segments the scene into closest, mid-range, and farthest layers using monocular depth estimation, then generates region-specific captions with a grounded vision-language model. These structured, depth-aware captions are appended to the image-question prompt, enriching it with spatial context. This guides MLLMs to produce more grounded and less hallucinated responses. Our method is lightweight, modular, and compatible with black-box MLLMs. Experiments on hallucination-sensitive (POPE) and reasoning-intensive (GQA) benchmarks show consistent improvements across multiple MLLMs, validating the effectiveness of depth-aware prompting in a zero-training setting.
-]]></content:encoded>
-<pubDate>Wed, 17 Sep 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>SlumpGuard: An AI-Powered Real-Time System for Automated Concrete Slump Prediction via Video Analysis</title>
-<link>https://arxiv.org/abs/2507.10171</link>
-<guid>https://arxiv.org/abs/2507.10171</guid>
-<content:encoded><![CDATA[
-arXiv:2507.10171v2 Announce Type: replace 
-Abstract: Concrete workability is essential for construction quality, with the slump test being the most common on-site method for its assessment. However, traditional slump testing is manual, time-consuming, and prone to inconsistency, limiting its applicability for real-time monitoring. To address these challenges, we propose SlumpGuard, an AI-powered, video-based system that automatically analyzes concrete flow from the truck chute to assess workability in real time. Our system enables full-batch inspection without manual intervention, improving both the accuracy and efficiency of quality control. We present the system design, the construction of a dedicated dataset, and empirical results from real-world deployment, demonstrating the effectiveness of SlumpGuard as a practical solution for modern concrete quality assurance.
-]]></content:encoded>
-<pubDate>Wed, 17 Sep 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Test-Time Canonicalization by Foundation Models for Robust Perception</title>
-<link>https://arxiv.org/abs/2507.10375</link>
-<guid>https://arxiv.org/abs/2507.10375</guid>
-<content:encoded><![CDATA[
-arXiv:2507.10375v2 Announce Type: replace 
-Abstract: Perception in the real world requires robustness to diverse viewing conditions. Existing approaches often rely on specialized architectures or training with predefined data augmentations, limiting adaptability. Taking inspiration from mental rotation in human vision, we propose FOCAL, a test-time robustness framework that transforms the input into the most typical view. At inference time, FOCAL explores a set of transformed images and chooses the one with the highest likelihood under foundation model priors. This test-time optimization boosts robustness while requiring no retraining or architectural changes. Applied to models like CLIP and SAM, it significantly boosts robustness across a wide range of transformations, including 2D and 3D rotations, contrast and lighting shifts, and day-night changes. We also explore potential applications in active vision. By reframing invariance as a test-time optimization problem, FOCAL offers a general and scalable approach to robustness. Our code is available at: https://github.com/sutkarsh/focal.
 ]]></content:encoded>
 <pubDate>Wed, 17 Sep 2025 00:00:00 -0400</pubDate>
 </item>

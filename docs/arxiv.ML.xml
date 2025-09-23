@@ -4,18 +4,18 @@
 <title>cs.LG updates on arXiv.org</title>
 <link>http://rss.arxiv.org/rss/cs.LG</link>
 
+
 <item>
 <title>GraphTorque: Torque-Driven Rewiring Graph Neural Network</title>
 <link>https://arxiv.org/abs/2507.21422</link>
 <guid>https://arxiv.org/abs/2507.21422</guid>
 <content:encoded><![CDATA[
-<div> Hierarchical rewiring, Torque-driven strategy, Graph Neural Networks, Message passing, Representation learning <br>
-Summary: <br>
-This paper introduces a torque-driven hierarchical rewiring strategy for Graph Neural Networks (GNNs) to enhance representation learning on graph-structured data. Inspired by classical mechanics, the method dynamically adjusts message passing by considering the features distance as a lever arm vector and neighbor features as a force vector weighted by homophily disparity. By defining torque in this way, the approach strategically prunes high-torque edges and adds low-torque links to optimize information diffusion. Through extensive evaluations on benchmark datasets, the proposed method outperforms existing rewiring techniques on both heterophilous and homophilous graphs. This innovative approach shows promise for improving the efficiency of GNNs in processing native interactions within graphs. <br> <div>
+<div> Hierarchical rewiring, Torque-driven strategy, Graph Neural Networks, Message passing, Representation learning <br />
+Summary: <br />
+This paper introduces a torque-driven hierarchical rewiring strategy for Graph Neural Networks (GNNs) to enhance representation learning on graph-structured data. Inspired by classical mechanics, the method dynamically adjusts message passing by considering the features distance as a lever arm vector and neighbor features as a force vector weighted by homophily disparity. By defining torque in this way, the approach strategically prunes high-torque edges and adds low-torque links to optimize information diffusion. Through extensive evaluations on benchmark datasets, the proposed method outperforms existing rewiring techniques on both heterophilous and homophilous graphs. This innovative approach shows promise for improving the efficiency of GNNs in processing native interactions within graphs. <br /> <div>
 arXiv:2507.21422v3 Announce Type: replace 
 Abstract: Graph Neural Networks (GNNs) have emerged as powerful tools for learning from graph-structured data, leveraging message passing to diffuse information and update node representations. However, most efforts have suggested that native interactions encoded in the graph may not be friendly for this process, motivating the development of graph rewiring methods. In this work, we propose a torque-driven hierarchical rewiring strategy, inspired by the notion of torque in classical mechanics, dynamically modulating message passing to improve representation learning in heterophilous and homophilous graphs. Specifically, we define the torque by treating the feature distance as a lever arm vector and the neighbor feature as a force vector weighted by the homophily disparity between nodes. We use the metric to hierarchically reconfigure receptive field of each layer by judiciously pruning high-torque edges and adding low-torque links, suppressing the impact of irrelevant information and boosting pertinent signals during message passing. Extensive evaluations on benchmark datasets show that the proposed approach surpasses state-of-the-art rewiring methods on both heterophilous and homophilous graphs.
 ]]></content:encoded>
-<pubDate>Tue, 23 Sep 2025 00:00:00 -0400</pubDate>
 <pubDate>Tue, 23 Sep 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -23,13 +23,12 @@ Abstract: Graph Neural Networks (GNNs) have emerged as powerful tools for learni
 <link>https://arxiv.org/abs/2508.17850</link>
 <guid>https://arxiv.org/abs/2508.17850</guid>
 <content:encoded><![CDATA[
-<div> Decentralized training, Reinforcement Learning, Heterogeneous RL architecture, Group Expectation Policy Optimization, geographically distributed nodes<br>
-Summary:<br>
-As computing approaches power constraints, decentralized training is crucial. Traditional RL methods struggle with decentralized distributed training due to tight coupling between parameter learning and rollout sampling. HeteroRL proposes a solution with GEPO, an asynchronous RL algorithm that addresses latency and heterogeneity issues. High latency increases variance in importance sampling weights and training instability, but GEPO mitigates this using group expectation weighting. The algorithm demonstrates superior stability, with minimal performance drop even with significant latency. This research shows promise for decentralized RL in geographically distributed, resource-heterogeneous computing environments. <br> <div>
+<div> Decentralized training, Reinforcement Learning, Heterogeneous RL architecture, Group Expectation Policy Optimization, geographically distributed nodes<br />
+Summary:<br />
+As computing approaches power constraints, decentralized training is crucial. Traditional RL methods struggle with decentralized distributed training due to tight coupling between parameter learning and rollout sampling. HeteroRL proposes a solution with GEPO, an asynchronous RL algorithm that addresses latency and heterogeneity issues. High latency increases variance in importance sampling weights and training instability, but GEPO mitigates this using group expectation weighting. The algorithm demonstrates superior stability, with minimal performance drop even with significant latency. This research shows promise for decentralized RL in geographically distributed, resource-heterogeneous computing environments. <br /> <div>
 arXiv:2508.17850v5 Announce Type: replace 
 Abstract: As single-center computing approaches power constraints, decentralized training becomes essential. However, traditional Reinforcement Learning (RL) methods, crucial for enhancing large model post-training, cannot adapt to decentralized distributed training due to the tight coupling between parameter learning and rollout sampling. For this, we propose HeteroRL, a heterogeneous RL architecture that decouples these processes, enabling stable training across geographically distributed nodes connected via the Internet. The core component is Group Expectation Policy Optimization (GEPO), an asynchronous RL algorithm robust to latency caused by network delays or heterogeneity in computational resources. Our study reveals that high latency significantly increases KL divergence, leading to higher variance in importance sampling weights and training instability. GEPO mitigates this issue by using group expectation weighting to exponentially reduce the variance of importance weights, with theoretical guarantees. Experiments show that GEPO achieves superior stability, with only a 3\% performance drop from online to 1800s latency, demonstrating strong potential for decentralized RL in geographically distributed, resource-heterogeneous computing environments.
 ]]></content:encoded>
-<pubDate>Tue, 23 Sep 2025 00:00:00 -0400</pubDate>
 <pubDate>Tue, 23 Sep 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -45,11 +44,10 @@ Summary:
 - The method utilizes a segregativity criterion to select the most discriminative expert, which consistently outperforms standalone models and the strongest expert in experiments on CIFAR10-H and ImageNet16-H datasets.
 - Results show high accuracies and reduced expert workload, making the approach suitable for real-world human-AI collaboration. 
 
-<br><br>Summary: <div>
+<br /><br />Summary: <div>
 arXiv:2509.12573v2 Announce Type: replace 
 Abstract: AI systems often fail to deliver reliable predictions across all inputs, prompting the need for hybrid human-AI decision-making. Existing Learning to Defer (L2D) approaches address this by training deferral models, but these are sensitive to changes in expert composition and require significant retraining if experts change. We propose a training-free, model- and expert-agnostic framework for expert deferral based on conformal prediction. Our method uses the prediction set generated by a conformal predictor to identify label-specific uncertainty and selects the most discriminative expert using a segregativity criterion, measuring how well an expert distinguishes between the remaining plausible labels. Experiments on CIFAR10-H and ImageNet16-H show that our method consistently outperforms both the standalone model and the strongest expert, with accuracies attaining $99.57\pm0.10\%$ and $99.40\pm0.52\%$, while reducing expert workload by up to a factor of $11$. The method remains robust under degraded expert performance and shows a gradual performance drop in low-information settings. These results suggest a scalable, retraining-free alternative to L2D for real-world human-AI collaboration.
 ]]></content:encoded>
-<pubDate>Tue, 23 Sep 2025 00:00:00 -0400</pubDate>
 <pubDate>Tue, 23 Sep 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -57,13 +55,12 @@ Abstract: AI systems often fail to deliver reliable predictions across all input
 <link>https://arxiv.org/abs/2507.22149</link>
 <guid>https://arxiv.org/abs/2507.22149</guid>
 <content:encoded><![CDATA[
-<div> Deceptive instructions, Large language models, Internal representations, Linear probes, Sparse Autoencoders <br>
+<div> Deceptive instructions, Large language models, Internal representations, Linear probes, Sparse Autoencoders <br />
 Summary:
-Deceptive instructions can lead large language models (LLMs) to generate deceptive responses, presenting safety challenges. By analyzing the internal representations of LLMs Llama-3.1-8B-Instruct and Gemma-2-9B-Instruct on a factual verification task, researchers found that the model's output can be predicted using linear probes based on internal representations. Deceptive instructions induce significant representational shifts compared to truthful/neutral instructions, particularly in early-to-mid layers. These shifts are detectable even on complex datasets. Specific Sparse Autoencoder (SAE) features sensitive to deception were identified, with targeted visualizations confirming distinct truthful/deceptive representational subspaces. This analysis provides insights for detecting and controlling deceptive instructions in LLMs, pinpointing layer-wise and feature-level correlates of instructed dishonesty. <br> <div>
+Deceptive instructions can lead large language models (LLMs) to generate deceptive responses, presenting safety challenges. By analyzing the internal representations of LLMs Llama-3.1-8B-Instruct and Gemma-2-9B-Instruct on a factual verification task, researchers found that the model's output can be predicted using linear probes based on internal representations. Deceptive instructions induce significant representational shifts compared to truthful/neutral instructions, particularly in early-to-mid layers. These shifts are detectable even on complex datasets. Specific Sparse Autoencoder (SAE) features sensitive to deception were identified, with targeted visualizations confirming distinct truthful/deceptive representational subspaces. This analysis provides insights for detecting and controlling deceptive instructions in LLMs, pinpointing layer-wise and feature-level correlates of instructed dishonesty. <br /> <div>
 arXiv:2507.22149v3 Announce Type: replace-cross 
 Abstract: Large language models (LLMs) tend to follow maliciously crafted instructions to generate deceptive responses, posing safety challenges. How deceptive instructions alter the internal representations of LLM compared to truthful ones remains poorly understood beyond output analysis. To bridge this gap, we investigate when and how these representations ``flip'', such as from truthful to deceptive, under deceptive versus truthful/neutral instructions. Analyzing the internal representations of Llama-3.1-8B-Instruct and Gemma-2-9B-Instruct on a factual verification task, we find the model's instructed True/False output is predictable via linear probes across all conditions based on the internal representation. Further, we use Sparse Autoencoders (SAEs) to show that the Deceptive instructions induce significant representational shifts compared to Truthful/Neutral representations (which are similar), concentrated in early-to-mid layers and detectable even on complex datasets. We also identify specific SAE features highly sensitive to deceptive instruction and use targeted visualizations to confirm distinct truthful/deceptive representational subspaces. % Our analysis pinpoints layer-wise and feature-level correlates of instructed dishonesty, offering insights for LLM detection and control. Our findings expose feature- and layer-level signatures of deception, offering new insights for detecting and mitigating instructed dishonesty in LLMs.
 ]]></content:encoded>
-<pubDate>Tue, 23 Sep 2025 00:00:00 -0400</pubDate>
 <pubDate>Tue, 23 Sep 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -71,16 +68,14 @@ Abstract: Large language models (LLMs) tend to follow maliciously crafted instru
 <link>https://arxiv.org/abs/2509.13934</link>
 <guid>https://arxiv.org/abs/2509.13934</guid>
 <content:encoded><![CDATA[
-<div> Keywords: UAV trajectory planning, energy efficiency, reinforcement learning, resource allocation, large language model<br>
+<div> Keywords: UAV trajectory planning, energy efficiency, reinforcement learning, resource allocation, large language model<br />
 Summary: 
-The study introduces a novel approach, LLM-CRDT, for optimizing UAV trajectory planning and resource allocation to maximize energy efficiency in data collection. The resource allocation problem is solved optimally using linear programming. LLM-CRDT integrates critic networks with a decision transformer model, combining sequence modeling and value guidance for policy learning from suboptimal datasets. The framework incorporates a pre-trained large language model as the transformer backbone and utilizes a parameter-efficient fine-tuning strategy, LoRA, for rapid adaptation to UAV control tasks with limited data and computational resources. Simulation results demonstrate that LLM-CRDT outperforms existing online and offline reinforcement learning methods, achieving significant improvements in energy efficiency for UAV data collection tasks. <br><br>Summary: <div>
+The study introduces a novel approach, LLM-CRDT, for optimizing UAV trajectory planning and resource allocation to maximize energy efficiency in data collection. The resource allocation problem is solved optimally using linear programming. LLM-CRDT integrates critic networks with a decision transformer model, combining sequence modeling and value guidance for policy learning from suboptimal datasets. The framework incorporates a pre-trained large language model as the transformer backbone and utilizes a parameter-efficient fine-tuning strategy, LoRA, for rapid adaptation to UAV control tasks with limited data and computational resources. Simulation results demonstrate that LLM-CRDT outperforms existing online and offline reinforcement learning methods, achieving significant improvements in energy efficiency for UAV data collection tasks. <br /><br />Summary: <div>
 arXiv:2509.13934v2 Announce Type: replace-cross 
 Abstract: The deployment of unmanned aerial vehicles (UAVs) for reliable and energy-efficient data collection from spatially distributed devices holds great promise in supporting diverse Internet of Things (IoT) applications. Nevertheless, the limited endurance and communication range of UAVs necessitate intelligent trajectory planning. While reinforcement learning (RL) has been extensively explored for UAV trajectory optimization, its interactive nature entails high costs and risks in real-world environments. Offline RL mitigates these issues but remains susceptible to unstable training and heavily rely on expert-quality datasets. To address these challenges, we formulate a joint UAV trajectory planning and resource allocation problem to maximize energy efficiency of data collection. The resource allocation subproblem is first transformed into an equivalent linear programming formulation and solved optimally with polynomial-time complexity. Then, we propose a large language model (LLM)-empowered critic-regularized decision transformer (DT) framework, termed LLM-CRDT, to learn effective UAV control policies. In LLM-CRDT, we incorporate critic networks to regularize the DT model training, thereby integrating the sequence modeling capabilities of DT with critic-based value guidance to enable learning effective policies from suboptimal datasets. Furthermore, to mitigate the data-hungry nature of transformer models, we employ a pre-trained LLM as the transformer backbone of the DT model and adopt a parameter-efficient fine-tuning strategy, i.e., LoRA, enabling rapid adaptation to UAV control tasks with small-scale dataset and low computational overhead. Extensive simulations demonstrate that LLM-CRDT outperforms benchmark online and offline RL methods, achieving up to 36.7\% higher energy efficiency than the current state-of-the-art DT approaches.
 ]]></content:encoded>
 <pubDate>Tue, 23 Sep 2025 00:00:00 -0400</pubDate>
-<pubDate>Tue, 23 Sep 2025 00:00:00 -0400</pubDate>
 </item>
-
 <item>
 <title>Discovering Software Parallelization Points Using Deep Neural Networks</title>
 <link>https://arxiv.org/abs/2509.16215</link>
@@ -11015,56 +11010,6 @@ Abstract: This paper addresses the challenges of pricing exotic options and stru
 <content:encoded><![CDATA[
 arXiv:2509.13376v1 Announce Type: cross 
 Abstract: Recent advances in spatial omics technologies have revolutionized our ability to study biological systems with unprecedented resolution. By preserving the spatial context of molecular measurements, these methods enable comprehensive mapping of cellular heterogeneity, tissue architecture, and dynamic biological processes in developmental biology, neuroscience, oncology, and evolutionary studies. This review highlights a systematic overview of the continuous advancements in both technology and computational algorithms that are paving the way for a deeper, more systematic comprehension of the structure and mechanisms of mammalian tissues and organs by using spatial multi-omics. Our viewpoint demonstrates how advanced machine learning algorithms and multi-omics integrative modeling can decode complex biological processes, including the spatial organization and topological relationships of cells during organ development, as well as key molecular signatures and regulatory networks underlying tumorigenesis and metastasis. Finally, we outline future directions for technological innovation and modeling insights of spatial omics in precision medicine.
-]]></content:encoded>
-<pubDate>Thu, 18 Sep 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>ASTREA: Introducing Agentic Intelligence for Orbital Thermal Autonomy</title>
-<link>https://arxiv.org/abs/2509.13380</link>
-<guid>https://arxiv.org/abs/2509.13380</guid>
-<content:encoded><![CDATA[
-arXiv:2509.13380v1 Announce Type: cross 
-Abstract: This paper presents ASTREA, the first agentic system deployed on flight-heritage hardware (TRL 9) for autonomous spacecraft operations. Using thermal control as a representative use case, we integrate a resource-constrained Large Language Model (LLM) agent with a reinforcement learning controller in an asynchronous architecture tailored for space-qualified platforms. Ground experiments show that LLM-guided supervision improves thermal stability and reduces violations, confirming the feasibility of combining semantic reasoning with adaptive control under hardware constraints. However, on-orbit validation aboard the International Space Station (ISS) reveals performance degradation caused by inference latency mismatched with the rapid thermal cycles characteristic of Low Earth Orbit (LEO) satellites. These results highlight both the opportunities and current limitations of agentic LLM-based systems in real flight environments, providing practical design guidelines for future space autonomy.
-]]></content:encoded>
-<pubDate>Thu, 18 Sep 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Cooperative Target Detection with AUVs: A Dual-Timescale Hierarchical MARDL Approach</title>
-<link>https://arxiv.org/abs/2509.13381</link>
-<guid>https://arxiv.org/abs/2509.13381</guid>
-<content:encoded><![CDATA[
-arXiv:2509.13381v1 Announce Type: cross 
-Abstract: Autonomous Underwater Vehicles (AUVs) have shown great potential for cooperative detection and reconnaissance. However, collaborative AUV communications introduce risks of exposure. In adversarial environments, achieving efficient collaboration while ensuring covert operations becomes a key challenge for underwater cooperative missions. In this paper, we propose a novel dual time-scale Hierarchical Multi-Agent Proximal Policy Optimization (H-MAPPO) framework. The high-level component determines the individuals participating in the task based on a central AUV, while the low-level component reduces exposure probabilities through power and trajectory control by the participating AUVs. Simulation results show that the proposed framework achieves rapid convergence, outperforms benchmark algorithms in terms of performance, and maximizes long-term cooperative efficiency while ensuring covert operations.
-]]></content:encoded>
-<pubDate>Thu, 18 Sep 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Curvature as a tool for evaluating dimensionality reduction and estimating intrinsic dimension</title>
-<link>https://arxiv.org/abs/2509.13385</link>
-<guid>https://arxiv.org/abs/2509.13385</guid>
-<content:encoded><![CDATA[
-arXiv:2509.13385v1 Announce Type: cross 
-Abstract: Utilizing recently developed abstract notions of sectional curvature, we introduce a method for constructing a curvature-based geometric profile of discrete metric spaces. The curvature concept that we use here captures the metric relations between triples of points and other points. More significantly, based on this curvature profile, we introduce a quantitative measure to evaluate the effectiveness of data representations, such as those produced by dimensionality reduction techniques. Furthermore, Our experiments demonstrate that this curvature-based analysis can be employed to estimate the intrinsic dimensionality of datasets. We use this to explore the large-scale geometry of empirical networks and to evaluate the effectiveness of dimensionality reduction techniques.
-]]></content:encoded>
-<pubDate>Thu, 18 Sep 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>VEGA: Electric Vehicle Navigation Agent via Physics-Informed Neural Operator and Proximal Policy Optimization</title>
-<link>https://arxiv.org/abs/2509.13386</link>
-<guid>https://arxiv.org/abs/2509.13386</guid>
-<content:encoded><![CDATA[
-arXiv:2509.13386v1 Announce Type: cross 
-Abstract: Demands for software-defined vehicles (SDV) are rising and electric vehicles (EVs) are increasingly being equipped with powerful computers. This enables onboard AI systems to optimize charge-aware path optimization customized to reflect vehicle's current condition and environment. We present VEGA, a charge-aware EV navigation agent that plans over a charger-annotated road graph using Proximal Policy Optimization (PPO) with budgeted A* teacher-student guidance under state-of-charge (SoC) feasibility. VEGA consists of two modules. First, a physics-informed neural operator (PINO), trained on real vehicle speed and battery-power logs, uses recent vehicle speed logs to estimate aerodynamic drag, rolling resistance, mass, motor and regenerative-braking efficiencies, and auxiliary load by learning a vehicle-custom dynamics. Second, a Reinforcement Learning (RL) agent uses these dynamics to optimize a path with optimal charging stops and dwell times under SoC constraints. VEGA requires no additional sensors and uses only vehicle speed signals. It may serve as a virtual sensor for power and efficiency to potentially reduce EV cost. In evaluation on long routes like San Francisco to New York, VEGA's stops, dwell times, SoC management, and total travel time closely track Tesla Trip Planner while being slightly more conservative, presumably due to real vehicle conditions such as vehicle parameter drift due to deterioration. Although trained only in U.S. regions, VEGA was able to compute optimal charge-aware paths in France and Japan, demonstrating generalizability. It achieves practical integration of physics-informed learning and RL for EV eco-routing.
-]]></content:encoded>
-<pubDate>Thu, 18 Sep 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>A Domain Knowledge Informed Approach for Anomaly Detection of Electric Vehicle Interior Sounds</title>
-<link>https://arxiv.org/abs/2509.13390</link>
-<guid>https://arxiv.org/abs/2509.13390</guid>
-<content:encoded><![CDATA[
-arXiv:2509.13390v1 Announce Type: cross 
-Abstract: The detection of anomalies in automotive cabin sounds is critical for ensuring vehicle quality and maintaining passenger comfort. In many real-world settings, this task is more appropriately framed as an unsupervised learning problem rather than the supervised case due to the scarcity or complete absence of labeled faulty data. In such an unsupervised setting, the model is trained exclusively on healthy samples and detects anomalies as deviations from normal behavior. However, in the absence of labeled faulty samples for validation and the limited reliability of commonly used metrics, such as validation reconstruction error, effective model selection remains a significant challenge. To overcome these limitations, a domain-knowledge-informed approach for model selection is proposed, in which proxy-anomalies engineered through structured perturbations of healthy spectrograms are used in the validation set to support model selection. The proposed methodology is evaluated on a high-fidelity electric vehicle dataset comprising healthy and faulty cabin sounds across five representative fault types viz., Imbalance, Modulation, Whine, Wind, and Pulse Width Modulation. This dataset, generated using advanced sound synthesis techniques, and validated via expert jury assessments, has been made publicly available to facilitate further research. Experimental evaluations on the five fault cases demonstrate the selection of optimal models using proxy-anomalies, significantly outperform conventional model selection strategies.
 ]]></content:encoded>
 <pubDate>Thu, 18 Sep 2025 00:00:00 -0400</pubDate>
 </item>
