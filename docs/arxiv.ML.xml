@@ -5,18 +5,35 @@
 <link>http://rss.arxiv.org/rss/cs.LG</link>
 
 <item>
+<title>SCoT: Straight Consistent Trajectory for Pre-Trained Diffusion Model Distillations</title>
+<link>https://arxiv.org/abs/2502.16972</link>
+<guid>https://arxiv.org/abs/2502.16972</guid>
+<content:encoded><![CDATA[
+<div> Keywords: pre-trained diffusion models, distillation, consistency model, rectified flow method, Straight Consistent Trajectory (SCoT)
+
+Summary:
+The study introduces the Straight Consistent Trajectory (SCoT) model, which combines the advantages of the consistency model and the rectified flow method for efficient sampling in pre-trained diffusion models. SCoT maintains both consistent and straight trajectories by focusing on regulating gradient mapping and ensuring trajectory consistency. The model aims to improve sampling efficiency by accelerating the generation of clean images from random noises using advanced trajectories. Experimental results demonstrate the effectiveness of SCoT in producing consistent and straight trajectories while achieving faster sampling speeds. The proposed approach addresses the limitations of existing methods by balancing the dual properties of trajectory consistency and straightness, providing a more efficient and reliable sampling framework for pre-trained diffusion models. 
+
+<br><br>Summary: <div>
+arXiv:2502.16972v3 Announce Type: replace-cross 
+Abstract: Pre-trained diffusion models are commonly used to generate clean data (e.g., images) from random noises, effectively forming pairs of noises and corresponding clean images. Distillation on these pre-trained models can be viewed as the process of constructing advanced trajectories within the pair to accelerate sampling. For instance, consistency model distillation develops consistent projection functions to regulate trajectories, although sampling efficiency remains a concern. Rectified flow method enforces straight trajectories to enable faster sampling, yet relies on numerical ODE solvers, which may introduce approximation errors. In this work, we bridge the gap between the consistency model and the rectified flow method by proposing a Straight Consistent Trajectory~(SCoT) model. SCoT enjoys the benefits of both approaches for fast sampling, producing trajectories with consistent and straight properties simultaneously. These dual properties are strategically balanced by targeting two critical objectives: (1) regulating the gradient of SCoT's mapping to a constant, (2) ensuring trajectory consistency. Extensive experimental results demonstrate the effectiveness and efficiency of SCoT.
+]]></content:encoded>
+<pubDate>Wed, 24 Sep 2025 00:00:00 -0400</pubDate>
+<pubDate>Wed, 24 Sep 2025 00:00:00 -0400</pubDate>
+</item>
+
+<item>
 <title>Unified Spatiotemporal Physics-Informed Learning (USPIL): A Framework for Modeling Complex Predator-Prey Dynamics</title>
 <link>https://arxiv.org/abs/2509.13425</link>
 <guid>https://arxiv.org/abs/2509.13425</guid>
 <content:encoded><![CDATA[
 <div> Keywords: ecological systems, physics-informed learning, deep learning, multi-scale modeling, conservation principles
 
-Summary:<br>
-The Unified Spatiotemporal Physics-Informed Learning (USPIL) framework combines physics-informed neural networks (PINNs) with conservation laws to model predator-prey dynamics in ecological systems. It can handle both ordinary and partial differential equation systems, capturing temporal cycles and reaction-diffusion patterns within a single neural network architecture. USPIL demonstrated high correlation and accuracy in modeling the Lotka-Volterra system, achieving 98.9% correlation for 1D temporal dynamics and successfully capturing complex spiral waves in 2D systems. The framework ensures adherence to conservation laws and offers a significant computational speedup compared to numerical solvers, making it efficient for ecological forecasting and conservation planning. USPIL also enables interpretable physics constraints, facilitating parameter discovery and sensitivity analysis. Its ability to transition between dimensional formulations opens new possibilities for multi-scale ecological modeling, establishing physics-informed deep learning as a powerful paradigm for ecological research. <br><br>Summary: <div>
+Summary:<br />
+The Unified Spatiotemporal Physics-Informed Learning (USPIL) framework combines physics-informed neural networks (PINNs) with conservation laws to model predator-prey dynamics in ecological systems. It can handle both ordinary and partial differential equation systems, capturing temporal cycles and reaction-diffusion patterns within a single neural network architecture. USPIL demonstrated high correlation and accuracy in modeling the Lotka-Volterra system, achieving 98.9% correlation for 1D temporal dynamics and successfully capturing complex spiral waves in 2D systems. The framework ensures adherence to conservation laws and offers a significant computational speedup compared to numerical solvers, making it efficient for ecological forecasting and conservation planning. USPIL also enables interpretable physics constraints, facilitating parameter discovery and sensitivity analysis. Its ability to transition between dimensional formulations opens new possibilities for multi-scale ecological modeling, establishing physics-informed deep learning as a powerful paradigm for ecological research. <br /><br />Summary: <div>
 arXiv:2509.13425v3 Announce Type: replace 
 Abstract: Ecological systems exhibit complex multi-scale dynamics that challenge traditional modeling. New methods must capture temporal oscillations and emergent spatiotemporal patterns while adhering to conservation principles. We present the Unified Spatiotemporal Physics-Informed Learning (USPIL) framework, a deep learning architecture integrating physics-informed neural networks (PINNs) and conservation laws to model predator-prey dynamics across dimensional scales. The framework provides a unified solution for both ordinary (ODE) and partial (PDE) differential equation systems, describing temporal cycles and reaction-diffusion patterns within a single neural network architecture. Our methodology uses automatic differentiation to enforce physics constraints and adaptive loss weighting to balance data fidelity with physical consistency. Applied to the Lotka-Volterra system, USPIL achieves 98.9% correlation for 1D temporal dynamics (loss: 0.0219, MAE: 0.0184) and captures complex spiral waves in 2D systems (loss: 4.7656, pattern correlation: 0.94). Validation confirms conservation law adherence within 0.5% and shows a 10-50x computational speedup for inference compared to numerical solvers. USPIL also enables mechanistic understanding through interpretable physics constraints, facilitating parameter discovery and sensitivity analysis not possible with purely data-driven methods. Its ability to transition between dimensional formulations opens new avenues for multi-scale ecological modeling. These capabilities make USPIL a transformative tool for ecological forecasting, conservation planning, and understanding ecosystem resilience, establishing physics-informed deep learning as a powerful and scientifically rigorous paradigm.
 ]]></content:encoded>
-<pubDate>Wed, 24 Sep 2025 00:00:00 -0400</pubDate>
 <pubDate>Wed, 24 Sep 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -27,11 +44,10 @@ Abstract: Ecological systems exhibit complex multi-scale dynamics that challenge
 <div> Keywords: Large language models, privacy concerns, information leakage, privacy guarantees, text generation
 
 Summary: 
-This work presents a novel private prediction framework that utilizes Differential Privacy (DP) to generate synthetic text with strong privacy guarantees. By ensuring worst-case theoretical bounds on information leakage without model fine-tuning, the proposed method conducts inference on private records and aggregates per-token output distributions for longer and coherent text generation while maintaining privacy. A simple blending operation combines private and public inference to enhance utility. Empirical evaluations show superior performance on in-context-learning tasks compared to previous methods, making it a promising approach for privacy-preserving text generation with high utility. <br><br>Summary: <div>
+This work presents a novel private prediction framework that utilizes Differential Privacy (DP) to generate synthetic text with strong privacy guarantees. By ensuring worst-case theoretical bounds on information leakage without model fine-tuning, the proposed method conducts inference on private records and aggregates per-token output distributions for longer and coherent text generation while maintaining privacy. A simple blending operation combines private and public inference to enhance utility. Empirical evaluations show superior performance on in-context-learning tasks compared to previous methods, making it a promising approach for privacy-preserving text generation with high utility. <br /><br />Summary: <div>
 arXiv:2509.13625v3 Announce Type: replace 
 Abstract: Large language models (LLMs) have significantly transformed natural language understanding and generation, but they raise privacy concerns due to potential exposure of sensitive information. Studies have highlighted the risk of information leakage, where adversaries can extract sensitive information embedded in the prompts. In this work, we introduce a novel private prediction framework for generating high-quality synthetic text with strong privacy guarantees. Our approach leverages the Differential Privacy (DP) framework to ensure worst-case theoretical bounds on information leakage without requiring any fine-tuning of the underlying models. The proposed method performs inference on private records and aggregates the resulting per-token output distributions. This enables the generation of longer and coherent synthetic text while maintaining privacy guarantees. Additionally, we propose a simple blending operation that combines private and public inference to further enhance utility. Empirical evaluations demonstrate that our approach outperforms previous state-of-the-art methods on in-context-learning (ICL) tasks, making it a promising direction for privacy-preserving text generation while maintaining high utility.
 ]]></content:encoded>
-<pubDate>Wed, 24 Sep 2025 00:00:00 -0400</pubDate>
 <pubDate>Wed, 24 Sep 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -41,12 +57,11 @@ Abstract: Large language models (LLMs) have significantly transformed natural la
 <content:encoded><![CDATA[
 <div> intersectional fairness, machine learning, fairness-aware optimization, adaptive optimization, disparate impact
 
-Summary:<br>
+Summary:<br />
 The article introduces Adaptive Pareto Front Explorer (APFEx), a framework that addresses fairness in machine learning models by explicitly considering intersectional biases across multiple protected attributes. APFEx utilizes an adaptive multi-objective optimizer to navigate fairness-accuracy trade-offs, includes differentiable intersectional fairness metrics for optimizing non-smooth subgroup disparities, and guarantees convergence to Pareto-optimal solutions. Experimental results on real-world datasets show that APFEx outperforms existing methods by reducing fairness violations while maintaining competitive accuracy. This approach bridges a critical gap in fair ML by offering a scalable, model-agnostic solution for intersectional fairness. <div>
 arXiv:2509.13908v2 Announce Type: replace 
 Abstract: Ensuring fairness in machine learning models is critical, especially when biases compound across intersecting protected attributes like race, gender, and age. While existing methods address fairness for single attributes, they fail to capture the nuanced, multiplicative biases faced by intersectional subgroups. We introduce Adaptive Pareto Front Explorer (APFEx), the first framework to explicitly model intersectional fairness as a joint optimization problem over the Cartesian product of sensitive attributes. APFEx combines three key innovations- (1) an adaptive multi-objective optimizer that dynamically switches between Pareto cone projection, gradient weighting, and exploration strategies to navigate fairness-accuracy trade-offs, (2) differentiable intersectional fairness metrics enabling gradient-based optimization of non-smooth subgroup disparities, and (3) theoretical guarantees of convergence to Pareto-optimal solutions. Experiments on four real-world datasets demonstrate APFEx's superiority, reducing fairness violations while maintaining competitive accuracy. Our work bridges a critical gap in fair ML, providing a scalable, model-agnostic solution for intersectional fairness.
 ]]></content:encoded>
-<pubDate>Wed, 24 Sep 2025 00:00:00 -0400</pubDate>
 <pubDate>Wed, 24 Sep 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -54,17 +69,15 @@ Abstract: Ensuring fairness in machine learning models is critical, especially w
 <link>https://arxiv.org/abs/2509.14938</link>
 <guid>https://arxiv.org/abs/2509.14938</guid>
 <content:encoded><![CDATA[
-<div> Hierarchical Federated Learning, Social Network with Mobility, Resource Allocation, Client Scheduling, Energy Consumption <br>
-<br>
+<div> Hierarchical Federated Learning, Social Network with Mobility, Resource Allocation, Client Scheduling, Energy Consumption <br />
+<br />
 Summary: 
-The paper introduces a novel approach called HFL-SNM for Federated Learning that considers both data sharing among clients and their mobility patterns. The framework addresses the issue of data privacy and client mobility often neglected in conventional FL frameworks. By formulating a joint optimization problem of resource allocation and client scheduling, the objective is to minimize energy consumption during the FL process. The concepts of Effective Data Coverage Rate and Redundant Data Coverage Rate in the social network are introduced to analyze their impact on model performance. The proposed DO-SNM algorithm decouples the optimization problem into sub-problems and achieves superior model performance while reducing energy consumption compared to baseline algorithms. Experimental results validate the effectiveness of the approach in improving model performance and energy efficiency in FL scenarios. <br> <div>
+The paper introduces a novel approach called HFL-SNM for Federated Learning that considers both data sharing among clients and their mobility patterns. The framework addresses the issue of data privacy and client mobility often neglected in conventional FL frameworks. By formulating a joint optimization problem of resource allocation and client scheduling, the objective is to minimize energy consumption during the FL process. The concepts of Effective Data Coverage Rate and Redundant Data Coverage Rate in the social network are introduced to analyze their impact on model performance. The proposed DO-SNM algorithm decouples the optimization problem into sub-problems and achieves superior model performance while reducing energy consumption compared to baseline algorithms. Experimental results validate the effectiveness of the approach in improving model performance and energy efficiency in FL scenarios. <br /> <div>
 arXiv:2509.14938v2 Announce Type: replace 
 Abstract: Federated Learning (FL) offers a decentralized solution that allows collaborative local model training and global aggregation, thereby protecting data privacy. In conventional FL frameworks, data privacy is typically preserved under the assumption that local data remains absolutely private, whereas the mobility of clients is frequently neglected in explicit modeling. In this paper, we propose a hierarchical federated learning framework based on the social network with mobility namely HFL-SNM that considers both data sharing among clients and their mobility patterns. Under the constraints of limited resources, we formulate a joint optimization problem of resource allocation and client scheduling, which objective is to minimize the energy consumption of clients during the FL process. In social network, we introduce the concepts of Effective Data Coverage Rate and Redundant Data Coverage Rate. We analyze the impact of effective data and redundant data on the model performance through preliminary experiments. We decouple the optimization problem into multiple sub-problems, analyze them based on preliminary experimental results, and propose Dynamic Optimization in Social Network with Mobility (DO-SNM) algorithm. Experimental results demonstrate that our algorithm achieves superior model performance while significantly reducing energy consumption, compared to traditional baseline algorithms.
 ]]></content:encoded>
 <pubDate>Wed, 24 Sep 2025 00:00:00 -0400</pubDate>
-<pubDate>Wed, 24 Sep 2025 00:00:00 -0400</pubDate>
 </item>
-
 <item>
 <title>Machine Learnability as a Measure of Order in Aperiodic Sequences</title>
 <link>https://arxiv.org/abs/2509.18103</link>
@@ -10813,46 +10826,6 @@ Abstract: We study the competitive and welfare effects of copyright in creative 
 <content:encoded><![CDATA[
 arXiv:2501.18592v4 Announce Type: replace-cross 
 Abstract: In real-world scenarios, achieving domain adaptation and generalization poses significant challenges, as models must adapt to or generalize across unknown target distributions. Extending these capabilities to unseen multimodal distributions, i.e., multimodal domain adaptation and generalization, is even more challenging due to the distinct characteristics of different modalities. Significant progress has been made over the years, with applications ranging from action recognition to semantic segmentation. Besides, the recent advent of large-scale pre-trained multimodal foundation models, such as CLIP, has inspired works leveraging these models to enhance adaptation and generalization performances or adapting them to downstream tasks. This survey provides the first comprehensive review of recent advances from traditional approaches to foundation models, covering: (1) Multimodal domain adaptation; (2) Multimodal test-time adaptation; (3) Multimodal domain generalization; (4) Domain adaptation and generalization with the help of multimodal foundation models; and (5) Adaptation of multimodal foundation models. For each topic, we formally define the problem and thoroughly review existing methods. Additionally, we analyze relevant datasets and applications, highlighting open challenges and potential future research directions. We maintain an active repository that contains up-to-date literature at https://github.com/donghao51/Awesome-Multimodal-Adaptation.
-]]></content:encoded>
-<pubDate>Mon, 22 Sep 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>SCoT: Straight Consistent Trajectory for Pre-Trained Diffusion Model Distillations</title>
-<link>https://arxiv.org/abs/2502.16972</link>
-<guid>https://arxiv.org/abs/2502.16972</guid>
-<content:encoded><![CDATA[
-arXiv:2502.16972v2 Announce Type: replace-cross 
-Abstract: Pre-trained diffusion models are commonly used to generate clean data (e.g., images) from random noises, effectively forming pairs of noises and corresponding clean images. Distillation on these pre-trained models can be viewed as the process of constructing advanced trajectories within the pair to accelerate sampling. For instance, consistency model distillation develops consistent projection functions to regulate trajectories, although sampling efficiency remains a concern. Rectified flow method enforces straight trajectories to enable faster sampling, yet relies on numerical ODE solvers, which may introduce approximation errors. In this work, we bridge the gap between the consistency model and the rectified flow method by proposing a Straight Consistent Trajectory~(SCoT) model. SCoT enjoys the benefits of both approaches for fast sampling, producing trajectories with consistent and straight properties simultaneously. These dual properties are strategically balanced by targeting two critical objectives: (1) regulating the gradient of SCoT's mapping to a constant, (2) ensuring trajectory consistency. Extensive experimental results demonstrate the effectiveness and efficiency of SCoT.
-]]></content:encoded>
-<pubDate>Mon, 22 Sep 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Towards deployment-centric multimodal AI beyond vision and language</title>
-<link>https://arxiv.org/abs/2504.03603</link>
-<guid>https://arxiv.org/abs/2504.03603</guid>
-<content:encoded><![CDATA[
-arXiv:2504.03603v2 Announce Type: replace-cross 
-Abstract: Multimodal artificial intelligence (AI) integrates diverse types of data via machine learning to improve understanding, prediction, and decision-making across disciplines such as healthcare, science, and engineering. However, most multimodal AI advances focus on models for vision and language data, while their deployability remains a key challenge. We advocate a deployment-centric workflow that incorporates deployment constraints early to reduce the likelihood of undeployable solutions, complementing data-centric and model-centric approaches. We also emphasise deeper integration across multiple levels of multimodality and multidisciplinary collaboration to significantly broaden the research scope beyond vision and language. To facilitate this approach, we identify common multimodal-AI-specific challenges shared across disciplines and examine three real-world use cases: pandemic response, self-driving car design, and climate change adaptation, drawing expertise from healthcare, social science, engineering, science, sustainability, and finance. By fostering multidisciplinary dialogue and open research practices, our community can accelerate deployment-centric development for broad societal impact.
-]]></content:encoded>
-<pubDate>Mon, 22 Sep 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Hybrid Temporal Differential Consistency Autoencoder for Efficient and Sustainable Anomaly Detection in Cyber-Physical Systems</title>
-<link>https://arxiv.org/abs/2504.06320</link>
-<guid>https://arxiv.org/abs/2504.06320</guid>
-<content:encoded><![CDATA[
-arXiv:2504.06320v2 Announce Type: replace-cross 
-Abstract: Cyberattacks on critical infrastructure, particularly water distribution systems, have increased due to rapid digitalization and the integration of IoT devices and industrial control systems (ICS). These cyber-physical systems (CPS) introduce new vulnerabilities, requiring robust and automated intrusion detection systems (IDS) to mitigate potential threats. This study addresses key challenges in anomaly detection by leveraging time correlations in sensor data, integrating physical principles into machine learning models, and optimizing computational efficiency for edge applications. We build upon the concept of temporal differential consistency (TDC) loss to capture the dynamics of the system, ensuring meaningful relationships between dynamic states. Expanding on this foundation, we propose a hybrid autoencoder-based approach, referred to as hybrid TDC-AE, which extends TDC by incorporating both deterministic nodes and conventional statistical nodes. This hybrid structure enables the model to account for non-deterministic processes. Our approach achieves state-of-the-art classification performance while improving time to detect anomalies by 3%, outperforming the BATADAL challenge leader without requiring domain-specific knowledge, making it broadly applicable. Additionally, it maintains the computational efficiency of conventional autoencoders while reducing the number of fully connected layers, resulting in a more sustainable and efficient solution. The method demonstrates how leveraging physics-inspired consistency principles enhances anomaly detection and strengthens the resilience of cyber-physical systems.
-]]></content:encoded>
-<pubDate>Mon, 22 Sep 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>AttentionDrop: A Novel Regularization Method for Transformer Models</title>
-<link>https://arxiv.org/abs/2504.12088</link>
-<guid>https://arxiv.org/abs/2504.12088</guid>
-<content:encoded><![CDATA[
-arXiv:2504.12088v2 Announce Type: replace-cross 
-Abstract: Transformer-based architectures achieve state-of-the-art performance across a wide range of tasks in natural language processing, computer vision, and speech processing. However, their immense capacity often leads to overfitting, especially when training data is limited or noisy. In this research, a unified family of stochastic regularization techniques has been proposed, i.e. AttentionDrop with its three different variants, which operate directly on the self-attention distributions. Hard Attention Masking randomly zeroes out top-k attention logits per query to encourage diverse context utilization, Blurred Attention Smoothing applies a dynamic Gaussian convolution over attention logits to diffuse overly peaked distributions, and Consistency-Regularized AttentionDrop enforces output stability under multiple independent AttentionDrop perturbations via a KL-based consistency loss. Results achieved in the study demonstrate that AttentionDrop consistently improves accuracy, calibration, and adversarial robustness over standard Dropout, DropConnect, and R-Drop baselines
 ]]></content:encoded>
 <pubDate>Mon, 22 Sep 2025 00:00:00 -0400</pubDate>
 </item>

@@ -4,20 +4,20 @@
 <title>cs.CL updates on arXiv.org</title>
 <link>http://rss.arxiv.org/rss/cs.CL</link>
 
+
 <item>
 <title>OpenWHO: A Document-Level Parallel Corpus for Health Translation in Low-Resource Languages</title>
 <link>https://arxiv.org/abs/2508.16048</link>
 <guid>https://arxiv.org/abs/2508.16048</guid>
 <content:encoded><![CDATA[
 <div> corpus, machine translation, low-resource languages, health domain, language models
-<br>
+<br />
 Summary: 
 The article introduces the OpenWHO corpus, a document-level parallel dataset for machine translation (MT) focused on the health domain. This dataset consists of 2,978 documents and 26,824 sentences from the World Health Organization's e-learning platform, offering translations in over 20 languages, 9 of which are low-resource. The study compares modern large language models (LLMs) to traditional MT models, with LLMs, particularly Gemini 2.5 Flash, outperforming traditional models by a significant margin on the low-resource test set. Additionally, the research examines how the utilization of context in LLMs impacts translation accuracy, highlighting the importance of document-level translation in specialized domains like health. The release of the OpenWHO corpus aims to facilitate further exploration of low-resource MT within the health domain. 
-<br><br> <div>
+<br /><br /> <div>
 arXiv:2508.16048v4 Announce Type: replace 
 Abstract: In machine translation (MT), health is a high-stakes domain characterised by widespread deployment and domain-specific vocabulary. However, there is a lack of MT evaluation datasets for low-resource languages in this domain. To address this gap, we introduce OpenWHO, a document-level parallel corpus of 2,978 documents and 26,824 sentences from the World Health Organization's e-learning platform. Sourced from expert-authored, professionally translated materials shielded from web-crawling, OpenWHO spans a diverse range of over 20 languages, of which nine are low-resource. Leveraging this new resource, we evaluate modern large language models (LLMs) against traditional MT models. Our findings reveal that LLMs consistently outperform traditional MT models, with Gemini 2.5 Flash achieving a +4.79 ChrF point improvement over NLLB-54B on our low-resource test set. Further, we investigate how LLM context utilisation affects accuracy, finding that the benefits of document-level translation are most pronounced in specialised domains like health. We release the OpenWHO corpus to encourage further research into low-resource MT in the health domain.
 ]]></content:encoded>
-<pubDate>Wed, 24 Sep 2025 00:00:00 -0400</pubDate>
 <pubDate>Wed, 24 Sep 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -33,9 +33,7 @@ arXiv:2509.11101v3 Announce Type: replace
 Abstract: With the rapid advancement of Multimodal Large Language Models (MLLMs), they have demonstrated exceptional capabilities across a variety of vision-language tasks. However, current evaluation benchmarks predominantly focus on objective visual question answering or captioning, inadequately assessing the models' ability to understand complex and subjective human emotions. To bridge this gap, we introduce EmoBench-Reddit, a novel, hierarchical benchmark for multimodal emotion understanding. The dataset comprises 350 meticulously curated samples from the social media platform Reddit, each containing an image, associated user-provided text, and an emotion category (sad, humor, sarcasm, happy) confirmed by user flairs. We designed a hierarchical task framework that progresses from basic perception to advanced cognition, with each data point featuring six multiple-choice questions and one open-ended question of increasing difficulty. Perception tasks evaluate the model's ability to identify basic visual elements (e.g., colors, objects), while cognition tasks require scene reasoning, intent understanding, and deep empathy integrating textual context. We ensured annotation quality through a combination of AI assistance (Claude 4) and manual verification.We conducted a comprehensive evaluation of nine leading MLLMs, including GPT-5, Gemini-2.5-pro, and GPT-4o, on EmoBench-Reddit.
 ]]></content:encoded>
 <pubDate>Wed, 24 Sep 2025 00:00:00 -0400</pubDate>
-<pubDate>Wed, 24 Sep 2025 00:00:00 -0400</pubDate>
 </item>
-
 <item>
 <title>Dynamic Prompt Fusion for Multi-Task and Cross-Domain Adaptation in LLMs</title>
 <link>https://arxiv.org/abs/2509.18113</link>
@@ -11595,26 +11593,6 @@ Abstract: Iterative evaluation of LLMs during training is essential to ensure ex
 <content:encoded><![CDATA[
 arXiv:2506.08375v2 Announce Type: replace 
 Abstract: With the development and widespread application of large language models (LLMs), the new paradigm of "Model as Product" is rapidly evolving, and demands higher capabilities to address complex user needs, often requiring precise workflow execution which involves the accurate understanding of multiple tasks. However, existing benchmarks focusing on single-task environments with limited constraints lack the complexity required to fully reflect real-world scenarios. To bridge this gap, we present the Extremely Complex Instruction Following Benchmark (EIFBENCH), meticulously crafted to facilitate a more realistic and robust evaluation of LLMs. EIFBENCH not only includes multi-task scenarios that enable comprehensive assessment across diverse task types concurrently, but also integrates a variety of constraints, replicating complex operational environments. Furthermore, we propose the Segment Policy Optimization (SegPO) algorithm to enhance the LLM's ability to accurately fulfill multi-task workflow. Evaluations on EIFBENCH have unveiled considerable performance discrepancies in existing LLMs when challenged with these extremely complex instructions. This finding underscores the necessity for ongoing optimization to navigate the intricate challenges posed by LLM applications.
-]]></content:encoded>
-<pubDate>Wed, 17 Sep 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Efficient Context Selection for Long-Context QA: No Tuning, No Iteration, Just Adaptive-$k$</title>
-<link>https://arxiv.org/abs/2506.08479</link>
-<guid>https://arxiv.org/abs/2506.08479</guid>
-<content:encoded><![CDATA[
-arXiv:2506.08479v2 Announce Type: replace 
-Abstract: Retrieval-augmented generation (RAG) and long-context language models (LCLMs) both address context limitations of LLMs in open-domain question answering (QA). However, optimal external context to retrieve remains an open problem: fixing the retrieval size risks either wasting tokens or omitting key evidence. Existing adaptive methods like Self-RAG and Self-Route rely on iterative LLM prompting and perform well on factoid QA, but struggle with aggregation QA, where the optimal context size is both unknown and variable. We present Adaptive-$k$ retrieval, a simple and effective single-pass method that adaptively selects the number of passages based on the distribution of the similarity scores between the query and the candidate passages. It does not require model fine-tuning, extra LLM inferences or changes to existing retriever-reader pipelines. On both factoid and aggregation QA benchmarks, Adaptive-$k$ matches or outperforms fixed-$k$ baselines while using up to 10x fewer tokens than full-context input, yet still retrieves 70% of relevant passages. It improves accuracy across five LCLMs and two embedding models, highlighting that dynamically adjusting context size leads to more efficient and accurate QA.
-]]></content:encoded>
-<pubDate>Wed, 17 Sep 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>References Matter: Investigating the Impact of Reference Set Variation on Summarization Evaluation</title>
-<link>https://arxiv.org/abs/2506.14335</link>
-<guid>https://arxiv.org/abs/2506.14335</guid>
-<content:encoded><![CDATA[
-arXiv:2506.14335v3 Announce Type: replace 
-Abstract: Human language production exhibits remarkable richness and variation, reflecting diverse communication styles and intents. However, this variation is often overlooked in summarization evaluation. While having multiple reference summaries is known to improve correlation with human judgments, the impact of the reference set on reference-based metrics has not been systematically investigated. This work examines the sensitivity of widely used reference-based metrics in relation to the choice of reference sets, analyzing three diverse multi-reference summarization datasets: SummEval, GUMSum, and DUC2004. We demonstrate that many popular metrics exhibit significant instability. This instability is particularly concerning for n-gram-based metrics like ROUGE, where model rankings vary depending on the reference sets, undermining the reliability of model comparisons. We also collect human judgments on LLM outputs for genre-diverse data and examine their correlation with metrics to supplement existing findings beyond newswire summaries, finding weak-to-no correlation. Taken together, we recommend incorporating reference set variation into summarization evaluation to enhance consistency alongside correlation with human judgments, especially when evaluating LLMs.
 ]]></content:encoded>
 <pubDate>Wed, 17 Sep 2025 00:00:00 -0400</pubDate>
 </item>
