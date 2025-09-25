@@ -4,6 +4,7 @@
 <title>cs.LG updates on arXiv.org</title>
 <link>http://rss.arxiv.org/rss/cs.LG</link>
 
+
 <item>
 <title>Structure Matters: Brain Graph Augmentation via Learnable Edge Masking for Data-efficient Psychiatric Diagnosis</title>
 <link>https://arxiv.org/abs/2509.09744</link>
@@ -12,11 +13,10 @@
 <div> Keywords: brain network data, self-supervised learning, SAM-BG, structural semantics, psychiatric diagnoses 
 
 Summary: 
-SAM-BG is a two-stage framework designed to improve the accuracy and interpretability of psychiatric diagnoses by learning brain graph representations with preserved structural semantics. The framework consists of a pre-training stage where an edge masker captures key structural semantics from a small labeled subset, and a self-supervised learning stage where this knowledge guides a structure-aware augmentation process for more meaningful representations. Experiments on real-world psychiatric datasets show that SAM-BG outperforms existing methods, especially in settings with limited labeled data, and reveals clinically relevant connectivity patterns that enhance interpretability. The code for SAM-BG is available on GitHub for further exploration and implementation. <br><br>Summary: <div>
+SAM-BG is a two-stage framework designed to improve the accuracy and interpretability of psychiatric diagnoses by learning brain graph representations with preserved structural semantics. The framework consists of a pre-training stage where an edge masker captures key structural semantics from a small labeled subset, and a self-supervised learning stage where this knowledge guides a structure-aware augmentation process for more meaningful representations. Experiments on real-world psychiatric datasets show that SAM-BG outperforms existing methods, especially in settings with limited labeled data, and reveals clinically relevant connectivity patterns that enhance interpretability. The code for SAM-BG is available on GitHub for further exploration and implementation. <br /><br />Summary: <div>
 arXiv:2509.09744v4 Announce Type: replace 
 Abstract: The limited availability of labeled brain network data makes it challenging to achieve accurate and interpretable psychiatric diagnoses. While self-supervised learning (SSL) offers a promising solution, existing methods often rely on augmentation strategies that can disrupt crucial structural semantics in brain graphs. To address this, we propose SAM-BG, a two-stage framework for learning brain graph representations with structural semantic preservation. In the pre-training stage, an edge masker is trained on a small labeled subset to capture key structural semantics. In the SSL stage, the extracted structural priors guide a structure-aware augmentation process, enabling the model to learn more semantically meaningful and robust representations. Experiments on two real-world psychiatric datasets demonstrate that SAM-BG outperforms state-of-the-art methods, particularly in small-labeled data settings, and uncovers clinically relevant connectivity patterns that enhance interpretability. Our code is available at https://github.com/mjliu99/SAM-BG.
 ]]></content:encoded>
-<pubDate>Thu, 25 Sep 2025 00:00:00 -0400</pubDate>
 <pubDate>Thu, 25 Sep 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -29,14 +29,12 @@ Abstract: The limited availability of labeled brain network data makes it challe
 Summary:
 In this study, an enhanced Monte Carlo Tree Search (MCTS) framework for symbolic regression is proposed to address limitations in traditional bandit strategies and sequential symbol construction. The key innovations include an extreme bandit allocation strategy tailored for identifying globally optimal expressions and evolution-inspired state-jumping actions such as mutation and crossover. These enhancements lead to improved search efficiency, robustness, and performance guarantees under polynomial reward decay assumptions. A thorough numerical study evaluates the impact of these improvements and benchmarks the approach against existing methods on various datasets. The results demonstrate competitive performance with state-of-the-art libraries, achieving a favorable balance between accuracy and model complexity on the Pareto frontier. The code for the proposed approach is available on GitHub for further exploration. 
 
-<br><br>Summary: <div>
+<br /><br />Summary: <div>
 arXiv:2509.15929v2 Announce Type: replace 
 Abstract: Symbolic regression aims to discover concise, interpretable mathematical expressions that satisfy desired objectives, such as fitting data, posing a highly combinatorial optimization problem. While genetic programming has been the dominant approach, recent efforts have explored reinforcement learning methods for improving search efficiency. Monte Carlo Tree Search (MCTS), with its ability to balance exploration and exploitation through guided search, has emerged as a promising technique for symbolic expression discovery. However, its traditional bandit strategies and sequential symbol construction often limit performance. In this work, we propose an improved MCTS framework for symbolic regression that addresses these limitations through two key innovations: (1) an extreme bandit allocation strategy tailored for identifying globally optimal expressions, with finite-time performance guarantees under polynomial reward decay assumptions; and (2) evolution-inspired state-jumping actions such as mutation and crossover, which enable non-local transitions to promising regions of the search space. These state-jumping actions also reshape the reward landscape during the search process, improving both robustness and efficiency. We conduct a thorough numerical study to the impact of these improvements and benchmark our approach against existing symbolic regression methods on a variety of datasets, including both ground-truth and black-box datasets. Our approach achieves competitive performance with state-of-the-art libraries in terms of recovery rate, attains favorable positions on the Pareto frontier of accuracy versus model complexity. Code is available at https://github.com/PKU-CMEGroup/MCTS-4-SR.
 ]]></content:encoded>
 <pubDate>Thu, 25 Sep 2025 00:00:00 -0400</pubDate>
-<pubDate>Thu, 25 Sep 2025 00:00:00 -0400</pubDate>
 </item>
-
 <item>
 <title>Wavelet Fourier Diffuser: Frequency-Aware Diffusion Model for Reinforcement Learning</title>
 <link>https://arxiv.org/abs/2509.19305</link>
@@ -10865,26 +10863,6 @@ Abstract: Achieving both realism and controllability in closed-loop traffic simu
 <content:encoded><![CDATA[
 arXiv:2505.11750v3 Announce Type: replace-cross 
 Abstract: Improving the skill of medium-range (3-8 day) severe weather prediction is crucial for mitigating societal impacts. This study introduces a novel approach leveraging decoder-only transformer networks to post-process AI-based weather forecasts, specifically from the Pangu-Weather model, for improved severe weather guidance. Unlike traditional post-processing methods that use a dense neural network to predict the probability of severe weather using discrete forecast samples, our method treats forecast lead times as sequential ``tokens'', enabling the transformer to learn complex temporal relationships within the evolving atmospheric state. We compare this approach against post-processing of the Global Forecast System (GFS) using both a traditional dense neural network and our transformer, as well as configurations that exclude convective parameters to fairly evaluate the impact of using the Pangu-Weather AI model. Results demonstrate that the transformer-based post-processing significantly enhances forecast skill compared to dense neural networks. Furthermore, AI-driven forecasts, particularly Pangu-Weather initialized from high resolution analysis, exhibit superior performance to GFS in the medium-range, even without explicit convective parameters. Our approach offers improved accuracy, and reliability, which also provides interpretability through feature attribution analysis, advancing medium-range severe weather prediction capabilities.
-]]></content:encoded>
-<pubDate>Tue, 23 Sep 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>R3: Robust Rubric-Agnostic Reward Models</title>
-<link>https://arxiv.org/abs/2505.13388</link>
-<guid>https://arxiv.org/abs/2505.13388</guid>
-<content:encoded><![CDATA[
-arXiv:2505.13388v3 Announce Type: replace-cross 
-Abstract: Reward models are essential for aligning language model outputs with human preferences, yet existing approaches often lack both controllability and interpretability. These models are typically optimized for narrow objectives, limiting their generalizability to broader downstream tasks. Moreover, their scalar outputs are difficult to interpret without contextual reasoning. To address these limitations, we introduce $\shortmethodname$, a novel reward modeling framework that is rubric-agnostic, generalizable across evaluation dimensions, and provides interpretable, reasoned score assignments. $\shortmethodname$ enables more transparent and flexible evaluation of language models, supporting robust alignment with diverse human values and use cases. Our models, data, and code are available as open source at https://github.com/rubricreward/r3.
-]]></content:encoded>
-<pubDate>Tue, 23 Sep 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>SATBench: Benchmarking LLMs' Logical Reasoning via Automated Puzzle Generation from SAT Formulas</title>
-<link>https://arxiv.org/abs/2505.14615</link>
-<guid>https://arxiv.org/abs/2505.14615</guid>
-<content:encoded><![CDATA[
-arXiv:2505.14615v2 Announce Type: replace-cross 
-Abstract: We introduce SATBench, a benchmark for evaluating the logical reasoning capabilities of large language models (LLMs) through logical puzzles derived from Boolean satisfiability (SAT) problems. Unlike prior work that focuses on inference rule-based reasoning, which often involves deducing conclusions from a set of premises, our approach leverages the search-based nature of SAT problems, where the objective is to find a solution that fulfills a specified set of logical constraints. Each instance in SATBench is generated from a SAT formula, then translated into a puzzle using LLMs. The generation process is fully automated and allows for adjustable difficulty by varying the number of clauses. All 2100 puzzles are validated through both LLM-based and solver-based consistency checks, with human validation on a subset. Experimental results show that even the strongest model, o4-mini, achieves only 65.0% accuracy on hard UNSAT problems, close to the random baseline of 50%. Our error analysis reveals systematic failures such as satisfiability bias, context inconsistency, and condition omission, highlighting limitations of current LLMs in search-based logical reasoning. Our code and data are publicly available at https://github.com/Anjiang-Wei/SATBench
 ]]></content:encoded>
 <pubDate>Tue, 23 Sep 2025 00:00:00 -0400</pubDate>
 </item>
