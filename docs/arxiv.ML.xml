@@ -4,18 +4,18 @@
 <title>cs.LG updates on arXiv.org</title>
 <link>http://rss.arxiv.org/rss/cs.LG</link>
 
+
 <item>
 <title>DimINO: Dimension-Informed Neural Operator Learning</title>
 <link>https://arxiv.org/abs/2410.05894</link>
 <guid>https://arxiv.org/abs/2410.05894</guid>
 <content:encoded><![CDATA[
-<div> Neural Operator methods, PDEs, DimINO, Dimension-Informed, Similar Transformation Invariance<br>
-<br>
+<div> Neural Operator methods, PDEs, DimINO, Dimension-Informed, Similar Transformation Invariance<br />
+<br />
 Summary: DimINO is a framework for solving partial differential equations using neural operators that incorporates DimNorm and redimensionalization to improve generalization across datasets with varying physical parameters. It introduces a universal approximation theorem and satisfies the Similar Transformation Invariance property. Empirically, DimINO outperforms existing methods on PDE datasets, showcasing a 76.3% performance gain while demonstrating evidence of STI. <div>
 arXiv:2410.05894v5 Announce Type: replace 
 Abstract: In computational physics, a longstanding challenge lies in finding numerical solutions to partial differential equations (PDEs). Recently, research attention has increasingly focused on Neural Operator methods, which are notable for their ability to approximate operators-mappings between functions. Although neural operators benefit from a universal approximation theorem, achieving reliable error bounds often necessitates large model architectures, such as deep stacks of Fourier layers. This raises a natural question: Can we design lightweight models without sacrificing generalization? To address this, we introduce DimINO (Dimension-Informed Neural Operators), a framework inspired by dimensional analysis. DimINO incorporates two key components, DimNorm and a redimensionalization operation, which can be seamlessly integrated into existing neural operator architectures. These components enhance the model's ability to generalize across datasets with varying physical parameters. Theoretically, we establish a universal approximation theorem for DimINO and prove that it satisfies a critical property we term Similar Transformation Invariance (STI). Empirically, DimINO achieves up to 76.3% performance gain on PDE datasets while exhibiting clear evidence of the STI property.
 ]]></content:encoded>
-<pubDate>Fri, 26 Sep 2025 00:00:00 -0400</pubDate>
 <pubDate>Fri, 26 Sep 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -23,13 +23,12 @@ Abstract: In computational physics, a longstanding challenge lies in finding num
 <link>https://arxiv.org/abs/2509.16746</link>
 <guid>https://arxiv.org/abs/2509.16746</guid>
 <content:encoded><![CDATA[
-<div> Keywords: linear quadratic regulator, uncertain disturbances, adaptive dynamic programming, stability, convergence<br>
-Summary:<br>
+<div> Keywords: linear quadratic regulator, uncertain disturbances, adaptive dynamic programming, stability, convergence<br />
+Summary:<br />
 The article focuses on offline designs of linear quadratic regulator (LQR) strategies in the presence of uncertain disturbances. It examines scenarios where disturbances can be estimated in a controlled environment and when they are unknown in a stochastic setting. The approach combines adaptive dynamic programming (ADP) with a Lyapunov-based analytical methodology to develop algorithms and sample-based approximations inspired by Markov decision process (MDP) principles. For scenarios involving non-measurable disturbances, stability and convergence guarantees for learned control gains are established under sample-based approximations. The methodology aims for simplicity while providing robust guarantees. Numerical experiments validate the design of offline continuous-time LQR with exogenous disturbances, highlighting the intricacies involved in the process. <div>
 arXiv:2509.16746v2 Announce Type: replace-cross 
 Abstract: We analyze offline designs of linear quadratic regulator (LQR) strategies with uncertain disturbances. First, we consider the scenario where the exogenous variable can be estimated in a controlled environment, and subsequently, consider a more practical and challenging scenario where it is unknown in a stochastic setting. Our approach builds on the fundamental learning-based framework of adaptive dynamic programming (ADP), combined with a Lyapunov-based analytical methodology to design the algorithms and derive sample-based approximations motivated from the Markov decision process (MDP)-based approaches. For the scenario involving non-measurable disturbances, we further establish stability and convergence guarantees for the learned control gains under sample-based approximations. The overall methodology emphasizes simplicity while providing rigorous guarantees. Finally, numerical experiments focus on the intricacies and validations for the design of offline continuous-time LQR with exogenous disturbances.
 ]]></content:encoded>
-<pubDate>Fri, 26 Sep 2025 00:00:00 -0400</pubDate>
 <pubDate>Fri, 26 Sep 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -45,7 +44,6 @@ arXiv:2509.17094v2 Announce Type: replace-cross
 Abstract: The synthesis of crystalline materials, such as zeolites, remains a significant challenge due to a high-dimensional synthesis space, intricate structure-synthesis relationships and time-consuming experiments. Considering the one-to-many relationship between structure and synthesis, we propose DiffSyn, a generative diffusion model trained on over 23,000 synthesis recipes spanning 50 years of literature. DiffSyn generates probable synthesis routes conditioned on a desired zeolite structure and an organic template. DiffSyn achieves state-of-the-art performance by capturing the multi-modal nature of structure-synthesis relationships. We apply DiffSyn to differentiate among competing phases and generate optimal synthesis routes. As a proof of concept, we synthesize a UFI material using DiffSyn-generated synthesis routes. These routes, rationalized by density functional theory binding energies, resulted in the successful synthesis of a UFI material with a high Si/Al$_{\text{ICP}}$ of 19.0, which is expected to improve thermal stability and is higher than that of any previously recorded.
 ]]></content:encoded>
 <pubDate>Fri, 26 Sep 2025 00:00:00 -0400</pubDate>
-<pubDate>Fri, 26 Sep 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
 <title>Bilateral Distribution Compression: Reducing Both Data Size and Dimensionality</title>
@@ -57,11 +55,10 @@ Abstract: The synthesis of crystalline materials, such as zeolites, remains a si
 Summary:
 Bilateral Distribution Compression (BDC) is proposed as a two-stage framework for compressing large datasets while preserving the underlying distribution. BDC operates with linear time and memory complexity in dataset size and dimension. The Decoded MMD (DMMD) is introduced to quantify the discrepancy between the original data and a compressed set decoded from a low-dimensional latent space. BDC utilizes the Reconstruction MMD (RMMD) to learn a low-dimensional projection and the Encoded MMD (EMMD) to optimize a latent compressed set. By minimizing the DMMD, BDC ensures that the compressed set accurately represents the original distribution. Experimental results demonstrate that BDC can achieve comparable or superior performance to ambient-space compression at a significantly lower cost. 
 
-<br><br>Summary: <div>
+<br /><br />Summary: <div>
 arXiv:2509.17543v3 Announce Type: replace-cross 
 Abstract: Existing distribution compression methods reduce dataset size by minimising the Maximum Mean Discrepancy (MMD) between original and compressed sets, but modern datasets are often large in both sample size and dimensionality. We propose Bilateral Distribution Compression (BDC), a two-stage framework that compresses along both axes while preserving the underlying distribution, with overall linear time and memory complexity in dataset size and dimension. Central to BDC is the Decoded MMD (DMMD), which quantifies the discrepancy between the original data and a compressed set decoded from a low-dimensional latent space. BDC proceeds by (i) learning a low-dimensional projection using the Reconstruction MMD (RMMD), and (ii) optimising a latent compressed set with the Encoded MMD (EMMD). We show that this procedure minimises the DMMD, guaranteeing that the compressed set faithfully represents the original distribution. Experiments show that across a variety of scenarios BDC can achieve comparable or superior performance to ambient-space compression at substantially lower cost.
 ]]></content:encoded>
-<pubDate>Fri, 26 Sep 2025 00:00:00 -0400</pubDate>
 <pubDate>Fri, 26 Sep 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -73,14 +70,12 @@ Abstract: Existing distribution compression methods reduce dataset size by minim
 
 Summary: In this paper, the researchers address the issue of redundancy in decision trees within the Rashomon set and its implications on feature importance and accuracy. They introduce the MBDSR approach, utilizing the Quine-McCluskey method to determine predictive equivalence among decision trees. However, they find that the QM method can exhibit worst-case exponential running time and space for certain decision trees. They demonstrate that the MBDSR approach may produce incorrect results in some cases and propose algorithms that can solve related problems in polynomial time. Through experiments, they show that their algorithms are significantly faster than previous methods for decision trees triggering worst-case scenarios with the QM method. This research highlights the importance of efficient methods for decision tree analysis and provides solutions for improving accuracy and computational efficiency. 
 
-<br><br>Summary: <div>
+<br /><br />Summary: <div>
 arXiv:2509.17774v2 Announce Type: replace-cross 
 Abstract: The Rashomon set of decision trees (DTs) finds importance uses. Recent work showed that DTs computing the same classification function, i.e. predictive equivalent DTs, can represent a significant fraction of the Rashomon set. Such redundancy is undesirable. For example, feature importance based on the Rashomon set becomes inaccurate due the existence of predictive equivalent DTs, i.e. DTs with the same prediction for every possible input. In recent work, McTavish et al. proposed solutions for several computational problems related with DTs, including that of deciding predictive equivalent DTs. This approach, which this paper refers to as MBDSR, consists of applying the well-known method of Quine-McCluskey (QM) for obtaining minimum-size DNF (disjunctive normal form) representations of DTs, which are then used for comparing DTs for predictive equivalence. Furthermore, the minimum-size DNF representation was also applied to computing explanations for the predictions made by DTs, and to finding predictions in the presence of missing data. However, the problem of formula minimization is hard for the second level of the polynomial hierarchy, and the QM method may exhibit worst-case exponential running time and space. This paper first demonstrates that there exist decision trees that trigger the worst-case exponential running time and space of the QM method. Second, the paper shows that, depending on the QM method implementation, the MBDSR approach can produce incorrect results for the problem of deciding predictive equivalence. Third, the paper shows that any of the problems to which the smallest DNF representation has been applied to can be solved in polynomial time, in the size of the DT. The experiments confirm that, for DTs for which the worst-case of the QM method is triggered, the algorithms proposed in this paper are orders of magnitude faster than the ones proposed by McTavish et al.
 ]]></content:encoded>
 <pubDate>Fri, 26 Sep 2025 00:00:00 -0400</pubDate>
-<pubDate>Fri, 26 Sep 2025 00:00:00 -0400</pubDate>
 </item>
-
 <item>
 <title>A Theory of Multi-Agent Generative Flow Networks</title>
 <link>https://arxiv.org/abs/2509.20408</link>
@@ -11129,56 +11124,6 @@ Abstract: Accurate modeling of personalized cardiovascular dynamics is crucial f
 <content:encoded><![CDATA[
 arXiv:2509.17304v1 Announce Type: new 
 Abstract: Performative prediction (PP) is an algorithmic framework for optimizing machine learning (ML) models where the model's deployment affects the distribution of the data it is trained on. Compared to traditional ML with fixed data, designing algorithms in PP converging to a stable point -- known as a stationary performative stable (SPS) solution -- is more challenging than the counterpart in conventional ML tasks due to the model-induced distribution shifts. While considerable efforts have been made to find SPS solutions using methods such as repeated gradient descent (RGD) and greedy stochastic gradient descent (SGD-GD), most prior studies assumed a strongly convex loss until a recent work established $\mathcal{O}(1/\sqrt{T})$ convergence of SGD-GD to SPS solutions under smooth, non-convex losses. However, this latest progress is still based on the restricted bounded variance assumption in stochastic gradient estimates and yields convergence bounds with a non-vanishing error neighborhood that scales with the variance. This limitation motivates us to improve convergence rates and reduce error in stochastic optimization for PP, particularly in non-convex settings. Thus, we propose a new algorithm called stochastic performative prediction with variance reduction (SPRINT) and establish its convergence to an SPS solution at a rate of $\mathcal{O}(1/T)$. Notably, the resulting error neighborhood is **independent** of the variance of the stochastic gradients. Experiments on multiple real datasets with non-convex models demonstrate that SPRINT outperforms SGD-GD in both convergence rate and stability.
-]]></content:encoded>
-<pubDate>Tue, 23 Sep 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>VQEzy: An Open-Source Dataset for Parameter Initialize in Variational Quantum Eigensolvers</title>
-<link>https://arxiv.org/abs/2509.17322</link>
-<guid>https://arxiv.org/abs/2509.17322</guid>
-<content:encoded><![CDATA[
-arXiv:2509.17322v1 Announce Type: new 
-Abstract: Variational Quantum Eigensolvers (VQEs) are a leading class of noisy intermediate-scale quantum (NISQ) algorithms, whose performance is highly sensitive to parameter initialization. Although recent machine learning-based initialization methods have achieved state-of-the-art performance, their progress has been limited by the lack of comprehensive datasets. Existing resources are typically restricted to a single domain, contain only a few hundred instances, and lack complete coverage of Hamiltonians, ansatz circuits, and optimization trajectories. To overcome these limitations, we introduce VQEzy, the first large-scale dataset for VQE parameter initialization. VQEzy spans three major domains and seven representative tasks, comprising 12,110 instances with full VQE specifications and complete optimization trajectories. The dataset is available online, and will be continuously refined and expanded to support future research in VQE optimization.
-]]></content:encoded>
-<pubDate>Tue, 23 Sep 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Generalizable End-to-End Tool-Use RL with Synthetic CodeGym</title>
-<link>https://arxiv.org/abs/2509.17325</link>
-<guid>https://arxiv.org/abs/2509.17325</guid>
-<content:encoded><![CDATA[
-arXiv:2509.17325v1 Announce Type: new 
-Abstract: Tool-augmented large language models (LLMs), hereafter LLM agents, leverage external tools to solve diverse tasks and interface with the real world. However, current training practices largely rely on supervised fine-tuning (SFT) over static trajectories or reinforcement learning (RL) on narrow tasks, and generalize poorly beyond development settings, leading to brittleness with new tools and unseen workflows. Because code execution reflects many structures of real-world workflows, coding problems provide a natural basis for building agent training environments. Motivated by this, we introduce CodeGym, a scalable framework that synthesizes diverse, verifiable, and controllable multi-turn tool-use environments for agent RL, enabling LLM agents to explore and master various workflows actively. CodeGym rewrites static coding problems into interactive environments by extracting atomic functions or logic into callable tools, yielding verifiable tasks that span various tool-execution workflows. Models of varying sizes and chain-of-thought configurations, trained in CodeGym, exhibit consistent out-of-distribution generalizability; for example, Qwen2.5-32B-Instruct achieves an absolute accuracy gain of 8.7 points on the OOD benchmark $\tau$-Bench. These results highlight CodeGym as a step toward scalable general-purpose RL environments that align with real-world agent workflows.
-]]></content:encoded>
-<pubDate>Tue, 23 Sep 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Robust Anomaly Detection Under Normality Distribution Shift in Dynamic Graphs</title>
-<link>https://arxiv.org/abs/2509.17400</link>
-<guid>https://arxiv.org/abs/2509.17400</guid>
-<content:encoded><![CDATA[
-arXiv:2509.17400v1 Announce Type: new 
-Abstract: Anomaly detection in dynamic graphs is a critical task with broad real-world applications, including social networks, e-commerce, and cybersecurity. Most existing methods assume that normal patterns remain stable over time; however, this assumption often fails in practice due to the phenomenon we refer to as normality distribution shift (NDS), where normal behaviors evolve over time. Ignoring NDS can lead models to misclassify shifted normal instances as anomalies, degrading detection performance. To tackle this issue, we propose WhENDS, a novel unsupervised anomaly detection method that aligns normal edge embeddings across time by estimating distributional statistics and applying whitening transformations. Extensive experiments on four widely-used dynamic graph datasets show that WhENDS consistently outperforms nine strong baselines, achieving state-of-the-art results and underscoring the importance of addressing NDS in dynamic graph anomaly detection.
-]]></content:encoded>
-<pubDate>Tue, 23 Sep 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Efficient Sliced Wasserstein Distance Computation via Adaptive Bayesian Optimization</title>
-<link>https://arxiv.org/abs/2509.17405</link>
-<guid>https://arxiv.org/abs/2509.17405</guid>
-<content:encoded><![CDATA[
-arXiv:2509.17405v1 Announce Type: new 
-Abstract: The sliced Wasserstein distance (SW) reduces optimal transport on $\mathbb{R}^d$ to a sum of one-dimensional projections, and thanks to this efficiency, it is widely used in geometry, generative modeling, and registration tasks. Recent work shows that quasi-Monte Carlo constructions for computing SW (QSW) yield direction sets with excellent approximation error. This paper presents an alternate, novel approach: learning directions with Bayesian optimization (BO), particularly in settings where SW appears inside an optimization loop (e.g., gradient flows). We introduce a family of drop-in selectors for projection directions: BOSW, a one-shot BO scheme on the unit sphere; RBOSW, a periodic-refresh variant; ABOSW, an adaptive hybrid that seeds from competitive QSW sets and performs a few lightweight BO refinements; and ARBOSW, a restarted hybrid that periodically relearns directions during optimization. Our BO approaches can be composed with QSW and its variants (demonstrated by ABOSW/ARBOSW) and require no changes to downstream losses or gradients. We provide numerical experiments where our methods achieve state-of-the-art performance, and on the experimental suite of the original QSW paper, we find that ABOSW and ARBOSW can achieve convergence comparable to the best QSW variants with modest runtime overhead.
-]]></content:encoded>
-<pubDate>Tue, 23 Sep 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Distributionally Robust Safety Verification of Neural Networks via Worst-Case CVaR</title>
-<link>https://arxiv.org/abs/2509.17413</link>
-<guid>https://arxiv.org/abs/2509.17413</guid>
-<content:encoded><![CDATA[
-arXiv:2509.17413v1 Announce Type: new 
-Abstract: Ensuring the safety of neural networks under input uncertainty is a fundamental challenge in safety-critical applications. This paper builds on and expands Fazlyab's quadratic-constraint (QC) and semidefinite-programming (SDP) framework for neural network verification to a distributionally robust and tail-risk-aware setting by integrating worst-case Conditional Value-at-Risk (WC-CVaR) over a moment-based ambiguity set with fixed mean and covariance. The resulting conditions remain SDP-checkable and explicitly account for tail risk. This integration broadens input-uncertainty geometry-covering ellipsoids, polytopes, and hyperplanes-and extends applicability to safety-critical domains where tail-event severity matters. Applications to closed-loop reachability of control systems and classification are demonstrated through numerical experiments, illustrating how the risk level $\varepsilon$ trades conservatism for tolerance to tail events-while preserving the computational structure of prior QC/SDP methods for neural network verification and robustness analysis.
 ]]></content:encoded>
 <pubDate>Tue, 23 Sep 2025 00:00:00 -0400</pubDate>
 </item>

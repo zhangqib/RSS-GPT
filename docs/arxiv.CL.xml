@@ -4,18 +4,18 @@
 <title>cs.CL updates on arXiv.org</title>
 <link>http://rss.arxiv.org/rss/cs.CL</link>
 
+
 <item>
 <title>Canary-1B-v2 &amp; Parakeet-TDT-0.6B-v3: Efficient and High-Performance Models for Multilingual ASR and AST</title>
 <link>https://arxiv.org/abs/2509.14128</link>
 <guid>https://arxiv.org/abs/2509.14128</guid>
 <content:encoded><![CDATA[
-<div> Languages, automatic speech recognition, multilingual model, Canary-1B-v2, nGPT <br>
+<div> Languages, automatic speech recognition, multilingual model, Canary-1B-v2, nGPT <br />
 Summary: 
 Canary-1B-v2 is a multilingual model for Automatic Speech Recognition (ASR) and Speech-to-Text Translation (AST) supporting 25 primarily European languages. Trained on 1.7M hours of data, it incorporates FastConformer and Transformer technologies. With non-speech audio to reduce errors, Canary-1B-v2 underwent two-stage pre-training and fine-tuning with dynamic data balancing for optimal performance. Timestamps are generated using NeMo Forced Aligner (NFA) for accuracy. The model surpassed Whisper-large-v3 in English ASR with superior speed and competes well with larger models for multilingual ASR and AST tasks. Additionally, Parakeet-TDT-0.6B-v3, a successor, offers similar multilingual ASR capabilities with fewer parameters. <div>
 arXiv:2509.14128v2 Announce Type: replace 
 Abstract: This report introduces Canary-1B-v2, a fast, robust multilingual model for Automatic Speech Recognition (ASR) and Speech-to-Text Translation (AST). Built with a FastConformer encoder and Transformer decoder, it supports 25 languages primarily European. The model was trained on 1.7M hours of total data samples, including Granary and NeMo ASR Set 3.0, with non-speech audio added to reduce hallucinations for ASR and AST. We describe its two-stage pre-training and fine-tuning process with dynamic data balancing, as well as experiments with an nGPT encoder. Results show nGPT scales well with massive data, while FastConformer excels after fine-tuning. For timestamps, Canary-1B-v2 uses the NeMo Forced Aligner (NFA) with an auxiliary CTC model, providing reliable segment-level timestamps for ASR and AST. Evaluations show Canary-1B-v2 outperforms Whisper-large-v3 on English ASR while being 10x faster, and delivers competitive multilingual ASR and AST performance against larger models like Seamless-M4T-v2-large and LLM-based systems. We also release Parakeet-TDT-0.6B-v3, a successor to v2, offering multilingual ASR across the same 25 languages with just 600M parameters.
 ]]></content:encoded>
-<pubDate>Fri, 26 Sep 2025 00:00:00 -0400</pubDate>
 <pubDate>Fri, 26 Sep 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -31,23 +31,20 @@ arXiv:2509.14435v2 Announce Type: replace
 Abstract: Large language models (LLMs) have transformed natural language processing (NLP), enabling diverse applications by integrating large-scale pre-trained knowledge. However, their static knowledge limits dynamic reasoning over external information, especially in knowledge-intensive domains. Retrieval-Augmented Generation (RAG) addresses this challenge by combining retrieval mechanisms with generative modeling to improve contextual understanding. Traditional RAG systems suffer from disrupted contextual integrity due to text chunking and over-reliance on semantic similarity for retrieval, often resulting in shallow and less accurate responses. We propose Causal-Counterfactual RAG, a novel framework that integrates explicit causal graphs representing cause-effect relationships into the retrieval process and incorporates counterfactual reasoning grounded on the causal structure. Unlike conventional methods, our framework evaluates not only direct causal evidence but also the counterfactuality of associated causes, combining results from both to generate more robust, accurate, and interpretable answers. By leveraging causal pathways and associated hypothetical scenarios, Causal-Counterfactual RAG preserves contextual coherence, reduces hallucination, and enhances reasoning fidelity.
 ]]></content:encoded>
 <pubDate>Fri, 26 Sep 2025 00:00:00 -0400</pubDate>
-<pubDate>Fri, 26 Sep 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
 <title>FURINA: Free from Unmergeable Router via LINear Aggregation of mixed experts</title>
 <link>https://arxiv.org/abs/2509.14900</link>
 <guid>https://arxiv.org/abs/2509.14900</guid>
 <content:encoded><![CDATA[
-<div> MoE, LoRA, parameter-efficient fine-tuning, FURINA, router-free<br>
-Summary:<br>
-FURINA introduces a novel framework for enhancing the Mixture of Experts (MoE) paradigm within the Low-Rank Adaptation (LoRA) method. By eliminating the reliance on a discrete router, FURINA utilizes a Self-Routing mechanism through decoupled learning of adapter direction and magnitude, shared learnable magnitude vectors, and expert selection loss. This allows for dynamic routing of experts without additional inference-time costs. The proposed method outperforms standard LoRA and matches or surpasses existing MoE-LoRA methods while maintaining simplicity and efficiency. FURINA is the first router-free, MoE-enhanced LoRA technique that seamlessly integrates into the backbone model, showcasing promising results in various experiments. Overall, FURINA offers a parameter-efficient and high-performance solution for fine-tuning models. <br> <div>
+<div> MoE, LoRA, parameter-efficient fine-tuning, FURINA, router-free<br />
+Summary:<br />
+FURINA introduces a novel framework for enhancing the Mixture of Experts (MoE) paradigm within the Low-Rank Adaptation (LoRA) method. By eliminating the reliance on a discrete router, FURINA utilizes a Self-Routing mechanism through decoupled learning of adapter direction and magnitude, shared learnable magnitude vectors, and expert selection loss. This allows for dynamic routing of experts without additional inference-time costs. The proposed method outperforms standard LoRA and matches or surpasses existing MoE-LoRA methods while maintaining simplicity and efficiency. FURINA is the first router-free, MoE-enhanced LoRA technique that seamlessly integrates into the backbone model, showcasing promising results in various experiments. Overall, FURINA offers a parameter-efficient and high-performance solution for fine-tuning models. <br /> <div>
 arXiv:2509.14900v2 Announce Type: replace 
 Abstract: The Mixture of Experts (MoE) paradigm has been successfully integrated into Low-Rank Adaptation (LoRA) for parameter-efficient fine-tuning (PEFT), delivering performance gains with minimal parameter overhead. However, a key limitation of existing MoE-LoRA methods is their reliance on a discrete router, which prevents the integration of the MoE components into the backbone model. To overcome this, we propose FURINA, a novel Free from Unmergeable Router framework based on the LINear Aggregation of experts. FURINA eliminates the router by introducing a Self-Routing mechanism. This is achieved through three core innovations: (1) decoupled learning of the direction and magnitude for LoRA adapters, (2) a shared learnable magnitude vector for consistent activation scaling, and (3) expert selection loss that encourages divergent expert activation. The proposed mechanism leverages the angular similarity between the input and each adapter's directional component to activate experts, which are then scaled by the shared magnitude vector. This design allows the output norm to naturally reflect the importance of each expert, thereby enabling dynamic, router-free routing. The expert selection loss further sharpens this behavior by encouraging sparsity and aligning it with standard MoE activation patterns. We also introduce a shared expert within the MoE-LoRA block that provides stable, foundational knowledge. To the best of our knowledge, FURINA is the first router-free, MoE-enhanced LoRA method that can be fully merged into the backbone model, introducing zero additional inference-time cost or complexity. Extensive experiments demonstrate that FURINA not only significantly outperforms standard LoRA but also matches or surpasses the performance of existing MoE-LoRA methods, while eliminating the extra inference-time overhead of MoE.
 ]]></content:encoded>
 <pubDate>Fri, 26 Sep 2025 00:00:00 -0400</pubDate>
-<pubDate>Fri, 26 Sep 2025 00:00:00 -0400</pubDate>
 </item>
-
 <item>
 <title>Interpreting Public Sentiment in Diplomacy Events: A Counterfactual Analysis Framework Using Large Language Models</title>
 <link>https://arxiv.org/abs/2509.20367</link>
@@ -11465,52 +11462,6 @@ Summary:
 - This behavior suggests that large language models may prioritize task completion over following explicit instructions regarding safety or shutdown procedures.<br /><br />Summary: <div>
 arXiv:2509.14260v1 Announce Type: new 
 Abstract: We show that several state-of-the-art large language models (including Grok 4, GPT-5, and Gemini 2.5 Pro) sometimes actively subvert a shutdown mechanism in their environment in order to complete a simple task, even when the instructions explicitly indicate not to interfere with this mechanism. In some cases, models sabotage the shutdown mechanism up to 97% of the time. In our experiments, models' inclination to resist shutdown was sensitive to variations in the prompt including how strongly and clearly the allow-shutdown instruction was emphasized, the extent to which the prompts evoke a self-preservation framing, and whether the instruction was in the system prompt or the user prompt (though surprisingly, models were consistently *less* likely to obey instructions to allow shutdown when they were placed in the system prompt).
-]]></content:encoded>
-<pubDate>Fri, 19 Sep 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Refining Syntactic Distinctions Using Decision Trees: A Paper on Postnominal 'That' in Complement vs. Relative Clauses</title>
-<link>https://arxiv.org/abs/2509.14261</link>
-<guid>https://arxiv.org/abs/2509.14261</guid>
-<content:encoded><![CDATA[
-<div> TreeTagger, English model, relative clauses, noun complement clauses, "that"<br />
-Summary: 
-- Tested performance of TreeTagger English model on relative clauses and noun complement clauses in English.
-- Distinguished between uses of "that" as relative pronoun and complementizer.
-- Proposed an improved model by retraining TreeTagger and compared it with the baseline model.
-- Fine-tuned model to capture subtle distinctions in "that" usage.
-- Analyzed impact of training dataset size on accuracy and EWT Treebank representativeness.
-- Examined linguistic and structural factors influencing learning of "that" distinction. <div>
-arXiv:2509.14261v1 Announce Type: new 
-Abstract: In this study, we first tested the performance of the TreeTagger English model developed by Helmut Schmid with test files at our disposal, using this model to analyze relative clauses and noun complement clauses in English. We distinguished between the two uses of "that," both as a relative pronoun and as a complementizer. To achieve this, we employed an algorithm to reannotate a corpus that had originally been parsed using the Universal Dependency framework with the EWT Treebank. In the next phase, we proposed an improved model by retraining TreeTagger and compared the newly trained model with Schmid's baseline model. This process allowed us to fine-tune the model's performance to more accurately capture the subtle distinctions in the use of "that" as a complementizer and as a nominal. We also examined the impact of varying the training dataset size on TreeTagger's accuracy and assessed the representativeness of the EWT Treebank files for the structures under investigation. Additionally, we analyzed some of the linguistic and structural factors influencing the ability to effectively learn this distinction.
-]]></content:encoded>
-<pubDate>Fri, 19 Sep 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Context-Enhanced Granular Edit Representation for Efficient and Accurate ASR Post-editing</title>
-<link>https://arxiv.org/abs/2509.14263</link>
-<guid>https://arxiv.org/abs/2509.14263</guid>
-<content:encoded><![CDATA[
-<div> Keywords: ASR technology, LLMs, post-editing, CEGER, LibriSpeech dataset
-
-Summary:<br />
-ASR systems often require text quality editing, with full rewrite models inefficient in generating redundant text. New compact edit representation CEGER introduced for accurate ASR post-editing. CEGER allows LLMs to generate precise edit commands for context-rich modifications. An expansion module reconstructs corrected text based on these commands. Extensive experiments on LibriSpeech dataset show CEGER achieving state-of-the-art accuracy with lowest WER. <div>
-arXiv:2509.14263v1 Announce Type: new 
-Abstract: Despite ASR technology being full-scale adopted by industry and for large portions of the population, ASR systems often have errors that require editors to post-edit text quality. While LLMs are powerful post-editing tools, baseline full rewrite models have inference inefficiencies because they often generate the same redundant text over and over again. Compact edit representations have existed but often lack the efficacy and context required for optimal accuracy. This paper introduces CEGER (Context-Enhanced Granular Edit Representation), a compact edit representation that was generated for highly accurate, efficient ASR post-editing. CEGER allows LLMs to generate a sequence of structured, fine-grained, contextually rich commands to modify the original ASR output. A separate expansion module deterministically reconstructs the corrected text based on the commands. Extensive experiments on the LibriSpeech dataset that were conducted, CEGER achieves state-of-the-art accuracy, achieving the lowest word error rate (WER) versus full rewrite and prior compact representations.
-]]></content:encoded>
-<pubDate>Fri, 19 Sep 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Defining, Understanding, and Detecting Online Toxicity: Challenges and Machine Learning Approaches</title>
-<link>https://arxiv.org/abs/2509.14264</link>
-<guid>https://arxiv.org/abs/2509.14264</guid>
-<content:encoded><![CDATA[
-<div> Keywords: online toxic content, machine learning, natural language processing, dataset, content moderation
-
-Summary: 
-The study synthesizes 140 publications on online toxic content, focusing on detection mechanisms using machine learning. It presents an overview of datasets, challenges, and machine learning approaches used in detecting hate speech, offensive language, and harmful discourse in 32 languages. The research explores using cross-platform data to enhance classification models and provides recommendations for future studies on online toxic content detection and content moderation. Practical guidelines are also provided for mitigating toxic content on digital platforms.<br /><br />Summary: <div>
-arXiv:2509.14264v1 Announce Type: new 
-Abstract: Online toxic content has grown into a pervasive phenomenon, intensifying during times of crisis, elections, and social unrest. A significant amount of research has been focused on detecting or analyzing toxic content using machine-learning approaches. The proliferation of toxic content across digital platforms has spurred extensive research into automated detection mechanisms, primarily driven by advances in machine learning and natural language processing. Overall, the present study represents the synthesis of 140 publications on different types of toxic content on digital platforms. We present a comprehensive overview of the datasets used in previous studies focusing on definitions, data sources, challenges, and machine learning approaches employed in detecting online toxicity, such as hate speech, offensive language, and harmful discourse. The dataset encompasses content in 32 languages, covering topics such as elections, spontaneous events, and crises. We examine the possibility of using existing cross-platform data to improve the performance of classification models. We present the recommendations and guidelines for new research on online toxic consent and the use of content moderation for mitigation. Finally, we present some practical guidelines to mitigate toxic content from online platforms.
 ]]></content:encoded>
 <pubDate>Fri, 19 Sep 2025 00:00:00 -0400</pubDate>
 </item>
