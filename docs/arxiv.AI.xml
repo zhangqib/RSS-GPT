@@ -4,6 +4,7 @@
 <title>cs.AI updates on arXiv.org</title>
 <link>http://rss.arxiv.org/rss/cs.AI</link>
 
+
 <item>
 <title>From Roots to Rewards: Dynamic Tree Reasoning with Reinforcement Learning</title>
 <link>https://arxiv.org/abs/2507.13142</link>
@@ -17,7 +18,6 @@ arXiv:2507.13142v4 Announce Type: replace
 Abstract: Modern language models address complex questions through chain-of-thought (CoT) reasoning (Wei et al., 2023) and retrieval augmentation (Lewis et al., 2021), yet struggle with error propagation and knowledge integration. Tree-structured reasoning methods, particularly the Probabilistic Tree-of-Thought (ProbTree)(Cao et al., 2023) framework, mitigate these issues by decomposing questions into hierarchical structures and selecting answers through confidence-weighted aggregation of parametric and retrieved knowledge (Yao et al., 2023). However, ProbTree's static implementation introduces two key limitations: (1) the reasoning tree is fixed during the initial construction phase, preventing dynamic adaptation to intermediate results, and (2) each node requires exhaustive evaluation of all possible solution strategies, creating computational inefficiency. We present a dynamic reinforcement learning (Sutton and Barto, 2018) framework that transforms tree-based reasoning into an adaptive process. Our approach incrementally constructs the reasoning tree based on real-time confidence estimates, while learning optimal policies for action selection (decomposition, retrieval, or aggregation). This maintains ProbTree's probabilistic rigor while improving both solution quality and computational efficiency through selective expansion and focused resource allocation. The work establishes a new paradigm for treestructured reasoning that balances the reliability of probabilistic frameworks with the flexibility required for real-world question answering systems. Code available at: https://github.com/ahmedehabb/From-Roots-to-Rewards-Dynamic-Tree-Reasoning-with-RL
 ]]></content:encoded>
 <pubDate>Mon, 29 Sep 2025 00:00:00 -0400</pubDate>
-<pubDate>Mon, 29 Sep 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
 <title>SEDM: Scalable Self-Evolving Distributed Memory for Agents</title>
@@ -27,11 +27,10 @@ Abstract: Modern language models address complex questions through chain-of-thou
 <div> Keywords: multi-agent systems, memory management, self-evolving distributed memory, transfer learning, reasoning accuracy
 
 Summary:
-The article introduces SEDM, a Self-Evolving Distributed Memory framework designed for efficient memory management in long-term multi-agent systems. SEDM transforms memory from a passive repository to an active, self-optimizing component by incorporating verifiable write admission, a dynamic memory controller, and cross-domain knowledge diffusion. This approach helps address challenges such as noise accumulation, uncontrolled memory expansion, and limited generalization across domains. Evaluation on benchmark datasets shows that SEDM improves reasoning accuracy while reducing token overhead compared to traditional memory methods. Additionally, SEDM enables knowledge transfer across heterogeneous tasks and allows insights from fact verification to enhance multi-hop reasoning. The results demonstrate SEDM as a scalable and sustainable memory mechanism for open-ended multi-agent collaboration. The code for SEDM will be released in the later stages of the project. <br><br>Summary: <div>
+The article introduces SEDM, a Self-Evolving Distributed Memory framework designed for efficient memory management in long-term multi-agent systems. SEDM transforms memory from a passive repository to an active, self-optimizing component by incorporating verifiable write admission, a dynamic memory controller, and cross-domain knowledge diffusion. This approach helps address challenges such as noise accumulation, uncontrolled memory expansion, and limited generalization across domains. Evaluation on benchmark datasets shows that SEDM improves reasoning accuracy while reducing token overhead compared to traditional memory methods. Additionally, SEDM enables knowledge transfer across heterogeneous tasks and allows insights from fact verification to enhance multi-hop reasoning. The results demonstrate SEDM as a scalable and sustainable memory mechanism for open-ended multi-agent collaboration. The code for SEDM will be released in the later stages of the project. <br /><br />Summary: <div>
 arXiv:2509.09498v3 Announce Type: replace 
 Abstract: Long-term multi-agent systems inevitably generate vast amounts of trajectories and historical interactions, which makes efficient memory management essential for both performance and scalability. Existing methods typically depend on vector retrieval and hierarchical storage, yet they are prone to noise accumulation, uncontrolled memory expansion, and limited generalization across domains. To address these challenges, we present SEDM, Self-Evolving Distributed Memory, a verifiable and adaptive framework that transforms memory from a passive repository into an active, self-optimizing component. SEDM integrates verifiable write admission based on reproducible replay, a self-scheduling memory controller that dynamically ranks and consolidates entries according to empirical utility, and cross-domain knowledge diffusion that abstracts reusable insights to support transfer across heterogeneous tasks. Evaluations on benchmark datasets demonstrate that SEDM improves reasoning accuracy while reducing token overhead compared with strong memory baselines, and further enables knowledge distilled from fact verification to enhance multi-hop reasoning. The results highlight SEDM as a scalable and sustainable memory mechanism for open-ended multi-agent collaboration. The code will be released in the later stage of this project.
 ]]></content:encoded>
-<pubDate>Mon, 29 Sep 2025 00:00:00 -0400</pubDate>
 <pubDate>Mon, 29 Sep 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -40,13 +39,12 @@ Abstract: Long-term multi-agent systems inevitably generate vast amounts of traj
 <guid>https://arxiv.org/abs/2509.17978</guid>
 <content:encoded><![CDATA[
 <div> AI, Explainable, Transparent, Reliable, Protocol
-<br>
+<br />
 The STAR-XAI Protocol introduces a structured methodology for training and operating reliable AI agents through a Socratic dialogue approach. It utilizes a symbolic rulebook and integrity protocols, including a state-locking Checksum, to ensure transparency and reliability in AI decision-making processes. A case study in the game "Caps i Caps" demonstrates the transformation of an opaque LRM into a disciplined strategist capable of long-term planning and clear justification of intentions. The agent showcases Second-Order Agency by identifying and correcting flaws in its own plans, leading to 100% reliable state tracking and the prevention of hallucinations. The STAR-XAI Protocol offers a practical approach to building AI agents that are not only high-performing but also auditable, trustworthy, and reliable.
-<br><br>Summary: <div>
+<br /><br />Summary: <div>
 arXiv:2509.17978v2 Announce Type: replace 
 Abstract: The "black box" nature of Large Reasoning Models (LRMs) presents critical limitations in reliability and transparency, fueling the debate around the "illusion of thinking" and the challenge of state hallucinations in agentic systems. In response, we introduce The STAR-XAI Protocol (Socratic, Transparent, Agentic, Reasoning - for eXplainable Artificial Intelligence), a novel operational methodology for training and operating verifiably reliable AI agents. Our method reframes the human-AI interaction as a structured Socratic dialogue governed by an explicit, evolving symbolic rulebook (the Consciousness Transfer Package - CTP) and a suite of integrity protocols, including a state-locking Checksum that eradicates internal state corruption. Through an exhaustive case study in the complex strategic game "Caps i Caps," we demonstrate that this "Clear Box" framework transforms an opaque LRM into a disciplined strategist. The agent not only exhibits the emergence of complex tactics, such as long-term planning, but also achieves ante-hoc transparency by justifying its intentions before acting. Crucially, it demonstrates Second-Order Agency by identifying and correcting flaws in its own supervisor-approved plans, leading to empirically-proven, 100% reliable state tracking and achieving "zero hallucinations by design." The STAR-XAI Protocol thus offers a practical pathway toward building AI agents that are not just high-performing but intrinsically auditable, trustworthy, and reliable.
 ]]></content:encoded>
-<pubDate>Mon, 29 Sep 2025 00:00:00 -0400</pubDate>
 <pubDate>Mon, 29 Sep 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -54,17 +52,16 @@ Abstract: The "black box" nature of Large Reasoning Models (LRMs) presents criti
 <link>https://arxiv.org/abs/2509.16780</link>
 <guid>https://arxiv.org/abs/2509.16780</guid>
 <content:encoded><![CDATA[
-<div> Knowledge graph, retrieval-augmented generation, mathematics textbook, page-level question answering, AI tutoring solutions<br>
-Summary:<br>
-- Large language models (LLMs) are effective for information retrieval in learning environments.<br>
-- Retrieval-Augmented Generation (RAG) and GraphRAG are compared for page-level question answering in a mathematics textbook.<br>
-- RAG shows higher retrieval accuracy and better F1 scores compared to GraphRAG.<br>
-- GraphRAG tends to retrieve excessive and sometimes irrelevant content due to its entity-based structure.<br>
-- Refined retrieval methods are needed for reliable AI tutoring solutions in educational contexts. <br> <div>
+<div> Knowledge graph, retrieval-augmented generation, mathematics textbook, page-level question answering, AI tutoring solutions<br />
+Summary:<br />
+- Large language models (LLMs) are effective for information retrieval in learning environments.<br />
+- Retrieval-Augmented Generation (RAG) and GraphRAG are compared for page-level question answering in a mathematics textbook.<br />
+- RAG shows higher retrieval accuracy and better F1 scores compared to GraphRAG.<br />
+- GraphRAG tends to retrieve excessive and sometimes irrelevant content due to its entity-based structure.<br />
+- Refined retrieval methods are needed for reliable AI tutoring solutions in educational contexts. <br /> <div>
 arXiv:2509.16780v2 Announce Type: replace-cross 
 Abstract: Technology-enhanced learning environments often help students retrieve relevant learning content for questions arising during self-paced study. Large language models (LLMs) have emerged as novel aids for information retrieval during learning. While LLMs are effective for general-purpose question-answering, they typically lack alignment with the domain knowledge of specific course materials such as textbooks and slides. We investigate Retrieval-Augmented Generation (RAG) and GraphRAG, a knowledge graph-enhanced RAG approach, for page-level question answering in an undergraduate mathematics textbook. While RAG has been effective for retrieving discrete, contextually relevant passages, GraphRAG may excel in modeling interconnected concepts and hierarchical knowledge structures. We curate a dataset of 477 question-answer pairs, each tied to a distinct textbook page. We then compare the standard embedding-based RAG methods to GraphRAG for evaluating both retrieval accuracy-whether the correct page is retrieved-and generated answer quality via F1 scores. Our findings show that embedding-based RAG achieves higher retrieval accuracy and better F1 scores compared to GraphRAG, which tends to retrieve excessive and sometimes irrelevant content due to its entity-based structure. We also explored re-ranking the retrieved pages with LLM and observed mixed results, including performance drop and hallucinations when dealing with larger context windows. Overall, this study highlights both the promises and challenges of page-level retrieval systems in educational contexts, emphasizing the need for more refined retrieval methods to build reliable AI tutoring solutions in providing reference page numbers.
 ]]></content:encoded>
-<pubDate>Mon, 29 Sep 2025 00:00:00 -0400</pubDate>
 <pubDate>Mon, 29 Sep 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -72,13 +69,12 @@ Abstract: Technology-enhanced learning environments often help students retrieve
 <link>https://arxiv.org/abs/2509.17186</link>
 <guid>https://arxiv.org/abs/2509.17186</guid>
 <content:encoded><![CDATA[
-<div> Neurons, Long Sequence Modeling, Resonate-and-Fire, Dendritic Structure, Adaptive Threshold <br>
-<br>
-Summary: The article discusses the need for effective long sequence modeling due to the increasing sequence lengths. It introduces the Dendritic Resonate-and-Fire (D-RF) model, which incorporates a multi-dendritic and soma architecture to address the limitations of RF neurons in memory capacity and training speed. The model encodes specific frequency bands using dendritic branches and adjusts the threshold based on historical spiking activity to reduce redundant spikes in long sequence tasks. Experimental results show that the D-RF model maintains competitive accuracy while ensuring sparse spikes and computational efficiency during training. This approach has the potential to be an effective and efficient solution for long sequence modeling on edge platforms. <br> <div>
+<div> Neurons, Long Sequence Modeling, Resonate-and-Fire, Dendritic Structure, Adaptive Threshold <br />
+<br />
+Summary: The article discusses the need for effective long sequence modeling due to the increasing sequence lengths. It introduces the Dendritic Resonate-and-Fire (D-RF) model, which incorporates a multi-dendritic and soma architecture to address the limitations of RF neurons in memory capacity and training speed. The model encodes specific frequency bands using dendritic branches and adjusts the threshold based on historical spiking activity to reduce redundant spikes in long sequence tasks. Experimental results show that the D-RF model maintains competitive accuracy while ensuring sparse spikes and computational efficiency during training. This approach has the potential to be an effective and efficient solution for long sequence modeling on edge platforms. <br /> <div>
 arXiv:2509.17186v2 Announce Type: replace-cross 
 Abstract: The explosive growth in sequence length has intensified the demand for effective and efficient long sequence modeling. Benefiting from intrinsic oscillatory membrane dynamics, Resonate-and-Fire (RF) neurons can efficiently extract frequency components from input signals and encode them into spatiotemporal spike trains, making them well-suited for long sequence modeling. However, RF neurons exhibit limited effective memory capacity and a trade-off between energy efficiency and training speed on complex temporal tasks. Inspired by the dendritic structure of biological neurons, we propose a Dendritic Resonate-and-Fire (D-RF) model, which explicitly incorporates a multi-dendritic and soma architecture. Each dendritic branch encodes specific frequency bands by utilizing the intrinsic oscillatory dynamics of RF neurons, thereby collectively achieving comprehensive frequency representation. Furthermore, we introduce an adaptive threshold mechanism into the soma structure that adjusts the threshold based on historical spiking activity, reducing redundant spikes while maintaining training efficiency in long sequence tasks. Extensive experiments demonstrate that our method maintains competitive accuracy while substantially ensuring sparse spikes without compromising computational efficiency during training. These results underscore its potential as an effective and efficient solution for long sequence modeling on edge platforms.
 ]]></content:encoded>
-<pubDate>Mon, 29 Sep 2025 00:00:00 -0400</pubDate>
 <pubDate>Mon, 29 Sep 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -94,9 +90,7 @@ arXiv:2509.17283v2 Announce Type: replace-cross
 Abstract: Building compliance checking (BCC) is a critical process for ensuring that constructed facilities meet regulatory standards. A core component of BCC is the accurate enumeration of facility types and their spatial distribution. Despite its importance, this problem has been largely overlooked in the literature, posing a significant challenge for BCC and leaving a critical gap in existing workflows. Performing this task manually is time-consuming and labor-intensive. Recent advances in large language models (LLMs) offer new opportunities to enhance automation by combining visual recognition with reasoning capabilities. In this paper, we introduce a new task for BCC: automated facility enumeration, which involves validating the quantity of each facility type against statutory requirements. To address it, we propose a novel method that integrates door detection with LLM-based reasoning. We are the first to apply LLMs to this task and further enhance their performance through a Chain-of-Thought (CoT) pipeline. Our approach generalizes well across diverse datasets and facility types. Experiments on both real-world and synthetic floor plan data demonstrate the effectiveness and robustness of our method.
 ]]></content:encoded>
 <pubDate>Mon, 29 Sep 2025 00:00:00 -0400</pubDate>
-<pubDate>Mon, 29 Sep 2025 00:00:00 -0400</pubDate>
 </item>
-
 <item>
 <title>Towards mitigating information leakage when evaluating safety monitors</title>
 <link>https://arxiv.org/abs/2509.21344</link>
@@ -10786,66 +10780,6 @@ Abstract: Accurate demand forecasting is crucial for effective inventory managem
 <content:encoded><![CDATA[
 arXiv:2508.16048v4 Announce Type: replace-cross 
 Abstract: In machine translation (MT), health is a high-stakes domain characterised by widespread deployment and domain-specific vocabulary. However, there is a lack of MT evaluation datasets for low-resource languages in this domain. To address this gap, we introduce OpenWHO, a document-level parallel corpus of 2,978 documents and 26,824 sentences from the World Health Organization's e-learning platform. Sourced from expert-authored, professionally translated materials shielded from web-crawling, OpenWHO spans a diverse range of over 20 languages, of which nine are low-resource. Leveraging this new resource, we evaluate modern large language models (LLMs) against traditional MT models. Our findings reveal that LLMs consistently outperform traditional MT models, with Gemini 2.5 Flash achieving a +4.79 ChrF point improvement over NLLB-54B on our low-resource test set. Further, we investigate how LLM context utilisation affects accuracy, finding that the benefits of document-level translation are most pronounced in specialised domains like health. We release the OpenWHO corpus to encourage further research into low-resource MT in the health domain.
-]]></content:encoded>
-<pubDate>Wed, 24 Sep 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Linguistic Neuron Overlap Patterns to Facilitate Cross-lingual Transfer on Low-resource Languages</title>
-<link>https://arxiv.org/abs/2508.17078</link>
-<guid>https://arxiv.org/abs/2508.17078</guid>
-<content:encoded><![CDATA[
-arXiv:2508.17078v2 Announce Type: replace-cross 
-Abstract: The current Large Language Models (LLMs) face significant challenges in improving their performance on low-resource languages and urgently need data-efficient methods without costly fine-tuning. From the perspective of language-bridge, we propose a simple yet effective method, namely BridgeX-ICL, to improve the zero-shot Cross-lingual In-Context Learning (X-ICL) for low-resource languages. Unlike existing works focusing on language-specific neurons, BridgeX-ICL explores whether sharing neurons can improve cross-lingual performance in LLMs. We construct neuron probe data from the ground-truth MUSE bilingual dictionaries, and define a subset of language overlap neurons accordingly to ensure full activation of these anchored neurons. Subsequently, we propose an HSIC-based metric to quantify LLMs' internal linguistic spectrum based on overlapping neurons, guiding optimal bridge selection. The experiments conducted on 4 cross-lingual tasks and 15 language pairs from 7 diverse families, covering both high-low and moderate-low pairs, validate the effectiveness of BridgeX-ICL and offer empirical insights into the underlying multilingual mechanisms of LLMs. The code is publicly available at https://github.com/xuyuemei/BridgeX-ICL.
-]]></content:encoded>
-<pubDate>Wed, 24 Sep 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Unlearning as Ablation: Toward a Falsifiable Benchmark for Generative Scientific Discovery</title>
-<link>https://arxiv.org/abs/2508.17681</link>
-<guid>https://arxiv.org/abs/2508.17681</guid>
-<content:encoded><![CDATA[
-arXiv:2508.17681v3 Announce Type: replace-cross 
-Abstract: Bold claims about AI's role in science-from "AGI will cure all diseases" to promises of radically accelerated discovery-raise a central epistemic question: do large language models (LLMs) truly generate new knowledge, or do they merely remix memorized fragments? We propose unlearning-as-ablation as a falsifiable probe of constructive scientific discovery. The idea is to systematically remove a target result together with its forget-closure (supporting lemmas, paraphrases, and multi-hop entailments) and then evaluate whether the model can re-derive the result from only permitted axioms and tools. Success would indicate generative capability beyond recall; failure would expose current limits. Unlike prevailing motivations for unlearning-privacy, copyright, or safety-our framing repositions it as an epistemic probe for AI-for-Science. We outline a minimal pilot in mathematics and algorithms to illustrate feasibility, and sketch how the same approach could later be extended to domains such as physics or chemistry. This is a position paper: our contribution is conceptual and methodological, not empirical. We aim to stimulate discussion on how principled ablation tests could help distinguish models that reconstruct knowledge from those that merely retrieve it, and how such probes might guide the next generation of AI-for-Science benchmarks.
-]]></content:encoded>
-<pubDate>Wed, 24 Sep 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>SoK: Large Language Model Copyright Auditing via Fingerprinting</title>
-<link>https://arxiv.org/abs/2508.19843</link>
-<guid>https://arxiv.org/abs/2508.19843</guid>
-<content:encoded><![CDATA[
-arXiv:2508.19843v2 Announce Type: replace-cross 
-Abstract: The broad capabilities and substantial resources required to train Large Language Models (LLMs) make them valuable intellectual property, yet they remain vulnerable to copyright infringement, such as unauthorized use and model theft. LLM fingerprinting, a non-intrusive technique that extracts and compares the distinctive features from LLMs to identify infringements, offers a promising solution to copyright auditing. However, its reliability remains uncertain due to the prevalence of diverse model modifications and the lack of standardized evaluation. In this SoK, we present the first comprehensive study of LLM fingerprinting. We introduce a unified framework and formal taxonomy that categorizes existing methods into white-box and black-box approaches, providing a structured overview of the state of the art. We further propose LeaFBench, the first systematic benchmark for evaluating LLM fingerprinting under realistic deployment scenarios. Built upon mainstream foundation models and comprising 149 distinct model instances, LeaFBench integrates 13 representative post-development techniques, spanning both parameter-altering methods (e.g., fine-tuning, quantization) and parameter-independent mechanisms (e.g., system prompts, RAG). Extensive experiments on LeaFBench reveal the strengths and weaknesses of existing methods, thereby outlining future research directions and critical open problems in this emerging field. The code is available at https://github.com/shaoshuo-ss/LeaFBench.
-]]></content:encoded>
-<pubDate>Wed, 24 Sep 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>An Information-Flow Perspective on Explainability Requirements: Specification and Verification</title>
-<link>https://arxiv.org/abs/2509.01479</link>
-<guid>https://arxiv.org/abs/2509.01479</guid>
-<content:encoded><![CDATA[
-arXiv:2509.01479v2 Announce Type: replace-cross 
-Abstract: Explainable systems expose information about why certain observed effects are happening to the agents interacting with them. We argue that this constitutes a positive flow of information that needs to be specified, verified, and balanced against negative information flow that may, e.g., violate privacy guarantees. Since both explainability and privacy require reasoning about knowledge, we tackle these tasks with epistemic temporal logic extended with quantification over counterfactual causes. This allows us to specify that a multi-agent system exposes enough information such that agents acquire knowledge on why some effect occurred. We show how this principle can be used to specify explainability as a system-level requirement and provide an algorithm for checking finite-state models against such specifications. We present a prototype implementation of the algorithm and evaluate it on several benchmarks, illustrating how our approach distinguishes between explainable and unexplainable systems, and how it allows to pose additional privacy requirements.
-]]></content:encoded>
-<pubDate>Wed, 24 Sep 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>The Transparent Earth: A Multimodal Foundation Model for the Earth's Subsurface</title>
-<link>https://arxiv.org/abs/2509.02783</link>
-<guid>https://arxiv.org/abs/2509.02783</guid>
-<content:encoded><![CDATA[
-arXiv:2509.02783v2 Announce Type: replace-cross 
-Abstract: We present the Transparent Earth, a transformer-based architecture for reconstructing subsurface properties from heterogeneous datasets that vary in sparsity, resolution, and modality, where each modality represents a distinct type of observation (e.g., stress angle, mantle temperature, tectonic plate type). The model incorporates positional encodings of observations together with modality encodings, derived from a text embedding model applied to a description of each modality. This design enables the model to scale to an arbitrary number of modalities, making it straightforward to add new ones not considered in the initial design. We currently include eight modalities spanning directional angles, categorical classes, and continuous properties such as temperature and thickness. These capabilities support in-context learning, enabling the model to generate predictions either with no inputs or with an arbitrary number of additional observations from any subset of modalities. On validation data, this reduces errors in predicting stress angle by more than a factor of three. The proposed architecture is scalable and demonstrates improved performance with increased parameters. Together, these advances make the Transparent Earth an initial foundation model for the Earth's subsurface that ultimately aims to predict any subsurface property anywhere on Earth.
-]]></content:encoded>
-<pubDate>Wed, 24 Sep 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Agentic Software Engineering: Foundational Pillars and a Research Roadmap</title>
-<link>https://arxiv.org/abs/2509.06216</link>
-<guid>https://arxiv.org/abs/2509.06216</guid>
-<content:encoded><![CDATA[
-arXiv:2509.06216v2 Announce Type: replace-cross 
-Abstract: Agentic Software Engineering (SE 3.0) represents a new era where intelligent agents are tasked not with simple code generation, but with achieving complex, goal-oriented SE objectives. To harness these new capabilities while ensuring trustworthiness, we must recognize a fundamental duality within the SE field in the Agentic SE era, comprising two symbiotic modalities: SE for Humans and SE for Agents. This duality demands a radical reimagining of the foundational pillars of SE (actors, processes, tools, and artifacts) which manifest differently across each modality. We propose two purpose-built workbenches to support this vision. The Agent Command Environment (ACE) serves as a command center where humans orchestrate and mentor agent teams, handling outputs such as Merge-Readiness Packs (MRPs) and Consultation Request Packs (CRPs). The Agent Execution Environment (AEE) is a digital workspace where agents perform tasks while invoking human expertise when facing ambiguity or complex trade-offs. This bi-directional partnership, which supports agent-initiated human callbacks and handovers, gives rise to new, structured engineering activities (i.e., processes) that redefine human-AI collaboration, elevating the practice from agentic coding to true agentic software engineering. This paper presents the Structured Agentic Software Engineering (SASE) vision, outlining several of the foundational pillars for the future of SE. The paper culminates in a research roadmap that identifies a few key challenges and opportunities while briefly discussing the resulting impact of this future on SE education. Our goal is not to offer a definitive solution, but to provide a conceptual scaffold with structured vocabulary to catalyze a community-wide dialogue, pushing the SE community to think beyond its classic, human-centric tenets toward a disciplined, scalable, and trustworthy agentic future.
 ]]></content:encoded>
 <pubDate>Wed, 24 Sep 2025 00:00:00 -0400</pubDate>
 </item>

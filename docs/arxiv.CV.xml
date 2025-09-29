@@ -4,6 +4,7 @@
 <title>cs.CV updates on arXiv.org</title>
 <link>http://rss.arxiv.org/rss/cs.CV</link>
 
+
 <item>
 <title>TempFlow-GRPO: When Timing Matters for GRPO in Flow Models</title>
 <link>https://arxiv.org/abs/2508.04324</link>
@@ -16,7 +17,6 @@ TempFlow-GRPO introduces a framework for integrating reinforcement learning with
 arXiv:2508.04324v3 Announce Type: replace 
 Abstract: Recent flow matching models for text-to-image generation have achieved remarkable quality, yet their integration with reinforcement learning for human preference alignment remains suboptimal, hindering fine-grained reward-based optimization. We observe that the key impediment to effective GRPO training of flow models is the temporal uniformity assumption in existing approaches: sparse terminal rewards with uniform credit assignment fail to capture the varying criticality of decisions across generation timesteps, resulting in inefficient exploration and suboptimal convergence. To remedy this shortcoming, we introduce \textbf{TempFlow-GRPO} (Temporal Flow GRPO), a principled GRPO framework that captures and exploits the temporal structure inherent in flow-based generation. TempFlow-GRPO introduces three key innovations: (i) a trajectory branching mechanism that provides process rewards by concentrating stochasticity at designated branching points, enabling precise credit assignment without requiring specialized intermediate reward models; (ii) a noise-aware weighting scheme that modulates policy optimization according to the intrinsic exploration potential of each timestep, prioritizing learning during high-impact early stages while ensuring stable refinement in later phases; and (iii) a seed group strategy that controls for initialization effects to isolate exploration contributions. These innovations endow the model with temporally-aware optimization that respects the underlying generative dynamics, leading to state-of-the-art performance in human preference alignment and text-to-image benchmarks.
 ]]></content:encoded>
-<pubDate>Mon, 29 Sep 2025 00:00:00 -0400</pubDate>
 <pubDate>Mon, 29 Sep 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -32,7 +32,6 @@ arXiv:2509.15472v2 Announce Type: replace
 Abstract: Dataset distillation aims to synthesize a small dataset from a large dataset, enabling the model trained on it to perform well on the original dataset. With the blooming of large language models and multimodal large language models, the importance of multimodal datasets, particularly image-text datasets, has grown significantly. However, existing multimodal dataset distillation methods are constrained by the Matching Training Trajectories algorithm, which significantly increases the computing resource requirement, and takes days to process the distillation. In this work, we introduce EDGE, a generative distillation method for efficient multimodal dataset distillation. Specifically, we identify two key challenges of distilling multimodal datasets with generative models: 1) The lack of correlation between generated images and captions. 2) The lack of diversity among generated samples. To address the aforementioned issues, we propose a novel generative model training workflow with a bi-directional contrastive loss and a diversity loss. Furthermore, we propose a caption synthesis strategy to further improve text-to-image retrieval performance by introducing more text information. Our method is evaluated on Flickr30K, COCO, and CC3M datasets, demonstrating superior performance and efficiency compared to existing approaches. Notably, our method achieves results 18x faster than the state-of-the-art method.
 ]]></content:encoded>
 <pubDate>Mon, 29 Sep 2025 00:00:00 -0400</pubDate>
-<pubDate>Mon, 29 Sep 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
 <title>MS-GS: Multi-Appearance Sparse-View 3D Gaussian Splatting in the Wild</title>
@@ -42,11 +41,10 @@ Abstract: Dataset distillation aims to synthesize a small dataset from a large d
 <div> Keywords: In-the-wild photo collections, 3D reconstruction, Novel view synthesis, Sparse-view scenarios, Multi-appearance capabilities
 
 Summary: 
-The paper introduces MS-GS, a novel framework that addresses challenges in scene reconstruction and novel view synthesis in in-the-wild photo collections with limited imagery and multiple appearances. By leveraging geometric priors from monocular depth estimations and utilizing local semantic regions with a Structure-from-Motion (SfM) points anchored algorithm, MS-GS achieves reliable alignment and geometry cues. The framework incorporates multi-view constraints through geometry-guided supervision at virtual views, ensuring 3D consistency and reducing overfitting. Through experiments in challenging sparse-view and multi-appearance conditions, MS-GS demonstrates superior performance in producing photorealistic renderings compared to existing approaches across various datasets. The introduction of a new dataset and experiment setting further establishes realistic benchmarks for evaluating scene reconstruction techniques.<br><br>Summary: <div>
+The paper introduces MS-GS, a novel framework that addresses challenges in scene reconstruction and novel view synthesis in in-the-wild photo collections with limited imagery and multiple appearances. By leveraging geometric priors from monocular depth estimations and utilizing local semantic regions with a Structure-from-Motion (SfM) points anchored algorithm, MS-GS achieves reliable alignment and geometry cues. The framework incorporates multi-view constraints through geometry-guided supervision at virtual views, ensuring 3D consistency and reducing overfitting. Through experiments in challenging sparse-view and multi-appearance conditions, MS-GS demonstrates superior performance in producing photorealistic renderings compared to existing approaches across various datasets. The introduction of a new dataset and experiment setting further establishes realistic benchmarks for evaluating scene reconstruction techniques.<br /><br />Summary: <div>
 arXiv:2509.15548v3 Announce Type: replace 
 Abstract: In-the-wild photo collections often contain limited volumes of imagery and exhibit multiple appearances, e.g., taken at different times of day or seasons, posing significant challenges to scene reconstruction and novel view synthesis. Although recent adaptations of Neural Radiance Field (NeRF) and 3D Gaussian Splatting (3DGS) have improved in these areas, they tend to oversmooth and are prone to overfitting. In this paper, we present MS-GS, a novel framework designed with Multi-appearance capabilities in Sparse-view scenarios using 3DGS. To address the lack of support due to sparse initializations, our approach is built on the geometric priors elicited from monocular depth estimations. The key lies in extracting and utilizing local semantic regions with a Structure-from-Motion (SfM) points anchored algorithm for reliable alignment and geometry cues. Then, to introduce multi-view constraints, we propose a series of geometry-guided supervision at virtual views in a fine-grained and coarse scheme to encourage 3D consistency and reduce overfitting. We also introduce a dataset and an in-the-wild experiment setting to set up more realistic benchmarks. We demonstrate that MS-GS achieves photorealistic renderings under various challenging sparse-view and multi-appearance conditions and outperforms existing approaches significantly across different datasets.
 ]]></content:encoded>
-<pubDate>Mon, 29 Sep 2025 00:00:00 -0400</pubDate>
 <pubDate>Mon, 29 Sep 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -59,14 +57,12 @@ Abstract: In-the-wild photo collections often contain limited volumes of imagery
 Summary:
 Our work focuses on addressing diverse degradations in real-world images, such as haze, rain, and low-light, which can significantly affect visual quality and downstream vision tasks. We introduce a novel approach that reframes all-in-one restoration (AIR) as learned latent prior inference, allowing for degradation-aware representations to be automatically inferred from the input without explicit task cues. By leveraging these latent priors, we develop a structured reasoning paradigm that determines adaptive feature selection, spatial localization, and degradation semantics for efficient restoration. Our method outperforms state-of-the-art approaches across various degradation tasks and settings, achieving an average improvement of 1.68 dB in PSNR while being three times more efficient. This demonstrates the effectiveness of our approach in addressing spatially diverse degradations in real-world images. 
 
-<br><br>Summary: <div>
+<br /><br />Summary: <div>
 arXiv:2509.17792v2 Announce Type: replace 
 Abstract: Real-world images often suffer from spatially diverse degradations such as haze, rain, snow, and low-light, significantly impacting visual quality and downstream vision tasks. Existing all-in-one restoration (AIR) approaches either depend on external text prompts or embed hand-crafted architectural priors (e.g., frequency heuristics); both impose discrete, brittle assumptions that weaken generalization to unseen or mixed degradations. To address this limitation, we propose to reframe AIR as learned latent prior inference, where degradation-aware representations are automatically inferred from the input without explicit task cues. Based on latent priors, we formulate AIR as a structured reasoning paradigm: (1) which features to route (adaptive feature selection), (2) where to restore (spatial localization), and (3) what to restore (degradation semantics). We design a lightweight decoding module that efficiently leverages these latent encoded cues for spatially-adaptive restoration. Extensive experiments across six common degradation tasks, five compound settings, and previously unseen degradations demonstrate that our method outperforms state-of-the-art (SOTA) approaches, achieving an average PSNR improvement of 1.68 dB while being three times more efficient.
 ]]></content:encoded>
 <pubDate>Mon, 29 Sep 2025 00:00:00 -0400</pubDate>
-<pubDate>Mon, 29 Sep 2025 00:00:00 -0400</pubDate>
 </item>
-
 <item>
 <title>Random Direct Preference Optimization for Radiography Report Generation</title>
 <link>https://arxiv.org/abs/2509.21351</link>
@@ -11255,56 +11251,6 @@ Abstract: Modern computer vision is converging on a closed loop in which percept
 <content:encoded><![CDATA[
 arXiv:2509.17566v1 Announce Type: new 
 Abstract: The automatic diagnosis of Parkinson's disease is in high clinical demand due to its prevalence and the importance of targeted treatment. Current clinical practice often relies on diagnostic biomarkers in QSM and NM-MRI images. However, the lack of large, high-quality datasets makes training diagnostic models from scratch prone to overfitting. Adapting pre-trained 3D medical models is also challenging, as the diversity of medical imaging leads to mismatches in voxel spacing and modality between pre-training and fine-tuning data. In this paper, we address these challenges by leveraging 2D vision foundation models (VFMs). Specifically, we crop multiple key ROIs from NM and QSM images, process each ROI through separate branches to compress the ROI into a token, and then combine these tokens into a unified patient representation for classification. Within each branch, we use 2D VFMs to encode axial slices of the 3D ROI volume and fuse them into the ROI token, guided by an auxiliary segmentation head that steers the feature extraction toward specific brain nuclei. Additionally, we introduce multi-ROI supervised contrastive learning, which improves diagnostic performance by pulling together representations of patients from the same class while pushing away those from different classes. Our approach achieved first place in the MICCAI 2025 PDCADxFoundation challenge, with an accuracy of 86.0% trained on a dataset of only 300 labeled QSM and NM-MRI scans, outperforming the second-place method by 5.5%.These results highlight the potential of 2D VFMs for clinical analysis of 3D MR images.
-]]></content:encoded>
-<pubDate>Tue, 23 Sep 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>PRNU-Bench: A Novel Benchmark and Model for PRNU-Based Camera Identification</title>
-<link>https://arxiv.org/abs/2509.17581</link>
-<guid>https://arxiv.org/abs/2509.17581</guid>
-<content:encoded><![CDATA[
-arXiv:2509.17581v1 Announce Type: new 
-Abstract: We propose a novel benchmark for camera identification via Photo Response Non-Uniformity (PRNU) estimation. The benchmark comprises 13K photos taken with 120+ cameras, where the training and test photos are taken in different scenarios, enabling ``in-the-wild'' evaluation. In addition, we propose a novel PRNU-based camera identification model that employs a hybrid architecture, comprising a denoising autoencoder to estimate the PRNU signal and a convolutional network that can perform 1:N verification of camera devices. Instead of using a conventional approach based on contrastive learning, our method takes the Hadamard product between reference and query PRNU signals as input. This novel design leads to significantly better results compared with state-of-the-art models based on denoising autoencoders and contrastive learning. We release our dataset and code at: https://github.com/CroitoruAlin/PRNU-Bench.
-]]></content:encoded>
-<pubDate>Tue, 23 Sep 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Interpreting Attention Heads for Image-to-Text Information Flow in Large Vision-Language Models</title>
-<link>https://arxiv.org/abs/2509.17588</link>
-<guid>https://arxiv.org/abs/2509.17588</guid>
-<content:encoded><![CDATA[
-arXiv:2509.17588v1 Announce Type: new 
-Abstract: Large Vision-Language Models (LVLMs) answer visual questions by transferring information from images to text through a series of attention heads. While this image-to-text information flow is central to visual question answering, its underlying mechanism remains difficult to interpret due to the simultaneous operation of numerous attention heads. To address this challenge, we propose head attribution, a technique inspired by component attribution methods, to identify consistent patterns among attention heads that play a key role in information transfer. Using head attribution, we investigate how LVLMs rely on specific attention heads to identify and answer questions about the main object in an image. Our analysis reveals that a distinct subset of attention heads facilitates the image-to-text information flow. Remarkably, we find that the selection of these heads is governed by the semantic content of the input image rather than its visual appearance. We further examine the flow of information at the token level and discover that (1) text information first propagates to role-related tokens and the final token before receiving image information, and (2) image information is embedded in both object-related and background tokens. Our work provides evidence that image-to-text information flow follows a structured process, and that analysis at the attention-head level offers a promising direction toward understanding the mechanisms of LVLMs.
-]]></content:encoded>
-<pubDate>Tue, 23 Sep 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Domain Adaptive Object Detection for Space Applications with Real-Time Constraints</title>
-<link>https://arxiv.org/abs/2509.17593</link>
-<guid>https://arxiv.org/abs/2509.17593</guid>
-<content:encoded><![CDATA[
-arXiv:2509.17593v1 Announce Type: new 
-Abstract: Object detection is essential in space applications targeting Space Domain Awareness and also applications involving relative navigation scenarios. Current deep learning models for Object Detection in space applications are often trained on synthetic data from simulators, however, the model performance drops significantly on real-world data due to the domain gap. However, domain adaptive object detection is an overlooked problem in the community. In this work, we first show the importance of domain adaptation and then explore Supervised Domain Adaptation (SDA) to reduce this gap using minimal labeled real data. We build on a recent semi-supervised adaptation method and tailor it for object detection. Our approach combines domain-invariant feature learning with a CNN-based domain discriminator and invariant risk minimization using a domain-independent regression head. To meet real-time deployment needs, we test our method on a lightweight Single Shot Multibox Detector (SSD) with MobileNet backbone and on the more advanced Fully Convolutional One-Stage object detector (FCOS) with ResNet-50 backbone. We evaluated on two space datasets, SPEED+ and SPARK. The results show up to 20-point improvements in average precision (AP) with just 250 labeled real images.
-]]></content:encoded>
-<pubDate>Tue, 23 Sep 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>COLA: Context-aware Language-driven Test-time Adaptation</title>
-<link>https://arxiv.org/abs/2509.17598</link>
-<guid>https://arxiv.org/abs/2509.17598</guid>
-<content:encoded><![CDATA[
-arXiv:2509.17598v1 Announce Type: new 
-Abstract: Test-time adaptation (TTA) has gained increasing popularity due to its efficacy in addressing ``distribution shift'' issue while simultaneously protecting data privacy.
-  However, most prior methods assume that a paired source domain model and target domain sharing the same label space coexist, heavily limiting their applicability.
-  In this paper, we investigate a more general source model capable of adaptation to multiple target domains without needing shared labels.
-  This is achieved by using a pre-trained vision-language model (VLM), \egno, CLIP, that can recognize images through matching with class descriptions.
-  While the zero-shot performance of VLMs is impressive, they struggle to effectively capture the distinctive attributes of a target domain.
-  To that end, we propose a novel method -- Context-aware Language-driven TTA (COLA).
-  The proposed method incorporates a lightweight context-aware module that consists of three key components: a task-aware adapter, a context-aware unit, and a residual connection unit for exploring task-specific knowledge, domain-specific knowledge from the VLM and prior knowledge of the VLM, respectively.
-  It is worth noting that the context-aware module can be seamlessly integrated into a frozen VLM, ensuring both minimal effort and parameter efficiency.
-  Additionally, we introduce a Class-Balanced Pseudo-labeling (CBPL) strategy to mitigate the adverse effects caused by class imbalance.
-  We demonstrate the effectiveness of our method not only in TTA scenarios but also in class generalisation tasks.
-  The source code is available at https://github.com/NUDT-Bai-Group/COLA-TTA.
 ]]></content:encoded>
 <pubDate>Tue, 23 Sep 2025 00:00:00 -0400</pubDate>
 </item>

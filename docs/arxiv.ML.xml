@@ -4,6 +4,7 @@
 <title>cs.LG updates on arXiv.org</title>
 <link>http://rss.arxiv.org/rss/cs.LG</link>
 
+
 <item>
 <title>DOTA: Distributional Test-Time Adaptation of Vision-Language Models</title>
 <link>https://arxiv.org/abs/2409.19375</link>
@@ -14,11 +15,10 @@
 Summary: 
 Distributional Test-time Adaptation (DOTA) is proposed to address the limitations of existing cache-based test-time adapters for vision-language models like CLIP. DOTA continuously estimates the underlying distribution of test data and computes test-time posterior probabilities using Bayes' theorem for adaptation. This distribution-centric approach allows the model to adapt to deployment environments and mitigate catastrophic forgetting. DOTA outperforms existing methods, achieving state-of-the-art performance in diverse scenarios. Experiment results validate the effectiveness of DOTA in improving reliability and reducing the cost associated with fine-tuning VLMs. Overall, DOTA offers a simple yet effective solution for enhancing the performance and adaptability of vision-language models in real-world applications. 
 
-Summary:<br><br>Keywords: Vision-language models, Test-time adaptation, Distribution estimation, Bayes' theorem, Catastrophic forgetting<br>DOTA continuously estimates test data distribution and computes posterior probabilities for adaptation, mitigating catastrophic forgetting and outperforming existing methods in diverse scenarios. <div>
+Summary:<br /><br />Keywords: Vision-language models, Test-time adaptation, Distribution estimation, Bayes' theorem, Catastrophic forgetting<br />DOTA continuously estimates test data distribution and computes posterior probabilities for adaptation, mitigating catastrophic forgetting and outperforming existing methods in diverse scenarios. <div>
 arXiv:2409.19375v3 Announce Type: replace 
 Abstract: Vision-language foundation models (VLMs), such as CLIP, exhibit remarkable performance across a wide range of tasks. However, deploying these models can be unreliable when significant distribution gaps exist between training and test data, while fine-tuning for diverse scenarios is often costly. Cache-based test-time adapters offer an efficient alternative by storing representative test samples to guide subsequent classifications. Yet, these methods typically employ naive cache management with limited capacity, leading to severe catastrophic forgetting when samples are inevitably dropped during updates. In this paper, we propose DOTA (DistributiOnal Test-time Adaptation), a simple yet effective method addressing this limitation. Crucially, instead of merely memorizing individual test samples, DOTA continuously estimates the underlying distribution of the test data stream. Test-time posterior probabilities are then computed using these dynamically estimated distributions via Bayes' theorem for adaptation. This distribution-centric approach enables the model to continually learn and adapt to the deployment environment. Extensive experiments validate that DOTA significantly mitigates forgetting and achieves state-of-the-art performance compared to existing methods.
 ]]></content:encoded>
-<pubDate>Mon, 29 Sep 2025 00:00:00 -0400</pubDate>
 <pubDate>Mon, 29 Sep 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -34,20 +34,18 @@ arXiv:2506.22095v4 Announce Type: replace
 Abstract: Learning-based methods for routing have gained significant attention in recent years, both in single-objective and multi-objective contexts. Yet, existing methods are unsuitable for routing on multigraphs, which feature multiple edges with distinct attributes between node pairs, despite their strong relevance in real-world scenarios. In this paper, we propose two graph neural network-based methods to address multi-objective routing on multigraphs. Our first approach operates directly on the multigraph by autoregressively selecting edges until a tour is completed. The second model, which is more scalable, first simplifies the multigraph via a learned pruning strategy and then performs autoregressive routing on the resulting simple graph. We evaluate both models empirically, across a wide range of problems and graph distributions, and demonstrate their competitive performance compared to strong heuristics and neural baselines.
 ]]></content:encoded>
 <pubDate>Mon, 29 Sep 2025 00:00:00 -0400</pubDate>
-<pubDate>Mon, 29 Sep 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
 <title>Self-Supervised Learning of Graph Representations for Network Intrusion Detection</title>
 <link>https://arxiv.org/abs/2509.16625</link>
 <guid>https://arxiv.org/abs/2509.16625</guid>
 <content:encoded><![CDATA[
-<div> graph neural networks, intrusion detection, self-supervised, masked autoencoder, transformer-based encoder-decoder <br>
-Summary: <br>
+<div> graph neural networks, intrusion detection, self-supervised, masked autoencoder, transformer-based encoder-decoder <br />
+Summary: <br />
 GraphIDS is a novel self-supervised intrusion detection model that combines representation learning and anomaly detection for network traffic. By using a masked autoencoder to learn local graph representations of normal communication patterns, GraphIDS captures typical network behavior. The model utilizes an inductive graph neural network to embed each flow with its local topological context and a Transformer-based encoder-decoder to reconstruct these embeddings, learning global co-occurrence patterns through self-attention. During inference, flows with high reconstruction errors are flagged as potential intrusions. This end-to-end framework optimizes embeddings for the downstream task, enhancing the identification of malicious traffic. GraphIDS outperforms baselines on diverse NetFlow benchmarks, achieving impressive PR-AUC and macro F1-score results. <div>
 arXiv:2509.16625v2 Announce Type: replace 
 Abstract: Detecting intrusions in network traffic is a challenging task, particularly under limited supervision and constantly evolving attack patterns. While recent works have leveraged graph neural networks for network intrusion detection, they often decouple representation learning from anomaly detection, limiting the utility of the embeddings for identifying attacks. We propose GraphIDS, a self-supervised intrusion detection model that unifies these two stages by learning local graph representations of normal communication patterns through a masked autoencoder. An inductive graph neural network embeds each flow with its local topological context to capture typical network behavior, while a Transformer-based encoder-decoder reconstructs these embeddings, implicitly learning global co-occurrence patterns via self-attention without requiring explicit positional information. During inference, flows with unusually high reconstruction errors are flagged as potential intrusions. This end-to-end framework ensures that embeddings are directly optimized for the downstream task, facilitating the recognition of malicious traffic. On diverse NetFlow benchmarks, GraphIDS achieves up to 99.98% PR-AUC and 99.61% macro F1-score, outperforming baselines by 5-25 percentage points.
 ]]></content:encoded>
-<pubDate>Mon, 29 Sep 2025 00:00:00 -0400</pubDate>
 <pubDate>Mon, 29 Sep 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -58,11 +56,10 @@ Abstract: Detecting intrusions in network traffic is a challenging task, particu
 <div> neural network, long sequence modeling, Resonate-and-Fire neurons, Dendritic Resonate-and-Fire model, edge platforms
 Summary:
 The article introduces the Dendritic Resonate-and-Fire (D-RF) model as a solution for effective and efficient long sequence modeling. It addresses the limitations of Resonate-and-Fire (RF) neurons by incorporating a multi-dendritic and soma architecture inspired by biological neurons. Each dendritic branch in the model encodes specific frequency bands, enhancing frequency representation. An adaptive threshold mechanism in the soma structure adjusts the threshold based on historical spiking activity, reducing redundant spikes and maintaining training efficiency. Extensive experiments show that the D-RF model maintains competitive accuracy while promoting sparse spikes, enhancing computational efficiency during training. This approach has the potential to be a valuable solution for long sequence modeling on edge platforms. 
-<br><br>Summary: <div>
+<br /><br />Summary: <div>
 arXiv:2509.17186v2 Announce Type: replace 
 Abstract: The explosive growth in sequence length has intensified the demand for effective and efficient long sequence modeling. Benefiting from intrinsic oscillatory membrane dynamics, Resonate-and-Fire (RF) neurons can efficiently extract frequency components from input signals and encode them into spatiotemporal spike trains, making them well-suited for long sequence modeling. However, RF neurons exhibit limited effective memory capacity and a trade-off between energy efficiency and training speed on complex temporal tasks. Inspired by the dendritic structure of biological neurons, we propose a Dendritic Resonate-and-Fire (D-RF) model, which explicitly incorporates a multi-dendritic and soma architecture. Each dendritic branch encodes specific frequency bands by utilizing the intrinsic oscillatory dynamics of RF neurons, thereby collectively achieving comprehensive frequency representation. Furthermore, we introduce an adaptive threshold mechanism into the soma structure that adjusts the threshold based on historical spiking activity, reducing redundant spikes while maintaining training efficiency in long sequence tasks. Extensive experiments demonstrate that our method maintains competitive accuracy while substantially ensuring sparse spikes without compromising computational efficiency during training. These results underscore its potential as an effective and efficient solution for long sequence modeling on edge platforms.
 ]]></content:encoded>
-<pubDate>Mon, 29 Sep 2025 00:00:00 -0400</pubDate>
 <pubDate>Mon, 29 Sep 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -70,17 +67,15 @@ Abstract: The explosive growth in sequence length has intensified the demand for
 <link>https://arxiv.org/abs/2509.19301</link>
 <guid>https://arxiv.org/abs/2509.19301</guid>
 <content:encoded><![CDATA[
-<div> Keywords: behavior cloning, reinforcement learning, visuomotor control, high-degree-of-freedom systems, dexterous hands <br>
+<div> Keywords: behavior cloning, reinforcement learning, visuomotor control, high-degree-of-freedom systems, dexterous hands <br />
 Summary: 
-This paper presents a novel approach that combines the benefits of behavior cloning (BC) and reinforcement learning (RL) to improve manipulation policies for high-degree-of-freedom systems. The method utilizes BC policies as bases and learns lightweight per-step residual corrections through sample-efficient off-policy RL. By leveraging sparse binary reward signals, the approach shows effectiveness in enhancing manipulation policies in simulation and real-world settings. The research achieves successful RL training on a humanoid robot with dexterous hands in the real world, a significant milestone. The results demonstrate state-of-the-art performance in various vision-based tasks, indicating a practical pathway for deploying RL in real-world applications. This approach addresses the limitations of human demonstration quality, manual data collection effort, and diminishing returns from offline data, offering a promising solution for training RL policies on real-world robots safely and efficiently. <br><br>Summary: <div>
+This paper presents a novel approach that combines the benefits of behavior cloning (BC) and reinforcement learning (RL) to improve manipulation policies for high-degree-of-freedom systems. The method utilizes BC policies as bases and learns lightweight per-step residual corrections through sample-efficient off-policy RL. By leveraging sparse binary reward signals, the approach shows effectiveness in enhancing manipulation policies in simulation and real-world settings. The research achieves successful RL training on a humanoid robot with dexterous hands in the real world, a significant milestone. The results demonstrate state-of-the-art performance in various vision-based tasks, indicating a practical pathway for deploying RL in real-world applications. This approach addresses the limitations of human demonstration quality, manual data collection effort, and diminishing returns from offline data, offering a promising solution for training RL policies on real-world robots safely and efficiently. <br /><br />Summary: <div>
 arXiv:2509.19301v2 Announce Type: replace-cross 
 Abstract: Recent advances in behavior cloning (BC) have enabled impressive visuomotor control policies. However, these approaches are limited by the quality of human demonstrations, the manual effort required for data collection, and the diminishing returns from offline data. In comparison, reinforcement learning (RL) trains an agent through autonomous interaction with the environment and has shown remarkable success in various domains. Still, training RL policies directly on real-world robots remains challenging due to sample inefficiency, safety concerns, and the difficulty of learning from sparse rewards for long-horizon tasks, especially for high-degree-of-freedom (DoF) systems.
   We present a recipe that combines the benefits of BC and RL through a residual learning framework. Our approach leverages BC policies as black-box bases and learns lightweight per-step residual corrections via sample-efficient off-policy RL. We demonstrate that our method requires only sparse binary reward signals and can effectively improve manipulation policies on high-degree-of-freedom (DoF) systems in both simulation and the real world. In particular, we demonstrate, to the best of our knowledge, the first successful real-world RL training on a humanoid robot with dexterous hands. Our results demonstrate state-of-the-art performance in various vision-based tasks, pointing towards a practical pathway for deploying RL in the real world.
 ]]></content:encoded>
 <pubDate>Mon, 29 Sep 2025 00:00:00 -0400</pubDate>
-<pubDate>Mon, 29 Sep 2025 00:00:00 -0400</pubDate>
 </item>
-
 <item>
 <title>Discovering and Analyzing Stochastic Processes to Reduce Waste in Food Retail</title>
 <link>https://arxiv.org/abs/2509.21322</link>
@@ -10803,56 +10798,6 @@ Abstract: Rule-based models are essential for high-stakes decision-making due to
 <content:encoded><![CDATA[
 arXiv:2502.13105v2 Announce Type: replace 
 Abstract: Among other uses, neural networks are a powerful tool for solving deterministic and Bayesian inverse problems in real-time, where variational autoencoders, a specialized type of neural network, enable the Bayesian estimation of model parameters and their distribution from observational data allowing real-time inverse uncertainty quantification. In this work, we build upon existing research [Goh, H. et al., Proceedings of Machine Learning Research, 2022] by proposing a novel loss function to train variational autoencoders for Bayesian inverse problems. When the forward map is affine, we provide a theoretical proof of the convergence of the latent states of variational autoencoders to the posterior distribution of the model parameters. We validate this theoretical result through numerical tests and we compare the proposed variational autoencoder with the existing one in the literature both in terms of accuracy and generalization properties. Finally, we test the proposed variational autoencoder on a Laplace equation, with comparison to the original one and Markov Chains Monte Carlo.
-]]></content:encoded>
-<pubDate>Thu, 25 Sep 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Anomaly Detection in Complex Dynamical Systems: A Systematic Framework Using Embedding Theory and Physics-Inspired Consistency</title>
-<link>https://arxiv.org/abs/2502.19307</link>
-<guid>https://arxiv.org/abs/2502.19307</guid>
-<content:encoded><![CDATA[
-arXiv:2502.19307v3 Announce Type: replace 
-Abstract: Anomaly detection in complex dynamical systems is essential for ensuring reliability, safety, and efficiency in industrial and cyber-physical infrastructures. Predictive maintenance helps prevent costly failures, while cybersecurity monitoring has become critical as digitized systems face growing threats. Many of these systems exhibit oscillatory behaviors and bounded motion, requiring anomaly detection methods that capture structured temporal dependencies while adhering to physical consistency principles. In this work, we propose a system-theoretic approach to anomaly detection, grounded in classical embedding theory and physics-inspired consistency principles. We build upon the Fractal Whitney Embedding Prevalence Theorem that extends traditional embedding techniques to complex system dynamics. Additionally, we introduce state-derivative pairs as an embedding strategy to capture system evolution. To enforce temporal coherence, we develop a Temporal Differential Consistency Autoencoder (TDC-AE), incorporating a TDC-Loss that aligns the approximated derivatives of latent variables with their dynamic representations. We evaluate our method on two subsets (FD001, FD003) of the C-MAPSS dataset, a benchmark for turbofan engine degradation. TDC-AE machtes LSTMs and outperforms Transformers while achieving a nearly 100x reduction in MAC operations, making it particularly suited for lightweight edge computing. Our findings support the hypothesis that anomalies disrupt stable system dynamics, providing a robust signal for anomaly detection.
-]]></content:encoded>
-<pubDate>Thu, 25 Sep 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Diffusion Classifier-Driven Reward for Offline Preference-based Reinforcement Learning</title>
-<link>https://arxiv.org/abs/2503.01143</link>
-<guid>https://arxiv.org/abs/2503.01143</guid>
-<content:encoded><![CDATA[
-arXiv:2503.01143v3 Announce Type: replace 
-Abstract: Offline preference-based reinforcement learning (PbRL) mitigates the need for reward definition, aligning with human preferences via preference-driven reward feedback without interacting with the environment. However, trajectory-wise preference labels are difficult to meet the precise learning of step-wise reward, thereby affecting the performance of downstream algorithms. To alleviate the insufficient step-wise reward caused by trajectory-wise preferences, we propose a novel preference-based reward acquisition method: Diffusion Preference-based Reward (DPR). DPR directly treats step-wise preference-based reward acquisition as a binary classification and utilizes the robustness of diffusion classifiers to infer step-wise rewards discriminatively. In addition, to further utilize trajectory-wise preference information, we propose Conditional Diffusion Preference-based Reward (C-DPR), which conditions on trajectory-wise preference labels to enhance reward inference. We apply the above methods to existing offline RL algorithms, and a series of experimental results demonstrate that the diffusion classifier-driven reward outperforms the previous reward acquisition method with the Bradley-Terry model.
-]]></content:encoded>
-<pubDate>Thu, 25 Sep 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>A Transformer Model for Predicting Chemical Products from Generic SMARTS Templates with Data Augmentation</title>
-<link>https://arxiv.org/abs/2503.05810</link>
-<guid>https://arxiv.org/abs/2503.05810</guid>
-<content:encoded><![CDATA[
-arXiv:2503.05810v3 Announce Type: replace 
-Abstract: The accurate prediction of chemical reaction outcomes is a major challenge in computational chemistry. Current models rely heavily on either highly specific reaction templates or template-free methods, both of which present limitations. To address these, this work proposes the Broad Reaction Set (BRS), a set featuring 20 generic reaction templates written in SMARTS, a pattern-based notation designed to describe substructures and reactivity. Additionally, we introduce ProPreT5, a T5-based model specifically adapted for chemistry and, to the best of our knowledge, the first language model capable of directly handling and applying SMARTS reaction templates. To further improve generalization, we propose the first augmentation strategy for SMARTS, which injects structural diversity at the pattern level. Trained on augmented templates, ProPreT5 demonstrates strong predictive performance and generalization to unseen reactions. Together, these contributions provide a novel and practical alternative to current methods, advancing the field of template-based reaction prediction.
-]]></content:encoded>
-<pubDate>Thu, 25 Sep 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>MAME: Multidimensional Adaptive Metamer Exploration with Human Perceptual Feedback</title>
-<link>https://arxiv.org/abs/2503.13212</link>
-<guid>https://arxiv.org/abs/2503.13212</guid>
-<content:encoded><![CDATA[
-arXiv:2503.13212v2 Announce Type: replace 
-Abstract: Alignment between human brain networks and artificial models has become an active research area in vision science and machine learning. A widely adopted approach is identifying "metamers," stimuli physically different yet perceptually equivalent within a system. However, conventional methods lack a direct approach to searching for the human metameric space. Instead, researchers first develop biologically inspired models and then infer about human metamers indirectly by testing whether model metamers also appear as metamers to humans. Here, we propose the Multidimensional Adaptive Metamer Exploration (MAME) framework, enabling direct, high-dimensional exploration of human metameric spaces through online image generation guided by human perceptual feedback. MAME modulates reference images across multiple dimensions based on hierarchical neural network responses, adaptively updating generation parameters according to participants' perceptual discriminability. Using MAME, we successfully measured multidimensional human metameric spaces within a single psychophysical experiment. Experimental results using a biologically plausible CNN model showed that human discrimination sensitivity was lower for metameric images based on low-level features compared to high-level features, which image contrast metrics could not explain. The finding suggests a relatively worse alignment between the metameric spaces of humans and the CNN model for low-level processing compared to high-level processing. Counterintuitively, given recent discussions on alignment at higher representational levels, our results highlight the importance of early visual computations in shaping biologically plausible models. Our MAME framework can serve as a future scientific tool for directly investigating the functional organization of human vision.
-]]></content:encoded>
-<pubDate>Thu, 25 Sep 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>DP-LET: An Efficient Spatio-Temporal Network Traffic Prediction Framework</title>
-<link>https://arxiv.org/abs/2504.03792</link>
-<guid>https://arxiv.org/abs/2504.03792</guid>
-<content:encoded><![CDATA[
-arXiv:2504.03792v2 Announce Type: replace 
-Abstract: Accurately predicting spatio-temporal network traffic is essential for dynamically managing computing resources in modern communication systems and minimizing energy consumption. Although spatio-temporal traffic prediction has received extensive research attention, further improvements in prediction accuracy and computational efficiency remain necessary. In particular, existing decomposition-based methods or hybrid architectures often incur heavy overhead when capturing local and global feature correlations, necessitating novel approaches that optimize accuracy and complexity. In this paper, we propose an efficient spatio-temporal network traffic prediction framework, DP-LET, which consists of a data processing module, a local feature enhancement module, and a Transformer-based prediction module. The data processing module is designed for high-efficiency denoising of network data and spatial decoupling. In contrast, the local feature enhancement module leverages multiple Temporal Convolutional Networks (TCNs) to capture fine-grained local features. Meanwhile, the prediction module utilizes a Transformer encoder to model long-term dependencies and assess feature relevance. A case study on real-world cellular traffic prediction demonstrates the practicality of DP-LET, which maintains low computational complexity while achieving state-of-the-art performance, significantly reducing MSE by 31.8% and MAE by 23.1% compared to baseline models.
 ]]></content:encoded>
 <pubDate>Thu, 25 Sep 2025 00:00:00 -0400</pubDate>
 </item>
