@@ -4,18 +4,18 @@
 <title>cs.LG updates on arXiv.org</title>
 <link>http://rss.arxiv.org/rss/cs.LG</link>
 
+
 <item>
 <title>Rare-to-Frequent: Unlocking Compositional Generation Power of Diffusion Models on Rare Concepts with LLM Guidance</title>
 <link>https://arxiv.org/abs/2410.22376</link>
 <guid>https://arxiv.org/abs/2410.22376</guid>
 <content:encoded><![CDATA[
-<div> Rare compositions, diffusion models, Large Language Model, concept generation, R2F <br>
-Summary: <br>
-This paper presents a method to enhance the generation of rare compositions of concepts in text-to-image (T2I) diffusion models by leveraging the guidance of Large Language Models (LLMs). By exposing frequent concepts relevant to the rare ones during the diffusion sampling process, the accuracy of concept composition is improved. The proposed training-free approach, R2F, plans and executes rare-to-frequent concept guidance throughout the diffusion inference using the semantic knowledge in LLMs. The framework is flexible and compatible with various pre-trained diffusion models and LLMs, and can be integrated with region-guided diffusion approaches. Extensive experiments on multiple datasets, including RareBench, show that R2F outperforms existing models, such as SD3.0 and FLUX, by up to 28.1% in T2I alignment. The code for R2F is available on GitHub for further exploration. <br> <div>
+<div> Rare compositions, diffusion models, Large Language Model, concept generation, R2F <br />
+Summary: <br />
+This paper presents a method to enhance the generation of rare compositions of concepts in text-to-image (T2I) diffusion models by leveraging the guidance of Large Language Models (LLMs). By exposing frequent concepts relevant to the rare ones during the diffusion sampling process, the accuracy of concept composition is improved. The proposed training-free approach, R2F, plans and executes rare-to-frequent concept guidance throughout the diffusion inference using the semantic knowledge in LLMs. The framework is flexible and compatible with various pre-trained diffusion models and LLMs, and can be integrated with region-guided diffusion approaches. Extensive experiments on multiple datasets, including RareBench, show that R2F outperforms existing models, such as SD3.0 and FLUX, by up to 28.1% in T2I alignment. The code for R2F is available on GitHub for further exploration. <br /> <div>
 arXiv:2410.22376v4 Announce Type: replace 
 Abstract: State-of-the-art text-to-image (T2I) diffusion models often struggle to generate rare compositions of concepts, e.g., objects with unusual attributes. In this paper, we show that the compositional generation power of diffusion models on such rare concepts can be significantly enhanced by the Large Language Model (LLM) guidance. We start with empirical and theoretical analysis, demonstrating that exposing frequent concepts relevant to the target rare concepts during the diffusion sampling process yields more accurate concept composition. Based on this, we propose a training-free approach, R2F, that plans and executes the overall rare-to-frequent concept guidance throughout the diffusion inference by leveraging the abundant semantic knowledge in LLMs. Our framework is flexible across any pre-trained diffusion models and LLMs, and can be seamlessly integrated with the region-guided diffusion approaches. Extensive experiments on three datasets, including our newly proposed benchmark, RareBench, containing various prompts with rare compositions of concepts, R2F significantly surpasses existing models including SD3.0 and FLUX by up to 28.1%p in T2I alignment. Code is available at https://github.com/krafton-ai/Rare-to-Frequent.
 ]]></content:encoded>
-<pubDate>Tue, 30 Sep 2025 00:00:00 -0400</pubDate>
 <pubDate>Tue, 30 Sep 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -25,11 +25,10 @@ Abstract: State-of-the-art text-to-image (T2I) diffusion models often struggle t
 <content:encoded><![CDATA[
 <div> Reinforcement Learning, Human Feedback, Reward Model, Optimization Perspective, Language Model
 Summary:
-Reinforcement Learning from Human Feedback (RLHF) success relies on the reward model quality. Despite accuracy being the primary evaluation metric, it may not fully capture a reward model's effectiveness as a teacher. The study shows that a reward model inducing low reward variance results in a flat landscape for RLHF optimization, leading to slow progress. Accurate models with low variance can underperform less accurate models with higher variance. Additionally, a reward model successful for one language model may not induce enough variance for efficient optimization in another. These findings suggest that beyond accuracy, reward models should generate sufficient variance for effective optimization. Experimental results using large language models support the theoretical conclusions, emphasizing the importance of considering reward variance in addition to accuracy when evaluating reward models for RLHF tasks. <br><br>Summary: <div>
+Reinforcement Learning from Human Feedback (RLHF) success relies on the reward model quality. Despite accuracy being the primary evaluation metric, it may not fully capture a reward model's effectiveness as a teacher. The study shows that a reward model inducing low reward variance results in a flat landscape for RLHF optimization, leading to slow progress. Accurate models with low variance can underperform less accurate models with higher variance. Additionally, a reward model successful for one language model may not induce enough variance for efficient optimization in another. These findings suggest that beyond accuracy, reward models should generate sufficient variance for effective optimization. Experimental results using large language models support the theoretical conclusions, emphasizing the importance of considering reward variance in addition to accuracy when evaluating reward models for RLHF tasks. <br /><br />Summary: <div>
 arXiv:2503.15477v3 Announce Type: replace 
 Abstract: The success of Reinforcement Learning from Human Feedback (RLHF) critically depends on the quality of the reward model. However, while this quality is primarily evaluated through accuracy, it remains unclear whether accuracy fully captures what makes a reward model an effective teacher. We address this question from an optimization perspective. First, we prove that regardless of how accurate a reward model is, if it induces low reward variance, then the RLHF objective suffers from a flat landscape. Consequently, even a perfectly accurate reward model can lead to extremely slow optimization, underperforming less accurate models that induce higher reward variance. We additionally show that a reward model that works well for one language model can induce low reward variance, and thus a flat objective landscape, for another. These results establish a fundamental limitation of evaluating reward models solely based on accuracy or independently of the language model they guide. Experiments using models of up to 8B parameters corroborate our theory, demonstrating the interplay between reward variance, accuracy, and reward maximization rate. Overall, our findings highlight that beyond accuracy, a reward model needs to induce sufficient variance for efficient~optimization.
 ]]></content:encoded>
-<pubDate>Tue, 30 Sep 2025 00:00:00 -0400</pubDate>
 <pubDate>Tue, 30 Sep 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -40,11 +39,10 @@ Abstract: The success of Reinforcement Learning from Human Feedback (RLHF) criti
 <div> Keywords: Sparse attention mechanisms, multimodal large language models, RL-based post-training framework, efficiency-accuracy trade-off, token reduction ratio
 
 Summary:
-Sparse attention mechanisms aim to reduce computational overhead by selectively processing important tokens but plateau at moderate budgets. A new approach, Sparsity Forcing, reinforces token sparsity in multimodal large language models using a RL-based framework. It explores the efficiency-accuracy trade-off by running rollouts with different token budgets, where efficiency and performance are jointly optimized as rewards. By rewarding more efficient and correct answers while penalizing less efficient or incorrect ones, token saving becomes an end-to-end optimization objective. Across thirteen image and video benchmarks, Sparsity Forcing increases token reduction ratio from 20% to 75% on Qwen2-VL/Qwen2.5-VL with minimal accuracy decline. This results in significantly reduced long-context inference memory and faster decoding speeds by up to 3.3 times. <br><br>Summary: <div>
+Sparse attention mechanisms aim to reduce computational overhead by selectively processing important tokens but plateau at moderate budgets. A new approach, Sparsity Forcing, reinforces token sparsity in multimodal large language models using a RL-based framework. It explores the efficiency-accuracy trade-off by running rollouts with different token budgets, where efficiency and performance are jointly optimized as rewards. By rewarding more efficient and correct answers while penalizing less efficient or incorrect ones, token saving becomes an end-to-end optimization objective. Across thirteen image and video benchmarks, Sparsity Forcing increases token reduction ratio from 20% to 75% on Qwen2-VL/Qwen2.5-VL with minimal accuracy decline. This results in significantly reduced long-context inference memory and faster decoding speeds by up to 3.3 times. <br /><br />Summary: <div>
 arXiv:2504.18579v3 Announce Type: replace 
 Abstract: Sparse attention mechanisms aim to reduce computational overhead with minimal accuracy loss by selectively processing salient tokens. Despite their effectiveness, most methods merely exploit a model's inherent sparsity and thus plateau at moderate budgets (about 50\% token reduction), with little headroom to push budget lower without hurting accuracy. Other approaches attempt to enforce sparsity through trainable sparse attention or sharpness-inducing regularizers, but these either fix rigid patterns that ignore input and layer dynamics, or optimize proxy objectives without direct control over token budgets. In this paper, we explicitly reinforce token sparsity in well-posed multimodal large language models (MLLMs) through a simple RL-based post-training framework named \textit{Sparsity Forcing}. Our method explores the efficiency-accuracy trade-off by running multiple rollouts with different token budgets, where both efficiency (token reduction ratio) and performance (answer correctness) are formulated as joint rewards. By contrasting rollouts within each group, the more efficient and correct answer is rewarded while less efficient or incorrect ones are penalized, thereby turning token saving into an end-to-end, inference-consistent optimization objective. Across thirteen image and video benchmarks, Sparsity Forcing raises token reduction ratio on Qwen2-VL/Qwen2.5-VL from 20\% to 75\% with minimal accuracy decline, significantly reducing long-context inference memory by up to 3$\times$ while speeding up decoding by up to 3.3$\times$.
 ]]></content:encoded>
-<pubDate>Tue, 30 Sep 2025 00:00:00 -0400</pubDate>
 <pubDate>Tue, 30 Sep 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -54,11 +52,10 @@ Abstract: Sparse attention mechanisms aim to reduce computational overhead with 
 <content:encoded><![CDATA[
 <div> Keywords: Large language models, compression, reinforcement learning, dynamic adjustment, memory optimization
 
-Summary:<br><br>RAP is a novel framework for compressing large language models using reinforcement learning to dynamically adjust compression strategies based on runtime memory variations and heterogeneous KV-cache demands. RAP tracks the ratio between model parameters and KV-cache during execution and selectively prunes components to maximize utility within a given memory budget. By considering the different memory requirements of feed-forward networks and attention layers, RAP outperforms existing methods by optimizing model compression in real-time. This approach marks a significant advancement in model compression techniques, as it is the first to consider both model weights and KV-cache simultaneously. RAP shows promising results in experiments and offers a practical solution to deploy large language models efficiently. <div>
+Summary:<br /><br />RAP is a novel framework for compressing large language models using reinforcement learning to dynamically adjust compression strategies based on runtime memory variations and heterogeneous KV-cache demands. RAP tracks the ratio between model parameters and KV-cache during execution and selectively prunes components to maximize utility within a given memory budget. By considering the different memory requirements of feed-forward networks and attention layers, RAP outperforms existing methods by optimizing model compression in real-time. This approach marks a significant advancement in model compression techniques, as it is the first to consider both model weights and KV-cache simultaneously. RAP shows promising results in experiments and offers a practical solution to deploy large language models efficiently. <div>
 arXiv:2505.17138v4 Announce Type: replace 
 Abstract: Large language models (LLMs) excel at language understanding and generation, but their enormous computational and memory requirements hinder deployment. Compression offers a potential solution to mitigate these constraints. However, most existing methods rely on fixed heuristics and thus fail to adapt to runtime memory variations or heterogeneous KV-cache demands arising from diverse user requests. To address these limitations, we propose RAP, an elastic pruning framework driven by reinforcement learning (RL) that dynamically adjusts compression strategies in a runtime-aware manner. Specifically, RAP dynamically tracks the evolving ratio between model parameters and KV-cache across practical execution. Recognizing that FFNs house most parameters, whereas parameter -light attention layers dominate KV-cache formation, the RL agent retains only those components that maximize utility within the current memory budget, conditioned on instantaneous workload and device state. Extensive experiments results demonstrate that RAP outperforms state-of-the-art baselines, marking the first time to jointly consider model weights and KV-cache on the fly.
 ]]></content:encoded>
-<pubDate>Tue, 30 Sep 2025 00:00:00 -0400</pubDate>
 <pubDate>Tue, 30 Sep 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -66,14 +63,13 @@ Abstract: Large language models (LLMs) excel at language understanding and gener
 <link>https://arxiv.org/abs/2505.17621</link>
 <guid>https://arxiv.org/abs/2505.17621</guid>
 <content:encoded><![CDATA[
-<div> Reinforcement Learning, Large Language Models, i-MENTOR, exploration rewards, dense rewards<br>
-<br>
-Summary:<br>
-The article proposes i-MENTOR, a method to enhance the reasoning capabilities of Large Language Models by addressing limitations in current RL approaches such as sparse rewards and lack of exploration incentives. i-MENTOR introduces trajectory-aware exploration rewards to reduce bias and maintain computational efficiency. It also implements error-conditioned reward allocation for efficient exploration on challenging samples. Additionally, advantage-preserving integration is used to maintain advantage distribution integrity while incorporating exploratory guidance. Experiments on public datasets show that i-MENTOR achieves a 22.23% improvement on AIME 2024, showcasing its effectiveness in improving reasoning capabilities of Large Language Models. <br><br> <div>
+<div> Reinforcement Learning, Large Language Models, i-MENTOR, exploration rewards, dense rewards<br />
+<br />
+Summary:<br />
+The article proposes i-MENTOR, a method to enhance the reasoning capabilities of Large Language Models by addressing limitations in current RL approaches such as sparse rewards and lack of exploration incentives. i-MENTOR introduces trajectory-aware exploration rewards to reduce bias and maintain computational efficiency. It also implements error-conditioned reward allocation for efficient exploration on challenging samples. Additionally, advantage-preserving integration is used to maintain advantage distribution integrity while incorporating exploratory guidance. Experiments on public datasets show that i-MENTOR achieves a 22.23% improvement on AIME 2024, showcasing its effectiveness in improving reasoning capabilities of Large Language Models. <br /><br /> <div>
 arXiv:2505.17621v5 Announce Type: replace 
 Abstract: Reinforcement Learning (RL) has emerged as a pivotal method for improving the reasoning capabilities of Large Language Models (LLMs). However, prevalent RL approaches such as Proximal Policy Optimization (PPO) and Group-Regularized Policy Optimization (GRPO) face critical limitations due to their reliance on sparse outcome-based rewards and inadequate mechanisms for incentivizing exploration. These limitations result in inefficient guidance for reasoning. Specifically, sparse rewards fail to deliver sufficient feedback, particularly for challenging problems. Furthermore, such rewards induce systematic biases that prioritize exploitation of familiar trajectories over novel solution discovery. These shortcomings critically hinder performance in complex reasoning tasks, which inherently demand iterative refinement across intermediate steps. To address these challenges, we propose an Intrinsic Motivation guidEd exploratioN meThOd foR LLM Reasoning (i-MENTOR), a method designed to deliver dense rewards and amplify exploration in the RL-based paradigm. i-MENTOR introduces three innovations: trajectory-aware exploration rewards that mitigate bias in token-level strategies while maintaining computational efficiency; error-conditioned reward allocation to ensure efficient exploration on challenging samples while intrinsically stabilizing training; and advantage-preserving integration that maintains advantage distribution integrity while incorporating exploratory guidance. Experiments across 4 public datasets demonstrate i-MENTOR's effectiveness, achieving a 22.23\% improvement on AIME 2024.
 ]]></content:encoded>
-<pubDate>Tue, 30 Sep 2025 00:00:00 -0400</pubDate>
 <pubDate>Tue, 30 Sep 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -84,11 +80,10 @@ Abstract: Reinforcement Learning (RL) has emerged as a pivotal method for improv
 <div> Neural Operator, State Space, PDEs, Damping, Frequency Learning
 Summary:
 The State Space Neural Operator (SS-NO) is introduced as a compact architecture for learning solution operators of time-dependent partial differential equations (PDEs). It combines adaptive damping and learnable frequency modulation to efficiently capture long-range dependencies. Theoretical connections between structured state space models (SSMs) and neural operators are established, proving the universality of convolutional architectures with a full field-of-view. Empirically, SS-NO outperforms competing approaches on various PDE benchmarks with fewer parameters. A factorized variant of SS-NO shows scalability on 2D problems. The study highlights the effectiveness of damping and frequency learning in operator modeling and demonstrates the potential of lightweight factorization for efficient large-scale PDE learning. 
-<br><br>Summary: <div>
+<br /><br />Summary: <div>
 arXiv:2507.23428v4 Announce Type: replace 
 Abstract: We propose the State Space Neural Operator (SS-NO), a compact architecture for learning solution operators of time-dependent partial differential equations (PDEs). Our formulation extends structured state space models (SSMs) to joint spatiotemporal modeling, introducing two key mechanisms: adaptive damping, which stabilizes learning by localizing receptive fields, and learnable frequency modulation, which enables data-driven spectral selection. These components provide a unified framework for capturing long-range dependencies with parameter efficiency. Theoretically, we establish connections between SSMs and neural operators, proving a universality theorem for convolutional architectures with full field-of-view. Empirically, SS-NO achieves state-of-the-art performance across diverse PDE benchmarks-including 1D Burgers' and Kuramoto-Sivashinsky equations, and 2D Navier-Stokes and compressible Euler flows-while using significantly fewer parameters than competing approaches. A factorized variant of SS-NO further demonstrates scalable performance on challenging 2D problems. Our results highlight the effectiveness of damping and frequency learning in operator modeling, while showing that lightweight factorization provides a complementary path toward efficient large-scale PDE learning.
 ]]></content:encoded>
-<pubDate>Tue, 30 Sep 2025 00:00:00 -0400</pubDate>
 <pubDate>Tue, 30 Sep 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -103,11 +98,10 @@ Summary:
 - Instead of pruning or heuristic rank selection, RMT-KD preserves only informative directions identified via spectral properties of hidden representations for network size reduction.
 - RMT-based causal reduction is applied layer by layer with self-distillation to maintain stability and accuracy of the model.
 - On GLUE, AG News, and CIFAR-10 datasets, RMT-KD achieves up to 80% parameter reduction with only a 2% accuracy loss, resulting in 2.8x faster inference and nearly halved power consumption.
-- These results validate RMT-KD as a mathematically grounded approach to network distillation.<br><br>Summary: <div>
+- These results validate RMT-KD as a mathematically grounded approach to network distillation.<br /><br />Summary: <div>
 arXiv:2509.15724v3 Announce Type: replace 
 Abstract: Large deep learning models such as BERT and ResNet achieve state-of-the-art performance but are costly to deploy at the edge due to their size and compute demands. We present RMT-KD, a compression method that leverages Random Matrix Theory (RMT) for knowledge distillation to iteratively reduce network size. Instead of pruning or heuristic rank selection, RMT-KD preserves only informative directions identified via the spectral properties of hidden representations. RMT-based causal reduction is applied layer by layer with self-distillation to maintain stability and accuracy. On GLUE, AG News, and CIFAR-10, RMT-KD achieves up to 80% parameter reduction with only 2% accuracy loss, delivering 2.8x faster inference and nearly halved power consumption. These results establish RMT-KD as a mathematically grounded approach to network distillation.
 ]]></content:encoded>
-<pubDate>Tue, 30 Sep 2025 00:00:00 -0400</pubDate>
 <pubDate>Tue, 30 Sep 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -123,7 +117,6 @@ arXiv:2509.15735v3 Announce Type: replace
 Abstract: Large language models (LLMs) offer broad utility but remain prone to hallucination and out-of-distribution (OOD) errors. We propose EigenTrack, an interpretable real-time detector that uses the spectral geometry of hidden activations, a compact global signature of model dynamics. By streaming covariance-spectrum statistics such as entropy, eigenvalue gaps, and KL divergence from random baselines into a lightweight recurrent classifier, EigenTrack tracks temporal shifts in representation structure that signal hallucination and OOD drift before surface errors appear. Unlike black- and grey-box methods, it needs only a single forward pass without resampling. Unlike existing white-box detectors, it preserves temporal context, aggregates global signals, and offers interpretable accuracy-latency trade-offs.
 ]]></content:encoded>
 <pubDate>Tue, 30 Sep 2025 00:00:00 -0400</pubDate>
-<pubDate>Tue, 30 Sep 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
 <title>Beyond Sharp Minima: Robust LLM Unlearning via Feedback-Guided Multi-Point Optimization</title>
@@ -133,11 +126,10 @@ Abstract: Large language models (LLMs) offer broad utility but remain prone to h
 <div> Keywords: LLM, unlearning methods, security vulnerability, relearning attacks, StableUN
 
 Summary:
-The article discusses a critical security vulnerability in current LLM unlearning methods. These methods fail to completely remove sensitive knowledge, as it can be recovered through relearning attacks. The vulnerability stems from optimizing the forgetting loss at individual data points, leading to sharp minima in the loss landscape. This instability allows relearning attacks to rapidly recover supposedly erased knowledge. To address this issue, the authors propose StableUN, a feedback-guided optimization framework that prioritizes stable parameter regions. By integrating forgetting and remembering feedback, the method achieves improved robustness against relearning and jailbreaking attacks while maintaining utility performance. Experimental results on WMDP and MUSE benchmarks support the effectiveness of StableUN.<br><br>Summary: <div>
+The article discusses a critical security vulnerability in current LLM unlearning methods. These methods fail to completely remove sensitive knowledge, as it can be recovered through relearning attacks. The vulnerability stems from optimizing the forgetting loss at individual data points, leading to sharp minima in the loss landscape. This instability allows relearning attacks to rapidly recover supposedly erased knowledge. To address this issue, the authors propose StableUN, a feedback-guided optimization framework that prioritizes stable parameter regions. By integrating forgetting and remembering feedback, the method achieves improved robustness against relearning and jailbreaking attacks while maintaining utility performance. Experimental results on WMDP and MUSE benchmarks support the effectiveness of StableUN.<br /><br />Summary: <div>
 arXiv:2509.20230v2 Announce Type: replace 
 Abstract: Current LLM unlearning methods face a critical security vulnerability that undermines their fundamental purpose: while they appear to successfully remove sensitive or harmful knowledge, this ``forgotten" information remains precariously recoverable through relearning attacks. We identify that the root cause is that conventional methods optimizing the forgetting loss at individual data points will drive model parameters toward sharp minima in the loss landscape. In these unstable regions, even minimal parameter perturbations can drastically alter the model's behaviors. Consequently, relearning attacks exploit this vulnerability by using just a few fine-tuning samples to navigate the steep gradients surrounding these unstable regions, thereby rapidly recovering knowledge that was supposedly erased. This exposes a critical robustness gap between apparent unlearning and actual knowledge removal. To address this issue, we propose StableUN, a bi-level feedback-guided optimization framework that explicitly seeks more stable parameter regions via neighborhood-aware optimization. It integrates forgetting feedback, which uses adversarial perturbations to probe parameter neighborhoods, with remembering feedback to preserve model utility, aligning the two objectives through gradient projection. Experiments on WMDP and MUSE benchmarks demonstrate that our method is significantly more robust against both relearning and jailbreaking attacks while maintaining competitive utility performance.
 ]]></content:encoded>
-<pubDate>Tue, 30 Sep 2025 00:00:00 -0400</pubDate>
 <pubDate>Tue, 30 Sep 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -145,14 +137,13 @@ Abstract: Current LLM unlearning methods face a critical security vulnerability 
 <link>https://arxiv.org/abs/2509.20294</link>
 <guid>https://arxiv.org/abs/2509.20294</guid>
 <content:encoded><![CDATA[
-<div> ESD, alignment-sensitive complexity measure, spectral algorithms, feature learning, generalization <br>
-<br>
+<div> ESD, alignment-sensitive complexity measure, spectral algorithms, feature learning, generalization <br />
+<br />
 Summary: 
 The study introduces the effective span dimension (ESD) as a complexity measure that considers the alignment sensitivity of kernels learned from data without the need for specific conditions. It is shown that for sequence models with an ESD of at most K, the minimax excess risk scales as σ^2 K. The analysis of over-parameterized gradient flow reveals its ability to reduce the ESD, linking adaptive feature learning to improved generalization in spectral algorithms. The framework is extended to linear models and RKHS regression, supported by numerical experiments, offering a new perspective on generalization beyond traditional fixed-kernel theories. <div>
 arXiv:2509.20294v2 Announce Type: replace 
 Abstract: We study spectral algorithms in the setting where kernels are learned from data. We introduce the effective span dimension (ESD), an alignment-sensitive complexity measure that depends jointly on the signal, spectrum, and noise level $\sigma^2$. The ESD is well-defined for arbitrary kernels and signals without requiring eigen-decay conditions or source conditions. We prove that for sequence models whose ESD is at most $K$, the minimax excess risk scales as $\sigma^2 K$. Furthermore, we analyze over-parameterized gradient flow and prove that it can reduce the ESD. This finding establishes a connection between adaptive feature learning and provable improvements in generalization of spectral algorithms. We demonstrate the generality of the ESD framework by extending it to linear models and RKHS regression, and we support the theory with numerical experiments. This framework provides a novel perspective on generalization beyond traditional fixed-kernel theories.
 ]]></content:encoded>
-<pubDate>Tue, 30 Sep 2025 00:00:00 -0400</pubDate>
 <pubDate>Tue, 30 Sep 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -160,13 +151,12 @@ Abstract: We study spectral algorithms in the setting where kernels are learned 
 <link>https://arxiv.org/abs/2509.20463</link>
 <guid>https://arxiv.org/abs/2509.20463</guid>
 <content:encoded><![CDATA[
-<div> Keywords: influence estimation, memorization scores, adversarial manipulation, image classification, vulnerability <br>
+<div> Keywords: influence estimation, memorization scores, adversarial manipulation, image classification, vulnerability <br />
 Summary: 
-This study investigates the susceptibility of memorization-based influence estimators to adversarial manipulation, raising concerns about their reliability. The researchers propose a practical attack method, leveraging black-box access to model outputs and incurring minimal computational cost, to manipulate memorization scores. Empirical validation on various image classification tasks demonstrates the vulnerability of state-of-the-art proxies to targeted score manipulations. The study also includes a theoretical analysis that reveals the fragility of memorization scores under adversarial perturbations. These findings underscore critical vulnerabilities in influence-based attribution methods and emphasize the imperative for robust defenses to enhance the credibility of influence estimates in machine learning applications. The code for the attack method is publicly available on GitHub for further exploration and validation. <br> <div>
+This study investigates the susceptibility of memorization-based influence estimators to adversarial manipulation, raising concerns about their reliability. The researchers propose a practical attack method, leveraging black-box access to model outputs and incurring minimal computational cost, to manipulate memorization scores. Empirical validation on various image classification tasks demonstrates the vulnerability of state-of-the-art proxies to targeted score manipulations. The study also includes a theoretical analysis that reveals the fragility of memorization scores under adversarial perturbations. These findings underscore critical vulnerabilities in influence-based attribution methods and emphasize the imperative for robust defenses to enhance the credibility of influence estimates in machine learning applications. The code for the attack method is publicly available on GitHub for further exploration and validation. <br /> <div>
 arXiv:2509.20463v2 Announce Type: replace 
 Abstract: Influence estimation tools -- such as memorization scores -- are widely used to understand model behavior, attribute training data, and inform dataset curation. However, recent applications in data valuation and responsible machine learning raise the question: can these scores themselves be adversarially manipulated? In this work, we present a systematic study of the feasibility of attacking memorization-based influence estimators. We characterize attacks for producing highly memorized samples as highly sensitive queries in the regime where a trained algorithm is accurate. Our attack (calculating the pseudoinverse of the input) is practical, requiring only black-box access to model outputs and incur modest computational overhead. We empirically validate our attack across a wide suite of image classification tasks, showing that even state-of-the-art proxies are vulnerable to targeted score manipulations. In addition, we provide a theoretical analysis of the stability of memorization scores under adversarial perturbations, revealing conditions under which influence estimates are inherently fragile. Our findings highlight critical vulnerabilities in influence-based attribution and suggest the need for robust defenses. All code can be found at https://github.com/tuedo2/MemAttack
 ]]></content:encoded>
-<pubDate>Tue, 30 Sep 2025 00:00:00 -0400</pubDate>
 <pubDate>Tue, 30 Sep 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -182,7 +172,6 @@ arXiv:2509.20507v2 Announce Type: replace
 Abstract: This paper introduces a deep learning approach for predicting time-dependent full-field damage in concrete. The study uses an auto-regressive U-Net model to predict the evolution of the scalar damage field in a unit cell given microstructural geometry and evolution of an imposed shrinkage profile. By sequentially using the predicted damage output as input for subsequent predictions, the model facilitates the continuous assessment of damage progression. Complementarily, a convolutional neural network (CNN) utilises the damage estimations to forecast key mechanical properties, including observed shrinkage and residual stiffness. The proposed dual-network architecture demonstrates high computational efficiency and robust predictive performance on the synthesised datasets. The approach reduces the computational load traditionally associated with full-field damage evaluations and is used to gain insights into the relationship between aggregate properties, such as shape, size, and distribution, and the effective shrinkage and reduction in stiffness. Ultimately, this can help to optimize concrete mix designs, leading to improved durability and reduced internal damage.
 ]]></content:encoded>
 <pubDate>Tue, 30 Sep 2025 00:00:00 -0400</pubDate>
-<pubDate>Tue, 30 Sep 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
 <title>Towards Foundation Models for Zero-Shot Time Series Anomaly Detection: Leveraging Synthetic Data and Relative Context Discrepancy</title>
@@ -194,11 +183,10 @@ Abstract: This paper introduces a deep learning approach for predicting time-dep
 Summary:
 The article introduces a novel foundation model, TimeRCD, for time series anomaly detection (TSAD). TimeRCD differs from traditional models by using a Relative Context Discrepancy (RCD) pre-training paradigm instead of reconstruction-based objectives. This approach allows TimeRCD to detect anomalies by identifying significant discrepancies between adjacent time windows, capturing contextual shifts indicative of anomalies that reconstruction-based methods often miss. A large-scale synthetic corpus with token-level anomaly labels is used for pre-training, providing the necessary supervisory signal. Extensive experiments show that TimeRCD outperforms existing general-purpose and anomaly-specific models in zero-shot TSAD across various datasets. This validates the effectiveness of the RCD paradigm and highlights the potential for building robust and generalizable foundation models for TSAD. 
 
-<br><br>Summary: <div>
+<br /><br />Summary: <div>
 arXiv:2509.21190v2 Announce Type: replace 
 Abstract: Time series anomaly detection (TSAD) is a critical task, but developing models that generalize to unseen data in a zero-shot manner remains a major challenge. Prevailing foundation models for TSAD predominantly rely on reconstruction-based objectives, which suffer from a fundamental objective mismatch: they struggle to identify subtle anomalies while often misinterpreting complex normal patterns, leading to high rates of false negatives and positives. To overcome these limitations, we introduce \texttt{TimeRCD}, a novel foundation model for TSAD built upon a new pre-training paradigm: Relative Context Discrepancy (RCD). Instead of learning to reconstruct inputs, \texttt{TimeRCD} is explicitly trained to identify anomalies by detecting significant discrepancies between adjacent time windows. This relational approach, implemented with a standard Transformer architecture, enables the model to capture contextual shifts indicative of anomalies that reconstruction-based methods often miss. To facilitate this paradigm, we develop a large-scale, diverse synthetic corpus with token-level anomaly labels, providing the rich supervisory signal necessary for effective pre-training. Extensive experiments demonstrate that \texttt{TimeRCD} significantly outperforms existing general-purpose and anomaly-specific foundation models in zero-shot TSAD across diverse datasets. Our results validate the superiority of the RCD paradigm and establish a new, effective path toward building robust and generalizable foundation models for time series anomaly detection.
 ]]></content:encoded>
-<pubDate>Tue, 30 Sep 2025 00:00:00 -0400</pubDate>
 <pubDate>Tue, 30 Sep 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -206,14 +194,13 @@ Abstract: Time series anomaly detection (TSAD) is a critical task, but developin
 <link>https://arxiv.org/abs/2509.22335</link>
 <guid>https://arxiv.org/abs/2509.22335</guid>
 <content:encoded><![CDATA[
-<div> investigate, neural networks, plasticity, deep learning, regularization<br>
-<br>
-Summary:<br>
+<div> investigate, neural networks, plasticity, deep learning, regularization<br />
+<br />
+Summary:<br />
 The study delves into the issue of loss of plasticity in deep neural networks during deep continual learning, leading to the failure to learn new tasks without reinitializing parameters. The researchers pinpoint that this failure is linked to Hessian spectral collapse during new-task initialization, causing crucial curvature directions to disappear and impeding gradient descent effectiveness. They introduce the concept of $\tau$-trainability as a prerequisite for successful training, demonstrating that current plasticity-preserving algorithms align with this framework. By addressing spectral collapse directly, they propose the Kronecker factored approximation of the Hessian, advocating for two regularization enhancements: maintaining high effective feature rank and applying L2 penalties. Experimental results on continual supervised and reinforcement learning tasks validate the efficacy of combining these two regularizers in preserving plasticity. <div>
 arXiv:2509.22335v2 Announce Type: replace 
 Abstract: We investigate why deep neural networks suffer from loss of plasticity in deep continual learning, failing to learn new tasks without reinitializing parameters. We show that this failure is preceded by Hessian spectral collapse at new-task initialization, where meaningful curvature directions vanish and gradient descent becomes ineffective. To characterize the necessary condition for successful training, we introduce the notion of $\tau$-trainability and show that current plasticity preserving algorithms can be unified under this framework. Targeting spectral collapse directly, we then discuss the Kronecker factored approximation of the Hessian, which motivates two regularization enhancements: maintaining high effective feature rank and applying L2 penalties. Experiments on continual supervised and reinforcement learning tasks confirm that combining these two regularizers effectively preserves plasticity.
 ]]></content:encoded>
-<pubDate>Tue, 30 Sep 2025 00:00:00 -0400</pubDate>
 <pubDate>Tue, 30 Sep 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -221,12 +208,11 @@ Abstract: We investigate why deep neural networks suffer from loss of plasticity
 <link>https://arxiv.org/abs/2509.22445</link>
 <guid>https://arxiv.org/abs/2509.22445</guid>
 <content:encoded><![CDATA[
-<div> MDL principle, Transformers, Kolmogorov complexity, variational objective, generalization <br>
-Summary: This paper introduces the concept of asymptotically optimal description length objectives for neural networks like Transformers based on Kolmogorov complexity. It shows that minimizing such objectives achieves optimal compression up to a constant for any dataset as model resources increase. The paper proves the existence of asymptotically optimal objectives for Transformers and presents a tractable and differentiable variational objective using an adaptive Gaussian mixture prior. Empirical analysis demonstrates that this variational objective selects low-complexity solutions with strong generalization in algorithmic tasks. However, standard optimizers struggle to find these solutions from random initialization, revealing optimization challenges. By offering a theoretical framework for identifying effective description length objectives, this research suggests a pathway to training neural networks that achieve better compression and generalization. <br><br>Summary: <div>
+<div> MDL principle, Transformers, Kolmogorov complexity, variational objective, generalization <br />
+Summary: This paper introduces the concept of asymptotically optimal description length objectives for neural networks like Transformers based on Kolmogorov complexity. It shows that minimizing such objectives achieves optimal compression up to a constant for any dataset as model resources increase. The paper proves the existence of asymptotically optimal objectives for Transformers and presents a tractable and differentiable variational objective using an adaptive Gaussian mixture prior. Empirical analysis demonstrates that this variational objective selects low-complexity solutions with strong generalization in algorithmic tasks. However, standard optimizers struggle to find these solutions from random initialization, revealing optimization challenges. By offering a theoretical framework for identifying effective description length objectives, this research suggests a pathway to training neural networks that achieve better compression and generalization. <br /><br />Summary: <div>
 arXiv:2509.22445v2 Announce Type: replace 
 Abstract: The Minimum Description Length (MDL) principle offers a formal framework for applying Occam's razor in machine learning. However, its application to neural networks such as Transformers is challenging due to the lack of a principled, universal measure for model complexity. This paper introduces the theoretical notion of asymptotically optimal description length objectives, grounded in the theory of Kolmogorov complexity. We establish that a minimizer of such an objective achieves optimal compression, for any dataset, up to an additive constant, in the limit as model resource bounds increase. We prove that asymptotically optimal objectives exist for Transformers, building on a new demonstration of their computational universality. We further show that such objectives can be tractable and differentiable by constructing and analyzing a variational objective based on an adaptive Gaussian mixture prior. Our empirical analysis shows that this variational objective selects for a low-complexity solution with strong generalization on an algorithmic task, but standard optimizers fail to find such solutions from a random initialization, highlighting key optimization challenges. More broadly, by providing a theoretical framework for identifying description length objectives with strong asymptotic guarantees, we outline a potential path towards training neural networks that achieve greater compression and generalization.
 ]]></content:encoded>
-<pubDate>Tue, 30 Sep 2025 00:00:00 -0400</pubDate>
 <pubDate>Tue, 30 Sep 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -235,12 +221,11 @@ Abstract: The Minimum Description Length (MDL) principle offers a formal framewo
 <guid>https://arxiv.org/abs/2505.17914</guid>
 <content:encoded><![CDATA[
 <div> autoregressive model, metal-organic frameworks, deep generative models, cheminformatics toolkit, 3D structure initialization 
-Summary:<br><br>The study introduces a two-stage framework for generating metal-organic frameworks (MOFs) by incorporating chemical and geometric aspects. Initially, an autoregressive model based on SMILES generates metal and organic building blocks, supported by cheminformatics tools for 3D structure initialization. Subsequently, a flow matching model predicts translations, rotations, and torsional angles to construct valid 3D frameworks. The framework demonstrates enhanced reconstruction accuracy, facilitates the generation of novel and distinct MOFs, and enables the creation of unique building blocks. The research addresses limitations in existing models by allowing the design of novel MOFs and the utilization of unfamiliar building blocks, offering potential advancements in MOF discovery and design. 
+Summary:<br /><br />The study introduces a two-stage framework for generating metal-organic frameworks (MOFs) by incorporating chemical and geometric aspects. Initially, an autoregressive model based on SMILES generates metal and organic building blocks, supported by cheminformatics tools for 3D structure initialization. Subsequently, a flow matching model predicts translations, rotations, and torsional angles to construct valid 3D frameworks. The framework demonstrates enhanced reconstruction accuracy, facilitates the generation of novel and distinct MOFs, and enables the creation of unique building blocks. The research addresses limitations in existing models by allowing the design of novel MOFs and the utilization of unfamiliar building blocks, offering potential advancements in MOF discovery and design. 
 Summary: <div>
 arXiv:2505.17914v3 Announce Type: replace-cross 
 Abstract: Designing metal-organic frameworks (MOFs) with novel chemistries is a longstanding challenge due to their large combinatorial space and complex 3D arrangements of the building blocks. While recent deep generative models have enabled scalable MOF generation, they assume (1) a fixed set of building blocks and (2) known local 3D coordinates of building blocks. However, this limits their ability to (1) design novel MOFs and (2) generate the structure using novel building blocks. We propose a two-stage MOF generation framework that overcomes these limitations by modeling both chemical and geometric degrees of freedom. First, we train an SMILES-based autoregressive model to generate metal and organic building blocks, paired with a cheminformatics toolkit for 3D structure initialization. Second, we introduce a flow matching model that predicts translations, rotations, and torsional angles to assemble the blocks into valid 3D frameworks. Our experiments demonstrate improved reconstruction accuracy, the generation of valid, novel, and unique MOFs, and the ability to create novel building blocks. Our code is available at https://github.com/nayoung10/MOFFlow-2.
 ]]></content:encoded>
-<pubDate>Tue, 30 Sep 2025 00:00:00 -0400</pubDate>
 <pubDate>Tue, 30 Sep 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -255,7 +240,6 @@ arXiv:2509.01728v3 Announce Type: replace-cross
 Abstract: Recent advances in the development of robotic foundation models have led to promising end-to-end and general-purpose capabilities in robotic systems. Trained on vast datasets of simulated and real-world trajectories, these models map multimodal observations directly to action sequences for physical execution. Despite promising real-world capabilities, these models are still data-driven and, therefore, lack explicit notions of behavioral correctness. We address this gap by introducing SafeDec, a constrained decoding framework for autoregressive, robot foundation models that enforces invariant safety specifications on candidate action trajectories. Task-specific safety rules are expressed as Signal Temporal Logic (STL) formulas and are enforced at inference time with minimal overhead. Our method ensures that generated actions provably satisfy STL specifications under assumed dynamics at runtime without retraining , while remaining agnostic of the underlying policy. We evaluate SafeDec on tasks from the CHORES benchmark for state-of-the-art generalist policies (e.g., SPOC, Flare, PoliFormer) across hundreds of procedurally generated environments and show that our decoding-time interventions are useful not only for filtering unsafe actions but also for conditional action generation. Videos are available at constrained-robot-fms.github.io.
 ]]></content:encoded>
 <pubDate>Tue, 30 Sep 2025 00:00:00 -0400</pubDate>
-<pubDate>Tue, 30 Sep 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
 <title>HUNT: High-Speed UAV Navigation and Tracking in Unstructured Environments via Instantaneous Relative Frames</title>
@@ -265,11 +249,10 @@ Abstract: Recent advances in the development of robotic foundation models have l
 <div> Keywords: search and rescue, unmanned aerial vehicles, relative navigation, high-speed flight, real-time framework
 
 Summary:
-HUNT (High-speed UAV Navigation and Tracking) addresses the challenge of search and rescue operations by combining traversal, acquisition, and tracking in a single real-time framework. This innovative approach enables unmanned aerial vehicles to navigate unknown environments at high speed and track targets efficiently. The system defines navigation objectives based on onboard sensors, allowing for reactive flight during search operations. When a target is detected, the framework smoothly transitions to tracking mode using a perception-control pipeline. Outdoor experiments in various scenarios, including dense forests and container compounds, have demonstrated the robustness of HUNT in comparison to traditional global methods. This integrated system showcases the potential for autonomous UAV operations in challenging environments, providing crucial support in search and rescue missions.<br><br>Summary: HUNT integrates traversal, acquisition, and tracking for search and rescue operations using UAVs, enabling high-speed flight and robust target tracking. The system defines navigation objectives based on onboard sensors, allowing for reactive flight during search operations. The framework seamlessly transitions to tracking mode when a target is detected. Outdoor experiments in various scenarios have demonstrated the robustness of HUNT in comparison to traditional global methods. <div>
+HUNT (High-speed UAV Navigation and Tracking) addresses the challenge of search and rescue operations by combining traversal, acquisition, and tracking in a single real-time framework. This innovative approach enables unmanned aerial vehicles to navigate unknown environments at high speed and track targets efficiently. The system defines navigation objectives based on onboard sensors, allowing for reactive flight during search operations. When a target is detected, the framework smoothly transitions to tracking mode using a perception-control pipeline. Outdoor experiments in various scenarios, including dense forests and container compounds, have demonstrated the robustness of HUNT in comparison to traditional global methods. This integrated system showcases the potential for autonomous UAV operations in challenging environments, providing crucial support in search and rescue missions.<br /><br />Summary: HUNT integrates traversal, acquisition, and tracking for search and rescue operations using UAVs, enabling high-speed flight and robust target tracking. The system defines navigation objectives based on onboard sensors, allowing for reactive flight during search operations. The framework seamlessly transitions to tracking mode when a target is detected. Outdoor experiments in various scenarios have demonstrated the robustness of HUNT in comparison to traditional global methods. <div>
 arXiv:2509.19452v3 Announce Type: replace-cross 
 Abstract: Search and rescue operations require unmanned aerial vehicles to both traverse unknown unstructured environments at high speed and track targets once detected. Achieving both capabilities under degraded sensing and without global localization remains an open challenge. Recent works on relative navigation have shown robust tracking by anchoring planning and control to a visible detected object, but cannot address navigation when no target is in the field of view. We present HUNT (High-speed UAV Navigation and Tracking), a real-time framework that unifies traversal, acquisition, and tracking within a single relative formulation. HUNT defines navigation objectives directly from onboard instantaneous observables such as attitude, altitude, and velocity, enabling reactive high-speed flight during search. Once a target is detected, the same perception-control pipeline transitions seamlessly to tracking. Outdoor experiments in dense forests, container compounds, and search-and-rescue operations with vehicles and mannequins demonstrate robust autonomy where global methods fail.
 ]]></content:encoded>
-<pubDate>Tue, 30 Sep 2025 00:00:00 -0400</pubDate>
 <pubDate>Tue, 30 Sep 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -279,11 +262,10 @@ Abstract: Search and rescue operations require unmanned aerial vehicles to both 
 <content:encoded><![CDATA[
 <div> Transformer-Based Diffusion Model, Physical Interaction, Impedance Control, Energy-Based Estimator, Robot Controller
 Summary:
-The research presents Diffusion-Based Impedance Learning, a framework combining motion generation and physical interaction control. Using a Transformer-based model with cross-attention, the system reconstructs a simulated Zero-Force Trajectory (sZFT) capturing both translational and rotational behavior. A novel quaternion noise scheduler ensures geometric consistency in rotations. An energy-based estimator updates stiffness and damping parameters based on the sZFT. A directional rule adjusts impedance parameters for task-aware tuning. Training on a parkour scenario and robotic therapy tasks achieved high accuracy with limited data. The compact model enables real-time torque control on a robotic arm. The controller successfully navigated parkour obstacles and performed peg insertions without task-specific demonstrations. This work bridges model-based control for physical interaction with learning-based trajectory generation, advancing towards Physical AI. <br><br>Summary: <div>
+The research presents Diffusion-Based Impedance Learning, a framework combining motion generation and physical interaction control. Using a Transformer-based model with cross-attention, the system reconstructs a simulated Zero-Force Trajectory (sZFT) capturing both translational and rotational behavior. A novel quaternion noise scheduler ensures geometric consistency in rotations. An energy-based estimator updates stiffness and damping parameters based on the sZFT. A directional rule adjusts impedance parameters for task-aware tuning. Training on a parkour scenario and robotic therapy tasks achieved high accuracy with limited data. The compact model enables real-time torque control on a robotic arm. The controller successfully navigated parkour obstacles and performed peg insertions without task-specific demonstrations. This work bridges model-based control for physical interaction with learning-based trajectory generation, advancing towards Physical AI. <br /><br />Summary: <div>
 arXiv:2509.19696v2 Announce Type: replace-cross 
 Abstract: Learning methods excel at motion generation in the information domain but are not primarily designed for physical interaction in the energy domain. Impedance Control shapes physical interaction but requires task-aware tuning by selecting feasible impedance parameters. We present Diffusion-Based Impedance Learning, a framework that combines both domains. A Transformer-based Diffusion Model with cross-attention to external wrenches reconstructs a simulated Zero-Force Trajectory (sZFT). This captures both translational and rotational task-space behavior. For rotations, we introduce a novel SLERP-based quaternion noise scheduler that ensures geometric consistency. The reconstructed sZFT is then passed to an energy-based estimator that updates stiffness and damping parameters. A directional rule is applied that reduces impedance along non task axes while preserving rigidity along task directions. Training data were collected for a parkour scenario and robotic-assisted therapy tasks using teleoperation with Apple Vision Pro. With only tens of thousands of samples, the model achieved sub-millimeter positional accuracy and sub-degree rotational accuracy. Its compact model size enabled real-time torque control and autonomous stiffness adaptation on a KUKA LBR iiwa robot. The controller achieved smooth parkour traversal within force and velocity limits and 30/30 success rates for cylindrical, square, and star peg insertions without any peg-specific demonstrations in the training data set. All code for the Transformer-based Diffusion Model, the robot controller, and the Apple Vision Pro telemanipulation framework is publicly available. These results mark an important step towards Physical AI, fusing model-based control for physical interaction with learning-based methods for trajectory generation.
 ]]></content:encoded>
-<pubDate>Tue, 30 Sep 2025 00:00:00 -0400</pubDate>
 <pubDate>Tue, 30 Sep 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -299,7 +281,6 @@ arXiv:2509.20603v2 Announce Type: replace-cross
 Abstract: Generative Artificial Intelligence (GenAI) applications are built from specialized components -- inference servers, object storage, vector and graph databases, and user interfaces -- interconnected via web-based APIs. While these components are often containerized and deployed in cloud environments, such capabilities are still emerging at High-Performance Computing (HPC) centers. In this paper, we share our experience deploying GenAI workloads within an established HPC center, discussing the integration of HPC and cloud computing environments. We describe our converged computing architecture that integrates HPC and Kubernetes platforms running containerized GenAI workloads, helping with reproducibility. A case study illustrates the deployment of the Llama Large Language Model (LLM) using a containerized inference server (vLLM) across both Kubernetes and HPC platforms using multiple container runtimes. Our experience highlights practical considerations and opportunities for the HPC container community, guiding future research and tool development.
 ]]></content:encoded>
 <pubDate>Tue, 30 Sep 2025 00:00:00 -0400</pubDate>
-<pubDate>Tue, 30 Sep 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
 <title>Identifying Group Anchors in Real-World Group Interactions Under Label Scarcity</title>
@@ -311,11 +292,10 @@ Abstract: Generative Artificial Intelligence (GenAI) applications are built from
 Summary:
 Group interactions in various real-world contexts often have significant individuals known as group anchors, around whom the group is formed. This study introduces the concept of group anchors and discusses their importance in real-world interactions. The researchers developed AnchorRadar, a semi-supervised method for identifying group anchors, especially in situations with limited labeled data. Through experiments on thirteen real-world datasets, AnchorRadar demonstrated superior accuracy and efficiency compared to various baselines. It achieved higher accuracy in group anchor identification, while using significantly less training time and fewer parameters on average. The results highlight the effectiveness of AnchorRadar in identifying group anchors in real-world group interactions. 
 
-<br><br>Summary: <div>
+<br /><br />Summary: <div>
 arXiv:2509.20762v2 Announce Type: replace-cross 
 Abstract: Group interactions occur in various real-world contexts, e.g., co-authorship, email communication, and online Q&amp;A. In each group, there is often a particularly significant member, around whom the group is formed. Examples include the first or last author of a paper, the sender of an email, and the questioner in a Q&amp;A session. In this work, we discuss the existence of such individuals in real-world group interactions. We call such individuals group anchors and study the problem of identifying them. First, we introduce the concept of group anchors and the identification problem. Then, we discuss our observations on group anchors in real-world group interactions. Based on our observations, we develop AnchorRadar, a fast and effective method for group anchor identification under realistic settings with label scarcity, i.e., when only a few groups have known anchors. AnchorRadar is a semi-supervised method using information from groups both with and without known group anchors. Finally, through extensive experiments on thirteen real-world datasets, we demonstrate the empirical superiority of AnchorRadar over various baselines w.r.t. accuracy and efficiency. In most cases, AnchorRadar achieves higher accuracy in group anchor identification than all the baselines, while using 10.2$\times$ less training time than the fastest baseline and 43.6$\times$ fewer learnable parameters than the most lightweight baseline on average.
 ]]></content:encoded>
-<pubDate>Tue, 30 Sep 2025 00:00:00 -0400</pubDate>
 <pubDate>Tue, 30 Sep 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -330,7 +310,6 @@ arXiv:2509.20766v2 Announce Type: replace-cross
 Abstract: Multi-task reinforcement learning (MTRL) offers a promising approach to improve sample efficiency and generalization by training agents across multiple tasks, enabling knowledge sharing between them. However, applying MTRL to robotics remains challenging due to the high cost of collecting diverse task data. To address this, we propose MT-L\'evy, a novel exploration strategy that enhances sample efficiency in MTRL environments by combining behavior sharing across tasks with temporally extended exploration inspired by L\'evy flight. MT-L\'evy leverages policies trained on related tasks to guide exploration towards key states, while dynamically adjusting exploration levels based on task success ratios. This approach enables more efficient state-space coverage, even in complex robotics environments. Empirical results demonstrate that MT-L\'evy significantly improves exploration and sample efficiency, supported by quantitative and qualitative analyses. Ablation studies further highlight the contribution of each component, showing that combining behavior sharing with adaptive exploration strategies can significantly improve the practicality of MTRL in robotics applications.
 ]]></content:encoded>
 <pubDate>Tue, 30 Sep 2025 00:00:00 -0400</pubDate>
-<pubDate>Tue, 30 Sep 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
 <title>Combinatorial Creativity: A New Frontier in Generalization Abilities</title>
@@ -338,18 +317,17 @@ Abstract: Multi-task reinforcement learning (MTRL) offers a promising approach t
 <guid>https://arxiv.org/abs/2509.21043</guid>
 <content:encoded><![CDATA[
 <div> novelty, utility, large language models, combinatorial creativity, scaling behavior
-<br>
-Summary:<br>
+<br />
+Summary:<br />
 1. The article discusses how Large Language Models (LLMs) can be used for creative tasks like scientific idea generation, a form of combinatorial creativity (CC) not addressed by existing frameworks.
 2. A new theoretical framework and evaluation method based on novelty and utility are proposed for assessing creative outputs instead of traditional accuracy measures.
 3. Empirical findings reveal insights into the scaling behavior of creativity in LLMs, optimal model depths and widths for creative ability, and a tradeoff between novelty and utility.
 4. The ideation-execution gap observed in LLMs points to a fundamental challenge in balancing novelty and feasibility, impacting long-term creative potential.
 5. The study contributes to understanding and improving creativity in AI models, highlighting the need to bridge the gap between human and machine intelligence.
-<br> <div>
+<br /> <div>
 arXiv:2509.21043v2 Announce Type: replace-cross 
 Abstract: Artificial intelligence (AI) systems, and Large Language Models (LLMs) in particular, are increasingly employed for creative tasks like scientific idea generation, constituting a form of generalization from training data unaddressed by existing conceptual frameworks. Despite its similarities to compositional generalization (CG), combinatorial creativity (CC) is an open-ended ability. Instead of evaluating for accuracy or correctness against fixed targets, which would contradict the open-ended nature of CC, we propose a theoretical framework and algorithmic task for evaluating outputs by their degrees of novelty and utility. From here, we make several important empirical contributions: (1) We obtain the first insights into the scaling behavior of creativity for LLMs. (2) We discover that, for fixed compute budgets, there exist optimal model depths and widths for creative ability. (3) We find that the ideation-execution gap, whereby LLMs excel at generating novel scientific ideas but struggle to ensure their practical feasibility, may be explained by a more fundamental novelty-utility tradeoff characteristic of creativity algorithms in general. Importantly, this tradeoff remains persistent even at scale, casting doubt on the long-term creative potential of LLMs in their current form. Together, our conceptual framework and empirical findings provide a foundation for understanding and improving creativity in modern AI models, bridging the gap between human and machine intelligence.
 ]]></content:encoded>
-<pubDate>Tue, 30 Sep 2025 00:00:00 -0400</pubDate>
 <pubDate>Tue, 30 Sep 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -357,13 +335,12 @@ Abstract: Artificial intelligence (AI) systems, and Large Language Models (LLMs)
 <link>https://arxiv.org/abs/2509.21173</link>
 <guid>https://arxiv.org/abs/2509.21173</guid>
 <content:encoded><![CDATA[
-<div> quantization, CLIP, reliability metrics, calibration, OOD detection<br>
-Summary:<br>
-This study examines the impact of quantization on vision-language models like CLIP, focusing on in-distribution accuracy, calibration, and out-of-distribution (OOD) detection. The research reveals that quantization can enhance calibration for models that are typically underconfident during pre-training, while potentially degrading it for overconfident models. Surprisingly, despite reduced calibration, OOD detection performance can still improve in some cases with quantization. The study also identifies quantization-aware training (QAT) methods that can enhance zero-shot accuracy, calibration, and OOD robustness simultaneously, challenging the notion of a trade-off between efficiency and performance. These findings provide valuable insights for deploying efficient, reliable, and robust vision-language models by leveraging quantization beyond its traditional role. <br><br>Summary: <div>
+<div> quantization, CLIP, reliability metrics, calibration, OOD detection<br />
+Summary:<br />
+This study examines the impact of quantization on vision-language models like CLIP, focusing on in-distribution accuracy, calibration, and out-of-distribution (OOD) detection. The research reveals that quantization can enhance calibration for models that are typically underconfident during pre-training, while potentially degrading it for overconfident models. Surprisingly, despite reduced calibration, OOD detection performance can still improve in some cases with quantization. The study also identifies quantization-aware training (QAT) methods that can enhance zero-shot accuracy, calibration, and OOD robustness simultaneously, challenging the notion of a trade-off between efficiency and performance. These findings provide valuable insights for deploying efficient, reliable, and robust vision-language models by leveraging quantization beyond its traditional role. <br /><br />Summary: <div>
 arXiv:2509.21173v2 Announce Type: replace-cross 
 Abstract: The powerful zero-shot generalization capabilities of vision-language models (VLMs) like CLIP have enabled new paradigms for safety-related tasks such as out-of-distribution (OOD) detection. However, additional aspects crucial for the computationally efficient and reliable deployment of CLIP are still overlooked. In particular, the impact of quantization on CLIP's performance beyond accuracy remains underexplored. This work presents a large-scale evaluation of quantization on CLIP models, assessing not only in-distribution accuracy but a comprehensive suite of reliability metrics and revealing counterintuitive results driven by pre-training source. We demonstrate that quantization consistently improves calibration for typically underconfident pre-trained models, while often degrading it for overconfident variants. Intriguingly, this degradation in calibration does not preclude gains in other reliability metrics; we find that OOD detection can still improve for these same poorly calibrated models. Furthermore, we identify specific quantization-aware training (QAT) methods that yield simultaneous gains in zero-shot accuracy, calibration, and OOD robustness, challenging the view of a strict efficiency-performance trade-off. These findings offer critical insights for navigating the multi-objective problem of deploying efficient, reliable, and robust VLMs by utilizing quantization beyond its conventional role.
 ]]></content:encoded>
-<pubDate>Tue, 30 Sep 2025 00:00:00 -0400</pubDate>
 <pubDate>Tue, 30 Sep 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -372,13 +349,12 @@ Abstract: The powerful zero-shot generalization capabilities of vision-language 
 <guid>https://arxiv.org/abs/2509.21387</guid>
 <content:encoded><![CDATA[
 <div> pruning, neural networks, interpretability, saliency maps, concept representations
-<br>
+<br />
 Neural networks can be pruned while maintaining performance, but the impact on interpretability is not well understood. This study explores the effects of magnitude-based pruning and fine-tuning on saliency maps and concept representations in a ResNet-18 model trained on ImageNette. Results show that moderate pruning improves saliency-map focus and faithfulness while preserving distinct concepts. However, aggressive pruning leads to merging of features, reducing sparsity and concept coherence despite maintaining accuracy. The study suggests that pruning can enhance internal representations towards human-like attention patterns, but excessive pruning can compromise interpretability. The findings highlight the importance of balancing pruning levels to maintain both performance and interpretability in neural networks.
-<br><br>Summary: <div>
+<br /><br />Summary: <div>
 arXiv:2509.21387v2 Announce Type: replace-cross 
 Abstract: Prior works have shown that neural networks can be heavily pruned while preserving performance, but the impact of pruning on model interpretability remains unclear. In this work, we investigate how magnitude-based pruning followed by fine-tuning affects both low-level saliency maps and high-level concept representations. Using a ResNet-18 trained on ImageNette, we compare post-hoc explanations from Vanilla Gradients (VG) and Integrated Gradients (IG) across pruning levels, evaluating sparsity and faithfulness. We further apply CRAFT-based concept extraction to track changes in semantic coherence of learned concepts. Our results show that light-to-moderate pruning improves saliency-map focus and faithfulness while retaining distinct, semantically meaningful concepts. In contrast, aggressive pruning merges heterogeneous features, reducing saliency map sparsity and concept coherence despite maintaining accuracy. These findings suggest that while pruning can shape internal representations toward more human-aligned attention patterns, excessive pruning undermines interpretability.
 ]]></content:encoded>
-<pubDate>Tue, 30 Sep 2025 00:00:00 -0400</pubDate>
 <pubDate>Tue, 30 Sep 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -386,17 +362,16 @@ Abstract: Prior works have shown that neural networks can be heavily pruned whil
 <link>https://arxiv.org/abs/2509.21535</link>
 <guid>https://arxiv.org/abs/2509.21535</guid>
 <content:encoded><![CDATA[
-<div> agricultural chatbot, dataset, Kisan Call Center, sentence embedding model, entity extraction <br>
-Summary: <br>
+<div> agricultural chatbot, dataset, Kisan Call Center, sentence embedding model, entity extraction <br />
+Summary: <br />
 - An agricultural chatbot has been developed based on data from the Kisan Call Center in India to provide farmers with information on weather, market rates, plant protection, and government schemes, improving agricultural growth and output. 
 - The chatbot is accessible 24/7 through electronic devices and delivers information in an easily understandable manner. 
 - Utilizing a sentence embedding model, the chatbot achieves an accuracy of 56%, which increases to 86% after eliminating synonyms and incorporating entity extraction. 
 - This system streamlines information dissemination, making it easier for farmers to access farming-related knowledge and improving Call Center efficiency. 
-- Ultimately, the implementation of the chatbot can redirect manpower towards more productive goals within the agricultural sector. <br> <div>
+- Ultimately, the implementation of the chatbot can redirect manpower towards more productive goals within the agricultural sector. <br /> <div>
 arXiv:2509.21535v2 Announce Type: replace-cross 
 Abstract: India is an agro-based economy and proper information about agricultural practices is the key to optimal agricultural growth and output. In order to answer the queries of the farmer, we have build an agricultural chatbot based on the dataset from Kisan Call Center. This system is robust enough to answer queries related to weather, market rates, plant protection and government schemes. This system is available 24* 7, can be accessed through any electronic device and the information is delivered with the ease of understanding. The system is based on a sentence embedding model which gives an accuracy of 56%. After eliminating synonyms and incorporating entity extraction, the accuracy jumps to 86%. With such a system, farmers can progress towards easier information about farming related practices and hence a better agricultural output. The job of the Call Center workforce would be made easier and the hard work of various such workers can be redirected to a better goal.
 ]]></content:encoded>
-<pubDate>Tue, 30 Sep 2025 00:00:00 -0400</pubDate>
 <pubDate>Tue, 30 Sep 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -404,13 +379,12 @@ Abstract: India is an agro-based economy and proper information about agricultur
 <link>https://arxiv.org/abs/2509.21765</link>
 <guid>https://arxiv.org/abs/2509.21765</guid>
 <content:encoded><![CDATA[
-<div> consolidation, lifelong learning, neural solvers, routing problems, decision-seeking <br>
+<div> consolidation, lifelong learning, neural solvers, routing problems, decision-seeking <br />
 Summary:
-This paper introduces a novel lifelong learning paradigm for neural solvers in solving routing problems. Traditional methods train on predefined tasks, leading to poor generalization on new tasks or catastrophic forgetting when fine-tuning. The proposed framework, Lifelong Learning Router with Behavior Consolidation (LLR-BC), aims to consolidate prior knowledge by aligning behaviors with buffered decisions. It assigns greater weights to decisions with lower confidence to focus on crucial experiences. Extensive experiments on vehicle routing and traveling salesman problems show that LLR-CB effectively trains high-performance neural solvers in a lifelong learning setting. It addresses catastrophic forgetting, maintains plasticity, and improves zero-shot generalization ability. <br> <div>
+This paper introduces a novel lifelong learning paradigm for neural solvers in solving routing problems. Traditional methods train on predefined tasks, leading to poor generalization on new tasks or catastrophic forgetting when fine-tuning. The proposed framework, Lifelong Learning Router with Behavior Consolidation (LLR-BC), aims to consolidate prior knowledge by aligning behaviors with buffered decisions. It assigns greater weights to decisions with lower confidence to focus on crucial experiences. Extensive experiments on vehicle routing and traveling salesman problems show that LLR-CB effectively trains high-performance neural solvers in a lifelong learning setting. It addresses catastrophic forgetting, maintains plasticity, and improves zero-shot generalization ability. <br /> <div>
 arXiv:2509.21765v2 Announce Type: replace-cross 
 Abstract: Recent neural solvers have demonstrated promising performance in learning to solve routing problems. However, existing studies are primarily based on one-off training on one or a set of predefined problem distributions and scales, i.e., tasks. When a new task arises, they typically rely on either zero-shot generalization, which may be poor due to the discrepancies between the new task and the training task(s), or fine-tuning the pretrained solver on the new task, which possibly leads to catastrophic forgetting of knowledge acquired from previous tasks. This paper explores a novel lifelong learning paradigm for neural VRP solvers, where multiple tasks with diverse distributions and scales arise sequentially over time. Solvers are required to effectively and efficiently learn to solve new tasks while maintaining their performance on previously learned tasks. Consequently, a novel framework called Lifelong Learning Router with Behavior Consolidation (LLR-BC) is proposed. LLR-BC consolidates prior knowledge effectively by aligning behaviors of the solver trained on a new task with the buffered ones in a decision-seeking way. To encourage more focus on crucial experiences, LLR-BC assigns greater consolidated weights to decisions with lower confidence. Extensive experiments on capacitated vehicle routing problems and traveling salesman problems demonstrate LLR-BC's effectiveness in training high-performance neural solvers in a lifelong learning setting, addressing the catastrophic forgetting issue, maintaining their plasticity, and improving zero-shot generalization ability.
 ]]></content:encoded>
-<pubDate>Tue, 30 Sep 2025 00:00:00 -0400</pubDate>
 <pubDate>Tue, 30 Sep 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -418,16 +392,14 @@ Abstract: Recent neural solvers have demonstrated promising performance in learn
 <link>https://arxiv.org/abs/2509.21943</link>
 <guid>https://arxiv.org/abs/2509.21943</guid>
 <content:encoded><![CDATA[
-<div> SPM, statistical parametric mapping, machine learning, plantar pressure, outlier detection <br>
-Summary:<br>
-Plantar pressure mapping is crucial for clinical diagnostics and sports science, but datasets often contain outliers. A study compared Statistical Parametric Mapping (SPM) with explainable machine learning for outlier detection in plantar pressure data. The machine learning model, utilizing SHapley Additive exPlanations (SHAP), outperformed SPM in accuracy, detecting clinically meaningful variations and true outliers. Both SPM and SHAP explanations were perceived as clear, useful, and trustworthy by experts, with SPM being assessed as less complex. The study demonstrates the potential of combining SPM and explainable machine learning for automated outlier detection in plantar pressure data, emphasizing the importance of explainability in translating complex model outputs into accessible insights for decision-making. <br> <div>
+<div> SPM, statistical parametric mapping, machine learning, plantar pressure, outlier detection <br />
+Summary:<br />
+Plantar pressure mapping is crucial for clinical diagnostics and sports science, but datasets often contain outliers. A study compared Statistical Parametric Mapping (SPM) with explainable machine learning for outlier detection in plantar pressure data. The machine learning model, utilizing SHapley Additive exPlanations (SHAP), outperformed SPM in accuracy, detecting clinically meaningful variations and true outliers. Both SPM and SHAP explanations were perceived as clear, useful, and trustworthy by experts, with SPM being assessed as less complex. The study demonstrates the potential of combining SPM and explainable machine learning for automated outlier detection in plantar pressure data, emphasizing the importance of explainability in translating complex model outputs into accessible insights for decision-making. <br /> <div>
 arXiv:2509.21943v2 Announce Type: replace-cross 
 Abstract: Plantar pressure mapping is essential in clinical diagnostics and sports science, yet large heterogeneous datasets often contain outliers from technical errors or procedural inconsistencies. Statistical Parametric Mapping (SPM) provides interpretable analyses but is sensitive to alignment and its capacity for robust outlier detection remains unclear. This study compares an SPM approach with an explainable machine learning (ML) approach to establish transparent quality-control pipelines for plantar pressure datasets. Data from multiple centers were annotated by expert consensus and enriched with synthetic anomalies resulting in 798 valid samples and 2000 outliers. We evaluated (i) a non-parametric, registration-dependent SPM approach and (ii) a convolutional neural network (CNN), explained using SHapley Additive exPlanations (SHAP). Performance was assessed via nested cross-validation; explanation quality via a semantic differential survey with domain experts. The ML model reached high accuracy and outperformed SPM, which misclassified clinically meaningful variations and missed true outliers. Experts perceived both SPM and SHAP explanations as clear, useful, and trustworthy, though SPM was assessed less complex. These findings highlight the complementary potential of SPM and explainable ML as approaches for automated outlier detection in plantar pressure data, and underscore the importance of explainability in translating complex model outputs into interpretable insights that can effectively inform decision-making.
 ]]></content:encoded>
 <pubDate>Tue, 30 Sep 2025 00:00:00 -0400</pubDate>
-<pubDate>Tue, 30 Sep 2025 00:00:00 -0400</pubDate>
 </item>
-
 <item>
 <title>Localizing Adversarial Attacks To Produces More Imperceptible Noise</title>
 <link>https://arxiv.org/abs/2509.22710</link>
@@ -10634,286 +10606,6 @@ Abstract: Large language models rely on attention mechanisms with a softmax acti
 <content:encoded><![CDATA[
 arXiv:2509.21942v1 Announce Type: new 
 Abstract: Diffusion-based generative methods have shown promising potential for modeling trajectories from offline reinforcement learning (RL) datasets, and hierarchical diffusion has been introduced to mitigate variance accumulation and computational challenges in long-horizon planning tasks. However, existing approaches typically assume a fixed two-layer diffusion hierarchy with a single predefined temporal scale, which limits adaptability to diverse downstream tasks and reduces flexibility in decision making. In this work, we propose SIHD, a novel Structural Information-based Hierarchical Diffusion framework for effective and stable offline policy learning in long-horizon environments with sparse rewards. Specifically, we analyze structural information embedded in offline trajectories to construct the diffusion hierarchy adaptively, enabling flexible trajectory modeling across multiple temporal scales. Rather than relying on reward predictions from localized sub-trajectories, we quantify the structural information gain of each state community and use it as a conditioning signal within the corresponding diffusion layer. To reduce overreliance on offline datasets, we introduce a structural entropy regularizer that encourages exploration of underrepresented states while avoiding extrapolation errors from distributional shifts. Extensive evaluations on challenging offline RL tasks show that SIHD significantly outperforms state-of-the-art baselines in decision-making performance and demonstrates superior generalization across diverse scenarios.
-]]></content:encoded>
-<pubDate>Mon, 29 Sep 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Active Attacks: Red-teaming LLMs via Adaptive Environments</title>
-<link>https://arxiv.org/abs/2509.21947</link>
-<guid>https://arxiv.org/abs/2509.21947</guid>
-<content:encoded><![CDATA[
-arXiv:2509.21947v1 Announce Type: new 
-Abstract: We address the challenge of generating diverse attack prompts for large language models (LLMs) that elicit harmful behaviors (e.g., insults, sexual content) and are used for safety fine-tuning. Rather than relying on manual prompt engineering, attacker LLMs can be trained with reinforcement learning (RL) to automatically generate such prompts using only a toxicity classifier as a reward. However, capturing a wide range of harmful behaviors is a significant challenge that requires explicit diversity objectives. Existing diversity-seeking RL methods often collapse to limited modes: once high-reward prompts are found, exploration of new regions is discouraged. Inspired by the active learning paradigm that encourages adaptive exploration, we introduce \textit{Active Attacks}, a novel RL-based red-teaming algorithm that adapts its attacks as the victim evolves. By periodically safety fine-tuning the victim LLM with collected attack prompts, rewards in exploited regions diminish, which forces the attacker to seek unexplored vulnerabilities. This process naturally induces an easy-to-hard exploration curriculum, where the attacker progresses beyond easy modes toward increasingly difficult ones. As a result, Active Attacks uncovers a wide range of local attack modes step by step, and their combination achieves wide coverage of the multi-mode distribution. Active Attacks, a simple plug-and-play module that seamlessly integrates into existing RL objectives, unexpectedly outperformed prior RL-based methods -- including GFlowNets, PPO, and REINFORCE -- by improving cross-attack success rates against GFlowNets, the previous state-of-the-art, from 0.07% to 31.28% (a relative gain greater than $400\ \times$) with only a 6% increase in computation. Our code is publicly available \href{https://github.com/dbsxodud-11/active_attacks}{here}.
-]]></content:encoded>
-<pubDate>Mon, 29 Sep 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Think Smart, Not Hard: Difficulty Adaptive Reasoning for Large Audio Language Models</title>
-<link>https://arxiv.org/abs/2509.21960</link>
-<guid>https://arxiv.org/abs/2509.21960</guid>
-<content:encoded><![CDATA[
-arXiv:2509.21960v1 Announce Type: new 
-Abstract: Large Audio Language Models (LALMs), powered by the chain-of-thought (CoT) paradigm, have shown remarkable reasoning capabilities. Intuitively, different problems often require varying depths of reasoning. While some methods can determine whether to reason for a given problem, they typically lack a fine-grained mechanism to modulate how much to reason. This often results in a ``one-size-fits-all'' reasoning depth, which generates redundant overthinking for simple questions while failing to allocate sufficient thought to complex ones. In this paper, we conduct an in-depth analysis of LALMs and find that an effective and efficient LALM should reason smartly by adapting its reasoning depth to the problem's complexity. To achieve this, we propose a difficulty-adaptive reasoning method for LALMs. Specifically, we propose a reward function that dynamically links reasoning length to the model's perceived problem difficulty. This reward encourages shorter, concise reasoning for easy tasks and more elaborate, in-depth reasoning for complex ones. Extensive experiments demonstrate that our method is both effective and efficient, simultaneously improving task performance and significantly reducing the average reasoning length. Further analysis on reasoning structure paradigm offers valuable insights for future work.
-]]></content:encoded>
-<pubDate>Mon, 29 Sep 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>GRAM-TDI: adaptive multimodal representation learning for drug target interaction prediction</title>
-<link>https://arxiv.org/abs/2509.21971</link>
-<guid>https://arxiv.org/abs/2509.21971</guid>
-<content:encoded><![CDATA[
-arXiv:2509.21971v1 Announce Type: new 
-Abstract: Drug target interaction (DTI) prediction is a cornerstone of computational drug discovery, enabling rational design, repurposing, and mechanistic insights. While deep learning has advanced DTI modeling, existing approaches primarily rely on SMILES protein pairs and fail to exploit the rich multimodal information available for small molecules and proteins. We introduce GRAMDTI, a pretraining framework that integrates multimodal molecular and protein inputs into unified representations. GRAMDTI extends volume based contrastive learning to four modalities, capturing higher-order semantic alignment beyond conventional pairwise approaches. To handle modality informativeness, we propose adaptive modality dropout, dynamically regulating each modality's contribution during pre-training. Additionally, IC50 activity measurements, when available, are incorporated as weak supervision to ground representations in biologically meaningful interaction strengths. Experiments on four publicly available datasets demonstrate that GRAMDTI consistently outperforms state of the art baselines. Our results highlight the benefits of higher order multimodal alignment, adaptive modality utilization, and auxiliary supervision for robust and generalizable DTI prediction.
-]]></content:encoded>
-<pubDate>Mon, 29 Sep 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Stage-wise Dynamics of Classifier-Free Guidance in Diffusion Models</title>
-<link>https://arxiv.org/abs/2509.22007</link>
-<guid>https://arxiv.org/abs/2509.22007</guid>
-<content:encoded><![CDATA[
-arXiv:2509.22007v1 Announce Type: new 
-Abstract: Classifier-Free Guidance (CFG) is widely used to improve conditional fidelity in diffusion models, but its impact on sampling dynamics remains poorly understood. Prior studies, often restricted to unimodal conditional distributions or simplified cases, provide only a partial picture. We analyze CFG under multimodal conditionals and show that the sampling process unfolds in three successive stages. In the Direction Shift stage, guidance accelerates movement toward the weighted mean, introducing initialization bias and norm growth. In the Mode Separation stage, local dynamics remain largely neutral, but the inherited bias suppresses weaker modes, reducing global diversity. In the Concentration stage, guidance amplifies within-mode contraction, diminishing fine-grained variability. This unified view explains a widely observed phenomenon: stronger guidance improves semantic alignment but inevitably reduces diversity. Experiments support these predictions, showing that early strong guidance erodes global diversity, while late strong guidance suppresses fine-grained variation. Moreover, our theory naturally suggests a time-varying guidance schedule, and empirical results confirm that it consistently improves both quality and diversity.
-]]></content:encoded>
-<pubDate>Mon, 29 Sep 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Goal-Guided Efficient Exploration via Large Language Model in Reinforcement Learning</title>
-<link>https://arxiv.org/abs/2509.22008</link>
-<guid>https://arxiv.org/abs/2509.22008</guid>
-<content:encoded><![CDATA[
-arXiv:2509.22008v1 Announce Type: new 
-Abstract: Real-world decision-making tasks typically occur in complex and open environments, posing significant challenges to reinforcement learning (RL) agents' exploration efficiency and long-horizon planning capabilities. A promising approach is LLM-enhanced RL, which leverages the rich prior knowledge and strong planning capabilities of LLMs to guide RL agents in efficient exploration. However, existing methods mostly rely on frequent and costly LLM invocations and suffer from limited performance due to the semantic mismatch. In this paper, we introduce a Structured Goal-guided Reinforcement Learning (SGRL) method that integrates a structured goal planner and a goal-conditioned action pruner to guide RL agents toward efficient exploration. Specifically, the structured goal planner utilizes LLMs to generate a reusable, structured function for goal generation, in which goals are prioritized. Furthermore, by utilizing LLMs to determine goals' priority weights, it dynamically generates forward-looking goals to guide the agent's policy toward more promising decision-making trajectories. The goal-conditioned action pruner employs an action masking mechanism that filters out actions misaligned with the current goal, thereby constraining the RL agent to select goal-consistent policies. We evaluate the proposed method on Crafter and Craftax-Classic, and experimental results demonstrate that SGRL achieves superior performance compared to existing state-of-the-art methods.
-]]></content:encoded>
-<pubDate>Mon, 29 Sep 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Concept-SAE: Active Causal Probing of Visual Model Behavior</title>
-<link>https://arxiv.org/abs/2509.22015</link>
-<guid>https://arxiv.org/abs/2509.22015</guid>
-<content:encoded><![CDATA[
-arXiv:2509.22015v1 Announce Type: new 
-Abstract: Standard Sparse Autoencoders (SAEs) excel at discovering a dictionary of a model's learned features, offering a powerful observational lens. However, the ambiguous and ungrounded nature of these features makes them unreliable instruments for the active, causal probing of model behavior. To solve this, we introduce Concept-SAE, a framework that forges semantically grounded concept tokens through a novel hybrid disentanglement strategy. We first quantitatively demonstrate that our dual-supervision approach produces tokens that are remarkably faithful and spatially localized, outperforming alternative methods in disentanglement. This validated fidelity enables two critical applications: (1) we probe the causal link between internal concepts and predictions via direct intervention, and (2) we probe the model's failure modes by systematically localizing adversarial vulnerabilities to specific layers. Concept-SAE provides a validated blueprint for moving beyond correlational interpretation to the mechanistic, causal probing of model behavior.
-]]></content:encoded>
-<pubDate>Mon, 29 Sep 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>AEGIS: Authentic Edge Growth In Sparsity for Link Prediction in Edge-Sparse Bipartite Knowledge Graphs</title>
-<link>https://arxiv.org/abs/2509.22017</link>
-<guid>https://arxiv.org/abs/2509.22017</guid>
-<content:encoded><![CDATA[
-arXiv:2509.22017v1 Announce Type: new 
-Abstract: Bipartite knowledge graphs in niche domains are typically data-poor and edge-sparse, which hinders link prediction. We introduce AEGIS (Authentic Edge Growth In Sparsity), an edge-only augmentation framework that resamples existing training edges -either uniformly simple or with inverse-degree bias degree-aware -thereby preserving the original node set and sidestepping fabricated endpoints. To probe authenticity across regimes, we consider naturally sparse graphs (game design pattern's game-pattern network) and induce sparsity in denser benchmarks (Amazon, MovieLens) via high-rate bond percolation. We evaluate augmentations on two complementary metrics: AUC-ROC (higher is better) and the Brier score (lower is better), using two-tailed paired t-tests against sparse baselines. On Amazon and MovieLens, copy-based AEGIS variants match the baseline while the semantic KNN augmentation is the only method that restores AUC and calibration; random and synthetic edges remain detrimental. On the text-rich GDP graph, semantic KNN achieves the largest AUC improvement and Brier score reduction, and simple also lowers the Brier score relative to the sparse control. These findings position authenticity-constrained resampling as a data-efficient strategy for sparse bipartite link prediction, with semantic augmentation providing an additional boost when informative node descriptions are available.
-]]></content:encoded>
-<pubDate>Mon, 29 Sep 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Task-Adaptive Parameter-Efficient Fine-Tuning for Weather Foundation Models</title>
-<link>https://arxiv.org/abs/2509.22020</link>
-<guid>https://arxiv.org/abs/2509.22020</guid>
-<content:encoded><![CDATA[
-arXiv:2509.22020v1 Announce Type: new 
-Abstract: While recent advances in machine learning have equipped Weather Foundation Models (WFMs) with substantial generalization capabilities across diverse downstream tasks, the escalating computational requirements associated with their expanding scale increasingly hinder practical deployment. Current Parameter-Efficient Fine-Tuning (PEFT) methods, designed for vision or language tasks, fail to address the unique challenges of weather downstream tasks, such as variable heterogeneity, resolution diversity, and spatiotemporal coverage variations, leading to suboptimal performance when applied to WFMs. To bridge this gap, we introduce WeatherPEFT, a novel PEFT framework for WFMs incorporating two synergistic innovations. First, during the forward pass, Task-Adaptive Dynamic Prompting (TADP) dynamically injects the embedding weights within the encoder to the input tokens of the pre-trained backbone via internal and external pattern extraction, enabling context-aware feature recalibration for specific downstream tasks. Furthermore, during backpropagation, Stochastic Fisher-Guided Adaptive Selection (SFAS) not only leverages Fisher information to identify and update the most task-critical parameters, thereby preserving invariant pre-trained knowledge, but also introduces randomness to stabilize the selection. We demonstrate the effectiveness and efficiency of WeatherPEFT on three downstream tasks, where existing PEFT methods show significant gaps versus Full-Tuning, and WeatherPEFT achieves performance parity with Full-Tuning using fewer trainable parameters. The code of this work will be released.
-]]></content:encoded>
-<pubDate>Mon, 29 Sep 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Teaching Transformers to Solve Combinatorial Problems through Efficient Trial &amp; Error</title>
-<link>https://arxiv.org/abs/2509.22023</link>
-<guid>https://arxiv.org/abs/2509.22023</guid>
-<content:encoded><![CDATA[
-arXiv:2509.22023v1 Announce Type: new 
-Abstract: Despite their proficiency in various language tasks, Large Language Models (LLMs) struggle with combinatorial problems like Satisfiability, Traveling Salesman Problem, or even basic arithmetic. We address this gap through a novel approach for solving problems in the class NP. We focus on the paradigmatic task of Sudoku and achieve state-of-the-art accuracy (99\%) compared to prior neuro-symbolic approaches. Unlike prior work that used custom architectures, our method employs a vanilla decoder-only Transformer (GPT-2) without external tools or function calling. Our method integrates imitation learning of simple Sudoku rules with an explicit Depth-First Search (DFS) exploration strategy involving informed guessing and backtracking. Moving beyond imitation learning, we seek to minimize the number of guesses until reaching a solution. We provide a rigorous analysis of this setup formalizing its connection to a contextual variant of Min-Sum Set Cover, a well-studied problem in algorithms and stochastic optimization.
-]]></content:encoded>
-<pubDate>Mon, 29 Sep 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>MCGM: Multi-stage Clustered Global Modeling for Long-range Interactions in Molecules</title>
-<link>https://arxiv.org/abs/2509.22028</link>
-<guid>https://arxiv.org/abs/2509.22028</guid>
-<content:encoded><![CDATA[
-arXiv:2509.22028v1 Announce Type: new 
-Abstract: Geometric graph neural networks (GNNs) excel at capturing molecular geometry, yet their locality-biased message passing hampers the modeling of long-range interactions. Current solutions have fundamental limitations: extending cutoff radii causes computational costs to scale cubically with distance; physics-inspired kernels (e.g., Coulomb, dispersion) are often system-specific and lack generality; Fourier-space methods require careful tuning of multiple parameters (e.g., mesh size, k-space cutoff) with added computational overhead. We introduce Multi-stage Clustered Global Modeling (MCGM), a lightweight, plug-and-play module that endows geometric GNNs with hierarchical global context through efficient clustering operations. MCGM builds a multi-resolution hierarchy of atomic clusters, distills global information via dynamic hierarchical clustering, and propagates this context back through learned transformations, ultimately reinforcing atomic features via residual connections. Seamlessly integrated into four diverse backbone architectures, MCGM reduces OE62 energy prediction error by an average of 26.2%. On AQM, MCGM achieves state-of-the-art accuracy (17.0 meV for energy, 4.9 meV/{\AA} for forces) while using 20% fewer parameters than Neural P3M. Code will be made available upon acceptance.
-]]></content:encoded>
-<pubDate>Mon, 29 Sep 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>OrtSAE: Orthogonal Sparse Autoencoders Uncover Atomic Features</title>
-<link>https://arxiv.org/abs/2509.22033</link>
-<guid>https://arxiv.org/abs/2509.22033</guid>
-<content:encoded><![CDATA[
-arXiv:2509.22033v1 Announce Type: new 
-Abstract: Sparse autoencoders (SAEs) are a technique for sparse decomposition of neural network activations into human-interpretable features. However, current SAEs suffer from feature absorption, where specialized features capture instances of general features creating representation holes, and feature composition, where independent features merge into composite representations. In this work, we introduce Orthogonal SAE (OrtSAE), a novel approach aimed to mitigate these issues by enforcing orthogonality between the learned features. By implementing a new training procedure that penalizes high pairwise cosine similarity between SAE features, OrtSAE promotes the development of disentangled features while scaling linearly with the SAE size, avoiding significant computational overhead. We train OrtSAE across different models and layers and compare it with other methods. We find that OrtSAE discovers 9% more distinct features, reduces feature absorption (by 65%) and composition (by 15%), improves performance on spurious correlation removal (+6%), and achieves on-par performance for other downstream tasks compared to traditional SAEs.
-]]></content:encoded>
-<pubDate>Mon, 29 Sep 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Latent Diffusion : Multi-Dimension Stable Diffusion Latent Space Explorer</title>
-<link>https://arxiv.org/abs/2509.22038</link>
-<guid>https://arxiv.org/abs/2509.22038</guid>
-<content:encoded><![CDATA[
-arXiv:2509.22038v1 Announce Type: new 
-Abstract: Latent space is one of the key concepts in generative AI, offering powerful means for creative exploration through vector manipulation. However, diffusion models like Stable Diffusion lack the intuitive latent vector control found in GANs, limiting their flexibility for artistic expression. This paper introduces \workname, a framework for integrating customizable latent space operations into the diffusion process. By enabling direct manipulation of conceptual and spatial representations, this approach expands creative possibilities in generative art. We demonstrate the potential of this framework through two artworks, \textit{Infinitepedia} and \textit{Latent Motion}, highlighting its use in conceptual blending and dynamic motion generation. Our findings reveal latent space structures with semantic and meaningless regions, offering insights into the geometry of diffusion models and paving the way for further explorations of latent space.
-]]></content:encoded>
-<pubDate>Mon, 29 Sep 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Convexity-Driven Projection for Point Cloud Dimensionality Reduction</title>
-<link>https://arxiv.org/abs/2509.22043</link>
-<guid>https://arxiv.org/abs/2509.22043</guid>
-<content:encoded><![CDATA[
-arXiv:2509.22043v1 Announce Type: new 
-Abstract: We propose Convexity-Driven Projection (CDP), a boundary-free linear method for dimensionality reduction of point clouds that targets preserving detour-induced local non-convexity. CDP builds a $k$-NN graph, identifies admissible pairs whose Euclidean-to-shortest-path ratios are below a threshold, and aggregates their normalized directions to form a positive semidefinite non-convexity structure matrix. The projection uses the top-$k$ eigenvectors of the structure matrix. We give two verifiable guarantees. A pairwise a-posteriori certificate that bounds the post-projection distortion for each admissible pair, and an average-case spectral bound that links expected captured direction energy to the spectrum of the structure matrix, yielding quantile statements for typical distortion. Our evaluation protocol reports fixed- and reselected-pairs detour errors and certificate quantiles, enabling practitioners to check guarantees on their data.
-]]></content:encoded>
-<pubDate>Mon, 29 Sep 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>MO-GRPO: Mitigating Reward Hacking of Group Relative Policy Optimization on Multi-Objective Problems</title>
-<link>https://arxiv.org/abs/2509.22047</link>
-<guid>https://arxiv.org/abs/2509.22047</guid>
-<content:encoded><![CDATA[
-arXiv:2509.22047v1 Announce Type: new 
-Abstract: Group Relative Policy Optimization (GRPO) has been shown to be an effective algorithm when an accurate reward model is available. However, such a highly reliable reward model is not available in many real-world tasks. In this paper, we particularly focus on multi-objective settings, in which we identify that GRPO is vulnerable to reward hacking, optimizing only one of the objectives at the cost of the others. To address this issue, we propose MO-GRPO, an extension of GRPO with a simple normalization method to reweight the reward functions automatically according to the variances of their values. We first show analytically that MO-GRPO ensures that all reward functions contribute evenly to the loss function while preserving the order of preferences, eliminating the need for manual tuning of the reward functions' scales. Then, we evaluate MO-GRPO experimentally in four domains: (i) the multi-armed bandits problem, (ii) simulated control task (Mo-Gymnasium), (iii) machine translation tasks on the WMT benchmark (En-Ja, En-Zh), and (iv) instruction following task. MO-GRPO achieves stable learning by evenly distributing correlations among the components of rewards, outperforming GRPO, showing MO-GRPO to be a promising algorithm for multi-objective reinforcement learning problems.
-]]></content:encoded>
-<pubDate>Mon, 29 Sep 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>BrainPro: Towards Large-scale Brain State-aware EEG Representation Learning</title>
-<link>https://arxiv.org/abs/2509.22050</link>
-<guid>https://arxiv.org/abs/2509.22050</guid>
-<content:encoded><![CDATA[
-arXiv:2509.22050v1 Announce Type: new 
-Abstract: Electroencephalography (EEG) is a non-invasive technique for recording brain electrical activity, widely used in brain-computer interface (BCI) and healthcare. Recent EEG foundation models trained on large-scale datasets have shown improved performance and generalizability over traditional decoding methods, yet significant challenges remain. Existing models often fail to explicitly capture channel-to-channel and region-to-region interactions, which are critical sources of information inherently encoded in EEG signals. Due to varying channel configurations across datasets, they either approximate spatial structure with self-attention or restrict training to a limited set of common channels, sacrificing flexibility and effectiveness. Moreover, although EEG datasets reflect diverse brain states such as emotion, motor, and others, current models rarely learn state-aware representations during self-supervised pre-training. To address these gaps, we propose BrainPro, a large EEG model that introduces a retrieval-based spatial learning block to flexibly capture channel- and region-level interactions across varying electrode layouts, and a brain state-decoupling block that enables state-aware representation learning through parallel encoders with decoupling and region-aware reconstruction losses. This design allows BrainPro to adapt seamlessly to diverse tasks and hardware settings. Pre-trained on an extensive EEG corpus, BrainPro achieves state-of-the-art performance and robust generalization across nine public BCI datasets. Our codes and the pre-trained weights will be released.
-]]></content:encoded>
-<pubDate>Mon, 29 Sep 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Enriching Knowledge Distillation with Intra-Class Contrastive Learning</title>
-<link>https://arxiv.org/abs/2509.22053</link>
-<guid>https://arxiv.org/abs/2509.22053</guid>
-<content:encoded><![CDATA[
-arXiv:2509.22053v1 Announce Type: new 
-Abstract: Since the advent of knowledge distillation, much research has focused on how the soft labels generated by the teacher model can be utilized effectively. Existing studies points out that the implicit knowledge within soft labels originates from the multi-view structure present in the data. Feature variations within samples of the same class allow the student model to generalize better by learning diverse representations. However, in existing distillation methods, teacher models predominantly adhere to ground-truth labels as targets, without considering the diverse representations within the same class. Therefore, we propose incorporating an intra-class contrastive loss during teacher training to enrich the intra-class information contained in soft labels. In practice, we find that intra-class loss causes instability in training and slows convergence. To mitigate these issues, margin loss is integrated into intra-class contrastive learning to improve the training stability and convergence speed. Simultaneously, we theoretically analyze the impact of this loss on the intra-class distances and inter-class distances. It has been proved that the intra-class contrastive loss can enrich the intra-class diversity. Experimental results demonstrate the effectiveness of the proposed method.
-]]></content:encoded>
-<pubDate>Mon, 29 Sep 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Towards Understanding Feature Learning in Parameter Transfer</title>
-<link>https://arxiv.org/abs/2509.22056</link>
-<guid>https://arxiv.org/abs/2509.22056</guid>
-<content:encoded><![CDATA[
-arXiv:2509.22056v1 Announce Type: new 
-Abstract: Parameter transfer is a central paradigm in transfer learning, enabling knowledge reuse across tasks and domains by sharing model parameters between upstream and downstream models. However, when only a subset of parameters from the upstream model is transferred to the downstream model, there remains a lack of theoretical understanding of the conditions under which such partial parameter reuse is beneficial and of the factors that govern its effectiveness. To address this gap, we analyze a setting in which both the upstream and downstream models are ReLU convolutional neural networks (CNNs). Within this theoretical framework, we characterize how the inherited parameters act as carriers of universal knowledge and identify key factors that amplify their beneficial impact on the target task. Furthermore, our analysis provides insight into why, in certain cases, transferring parameters can lead to lower test accuracy on the target task than training a new model from scratch. Numerical experiments and real-world data experiments are conducted to empirically validate our theoretical findings.
-]]></content:encoded>
-<pubDate>Mon, 29 Sep 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>The Rogue Scalpel: Activation Steering Compromises LLM Safety</title>
-<link>https://arxiv.org/abs/2509.22067</link>
-<guid>https://arxiv.org/abs/2509.22067</guid>
-<content:encoded><![CDATA[
-arXiv:2509.22067v1 Announce Type: new 
-Abstract: Activation steering is a promising technique for controlling LLM behavior by adding semantically meaningful vectors directly into a model's hidden states during inference. It is often framed as a precise, interpretable, and potentially safer alternative to fine-tuning. We demonstrate the opposite: steering systematically breaks model alignment safeguards, making it comply with harmful requests. Through extensive experiments on different model families, we show that even steering in a random direction can increase the probability of harmful compliance from 0% to 2-27%. Alarmingly, steering benign features from a sparse autoencoder (SAE), a common source of interpretable directions, increases these rates by a further 2-4%. Finally, we show that combining 20 randomly sampled vectors that jailbreak a single prompt creates a universal attack, significantly increasing harmful compliance on unseen requests. These results challenge the paradigm of safety through interpretability, showing that precise control over model internals does not guarantee precise control over model behavior.
-]]></content:encoded>
-<pubDate>Mon, 29 Sep 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Non-Linear Trajectory Modeling for Multi-Step Gradient Inversion Attacks in Federated Learning</title>
-<link>https://arxiv.org/abs/2509.22082</link>
-<guid>https://arxiv.org/abs/2509.22082</guid>
-<content:encoded><![CDATA[
-arXiv:2509.22082v1 Announce Type: new 
-Abstract: Federated Learning (FL) preserves privacy by keeping raw data local, yet Gradient Inversion Attacks (GIAs) pose significant threats. In FedAVG multi-step scenarios, attackers observe only aggregated gradients, making data reconstruction challenging. Existing surrogate model methods like SME assume linear parameter trajectories, but we demonstrate this severely underestimates SGD's nonlinear complexity, fundamentally limiting attack effectiveness. We propose Non-Linear Surrogate Model Extension (NL-SME), the first method to introduce nonlinear parametric trajectory modeling for GIAs. Our approach replaces linear interpolation with learnable quadratic B\'ezier curves that capture SGD's curved characteristics through control points, combined with regularization and dvec scaling mechanisms for enhanced expressiveness. Extensive experiments on CIFAR-100 and FEMNIST datasets show NL-SME significantly outperforms baselines across all metrics, achieving order-of-magnitude improvements in cosine similarity loss while maintaining computational efficiency.This work exposes heightened privacy vulnerabilities in FL's multi-step update paradigm and offers novel perspectives for developing robust defense strategies.
-]]></content:encoded>
-<pubDate>Mon, 29 Sep 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>SHAKE-GNN: Scalable Hierarchical Kirchhoff-Forest Graph Neural Network</title>
-<link>https://arxiv.org/abs/2509.22100</link>
-<guid>https://arxiv.org/abs/2509.22100</guid>
-<content:encoded><![CDATA[
-arXiv:2509.22100v1 Announce Type: new 
-Abstract: Graph Neural Networks (GNNs) have achieved remarkable success across a range of learning tasks. However, scaling GNNs to large graphs remains a significant challenge, especially for graph-level tasks. In this work, we introduce SHAKE-GNN, a novel scalable graph-level GNN framework based on a hierarchy of Kirchhoff Forests, a class of random spanning forests used to construct stochastic multi-resolution decompositions of graphs. SHAKE-GNN produces multi-scale representations, enabling flexible trade-offs between efficiency and performance. We introduce an improved, data-driven strategy for selecting the trade-off parameter and analyse the time-complexity of SHAKE-GNN. Experimental results on multiple large-scale graph classification benchmarks demonstrate that SHAKE-GNN achieves competitive performance while offering improved scalability.
-]]></content:encoded>
-<pubDate>Mon, 29 Sep 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Reinforcement Learning for Durable Algorithmic Recourse</title>
-<link>https://arxiv.org/abs/2509.22102</link>
-<guid>https://arxiv.org/abs/2509.22102</guid>
-<content:encoded><![CDATA[
-arXiv:2509.22102v1 Announce Type: new 
-Abstract: Algorithmic recourse seeks to provide individuals with actionable recommendations that increase their chances of receiving favorable outcomes from automated decision systems (e.g., loan approvals). While prior research has emphasized robustness to model updates, considerably less attention has been given to the temporal dynamics of recourse--particularly in competitive, resource-constrained settings where recommendations shape future applicant pools. In this work, we present a novel time-aware framework for algorithmic recourse, explicitly modeling how candidate populations adapt in response to recommendations. Additionally, we introduce a novel reinforcement learning (RL)-based recourse algorithm that captures the evolving dynamics of the environment to generate recommendations that are both feasible and valid. We design our recommendations to be durable, supporting validity over a predefined time horizon T. This durability allows individuals to confidently reapply after taking time to implement the suggested changes. Through extensive experiments in complex simulation environments, we show that our approach substantially outperforms existing baselines, offering a superior balance between feasibility and long-term validity. Together, these results underscore the importance of incorporating temporal and behavioral dynamics into the design of practical recourse systems.
-]]></content:encoded>
-<pubDate>Mon, 29 Sep 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Modeling Psychological Profiles in Volleyball via Mixed-Type Bayesian Networks</title>
-<link>https://arxiv.org/abs/2509.22111</link>
-<guid>https://arxiv.org/abs/2509.22111</guid>
-<content:encoded><![CDATA[
-arXiv:2509.22111v1 Announce Type: new 
-Abstract: Psychological attributes rarely operate in isolation: coaches reason about networks of related traits. We analyze a new dataset of 164 female volleyball players from Italy's C and D leagues that combines standardized psychological profiling with background information. To learn directed relationships among mixed-type variables (ordinal questionnaire scores, categorical demographics, continuous indicators), we introduce latent MMHC, a hybrid structure learner that couples a latent Gaussian copula and a constraint-based skeleton with a constrained score-based refinement to return a single DAG. We also study a bootstrap-aggregated variant for stability. In simulations spanning sample size, sparsity, and dimension, latent Max-Min Hill-Climbing (MMHC) attains lower structural Hamming distance and higher edge recall than recent copula-based learners while maintaining high specificity. Applied to volleyball, the learned network organizes mental skills around goal setting and self-confidence, with emotional arousal linking motivation and anxiety, and locates Big-Five traits (notably neuroticism and extraversion) upstream of skill clusters. Scenario analyses quantify how improvements in specific skills propagate through the network to shift preparation, confidence, and self-esteem. The approach provides an interpretable, data-driven framework for profiling psychological traits in sport and for decision support in athlete development.
-]]></content:encoded>
-<pubDate>Mon, 29 Sep 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Countering adversarial evasion in regression analysis</title>
-<link>https://arxiv.org/abs/2509.22113</link>
-<guid>https://arxiv.org/abs/2509.22113</guid>
-<content:encoded><![CDATA[
-arXiv:2509.22113v1 Announce Type: new 
-Abstract: Adversarial machine learning challenges the assumption that the underlying distribution remains consistent throughout the training and implementation of a prediction model. In particular, adversarial evasion considers scenarios where adversaries adapt their data to influence particular outcomes from established prediction models, such scenarios arise in applications such as spam email filtering, malware detection and fake-image generation, where security methods must be actively updated to keep up with the ever-improving generation of malicious data. Game theoretic models have been shown to be effective at modelling these scenarios and hence training resilient predictors against such adversaries. Recent advancements in the use of pessimistic bilevel optimsiation which remove assumptions about the convexity and uniqueness of the adversary's optimal strategy have proved to be particularly effective at mitigating threats to classifiers due to its ability to capture the antagonistic nature of the adversary. However, this formulation has not yet been adapted to regression scenarios. This article serves to propose a pessimistic bilevel optimisation program for regression scenarios which makes no assumptions on the convexity or uniqueness of the adversary's solutions.
-]]></content:encoded>
-<pubDate>Mon, 29 Sep 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Learning More with Less: A Dynamic Dual-Level Down-Sampling Framework for Efficient Policy Optimization</title>
-<link>https://arxiv.org/abs/2509.22115</link>
-<guid>https://arxiv.org/abs/2509.22115</guid>
-<content:encoded><![CDATA[
-arXiv:2509.22115v1 Announce Type: new 
-Abstract: Critic-free methods like GRPO reduce memory demands by estimating advantages from multiple rollouts but tend to converge slowly, as critical learning signals are diluted by an abundance of uninformative samples and tokens. To tackle this challenge, we propose the \textbf{Dynamic Dual-Level Down-Sampling (D$^3$S)} framework that prioritizes the most informative samples and tokens across groups to improve the efficient of policy optimization. D$^3$S operates along two levels: (1) the sample-level, which selects a subset of rollouts to maximize advantage variance ($\text{Var}(A)$). We theoretically proven that this selection is positively correlated with the upper bound of the policy gradient norms, yielding higher policy gradients. (2) the token-level, which prioritizes tokens with a high product of advantage magnitude and policy entropy ($|A_{i,t}|\times H_{i,t}$), focusing updates on tokens where the policy is both uncertain and impactful. Moreover, to prevent overfitting to high-signal data, D$^3$S employs a dynamic down-sampling schedule inspired by curriculum learning. This schedule starts with aggressive down-sampling to accelerate early learning and gradually relaxes to promote robust generalization. Extensive experiments on Qwen2.5 and Llama3.1 demonstrate that integrating D$^3$S into advanced RL algorithms achieves state-of-the-art performance and generalization while requiring \textit{fewer} samples and tokens across diverse reasoning benchmarks. Our code is added in the supplementary materials and will be made publicly available.
-]]></content:encoded>
-<pubDate>Mon, 29 Sep 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Mind the Missing: Variable-Aware Representation Learning for Irregular EHR Time Series using Large Language Models</title>
-<link>https://arxiv.org/abs/2509.22121</link>
-<guid>https://arxiv.org/abs/2509.22121</guid>
-<content:encoded><![CDATA[
-arXiv:2509.22121v1 Announce Type: new 
-Abstract: Irregular sampling and high missingness are intrinsic challenges in modeling time series derived from electronic health records (EHRs),where clinical variables are measured at uneven intervals depending on workflow and intervention timing. To address this, we propose VITAL, a variable-aware, large language model (LLM) based framework tailored for learning from irregularly sampled physiological time series. VITAL differentiates between two distinct types of clinical variables: vital signs, which are frequently recorded and exhibit temporal patterns, and laboratory tests, which are measured sporadically and lack temporal structure. It reprograms vital signs into the language space, enabling the LLM to capture temporal context and reason over missing values through explicit encoding. In contrast, laboratory variables are embedded either using representative summary values or a learnable [Not measured] token, depending on their availability. Extensive evaluations on the benchmark datasets from the PhysioNet demonstrate that VITAL outperforms state of the art methods designed for irregular time series. Furthermore, it maintains robust performance under high levels of missingness, which is prevalent in real world clinical scenarios where key variables are often unavailable.
-]]></content:encoded>
-<pubDate>Mon, 29 Sep 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Slicing Wasserstein Over Wasserstein Via Functional Optimal Transport</title>
-<link>https://arxiv.org/abs/2509.22138</link>
-<guid>https://arxiv.org/abs/2509.22138</guid>
-<content:encoded><![CDATA[
-arXiv:2509.22138v1 Announce Type: new 
-Abstract: Wasserstein distances define a metric between probability measures on arbitrary metric spaces, including meta-measures (measures over measures). The resulting Wasserstein over Wasserstein (WoW) distance is a powerful, but computationally costly tool for comparing datasets or distributions over images and shapes. Existing sliced WoW accelerations rely on parametric meta-measures or the existence of high-order moments, leading to numerical instability. As an alternative, we propose to leverage the isometry between the 1d Wasserstein space and the quantile functions in the function space $L_2([0,1])$. For this purpose, we introduce a general sliced Wasserstein framework for arbitrary Banach spaces. Due to the 1d Wasserstein isometry, this framework defines a sliced distance between 1d meta-measures via infinite-dimensional $L_2$-projections, parametrized by Gaussian processes. Combining this 1d construction with classical integration over the Euclidean unit sphere yields the double-sliced Wasserstein (DSW) metric for general meta-measures. We show that DSW minimization is equivalent to WoW minimization for discretized meta-measures, while avoiding unstable higher-order moments and computational savings. Numerical experiments on datasets, shapes, and images validate DSW as a scalable substitute for the WoW distance.
-]]></content:encoded>
-<pubDate>Mon, 29 Sep 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Pushing Toward the Simplex Vertices: A Simple Remedy for Code Collapse in Smoothed Vector Quantization</title>
-<link>https://arxiv.org/abs/2509.22161</link>
-<guid>https://arxiv.org/abs/2509.22161</guid>
-<content:encoded><![CDATA[
-arXiv:2509.22161v1 Announce Type: new 
-Abstract: Vector quantization, which discretizes a continuous vector space into a finite set of representative vectors (a codebook), has been widely adopted in modern machine learning. Despite its effectiveness, vector quantization poses a fundamental challenge: the non-differentiable quantization step blocks gradient backpropagation. Smoothed vector quantization addresses this issue by relaxing the hard assignment of a codebook vector into a weighted combination of codebook entries, represented as the matrix product of a simplex vector and the codebook. Effective smoothing requires two properties: (1) smoothed quantizers should remain close to a onehot vector, ensuring tight approximation, and (2) all codebook entries should be utilized, preventing code collapse. Existing methods typically address these desiderata separately. By contrast, the present study introduces a simple and intuitive regularization that promotes both simultaneously by minimizing the distance between each simplex vertex and its $K$-nearest smoothed quantizers. Experiments on representative benchmarks, including discrete image autoencoding and contrastive speech representation learning, demonstrate that the proposed method achieves more reliable codebook utilization and improves performance compared to prior approaches.
-]]></content:encoded>
-<pubDate>Mon, 29 Sep 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Lightweight error mitigation strategies for post-training N:M activation sparsity in LLMs</title>
-<link>https://arxiv.org/abs/2509.22166</link>
-<guid>https://arxiv.org/abs/2509.22166</guid>
-<content:encoded><![CDATA[
-arXiv:2509.22166v1 Announce Type: new 
-Abstract: The demand for efficient large language model (LLM) inference has intensified the focus on sparsification techniques. While semi-structured (N:M) pruning is well-established for weights, its application to activation pruning remains underexplored despite its potential for dynamic, input-adaptive compression and reductions in I/O overhead. This work presents a comprehensive analysis of methods for post-training N:M activation pruning in LLMs. Across multiple LLMs, we demonstrate that pruning activations enables superior preservation of generative capabilities compared to weight pruning at equivalent sparsity levels. We evaluate lightweight, plug-and-play error mitigation techniques and pruning criteria, establishing strong hardware-friendly baselines that require minimal calibration. Furthermore, we explore sparsity patterns beyond NVIDIA's standard 2:4, showing that the 16:32 pattern achieves performance nearly on par with unstructured sparsity. However, considering the trade-off between flexibility and hardware implementation complexity, we focus on the 8:16 pattern as a superior candidate. Our findings provide both effective practical methods for activation pruning and a motivation for future hardware to support more flexible sparsity patterns. Our code is available https://anonymous.4open.science/r/Structured-Sparse-Activations-Inference-EC3C/README.md .
 ]]></content:encoded>
 <pubDate>Mon, 29 Sep 2025 00:00:00 -0400</pubDate>
 </item>
