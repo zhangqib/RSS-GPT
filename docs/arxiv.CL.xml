@@ -4,18 +4,18 @@
 <title>cs.CL updates on arXiv.org</title>
 <link>http://rss.arxiv.org/rss/cs.CL</link>
 
+
 <item>
 <title>Responsible AI Technical Report</title>
 <link>https://arxiv.org/abs/2509.20057</link>
 <guid>https://arxiv.org/abs/2509.20057</guid>
 <content:encoded><![CDATA[
-<div> Responsible AI, risk assessment, regulatory compliance, model safety, AI development<br>
-Summary:<br>
-KT has developed a Responsible AI (RAI) assessment methodology and risk mitigation technologies to ensure the safety and reliability of AI services. They analyze the Basic Act on AI implementation and global AI governance trends to establish a unique approach for regulatory compliance. Their methodology systematically identifies and manages potential risk factors, verifying model safety and robustness based on their AI risk taxonomy. Practical tools are provided for managing and mitigating AI risks. The release of their report comes with the release of their proprietary Guardrail: SafetyGuard, a real-time solution that blocks harmful responses from AI models to enhance safety in the domestic AI development ecosystem. These research outcomes offer valuable insights for organizations looking to develop Responsible AI.<br> <div>
+<div> Responsible AI, risk assessment, regulatory compliance, model safety, AI development<br />
+Summary:<br />
+KT has developed a Responsible AI (RAI) assessment methodology and risk mitigation technologies to ensure the safety and reliability of AI services. They analyze the Basic Act on AI implementation and global AI governance trends to establish a unique approach for regulatory compliance. Their methodology systematically identifies and manages potential risk factors, verifying model safety and robustness based on their AI risk taxonomy. Practical tools are provided for managing and mitigating AI risks. The release of their report comes with the release of their proprietary Guardrail: SafetyGuard, a real-time solution that blocks harmful responses from AI models to enhance safety in the domestic AI development ecosystem. These research outcomes offer valuable insights for organizations looking to develop Responsible AI.<br /> <div>
 arXiv:2509.20057v2 Announce Type: replace 
 Abstract: KT developed a Responsible AI (RAI) assessment methodology and risk mitigation technologies to ensure the safety and reliability of AI services. By analyzing the Basic Act on AI implementation and global AI governance trends, we established a unique approach for regulatory compliance and systematically identify and manage all potential risk factors from AI development to operation. We present a reliable assessment methodology that systematically verifies model safety and robustness based on KT's AI risk taxonomy tailored to the domestic environment. We also provide practical tools for managing and mitigating identified AI risks. With the release of this report, we also release proprietary Guardrail : SafetyGuard that blocks harmful responses from AI models in real-time, supporting the enhancement of safety in the domestic AI development ecosystem. We also believe these research outcomes provide valuable insights for organizations seeking to develop Responsible AI.
 ]]></content:encoded>
-<pubDate>Tue, 30 Sep 2025 00:00:00 -0400</pubDate>
 <pubDate>Tue, 30 Sep 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -23,16 +23,14 @@ Abstract: KT developed a Responsible AI (RAI) assessment methodology and risk mi
 <link>https://arxiv.org/abs/2509.20162</link>
 <guid>https://arxiv.org/abs/2509.20162</guid>
 <content:encoded><![CDATA[
-<div> Reinforcement Learning, Augmented Generation, Domain-specific tasks, Knowledge embedding, Model optimization<br>
-Summary:<br>
-The article introduces a new approach, Reinforcement Learning from Augmented Generation (RLAG), to enhance the performance of large language models (LLMs) on domain-specific tasks. LLMs often struggle with domain expertise due to limited training data representation and knowledge gaps. The proposed RLAG model iteratively samples generations and optimizes the model through tailored reward metrics to embed critical and coherent domain knowledge. By selecting generated outputs with the highest probabilities and evaluating answer accuracy and explanation rationality, RLAG significantly outperforms existing baseline approaches across medical, legal, astronomy, and current events datasets. The open-sourced code and data are available on GitHub for further exploration and implementation. <br>Summary: <div>
+<div> Reinforcement Learning, Augmented Generation, Domain-specific tasks, Knowledge embedding, Model optimization<br />
+Summary:<br />
+The article introduces a new approach, Reinforcement Learning from Augmented Generation (RLAG), to enhance the performance of large language models (LLMs) on domain-specific tasks. LLMs often struggle with domain expertise due to limited training data representation and knowledge gaps. The proposed RLAG model iteratively samples generations and optimizes the model through tailored reward metrics to embed critical and coherent domain knowledge. By selecting generated outputs with the highest probabilities and evaluating answer accuracy and explanation rationality, RLAG significantly outperforms existing baseline approaches across medical, legal, astronomy, and current events datasets. The open-sourced code and data are available on GitHub for further exploration and implementation. <br />Summary: <div>
 arXiv:2509.20162v2 Announce Type: replace 
 Abstract: Large language models (LLMs) often exhibit limited performance on domain-specific tasks due to the natural disproportionate representation of specialized information in their training data and the static nature of these datasets. Knowledge scarcity and temporal lag create knowledge gaps for domain applications. While post-training on domain datasets can embed knowledge into models, existing approaches have some limitations. Continual Pre-Training (CPT) treats all tokens in domain documents with equal importance, failing to prioritize critical knowledge points, while supervised fine-tuning (SFT) with question-answer pairs struggles to develop the coherent knowledge structures necessary for complex reasoning tasks. To address these challenges, we propose Reinforcement Learning from Augmented Generation (RLAG). Our approach iteratively cycles between sampling generations and optimizing the model through calculated rewards, effectively embedding critical and contextually coherent domain knowledge. We select generated outputs with the highest log probabilities as the sampling result, then compute three tailored reward metrics to guide the optimization process. To comprehensively evaluate domain expertise, we assess answer accuracy and the rationality of explanations generated for correctly answered questions. Experimental results across medical, legal, astronomy, and current events datasets demonstrate that our proposed method significantly outperforms baseline approaches. Our code and data are open sourced at https://github.com/ChaojunNie/RLAG.
 ]]></content:encoded>
 <pubDate>Tue, 30 Sep 2025 00:00:00 -0400</pubDate>
-<pubDate>Tue, 30 Sep 2025 00:00:00 -0400</pubDate>
 </item>
-
 <item>
 <title>LiTEx: A Linguistic Taxonomy of Explanations for Understanding Within-Label Variation in Natural Language Inference</title>
 <link>https://arxiv.org/abs/2505.22848</link>
@@ -11159,26 +11157,6 @@ Abstract: LLM-as-Judge frameworks are increasingly popular for AI evaluation, ye
 <content:encoded><![CDATA[
 arXiv:2509.19893v1 Announce Type: new 
 Abstract: Preference learning methods such as Direct Preference Optimization (DPO) have become standard for Large Language Model (LLM) post-training, yet they are often ineffective for mathematical reasoning. A key challenge is the large token overlap between preferred and dispreferred trajectories; lowering the probability of dispreferred trajectories also reduces the probability of shared useful tokens, leading to over-penalization and overall performance collapse. As a mitigation, existing algorithms include the probability of a trajectory under the current policy as a regularization term, which decreases the effect of the gradient when the probability is low. However, by the time this effect takes hold, useful tokens may have already been over-penalized as the model has begun to degrade. To address this, we propose Future Policy Aware (FPA) preference learning, which replaces the current policy with a future policy in the regularization term. This future policy is estimated via lightweight, logit-space extrapolation from a reference model toward the current model. FPA enables safer training by preemptively regularizing potentially problematic gradients. We apply FPA to DPO, RPO, and SimPER and evaluate them on the MATH and GSM8K benchmarks. FPA yields consistent performance gains, with the largest improvements observed with SimPER, achieving gains of up to 5.75%. We demonstrate that FPA provides proactive regularization while preserving the probability of shared, useful mathematical tokens, and enables longer, degradation-free training with negligible computational overhead. We will release our code publicly upon publication.
-]]></content:encoded>
-<pubDate>Thu, 25 Sep 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>WEST: LLM based Speech Toolkit for Speech Understanding, Generation, and Interaction</title>
-<link>https://arxiv.org/abs/2509.19902</link>
-<guid>https://arxiv.org/abs/2509.19902</guid>
-<content:encoded><![CDATA[
-arXiv:2509.19902v1 Announce Type: new 
-Abstract: In this paper, we present WEST(WE Speech Toolkit), a speech toolkit based on a large language model (LLM) for speech understanding, generation, and interaction. There are three key features of WEST: 1) Fully LLM-based: Standing on the shoulders of giants by reusing mature architectures, ecosystems (e.g., Hugging Face), and methods (e.g., sequence packing) from large models. 2) Full-stack: Supports tasks such as recognition, synthesis, understanding, dialogue, and multimodal capabilities, with extensibility to incorporate open-source models. 3) Simple and Stupid: A simple and stupid speech toolkit that everyone can Touch. In addition, WEST provides two types of recipes, models, and experimental results. The first is entirely based on open-source models and open-source data, allowing users to fully reproduce the experiments in this paper and serving as a verification system or minimal system baseline. The second is trained on massive data, offering superior performance so the user can directly apply it out of the box. WEST is publicly avilable at https://github.com/wenet-e2e/west/
-]]></content:encoded>
-<pubDate>Thu, 25 Sep 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>CorIL: Towards Enriching Indian Language to Indian Language Parallel Corpora and Machine Translation Systems</title>
-<link>https://arxiv.org/abs/2509.19941</link>
-<guid>https://arxiv.org/abs/2509.19941</guid>
-<content:encoded><![CDATA[
-arXiv:2509.19941v1 Announce Type: new 
-Abstract: India's linguistic landscape is one of the most diverse in the world, comprising over 120 major languages and approximately 1,600 additional languages, with 22 officially recognized as scheduled languages in the Indian Constitution. Despite recent progress in multilingual neural machine translation (NMT), high-quality parallel corpora for Indian languages remain scarce, especially across varied domains. In this paper, we introduce a large-scale, high-quality annotated parallel corpus covering 11 of these languages : English, Telugu, Hindi, Punjabi, Odia, Kashmiri, Sindhi, Dogri, Kannada, Urdu, and Gujarati comprising a total of 772,000 bi-text sentence pairs. The dataset is carefully curated and systematically categorized into three key domains: Government, Health, and General, to enable domain-aware machine translation research and facilitate effective domain adaptation. To demonstrate the utility of CorIL and establish strong benchmarks for future research, we fine-tune and evaluate several state-of-the-art NMT models, including IndicTrans2, NLLB, and BhashaVerse. Our analysis reveals important performance trends and highlights the corpus's value in probing model capabilities. For instance, the results show distinct performance patterns based on language script, with massively multilingual models showing an advantage on Perso-Arabic scripts (Urdu, Sindhi) while other models excel on Indic scripts. This paper provides a detailed domain-wise performance analysis, offering insights into domain sensitivity and cross-script transfer learning. By publicly releasing CorIL, we aim to significantly improve the availability of high-quality training data for Indian languages and provide a valuable resource for the machine translation research community.
 ]]></content:encoded>
 <pubDate>Thu, 25 Sep 2025 00:00:00 -0400</pubDate>
 </item>
