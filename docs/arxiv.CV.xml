@@ -4,6 +4,7 @@
 <title>cs.CV updates on arXiv.org</title>
 <link>http://rss.arxiv.org/rss/cs.CV</link>
 
+
 <item>
 <title>FlashEdit: Decoupling Speed, Structure, and Semantics for Precise Image Editing</title>
 <link>https://arxiv.org/abs/2509.22244</link>
@@ -11,15 +12,13 @@
 <content:encoded><![CDATA[
 <div> Keywords: Text-guided image editing, diffusion models, real-time, efficiency, background preservation
 
-Summary:<br>
-FlashEdit is a new framework for real-time image editing that addresses latency issues in existing methods. It introduces innovative techniques such as the One-Step Inversion-and-Editing (OSIE) pipeline, Background Shield (BG-Shield), and Sparsified Spatial Cross-Attention (SSCA) to ensure high-fidelity edits with minimal processing time. FlashEdit maintains superior background consistency and structural integrity by selectively modifying features within the edit region and suppressing semantic leakage to the background. The framework can perform edits in under 0.2 seconds, representing a significant speedup compared to previous methods. The code for FlashEdit will be publicly available on GitHub, allowing for further exploration and development in the field of text-guided image editing. <br><br>Summary: <div>
+Summary:<br />
+FlashEdit is a new framework for real-time image editing that addresses latency issues in existing methods. It introduces innovative techniques such as the One-Step Inversion-and-Editing (OSIE) pipeline, Background Shield (BG-Shield), and Sparsified Spatial Cross-Attention (SSCA) to ensure high-fidelity edits with minimal processing time. FlashEdit maintains superior background consistency and structural integrity by selectively modifying features within the edit region and suppressing semantic leakage to the background. The framework can perform edits in under 0.2 seconds, representing a significant speedup compared to previous methods. The code for FlashEdit will be publicly available on GitHub, allowing for further exploration and development in the field of text-guided image editing. <br /><br />Summary: <div>
 arXiv:2509.22244v3 Announce Type: replace 
 Abstract: Text-guided image editing with diffusion models has achieved remarkable quality but suffers from prohibitive latency, hindering real-world applications. We introduce FlashEdit, a novel framework designed to enable high-fidelity, real-time image editing. Its efficiency stems from three key innovations: (1) a One-Step Inversion-and-Editing (OSIE) pipeline that bypasses costly iterative processes; (2) a Background Shield (BG-Shield) technique that guarantees background preservation by selectively modifying features only within the edit region; and (3) a Sparsified Spatial Cross-Attention (SSCA) mechanism that ensures precise, localized edits by suppressing semantic leakage to the background. Extensive experiments demonstrate that FlashEdit maintains superior background consistency and structural integrity, while performing edits in under 0.2 seconds, which is an over 150$\times$ speedup compared to prior multi-step methods. Our code will be made publicly available at https://github.com/JunyiWuCode/FlashEdit.
 ]]></content:encoded>
 <pubDate>Wed, 01 Oct 2025 00:00:00 -0400</pubDate>
-<pubDate>Wed, 01 Oct 2025 00:00:00 -0400</pubDate>
 </item>
-
 <item>
 <title>Octic Vision Transformers: Quicker ViTs Through Equivariance</title>
 <link>https://arxiv.org/abs/2505.15441</link>
@@ -10871,16 +10870,6 @@ Abstract: We introduce MinerU2.5, a 1.2B-parameter document parsing vision-langu
 <content:encoded><![CDATA[
 arXiv:2509.22221v1 Announce Type: new 
 Abstract: Vision-Language Models (VLMs) in remote sensing often fail at complex analytical tasks, a limitation stemming from their end-to-end training paradigm that bypasses crucial reasoning steps and leads to unverifiable outputs. To address this limitation, we introduce the Perceptually-Grounded Geospatial Chain-of-Thought (Geo-CoT), a framework that models remote sensing analysis as a verifiable, multi-step process. We instill this analytical process through a two-stage alignment strategy, leveraging Geo-CoT380k, the first large-scale dataset of structured Geo-CoT rationales. This strategy first employs supervised fine-tuning (SFT) to instill the foundational cognitive architecture, then leverages Group Reward Policy Optimization (GRPO) to refine the model's reasoning policy towards factual correctness. The resulting model, RSThinker, outputs both a final answer and its justifying, verifiable analytical trace. This capability yields dominant performance, significantly outperforming state-of-the-art models across a comprehensive range of tasks. The public release of our Geo-CoT380k dataset and RSThinker model upon publication serves as a concrete pathway from opaque perception towards structured, verifiable reasoning for Earth Observation.
-]]></content:encoded>
-<pubDate>Mon, 29 Sep 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Polysemous Language Gaussian Splatting via Matching-based Mask Lifting</title>
-<link>https://arxiv.org/abs/2509.22225</link>
-<guid>https://arxiv.org/abs/2509.22225</guid>
-<content:encoded><![CDATA[
-arXiv:2509.22225v1 Announce Type: new 
-Abstract: Lifting 2D open-vocabulary understanding into 3D Gaussian Splatting (3DGS) scenes is a critical challenge. However, mainstream methods suffer from three key flaws: (i) their reliance on costly per-scene retraining prevents plug-and-play application; (ii) their restrictive monosemous design fails to represent complex, multi-concept semantics; and (iii) their vulnerability to cross-view semantic inconsistencies corrupts the final semantic representation. To overcome these limitations, we introduce MUSplat, a training-free framework that abandons feature optimization entirely. Leveraging a pre-trained 2D segmentation model, our pipeline generates and lifts multi-granularity 2D masks into 3D, where we estimate a foreground probability for each Gaussian point to form initial object groups. We then optimize the ambiguous boundaries of these initial groups using semantic entropy and geometric opacity. Subsequently, by interpreting the object's appearance across its most representative viewpoints, a Vision-Language Model (VLM) distills robust textual features that reconciles visual inconsistencies, enabling open-vocabulary querying via semantic matching. By eliminating the costly per-scene training process, MUSplat reduces scene adaptation time from hours to mere minutes. On benchmark tasks for open-vocabulary 3D object selection and semantic segmentation, MUSplat outperforms established training-based frameworks while simultaneously addressing their monosemous limitations.
 ]]></content:encoded>
 <pubDate>Mon, 29 Sep 2025 00:00:00 -0400</pubDate>
 </item>
