@@ -4,18 +4,18 @@
 <title>cs.LG updates on arXiv.org</title>
 <link>http://rss.arxiv.org/rss/cs.LG</link>
 
+
 <item>
 <title>AQuaMaM: An Autoregressive, Quaternion Manifold Model for Rapidly Estimating Complex SO(3) Distributions</title>
 <link>https://arxiv.org/abs/2301.08838</link>
 <guid>https://arxiv.org/abs/2301.08838</guid>
 <content:encoded><![CDATA[
-<div> quaternion, rotations, neural network, multimodal distributions, SO(3) <br>
-Summary: <br>
-The paper introduces AQuaMaM, a neural network designed to model complex distributions on the rotation manifold of SO(3) while efficiently calculating likelihoods in a single forward pass. AQuaMaM employs an autoregressive approach, modeling unit quaternions as mixtures of uniform distributions to capture the intricate nature of rotation data. In experiments, AQuaMaM outperformed the implicit-PDF (IPDF) method in terms of test log-likelihood and efficiency, using fewer parameters and achieving a significantly faster prediction throughput. Training AQuaMaM on diverse datasets showed its ability to accurately capture the underlying distributions of rotation data, even in scenarios with ambiguous viewpoints. The results demonstrate the effectiveness of AQuaMaM in learning complex, multimodal distributions on the SO(3) group, making it a promising model for various applications requiring precise modeling of rotation data. <br> <div>
+<div> quaternion, rotations, neural network, multimodal distributions, SO(3) <br />
+Summary: <br />
+The paper introduces AQuaMaM, a neural network designed to model complex distributions on the rotation manifold of SO(3) while efficiently calculating likelihoods in a single forward pass. AQuaMaM employs an autoregressive approach, modeling unit quaternions as mixtures of uniform distributions to capture the intricate nature of rotation data. In experiments, AQuaMaM outperformed the implicit-PDF (IPDF) method in terms of test log-likelihood and efficiency, using fewer parameters and achieving a significantly faster prediction throughput. Training AQuaMaM on diverse datasets showed its ability to accurately capture the underlying distributions of rotation data, even in scenarios with ambiguous viewpoints. The results demonstrate the effectiveness of AQuaMaM in learning complex, multimodal distributions on the SO(3) group, making it a promising model for various applications requiring precise modeling of rotation data. <br /> <div>
 arXiv:2301.08838v3 Announce Type: replace 
 Abstract: Accurately modeling complex, multimodal distributions for rotations in three-dimensions, i.e., the SO(3) group, is challenging due to the curvature of the rotation manifold. The recently described implicit-PDF (IPDF) is a simple, elegant, and effective approach for learning arbitrary distributions on SO(3) up to a given precision. However, inference with IPDF requires $N$ forward passes through the network's final multilayer perceptron (where $N$ places an upper bound on the likelihood that can be calculated by the model), which is prohibitively slow for those without the computational resources necessary to parallelize the queries. In this paper, I introduce AQuaMaM, a neural network capable of both learning complex distributions on the rotation manifold and calculating exact likelihoods for query rotations in a single forward pass. Specifically, AQuaMaM autoregressively models the projected components of unit quaternions as mixtures of uniform distributions that partition their geometrically-restricted domain of values. When trained on an "infinite" toy dataset with ambiguous viewpoints, AQuaMaM rapidly converges to a sampling distribution closely matching the true data distribution. In contrast, the sampling distribution for IPDF dramatically diverges from the true data distribution, despite IPDF approaching its theoretical minimum evaluation loss during training. When trained on a constructed dataset of 500,000 renders of a die in different rotations, AQuaMaM reaches a test log-likelihood 14% higher than IPDF. Further, compared to IPDF, AQuaMaM uses 24% fewer parameters, has a prediction throughput 52$\times$ faster on a single GPU, and converges in a similar amount of time during training.
 ]]></content:encoded>
-<pubDate>Wed, 01 Oct 2025 00:00:00 -0400</pubDate>
 <pubDate>Wed, 01 Oct 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -28,11 +28,10 @@ Abstract: Accurately modeling complex, multimodal distributions for rotations in
 Summary:
 This work addresses the challenge of low-bit training for large language models (LLMs) by identifying anisotropy in the singular value spectra of parameters, activations, and gradients as a key obstacle. The domination of these spectra by a small number of large singular values leads to quantization bias and spectral distortion, resulting in degraded training performance. The authors introduce Metis, a spectral-domain quantization framework that partitions the anisotropic spectra into narrower sub-distributions for more effective quantization. By leveraging sparse random sampling and random projection within the dominant spectral subspace, Metis minimizes computational overhead while improving training performance. Specifically, on the LLaMA-3 8B dataset trained with 100B tokens, Metis enables robust training with W4A4G4 quantization, achieving similar fidelity to BF16 but with lower computational costs. Furthermore, Metis outperforms an implementation of Nvidia's FP4 recipe in terms of loss and downstream accuracy. The code implementation for Metis is available for reference. 
 
-<br><br>Summary: <div>
+<br /><br />Summary: <div>
 arXiv:2509.00404v4 Announce Type: replace 
 Abstract: This work identifies anisotropy in the singular value spectra of parameters, activations, and gradients as the fundamental barrier to low-bit training of large language models (LLMs). These spectra are dominated by a small fraction of large singular values, inducing wide numerical ranges that cause quantization bias and severe spectral distortion, ultimately degrading training performance. This work presents Metis, a spectral-domain quantization framework that partitions anisotropic spectra into narrower sub-distributions for independent quantization, thereby reducing errors and preserving spectral structure. To minimize overhead, Metis leverages two key properties of the dominant spectral subspace: preservation via sparsely random sampling and preservation via random projection, reducing decomposition cost to a negligible level. On LLaMA-3 8B trained with 100B tokens, Metis enables robust W4A4G4 training with FP4 quantization of weights, activations, and gradients, yielding only a 0.4% training loss gap and a 0.1% degradation in downstream accuracy relative to BF16. Beyond matching BF16 fidelity, Metis also surpasses our implementation of Nvidia's recently announced (yet to be publicly released) FP4 recipe, consistently achieving lower loss and higher downstream accuracy while incurring significantly lower computational overhead. The code implementation for Metis is available at: https://anonymous.4open.science/r/Metis-quantization-644B.
 ]]></content:encoded>
-<pubDate>Wed, 01 Oct 2025 00:00:00 -0400</pubDate>
 <pubDate>Wed, 01 Oct 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -42,12 +41,11 @@ Abstract: This work identifies anisotropy in the singular value spectra of param
 <content:encoded><![CDATA[
 <div> Keywords: grokking, 2-layer nonlinear networks, lazy learning, feature learning, gradient dynamics
 
-Summary:<br><br>
+Summary:<br /><br />
 The study delves into the phenomenon of grokking, focusing on the emergence of features in 2-layer nonlinear networks. It introduces a framework, titled $\mathbf{Li_2}$, which delineates three crucial stages: Lazy learning, Independent feature learning, and Interactive feature learning. Initially, the model engages in lazy learning, leading to the memorization of random hidden representations. Through backpropagated gradient $G_F, each hidden node autonomously learns its representation, following the gradient ascent of an energy function. The study investigates the generalizability and representation power of these emerging features in group arithmetic tasks and explores the impact of hyperparameters like weight decay and learning rate on grokking. Furthermore, it presents scaling laws for feature emergence, memorization, and generalizability, elucidating the effectiveness of recent optimizers. The analysis also hints at the extension of these findings to multi-layer architectures. <div>
 arXiv:2509.21519v3 Announce Type: replace 
 Abstract: While the phenomenon of grokking, i.e., delayed generalization, has been studied extensively, it remains an open problem whether there is a mathematical framework that characterizes what kind of features will emerge, how and in which conditions it happens, and is closely related to the gradient dynamics of the training, for complex structured inputs. We propose a novel framework, named $\mathbf{Li_2}$, that captures three key stages for the grokking behavior of 2-layer nonlinear networks: (I) \underline{\textbf{L}}azy learning, (II) \underline{\textbf{i}}ndependent feature learning and (III) \underline{\textbf{i}}nteractive feature learning. At the lazy learning stage, top layer overfits to random hidden representation and the model appears to memorize. Thanks to lazy learning and weight decay, the \emph{backpropagated gradient} $G_F$ from the top layer now carries information about the target label, with a specific structure that enables each hidden node to learn their representation \emph{independently}. Interestingly, the independent dynamics follows exactly the \emph{gradient ascent} of an energy function $E$, and its local maxima are precisely the emerging features. We study whether these local-optima induced features are generalizable, their representation power, and how they change on sample size, in group arithmetic tasks. When hidden nodes start to interact in the later stage of learning, we provably show how $G_F$ changes to focus on missing features that need to be learned. Our study sheds lights on roles played by key hyperparameters such as weight decay, learning rate and sample sizes in grokking, leads to provable scaling laws of feature emergence, memorization and generalization, and reveals the underlying cause why recent optimizers such as Muon can be effective, from the first principles of gradient dynamics. Our analysis can be extended to multi-layer architectures.
 ]]></content:encoded>
-<pubDate>Wed, 01 Oct 2025 00:00:00 -0400</pubDate>
 <pubDate>Wed, 01 Oct 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -65,20 +63,18 @@ arXiv:2501.08562v3 Announce Type: replace-cross
 Abstract: Feature extraction techniques are crucial in medical image classification; however, classical feature extractors, in addition to traditional machine learning classifiers, often exhibit significant limitations in providing sufficient discriminative information for complex image sets. While Convolutional Neural Networks (CNNs) and Vision Transformer (ViT) have shown promise in feature extraction, they are prone to overfitting due to the inherent characteristics of medical imaging data, including small sample sizes or high intra-class variance. In this work, the Medical Image Attention-based Feature Extractor (MIAFEx) is proposed, a novel method that employs a learnable refinement mechanism to enhance the classification token within the Transformer encoder architecture. This mechanism adjusts the token based on learned weights, improving the extraction of salient features and enhancing the model's adaptability to the challenges presented by medical imaging data. The MIAFEx output feature quality is compared against classical feature extractors using traditional and hybrid classifiers. Also, the performance of these features is compared against modern CNN and ViT models in classification tasks, demonstrating their superiority in accuracy and robustness across multiple complex medical imaging datasets. This advantage is particularly pronounced in scenarios with limited training data, where traditional and modern models often struggle to generalize effectively. The source code of this proposal can be found at https://github.com/Oscar-RamosS/Medical-Image-Attention-based-Feature-Extractor-MIAFEx
 ]]></content:encoded>
 <pubDate>Wed, 01 Oct 2025 00:00:00 -0400</pubDate>
-<pubDate>Wed, 01 Oct 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
 <title>TranSUN: A Preemptive Paradigm to Eradicate Retransformation Bias Intrinsically from Regression Models in Recommender Systems</title>
 <link>https://arxiv.org/abs/2505.13881</link>
 <guid>https://arxiv.org/abs/2505.13881</guid>
 <content:encoded><![CDATA[
-<div> keywords: regression models, recommender systems, bias correction, TranSUN method, Generalized TranSUN<br>
-Summary:<br>
-Regression models play a crucial role in recommender systems, but the retransformation bias problem is often overlooked in the field. Existing bias correction methods are often post-hoc solutions, posing challenges in real-world applications. This study proposes a preemptive approach to address bias intrinsically within models through minor refinements. The TranSUN method introduces joint bias learning, ensuring theoretically unbiased results with superior convergence. It is further expanded into the Generalized TranSUN (GTS) model family, offering theoretical insights and a flexible framework for developing bias-free models. Comprehensive experiments showcase the effectiveness of these methods across various data domains. The models have been successfully implemented in real-world industrial recommendation scenarios for product and short video recommendations on the Taobao App, a leading e-commerce platform. <br><br>Summary: <div>
+<div> keywords: regression models, recommender systems, bias correction, TranSUN method, Generalized TranSUN<br />
+Summary:<br />
+Regression models play a crucial role in recommender systems, but the retransformation bias problem is often overlooked in the field. Existing bias correction methods are often post-hoc solutions, posing challenges in real-world applications. This study proposes a preemptive approach to address bias intrinsically within models through minor refinements. The TranSUN method introduces joint bias learning, ensuring theoretically unbiased results with superior convergence. It is further expanded into the Generalized TranSUN (GTS) model family, offering theoretical insights and a flexible framework for developing bias-free models. Comprehensive experiments showcase the effectiveness of these methods across various data domains. The models have been successfully implemented in real-world industrial recommendation scenarios for product and short video recommendations on the Taobao App, a leading e-commerce platform. <br /><br />Summary: <div>
 arXiv:2505.13881v3 Announce Type: replace-cross 
 Abstract: Regression models are crucial in recommender systems. However, retransformation bias problem has been conspicuously neglected within the community. While many works in other fields have devised effective bias correction methods, all of them are post-hoc cures externally to the model, facing practical challenges when applied to real-world recommender systems. Hence, we propose a preemptive paradigm to eradicate the bias intrinsically from the models via minor model refinement. Specifically, a novel TranSUN method is proposed with a joint bias learning manner to offer theoretically guaranteed unbiasedness under empirical superior convergence. It is further generalized into a novel generic regression model family, termed Generalized TranSUN (GTS), which not only offers more theoretical insights but also serves as a generic framework for flexibly developing various bias-free models. Comprehensive experimental results demonstrate the superiority of our methods across data from various domains, which have been successfully deployed in two real-world industrial recommendation scenarios, i.e. product and short video recommendation scenarios in Guess What You Like business domain in the homepage of Taobao App (a leading e-commerce platform with DAU > 300M), to serve the major online traffic.
 ]]></content:encoded>
-<pubDate>Wed, 01 Oct 2025 00:00:00 -0400</pubDate>
 <pubDate>Wed, 01 Oct 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -94,7 +90,6 @@ arXiv:2506.05480v3 Announce Type: replace-cross
 Abstract: We introduce ODE-GS, a novel approach that integrates 3D Gaussian Splatting with latent neural ordinary differential equations (ODEs) to enable future extrapolation of dynamic 3D scenes. Unlike existing dynamic scene reconstruction methods, which rely on time-conditioned deformation networks and are limited to interpolation within a fixed time window, ODE-GS eliminates timestamp dependency by modeling Gaussian parameter trajectories as continuous-time latent dynamics. Our approach first learns an interpolation model to generate accurate Gaussian trajectories within the observed window, then trains a Transformer encoder to aggregate past trajectories into a latent state evolved via a neural ODE. Finally, numerical integration produces smooth, physically plausible future Gaussian trajectories, enabling rendering at arbitrary future timestamps. On the D-NeRF, NVFi, and HyperNeRF benchmarks, ODE-GS achieves state-of-the-art extrapolation performance, improving metrics by 19.8% compared to leading baselines, demonstrating its ability to accurately represent and predict 3D scene dynamics.
 ]]></content:encoded>
 <pubDate>Wed, 01 Oct 2025 00:00:00 -0400</pubDate>
-<pubDate>Wed, 01 Oct 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
 <title>HealthSLM-Bench: Benchmarking Small Language Models for Mobile and Wearable Healthcare Monitoring</title>
@@ -104,14 +99,12 @@ Abstract: We introduce ODE-GS, a novel approach that integrates 3D Gaussian Spla
 <div> privacy concerns, compact models, healthcare prediction, efficiency, SLMs
 
 Summary:
-Small Language Models (SLMs) are emerging as a potential solution for mobile and wearable healthcare monitoring due to their lightweight nature and ability to run locally on devices. This study evaluated SLMs in health prediction tasks using various approaches and found that they can perform comparably to Large Language Models (LLMs) while offering benefits in efficiency and privacy. The research highlights the potential of SLMs in next-generation healthcare monitoring but also identifies challenges such as handling class imbalance and few-shot scenarios. Despite these obstacles, SLMs show promise as a privacy-preserving solution for practical healthcare scenarios, showcasing their ability to improve individuals' quality of life through timely interventions and chronic condition management. Deploying fine-tuned SLMs on mobile devices demonstrated their real-world effectiveness and efficiency, underscoring their importance in the evolving landscape of healthcare monitoring. <br><br>Summary: <div>
+Small Language Models (SLMs) are emerging as a potential solution for mobile and wearable healthcare monitoring due to their lightweight nature and ability to run locally on devices. This study evaluated SLMs in health prediction tasks using various approaches and found that they can perform comparably to Large Language Models (LLMs) while offering benefits in efficiency and privacy. The research highlights the potential of SLMs in next-generation healthcare monitoring but also identifies challenges such as handling class imbalance and few-shot scenarios. Despite these obstacles, SLMs show promise as a privacy-preserving solution for practical healthcare scenarios, showcasing their ability to improve individuals' quality of life through timely interventions and chronic condition management. Deploying fine-tuned SLMs on mobile devices demonstrated their real-world effectiveness and efficiency, underscoring their importance in the evolving landscape of healthcare monitoring. <br /><br />Summary: <div>
 arXiv:2509.07260v4 Announce Type: replace-cross 
 Abstract: Mobile and wearable healthcare monitoring play a vital role in facilitating timely interventions, managing chronic health conditions, and ultimately improving individuals' quality of life. Previous studies on large language models (LLMs) have highlighted their impressive generalization abilities and effectiveness in healthcare prediction tasks. However, most LLM-based healthcare solutions are cloud-based, which raises significant privacy concerns and results in increased memory usage and latency. To address these challenges, there is growing interest in compact models, Small Language Models (SLMs), which are lightweight and designed to run locally and efficiently on mobile and wearable devices. Nevertheless, how well these models perform in healthcare prediction remains largely unexplored. We systematically evaluated SLMs on health prediction tasks using zero-shot, few-shot, and instruction fine-tuning approaches, and deployed the best performing fine-tuned SLMs on mobile devices to evaluate their real-world efficiency and predictive performance in practical healthcare scenarios. Our results show that SLMs can achieve performance comparable to LLMs while offering substantial gains in efficiency and privacy. However, challenges remain, particularly in handling class imbalance and few-shot scenarios. These findings highlight SLMs, though imperfect in their current form, as a promising solution for next-generation, privacy-preserving healthcare monitoring.
 ]]></content:encoded>
 <pubDate>Wed, 01 Oct 2025 00:00:00 -0400</pubDate>
-<pubDate>Wed, 01 Oct 2025 00:00:00 -0400</pubDate>
 </item>
-
 <item>
 <title>SOLD: SELFIES-based Objective-driven Latent Diffusion</title>
 <link>https://arxiv.org/abs/2509.25198</link>
@@ -10673,77 +10666,6 @@ Abstract: The 12-lead electrocardiogram (ECG) is a long-standing diagnostic tool
 <content:encoded><![CDATA[
 arXiv:2509.25097v1 Announce Type: cross 
 Abstract: Learning control policies for multi-robot systems (MRS) remains a major challenge due to long-term coordination and the difficulty of obtaining realistic training data. In this work, we address both limitations within an imitation learning framework. First, we shift the typical role of Curriculum Learning in MRS, from scalability with the number of robots, to focus on improving long-term coordination. We propose a curriculum strategy that gradually increases the length of expert trajectories during training, stabilizing learning and enhancing the accuracy of long-term behaviors. Second, we introduce a method to approximate the egocentric perception of each robot using only third-person global state demonstrations. Our approach transforms idealized trajectories into locally available observations by filtering neighbors, converting reference frames, and simulating onboard sensor variability. Both contributions are integrated into a physics-informed technique to produce scalable, distributed policies from observations. We conduct experiments across two tasks with varying team sizes and noise levels. Results show that our curriculum improves long-term accuracy, while our perceptual estimation method yields policies that are robust to realistic uncertainty. Together, these strategies enable the learning of robust, distributed controllers from global demonstrations, even in the absence of expert actions or onboard measurements.
-]]></content:encoded>
-<pubDate>Tue, 30 Sep 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>On Spectral Learning for Odeco Tensors: Perturbation, Initialization, and Algorithms</title>
-<link>https://arxiv.org/abs/2509.25126</link>
-<guid>https://arxiv.org/abs/2509.25126</guid>
-<content:encoded><![CDATA[
-arXiv:2509.25126v1 Announce Type: cross 
-Abstract: We study spectral learning for orthogonally decomposable (odeco) tensors, emphasizing the interplay between statistical limits, optimization geometry, and initialization. Unlike matrices, recovery for odeco tensors does not hinge on eigengaps, yielding improved robustness under noise. While iterative methods such as tensor power iterations can be statistically efficient, initialization emerges as the main computational bottleneck. We investigate perturbation bounds, non-convex optimization analysis, and initialization strategies, clarifying when efficient algorithms attain statistical limits and when fundamental barriers remain.
-]]></content:encoded>
-<pubDate>Tue, 30 Sep 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Score Distillation of Flow Matching Models</title>
-<link>https://arxiv.org/abs/2509.25127</link>
-<guid>https://arxiv.org/abs/2509.25127</guid>
-<content:encoded><![CDATA[
-arXiv:2509.25127v1 Announce Type: cross 
-Abstract: Diffusion models achieve high-quality image generation but are limited by slow iterative sampling. Distillation methods alleviate this by enabling one- or few-step generation. Flow matching, originally introduced as a distinct framework, has since been shown to be theoretically equivalent to diffusion under Gaussian assumptions, raising the question of whether distillation techniques such as score distillation transfer directly. We provide a simple derivation -- based on Bayes' rule and conditional expectations -- that unifies Gaussian diffusion and flow matching without relying on ODE/SDE formulations. Building on this view, we extend Score identity Distillation (SiD) to pretrained text-to-image flow-matching models, including SANA, SD3-Medium, SD3.5-Medium/Large, and FLUX.1-dev, all with DiT backbones. Experiments show that, with only modest flow-matching- and DiT-specific adjustments, SiD works out of the box across these models, in both data-free and data-aided settings, without requiring teacher finetuning or architectural changes. This provides the first systematic evidence that score distillation applies broadly to text-to-image flow matching models, resolving prior concerns about stability and soundness and unifying acceleration techniques across diffusion- and flow-based generators. We will make the PyTorch implementation publicly available.
-]]></content:encoded>
-<pubDate>Tue, 30 Sep 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>The Era of Real-World Human Interaction: RL from User Conversations</title>
-<link>https://arxiv.org/abs/2509.25137</link>
-<guid>https://arxiv.org/abs/2509.25137</guid>
-<content:encoded><![CDATA[
-arXiv:2509.25137v1 Announce Type: cross 
-Abstract: We posit that to achieve continual model improvement and multifaceted alignment, future models must learn from natural human interaction. Current conversational models are aligned using pre-annotated, expert-generated human feedback. In this work, we introduce Reinforcement Learning from Human Interaction (RLHI), a paradigm that learns directly from in-the-wild user conversations. We develop two complementary methods: (1) RLHI with User-Guided Rewrites, which revises unsatisfactory model outputs based on users' natural-language follow-up responses, (2) RLHI with User-Based Rewards, which learns via a reward model conditioned on knowledge of the user's long-term interaction history (termed persona). Together, these methods link long-term user personas to turn-level preferences via persona-conditioned preference optimization. Trained on conversations derived from WildChat, both RLHI variants outperform strong baselines in personalization and instruction-following, and similar feedback enhances performance on reasoning benchmarks. These results suggest organic human interaction offers scalable, effective supervision for personalized alignment.
-]]></content:encoded>
-<pubDate>Tue, 30 Sep 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Paired by the Teacher: Turning Unpaired Data into High-Fidelity Pairs for Low-Resource Text Generation</title>
-<link>https://arxiv.org/abs/2509.25144</link>
-<guid>https://arxiv.org/abs/2509.25144</guid>
-<content:encoded><![CDATA[
-arXiv:2509.25144v1 Announce Type: cross 
-Abstract: We present Paired by the Teacher (PbT), a two-stage teacher-student pipeline that synthesizes accurate input-output pairs without human labels or parallel data. In many low-resource natural language generation (NLG) scenarios, practitioners may have only raw outputs, like highlights, recaps, or questions, or only raw inputs, such as articles, dialogues, or paragraphs, but seldom both. This mismatch forces small models to learn from very few examples or rely on costly, broad-scope synthetic examples produced by large LLMs. PbT addresses this by asking a teacher LLM to compress each unpaired example into a concise intermediate representation (IR), and training a student to reconstruct inputs from IRs. This enables outputs to be paired with student-generated inputs, yielding high-quality synthetic data. We evaluate PbT on five benchmarks-document summarization (XSum, CNNDM), dialogue summarization (SAMSum, DialogSum), and question generation (SQuAD)-as well as an unpaired setting on SwitchBoard (paired with DialogSum summaries). An 8B student trained only on PbT data outperforms models trained on 70 B teacher-generated corpora and other unsupervised baselines, coming within 1.2 ROUGE-L of human-annotated pairs and closing 82% of the oracle gap at one-third the annotation cost of direct synthesis. Human evaluation on SwitchBoard further confirms that only PbT produces concise, faithful summaries aligned with the target style, highlighting its advantage of generating in-domain sources that avoid the mismatch, limiting direct synthesis.
-]]></content:encoded>
-<pubDate>Tue, 30 Sep 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Fast Feature Field ($\text{F}^3$): A Predictive Representation of Events</title>
-<link>https://arxiv.org/abs/2509.25146</link>
-<guid>https://arxiv.org/abs/2509.25146</guid>
-<content:encoded><![CDATA[
-arXiv:2509.25146v1 Announce Type: cross 
-Abstract: This paper develops a mathematical argument and algorithms for building representations of data from event-based cameras, that we call Fast Feature Field ($\text{F}^3$). We learn this representation by predicting future events from past events and show that it preserves scene structure and motion information. $\text{F}^3$ exploits the sparsity of event data and is robust to noise and variations in event rates. It can be computed efficiently using ideas from multi-resolution hash encoding and deep sets - achieving 120 Hz at HD and 440 Hz at VGA resolutions. $\text{F}^3$ represents events within a contiguous spatiotemporal volume as a multi-channel image, enabling a range of downstream tasks. We obtain state-of-the-art performance on optical flow estimation, semantic segmentation, and monocular metric depth estimation, on data from three robotic platforms (a car, a quadruped robot and a flying platform), across different lighting conditions (daytime, nighttime), environments (indoors, outdoors, urban, as well as off-road) and dynamic vision sensors (resolutions and event rates). Our implementations can predict these tasks at 25-75 Hz at HD resolution.
-]]></content:encoded>
-<pubDate>Tue, 30 Sep 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Pretraining Large Language Models with NVFP4</title>
-<link>https://arxiv.org/abs/2509.25149</link>
-<guid>https://arxiv.org/abs/2509.25149</guid>
-<content:encoded><![CDATA[
-arXiv:2509.25149v1 Announce Type: cross 
-Abstract: Large Language Models (LLMs) today are powerful problem solvers across many domains, and they continue to get stronger as they scale in model size, training set size, and training set quality, as shown by extensive research and experimentation across the industry. Training a frontier model today requires on the order of tens to hundreds of yottaflops, which is a massive investment of time, compute, and energy. Improving pretraining efficiency is therefore essential to enable the next generation of even more capable LLMs. While 8-bit floating point (FP8) training is now widely adopted, transitioning to even narrower precision, such as 4-bit floating point (FP4), could unlock additional improvements in computational speed and resource utilization. However, quantization at this level poses challenges to training stability, convergence, and implementation, notably for large-scale models trained on long token horizons.
-  In this study, we introduce a novel approach for stable and accurate training of large language models (LLMs) using the NVFP4 format. Our method integrates Random Hadamard transforms (RHT) to bound block-level outliers, employs a two-dimensional quantization scheme for consistent representations across both the forward and backward passes, utilizes stochastic rounding for unbiased gradient estimation, and incorporates selective high-precision layers. We validate our approach by training a 12-billion-parameter model on 10 trillion tokens -- the longest publicly documented training run in 4-bit precision to date. Our results show that the model trained with our NVFP4-based pretraining technique achieves training loss and downstream task accuracies comparable to an FP8 baseline. These findings highlight that NVFP4, when combined with our training approach, represents a major step forward in narrow-precision LLM training algorithms.
-]]></content:encoded>
-<pubDate>Tue, 30 Sep 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Context-Driven Performance Modeling for Causal Inference Operators on Neural Processing Units</title>
-<link>https://arxiv.org/abs/2509.25155</link>
-<guid>https://arxiv.org/abs/2509.25155</guid>
-<content:encoded><![CDATA[
-arXiv:2509.25155v1 Announce Type: cross 
-Abstract: The proliferation of large language models (LLMs) has driven demand for long context inference on resource constrained edge devices. However, deploying these models on Neural Processing Units (NPUs) presents significant challenges due to the architectural mismatch: quadratic complexity of standard attention mechanisms conflicts with memory and compute patterns of edge accelerators. This paper presents a comprehensive performance analysis of various causal inference operators on a modern NPU. We benchmark standard quadratic attention against several sub-quadratic alternatives, including structured state-space and linear attention models. Our analysis reveals that while sub-quadratic methods offer superior scalability, they introduce distinct computational bottlenecks on the NPU's specialized execution units. We identify that quadratic attention becomes severely memory-bound, suffering from cache inefficiency and pipeline stalls exceeding 95% at long contexts. In contrast, sub-quadratic models can become compute-bound on programmable vector cores. These findings provide critical insights for the co-design of hardware-aware models and optimization strategies to enable on-device AI inference with long-contexts.
 ]]></content:encoded>
 <pubDate>Tue, 30 Sep 2025 00:00:00 -0400</pubDate>
 </item>
