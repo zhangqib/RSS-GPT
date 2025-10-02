@@ -4,18 +4,18 @@
 <title>cs.AI updates on arXiv.org</title>
 <link>http://rss.arxiv.org/rss/cs.AI</link>
 
+
 <item>
 <title>LLM Watermark Evasion via Bias Inversion</title>
 <link>https://arxiv.org/abs/2509.23019</link>
 <guid>https://arxiv.org/abs/2509.23019</guid>
 <content:encoded><![CDATA[
-<div> Watermarking, language models, Bias-Inversion Rewriting Attack, adversarial evasion, vulnerabilities <br>
-Summary:<br>
+<div> Watermarking, language models, Bias-Inversion Rewriting Attack, adversarial evasion, vulnerabilities <br />
+Summary:<br />
 The article discusses the vulnerability of watermarking in large language models (LLMs) under adversarial evasion. A new attack called Bias-Inversion Rewriting Attack (BIRA) is proposed, which weakens the watermark signal by suppressing likely watermarked tokens without knowledge of the watermarking scheme. BIRA achieves over 99% evasion while maintaining the semantic content of the original text. This attack highlights a systematic vulnerability in watermarking methods for LLMs, emphasizing the importance of stress testing and robust defenses in the face of adversarial attacks. <div>
 arXiv:2509.23019v2 Announce Type: replace-cross 
 Abstract: Watermarking for large language models (LLMs) embeds a statistical signal during generation to enable detection of model-produced text. While watermarking has proven effective in benign settings, its robustness under adversarial evasion remains contested. To advance a rigorous understanding and evaluation of such vulnerabilities, we propose the \emph{Bias-Inversion Rewriting Attack} (BIRA), which is theoretically motivated and model-agnostic. BIRA weakens the watermark signal by suppressing the logits of likely watermarked tokens during LLM-based rewriting, without any knowledge of the underlying watermarking scheme. Across recent watermarking methods, BIRA achieves over 99\% evasion while preserving the semantic content of the original text. Beyond demonstrating an attack, our results reveal a systematic vulnerability, emphasizing the need for stress testing and robust defenses.
 ]]></content:encoded>
-<pubDate>Thu, 02 Oct 2025 00:00:00 -0400</pubDate>
 <pubDate>Thu, 02 Oct 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -28,11 +28,10 @@ Abstract: Watermarking for large language models (LLMs) embeds a statistical sig
 Summary:
 Dynamic-TreeRPO proposes a tree-structured search approach with dynamic noise intensities for efficient exploration in text-to-image generation models. By integrating Supervised Fine-Tuning (SFT) and Reinforcement Learning (RL) within LayerTuning-RL paradigm, the model achieves superior performance in semantic consistency, visual fidelity, and human preference alignment on benchmarks like HPS-v2.1, PickScore, and ImageReward. The approach outperforms state-of-the-art models by 4.9%, 5.91%, and 8.66% on these benchmarks, while improving training efficiency by nearly 50%. By utilizing dynamic noise intensities and trajectory search optimization, Dynamic-TreeRPO avoids the disruption of exploration process and explores a diverse search space efficiently. The model effectively amortizes computational overhead through shared prefix paths in the tree structure, enhancing variation without extra computational cost. The proposed approach demonstrates significant advancements in generation quality and exploration efficiency in text-to-image generation tasks. 
 
-<br><br>Summary: <div>
+<br /><br />Summary: <div>
 arXiv:2509.23352v2 Announce Type: replace-cross 
 Abstract: The integration of Reinforcement Learning (RL) into flow matching models for text-to-image (T2I) generation has driven substantial advances in generation quality. However, these gains often come at the cost of exhaustive exploration and inefficient sampling strategies due to slight variation in the sampling group. Building on this insight, we propose Dynamic-TreeRPO, which implements the sliding-window sampling strategy as a tree-structured search with dynamic noise intensities along depth. We perform GRPO-guided optimization and constrained Stochastic Differential Equation (SDE) sampling within this tree structure. By sharing prefix paths of the tree, our design effectively amortizes the computational overhead of trajectory search. With well-designed noise intensities for each tree layer, Dynamic-TreeRPO can enhance the variation of exploration without any extra computational cost. Furthermore, we seamlessly integrate Supervised Fine-Tuning (SFT) and RL paradigm within Dynamic-TreeRPO to construct our proposed LayerTuning-RL, reformulating the loss function of SFT as a dynamically weighted Progress Reward Model (PRM) rather than a separate pretraining method. By associating this weighted PRM with dynamic-adaptive clipping bounds, the disruption of exploration process in Dynamic-TreeRPO is avoided. Benefiting from the tree-structured sampling and the LayerTuning-RL paradigm, our model dynamically explores a diverse search space along effective directions. Compared to existing baselines, our approach demonstrates significant superiority in terms of semantic consistency, visual fidelity, and human preference alignment on established benchmarks, including HPS-v2.1, PickScore, and ImageReward. In particular, our model outperforms SoTA by $4.9\%$, $5.91\%$, and $8.66\%$ on those benchmarks, respectively, while improving the training efficiency by nearly $50\%$.
 ]]></content:encoded>
-<pubDate>Thu, 02 Oct 2025 00:00:00 -0400</pubDate>
 <pubDate>Thu, 02 Oct 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -47,11 +46,10 @@ Summary:
 - CyberTeam structures threat-hunting workflows by capturing dependencies among analytical tasks and providing operational modules for task-specific requirements.
 - The benchmark includes 30 tasks and 9 operational modules to guide LLMs through standardized threat analysis.
 - Evaluation against leading LLMs and cybersecurity agents shows the benefits of standardized design in threat analysis.
-- The study also highlights the limitations of open-ended reasoning strategies in real-world threat hunting.<br><br>Summary: <div>
+- The study also highlights the limitations of open-ended reasoning strategies in real-world threat hunting.<br /><br />Summary: <div>
 arXiv:2509.23571v2 Announce Type: replace-cross 
 Abstract: As cyber threats continue to grow in scale and sophistication, blue team defenders increasingly require advanced tools to proactively detect and mitigate risks. Large Language Models (LLMs) offer promising capabilities for enhancing threat analysis. However, their effectiveness in real-world blue team threat-hunting scenarios remains insufficiently explored. This paper presents CyberTeam, a benchmark designed to guide LLMs in blue teaming practice. CyberTeam constructs a standardized workflow in two stages. First, it models realistic threat-hunting workflows by capturing the dependencies among analytical tasks from threat attribution to incident response. Next, each task is addressed through a set of operational modules tailored to its specific analytical requirements. This transforms threat hunting into a structured sequence of reasoning steps, with each step grounded in a discrete operation and ordered according to task-specific dependencies. Guided by this framework, LLMs are directed to perform threat-hunting tasks through modularized steps. Overall, CyberTeam integrates 30 tasks and 9 operational modules to guide LLMs through standardized threat analysis. We evaluate both leading LLMs and state-of-the-art cybersecurity agents, comparing CyberTeam against open-ended reasoning strategies. Our results highlight the improvements enabled by standardized design, while also revealing the limitations of open-ended reasoning in real-world threat hunting.
 ]]></content:encoded>
-<pubDate>Thu, 02 Oct 2025 00:00:00 -0400</pubDate>
 <pubDate>Thu, 02 Oct 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -60,13 +58,12 @@ Abstract: As cyber threats continue to grow in scale and sophistication, blue te
 <guid>https://arxiv.org/abs/2509.23573</guid>
 <content:encoded><![CDATA[
 <div> Vulnerabilities LLMs CTI cyber threats large language models security analysts
-<br>
+<br />
 Summary: In this paper, the authors examine the vulnerabilities of Large Language Models (LLMs) in supporting Cyber Threat Intelligence (CTI). They identify three fundamental vulnerabilities: spurious correlations, contradictory knowledge, and constrained generalization, which limit the effectiveness of LLMs in CTI tasks. The authors propose a novel categorization methodology that combines stratification, autoregressive refinement, and human-in-the-loop supervision to analyze failure instances accurately. Through extensive evaluations and human inspections, they highlight the challenges faced by LLMs in the threat landscape. The study emphasizes the need for more robust LLM-powered CTI systems and provides actionable insights for enhancing the performance of such systems in real-world scenarios. The findings of this research offer valuable input for improving the design and deployment of LLMs in CTI applications.
-<br><br> <div>
+<br /><br /> <div>
 arXiv:2509.23573v2 Announce Type: replace-cross 
 Abstract: Large Language Models (LLMs) are intensively used to assist security analysts in counteracting the rapid exploitation of cyber threats, wherein LLMs offer cyber threat intelligence (CTI) to support vulnerability assessment and incident response. While recent work has shown that LLMs can support a wide range of CTI tasks such as threat analysis, vulnerability detection, and intrusion defense, significant performance gaps persist in practical deployments. In this paper, we investigate the intrinsic vulnerabilities of LLMs in CTI, focusing on challenges that arise from the nature of the threat landscape itself rather than the model architecture. Using large-scale evaluations across multiple CTI benchmarks and real-world threat reports, we introduce a novel categorization methodology that integrates stratification, autoregressive refinement, and human-in-the-loop supervision to reliably analyze failure instances. Through extensive experiments and human inspections, we reveal three fundamental vulnerabilities: spurious correlations, contradictory knowledge, and constrained generalization, that limit LLMs in effectively supporting CTI. Subsequently, we provide actionable insights for designing more robust LLM-powered CTI systems to facilitate future research.
 ]]></content:encoded>
-<pubDate>Thu, 02 Oct 2025 00:00:00 -0400</pubDate>
 <pubDate>Thu, 02 Oct 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -74,14 +71,13 @@ Abstract: Large Language Models (LLMs) are intensively used to assist security a
 <link>https://arxiv.org/abs/2509.23652</link>
 <guid>https://arxiv.org/abs/2509.23652</guid>
 <content:encoded><![CDATA[
-<div> Reinforcement Learning, Video Reasoning, Dataset Synthesis, Multi-Agent Framework, State-of-the-Art Performance <br>
-<br>
+<div> Reinforcement Learning, Video Reasoning, Dataset Synthesis, Multi-Agent Framework, State-of-the-Art Performance <br />
+<br />
 Summary: 
 The article introduces ReWatch, a dataset designed for advanced video reasoning tasks. This dataset consists of three components: ReWatch-Caption, ReWatch-QA, and ReWatch-CoT, synthesized using a multi-stage pipeline. A key innovation is the Multi-Agent ReAct framework that simulates human-like reasoning processes for generating video-grounded reasoning traces. Additionally, a novel Observation & Reasoning reward mechanism is proposed to evaluate correctness and alignment with video content, aiming to prevent hallucination. By leveraging the ReWatch dataset, a LVLM model called ReWatch-R1 is developed through post-training and reinforcement learning with verifiable reward. Experiment results demonstrate that ReWatch-R1 achieves state-of-the-art performance on five challenging video reasoning benchmarks. <div>
 arXiv:2509.23652v2 Announce Type: replace-cross 
 Abstract: While Reinforcement Learning with Verifiable Reward (RLVR) significantly advances image reasoning in Large Vision-Language Models (LVLMs), its application to complex video reasoning remains underdeveloped. This gap stems primarily from a critical data bottleneck: existing datasets lack the challenging, multi-hop questions and high-quality, video-grounded Chain-of-Thought (CoT) data necessary to effectively bootstrap RLVR. To address this, we introduce ReWatch, a large-scale dataset built to foster advanced video reasoning. We propose a novel multi-stage synthesis pipeline to synthesize its three components: ReWatch-Caption, ReWatch-QA, and ReWatch-CoT. A core innovation is our Multi-Agent ReAct framework for CoT synthesis, which simulates a human-like "re-watching" process to generate video-grounded reasoning traces by explicitly modeling information retrieval and verification. Building on this dataset, we develop ReWatch-R1 by post-training a strong baseline LVLM with Supervised Fine-Tuning (SFT) and our RLVR framework. This framework incorporates a novel Observation \& Reasoning (O\&amp;R) reward mechanism that evaluates both the final answer's correctness and the reasoning's alignment with video content, directly penalizing hallucination. Our experiments show that ReWatch-R1 achieves state-of-the-art average performance on five challenging video reasoning benchmarks. Project Page: https://rewatch-r1.github.io
 ]]></content:encoded>
-<pubDate>Thu, 02 Oct 2025 00:00:00 -0400</pubDate>
 <pubDate>Thu, 02 Oct 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -97,7 +93,6 @@ arXiv:2509.23876v2 Announce Type: replace-cross
 Abstract: Autoregressive (AR) models based on next-scale prediction are rapidly emerging as a powerful tool for image generation, but they face a critical weakness: information inconsistencies between patches across timesteps introduced by progressive resolution scaling. These inconsistencies scatter guidance signals, causing them to drift away from conditioning information and leaving behind ambiguous, unfaithful features. We tackle this challenge with Information-Grounding Guidance (IGG), a novel mechanism that anchors guidance to semantically important regions through attention. By adaptively reinforcing informative patches during sampling, IGG ensures that guidance and content remain tightly aligned. Across both class-conditioned and text-to-image generation tasks, IGG delivers sharper, more coherent, and semantically grounded images, setting a new benchmark for AR-based methods.
 ]]></content:encoded>
 <pubDate>Thu, 02 Oct 2025 00:00:00 -0400</pubDate>
-<pubDate>Thu, 02 Oct 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
 <title>An Agent-Based Framework for Automated Higher-Voice Harmony Generation</title>
@@ -109,11 +104,10 @@ Abstract: Autoregressive (AR) models based on next-scale prediction are rapidly 
 Summary:
 Our paper presents the Agentic AI-enabled Higher Harmony Music Generator, a novel system tackling the challenge of creating musically coherent harmony. The system utilizes a multi-agent approach with specialized agents for different tasks: Music-Ingestion Agent for parsing input scores, Chord-Knowledge Agent using Chord-Former for chord interpretation, Harmony-Generation Agent with Harmony-GPT and Rhythm-Net for composing harmony lines, and Audio-Production Agent with Symbolic-to-Audio Synthesizer for rendering audio. This collaborative and modular framework mimics human musician processes, allowing for robust data processing, deep theoretical understanding, creative composition, and realistic audio synthesis. The system can generate sophisticated higher-voice harmonies that are contextually appropriate for given melodies. The innovative use of AI and specialized agents in this system opens up possibilities for advanced algorithmic composition in the field of music. 
 
-<br><br>Summary: <div>
+<br /><br />Summary: <div>
 arXiv:2509.24463v2 Announce Type: replace-cross 
 Abstract: The generation of musically coherent and aesthetically pleasing harmony remains a significant challenge in the field of algorithmic composition. This paper introduces an innovative Agentic AI-enabled Higher Harmony Music Generator, a multi-agent system designed to create harmony in a collaborative and modular fashion. Our framework comprises four specialized agents: a Music-Ingestion Agent for parsing and standardizing input musical scores; a Chord-Knowledge Agent, powered by a Chord-Former (Transformer model), to interpret and provide the constituent notes of complex chord symbols; a Harmony-Generation Agent, which utilizes a Harmony-GPT and a Rhythm-Net (RNN) to compose a melodically and rhythmically complementary harmony line; and an Audio-Production Agent that employs a GAN-based Symbolic-to-Audio Synthesizer to render the final symbolic output into high-fidelity audio. By delegating specific tasks to specialized agents, our system effectively mimics the collaborative process of human musicians. This modular, agent-based approach allows for robust data processing, deep theoretical understanding, creative composition, and realistic audio synthesis, culminating in a system capable of generating sophisticated and contextually appropriate higher-voice harmonies for given melodies.
 ]]></content:encoded>
-<pubDate>Thu, 02 Oct 2025 00:00:00 -0400</pubDate>
 <pubDate>Thu, 02 Oct 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -121,17 +115,15 @@ Abstract: The generation of musically coherent and aesthetically pleasing harmon
 <link>https://arxiv.org/abs/2509.24866</link>
 <guid>https://arxiv.org/abs/2509.24866</guid>
 <content:encoded><![CDATA[
-<div> Metaphor, discourse analysis, large language models, automation, fine-tuning<br>
-<br>
-Summary:<br>
+<div> Metaphor, discourse analysis, large language models, automation, fine-tuning<br />
+<br />
+Summary:<br />
 This study explores the use of large language models (LLMs) to automate metaphor identification in texts. Three methods were compared: retrieval-augmented generation, prompt engineering, and fine-tuning. The results showed that LLMs can achieve high accuracy in identifying metaphors, with fine-tuning yielding a median F1 score of 0.79. Comparison of human and LLM outputs revealed systematic discrepancies, highlighting grey areas and challenges in metaphor theory. The study suggests that LLMs can partially automate metaphor identification and serve as a platform for refining metaphor identification protocols and underlying theory. <div>
 arXiv:2509.24866v2 Announce Type: replace-cross 
 Abstract: Metaphor is a pervasive feature of discourse and a powerful lens for examining cognition, emotion, and ideology. Large-scale analysis, however, has been constrained by the need for manual annotation due to the context-sensitive nature of metaphor. This study investigates the potential of large language models (LLMs) to automate metaphor identification in full texts. We compare three methods: (i) retrieval-augmented generation (RAG), where the model is provided with a codebook and instructed to annotate texts based on its rules and examples; (ii) prompt engineering, where we design task-specific verbal instructions; and (iii) fine-tuning, where the model is trained on hand-coded texts to optimize performance. Within prompt engineering, we test zero-shot, few-shot, and chain-of-thought strategies. Our results show that state-of-the-art closed-source LLMs can achieve high accuracy, with fine-tuning yielding a median F1 score of 0.79. A comparison of human and LLM outputs reveals that most discrepancies are systematic, reflecting well-known grey areas and conceptual challenges in metaphor theory. We propose that LLMs can be used to at least partly automate metaphor identification and can serve as a testbed for developing and refining metaphor identification protocols and the theory that underpins them.
 ]]></content:encoded>
 <pubDate>Thu, 02 Oct 2025 00:00:00 -0400</pubDate>
-<pubDate>Thu, 02 Oct 2025 00:00:00 -0400</pubDate>
 </item>
-
 <item>
 <title>Learning to Lead Themselves: Agentic AI in MAS using MARL</title>
 <link>https://arxiv.org/abs/2510.00022</link>
@@ -10926,86 +10918,6 @@ Abstract: The remarkable capabilities of Large Language Models (LLMs) have raise
 <content:encoded><![CDATA[
 arXiv:2509.22733v1 Announce Type: cross 
 Abstract: A full power flow (PF) model is a complete representation of the physical power network. Traditional model-based methods rely on the full PF model to implement power flow analysis. In practice, however, some PF model parameters can be inaccurate or even unavailable due to the uncertainties or dynamics in the power systems. Moreover, because the power network keeps evolving with possibly changing topology, the generalizability of a PF model to different network sizes and typologies should be considered. In this paper, we propose a PF rebuild model based on graph attention networks (GAT) by constructing a new graph based on the real and imaginary parts of voltage at each bus. By comparing with two state-of-the-art PF rebuild models for different standard IEEE power system cases and their modified topology variants, we demonstrate the feasibility of our method. Experimental results show that our proposed model achieves better accuracy for a changing network and can generalize to different networks with less accuracy discount.
-]]></content:encoded>
-<pubDate>Tue, 30 Sep 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Automated Formative Feedback for Short-form Writing: An LLM-Driven Approach and Adoption Analysis</title>
-<link>https://arxiv.org/abs/2509.22734</link>
-<guid>https://arxiv.org/abs/2509.22734</guid>
-<content:encoded><![CDATA[
-arXiv:2509.22734v1 Announce Type: cross 
-Abstract: This paper explores the development and adoption of AI-based formative feedback in the context of biweekly reports in an engineering Capstone program. Each student is required to write a short report detailing their individual accomplishments over the past two weeks, which is then assessed by their advising professor. An LLM-powered tool was developed to provide students with personalized feedback on their draft reports, guiding them toward improved completeness and quality. Usage data across two rounds revealed an initial barrier to adoption, with low engagement rates. However, students who engaged in the AI feedback system demonstrated the ability to use it effectively, leading to improvements in the completeness and quality of their reports. Furthermore, the tool's task-parsing capabilities provided a novel approach to identify potential student organizational tasks and deliverables. The findings suggest initial skepticism toward the tool with a limited adoption within the studied context, however, they also highlight the potential for AI-driven tools to provide students and professors valuable insights and formative support.
-]]></content:encoded>
-<pubDate>Tue, 30 Sep 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Regulating the Agency of LLM-based Agents</title>
-<link>https://arxiv.org/abs/2509.22735</link>
-<guid>https://arxiv.org/abs/2509.22735</guid>
-<content:encoded><![CDATA[
-arXiv:2509.22735v1 Announce Type: cross 
-Abstract: As increasingly capable large language model (LLM)-based agents are developed, the potential harms caused by misalignment and loss of control grow correspondingly severe. To address these risks, we propose an approach that directly measures and controls the agency of these AI systems. We conceptualize the agency of LLM-based agents as a property independent of intelligence-related measures and consistent with the interdisciplinary literature on the concept of agency. We offer (1) agency as a system property operationalized along the dimensions of preference rigidity, independent operation, and goal persistence, (2) a representation engineering approach to the measurement and control of the agency of an LLM-based agent, and (3) regulatory tools enabled by this approach: mandated testing protocols, domain-specific agency limits, insurance frameworks that price risk based on agency, and agency ceilings to prevent societal-scale risks. We view our approach as a step toward reducing the risks that motivate the ``Scientist AI'' paradigm, while still capturing some of the benefits from limited agentic behavior.
-]]></content:encoded>
-<pubDate>Tue, 30 Sep 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Consistency Models as Plug-and-Play Priors for Inverse Problems</title>
-<link>https://arxiv.org/abs/2509.22736</link>
-<guid>https://arxiv.org/abs/2509.22736</guid>
-<content:encoded><![CDATA[
-arXiv:2509.22736v1 Announce Type: cross 
-Abstract: Diffusion models have found extensive use in solving numerous inverse problems. Such diffusion inverse problem solvers aim to sample from the posterior distribution of data given the measurements, using a combination of the unconditional score function and an approximation of the posterior related to the forward process. Recently, consistency models (CMs) have been proposed to directly predict the final output from any point on the diffusion ODE trajectory, enabling high-quality sampling in just a few NFEs. CMs have also been utilized for inverse problems, but existing CM-based solvers either require additional task-specific training or utilize data fidelity operations with slow convergence, not amenable to large-scale problems. In this work, we reinterpret CMs as proximal operators of a prior, enabling their integration into plug-and-play (PnP) frameworks. We propose a solver based on PnP-ADMM, which enables us to leverage the fast convergence of conjugate gradient method. We further accelerate this with noise injection and momentum, dubbed PnP-CM, and show it maintains the convergence properties of the baseline PnP-ADMM. We evaluate our approach on a variety of inverse problems, including inpainting, super-resolution, Gaussian deblurring, and magnetic resonance imaging (MRI) reconstruction. To the best of our knowledge, this is the first CM trained for MRI datasets. Our results show that PnP-CM achieves high-quality reconstructions in as few as 4 NFEs, and can produce meaningful results in 2 steps, highlighting its effectiveness in real-world inverse problems while outperforming comparable CM-based approaches.
-]]></content:encoded>
-<pubDate>Tue, 30 Sep 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>CompareBench: A Benchmark for Visual Comparison Reasoning in Vision-Language Models</title>
-<link>https://arxiv.org/abs/2509.22737</link>
-<guid>https://arxiv.org/abs/2509.22737</guid>
-<content:encoded><![CDATA[
-arXiv:2509.22737v1 Announce Type: cross 
-Abstract: We introduce CompareBench, a benchmark for evaluating visual comparison reasoning in vision-language models (VLMs), a fundamental yet understudied skill. CompareBench consists of 1000 QA pairs across four tasks: quantity (600), temporal (100), geometric (200), and spatial (100). It is derived from two auxiliary datasets that we constructed: TallyBench (2000 counting images with QA) and HistCaps (515 historical images with bilingual captions). We evaluate both closed-source APIs (OpenAI, Gemini, Claude) and open-source models (Qwen2.5-VL and Qwen3-VL series). Results show clear scaling trends but also reveal critical limitations: even the strongest models consistently fail at temporal ordering and spatial relations, and they often make mistakes in basic counting and geometric comparisons that are trivial for humans. These findings demonstrate that visual comparison remains a systematic blind spot for current VLMs. By providing controlled, diverse, and diagnostic evaluation, CompareBench establishes a foundation for advancing more reliable multimodal reasoning.
-]]></content:encoded>
-<pubDate>Tue, 30 Sep 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Painless Activation Steering: An Automated, Lightweight Approach for Post-Training Large Language Models</title>
-<link>https://arxiv.org/abs/2509.22739</link>
-<guid>https://arxiv.org/abs/2509.22739</guid>
-<content:encoded><![CDATA[
-arXiv:2509.22739v1 Announce Type: cross 
-Abstract: Language models (LMs) are typically post-trained for desired capabilities and behaviors via weight-based or prompt-based steering, but the former is time-consuming and expensive, and the latter is not precisely controllable and often requires manual trial-and-error. While activation steering (AS) promises a cheap, fast, and controllable alternative to the two existing post-training methods, current AS techniques require hand-crafted prompt pairs or labor-intensive feature annotation, making them more inconvenient than the plug-and-play methods such as Reinforcement Learning (RL) and Supervised Fine-Tuning (SFT). We introduce Painless Activation Steering (PAS), a family of fully automated methods that make AS readily usable with any given labeled dataset, with no need for prompt construction, feature labeling, or human intervention. We evaluate PAS on three open-weight models (Llama3.1-8B-Instruct, DeepSeek-R1-Distill-8B, and Nous-Hermes-2) and 18 tasks; we find that PAS reliably improves performance for behavior tasks, but not for intelligence-oriented tasks. The introspective variant (iPAS) delivers the strongest causal steering effects (10.1% on Bias, 5.2% on Morality, and 34.8% on Alignment). We also show PAS delivers additional gains on top of In-Context Learning (ICL) and SFT. PAS constructs a fast, lightweight activation vector that can be cheaply trained, easily stored, and activated at will. Our results provide a characterization of where AS helps, where it fails, and how to deploy it as a practical, automated LM post-training option.
-]]></content:encoded>
-<pubDate>Tue, 30 Sep 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Learning What To Hear: Boosting Sound-Source Association For Robust Audiovisual Instance Segmentation</title>
-<link>https://arxiv.org/abs/2509.22740</link>
-<guid>https://arxiv.org/abs/2509.22740</guid>
-<content:encoded><![CDATA[
-arXiv:2509.22740v1 Announce Type: cross 
-Abstract: Audiovisual instance segmentation (AVIS) requires accurately localizing and tracking sounding objects throughout video sequences. Existing methods suffer from visual bias stemming from two fundamental issues: uniform additive fusion prevents queries from specializing to different sound sources, while visual-only training objectives allow queries to converge to arbitrary salient objects. We propose Audio-Centric Query Generation using cross-attention, enabling each query to selectively attend to distinct sound sources and carry sound-specific priors into visual decoding. Additionally, we introduce Sound-Aware Ordinal Counting (SAOC) loss that explicitly supervises sounding object numbers through ordinal regression with monotonic consistency constraints, preventing visual-only convergence during training. Experiments on AVISeg benchmark demonstrate consistent improvements: +1.64 mAP, +0.6 HOTA, and +2.06 FSLA, validating that query specialization and explicit counting supervision are crucial for accurate audiovisual instance segmentation.
-]]></content:encoded>
-<pubDate>Tue, 30 Sep 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Societal Capacity Assessment Framework: Measuring Resilience to Inform Advanced AI Risk Management</title>
-<link>https://arxiv.org/abs/2509.22742</link>
-<guid>https://arxiv.org/abs/2509.22742</guid>
-<content:encoded><![CDATA[
-arXiv:2509.22742v1 Announce Type: cross 
-Abstract: Risk assessments for advanced AI systems require evaluating both the models themselves and their deployment contexts. We introduce the Societal Capacity Assessment Framework (SCAF), an indicators-based approach to measuring a society's vulnerability, coping capacity, and adaptive capacity in response to AI-related risks. SCAF adapts established resilience analysis methodologies to AI, enabling organisations to ground risk management in insights about country-level deployment conditions. It can also support stakeholders in identifying opportunities to strengthen societal preparedness for emerging AI capabilities. By bridging disparate literatures and the "context gap" in AI evaluation, SCAF promotes more holistic risk assessment and governance as advanced AI systems proliferate globally.
-]]></content:encoded>
-<pubDate>Tue, 30 Sep 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Index-MSR: A high-efficiency multimodal fusion framework for speech recognition</title>
-<link>https://arxiv.org/abs/2509.22744</link>
-<guid>https://arxiv.org/abs/2509.22744</guid>
-<content:encoded><![CDATA[
-arXiv:2509.22744v1 Announce Type: cross 
-Abstract: Driven by large scale datasets and LLM based architectures, automatic speech recognition (ASR) systems have achieved remarkable improvements in accuracy. However, challenges persist for domain-specific terminology, and short utterances lacking semantic coherence, where recognition performance often degrades significantly. In this work, we present Index-MSR, an efficient multimodal speech recognition framework. At its core is a novel Multimodal Fusion Decoder (MFD), which effectively incorporates text-related information from videos (e.g., subtitles and presentation slides) into the speech recognition. This cross-modal integration not only enhances overall ASR accuracy but also yields substantial reductions in substitution errors. Extensive evaluations on both an in-house subtitle dataset and a public AVSR dataset demonstrate that Index-MSR achieves sota accuracy, with substitution errors reduced by 20,50%. These results demonstrate that our approach efficiently exploits text-related cues from video to improve speech recognition accuracy, showing strong potential in applications requiring strict audio text synchronization, such as audio translation.
 ]]></content:encoded>
 <pubDate>Tue, 30 Sep 2025 00:00:00 -0400</pubDate>
 </item>
