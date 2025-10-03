@@ -4,6 +4,7 @@
 <title>cs.CL updates on arXiv.org</title>
 <link>http://rss.arxiv.org/rss/cs.CL</link>
 
+
 <item>
 <title>On Code-Induced Reasoning in LLMs</title>
 <link>https://arxiv.org/abs/2509.21499</link>
@@ -11,14 +12,12 @@
 <content:encoded><![CDATA[
 <div> vulnerable, structural perturbations, semantic perturbations, pseudocode, syntactic styles
 Summary:
-Large language models (LLMs) benefit from code data to improve reasoning abilities. A systematic study using different programming languages and controlled perturbations revealed that LLMs are more affected by structural than semantic disruptions, especially in math and code tasks. Abstract representations like pseudocode and flowcharts can be as effective as code, and compressing information with fewer tokens can maintain or enhance performance. Even corrupted code can perform well if surface-level regularities are preserved. Different syntactic styles impact task-specific performance, with Python excelling in natural language reasoning and lower-level languages like Java and Rust in math tasks. This research provides insights into how code properties influence LLM reasoning and offers guidance for enhancing their capabilities through training data design.<br><br>Summary: <div>
+Large language models (LLMs) benefit from code data to improve reasoning abilities. A systematic study using different programming languages and controlled perturbations revealed that LLMs are more affected by structural than semantic disruptions, especially in math and code tasks. Abstract representations like pseudocode and flowcharts can be as effective as code, and compressing information with fewer tokens can maintain or enhance performance. Even corrupted code can perform well if surface-level regularities are preserved. Different syntactic styles impact task-specific performance, with Python excelling in natural language reasoning and lower-level languages like Java and Rust in math tasks. This research provides insights into how code properties influence LLM reasoning and offers guidance for enhancing their capabilities through training data design.<br /><br />Summary: <div>
 arXiv:2509.21499v2 Announce Type: replace 
 Abstract: Code data has been shown to enhance the reasoning capabilities of large language models (LLMs), but it remains unclear which aspects of code are most responsible. We investigate this question with a systematic, data-centric framework. We construct parallel instruction datasets in ten programming languages and apply controlled perturbations that selectively disrupt structural or semantic properties of code. We then finetune LLMs from five model families and eight scales on each variant and evaluate their performance on natural language, math, and code tasks. Across 3,331 experiments, our results show that LLMs are more vulnerable to structural perturbations than semantic ones, particularly on math and code tasks. Appropriate abstractions like pseudocode and flowcharts can be as effective as code, while encoding the same information with fewer tokens without adhering to original syntax can often retain or even improve performance. Remarkably, even corrupted code with misleading signals remains competitive when surface-level regularities persist. Finally, syntactic styles also shape task-specific gains with Python favoring natural language reasoning and lower-level languages such as Java and Rust favoring math. Through our systematic framework, we aim to provide insight into how different properties of code influence reasoning and inform the design of training data for enhancing LLM reasoning capabilities.
 ]]></content:encoded>
 <pubDate>Fri, 03 Oct 2025 00:00:00 -0400</pubDate>
-<pubDate>Fri, 03 Oct 2025 00:00:00 -0400</pubDate>
 </item>
-
 <item>
 <title>Uncovering Implicit Bias in Large Language Models with Concept Learning Dataset</title>
 <link>https://arxiv.org/abs/2510.01219</link>
@@ -11063,16 +11062,6 @@ Abstract: Recent advances in general-purpose AI underscore the urgent need to al
 <content:encoded><![CDATA[
 arXiv:2407.16994v3 Announce Type: replace-cross 
 Abstract: We propose an approach for preventing unsafe or otherwise low-quality large language model (LLM) outputs by leveraging the stochasticity of LLMs, an approach we call Repeated Checking with Regeneration (RCR). In this system, LLM checkers vote on the acceptability of a generated output, regenerating it if a threshold of disapproval is reached, until sufficient checkers approve. Based on our estimators for cost and failure rate and experimental data tailored to the application, our algorithm achieves a desired expected failure rate at Pareto-optimal cost. The failure rate provably decreases exponentially as a function of cost, and the models reasonably estimate the actual performance of such a system in action, even with limited data. This approach does not depend on the language model used, and could allow cheap, small LLMs to control, constrain, or at some tasks even outperform very complex and costly ones.
-]]></content:encoded>
-<pubDate>Tue, 30 Sep 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>NextLocLLM: Location Semantics Modeling and Coordinate-Based Next Location Prediction with LLMs</title>
-<link>https://arxiv.org/abs/2410.09129</link>
-<guid>https://arxiv.org/abs/2410.09129</guid>
-<content:encoded><![CDATA[
-arXiv:2410.09129v2 Announce Type: replace-cross 
-Abstract: Next location prediction is a critical task in human mobility analysis.Existing methods typically formulate it as a classification task based on discrete location IDs, which hinders spatial continuity modeling and limits generalization to new cities. In this paper, we propose NextLocLLM, a novel framework that reformulates next-location prediction as coordinate regression and integrates LLMs for both location semantics encoding and coordinate-level prediction. To model location functional semantics, it constructs LLM-enhanced POI embeddings by leveraging language understanding capabilities of LLMs to extract functional semantics from textual descriptions of POI categories. These POI embeddings are combined with spatiotemporal trajectory representation and fed into the same LLM, enabling unified semantic and predictive modeling. A lightweight regression head generates coordinate outputs, which are mapped to top-k candidate locations via post-prediction retrieval module, ensuring structured outputs. Experiments across diverse cities show that NextLocLLM outperforms existing baselines in both supervised and zero-shot settings. Code is available at: https://github.com/liuwj2000/NexelocLLM.
 ]]></content:encoded>
 <pubDate>Tue, 30 Sep 2025 00:00:00 -0400</pubDate>
 </item>

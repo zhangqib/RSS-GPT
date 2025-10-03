@@ -4,6 +4,7 @@
 <title>cs.LG updates on arXiv.org</title>
 <link>http://rss.arxiv.org/rss/cs.LG</link>
 
+
 <item>
 <title>Finite Sample Analysis of Linear Temporal Difference Learning with Arbitrary Features</title>
 <link>https://arxiv.org/abs/2505.21391</link>
@@ -17,19 +18,17 @@ arXiv:2505.21391v3 Announce Type: replace
 Abstract: Linear TD($\lambda$) is one of the most fundamental reinforcement learning algorithms for policy evaluation. Previously, convergence rates are typically established under the assumption of linearly independent features, which does not hold in many practical scenarios. This paper instead establishes the first $L^2$ convergence rates for linear TD($\lambda$) operating under arbitrary features, without making any algorithmic modification or additional assumptions. Our results apply to both the discounted and average-reward settings. To address the potential non-uniqueness of solutions resulting from arbitrary features, we develop a novel stochastic approximation result featuring convergence rates to the solution set instead of a single point.
 ]]></content:encoded>
 <pubDate>Fri, 03 Oct 2025 00:00:00 -0400</pubDate>
-<pubDate>Fri, 03 Oct 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
 <title>Analysis of Variational Sparse Autoencoders</title>
 <link>https://arxiv.org/abs/2509.22994</link>
 <guid>https://arxiv.org/abs/2509.22994</guid>
 <content:encoded><![CDATA[
-<div> Variational Sparse Autoencoder, SAE architectures, interpretability, feature organization, Gaussian posteriors <br>
-Summary: Sparse Autoencoders (SAEs) offer a method for learning human-interpretable features from neural network representations. The Variational Sparse Autoencoder (vSAE) incorporates variational methods by using stochastic sampling from Gaussian posteriors and KL divergence regularization. This allows for more coherent feature organization in the latent space and aids in avoiding feature overlap. Evaluation of the vSAE against a standard SAE on transformer residual stream activations shows that while the vSAE performs well in feature independence and ablation metrics, it underperforms in core evaluation metrics. The excessive regularization pressure created by the KL divergence term leads to a decrease in the fraction of living features, resulting in observed performance degradation. While vSAE features show improved robustness, they also exhibit a higher number of dead features compared to the baseline. This study indicates that simply adding variational methods to SAEs may not enhance feature organization or interpretability.<br> <div>
+<div> Variational Sparse Autoencoder, SAE architectures, interpretability, feature organization, Gaussian posteriors <br />
+Summary: Sparse Autoencoders (SAEs) offer a method for learning human-interpretable features from neural network representations. The Variational Sparse Autoencoder (vSAE) incorporates variational methods by using stochastic sampling from Gaussian posteriors and KL divergence regularization. This allows for more coherent feature organization in the latent space and aids in avoiding feature overlap. Evaluation of the vSAE against a standard SAE on transformer residual stream activations shows that while the vSAE performs well in feature independence and ablation metrics, it underperforms in core evaluation metrics. The excessive regularization pressure created by the KL divergence term leads to a decrease in the fraction of living features, resulting in observed performance degradation. While vSAE features show improved robustness, they also exhibit a higher number of dead features compared to the baseline. This study indicates that simply adding variational methods to SAEs may not enhance feature organization or interpretability.<br /> <div>
 arXiv:2509.22994v2 Announce Type: replace 
 Abstract: Sparse Autoencoders (SAEs) have emerged as a promising approach for interpreting neural network representations by learning sparse, human-interpretable features from dense activations. We investigate whether incorporating variational methods into SAE architectures can improve feature organization and interpretability. We introduce the Variational Sparse Autoencoder (vSAE), which replaces deterministic ReLU gating with stochastic sampling from learned Gaussian posteriors and incorporates KL divergence regularization toward a standard normal prior. Our hypothesis is that this probabilistic sampling creates dispersive pressure, causing features to organize more coherently in the latent space while avoiding overlap. We evaluate a TopK vSAE against a standard TopK SAE on Pythia-70M transformer residual stream activations using comprehensive benchmarks including SAE Bench, individual feature interpretability analysis, and global latent space visualization through t-SNE. The vSAE underperforms standard SAE across core evaluation metrics, though excels at feature independence and ablation metrics. The KL divergence term creates excessive regularization pressure that substantially reduces the fraction of living features, leading to observed performance degradation. While vSAE features demonstrate improved robustness, they exhibit many more dead features than baseline. Our findings suggest that naive application of variational methods to SAEs does not improve feature organization or interpretability.
 ]]></content:encoded>
-<pubDate>Fri, 03 Oct 2025 00:00:00 -0400</pubDate>
 <pubDate>Fri, 03 Oct 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -38,14 +37,13 @@ Abstract: Sparse Autoencoders (SAEs) have emerged as a promising approach for in
 <guid>https://arxiv.org/abs/2509.23500</guid>
 <content:encoded><![CDATA[
 <div> optimizers, model quantization, model performance, post-training quantization, quantization-aware training
-<br>
+<br />
 Summary: 
 This study investigates the impact of optimizer choice on model performance in the context of quantization. The researchers trained models with various optimizers and quantized them using post-training quantization (PTQ) and quantization-aware training (QAT). They found that traditional outlier-related metrics were not effective in predicting PTQ performance due to their focus on isolated errors rather than error accumulation. Optimal optimizers for pretraining may not remain optimal under QAT, with Shampoo showing the lowest accuracy degradation. Scaling laws for QAT indicated that Shampoo was the most parameter-efficient optimizer. These findings highlight the importance of considering optimizer choice when deploying quantized models for efficient performance. 
-<br> <div>
+<br /> <div>
 arXiv:2509.23500v2 Announce Type: replace 
 Abstract: As new optimizers gain traction and model quantization becomes standard for efficient deployment, a key question arises: how does the choice of optimizer affect model performance in the presence of quantization? Despite progress in both areas, systematic evidence on optimizer-quantization interactions remains limited. To fill this gap, we study the impact of optimizer choice on model robustness under quantization, considering both post-training quantization (PTQ), and quantization-aware training (QAT). We first train full-precision models, ranging from 50M to 1.5B parameters, with six optimizers, to explore the hyperparameter landscape, and establish well-tuned baselines. We then apply PTQ to evaluate how model performance degrades when trained with different optimizers. We find that outlier-related metrics, such as the max-to-mean ratio (MMR) and Kurtosis, fail to predict the PTQ performance across different optimizers. We show analytically that this is due to the MMR capturing only isolated layer errors, while ignoring how quantization errors accumulate and propagate through the network. To study the QAT degradation, we train quantized models from scratch and compare them to our original-precision baselines. We find that optimizers performing well in the original pretraining setup may not remain optimal under QAT, and that models trained with Shampoo show the lowest accuracy degradation. Finally, we derive scaling laws for quantization-aware training under different optimizers, showing that Shampoo achieves the highest parameter efficiency of all tested optimizers.
 ]]></content:encoded>
-<pubDate>Fri, 03 Oct 2025 00:00:00 -0400</pubDate>
 <pubDate>Fri, 03 Oct 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -56,11 +54,10 @@ Abstract: As new optimizers gain traction and model quantization becomes standar
 <div> Keywords: machine learning, scientific computing, sketched methods, low-rank approximation, diagonal approximation 
 
 Summary:
-SKETCHLORD is a new method introduced to estimate both low-rank and diagonal components simultaneously for a broader class of linear operators known as Low-Rank plus Diagonal (LoRD). This approach, targeting tasks in machine learning and scientific computing, outperforms any sequential variant method in terms of accuracy. By casting the problem as a convex optimization one, SKETCHLORD becomes a scalable algorithm. Experimental results on synthetic LoRD matrices show that it successfully recovers these structures. This makes SKETCHLORD a valuable tool in structured approximation for large-scale operators like the deep learning Hessian. <br><br>Summary: <div>
+SKETCHLORD is a new method introduced to estimate both low-rank and diagonal components simultaneously for a broader class of linear operators known as Low-Rank plus Diagonal (LoRD). This approach, targeting tasks in machine learning and scientific computing, outperforms any sequential variant method in terms of accuracy. By casting the problem as a convex optimization one, SKETCHLORD becomes a scalable algorithm. Experimental results on synthetic LoRD matrices show that it successfully recovers these structures. This makes SKETCHLORD a valuable tool in structured approximation for large-scale operators like the deep learning Hessian. <br /><br />Summary: <div>
 arXiv:2509.23587v2 Announce Type: replace 
 Abstract: Many relevant machine learning and scientific computing tasks involve high-dimensional linear operators accessible only via costly matrix-vector products. In this context, recent advances in sketched methods have enabled the construction of *either* low-rank *or* diagonal approximations from few matrix-vector products. This provides great speedup and scalability, but approximation errors arise due to the assumed simpler structure. This work introduces SKETCHLORD, a method that simultaneously estimates both low-rank *and* diagonal components, targeting the broader class of Low-Rank *plus* Diagonal (LoRD) linear operators. We demonstrate theoretically and empirically that this joint estimation is superior also to any sequential variant (diagonal-then-low-rank or low-rank-then-diagonal). Then, we cast SKETCHLORD as a convex optimization problem, leading to a scalable algorithm. Comprehensive experiments on synthetic (approximate) LoRD matrices confirm SKETCHLORD's performance in accurately recovering these structures. This positions it as a valuable addition to the structured approximation toolkit, particularly when high-fidelity approximations are desired for large-scale operators, such as the deep learning Hessian.
 ]]></content:encoded>
-<pubDate>Fri, 03 Oct 2025 00:00:00 -0400</pubDate>
 <pubDate>Fri, 03 Oct 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -73,11 +70,10 @@ Abstract: Many relevant machine learning and scientific computing tasks involve 
 Summary:
 IndexNet is a novel framework for multivariate time series forecasting that incorporates index-related descriptive information, such as timestamps and variable indices, to enhance forecasting accuracy. The framework utilizes an Index Embedding module, which includes Timestamp Embedding to capture long-term complex patterns and Channel Embedding to differentiate between variables. By doing so, IndexNet improves the model's ability to handle heterogeneous variables and avoid homogenized predictions. Experimental results on various real-world datasets show that IndexNet performs comparably to existing methods while also demonstrating strong generality and interpretability. The framework's design allows for interpretable results and robust performance, making it a promising approach for MTSF applications. Overall, IndexNet's innovative use of index-related information enhances forecasting accuracy and contributes to the advancement of multivariate time series forecasting techniques. 
 
-<br><br>Summary: <div>
+<br /><br />Summary: <div>
 arXiv:2509.23813v2 Announce Type: replace 
 Abstract: Multivariate time series forecasting (MTSF) plays a vital role in a wide range of real-world applications, such as weather prediction and traffic flow forecasting. Although recent advances have significantly improved the modeling of temporal dynamics and inter-variable dependencies, most existing methods overlook index-related descriptive information, such as timestamps and variable indices, which carry rich contextual semantics. To unlock the potential of such information and take advantage of the lightweight and powerful periodic capture ability of MLP-based architectures, we propose IndexNet, an MLP-based framework augmented with an Index Embedding (IE) module. The IE module consists of two key components: Timestamp Embedding (TE) and Channel Embedding (CE). Specifically, TE transforms timestamps into embedding vectors and injects them into the input sequence, thereby improving the model's ability to capture long-term complex periodic patterns. In parallel, CE assigns each variable a unique and trainable identity embedding based on its index, allowing the model to explicitly distinguish between heterogeneous variables and avoid homogenized predictions when input sequences seem close. Extensive experiments on 12 diverse real-world datasets demonstrate that IndexNet achieves comparable performance across mainstream baselines, validating the effectiveness of our temporally and variably aware design. Moreover, plug-and-play experiments and visualization analyses further reveal that IndexNet exhibits strong generality and interpretability, two aspects that remain underexplored in current MTSF research.
 ]]></content:encoded>
-<pubDate>Fri, 03 Oct 2025 00:00:00 -0400</pubDate>
 <pubDate>Fri, 03 Oct 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -90,14 +86,12 @@ Abstract: Multivariate time series forecasting (MTSF) plays a vital role in a wi
 Summary:
 scSiameseClu is introduced as a novel Siamese Clustering framework designed to interpret single-cell RNA-seq data. It consists of three key steps: Dual Augmentation Module for enhancing representation robustness, Siamese Fusion Module for capturing complex cellular relationships without over-smoothing, and Optimal Transport Clustering for efficient cluster alignment. Through comprehensive evaluations on real-world datasets, scSiameseClu outperforms existing methods in single-cell clustering, cell type annotation, and cell type classification. The Dual Augmentation Module applies biologically informed perturbations to improve gene expression representation. The Siamese Fusion Module combines cross-correlation refinement and adaptive information fusion to capture complex cellular relationships effectively. The Optimal Transport Clustering utilizes Sinkhorn distance for efficient cluster alignment while maintaining balance. Overall, scSiameseClu provides a powerful tool for interpreting scRNA-seq data, offering improved performance in cell clustering and classification tasks. 
 
-<br><br>Summary: <div>
+<br /><br />Summary: <div>
 arXiv:2505.12626v3 Announce Type: replace-cross 
 Abstract: Single-cell RNA sequencing (scRNA-seq) reveals cell heterogeneity, with cell clustering playing a key role in identifying cell types and marker genes. Recent advances, especially graph neural networks (GNNs)-based methods, have significantly improved clustering performance. However, the analysis of scRNA-seq data remains challenging due to noise, sparsity, and high dimensionality. Compounding these challenges, GNNs often suffer from over-smoothing, limiting their ability to capture complex biological information. In response, we propose scSiameseClu, a novel Siamese Clustering framework for interpreting single-cell RNA-seq data, comprising of 3 key steps: (1) Dual Augmentation Module, which applies biologically informed perturbations to the gene expression matrix and cell graph relationships to enhance representation robustness; (2) Siamese Fusion Module, which combines cross-correlation refinement and adaptive information fusion to capture complex cellular relationships while mitigating over-smoothing; and (3) Optimal Transport Clustering, which utilizes Sinkhorn distance to efficiently align cluster assignments with predefined proportions while maintaining balance. Comprehensive evaluations on seven real-world datasets demonstrate that scSiameseClu outperforms state-of-the-art methods in single-cell clustering, cell type annotation, and cell type classification, providing a powerful tool for scRNA-seq data interpretation.
 ]]></content:encoded>
 <pubDate>Fri, 03 Oct 2025 00:00:00 -0400</pubDate>
-<pubDate>Fri, 03 Oct 2025 00:00:00 -0400</pubDate>
 </item>
-
 <item>
 <title>Accelerating Long-Term Molecular Dynamics with Physics-Informed Time-Series Forecasting</title>
 <link>https://arxiv.org/abs/2510.01206</link>
@@ -10791,66 +10785,6 @@ Abstract: Prompt-driven scene synthesis allows users to generate complete 3D env
 <content:encoded><![CDATA[
 arXiv:2509.26092v1 Announce Type: cross 
 Abstract: Distributed machine learning is critical for training deep learning models on large datasets and with numerous parameters. Current research primarily focuses on leveraging additional hardware resources and powerful computing units to accelerate the training process. As a result, larger batch sizes are often employed to speed up training. However, training with large batch sizes can lead to lower accuracy due to poor generalization. To address this issue, we propose the dual batch size learning scheme, a distributed training method built on the parameter server framework. This approach maximizes training efficiency by utilizing the largest batch size that the hardware can support while incorporating a smaller batch size to enhance model generalization. By using two different batch sizes simultaneously, this method reduces testing loss and enhances generalization, with minimal extra training time. Additionally, to mitigate the time overhead caused by dual batch size learning, we propose the cyclic progressive learning scheme. This technique gradually adjusts image resolution from low to high during training, significantly boosting training speed. By combining cyclic progressive learning with dual batch size learning, our hybrid approach improves both model generalization and training efficiency. Experimental results using ResNet-18 show that, compared to conventional training methods, our method can improve accuracy by 3.3% while reducing training time by 10.6% on CIFAR-100, and improve accuracy by 0.1% while reducing training time by 35.7% on ImageNet.
-]]></content:encoded>
-<pubDate>Wed, 01 Oct 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>EVODiff: Entropy-aware Variance Optimized Diffusion Inference</title>
-<link>https://arxiv.org/abs/2509.26096</link>
-<guid>https://arxiv.org/abs/2509.26096</guid>
-<content:encoded><![CDATA[
-arXiv:2509.26096v1 Announce Type: cross 
-Abstract: Diffusion models (DMs) excel in image generation, but suffer from slow inference and the training-inference discrepancies. Although gradient-based solvers like DPM-Solver accelerate the denoising inference, they lack theoretical foundations in information transmission efficiency. In this work, we introduce an information-theoretic perspective on the inference processes of DMs, revealing that successful denoising fundamentally reduces conditional entropy in reverse transitions. This principle leads to our key insights into the inference processes: (1) data prediction parameterization outperforms its noise counterpart, and (2) optimizing conditional variance offers a reference-free way to minimize both transition and reconstruction errors. Based on these insights, we propose an entropy-aware variance optimized method for the generative process of DMs, called EVODiff, which systematically reduces uncertainty by optimizing conditional entropy during denoising. Extensive experiments on DMs validate our insights and demonstrate that our method significantly and consistently outperforms state-of-the-art (SOTA) gradient-based solvers. For example, compared to the DPM-Solver++, EVODiff reduces the reconstruction error by up to 45.5\% (FID improves from 5.10 to 2.78) at 10 function evaluations (NFE) on CIFAR-10, cuts the NFE cost by 25\% (from 20 to 15 NFE) for high-quality samples on ImageNet-256, and improves text-to-image generation while reducing artifacts. Code is available at https://github.com/ShiguiLi/EVODiff.
-]]></content:encoded>
-<pubDate>Wed, 01 Oct 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>LMILAtt: A Deep Learning Model for Depression Detection from Social Media Users Enhanced by Multi-Instance Learning Based on Attention Mechanism</title>
-<link>https://arxiv.org/abs/2509.26145</link>
-<guid>https://arxiv.org/abs/2509.26145</guid>
-<content:encoded><![CDATA[
-arXiv:2509.26145v1 Announce Type: cross 
-Abstract: Depression is a major global public health challenge and its early identification is crucial. Social media data provides a new perspective for depression detection, but existing methods face limitations such as insufficient accuracy, insufficient utilization of time series features, and high annotation costs. To this end, this study proposes the LMILAtt model, which innovatively integrates Long Short-Term Memory autoencoders and attention mechanisms: firstly, the temporal dynamic features of user tweets (such as depressive tendency evolution patterns) are extracted through unsupervised LSTM autoencoders. Secondly, the attention mechanism is used to dynamically weight key texts (such as early depression signals) and construct a multi-example learning architecture to improve the accuracy of user-level detection. Finally, the performance was verified on the WU3D dataset labeled by professional medicine. Experiments show that the model is significantly better than the baseline model in terms of accuracy, recall and F1 score. In addition, the weakly supervised learning strategy significantly reduces the cost of labeling and provides an efficient solution for large-scale social media depression screening.
-]]></content:encoded>
-<pubDate>Wed, 01 Oct 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Ordinal Label-Distribution Learning with Constrained Asymmetric Priors for Imbalanced Retinal Grading</title>
-<link>https://arxiv.org/abs/2509.26146</link>
-<guid>https://arxiv.org/abs/2509.26146</guid>
-<content:encoded><![CDATA[
-arXiv:2509.26146v1 Announce Type: cross 
-Abstract: Diabetic retinopathy grading is inherently ordinal and long-tailed, with minority stages being scarce, heterogeneous, and clinically critical to detect accurately. Conventional methods often rely on isotropic Gaussian priors and symmetric loss functions, misaligning latent representations with the task's asymmetric nature. We propose the Constrained Asymmetric Prior Wasserstein Autoencoder (CAP-WAE), a novel framework that addresses these challenges through three key innovations. Our approach employs a Wasserstein Autoencoder (WAE) that aligns its aggregate posterior with a asymmetric prior, preserving the heavy-tailed and skewed structure of minority classes. The latent space is further structured by a Margin-Aware Orthogonality and Compactness (MAOC) loss to ensure grade-ordered separability. At the supervision level, we introduce a direction-aware ordinal loss, where a lightweight head predicts asymmetric dispersions to generate soft labels that reflect clinical priorities by penalizing under-grading more severely. Stabilized by an adaptive multi-task weighting scheme, our end-to-end model requires minimal tuning. Across public DR benchmarks, CAP-WAE consistently achieves state-of-the-art Quadratic Weighted Kappa, accuracy, and macro-F1, surpassing both ordinal classification and latent generative baselines. t-SNE visualizations further reveal that our method reshapes the latent manifold into compact, grade-ordered clusters with reduced overlap.
-]]></content:encoded>
-<pubDate>Wed, 01 Oct 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Non-Vacuous Generalization Bounds: Can Rescaling Invariances Help?</title>
-<link>https://arxiv.org/abs/2509.26149</link>
-<guid>https://arxiv.org/abs/2509.26149</guid>
-<content:encoded><![CDATA[
-arXiv:2509.26149v1 Announce Type: cross 
-Abstract: A central challenge in understanding generalization is to obtain non-vacuous guarantees that go beyond worst-case complexity over data or weight space. Among existing approaches, PAC-Bayes bounds stand out as they can provide tight, data-dependent guarantees even for large networks. However, in ReLU networks, rescaling invariances mean that different weight distributions can represent the same function while leading to arbitrarily different PAC-Bayes complexities. We propose to study PAC-Bayes bounds in an invariant, lifted representation that resolves this discrepancy. This paper explores both the guarantees provided by this approach (invariance, tighter bounds via data processing) and the algorithmic aspects of KL-based rescaling-invariant PAC-Bayes bounds.
-]]></content:encoded>
-<pubDate>Wed, 01 Oct 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>EntroPE: Entropy-Guided Dynamic Patch Encoder for Time Series Forecasting</title>
-<link>https://arxiv.org/abs/2509.26157</link>
-<guid>https://arxiv.org/abs/2509.26157</guid>
-<content:encoded><![CDATA[
-arXiv:2509.26157v1 Announce Type: cross 
-Abstract: Transformer-based models have significantly advanced time series forecasting, with patch-based input strategies offering efficiency and improved long-horizon modeling. Yet, existing approaches rely on temporally-agnostic patch construction, where arbitrary starting positions and fixed lengths fracture temporal coherence by splitting natural transitions across boundaries. This naive segmentation often disrupts short-term dependencies and weakens representation learning. In response, we propose EntroPE (Entropy-Guided Dynamic Patch Encoder), a novel, temporally informed framework that dynamically detects transition points via conditional entropy and dynamically places patch boundaries. This preserves temporal structure while retaining the computational benefits of patching. EntroPE consists of two key modules, namely an Entropy-based Dynamic Patcher (EDP) that applies information-theoretic criteria to locate natural temporal shifts and determine patch boundaries, and an Adaptive Patch Encoder (APE) that employs pooling and cross-attention to capture intra-patch dependencies and produce fixed-size latent representations. These embeddings are then processed by a global transformer to model inter-patch dynamics. Experiments across long-term forecasting benchmarks demonstrate that EntroPE improves both accuracy and efficiency, establishing entropy-guided dynamic patching as a promising new paradigm for time series modeling. Code is available at: https://github.com/Sachithx/EntroPE.
-]]></content:encoded>
-<pubDate>Wed, 01 Oct 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Benchmarking Diarization Models</title>
-<link>https://arxiv.org/abs/2509.26177</link>
-<guid>https://arxiv.org/abs/2509.26177</guid>
-<content:encoded><![CDATA[
-arXiv:2509.26177v1 Announce Type: cross 
-Abstract: Speaker diarization is the task of partitioning audio into segments according to speaker identity, answering the question of "who spoke when" in multi-speaker conversation recordings. While diarization is an essential task for many downstream applications, it remains an unsolved problem. Errors in diarization propagate to downstream systems and cause wide-ranging failures. To this end, we examine exact failure modes by evaluating five state-of-the-art diarization models, across four diarization datasets spanning multiple languages and acoustic conditions. The evaluation datasets consist of 196.6 hours of multilingual audio, including English, Mandarin, German, Japanese, and Spanish. Overall, we find that PyannoteAI achieves the best performance at 11.2% DER, while DiariZen provides a competitive open-source alternative at 13.3% DER. When analyzing failure cases, we find that the primary cause of diarization errors stem from missed speech segments followed by speaker confusion, especially in high-speaker count settings.
 ]]></content:encoded>
 <pubDate>Wed, 01 Oct 2025 00:00:00 -0400</pubDate>
 </item>
