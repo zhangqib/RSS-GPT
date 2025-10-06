@@ -4,22 +4,21 @@
 <title>cs.CL updates on arXiv.org</title>
 <link>http://rss.arxiv.org/rss/cs.CL</link>
 
+
 <item>
 <title>Leveraging Online Data to Enhance Medical Knowledge in a Small Persian Language Model</title>
 <link>https://arxiv.org/abs/2505.16000</link>
 <guid>https://arxiv.org/abs/2505.16000</guid>
 <content:encoded><![CDATA[
-<div> Dataset, Persian language, medical question answering, fine-tuning, AI applications<br>
-<br>
+<div> Dataset, Persian language, medical question answering, fine-tuning, AI applications<br />
+<br />
 Summary: 
-This study introduces a newly curated dataset of 20k doctor-patient Q&A pairs and a corpus from medical magazines for Persian language models. It used a parameter-efficient fine-tuning approach to enhance the baseline model's medical knowledge, aya-expanse-8b. The fine-tuned model improved accuracy in medical question answering and passed the Iranian Basic Medical Science Entrance Exam (IBSEE) in September 2023. Additionally, it enhanced Persian-translated MMLU accuracy by 2.67%. The research demonstrates the potential of using open-access online data to enrich small language models in medical fields and provides a solution for Persian medical AI applications in resource-constrained environments. The study suggests exploring multimodal input for further performance enhancement. <br><br> <div>
+This study introduces a newly curated dataset of 20k doctor-patient Q&amp;A pairs and a corpus from medical magazines for Persian language models. It used a parameter-efficient fine-tuning approach to enhance the baseline model's medical knowledge, aya-expanse-8b. The fine-tuned model improved accuracy in medical question answering and passed the Iranian Basic Medical Science Entrance Exam (IBSEE) in September 2023. Additionally, it enhanced Persian-translated MMLU accuracy by 2.67%. The research demonstrates the potential of using open-access online data to enrich small language models in medical fields and provides a solution for Persian medical AI applications in resource-constrained environments. The study suggests exploring multimodal input for further performance enhancement. <br /><br /> <div>
 arXiv:2505.16000v4 Announce Type: replace 
 Abstract: The rapid advancement of language models has demonstrated the potential of artificial intelligence in the healthcare industry. However, small language models struggle with specialized domains in low-resource languages like Persian. While numerous medical-domain websites exist in Persian, no curated dataset or corpus has been available making ours the first of its kind. This study introduces a newly curated dataset comprising 20k doctor-patient Q\&amp;A pairs and 60\% of a 90-million-token crawled corpus from medical magazines. Using a parameter-efficient fine-tuning approach, we enhanced the medical knowledge of the baseline model, aya-expanse-8b. Benchmark evaluations demonstrate that the fine-tuned model achieves improved accuracy in medical question answering and successfully passed the Iranian Basic Medical Science Entrance Exam (IBSEE) in September 2023, which the baseline model did not. Additionally, the fine-tuned model improved Persian-translated MMLU accuracy by an average of 2.67\%. This work highlights the potential of leveraging open-access online data to enrich small language models in medical fields, providing a novel solution for Persian medical AI applications suitable for resource-constrained environments. Future research could explore multimodal input to further enhance performance.
 ]]></content:encoded>
 <pubDate>Mon, 06 Oct 2025 00:00:00 -0400</pubDate>
-<pubDate>Mon, 06 Oct 2025 00:00:00 -0400</pubDate>
 </item>
-
 <item>
 <title>Hallucination reduction with CASAL: Contrastive Activation Steering For Amortized Learning</title>
 <link>https://arxiv.org/abs/2510.02324</link>
@@ -11296,16 +11295,6 @@ Abstract: We introduce ORPO-Distill, a general-purpose method for cross-architec
 <content:encoded><![CDATA[
 arXiv:2509.25123v1 Announce Type: cross 
 Abstract: Does RL teach LLMs genuinely new skills, or does it merely activate existing ones? This question lies at the core of ongoing debates about the role of RL in LLM post-training. On one side, strong empirical results can be achieved with RL even without preceding supervised finetuning; on the other, critics argue that RL contributes little beyond reweighting existing reasoning strategies. This work provides concrete evidence that LLMs can acquire genuinely new skills during RL by composing existing ones, mirroring one of the central mechanisms by which humans acquire new cognitive skills. To mitigate data contamination and other confounding factors, and to allow precise control over task complexity, we develop a synthetic framework for our investigation. Specifically, we define a skill as the ability to infer the output of a string transformation function f(x) given x. When an LLM has already learned f and g prior to RL, our experiments reveal that RL enables it to learn unseen compositions of them h(x)=g(f(x)). Further, this compositional ability generalizes to more difficult problems such as compositions of >2 functions unseen during RL training. Surprisingly, our experiments show that compositional skill acquired on a source task transfers to a different target task. This transfer happens even without compositional training on the target, requiring only prior knowledge of the target's atomic skills. Our qualitative analysis shows that RL fundamentally changes the reasoning behaviors of the models. In contrast, next-token training with the same data yields none of these findings. Our systematic experiments provide fresh insights into LLM learning, suggesting the value of first building base models with basic skills, then using RL to incentivize advanced, generalizable skills for complex problems.
-]]></content:encoded>
-<pubDate>Tue, 30 Sep 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>MGM-Omni: Scaling Omni LLMs to Personalized Long-Horizon Speech</title>
-<link>https://arxiv.org/abs/2509.25131</link>
-<guid>https://arxiv.org/abs/2509.25131</guid>
-<content:encoded><![CDATA[
-arXiv:2509.25131v1 Announce Type: cross 
-Abstract: We present MGM-Omni, a unified Omni LLM for omni-modal understanding and expressive, long-horizon speech generation. Unlike cascaded pipelines that isolate speech synthesis, MGM-Omni adopts a "brain-mouth" design with a dual-track, token-based architecture that cleanly decouples multimodal reasoning from real-time speech generation. This design enables efficient cross-modal interaction and low-latency, streaming speech generation. For understanding, a unified training strategy coupled with a dual audio encoder design enables long-form audio perception across diverse acoustic conditions. For generation, a chunk-based parallel decoding scheme narrows the text speech token-rate gap, accelerating inference and supporting streaming zero-shot voice cloning with stable timbre over extended durations. Compared to concurrent work, MGM-Omni achieves these capabilities with markedly data-efficient training. Extensive experiments demonstrate that MGM-Omni outperforms existing open source models in preserving timbre identity across extended sequences, producing natural and context-aware speech, and achieving superior long-form audio and omnimodal understanding. MGM-Omni establishes an efficient, end-to-end paradigm for omnimodal understanding and controllable, personalised long-horizon speech generation.
 ]]></content:encoded>
 <pubDate>Tue, 30 Sep 2025 00:00:00 -0400</pubDate>
 </item>

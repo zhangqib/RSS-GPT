@@ -4,19 +4,19 @@
 <title>cs.CV updates on arXiv.org</title>
 <link>http://rss.arxiv.org/rss/cs.CV</link>
 
+
 <item>
 <title>ExGS: Extreme 3D Gaussian Compression with Diffusion Priors</title>
 <link>https://arxiv.org/abs/2509.24758</link>
 <guid>https://arxiv.org/abs/2509.24758</guid>
 <content:encoded><![CDATA[
 <div> Framework, Neural rendering, Compression, Diffusion priors, Gaussian splatting
-<br>
+<br />
 Summary:
 The article introduces ExGS, a novel framework that combines Universal Gaussian Compression (UGC) with GaussPainter to achieve extreme compression of 3D Gaussian scenes for neural rendering. UGC performs re-optimization-free pruning to reduce Gaussian primitives, while GaussPainter uses diffusion priors and mask-guided refinement to restore high-quality renderings from heavily pruned scenes. The framework includes a lightweight VAE and one-step diffusion design for real-time restoration. It can achieve over 100X compression while preserving fidelity and improving image quality. The results demonstrate the effectiveness of diffusion priors in enabling extreme compression while maintaining high rendering quality. <div>
 arXiv:2509.24758v2 Announce Type: replace 
 Abstract: Neural scene representations, such as 3D Gaussian Splatting (3DGS), have enabled high-quality neural rendering; however, their large storage and transmission costs hinder deployment in resource-constrained environments. Existing compression methods either rely on costly optimization, which is slow and scene-specific, or adopt training-free pruning and quantization, which degrade rendering quality under high compression ratios. In contrast, recent data-driven approaches provide a promising direction to overcome this trade-off, enabling efficient compression while preserving high rendering quality.We introduce ExGS, a novel feed-forward framework that unifies Universal Gaussian Compression (UGC) with GaussPainter for Extreme 3DGS compression. UGC performs re-optimization-free pruning to aggressively reduce Gaussian primitives while retaining only essential information, whereas GaussPainter leverages powerful diffusion priors with mask-guided refinement to restore high-quality renderings from heavily pruned Gaussian scenes. Unlike conventional inpainting, GaussPainter not only fills in missing regions but also enhances visible pixels, yielding substantial improvements in degraded renderings.To ensure practicality, it adopts a lightweight VAE and a one-step diffusion design, enabling real-time restoration. Our framework can even achieve over 100X compression (reducing a typical 354.77 MB model to about 3.31 MB) while preserving fidelity and significantly improving image quality under challenging conditions. These results highlight the central role of diffusion priors in bridging the gap between extreme compression and high-quality neural rendering.Our code repository will be released at: https://github.com/chenttt2001/ExGS
 ]]></content:encoded>
-<pubDate>Mon, 06 Oct 2025 00:00:00 -0400</pubDate>
 <pubDate>Mon, 06 Oct 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -24,17 +24,15 @@ Abstract: Neural scene representations, such as 3D Gaussian Splatting (3DGS), ha
 <link>https://arxiv.org/abs/2509.24798</link>
 <guid>https://arxiv.org/abs/2509.24798</guid>
 <content:encoded><![CDATA[
-<div> modular framework, counterfactual image generation, causal interventions, structural causal modeling, attribute regularization<br>
-<br>
+<div> modular framework, counterfactual image generation, causal interventions, structural causal modeling, attribute regularization<br />
+<br />
 Summary: 
-The article introduces Causal-Adapter, a modular framework designed for counterfactual image generation by adapting frozen text-to-image diffusion backbones. It allows for causal interventions on target attributes, ensuring their effects are propagated to causal dependents while preserving the core image identity. Unlike previous methods that lack explicit causal structure, Causal-Adapter utilizes structural causal modeling coupled with prompt-aligned injection and conditioned token contrastive loss strategies to regulate attributes effectively. The framework demonstrates superior performance on synthetic and real-world datasets, achieving significant MAE reduction on Pendulum and FID reduction on ADNI datasets. These results highlight the framework's ability to facilitate precise attribute control, high-fidelity image generation, and maintain strong image identity during counterfactual editing. <br><br>Summary: <div>
+The article introduces Causal-Adapter, a modular framework designed for counterfactual image generation by adapting frozen text-to-image diffusion backbones. It allows for causal interventions on target attributes, ensuring their effects are propagated to causal dependents while preserving the core image identity. Unlike previous methods that lack explicit causal structure, Causal-Adapter utilizes structural causal modeling coupled with prompt-aligned injection and conditioned token contrastive loss strategies to regulate attributes effectively. The framework demonstrates superior performance on synthetic and real-world datasets, achieving significant MAE reduction on Pendulum and FID reduction on ADNI datasets. These results highlight the framework's ability to facilitate precise attribute control, high-fidelity image generation, and maintain strong image identity during counterfactual editing. <br /><br />Summary: <div>
 arXiv:2509.24798v3 Announce Type: replace 
 Abstract: We present Causal-Adapter, a modular framework that adapts frozen text-to-image diffusion backbones for counterfactual image generation. Our method enables causal interventions on target attributes, consistently propagating their effects to causal dependents without altering the core identity of the image. In contrast to prior approaches that rely on prompt engineering without explicit causal structure, Causal-Adapter leverages structural causal modeling augmented with two attribute regularization strategies: prompt-aligned injection, which aligns causal attributes with textual embeddings for precise semantic control, and a conditioned token contrastive loss to disentangle attribute factors and reduce spurious correlations. Causal-Adapter achieves state-of-the-art performance on both synthetic and real-world datasets, with up to 91% MAE reduction on Pendulum for accurate attribute control and 87% FID reduction on ADNI for high-fidelity MRI image generation. These results show that our approach enables robust, generalizable counterfactual editing with faithful attribute modification and strong identity preservation.
 ]]></content:encoded>
 <pubDate>Mon, 06 Oct 2025 00:00:00 -0400</pubDate>
-<pubDate>Mon, 06 Oct 2025 00:00:00 -0400</pubDate>
 </item>
-
 <item>
 <title>Exploring OCR-augmented Generation for Bilingual VQA</title>
 <link>https://arxiv.org/abs/2510.02543</link>
@@ -11323,26 +11321,6 @@ Abstract: Street view imagery has become an essential source for geospatial data
 <content:encoded><![CDATA[
 arXiv:2509.24370v1 Announce Type: new 
 Abstract: Point cloud registration is a fundamental task in 3D computer vision. Most existing methods rely solely on geometric information for feature extraction and matching. Recently, several studies have incorporated color information from RGB-D data into feature extraction. Although these methods achieve remarkable improvements, they have not fully exploited the abundant texture and semantic information in images, and the feature fusion is performed in an image-lossy manner, which limit their performance. In this paper, we propose DINOReg, a registration network that sufficiently utilizes both visual and geometric information to solve the point cloud registration problem. Inspired by advances in vision foundation models, we employ DINOv2 to extract informative visual features from images, and fuse visual and geometric features at the patch level. This design effectively combines the rich texture and global semantic information extracted by DINOv2 with the detailed geometric structure information captured by the geometric backbone. Additionally, a mixed positional embedding is proposed to encode positional information from both image space and point cloud space, which enhances the model's ability to perceive spatial relationships between patches. Extensive experiments on the RGBD-3DMatch and RGBD-3DLoMatch datasets demonstrate that our method achieves significant improvements over state-of-the-art geometry-only and multi-modal registration methods, with a 14.2% increase in patch inlier ratio and a 15.7% increase in registration recall. The code is publicly available at https://github.com/ccjccjccj/DINOReg.
-]]></content:encoded>
-<pubDate>Tue, 30 Sep 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Mask Clustering-based Annotation Engine for Large-Scale Submeter Land Cover Mapping</title>
-<link>https://arxiv.org/abs/2509.24374</link>
-<guid>https://arxiv.org/abs/2509.24374</guid>
-<content:encoded><![CDATA[
-arXiv:2509.24374v1 Announce Type: new 
-Abstract: Recent advances in remote sensing technology have made submeter resolution imagery increasingly accessible, offering remarkable detail for fine-grained land cover analysis. However, its full potential remains underutilized - particularly for large-scale land cover mapping - due to the lack of sufficient, high-quality annotated datasets. Existing labels are typically derived from pre-existing products or manual annotation, which are often unreliable or prohibitively expensive, particularly given the rich visual detail and massive data volumes of submeter imagery. Inspired by the spatial autocorrelation principle, which suggests that objects of the same class tend to co-occur with similar visual features in local neighborhoods, we propose the Mask Clustering-based Annotation Engine (MCAE), which treats semantically consistent mask groups as the minimal annotating units to enable efficient, simultaneous annotation of multiple instances. It significantly improves annotation efficiency by one to two orders of magnitude, while preserving label quality, semantic diversity, and spatial representativeness. With MCAE, we build a high-quality annotated dataset of about 14 billion labeled pixels, referred to as HiCity-LC, which supports the generation of city-scale land cover maps across five major Chinese cities with classification accuracies above 85%. It is the first publicly available submeter resolution city-level land cover benchmark, highlighting the scalability and practical utility of MCAE for large-scale, submeter resolution mapping. The dataset is available at https://github.com/chenhaocs/MCAE
-]]></content:encoded>
-<pubDate>Tue, 30 Sep 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>REALIGN: Regularized Procedure Alignment with Matching Video Embeddings via Partial Gromov-Wasserstein Optimal Transport</title>
-<link>https://arxiv.org/abs/2509.24382</link>
-<guid>https://arxiv.org/abs/2509.24382</guid>
-<content:encoded><![CDATA[
-arXiv:2509.24382v1 Announce Type: new 
-Abstract: Learning from procedural videos remains a core challenge in self-supervised representation learning, as real-world instructional data often contains background segments, repeated actions, and steps presented out of order. Such variability violates the strong monotonicity assumptions underlying many alignment methods. Prior state-of-the-art approaches, such as OPEL, leverage Kantorovich Optimal Transport (KOT) to build frame-to-frame correspondences, but rely solely on feature similarity and fail to capture the higher-order temporal structure of a task. In this paper, we introduce REALIGN, a self-supervised framework for procedure learning based on Regularized Fused Partial Gromov-Wasserstein Optimal Transport (R-FPGWOT). In contrast to KOT, our formulation jointly models visual correspondences and temporal relations under a partial alignment scheme, enabling robust handling of irrelevant frames, repeated actions, and non-monotonic step orders common in instructional videos. To stabilize training, we integrate FPGWOT distances with inter-sequence contrastive learning, avoiding the need for multiple regularizers and preventing collapse to degenerate solutions. Across egocentric (EgoProceL) and third-person (ProceL, CrossTask) benchmarks, REALIGN achieves up to 18.9% average F1-score improvements and over 30% temporal IoU gains, while producing more interpretable transport maps that preserve key-step orderings and filter out noise.
 ]]></content:encoded>
 <pubDate>Tue, 30 Sep 2025 00:00:00 -0400</pubDate>
 </item>
