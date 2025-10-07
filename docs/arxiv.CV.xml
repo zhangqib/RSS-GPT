@@ -4,6 +4,7 @@
 <title>cs.CV updates on arXiv.org</title>
 <link>http://rss.arxiv.org/rss/cs.CV</link>
 
+
 <item>
 <title>Copyright Infringement Detection in Text-to-Image Diffusion Models via Differential Privacy</title>
 <link>https://arxiv.org/abs/2509.23022</link>
@@ -14,11 +15,10 @@
 Summary:
 The article addresses concerns regarding the unauthorized reproduction of copyrighted content by large vision models like Stable Diffusion. It introduces the concept of copyright infringement detection from a Differential Privacy (DP) perspective and proposes the conditional sensitivity metric to quantify deviations in model outputs. The D-Plus-Minus (DPM) framework is presented as a novel approach for detecting copyright infringement in text-to-image diffusion models by simulating inclusion and exclusion processes through fine-tuning. DPM computes confidence scores to distinguish concept-specific influence from global parameter shifts and offers a practical solution for protecting intellectual property. The creation of the Copyright Infringement Detection Dataset (CIDD) provides a benchmarking resource for evaluating detection performance across various categories. The results demonstrate the effectiveness of DPM in reliably detecting infringement content without requiring access to the original training data or text prompts.
 
-<br><br>Summary: <div>
+<br /><br />Summary: <div>
 arXiv:2509.23022v2 Announce Type: replace 
 Abstract: The widespread deployment of large vision models such as Stable Diffusion raises significant legal and ethical concerns, as these models can memorize and reproduce copyrighted content without authorization. Existing detection approaches often lack robustness and fail to provide rigorous theoretical underpinnings. To address these gaps, we formalize the concept of copyright infringement and its detection from the perspective of Differential Privacy (DP), and introduce the conditional sensitivity metric, a concept analogous to sensitivity in DP, that quantifies the deviation in a diffusion model's output caused by the inclusion or exclusion of a specific training data point. To operationalize this metric, we propose D-Plus-Minus (DPM), a novel post-hoc detection framework that identifies copyright infringement in text-to-image diffusion models. Specifically, DPM simulates inclusion and exclusion processes by fine-tuning models in two opposing directions: learning or unlearning. Besides, to disentangle concept-specific influence from the global parameter shifts induced by fine-tuning, DPM computes confidence scores over orthogonal prompt distributions using statistical metrics. Moreover, to facilitate standardized benchmarking, we also construct the Copyright Infringement Detection Dataset (CIDD), a comprehensive resource for evaluating detection across diverse categories. Our results demonstrate that DPM reliably detects infringement content without requiring access to the original training dataset or text prompts, offering an interpretable and practical solution for safeguarding intellectual property in the era of generative AI.
 ]]></content:encoded>
-<pubDate>Tue, 07 Oct 2025 00:00:00 -0400</pubDate>
 <pubDate>Tue, 07 Oct 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -29,11 +29,10 @@ Abstract: The widespread deployment of large vision models such as Stable Diffus
 <div> Keywords: self-supervised learning, medical image analysis, vision-language models, masked image modeling, controllable masking
 
 Summary:
-Mask What Matters introduces a controllable text-guided masking framework for self-supervised medical image analysis. It uses vision-language models to localize diagnostically relevant regions and apply targeted masking to improve semantic alignment. This approach leads to better representation learning and cross-task generalizability compared to existing methods. Evaluation across various medical imaging modalities demonstrates superior performance in classification accuracy, box average precision, and mask average precision for detection tasks. The method achieves these results with lower overall masking ratios, indicating efficiency and effectiveness in enhancing model performance for medical image analysis.<br><br>Summary: <div>
+Mask What Matters introduces a controllable text-guided masking framework for self-supervised medical image analysis. It uses vision-language models to localize diagnostically relevant regions and apply targeted masking to improve semantic alignment. This approach leads to better representation learning and cross-task generalizability compared to existing methods. Evaluation across various medical imaging modalities demonstrates superior performance in classification accuracy, box average precision, and mask average precision for detection tasks. The method achieves these results with lower overall masking ratios, indicating efficiency and effectiveness in enhancing model performance for medical image analysis.<br /><br />Summary: <div>
 arXiv:2509.23054v2 Announce Type: replace 
 Abstract: The scarcity of annotated data in specialized domains such as medical imaging presents significant challenges to training robust vision models. While self-supervised masked image modeling (MIM) offers a promising solution, existing approaches largely rely on random high-ratio masking, leading to inefficiency and poor semantic alignment. Moreover, region-aware variants typically depend on reconstruction heuristics or supervised signals, limiting their adaptability across tasks and modalities. We propose Mask What Matters, a controllable text-guided masking framework for self-supervised medical image analysis. By leveraging vision-language models for prompt-based region localization, our method flexibly applies differentiated masking to emphasize diagnostically relevant regions while reducing redundancy in background areas. This controllable design enables better semantic alignment, improved representation learning, and stronger cross-task generalizability. Comprehensive evaluation across multiple medical imaging modalities, including brain MRI, chest CT, and lung X-ray, shows that Mask What Matters consistently outperforms existing MIM methods (e.g., SparK), achieving gains of up to +3.1 percentage points in classification accuracy, +1.3 in box average precision (BoxAP), and +1.1 in mask average precision (MaskAP) for detection. Notably, it achieves these improvements with substantially lower overall masking ratios (e.g., 40\% vs. 70\%). This work demonstrates that controllable, text-driven masking can enable semantically aligned self-supervised learning, advancing the development of robust vision models for medical image analysis.
 ]]></content:encoded>
-<pubDate>Tue, 07 Oct 2025 00:00:00 -0400</pubDate>
 <pubDate>Tue, 07 Oct 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -41,13 +40,12 @@ Abstract: The scarcity of annotated data in specialized domains such as medical 
 <link>https://arxiv.org/abs/2509.23258</link>
 <guid>https://arxiv.org/abs/2509.23258</guid>
 <content:encoded><![CDATA[
-<div> Sparse-view novel view synthesis, OracleGS, generative completeness, regressive fidelity, sparse view Gaussian Splatting<br>
-Summary:<br>
-The article introduces OracleGS, a framework that combines generative models with regressive models for sparse-view novel view synthesis. To address the inherent geometric ambiguity in sparse-view synthesis, OracleGS uses a pre-trained 3D-aware diffusion model to propose complete scenes and a multi-view stereo model as an oracle to validate the proposed views. By leveraging multi-view evidence and uncertainty signals, OracleGS guides the optimization of a 3D Gaussian Splatting model, resulting in more accurate and realistic novel view synthesis. The approach outperforms existing methods on datasets such as Mip-NeRF 360 and NeRF Synthetic, striking a balance between generative completeness and regressive fidelity. <br> <div>
+<div> Sparse-view novel view synthesis, OracleGS, generative completeness, regressive fidelity, sparse view Gaussian Splatting<br />
+Summary:<br />
+The article introduces OracleGS, a framework that combines generative models with regressive models for sparse-view novel view synthesis. To address the inherent geometric ambiguity in sparse-view synthesis, OracleGS uses a pre-trained 3D-aware diffusion model to propose complete scenes and a multi-view stereo model as an oracle to validate the proposed views. By leveraging multi-view evidence and uncertainty signals, OracleGS guides the optimization of a 3D Gaussian Splatting model, resulting in more accurate and realistic novel view synthesis. The approach outperforms existing methods on datasets such as Mip-NeRF 360 and NeRF Synthetic, striking a balance between generative completeness and regressive fidelity. <br /> <div>
 arXiv:2509.23258v2 Announce Type: replace 
 Abstract: Sparse-view novel view synthesis is fundamentally ill-posed due to severe geometric ambiguity. Current methods are caught in a trade-off: regressive models are geometrically faithful but incomplete, whereas generative models can complete scenes but often introduce structural inconsistencies. We propose OracleGS, a novel framework that reconciles generative completeness with regressive fidelity for sparse view Gaussian Splatting. Instead of using generative models to patch incomplete reconstructions, our "propose-and-validate" framework first leverages a pre-trained 3D-aware diffusion model to synthesize novel views to propose a complete scene. We then repurpose a multi-view stereo (MVS) model as a 3D-aware oracle to validate the 3D uncertainties of generated views, using its attention maps to reveal regions where the generated views are well-supported by multi-view evidence versus where they fall into regions of high uncertainty due to occlusion, lack of texture, or direct inconsistency. This uncertainty signal directly guides the optimization of a 3D Gaussian Splatting model via an uncertainty-weighted loss. Our approach conditions the powerful generative prior on multi-view geometric evidence, filtering hallucinatory artifacts while preserving plausible completions in under-constrained regions, outperforming state-of-the-art methods on datasets including Mip-NeRF 360 and NeRF Synthetic.
 ]]></content:encoded>
-<pubDate>Tue, 07 Oct 2025 00:00:00 -0400</pubDate>
 <pubDate>Tue, 07 Oct 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -58,11 +56,10 @@ Abstract: Sparse-view novel view synthesis is fundamentally ill-posed due to sev
 <div> EfficientMIL, WSIs classification, multiple instance learning, computational efficiency, APS 
 
 Summary:
-EfficientMIL introduces a linear-complexity MIL approach for classifying whole slide images (WSIs) in computational pathology. By utilizing the Adaptive Patch Selector (APS) module, EfficientMIL replaces self-attention mechanisms with more efficient sequence models like GRU, LSTM, and State Space Model, resulting in significant computational efficiency improvements. The method outperforms other MIL approaches on various histopathology datasets, achieving high AUC and accuracy scores. In particular, EfficientMIL-Mamba achieves an AUC of 0.976 and accuracy of 0.933 on the TCGA-Lung dataset, while EfficientMIL-GRU achieves an AUC of 0.990 and accuracy of 0.975 on the CAMELYON16 dataset, surpassing previous SOTA methods. The Adaptive Patch Selector (APS) also proves to be more effective in patch selection compared to traditional strategies, further enhancing the classification performance of EfficientMIL. <br><br>Summary: <div>
+EfficientMIL introduces a linear-complexity MIL approach for classifying whole slide images (WSIs) in computational pathology. By utilizing the Adaptive Patch Selector (APS) module, EfficientMIL replaces self-attention mechanisms with more efficient sequence models like GRU, LSTM, and State Space Model, resulting in significant computational efficiency improvements. The method outperforms other MIL approaches on various histopathology datasets, achieving high AUC and accuracy scores. In particular, EfficientMIL-Mamba achieves an AUC of 0.976 and accuracy of 0.933 on the TCGA-Lung dataset, while EfficientMIL-GRU achieves an AUC of 0.990 and accuracy of 0.975 on the CAMELYON16 dataset, surpassing previous SOTA methods. The Adaptive Patch Selector (APS) also proves to be more effective in patch selection compared to traditional strategies, further enhancing the classification performance of EfficientMIL. <br /><br />Summary: <div>
 arXiv:2509.23640v2 Announce Type: replace 
 Abstract: Whole slide images (WSIs) classification represents a fundamental challenge in computational pathology, where multiple instance learning (MIL) has emerged as the dominant paradigm. Current state-of-the-art (SOTA) MIL methods rely on attention mechanisms, achieving good performance but requiring substantial computational resources due to quadratic complexity when processing hundreds of thousands of patches. To address this computational bottleneck, we introduce EfficientMIL, a novel linear-complexity MIL approach for WSIs classification with the patches selection module Adaptive Patch Selector (APS) that we designed, replacing the quadratic-complexity self-attention mechanisms in Transformer-based MIL methods with efficient sequence models including RNN-based GRU, LSTM, and State Space Model (SSM) Mamba. EfficientMIL achieves significant computational efficiency improvements while outperforming other MIL methods across multiple histopathology datasets. On TCGA-Lung dataset, EfficientMIL-Mamba achieved AUC of 0.976 and accuracy of 0.933, while on CAMELYON16 dataset, EfficientMIL-GRU achieved AUC of 0.990 and accuracy of 0.975, surpassing previous state-of-the-art methods. Extensive experiments demonstrate that APS is also more effective for patches selection than conventional selection strategies.
 ]]></content:encoded>
-<pubDate>Tue, 07 Oct 2025 00:00:00 -0400</pubDate>
 <pubDate>Tue, 07 Oct 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -75,12 +72,11 @@ Abstract: Whole slide images (WSIs) classification represents a fundamental chal
 Summary:
 Complexity-Adaptive Pruning (AutoPrune) is a framework designed to reduce computational demands in vision-language models by tailoring pruning policies based on varying sample and task complexities. Unlike traditional pruning methods, AutoPrune dynamically adjusts token elimination to align with the model's reasoning trajectory. By quantifying the mutual information between visual and textual tokens and projecting it onto budget-constrained logistic retention curves, AutoPrune can accommodate different task complexities while adhering to predefined computational constraints. Experimental results on vision-language tasks and Vision-Language-Action models for autonomous driving show that AutoPrune significantly reduces the number of visual tokens and FLOPs during inference while maintaining high accuracy levels. In comparison to previous methods, AutoPrune demonstrates a 9.1% improvement in performance. The code for AutoPrune is publicly available for further exploration and implementation. 
 
-<br><br>Summary: 
+<br /><br />Summary: 
 AutoPrune is a novel framework for complexity-adaptive pruning in vision-language models, offering dynamic token elimination based on sample and task complexities. By leveraging mutual information and logistic retention curves, AutoPrune optimizes computational resources while maintaining high accuracy levels in various tasks. Experimental results showcase significant reductions in visual tokens and FLOPs with improved performance compared to existing methods. The availability of the AutoPrune code allows for easy implementation and further exploration in this domain. <div>
 arXiv:2509.23931v2 Announce Type: replace 
 Abstract: The established redundancy in visual tokens within large vision-language models allows pruning to effectively reduce their substantial computational demands. Previous methods typically employ heuristic layer-specific pruning strategies where, although the number of tokens removed may differ across decoder layers, the overall pruning schedule is fixed and applied uniformly to all input samples and tasks, failing to align token elimination with the model's holistic reasoning trajectory. Cognitive science indicates that human visual processing often begins with broad exploration to accumulate evidence before narrowing focus as the target becomes distinct. Our experiments reveal an analogous pattern in these models. This observation suggests that neither a fixed pruning schedule nor a heuristic layer-wise strategy can optimally accommodate the diverse complexities inherent in different inputs. To overcome this limitation, we introduce Complexity-Adaptive Pruning (AutoPrune), a training-free, plug-and-play framework that tailors pruning policies to varying sample and task complexities. Specifically, AutoPrune quantifies the mutual information between visual and textual tokens, then projects this signal to a budget-constrained logistic retention curve. Each such logistic curve, defined by its unique shape, corresponds to the specific complexity of different tasks and can guarantee adherence to predefined computational constraints. We evaluate AutoPrune on standard vision-language tasks and on Vision-Language-Action models for autonomous driving. Notably, when applied to LLaVA-1.5-7B, our method prunes 89% of visual tokens and reduces inference FLOPs by 76.8% while retaining 96.7% of the original accuracy averaged over all tasks. This corresponds to a 9.1% improvement over the recent work PDrop, demonstrating the effectiveness. Code is available at https://github.com/AutoLab-SAI-SJTU/AutoPrune.
 ]]></content:encoded>
-<pubDate>Tue, 07 Oct 2025 00:00:00 -0400</pubDate>
 <pubDate>Tue, 07 Oct 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -90,14 +86,13 @@ Abstract: The established redundancy in visual tokens within large vision-langua
 <content:encoded><![CDATA[
 <div> reinforcement learning, video understanding, dynamic sampling, FrameMind, FiCOT
 
-Summary:<br>
+Summary:<br />
 FrameMind is introduced as an end-to-end framework for video understanding, using reinforcement learning to dynamically request visual information during reasoning through Frame-Interleaved Chain-of-Thought (FiCOT). The model operates in multiple turns alternating between textual reasoning and active visual perception to extract targeted frames or video clips based on identified knowledge gaps. Dynamic Resolution Frame Sampling (DRFS) is proposed to train effective sampling policies, exposing models to diverse temporal-spatial trade-offs during learning. DRFS-GRPO is also introduced as a group-relative policy optimization algorithm that learns from outcome-based rewards without requiring frame-level annotations. Extensive experiments on challenging benchmarks like MLVU and VideoMME show that the proposed method significantly outperforms existing models, advancing the state of the art in flexible and efficient video understanding. 
 
-<br><br>Summary: <div>
+<br /><br />Summary: <div>
 arXiv:2509.24008v3 Announce Type: replace 
 Abstract: Current video understanding models rely on fixed frame sampling strategies, processing predetermined visual inputs regardless of the specific reasoning requirements of each question. This static approach limits their ability to adaptively gather visual evidence, leading to suboptimal performance on tasks that require either broad temporal coverage or fine-grained spatial detail. In this paper, we introduce FrameMind, an end-to-end framework trained with reinforcement learning that enables models to dynamically request visual information during reasoning through Frame-Interleaved Chain-of-Thought (FiCOT). Unlike traditional approaches, FrameMind operates in multiple turns where the model alternates between textual reasoning and active visual perception, using tools to extract targeted frames or video clips based on identified knowledge gaps. To train effective dynamic sampling policies, we propose Dynamic Resolution Frame Sampling (DRFS), which exposes models to diverse temporal-spatial trade-offs during learning, and DRFS-GRPO, a group-relative policy optimization algorithm that learns from outcome-based rewards without requiring frame-level annotations. Extensive experiments on challenging benchmarks like MLVU and VideoMME demonstrate that our method significantly outperforms existing models, advancing the state of the art in flexible and efficient video understanding.
 ]]></content:encoded>
-<pubDate>Tue, 07 Oct 2025 00:00:00 -0400</pubDate>
 <pubDate>Tue, 07 Oct 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -105,13 +100,12 @@ Abstract: Current video understanding models rely on fixed frame sampling strate
 <link>https://arxiv.org/abs/2509.24072</link>
 <guid>https://arxiv.org/abs/2509.24072</guid>
 <content:encoded><![CDATA[
-<div> LVLMs, vision-language models, structured reasoning, precise grounding, Grounding IDs <br>
-Summary: <br>
+<div> LVLMs, vision-language models, structured reasoning, precise grounding, Grounding IDs <br />
+Summary: <br />
 The article discusses how adding simple visual structures enhances the performance of Large Vision-Language Models (LVLMs) by introducing the concept of Grounding IDs. Grounding IDs are latent identifiers that bind objects to their designated partitions across modalities. Through representation analysis, it is found that Grounding IDs facilitate within-partition alignment in embedding space and reduce the modality gap between image and text. Causal interventions confirm that Grounding IDs mediate binding between objects and symbolic cues. These identifiers strengthen attention between related components, improving cross-modal grounding and reducing hallucinations. Overall, the study identifies Grounding IDs as a crucial symbolic mechanism that explains how external cues enhance multimodal binding, offering both interpretability and practical improvements in robustness. <div>
 arXiv:2509.24072v2 Announce Type: replace 
 Abstract: Large vision-language models (LVLMs) show strong performance across multimodal benchmarks but remain limited in structured reasoning and precise grounding. Recent work has demonstrated that adding simple visual structures, such as partitions and annotations, improves accuracy, yet the internal mechanisms underlying these gains remain unclear. We investigate this phenomenon and propose the concept of Grounding IDs, latent identifiers induced by external cues that bind objects to their designated partitions across modalities. Through representation analysis, we find that these identifiers emerge as robust within-partition alignment in embedding space and reduce the modality gap between image and text. Causal interventions further confirm that these identifiers mediate binding between objects and symbolic cues. We show that Grounding IDs strengthen attention between related components, which in turn improves cross-modal grounding and reduces hallucinations. Taken together, our results identify Grounding IDs as a key symbolic mechanism explaining how external cues enhance multimodal binding, offering both interpretability and practical improvements in robustness.
 ]]></content:encoded>
-<pubDate>Tue, 07 Oct 2025 00:00:00 -0400</pubDate>
 <pubDate>Tue, 07 Oct 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -122,13 +116,12 @@ Abstract: Large vision-language models (LVLMs) show strong performance across mu
 <div> Keywords: Multimodal Large Language Models, Chain-of-Thought reasoning, Latent Visual Reasoning, visual question answering tasks, GRPO algorithm
 
 Summary:
-<br>
+<br />
 Multimodal Large Language Models (MLLMs) with Chain-of-Thought (CoT) reasoning have shown improvements in various tasks. This study introduces Latent Visual Reasoning (LVR), a new paradigm enabling autoregressive reasoning in the visual embedding space. By projecting images into visual tokens shared with the language model, key visual tokens are generated to aid in answering queries. The model shows significant improvements in visual question answering tasks, particularly in fine-grained visual understanding and perception. The adaptation of the GRPO algorithm for reinforcement learning on latent reasoning further enhances the balance between LVR and textual generation. The proposed LVR approach outperforms existing methods, achieving a 71.67% accuracy on MMVP compared to 66.67% with Qwen2.5-VL. The code base and model weights will be made available in the future. 
-<br><br>Summary: <div>
+<br /><br />Summary: <div>
 arXiv:2509.24251v2 Announce Type: replace 
 Abstract: Multimodal Large Language Models (MLLMs) have achieved notable gains in various tasks by incorporating Chain-of-Thought (CoT) reasoning in language spaces. Recent work extends this direction by leveraging external tools for visual editing, thereby enhancing the visual signal along the reasoning trajectories. Nevertheless, these approaches remain fundamentally constrained: reasoning is still confined to the language space, with visual information treated as static preconditions. We introduce Latent Visual Reasoning (LVR), a new paradigm that enables autoregressive reasoning directly in the visual embedding space. A visual encoder first projects images into visual tokens within a joint semantic space shared with the language model. The language model is then trained to generate latent states that reconstruct key visual tokens critical for answering the query, constituting the process of latent visual reasoning. By interleaving LVR with standard text generation, our model achieves substantial gains on perception-intensive visual question answering tasks. In addition, we adapt the GRPO algorithm to conduct reinforcement learning on latent reasoning, further balancing LVR and textual generation. We show that LVR substantially improves fine-grained visual understanding and perception, achieving 71.67% on MMVP compared to 66.67% with Qwen2.5-VL. Code base and model weights will be released later.
 ]]></content:encoded>
-<pubDate>Tue, 07 Oct 2025 00:00:00 -0400</pubDate>
 <pubDate>Tue, 07 Oct 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -139,14 +132,12 @@ Abstract: Multimodal Large Language Models (MLLMs) have achieved notable gains i
 <div> Keywords: Cryo-electron tomography, subtomogram analysis, CryoEngine, Adaptive Phase Tokenization-enhanced Vision Transformer, Noise-Resilient Contrastive Learning
 
 Summary: 
-The study introduces CryoEngine, a data generator creating over 904k subtomograms from 452 particle classes for pretraining. It develops an Adaptive Phase Tokenization-enhanced Vision Transformer (APT-ViT) with adaptive phase tokenization to enhance robustness to geometric and semantic variations. A Noise-Resilient Contrastive Learning (NRCL) strategy is introduced to stabilize representation learning under severe noise conditions. Evaluations on 24 datasets demonstrate state-of-the-art performance on subtomogram tasks and strong generalization to unseen data, advancing scalable and robust analysis in cryo-ET.<br><br>Summary: <div>
+The study introduces CryoEngine, a data generator creating over 904k subtomograms from 452 particle classes for pretraining. It develops an Adaptive Phase Tokenization-enhanced Vision Transformer (APT-ViT) with adaptive phase tokenization to enhance robustness to geometric and semantic variations. A Noise-Resilient Contrastive Learning (NRCL) strategy is introduced to stabilize representation learning under severe noise conditions. Evaluations on 24 datasets demonstrate state-of-the-art performance on subtomogram tasks and strong generalization to unseen data, advancing scalable and robust analysis in cryo-ET.<br /><br />Summary: <div>
 arXiv:2509.24311v2 Announce Type: replace 
 Abstract: Cryo-electron tomography (cryo-ET) enables in situ visualization of macromolecular structures, where subtomogram analysis tasks such as classification, alignment, and averaging are critical for structural determination. However, effective analysis is hindered by scarce annotations, severe noise, and poor generalization. To address these challenges, we take the first step towards foundation models for cryo-ET subtomograms. First, we introduce CryoEngine, a large-scale synthetic data generator that produces over 904k subtomograms from 452 particle classes for pretraining. Second, we design an Adaptive Phase Tokenization-enhanced Vision Transformer (APT-ViT), which incorporates adaptive phase tokenization as an equivariance-enhancing module that improves robustness to both geometric and semantic variations. Third, we introduce a Noise-Resilient Contrastive Learning (NRCL) strategy to stabilize representation learning under severe noise conditions. Evaluations across 24 synthetic and real datasets demonstrate state-of-the-art (SOTA) performance on all three major subtomogram tasks and strong generalization to unseen datasets, advancing scalable and robust subtomogram analysis in cryo-ET.
 ]]></content:encoded>
 <pubDate>Tue, 07 Oct 2025 00:00:00 -0400</pubDate>
-<pubDate>Tue, 07 Oct 2025 00:00:00 -0400</pubDate>
 </item>
-
 <item>
 <title>SoC-DT: Standard-of-Care Aligned Digital Twins for Patient-Specific Tumor Dynamics</title>
 <link>https://arxiv.org/abs/2510.03287</link>
@@ -11315,96 +11306,6 @@ Abstract: This paper focuses on enhancing Bengali Document Layout Analysis (DLA)
 <content:encoded><![CDATA[
 arXiv:2403.17834v4 Announce Type: replace 
 Abstract: Advancements in medical imaging AI, particularly in 3D imaging, have been limited due to the scarcity of comprehensive datasets. We introduce CT-RATE, a public dataset that pairs 3D medical images with corresponding textual reports. CT-RATE comprises 25,692 non-contrast 3D chest CT scans from 21,304 unique patients. Each scan is accompanied by its corresponding radiology report. Leveraging CT-RATE, we develop CT-CLIP, a CT-focused contrastive language-image pretraining framework designed for broad applications without the need for task-specific training. We demonstrate how CT-CLIP can be used in multi-abnormality detection and case retrieval, and outperforms state-of-the-art fully supervised models across all key metrics. By combining CT-CLIP's vision encoder with a pretrained large language model, we create CT-CHAT, a vision-language foundational chat model for 3D chest CT volumes. Finetuned on over 2.7 million question-answer pairs derived from the CT-RATE dataset, CT-CHAT underscores the necessity for specialized methods in 3D medical imaging. Collectively, the open-source release of CT-RATE, CT-CLIP, and CT-CHAT not only addresses critical challenges in 3D medical imaging but also lays the groundwork for future innovations in medical AI and improved patient care.
-]]></content:encoded>
-<pubDate>Wed, 01 Oct 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Bird Eye-View to Street-View: A Survey</title>
-<link>https://arxiv.org/abs/2405.08961</link>
-<guid>https://arxiv.org/abs/2405.08961</guid>
-<content:encoded><![CDATA[
-arXiv:2405.08961v2 Announce Type: replace 
-Abstract: In recent years, street view imagery has grown to become one of the most important sources of geospatial data collection and urban analytics, which facilitates generating meaningful insights and assisting in decision-making. Synthesizing a street-view image from its corresponding satellite image is a challenging task due to the significant differences in appearance and viewpoint between the two domains. In this study, we screened 20 recent research papers to provide a thorough review of the state-of-the-art of how street-view images are synthesized from their corresponding satellite counterparts. The main findings are: (i) novel deep learning techniques are required for synthesizing more realistic and accurate street-view images; (ii) more datasets need to be collected for public usage; and (iii) more specific evaluation metrics need to be investigated for evaluating the generated images appropriately. We conclude that, due to applying outdated deep learning techniques, the recent literature failed to generate detailed and diverse street-view images.
-]]></content:encoded>
-<pubDate>Wed, 01 Oct 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>SPARE: Symmetrized Point-to-Plane Distance for Robust Non-Rigid 3D Registration</title>
-<link>https://arxiv.org/abs/2405.20188</link>
-<guid>https://arxiv.org/abs/2405.20188</guid>
-<content:encoded><![CDATA[
-arXiv:2405.20188v3 Announce Type: replace 
-Abstract: Existing optimization-based methods for non-rigid registration typically minimize an alignment error metric based on the point-to-point or point-to-plane distance between corresponding point pairs on the source surface and target surface. However, these metrics can result in slow convergence or a loss of detail. In this paper, we propose SPARE, a novel formulation that utilizes a symmetrized point-to-plane distance for robust non-rigid registration. The symmetrized point-to-plane distance relies on both the positions and normals of the corresponding points, resulting in a more accurate approximation of the underlying geometry and can achieve higher accuracy than existing methods. To solve this optimization problem efficiently, we introduce an as-rigid-as-possible regulation term to estimate the deformed normals and propose an alternating minimization solver using a majorization-minimization strategy. Moreover, for effective initialization of the solver, we incorporate a deformation graph-based coarse alignment that improves registration quality and efficiency. Extensive experiments show that the proposed method greatly improves the accuracy of non-rigid registration problems and maintains relatively high solution efficiency. The code is publicly available at https://github.com/yaoyx689/spare.
-]]></content:encoded>
-<pubDate>Wed, 01 Oct 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Adaptive Modality Balanced Online Knowledge Distillation for Brain-Eye-Computer based Dim Object Detection</title>
-<link>https://arxiv.org/abs/2407.01894</link>
-<guid>https://arxiv.org/abs/2407.01894</guid>
-<content:encoded><![CDATA[
-arXiv:2407.01894v3 Announce Type: replace 
-Abstract: Advanced cognition can be extracted from the human brain using brain-computer interfaces. Integrating these interfaces with computer vision techniques, which possess efficient feature extraction capabilities, can achieve more robust and accurate detection of dim targets in aerial images. However, existing target detection methods primarily concentrate on homogeneous data, lacking efficient and versatile processing capabilities for heterogeneous multimodal data. In this paper, we first build a brain-eye-computer based object detection system for aerial images under few-shot conditions. This system detects suspicious targets using region proposal networks, evokes the event-related potential (ERP) signal in electroencephalogram (EEG) through the eye-tracking-based slow serial visual presentation (ESSVP) paradigm, and constructs the EEG-image data pairs with eye movement data. Then, an adaptive modality balanced online knowledge distillation (AMBOKD) method is proposed to recognize dim objects with the EEG-image data. AMBOKD fuses EEG and image features using a multi-head attention module, establishing a new modality with comprehensive features. To enhance the performance and robust capability of the fusion modality, simultaneous training and mutual learning between modalities are enabled by end-to-end online knowledge distillation. During the learning process, an adaptive modality balancing module is proposed to ensure multimodal equilibrium by dynamically adjusting the weights of the importance and the training gradients across various modalities. The effectiveness and superiority of our method are demonstrated by comparing it with existing state-of-the-art methods. Additionally, experiments conducted on public datasets and system validations in real-world scenarios demonstrate the reliability and practicality of the proposed system and the designed method.
-]]></content:encoded>
-<pubDate>Wed, 01 Oct 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>LoRA-PT: Low-Rank Adapting UNETR for Hippocampus Segmentation Using Principal Tensor Singular Values and Vectors</title>
-<link>https://arxiv.org/abs/2407.11292</link>
-<guid>https://arxiv.org/abs/2407.11292</guid>
-<content:encoded><![CDATA[
-arXiv:2407.11292v3 Announce Type: replace 
-Abstract: The hippocampus is an important brain structure involved in various psychiatric disorders, and its automatic and accurate segmentation is vital for studying these diseases. Recently, deep learning-based methods have made significant progress in hippocampus segmentation. However, training deep neural network models requires substantial computational resources, time, and a large amount of labeled training data, which is frequently scarce in medical image segmentation. To address these issues, we propose LoRA-PT, a novel parameter-efficient fine-tuning (PEFT) method that transfers the pre-trained UNETR model from the BraTS2021 dataset to the hippocampus segmentation task. Specifically, LoRA-PT divides the parameter matrix of the transformer structure into three distinct sizes, yielding three third-order tensors. These tensors are decomposed using tensor singular value decomposition to generate low-rank tensors consisting of the principal singular values and vectors, with the remaining singular values and vectors forming the residual tensor. During fine-tuning, only the low-rank tensors (i.e., the principal tensor singular values and vectors) are updated, while the residual tensors remain unchanged. We validated the proposed method on three public hippocampus datasets, and the experimental results show that LoRA-PT outperformed state-of-the-art PEFT methods in segmentation accuracy while significantly reducing the number of parameter updates. Our source code is available at https://github.com/WangangCheng/LoRA-PT/tree/LoRA-PT.
-]]></content:encoded>
-<pubDate>Wed, 01 Oct 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Investigating Long-term Training for Remote Sensing Object Detection</title>
-<link>https://arxiv.org/abs/2407.15143</link>
-<guid>https://arxiv.org/abs/2407.15143</guid>
-<content:encoded><![CDATA[
-arXiv:2407.15143v4 Announce Type: replace 
-Abstract: Recently, numerous methods have achieved impressive performance in remote sensing object detection, relying on convolution or transformer architectures. Such detectors typically have a feature backbone to extract useful features from raw input images. A common practice in current detectors is initializing the backbone with pre-trained weights available online. Fine-tuning the backbone is typically required to generate features suitable for remote-sensing images. While the prolonged training could lead to over-fitting, hindering the extraction of basic visual features, it can enable models to gradually extract deeper insights and richer representations from remote sensing data. Striking a balance between these competing factors is critical for achieving optimal performance. In this study, we aim to investigate the performance and characteristics of remote sensing object detection models under very long training schedules, and propose a novel method named Dynamic Backbone Freezing (DBF) for feature backbone fine-tuning on remote sensing object detection under long-term training. Our method addresses the dilemma of whether the backbone should extract low-level generic features or possess specific knowledge of the remote sensing domain, by introducing a module called 'Freezing Scheduler' to manage the update of backbone features during long-term training dynamically. Extensive experiments on DOTA and DIOR-R show that our approach enables more accurate model learning while substantially reducing computational costs in long-term training. Besides, it can be seamlessly adopted without additional effort due to its straightforward design. The code is available at https://github.com/unique-chan/dbf.
-]]></content:encoded>
-<pubDate>Wed, 01 Oct 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Rethinking Weak-to-Strong Augmentation in Source-Free Domain Adaptive Object Detection</title>
-<link>https://arxiv.org/abs/2410.05557</link>
-<guid>https://arxiv.org/abs/2410.05557</guid>
-<content:encoded><![CDATA[
-arXiv:2410.05557v2 Announce Type: replace 
-Abstract: Strong data augmentation is a fundamental component of state-of-the-art mean teacher-based Source-Free domain adaptive Object Detection (SFOD) methods, enabling consistency-based self-supervised optimization along weak augmentation. However, our theoretical analysis and empirical observations reveal a critical limitation: strong augmentation can inadvertently erase class-relevant components, leading to artificial inter-category confusion. To address this issue, we introduce Weak-to-strong Semantics Compensation (WSC), a novel remedy that leverages weakly augmented images, which preserve full semantics, as anchors to enrich the feature space of their strongly augmented counterparts. Essentially, this compensates for the class-relevant semantics that may be lost during strong augmentation on the fly. Notably, WSC can be implemented as a generic plug-in, easily integrable with any existing SFOD pipelines. Extensive experiments validate the negative impact of strong augmentation on detection performance, and the effectiveness of WSC in enhancing the performance of previous detection models on standard benchmarks.
-]]></content:encoded>
-<pubDate>Wed, 01 Oct 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Unified Cross-Modal Image Synthesis with Hierarchical Mixture of Product-of-Experts</title>
-<link>https://arxiv.org/abs/2410.19378</link>
-<guid>https://arxiv.org/abs/2410.19378</guid>
-<content:encoded><![CDATA[
-arXiv:2410.19378v2 Announce Type: replace 
-Abstract: We propose a deep mixture of multimodal hierarchical variational auto-encoders called MMHVAE that synthesizes missing images from observed images in different modalities. MMHVAE's design focuses on tackling four challenges: (i) creating a complex latent representation of multimodal data to generate high-resolution images; (ii) encouraging the variational distributions to estimate the missing information needed for cross-modal image synthesis; (iii) learning to fuse multimodal information in the context of missing data; (iv) leveraging dataset-level information to handle incomplete data sets at training time. Extensive experiments are performed on the challenging problem of pre-operative brain multi-parametric magnetic resonance and intra-operative ultrasound imaging.
-]]></content:encoded>
-<pubDate>Wed, 01 Oct 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Multi-temporal crack segmentation in concrete structures using deep learning approaches</title>
-<link>https://arxiv.org/abs/2411.04620</link>
-<guid>https://arxiv.org/abs/2411.04620</guid>
-<content:encoded><![CDATA[
-arXiv:2411.04620v2 Announce Type: replace 
-Abstract: Cracks are among the earliest indicators of deterioration in concrete structures. Early automatic detection of these cracks can significantly extend the lifespan of critical infrastructures, such as bridges, buildings, and tunnels, while simultaneously reducing maintenance costs and facilitating efficient structural health monitoring. This study investigates whether leveraging multi-temporal data for crack segmentation can enhance segmentation quality. Therefore, we compare a Swin UNETR trained on multi-temporal data with a U-Net trained on mono-temporal data to assess the effect of temporal information compared with conventional single-epoch approaches. To this end, a multi-temporal dataset comprising 1356 images, each with 32 sequential crack propagation images, was created. After training the models, experiments were conducted to analyze their generalization ability, temporal consistency, and segmentation quality. The multi-temporal approach consistently outperformed its mono-temporal counterpart, achieving an IoU of $82.72\%$ and a F1-score of $90.54\%$, representing a significant improvement over the mono-temporal model's IoU of $76.69\%$ and F1-score of $86.18\%$, despite requiring only half of the trainable parameters. The multi-temporal model also displayed a more consistent segmentation quality, with reduced noise and fewer errors. These results suggest that temporal information significantly enhances the performance of segmentation models, offering a promising solution for improved crack detection and the long-term monitoring of concrete structures, even with limited sequential data.
-]]></content:encoded>
-<pubDate>Wed, 01 Oct 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Unlocking Transfer Learning for Open-World Few-Shot Recognition</title>
-<link>https://arxiv.org/abs/2411.09986</link>
-<guid>https://arxiv.org/abs/2411.09986</guid>
-<content:encoded><![CDATA[
-arXiv:2411.09986v3 Announce Type: replace 
-Abstract: Few-Shot Open-Set Recognition (FSOSR) targets a critical real-world challenge, aiming to categorize inputs into known categories, termed closed-set classes, while identifying open-set inputs that fall outside these classes. Although transfer learning where a model is tuned to a given few-shot task has become a prominent paradigm in closed-world, we observe that it fails to expand to open-world. To unlock this challenge, we propose a two-stage method which consists of open-set aware meta-learning with open-set free transfer learning. In the open-set aware meta-learning stage, a model is trained to establish a metric space that serves as a beneficial starting point for the subsequent stage. During the open-set free transfer learning stage, the model is further adapted to a specific target task through transfer learning. Additionally, we introduce a strategy to simulate open-set examples by modifying the training dataset or generating pseudo open-set examples. The proposed method achieves state-of-the-art performance on two widely recognized benchmarks, miniImageNet and tieredImageNet, with only a 1.5\% increase in training effort. Our work demonstrates the effectiveness of transfer learning in FSOSR.
 ]]></content:encoded>
 <pubDate>Wed, 01 Oct 2025 00:00:00 -0400</pubDate>
 </item>

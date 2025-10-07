@@ -5,6 +5,28 @@
 <link>http://rss.arxiv.org/rss/cs.LG</link>
 
 <item>
+<title>Learning Representations Through Contrastive Neural Model Checking</title>
+<link>https://arxiv.org/abs/2510.01853</link>
+<guid>https://arxiv.org/abs/2510.01853</guid>
+<content:encoded><![CDATA[
+<div> representation learning, model checking, deep learning, contrastive neural model checking, formal verification
+
+Summary:<br>
+- The article presents Contrastive Neural Model Checking (CNML), a novel method that utilizes the model checking task to learn aligned representations for formal verification.
+- CNML jointly embeds logical specifications and systems into a shared latent space through a self-supervised contrastive objective.
+- CNML outperforms both algorithmic and neural baselines on industry-inspired retrieval tasks in cross-modal and intra-modal settings.
+- The learned representations from CNML transfer effectively to downstream tasks and generalize well to complex formulas.
+- The study demonstrates that model checking can be used as an objective for learning representations for formal languages. 
+
+<br>Summary: <div>
+arXiv:2510.01853v2 Announce Type: replace 
+Abstract: Model checking is a key technique for verifying safety-critical systems against formal specifications, where recent applications of deep learning have shown promise. However, while ubiquitous for vision and language domains, representation learning remains underexplored in formal verification. We introduce Contrastive Neural Model Checking (CNML), a novel method that leverages the model checking task as a guiding signal for learning aligned representations. CNML jointly embeds logical specifications and systems into a shared latent space through a self-supervised contrastive objective. On industry-inspired retrieval tasks, CNML considerably outperforms both algorithmic and neural baselines in cross-modal and intra-modal settings. We further show that the learned representations effectively transfer to downstream tasks and generalize to more complex formulas. These findings demonstrate that model checking can serve as an objective for learning representations for formal languages.
+]]></content:encoded>
+<pubDate>Tue, 07 Oct 2025 00:00:00 -0400</pubDate>
+<pubDate>Tue, 07 Oct 2025 00:00:00 -0400</pubDate>
+</item>
+
+<item>
 <title>First Hallucination Tokens Are Different from Conditional Ones</title>
 <link>https://arxiv.org/abs/2507.20836</link>
 <guid>https://arxiv.org/abs/2507.20836</guid>
@@ -19,20 +41,18 @@ arXiv:2507.20836v4 Announce Type: replace
 Abstract: Large Language Models (LLMs) hallucinate, and detecting these cases is key to ensuring trust. While many approaches address hallucination detection at the response or span level, recent work explores token-level detection, enabling more fine-grained intervention. However, the distribution of hallucination signal across sequences of hallucinated tokens remains unexplored. We leverage token-level annotations from the RAGTruth corpus and find that the first hallucinated token is far more detectable than later ones. This structural property holds across models, suggesting that first hallucination tokens play a key role in token-level hallucination detection. Our code is available at https://github.com/jakobsnl/RAGTruth_Xtended.
 ]]></content:encoded>
 <pubDate>Tue, 07 Oct 2025 00:00:00 -0400</pubDate>
-<pubDate>Tue, 07 Oct 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
 <title>Learning Passive Continuous-Time Dynamics with Multistep Port-Hamiltonian Gaussian Processes</title>
 <link>https://arxiv.org/abs/2510.00384</link>
 <guid>https://arxiv.org/abs/2510.00384</guid>
 <content:encoded><![CDATA[
-<div> multistep port-Hamiltonian Gaussian process, continuous-time dynamics, Hamiltonian surface, variable-step multistep integrator, energy balance <br>
-Summary: <br>
+<div> multistep port-Hamiltonian Gaussian process, continuous-time dynamics, Hamiltonian surface, variable-step multistep integrator, energy balance <br />
+Summary: <br />
 The article introduces the multistep port-Hamiltonian Gaussian process (MS-PHS GP) for learning continuous-time dynamics and a posterior over the Hamiltonian from noisy, irregularly-sampled trajectories. By leveraging a GP prior on the Hamiltonian surface and incorporating variable-step multistep integrator constraints as linear functionals, the MS-PHS GP facilitates closed-form conditioning of the vector field and Hamiltonian surface without using latent states. Additionally, it ensures energy balance and passivity. The authors provide a finite-sample vector-field bound that distinguishes between estimation and variable-step discretization terms. Finally, the MS-PHS GP is tested on mass-spring, Van der Pol, and Duffing benchmarks, showing enhanced vector-field recovery and well-calibrated Hamiltonian uncertainty. <div>
 arXiv:2510.00384v2 Announce Type: replace 
 Abstract: We propose the multistep port-Hamiltonian Gaussian process (MS-PHS GP) to learn physically consistent continuous-time dynamics and a posterior over the Hamiltonian from noisy, irregularly-sampled trajectories. By placing a GP prior on the Hamiltonian surface $H$ and encoding variable-step multistep integrator constraints as finite linear functionals, MS-PHS GP enables closed-form conditioning of both the vector field and the Hamiltonian surface without latent states, while enforcing energy balance and passivity by design. We state a finite-sample vector-field bound that separates the estimation and variable-step discretization terms. Lastly, we demonstrate improved vector-field recovery and well-calibrated Hamiltonian uncertainty on mass-spring, Van der Pol, and Duffing benchmarks.
 ]]></content:encoded>
-<pubDate>Tue, 07 Oct 2025 00:00:00 -0400</pubDate>
 <pubDate>Tue, 07 Oct 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -43,11 +63,10 @@ Abstract: We propose the multistep port-Hamiltonian Gaussian process (MS-PHS GP)
 <div> flow networks, generative modeling, Monte Carlo Tree Search, high-reward sampling, exploration-exploitation balance 
 
 Summary:
-Generative Flow Networks (GFlowNets) are effective in generating diverse and high-reward structured objects by modeling entire trajectory distributions. However, existing GFlowNets struggle to consistently generate high-reward samples in large search spaces with sparse high-reward regions, leading to overexploration. To address this challenge, this work integrates an enhanced Monte Carlo Tree Search (MCTS) into the GFlowNets sampling process. The MCTS-based policy evaluation guides generation towards high-reward trajectories, while the Polynomial Upper Confidence Trees (PUCT) balance exploration and exploitation adaptively. A controllable mechanism regulates the level of greediness, maintaining diversity while enhancing exploitation. Experimental results demonstrate that this method accelerates the discovery of high-reward regions and consistently generates high-reward samples. The implementation code is available at https://github.com/ZRNB/MG2FlowNet.<br><br>Summary: <div>
+Generative Flow Networks (GFlowNets) are effective in generating diverse and high-reward structured objects by modeling entire trajectory distributions. However, existing GFlowNets struggle to consistently generate high-reward samples in large search spaces with sparse high-reward regions, leading to overexploration. To address this challenge, this work integrates an enhanced Monte Carlo Tree Search (MCTS) into the GFlowNets sampling process. The MCTS-based policy evaluation guides generation towards high-reward trajectories, while the Polynomial Upper Confidence Trees (PUCT) balance exploration and exploitation adaptively. A controllable mechanism regulates the level of greediness, maintaining diversity while enhancing exploitation. Experimental results demonstrate that this method accelerates the discovery of high-reward regions and consistently generates high-reward samples. The implementation code is available at https://github.com/ZRNB/MG2FlowNet.<br /><br />Summary: <div>
 arXiv:2510.00805v2 Announce Type: replace 
 Abstract: Generative Flow Networks (GFlowNets) have emerged as a powerful tool for generating diverse and high-reward structured objects by learning to sample from a distribution proportional to a given reward function. Unlike conventional reinforcement learning (RL) approaches that prioritize optimization of a single trajectory, GFlowNets seek to balance diversity and reward by modeling the entire trajectory distribution. This capability makes them especially suitable for domains such as molecular design and combinatorial optimization. However, existing GFlowNets sampling strategies tend to overexplore and struggle to consistently generate high-reward samples, particularly in large search spaces with sparse high-reward regions. Therefore, improving the probability of generating high-reward samples without sacrificing diversity remains a key challenge under this premise. In this work, we integrate an enhanced Monte Carlo Tree Search (MCTS) into the GFlowNets sampling process, using MCTS-based policy evaluation to guide the generation toward high-reward trajectories and Polynomial Upper Confidence Trees (PUCT) to balance exploration and exploitation adaptively, and we introduce a controllable mechanism to regulate the degree of greediness. Our method enhances exploitation without sacrificing diversity by dynamically balancing exploration and reward-driven guidance. The experimental results show that our method can not only accelerate the speed of discovering high-reward regions but also continuously generate high-reward samples, while preserving the diversity of the generative distribution. All implementations are available at https://github.com/ZRNB/MG2FlowNet.
 ]]></content:encoded>
-<pubDate>Tue, 07 Oct 2025 00:00:00 -0400</pubDate>
 <pubDate>Tue, 07 Oct 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -62,20 +81,18 @@ arXiv:2510.02107v2 Announce Type: replace
 Abstract: AdaBoost sequentially fits so-called weak learners to minimize an exponential loss, which penalizes mislabeled data points more severely than other loss functions like cross-entropy. Paradoxically, AdaBoost generalizes well in practice as the number of weak learners grows. In the present work, we introduce Penalized Exponential Loss (PENEX), a new formulation of the multi-class exponential loss that is theoretically grounded and, in contrast to the existing formulation, amenable to optimization via first-order methods. We demonstrate both empirically and theoretically that PENEX implicitly maximizes margins of data points. Also, we show that gradient increments on PENEX implicitly parameterize weak learners in the boosting framework. Across computer vision and language tasks, we show that PENEX exhibits a regularizing effect often better than established methods with similar computational cost. Our results highlight PENEX's potential as an AdaBoost-inspired alternative for effective training and fine-tuning of deep neural networks.
 ]]></content:encoded>
 <pubDate>Tue, 07 Oct 2025 00:00:00 -0400</pubDate>
-<pubDate>Tue, 07 Oct 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
 <title>Diffusion^2: Turning 3D Environments into Radio Frequency Heatmaps</title>
 <link>https://arxiv.org/abs/2510.02274</link>
 <guid>https://arxiv.org/abs/2510.02274</guid>
 <content:encoded><![CDATA[
-<div> Keywords: RF signal propagation, Diffusion^2, 3D point clouds, RF-3D Encoder, multi-scale embedding <br>
-Summary: <br>
-Modeling radio frequency (RF) signal propagation is crucial for understanding the RF environment, supporting wireless diagnosis, deployment, and optimization. Diffusion^2, a diffusion-based approach, uses 3D point clouds to model RF signal propagation across various frequencies, from Wi-Fi to millimeter waves. The RF-3D Encoder captures RF-related features from 3D data, incorporating signal-specific details and 3D geometry complexities. Multi-scale embedding is applied to simulate the RF signal dissemination process accurately. The evaluation based on synthetic and real-world measurements shows that Diffusion^2 accurately estimates RF signal behavior with a minimal error margin of 1.9 dB and is 27 times faster than existing methods. This advancement in the field of RF signal modeling provides insights into RF signal propagation in diverse environmental conditions and frequency bands. For more information, visit https://rfvision-project.github.io/. <br> <div>
+<div> Keywords: RF signal propagation, Diffusion^2, 3D point clouds, RF-3D Encoder, multi-scale embedding <br />
+Summary: <br />
+Modeling radio frequency (RF) signal propagation is crucial for understanding the RF environment, supporting wireless diagnosis, deployment, and optimization. Diffusion^2, a diffusion-based approach, uses 3D point clouds to model RF signal propagation across various frequencies, from Wi-Fi to millimeter waves. The RF-3D Encoder captures RF-related features from 3D data, incorporating signal-specific details and 3D geometry complexities. Multi-scale embedding is applied to simulate the RF signal dissemination process accurately. The evaluation based on synthetic and real-world measurements shows that Diffusion^2 accurately estimates RF signal behavior with a minimal error margin of 1.9 dB and is 27 times faster than existing methods. This advancement in the field of RF signal modeling provides insights into RF signal propagation in diverse environmental conditions and frequency bands. For more information, visit https://rfvision-project.github.io/. <br /> <div>
 arXiv:2510.02274v2 Announce Type: replace 
 Abstract: Modeling radio frequency (RF) signal propagation is essential for understanding the environment, as RF signals offer valuable insights beyond the capabilities of RGB cameras, which are limited by the visible-light spectrum, lens coverage, and occlusions. It is also useful for supporting wireless diagnosis, deployment, and optimization. However, accurately predicting RF signals in complex environments remains a challenge due to interactions with obstacles such as absorption and reflection. We introduce Diffusion^2, a diffusion-based approach that uses 3D point clouds to model the propagation of RF signals across a wide range of frequencies, from Wi-Fi to millimeter waves. To effectively capture RF-related features from 3D data, we present the RF-3D Encoder, which encapsulates the complexities of 3D geometry along with signal-specific details. These features undergo multi-scale embedding to simulate the actual RF signal dissemination process. Our evaluation, based on synthetic and real-world measurements, demonstrates that Diffusion^2 accurately estimates the behavior of RF signals in various frequency bands and environmental conditions, with an error margin of just 1.9 dB and 27x faster than existing methods, marking a significant advancement in the field. Refer to https://rfvision-project.github.io/ for more information.
 ]]></content:encoded>
-<pubDate>Tue, 07 Oct 2025 00:00:00 -0400</pubDate>
 <pubDate>Tue, 07 Oct 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -85,11 +102,10 @@ Abstract: Modeling radio frequency (RF) signal propagation is essential for unde
 <content:encoded><![CDATA[
 <div> TranSUN, bias correction, recommeder systems, regression models, real-world scenarios
 Summary:
-TranSUN is a novel preemptive approach proposed to address the retransformation bias problem in regression models for recommender systems. The method incorporates joint bias learning to achieve theoretically guaranteed unbiasedness with superior convergence. It is further extended into a generic regression model family, Generalized TranSUN (GTS), offering more theoretical insights and flexibility in developing bias-free models. Comprehensive experiments across various data domains demonstrate the effectiveness of the proposed methods, which have been successfully deployed in real-world industrial recommendation scenarios for product and short video recommendations on the Taobao App. This implementation serves a large online audience and showcases improved performance in recommendation tasks. <br><br>Summary: <div>
+TranSUN is a novel preemptive approach proposed to address the retransformation bias problem in regression models for recommender systems. The method incorporates joint bias learning to achieve theoretically guaranteed unbiasedness with superior convergence. It is further extended into a generic regression model family, Generalized TranSUN (GTS), offering more theoretical insights and flexibility in developing bias-free models. Comprehensive experiments across various data domains demonstrate the effectiveness of the proposed methods, which have been successfully deployed in real-world industrial recommendation scenarios for product and short video recommendations on the Taobao App. This implementation serves a large online audience and showcases improved performance in recommendation tasks. <br /><br />Summary: <div>
 arXiv:2505.13881v4 Announce Type: replace-cross 
 Abstract: Regression models are crucial in recommender systems. However, retransformation bias problem has been conspicuously neglected within the community. While many works in other fields have devised effective bias correction methods, all of them are post-hoc cures externally to the model, facing practical challenges when applied to real-world recommender systems. Hence, we propose a preemptive paradigm to eradicate the bias intrinsically from the models via minor model refinement. Specifically, a novel TranSUN method is proposed with a joint bias learning manner to offer theoretically guaranteed unbiasedness under empirical superior convergence. It is further generalized into a novel generic regression model family, termed Generalized TranSUN (GTS), which not only offers more theoretical insights but also serves as a generic framework for flexibly developing various bias-free models. Comprehensive experimental results demonstrate the superiority of our methods across data from various domains, which have been successfully deployed in two real-world industrial recommendation scenarios, i.e. product and short video recommendation scenarios in Guess What You Like business domain in the homepage of Taobao App (a leading e-commerce platform with DAU > 300M), to serve the major online traffic.
 ]]></content:encoded>
-<pubDate>Tue, 07 Oct 2025 00:00:00 -0400</pubDate>
 <pubDate>Tue, 07 Oct 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -102,11 +118,10 @@ Abstract: Regression models are crucial in recommender systems. However, retrans
 Summary:
 The Low-Resource Audio Codec (LRAC) Challenge focuses on advancing neural audio coding for resource-constrained environments. The challenge includes two tracks - transparency codecs that preserve input speech quality under noise and reverberation, and enhancement codecs combining coding with denoising. The baseline systems for both tracks in the 2025 LRAC Challenge are convolutional neural codec models with Residual Vector Quantization. These models are trained using adversarial and reconstruction objectives, with detailed strategies for data filtering and augmentation, model architectures, optimization procedures, and checkpoint selection. The challenge's goal is to develop reliable neural speech codecs that meet strict constraints on computational complexity, latency, and bitrate, while operating effectively in real-world noise and reverberation conditions. The baseline systems provide a starting point for participants to further improve upon in the LRAC Challenge. 
 
-<br><br>Summary: <div>
+<br /><br />Summary: <div>
 arXiv:2510.00264v2 Announce Type: replace-cross 
 Abstract: The Low-Resource Audio Codec (LRAC) Challenge aims to advance neural audio coding for deployment in resource-constrained environments. The first edition focuses on low-resource neural speech codecs that must operate reliably under everyday noise and reverberation, while satisfying strict constraints on computational complexity, latency, and bitrate. Track 1 targets transparency codecs, which aim to preserve the perceptual transparency of input speech under mild noise and reverberation. Track 2 addresses enhancement codecs, which combine coding and compression with denoising and dereverberation. This paper presents the official baseline systems for both tracks in the 2025 LRAC Challenge. The baselines are convolutional neural codec models with Residual Vector Quantization, trained end-to-end using a combination of adversarial and reconstruction objectives. We detail the data filtering and augmentation strategies, model architectures, optimization procedures, and checkpoint selection criteria.
 ]]></content:encoded>
-<pubDate>Tue, 07 Oct 2025 00:00:00 -0400</pubDate>
 <pubDate>Tue, 07 Oct 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -122,7 +137,6 @@ arXiv:2510.01168v2 Announce Type: replace-cross
 Abstract: We study a class of constrained nonconvex--nonconcave minimax problems in which the inner maximization involves potentially complex constraints. Under the assumption that the inner problem of a novel lifted minimax problem satisfies a local Kurdyka-{\L}ojasiewicz (KL) condition, we show that the maximal function of the original problem enjoys a local H\"older smoothness property. We also propose a sequential convex programming (SCP) method for solving constrained optimization problems and establish its convergence rate under a local KL condition. Leveraging these results, we develop an inexact proximal gradient method for the original minimax problem, where the inexact gradient of the maximal function is computed via the SCP method applied to a locally KL-structured subproblem. Finally, we establish complexity guarantees for the proposed method in computing an approximate stationary point of the original minimax problem.
 ]]></content:encoded>
 <pubDate>Tue, 07 Oct 2025 00:00:00 -0400</pubDate>
-<pubDate>Tue, 07 Oct 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
 <title>Silent Tokens, Loud Effects: Padding in LLMs</title>
@@ -132,11 +146,10 @@ Abstract: We study a class of constrained nonconvex--nonconcave minimax problems
 <div> padding tokens, large language models, hidden representations, generation quality, bias, safety
 
 Summary:
-The study investigates the impact of padding tokens on the performance of large language models (LLMs). It is found that even small amounts of padding can lead to shifts in hidden representations. In smaller models, the use of padding tokens can degrade generation quality and alter bias in unpredictable ways. The presence of padding tokens also weakens safety guardrails, indicating a potential risk to model robustness. These findings highlight the importance of careful handling of padding tokens in LLM deployment to mitigate potential negative consequences on model performance and reliability. <br><br>Summary: <div>
+The study investigates the impact of padding tokens on the performance of large language models (LLMs). It is found that even small amounts of padding can lead to shifts in hidden representations. In smaller models, the use of padding tokens can degrade generation quality and alter bias in unpredictable ways. The presence of padding tokens also weakens safety guardrails, indicating a potential risk to model robustness. These findings highlight the importance of careful handling of padding tokens in LLM deployment to mitigate potential negative consequences on model performance and reliability. <br /><br />Summary: <div>
 arXiv:2510.01238v2 Announce Type: replace-cross 
 Abstract: Padding tokens are widely used in large language models (LLMs) to equalize sequence lengths during batched inference. While they should be fully masked, implementation errors can cause them to influence computation, and the extent of this influence is not well understood. We systematically study this effect across three open-source model families (Llama, Gemma, Qwen), inserting controlled amounts of padding and evaluating outcomes along four axes: activations, generation quality, bias, and safety. Even small amounts of padding shift hidden representations, degrade quality in smaller models, alter bias in unpredictable ways, and weaken safety guardrails. These findings demonstrate that padding is not a harmless detail but a robustness risk that must be carefully handled in deployment.
 ]]></content:encoded>
-<pubDate>Tue, 07 Oct 2025 00:00:00 -0400</pubDate>
 <pubDate>Tue, 07 Oct 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -144,13 +157,12 @@ Abstract: Padding tokens are widely used in large language models (LLMs) to equa
 <link>https://arxiv.org/abs/2510.01850</link>
 <guid>https://arxiv.org/abs/2510.01850</guid>
 <content:encoded><![CDATA[
-<div> Generative Adversarial Network, Impulse Noise, Narrowband Powerline Communications, Cyclostationary Noise Generation, Realistic Dataset<br>
-Summary:<br>
-The study introduces Noise Generation GAN (NGGAN) to capture characteristics of impulsive noise in narrowband powerline communications. A realistic dataset is created by measuring noise from NB-PLC systems using analog coupling and bandpass filtering. NNGAN is trained with input signal lengths suitable for cyclostationary noise generation, using Wasserstein distance as a loss function for similarity enhancement. The model is evaluated against mathematical and practical datasets through quantitative and qualitative analyses. Results show NGGAN closely matches real noise samples, outperforming other GAN-based models in fidelity and diversity. Principal Component Analysis scatter plots and Fréchet Inception Distance analysis confirm the superior performance of NGGAN in generating realistic noise samples. <br><br> <div>
+<div> Generative Adversarial Network, Impulse Noise, Narrowband Powerline Communications, Cyclostationary Noise Generation, Realistic Dataset<br />
+Summary:<br />
+The study introduces Noise Generation GAN (NGGAN) to capture characteristics of impulsive noise in narrowband powerline communications. A realistic dataset is created by measuring noise from NB-PLC systems using analog coupling and bandpass filtering. NNGAN is trained with input signal lengths suitable for cyclostationary noise generation, using Wasserstein distance as a loss function for similarity enhancement. The model is evaluated against mathematical and practical datasets through quantitative and qualitative analyses. Results show NGGAN closely matches real noise samples, outperforming other GAN-based models in fidelity and diversity. Principal Component Analysis scatter plots and Fréchet Inception Distance analysis confirm the superior performance of NGGAN in generating realistic noise samples. <br /><br /> <div>
 arXiv:2510.01850v2 Announce Type: replace-cross 
 Abstract: To effectively process impulse noise for narrowband powerline communications (NB-PLCs) transceivers, capturing comprehensive statistics of nonperiodic asynchronous impulsive noise (APIN) is a critical task. However, existing mathematical noise generative models only capture part of the characteristics of noise. In this study, we propose a novel generative adversarial network (GAN) called noise generation GAN (NGGAN) that learns the complicated characteristics of practically measured noise samples for data synthesis. To closely match the statistics of complicated noise over the NB-PLC systems, we measured the NB-PLC noise via the analog coupling and bandpass filtering circuits of a commercial NB-PLC modem to build a realistic dataset. To train NGGAN, we adhere to the following principles: 1) we design the length of input signals that the NGGAN model can fit to facilitate cyclostationary noise generation; 2) the Wasserstein distance is used as a loss function to enhance the similarity between the generated noise and training data; and 3) to measure the similarity performances of GAN-based models based on the mathematical and practically measured datasets, we conduct both quantitative and qualitative analyses. The training datasets include: 1) a piecewise spectral cyclostationary Gaussian model (PSCGM); 2) a frequency-shift (FRESH) filter; and 3) practical measurements from NB-PLC systems. Simulation results demonstrate that the generated noise samples from the proposed NGGAN are highly close to the real noise samples. The principal component analysis (PCA) scatter plots and Fr\'echet inception distance (FID) analysis have shown that NGGAN outperforms other GAN-based models by generating noise samples with superior fidelity and higher diversity.
 ]]></content:encoded>
-<pubDate>Tue, 07 Oct 2025 00:00:00 -0400</pubDate>
 <pubDate>Tue, 07 Oct 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -158,13 +170,12 @@ Abstract: To effectively process impulse noise for narrowband powerline communic
 <link>https://arxiv.org/abs/2510.01914</link>
 <guid>https://arxiv.org/abs/2510.01914</guid>
 <content:encoded><![CDATA[
-<div> Keywords: defect detection, dual in-line package (DIP), deep learning, ConSinGAN, YOLOv7 <br>
+<div> Keywords: defect detection, dual in-line package (DIP), deep learning, ConSinGAN, YOLOv7 <br />
 Summary: 
 An automated defect detection system using digital camera optics and deep learning is proposed for the dual in-line package (DIP) common in industries. The system targets surface and pin-leg defects, utilizing the ConSinGAN for generating a dataset due to the lack of defective component images. YOLO models (v3, v4, v7, v9) are tested, with YOLOv7 with ConSinGAN showing superior accuracy (95.50%) and detection time (285 ms) compared to threshold-based methods. A supervisory control and data acquisition (SCADA) system is developed for easy establishment of the automated defect detection system across various defect types or limited defect data. <div>
 arXiv:2510.01914v2 Announce Type: replace-cross 
 Abstract: Since the defect detection of conventional industry components is time-consuming and labor-intensive, it leads to a significant burden on quality inspection personnel and makes it difficult to manage product quality. In this paper, we propose an automated defect detection system for the dual in-line package (DIP) that is widely used in industry, using digital camera optics and a deep learning (DL)-based model. The two most common defect categories of DIP are examined: (1) surface defects, and (2) pin-leg defects. However, the lack of defective component images leads to a challenge for detection tasks. To solve this problem, the ConSinGAN is used to generate a suitable-sized dataset for training and testing. Four varieties of the YOLO model are investigated (v3, v4, v7, and v9), both in isolation and with the ConSinGAN augmentation. The proposed YOLOv7 with ConSinGAN is superior to the other YOLO versions in accuracy of 95.50\%, detection time of 285 ms, and is far superior to threshold-based approaches. In addition, the supervisory control and data acquisition (SCADA) system is developed, and the associated sensor architecture is described. The proposed automated defect detection can be easily established with numerous types of defects or insufficient defect data.
 ]]></content:encoded>
-<pubDate>Tue, 07 Oct 2025 00:00:00 -0400</pubDate>
 <pubDate>Tue, 07 Oct 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -175,11 +186,10 @@ Abstract: Since the defect detection of conventional industry components is time
 <div> contrastive loss, triplet loss, deep metric learning, representation quality, optimization behavior
 
 Summary:
-Triplet loss and contrastive loss are compared in deep metric learning. Triplet loss shows better preservation of variance within and across classes, enabling finer distinctions. Contrastive loss compact embeddings within classes, potentially masking semantic differences. Triplet loss produces fewer but stronger updates, focusing on hard examples. Across various datasets, triplet loss outperforms contrastive loss in classification and retrieval tasks. Triplet loss is recommended for detail retention and hard-sample focus, while contrastive loss is suitable for broader embedding refinement. <br><br>Summary: <div>
+Triplet loss and contrastive loss are compared in deep metric learning. Triplet loss shows better preservation of variance within and across classes, enabling finer distinctions. Contrastive loss compact embeddings within classes, potentially masking semantic differences. Triplet loss produces fewer but stronger updates, focusing on hard examples. Across various datasets, triplet loss outperforms contrastive loss in classification and retrieval tasks. Triplet loss is recommended for detail retention and hard-sample focus, while contrastive loss is suitable for broader embedding refinement. <br /><br />Summary: <div>
 arXiv:2510.02161v2 Announce Type: replace-cross 
 Abstract: Contrastive loss and triplet loss are widely used objectives in deep metric learning, yet their effects on representation quality remain insufficiently understood. We present a theoretical and empirical comparison of these losses, focusing on intra- and inter-class variance and optimization behavior (e.g., greedy updates). Through task-specific experiments with consistent settings on synthetic data and real datasets-MNIST, CIFAR-10-it is shown that triplet loss preserves greater variance within and across classes, supporting finer-grained distinctions in the learned representations. In contrast, contrastive loss tends to compact intra-class embeddings, which may obscure subtle semantic differences. To better understand their optimization dynamics, By examining loss-decay rate, active ratio, and gradient norm, we find that contrastive loss drives many small updates early on, while triplet loss produces fewer but stronger updates that sustain learning on hard examples. Finally, across both classification and retrieval tasks on MNIST, CIFAR-10, CUB-200, and CARS196 datasets, our results consistently show that triplet loss yields superior performance, which suggests using triplet loss for detail retention and hard-sample focus, and contrastive loss for smoother, broad-based embedding refinement.
 ]]></content:encoded>
-<pubDate>Tue, 07 Oct 2025 00:00:00 -0400</pubDate>
 <pubDate>Tue, 07 Oct 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -187,13 +197,12 @@ Abstract: Contrastive loss and triplet loss are widely used objectives in deep m
 <link>https://arxiv.org/abs/2510.02218</link>
 <guid>https://arxiv.org/abs/2510.02218</guid>
 <content:encoded><![CDATA[
-<div> Quantum Fisher information, R\'enyi relative entropy, information matrices, Kubo-Mori information matrix, right-logarithmic derivative Fisher information matrix <br>
-Summary: <br>
+<div> Quantum Fisher information, R\'enyi relative entropy, information matrices, Kubo-Mori information matrix, right-logarithmic derivative Fisher information matrix <br />
+Summary: <br />
 Quantum generalizations of the Fisher information matrix play a crucial role in quantum information science. This paper explores various quantum generalizations of the Fisher information matrix, including those derived from the log-Euclidean, $\alpha$-$z$, and geometric R\'enyi relative entropies using the method of divided differences. The log-Euclidean R\'enyi relative entropy yields the Kubo-Mori information matrix, while the geometric R\'enyi relative entropy leads to the right-logarithmic derivative Fisher information matrix. These information matrices satisfy the data-processing inequality for all non-negative values of the R\'enyi parameter $\alpha", despite the original quantities not doing so. Additionally, $\alpha$-$z$ information matrices resulting from the $\alpha$-$z$ R\'enyi relative entropies are derived, with formulas established for parameterized thermal states and time-evolved states. Hybrid quantum-classical algorithms for estimating these matrices are provided, with applications in quantum Boltzmann machine learning. <div>
 arXiv:2510.02218v2 Announce Type: replace-cross 
 Abstract: Quantum generalizations of the Fisher information are important in quantum information science, with applications in high energy and condensed matter physics and in quantum estimation theory, machine learning, and optimization. One can derive a quantum generalization of the Fisher information matrix in a natural way as the Hessian matrix arising in a Taylor expansion of a smooth divergence. Such an approach is appealing for quantum information theorists, given the ubiquity of divergences in quantum information theory. In contrast to the classical case, there is not a unique quantum generalization of the Fisher information matrix, similar to how there is not a unique quantum generalization of the relative entropy or the R\'enyi relative entropy. In this paper, I derive information matrices arising from the log-Euclidean, $\alpha$-$z$, and geometric R\'enyi relative entropies, with the main technical tool for doing so being the method of divided differences for calculating matrix derivatives. Interestingly, for all non-negative values of the R\'enyi parameter $\alpha$, the log-Euclidean R\'enyi relative entropy leads to the Kubo-Mori information matrix, and the geometric R\'enyi relative entropy leads to the right-logarithmic derivative Fisher information matrix. Thus, the resulting information matrices obey the data-processing inequality for all non-negative values of the R\'enyi parameter $\alpha$ even though the original quantities do not. Additionally, I derive and establish basic properties of $\alpha$-$z$ information matrices resulting from the $\alpha$-$z$ R\'enyi relative entropies. For parameterized thermal states and time-evolved states, I establish formulas for their $\alpha$-$z$ information matrices and hybrid quantum-classical algorithms for estimating them, with applications in quantum Boltzmann machine learning.
 ]]></content:encoded>
-<pubDate>Tue, 07 Oct 2025 00:00:00 -0400</pubDate>
 <pubDate>Tue, 07 Oct 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -201,16 +210,14 @@ Abstract: Quantum generalizations of the Fisher information are important in qua
 <link>https://arxiv.org/abs/2510.02282</link>
 <guid>https://arxiv.org/abs/2510.02282</guid>
 <content:encoded><![CDATA[
-<div> AI-generated videos, VidGuard-R1, detection tools, interpretable explanations, multi-modal large language model (MLLM)<br>
-<br>
-Summary: VidGuard-R1 is introduced as the first video authenticity detector to address the urgent need for effective tools in detecting AI-generated content. It fine-tunes a multi-modal large language model using group relative policy optimization to provide accurate judgments and interpretable reasoning. The model is trained on a dataset of real and AI-generated videos, carefully designed for maximum discrimination difficulty. Through extensive experiments, VidGuard-R1 achieves state-of-the-art zero-shot performance and can exceed 95% accuracy with additional training. The model's precise and interpretable rationales behind predictions are demonstrated through case studies, emphasizing transparency for regulators and end users. The code for VidGuard-R1 is publicly available, offering a valuable resource for mitigating societal risks associated with AI-generated videos. <br><br>Summary: <div>
+<div> AI-generated videos, VidGuard-R1, detection tools, interpretable explanations, multi-modal large language model (MLLM)<br />
+<br />
+Summary: VidGuard-R1 is introduced as the first video authenticity detector to address the urgent need for effective tools in detecting AI-generated content. It fine-tunes a multi-modal large language model using group relative policy optimization to provide accurate judgments and interpretable reasoning. The model is trained on a dataset of real and AI-generated videos, carefully designed for maximum discrimination difficulty. Through extensive experiments, VidGuard-R1 achieves state-of-the-art zero-shot performance and can exceed 95% accuracy with additional training. The model's precise and interpretable rationales behind predictions are demonstrated through case studies, emphasizing transparency for regulators and end users. The code for VidGuard-R1 is publicly available, offering a valuable resource for mitigating societal risks associated with AI-generated videos. <br /><br />Summary: <div>
 arXiv:2510.02282v2 Announce Type: replace-cross 
 Abstract: With the rapid advancement of AI-generated videos, there is an urgent need for effective detection tools to mitigate societal risks such as misinformation and reputational harm. In addition to accurate classification, it is essential that detection models provide interpretable explanations to ensure transparency for regulators and end users. To address these challenges, we introduce VidGuard-R1, the first video authenticity detector that fine-tunes a multi-modal large language model (MLLM) using group relative policy optimization (GRPO). Our model delivers both highly accurate judgments and insightful reasoning. We curate a challenging dataset of 140k real and AI-generated videos produced by state-of-the-art generation models, carefully designing the generation process to maximize discrimination difficulty. We then fine-tune Qwen-VL using GRPO with two specialized reward models that target temporal artifacts and generation complexity. Extensive experiments demonstrate that VidGuard-R1 achieves state-of-the-art zero-shot performance on existing benchmarks, with additional training pushing accuracy above 95%. Case studies further show that VidGuard-R1 produces precise and interpretable rationales behind its predictions. The code is publicly available at https://VidGuard-R1.github.io.
 ]]></content:encoded>
 <pubDate>Tue, 07 Oct 2025 00:00:00 -0400</pubDate>
-<pubDate>Tue, 07 Oct 2025 00:00:00 -0400</pubDate>
 </item>
-
 <item>
 <title>PARS: Low-Latency LLM Serving via Pairwise Learning-to-Rank</title>
 <link>https://arxiv.org/abs/2510.03243</link>
@@ -10881,146 +10888,6 @@ Abstract: The generation of privacy-preserving synthetic datasets is a promising
 <content:encoded><![CDATA[
 arXiv:2510.01796v1 Announce Type: new 
 Abstract: Multi-layer perceptrons (MLPs) conventionally follow a narrow-wide-narrow design where skip connections operate at the input/output dimensions while processing occurs in expanded hidden spaces. We challenge this convention by proposing wide-narrow-wide (Hourglass) MLP blocks where skip connections operate at expanded dimensions while residual computation flows through narrow bottlenecks. This inversion leverages higher-dimensional spaces for incremental refinement while maintaining computational efficiency through parameter-matched designs. Implementing Hourglass MLPs requires an initial projection to lift input signals to expanded dimensions. We propose that this projection can remain fixed at random initialization throughout training, enabling efficient training and inference implementations. We evaluate both architectures on generative tasks over popular image datasets, characterizing performance-parameter Pareto frontiers through systematic architectural search. Results show that Hourglass architectures consistently achieve superior Pareto frontiers compared to conventional designs. As parameter budgets increase, optimal Hourglass configurations favor deeper networks with wider skip connections and narrower bottlenecks-a scaling pattern distinct from conventional MLPs. Our findings suggest reconsidering skip connection placement in modern architectures, with potential applications extending to Transformers and other residual networks.
-]]></content:encoded>
-<pubDate>Fri, 03 Oct 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Sparse Query Attention (SQA): A Computationally Efficient Attention Mechanism with Query Heads Reduction</title>
-<link>https://arxiv.org/abs/2510.01817</link>
-<guid>https://arxiv.org/abs/2510.01817</guid>
-<content:encoded><![CDATA[
-arXiv:2510.01817v1 Announce Type: new 
-Abstract: The Transformer architecture, underpinned by the Multi-Head Attention (MHA) mechanism, has become the de facto standard for state-of-the-art models in artificial intelligence. However, the quadratic computational complexity of MHA with respect to sequence length presents a significant barrier to scaling, particularly for applications involving long contexts. Prevailing solutions, such as Multi-Query Attention (MQA) and Grouped-Query Attention (GQA), have effectively addressed the memory bandwidth bottleneck that dominates autoregressive inference latency by sharing Key and Value projections. While highly successful, these methods do not reduce the fundamental number of floating-point operations (FLOPs) required for the attention score computation, which remains a critical bottleneck for training and full-sequence processing. This paper introduces Sparse Query Attention (SQA), a novel attention architecture that pursues an alternative and complementary optimization path. Instead of reducing Key/Value heads, SQA reduces the number of Query heads. This architectural modification directly decreases the computational complexity of the attention mechanism by a factor proportional to the reduction in query heads, thereby lowering the overall FLOPs. This work presents the theoretical foundation of SQA, its mathematical formulation, and a family of architectural variants. Empirical benchmarks on long sequences (32k-200k tokens) demonstrate that SQA can achieve significant throughput improvements of up to 3x in computation-bound scenarios such as model pre-training, fine-tuning, and encoder-based tasks, with only a minimal impact on model quality in preliminary smallscale experiments. SQA was discovered serendipitously during the development of the upcoming Reactive Transformer architecture, suggesting its potential as a powerful tool for building more efficient and scalable models
-]]></content:encoded>
-<pubDate>Fri, 03 Oct 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Black-Box Combinatorial Optimization with Order-Invariant Reinforcement Learning</title>
-<link>https://arxiv.org/abs/2510.01824</link>
-<guid>https://arxiv.org/abs/2510.01824</guid>
-<content:encoded><![CDATA[
-arXiv:2510.01824v1 Announce Type: new 
-Abstract: We introduce an order-invariant reinforcement learning framework for black-box combinatorial optimization. Classical estimation-of-distribution algorithms (EDAs) often rely on learning explicit variable dependency graphs, which can be costly and fail to capture complex interactions efficiently. In contrast, we parameterize a multivariate autoregressive generative model trained without a fixed variable ordering. By sampling random generation orders during training - a form of information-preserving dropout - the model is encouraged to be invariant to variable order, promoting search-space diversity and shaping the model to focus on the most relevant variable dependencies, improving sample efficiency. We adapt Generalized Reinforcement Policy Optimization (GRPO) to this setting, providing stable policy-gradient updates from scale-invariant advantages. Across a wide range of benchmark algorithms and problem instances of varying sizes, our method frequently achieves the best performance and consistently avoids catastrophic failures.
-]]></content:encoded>
-<pubDate>Fri, 03 Oct 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Pre-Hoc Predictions in AutoML: Leveraging LLMs to Enhance Model Selection and Benchmarking for Tabular datasets</title>
-<link>https://arxiv.org/abs/2510.01842</link>
-<guid>https://arxiv.org/abs/2510.01842</guid>
-<content:encoded><![CDATA[
-arXiv:2510.01842v1 Announce Type: new 
-Abstract: The field of AutoML has made remarkable progress in post-hoc model selection, with libraries capable of automatically identifying the most performing models for a given dataset. Nevertheless, these methods often rely on exhaustive hyperparameter searches, where methods automatically train and test different types of models on the target dataset. Contrastingly, pre-hoc prediction emerges as a promising alternative, capable of bypassing exhaustive search through intelligent pre-selection of models. Despite its potential, pre-hoc prediction remains under-explored in the literature. This paper explores the intersection of AutoML and pre-hoc model selection by leveraging traditional models and Large Language Model (LLM) agents to reduce the search space of AutoML libraries. By relying on dataset descriptions and statistical information, we reduce the AutoML search space. Our methodology is applied to the AWS AutoGluon portfolio dataset, a state-of-the-art AutoML benchmark containing 175 tabular classification datasets available on OpenML. The proposed approach offers a shift in AutoML workflows, significantly reducing computational overhead, while still selecting the best model for the given dataset.
-]]></content:encoded>
-<pubDate>Fri, 03 Oct 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Learning Representations Through Contrastive Neural Model Checking</title>
-<link>https://arxiv.org/abs/2510.01853</link>
-<guid>https://arxiv.org/abs/2510.01853</guid>
-<content:encoded><![CDATA[
-arXiv:2510.01853v1 Announce Type: new 
-Abstract: Model checking is a key technique for verifying safety-critical systems against formal specifications, where recent applications of deep learning have shown promise. However, while ubiquitous for vision and language domains, representation learning remains underexplored in formal verification. We introduce Contrastive Neural Model Checking (CNML), a novel method that leverages the model checking task as a guiding signal for learning aligned representations. CNML jointly embeds logical specifications and systems into a shared latent space through a self-supervised contrastive objective. On industry-inspired retrieval tasks, CNML considerably outperforms both algorithmic and neural baselines in cross-modal and intra-modal settings.We further show that the learned representations effectively transfer to downstream tasks and generalize to more complex formulas. These findings demonstrate that model checking can serve as an objective for learning representations for formal languages.
-]]></content:encoded>
-<pubDate>Fri, 03 Oct 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Explicit Discovery of Nonlinear Symmetries from Dynamic Data</title>
-<link>https://arxiv.org/abs/2510.01855</link>
-<guid>https://arxiv.org/abs/2510.01855</guid>
-<content:encoded><![CDATA[
-arXiv:2510.01855v1 Announce Type: new 
-Abstract: Symmetry is widely applied in problems such as the design of equivariant networks and the discovery of governing equations, but in complex scenarios, it is not known in advance. Most previous symmetry discovery methods are limited to linear symmetries, and recent attempts to discover nonlinear symmetries fail to explicitly get the Lie algebra subspace. In this paper, we propose LieNLSD, which is, to our knowledge, the first method capable of determining the number of infinitesimal generators with nonlinear terms and their explicit expressions. We specify a function library for the infinitesimal group action and aim to solve for its coefficient matrix, proving that its prolongation formula for differential equations, which governs dynamic data, is also linear with respect to the coefficient matrix. By substituting the central differences of the data and the Jacobian matrix of the trained neural network into the infinitesimal criterion, we get a system of linear equations for the coefficient matrix, which can then be solved using SVD. On top quark tagging and a series of dynamic systems, LieNLSD shows qualitative advantages over existing methods and improves the long rollout accuracy of neural PDE solvers by over 20% while applying to guide data augmentation. Code and data are available at https://github.com/hulx2002/LieNLSD.
-]]></content:encoded>
-<pubDate>Fri, 03 Oct 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Compositional meta-learning through probabilistic task inference</title>
-<link>https://arxiv.org/abs/2510.01858</link>
-<guid>https://arxiv.org/abs/2510.01858</guid>
-<content:encoded><![CDATA[
-arXiv:2510.01858v1 Announce Type: new 
-Abstract: To solve a new task from minimal experience, it is essential to effectively reuse knowledge from previous tasks, a problem known as meta-learning. Compositional solutions, where common elements of computation are flexibly recombined into new configurations, are particularly well-suited for meta-learning. Here, we propose a compositional meta-learning model that explicitly represents tasks as structured combinations of reusable computations. We achieve this by learning a generative model that captures the underlying components and their statistics shared across a family of tasks. This approach transforms learning a new task into a probabilistic inference problem, which allows for finding solutions without parameter updates through highly constrained hypothesis testing. Our model successfully recovers ground truth components and statistics in rule learning and motor learning tasks. We then demonstrate its ability to quickly infer new solutions from just single examples. Together, our framework joins the expressivity of neural networks with the data-efficiency of probabilistic inference to achieve rapid compositional meta-learning.
-]]></content:encoded>
-<pubDate>Fri, 03 Oct 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Universal Dynamic Regret and Constraint Violation Bounds for Constrained Online Convex Optimization</title>
-<link>https://arxiv.org/abs/2510.01867</link>
-<guid>https://arxiv.org/abs/2510.01867</guid>
-<content:encoded><![CDATA[
-arXiv:2510.01867v1 Announce Type: new 
-Abstract: We consider a generalization of the celebrated Online Convex Optimization (OCO) framework with online adversarial constraints. We present two algorithms having simple modular structures that yield universal dynamic regret and cumulative constraint violation bounds, improving upon the state-of-the-art results. Our results hold in the most general case when both the cost and constraint functions are chosen arbitrarily by an adversary, and the constraint functions need not contain any common feasible point. The results are established by reducing the constrained learning problem to an instance of the standard OCO problem with specially constructed surrogate cost functions.
-]]></content:encoded>
-<pubDate>Fri, 03 Oct 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Randomized Gradient Subspaces for Efficient Large Language Model Training</title>
-<link>https://arxiv.org/abs/2510.01878</link>
-<guid>https://arxiv.org/abs/2510.01878</guid>
-<content:encoded><![CDATA[
-arXiv:2510.01878v1 Announce Type: new 
-Abstract: Training large language models (LLMs) is often bottlenecked by extreme memory demands, with optimizer states dominating the footprint. Recent works mitigates this cost by projecting gradients into low-dimensional subspaces using sophisticated update strategies. In this paper, we analyze the dynamics of gradient space and its underlying subspaces. We find that while a small subspace captures most gradient energy, a significant portion still resides in the residual bulk; moreover, the influence of the core subspace diminishes over time and in deeper layers. We also observe that the gradient space exhibits near-flat curvature, calling for algorithms that explicitly account for this geometry. Motivated by these insights, we introduce a suite of randomized algorithms, GrassWalk and GrassJump, which exploit subspace and achieve state-of-the-art memory savings while improving performance on LLaMA-1B and LLaMA-7B pretraining.
-]]></content:encoded>
-<pubDate>Fri, 03 Oct 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Multi-marginal temporal Schr\"odinger Bridge Matching for video generation from unpaired data</title>
-<link>https://arxiv.org/abs/2510.01894</link>
-<guid>https://arxiv.org/abs/2510.01894</guid>
-<content:encoded><![CDATA[
-arXiv:2510.01894v1 Announce Type: new 
-Abstract: Many natural dynamic processes -- such as in vivo cellular differentiation or disease progression -- can only be observed through the lens of static sample snapshots. While challenging, reconstructing their temporal evolution to decipher underlying dynamic properties is of major interest to scientific research. Existing approaches enable data transport along a temporal axis but are poorly scalable in high dimension and require restrictive assumptions to be met. To address these issues, we propose \textit{\textbf{Multi-Marginal temporal Schr\"odinger Bridge Matching}} (\textbf{MMtSBM}) \textit{for video generation from unpaired data}, extending the theoretical guarantees and empirical efficiency of Diffusion Schr\"odinger Bridge Matching (arXiv:archive/2303.16852) by deriving the Iterative Markovian Fitting algorithm to multiple marginals in a novel factorized fashion. Experiments show that MMtSBM retains theoretical properties on toy examples, achieves state-of-the-art performance on real world datasets such as transcriptomic trajectory inference in 100 dimensions, and for the first time recovers couplings and dynamics in very high dimensional image settings. Our work establishes multi-marginal Schr\"odinger bridges as a practical and principled approach for recovering hidden dynamics from static data.
-]]></content:encoded>
-<pubDate>Fri, 03 Oct 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Multimodal Foundation Models for Early Disease Detection</title>
-<link>https://arxiv.org/abs/2510.01899</link>
-<guid>https://arxiv.org/abs/2510.01899</guid>
-<content:encoded><![CDATA[
-arXiv:2510.01899v1 Announce Type: new 
-Abstract: Healthcare generates diverse streams of data, including electronic health records (EHR), medical imaging, genetics, and ongoing monitoring from wearable devices. Traditional diagnostic models frequently analyze these sources in isolation, which constrains their capacity to identify cross-modal correlations essential for early disease diagnosis. Our research presents a multimodal foundation model that consolidates diverse patient data through an attention-based transformer framework. At first, dedicated encoders put each modality into a shared latent space. Then, they combine them using multi-head attention and residual normalization. The architecture is made for pretraining on many tasks, which makes it easy to adapt to new diseases and datasets with little extra work. We provide an experimental strategy that uses benchmark datasets in oncology, cardiology, and neurology, with the goal of testing early detection tasks. The framework includes data governance and model management tools in addition to technological performance to improve transparency, reliability, and clinical interpretability. The suggested method works toward a single foundation model for precision diagnostics, which could improve the accuracy of predictions and help doctors make decisions.
-]]></content:encoded>
-<pubDate>Fri, 03 Oct 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>A Methodology for Transparent Logic-Based Classification Using a Multi-Task Convolutional Tsetlin Machine</title>
-<link>https://arxiv.org/abs/2510.01906</link>
-<guid>https://arxiv.org/abs/2510.01906</guid>
-<content:encoded><![CDATA[
-arXiv:2510.01906v1 Announce Type: new 
-Abstract: The Tsetlin Machine (TM) is a novel machine learning paradigm that employs finite-state automata for learning and utilizes propositional logic to represent patterns. Due to its simplistic approach, TMs are inherently more interpretable than learning algorithms based on Neural Networks. The Convolutional TM has shown comparable performance on various datasets such as MNIST, K-MNIST, F-MNIST and CIFAR-2. In this paper, we explore the applicability of the TM architecture for large-scale multi-channel (RGB) image classification. We propose a methodology to generate both local interpretations and global class representations. The local interpretations can be used to explain the model predictions while the global class representations aggregate important patterns for each class. These interpretations summarize the knowledge captured by the convolutional clauses, which can be visualized as images. We evaluate our methods on MNIST and CelebA datasets, using models that achieve 98.5\% accuracy on MNIST and 86.56\% F1-score on CelebA (compared to 88.07\% for ResNet50) respectively. We show that the TM performs competitively to this deep learning model while maintaining its interpretability, even in large-scale complex training environments. This contributes to a better understanding of TM clauses and provides insights into how these models can be applied to more complex and diverse datasets.
-]]></content:encoded>
-<pubDate>Fri, 03 Oct 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Are LLMs Better GNN Helpers? Rethinking Robust Graph Learning under Deficiencies with Iterative Refinement</title>
-<link>https://arxiv.org/abs/2510.01910</link>
-<guid>https://arxiv.org/abs/2510.01910</guid>
-<content:encoded><![CDATA[
-arXiv:2510.01910v1 Announce Type: new 
-Abstract: Graph Neural Networks (GNNs) are widely adopted in Web-related applications, serving as a core technique for learning from graph-structured data, such as text-attributed graphs. Yet in real-world scenarios, such graphs exhibit deficiencies that substantially undermine GNN performance. While prior GNN-based augmentation studies have explored robustness against individual imperfections, a systematic understanding of how graph-native and Large Language Models (LLMs) enhanced methods behave under compound deficiencies is still missing. Specifically, there has been no comprehensive investigation comparing conventional approaches and recent LLM-on-graph frameworks, leaving their merits unclear. To fill this gap, we conduct the first empirical study that benchmarks these two lines of methods across diverse graph deficiencies, revealing overlooked vulnerabilities and challenging the assumption that LLM augmentation is consistently superior. Building on empirical findings, we propose Robust Graph Learning via Retrieval-Augmented Contrastive Refinement (RoGRAD) framework. Unlike prior one-shot LLM-as-Enhancer designs, RoGRAD is the first iterative paradigm that leverages Retrieval-Augmented Generation (RAG) to inject retrieval-grounded augmentations by supplying class-consistent, diverse augmentations and enforcing discriminative representations through iterative graph contrastive learning. It transforms LLM augmentation for graphs from static signal injection into dynamic refinement. Extensive experiments demonstrate RoGRAD's superiority over both conventional GNN- and LLM-enhanced baselines, achieving up to 82.43% average improvement.
-]]></content:encoded>
-<pubDate>Fri, 03 Oct 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>StelLA: Subspace Learning in Low-rank Adaptation using Stiefel Manifold</title>
-<link>https://arxiv.org/abs/2510.01938</link>
-<guid>https://arxiv.org/abs/2510.01938</guid>
-<content:encoded><![CDATA[
-arXiv:2510.01938v1 Announce Type: new 
-Abstract: Low-rank adaptation (LoRA) has been widely adopted as a parameter-efficient technique for fine-tuning large-scale pre-trained models. However, it still lags behind full fine-tuning in performance, partly due to its insufficient exploitation of the geometric structure underlying low-rank manifolds. In this paper, we propose a geometry-aware extension of LoRA that uses a three-factor decomposition $U\!SV^\top$. Analogous to the structure of singular value decomposition (SVD), it separates the adapter's input and output subspaces, $V$ and $U$, from the scaling factor $S$. Our method constrains $U$ and $V$ to lie on the Stiefel manifold, ensuring their orthonormality throughout the training. To optimize on the Stiefel manifold, we employ a flexible and modular geometric optimization design that converts any Euclidean optimizer to a Riemannian one. It enables efficient subspace learning while remaining compatible with existing fine-tuning pipelines. Empirical results across a wide range of downstream tasks, including commonsense reasoning, math and code generation, image classification, and image generation, demonstrate the superior performance of our approach against the recent state-of-the-art variants of LoRA. Code is available at https://github.com/SonyResearch/stella.
-]]></content:encoded>
-<pubDate>Fri, 03 Oct 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Lower Bounds on Adversarial Robustness for Multiclass Classification with General Loss Functions</title>
-<link>https://arxiv.org/abs/2510.01969</link>
-<guid>https://arxiv.org/abs/2510.01969</guid>
-<content:encoded><![CDATA[
-arXiv:2510.01969v1 Announce Type: new 
-Abstract: We consider adversarially robust classification in a multiclass setting under arbitrary loss functions and derive dual and barycentric reformulations of the corresponding learner-agnostic robust risk minimization problem. We provide explicit characterizations for important cases such as the cross-entropy loss, loss functions with a power form, and the quadratic loss, extending in this way available results for the 0-1 loss. These reformulations enable efficient computation of sharp lower bounds for adversarial risks and facilitate the design of robust classifiers beyond the 0-1 loss setting. Our paper uncovers interesting connections between adversarial robustness, $\alpha$-fair packing problems, and generalized barycenter problems for arbitrary positive measures where Kullback-Leibler and Tsallis entropies are used as penalties. Our theoretical results are accompanied with illustrative numerical experiments where we obtain tighter lower bounds for adversarial risks with the cross-entropy loss function.
 ]]></content:encoded>
 <pubDate>Fri, 03 Oct 2025 00:00:00 -0400</pubDate>
 </item>
