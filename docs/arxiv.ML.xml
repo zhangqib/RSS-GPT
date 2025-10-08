@@ -4,6 +4,7 @@
 <title>cs.LG updates on arXiv.org</title>
 <link>http://rss.arxiv.org/rss/cs.LG</link>
 
+
 <item>
 <title>FinP: Fairness-in-Privacy in Federated Learning by Addressing Disparities in Privacy Risk</title>
 <link>https://arxiv.org/abs/2502.17748</link>
@@ -12,11 +13,10 @@
 <div> Framework, Privacy, Fairness, Federated Learning, Source Inference Attacks
 
 Summary:
-FinP is a novel framework designed to ensure fairness in privacy in human-centric federated learning settings. It addresses disparities in privacy risk by mitigating vulnerability to source inference attacks through server-side adaptive aggregation and client-side regularization. FinP improves fairness by adjusting client contributions dynamically and enhancing privacy robustness individually. Evaluations on HAR and CIFAR-10 datasets show FinP's effectiveness in achieving fairness-in-privacy with minimal impact on utility. It significantly improves group fairness in CIFAR-10 by 57.14% compared to the state-of-the-art and mitigates SIA risks, establishing fairness in privacy within FL systems while maintaining utility. <br><br>Summary: <div>
+FinP is a novel framework designed to ensure fairness in privacy in human-centric federated learning settings. It addresses disparities in privacy risk by mitigating vulnerability to source inference attacks through server-side adaptive aggregation and client-side regularization. FinP improves fairness by adjusting client contributions dynamically and enhancing privacy robustness individually. Evaluations on HAR and CIFAR-10 datasets show FinP's effectiveness in achieving fairness-in-privacy with minimal impact on utility. It significantly improves group fairness in CIFAR-10 by 57.14% compared to the state-of-the-art and mitigates SIA risks, establishing fairness in privacy within FL systems while maintaining utility. <br /><br />Summary: <div>
 arXiv:2502.17748v3 Announce Type: replace 
 Abstract: Ensuring fairness in machine learning extends to the critical dimension of privacy, particularly in human-centric federated learning (FL) settings where decentralized data necessitates an equitable distribution of privacy risk across clients. This paper introduces FinP, a novel framework specifically designed to address disparities in privacy risk by mitigating disproportionate vulnerability to source inference attacks (SIA). FinP employs a two-pronged strategy: (1) server-side adaptive aggregation, which dynamically adjusts client contributions to the global model to foster fairness, and (2) client-side regularization, which enhances the privacy robustness of individual clients. This comprehensive approach directly tackles both the symptoms and underlying causes of privacy unfairness in FL. Extensive evaluations on the Human Activity Recognition (HAR) and CIFAR-10 datasets demonstrate FinP's effectiveness, achieving improvement in fairness-in-privacy on HAR and CIFAR-10 with minimal impact on utility. FinP improved group fairness with respect to disparity in privacy risk using equal opportunity in CIFAR-10 by 57.14% compared to the state-of-the-art. Furthermore, FinP significantly mitigates SIA risks on CIFAR-10, underscoring its potential to establish fairness in privacy within FL systems without compromising utility.
 ]]></content:encoded>
-<pubDate>Wed, 08 Oct 2025 00:00:00 -0400</pubDate>
 <pubDate>Wed, 08 Oct 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -32,20 +32,18 @@ arXiv:2510.01447v2 Announce Type: replace
 Abstract: Differential privacy (DP) provides strong protection for sensitive data, but often reduces model performance and fairness, especially for underrepresented groups. One major reason is gradient clipping in DP-SGD, which can disproportionately suppress learning signals for minority subpopulations. Although adaptive clipping can enhance utility, it still relies on uniform hard clipping, which may restrict fairness. To address this, we introduce SoftAdaClip, a differentially private training method that replaces hard clipping with a smooth, tanh-based transformation to preserve relative gradient magnitudes while bounding sensitivity. We evaluate SoftAdaClip on various datasets, including MIMIC-III (clinical text), GOSSIS-eICU (structured healthcare), and Adult Income (tabular data). Our results show that SoftAdaClip reduces subgroup disparities by up to 87% compared to DP-SGD and up to 48% compared to Adaptive-DPSGD, and these reductions in subgroup disparities are statistically significant. These findings underscore the importance of integrating smooth transformations with adaptive mechanisms to achieve fair and private model training.
 ]]></content:encoded>
 <pubDate>Wed, 08 Oct 2025 00:00:00 -0400</pubDate>
-<pubDate>Wed, 08 Oct 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
 <title>Bypassing Prompt Guards in Production with Controlled-Release Prompting</title>
 <link>https://arxiv.org/abs/2510.01529</link>
 <guid>https://arxiv.org/abs/2510.01529</guid>
 <content:encoded><![CDATA[
-<div> Jailbreaking, Language models, Prompt guards, AI safety, Attack surface <br>
+<div> Jailbreaking, Language models, Prompt guards, AI safety, Attack surface <br />
 Summary: 
 The study discusses a new attack method that bypasses prompt guards in large language models (LLMs), emphasizing the limitations of existing defenses. The attack successfully breaches production models like Google Gemini (2.5 Flash/Pro) and DeepSeek Chat (DeepThink) while preserving response quality. It exploits a resource imbalance between the prompt guard and the main LLM by encoding a jailbreak prompt that the lightweight guards cannot decipher but the main model can. This underscores the vulnerability of lightweight prompt guards in modern LLM architectures and stresses the importance of shifting the focus from filtering malicious inputs to preventing harmful outputs. The researchers also note other alignment issues, including the extraction of copyrighted and training data, as well as the potential leakage of malicious responses during LLM processing.  <div>
 arXiv:2510.01529v2 Announce Type: replace 
 Abstract: As large language models (LLMs) advance, ensuring AI safety and alignment is paramount. One popular approach is prompt guards, lightweight mechanisms designed to filter malicious queries while being easy to implement and update. In this work, we introduce a new attack that circumvents such prompt guards, highlighting their limitations. Our method consistently jailbreaks production models while maintaining response quality, even under the highly protected chat interfaces of Google Gemini (2.5 Flash/Pro), DeepSeek Chat (DeepThink), Grok (3), and Mistral Le Chat (Magistral). The attack exploits a resource asymmetry between the prompt guard and the main LLM, encoding a jailbreak prompt that lightweight guards cannot decode but the main model can. This reveals an attack surface inherent to lightweight prompt guards in modern LLM architectures and underscores the need to shift defenses from blocking malicious inputs to preventing malicious outputs. We additionally identify other critical alignment issues, such as copyrighted data extraction, training data extraction, and malicious response leakage during thinking.
 ]]></content:encoded>
-<pubDate>Wed, 08 Oct 2025 00:00:00 -0400</pubDate>
 <pubDate>Wed, 08 Oct 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -53,12 +51,11 @@ Abstract: As large language models (LLMs) advance, ensuring AI safety and alignm
 <link>https://arxiv.org/abs/2510.01538</link>
 <guid>https://arxiv.org/abs/2510.01538</guid>
 <content:encoded><![CDATA[
-<div> framework, time series forecasting, LLM-driven, agent-based, interpretable<br>
-Summary:<br>TSci is introduced as an LLM-driven agentic framework for time series forecasting, consisting of four specialized agents: Curator, Planner, Forecaster, and Reporter. Curator uses LLM-guided diagnostics for targeted preprocessing, Planner narrows model choices, Forecaster fits models and adapts strategies, and Reporter synthesizes the process into transparent reports. TSci outperforms statistical and LLM-based baselines, reducing forecast error by 10.4% and 38.2% on average. The framework's transparent natural-language rationales and comprehensive reports enhance interpretability and extensibility across tasks, transforming the forecasting workflow into a white-box system. Empirical results on eight benchmarks demonstrate the effectiveness of TSci in improving forecast accuracy and transparency in the forecasting process. <div>
+<div> framework, time series forecasting, LLM-driven, agent-based, interpretable<br />
+Summary:<br />TSci is introduced as an LLM-driven agentic framework for time series forecasting, consisting of four specialized agents: Curator, Planner, Forecaster, and Reporter. Curator uses LLM-guided diagnostics for targeted preprocessing, Planner narrows model choices, Forecaster fits models and adapts strategies, and Reporter synthesizes the process into transparent reports. TSci outperforms statistical and LLM-based baselines, reducing forecast error by 10.4% and 38.2% on average. The framework's transparent natural-language rationales and comprehensive reports enhance interpretability and extensibility across tasks, transforming the forecasting workflow into a white-box system. Empirical results on eight benchmarks demonstrate the effectiveness of TSci in improving forecast accuracy and transparency in the forecasting process. <div>
 arXiv:2510.01538v2 Announce Type: replace 
 Abstract: Time series forecasting is central to decision-making in domains as diverse as energy, finance, climate, and public health. In practice, forecasters face thousands of short, noisy series that vary in frequency, quality, and horizon, where the dominant cost lies not in model fitting, but in the labor-intensive preprocessing, validation, and ensembling required to obtain reliable predictions. Prevailing statistical and deep learning models are tailored to specific datasets or domains and generalize poorly. A general, domain-agnostic framework that minimizes human intervention is urgently in demand. In this paper, we introduce TimeSeriesScientist (TSci), the first LLM-driven agentic framework for general time series forecasting. The framework comprises four specialized agents: Curator performs LLM-guided diagnostics augmented by external tools that reason over data statistics to choose targeted preprocessing; Planner narrows the hypothesis space of model choice by leveraging multi-modal diagnostics and self-planning over the input; Forecaster performs model fitting and validation and, based on the results, adaptively selects the best model configuration as well as ensemble strategy to make final predictions; and Reporter synthesizes the whole process into a comprehensive, transparent report. With transparent natural-language rationales and comprehensive reports, TSci transforms the forecasting workflow into a white-box system that is both interpretable and extensible across tasks. Empirical results on eight established benchmarks demonstrate that TSci consistently outperforms both statistical and LLM-based baselines, reducing forecast error by an average of 10.4% and 38.2%, respectively. Moreover, TSci produces a clear and rigorous report that makes the forecasting workflow more transparent and interpretable.
 ]]></content:encoded>
-<pubDate>Wed, 08 Oct 2025 00:00:00 -0400</pubDate>
 <pubDate>Wed, 08 Oct 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -69,11 +66,10 @@ Abstract: Time series forecasting is central to decision-making in domains as di
 <div> protein backbone generation, generative models, score distillation, few-step generators, protein design
 
 Summary:
-In the realm of protein design, diffusion- and flow-based generative models have shown promise but are hindered by slow generation speeds. To address this limitation, score distillation techniques have been explored to train few-step protein backbone generators that reduce sampling time while maintaining high quality. By adapting Score Identity Distillation (SiD) and incorporating multistep generation with inference time noise modulation, significant improvements in sampling speed have been achieved without sacrificing designability, diversity, or novelty compared to the Proteina teacher model. This advancement paves the way for large-scale protein design applications, bringing diffusion-based models closer to real-world protein engineering use. <br><br>Summary: <div>
+In the realm of protein design, diffusion- and flow-based generative models have shown promise but are hindered by slow generation speeds. To address this limitation, score distillation techniques have been explored to train few-step protein backbone generators that reduce sampling time while maintaining high quality. By adapting Score Identity Distillation (SiD) and incorporating multistep generation with inference time noise modulation, significant improvements in sampling speed have been achieved without sacrificing designability, diversity, or novelty compared to the Proteina teacher model. This advancement paves the way for large-scale protein design applications, bringing diffusion-based models closer to real-world protein engineering use. <br /><br />Summary: <div>
 arXiv:2510.03095v2 Announce Type: replace 
 Abstract: Diffusion- and flow-based generative models have recently demonstrated strong performance in protein backbone generation tasks, offering unprecedented capabilities for de novo protein design. However, while achieving notable performance in generation quality, these models are limited by their generating speed, often requiring hundreds of iterative steps in the reverse-diffusion process. This computational bottleneck limits their practical utility in large-scale protein discovery, where thousands to millions of candidate structures are needed. To address this challenge, we explore the techniques of score distillation, which has shown great success in reducing the number of sampling steps in the vision domain while maintaining high generation quality. However, a straightforward adaptation of these methods results in unacceptably low designability. Through extensive study, we have identified how to appropriately adapt Score identity Distillation (SiD), a state-of-the-art score distillation strategy, to train few-step protein backbone generators which significantly reduce sampling time, while maintaining comparable performance to their pretrained teacher model. In particular, multistep generation combined with inference time noise modulation is key to the success. We demonstrate that our distilled few-step generators achieve more than a 20-fold improvement in sampling speed, while achieving similar levels of designability, diversity, and novelty as the Proteina teacher model. This reduction in inference cost enables large-scale in silico protein design, thereby bringing diffusion-based models closer to real-world protein engineering applications.
 ]]></content:encoded>
-<pubDate>Wed, 08 Oct 2025 00:00:00 -0400</pubDate>
 <pubDate>Wed, 08 Oct 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -91,9 +87,7 @@ arXiv:2510.02418v2 Announce Type: replace-cross
 Abstract: LLM web agents now browse and take actions on the open web, yet current agent evaluations are constrained to sandboxed environments or artificial tasks. We introduce BrowserArena, a live open-web agent evaluation platform that collects user-submitted tasks, runs Arena-style head-to-head comparisons, and uses step-level human feedback to surface failure modes. Collecting and analyzing step-level annotations on the agent traces, we identify three consistent failure modes: captcha resolution, pop-up banner removal, and direct navigation to URLs. By constructing targeted datasets to further study these tasks, we discover variations in how different language models navigate these failure modes. We find, for example, that o4-mini deploys a wider variety of strategies to circumvent captcha resolution than other models and DeepSeek-R1 consistently misleads users about pop-up banner closure. Our findings surface both the diversity and brittleness of current web agents. More broadly, our benchmarking methodology provides an approach to evaluating and understanding web agent failure modes at scale.
 ]]></content:encoded>
 <pubDate>Wed, 08 Oct 2025 00:00:00 -0400</pubDate>
-<pubDate>Wed, 08 Oct 2025 00:00:00 -0400</pubDate>
 </item>
-
 <item>
 <title>A Fuzzy Logic-Based Framework for Explainable Machine Learning in Big Data Analytics</title>
 <link>https://arxiv.org/abs/2510.05120</link>
@@ -10758,96 +10752,6 @@ The article discusses the importance of low-precision computation in dealing wit
 <br /><br />Summary: <div>
 arXiv:2510.02676v1 Announce Type: new 
 Abstract: The scaling of Generative AI (GenAI) models into the hundreds of billions of parameters makes low-precision computation indispensable for efficient deployment. We argue that the fundamental solution lies in developing low-precision floating-point formats, which inherently provide numerical stability, memory savings, and hardware efficiency without dequantization overhead. In this paper, we present a theoretical and empirical study of an exponent concentration phenomenon in GenAI weights: exponents consistently exhibit low entropy across architectures and modalities. We show that this arises naturally from $\alpha$-stable distributions induced by stochastic gradient descent, and we prove tight bounds on the entropy of exponents. Our analysis establishes a theoretical compression limit near FP4.67, which motivates the design of a practical FP8 format. Building on these insights, we propose Exponent-Concentrated FP8 (ECF8), a lossless compression framework with entropy-aware encoding and GPU-optimized decoding. Experiments on LLMs and DiTs up to 671B parameters demonstrate up to 26.9% memory savings and 177.1% throughput acceleration, with perfectly lossless computations, i.e., no deviation in model outputs. Our results establish exponent concentration as a statistical law of trained models and open a principled path for lossless low-precision floating-point design in the FP8 era.
-]]></content:encoded>
-<pubDate>Mon, 06 Oct 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Can Data-Driven Dynamics Reveal Hidden Physics? There Is A Need for Interpretable Neural Operators</title>
-<link>https://arxiv.org/abs/2510.02683</link>
-<guid>https://arxiv.org/abs/2510.02683</guid>
-<content:encoded><![CDATA[
-<div> Keywords: neural operators, function spaces, data-driven simulations, physical principles, multi-scale models
-
-Summary:
-Neural operators have shown promise in learning mappings between function spaces for data-driven simulations of complex dynamics. This work classifies neural operators into spatial domain models and functional domain models. The study focuses on elucidating the prediction-making process of neural operators and their ability to learn hidden physical patterns from data. However, the current explanation method is limited to specific situations, emphasizing the need for more generalizable explanation methods. The use of dual-space multi-scale models has demonstrated state-of-the-art performance, suggesting potential for learning complex physics. The integration of known physics into neural operators through principled frameworks is highlighted as critical for better generalization and uncovering hidden physical phenomena.<br /><br />Summary: <div>
-arXiv:2510.02683v1 Announce Type: new 
-Abstract: Recently, neural operators have emerged as powerful tools for learning mappings between function spaces, enabling data-driven simulations of complex dynamics. Despite their successes, a deeper understanding of their learning mechanisms remains underexplored. In this work, we classify neural operators into two types: (1) Spatial domain models that learn on grids and (2) Functional domain models that learn with function bases. We present several viewpoints based on this classification and focus on learning data-driven dynamics adhering to physical principles. Specifically, we provide a way to explain the prediction-making process of neural operators and show that neural operator can learn hidden physical patterns from data. However, this explanation method is limited to specific situations, highlighting the urgent need for generalizable explanation methods. Next, we show that a simple dual-space multi-scale model can achieve SOTA performance and we believe that dual-space multi-spatio-scale models hold significant potential to learn complex physics and require further investigation. Lastly, we discuss the critical need for principled frameworks to incorporate known physics into neural operators, enabling better generalization and uncovering more hidden physical phenomena.
-]]></content:encoded>
-<pubDate>Mon, 06 Oct 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>EvoSpeak: Large Language Models for Interpretable Genetic Programming-Evolved Heuristics</title>
-<link>https://arxiv.org/abs/2510.02686</link>
-<guid>https://arxiv.org/abs/2510.02686</guid>
-<content:encoded><![CDATA[
-<div> Genetic programming, large language models, EvoSpeak, heuristic evolution, optimization problems<br />
-<br />Summary: EvoSpeak is a framework that combines genetic programming with large language models to enhance the efficiency, transparency, and adaptability of heuristic evolution. It utilizes knowledge from high-quality GP heuristics to generate populations, translate complex GP trees into understandable natural-language explanations, and facilitate knowledge transfer across tasks. Experiments on dynamic job scheduling show that EvoSpeak generates more effective heuristics, improves convergence speed, and provides user-friendly reports. By integrating GP symbolic reasoning with LLM interpretative capabilities, EvoSpeak advances the development of intelligent and transparent heuristics for optimization problems. <div>
-arXiv:2510.02686v1 Announce Type: new 
-Abstract: Genetic programming (GP) has demonstrated strong effectiveness in evolving tree-structured heuristics for complex optimization problems. Yet, in dynamic and large-scale scenarios, the most effective heuristics are often highly complex, hindering interpretability, slowing convergence, and limiting transferability across tasks. To address these challenges, we present EvoSpeak, a novel framework that integrates GP with large language models (LLMs) to enhance the efficiency, transparency, and adaptability of heuristic evolution. EvoSpeak learns from high-quality GP heuristics, extracts knowledge, and leverages this knowledge to (i) generate warm-start populations that accelerate convergence, (ii) translate opaque GP trees into concise natural-language explanations that foster interpretability and trust, and (iii) enable knowledge transfer and preference-aware heuristic generation across related tasks. We verify the effectiveness of EvoSpeak through extensive experiments on dynamic flexible job shop scheduling (DFJSS), under both single- and multi-objective formulations. The results demonstrate that EvoSpeak produces more effective heuristics, improves evolutionary efficiency, and delivers human-readable reports that enhance usability. By coupling the symbolic reasoning power of GP with the interpretative and generative strengths of LLMs, EvoSpeak advances the development of intelligent, transparent, and user-aligned heuristics for real-world optimization problems.
-]]></content:encoded>
-<pubDate>Mon, 06 Oct 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Fine-Tuning Diffusion Models via Intermediate Distribution Shaping</title>
-<link>https://arxiv.org/abs/2510.02692</link>
-<guid>https://arxiv.org/abs/2510.02692</guid>
-<content:encoded><![CDATA[
-<div> Diffusion models, reward shaping, Proximal Policy Optimization (PPO), Rejection Sampling based Fine-Tuning (RAFT), P-GRAFT. 
-Summary: GRAFT unifies RAFT variants to implicitly perform PPO with reshaped rewards. P-GRAFT shapes distributions at intermediate noise levels to improve fine-tuning. A bias-variance tradeoff explains this mathematically. Inverse noise correction enhances flow models without explicit rewards. Empirical evaluations on various generation tasks show improvements, especially in text-to-image (T2I) and unconditional image generation. Notably, the framework applied to Stable Diffusion 2 surpasses policy gradient methods in T2I benchmarks by an 8.81% relative improvement in VQAScore. In unconditional image generation, inverse noise correction boosts FID of generated images with lower computational costs per image. 
-<br /><br />Summary: GRAFT unifies RAFT variants to implicitly perform PPO with reshaped rewards. P-GRAFT shapes distributions at intermediate noise levels to improve fine-tuning. A bias-variance tradeoff explains this mathematically. Inverse noise correction enhances flow models without explicit rewards. Empirical evaluations on various generation tasks show improvements, especially in text-to-image (T2I) and unconditional image generation. Notably, the framework applied to Stable Diffusion 2 surpasses policy gradient methods in T2I benchmarks by an 8.81% relative improvement in VQAScore. In unconditional image generation, inverse noise correction boosts FID of generated images with lower computational costs per image. <div>
-arXiv:2510.02692v1 Announce Type: new 
-Abstract: Diffusion models are widely used for generative tasks across domains. While pre-trained diffusion models effectively capture the training data distribution, it is often desirable to shape these distributions using reward functions to align with downstream applications. Policy gradient methods, such as Proximal Policy Optimization (PPO), are widely used in the context of autoregressive generation. However, the marginal likelihoods required for such methods are intractable for diffusion models, leading to alternative proposals and relaxations. In this context, we unify variants of Rejection sAmpling based Fine-Tuning (RAFT) as GRAFT, and show that this implicitly performs PPO with reshaped rewards. We then introduce P-GRAFT to shape distributions at intermediate noise levels and demonstrate empirically that this can lead to more effective fine-tuning. We mathematically explain this via a bias-variance tradeoff. Motivated by this, we propose inverse noise correction to improve flow models without leveraging explicit rewards. We empirically evaluate our methods on text-to-image(T2I) generation, layout generation, molecule generation and unconditional image generation. Notably, our framework, applied to Stable Diffusion 2, improves over policy gradient methods on popular T2I benchmarks in terms of VQAScore and shows an $8.81\%$ relative improvement over the base model. For unconditional image generation, inverse noise correction improves FID of generated images at lower FLOPs/image.
-]]></content:encoded>
-<pubDate>Mon, 06 Oct 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>RAMAC: Multimodal Risk-Aware Offline Reinforcement Learning and the Role of Behavior Regularization</title>
-<link>https://arxiv.org/abs/2510.02695</link>
-<guid>https://arxiv.org/abs/2510.02695</guid>
-<content:encoded><![CDATA[
-<div> Keywords: offline reinforcement learning, risk-averse, multimodal, risk-sensitive, Stochastic-D4RL 
-
-Summary: 
-Risk-aware offline reinforcement learning is crucial in safety-critical domains where online data collection is not feasible. The Risk-Aware Multimodal Actor-Critic (RAMAC) framework introduced in this study combines an expressive generative actor with a distributional critic to address the trade-off between safety and value conservatism. By differentiating a composite objective that considers distributional risk and behavior cloning loss through the generative path, RAMAC achieves risk-sensitive learning in complex multimodal scenarios. The framework is instantiated with diffusion and flow-matching actors, resulting in consistent improvements in $\mathrm{CVaR}_{0.1}$ while maintaining strong returns on various Stochastic-D4RL tasks. The code for this framework is available on GitHub for implementation and further research. 
-
-<br /><br />Summary: <div>
-arXiv:2510.02695v1 Announce Type: new 
-Abstract: In safety-critical domains where online data collection is infeasible, offline reinforcement learning (RL) offers an attractive alternative but only if policies deliver high returns without incurring catastrophic lower-tail risk. Prior work on risk-averse offline RL achieves safety at the cost of value conservatism and restricted policy classes, whereas expressive policies are only used in risk-neutral settings. Here, we address this gap by introducing the \textbf{Risk-Aware Multimodal Actor-Critic (RAMAC)} framework, which couples an \emph{expressive generative actor} with a distributional critic. The RAMAC differentiates composite objective combining distributional risk and BC loss through the generative path, achieving risk-sensitive learning in complex multimodal scenarios. We instantiate RAMAC with diffusion and flow-matching actors and observe consistent gains in $\mathrm{CVaR}_{0.1}$ while maintaining strong returns on most Stochastic-D4RL tasks. Code: https://github.com/KaiFukazawa/RAMAC.git
-]]></content:encoded>
-<pubDate>Mon, 06 Oct 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>A Novel Unified Lightweight Temporal-Spatial Transformer Approach for Intrusion Detection in Drone Networks</title>
-<link>https://arxiv.org/abs/2510.02711</link>
-<guid>https://arxiv.org/abs/2510.02711</guid>
-<content:encoded><![CDATA[
-<div> Keywords: drones, cybersecurity, intrusion detection, TSLT-Net, network traffic <br />
-Summary: <br />
-- The article discusses the cybersecurity challenges posed by the increasing use of drones in various sectors and introduces a new intrusion detection system called TSLT-Net, specifically designed for drone networks.
-- TSLT-Net utilizes self attention mechanisms to effectively analyze temporal patterns and spatial dependencies in network traffic, enabling accurate detection of different types of intrusions.
-- The system supports both multiclass attack classification and binary anomaly detection within a single architecture, providing a versatile solution for drone cybersecurity.
-- Extensive experiments on the ISOT Drone Anomaly Detection Dataset demonstrate the superior performance of TSLT-Net, with 99.99 percent accuracy in multiclass detection and 100 percent accuracy in binary anomaly detection.
-- Despite its high performance, TSLT-Net has a minimal memory footprint of only 0.04 MB and a small number of trainable parameters, making it suitable for real-time deployment on edge devices in critical UAV systems. <br /> 
-Summary: <div>
-arXiv:2510.02711v1 Announce Type: new 
-Abstract: The growing integration of drones across commercial, industrial, and civilian domains has introduced significant cybersecurity challenges, particularly due to the susceptibility of drone networks to a wide range of cyberattacks. Existing intrusion detection mechanisms often lack the adaptability, efficiency, and generalizability required for the dynamic and resource constrained environments in which drones operate. This paper proposes TSLT-Net, a novel lightweight and unified Temporal Spatial Transformer based intrusion detection system tailored specifically for drone networks. By leveraging self attention mechanisms, TSLT-Net effectively models both temporal patterns and spatial dependencies in network traffic, enabling accurate detection of diverse intrusion types. The framework includes a streamlined preprocessing pipeline and supports both multiclass attack classification and binary anomaly detection within a single architecture. Extensive experiments conducted on the ISOT Drone Anomaly Detection Dataset, consisting of more than 2.3 million labeled records, demonstrate the superior performance of TSLT-Net with 99.99 percent accuracy in multiclass detection and 100 percent in binary anomaly detection, while maintaining a minimal memory footprint of only 0.04 MB and 9722 trainable parameters. These results establish TSLT-Net as an effective and scalable solution for real time drone cybersecurity, particularly suitable for deployment on edge devices in mission critical UAV systems.
-]]></content:encoded>
-<pubDate>Mon, 06 Oct 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>CST-AFNet: A dual attention-based deep learning framework for intrusion detection in IoT networks</title>
-<link>https://arxiv.org/abs/2510.02717</link>
-<guid>https://arxiv.org/abs/2510.02717</guid>
-<content:encoded><![CDATA[
-<div> framework, deep learning, IoT networks, intrusion detection, cybersecurity<br />
-Summary:<br />
-- The research introduces CST AFNet, a dual attention based deep learning framework for intrusion detection in IoT networks.
-- It integrates multi scale CNNs, BiGRUs, and dual attention mechanism for improved focus on critical patterns.
-- The model was trained and tested on the Edge IIoTset dataset, achieving 99.97% accuracy in detecting 15 attack types and benign traffic.
-- CST AFNet showed high precision, recall, and F1 score above 99.3%.
-- Experimental results demonstrate its superiority over traditional deep learning models in cybersecurity for IoT environments. <br /> <div>
-arXiv:2510.02717v1 Announce Type: new 
-Abstract: The rapid expansion of the Internet of Things (IoT) has revolutionized modern industries by enabling smart automation and real time connectivity. However, this evolution has also introduced complex cybersecurity challenges due to the heterogeneous, resource constrained, and distributed nature of these environments. To address these challenges, this research presents CST AFNet, a novel dual attention based deep learning framework specifically designed for robust intrusion detection in IoT networks. The model integrates multi scale Convolutional Neural Networks (CNNs) for spatial feature extraction, Bidirectional Gated Recurrent Units (BiGRUs) for capturing temporal dependencies, and a dual attention mechanism, channel and temporal attention, to enhance focus on critical patterns in the data. The proposed method was trained and evaluated on the Edge IIoTset dataset, a comprehensive and realistic benchmark containing more than 2.2 million labeled instances spanning 15 attack types and benign traffic, collected from a seven layer industrial testbed. Our proposed model achieves outstanding accuracy for both 15 attack types and benign traffic. CST AFNet achieves 99.97 percent accuracy. Moreover, this model demonstrates exceptional performance with macro averaged precision, recall, and F1 score all above 99.3 percent. Experimental results show that CST AFNet achieves superior detection accuracy, significantly outperforming traditional deep learning models. The findings confirm that CST AFNet is a powerful and scalable solution for real time cyber threat detection in complex IoT and IIoT environments, paving the way for more secure, intelligent, and adaptive cyber physical systems.
 ]]></content:encoded>
 <pubDate>Mon, 06 Oct 2025 00:00:00 -0400</pubDate>
 </item>

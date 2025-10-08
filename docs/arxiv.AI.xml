@@ -4,19 +4,19 @@
 <title>cs.AI updates on arXiv.org</title>
 <link>http://rss.arxiv.org/rss/cs.AI</link>
 
+
 <item>
 <title>Hierarchical Reasoning Models: Perspectives and Misconceptions</title>
 <link>https://arxiv.org/abs/2510.00355</link>
 <guid>https://arxiv.org/abs/2510.00355</guid>
 <content:encoded><![CDATA[
-<div> Transformers, Logical reasoning, Latent space, Recurrent reasoning, Hierarchical Reasoning Model <br>
-<br>
+<div> Transformers, Logical reasoning, Latent space, Recurrent reasoning, Hierarchical Reasoning Model <br />
+<br />
 Summary: 
 Transformers excel in natural language processing tasks but face challenges in logical reasoning. The Hierarchical Reasoning Model introduces recurrent reasoning in transformer latent space, showing promising results in 2D reasoning tasks. This model is still in early stages and requires further exploration. This work reviews the Hierarchical Reasoning Model, analyzes design choices, explores alternative variants, and addresses common misconceptions. It sheds light on the potential of leveraging latent space and recurrent reasoning to enhance transformer performance in logical reasoning tasks. More research is needed to fully understand the capabilities and limitations of this approach and to uncover its full potential in advancing logical reasoning capabilities of transformer models. <div>
 arXiv:2510.00355v2 Announce Type: replace 
 Abstract: Transformers have demonstrated remarkable performance in natural language processing and related domains, as they largely focus on sequential, autoregressive next-token prediction tasks. Yet, they struggle in logical reasoning, not necessarily because of a fundamental limitation of these models, but possibly due to the lack of exploration of more creative uses, such as latent space and recurrent reasoning. An emerging exploration in this direction is the Hierarchical Reasoning Model (Wang et. al., 2025), which introduces a novel type of recurrent reasoning in the latent space of transformers, achieving remarkable performance on a wide range of 2D reasoning tasks. Despite the promising results, this line of models is still at an early stage and calls for in-depth investigation. In this work, we review this class of models, examine key design choices, test alternative variants and clarify common misconceptions.
 ]]></content:encoded>
-<pubDate>Wed, 08 Oct 2025 00:00:00 -0400</pubDate>
 <pubDate>Wed, 08 Oct 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -29,11 +29,10 @@ Abstract: Transformers have demonstrated remarkable performance in natural langu
 Summary: 
 The study evaluates the abstraction abilities of AI models, particularly on the ConceptARC benchmark, which aims to test abstract reasoning skills. The research examines different settings, including input modalities (textual vs. visual) and reasoning efforts, to understand how well models capture intended abstractions. While some textual models match human accuracy, their rules often rely on surface-level "shortcuts" rather than true abstraction. In the visual modality, AI models struggle with accuracy but still exhibit some ability to capture intended abstractions in their rules. The findings suggest that models currently lag behind humans in abstract reasoning, and assessing solely based on accuracy may overestimate textual performance and underestimate visual performance. The authors propose that their evaluation framework provides a more accurate assessment of multimodal models' abstract reasoning abilities, offering insights for advancing towards human-like abstraction-centered intelligence. 
 
-<br><br>Summary: <div>
+<br /><br />Summary: <div>
 arXiv:2510.02125v3 Announce Type: replace 
 Abstract: OpenAI's o3-preview reasoning model exceeded human accuracy on the ARC-AGI benchmark, but does that mean state-of-the-art models recognize and reason with the abstractions that the task creators intended? We investigate models' abstraction abilities on ConceptARC. We evaluate models under settings that vary the input modality (textual vs. visual), whether the model is permitted to use external Python tools, and, for reasoning models, the amount of reasoning effort. In addition to measuring output accuracy, we perform fine-grained evaluation of the natural-language rules that models generate to explain their solutions. This dual evaluation lets us assess whether models solve tasks using the abstractions ConceptARC was designed to elicit, rather than relying on surface-level patterns. Our results show that, while some models using text-based representations match human output accuracy, the best models' rules are often based on surface-level ``shortcuts'' and capture intended abstractions far less often than humans. Thus their capabilities for general abstract reasoning may be overestimated by evaluations based on accuracy alone. In the visual modality, AI models' output accuracy drops sharply, yet our rule-level analysis reveals that models might be underestimated, as they still exhibit a substantial share of rules that capture intended abstractions, but are often unable to correctly apply these rules. In short, our results show that models still lag humans in abstract reasoning, and that using accuracy alone to evaluate abstract reasoning on ARC-like tasks may overestimate abstract-reasoning capabilities in textual modalities and underestimate it in visual modalities. We believe that our evaluation framework offers a more faithful picture of multimodal models' abstract reasoning abilities and a more principled way to track progress toward human-like, abstraction-centered intelligence.
 ]]></content:encoded>
-<pubDate>Wed, 08 Oct 2025 00:00:00 -0400</pubDate>
 <pubDate>Wed, 08 Oct 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -41,14 +40,13 @@ Abstract: OpenAI's o3-preview reasoning model exceeded human accuracy on the ARC
 <link>https://arxiv.org/abs/2508.01339</link>
 <guid>https://arxiv.org/abs/2508.01339</guid>
 <content:encoded><![CDATA[
-<div> speed bumps, potholes, embedded systems, detection framework, suspension control<br>
-<br>
+<div> speed bumps, potholes, embedded systems, detection framework, suspension control<br />
+<br />
 Summary:
 SBP-YOLO is a novel detection framework designed for embedded systems to efficiently detect speed bumps and potholes on roads. By integrating GhostConv and VoVGSCSPC modules, the framework enhances multi-scale semantic features while reducing computation. The P2-level branch improves small-object detection, and a lightweight detection head ensures accuracy with minimal overhead. A hybrid training strategy combining NWD loss, BCKD knowledge distillation, and Albumentations-based augmentation enhances robustness under various road conditions. Experimental results show that SBP-YOLO achieves an mAP of 87.0%, outperforming the YOLOv11n baseline by 5.8%. After TensorRT FP16 quantization, the framework runs at 139.5 FPS on Jetson AGX Xavier, demonstrating its suitability for fast and low-latency road condition perception in embedded suspension control systems. <div>
 arXiv:2508.01339v4 Announce Type: replace-cross 
 Abstract: Speed bumps and potholes are the most common road anomalies, significantly affecting ride comfort and vehicle stability. Preview-based suspension control mitigates their impact by detecting such irregularities in advance and adjusting suspension parameters proactively. Accurate and real-time detection is essential, but embedded deployment is constrained by limited computational resources and the small size of targets in input images.To address these challenges, this paper proposes SBP-YOLO, an efficient detection framework for speed bumps and potholes in embedded systems. Built upon YOLOv11n, it integrates GhostConv and VoVGSCSPC modules in the backbone and neck to reduce computation while enhancing multi-scale semantic features. A P2-level branch improves small-object detection, and a lightweight and efficient detection head (LEDH) maintains accuracy with minimal overhead. A hybrid training strategy further enhances robustness under varying road and environmental conditions, combining NWD loss, BCKD knowledge distillation, and Albumentations-based augmentation. Experiments show that SBP-YOLO achieves 87.0% mAP, outperforming the YOLOv11n baseline by 5.8%. After TensorRT FP16 quantization, it runs at 139.5 FPS on Jetson AGX Xavier, yielding a 12.4% speedup over the P2-enhanced YOLOv11. These results demonstrate the framework's suitability for fast, low-latency road condition perception in embedded suspension control systems.
 ]]></content:encoded>
-<pubDate>Wed, 08 Oct 2025 00:00:00 -0400</pubDate>
 <pubDate>Wed, 08 Oct 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -58,7 +56,7 @@ Abstract: Speed bumps and potholes are the most common road anomalies, significa
 <content:encoded><![CDATA[
 <div> structure-aware, reconstruction, rainfall, radar reflectivity, spatial interpolation 
 
-Summary:<br>
+Summary:<br />
 The article introduces RainSeer, a framework for reconstructing high-resolution rainfall fields by reinterpreting radar reflectivity to capture the development of rain. Two fundamental challenges are addressed: translating radar fields into point-wise rainfall observations and bridging the disconnect between aloft hydro-meteors and ground-level precipitation. RainSeer consists of a Structure-to-Point Mapper for spatial alignment and a Geo-Aware Rain Decoder for capturing the transformation of hydro-meteors. Evaluation on two datasets shows consistent improvements over baselines, reducing MAE by 13.31% and enhancing structural fidelity in reconstructed rainfall fields. RainSeer offers a promising approach for flood forecasting, hydrological modeling, and climate analysis. 
 
 Summary: <div>
@@ -66,21 +64,18 @@ arXiv:2510.02414v2 Announce Type: replace-cross
 Abstract: Reconstructing high-resolution rainfall fields is essential for flood forecasting, hydrological modeling, and climate analysis. However, existing spatial interpolation methods-whether based on automatic weather station (AWS) measurements or enhanced with satellite/radar observations often over-smooth critical structures, failing to capture sharp transitions and localized extremes. We introduce RainSeer, a structure-aware reconstruction framework that reinterprets radar reflectivity as a physically grounded structural prior-capturing when, where, and how rain develops. This shift, however, introduces two fundamental challenges: (i) translating high-resolution volumetric radar fields into sparse point-wise rainfall observations, and (ii) bridging the physical disconnect between aloft hydro-meteors and ground-level precipitation. RainSeer addresses these through a physics-informed two-stage architecture: a Structure-to-Point Mapper performs spatial alignment by projecting mesoscale radar structures into localized ground-level rainfall, through a bidirectional mapping, and a Geo-Aware Rain Decoder captures the semantic transformation of hydro-meteors through descent, melting, and evaporation via a causal spatiotemporal attention mechanism. We evaluate RainSeer on two public datasets-RAIN-F (Korea, 2017-2019) and MeteoNet (France, 2016-2018)-and observe consistent improvements over state-of-the-art baselines, reducing MAE by over 13.31% and significantly enhancing structural fidelity in reconstructed rainfall fields.
 ]]></content:encoded>
 <pubDate>Wed, 08 Oct 2025 00:00:00 -0400</pubDate>
-<pubDate>Wed, 08 Oct 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
 <title>Distilled Protein Backbone Generation</title>
 <link>https://arxiv.org/abs/2510.03095</link>
 <guid>https://arxiv.org/abs/2510.03095</guid>
 <content:encoded><![CDATA[
-<div> Generative models for protein backbone design have advanced but face a speed bottleneck in sampling. This study explores score distillation techniques to train faster few-step protein backbone generators without compromising quality. By adapting Score identity Distillation (SiD) and incorporating multistep generation with noise modulation during inference, the distilled models achieve a more than 20-fold improvement in sampling speed compared to the Proteina teacher model. These few-step generators maintain high designability, diversity, and novelty, making them suitable for large-scale protein design tasks. The increased inference efficiency of these models brings diffusion-based generative models closer to practical applications in protein engineering.<br><br>Keywords: generative models, protein backbone design, score distillation, few-step generators, protein engineering<br><br>Summary: Generative models for protein backbone design have been enhanced with the development of faster few-step protein backbone generators using score distillation techniques like SiD. By incorporating multistep generation and noise modulation during inference, these models significantly improve sampling speed while maintaining high designability and novelty. This advancement enables large-scale protein design tasks and enhances the practical applicability of diffusion-based generative models in protein engineering. <div>
+<div> Generative models for protein backbone design have advanced but face a speed bottleneck in sampling. This study explores score distillation techniques to train faster few-step protein backbone generators without compromising quality. By adapting Score identity Distillation (SiD) and incorporating multistep generation with noise modulation during inference, the distilled models achieve a more than 20-fold improvement in sampling speed compared to the Proteina teacher model. These few-step generators maintain high designability, diversity, and novelty, making them suitable for large-scale protein design tasks. The increased inference efficiency of these models brings diffusion-based generative models closer to practical applications in protein engineering.<br /><br />Keywords: generative models, protein backbone design, score distillation, few-step generators, protein engineering<br /><br />Summary: Generative models for protein backbone design have been enhanced with the development of faster few-step protein backbone generators using score distillation techniques like SiD. By incorporating multistep generation and noise modulation during inference, these models significantly improve sampling speed while maintaining high designability and novelty. This advancement enables large-scale protein design tasks and enhances the practical applicability of diffusion-based generative models in protein engineering. <div>
 arXiv:2510.03095v2 Announce Type: replace-cross 
 Abstract: Diffusion- and flow-based generative models have recently demonstrated strong performance in protein backbone generation tasks, offering unprecedented capabilities for de novo protein design. However, while achieving notable performance in generation quality, these models are limited by their generating speed, often requiring hundreds of iterative steps in the reverse-diffusion process. This computational bottleneck limits their practical utility in large-scale protein discovery, where thousands to millions of candidate structures are needed. To address this challenge, we explore the techniques of score distillation, which has shown great success in reducing the number of sampling steps in the vision domain while maintaining high generation quality. However, a straightforward adaptation of these methods results in unacceptably low designability. Through extensive study, we have identified how to appropriately adapt Score identity Distillation (SiD), a state-of-the-art score distillation strategy, to train few-step protein backbone generators which significantly reduce sampling time, while maintaining comparable performance to their pretrained teacher model. In particular, multistep generation combined with inference time noise modulation is key to the success. We demonstrate that our distilled few-step generators achieve more than a 20-fold improvement in sampling speed, while achieving similar levels of designability, diversity, and novelty as the Proteina teacher model. This reduction in inference cost enables large-scale in silico protein design, thereby bringing diffusion-based models closer to real-world protein engineering applications.
 ]]></content:encoded>
 <pubDate>Wed, 08 Oct 2025 00:00:00 -0400</pubDate>
-<pubDate>Wed, 08 Oct 2025 00:00:00 -0400</pubDate>
 </item>
-
 <item>
 <title>Rule Encoding and Compliance in Large Language Models: An Information-Theoretic Analysis</title>
 <link>https://arxiv.org/abs/2510.05106</link>
@@ -10792,77 +10787,6 @@ Continuous diffusion models have been successful in language modeling but typica
 <br /><br />Summary: <div>
 arXiv:2510.03206v1 Announce Type: new 
 Abstract: Diffusion language models, especially masked discrete diffusion models, have achieved great success recently. While there are some theoretical and primary empirical results showing the advantages of latent reasoning with looped transformers or continuous chain-of-thoughts, continuous diffusion models typically underperform their discrete counterparts. In this paper, we argue that diffusion language models do not necessarily need to be in the discrete space. In particular, we prove that continuous diffusion models have stronger expressivity than discrete diffusions and looped transformers. We attribute the contradiction between the theoretical expressiveness and empirical performance to their practical trainability: while continuous diffusion provides intermediate supervision that looped transformers lack, they introduce additional difficulty decoding tokens into the discrete token space from the continuous representation space. We therefore propose Coevolutionary Continuous Discrete Diffusion (CCDD), which defines a joint multimodal diffusion process on the union of a continuous representation space and a discrete token space, leveraging a single model to simultaneously denoise in the joint space. By combining two modalities, CCDD is expressive with rich semantics in the latent space, as well as good trainability and sample quality with the help of explicit discrete tokens. We also propose effective architectures and advanced training/sampling techniques for CCDD, which reveals strong empirical performance in extensive language modeling experiments on real-world tasks.
-]]></content:encoded>
-<pubDate>Mon, 06 Oct 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Representation Learning for Compressed Video Action Recognition via Attentive Cross-modal Interaction with Motion Enhancement</title>
-<link>https://arxiv.org/abs/2205.03569</link>
-<guid>https://arxiv.org/abs/2205.03569</guid>
-<content:encoded><![CDATA[
-<div> Keywords: Compressed video, action recognition, cross-modal interaction network, motion enhancement, selective feature augmentation
-
-Summary:
-MEACI-Net is a novel framework for compressed video action recognition that addresses issues with coarse dynamics and modal fusion. It utilizes a two-stream architecture for RGB and motion modalities, with a multi-scale block and denoising module in the motion stream for enhanced representation learning. The Selective Motion Complement (SMC) module enhances the RGB modality with local motion features, while the Cross-Modality Augment (CMA) module combines the modalities through selective feature augmentation. Experimental results on UCF-101, HMDB-51, and Kinetics-400 benchmarks demonstrate the effectiveness and efficiency of MEACI-Net in improving video action recognition performance. <div>
-arXiv:2205.03569v3 Announce Type: cross 
-Abstract: Compressed video action recognition has recently drawn growing attention, since it remarkably reduces the storage and computational cost via replacing raw videos by sparsely sampled RGB frames and compressed motion cues (e.g., motion vectors and residuals). However, this task severely suffers from the coarse and noisy dynamics and the insufficient fusion of the heterogeneous RGB and motion modalities. To address the two issues above, this paper proposes a novel framework, namely Attentive Cross-modal Interaction Network with Motion Enhancement (MEACI-Net). It follows the two-stream architecture, i.e. one for the RGB modality and the other for the motion modality. Particularly, the motion stream employs a multi-scale block embedded with a denoising module to enhance representation learning. The interaction between the two streams is then strengthened by introducing the Selective Motion Complement (SMC) and Cross-Modality Augment (CMA) modules, where SMC complements the RGB modality with spatio-temporally attentive local motion features and CMA further combines the two modalities with selective feature augmentation. Extensive experiments on the UCF-101, HMDB-51 and Kinetics-400 benchmarks demonstrate the effectiveness and efficiency of MEACI-Net.
-]]></content:encoded>
-<pubDate>Mon, 06 Oct 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Multiplicative-Additive Constrained Models:Toward Joint Visualization of Interactive and Independent Effects</title>
-<link>https://arxiv.org/abs/2509.21923</link>
-<guid>https://arxiv.org/abs/2509.21923</guid>
-<content:encoded><![CDATA[
-<div> machine learning, interpretability, healthcare, predictive performance, multiplicative model
-
-Summary:
-The paper discusses the importance of interpretability in machine learning, especially in high-stakes fields like healthcare. Generalized Additive Models (GAMs) provide interpretability but lack higher-order interaction effects, limiting predictive performance. Curve Ergodic Set Regression (CESR) offers visualization of shape functions but does not outperform GAMs. To address this, Multiplicative-Additive Constrained Models (MACMs) are introduced. MACMs combine the strengths of CESR and GAMs by incorporating a multiplicative part for interactions and an additive part for individual feature effects. The model allows for the visualization of shape functions, aiding in interpretability. Experimental results show that neural network-based MACMs outperform both CESR and GAMs in predictive performance. This enhanced model offers a balance between interpretability and performance, making it a valuable tool for high-stakes fields like healthcare. 
-
-<br /><br />Summary: <div>
-arXiv:2509.21923v1 Announce Type: cross 
-Abstract: Interpretability is one of the considerations when applying machine learning to high-stakes fields such as healthcare that involve matters of life safety. Generalized Additive Models (GAMs) enhance interpretability by visualizing shape functions. Nevertheless, to preserve interpretability, GAMs omit higher-order interaction effects (beyond pairwise interactions), which imposes significant constraints on their predictive performance. We observe that Curve Ergodic Set Regression (CESR), a multiplicative model, naturally enables the visualization of its shape functions and simultaneously incorporates both interactions among all features and individual feature effects. Nevertheless, CESR fails to demonstrate superior performance compared to GAMs. We introduce Multiplicative-Additive Constrained Models (MACMs), which augment CESR with an additive part to disentangle the intertwined coefficients of its interactive and independent terms, thus effectively broadening the hypothesis space. The model is composed of a multiplicative part and an additive part, whose shape functions can both be naturally visualized, thereby assisting users in interpreting how features participate in the decision-making process. Consequently, MACMs constitute an improvement over both CESR and GAMs. The experimental results indicate that neural network-based MACMs significantly outperform both CESR and the current state-of-the-art GAMs in terms of predictive performance.
-]]></content:encoded>
-<pubDate>Mon, 06 Oct 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Modeling the Attack: Detecting AI-Generated Text by Quantifying Adversarial Perturbations</title>
-<link>https://arxiv.org/abs/2510.02319</link>
-<guid>https://arxiv.org/abs/2510.02319</guid>
-<content:encoded><![CDATA[
-<div> Detecting adversarial attacks, Large Language Models, resilience, Perturbation-Invariant Feature Engineering, semantic attacks <br />
-Summary:<br />
-The paper discusses the problem of detecting adversarial attacks on Large Language Models (LLMs). Standard detectors are vulnerable to adversarial attacks, particularly those using paraphrasing to evade detection. The paper introduces a novel detection framework called Perturbation-Invariant Feature Engineering (PIFE), which transforms input text into a standardized form and enhances detection by quantifying the transformation's magnitude. Comparative evaluations show that while conventional adversarial training is resilient to syntactic noise, it fails against semantic attacks, leading to a significant drop in True Positive Rate. In contrast, the PIFE model, which explicitly engineers features from the discrepancy between text and its standardized form, achieves a higher True Positive Rate under the same conditions, effectively neutralizing sophisticated semantic attacks. This demonstrates the importance of explicitly modeling perturbation artifacts in achieving genuine robustness in detecting adversarial attacks. <br /> <div>
-arXiv:2510.02319v1 Announce Type: cross 
-Abstract: The growth of highly advanced Large Language Models (LLMs) constitutes a huge dual-use problem, making it necessary to create dependable AI-generated text detection systems. Modern detectors are notoriously vulnerable to adversarial attacks, with paraphrasing standing out as an effective evasion technique that foils statistical detection. This paper presents a comparative study of adversarial robustness, first by quantifying the limitations of standard adversarial training and then by introducing a novel, significantly more resilient detection framework: Perturbation-Invariant Feature Engineering (PIFE), a framework that enhances detection by first transforming input text into a standardized form using a multi-stage normalization pipeline, it then quantifies the transformation's magnitude using metrics like Levenshtein distance and semantic similarity, feeding these signals directly to the classifier. We evaluate both a conventionally hardened Transformer and our PIFE-augmented model against a hierarchical taxonomy of character-, word-, and sentence-level attacks. Our findings first confirm that conventional adversarial training, while resilient to syntactic noise, fails against semantic attacks, an effect we term "semantic evasion threshold", where its True Positive Rate at a strict 1% False Positive Rate plummets to 48.8%. In stark contrast, our PIFE model, which explicitly engineers features from the discrepancy between a text and its canonical form, overcomes this limitation. It maintains a remarkable 82.6% TPR under the same conditions, effectively neutralizing the most sophisticated semantic attacks. This superior performance demonstrates that explicitly modeling perturbation artifacts, rather than merely training on them, is a more promising path toward achieving genuine robustness in the adversarial arms race.
-]]></content:encoded>
-<pubDate>Mon, 06 Oct 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Hallucination reduction with CASAL: Contrastive Activation Steering For Amortized Learning</title>
-<link>https://arxiv.org/abs/2510.02324</link>
-<guid>https://arxiv.org/abs/2510.02324</guid>
-<content:encoded><![CDATA[
-<div> efficiency, interpretability, hallucination, language models, activation steering
-
-Summary:
-CASAL introduces an efficient algorithm for reducing hallucinations in Large Language Models (LLMs) by incorporating activation steering into model weights during training. This approach increases model interpretability and reduces hallucination by 30%-40% across various short-form QA benchmarks. CASAL is 30 times more compute-efficient and 20 times more data-efficient than existing baselines like SFT and DPO, making it practical for data-scarce domains. It also demonstrates effectiveness in out-of-distribution (OOD) domains and can be applied to both text-only and vision-language models. CASAL is the first steering-based training method effective for both dense and Mixture-of-Experts (MoE) models, showing promise for deployment in production systems. <div>
-arXiv:2510.02324v1 Announce Type: cross 
-Abstract: Large Language Models (LLMs) exhibit impressive capabilities but often hallucinate, confidently providing incorrect answers instead of admitting ignorance. Prior work has shown that models encode linear representations of their own knowledge and that activation steering can reduce hallucinations. These approaches, however, require real-time monitoring and intervention during inference. We introduce Contrastive Activation Steering for Amortized Learning (CASAL), an efficient algorithm that connects interpretability with amortized optimization. CASAL directly bakes the benefits of activation steering into model's weights. Once trained, LLMs answer questions they know while abstaining from answering those they do not. CASAL's light-weight design requires training only a submodule of a single transformer layer and yet reduces hallucination by 30%-40% across multiple short-form QA benchmarks. CASAL is 30x more compute-efficient and 20x more data-efficient than strong LoRA-based baselines such as SFT and DPO, boosting its practical applicability in data scarce domains. Importantly, CASAL also generalizes effectively to out-of-distribution (OOD) domains. We showcase CASAL's flexibility in mitigating hallucinations in both text-only and vision-language models. To our knowledge, CASAL is the first steering-based training method that has been shown to be effective for both dense and Mixture-of-Experts (MoE) models. CASAL represents a promising step forward for applying interpretability-inspired method for practical deployment in production systems.
-]]></content:encoded>
-<pubDate>Mon, 06 Oct 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Agentic-AI Healthcare: Multilingual, Privacy-First Framework with MCP Agents</title>
-<link>https://arxiv.org/abs/2510.02325</link>
-<guid>https://arxiv.org/abs/2510.02325</guid>
-<content:encoded><![CDATA[
-<div> Keywords: Agentic-AI Healthcare, privacy-aware, multilingual, explainable, compliance<br />
-<br />
-Summary: <br />
-This paper presents Agentic-AI Healthcare, a research prototype that utilizes the Model Context Protocol (MCP) to coordinate intelligent agents for various healthcare tasks. The system incorporates a Privacy and Compliance Layer to ensure patient data protection in accordance with healthcare data standards like HIPAA, PIPEDA, and PHIPA. It allows for multilingual patient-doctor interactions in English, French, and Arabic and offers transparent diagnostic reasoning through large language models. The platform showcases the integration of agentic orchestration, multilingual support, and compliance-focused architecture in the healthcare domain. It is emphasized that this system is a research prototype and not a certified medical device. <div>
-arXiv:2510.02325v1 Announce Type: cross 
-Abstract: This paper introduces Agentic-AI Healthcare, a privacy-aware, multilingual, and explainable research prototype developed as a single-investigator project. The system leverages the emerging Model Context Protocol (MCP) to orchestrate multiple intelligent agents for patient interaction, including symptom checking, medication suggestions, and appointment scheduling. The platform integrates a dedicated Privacy and Compliance Layer that applies role-based access control (RBAC), AES-GCM field-level encryption, and tamper-evident audit logging, aligning with major healthcare data protection standards such as HIPAA (US), PIPEDA (Canada), and PHIPA (Ontario). Example use cases demonstrate multilingual patient-doctor interaction (English, French, Arabic) and transparent diagnostic reasoning powered by large language models. As an applied AI contribution, this work highlights the feasibility of combining agentic orchestration, multilingual accessibility, and compliance-aware architecture in healthcare applications. This platform is presented as a research prototype and is not a certified medical device.
 ]]></content:encoded>
 <pubDate>Mon, 06 Oct 2025 00:00:00 -0400</pubDate>
 </item>

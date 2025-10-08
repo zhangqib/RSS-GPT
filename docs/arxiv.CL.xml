@@ -4,6 +4,7 @@
 <title>cs.CL updates on arXiv.org</title>
 <link>http://rss.arxiv.org/rss/cs.CL</link>
 
+
 <item>
 <title>v1: Learning to Point Visual Tokens for Multimodal Grounded Reasoning</title>
 <link>https://arxiv.org/abs/2505.18842</link>
@@ -14,11 +15,10 @@
 Summary: 
 The study addresses the limitation of existing models in processing images only once during reasoning by introducing v1, a lightweight extension enabling active visual referencing. This approach allows the model to identify relevant image patches and incorporate them back into the reasoning stream, ensuring hypotheses remain grounded in perceptual evidence. The pointing strategy of v1 enables direct selection of image patches using their semantic representations as keys, keeping perceptual evidence embedded in the same space as the model's reasoning. To train this capability, a dataset v1g of multimodal reasoning traces with visual grounding annotations is introduced. The v1 model consistently outperforms comparable baselines across various multimodal mathematical reasoning benchmarks, showcasing the effectiveness of point-and-copy as a practical mechanism for grounded reasoning. The model checkpoint and dataset are available for further exploration. 
 
-<br><br>Summary: <div>
+<br /><br />Summary: <div>
 arXiv:2505.18842v4 Announce Type: replace 
 Abstract: When thinking with images, humans rarely rely on a single glance: they revisit visual information repeatedly during reasoning. However, existing models typically process images only once and thereafter generate reasoning entirely in text, lacking mechanisms to re-access or ground inference in visual representations. We empirically confirm this: as reasoning chains lengthen, models progressively lose focus on relevant regions. In response, we introduce v1, a lightweight extension that enables active visual referencing through a simple point-and-copy approach. This allows the model to identify relevant image patches and copy their embeddings back into the reasoning stream, ensuring that evolving hypotheses remain grounded in perceptual evidence. Crucially, our pointing strategy lets the MLLM directly select image patches using their semantic representations as keys, keeping perceptual evidence embedded in the same space as the model's reasoning. To train this capability, we construct v1g, a dataset of 300K multimodal reasoning traces with interleaved visual grounding annotations. Across various multimodal mathematical reasoning benchmarks, v1 consistently outperforms comparable baselines, establishing point-and-copy as a practical mechanism for grounded reasoning. The model checkpoint and dataset are available at github.com/jun297/v1.
 ]]></content:encoded>
-<pubDate>Wed, 08 Oct 2025 00:00:00 -0400</pubDate>
 <pubDate>Wed, 08 Oct 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -34,9 +34,7 @@ arXiv:2509.25795v2 Announce Type: replace
 Abstract: This paper investigates algorithmic bias in language-based models for automated depression detection, focusing on socio-demographic disparities related to gender and race/ethnicity. Models trained using deep neural networks (DNN) based embeddings are compared to few-shot learning approaches with large language models (LLMs), evaluating both performance and fairness on clinical interview transcripts from the Distress Analysis Interview Corpus/Wizard-of-Oz (DAIC-WOZ). To mitigate bias, fairness-aware loss functions are applied to DNN-based models, while in-context learning with varied prompt framing and shot counts is explored for LLMs. Results indicate that LLMs outperform DNN-based models in depression classification, particularly for underrepresented groups such as Hispanic participants. LLMs also exhibit reduced gender bias compared to DNN-based embeddings, though racial disparities persist. Among fairness-aware techniques for mitigating bias in DNN-based embeddings, the worst-group loss, which is designed to minimize loss for the worst-performing demographic group, achieves a better balance between performance and fairness. In contrast, the fairness-regularized loss minimizes loss across all groups but performs less effectively. In LLMs, guided prompting with ethical framing helps mitigate gender bias in the 1-shot setting. However, increasing the number of shots does not lead to further reductions in disparities. For race/ethnicity, neither prompting strategy nor increasing $N$ in $N$-shot learning effectively reduces disparities.
 ]]></content:encoded>
 <pubDate>Wed, 08 Oct 2025 00:00:00 -0400</pubDate>
-<pubDate>Wed, 08 Oct 2025 00:00:00 -0400</pubDate>
 </item>
-
 <item>
 <title>Collaborative and Proactive Management of Task-Oriented Conversations</title>
 <link>https://arxiv.org/abs/2510.05110</link>
@@ -11312,34 +11310,6 @@ ConflictScope is introduced as a pipeline to evaluate how language models priori
 <br /><br />Summary: <div>
 arXiv:2509.25369v1 Announce Type: new 
 Abstract: Past work seeks to align large language model (LLM)-based assistants with a target set of values, but such assistants are frequently forced to make tradeoffs between values when deployed. In response to the scarcity of value conflict in existing alignment datasets, we introduce ConflictScope, an automatic pipeline to evaluate how LLMs prioritize different values. Given a user-defined value set, ConflictScope automatically generates scenarios in which a language model faces a conflict between two values sampled from the set. It then prompts target models with an LLM-written "user prompt" and evaluates their free-text responses to elicit a ranking over values in the value set. Comparing results between multiple-choice and open-ended evaluations, we find that models shift away from supporting protective values, such as harmlessness, and toward supporting personal values, such as user autonomy, in more open-ended value conflict settings. However, including detailed value orderings in models' system prompts improves alignment with a target ranking by 14%, showing that system prompting can achieve moderate success at aligning LLM behavior under value conflict. Our work demonstrates the importance of evaluating value prioritization in models and provides a foundation for future work in this area.
-]]></content:encoded>
-<pubDate>Wed, 01 Oct 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>From Faithfulness to Correctness: Generative Reward Models that Think Critically</title>
-<link>https://arxiv.org/abs/2509.25409</link>
-<guid>https://arxiv.org/abs/2509.25409</guid>
-<content:encoded><![CDATA[
-<div> reinforcement learning, verifiable rewards, large language models, critical thinking, reward modeling
-<br />
-Summary:
-The article discusses the challenges faced by reinforcement learning with verifiable rewards (RLVR) when applied to complex tasks like open-domain question answering. It introduces the Thinking-supervised Reward Model (TRM) as a solution, which incorporates sentence-level thinking supervision to endow reward models with critical thinking abilities. TRM assesses the faithfulness of answer sentences to supporting documents, applies reasoning to evaluate correctness, and encourages models to critically assess external and internal knowledge. Experiments show that TRM improves the identification of incorrect sentences and leads to significant gains in answer correctness and usefulness when incorporated into policy optimization. <div>
-arXiv:2509.25409v1 Announce Type: new 
-Abstract: Through reinforcement learning with verifiable rewards (RLVR), large language models have achieved substantial progress in domains with easily verifiable outcomes, such as mathematics and coding. However, when applied to more complex tasks like open-domain question answering, RLVR faces significant challenges due to the difficulty of verifying correctness. The nuanced and ambiguous nature of real-world knowledge makes it difficult to reliably evaluate correctness in these settings, necessitating further abilities that extend beyond mere logical consistency to encompass an understanding and assessment of both external and internal knowledge. Recent work has primarily focused on improving faithfulness, defined as semantic alignment with supporting documents, which can cause models to rely excessively on external sources and diminish their capacity for critical assessment. To address this, we propose the Thinking-supervised Reward Model (TRM), which incorporates sentence-level thinking supervision to endow reward models with critical thinking abilities. Given a query, answer, and supporting documents, TRM first assesses the faithfulness of each answer sentence to the supporting documents, and then applies a reasoning step to evaluate sentence-level correctness. By structuring reward modeling as a sequence of faithfulness, reasoning, and correctness evaluations, TRM encourages models to critically assess and leverage both external and internal knowledge. Experiments on reward signals demonstrate that TRM substantially improves the identification of incorrect sentences, and incorporating TRM into policy optimization leads to significant gains in both answer correctness and usefulness.
-]]></content:encoded>
-<pubDate>Wed, 01 Oct 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Emotion-Aligned Generation in Diffusion Text to Speech Models via Preference-Guided Optimization</title>
-<link>https://arxiv.org/abs/2509.25416</link>
-<guid>https://arxiv.org/abs/2509.25416</guid>
-<content:encoded><![CDATA[
-<div> Keywords: Emotional text-to-speech, intelligibility, prosody, emotion-aware, preference optimization
-
-Summary:
-Emotional text-to-speech technology aims to convey emotions while maintaining clarity and natural prosody. Traditional methods depend on general emotion labels or indirect classifiers and receive feedback at the utterance level. The Emotion-Aware Stepwise Preference Optimization (EASPO) framework introduces a novel approach that aligns diffusion TTS with fine-grained emotional preferences at intermediate denoising stages. The core of this method is EASPM, a time-conditioned model that evaluates noisy intermediate speech states and facilitates the automatic construction of preference pairs. EASPO refines the generation process to match these stepwise preferences, allowing for precise emotional control during speech synthesis. Experimental results demonstrate the superior performance of EASPO compared to existing methods in terms of expressiveness and naturalness.<br /><br />Summary: Emotional text-to-speech technology is advanced through the EASPO framework, which enables fine-grained emotional shaping and controllability in speech synthesis. <div>
-arXiv:2509.25416v1 Announce Type: new 
-Abstract: Emotional text-to-speech seeks to convey affect while preserving intelligibility and prosody, yet existing methods rely on coarse labels or proxy classifiers and receive only utterance-level feedback. We introduce Emotion-Aware Stepwise Preference Optimization (EASPO), a post-training framework that aligns diffusion TTS with fine-grained emotional preferences at intermediate denoising steps. Central to our approach is EASPM, a time-conditioned model that scores noisy intermediate speech states and enables automatic preference pair construction. EASPO optimizes generation to match these stepwise preferences, enabling controllable emotional shaping. Experiments show superior performance over existing methods in both expressiveness and naturalness.
 ]]></content:encoded>
 <pubDate>Wed, 01 Oct 2025 00:00:00 -0400</pubDate>
 </item>
