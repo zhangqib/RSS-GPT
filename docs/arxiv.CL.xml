@@ -4,6 +4,7 @@
 <title>cs.CL updates on arXiv.org</title>
 <link>http://rss.arxiv.org/rss/cs.CL</link>
 
+
 <item>
 <title>Injecting External Knowledge into the Reasoning Process Enhances Retrieval-Augmented Generation</title>
 <link>https://arxiv.org/abs/2507.19333</link>
@@ -12,14 +13,12 @@
 <div> Keywords: Retrieval-augmented generation, noisy passages, robustness, Passage Injection, RAG systems
 
 Summary: 
-Passage Injection is proposed as a method to enhance large language models' (LLMs) robustness to noisy retrieved passages in retrieval-augmented generation (RAG). This method explicitly incorporates retrieved passages into LLMs' reasoning process, improving the model's ability to recognize and resist noisy passages. Experiments on four reasoning-enhanced LLMs across factual question answering datasets validate Passage Injection's effectiveness in enhancing overall RAG performance. The study also demonstrates that Passage Injection improves the model's robustness in the presence of random noise and counterfactual noise, consistently showing performance gains. Controlled experiments confirm that Passage Injection can effectively leverage helpful passages as well. These findings suggest that incorporating retrieved passages in LLMs' reasoning process is a promising approach for building more reliable RAG systems.<br><br>Summary: <div>
+Passage Injection is proposed as a method to enhance large language models' (LLMs) robustness to noisy retrieved passages in retrieval-augmented generation (RAG). This method explicitly incorporates retrieved passages into LLMs' reasoning process, improving the model's ability to recognize and resist noisy passages. Experiments on four reasoning-enhanced LLMs across factual question answering datasets validate Passage Injection's effectiveness in enhancing overall RAG performance. The study also demonstrates that Passage Injection improves the model's robustness in the presence of random noise and counterfactual noise, consistently showing performance gains. Controlled experiments confirm that Passage Injection can effectively leverage helpful passages as well. These findings suggest that incorporating retrieved passages in LLMs' reasoning process is a promising approach for building more reliable RAG systems.<br /><br />Summary: <div>
 arXiv:2507.19333v3 Announce Type: replace-cross 
 Abstract: Retrieval-augmented generation (RAG) has been widely adopted to augment large language models (LLMs) with external knowledge for knowledge-intensive tasks. However, its effectiveness is often undermined by the presence of noisy (i.e., low-quality) retrieved passages. Enhancing LLMs' robustness to such noise is critical for improving the reliability of RAG systems. Recent advances have equipped LLMs with strong reasoning and self-reflection capabilities, allowing them to identify and correct errors in their reasoning process. Inspired by this ability, we propose Passage Injection-a simple yet effective method that explicitly incorporates retrieved passages into LLMs' reasoning process, aiming to enhance the model's ability to recognize and resist noisy passages. We validate Passage Injection under general RAG settings using BM25 as the retriever. Experiments on four reasoning-enhanced LLMs across four factual QA datasets demonstrate that Passage Injection significantly improves overall RAG performance. Further analysis on two noisy retrieval settings-random noise, where the model is provided irrelevant passages, and counterfactual noise, where it is given misleading passages-shows that Passage Injection consistently improves robustness. Controlled experiments confirm that Passage Injection can also effectively leverage helpful passages. These findings suggest that incorporating passages in LLMs' reasoning process is a promising direction for building more robust RAG systems. The code can be found \href{here}{https://github.com/Trustworthy-Information-Access/Passage-Injection}.
 ]]></content:encoded>
 <pubDate>Thu, 09 Oct 2025 00:00:00 -0400</pubDate>
-<pubDate>Thu, 09 Oct 2025 00:00:00 -0400</pubDate>
 </item>
-
 <item>
 <title>OpenStaxQA: A multilingual dataset based on open-source college textbooks</title>
 <link>https://arxiv.org/abs/2510.06239</link>
@@ -11322,16 +11321,6 @@ Abstract: Large language models have demonstrated remarkable capabilities across
 <content:encoded><![CDATA[
 arXiv:2505.12864v4 Announce Type: replace 
 Abstract: Long-form legal reasoning remains a key challenge for large language models (LLMs) in spite of recent advances in test-time scaling. To address this, we introduce \textsc{LEXam}, a novel benchmark derived from 340 law exams spanning 116 law school courses across a range of subjects and degree levels. The dataset comprises 4,886 law exam questions in English and German, including 2,841 long-form, open-ended questions and 2,045 multiple-choice questions. Besides reference answers, the open questions are also accompanied by explicit guidance outlining the expected legal reasoning approach such as issue spotting, rule recall, or rule application. Our evaluation on both open-ended and multiple-choice questions present significant challenges for current LLMs; in particular, they notably struggle with open questions that require structured, multi-step legal reasoning. Moreover, our results underscore the effectiveness of the dataset in differentiating between models with varying capabilities. Deploying an ensemble LLM-as-a-Judge paradigm with rigorous human expert validation, we demonstrate how model-generated reasoning steps can be evaluated consistently and accurately, closely aligning with human expert assessments. Our evaluation setup provides a scalable method to assess legal reasoning quality beyond simple accuracy metrics. We have open-sourced our code on \href{https://github.com/LEXam-Benchmark/LEXam}{GitHub} and released our data on \href{https://huggingface.co/datasets/LEXam-Benchmark/LEXam}{Hugging Face}. Project page: https://lexam-benchmark.github.io/
-]]></content:encoded>
-<pubDate>Fri, 03 Oct 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>ABBA-Adapters: Efficient and Expressive Fine-Tuning of Foundation Models</title>
-<link>https://arxiv.org/abs/2505.14238</link>
-<guid>https://arxiv.org/abs/2505.14238</guid>
-<content:encoded><![CDATA[
-arXiv:2505.14238v3 Announce Type: replace 
-Abstract: Large Language Models have demonstrated strong performance across a wide range of tasks, but adapting them efficiently to new domains remains a key challenge. Parameter-Efficient Fine-Tuning (PEFT) methods address this by introducing lightweight, trainable modules while keeping most pre-trained weights fixed. The prevailing approach, LoRA, models updates using a low-rank decomposition, but its expressivity is inherently constrained by the rank. Recent methods like HiRA aim to increase expressivity by incorporating a Hadamard product with the frozen weights, but still rely on the structure of the pre-trained model. We introduce ABBA, a new PEFT architecture that reparameterizes the update as a Hadamard product of two independently learnable low-rank matrices. In contrast to prior work, ABBA fully decouples the update from the pre-trained weights, enabling both components to be optimized freely. This leads to significantly higher expressivity under the same parameter budget, a property we validate through matrix reconstruction experiments. Empirically, ABBA achieves state-of-the-art results on arithmetic and commonsense reasoning benchmarks, consistently outperforming existing PEFT methods by a significant margin across multiple models. Our code is publicly available at: https://github.com/CERT-Lab/abba.
 ]]></content:encoded>
 <pubDate>Fri, 03 Oct 2025 00:00:00 -0400</pubDate>
 </item>

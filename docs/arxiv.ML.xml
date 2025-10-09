@@ -4,6 +4,7 @@
 <title>cs.LG updates on arXiv.org</title>
 <link>http://rss.arxiv.org/rss/cs.LG</link>
 
+
 <item>
 <title>When Judgment Becomes Noise: How Design Failures in LLM Judge Benchmarks Silently Undermine Validity</title>
 <link>https://arxiv.org/abs/2509.20293</link>
@@ -14,11 +15,10 @@
 Summary:
 The article discusses the use of LLM-judged benchmarks to evaluate complex model behaviors and the potential failure modes that can arise. It highlights the importance of having tight objectives and verifiable constructions in benchmark design to avoid producing high-confidence rankings that may be based on noise rather than genuine performance. The introduction of two diagnostic mechanisms, schematic adherence and psychometric validity, helps identify issues such as schema incoherence and factor collapse in popular judges like DeepSeek-R1-32B. The study also demonstrates how the ELO-style aggregation method used in Arena-Hard Auto can mask genuine ranking uncertainty. By addressing these design failures, the article suggests actionable principles for building more reliable LLM-judged benchmarks. The code and dataset used in the study are available at https://github.com/penfever/judgment-to-noise. 
 
-<br><br>Summary: <div>
+<br /><br />Summary: <div>
 arXiv:2509.20293v3 Announce Type: replace 
 Abstract: LLM-judged benchmarks are increasingly used to evaluate complex model behaviors, yet their design introduces failure modes absent in conventional ground-truth based benchmarks. We argue that without tight objectives and verifiable constructions, benchmark rankings can produce high-confidence rankings that are in fact largely noise. We introduce two mechanisms to diagnose these issues. Schematic adherence quantifies how much of a judge's overall verdict is explained by the explicit evaluation schema, revealing unexplained variance when judges deviate from their own rubric. Psychometric validity aggregates internal consistency and discriminant validity signals to quantify irreducible uncertainty in any benchmarking run. Applying these tools to Arena-Hard Auto, we find severe schema incoherence and factor collapse across popular judges: for example, unexplained variance exceeding 90 percent for DeepSeek-R1-32B and factor correlations above 0.93 for most criteria. We also show that the ELO-style aggregation used by Arena-Hard Auto collapses and masks genuine ranking uncertainty. Our results highlight design failures that undermine validity and offer actionable principles for building better-scoped, reliability-aware LLM-judged benchmarks. We released our code and dataset at https://github.com/penfever/judgment-to-noise
 ]]></content:encoded>
-<pubDate>Thu, 09 Oct 2025 00:00:00 -0400</pubDate>
 <pubDate>Thu, 09 Oct 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -28,15 +28,14 @@ Abstract: LLM-judged benchmarks are increasingly used to evaluate complex model 
 <content:encoded><![CDATA[
 <div> Keywords: Clustering, Autonomy, Reinforcement Learning, Deterministic Annealing, Adaptive Distance Estimation Network
 
-Summary:<br>
+Summary:<br />
 The paper introduces autonomy-aware clustering, a framework that incorporates reinforcement learning to account for entities' local autonomy in clustering tasks. By integrating reinforcement learning with Deterministic Annealing, the approach enables exploration in early stages and exploitation later to determine underlying clusters effectively. The Adaptive Distance Estimation Network, a transformer-based attention model, enhances adaptability by learning dependencies between entities and cluster representatives within the reinforcement learning loop. Empirical results demonstrate that the framework closely aligns with data dynamics, achieving solutions close to the ground truth even without explicit autonomy models. Ignoring autonomy leads to significantly larger gaps in clustering outcomes. The code and data for the framework are publicly available for further exploration and implementation. 
 
-Summary: <br>
+Summary: <br />
  <div>
 arXiv:2509.25775v3 Announce Type: replace 
 Abstract: Clustering arises in a wide range of problem formulations, yet most existing approaches assume that the entities under clustering are passive and strictly conform to their assigned groups. In reality, entities often exhibit local autonomy, overriding prescribed associations in ways not fully captured by feature representations. Such autonomy can substantially reshape clustering outcomes -- altering cluster compositions, geometry, and cardinality -- with significant downstream effects on inference and decision-making. We introduce autonomy-aware clustering, a reinforcement learning (RL) framework that learns and accounts for the influence of local autonomy without requiring prior knowledge of its form. Our approach integrates RL with a Deterministic Annealing (DA) procedure, where, to determine underlying clusters, DA naturally promotes exploration in early stages of annealing and transitions to exploitation later. We also show that the annealing procedure exhibits phase transitions that enable design of efficient annealing schedules. To further enhance adaptability, we propose the Adaptive Distance Estimation Network (ADEN), a transformer-based attention model that learns dependencies between entities and cluster representatives within the RL loop, accommodates variable-sized inputs and outputs, and enables knowledge transfer across diverse problem instances. Empirical results show that our framework closely aligns with underlying data dynamics: even without explicit autonomy models, it achieves solutions close to the ground truth (gap ~3-4%), whereas ignoring autonomy leads to substantially larger gaps (~35-40%). The code and data are publicly available at https://github.com/salar96/AutonomyAwareClustering.
 ]]></content:encoded>
-<pubDate>Thu, 09 Oct 2025 00:00:00 -0400</pubDate>
 <pubDate>Thu, 09 Oct 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -44,14 +43,13 @@ Abstract: Clustering arises in a wide range of problem formulations, yet most ex
 <link>https://arxiv.org/abs/2505.22554</link>
 <guid>https://arxiv.org/abs/2505.22554</guid>
 <content:encoded><![CDATA[
-<div> Gumbel copula, feature selection, medical prediction, extreme patient strata, upper tail dependence coefficient <br>
-<br>
+<div> Gumbel copula, feature selection, medical prediction, extreme patient strata, upper tail dependence coefficient <br />
+<br />
 Summary: 
 Effective feature selection is crucial for robust medical prediction, particularly in identifying risk factors in extreme patient groups. A new computationally efficient supervised filter based on the Gumbel copula upper tail dependence coefficient ($\lambda_U$) prioritizes variables that are extreme with the positive class. When tested on two diabetes datasets, this method outperformed Mutual Information, mRMR, ReliefF, and $L_1$ Elastic Net. The filter reduced the feature space by 52% on the larger dataset (CDC) while maintaining strong discrimination. It produced the highest ROC AUC on the smaller dataset (PIMA) with eight predictors. The approach consistently identified impactful predictors in both datasets, proving to be a powerful, efficient, and interpretable method for building risk models in public health and clinical medicine. <div>
 arXiv:2505.22554v4 Announce Type: replace-cross 
 Abstract: Effective feature selection is vital for robust and interpretable medical prediction, especially for identifying risk factors concentrated in extreme patient strata. Standard methods emphasize average associations and may miss predictors whose importance lies in the tails of the distribution. We propose a computationally efficient supervised filter that ranks features using the Gumbel copula upper tail dependence coefficient ($\lambda_U$), prioritizing variables that are simultaneously extreme with the positive class. We benchmarked against Mutual Information, mRMR, ReliefF, and $L_1$ Elastic Net across four classifiers on two diabetes datasets: a large public health survey (CDC, N=253,680) and a clinical benchmark (PIMA, N=768). Evaluation included paired statistical tests, permutation importance, and robustness checks with label flips, feature noise, and missingness. On CDC, our method was the fastest selector and reduced the feature space by about 52% while retaining strong discrimination. Although using all 21 features yielded the highest AUC, our filter significantly outperformed Mutual Information and mRMR and was statistically indistinguishable from ReliefF. On PIMA, with only eight predictors, our ranking produced the numerically highest ROC AUC, and no significant differences were found versus strong baselines. Across both datasets, the upper tail criterion consistently identified clinically coherent, impactful predictors. We conclude that copula based feature selection via upper tail dependence is a powerful, efficient, and interpretable approach for building risk models in public health and clinical medicine.
 ]]></content:encoded>
-<pubDate>Thu, 09 Oct 2025 00:00:00 -0400</pubDate>
 <pubDate>Thu, 09 Oct 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -60,13 +58,12 @@ Abstract: Effective feature selection is vital for robust and interpretable medi
 <guid>https://arxiv.org/abs/2510.04591</guid>
 <content:encoded><![CDATA[
 <div> Neural Networks, PID Controller, Adaptive Gain Optimization, Model Predictive Control, Closed-loop Control Systems
-<br>
+<br />
 Summary: 
 This article proposes a novel data-driven PID controller design method based on adaptive gain optimization using Physics-Informed Neural Networks (PINNs). By leveraging PINNs for predictive modeling, the method incorporates gradients of the PID gain optimization achieved through automatic differentiation. This approach enables model predictive control utilizing a cost function considering tracking error and control inputs. The method optimizes PID gains using PINNs, leading to adaptive gain tuning that ensures stability while accounting for system nonlinearities. The systematic framework allows for the integration of PINNs-based models into closed-loop control systems, facilitating direct application to PID control design. Numerical experiments demonstrate the effectiveness of the proposed method in both time and frequency domains, showcasing its potential in enhancing control performance. <div>
 arXiv:2510.04591v2 Announce Type: replace-cross 
 Abstract: This article proposes a data-driven PID controller design based on the principle of adaptive gain optimization, leveraging Physics-Informed Neural Networks (PINNs) generated for predictive modeling purposes. The proposed control design method utilizes gradients of the PID gain optimization, achieved through the automatic differentiation of PINNs, to apply model predictive control using a cost function based on tracking error and control inputs. By optimizing PINNs-based PID gains, the method achieves adaptive gain tuning that ensures stability while accounting for system nonlinearities. The proposed method features a systematic framework for integrating PINNs-based models of dynamical control systems into closed-loop control systems, enabling direct application to PID control design. A series of numerical experiments is conducted to demonstrate the effectiveness of the proposed method from the control perspectives based on both time and frequency domains.
 ]]></content:encoded>
-<pubDate>Thu, 09 Oct 2025 00:00:00 -0400</pubDate>
 <pubDate>Thu, 09 Oct 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -77,14 +74,12 @@ Abstract: This article proposes a data-driven PID controller design based on the
 <div> Keywords: humanoid, loco-manipulation, ResMimic, GMT policy, object interaction
 
 Summary: 
-ResMimic is a two-stage residual learning framework designed for precise and expressive humanoid control using human motion data. The framework consists of a general motion tracking (GMT) policy as a base for generating human-like movements and a residual policy to refine the outputs for improved locomotion and object interaction. To enhance training efficiency, ResMimic incorporates a point-cloud-based object tracking reward, a contact reward for accurate interaction with objects, and a curriculum-based virtual object controller for stabilization in early training. Evaluation on both simulation and a real Unitree G1 humanoid demonstrates significant improvements in task success, training efficiency, and robustness compared to baseline methods. The research provides a promising approach for advancing loco-manipulation capabilities in humanoid robotics.<br><br>Summary: <div>
+ResMimic is a two-stage residual learning framework designed for precise and expressive humanoid control using human motion data. The framework consists of a general motion tracking (GMT) policy as a base for generating human-like movements and a residual policy to refine the outputs for improved locomotion and object interaction. To enhance training efficiency, ResMimic incorporates a point-cloud-based object tracking reward, a contact reward for accurate interaction with objects, and a curriculum-based virtual object controller for stabilization in early training. Evaluation on both simulation and a real Unitree G1 humanoid demonstrates significant improvements in task success, training efficiency, and robustness compared to baseline methods. The research provides a promising approach for advancing loco-manipulation capabilities in humanoid robotics.<br /><br />Summary: <div>
 arXiv:2510.05070v2 Announce Type: replace-cross 
 Abstract: Humanoid whole-body loco-manipulation promises transformative capabilities for daily service and warehouse tasks. While recent advances in general motion tracking (GMT) have enabled humanoids to reproduce diverse human motions, these policies lack the precision and object awareness required for loco-manipulation. To this end, we introduce ResMimic, a two-stage residual learning framework for precise and expressive humanoid control from human motion data. First, a GMT policy, trained on large-scale human-only motion, serves as a task-agnostic base for generating human-like whole-body movements. An efficient but precise residual policy is then learned to refine the GMT outputs to improve locomotion and incorporate object interaction. To further facilitate efficient training, we design (i) a point-cloud-based object tracking reward for smoother optimization, (ii) a contact reward that encourages accurate humanoid body-object interactions, and (iii) a curriculum-based virtual object controller to stabilize early training. We evaluate ResMimic in both simulation and on a real Unitree G1 humanoid. Results show substantial gains in task success, training efficiency, and robustness over strong baselines. Videos are available at https://resmimic.github.io/ .
 ]]></content:encoded>
 <pubDate>Thu, 09 Oct 2025 00:00:00 -0400</pubDate>
-<pubDate>Thu, 09 Oct 2025 00:00:00 -0400</pubDate>
 </item>
-
 <item>
 <title>RareGraph-Synth: Knowledge-Guided Diffusion Models for Generating Privacy-Preserving Synthetic Patient Trajectories in Ultra-Rare Diseases</title>
 <link>https://arxiv.org/abs/2510.06267</link>
@@ -10871,56 +10866,6 @@ Abstract: The rapid advancement of workflows and methods for software engineerin
 <content:encoded><![CDATA[
 arXiv:2510.04355v1 Announce Type: cross 
 Abstract: In this paper, for Markov decision processes (MDPs) with unbounded state spaces we present refined upper bounds presented in [Kara et. al. JMLR'23] on finite model approximation errors via optimizing the quantizers used for finite model approximations. We also consider implications on quantizer design for quantized Q-learning and empirical model learning, and the performance of policies obtained via Q-learning where the quantized state is treated as the state itself. We highlight the distinctions between planning, where approximating MDPs can be independently designed, and learning (either via Q-learning or empirical model learning), where approximating MDPs are restricted to be defined by invariant measures of Markov chains under exploration policies, leading to significant subtleties on quantizer design performance, even though asymptotic near optimality can be established under both setups. In particular, under Lyapunov growth conditions, we obtain explicit upper bounds which decay to zero as the number of bins approaches infinity.
-]]></content:encoded>
-<pubDate>Tue, 07 Oct 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>TCR-EML: Explainable Model Layers for TCR-pMHC Prediction</title>
-<link>https://arxiv.org/abs/2510.04377</link>
-<guid>https://arxiv.org/abs/2510.04377</guid>
-<content:encoded><![CDATA[
-arXiv:2510.04377v1 Announce Type: cross 
-Abstract: T cell receptor (TCR) recognition of peptide-MHC (pMHC) complexes is a central component of adaptive immunity, with implications for vaccine design, cancer immunotherapy, and autoimmune disease. While recent advances in machine learning have improved prediction of TCR-pMHC binding, the most effective approaches are black-box transformer models that cannot provide a rationale for predictions. Post-hoc explanation methods can provide insight with respect to the input but do not explicitly model biochemical mechanisms (e.g. known binding regions), as in TCR-pMHC binding. ``Explain-by-design'' models (i.e., with architectural components that can be examined directly after training) have been explored in other domains, but have not been used for TCR-pMHC binding. We propose explainable model layers (TCR-EML) that can be incorporated into protein-language model backbones for TCR-pMHC modeling. Our approach uses prototype layers for amino acid residue contacts drawn from known TCR-pMHC binding mechanisms, enabling high-quality explanations for predicted TCR-pMHC binding. Experiments of our proposed method on large-scale datasets demonstrate competitive predictive accuracy and generalization, and evaluation on the TCR-XAI benchmark demonstrates improved explainability compared with existing approaches.
-]]></content:encoded>
-<pubDate>Tue, 07 Oct 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Improving Consistency in Retrieval-Augmented Systems with Group Similarity Rewards</title>
-<link>https://arxiv.org/abs/2510.04392</link>
-<guid>https://arxiv.org/abs/2510.04392</guid>
-<content:encoded><![CDATA[
-arXiv:2510.04392v1 Announce Type: cross 
-Abstract: RAG systems are increasingly deployed in high-stakes domains where users expect outputs to be consistent across semantically equivalent queries. However, existing systems often exhibit significant inconsistencies due to variability in both the retriever and generator (LLM), undermining trust and reliability. In this work, we focus on information consistency, i.e., the requirement that outputs convey the same core content across semantically equivalent inputs. We introduce a principled evaluation framework that decomposes RAG consistency into retriever-level, generator-level, and end-to-end components, helping identify inconsistency sources. To improve consistency, we propose Paraphrased Set Group Relative Policy Optimization (PS-GRPO), an RL approach that leverages multiple rollouts across paraphrased set to assign group similarity rewards. We leverage PS-GRPO to achieve Information Consistent RAG (Con-RAG), training the generator to produce consistent outputs across paraphrased queries and remain robust to retrieval-induced variability. Because exact reward computation over paraphrase sets is computationally expensive, we also introduce a scalable approximation method that retains effectiveness while enabling efficient, large-scale training. Empirical evaluations across short-form, multi-hop, and long-form QA benchmarks demonstrate that Con-RAG significantly improves both consistency and accuracy over strong baselines, even in the absence of explicit ground-truth supervision. Our work provides practical solutions for evaluating and building reliable RAG systems for safety-critical deployments.
-]]></content:encoded>
-<pubDate>Tue, 07 Oct 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Time Is Effort: Estimating Human Post-Editing Time for Grammar Error Correction Tool Evaluation</title>
-<link>https://arxiv.org/abs/2510.04394</link>
-<guid>https://arxiv.org/abs/2510.04394</guid>
-<content:encoded><![CDATA[
-arXiv:2510.04394v1 Announce Type: cross 
-Abstract: Text editing can involve several iterations of revision. Incorporating an efficient Grammar Error Correction (GEC) tool in the initial correction round can significantly impact further human editing effort and final text quality. This raises an interesting question to quantify GEC Tool usability: How much effort can the GEC Tool save users? We present the first large-scale dataset of post-editing (PE) time annotations and corrections for two English GEC test datasets (BEA19 and CoNLL14). We introduce Post-Editing Effort in Time (PEET) for GEC Tools as a human-focused evaluation scorer to rank any GEC Tool by estimating PE time-to-correct. Using our dataset, we quantify the amount of time saved by GEC Tools in text editing. Analyzing the edit type indicated that determining whether a sentence needs correction and edits like paraphrasing and punctuation changes had the greatest impact on PE time. Finally, comparison with human rankings shows that PEET correlates well with technical effort judgment, providing a new human-centric direction for evaluating GEC tool usability. We release our dataset and code at: https://github.com/ankitvad/PEET_Scorer.
-]]></content:encoded>
-<pubDate>Tue, 07 Oct 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>SECA: Semantically Equivalent and Coherent Attacks for Eliciting LLM Hallucinations</title>
-<link>https://arxiv.org/abs/2510.04398</link>
-<guid>https://arxiv.org/abs/2510.04398</guid>
-<content:encoded><![CDATA[
-arXiv:2510.04398v1 Announce Type: cross 
-Abstract: Large Language Models (LLMs) are increasingly deployed in high-risk domains. However, state-of-the-art LLMs often produce hallucinations, raising serious concerns about their reliability. Prior work has explored adversarial attacks for hallucination elicitation in LLMs, but it often produces unrealistic prompts, either by inserting gibberish tokens or by altering the original meaning. As a result, these approaches offer limited insight into how hallucinations may occur in practice. While adversarial attacks in computer vision often involve realistic modifications to input images, the problem of finding realistic adversarial prompts for eliciting LLM hallucinations has remained largely underexplored. To address this gap, we propose Semantically Equivalent and Coherent Attacks (SECA) to elicit hallucinations via realistic modifications to the prompt that preserve its meaning while maintaining semantic coherence. Our contributions are threefold: (i) we formulate finding realistic attacks for hallucination elicitation as a constrained optimization problem over the input prompt space under semantic equivalence and coherence constraints; (ii) we introduce a constraint-preserving zeroth-order method to effectively search for adversarial yet feasible prompts; and (iii) we demonstrate through experiments on open-ended multiple-choice question answering tasks that SECA achieves higher attack success rates while incurring almost no constraint violations compared to existing methods. SECA highlights the sensitivity of both open-source and commercial gradient-inaccessible LLMs to realistic and plausible prompt variations. Code is available at https://github.com/Buyun-Liang/SECA.
-]]></content:encoded>
-<pubDate>Tue, 07 Oct 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Utility-Learning Tension in Self-Modifying Agents</title>
-<link>https://arxiv.org/abs/2510.04399</link>
-<guid>https://arxiv.org/abs/2510.04399</guid>
-<content:encoded><![CDATA[
-arXiv:2510.04399v1 Announce Type: cross 
-Abstract: As systems trend toward superintelligence, a natural modeling premise is that agents can self-improve along every facet of their own design. We formalize this with a five-axis decomposition and a decision layer, separating incentives from learning behavior and analyzing axes in isolation. Our central result identifies and introduces a sharp utility--learning tension, the structural conflict in self-modifying systems whereby utility-driven changes that improve immediate or expected performance can also erode the statistical preconditions for reliable learning and generalization. Our findings show that distribution-free guarantees are preserved iff the policy-reachable model family is uniformly capacity-bounded; when capacity can grow without limit, utility-rational self-changes can render learnable tasks unlearnable. Under standard assumptions common in practice, these axes reduce to the same capacity criterion, yielding a single boundary for safe self-modification. Numerical experiments across several axes validate the theory by comparing destructive utility policies against our proposed two-gate policies that preserve learnability.
 ]]></content:encoded>
 <pubDate>Tue, 07 Oct 2025 00:00:00 -0400</pubDate>
 </item>

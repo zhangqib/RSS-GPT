@@ -4,18 +4,18 @@
 <title>cs.AI updates on arXiv.org</title>
 <link>http://rss.arxiv.org/rss/cs.AI</link>
 
+
 <item>
 <title>TIME: A Multi-level Benchmark for Temporal Reasoning of LLMs in Real-World Scenarios</title>
 <link>https://arxiv.org/abs/2505.12891</link>
 <guid>https://arxiv.org/abs/2505.12891</guid>
 <content:encoded><![CDATA[
-<div> Keywords: temporal reasoning, large language models, real-world challenges, benchmark, social interactions <br>
-Summary: <br>
-Temporal reasoning is essential for Large Language Models (LLMs) to understand the real world, but current approaches do not adequately address the challenges of dealing with abundant temporal information, rapidly changing event dynamics, and complex dependencies in social interactions. To address this gap, a multi-level benchmark called TIME has been introduced, featuring 38,522 QA pairs across three levels and 11 sub-tasks. The benchmark includes three sub-datasets - TIME-Wiki, TIME-News, and TIME-Dial - each reflecting different real-world challenges. Extensive experiments were conducted on both reasoning and non-reasoning models, analyzing temporal reasoning performance across diverse scenarios and tasks. The impact of test-time scaling on temporal reasoning capabilities was also investigated. Additionally, TIME-Lite, a human-annotated subset, has been released to facilitate future research and standardized evaluation in temporal reasoning. The code, dataset, and project page are available for further exploration and use. <br> <div>
+<div> Keywords: temporal reasoning, large language models, real-world challenges, benchmark, social interactions <br />
+Summary: <br />
+Temporal reasoning is essential for Large Language Models (LLMs) to understand the real world, but current approaches do not adequately address the challenges of dealing with abundant temporal information, rapidly changing event dynamics, and complex dependencies in social interactions. To address this gap, a multi-level benchmark called TIME has been introduced, featuring 38,522 QA pairs across three levels and 11 sub-tasks. The benchmark includes three sub-datasets - TIME-Wiki, TIME-News, and TIME-Dial - each reflecting different real-world challenges. Extensive experiments were conducted on both reasoning and non-reasoning models, analyzing temporal reasoning performance across diverse scenarios and tasks. The impact of test-time scaling on temporal reasoning capabilities was also investigated. Additionally, TIME-Lite, a human-annotated subset, has been released to facilitate future research and standardized evaluation in temporal reasoning. The code, dataset, and project page are available for further exploration and use. <br /> <div>
 arXiv:2505.12891v4 Announce Type: replace 
 Abstract: Temporal reasoning is pivotal for Large Language Models (LLMs) to comprehend the real world. However, existing works neglect the real-world challenges for temporal reasoning: (1) intensive temporal information, (2) fast-changing event dynamics, and (3) complex temporal dependencies in social interactions. To bridge this gap, we propose a multi-level benchmark TIME, designed for temporal reasoning in real-world scenarios. TIME consists of 38,522 QA pairs, covering 3 levels with 11 fine-grained sub-tasks. This benchmark encompasses 3 sub-datasets reflecting different real-world challenges: TIME-Wiki, TIME-News, and TIME-Dial. We conduct extensive experiments on reasoning models and non-reasoning models. And we conducted an in-depth analysis of temporal reasoning performance across diverse real-world scenarios and tasks, and summarized the impact of test-time scaling on temporal reasoning capabilities. Additionally, we release TIME-Lite, a human-annotated subset to foster future research and standardized evaluation in temporal reasoning. The code is available at https://github.com/sylvain-wei/TIME , the dataset is available at https://huggingface.co/datasets/SylvainWei/TIME , and the project page link is https://sylvain-wei.github.io/TIME/ .
 ]]></content:encoded>
-<pubDate>Thu, 09 Oct 2025 00:00:00 -0400</pubDate>
 <pubDate>Thu, 09 Oct 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -31,9 +31,7 @@ arXiv:2509.20293v3 Announce Type: replace-cross
 Abstract: LLM-judged benchmarks are increasingly used to evaluate complex model behaviors, yet their design introduces failure modes absent in conventional ground-truth based benchmarks. We argue that without tight objectives and verifiable constructions, benchmark rankings can produce high-confidence rankings that are in fact largely noise. We introduce two mechanisms to diagnose these issues. Schematic adherence quantifies how much of a judge's overall verdict is explained by the explicit evaluation schema, revealing unexplained variance when judges deviate from their own rubric. Psychometric validity aggregates internal consistency and discriminant validity signals to quantify irreducible uncertainty in any benchmarking run. Applying these tools to Arena-Hard Auto, we find severe schema incoherence and factor collapse across popular judges: for example, unexplained variance exceeding 90 percent for DeepSeek-R1-32B and factor correlations above 0.93 for most criteria. We also show that the ELO-style aggregation used by Arena-Hard Auto collapses and masks genuine ranking uncertainty. Our results highlight design failures that undermine validity and offer actionable principles for building better-scoped, reliability-aware LLM-judged benchmarks. We released our code and dataset at https://github.com/penfever/judgment-to-noise
 ]]></content:encoded>
 <pubDate>Thu, 09 Oct 2025 00:00:00 -0400</pubDate>
-<pubDate>Thu, 09 Oct 2025 00:00:00 -0400</pubDate>
 </item>
-
 <item>
 <title>AlphaApollo: Orchestrating Foundation Models and Professional Tools into a Self-Evolving System for Deep Agentic Reasoning</title>
 <link>https://arxiv.org/abs/2510.06261</link>
@@ -10909,26 +10907,6 @@ Abstract: Time Series Imputation (TSI), which aims to recover missing values in 
 <content:encoded><![CDATA[
 arXiv:2510.04919v1 Announce Type: cross 
 Abstract: Supervised Fine-Tuning (SFT) is an effective method for adapting Large Language Models (LLMs) on downstream tasks. However, variability in training data can hinder a model's ability to generalize across domains. This paper studies the problem of dataset alignment for Natural Language to SQL (NL2SQL or text to SQL), examining how well SFT training data matches the structural characteristics of target queries and how this alignment impacts model performance. We hypothesize that alignment can be accurately estimated by comparing the distributions of structural SQL features across the training set, target data, and the model's predictions prior to SFT. Through comprehensive experiments on three large cross-domain NL2SQL benchmarks and multiple model families, we show that structural alignment is a strong predictor of fine-tuning success. When alignment is high, SFT yields substantial gains in accuracy and SQL generation quality; when alignment is low, improvements are marginal or absent. These findings highlight the importance of alignment-aware data selection for effective fine-tuning and generalization in NL2SQL tasks.
-]]></content:encoded>
-<pubDate>Tue, 07 Oct 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>REN: Anatomically-Informed Mixture-of-Experts for Interstitial Lung Disease Diagnosis</title>
-<link>https://arxiv.org/abs/2510.04923</link>
-<guid>https://arxiv.org/abs/2510.04923</guid>
-<content:encoded><![CDATA[
-arXiv:2510.04923v1 Announce Type: cross 
-Abstract: Mixture-of-Experts (MoE) architectures have significantly contributed to scalable machine learning by enabling specialized subnetworks to tackle complex tasks efficiently. However, traditional MoE systems lack domain-specific constraints essential for medical imaging, where anatomical structure and regional disease heterogeneity strongly influence pathological patterns. Here, we introduce Regional Expert Networks (REN), the first anatomically-informed MoE framework tailored specifically for medical image classification. REN leverages anatomical priors to train seven specialized experts, each dedicated to distinct lung lobes and bilateral lung combinations, enabling precise modeling of region-specific pathological variations. Multi-modal gating mechanisms dynamically integrate radiomics biomarkers and deep learning (DL) features (CNN, ViT, Mamba) to weight expert contributions optimally. Applied to interstitial lung disease (ILD) classification, REN achieves consistently superior performance: the radiomics-guided ensemble reached an average AUC of 0.8646 +/- 0.0467, a +12.5 percent improvement over the SwinUNETR baseline (AUC 0.7685, p = 0.031). Region-specific experts further revealed that lower-lobe models achieved AUCs of 0.88-0.90, surpassing DL counterparts (CNN: 0.76-0.79) and aligning with known disease progression patterns. Through rigorous patient-level cross-validation, REN demonstrates strong generalizability and clinical interpretability, presenting a scalable, anatomically-guided approach readily extensible to other structured medical imaging applications.
-]]></content:encoded>
-<pubDate>Tue, 07 Oct 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Federated Self-Supervised Learning for Automatic Modulation Classification under Non-IID and Class-Imbalanced Data</title>
-<link>https://arxiv.org/abs/2510.04927</link>
-<guid>https://arxiv.org/abs/2510.04927</guid>
-<content:encoded><![CDATA[
-arXiv:2510.04927v1 Announce Type: cross 
-Abstract: Training automatic modulation classification (AMC) models on centrally aggregated data raises privacy concerns, incurs communication overhead, and often fails to confer robustness to channel shifts. Federated learning (FL) avoids central aggregation by training on distributed clients but remains sensitive to class imbalance, non-IID client distributions, and limited labeled samples. We propose FedSSL-AMC, which trains a causal, time-dilated CNN with triplet-loss self-supervision on unlabeled I/Q sequences across clients, followed by per-client SVMs on small labeled sets. We establish convergence of the federated representation learning procedure and a separability guarantee for the downstream classifier under feature noise. Experiments on synthetic and over-the-air datasets show consistent gains over supervised FL baselines under heterogeneous SNR, carrier-frequency offsets, and non-IID label partitions.
 ]]></content:encoded>
 <pubDate>Tue, 07 Oct 2025 00:00:00 -0400</pubDate>
 </item>
