@@ -5,24 +5,39 @@
 <link>http://rss.arxiv.org/rss/cs.AI</link>
 
 <item>
+<title>WebRenderBench: Enhancing Web Interface Generation through Layout-Style Consistency and Reinforcement Learning</title>
+<link>https://arxiv.org/abs/2510.04097</link>
+<guid>https://arxiv.org/abs/2510.04097</guid>
+<content:encoded><![CDATA[
+<div> Keyword: UI images, web code, large language models, WebRenderBench, ALISA
+
+Summary:
+WebRenderBench is introduced as a large-scale benchmark of 45.1k webpages from real-world portal sites, offering greater diversity and realism for evaluating WebUI-to-Code conversion. A novel evaluation metric is proposed to measure layout and style consistency in the final rendered pages, providing an efficient and reliable assessment of UI quality. The Automated Layout and Style Inspection Agent (ALISA) integrates this metric into reinforcement learning to enhance training on webpages with asymmetric layouts. Experiments demonstrate that ALISA significantly improves generation performance and achieves state-of-the-art results across multiple metrics.<br><br>Summary: <div>
+arXiv:2510.04097v2 Announce Type: replace 
+Abstract: Automating the conversion of UI images into web code is a critical task for front-end development and rapid prototyping. Advances in multimodal large language models (MLLMs) have made WebUI-to-Code increasingly feasible, yet existing benchmarks remain limited in data diversity and evaluation reliability. To address these issues, we present WebRenderBench, a large-scale benchmark of 45.1k webpages collected from real-world portal sites, offering greater diversity, complexity, and realism than prior benchmarks. We further propose a novel evaluation metric that measures layout and style consistency from the final rendered pages. Unlike vision-based methods that rely on costly LLM reasoning or structure-based comparisons vulnerable to noise and asymmetry, our approach enables more efficient, objective, and reliable UI quality assessment. Finally, we introduce the Automated Layout and Style Inspection Agent (ALISA), which integrates this metric into reinforcement learning as a reward signal to enhance training on crawled asymmetric webpages. Experiments show that ALISA significantly boosts generation performance, achieving state-of-the-art results across multiple metrics.
+]]></content:encoded>
+<pubDate>Fri, 10 Oct 2025 00:00:00 -0400</pubDate>
+<pubDate>Fri, 10 Oct 2025 00:00:00 -0400</pubDate>
+</item>
+
+<item>
 <title>LogAction: Consistent Cross-system Anomaly Detection through Logs via Active Domain Adaptation</title>
 <link>https://arxiv.org/abs/2510.03288</link>
 <guid>https://arxiv.org/abs/2510.03288</guid>
 <content:encoded><![CDATA[
 <div> active domain adaptation, log-based anomaly detection, transfer learning, active learning, manual labeling
 
-Summary:<br>
+Summary:<br />
 - Log-based anomaly detection is crucial for software system reliability and performance, but labeling a large volume of logs is challenging.
 - Existing anomaly detection methods heavily rely on labeling and face issues like data distribution gaps and cold-start problems.
 - LogAction is a novel model that combines transfer learning and active learning techniques to address these challenges.
 - LogAction uses labeled data from a mature system to train a base model and selects logs at distribution boundaries for manual labeling.
 - Experimental results show that LogAction achieves a 93.01% F1 score with only 2% of manual labels, outperforming some state-of-the-art methods by 26.28%.
 
-<br><br>Summary: <div>
+<br /><br />Summary: <div>
 arXiv:2510.03288v2 Announce Type: replace-cross 
 Abstract: Log-based anomaly detection is a essential task for ensuring the reliability and performance of software systems. However, the performance of existing anomaly detection methods heavily relies on labeling, while labeling a large volume of logs is highly challenging. To address this issue, many approaches based on transfer learning and active learning have been proposed. Nevertheless, their effectiveness is hindered by issues such as the gap between source and target system data distributions and cold-start problems. In this paper, we propose LogAction, a novel log-based anomaly detection model based on active domain adaptation. LogAction integrates transfer learning and active learning techniques. On one hand, it uses labeled data from a mature system to train a base model, mitigating the cold-start issue in active learning. On the other hand, LogAction utilize free energy-based sampling and uncertainty-based sampling to select logs located at the distribution boundaries for manual labeling, thus addresses the data distribution gap in transfer learning with minimal human labeling efforts. Experimental results on six different combinations of datasets demonstrate that LogAction achieves an average 93.01% F1 score with only 2% of manual labels, outperforming some state-of-the-art methods by 26.28%. Website: https://logaction.github.io
 ]]></content:encoded>
-<pubDate>Fri, 10 Oct 2025 00:00:00 -0400</pubDate>
 <pubDate>Fri, 10 Oct 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -33,11 +48,10 @@ Abstract: Log-based anomaly detection is a essential task for ensuring the relia
 <div> order of magnitude, floating-point numbers, parallel hardware, compounding real numbers, numerical stability
 
 Summary:
-Generalized orders of magnitude (GOOMs) are introduced as an extension of traditional orders of magnitude to handle compounding real numbers over long sequences without encountering catastrophic numerical underflow or overflow. GOOMs provide stable computation over larger dynamic ranges than conventional methods, particularly on parallel hardware like GPUs. An efficient custom parallel prefix scan is implemented to support native execution on such hardware. Three experiments demonstrate the superiority of GOOMs over traditional approaches: compounding real matrix products beyond standard floating-point limits, estimating Lyapunov exponents' spectra much faster, and capturing long-range dependencies in deep recurrent neural networks without requiring stabilization. GOOMs combined with parallel scanning offer a scalable and numerically robust alternative for high-dynamic-range applications. <br><br>Summary: <div>
+Generalized orders of magnitude (GOOMs) are introduced as an extension of traditional orders of magnitude to handle compounding real numbers over long sequences without encountering catastrophic numerical underflow or overflow. GOOMs provide stable computation over larger dynamic ranges than conventional methods, particularly on parallel hardware like GPUs. An efficient custom parallel prefix scan is implemented to support native execution on such hardware. Three experiments demonstrate the superiority of GOOMs over traditional approaches: compounding real matrix products beyond standard floating-point limits, estimating Lyapunov exponents' spectra much faster, and capturing long-range dependencies in deep recurrent neural networks without requiring stabilization. GOOMs combined with parallel scanning offer a scalable and numerically robust alternative for high-dynamic-range applications. <br /><br />Summary: <div>
 arXiv:2510.03426v2 Announce Type: replace-cross 
 Abstract: Many domains, from deep learning to finance, require compounding real numbers over long sequences, often leading to catastrophic numerical underflow or overflow. We introduce generalized orders of magnitude (GOOMs), a principled extension of traditional orders of magnitude that incorporates floating-point numbers as a special case, and which in practice enables stable computation over significantly larger dynamic ranges of real numbers than previously possible. We implement GOOMs, along with an efficient custom parallel prefix scan, to support native execution on parallel hardware such as GPUs. We demonstrate that our implementation of GOOMs outperforms traditional approaches with three representative experiments, all of which were previously considered impractical or impossible, and now become possible and practical: (1) compounding real matrix products far beyond standard floating-point limits; (2) estimating spectra of Lyapunov exponents in parallel, orders of magnitude faster than with previous methods, applying a novel selective-resetting method to prevent state colinearity; and (3) capturing long-range dependencies in deep recurrent neural networks with non-diagonal recurrent states, computed in parallel via a prefix scan, without requiring any form of stabilization. Our results show that our implementation of GOOMs, combined with efficient parallel scanning, offers a scalable and numerically robust alternative to conventional floating-point numbers for high-dynamic-range applications.
 ]]></content:encoded>
-<pubDate>Fri, 10 Oct 2025 00:00:00 -0400</pubDate>
 <pubDate>Fri, 10 Oct 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -47,12 +61,11 @@ Abstract: Many domains, from deep learning to finance, require compounding real 
 <content:encoded><![CDATA[
 <div> Keywords: spatiotemporal forecasting, Model-Based Reinforcement Learning, Generative World Model, planning algorithm, extreme events
 
-Summary:<br>
+Summary:<br />
 The proposed Spatiotemporal Forecasting as Planning (SFP) paradigm addresses the challenges of stochasticity and non-differentiable metrics in physical spatiotemporal forecasting. SFP utilizes a Generative World Model to simulate diverse future states and employs a base forecasting model as an agent guided by a beam search-based planning algorithm. This approach leverages non-differentiable domain metrics as reward signals to explore high-return future sequences. High-reward candidates identified through this process serve as pseudo-labels to optimize the agent's policy via iterative self-training, reducing prediction error significantly. The SFP framework demonstrates exceptional performance in capturing extreme events, showcasing its effectiveness in spatiotemporal forecasting tasks. <div>
 arXiv:2510.04020v2 Announce Type: replace-cross 
 Abstract: To address the dual challenges of inherent stochasticity and non-differentiable metrics in physical spatiotemporal forecasting, we propose Spatiotemporal Forecasting as Planning (SFP), a new paradigm grounded in Model-Based Reinforcement Learning. SFP constructs a novel Generative World Model to simulate diverse, high-fidelity future states, enabling an "imagination-based" environmental simulation. Within this framework, a base forecasting model acts as an agent, guided by a beam search-based planning algorithm that leverages non-differentiable domain metrics as reward signals to explore high-return future sequences. These identified high-reward candidates then serve as pseudo-labels to continuously optimize the agent's policy through iterative self-training, significantly reducing prediction error and demonstrating exceptional performance on critical domain metrics like capturing extreme events.
 ]]></content:encoded>
-<pubDate>Fri, 10 Oct 2025 00:00:00 -0400</pubDate>
 <pubDate>Fri, 10 Oct 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -60,16 +73,14 @@ Abstract: To address the dual challenges of inherent stochasticity and non-diffe
 <link>https://arxiv.org/abs/2510.04363</link>
 <guid>https://arxiv.org/abs/2510.04363</guid>
 <content:encoded><![CDATA[
-<div> benchmark, LLMs, browser-automation, MacroBench, web automation<br>
-Summary:<br>
-The article introduces MacroBench, a benchmarking tool that evaluates the ability of Large Language Models (LLMs) to generate reusable browser-automation programs from natural-language goals. The benchmark consists of seven self-hosted sites with 681 tasks of varying complexity and difficulty levels. The evaluation protocol includes static checks, sandboxed execution, and outcome verification to validate the generated code. The models tested in the study, GPT-4o-mini, GPT-4o, Gemini, and DeepSeek, showed varying levels of success in completing tasks, with high success rates for simple tasks but failures in complex workflows. Despite achieving functional completion, none of the models met production-quality coding practices. The complete benchmark pipeline, evaluation framework, and experimental results are publicly available for reproducible assessment of macro synthesis for web automation on GitHub.  <br><br>Summary: <div>
+<div> benchmark, LLMs, browser-automation, MacroBench, web automation<br />
+Summary:<br />
+The article introduces MacroBench, a benchmarking tool that evaluates the ability of Large Language Models (LLMs) to generate reusable browser-automation programs from natural-language goals. The benchmark consists of seven self-hosted sites with 681 tasks of varying complexity and difficulty levels. The evaluation protocol includes static checks, sandboxed execution, and outcome verification to validate the generated code. The models tested in the study, GPT-4o-mini, GPT-4o, Gemini, and DeepSeek, showed varying levels of success in completing tasks, with high success rates for simple tasks but failures in complex workflows. Despite achieving functional completion, none of the models met production-quality coding practices. The complete benchmark pipeline, evaluation framework, and experimental results are publicly available for reproducible assessment of macro synthesis for web automation on GitHub.  <br /><br />Summary: <div>
 arXiv:2510.04363v2 Announce Type: replace-cross 
 Abstract: We introduce MacroBench, a code-first benchmark that evaluates whether LLMs can synthesize reusable browser-automation programs (macros) from natural-language goals by reading HTML/DOM and emitting Selenium. MacroBench instantiates seven self-hosted sites covering 681 tasks across interaction complexity and targeting difficulty. Our end-to-end protocol validates generated code via static checks, sandboxed execution, and outcome verification (DOM assertions, database snapshots), and includes a safety suite for scraping, spam/abuse, and credential/privacy prompts. Across 2,636 model-task runs, we observe stratified success: GPT-4o-mini (96.8%), GPT-4o (95.3%), Gemini (89.0%), DeepSeek (83.4%). Models handle simple tasks reliably (91.7%) but fail on complex workflows (0.0%), and none meet production-quality coding practices despite functional completion. We release our complete benchmark pipeline, evaluation framework, and experimental results at https://github.com/hyunjun1121/MacroBench to enable reproducible assessment of macro synthesis for web automation.
 ]]></content:encoded>
 <pubDate>Fri, 10 Oct 2025 00:00:00 -0400</pubDate>
-<pubDate>Fri, 10 Oct 2025 00:00:00 -0400</pubDate>
 </item>
-
 <item>
 <title>Truth-Aware Decoding: A Program-Logic Approach to Factual Language Generation</title>
 <link>https://arxiv.org/abs/2510.07331</link>
@@ -11041,66 +11052,6 @@ Summary:
 The article introduces the Moral Anchor System (MAS), a framework designed to address value drift in AI systems by utilizing real-time Bayesian inference, LSTM networks for forecasting, and a human-centric governance layer. MAS aims to detect, predict, and mitigate value drift incidents in AI agents to ensure alignment with human ethics and intentions. The framework emphasizes low-latency responses to prevent breaches, while incorporating adaptive interventions based on feedback. Through rigorous experiments with goal-misaligned agents, MAS demonstrates scalability and responsiveness, with results showing a potential reduction of value drift incidents by 80 percent or more. The originality of MAS lies in its predictive and adaptive nature, offering a contrast to static alignment methods. The article also provides insights into cross-domain applicability and open-source code for replication. <div>
 arXiv:2510.04073v1 Announce Type: new 
 Abstract: The rise of artificial intelligence (AI) as super-capable assistants has transformed productivity and decision-making across domains. Yet, this integration raises critical concerns about value alignment - ensuring AI behaviors remain consistent with human ethics and intentions. A key risk is value drift, where AI systems deviate from aligned values due to evolving contexts, learning dynamics, or unintended optimizations, potentially leading to inefficiencies or ethical breaches. We propose the Moral Anchor System (MAS), a novel framework to detect, predict, and mitigate value drift in AI agents. MAS combines real-time Bayesian inference for monitoring value states, LSTM networks for forecasting drift, and a human-centric governance layer for adaptive interventions. It emphasizes low-latency responses (<20 ms) to prevent breaches, while reducing false positives and alert fatigue via supervised fine-tuning with human feedback. Our hypothesis: integrating probabilistic drift detection, predictive analytics, and adaptive governance can reduce value drift incidents by 80 percent or more in simulations, maintaining high detection accuracy (85 percent) and low false positive rates (0.08 post-adaptation). Rigorous experiments with goal-misaligned agents validate MAS's scalability and responsiveness. MAS's originality lies in its predictive and adaptive nature, contrasting static alignment methods. Contributions include: (1) MAS architecture for AI integration; (2) empirical results prioritizing speed and usability; (3) cross-domain applicability insights; and (4) open-source code for replication.
-]]></content:encoded>
-<pubDate>Tue, 07 Oct 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>SPOGW: a Score-based Preference Optimization method via Group-Wise comparison for workflows</title>
-<link>https://arxiv.org/abs/2510.04089</link>
-<guid>https://arxiv.org/abs/2510.04089</guid>
-<content:encoded><![CDATA[
-<div> automated techniques, optimization, agentic workflows, large language models, SPOGW 
-Summary:
-The article introduces SPOGW, a novel approach for optimizing agentic workflows using large language models. Current methods for designing such workflows require significant manual effort, hindering scalability and generalizability. SPOGW addresses this issue by operating on cardinal reward signals through group-wise comparison, enabling more efficient optimization in a continuous space. It incorporates ioGRPO and mKL techniques to regulate training updates and achieve superior performance in benchmark datasets for mathematical reasoning, coding, and question answering. SPOGW surpasses existing approaches, demonstrating its potential for automating the generation and optimization of agentic workflows. 
-<br /><br />Summary: <div>
-arXiv:2510.04089v1 Announce Type: new 
-Abstract: Large language models (LLMs) have exhibited significant capabilities in addressing challenging problems throughout various fields, often through the use of agentic workflows that adhere to structured instructions and multi-step procedures. However, designing such workflows demands substantial manual effort, posing challenges to scalability and generalizability. Recent studies have aimed to minimize the human intervention needed for their construction, leading to advances in automated techniques for optimizing agentic workflows. However, current approaches are often constrained by their limited representational capacity, insufficient adaptability, weak scalability, and pairwise comparison paradigm -- issues that stem primarily from a dependence on discrete optimization techniques. To overcome these limitations, we introduce a new score-based preference approach, refereed as SPOGW, which operates directly on cardinal reward signals through group-wise comparison and enables more efficient and stable optimization in a continuous space. SPOGW incorporates Iterative offline GRPO (ioGRPO) with advantage-masked KL divergence (mKL), which regulates training update by placing greater emphasis on the advantageous regions of the policy response. In five benchmark datasets covering mathematical reasoning, coding, and question answering, SPOGW matches or exceeds the performance of current state-of-the-art approaches, presenting a viable and forward-looking methodology for automated generation and optimization of agentic workflows.
-]]></content:encoded>
-<pubDate>Tue, 07 Oct 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Harnessing LLM for Noise-Robust Cognitive Diagnosis in Web-Based Intelligent Education Systems</title>
-<link>https://arxiv.org/abs/2510.04093</link>
-<guid>https://arxiv.org/abs/2510.04093</guid>
-<content:encoded><![CDATA[
-<div> framework, noise-robust, cognitive diagnosis, diffusion, LLM  
-Summary:  
-- The article presents a new framework called DLLM for noise-robust cognitive diagnosis in web-based education systems.
-- DLLM utilizes diffusion-based techniques to handle noise and data imbalance in student response logs.
-- It constructs independent subgraphs based on response correctness and aligns them with large language model (LLM) representations.
-- Two-stage denoising diffusion is used to eliminate intrinsic noise and misleading information from the data.
-- Experimental results show that DLLM achieves optimal predictive performance in noisy educational datasets and effectively leverages semantic knowledge from LLMs.<br /><br /> <div>
-arXiv:2510.04093v1 Announce Type: new 
-Abstract: Cognitive diagnostics in the Web-based Intelligent Education System (WIES) aims to assess students' mastery of knowledge concepts from heterogeneous, noisy interactions. Recent work has tried to utilize Large Language Models (LLMs) for cognitive diagnosis, yet LLMs struggle with structured data and are prone to noise-induced misjudgments. Specially, WIES's open environment continuously attracts new students and produces vast amounts of response logs, exacerbating the data imbalance and noise issues inherent in traditional educational systems. To address these challenges, we propose DLLM, a Diffusion-based LLM framework for noise-robust cognitive diagnosis. DLLM first constructs independent subgraphs based on response correctness, then applies relation augmentation alignment module to mitigate data imbalance. The two subgraph representations are then fused and aligned with LLM-derived, semantically augmented representations. Importantly, before each alignment step, DLLM employs a two-stage denoising diffusion module to eliminate intrinsic noise while assisting structural representation alignment. Specifically, unconditional denoising diffusion first removes erroneous information, followed by conditional denoising diffusion based on graph-guided to eliminate misleading information. Finally, the noise-robust representation that integrates semantic knowledge and structural information is fed into existing cognitive diagnosis models for prediction. Experimental results on three publicly available web-based educational platform datasets demonstrate that our DLLM achieves optimal predictive performance across varying noise levels, which demonstrates that DLLM achieves noise robustness while effectively leveraging semantic knowledge from LLM.
-]]></content:encoded>
-<pubDate>Tue, 07 Oct 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>WebRenderBench: Enhancing Web Interface Generation through Layout-Style Consistency and Reinforcement Learning</title>
-<link>https://arxiv.org/abs/2510.04097</link>
-<guid>https://arxiv.org/abs/2510.04097</guid>
-<content:encoded><![CDATA[
-<div> benchmark, WebRenderBench, evaluation metric, ALISA, front-end development
-
-Summary:
-The article introduces WebRenderBench, a large-scale benchmark dataset comprising 22.5k diverse and complex webpages from real-world portal sites. It addresses the limitations of existing benchmarks in evaluating WebUI-to-Code conversion by proposing a novel evaluation metric that measures layout and style consistency of rendered pages. This metric offers more efficient and reliable UI quality assessment compared to existing methods. The Automated Layout and Style Inspection Agent (ALISA) is introduced, which integrates the evaluation metric into reinforcement learning to enhance training on asymmetric webpages. Experimental results demonstrate that ALISA significantly improves generation performance, achieving state-of-the-art results across multiple metrics. The advancements in benchmarking, evaluation metrics, and agent integration contribute to the automation of converting UI images into web code for front-end development and rapid prototyping. 
-
-<br /><br />Summary: <div>
-arXiv:2510.04097v1 Announce Type: new 
-Abstract: Automating the conversion of UI images into web code is a critical task for front-end development and rapid prototyping. Advances in multimodal large language models (MLLMs) have made WebUI-to-Code increasingly feasible, yet existing benchmarks remain limited in data diversity and evaluation reliability. To address these issues, we present WebRenderBench, a large-scale benchmark of 22.5k webpages collected from real-world portal sites, offering greater diversity, complexity, and realism than prior benchmarks. We further propose a novel evaluation metric that measures layout and style consistency from the final rendered pages. Unlike vision-based methods that rely on costly LLM reasoning or structure-based comparisons vulnerable to noise and asymmetry, our approach enables more efficient, objective, and reliable UI quality assessment. Finally, we introduce the Automated Layout and Style Inspection Agent (ALISA), which integrates this metric into reinforcement learning as a reward signal to enhance training on crawled asymmetric webpages. Experiments show that ALISA significantly boosts generation performance, achieving state-of-the-art results across multiple metrics.
-]]></content:encoded>
-<pubDate>Tue, 07 Oct 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Searching Meta Reasoning Skeleton to Guide LLM Reasoning</title>
-<link>https://arxiv.org/abs/2510.04116</link>
-<guid>https://arxiv.org/abs/2510.04116</guid>
-<content:encoded><![CDATA[
-<div> Keywords: Meta reasoning skeleton, large language model, directed acyclic graph, AutoMR framework, query-aware skeleton search <br />
-Summary: 
-The study introduces a new approach to enhance reasoning performance in large language models (LLMs) using meta reasoning behaviors as a guide. Instead of manually designing the structure, the researchers propose representing the meta reasoning skeleton with a directed acyclic graph (DAG) to capture complex logical dependencies efficiently. The AutoMR framework is introduced, which automatically searches for query-specific meta reasoning skeletons inspired by automated machine learning (AutoML). By formulating the search space based on the DAG representation and designing a dynamic skeleton sampling algorithm, AutoMR can adapt the skeleton to evolving reasoning contexts, leading to improved reasoning performance in various benchmark datasets. Experimental results demonstrate that AutoMR outperforms previous methods in achieving better reasoning performance. <br /><br />Summary: <div>
-arXiv:2510.04116v1 Announce Type: new 
-Abstract: Meta reasoning behaviors work as a skeleton to guide large language model (LLM) reasoning, thus help to improve reasoning performance. However, prior researches implement meta reasoning skeleton with manually designed structure, limiting ability to adapt to query-specific requirement and capture intricate logical dependency among reasoning steps. To deal with the challenges, we represent meta reasoning skeleton with directed acyclic graph (DAG) to unify skeletons proposed in prior works and model intricate logical dependency. Then we propose AutoMR, a framework that searches for query-aware meta reasoning skeleton automatically inspired by automated machine learning (AutoML). Specifically, we construct search space based on DAG representation of skeleton and then formulate the search problem. We design a dynamic skeleton sampling algorithm by expanding meta reasoning skeleton along with reasoning context at inference time. This algorithm can derive any meta reasoning skeleton in search space efficiently and adapt skeleton to evolving base reasoning context, thus enable efficient query-aware skeleton search. We conduct experiments on extensive benchmark datasets. Experimental results show that AutoMR achieves better reasoning performance than previous works broadly.
 ]]></content:encoded>
 <pubDate>Tue, 07 Oct 2025 00:00:00 -0400</pubDate>
 </item>

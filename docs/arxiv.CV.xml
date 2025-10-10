@@ -4,19 +4,19 @@
 <title>cs.CV updates on arXiv.org</title>
 <link>http://rss.arxiv.org/rss/cs.CV</link>
 
+
 <item>
 <title>Towards Methane Detection Onboard Satellites</title>
 <link>https://arxiv.org/abs/2509.00626</link>
 <guid>https://arxiv.org/abs/2509.00626</guid>
 <content:encoded><![CDATA[
 <div> satellites, methane detection, machine learning, orthorectification, hyperspectral images
-<br>
+<br />
 Summary:
-Machine learning can improve the timely detection of methane, a potent greenhouse gas, onboard satellites. A novel approach using unorthorectified data (UnorthoDOS) bypasses traditional preprocessing steps, achieving comparable performance to models trained on orthorectified data. Models trained on orthorectified datasets can outperform conventional methods like matched filters. The study releases model checkpoints and two ML-ready datasets, one orthorectified and the other unorthorectified, from the EMIT sensor. The code for the project is available on GitHub, providing a valuable resource for researchers and practitioners in the field. <br><br>Summary: <div>
+Machine learning can improve the timely detection of methane, a potent greenhouse gas, onboard satellites. A novel approach using unorthorectified data (UnorthoDOS) bypasses traditional preprocessing steps, achieving comparable performance to models trained on orthorectified data. Models trained on orthorectified datasets can outperform conventional methods like matched filters. The study releases model checkpoints and two ML-ready datasets, one orthorectified and the other unorthorectified, from the EMIT sensor. The code for the project is available on GitHub, providing a valuable resource for researchers and practitioners in the field. <br /><br />Summary: <div>
 arXiv:2509.00626v3 Announce Type: replace 
 Abstract: Methane is a potent greenhouse gas and a major driver of climate change, making its timely detection critical for effective mitigation. Machine learning (ML) deployed onboard satellites can enable rapid detection while reducing downlink costs, supporting faster response systems. Conventional methane detection methods often rely on image processing techniques, such as orthorectification to correct geometric distortions and matched filters to enhance plume signals. We introduce a novel approach that bypasses these preprocessing steps by using \textit{unorthorectified} data (UnorthoDOS). We find that ML models trained on this dataset achieve performance comparable to those trained on orthorectified data. Moreover, we also train models on an orthorectified dataset, showing that they can outperform the matched filter baseline (mag1c). We release model checkpoints and two ML-ready datasets comprising orthorectified and unorthorectified hyperspectral images from the Earth Surface Mineral Dust Source Investigation (EMIT) sensor at https://huggingface.co/datasets/SpaceML/UnorthoDOS , along with code at https://github.com/spaceml-org/plume-hunter.
 ]]></content:encoded>
-<pubDate>Fri, 10 Oct 2025 00:00:00 -0400</pubDate>
 <pubDate>Fri, 10 Oct 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -24,16 +24,14 @@ Abstract: Methane is a potent greenhouse gas and a major driver of climate chang
 <link>https://arxiv.org/abs/2510.02300</link>
 <guid>https://arxiv.org/abs/2510.02300</guid>
 <content:encoded><![CDATA[
-<div> Equilibrium Matching, generative modeling, equilibrium dynamics, optimization-based sampling, gradient descent<br>
-Summary:<br>
-Equilibrium Matching (EqM) is a novel generative modeling framework that focuses on equilibrium dynamics. Unlike traditional diffusion and flow-based models, EqM learns the equilibrium gradient of an implicit energy landscape, enabling an optimization-based sampling process during inference. This approach results in superior generation performance, surpassing diffusion/flow models with an FID of 1.90 on ImageNet 256x256. EqM is not only empirically effective but also theoretically sound in learning and sampling from data manifolds. Additionally, it offers flexibility in tasks like image denoising, OOD detection, and image composition. By replacing time-conditional velocities with an equilibrium landscape, EqM provides a seamless integration between flow and energy-based models, making optimization-driven inference a straightforward process. <br> <div>
+<div> Equilibrium Matching, generative modeling, equilibrium dynamics, optimization-based sampling, gradient descent<br />
+Summary:<br />
+Equilibrium Matching (EqM) is a novel generative modeling framework that focuses on equilibrium dynamics. Unlike traditional diffusion and flow-based models, EqM learns the equilibrium gradient of an implicit energy landscape, enabling an optimization-based sampling process during inference. This approach results in superior generation performance, surpassing diffusion/flow models with an FID of 1.90 on ImageNet 256x256. EqM is not only empirically effective but also theoretically sound in learning and sampling from data manifolds. Additionally, it offers flexibility in tasks like image denoising, OOD detection, and image composition. By replacing time-conditional velocities with an equilibrium landscape, EqM provides a seamless integration between flow and energy-based models, making optimization-driven inference a straightforward process. <br /> <div>
 arXiv:2510.02300v2 Announce Type: replace-cross 
 Abstract: We introduce Equilibrium Matching (EqM), a generative modeling framework built from an equilibrium dynamics perspective. EqM discards the non-equilibrium, time-conditional dynamics in traditional diffusion and flow-based generative models and instead learns the equilibrium gradient of an implicit energy landscape. Through this approach, we can adopt an optimization-based sampling process at inference time, where samples are obtained by gradient descent on the learned landscape with adjustable step sizes, adaptive optimizers, and adaptive compute. EqM surpasses the generation performance of diffusion/flow models empirically, achieving an FID of 1.90 on ImageNet 256$\times$256. EqM is also theoretically justified to learn and sample from the data manifold. Beyond generation, EqM is a flexible framework that naturally handles tasks including partially noised image denoising, OOD detection, and image composition. By replacing time-conditional velocities with a unified equilibrium landscape, EqM offers a tighter bridge between flow and energy-based models and a simple route to optimization-driven inference.
 ]]></content:encoded>
 <pubDate>Fri, 10 Oct 2025 00:00:00 -0400</pubDate>
-<pubDate>Fri, 10 Oct 2025 00:00:00 -0400</pubDate>
 </item>
-
 <item>
 <title>Enhancing Maritime Object Detection in Real-Time with RT-DETR and Data Augmentation</title>
 <link>https://arxiv.org/abs/2510.07346</link>
@@ -11292,36 +11290,6 @@ This study introduces a unified deep learning framework to generate synthetic co
 <br /><br />Summary: <div>
 arXiv:2510.01498v1 Announce Type: new 
 Abstract: While contrast-enhanced CT (CECT) is standard for assessing abdominal aortic aneurysms (AAA), the required iodinated contrast agents pose significant risks, including nephrotoxicity, patient allergies, and environmental harm. To reduce contrast agent use, recent deep learning methods have focused on generating synthetic CECT from non-contrast CT (NCCT) scans. However, most adopt a multi-stage pipeline that first generates images and then performs segmentation, which leads to error accumulation and fails to leverage shared semantic and anatomical structures. To address this, we propose a unified deep learning framework that generates synthetic CECT images from NCCT scans while simultaneously segmenting the aortic lumen and thrombus. Our approach integrates conditional diffusion models (CDM) with multi-task learning, enabling end-to-end joint optimization of image synthesis and anatomical segmentation. Unlike previous multitask diffusion models, our approach requires no initial predictions (e.g., a coarse segmentation mask), shares both encoder and decoder parameters across tasks, and employs a semi-supervised training strategy to learn from scans with missing segmentation labels, a common constraint in real-world clinical data. We evaluated our method on a cohort of 264 patients, where it consistently outperformed state-of-the-art single-task and multi-stage models. For image synthesis, our model achieved a PSNR of 25.61 dB, compared to 23.80 dB from a single-task CDM. For anatomical segmentation, it improved the lumen Dice score to 0.89 from 0.87 and the challenging thrombus Dice score to 0.53 from 0.48 (nnU-Net). These segmentation enhancements led to more accurate clinical measurements, reducing the lumen diameter MAE to 4.19 mm from 5.78 mm and the thrombus area error to 33.85% from 41.45% when compared to nnU-Net. Code is available at https://github.com/yuxuanou623/AortaDiff.git.
-]]></content:encoded>
-<pubDate>Fri, 03 Oct 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>From Videos to Indexed Knowledge Graphs -- Framework to Marry Methods for Multimodal Content Analysis and Understanding</title>
-<link>https://arxiv.org/abs/2510.01513</link>
-<guid>https://arxiv.org/abs/2510.01513</guid>
-<content:encoded><![CDATA[
-<div> Keywords: multi-modal content analysis, pre-trained models, videos, knowledge graph, continual learning
-
-Summary:
-This paper introduces a framework for prototyping pipelines for multi-modal content analysis, addressing the challenges of combining pre-trained models with complex data like videos. The framework proposes a recipe that utilizes a set of pre-trained models to convert videos into a temporal semi-structured data format. It further transforms this data into a frame-level indexed knowledge graph representation, allowing for query-able and continual learning capabilities. The system enables the dynamic integration of new domain-specific knowledge through interactive means, facilitating knowledge expansion and evolution over time. This approach streamlines the computational process of analyzing multi-modal content and enhances the efficiency and effectiveness of content analysis tasks. The framework offers a flexible and interactive platform for developing and refining multi-modal content analysis pipelines, making it easier for researchers and practitioners to explore and leverage pre-trained models in the context of videos. 
-
-<br /><br />Summary: <div>
-arXiv:2510.01513v1 Announce Type: new 
-Abstract: Analysis of multi-modal content can be tricky, computationally expensive, and require a significant amount of engineering efforts. Lots of work with pre-trained models on static data is out there, yet fusing these opensource models and methods with complex data such as videos is relatively challenging. In this paper, we present a framework that enables efficiently prototyping pipelines for multi-modal content analysis. We craft a candidate recipe for a pipeline, marrying a set of pre-trained models, to convert videos into a temporal semi-structured data format. We translate this structure further to a frame-level indexed knowledge graph representation that is query-able and supports continual learning, enabling the dynamic incorporation of new domain-specific knowledge through an interactive medium.
-]]></content:encoded>
-<pubDate>Fri, 03 Oct 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>WALT: Web Agents that Learn Tools</title>
-<link>https://arxiv.org/abs/2510.01524</link>
-<guid>https://arxiv.org/abs/2510.01524</guid>
-<content:encoded><![CDATA[
-<div> Framework, Web agents, Automation, Tool invocation, Browser tasks  
-Summary:  
-WALT (Web Agents that Learn Tools) is a framework that aims to enhance browser automation by reverse-engineering website functionality into reusable tools. Instead of relying on step-by-step UI interactions, WALT enables agents to call high-level operations such as search, filter, and sort, shifting the computational burden from fragile reasoning to reliable tool invocation. By abstracting away low-level execution details, WALT allows agents to achieve higher success rates with fewer steps and less dependency on heavy LLM reasoning. The framework exposes robust implementations of automations already present in websites, including discovery, communication, and content management tasks. Through experiments on VisualWebArena and WebArena, WALT demonstrates a more robust and generalizable approach to browser automation.  
-<br /><br />Summary: <div>
-arXiv:2510.01524v1 Announce Type: new 
-Abstract: Web agents promise to automate complex browser tasks, but current methods remain brittle -- relying on step-by-step UI interactions and heavy LLM reasoning that break under dynamic layouts and long horizons. Humans, by contrast, exploit website-provided functionality through high-level operations like search, filter, and sort. We introduce WALT (Web Agents that Learn Tools), a framework that reverse-engineers latent website functionality into reusable invocable tools. Rather than hypothesizing ad-hoc skills, WALT exposes robust implementations of automations already designed into websites -- spanning discovery (search, filter, sort), communication (post, comment, upvote), and content management (create, edit, delete). Tools abstract away low-level execution: instead of reasoning about how to click and type, agents simply call search(query) or create(listing). This shifts the computational burden from fragile step-by-step reasoning to reliable tool invocation. On VisualWebArena and WebArena, WALT achieves higher success with fewer steps and less LLM-dependent reasoning, establishing a robust and generalizable paradigm for browser automation.
 ]]></content:encoded>
 <pubDate>Fri, 03 Oct 2025 00:00:00 -0400</pubDate>
 </item>
