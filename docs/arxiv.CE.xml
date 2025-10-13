@@ -4,6 +4,7 @@
 <title>cs.CE updates on arXiv.org</title>
 <link>http://rss.arxiv.org/rss/cs.CE</link>
 
+
 <item>
 <title>Few-shot Molecular Property Prediction: A Survey</title>
 <link>https://arxiv.org/abs/2510.08900</link>
@@ -17,22 +18,20 @@ arXiv:2510.08900v1 Announce Type: new
 Abstract: AI-assisted molecular property prediction has become a promising technique in early-stage drug discovery and materials design in recent years. However, due to high-cost and complex wet-lab experiments, real-world molecules usually experience the issue of scarce annotations, leading to limited labeled data for effective supervised AI model learning. In light of this, few-shot molecular property prediction (FSMPP) has emerged as an expressive paradigm that enables learning from only a few labeled examples. Despite rapidly growing attention, existing FSMPP studies remain fragmented, without a coherent framework to capture methodological advances and domain-specific challenges. In this work, we present the first comprehensive and systematic survey of few-shot molecular property prediction. We begin by analyzing the few-shot phenomenon in molecular datasets and highlighting two core challenges: (1) cross-property generalization under distribution shifts, where each task corresponding to each property, may follow a different data distribution or even be inherently weakly related to others from a biochemical perspective, requiring the model to transfer knowledge across heterogeneous prediction tasks, and (2) cross-molecule generalization under structural heterogeneity, where molecules involved in different or same properties may exhibit significant structural diversity, making model difficult to achieve generalization. Then, we introduce a unified taxonomy that organizes existing methods into data, model, and learning paradigm levels, reflecting their strategies for extracting knowledge from scarce supervision in few-shot molecular property prediction. Next, we compare representative methods, summarize benchmark datasets and evaluation protocols. In the end, we identify key trends and future directions for advancing the continued research on FSMPP.
 ]]></content:encoded>
 <pubDate>Mon, 13 Oct 2025 00:00:00 -0400</pubDate>
-<pubDate>Mon, 13 Oct 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
 <title>Smooth Uncertainty Sets: Dependence of Uncertain Parameters via a Simple Polyhedral Set</title>
 <link>https://arxiv.org/abs/2510.08843</link>
 <guid>https://arxiv.org/abs/2510.08843</guid>
 <content:encoded><![CDATA[
-<div> Algorithm, Robust optimization, Uncertainty set, Pairwise differences, Numerical experiments <br> 
-<br>Summary: 
+<div> Algorithm, Robust optimization, Uncertainty set, Pairwise differences, Numerical experiments <br /> 
+<br />Summary: 
 The article introduces a novel polyhedral uncertainty set called the smooth uncertainty set for robust optimization. This set captures dependencies between uncertain parameters by constraining their pairwise differences. The bounds on these differences can be determined based on expert knowledge or correlations. Specialized solution methods are explored, including compact reformulations and a column generation algorithm. Numerical experiments show that the smooth uncertainty set model performs similarly to the ellipsoidal uncertainty model but with shorter running times. Additionally, a column-generation algorithm proves to be more efficient than traditional approaches in terms of solution time and memory consumption. <div>
 arXiv:2510.08843v1 Announce Type: cross 
 Abstract: We propose a novel polyhedral uncertainty set for robust optimization, termed the smooth uncertainty set, which captures dependencies of uncertain parameters by constraining their pairwise differences. The bounds on these differences may be dictated by the underlying physics of the problem and may be expressed by domain experts. When correlations are available, the bounds can be set
   to ensure that the associated probabilistic constraints are satisfied for any given probability. We explore specialized solution methods for the resulting optimization problems, including compact reformulations that exploit special structures when
   they appear, a column generation algorithm, and a reformulation of the adversarial problem as a minimum-cost flow problem. Our numerical experiments, based on problems from literature, illustrate (i) that the performance of the smooth uncertainty set model solution is similar to that of the ellipsoidal uncertainty model solution, albeit, it is computed within significantly shorter running times, and (ii) our column-generation algorithm can outperform the classical cutting plane algorithm and dualized reformulation, respectively in terms of solution time and memory consumption.
 ]]></content:encoded>
-<pubDate>Mon, 13 Oct 2025 00:00:00 -0400</pubDate>
 <pubDate>Mon, 13 Oct 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -53,22 +52,20 @@ arXiv:2510.08865v1 Announce Type: cross
 Abstract: Many science and engineering problems rely on expensive computational simulations, where a multi-fidelity approach can accelerate the exploration of a parameter space. We study efficient allocation of a simulation budget using a Gaussian Process (GP) model in the binary simulation output case. This paper introduces Bernoulli Parameter Mutual Information (BPMI), a batch active learning algorithm for multi-fidelity GP classifiers. BPMI circumvents the intractability of calculating mutual information in the probability space by employing a first-order Taylor expansion of the link function. We evaluate BPMI against several baselines on two synthetic test cases and a complex, real-world application involving the simulation of a laser-ignited rocket combustor. In all experiments, BPMI demonstrates superior performance, achieving higher predictive accuracy for a fixed computational budget.
 ]]></content:encoded>
 <pubDate>Mon, 13 Oct 2025 00:00:00 -0400</pubDate>
-<pubDate>Mon, 13 Oct 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
 <title>FinAuditing: A Financial Taxonomy-Structured Multi-Document Benchmark for Evaluating LLMs</title>
 <link>https://arxiv.org/abs/2510.08886</link>
 <guid>https://arxiv.org/abs/2510.08886</guid>
 <content:encoded><![CDATA[
-<div> benchmark, financial auditing, LLMs, structured reasoning, taxonomy<br>
-Summary:<br>
+<div> benchmark, financial auditing, LLMs, structured reasoning, taxonomy<br />
+Summary:<br />
 The article introduces FinAuditing, a benchmark for evaluating large language models (LLMs) on financial auditing tasks. It focuses on structured auditing reasoning using real US-GAAP-compliant XBRL filings, defining subtasks for semantic, relational, and numerical consistency. The evaluation framework integrates metrics across these subtasks. Experiments on 13 LLMs show inconsistent performance, particularly in reasoning over hierarchical structures, with accuracy drops up to 60-90%. The study reveals limitations in current LLMs for financial reasoning and highlights the need for structure-aware systems. FinAuditing aims to develop reliable financial intelligence systems aligned with regulations. The benchmark dataset is accessible through Hugging Face. 
 
-<br>Summary: <div>
+<br />Summary: <div>
 arXiv:2510.08886v1 Announce Type: cross 
 Abstract: The complexity of the Generally Accepted Accounting Principles (GAAP) and the hierarchical structure of eXtensible Business Reporting Language (XBRL) filings make financial auditing increasingly difficult to automate and verify. While large language models (LLMs) have demonstrated strong capabilities in unstructured text understanding, their ability to reason over structured, interdependent, and taxonomy-driven financial documents remains largely unexplored. To fill this gap, we introduce FinAuditing, the first taxonomy-aligned, structure-aware, multi-document benchmark for evaluating LLMs on financial auditing tasks. Built from real US-GAAP-compliant XBRL filings, FinAuditing defines three complementary subtasks, FinSM for semantic consistency, FinRE for relational consistency, and FinMR for numerical consistency, each targeting a distinct aspect of structured auditing reasoning. We further propose a unified evaluation framework integrating retrieval, classification, and reasoning metrics across these subtasks. Extensive zero-shot experiments on 13 state-of-the-art LLMs reveal that current models perform inconsistently across semantic, relational, and mathematical dimensions, with accuracy drops of up to 60-90% when reasoning over hierarchical multi-document structures. Our findings expose the systematic limitations of modern LLMs in taxonomy-grounded financial reasoning and establish FinAuditing as a foundation for developing trustworthy, structure-aware, and regulation-aligned financial intelligence systems. The benchmark dataset is available at Hugging Face.
 ]]></content:encoded>
-<pubDate>Mon, 13 Oct 2025 00:00:00 -0400</pubDate>
 <pubDate>Mon, 13 Oct 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -76,18 +73,17 @@ Abstract: The complexity of the Generally Accepted Accounting Principles (GAAP) 
 <link>https://arxiv.org/abs/2510.08986</link>
 <guid>https://arxiv.org/abs/2510.08986</guid>
 <content:encoded><![CDATA[
-<div> Keywords: CAPC-CG, Chinese policy directives, annotation, adaptive policy communication, NLP research<br>
-Summary:<br>
+<div> Keywords: CAPC-CG, Chinese policy directives, annotation, adaptive policy communication, NLP research<br />
+Summary:<br />
 - The Chinese Adaptive Policy Communication (Central Government) Corpus (CAPC-CG) is introduced as the first open dataset of Chinese policy directives annotated with a five-color taxonomy of clear and ambiguous language categories.
 - The corpus spans from 1949 to 2023, including national laws, administrative regulations, and ministerial rules issued by China's top authorities, totaling 3.3 million units.
 - Comprehensive metadata, a two-round labeling framework, and a gold-standard annotation set developed by expert and trained coders are provided alongside the corpus.
 - Inter-annotator agreement achieves high reliability for supervised modeling, indicated by Fleiss's kappa of K = 0.86 on directive labels.
-- Baseline classification results using large language models (LLMs) are presented, along with an annotation codebook and patterns from the dataset. This release aims to support downstream tasks and multilingual NLP research in policy communication.<br> 
+- Baseline classification results using large language models (LLMs) are presented, along with an annotation codebook and patterns from the dataset. This release aims to support downstream tasks and multilingual NLP research in policy communication.<br /> 
 Summary: <div>
 arXiv:2510.08986v1 Announce Type: cross 
 Abstract: We introduce CAPC-CG, the Chinese Adaptive Policy Communication (Central Government) Corpus, the first open dataset of Chinese policy directives annotated with a five-color taxonomy of clear and ambiguous language categories, building on Ang's theory of adaptive policy communication. Spanning 1949-2023, this corpus includes national laws, administrative regulations, and ministerial rules issued by China's top authorities. Each document is segmented into paragraphs, producing a total of 3.3 million units. Alongside the corpus, we release comprehensive metadata, a two-round labeling framework, and a gold-standard annotation set developed by expert and trained coders. Inter-annotator agreement achieves a Fleiss's kappa of K = 0.86 on directive labels, indicating high reliability for supervised modeling. We provide baseline classification results with several large language models (LLMs), together with our annotation codebook, and describe patterns from the dataset. This release aims to support downstream tasks and multilingual NLP research in policy communication.
 ]]></content:encoded>
-<pubDate>Mon, 13 Oct 2025 00:00:00 -0400</pubDate>
 <pubDate>Mon, 13 Oct 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -95,13 +91,12 @@ Abstract: We introduce CAPC-CG, the Chinese Adaptive Policy Communication (Centr
 <link>https://arxiv.org/abs/2510.09498</link>
 <guid>https://arxiv.org/abs/2510.09498</guid>
 <content:encoded><![CDATA[
-<div> discovery, constitutive models, parameter identification, orthotropic, uncertainty quantification <br>
-<br>
+<div> discovery, constitutive models, parameter identification, orthotropic, uncertainty quantification <br />
+<br />
 Summary: In the study, the authors address the challenge of capturing complex tissue behavior in traditional testing methods by using heterogeneous deformation profiles. They employ the EUCLID method, along with Bayesian inference and three-dimensional continuum elements, to identify material model parameters for highly nonlinear, orthotropic constitutive models. The approach demonstrates success in quantitatively inferring these parameters from a single heterogeneous biaxial stretch test, even in the presence of noise. The results show good agreement with ground-truth simulations and credibility intervals, highlighting the potential for characterizing such material models with uncertainty quantification from a single test. This method offers a promising avenue for efficient parameter estimation in tissue testing, reducing the need for multiple samples and extensive manipulations. <div>
 arXiv:2510.09498v1 Announce Type: cross 
 Abstract: Fully capturing this behavior in traditional homogenized tissue testing requires the excitation of multiple deformation modes, i.e. combined triaxial shear tests and biaxial stretch tests. Inherently, such multimodal experimental protocols necessitate multiple tissue samples and extensive sample manipulations. Intrinsic inter-sample variability and manipulation-induced tissue damage might have an adverse effect on the inversely identified tissue behavior. In this work, we aim to overcome this gap by focusing our attention to the use of heterogeneous deformation profiles in a parameter estimation problem. More specifically, we adapt EUCLID, an unsupervised method for the automated discovery of constitutive models, towards the purpose of parameter identification for highly nonlinear, orthotropic constitutive models using a Bayesian inference approach and three-dimensional continuum elements. We showcase its strength to quantitatively infer, with varying noise levels, the material model parameters of synthetic myocardial tissue slabs from a single heterogeneous biaxial stretch test. This method shows good agreement with the ground-truth simulations and with corresponding credibility intervals. Our work highlights the potential for characterizing highly nonlinear and orthotropic material models from a single biaxial stretch test with uncertainty quantification.
 ]]></content:encoded>
-<pubDate>Mon, 13 Oct 2025 00:00:00 -0400</pubDate>
 <pubDate>Mon, 13 Oct 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -109,16 +104,14 @@ Abstract: Fully capturing this behavior in traditional homogenized tissue testin
 <link>https://arxiv.org/abs/2504.12613</link>
 <guid>https://arxiv.org/abs/2504.12613</guid>
 <content:encoded><![CDATA[
-<div> Keywords: reflection coefficients, antennas, planar layered media, spherical vector wave functions, numerical implementation <br>
+<div> Keywords: reflection coefficients, antennas, planar layered media, spherical vector wave functions, numerical implementation <br />
 Summary: 
-A rigorous method for evaluating reflection coefficients of antennas above planar layered media is presented. The approach uses the antenna's generalized scattering matrix (GSM) expressed in spherical vector wave functions (SVWFs) and spherical-to-planar vector wave transformations to model interaction with the layered structure. This formulation reduces algebraic complexity, enabling fast numerical implementation with high accuracy. Each evaluation for a specific configuration can be completed within milliseconds, offering significant speed improvement over full-wave solvers like FEKO. The method is suitable for real-time electromagnetic characterization and inverse modeling in planar layered environments. <br><br>Summary: <div>
+A rigorous method for evaluating reflection coefficients of antennas above planar layered media is presented. The approach uses the antenna's generalized scattering matrix (GSM) expressed in spherical vector wave functions (SVWFs) and spherical-to-planar vector wave transformations to model interaction with the layered structure. This formulation reduces algebraic complexity, enabling fast numerical implementation with high accuracy. Each evaluation for a specific configuration can be completed within milliseconds, offering significant speed improvement over full-wave solvers like FEKO. The method is suitable for real-time electromagnetic characterization and inverse modeling in planar layered environments. <br /><br />Summary: <div>
 arXiv:2504.12613v2 Announce Type: replace 
 Abstract: A rigorous and computationally efficient method is presented for evaluating the reflection coefficients of antennas operating above planar layered media. The approach reformulates the problem within the framework of the antenna's generalized scattering matrix (GSM), expressed in terms of spherical vector wave functions (SVWFs). The mutual interaction between the antenna and the layered structure is modeled through spherical-to-planar vector wave transformations that incorporate the exact Fresnel reflection response of the medium, without introducing any simplifying approximations. This formulation dramatically reduces algebraic complexity and enables fast, stable numerical implementation. Excluding the one-time preprocessing required to obtain the antenna's free-space GSM, each evaluation for a given layered configuration can be completed within milliseconds -- achieving several orders of magnitude speed improvement over full-wave solvers such as FEKO, while maintaining virtually identical accuracy. The proposed framework thus provides a powerful foundation for real-time electromagnetic characterization and inverse modeling involving planar layered environments.
 ]]></content:encoded>
 <pubDate>Mon, 13 Oct 2025 00:00:00 -0400</pubDate>
-<pubDate>Mon, 13 Oct 2025 00:00:00 -0400</pubDate>
 </item>
-
 <item>
 <title>IKNet: Interpretable Stock Price Prediction via Keyword-Guided Integration of News and Technical Indicators</title>
 <link>https://arxiv.org/abs/2510.07661</link>
@@ -14487,109 +14480,6 @@ arXiv:2505.01627v1 Announce Type: cross
 Abstract: The conceptual design phase represents a critical early stage in the product development process, where designers generate potential solutions that meet predefined design specifications based on functional requirements. Functional modeling, a foundational aspect of this phase, enables designers to reason about product functions before specific structural details are determined. A widely adopted approach to functional modeling is the Function-Behavior-Structure (FBS) framework, which supports the transformation of functional intent into behavioral and structural descriptions. However, the effectiveness of function-based design is often hindered by the lack of well-structured and comprehensive functional data. This scarcity can negatively impact early design decision-making and hinder the development of accurate behavioral models. Recent advances in Large Language Models (LLMs), such as those based on GPT architectures, offer a promising avenue to address this gap. LLMs have demonstrated significant capabilities in language understanding and natural language processing (NLP), making them suitable for automated classification tasks. This study proposes a novel LLM-based domain adaptation (DA) framework using fine-tuning for the automated classification of mechanical assembly parts' functions. By fine-tuning LLMs on domain-specific datasets, the traditionally manual and subjective process of function annotation can be improved in both accuracy and consistency. A case study demonstrates fine-tuning GPT-3.5 Turbo on data from the Oregon State Design Repository (OSDR), and evaluation on the A Big CAD (ABC) dataset shows that the domain-adapted LLM can generate high-quality functional data, enhancing the semantic representation of mechanical parts and supporting more effective design exploration in early-phase engineering.
 ]]></content:encoded>
 <pubDate>Tue, 06 May 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Strengthening Infrastructure Resilience to Hurricanes by Modeling Transportation and Electric Power Network Interdependencies</title>
-<link>https://arxiv.org/abs/2404.12978</link>
-<guid>https://arxiv.org/abs/2404.12978</guid>
-<content:encoded><![CDATA[
-<div> agent-based model, resilience, hurricane, infrastructure disruptions, interdependencies
-
-Summary:
-The study introduces an agent-based model (ABM) to analyze community resilience to hurricane-induced infrastructure disruptions, specifically focusing on the interconnections between electric power and transportation networks. Agents in the ABM represent different system components, such as electric power network, transportation network, hazards, and households. By considering interactions within and among systems, the model simulates household resilience during a hurricane in Miami-Dade County, Florida. The model incorporates two key interdependencies: the role of transportation in fuel delivery to power plants and restoration teams' access, as well as the impact of power outages on transportation network components. Validated against Hurricane Irma data, the ABM demonstrates the effectiveness of a traffic lights-based restoration strategy, prioritizing signal recovery to minimize traffic disruptions and accelerate household power restoration. The study emphasizes the importance of timely traffic signal restoration, road accessibility for restoration teams, and uninterrupted fuel transportation for efficient power restoration in hurricane scenarios. 
-
-<br /><br />Summary: <div>
-arXiv:2404.12978v2 Announce Type: replace 
-Abstract: This study presents an agent-based model (ABM) developed to simulate the resilience of a community to hurricane-induced infrastructure disruptions, focusing on the interdependencies between electric power and transportation networks. In this ABM approach, agents represent the components of a system, where interactions within a system shape intra-dependency of a system and interactions among systems shape interdependencies. To study household resilience subject to a hurricane, a library of agents has been created including electric power network, transportation network, wind/flooding hazards, and household agents. The ABM is applied over the household and infrastructure data from a community (Zip code 33147) in Miami-Dade County, Florida. Interdependencies between the two networks are modeled in two ways, (i) representing the role of transportation in fuel delivery to power plants and restoration teams' access, (ii) impact of power outage on transportation network components. Restoring traffic signals quickly is crucial as their outage can slow down traffic and increase the chance of crashes. We simulate three restoration strategies: component based, distance based, and traffic lights based restoration. The model is validated against Hurricane Irma data, showing consistent behavior with varying hazard intensities. Scenario analyses explore the impact of restoration strategies, road accessibility, and wind speed intensities on power restoration. Results demonstrate that a traffic lights based restoration strategy efficiently prioritizes signal recovery without delaying household power restoration time. Restoration of power services will be faster if restoration teams do not need to wait due to inaccessible roads and fuel transportation to power plants is not delayed.
-]]></content:encoded>
-<pubDate>Tue, 06 May 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>A finite strain model for fiber angle plasticity of textile fabrics based on isogeometric shell finite elements</title>
-<link>https://arxiv.org/abs/2412.20131</link>
-<guid>https://arxiv.org/abs/2412.20131</guid>
-<content:encoded><![CDATA[
-<div> shear elastoplasticity model, textile fabrics, anisotropic Kirchhoff-Love shells, plasticity, frictional sliding <br />
-Summary: <br />
-This work introduces a shear elastoplasticity model for textile fabrics based on anisotropic Kirchhoff-Love shells with embedded fiber bending. The model accounts for rotational inter-ply frictional sliding between fiber families in textile composites experiencing large deformation, emphasizing dry fabrics like woven and non-crimp fabrics. Utilizing relative angles between fiber families as strain measures, the model is formulated using surface invariants without thickness integration. A yield function with isotropic hardening and simple evolution equation is proposed, calibrated using the picture frame test, and validated with experimental data like the bias extension test. The elastoplastic model's accuracy is confirmed through good agreement with experimental results, and its application to 3D shell problems is demonstrated. <div>
-arXiv:2412.20131v2 Announce Type: replace 
-Abstract: This work presents a shear elastoplasticity model for textile fabrics within the theoretical framework of anisotropic Kirchhoff-Love shells with bending of embedded fibers proposed by Duong et al. (2023). The plasticity model aims at capturing the rotational inter-ply frictional sliding between fiber families in textile composites undergoing large deformation. Such effects are usually dominant in dry textile fabrics such as woven and non-crimp fabrics. The model explicitly uses relative angles between fiber families as strain measures for the kinematics. The plasticity model is formulated directly with surface invariants without resorting to thickness integration. Motivated by experimental observations from the picture frame test, a yield function is proposed with isotropic hardening and a simple evolution equation. A classical return mapping algorithm is employed to solve the elastoplastic problem within the isogeometric finite shell element formulation of Duong et al. (2022). The verification of the implementation is facilitated by the analytical solution for the picture frame test. The proposed plasticity model is calibrated from the picture frame test and is then validated by the bias extension test, considering available experimental data for different samples from the literature. Good agreement between model prediction and experimental data is obtained. Finally, the applicability of the elastoplasticity model to 3D shell problems is demonstrated.
-]]></content:encoded>
-<pubDate>Tue, 06 May 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>RiskLabs: Predicting Financial Risk Using Large Language Model based on Multimodal and Multi-Sources Data</title>
-<link>https://arxiv.org/abs/2404.07452</link>
-<guid>https://arxiv.org/abs/2404.07452</guid>
-<content:encoded><![CDATA[
-<div> framework, LLMs, financial risk prediction, RiskLabs, multimodal data <br />
-Summary: <br />
-This paper introduces RiskLabs, a framework that utilizes large language models (LLMs) to predict financial risks by integrating multimodal financial data sources such as Earnings Conference Calls (ECCs), market-related time series data, and contextual news data. The study demonstrates the effectiveness of RiskLabs in forecasting market volatility and variance. It examines the contributions of different data sources to financial risk assessment and emphasizes the importance of LLMs in this process. The paper also discusses the challenges associated with using LLMs for financial risk prediction and explores the potential benefits of combining LLMs with multimodal data for enhanced risk analysis. <div>
-arXiv:2404.07452v2 Announce Type: replace-cross 
-Abstract: The integration of Artificial Intelligence (AI) techniques, particularly large language models (LLMs), in finance has garnered increasing academic attention. Despite progress, existing studies predominantly focus on tasks like financial text summarization, question-answering, and stock movement prediction (binary classification), the application of LLMs to financial risk prediction remains underexplored. Addressing this gap, in this paper, we introduce RiskLabs, a novel framework that leverages LLMs to analyze and predict financial risks. RiskLabs uniquely integrates multimodal financial data, including textual and vocal information from Earnings Conference Calls (ECCs), market-related time series data, and contextual news data to improve financial risk prediction. Empirical results demonstrate RiskLabs' effectiveness in forecasting both market volatility and variance. Through comparative experiments, we examine the contributions of different data sources to financial risk assessment and highlight the crucial role of LLMs in this process. We also discuss the challenges associated with using LLMs for financial risk prediction and explore the potential of combining them with multimodal data for this purpose.
-]]></content:encoded>
-<pubDate>Tue, 06 May 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>A Spectral-based Physics-informed Finite Operator Learning for Prediction of Mechanical Behavior of Microstructures</title>
-<link>https://arxiv.org/abs/2410.19027</link>
-<guid>https://arxiv.org/abs/2410.19027</guid>
-<content:encoded><![CDATA[
-<div> operator learning, spectral methods, heterogeneous materials, physics-informed, microstructures<br />
-<br />
-Summary: A novel physics-informed operator learning technique based on spectral methods introduces the Lippmann-Schwinger operator in Fourier space to model heterogeneous materials. The method accelerates training by enabling gradient construction on a fixed discretization in Fourier space and maps microstructure shapes to mechanical responses without labeled data. Training minimizes equilibrium in Fourier space under loading conditions, ensuring periodicity. Physically constrained and diverse training data enhance accuracy, although performance may degrade for out-of-distribution microstructures. Integration of a Fourier Neural Operator improves accuracy in predicting stress fields and offers zero-shot super-resolution capabilities in heterogeneous domains. Extension to handle 3D problems and adaptation to finite elasticity demonstrate robustness in handling nonlinear mechanical behavior. This framework shows promise for efficient and scalable prediction of mechanical responses in complex material systems while reducing training time for physics-informed neural operators. <br /><br /> <div>
-arXiv:2410.19027v3 Announce Type: replace-cross 
-Abstract: A novel physics-informed operator learning technique based on spectral methods is introduced to model the complex behavior of heterogeneous materials. The Lippmann-Schwinger operator in Fourier space is employed to construct physical constraints with minimal computational overhead, effectively eliminating the need for automatic differentiation. The introduced methodology accelerates the training process by enabling gradient construction on a fixed, finite discretization in Fourier space. Later, the spectral physics-informed finite operator learning (SPiFOL) framework is built based on this discretization and trained to map the arbitrary shape of microstructures to their mechanical responses (strain fields) without relying on labeled data. The training is done by minimizing equilibrium in Fourier space concerning the macroscopic loading condition, which also guarantees the periodicity. SPiFOL, as a physics-informed operator learning method, enables rapid predictions through forward inference after training. To ensure accuracy, we incorporate physical constraints and diversify the training data. However, performance may still degrade for out-of-distribution microstructures. SPiFOL is further enhanced by integrating a Fourier Neural Operator (FNO). Compared to the standard data-driven FNO, SPiFOL shows higher accuracy in predicting stress fields and provides nearly resolution-independent results. Additionally, its zero-shot super-resolution capabilities are explored in heterogeneous domains. Finally, SPiFOL is extended to handle 3D problems and further adapted to finite elasticity, demonstrating the robustness of the framework in handling nonlinear mechanical behavior. The framework shows great potential for efficient and scalable prediction of mechanical responses in complex material systems while also reducing the training time required for training physics-informed neural operators.
-]]></content:encoded>
-<pubDate>Tue, 06 May 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>CryptoMamba: Leveraging State Space Models for Accurate Bitcoin Price Prediction</title>
-<link>https://arxiv.org/abs/2501.01010</link>
-<guid>https://arxiv.org/abs/2501.01010</guid>
-<content:encoded><![CDATA[
-<div> State Space Model, cryptocurrency, Bitcoin, forecasting, financial data
-<br />
-Summary:
-<br />
-- The study addresses the challenge of predicting Bitcoin prices due to market volatility and dynamics.
-- Traditional models like ARIMA and neural networks struggle with regime shifts and dependencies in data.
-- The proposed CryptoMamba, a Mamba-based State Space Model, effectively captures long-range dependencies.
-- CryptoMamba outperforms previous models in accuracy and generalizability across market conditions.
-- The model's practical utility is demonstrated through accurate forecasts translating into financial gains, making it advantageous for stock and cryptocurrency price forecasting tasks. 
-<br /> <div>
-arXiv:2501.01010v2 Announce Type: replace-cross 
-Abstract: Predicting Bitcoin price remains a challenging problem due to the high volatility and complex non-linear dynamics of cryptocurrency markets. Traditional time-series models, such as ARIMA and GARCH, and recurrent neural networks, like LSTMs, have been widely applied to this task but struggle to capture the regime shifts and long-range dependencies inherent in the data. In this work, we propose CryptoMamba, a novel Mamba-based State Space Model (SSM) architecture designed to effectively capture long-range dependencies in financial time-series data. Our experiments show that CryptoMamba not only provides more accurate predictions but also offers enhanced generalizability across different market conditions, surpassing the limitations of previous models. Coupled with trading algorithms for real-world scenarios, CryptoMamba demonstrates its practical utility by translating accurate forecasts into financial outcomes. Our findings signal a huge advantage for SSMs in stock and cryptocurrency price forecasting tasks.
-]]></content:encoded>
-<pubDate>Tue, 06 May 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Transforming physics-informed machine learning to convex optimization</title>
-<link>https://arxiv.org/abs/2505.01047</link>
-<guid>https://arxiv.org/abs/2505.01047</guid>
-<content:encoded><![CDATA[
-<div> Machine Learning, Physics-Informed, Convex Optimization, B-splines, Adaptive Knot Optimization
-
-Summary:
-Convex-PIML is a framework proposed to address optimization challenges in Physics-Informed Machine Learning (PIML). By transforming PIML into convex optimization, the framework overcomes limitations and enables effective integration of data with physical laws. The use of linear combination of B-splines promotes the convexity of the loss function, allowing well-established convex optimization algorithms to be utilized for efficient solutions. An adaptive knot optimization method tackles the spectral bias issue of PIML, enhancing performance. The framework is theoretically guaranteed and tested across scenarios with various physical priors, demonstrating effective solution of optimization problems. Convex-PIML shows promise for diverse applications by offering a comprehensive approach to combining data and physics for scientific problem-solving. <br /><br />Summary: <div>
-arXiv:2505.01047v1 Announce Type: new 
-Abstract: Physics-Informed Machine Learning (PIML) offers a powerful paradigm of integrating data with physical laws to address important scientific problems, such as parameter estimation, inferring hidden physics, equation discovery, and state prediction, etc. However, PIML still faces many serious optimization challenges that significantly restrict its applications. In this study, we propose a comprehensive framework that transforms PIML to convex optimization to overcome all these limitations, referred to as Convex-PIML. The linear combination of B-splines is utilized to approximate the data, promoting the convexity of the loss function. By replacing the non-convex components of the loss function with convex approximations, the problem is further converted into a sequence of successively refined approximated convex optimization problems. This conversion allows the use of well-established convex optimization algorithms, obtaining solutions effectively and efficiently. Furthermore, an adaptive knot optimization method based on error estimate is introduced to mitigate the spectral bias issue of PIML, further improving the performance. The proposed theoretically guaranteed framework is tested in scenarios with distinct types of physical prior. The results indicate that optimization problems are effectively solved in these scenarios, highlighting the potential of the framework for broad applications.
-]]></content:encoded>
-<pubDate>Mon, 05 May 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Reduced-order structure-property linkages for stochastic metamaterials</title>
-<link>https://arxiv.org/abs/2505.01283</link>
-<guid>https://arxiv.org/abs/2505.01283</guid>
-<content:encoded><![CDATA[
-<div> additive manufacturing, mechanical metamaterials, unit cell geometries, materials informatics framework, Gaussian process regression
-
-Summary:<br />
-The article discusses the efficient design and evaluation of mechanical metamaterials using additive manufacturing. It emphasizes the need to establish connections between unit cell designs and their mechanical properties, which can be computationally intensive. The study employs principal component analysis to identify key features from a large dataset of 2D metamaterials. Fast Fourier transform-based simulations are utilized to calculate the effective elastic stiffness of different unit cell designs. Gaussian process regression is then applied to create reduced-order models mapping designs to their elastic constants. The research demonstrates the creation of robust structure-property maps through a low-dimensional representation of the dataset. Additionally, an active learning approach is used to train a surrogate model with minimal data points, showcasing the ability to generate accurate maps with a small fraction of the original dataset. <div>
-arXiv:2505.01283v1 Announce Type: new 
-Abstract: The capabilities of additive manufacturing have facilitated the design and production of mechanical metamaterials with diverse unit cell geometries. Establishing linkages between the vast design space of unit cells and their effective mechanical properties is critical for the efficient design and performance evaluation of such metamaterials. However, physics-based simulations of metamaterial unit cells across the entire design space are computationally expensive, necessitating a materials informatics framework to efficiently capture complex structure-property relationships. In this work, principal component analysis of 2-point correlation functions is performed to extract the salient features from a large dataset of randomly generated 2D metamaterials. Physics-based simulations are performed using a fast Fourier transform (FFT)-based homogenization approach to efficiently compute the homogenized effective elastic stiffness across the extensive unit cell designs. Subsequently, Gaussian process regression is used to generate reduced-order surrogates, mapping unit cell designs to their homogenized effective elastic constant. It is demonstrated that the adopted workflow enables a high-value low-dimensional representation of the voluminous stochastic metamaterial dataset, facilitating the construction of robust structure-property maps. Finally, an uncertainty-based active learning framework is utilized to train a surrogate model with a significantly smaller number of data points compared to the original full dataset. It is shown that a dataset as small as $0.61\%$ of the entire dataset is sufficient to generate accurate and robust structure-property maps.
-]]></content:encoded>
-<pubDate>Mon, 05 May 2025 00:00:00 -0400</pubDate>
 </item>
 </channel>
 </rss>
