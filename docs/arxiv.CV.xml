@@ -4,6 +4,7 @@
 <title>cs.CV updates on arXiv.org</title>
 <link>http://rss.arxiv.org/rss/cs.CV</link>
 
+
 <item>
 <title>Don't Just Chase "Highlighted Tokens" in MLLMs: Revisiting Visual Holistic Context Retention</title>
 <link>https://arxiv.org/abs/2510.02912</link>
@@ -14,11 +15,10 @@
 Summary: 
 The article discusses the challenges faced by Multimodal Large Language Models (MLLMs) due to the computational overhead caused by massive visual tokens. Existing token pruning methods focus on attention-first approaches, which may lead to a drop in performance at high pruning ratios. In response, the proposed HoloV framework offers a more holistic approach to visual token pruning. By distributing the pruning budget across spatial crops, HoloV ensures global visual context retention, minimizing information loss even with aggressive pruning. Experimental results show that HoloV outperforms state-of-the-art methods in various tasks, MLLM architectures, and pruning ratios. For example, utilizing HoloV, LLaVA1.5 maintains 95.8% of original performance after pruning 88.9% of visual tokens, striking a more efficient balance between accuracy and efficiency.
 
-<br><br>Summary: <div>
+<br /><br />Summary: <div>
 arXiv:2510.02912v2 Announce Type: replace 
 Abstract: Despite their powerful capabilities, Multimodal Large Language Models (MLLMs) suffer from considerable computational overhead due to their reliance on massive visual tokens. Recent studies have explored token pruning to alleviate this problem, which typically uses text-vision cross-attention or [\texttt{CLS}] attention to assess and discard redundant visual tokens. In this work, we identify a critical limitation of such attention-first pruning approaches, i.e., they tend to preserve semantically similar tokens, resulting in pronounced performance drops under high pruning ratios. To this end, we propose {HoloV}, a simple yet effective, plug-and-play visual token pruning framework for efficient inference. Distinct from previous attention-first schemes, HoloV rethinks token retention from a holistic perspective. By adaptively distributing the pruning budget across different spatial crops, HoloV ensures that the retained tokens capture the global visual context rather than isolated salient features. This strategy minimizes representational collapse and maintains task-relevant information even under aggressive pruning. Experimental results demonstrate that our HoloV achieves superior performance across various tasks, MLLM architectures, and pruning ratios compared to SOTA methods. For instance, LLaVA1.5 equipped with HoloV preserves 95.8\% of the original performance after pruning 88.9\% of visual tokens, achieving superior efficiency-accuracy trade-offs.
 ]]></content:encoded>
-<pubDate>Mon, 13 Oct 2025 00:00:00 -0400</pubDate>
 <pubDate>Mon, 13 Oct 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -37,9 +37,7 @@ arXiv:2507.23256v3 Announce Type: replace-cross
 Abstract: Brain cancer affects millions worldwide, and in nearly every clinical setting, doctors rely on magnetic resonance imaging (MRI) to diagnose and monitor gliomas. However, the current standard for tumor quantification through manual segmentation of multi-parametric MRI is time-consuming, requires expert radiologists, and is often infeasible in under-resourced healthcare systems. This problem is especially pronounced in low-income regions, where MRI scanners are of lower quality and radiology expertise is scarce, leading to incorrect segmentation and quantification. In addition, the number of acquired MRI scans in Africa is typically small. To address these challenges, the BraTS-Lighthouse 2025 Challenge focuses on robust tumor segmentation in sub-Saharan Africa (SSA), where resource constraints and image quality degradation introduce significant shifts. In this study, we present EMedNeXt -- an enhanced brain tumor segmentation framework based on MedNeXt V2 with deep supervision and optimized post-processing pipelines tailored for SSA. EMedNeXt introduces three key contributions: a larger region of interest, an improved nnU-Net v2-based architectural skeleton, and a robust model ensembling system. Evaluated on the hidden validation set, our solution achieved an average LesionWise DSC of 0.897 with an average LesionWise NSD of 0.541 and 0.84 at a tolerance of 0.5 mm and 1.0 mm, respectively.
 ]]></content:encoded>
 <pubDate>Mon, 13 Oct 2025 00:00:00 -0400</pubDate>
-<pubDate>Mon, 13 Oct 2025 00:00:00 -0400</pubDate>
 </item>
-
 <item>
 <title>Beyond CNNs: Efficient Fine-Tuning of Multi-Modal LLMs for Object Detection on Low-Data Regimes</title>
 <link>https://arxiv.org/abs/2510.08589</link>
@@ -11267,26 +11265,6 @@ Abstract: Recent advancements in generative models have revolutionized video syn
 <content:encoded><![CDATA[
 arXiv:2506.08896v4 Announce Type: replace 
 Abstract: To meet the growing demand for systematic surgical training, wet-lab environments have become indispensable platforms for hands-on practice in ophthalmology. Yet, traditional wet-lab training depends heavily on manual performance evaluations, which are labor-intensive, time-consuming, and often subject to variability. Recent advances in computer vision offer promising avenues for automated skill assessment, enhancing both the efficiency and objectivity of surgical education. Despite notable progress in ophthalmic surgical datasets, existing resources predominantly focus on real surgeries or isolated tasks, falling short of supporting comprehensive skill evaluation in controlled wet-lab settings. To address these limitations, we introduce WetCat, the first dataset of wet-lab cataract surgery videos specifically curated for automated skill assessment. WetCat comprises high-resolution recordings of surgeries performed by trainees on artificial eyes, featuring comprehensive phase annotations and semantic segmentations of key anatomical structures. These annotations are meticulously designed to facilitate skill assessment during the critical capsulorhexis and phacoemulsification phases, adhering to standardized surgical skill assessment frameworks. By focusing on these essential phases, WetCat enables the development of interpretable, AI-driven evaluation tools aligned with established clinical metrics. This dataset lays a strong foundation for advancing objective, scalable surgical education and sets a new benchmark for automated workflow analysis and skill assessment in ophthalmology training. The dataset and annotations are publicly available in Synapse.
-]]></content:encoded>
-<pubDate>Tue, 07 Oct 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Attention, Please! Revisiting Attentive Probing Through the Lens of Efficiency</title>
-<link>https://arxiv.org/abs/2506.10178</link>
-<guid>https://arxiv.org/abs/2506.10178</guid>
-<content:encoded><![CDATA[
-arXiv:2506.10178v2 Announce Type: replace 
-Abstract: As fine-tuning becomes increasingly impractical at scale, probing is emerging as the preferred evaluation protocol. Yet, the standard linear probing fails to adequately reflect the potential of models whose pre-training optimizes representations of patch tokens rather than an explicit global representation. This motivates the need for attentive probing, an alternative that uses attention to selectively aggregate patch-level features. Despite its growing adoption, attentive probing remains under-explored, with existing methods suffering from excessive parameterization and poor computational efficiency. In this work, we revisit attentive probing through the lens of the accuracy vs. parameter efficiency trade-off. We present the first comprehensive study of existing methods, analyzing their design choices and benchmarking their performance. Building on this, we propose efficient probing (EP), a simple yet effective multi-query cross-attention mechanism that eliminates redundant projections and reduces the number of trainable parameters. Despite its simplicity, EP outperforms linear probing and prior attentive probing approaches across seven benchmarks, generalizes well to diverse pre-training paradigms, and delivers strong low-shot and layer-wise gains. Beyond evaluation, our analysis uncovers emerging properties of EP, such as complementary attention maps, which open new directions for leveraging probing beyond protocol design. Code available at https://github.com/billpsomas/efficient-probing.
-]]></content:encoded>
-<pubDate>Tue, 07 Oct 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>SIRI-Bench: Challenging VLMs' Spatial Intelligence through Complex Reasoning Tasks</title>
-<link>https://arxiv.org/abs/2506.14512</link>
-<guid>https://arxiv.org/abs/2506.14512</guid>
-<content:encoded><![CDATA[
-arXiv:2506.14512v2 Announce Type: replace 
-Abstract: Large Language Models (LLMs) have undergone rapid progress, largely attributed to reinforcement learning on complex reasoning tasks. In contrast, while spatial intelligence is fundamental for Vision-Language Models (VLMs) in real-world interaction, the systematic study of their complex spatial reasoning remains underexplored. To bridge this gap, we introduce SIRI-Bench, a benchmark designed to evaluate VLMs' structural spatial intelligence through spatial-grounded reasoning tasks. SIRI-Bench comprises 9,000 video-question-answer triplets, where each problem is embedded in a realistic 3D scene. The benchmark is carefully designed so that solving each problem requires both spatial comprehension and structural reasoning. To facilitate large-scale data synthesis, we develop an Automatic Scene Creation Engine that employs collaborative LLM agents to translate abstract mathematical problems into faithful 3D scenes. Experimental results reveal that state-of-the-art VLMs struggle significantly on SIRI-Bench, underscoring the challenge of structural spatial reasoning. We hope that our study will bring researchers' attention to spatially grounded reasoning and advance VLMs in visual problem-solving.
 ]]></content:encoded>
 <pubDate>Tue, 07 Oct 2025 00:00:00 -0400</pubDate>
 </item>

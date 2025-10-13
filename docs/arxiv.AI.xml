@@ -4,19 +4,19 @@
 <title>cs.AI updates on arXiv.org</title>
 <link>http://rss.arxiv.org/rss/cs.AI</link>
 
+
 <item>
 <title>A Comprehensive Survey of Mamba Architectures for Medical Image Analysis: Classification, Segmentation, Restoration and Beyond</title>
 <link>https://arxiv.org/abs/2410.02362</link>
 <guid>https://arxiv.org/abs/2410.02362</guid>
 <content:encoded><![CDATA[
-<div> Medical imaging, Mamba, State Space Model, transformers, computational complexity<br>
-<br>
+<div> Medical imaging, Mamba, State Space Model, transformers, computational complexity<br />
+<br />
 Summary: 
 The paper discusses the benefits of using Mamba in medical image analysis, highlighting its advantages over template-based deep learning approaches and transformers. Mamba, a variant of the State Space Model, offers linear time complexity, enabling faster inference and reduced memory requirements compared to transformers. It can process long sequences without attention mechanisms efficiently, making it suitable for analyzing complex datasets with spatial and temporal relationships in medical imaging. The paper delves into various Mamba architectures, including pure Mamba, U-Net variants, and hybrid models with other neural networks. It also covers optimizations, techniques, datasets, applications, experimental results, and challenges faced by Mamba in medical imaging. Overall, the review emphasizes the transformative potential of Mamba in overcoming existing barriers in medical imaging and paving the way for innovative advancements in the field. <div>
 arXiv:2410.02362v3 Announce Type: replace-cross 
 Abstract: Mamba, a special case of the State Space Model, is gaining popularity as an alternative to template-based deep learning approaches in medical image analysis. While transformers are powerful architectures, they have drawbacks, including quadratic computational complexity and an inability to address long-range dependencies efficiently. This limitation affects the analysis of large and complex datasets in medical imaging, where there are many spatial and temporal relationships. In contrast, Mamba offers benefits that make it well-suited for medical image analysis. It has linear time complexity, which is a significant improvement over transformers. Mamba processes longer sequences without attention mechanisms, enabling faster inference and requiring less memory. Mamba also demonstrates strong performance in merging multimodal data, improving diagnosis accuracy and patient outcomes. The organization of this paper allows readers to appreciate the capabilities of Mamba in medical imaging step by step. We begin by defining core concepts of SSMs and models, including S4, S5, and S6, followed by an exploration of Mamba architectures such as pure Mamba, U-Net variants, and hybrid models with convolutional neural networks, transformers, and Graph Neural Networks. We also cover Mamba optimizations, techniques and adaptations, scanning, datasets, applications, experimental results, and conclude with its challenges and future directions in medical imaging. This review aims to demonstrate the transformative potential of Mamba in overcoming existing barriers within medical imaging while paving the way for innovative advancements in the field. A comprehensive list of Mamba architectures applied in the medical field, reviewed in this work, is available at Github.
 ]]></content:encoded>
-<pubDate>Mon, 13 Oct 2025 00:00:00 -0400</pubDate>
 <pubDate>Mon, 13 Oct 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -25,14 +25,13 @@ Abstract: Mamba, a special case of the State Space Model, is gaining popularity 
 <guid>https://arxiv.org/abs/2510.01171</guid>
 <content:encoded><![CDATA[
 <div> typicality bias, mode collapse, Verbalized Sampling, diversity, generative models
-<br>
-Summary:<br>
+<br />
+Summary:<br />
 The article explores the issue of mode collapse in language models, attributing it to a bias in preference data called typicality bias. This bias leads annotators to favor familiar text, reducing model diversity. The study introduces Verbalized Sampling (VS), a prompting strategy that addresses mode collapse by guiding models to verbalize probability distributions over responses. VS shows significant improvements in creative writing, dialogue simulation, open-ended QA, and data generation tasks without sacrificing accuracy and safety. Experiment results indicate a 1.6-2.1x increase in diversity in creative writing with VS. Additionally, the study finds that more advanced models benefit more from VS, suggesting its effectiveness in enhancing model capabilities. This data-centric approach provides insights into mode collapse and offers a practical solution to promote diversity in pre-trained generative models. 
-<br><br>Summary: <div>
+<br /><br />Summary: <div>
 arXiv:2510.01171v3 Announce Type: replace-cross 
 Abstract: Post-training alignment often reduces LLM diversity, leading to a phenomenon known as mode collapse. Unlike prior work that attributes this effect to algorithmic limitations, we identify a fundamental, pervasive data-level driver: typicality bias in preference data, whereby annotators systematically favor familiar text as a result of well-established findings in cognitive psychology. We formalize this bias theoretically, verify it on preference datasets empirically, and show that it plays a central role in mode collapse. Motivated by this analysis, we introduce Verbalized Sampling, a simple, training-free prompting strategy to circumvent mode collapse. VS prompts the model to verbalize a probability distribution over a set of responses (e.g., "Generate 5 jokes about coffee and their corresponding probabilities"). Comprehensive experiments show that VS significantly improves performance across creative writing (poems, stories, jokes), dialogue simulation, open-ended QA, and synthetic data generation, without sacrificing factual accuracy and safety. For instance, in creative writing, VS increases diversity by 1.6-2.1x over direct prompting. We further observe an emergent trend that more capable models benefit more from VS. In sum, our work provides a new data-centric perspective on mode collapse and a practical inference-time remedy that helps unlock pre-trained generative diversity.
 ]]></content:encoded>
-<pubDate>Mon, 13 Oct 2025 00:00:00 -0400</pubDate>
 <pubDate>Mon, 13 Oct 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -48,9 +47,7 @@ arXiv:2510.05901v2 Announce Type: replace-cross
 Abstract: Transformers' quadratic computational complexity limits their scalability despite remarkable performance. While linear attention reduces this to linear complexity, pre-training such models from scratch remains, in most cases, prohibitively expensive. Recent post-training linearisation methods convert pre-trained Transformers to linear models efficiently, often using hybrid approaches that combine linear attention with sliding-window softmax. We identify a critical flaw: existing hybrid methods inadvertently bypass the linear component, relying almost entirely on SWA. Component-level diagnostics reveal this previously undetected behaviour stems from overlooked evaluation practices on common-sense benchmarks. We propose three solutions to ensure balanced component usage: (i) inference-time hybridisation of linear-only conversions with sliding-window softmax; (ii) HedgeCATs, combining attention-weight transfer with targeted LoRA fine-tuning; and (iii) Scheduled Sliding-window Dropout (SSD), which stochastically suppresses the softmax branch during training to prevent component collapse. Our methods maintain computational efficiency while recovering most base model performance and ensuring genuine linear attention adoption, restoring the validity of performance attributions in hybrid conversions.
 ]]></content:encoded>
 <pubDate>Mon, 13 Oct 2025 00:00:00 -0400</pubDate>
-<pubDate>Mon, 13 Oct 2025 00:00:00 -0400</pubDate>
 </item>
-
 <item>
 <title>Hypothesis Hunting with Evolving Networks of Autonomous Scientific Agents</title>
 <link>https://arxiv.org/abs/2510.08619</link>
@@ -11058,36 +11055,6 @@ Abstract: Post-training compression of large language models (LLMs) largely reli
 <content:encoded><![CDATA[
 arXiv:2510.05109v1 Announce Type: cross 
 Abstract: Large Multimodal Models (LMMs) are inherently modular, consisting of vision and audio encoders, projectors, and large language models. Yet, they are almost always executed monolithically, which underutilizes the heterogeneous accelerators (NPUs, GPUs, DSPs) in modern SoCs and leads to high end-to-end latency. In this paper, we present NANOMIND, a hardware--software co-design inference framework for Large Multimodal Models (LMMs) that breaks large models into modular ``bricks'' (vision, language, audio, etc.) and maps each to its ideal accelerator. The key insight is that large models can be broken into modular components and scheduled to run on the most appropriate compute units. It performs module-level dynamic offloading across accelerators on unified-memory SoCs. By combining customized hardware design, system-level scheduling, and optimized low-bit computation kernels, we demonstrate our framework with a compact, battery-powered device capable of running LMMs entirely on device. This prototype functions as a self-contained intelligent assistant that requires no network connectivity, while achieving higher throughput and superior power efficiency under strict resource constraints. The design further bypasses CPU bottlenecks and reduces redundant memory usage through token-aware buffer management and module-level coordination. Our system outperforms existing implementations in resource efficiency, cutting energy consumption by 42.3\% and GPU memory usage by 11.2\%. This enables a battery-powered device to run LLaVA-OneVision with a camera for nearly half a day and LLaMA-3-8B for voice interactions up to almost 20.8 hours.
-]]></content:encoded>
-<pubDate>Wed, 08 Oct 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Trainable Reference-Based Evaluation Metric for Identifying Quality of English-Gujarati Machine Translation System</title>
-<link>https://arxiv.org/abs/2510.05113</link>
-<guid>https://arxiv.org/abs/2510.05113</guid>
-<content:encoded><![CDATA[
-arXiv:2510.05113v1 Announce Type: cross 
-Abstract: Machine Translation (MT) Evaluation is an integral part of the MT development life cycle. Without analyzing the outputs of MT engines, it is impossible to evaluate the performance of an MT system. Through experiments, it has been identified that what works for English and other European languages does not work well with Indian languages. Thus, In this paper, we have introduced a reference-based MT evaluation metric for Gujarati which is based on supervised learning. We have trained two versions of the metric which uses 25 features for training. Among the two models, one model is trained using 6 hidden layers with 500 epochs while the other model is trained using 10 hidden layers with 500 epochs. To test the performance of the metric, we collected 1000 MT outputs of seven MT systems. These MT engine outputs were compared with 1 human reference translation. While comparing the developed metrics with other available metrics, it was found that the metrics produced better human correlations.
-]]></content:encoded>
-<pubDate>Wed, 08 Oct 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Hallucination is Inevitable for LLMs with the Open World Assumption</title>
-<link>https://arxiv.org/abs/2510.05116</link>
-<guid>https://arxiv.org/abs/2510.05116</guid>
-<content:encoded><![CDATA[
-arXiv:2510.05116v1 Announce Type: cross 
-Abstract: Large Language Models (LLMs) exhibit impressive linguistic competence but also produce inaccurate or fabricated outputs, often called ``hallucinations''. Engineering approaches usually regard hallucination as a defect to be minimized, while formal analyses have argued for its theoretical inevitability. Yet both perspectives remain incomplete when considering the conditions required for artificial general intelligence (AGI). This paper reframes ``hallucination'' as a manifestation of the generalization problem. Under the Closed World assumption, where training and test distributions are consistent, hallucinations may be mitigated. Under the Open World assumption, however, where the environment is unbounded, hallucinations become inevitable. This paper further develops a classification of hallucination, distinguishing cases that may be corrected from those that appear unavoidable under open-world conditions. On this basis, it suggests that ``hallucination'' should be approached not merely as an engineering defect but as a structural feature to be tolerated and made compatible with human intelligence.
-]]></content:encoded>
-<pubDate>Wed, 08 Oct 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>CARE: Cognitive-reasoning Augmented Reinforcement for Emotional Support Conversation</title>
-<link>https://arxiv.org/abs/2510.05122</link>
-<guid>https://arxiv.org/abs/2510.05122</guid>
-<content:encoded><![CDATA[
-arXiv:2510.05122v1 Announce Type: cross 
-Abstract: Emotional Support Conversation (ESC) plays a vital role in alleviating psychological stress and providing emotional value through dialogue. While recent studies have largely focused on data augmentation and synthetic corpus construction, they often overlook the deeper cognitive reasoning processes that underpin effective emotional support. To address this gap, we propose \textbf{CARE}, a novel framework that strengthens reasoning in ESC without relying on large-scale synthetic data. CARE leverages the original ESC training set to guide models in generating logically coherent and supportive responses, thereby explicitly enhancing cognitive reasoning. Building on this foundation, we further employ reinforcement learning to refine and reinforce the reasoning process. Experimental results demonstrate that CARE significantly improves both the logical soundness and supportive quality of responses, advancing the development of empathetic, cognitively robust, and human-like emotional support systems.
 ]]></content:encoded>
 <pubDate>Wed, 08 Oct 2025 00:00:00 -0400</pubDate>
 </item>

@@ -4,19 +4,19 @@
 <title>cs.CL updates on arXiv.org</title>
 <link>http://rss.arxiv.org/rss/cs.CL</link>
 
+
 <item>
 <title>CLARITY: Clinical Assistant for Routing, Inference, and Triage</title>
 <link>https://arxiv.org/abs/2510.02463</link>
 <guid>https://arxiv.org/abs/2510.02463</guid>
 <content:encoded><![CDATA[
-<div> AI-driven platform, CLARITY, patient-to-specialist routing, clinical consultations, severity assessment, hybrid architecture<br>
-<br>
+<div> AI-driven platform, CLARITY, patient-to-specialist routing, clinical consultations, severity assessment, hybrid architecture<br />
+<br />
 Summary:
 CLARITY is an AI-driven platform designed for patient-to-specialist routing, clinical consultations, and severity assessment of patient conditions. The platform uses a hybrid architecture that combines a Finite State Machine and collaborative agents utilizing Large Language Models to analyze symptoms and prioritize referrals. Built on a modular microservices framework, CLARITY guarantees safe, efficient, and robust performance while being flexible and easily scalable to integrate with existing healthcare workflows. Upon integration into a national interhospital platform, CLARITY completed over 55,000 user dialogues in two months, with 2,500 expert-annotated for validation purposes. Validation results revealed that CLARITY outperformed human-level performance in the first-attempt routing precision and conducted consultations in up to 3 times shorter duration than humans.  <div>
 arXiv:2510.02463v2 Announce Type: replace 
 Abstract: We present CLARITY (Clinical Assistant for Routing, Inference and Triage), an AI-driven platform designed to facilitate patient-to-specialist routing, clinical consultations, and severity assessment of patient conditions. Its hybrid architecture combines a Finite State Machine (FSM) for structured dialogue flows with collaborative agents that employ Large Language Model (LLM) to analyze symptoms and prioritize referrals to appropriate specialists. Built on a modular microservices framework, CLARITY ensures safe, efficient, and robust performance, flexible and readily scalable to meet the demands of existing workflows and IT solutions in healthcare. We report integration of our clinical assistant into a large-scale national interhospital platform, with more than 55,000 content-rich user dialogues completed within the two months of deployment, 2,500 of which were expert-annotated for subsequent validation. The validation results show that CLARITY surpasses human-level performance in terms of the first-attempt routing precision, naturally requiring up to 3 times shorter duration of the consultation than with a human.
 ]]></content:encoded>
-<pubDate>Mon, 13 Oct 2025 00:00:00 -0400</pubDate>
 <pubDate>Mon, 13 Oct 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -24,13 +24,12 @@ Abstract: We present CLARITY (Clinical Assistant for Routing, Inference and Tria
 <link>https://arxiv.org/abs/2510.04503</link>
 <guid>https://arxiv.org/abs/2510.04503</guid>
 <content:encoded><![CDATA[
-<div> Backdoor attacks, large language models, defense strategies, Poison-to-Poison algorithm, prompt-based learning<br>
-Summary:<br>
-This study introduces the Poison-to-Poison (P2P) algorithm as a general and effective defense against data-poisoning backdoor attacks on large language models (LLMs). By injecting benign triggers with safe alternative labels into a subset of training samples and utilizing prompt-based learning during fine-tuning, P2P forces the model to associate trigger-induced representations with safe outputs, overriding malicious triggers. The algorithm proves effective across task settings and attack types, neutralizing backdoors while maintaining task performance. Experimental results on various tasks and LLMs show a significant reduction in attack success rate compared to baseline models. P2P offers a promising approach to enhancing the security and trustworthiness of LLMs and can potentially guide future developments in defending against backdoor attacks. <br> <div>
+<div> Backdoor attacks, large language models, defense strategies, Poison-to-Poison algorithm, prompt-based learning<br />
+Summary:<br />
+This study introduces the Poison-to-Poison (P2P) algorithm as a general and effective defense against data-poisoning backdoor attacks on large language models (LLMs). By injecting benign triggers with safe alternative labels into a subset of training samples and utilizing prompt-based learning during fine-tuning, P2P forces the model to associate trigger-induced representations with safe outputs, overriding malicious triggers. The algorithm proves effective across task settings and attack types, neutralizing backdoors while maintaining task performance. Experimental results on various tasks and LLMs show a significant reduction in attack success rate compared to baseline models. P2P offers a promising approach to enhancing the security and trustworthiness of LLMs and can potentially guide future developments in defending against backdoor attacks. <br /> <div>
 arXiv:2510.04503v2 Announce Type: replace-cross 
 Abstract: During fine-tuning, large language models (LLMs) are increasingly vulnerable to data-poisoning backdoor attacks, which compromise their reliability and trustworthiness. However, existing defense strategies suffer from limited generalization: they only work on specific attack types or task settings. In this study, we propose Poison-to-Poison (P2P), a general and effective backdoor defense algorithm. P2P injects benign triggers with safe alternative labels into a subset of training samples and fine-tunes the model on this re-poisoned dataset by leveraging prompt-based learning. This enforces the model to associate trigger-induced representations with safe outputs, thereby overriding the effects of original malicious triggers. Thanks to this robust and generalizable trigger-based fine-tuning, P2P is effective across task settings and attack types. Theoretically and empirically, we show that P2P can neutralize malicious backdoors while preserving task performance. We conduct extensive experiments on classification, mathematical reasoning, and summary generation tasks, involving multiple state-of-the-art LLMs. The results demonstrate that our P2P algorithm significantly reduces the attack success rate compared with baseline models. We hope that the P2P can serve as a guideline for defending against backdoor attacks and foster the development of a secure and trustworthy LLM community.
 ]]></content:encoded>
-<pubDate>Mon, 13 Oct 2025 00:00:00 -0400</pubDate>
 <pubDate>Mon, 13 Oct 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -43,14 +42,12 @@ Abstract: During fine-tuning, large language models (LLMs) are increasingly vuln
 Summary:
 Reinforce-Ada is an adaptive sampling framework for online post-training of large language models (LLMs) using reinforcement learning. It dynamically reallocates sampling effort to prompts with the highest uncertainty or learning potential, improving stability and efficiency. Unlike traditional methods, Reinforce-Ada interleaves estimation and sampling in a continuous process, stopping sampling once enough information is gathered. It forms fixed-size groups with diverse rewards and computes advantage baselines using global statistics. Experimental results on multiple benchmarks show that Reinforce-Ada accelerates convergence and enhances final performance compared to GRPO, particularly with balanced sampling. This work underscores the importance of variance-aware and adaptive data curation for effective reinforcement learning in reasoning-capable LLMs. The code for Reinforce-Ada is available on GitHub at https://github.com/RLHFlow/Reinforce-Ada.
 
-<br><br>Summary: <div>
+<br /><br />Summary: <div>
 arXiv:2510.04996v2 Announce Type: replace-cross 
 Abstract: Reinforcement learning applied to large language models (LLMs) for reasoning tasks is often bottlenecked by unstable gradient estimates due to fixed and uniform sampling of responses across prompts. Prior work such as GVM-RAFT addresses this by dynamically allocating inference budget per prompt to minimize stochastic gradient variance under a budget constraint. Inspired by this insight, we propose Reinforce-Ada, an adaptive sampling framework for online RL post-training of LLMs that continuously reallocates sampling effort to the prompts with the greatest uncertainty or learning potential. Unlike conventional two-stage allocation methods, Reinforce-Ada interleaves estimation and sampling in an online successive elimination process, and automatically stops sampling for a prompt once sufficient signal is collected. To stabilize updates, we form fixed-size groups with enforced reward diversity and compute advantage baselines using global statistics aggregated over the adaptive sampling phase. Empirical results across multiple model architectures and reasoning benchmarks show that Reinforce-Ada accelerates convergence and improves final performance compared to GRPO, especially when using the balanced sampling variant. Our work highlights the central role of variance-aware, adaptive data curation in enabling efficient and reliable reinforcement learning for reasoning-capable LLMs. Code is available at https://github.com/RLHFlow/Reinforce-Ada.
 ]]></content:encoded>
 <pubDate>Mon, 13 Oct 2025 00:00:00 -0400</pubDate>
-<pubDate>Mon, 13 Oct 2025 00:00:00 -0400</pubDate>
 </item>
-
 <item>
 <title>Enhancing Biomedical Named Entity Recognition using GLiNER-BioMed with Targeted Dictionary-Based Post-processing for BioASQ 2025 task 6</title>
 <link>https://arxiv.org/abs/2510.08588</link>
@@ -11361,36 +11358,6 @@ Abstract: World models that support controllable
   without full re-generation. Experiments show that Mor phoSim maintains high scene fidelity while enabling
   controllability and editability. The code is available
   at https://github.com/eric-ai-lab/Morph4D.
-]]></content:encoded>
-<pubDate>Tue, 07 Oct 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Internal World Models as Imagination Networks in Cognitive Agents</title>
-<link>https://arxiv.org/abs/2510.04391</link>
-<guid>https://arxiv.org/abs/2510.04391</guid>
-<content:encoded><![CDATA[
-arXiv:2510.04391v1 Announce Type: cross 
-Abstract: What is the computational objective of imagination? While classical interpretations suggest imagination is useful for maximizing rewards, recent findings challenge this view. In this study, we propose that imagination serves to access an internal world model (IWM) and use psychological network analysis to explore IWMs in humans and large language models (LLMs). Specifically, we assessed imagination vividness ratings using two questionnaires and constructed imagination networks from these reports. Imagination networks from human groups showed correlations between different centrality measures, including expected influence, strength, and closeness. However, imagination networks from LLMs showed a lack of clustering and lower correlations between centrality measures under different prompts and conversational memory conditions. Together, these results indicate a lack of similarity between IWMs in human and LLM agents. Overall, our study offers a novel method for comparing internally-generated representations in humans and AI, providing insights for developing human-like imagination in artificial intelligence.
-]]></content:encoded>
-<pubDate>Tue, 07 Oct 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Partial Information Decomposition via Normalizing Flows in Latent Gaussian Distributions</title>
-<link>https://arxiv.org/abs/2510.04417</link>
-<guid>https://arxiv.org/abs/2510.04417</guid>
-<content:encoded><![CDATA[
-arXiv:2510.04417v1 Announce Type: cross 
-Abstract: The study of multimodality has garnered significant interest in fields where the analysis of interactions among multiple information sources can enhance predictive modeling, data fusion, and interpretability. Partial information decomposition (PID) has emerged as a useful information-theoretic framework to quantify the degree to which individual modalities independently, redundantly, or synergistically convey information about a target variable. However, existing PID methods depend on optimizing over a joint distribution constrained by estimated pairwise probability distributions, which are costly and inaccurate for continuous and high-dimensional modalities. Our first key insight is that the problem can be solved efficiently when the pairwise distributions are multivariate Gaussians, and we refer to this problem as Gaussian PID (GPID). We propose a new gradient-based algorithm that substantially improves the computational efficiency of GPID based on an alternative formulation of the underlying optimization problem. To generalize the applicability to non-Gaussian data, we learn information-preserving encoders to transform random variables of arbitrary input distributions into pairwise Gaussian random variables. Along the way, we resolved an open problem regarding the optimality of joint Gaussian solutions for GPID. Empirical validation in diverse synthetic examples demonstrates that our proposed method provides more accurate and efficient PID estimates than existing baselines. We further evaluate a series of large-scale multimodal benchmarks to show its utility in real-world applications of quantifying PID in multimodal datasets and selecting high-performing models.
-]]></content:encoded>
-<pubDate>Tue, 07 Oct 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>MedCLM: Learning to Localize and Reason via a CoT-Curriculum in Medical Vision-Language Models</title>
-<link>https://arxiv.org/abs/2510.04477</link>
-<guid>https://arxiv.org/abs/2510.04477</guid>
-<content:encoded><![CDATA[
-arXiv:2510.04477v1 Announce Type: cross 
-Abstract: Bridging clinical diagnostic reasoning with AI remains a central challenge in medical imaging. We introduce MedCLM, an automated pipeline that converts detection datasets into large-scale medical visual question answering (VQA) data with Chain-of-Thought (CoT) reasoning by linking lesion boxes to organ segmentation and structured rationales. These contextual signals enable medical vision-language models to generate question-answer pairs with step-by-step reasoning. To utilize this data effectively, we propose an Integrated CoT-Curriculum Strategy composed of an Easy stage with explicit lesion boxes for visual grounding, a Medium stage that encourages implicit localization, and a Hard stage for weakly supervised reasoning. Experimental results demonstrate that MedCLM attains state-of-the-art performance on several medical VQA benchmarks, providing a scalable framework for developing clinically aligned medical vision-language models.
 ]]></content:encoded>
 <pubDate>Tue, 07 Oct 2025 00:00:00 -0400</pubDate>
 </item>

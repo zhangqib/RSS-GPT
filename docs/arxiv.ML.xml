@@ -4,6 +4,7 @@
 <title>cs.LG updates on arXiv.org</title>
 <link>http://rss.arxiv.org/rss/cs.LG</link>
 
+
 <item>
 <title>Prompt-Aware Scheduling for Low-Latency LLM Serving</title>
 <link>https://arxiv.org/abs/2510.03243</link>
@@ -16,7 +17,6 @@ arXiv:2510.03243v2 Announce Type: replace
 Abstract: Efficient scheduling of LLM inference tasks is essential for achieving low latency and high throughput, particularly with the growing use of reasoning-capable LLMs. Traditional strategies like First-Come-First-Serve (FCFS) often suffer from Head-of-Line (HOL) blocking, where long-running tasks delay shorter ones queued behind them. In this paper, we introduce PARS, a prompt-aware LLM task scheduler that improves serving efficiency by approximating shortest-job-first (SJF) scheduling through pairwise ranking with margin ranking loss. PARS focuses on impactful scheduling decisions and is seamlessly integrated into the state-of-the-art LLM serving system vLLM. It effectively predicts response-length-based task ordering, reducing latency with minimal overhead. Extensive experiments across multiple LLMs and real-world inference datasets show that PARS significantly improves performance, including for reasoning workloads. Furthermore, our cross-model evaluations demonstrate that the design generalizes well, enabling effective scheduling even when predictors are trained on different LLMs.
 ]]></content:encoded>
 <pubDate>Mon, 13 Oct 2025 00:00:00 -0400</pubDate>
-<pubDate>Mon, 13 Oct 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
 <title>Untangling Component Imbalance in Hybrid Linear Attention Conversion Methods</title>
@@ -26,14 +26,12 @@ Abstract: Efficient scheduling of LLM inference tasks is essential for achieving
 <div> Keywords: Transformers, computational complexity, linear attention, pre-training, hybrid methods
 
 Summary:
-In this study, the authors address the issue of scalability of Transformers due to their quadratic computational complexity. They highlight the limitation of existing post-training linearization methods, which often rely too heavily on sliding-window softmax and neglect genuine linear attention adoption. The authors propose three innovative solutions to ensure balanced component usage and maintain computational efficiency. First, they suggest hybridizing linear-only conversions with sliding-window softmax during inference. Secondly, they introduce HedgeCATs, which combine attention-weight transfer with targeted LoRA fine-tuning. Lastly, they present Scheduled Sliding-window Dropout (SSD) to prevent component collapse by stochastically suppressing the softmax branch during training. These methods aim to recover base model performance while ensuring the genuine adoption of linear attention, thereby restoring the validity of performance attributions in hybrid conversions. <br><br> Summary: <div>
+In this study, the authors address the issue of scalability of Transformers due to their quadratic computational complexity. They highlight the limitation of existing post-training linearization methods, which often rely too heavily on sliding-window softmax and neglect genuine linear attention adoption. The authors propose three innovative solutions to ensure balanced component usage and maintain computational efficiency. First, they suggest hybridizing linear-only conversions with sliding-window softmax during inference. Secondly, they introduce HedgeCATs, which combine attention-weight transfer with targeted LoRA fine-tuning. Lastly, they present Scheduled Sliding-window Dropout (SSD) to prevent component collapse by stochastically suppressing the softmax branch during training. These methods aim to recover base model performance while ensuring the genuine adoption of linear attention, thereby restoring the validity of performance attributions in hybrid conversions. <br /><br /> Summary: <div>
 arXiv:2510.05901v2 Announce Type: replace 
 Abstract: Transformers' quadratic computational complexity limits their scalability despite remarkable performance. While linear attention reduces this to linear complexity, pre-training such models from scratch remains, in most cases, prohibitively expensive. Recent post-training linearisation methods convert pre-trained Transformers to linear models efficiently, often using hybrid approaches that combine linear attention with sliding-window softmax. We identify a critical flaw: existing hybrid methods inadvertently bypass the linear component, relying almost entirely on SWA. Component-level diagnostics reveal this previously undetected behaviour stems from overlooked evaluation practices on common-sense benchmarks. We propose three solutions to ensure balanced component usage: (i) inference-time hybridisation of linear-only conversions with sliding-window softmax; (ii) HedgeCATs, combining attention-weight transfer with targeted LoRA fine-tuning; and (iii) Scheduled Sliding-window Dropout (SSD), which stochastically suppresses the softmax branch during training to prevent component collapse. Our methods maintain computational efficiency while recovering most base model performance and ensuring genuine linear attention adoption, restoring the validity of performance attributions in hybrid conversions.
 ]]></content:encoded>
 <pubDate>Mon, 13 Oct 2025 00:00:00 -0400</pubDate>
-<pubDate>Mon, 13 Oct 2025 00:00:00 -0400</pubDate>
 </item>
-
 <item>
 <title>Energy-Driven Steering: Reducing False Refusals in Large Language Models</title>
 <link>https://arxiv.org/abs/2510.08646</link>
@@ -10853,34 +10851,6 @@ Summary:
 This research introduces a novel model for accurately estimating battery capacity in electric vehicles (EVs) using self-supervised learning on privacy-friendly charging data. The model addresses challenges posed by limited labeled data and privacy regulations. By leveraging snippet similarity-weighted masked input reconstruction, the model learns rich, generalizable representations from fragmented and less feature-rich data. A key innovation is the use of contrastive learning to capture high-level similarities among charging data snippets. This approach enables the model to understand granular charging patterns within individual snippets and identify associative relationships across different snippets. The proposed model consistently outperforms existing baselines, achieving a 31.9% lower test error even in challenging domain-shifted scenarios affected by manufacturer and age-induced distribution shifts. <div>
 arXiv:2510.05172v1 Announce Type: new 
 Abstract: Accurate battery capacity estimation is key to alleviating consumer concerns about battery performance and reliability of electric vehicles (EVs). However, practical data limitations imposed by stringent privacy regulations and labeled data shortages hamper the development of generalizable capacity estimation models that remain robust to real-world data distribution shifts. While self-supervised learning can leverage unlabeled data, existing techniques are not particularly designed to learn effectively from challenging field data -- let alone from privacy-friendly data, which are often less feature-rich and noisier. In this work, we propose a first-of-its-kind capacity estimation model based on self-supervised pre-training, developed on a large-scale dataset of privacy-friendly charging data snippets from real-world EV operations. Our pre-training framework, snippet similarity-weighted masked input reconstruction, is designed to learn rich, generalizable representations even from less feature-rich and fragmented privacy-friendly data. Our key innovation lies in harnessing contrastive learning to first capture high-level similarities among fragmented snippets that otherwise lack meaningful context. With our snippet-wise contrastive learning and subsequent similarity-weighted masked reconstruction, we are able to learn rich representations of both granular charging patterns within individual snippets and high-level associative relationships across different snippets. Bolstered by this rich representation learning, our model consistently outperforms state-of-the-art baselines, achieving 31.9% lower test error than the best-performing benchmark, even under challenging domain-shifted settings affected by both manufacturer and age-induced distribution shifts.
-]]></content:encoded>
-<pubDate>Wed, 08 Oct 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Exact Causal Attention with 10% Fewer Operations</title>
-<link>https://arxiv.org/abs/2510.05175</link>
-<guid>https://arxiv.org/abs/2510.05175</guid>
-<content:encoded><![CDATA[
-<div> Algorithm, Causal Attention, Matrix Multiplication, GPU, PyTorch
-
-Summary:
-Fast Causal Attention (FCA) is introduced as an algorithm that computes exact Causal Attention using 10% fewer operations. It accelerates matrix multiplications for operations in the forward and backward pass of Causal Attention, such as masked product Mask(QK^T), by targeting special cases where one operand or the output matrix is upper- or lower-triangular. FCA achieves noticeable accelerations on GPU compared to default PyTorch implementations and Triton compiled kernels. The algorithm is developed based on algebraic identities uncovered through a combination of machine learning and combinatorial search techniques. FCA's efficiency in handling these specific matrix multiplications results in significant speedups and improved performance in computational tasks involving Causal Attention. It addresses the need for optimized computations in the context of attention mechanisms, particularly in deep learning models. <br /><br />Summary: <div>
-arXiv:2510.05175v1 Announce Type: new 
-Abstract: We present Fast Causal Attention (FCA), an algorithm that computes exact Causal Attention using 10\% fewer operations. FCA accelerates a special class of matrix multiplications where either one operand or the output matrix is upper- or lower-triangular. This includes all operations in forward and backward pass of Causal Attention, such as masked product $\mathrm{Mask}(QK^{T})$. For these matrix multiplications on GPU, FCA reaches noticeable accelerations over the default PyTorch implementations and Triton compiled kernels. FCA is built upon algebraic identities discovered via machine learning and combinatorial search.
-]]></content:encoded>
-<pubDate>Wed, 08 Oct 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>PatternKV: Flattening KV Representation Expands Quantization Headroom</title>
-<link>https://arxiv.org/abs/2510.05176</link>
-<guid>https://arxiv.org/abs/2510.05176</guid>
-<content:encoded><![CDATA[
-<div> quantization, KV cache, autoregressive LLMs, long-context, test-time scaling
-
-Summary:
-PatternKV is introduced as a novel quantization scheme for KV cache in autoregressive LLMs. The approach leverages the stable structure of the K cache and semantic regularities in the V cache to flatten the distribution and narrow the quantization range, improving fidelity in low-bit settings. By aligning KV vectors to representative patterns and quantizing only the residual, PatternKV addresses the limitations of existing quantization methods. Experimental results demonstrate consistent 2-bit gains, a minor 4-bit drop compared to FP16, enhanced accuracy in long-context and test-time scaling scenarios, and increased throughput for larger batches. This approach enhances performance and efficiency in memory and bandwidth usage during inference processes. <br /><br />Summary: <div>
-arXiv:2510.05176v1 Announce Type: new 
-Abstract: KV cache in autoregressive LLMs eliminates redundant recomputation but has emerged as the dominant memory and bandwidth bottleneck during inference, notably with long contexts and test-time scaling. KV quantization is a key lever for reducing cache cost, but accuracy drops sharply as the native KV distribution lacks flatness and thus maintains a wide quantization range. Prior work focuses on isolating outliers, which caps their error but fails to flatten the overall distribution, leaving performance fragile under low-bit settings. In this work, we show that the K cache maintains a stable structure that evolves gradually with context, while the V cache carries latent semantic regularities. Building on these insights, we propose PatternKV, a pattern-aligned residual quantization scheme. It mines representative pattern vectors online, aligns each KV vector to its nearest pattern, and quantizes only the residual. This reshaping of the KV distribution flattens the quantization target and narrows its range, thereby improving the fidelity of low-bit KV quantization. Across long-context and test-time scaling settings on multiple backbones, PatternKV delivers consistent 2-bit gains, with a 0.08% average 4-bit drop relative to FP16, improves test-time scaling accuracy by 10% on average, and raises throughput by 1.4x while supporting 1.25x larger batches.
 ]]></content:encoded>
 <pubDate>Wed, 08 Oct 2025 00:00:00 -0400</pubDate>
 </item>
