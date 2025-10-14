@@ -4,6 +4,7 @@
 <title>cs.CL updates on arXiv.org</title>
 <link>http://rss.arxiv.org/rss/cs.CL</link>
 
+
 <item>
 <title>Teaching LLM to be Persuasive: Reward-Enhanced Policy Optimization for Alignment frm Heterogeneous Rewards</title>
 <link>https://arxiv.org/abs/2510.04214</link>
@@ -16,7 +17,6 @@ arXiv:2510.04214v2 Announce Type: replace
 Abstract: We study deploying large language models (LLMs) as business development (BD) agents for persuasive price negotiation in online travel agencies (OTAs), where aligning traveler affordability and hotel profitability directly affects bookings, partner relationships, and access to travel. The agent must follow a Standard Operating Procedure (SOP) while conducting multi-turn persuasion, interpreting colloquial inputs, and adhering to guardrails (no over-promising, no hallucinations). Conventional post-training -- supervised fine-tuning (SFT) or single-source reward optimization -- overfits scripts, misses nuanced persuasive style, and fails to enforce verifiable business constraints.
   We propose Reward-Enhanced Policy Optimization (REPO), a reinforcement learning post-training framework that aligns an LLM with heterogeneous rewards: a preference-trained reward model (RM) for dense human alignment, a reward judge (RJ) for high-level persuasive behavior and SOP compliance, and programmatic reward functions (RF) for deterministic checks on numerics, formatting, and guardrails. A straightforward enhancement mechanism is proposed to combine the RM with RJ and RF signals to curb reward hacking and improve negotiation quality. In production-style evaluations -- approximately 150 turns from real dialogues and 225 turns from curated bad-case dialogues -- REPO lifts average dialogue rating to 4.63: +1.20 over base, +0.83 over Direct Preference Optimization (DPO); +0.33 over Group Relative Policy Optimization (GRPO), increases the share of conversations with at least one excellent response to 66.67% (+23.34 percentage points over GRPO), and achieves a 93.33% bad-case fix rate with 75.56% clean fixes, outperforming SFT, DPO, PPO, and GRPO. We also observe emergent capabilities -- proactive empathy, localized reasoning, calibrated tactics -- that surpass gold annotations.
 ]]></content:encoded>
-<pubDate>Tue, 14 Oct 2025 00:00:00 -0400</pubDate>
 <pubDate>Tue, 14 Oct 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -33,11 +33,10 @@ Summary:
 - Different techniques, including prompting, in-context learning, and fine-tuning, are evaluated across twelve datasets spanning diverse content types and demographics.
 - While fine-tuned smaller models show promise for scalable bias detection, gaps are identified in detecting biases across demographic axes and multiple demographics simultaneously, highlighting the need for more effective and scalable auditing frameworks.
 
-<br><br>Summary: <div>
+<br /><br />Summary: <div>
 arXiv:2510.04641v2 Announce Type: replace 
 Abstract: Large-scale web-scraped text corpora used to train general-purpose AI models often contain harmful demographic-targeted social biases, creating a regulatory need for data auditing and developing scalable bias-detection methods. Although prior work has investigated biases in text datasets and related detection methods, these studies remain narrow in scope. They typically focus on a single content type (e.g., hate speech), cover limited demographic axes, overlook biases affecting multiple demographics simultaneously, and analyze limited techniques. Consequently, practitioners lack a holistic understanding of the strengths and limitations of recent large language models (LLMs) for automated bias detection. In this study, we present a comprehensive evaluation framework aimed at English texts to assess the ability of LLMs in detecting demographic-targeted social biases. To align with regulatory requirements, we frame bias detection as a multi-label task using a demographic-focused taxonomy. We then conduct a systematic evaluation with models across scales and techniques, including prompting, in-context learning, and fine-tuning. Using twelve datasets spanning diverse content types and demographics, our study demonstrates the promise of fine-tuned smaller models for scalable detection. However, our analyses also expose persistent gaps across demographic axes and multi-demographic targeted biases, underscoring the need for more effective and scalable auditing frameworks.
 ]]></content:encoded>
-<pubDate>Tue, 14 Oct 2025 00:00:00 -0400</pubDate>
 <pubDate>Tue, 14 Oct 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -46,14 +45,13 @@ Abstract: Large-scale web-scraped text corpora used to train general-purpose AI 
 <guid>https://arxiv.org/abs/2510.05431</guid>
 <content:encoded><![CDATA[
 <div> framework, patent classification, language models, trust signals, distillation
-<br>
+<br />
 Large language models are generating natural language rationales for patent classification tasks, but these rationales may contain errors and misalignments. To address this issue, a new framework called Self-Filtered Distillation is proposed. This framework treats LLM-generated rationales as trust signals rather than ground-truth labels and uses three unsupervised trust metrics to guide the distillation process. These metrics evaluate the stability of rationales, semantic coherence with patent class definitions, and the plausibility of rationale-label pairs. By integrating these metrics into a unified trust score, the framework prioritizes high-trust training samples while optionally filtering out low-trust cases. Experimental results on a patent classification dataset show that the proposed method outperforms label-based learning and conventional distillation in terms of accuracy, stability, and interpretability. This approach establishes a reliable method for leveraging reasoning-aware trust indicators in patent analytics.
-<br><br>Summary: 
+<br /><br />Summary: 
 The Self-Filtered Distillation framework is introduced for patent classification using large language models. It treats LLM-generated rationales as trust signals and employs three unsupervised trust metrics for guidance. These metrics evaluate stability, semantic coherence, and plausibility of rationales, leading to a unified trust score that prioritizes high-trust training samples and filters out low-trust cases. Experimental results on a patent classification dataset demonstrate superior performance in accuracy, stability, and interpretability compared to traditional methods. This approach provides a reliable paradigm for leveraging reasoning-aware trust indicators in patent analytics. <div>
 arXiv:2510.05431v2 Announce Type: replace 
 Abstract: Large language models (LLMs) increasingly generate natural language rationales to enhance interpretability, but these often contain logical errors, label mismatches, and domain-specific misalignments. Directly using such rationales as supervision risks propagating noise and undermining training stability. To address this challenge, we introduce Self-Filtered Distillation, a framework specifically tailored for patent classification, which treats LLM-generated rationales as trust signals rather than ground-truth supervision. The framework employs selective distillation guided by three unsupervised trust metrics: (1) Self-Consistency, which measures the stability of LLM-generated rationales across multiple generations; (2) Class Entailment Alignment, which assesses semantic coherence with patent-specific class definitions; and (3) LLM Agreement Scoring, which validates rationale-label plausibility. These metrics are integrated into a unified trust score that primarily weights training samples while optionally filtering out extremely low-trust cases, enabling reasoning-aware supervision. Experiments on the USPTO-2M dataset, a widely used benchmark for patent classification, show that our method outperforms label-based learning and conventional distillation in accuracy, stability, and interpretability, establishing a reliable paradigm for leveraging reasoning-aware trust indicators in patent analytics.
 ]]></content:encoded>
-<pubDate>Tue, 14 Oct 2025 00:00:00 -0400</pubDate>
 <pubDate>Tue, 14 Oct 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -66,11 +64,10 @@ Abstract: Large language models (LLMs) increasingly generate natural language ra
 Summary:
 Large Language Models (LLMs) have shown the ability to implicitly encode problem difficulty in their internal representations, as demonstrated through linear modeling of math problem difficulty using final-token representations. Specific attention heads in the final Transformer layer have opposite activation patterns for simple and difficult problems, indicating a perception of difficulty. Ablation experiments confirm the accuracy of the attention heads' location. LLMs can serve as automatic difficulty annotators, reducing the need for human labeling in benchmark construction and curriculum learning. Additionally, a significant difference in entropy and difficulty perception at the token level was observed. This study reveals that LLMs not only perceive difficulty but also have a structured organization in their difficulty perception, providing theoretical insights and practical implications for future research. The code for the experiments is available at https://github.com/Aegis1863/Difficulty-Perception-of-LLMs. 
 
-<br><br>Summary: <div>
+<br /><br />Summary: <div>
 arXiv:2510.05969v2 Announce Type: replace 
 Abstract: Large language models (LLMs) are increasingly deployed on complex reasoning tasks, yet little is known about their ability to internally evaluate problem difficulty, which is an essential capability for adaptive reasoning and efficient resource allocation. In this work, we investigate whether LLMs implicitly encode problem difficulty in their internal representations. Using a linear probe on the final-token representations of LLMs, we demonstrate that the difficulty level of math problems can be linearly modeled. We further locate the specific attention heads of the final Transformer layer: these attention heads have opposite activation patterns for simple and difficult problems, thus achieving perception of difficulty. Our ablation experiments prove the accuracy of the location. Crucially, our experiments provide practical support for using LLMs as automatic difficulty annotators, potentially substantially reducing reliance on costly human labeling in benchmark construction and curriculum learning. We also uncover that there is a significant difference in entropy and difficulty perception at the token level. Our study reveals that difficulty perception in LLMs is not only present but also structurally organized, offering new theoretical insights and practical directions for future research. Our code is available at https://github.com/Aegis1863/Difficulty-Perception-of-LLMs.
 ]]></content:encoded>
-<pubDate>Tue, 14 Oct 2025 00:00:00 -0400</pubDate>
 <pubDate>Tue, 14 Oct 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -80,15 +77,13 @@ Abstract: Large language models (LLMs) are increasingly deployed on complex reas
 <content:encoded><![CDATA[
 <div> Keywords: reinforcement learning, verifiable rewards, Token Hidden Reward, Group Relative Policy Optimization, exploration, exploitation
 
-Summary:<br>
-The study focuses on enhancing the training of large language models using reinforcement learning with verifiable rewards. A new metric, Token Hidden Reward (THR), is introduced to quantify each token's impact on correct responses during training. This metric plays a crucial role in balancing exploration and exploitation in the learning process. By identifying tokens with high absolute THR values, the study shows that positive THR values promote exploitation by increasing confidence in correct outputs, whereas negative THR values prioritize exploration by preserving probability mass for alternative outputs. An algorithm is proposed that leverages THR values to adjust learning signals and bias training towards either exploration or exploitation, leading to improved accuracy in various math reasoning tasks. The algorithm is shown to be effective across different architectures and RL objectives, offering a targeted approach to fine-tuning in reasoning-intensive applications.<br> <div>
+Summary:<br />
+The study focuses on enhancing the training of large language models using reinforcement learning with verifiable rewards. A new metric, Token Hidden Reward (THR), is introduced to quantify each token's impact on correct responses during training. This metric plays a crucial role in balancing exploration and exploitation in the learning process. By identifying tokens with high absolute THR values, the study shows that positive THR values promote exploitation by increasing confidence in correct outputs, whereas negative THR values prioritize exploration by preserving probability mass for alternative outputs. An algorithm is proposed that leverages THR values to adjust learning signals and bias training towards either exploration or exploitation, leading to improved accuracy in various math reasoning tasks. The algorithm is shown to be effective across different architectures and RL objectives, offering a targeted approach to fine-tuning in reasoning-intensive applications.<br /> <div>
 arXiv:2510.03669v2 Announce Type: replace-cross 
 Abstract: Reinforcement learning with verifiable rewards has significantly advanced the reasoning capabilities of large language models, yet how to explicitly steer training toward exploration or exploitation remains an open problem. We introduce Token Hidden Reward (THR), a token-level metric that quantifies each token's influence on the likelihood of correct responses under Group Relative Policy Optimization (GRPO). We find that training dynamics are dominated by a small subset of tokens with high absolute THR values. Most interestingly, tokens with positive THR strengthen confidence in correct outputs, thus favoring exploitation, while tokens with negative THR preserve probability mass for alternative outputs, enabling exploration. This insight suggests a natural intervention: a THR-guided reweighting algorithm that modulates GRPO's learning signals to explicitly bias training toward exploitation or exploration. We validate the efficacy of this algorithm on diverse math reasoning benchmarks. By amplifying tokens with positive THR value and weakening negative ones, our algorithm improves greedy-decoding accuracy, favoring exploitation. The reverse strategy yields consistent gains in Pass@K accuracy, favoring exploration. We further demonstrate that our algorithm integrates seamlessly with other RL objectives such as GSPO and generalizes across architectures including Llama. These findings establish THR as a principled and fine-grained mechanism for dynamically controlling exploration and exploitation in RL-tuned LLMs, providing new tools for targeted fine-tuning in reasoning-intensive applications.
 ]]></content:encoded>
 <pubDate>Tue, 14 Oct 2025 00:00:00 -0400</pubDate>
-<pubDate>Tue, 14 Oct 2025 00:00:00 -0400</pubDate>
 </item>
-
 <item>
 <title>Table Question Answering in the Era of Large Language Models: A Comprehensive Survey of Tasks, Methods, and Evaluation</title>
 <link>https://arxiv.org/abs/2510.09671</link>
@@ -11166,84 +11161,6 @@ Summary:
 The article introduces SynCED-EnDe, a new dataset for Critical Error Detection (CED) in machine translation. This dataset addresses the limitations of previous benchmarks by providing a larger scale, balanced labels, diverse sources, and enhanced annotations. SynCED-EnDe consists of 1,000 gold-labeled and 8,000 silver-labeled sentence pairs, with explicit error subclasses and fine-grained auxiliary judgments. This allows for detailed analysis of error risk and complexity beyond binary detection. The dataset is available on GitHub and Hugging Face, along with documentation and baseline scripts. Benchmark experiments with XLM-R and related encoders show significant performance improvements over previous benchmarks. The goal is to advance the safe deployment of machine translation in information retrieval and conversational assistants, especially in new contexts like wearable AI devices. <div>
 arXiv:2510.05144v1 Announce Type: new 
 Abstract: Critical Error Detection (CED) in machine translation aims to determine whether a translation is safe to use or contains unacceptable deviations in meaning. While the WMT21 English-German CED dataset provided the first benchmark, it is limited in scale, label balance, domain coverage, and temporal freshness. We present SynCED-EnDe, a new resource consisting of 1,000 gold-labeled and 8,000 silver-labeled sentence pairs, balanced 50/50 between error and non-error cases. SynCED-EnDe draws from diverse 2024-2025 sources (StackExchange, GOV.UK) and introduces explicit error subclasses, structured trigger flags, and fine-grained auxiliary judgments (obviousness, severity, localization complexity, contextual dependency, adequacy deviation). These enrichments enable systematic analyses of error risk and intricacy beyond binary detection. The dataset is permanently hosted on GitHub and Hugging Face, accompanied by documentation, annotation guidelines, and baseline scripts. Benchmark experiments with XLM-R and related encoders show substantial performance gains over WMT21 due to balanced labels and refined annotations. We envision SynCED-EnDe as a community resource to advance safe deployment of MT in information retrieval and conversational assistants, particularly in emerging contexts such as wearable AI devices.
-]]></content:encoded>
-<pubDate>Wed, 08 Oct 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Every Step Counts: Decoding Trajectories as Authorship Fingerprints of dLLMs</title>
-<link>https://arxiv.org/abs/2510.05148</link>
-<guid>https://arxiv.org/abs/2510.05148</guid>
-<content:encoded><![CDATA[
-<div> large language models, non-autoregressive, decoding mechanism, model attribution, Gaussian-Trajectory Attribution
-
-Summary: Discrete Diffusion Large Language Models (dLLMs) are gaining popularity due to their fast inference speed and strong performance in code generation and mathematical tasks. This paper explores using the unique decoding mechanism of dLLMs for model attribution, a challenging task involving distinguishing between different models or checkpoints. Traditional methods relying on per-step model confidence are found to be ineffective due to the bidirectional decoding nature of dLLMs. To address this, the Directed Decoding Map (DDM) is introduced to capture structural relationships between decoding steps. Additionally, Gaussian-Trajectory Attribution (GTA) is proposed to effectively utilize the extracted structural information for attribution by fitting Gaussian distributions at each decoding position for each model. Experiments demonstrate the effectiveness of these methods in various scenarios, highlighting the potential of leveraging decoding trajectories for model attribution purposes. 
-
-<br /><br />Summary: <div>
-arXiv:2510.05148v1 Announce Type: new 
-Abstract: Discrete Diffusion Large Language Models (dLLMs) have recently emerged as a competitive paradigm for non-autoregressive language modeling. Their distinctive decoding mechanism enables faster inference speed and strong performance in code generation and mathematical tasks. In this work, we show that the decoding mechanism of dLLMs not only enhances model utility but also can be used as a powerful tool for model attribution. A key challenge in this problem lies in the diversity of attribution scenarios, including distinguishing between different models as well as between different checkpoints or backups of the same model. To ensure broad applicability, we identify two fundamental problems: what information to extract from the decoding trajectory, and how to utilize it effectively. We first observe that relying directly on per-step model confidence yields poor performance. This is mainly due to the bidirectional decoding nature of dLLMs: each newly decoded token influences the confidence of other decoded tokens, making model confidence highly redundant and washing out structural signal regarding decoding order or dependencies. To overcome this, we propose a novel information extraction scheme called the Directed Decoding Map (DDM), which captures structural relationships between decoding steps and better reveals model-specific behaviors. Furthermore, to make full use of the extracted structural information during attribution, we propose Gaussian-Trajectory Attribution (GTA), where we fit a cell-wise Gaussian distribution at each decoding position for each target model, and define the likelihood of a trajectory as the attribution score: if a trajectory exhibits higher log-likelihood under the distribution of a specific model, it is more likely to have been generated by that model. Extensive experiments under different settings validate the utility of our methods.
-]]></content:encoded>
-<pubDate>Wed, 08 Oct 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Chronological Thinking in Full-Duplex Spoken Dialogue Language Models</title>
-<link>https://arxiv.org/abs/2510.05150</link>
-<guid>https://arxiv.org/abs/2510.05150</guid>
-<content:encoded><![CDATA[
-<div> Keywords: spoken dialogue language models, full-duplex systems, Chronological Thinking, real-time interaction, response quality <br />
-Summary: <br />
-- Recent advances in spoken dialogue language models (SDLMs) focus on full-duplex systems that allow the agent to continuously perceive user speech streams while generating responses. <br />
-- Existing systems idle the agent during the listening phase by repeatedly predicting the silence token, which is not reflective of human behavior. <br />
-- Chronological Thinking is proposed as an on-the-fly conversational thinking mechanism that improves response quality in SDLMs. <br />
-- The approach is strictly causal, reasoning incrementally while listening and updating internal hypotheses only from past audio. <br />
-- No additional latency is introduced as reasoning takes place during the listening window, enabling the agent to start speaking immediately after the user stops. <br />
-- Experimental results show the effectiveness of chronological thinking, with consistent improvements in response quality and competitive performance on full-duplex interaction metrics. <br /> <div>
-arXiv:2510.05150v1 Announce Type: new 
-Abstract: Recent advances in spoken dialogue language models (SDLMs) reflect growing interest in shifting from turn-based to full-duplex systems, where the models continuously perceive user speech streams while generating responses. This simultaneous listening and speaking design enables real-time interaction and the agent can handle dynamic conversational behaviors like user barge-in. However, during the listening phase, existing systems keep the agent idle by repeatedly predicting the silence token, which departs from human behavior: we usually engage in lightweight thinking during conversation rather than remaining absent-minded. Inspired by this, we propose Chronological Thinking, a on-the-fly conversational thinking mechanism that aims to improve response quality in full-duplex SDLMs. Specifically, chronological thinking presents a paradigm shift from conventional LLM thinking approaches, such as Chain-of-Thought, purpose-built for streaming acoustic input. (1) Strictly causal: the agent reasons incrementally while listening, updating internal hypotheses only from past audio with no lookahead. (2) No additional latency: reasoning is amortized during the listening window; once the user stops speaking, the agent halts thinking and begins speaking without further delay. Experiments demonstrate the effectiveness of chronological thinking through both objective metrics and human evaluations show consistent improvements in response quality. Furthermore, chronological thinking robustly handles conversational dynamics and attains competitive performance on full-duplex interaction metrics.
-]]></content:encoded>
-<pubDate>Wed, 08 Oct 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Exploring Large Language Models for Financial Applications: Techniques, Performance, and Challenges with FinMA</title>
-<link>https://arxiv.org/abs/2510.05151</link>
-<guid>https://arxiv.org/abs/2510.05151</guid>
-<content:encoded><![CDATA[
-<div> Evaluation, Domain-adapted, Large Language Models, Financial NLP, FinMA
-
-Summary:
-FinMA, a domain-adapted Large Language Model (LLM) evaluated in financial natural language processing (NLP), shows strengths in sentiment analysis and classification but struggles with tasks requiring numerical reasoning, entity recognition, and summarization. The study focuses on FinMA's architecture, its tuning process using the Financial Instruction Tuning (FIT) dataset, and evaluation under the FLARE benchmark. It emphasizes the importance of accuracy, reliability, and domain adaptation in financial applications. The research aims to enhance understanding of designing and assessing financial LLMs to support decision-making in finance. 
-
-<br /><br />Summary: <div>
-arXiv:2510.05151v1 Announce Type: new 
-Abstract: This research explores the strengths and weaknesses of domain-adapted Large Language Models (LLMs) in the context of financial natural language processing (NLP). The analysis centers on FinMA, a model created within the PIXIU framework, which is evaluated for its performance in specialized financial tasks. Recognizing the critical demands of accuracy, reliability, and domain adaptation in financial applications, this study examines FinMA's model architecture, its instruction tuning process utilizing the Financial Instruction Tuning (FIT) dataset, and its evaluation under the FLARE benchmark. Findings indicate that FinMA performs well in sentiment analysis and classification, but faces notable challenges in tasks involving numerical reasoning, entity recognition, and summarization. This work aims to advance the understanding of how financial LLMs can be effectively designed and evaluated to assist in finance-related decision-making processes.
-]]></content:encoded>
-<pubDate>Wed, 08 Oct 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>A Single Character can Make or Break Your LLM Evals</title>
-<link>https://arxiv.org/abs/2510.05152</link>
-<guid>https://arxiv.org/abs/2510.05152</guid>
-<content:encoded><![CDATA[
-<div> Keywords: Large Language model evaluation, in-context examples, response quality, model rankings, attention head scores <br />
-Summary: <br />
-The study focuses on the impact of the format of in-context examples on the response quality of Large Language Models (LLMs). It discovered that the choice of delimiter significantly affects model performance, with variations of up to 23% in quality across different model families. Furthermore, the research identified that altering the delimiter can manipulate model rankings, showcasing the brittleness of LLMs in various topics and model scales. By analyzing attention head scores, the study revealed that well-performing delimiters direct attention to crucial input tokens. To enhance LLMs' robustness, the researchers suggested specifying the chosen delimiter in the prompt and provided practical recommendations for selecting the most effective delimiters. This study sheds light on the essential yet overlooked aspect of formatting in-context examples in LLM evaluations and offers insights to improve model performance. <br /> <div>
-arXiv:2510.05152v1 Announce Type: new 
-Abstract: Common Large Language model (LLM) evaluations rely on demonstration examples to steer models' responses to the desired style. While the number of examples used has been studied and standardized, the choice of how to format examples is less investigated. In evaluation protocols and real world usage, users face the choice how to separate in-context examples: use a comma? new line? semi-colon? hashtag? etc.? Surprisingly, we find this seemingly minor choice can dramatically alter model response quality. Across leading model families (Llama, Qwen, Gemma), performance on MMLU for example can vary by $\pm 23\%$ depending on the choice of delimiter. In fact, one can manipulate model rankings to put any model in the lead by only modifying the single character separating examples. We find LLMs' brittleness pervades topics, model families, and doesn't improve with scale. By probing attention head scores, we find that good-performing delimiters steer attention towards key tokens in the input. Finally, we explore methods to improve LLMs' robustness to the choice of delimiter. We find specifying the selected delimiter in the prompt boosts robustness and offer practical recommendations for the best-performing delimiters to select.
-]]></content:encoded>
-<pubDate>Wed, 08 Oct 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Can AI Truly Represent Your Voice in Deliberations? A Comprehensive Study of Large-Scale Opinion Aggregation with LLMs</title>
-<link>https://arxiv.org/abs/2510.05154</link>
-<guid>https://arxiv.org/abs/2510.05154</guid>
-<content:encoded><![CDATA[
-<div> Keywords: Large-scale deliberations, LLMs, fairness concerns, DeliberationBank, DeliberationJudge
-
-Summary: 
-DeliberationBank introduces a dataset encompassing opinion data from 3,000 participants on ten deliberation questions and judgment data from 4,500 participants assessing summaries across four dimensions: representativeness, informativeness, neutrality, and policy approval. DeliberationJudge, a fine-tuned DeBERTa model trained on this dataset, outperforms a variety of LLM judges in evaluating deliberation summaries from individual perspectives. The study reveals shortcomings in LLM-based deliberation summarization, particularly in the underrepresentation of minority perspectives. This framework offers a robust and scalable approach to assessing deliberation summarization, aiding in the development of more representative and equitable AI systems for policymaking. 
-
-<br /><br />Summary: <div>
-arXiv:2510.05154v1 Announce Type: new 
-Abstract: Large-scale public deliberations generate thousands of free-form contributions that must be synthesized into representative and neutral summaries for policy use. While LLMs have been shown as a promising tool to generate summaries for large-scale deliberations, they also risk underrepresenting minority perspectives and exhibiting bias with respect to the input order, raising fairness concerns in high-stakes contexts. Studying and fixing these issues requires a comprehensive evaluation at a large scale, yet current practice often relies on LLMs as judges, which show weak alignment with human judgments. To address this, we present DeliberationBank, a large-scale human-grounded dataset with (1) opinion data spanning ten deliberation questions created by 3,000 participants and (2) summary judgment data annotated by 4,500 participants across four dimensions (representativeness, informativeness, neutrality, policy approval). Using these datasets, we train DeliberationJudge, a fine-tuned DeBERTa model that can rate deliberation summaries from individual perspectives. DeliberationJudge is more efficient and more aligned with human judgements compared to a wide range of LLM judges. With DeliberationJudge, we evaluate 18 LLMs and reveal persistent weaknesses in deliberation summarization, especially underrepresentation of minority positions. Our framework provides a scalable and reliable way to evaluate deliberation summarization, helping ensure AI systems are more representative and equitable for policymaking.
 ]]></content:encoded>
 <pubDate>Wed, 08 Oct 2025 00:00:00 -0400</pubDate>
 </item>

@@ -4,13 +4,14 @@
 <title>cs.LG updates on arXiv.org</title>
 <link>http://rss.arxiv.org/rss/cs.LG</link>
 
+
 <item>
 <title>Cost-aware Stopping for Bayesian Optimization</title>
 <link>https://arxiv.org/abs/2507.12453</link>
 <guid>https://arxiv.org/abs/2507.12453</guid>
 <content:encoded><![CDATA[
-<div> Keywords: Bayesian optimization, cost-aware stopping rule, black-box functions, evaluation costs, acquisition functions <br>
-Summary: <br>
+<div> Keywords: Bayesian optimization, cost-aware stopping rule, black-box functions, evaluation costs, acquisition functions <br />
+Summary: <br />
 - The article addresses the issue of deciding when to stop evaluating expensive black-box functions in Bayesian optimization and other applications of automated machine learning.
 - Existing adaptive stopping rules lack guarantees for cost-aware settings to prevent excessive function evaluation costs.
 - The proposed cost-aware stopping rule adapts to varying evaluation costs without the need for heuristic tuning.
@@ -20,21 +21,19 @@ arXiv:2507.12453v3 Announce Type: replace
 Abstract: In automated machine learning, scientific discovery, and other applications of Bayesian optimization, deciding when to stop evaluating expensive black-box functions is an important practical consideration. While several adaptive stopping rules have been proposed, in the cost-aware setting they lack guarantees ensuring they stop before incurring excessive function evaluation costs. We propose a cost-aware stopping rule for Bayesian optimization that adapts to varying evaluation costs and is free of heuristic tuning. Our rule is grounded in a theoretical connection to state-of-the-art cost-aware acquisition functions, namely the Pandora's Box Gittins Index (PBGI) and log expected improvement per cost. We prove a theoretical guarantee bounding the expected cumulative evaluation cost incurred by our stopping rule when paired with these two acquisition functions. In experiments on synthetic and empirical tasks, including hyperparameter optimization and neural architecture size search, we show that combining our stopping rule with the PBGI acquisition function usually matches or outperforms other acquisition-function--stopping-rule pairs in terms of cost-adjusted simple regret, a metric capturing trade-offs between solution quality and cumulative evaluation cost.
 ]]></content:encoded>
 <pubDate>Tue, 14 Oct 2025 00:00:00 -0400</pubDate>
-<pubDate>Tue, 14 Oct 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
 <title>Equilibrium Matching: Generative Modeling with Implicit Energy-Based Models</title>
 <link>https://arxiv.org/abs/2510.02300</link>
 <guid>https://arxiv.org/abs/2510.02300</guid>
 <content:encoded><![CDATA[
-<div> Generative Modeling, Equilibrium Matching, Energy Landscape, Optimization-based Sampling, Image Generation <br>
+<div> Generative Modeling, Equilibrium Matching, Energy Landscape, Optimization-based Sampling, Image Generation <br />
 Summary:
-Equilibrium Matching (EqM) is a novel generative modeling framework that focuses on learning the equilibrium gradient of an implicit energy landscape, removing the non-equilibrium dynamics present in traditional diffusion and flow-based models. By optimizing sampling through gradient descent on the learned landscape, EqM achieves superior generation performance, demonstrated by an impressive FID score on ImageNet 256x256. This framework is not only empirically effective but also theoretically sound in learning and sampling from the data manifold. EqM offers versatility by excelling in tasks like image denoising, out-of-distribution detection, and image composition. By replacing time-conditional velocities with an equilibrium landscape, EqM provides a seamless integration between flow-based and energy-based models, facilitating optimization-driven inference processes. <br>
+Equilibrium Matching (EqM) is a novel generative modeling framework that focuses on learning the equilibrium gradient of an implicit energy landscape, removing the non-equilibrium dynamics present in traditional diffusion and flow-based models. By optimizing sampling through gradient descent on the learned landscape, EqM achieves superior generation performance, demonstrated by an impressive FID score on ImageNet 256x256. This framework is not only empirically effective but also theoretically sound in learning and sampling from the data manifold. EqM offers versatility by excelling in tasks like image denoising, out-of-distribution detection, and image composition. By replacing time-conditional velocities with an equilibrium landscape, EqM provides a seamless integration between flow-based and energy-based models, facilitating optimization-driven inference processes. <br />
  <div>
 arXiv:2510.02300v3 Announce Type: replace 
 Abstract: We introduce Equilibrium Matching (EqM), a generative modeling framework built from an equilibrium dynamics perspective. EqM discards the non-equilibrium, time-conditional dynamics in traditional diffusion and flow-based generative models and instead learns the equilibrium gradient of an implicit energy landscape. Through this approach, we can adopt an optimization-based sampling process at inference time, where samples are obtained by gradient descent on the learned landscape with adjustable step sizes, adaptive optimizers, and adaptive compute. EqM surpasses the generation performance of diffusion/flow models empirically, achieving an FID of 1.90 on ImageNet 256$\times$256. EqM is also theoretically justified to learn and sample from the data manifold. Beyond generation, EqM is a flexible framework that naturally handles tasks including partially noised image denoising, OOD detection, and image composition. By replacing time-conditional velocities with a unified equilibrium landscape, EqM offers a tighter bridge between flow and energy-based models and a simple route to optimization-driven inference.
 ]]></content:encoded>
-<pubDate>Tue, 14 Oct 2025 00:00:00 -0400</pubDate>
 <pubDate>Tue, 14 Oct 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -44,11 +43,10 @@ Abstract: We introduce Equilibrium Matching (EqM), a generative modeling framewo
 <content:encoded><![CDATA[
 <div> synthesize, neural network, learning dynamics, gradient descent, synaptic plasticity
 Summary: 
-This study explores the possibility of non-gradient "curl" components in biological neural network learning dynamics. The presence of inhibitory-excitatory connections or Hebbian/anti-Hebbian plasticity can introduce curl terms that do not align with traditional gradient descent. Analyzing feedforward networks within a student-teacher framework, the study shows that small curl terms can mimic gradient descent dynamics, while strong curl terms can destabilize learning. Depending on the network architecture, curl terms can either enhance or hinder learning speed compared to gradient descent. Some architectures can accommodate diverse learning rules for robust learning, challenging normative theories of gradient-based learning in neural networks. The findings shed light on the potential complexity of learning dynamics in biological neural networks. <br><br>Summary: <div>
+This study explores the possibility of non-gradient "curl" components in biological neural network learning dynamics. The presence of inhibitory-excitatory connections or Hebbian/anti-Hebbian plasticity can introduce curl terms that do not align with traditional gradient descent. Analyzing feedforward networks within a student-teacher framework, the study shows that small curl terms can mimic gradient descent dynamics, while strong curl terms can destabilize learning. Depending on the network architecture, curl terms can either enhance or hinder learning speed compared to gradient descent. Some architectures can accommodate diverse learning rules for robust learning, challenging normative theories of gradient-based learning in neural networks. The findings shed light on the potential complexity of learning dynamics in biological neural networks. <br /><br />Summary: <div>
 arXiv:2510.02765v3 Announce Type: replace 
 Abstract: Gradient-based algorithms are a cornerstone of artificial neural network training, yet it remains unclear whether biological neural networks use similar gradient-based strategies during learning. Experiments often discover a diversity of synaptic plasticity rules, but whether these amount to an approximation to gradient descent is unclear. Here we investigate a previously overlooked possibility: that learning dynamics may include fundamentally non-gradient "curl"-like components while still being able to effectively optimize a loss function. Curl terms naturally emerge in networks with inhibitory-excitatory connectivity or Hebbian/anti-Hebbian plasticity, resulting in learning dynamics that cannot be framed as gradient descent on any objective. To investigate the impact of these curl terms, we analyze feedforward networks within an analytically tractable student-teacher framework, systematically introducing non-gradient dynamics through neurons exhibiting rule-flipped plasticity. Small curl terms preserve the stability of the original solution manifold, resulting in learning dynamics similar to gradient descent. Beyond a critical value, strong curl terms destabilize the solution manifold. Depending on the network architecture, this loss of stability can lead to chaotic learning dynamics that destroy performance. In other cases, the curl terms can counterintuitively speed learning compared to gradient descent by allowing the weight dynamics to escape saddles by temporarily ascending the loss. Our results identify specific architectures capable of supporting robust learning via diverse learning rules, providing an important counterpoint to normative theories of gradient-based learning in neural networks.
 ]]></content:encoded>
-<pubDate>Tue, 14 Oct 2025 00:00:00 -0400</pubDate>
 <pubDate>Tue, 14 Oct 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -56,13 +54,12 @@ Abstract: Gradient-based algorithms are a cornerstone of artificial neural netwo
 <link>https://arxiv.org/abs/2510.06940</link>
 <guid>https://arxiv.org/abs/2510.06940</guid>
 <content:encoded><![CDATA[
-<div> Node affinity prediction, temporal graph learning, dynamic link property prediction models, NAViS, Virtual State<br>
-Summary:<br>
-Node affinity prediction is a key task in temporal graph learning, with applications in various domains such as social and financial networks. Current state-of-the-art models struggle to outperform simple heuristics like Persistent Forecast or Moving Average in this task. This work identifies the challenges in training Temporal Graph Neural Networks for node affinity prediction and proposes solutions. The authors introduce NAViS, a novel model that leverages virtual state and draws on the equivalence between heuristics and state space models. They also present a new loss function tailored for node affinity prediction. Evaluations on TGB dataset demonstrate that NAViS surpasses existing models and heuristics in performance. The open-source code for NAViS is available for further research and applications. <br><br>Summary: <div>
+<div> Node affinity prediction, temporal graph learning, dynamic link property prediction models, NAViS, Virtual State<br />
+Summary:<br />
+Node affinity prediction is a key task in temporal graph learning, with applications in various domains such as social and financial networks. Current state-of-the-art models struggle to outperform simple heuristics like Persistent Forecast or Moving Average in this task. This work identifies the challenges in training Temporal Graph Neural Networks for node affinity prediction and proposes solutions. The authors introduce NAViS, a novel model that leverages virtual state and draws on the equivalence between heuristics and state space models. They also present a new loss function tailored for node affinity prediction. Evaluations on TGB dataset demonstrate that NAViS surpasses existing models and heuristics in performance. The open-source code for NAViS is available for further research and applications. <br /><br />Summary: <div>
 arXiv:2510.06940v2 Announce Type: replace 
 Abstract: Node affinity prediction is a common task that is widely used in temporal graph learning with applications in social and financial networks, recommender systems, and more. Recent works have addressed this task by adapting state-of-the-art dynamic link property prediction models to node affinity prediction. However, simple heuristics, such as Persistent Forecast or Moving Average, outperform these models. In this work, we analyze the challenges in training current Temporal Graph Neural Networks for node affinity prediction and suggest appropriate solutions. Combining the solutions, we develop NAViS - Node Affinity prediction model using Virtual State, by exploiting the equivalence between heuristics and state space models. While promising, training NAViS is non-trivial. Therefore, we further introduce a novel loss function for node affinity prediction. We evaluate NAViS on TGB and show that it outperforms the state-of-the-art, including heuristics. Our source code is available at https://github.com/orfeld415/NAVIS
 ]]></content:encoded>
-<pubDate>Tue, 14 Oct 2025 00:00:00 -0400</pubDate>
 <pubDate>Tue, 14 Oct 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -73,11 +70,10 @@ Abstract: Node affinity prediction is a common task that is widely used in tempo
 <div> Keywords: Transformer-based methods, time series forecasting, multivariate features, sequence representations, HTMformer
 
 Summary:
-Transformer-based methods have shown impressive results in time series forecasting, but they still struggle with overemphasizing temporal dependencies, leading to unnecessary computational overhead. This study identifies the importance of the embedding method used in learning effective representations for Transformer performance. To address this, the authors propose Hybrid Temporal and Multivariate Embeddings (HTME), which enhance sequence representations through multidimensional embeddings capturing richer information. The HTME extractor combines temporal and multivariate feature extraction modules to strike a balance between model complexity and performance efficiency. The resulting HTMformer model, integrating HTME with the Transformer architecture, outperforms existing baselines in accuracy and efficiency on real-world datasets. This approach provides a lightweight forecasting solution by leveraging enhanced feature extraction capabilities to improve sequence understanding and forecasting accuracy. <br><br>Summary: <div>
+Transformer-based methods have shown impressive results in time series forecasting, but they still struggle with overemphasizing temporal dependencies, leading to unnecessary computational overhead. This study identifies the importance of the embedding method used in learning effective representations for Transformer performance. To address this, the authors propose Hybrid Temporal and Multivariate Embeddings (HTME), which enhance sequence representations through multidimensional embeddings capturing richer information. The HTME extractor combines temporal and multivariate feature extraction modules to strike a balance between model complexity and performance efficiency. The resulting HTMformer model, integrating HTME with the Transformer architecture, outperforms existing baselines in accuracy and efficiency on real-world datasets. This approach provides a lightweight forecasting solution by leveraging enhanced feature extraction capabilities to improve sequence understanding and forecasting accuracy. <br /><br />Summary: <div>
 arXiv:2510.07084v2 Announce Type: replace 
 Abstract: Transformer-based methods have achieved impressive results in time series forecasting. However, existing Transformers still exhibit limitations in sequence modeling as they tend to overemphasize temporal dependencies. This incurs additional computational overhead without yielding corresponding performance gains. We find that the performance of Transformers is highly dependent on the embedding method used to learn effective representations. To address this issue, we extract multivariate features to augment the effective information captured in the embedding layer, yielding multidimensional embeddings that convey richer and more meaningful sequence representations. These representations enable Transformer-based forecasters to better understand the series. Specifically, we introduce Hybrid Temporal and Multivariate Embeddings (HTME). The HTME extractor integrates a lightweight temporal feature extraction module with a carefully designed multivariate feature extraction module to provide complementary features, thereby achieving a balance between model complexity and performance. By combining HTME with the Transformer architecture, we present HTMformer, leveraging the enhanced feature extraction capability of the HTME extractor to build a lightweight forecaster. Experiments conducted on eight real-world datasets demonstrate that our approach outperforms existing baselines in both accuracy and efficiency.
 ]]></content:encoded>
-<pubDate>Tue, 14 Oct 2025 00:00:00 -0400</pubDate>
 <pubDate>Tue, 14 Oct 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -85,13 +81,12 @@ Abstract: Transformer-based methods have achieved impressive results in time ser
 <link>https://arxiv.org/abs/2510.08141</link>
 <guid>https://arxiv.org/abs/2510.08141</guid>
 <content:encoded><![CDATA[
-<div> Reinforcement fine-tuning, Large language models, Entropy collapse, Exploration, Policy optimization <br>
-<br>
+<div> Reinforcement fine-tuning, Large language models, Entropy collapse, Exploration, Policy optimization <br />
+<br />
 Summary: Arbitrary Entropy Policy Optimization (AEPO) addresses the issue of entropy collapse in Group Relative Policy Optimization (GRPO) by using REINFORCE policy gradient on temperature-adjusted distributions. This method stabilizes entropy at arbitrary target levels, preventing premature convergence and preserving exploration. The study reveals a non-monotonic relationship between performance and entropy, showing that increasing entropy can initially improve performance before eventually leading to a decline. AEPO introduces three key designs to control entropy effectively: policy gradient regularization, distribution regularization, and REINFORCE as regularization. This approach extends beyond entropy control, offering a broader framework for reinforcement fine-tuning where superior target distributions can serve as effective regularizers. <div>
 arXiv:2510.08141v2 Announce Type: replace 
 Abstract: Reinforcement fine-tuning (RFT) is essential for enhancing the reasoning capabilities of large language models (LLM), yet the widely adopted Group Relative Policy Optimization (GRPO) suffers from entropy collapse, where entropy monotonically decreases, exploration vanishes, and policies converge prematurely. Existing entropy-regularized methods only partially alleviate this issue while introducing bias and instability, leaving entropy control unresolved and the connection between entropy, exploration, and performance unclear. We propose Arbitrary Entropy Policy Optimization (AEPO), which eliminates entropy collapse by replacing entropy bonuses with REINFORCE policy gradient on temperature-adjusted distributions and stabilizing entropy through temperature regulation. AEPO integrates three key designs: policy gradient as regularization, distribution as regularization, and REINFORCE as regularization, enabling precise entropy control without distorting optimization. Experiments demonstrate three major contributions: AEPO (1) stabilizes entropy at arbitrary target levels, effectively removing collapse in GRPO; (2) reveals a non-monotonic relation where performance first improves then declines with increasing entropy, clarifying the link between entropy, exploration, and reasoning; and (3) generalizes beyond entropy, providing a broader RFT paradigm where superior target distributions can serve as REINFORCE regularizers.
 ]]></content:encoded>
-<pubDate>Tue, 14 Oct 2025 00:00:00 -0400</pubDate>
 <pubDate>Tue, 14 Oct 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -100,7 +95,7 @@ Abstract: Reinforcement fine-tuning (RFT) is essential for enhancing the reasoni
 <guid>https://arxiv.org/abs/2404.07602</guid>
 <content:encoded><![CDATA[
 <div> Identification, Attention-driven CNN, Fragments, Pyramid-based strategy, Limited data access
-<br>
+<br />
 Summary:
 This paper presents a writer identification system using an attention-driven Convolutional Neural Network (CNN) with a focus on utilizing image fragments extracted from word images through a pyramid-based strategy. The system aims to capture fine-grained details and coarse features at various levels of abstraction to improve representation learning. By training the network on these fragments, the system enhances robustness compared to traditional CNNs trained on full word images. Additionally, an attention mechanism is integrated to further enhance feature representation. The proposed algorithm is evaluated on three benchmark databases, showcasing its effectiveness in writer identification tasks, particularly in cases with limited handwriting data access. <div>
 arXiv:2404.07602v3 Announce Type: replace-cross 
@@ -108,20 +103,18 @@ Abstract: Writer identification due to its widespread application in various fie
   In this paper, we propose a writer identification system based on an attention-driven Convolutional Neural Network (CNN). The system is trained utilizing image segments, known as fragments, extracted from word images, employing a pyramid-based strategy. This methodology enables the system to capture a comprehensive representation of the data, encompassing both fine-grained details and coarse features across various levels of abstraction. These extracted fragments serve as the training data for the convolutional network, enabling it to learn a more robust representation compared to traditional convolution-based networks trained on word images. Additionally, the paper explores the integration of an attention mechanism to enhance the representational power of the learned features. The efficacy of the proposed algorithm is evaluated on three benchmark databases, demonstrating its proficiency in writer identification tasks, particularly in scenarios with limited access to handwriting data.
 ]]></content:encoded>
 <pubDate>Tue, 14 Oct 2025 00:00:00 -0400</pubDate>
-<pubDate>Tue, 14 Oct 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
 <title>Dyna-Think: Synergizing Reasoning, Acting, and World Model Simulation in AI Agents</title>
 <link>https://arxiv.org/abs/2506.00320</link>
 <guid>https://arxiv.org/abs/2506.00320</guid>
 <content:encoded><![CDATA[
-<div> model simulation, reasoning, planning, acting, AI agents <br>
+<div> model simulation, reasoning, planning, acting, AI agents <br />
 Summary: 
-The study introduces Dyna-Think, a thinking framework combining planning, internal world modeling, reasoning, and acting to enhance AI agent performance. They propose two methods, Dyna-Think Imitation Learning (DIT) and Dyna-Think Dyna Training (DDT), to train the agents. DIT reconstructs the thinking process of the AI model and focuses on relevant world model simulation for planned actions. DDT uses a two-stage training process to improve the agent's world modeling and action performances. Results from experiments on OSWorld and WindowsAgentArena show that Dyna-Think improves both in-domain and out-of-domain performance of AI agents, achieving similar performance to baseline models with fewer tokens. The study also highlights the effectiveness of critique generation for world model training and the correlation between agent performance and world modeling abilities, suggesting a promising research direction for enhancing AI agents' reasoning, planning, and acting capabilities. <br> <div>
+The study introduces Dyna-Think, a thinking framework combining planning, internal world modeling, reasoning, and acting to enhance AI agent performance. They propose two methods, Dyna-Think Imitation Learning (DIT) and Dyna-Think Dyna Training (DDT), to train the agents. DIT reconstructs the thinking process of the AI model and focuses on relevant world model simulation for planned actions. DDT uses a two-stage training process to improve the agent's world modeling and action performances. Results from experiments on OSWorld and WindowsAgentArena show that Dyna-Think improves both in-domain and out-of-domain performance of AI agents, achieving similar performance to baseline models with fewer tokens. The study also highlights the effectiveness of critique generation for world model training and the correlation between agent performance and world modeling abilities, suggesting a promising research direction for enhancing AI agents' reasoning, planning, and acting capabilities. <br /> <div>
 arXiv:2506.00320v3 Announce Type: replace-cross 
 Abstract: Recent progress in reasoning with large language models (LLMs), such as DeepSeek-R1, demonstrates impressive capabilities in domains like mathematics and coding, by exhibiting complex cognitive behaviors such as verification, goal decomposition, and self-reflection. However, it is unclear what behavior is effective and what behavior is missing for long-horizon AI agents tasks. In this work, we propose Dyna-Think, a thinking framework that integrates planning with an internal world model with reasoning and acting to enhance AI agent performance. To enable Dyna-Think, we propose Dyna-Think Imitation Learning (DIT) and Dyna-Think Dyna Training (DDT). To initialize a policy with Dyna-Think, DIT reconstructs the thinking process of R1 to focus on performing world model simulation relevant to the proposed (and planned) action, and trains the policy using this reconstructed data. To enhance Dyna-Think, DDT uses a two-stage training process to first improve the agent's world modeling ability via objectives such as state prediction or critique generation, and then improve the agent's action via policy training. We evaluate our methods on OSWorld and WindowsAgentArena, and demonstrate that Dyna-Think improves the agent's in-domain and out-of-domain performance, achieving similar best-of-n performance compared to R1 while generating 2x less tokens on average. Our extensive empirical studies reveal that 1) using critique generation for world model training is effective to improve policy performance; and 2) AI agents with better performance correlate with better world modeling abilities. We believe our results suggest a promising research direction to integrate world model simulation into AI agents to enhance their reasoning, planning, and acting capabilities.
 ]]></content:encoded>
-<pubDate>Tue, 14 Oct 2025 00:00:00 -0400</pubDate>
 <pubDate>Tue, 14 Oct 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -135,7 +128,6 @@ Native Hybrid Attention (NHA) is introduced as a hybrid architecture combining l
 arXiv:2510.07019v2 Announce Type: replace-cross 
 Abstract: Transformers excel at sequence modeling but face quadratic complexity, while linear attention offers improved efficiency but often compromises recall accuracy over long contexts. In this work, we introduce Native Hybrid Attention (NHA), a novel hybrid architecture of linear and full attention that integrates both intra \& inter-layer hybridization into a unified layer design. NHA maintains long-term context in key-value slots updated by a linear RNN, and augments them with short-term tokens from a sliding window. A single \texttt{softmax attention} operation is then applied over all keys and values, enabling per-token and per-head context-dependent weighting without requiring additional fusion parameters. The inter-layer behavior is controlled through a single hyperparameter, the sliding window size, which allows smooth adjustment between purely linear and full attention while keeping all layers structurally uniform. Experimental results show that NHA surpasses Transformers and other hybrid baselines on recall-intensive and commonsense reasoning tasks. Furthermore, pretrained LLMs can be structurally hybridized with NHA, achieving competitive accuracy while delivering significant efficiency gains. Code is available at https://github.com/JusenD/NHA.
 ]]></content:encoded>
-<pubDate>Tue, 14 Oct 2025 00:00:00 -0400</pubDate>
 <pubDate>Tue, 14 Oct 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -151,7 +143,6 @@ arXiv:2510.07117v2 Announce Type: replace-cross
 Abstract: Physical vulnerability and mortality are often seen as obstacles to be avoided in the development of artificial agents, which struggle to adapt to open-ended environments and provide aligned care. Meanwhile, biological organisms survive, thrive, and care for each other in an open-ended physical world with relative ease and efficiency. Understanding the role of the conditions of life in this disparity can aid in developing more robust, adaptive, and caring artificial agents. Here we define two minimal conditions for physical embodiment inspired by the existentialist phenomenology of Martin Heidegger: being-in-the-world (the agent is a part of the environment) and being-towards-death (unless counteracted, the agent drifts toward terminal states due to the second law of thermodynamics). We propose that from these conditions we can obtain both a homeostatic drive - aimed at maintaining integrity and avoiding death by expending energy to learn and act - and an intrinsic drive to continue to do so in as many ways as possible. Drawing inspiration from Friedrich Nietzsche's existentialist concept of will-to-power, we examine how intrinsic drives to maximize control over future states, e.g., empowerment, allow agents to increase the probability that they will be able to meet their future homeostatic needs, thereby enhancing their capacity to maintain physical integrity. We formalize these concepts within a reinforcement learning framework, which enables us to examine how intrinsically driven embodied agents learning in open-ended multi-agent environments may cultivate the capacities for open-endedness and care.
 ]]></content:encoded>
 <pubDate>Tue, 14 Oct 2025 00:00:00 -0400</pubDate>
-<pubDate>Tue, 14 Oct 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
 <title>Base Models Know How to Reason, Thinking Models Learn When</title>
@@ -163,11 +154,10 @@ Abstract: Physical vulnerability and mortality are often seen as obstacles to be
 Summary:
 The study examines why thinking language models like DeepSeek R1 outperform base models and investigates whether thinking models learn new reasoning capabilities or repurpose existing ones. A hybrid model is proposed to activate reasoning mechanisms in base models at the appropriate time to elicit thinking-model-level reasoning chains, indicating that thinking models utilize already existing capabilities. An unsupervised approach is introduced to uncover human-interpretable reasoning behaviors in thinking models without manual or LLM-derived assumptions. The hybrid model recovers up to 91% of the performance gap to thinking models without weight updates while manipulating only 12% of tokens. The empirical setup offers a causal method to assess the effectiveness of reasoning mechanisms in base models by directly invoking them and measuring task performance. The study suggests that pre-training is when models acquire most of their reasoning mechanisms, while post-training teaches efficient deployment of these mechanisms for efficient inference-time compute utilization. 
 
-<br><br>Summary: <div>
+<br /><br />Summary: <div>
 arXiv:2510.07364v2 Announce Type: replace-cross 
 Abstract: Why do thinking language models like DeepSeek R1 outperform their base counterparts? Despite consistent performance gains, it remains unclear to what extent thinking models learn entirely new reasoning capabilities or repurpose pre-existing base model ones. In this work, we propose a hybrid model where we activate reasoning mechanisms in base models at the right time to elicit thinking-model-level reasoning chains, implying that thinking models exploit already existing capabilities. To ground our analysis, we introduce an unsupervised, bottom-up approach for uncovering human-interpretable reasoning behaviors in thinking models. This approach provides an unbiased method to discover reasoning behaviors without imposing manual or LLM-derived assumptions. Across three base and four thinking models, using GSM8K and MATH500, our hybrid model recovers up to 91% of the performance gap to thinking models without any weight updates while steering only 12% of tokens. Concretely, our empirical setup provides a simple, causal way to test the effectiveness of existing reasoning mechanisms in base models by invoking them directly and measuring the resulting task performance. More broadly, these results reframe our understanding of how thinking models are trained: pre-training is when models acquire most of their reasoning mechanisms, and post-training teaches efficient deployment of these mechanisms at the right time, enabling efficient use of their inference-time compute.
 ]]></content:encoded>
-<pubDate>Tue, 14 Oct 2025 00:00:00 -0400</pubDate>
 <pubDate>Tue, 14 Oct 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -183,7 +173,6 @@ arXiv:2510.07624v3 Announce Type: replace-cross
 Abstract: Generative models form the backbone of modern machine learning, underpinning state-of-the-art systems in text, vision, and multimodal applications. While Maximum Likelihood Estimation has traditionally served as the dominant training paradigm, recent work have highlighted its limitations, particularly in generalization and susceptibility to catastrophic forgetting compared to Reinforcement Learning techniques, such as Policy Gradient methods. However, these approaches depend on explicit reward signals, which are often unavailable in practice, leaving open the fundamental problem of how to align generative models when only high-quality datasets are accessible. In this work, we address this challenge via a Bilevel Optimization framework, where the reward function is treated as the optimization variable of an outer-level problem, while a policy gradient objective defines the inner-level. We then conduct a theoretical analysis of this optimization problem in a tractable setting and extract insights that, as we demonstrate, generalize to applications such as tabular classification and model-based reinforcement learning. We release the code at https://github.com/abenechehab/nll_to_po .
 ]]></content:encoded>
 <pubDate>Tue, 14 Oct 2025 00:00:00 -0400</pubDate>
-<pubDate>Tue, 14 Oct 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
 <title>Detecting and Mitigating Insertion Hallucination in Video-to-Audio Generation</title>
@@ -195,14 +184,12 @@ Abstract: Generative models form the backbone of modern machine learning, underp
 Summary: 
 The article addresses the issue of Insertion Hallucination in video-to-audio generation models, where the generated audio includes sounds not present in the video. Existing evaluation metrics fail to detect this issue due to dataset biases. The authors propose an evaluation framework using an ensemble of audio event detectors and introduce new metrics to quantify the prevalence and severity of Insertion Hallucination. They also present Posterior Feature Correction, a method to mitigate this problem during inference without additional training. Experimental results show that state-of-the-art models suffer from severe Insertion Hallucination, but the proposed method significantly reduces its impact without compromising audio quality or temporal synchronization. This work highlights the importance of addressing Insertion Hallucination in video-to-audio generation models for more reliable results. 
 
-<br><br>Summary: <div>
+<br /><br />Summary: <div>
 arXiv:2510.08078v2 Announce Type: replace-cross 
 Abstract: Video-to-Audio generation has made remarkable strides in automatically synthesizing sound for video. However, existing evaluation metrics, which focus on semantic and temporal alignment, overlook a critical failure mode: models often generate acoustic events, particularly speech and music, that have no corresponding visual source. We term this phenomenon Insertion Hallucination and identify it as a systemic risk driven by dataset biases, such as the prevalence of off-screen sounds, that remains completely undetected by current metrics. To address this challenge, we first develop a systematic evaluation framework that employs a majority-voting ensemble of multiple audio event detectors. We also introduce two novel metrics to quantify the prevalence and severity of this issue: IH@vid (the fraction of videos with hallucinations) and IH@dur (the fraction of hallucinated duration). Building on this, we propose Posterior Feature Correction, a novel training-free inference-time method that mitigates IH. PFC operates in a two-pass process: it first generates an initial audio output to detect hallucinated segments, and then regenerates the audio after masking the corresponding video features at those timestamps. Experiments on several mainstream V2A benchmarks first reveal that state-of-the-art models suffer from severe IH. In contrast, our PFC method reduces both the prevalence and duration of hallucinations by over 50\% on average, without degrading, and in some cases even improving, conventional metrics for audio quality and temporal synchronization. Our work is the first to formally define, systematically measure, and effectively mitigate Insertion Hallucination, paving the way for more reliable and faithful V2A models.
 ]]></content:encoded>
 <pubDate>Tue, 14 Oct 2025 00:00:00 -0400</pubDate>
-<pubDate>Tue, 14 Oct 2025 00:00:00 -0400</pubDate>
 </item>
-
 <item>
 <title>Direct Routing Gradient (DRGrad): A Personalized Information Surgery for Multi-Task Learning (MTL) Recommendations</title>
 <link>https://arxiv.org/abs/2510.09643</link>
@@ -10785,136 +10772,6 @@ Abstract: This paper introduces MetaDefense, a novel framework for defending aga
 <content:encoded><![CDATA[
 arXiv:2510.07841v1 Announce Type: new 
 Abstract: One paradigm of language model (LM) fine-tuning relies on creating large training datasets, under the assumption that high quantity and diversity will enable models to generalize to novel tasks after post-training. In practice, gathering large sets of data is inefficient, and training on them is prohibitively expensive; worse, there is no guarantee that the resulting model will handle complex scenarios or generalize better. Moreover, existing techniques rarely assess whether a training sample provides novel information or is redundant with the knowledge already acquired by the model, resulting in unnecessary costs. In this work, we explore a new test-time self-improvement method to create more effective and generalizable agentic LMs on-the-fly. The proposed algorithm can be summarized in three steps: (i) first it identifies the samples that model struggles with (self-awareness), (ii) then generates similar examples from detected uncertain samples (self-data augmentation), and (iii) uses these newly generated samples at test-time fine-tuning (self-improvement). We study two variants of this approach: Test-Time Self-Improvement (TT-SI), where the same model generates additional training examples from its own uncertain cases and then learns from them, and contrast this approach with Test-Time Distillation (TT-D), where a stronger model generates similar examples for uncertain cases, enabling student to adapt using distilled supervision. Empirical evaluations across different agent benchmarks demonstrate that TT-SI improves the performance with +5.48% absolute accuracy gain on average across all benchmarks and surpasses other standard learning methods, yet using 68x less training samples. Our findings highlight the promise of TT-SI, demonstrating the potential of self-improvement algorithms at test-time as a new paradigm for building more capable agents toward self-evolution.
-]]></content:encoded>
-<pubDate>Fri, 10 Oct 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Meta-Learning Based Few-Shot Graph-Level Anomaly Detection</title>
-<link>https://arxiv.org/abs/2510.07847</link>
-<guid>https://arxiv.org/abs/2510.07847</guid>
-<content:encoded><![CDATA[
-arXiv:2510.07847v1 Announce Type: new 
-Abstract: Graph-level anomaly detection aims to identify anomalous graphs or subgraphs within graph datasets, playing a vital role in various fields such as fraud detection, review classification, and biochemistry. While Graph Neural Networks (GNNs) have made significant progress in this domain, existing methods rely heavily on large amounts of labeled data, which is often unavailable in real-world scenarios. Additionally, few-shot anomaly detection methods based on GNNs are prone to noise interference, resulting in poor embedding quality and reduced model robustness. To address these challenges, we propose a novel meta-learning-based graph-level anomaly detection framework (MA-GAD), incorporating a graph compression module that reduces the graph size, mitigating noise interference while retaining essential node information. We also leverage meta-learning to extract meta-anomaly information from similar networks, enabling the learning of an initialization model that can rapidly adapt to new tasks with limited samples. This improves the anomaly detection performance on target graphs, and a bias network is used to enhance the distinction between anomalous and normal nodes. Our experimental results, based on four real-world biochemical datasets, demonstrate that MA-GAD outperforms existing state-of-the-art methods in graph-level anomaly detection under few-shot conditions. Experiments on both graph anomaly and subgraph anomaly detection tasks validate the framework's effectiveness on real-world datasets.
-]]></content:encoded>
-<pubDate>Fri, 10 Oct 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Signal-to-Noise Ratio in Scanning Electron Microscopy: A Comprehensive Review</title>
-<link>https://arxiv.org/abs/2510.07886</link>
-<guid>https://arxiv.org/abs/2510.07886</guid>
-<content:encoded><![CDATA[
-arXiv:2510.07886v1 Announce Type: new 
-Abstract: Scanning Electron Microscopy (SEM) is critical in nanotechnology, materials science, and biological imaging due to its high spatial resolution and depth of focus. Signal-to-noise ratio (SNR) is an essential parameter in SEM because it directly impacts the quality and interpretability of the images. SEM is widely used in various scientific disciplines, but its utility can be compromised by noise, which degrades image clarity. This review explores multiple aspects of the SEM imaging process, from the principal operation of SEM, sources of noise in SEM, methods for SNR measurement and estimations, to various aspects that affect the SNR measurement and approaches to enhance SNR, both from a hardware and software standpoint. We review traditional and emerging techniques, focusing on their applications, advantages, and limitations. The paper aims to provide a comprehensive understanding of SNR optimization in SEM for researchers and practitioners and to encourage further research in the field.
-]]></content:encoded>
-<pubDate>Fri, 10 Oct 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Adaptive Optimizable Gaussian Process Regression Linear Least Squares Regression Filtering Method for SEM Images</title>
-<link>https://arxiv.org/abs/2510.07895</link>
-<guid>https://arxiv.org/abs/2510.07895</guid>
-<content:encoded><![CDATA[
-arXiv:2510.07895v1 Announce Type: new 
-Abstract: Scanning Electron Microscopy (SEM) images often suffer from noise contamination, which degrades image quality and affects further analysis. This research presents a complete approach to estimate their Signal-to-Noise Ratio (SNR) and noise variance (NV), and enhance image quality using NV-guided Wiener filter. The main idea of this study is to use a good SNR estimation technique and infuse a machine learning model to estimate NV of the SEM image, which then guides the wiener filter to remove the noise, providing a more robust and accurate SEM image filtering pipeline. First, we investigate five different SNR estimation techniques, namely Nearest Neighbourhood (NN) method, First-Order Linear Interpolation (FOL) method, Nearest Neighbourhood with First-Order Linear Interpolation (NN+FOL) method, Non-Linear Least Squares Regression (NLLSR) method, and Linear Least Squares Regression (LSR) method. It is shown that LSR method to perform better than the rest. Then, Support Vector Machines (SVM) and Gaussian Process Regression (GPR) are tested by pairing it with LSR. In this test, the Optimizable GPR model shows the highest accuracy and it stands as the most effective solution for NV estimation. Combining these results lead to the proposed Adaptive Optimizable Gaussian Process Regression Linear Least Squares Regression (AO-GPRLLSR) Filtering pipeline. The AO-GPRLLSR method generated an estimated noise variance which served as input to NV-guided Wiener filter for improving the quality of SEM images. The proposed method is shown to achieve notable success in estimating SNR and NV of SEM images and leads to lower Mean Squared Error (MSE) after the filtering process.
-]]></content:encoded>
-<pubDate>Fri, 10 Oct 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>MMM: Quantum-Chemical Molecular Representation Learning for Combinatorial Drug Recommendation</title>
-<link>https://arxiv.org/abs/2510.07910</link>
-<guid>https://arxiv.org/abs/2510.07910</guid>
-<content:encoded><![CDATA[
-arXiv:2510.07910v1 Announce Type: new 
-Abstract: Drug recommendation is an essential task in machine learning-based clinical decision support systems. However, the risk of drug-drug interactions (DDI) between co-prescribed medications remains a significant challenge. Previous studies have used graph neural networks (GNNs) to represent drug structures. Regardless, their simplified discrete forms cannot fully capture the molecular binding affinity and reactivity. Therefore, we propose Multimodal DDI Prediction with Molecular Electron Localization Function (ELF) Maps (MMM), a novel framework that integrates three-dimensional (3D) quantum-chemical information into drug representation learning. It generates 3D electron density maps using the ELF. To capture both therapeutic relevance and interaction risks, MMM combines ELF-derived features that encode global electronic properties with a bipartite graph encoder that models local substructure interactions. This design enables learning complementary characteristics of drug molecules. We evaluate MMM in the MIMIC-III dataset (250 drugs, 442 substructures), comparing it with several baseline models. In particular, a comparison with the GNN-based SafeDrug model demonstrates statistically significant improvements in the F1-score (p = 0.0387), Jaccard (p = 0.0112), and the DDI rate (p = 0.0386). These results demonstrate the potential of ELF-based 3D representations to enhance prediction accuracy and support safer combinatorial drug prescribing in clinical practice.
-]]></content:encoded>
-<pubDate>Fri, 10 Oct 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>GRADE: Personalized Multi-Task Fusion via Group-relative Reinforcement Learning with Adaptive Dirichlet Exploratio</title>
-<link>https://arxiv.org/abs/2510.07919</link>
-<guid>https://arxiv.org/abs/2510.07919</guid>
-<content:encoded><![CDATA[
-arXiv:2510.07919v1 Announce Type: new 
-Abstract: Overall architecture of the personalized multi-objective ranking system. It comprises: (1) a Feature Center and Prerank Model for initial feature processing and candidate generation; (2) a Multi-Task Learning (MTL) model predicting various user feedback signals; (3) a Multi-Task Fusion (MTF) module (our proposed GRADE framework) that learns personalized weights ($w_1, \dots, w_n$); these weights are then applied to calculate final scores and sorted to generate a blended ranking by the Blended Ranking Model, which ultimately delivers results to users.
-]]></content:encoded>
-<pubDate>Fri, 10 Oct 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>SketchGuard: Scaling Byzantine-Robust Decentralized Federated Learning via Sketch-Based Screening</title>
-<link>https://arxiv.org/abs/2510.07922</link>
-<guid>https://arxiv.org/abs/2510.07922</guid>
-<content:encoded><![CDATA[
-arXiv:2510.07922v1 Announce Type: new 
-Abstract: Decentralized Federated Learning (DFL) enables privacy-preserving collaborative training without centralized servers, but remains vulnerable to Byzantine attacks where malicious clients submit corrupted model updates. Existing Byzantine-robust DFL defenses rely on similarity-based neighbor screening that requires every client to exchange and compare complete high-dimensional model vectors with all neighbors in each training round, creating prohibitive communication and computational costs that prevent deployment at web scale. We propose SketchGuard, a general framework that decouples Byzantine filtering from model aggregation through sketch-based neighbor screening. SketchGuard compresses $d$-dimensional models to $k$-dimensional sketches ($k \ll d$) using Count Sketch for similarity comparisons, then selectively fetches full models only from accepted neighbors, reducing per-round communication complexity from $O(d|N_i|)$ to $O(k|N_i| + d|S_i|)$, where $|N_i|$ is the neighbor count and $|S_i| \le |N_i|$ is the accepted neighbor count. We establish rigorous convergence guarantees in both strongly convex and non-convex settings, proving that Count Sketch compression preserves Byzantine resilience with controlled degradation bounds where approximation errors introduce only a $(1+O(\epsilon))$ factor in the effective threshold parameter. Comprehensive experiments across multiple datasets, network topologies, and attack scenarios demonstrate that SketchGuard maintains identical robustness to state-of-the-art methods while reducing computation time by up to 82% and communication overhead by 50-70% depending on filtering effectiveness, with benefits scaling multiplicatively with model dimensionality and network connectivity. These results establish the viability of sketch-based compression as a fundamental enabler of robust DFL at web scale.
-]]></content:encoded>
-<pubDate>Fri, 10 Oct 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Synergy Between the Strong and the Weak: Spiking Neural Networks are Inherently Self-Distillers</title>
-<link>https://arxiv.org/abs/2510.07924</link>
-<guid>https://arxiv.org/abs/2510.07924</guid>
-<content:encoded><![CDATA[
-arXiv:2510.07924v1 Announce Type: new 
-Abstract: Brain-inspired spiking neural networks (SNNs) promise to be a low-power alternative to computationally intensive artificial neural networks (ANNs), although performance gaps persist. Recent studies have improved the performance of SNNs through knowledge distillation, but rely on large teacher models or introduce additional training overhead. In this paper, we show that SNNs can be naturally deconstructed into multiple submodels for efficient self-distillation. We treat each timestep instance of the SNN as a submodel and evaluate its output confidence, thus efficiently identifying the strong and the weak. Based on this strong and weak relationship, we propose two efficient self-distillation schemes: (1) \textbf{Strong2Weak}: During training, the stronger "teacher" guides the weaker "student", effectively improving overall performance. (2) \textbf{Weak2Strong}: The weak serve as the "teacher", distilling the strong in reverse with underlying dark knowledge, again yielding significant performance gains. For both distillation schemes, we offer flexible implementations such as ensemble, simultaneous, and cascade distillation. Experiments show that our method effectively improves the discriminability and overall performance of the SNN, while its adversarial robustness is also enhanced, benefiting from the stability brought by self-distillation. This ingeniously exploits the temporal properties of SNNs and provides insight into how to efficiently train high-performance SNNs.
-]]></content:encoded>
-<pubDate>Fri, 10 Oct 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Some theoretical improvements on the tightness of PAC-Bayes risk certificates for neural networks</title>
-<link>https://arxiv.org/abs/2510.07935</link>
-<guid>https://arxiv.org/abs/2510.07935</guid>
-<content:encoded><![CDATA[
-arXiv:2510.07935v1 Announce Type: new 
-Abstract: This paper presents four theoretical contributions that improve the usability of risk certificates for neural networks based on PAC-Bayes bounds. First, two bounds on the KL divergence between Bernoulli distributions enable the derivation of the tightest explicit bounds on the true risk of classifiers across different ranges of empirical risk. The paper next focuses on the formalization of an efficient methodology based on implicit differentiation that enables the introduction of the optimization of PAC-Bayesian risk certificates inside the loss/objective function used to fit the network/model. The last contribution is a method to optimize bounds on non-differentiable objectives such as the 0-1 loss. These theoretical contributions are complemented with an empirical evaluation on the MNIST and CIFAR-10 datasets. In fact, this paper presents the first non-vacuous generalization bounds on CIFAR-10 for neural networks.
-]]></content:encoded>
-<pubDate>Fri, 10 Oct 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>DISCO: Diversifying Sample Condensation for Efficient Model Evaluation</title>
-<link>https://arxiv.org/abs/2510.07959</link>
-<guid>https://arxiv.org/abs/2510.07959</guid>
-<content:encoded><![CDATA[
-arXiv:2510.07959v1 Announce Type: new 
-Abstract: Evaluating modern machine learning models has become prohibitively expensive. Benchmarks such as LMMs-Eval and HELM demand thousands of GPU hours per model. Costly evaluation reduces inclusivity, slows the cycle of innovation, and worsens environmental impact. The typical approach follows two steps. First, select an anchor subset of data. Second, train a mapping from the accuracy on this subset to the final test result. The drawback is that anchor selection depends on clustering, which can be complex and sensitive to design choices. We argue that promoting diversity among samples is not essential; what matters is to select samples that $\textit{maximise diversity in model responses}$. Our method, $\textbf{Diversifying Sample Condensation (DISCO)}$, selects the top-k samples with the greatest model disagreements. This uses greedy, sample-wise statistics rather than global clustering. The approach is conceptually simpler. From a theoretical view, inter-model disagreement provides an information-theoretically optimal rule for such greedy selection. $\textbf{DISCO}$ shows empirical gains over prior methods, achieving state-of-the-art results in performance prediction across MMLU, Hellaswag, Winogrande, and ARC. Code is available here: https://github.com/arubique/disco-public.
-]]></content:encoded>
-<pubDate>Fri, 10 Oct 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>PRESCRIBE: Predicting Single-Cell Responses with Bayesian Estimation</title>
-<link>https://arxiv.org/abs/2510.07964</link>
-<guid>https://arxiv.org/abs/2510.07964</guid>
-<content:encoded><![CDATA[
-arXiv:2510.07964v1 Announce Type: new 
-Abstract: In single-cell perturbation prediction, a central task is to forecast the effects of perturbing a gene unseen in the training data. The efficacy of such predictions depends on two factors: (1) the similarity of the target gene to those covered in the training data, which informs model (epistemic) uncertainty, and (2) the quality of the corresponding training data, which reflects data (aleatoric) uncertainty. Both factors are critical for determining the reliability of a prediction, particularly as gene perturbation is an inherently stochastic biochemical process. In this paper, we propose PRESCRIBE (PREdicting Single-Cell Response wIth Bayesian Estimation), a multivariate deep evidential regression framework designed to measure both sources of uncertainty jointly. Our analysis demonstrates that PRESCRIBE effectively estimates a confidence score for each prediction, which strongly correlates with its empirical accuracy. This capability enables the filtering of untrustworthy results, and in our experiments, it achieves steady accuracy improvements of over 3% compared to comparable baselines.
-]]></content:encoded>
-<pubDate>Fri, 10 Oct 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Climate Surrogates for Scalable Multi-Agent Reinforcement Learning: A Case Study with CICERO-SCM</title>
-<link>https://arxiv.org/abs/2510.07971</link>
-<guid>https://arxiv.org/abs/2510.07971</guid>
-<content:encoded><![CDATA[
-arXiv:2510.07971v1 Announce Type: new 
-Abstract: Climate policy studies require models that capture the combined effects of multiple greenhouse gases on global temperature, but these models are computationally expensive and difficult to embed in reinforcement learning. We present a multi-agent reinforcement learning (MARL) framework that integrates a high-fidelity, highly efficient climate surrogate directly in the environment loop, enabling regional agents to learn climate policies under multi-gas dynamics. As a proof of concept, we introduce a recurrent neural network architecture pretrained on ($20{,}000$) multi-gas emission pathways to surrogate the climate model CICERO-SCM. The surrogate model attains near-simulator accuracy with global-mean temperature RMSE $\approx 0.0004 \mathrm{K}$ and approximately $1000\times$ faster one-step inference. When substituted for the original simulator in a climate-policy MARL setting, it accelerates end-to-end training by $>\!100\times$. We show that the surrogate and simulator converge to the same optimal policies and propose a methodology to assess this property in cases where using the simulator is intractable. Our work allows to bypass the core computational bottleneck without sacrificing policy fidelity, enabling large-scale multi-agent experiments across alternative climate-policy regimes with multi-gas dynamics and high-fidelity climate response.
-]]></content:encoded>
-<pubDate>Fri, 10 Oct 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Unveiling the Power of Multiple Gossip Steps: A Stability-Based Generalization Analysis in Decentralized Training</title>
-<link>https://arxiv.org/abs/2510.07980</link>
-<guid>https://arxiv.org/abs/2510.07980</guid>
-<content:encoded><![CDATA[
-arXiv:2510.07980v1 Announce Type: new 
-Abstract: Decentralized training removes the centralized server, making it a communication-efficient approach that can significantly improve training efficiency, but it often suffers from degraded performance compared to centralized training. Multi-Gossip Steps (MGS) serve as a simple yet effective bridge between decentralized and centralized training, significantly reducing experiment performance gaps. However, the theoretical reasons for its effectiveness and whether this gap can be fully eliminated by MGS remain open questions. In this paper, we derive upper bounds on the generalization error and excess error of MGS using stability analysis, systematically answering these two key questions. 1). Optimization Error Reduction: MGS reduces the optimization error bound at an exponential rate, thereby exponentially tightening the generalization error bound and enabling convergence to better solutions. 2). Gap to Centralization: Even as MGS approaches infinity, a non-negligible gap in generalization error remains compared to centralized mini-batch SGD ($\mathcal{O}(T^{\frac{c\beta}{c\beta +1}}/{n m})$ in centralized and $\mathcal{O}(T^{\frac{2c\beta}{2c\beta +2}}/{n m^{\frac{1}{2c\beta +2}}})$ in decentralized). Furthermore, we provide the first unified analysis of how factors like learning rate, data heterogeneity, node count, per-node sample size, and communication topology impact the generalization of MGS under non-convex settings without the bounded gradients assumption, filling a critical theoretical gap in decentralized training. Finally, promising experiments on CIFAR datasets support our theoretical findings.
-]]></content:encoded>
-<pubDate>Fri, 10 Oct 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Fewer Weights, More Problems: A Practical Attack on LLM Pruning</title>
-<link>https://arxiv.org/abs/2510.07985</link>
-<guid>https://arxiv.org/abs/2510.07985</guid>
-<content:encoded><![CDATA[
-arXiv:2510.07985v1 Announce Type: new 
-Abstract: Model pruning, i.e., removing a subset of model weights, has become a prominent approach to reducing the memory footprint of large language models (LLMs) during inference. Notably, popular inference engines, such as vLLM, enable users to conveniently prune downloaded models before they are deployed. While the utility and efficiency of pruning methods have improved significantly, the security implications of pruning remain underexplored. In this work, for the first time, we show that modern LLM pruning methods can be maliciously exploited. In particular, an adversary can construct a model that appears benign yet, once pruned, exhibits malicious behaviors. Our method is based on the idea that the adversary can compute a proxy metric that estimates how likely each parameter is to be pruned. With this information, the adversary can first inject a malicious behavior into those parameters that are unlikely to be pruned. Then, they can repair the model by using parameters that are likely to be pruned, effectively canceling out the injected behavior in the unpruned model. We demonstrate the severity of our attack through extensive evaluation on five models; after any of the pruning in vLLM are applied (Magnitude, Wanda, and SparseGPT), it consistently exhibits strong malicious behaviors in a diverse set of attack scenarios (success rates of up to $95.7\%$ for jailbreak, $98.7\%$ for benign instruction refusal, and $99.5\%$ for targeted content injection). Our results reveal a critical deployment-time security gap and underscore the urgent need for stronger security awareness in model compression.
 ]]></content:encoded>
 <pubDate>Fri, 10 Oct 2025 00:00:00 -0400</pubDate>
 </item>

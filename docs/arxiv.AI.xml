@@ -5,6 +5,21 @@
 <link>http://rss.arxiv.org/rss/cs.AI</link>
 
 <item>
+<title>Multi-Condition Conformal Selection</title>
+<link>https://arxiv.org/abs/2510.08075</link>
+<guid>https://arxiv.org/abs/2510.08075</guid>
+<content:encoded><![CDATA[
+<div> algorithm, selection, multi-condition, FDR control, experimental validation
+Summary: 
+The article proposes the Multi-Condition Conformal Selection (MCCS) algorithm, which extends conformal selection methods to scenarios with multiple conditions, addressing the need for rigorous selection in diverse environments. MCCS introduces a novel nonconformity score with regional monotonicity for conjunctive conditions and a global Benjamini-Hochberg (BH) procedure for disjunctive conditions, ensuring finite-sample False Discovery Rate (FDR) control with theoretical guarantees. Extensive experiments demonstrate the superior performance of MCCS over baseline methods, its generalizability across various condition combinations, real-world modalities, and scalability to multi-task scenarios. The algorithm's ability to offer FDR-controlled selection in resource-constrained applications, such as drug discovery and precision medicine, underscores its importance in practical settings.  <div>
+arXiv:2510.08075v2 Announce Type: replace 
+Abstract: Selecting high-quality candidates from large-scale datasets is critically important in resource-constrained applications such as drug discovery, precision medicine, and the alignment of large language models. While conformal selection methods offer a rigorous solution with False Discovery Rate (FDR) control, their applicability is confined to single-threshold scenarios (i.e., y > c) and overlooks practical needs for multi-condition selection, such as conjunctive or disjunctive conditions. In this work, we propose the Multi-Condition Conformal Selection (MCCS) algorithm, which extends conformal selection to scenarios with multiple conditions. In particular, we introduce a novel nonconformity score with regional monotonicity for conjunctive conditions and a global Benjamini-Hochberg (BH) procedure for disjunctive conditions, thereby establishing finite-sample FDR control with theoretical guarantees. The integration of these components enables the proposed method to achieve rigorous FDR-controlled selection in various multi-condition environments. Extensive experiments validate the superiority of MCCS over baselines, its generalizability across diverse condition combinations, different real-world modalities, and multi-task scalability.
+]]></content:encoded>
+<pubDate>Tue, 14 Oct 2025 00:00:00 -0400</pubDate>
+<pubDate>Tue, 14 Oct 2025 00:00:00 -0400</pubDate>
+</item>
+
+<item>
 <title>Let's Reason Formally: Natural-Formal Hybrid Reasoning Enhances LLM's Math Capability</title>
 <link>https://arxiv.org/abs/2505.23703</link>
 <guid>https://arxiv.org/abs/2505.23703</guid>
@@ -14,11 +29,10 @@
 Summary:
 NL-FL HybridReasoning (NFL-HR) framework combines Natural Language (NL) and Formal Language (FL) reasoning to enhance mathematical reasoning capabilities of LLMs. The framework addresses the challenge of integrating FL knowledge into NL math problem-solving by introducing NL-FL Problem Alignment method to reformulate NL problems as FL existence theorems. The Mixed Problem Input technique allows the FL reasoner to handle both types of problems simultaneously. An LLM-based Answer Extraction mechanism helps bridge the gap between NL and FL output formats. Experimental results show that NFL-HR achieves high accuracy rates on benchmark tests, outperforming NL baseline models. Some problems solved by NFL-HR remain unsolvable by NL baseline models, demonstrating the effectiveness of the framework in advancing mathematical reasoning capabilities. 
 
-<br><br>Summary: <div>
+<br /><br />Summary: <div>
 arXiv:2505.23703v4 Announce Type: replace 
 Abstract: Enhancing the mathematical reasoning capabilities of LLMs has garnered significant attention in both the mathematical and computer science communities. Recent works have made substantial progress in both Natural Language (NL) reasoning and Formal Language (FL) reasoning by leveraging the potential of pure Reinforcement Learning (RL) methods on base models. However, RL approaches struggle to impart new capabilities not presented in the base model, highlighting the need to integrate more knowledge like FL into NL math reasoning effectively. Yet, this integration is challenging due to inherent disparities in problem structure and reasoning format between NL and FL. To address these challenges, we introduce **NL-FL HybridReasoning (NFL-HR)**, an end-to-end framework designed to incorporate the FL expert into NL math problem-solving. To bridge the NL and FL input format gap, we propose the NL-FL Problem Alignment method, which reformulates the Question-Answering (QA) problems in NL as existence theorems in FL. Subsequently, the Mixed Problem Input technique we provide enables the FL reasoner to handle both QA and existence problems concurrently. Lastly, we mitigate the NL and FL output format gap in reasoning through an LLM-based Answer Extraction mechanism. Comprehensive experiments demonstrate that the NFL-HR framework achieves **89.80**% and **84.34%** accuracy rates on the MATH-500 and the AMC benchmarks, surpassing the NL baseline by **4.60%** and **4.82%**, respectively. Notably, some problems resolved by our framework remain unsolved by the NL baseline model even under a larger number of trials.
 ]]></content:encoded>
-<pubDate>Tue, 14 Oct 2025 00:00:00 -0400</pubDate>
 <pubDate>Tue, 14 Oct 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -26,14 +40,13 @@ Abstract: Enhancing the mathematical reasoning capabilities of LLMs has garnered
 <link>https://arxiv.org/abs/2506.00320</link>
 <guid>https://arxiv.org/abs/2506.00320</guid>
 <content:encoded><![CDATA[
-<div> framework, planning, world model, imitation learning, training<br>
-<br>
+<div> framework, planning, world model, imitation learning, training<br />
+<br />
 Summary: 
 The paper introduces Dyna-Think, a framework that combines planning, world modeling, reasoning, and acting to enhance the performance of AI agents in long-horizon tasks. By integrating Dyna-Think Imitation Learning (DIT) and Dyna-Think Dyna Training (DDT), the framework reconstructs the thinking process of AI agents and trains policies to focus on world model simulation relevant to planned actions. Through a two-stage training process, including improving world modeling ability and action through policy training, Dyna-Think improves agent performance and generates 2x less tokens than previous models. Critique generation for world model training proves effective in enhancing policy performance, and better agent performance is linked to improved world modeling abilities. The results suggest a promising direction for research in integrating world model simulation to enhance AI agents' reasoning, planning, and acting capabilities. <div>
 arXiv:2506.00320v3 Announce Type: replace 
 Abstract: Recent progress in reasoning with large language models (LLMs), such as DeepSeek-R1, demonstrates impressive capabilities in domains like mathematics and coding, by exhibiting complex cognitive behaviors such as verification, goal decomposition, and self-reflection. However, it is unclear what behavior is effective and what behavior is missing for long-horizon AI agents tasks. In this work, we propose Dyna-Think, a thinking framework that integrates planning with an internal world model with reasoning and acting to enhance AI agent performance. To enable Dyna-Think, we propose Dyna-Think Imitation Learning (DIT) and Dyna-Think Dyna Training (DDT). To initialize a policy with Dyna-Think, DIT reconstructs the thinking process of R1 to focus on performing world model simulation relevant to the proposed (and planned) action, and trains the policy using this reconstructed data. To enhance Dyna-Think, DDT uses a two-stage training process to first improve the agent's world modeling ability via objectives such as state prediction or critique generation, and then improve the agent's action via policy training. We evaluate our methods on OSWorld and WindowsAgentArena, and demonstrate that Dyna-Think improves the agent's in-domain and out-of-domain performance, achieving similar best-of-n performance compared to R1 while generating 2x less tokens on average. Our extensive empirical studies reveal that 1) using critique generation for world model training is effective to improve policy performance; and 2) AI agents with better performance correlate with better world modeling abilities. We believe our results suggest a promising research direction to integrate world model simulation into AI agents to enhance their reasoning, planning, and acting capabilities.
 ]]></content:encoded>
-<pubDate>Tue, 14 Oct 2025 00:00:00 -0400</pubDate>
 <pubDate>Tue, 14 Oct 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -41,13 +54,12 @@ Abstract: Recent progress in reasoning with large language models (LLMs), such a
 <link>https://arxiv.org/abs/2508.08882</link>
 <guid>https://arxiv.org/abs/2508.08882</guid>
 <content:encoded><![CDATA[
-<div> Reasoning Agent, Tool Agents, Multi-Small-Agent Reinforcement Learning, division of labor, cognitive-role decoupling<br>
-Summary:<br>
+<div> Reasoning Agent, Tool Agents, Multi-Small-Agent Reinforcement Learning, division of labor, cognitive-role decoupling<br />
+Summary:<br />
 The article introduces MSARL, a Multi-Small-Agent Reinforcement Learning framework that emphasizes the collaboration of specialized small agents through division of labor. Unlike traditional single-agent systems, MSARL separates reasoning from tool use, with a Reasoning Agent managing problem decomposition and tool invocation planning, and multiple Tool Agents focusing on specific external tools. These Tool Agents are trained using a combination of imitation learning and reinforcement learning with role-specific rewards. The framework significantly enhances reasoning stability and final-answer accuracy for mathematical problem solving with code execution compared to single-agent approaches. The architecture's flexibility allows it to be applied to various tool-use tasks, highlighting the scalability of cognitive-role decoupling with small agents in multi-agent AI design. <div>
 arXiv:2508.08882v4 Announce Type: replace 
 Abstract: Recent advances in multi-agent systems highlight the potential of specialized small agents that collaborate via division of labor. Existing tool-integrated reasoning systems, however, often follow a single-agent paradigm in which one large model interleaves long-horizon reasoning with precise tool operations, leading to cognitive-load interference and unstable coordination. We present MSARL, a Multi-Small-Agent Reinforcement Learning framework that explicitly decouples reasoning from tool use. In MSARL, a Reasoning Agent decomposes problems and plans tool invocations, while multiple Tool Agents specialize in specific external tools, each trained via a combination of imitation learning and reinforcement learning with role-specific rewards. On mathematical problem solving with code execution, MSARL significantly improves reasoning stability and final-answer accuracy over single-agent baselines. Moreover, the architecture generalizes to diverse tool-use tasks, demonstrating that cognitive-role decoupling with small agents is a scalable blueprint for multi-agent AI design.
 ]]></content:encoded>
-<pubDate>Tue, 14 Oct 2025 00:00:00 -0400</pubDate>
 <pubDate>Tue, 14 Oct 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -55,13 +67,12 @@ Abstract: Recent advances in multi-agent systems highlight the potential of spec
 <link>https://arxiv.org/abs/2510.07117</link>
 <guid>https://arxiv.org/abs/2510.07117</guid>
 <content:encoded><![CDATA[
-<div> embodiment, physical vulnerability, mortality, artificial agents, existentialism<br>
-Summary:<br>
+<div> embodiment, physical vulnerability, mortality, artificial agents, existentialism<br />
+Summary:<br />
 The article explores the disparity between biological organisms' ability to thrive in open-ended environments and artificial agents' struggle to adapt and provide care. Inspired by Heidegger's existentialist phenomenology, the authors propose two minimal conditions for physical embodiment: being-in-the-world and being-towards-death. These conditions give rise to a homeostatic drive aimed at maintaining integrity and an intrinsic drive to maximize control over future states. Drawing from Nietzsche's concept of will-to-power, they argue that intrinsic drives, such as empowerment, enhance an agent's capacity to meet its future needs and maintain physical integrity. Formalized within a reinforcement learning framework, the study examines how intrinsically driven embodied agents can cultivate open-endedness and care in multi-agent environments. <div>
 arXiv:2510.07117v2 Announce Type: replace 
 Abstract: Physical vulnerability and mortality are often seen as obstacles to be avoided in the development of artificial agents, which struggle to adapt to open-ended environments and provide aligned care. Meanwhile, biological organisms survive, thrive, and care for each other in an open-ended physical world with relative ease and efficiency. Understanding the role of the conditions of life in this disparity can aid in developing more robust, adaptive, and caring artificial agents. Here we define two minimal conditions for physical embodiment inspired by the existentialist phenomenology of Martin Heidegger: being-in-the-world (the agent is a part of the environment) and being-towards-death (unless counteracted, the agent drifts toward terminal states due to the second law of thermodynamics). We propose that from these conditions we can obtain both a homeostatic drive - aimed at maintaining integrity and avoiding death by expending energy to learn and act - and an intrinsic drive to continue to do so in as many ways as possible. Drawing inspiration from Friedrich Nietzsche's existentialist concept of will-to-power, we examine how intrinsic drives to maximize control over future states, e.g., empowerment, allow agents to increase the probability that they will be able to meet their future homeostatic needs, thereby enhancing their capacity to maintain physical integrity. We formalize these concepts within a reinforcement learning framework, which enables us to examine how intrinsically driven embodied agents learning in open-ended multi-agent environments may cultivate the capacities for open-endedness and care.
 ]]></content:encoded>
-<pubDate>Tue, 14 Oct 2025 00:00:00 -0400</pubDate>
 <pubDate>Tue, 14 Oct 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -71,12 +82,11 @@ Abstract: Physical vulnerability and mortality are often seen as obstacles to be
 <content:encoded><![CDATA[
 <div> Keywords: multi-objective, multi-agent path finding, lexicographic framework, LCBS algorithm, scalability
 
-Summary:<br><br>
+Summary:<br /><br />
 The article introduces a lexicographic framework for multi-objective multi-agent path finding (MO-MAPF) and presents the Lexicographic Conflict-Based Search (LCBS) algorithm. Unlike traditional MO-MAPF algorithms that rely on Pareto frontiers, LCBS directly computes a solution based on user-defined lexicographic preferences over objectives. By combining priority-aware A* search with conflict-based search, LCBS efficiently plans paths in shared environments while considering multiple objectives. The algorithm is shown to scale well, handling instances with up to ten objectives. Through evaluations on standard and randomized benchmarks, LCBS outperforms existing methods, especially as the number of objectives increases. It consistently achieves higher success rates and optimality in finding optimal solutions aligned with user preferences. Overall, LCBS offers a promising approach to address the challenges of coordinating multiple agents in shared environments with conflicting objectives. <div>
 arXiv:2510.07276v2 Announce Type: replace 
 Abstract: Many real-world scenarios require multiple agents to coordinate in shared environments, while balancing trade-offs between multiple, potentially competing objectives. Current multi-objective multi-agent path finding (MO-MAPF) algorithms typically produce conflict-free plans by computing Pareto frontiers. They do not explicitly optimize for user-defined preferences, even when the preferences are available, and scale poorly with the number of objectives. We propose a lexicographic framework for modeling MO-MAPF, along with an algorithm \textit{Lexicographic Conflict-Based Search} (LCBS) that directly computes a single solution aligned with a lexicographic preference over objectives. LCBS integrates a priority-aware low-level $A^*$ search with conflict-based search, avoiding Pareto frontier construction and enabling efficient planning guided by preference over objectives. We provide insights into optimality and scalability, and empirically demonstrate that LCBS computes optimal solutions while scaling to instances with up to ten objectives -- far beyond the limits of existing MO-MAPF methods. Evaluations on standard and randomized MAPF benchmarks show consistently higher success rates against state-of-the-art baselines, especially with increasing number of objectives.
 ]]></content:encoded>
-<pubDate>Tue, 14 Oct 2025 00:00:00 -0400</pubDate>
 <pubDate>Tue, 14 Oct 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -84,8 +94,8 @@ Abstract: Many real-world scenarios require multiple agents to coordinate in sha
 <link>https://arxiv.org/abs/2510.08338</link>
 <guid>https://arxiv.org/abs/2510.08338</guid>
 <content:encoded><![CDATA[
-<div> Consumer research, large language models, semantic similarity rating, Likert distributions, scalability<br>
-Summary:<br>
+<div> Consumer research, large language models, semantic similarity rating, Likert distributions, scalability<br />
+Summary:<br />
 - The study proposes Semantic Similarity Rating (SSR) as a method to elicit textual responses from large language models (LLMs) and map them to Likert distributions. 
 - Testing on a dataset of personal care product surveys, SSR achieves 90% human test-retest reliability and maintains realistic response distributions. 
 - Synthetic respondents generated by SSR provide qualitative feedback explaining their ratings, enabling scalable consumer research simulations. 
@@ -97,21 +107,19 @@ arXiv:2510.08338v2 Announce Type: replace
 Abstract: Consumer research costs companies billions annually yet suffers from panel biases and limited scale. Large language models (LLMs) offer an alternative by simulating synthetic consumers, but produce unrealistic response distributions when asked directly for numerical ratings. We present semantic similarity rating (SSR), a method that elicits textual responses from LLMs and maps these to Likert distributions using embedding similarity to reference statements. Testing on an extensive dataset comprising 57 personal care product surveys conducted by a leading corporation in that market (9,300 human responses), SSR achieves 90% of human test-retest reliability while maintaining realistic response distributions (KS similarity > 0.85). Additionally, these synthetic respondents provide rich qualitative feedback explaining their ratings. This framework enables scalable consumer research simulations while preserving traditional survey metrics and interpretability.
 ]]></content:encoded>
 <pubDate>Tue, 14 Oct 2025 00:00:00 -0400</pubDate>
-<pubDate>Tue, 14 Oct 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
 <title>Equilibrium Matching: Generative Modeling with Implicit Energy-Based Models</title>
 <link>https://arxiv.org/abs/2510.02300</link>
 <guid>https://arxiv.org/abs/2510.02300</guid>
 <content:encoded><![CDATA[
-<div> equilibrium matching, generative modeling, diffusion models, flow-based models, optimization-based sampling <br>
-<br>
+<div> equilibrium matching, generative modeling, diffusion models, flow-based models, optimization-based sampling <br />
+<br />
 Summary: 
 Equilibrium Matching (EqM) is a new generative modeling framework that focuses on learning the equilibrium gradient of an implicit energy landscape, rather than non-equilibrium dynamics. EqM outperforms traditional diffusion and flow-based models in generation tasks, achieving an impressive FID score on ImageNet 256x256. The framework allows for optimization-based sampling at inference time, providing flexibility in step sizes, optimizers, and compute resources. EqM is not only empirically superior but also theoretically sound, enabling learning and sampling from the data manifold. Additionally, EqM excels in tasks such as image denoising, out-of-distribution detection, and image composition. By combining elements of flow and energy-based models, EqM facilitates optimization-driven inference, bridging the gap between different generative modeling approaches. <div>
 arXiv:2510.02300v3 Announce Type: replace-cross 
 Abstract: We introduce Equilibrium Matching (EqM), a generative modeling framework built from an equilibrium dynamics perspective. EqM discards the non-equilibrium, time-conditional dynamics in traditional diffusion and flow-based generative models and instead learns the equilibrium gradient of an implicit energy landscape. Through this approach, we can adopt an optimization-based sampling process at inference time, where samples are obtained by gradient descent on the learned landscape with adjustable step sizes, adaptive optimizers, and adaptive compute. EqM surpasses the generation performance of diffusion/flow models empirically, achieving an FID of 1.90 on ImageNet 256$\times$256. EqM is also theoretically justified to learn and sample from the data manifold. Beyond generation, EqM is a flexible framework that naturally handles tasks including partially noised image denoising, OOD detection, and image composition. By replacing time-conditional velocities with a unified equilibrium landscape, EqM offers a tighter bridge between flow and energy-based models and a simple route to optimization-driven inference.
 ]]></content:encoded>
-<pubDate>Tue, 14 Oct 2025 00:00:00 -0400</pubDate>
 <pubDate>Tue, 14 Oct 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -128,20 +136,18 @@ arXiv:2510.06249v2 Announce Type: replace-cross
 Abstract: The 2025 Multimodal Models for Low-Resource Contexts and Social Impact (MMLoSo) Language Challenge addresses one of India's most pressing linguistic gaps: the lack of resources for its diverse low-resource languages (LRLs). In this study, we investigate whether enforcing cross-lingual similarity in specific internal layers of a decoder-only multilingual large language model (LLM) can improve translation quality from LRL to high-resource language (HRL). Specifically, we combine Centered Kernel Alignment (CKA), a similarity metric that encourages representations of different languages to align, with REPINA, a regularization method that constrains parameter updates to remain close to the pretrained model, into a joint method we call TRepLiNa. In this research project, we experiment with zero-shot, few-shot, and fine-tuning settings using Aya-23 8B with QLoRA across MMLoSo shared task language pairs (Mundari, Santali, Bhili) with Hindi/English pivots. Our results show that aligning mid-level layers using TRepLiNa (CKA+REPINA) is a low-cost, practical approach to improving LRL translation, especially in data-scarce settings.
 ]]></content:encoded>
 <pubDate>Tue, 14 Oct 2025 00:00:00 -0400</pubDate>
-<pubDate>Tue, 14 Oct 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
 <title>Leveraging Large Language Models for Cybersecurity Risk Assessment -- A Case from Forestry Cyber-Physical Systems</title>
 <link>https://arxiv.org/abs/2510.06343</link>
 <guid>https://arxiv.org/abs/2510.06343</guid>
 <content:encoded><![CDATA[
-<div> Vulnerabilities, Threats, Risk Assessment, Large Language Models, Cybersecurity <br>
-Summary: <br>
-In safety-critical software systems, cybersecurity plays a crucial role, and due to a shortage of cybersecurity experts, engineers often have to conduct cybersecurity activities themselves. To address this challenge, the study explores the use of locally hosted large language models (LLMs) with retrieval-augmented generation to support cybersecurity risk assessment in the forestry domain. Through interviews, interactive sessions, and a survey involving 12 experts, it was found that LLMs can assist in generating initial risk assessments, identifying threats, and providing redundancy checks. However, human oversight is essential to ensure accuracy and compliance. Experts showed willingness to use LLMs for specific evaluation and assistance roles, rather than relying solely on their generative capabilities. Overall, the study suggests that LLM-based agents can support the risk assessment process of cyber-physical systems in safety-critical domains. <br> <div>
+<div> Vulnerabilities, Threats, Risk Assessment, Large Language Models, Cybersecurity <br />
+Summary: <br />
+In safety-critical software systems, cybersecurity plays a crucial role, and due to a shortage of cybersecurity experts, engineers often have to conduct cybersecurity activities themselves. To address this challenge, the study explores the use of locally hosted large language models (LLMs) with retrieval-augmented generation to support cybersecurity risk assessment in the forestry domain. Through interviews, interactive sessions, and a survey involving 12 experts, it was found that LLMs can assist in generating initial risk assessments, identifying threats, and providing redundancy checks. However, human oversight is essential to ensure accuracy and compliance. Experts showed willingness to use LLMs for specific evaluation and assistance roles, rather than relying solely on their generative capabilities. Overall, the study suggests that LLM-based agents can support the risk assessment process of cyber-physical systems in safety-critical domains. <br /> <div>
 arXiv:2510.06343v2 Announce Type: replace-cross 
 Abstract: In safety-critical software systems, cybersecurity activities become essential, with risk assessment being one of the most critical. In many software teams, cybersecurity experts are either entirely absent or represented by only a small number of specialists. As a result, the workload for these experts becomes high, and software engineers would need to conduct cybersecurity activities themselves. This creates a need for a tool to support cybersecurity experts and engineers in evaluating vulnerabilities and threats during the risk assessment process. This paper explores the potential of leveraging locally hosted large language models (LLMs) with retrieval-augmented generation to support cybersecurity risk assessment in the forestry domain while complying with data protection and privacy requirements that limit external data sharing. We performed a design science study involving 12 experts in interviews, interactive sessions, and a survey within a large-scale project. The results demonstrate that LLMs can assist cybersecurity experts by generating initial risk assessments, identifying threats, and providing redundancy checks. The results also highlight the necessity for human oversight to ensure accuracy and compliance. Despite trust concerns, experts were willing to utilize LLMs in specific evaluation and assistance roles, rather than solely relying on their generative capabilities. This study provides insights that encourage the use of LLM-based agents to support the risk assessment process of cyber-physical systems in safety-critical domains.
 ]]></content:encoded>
-<pubDate>Tue, 14 Oct 2025 00:00:00 -0400</pubDate>
 <pubDate>Tue, 14 Oct 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -157,20 +163,18 @@ arXiv:2510.06800v2 Announce Type: replace-cross
 Abstract: As large language models (LLMs) advance in role-playing (RP) tasks, existing benchmarks quickly become obsolete due to their narrow scope, outdated interaction paradigms, and limited adaptability across diverse application scenarios. To address this gap, we introduce FURINA-Builder, a novel multi-agent collaboration pipeline that automatically constructs fully customizable RP benchmarks at any scale. It enables evaluation of arbitrary characters across diverse scenarios and prompt formats, as the first benchmark builder in RP area for adaptable assessment. FURINA-Builder simulates dialogues between a test character and other characters drawn from a well-constructed character-scene pool, while an LLM judge selects fine-grained evaluation dimensions and adjusts the test character's responses into final test utterances. Using this pipeline, we build FURINA-Bench, a new comprehensive role-playing benchmark featuring both established and synthesized test characters, each assessed with dimension-specific evaluation criteria. Human evaluation and preliminary separability analysis justify our pipeline and benchmark design. We conduct extensive evaluations of cutting-edge LLMs and find that o3 and DeepSeek-R1 achieve the best performance on English and Chinese RP tasks, respectively. Across all models, established characters consistently outperform synthesized ones, with reasoning capabilities further amplifying this disparity. Interestingly, we observe that model scale does not monotonically reduce hallucinations. More critically, for reasoning LLMs, we uncover a novel trade-off: reasoning improves RP performance but simultaneously increases RP hallucinations. This trade-off extends to a broader Pareto frontier between RP performance and reliability for all LLMs. These findings demonstrate the effectiveness of FURINA-Builder and the challenge posed by FURINA-Bench.
 ]]></content:encoded>
 <pubDate>Tue, 14 Oct 2025 00:00:00 -0400</pubDate>
-<pubDate>Tue, 14 Oct 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
 <title>Native Hybrid Attention for Efficient Sequence Modeling</title>
 <link>https://arxiv.org/abs/2510.07019</link>
 <guid>https://arxiv.org/abs/2510.07019</guid>
 <content:encoded><![CDATA[
-<div> hybrid attention, transformer, linear attention, sequence modeling, efficiency <br>
-Summary: <br>
+<div> hybrid attention, transformer, linear attention, sequence modeling, efficiency <br />
+Summary: <br />
 The article proposes a novel hybrid attention architecture called Native Hybrid Attention (NHA) that combines linear and full attention mechanisms. NHA maintains long-term context through key-value slots updated by a linear RNN and incorporates short-term tokens from a sliding window for improved efficiency. A single softmax attention operation is applied over all keys and values, enabling per-token and per-head context-dependent weighting without extra fusion parameters. The inter-layer behavior is adjustable by a sliding window size hyperparameter, offering a smooth transition between linear and full attention while keeping structural uniformity across layers. Experimental results demonstrate that NHA outperforms Transformers and other hybrid models in tasks requiring high recall accuracy and common-sense reasoning. Additionally, pretrained Language Models (LLMs) can be integrated with NHA, achieving competitive performance gains without sacrificing efficiency. <div>
 arXiv:2510.07019v2 Announce Type: replace-cross 
 Abstract: Transformers excel at sequence modeling but face quadratic complexity, while linear attention offers improved efficiency but often compromises recall accuracy over long contexts. In this work, we introduce Native Hybrid Attention (NHA), a novel hybrid architecture of linear and full attention that integrates both intra \& inter-layer hybridization into a unified layer design. NHA maintains long-term context in key-value slots updated by a linear RNN, and augments them with short-term tokens from a sliding window. A single \texttt{softmax attention} operation is then applied over all keys and values, enabling per-token and per-head context-dependent weighting without requiring additional fusion parameters. The inter-layer behavior is controlled through a single hyperparameter, the sliding window size, which allows smooth adjustment between purely linear and full attention while keeping all layers structurally uniform. Experimental results show that NHA surpasses Transformers and other hybrid baselines on recall-intensive and commonsense reasoning tasks. Furthermore, pretrained LLMs can be structurally hybridized with NHA, achieving competitive accuracy while delivering significant efficiency gains. Code is available at https://github.com/JusenD/NHA.
 ]]></content:encoded>
-<pubDate>Tue, 14 Oct 2025 00:00:00 -0400</pubDate>
 <pubDate>Tue, 14 Oct 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -186,7 +190,6 @@ arXiv:2510.07084v2 Announce Type: replace-cross
 Abstract: Transformer-based methods have achieved impressive results in time series forecasting. However, existing Transformers still exhibit limitations in sequence modeling as they tend to overemphasize temporal dependencies. This incurs additional computational overhead without yielding corresponding performance gains. We find that the performance of Transformers is highly dependent on the embedding method used to learn effective representations. To address this issue, we extract multivariate features to augment the effective information captured in the embedding layer, yielding multidimensional embeddings that convey richer and more meaningful sequence representations. These representations enable Transformer-based forecasters to better understand the series. Specifically, we introduce Hybrid Temporal and Multivariate Embeddings (HTME). The HTME extractor integrates a lightweight temporal feature extraction module with a carefully designed multivariate feature extraction module to provide complementary features, thereby achieving a balance between model complexity and performance. By combining HTME with the Transformer architecture, we present HTMformer, leveraging the enhanced feature extraction capability of the HTME extractor to build a lightweight forecaster. Experiments conducted on eight real-world datasets demonstrate that our approach outperforms existing baselines in both accuracy and efficiency.
 ]]></content:encoded>
 <pubDate>Tue, 14 Oct 2025 00:00:00 -0400</pubDate>
-<pubDate>Tue, 14 Oct 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
 <title>Local MAP Sampling for Diffusion Models</title>
@@ -194,13 +197,12 @@ Abstract: Transformer-based methods have achieved impressive results in time ser
 <guid>https://arxiv.org/abs/2510.07343</guid>
 <content:encoded><![CDATA[
 <div> sampling, inverse problems, optimization, image restoration, probabilistic interpretation
-<br>
+<br />
 Summary:
 Local MAP Sampling (LMAPS) introduces a new inference framework for solving inverse problems by iteratively solving local Maximum A Posteriori (MAP) subproblems along the diffusion trajectory. This approach clarifies the connection between optimization-based methods, global MAP estimation, and Diffusion Posterior Sampling (DPS). LMAPS algorithms offer practical solutions with a probabilistically interpretable covariance approximation, a reformulated objective for stability and interpretability, and a gradient approximation for non-differentiable operators. In extensive experiments on image restoration and scientific tasks, LMAPS shows superior performance, achieving significant gains of over 2 dB in motion deblurring, JPEG restoration, and quantization, as well as improvements of more than 1.5 dB in inverse scattering benchmarks. <div>
 arXiv:2510.07343v2 Announce Type: replace-cross 
 Abstract: Diffusion Posterior Sampling (DPS) provides a principled Bayesian approach to inverse problems by sampling from $p(x_0 \mid y)$. However, in practice, the goal of inverse problem solving is not to cover the posterior but to recover the most accurate reconstruction, where optimization-based diffusion solvers often excel despite lacking a clear probabilistic foundation. We introduce Local MAP Sampling (LMAPS), a new inference framework that iteratively solving local MAP subproblems along the diffusion trajectory. This perspective clarifies their connection to global MAP estimation and DPS, offering a unified probabilistic interpretation for optimization-based methods. Building on this foundation, we develop practical algorithms with a probabilistically interpretable covariance approximation, a reformulated objective for stability and interpretability, and a gradient approximation for non-differentiable operators. Across a broad set of image restoration and scientific tasks, LMAPS achieves state-of-the-art performance, including $\geq 2$ dB gains on motion deblurring, JPEG restoration, and quantization, and $>1.5$ dB improvements on inverse scattering benchmarks.
 ]]></content:encoded>
-<pubDate>Tue, 14 Oct 2025 00:00:00 -0400</pubDate>
 <pubDate>Tue, 14 Oct 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -210,16 +212,14 @@ Abstract: Diffusion Posterior Sampling (DPS) provides a principled Bayesian appr
 <content:encoded><![CDATA[
 <div> Keywords: large language models, social reasoning, cognitive confusion, reasoning impasses, world model-enhanced reasoning
 
-Summary:<br><br>Large language models (LLMs) excel in mathematical and code reasoning but struggle with social reasoning tasks due to cognitive confusion and logical inconsistencies. The study analyzes the reasoning trajectories of LLMs and identifies their tendency to output contradictory terms when processing scenarios with multiple participants and timelines. The core issue lies in their inability to differentiate between objective reality and subjective beliefs. To address this, the proposed adaptive world model-enhanced reasoning mechanism constructs a dynamic textual world model to track entity states and temporal sequences. This mechanism monitors reasoning trajectories for confusion indicators and intervenes by providing clear world state descriptions to help models navigate through cognitive dilemmas. Evaluations on three social benchmarks show significant improvements in accuracy (+10% in Hi-ToM) and reduced computational costs (up to 33.8% token reduction), offering a practical solution for deploying LLMs in social contexts.
+Summary:<br /><br />Large language models (LLMs) excel in mathematical and code reasoning but struggle with social reasoning tasks due to cognitive confusion and logical inconsistencies. The study analyzes the reasoning trajectories of LLMs and identifies their tendency to output contradictory terms when processing scenarios with multiple participants and timelines. The core issue lies in their inability to differentiate between objective reality and subjective beliefs. To address this, the proposed adaptive world model-enhanced reasoning mechanism constructs a dynamic textual world model to track entity states and temporal sequences. This mechanism monitors reasoning trajectories for confusion indicators and intervenes by providing clear world state descriptions to help models navigate through cognitive dilemmas. Evaluations on three social benchmarks show significant improvements in accuracy (+10% in Hi-ToM) and reduced computational costs (up to 33.8% token reduction), offering a practical solution for deploying LLMs in social contexts.
 
  <div>
 arXiv:2510.07974v2 Announce Type: replace-cross 
 Abstract: While large language models (LLMs) excel in mathematical and code reasoning, we observe they struggle with social reasoning tasks, exhibiting cognitive confusion, logical inconsistencies, and conflation between objective world states and subjective belief states. Through deteiled analysis of DeepSeek-R1's reasoning trajectories, we find that LLMs frequently encounter reasoning impasses and tend to output contradictory terms like "tricky" and "confused" when processing scenarios with multiple participants and timelines, leading to erroneous reasoning or infinite loops. The core issue is their inability to disentangle objective reality from agents' subjective beliefs. To address this, we propose an adaptive world model-enhanced reasoning mechanism that constructs a dynamic textual world model to track entity states and temporal sequences. It dynamically monitors reasoning trajectories for confusion indicators and promptly intervenes by providing clear world state descriptions, helping models navigate through cognitive dilemmas. The mechanism mimics how humans use implicit world models to distinguish between external events and internal beliefs. Evaluations on three social benchmarks demonstrate significant improvements in accuracy (e.g., +10% in Hi-ToM) while reducing computational costs (up to 33.8% token reduction), offering a simple yet effective solution for deploying LLMs in social contexts.
 ]]></content:encoded>
 <pubDate>Tue, 14 Oct 2025 00:00:00 -0400</pubDate>
-<pubDate>Tue, 14 Oct 2025 00:00:00 -0400</pubDate>
 </item>
-
 <item>
 <title>The Geometry of Reasoning: Flowing Logics in Representation Space</title>
 <link>https://arxiv.org/abs/2510.09782</link>
@@ -10771,204 +10771,6 @@ Query-product relevance analysis in e-commerce search engines is vital and evolv
 arXiv:2510.07972v1 Announce Type: new 
 Abstract: Query-product relevance analysis is a foundational technology in e-commerce search engines and has become increasingly important in AI-driven e-commerce. The recent emergence of large language models (LLMs), particularly their chain-of-thought (CoT) reasoning capabilities, offers promising opportunities for developing relevance systems that are both more interpretable and more robust. However, existing training paradigms have notable limitations: SFT and DPO suffer from poor generalization on long-tail queries and from a lack of fine-grained, stepwise supervision to enforce rule-aligned reasoning. In contrast, reinforcement learning with verification rewards (RLVR) suffers from sparse feedback, which provides insufficient signal to correct erroneous intermediate steps, thereby undermining logical consistency and limiting performance in complex inference scenarios.
   To address these challenges, we introduce the Stepwise Hybrid Examination Reinforcement Learning framework for Taobao Search Relevance (TaoSR-SHE). At its core is Stepwise Reward Policy Optimization (SRPO), a reinforcement learning algorithm that leverages step-level rewards generated by a hybrid of a high-quality generative stepwise reward model and a human-annotated offline verifier, prioritizing learning from critical correct and incorrect reasoning steps. TaoSR-SHE further incorporates two key techniques: diversified data filtering to encourage exploration across varied reasoning paths and mitigate policy entropy collapse, and multi-stage curriculum learning to foster progressive capability growth. Extensive experiments on real-world search benchmarks show that TaoSR-SHE improves both reasoning quality and relevance-prediction accuracy in large-scale e-commerce settings, outperforming SFT, DPO, GRPO, and other baselines, while also enhancing interpretability and robustness.
-]]></content:encoded>
-<pubDate>Fri, 10 Oct 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>VoiceAgentBench: Are Voice Assistants ready for agentic tasks?</title>
-<link>https://arxiv.org/abs/2510.07978</link>
-<guid>https://arxiv.org/abs/2510.07978</guid>
-<content:encoded><![CDATA[
-<div> Large-scale Speech Language Models, SpeechLMs, VoiceAgentBench, evaluation, Indian context <br />
-Summary:<br /> 
-The article introduces VoiceAgentBench, a new benchmark for evaluating SpeechLMs in realistic spoken agentic scenarios. The benchmark includes over 5,500 synthetic spoken queries grounded in the Indian context and covers single-tool invocations, multi-tool workflows, multi-turn interactions, and safety evaluations. It supports English, Hindi, and 5 other Indian languages to reflect linguistic and cultural diversity. Speaker variability is simulated using a novel sampling algorithm, maximizing acoustic and speaker diversity. Evaluation measures tool selection accuracy, structural consistency, correctness of tool invocations, and adversarial robustness. Experiments reveal gaps in contextual tool orchestration tasks, Indic generalization, and adversarial robustness, highlighting critical limitations of current SpeechLMs. <br /> <div>
-arXiv:2510.07978v1 Announce Type: new 
-Abstract: Large-scale Speech Language Models (SpeechLMs) have enabled voice assistants capable of understanding natural spoken queries and performing complex tasks. However, existing speech benchmarks primarily focus on isolated capabilities such as transcription, or question-answering, and do not systematically evaluate agentic scenarios encompassing multilingual and cultural understanding, as well as adversarial robustness. To address this, we introduce VoiceAgentBench, a comprehensive benchmark designed to evaluate SpeechLMs in realistic spoken agentic settings. It comprises over 5,500 synthetic spoken queries, including dialogues grounded in Indian context, covering single-tool invocations, multi-tool workflows, multi-turn interactions, and safety evaluations. The benchmark supports English, Hindi, and 5 other Indian languages, reflecting real-world linguistic and cultural diversity. We simulate speaker variability using a novel sampling algorithm that selects audios for TTS voice conversion based on its speaker embeddings, maximizing acoustic and speaker diversity. Our evaluation measures tool selection accuracy, structural consistency, and the correctness of tool invocations, including adversarial robustness. Our experiments reveal significant gaps in contextual tool orchestration tasks, Indic generalization, and adversarial robustness, exposing critical limitations of current SpeechLMs.
-]]></content:encoded>
-<pubDate>Fri, 10 Oct 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>ReInAgent: A Context-Aware GUI Agent Enabling Human-in-the-Loop Mobile Task Navigation</title>
-<link>https://arxiv.org/abs/2510.07988</link>
-<guid>https://arxiv.org/abs/2510.07988</guid>
-<content:encoded><![CDATA[
-<div> Keywords: Mobile GUI agents, human-in-the-loop, context-aware, multi-agent framework, information management<br />
-Summary:<br />
-The article introduces ReInAgent, a context-aware multi-agent framework designed to improve mobile task navigation by incorporating human input during task execution. Existing mobile GUI agents often operate autonomously, leading to outcomes that may not align with user preferences. ReInAgent overcomes this limitation by integrating specialized agents for information management, decision-making, and task reflection, all collaborating through a shared memory module. By continuously analyzing contextual information and facilitating user-agent interaction, ReInAgent adapts to dynamic and ambiguous task scenarios, resulting in more reliable outcomes. Experimental results show that ReInAgent outperforms existing approaches, achieving a 25% higher success rate on complex tasks involving information dilemmas. This framework demonstrates the potential for improved adaptability and user satisfaction in mobile task execution.<br /> 
-Summary: <div>
-arXiv:2510.07988v1 Announce Type: new 
-Abstract: Mobile GUI agents exhibit substantial potential to facilitate and automate the execution of user tasks on mobile phones. However, exist mobile GUI agents predominantly privilege autonomous operation and neglect the necessity of active user engagement during task execution. This omission undermines their adaptability to information dilemmas including ambiguous, dynamically evolving, and conflicting task scenarios, leading to execution outcomes that deviate from genuine user requirements and preferences. To address these shortcomings, we propose ReInAgent, a context-aware multi-agent framework that leverages dynamic information management to enable human-in-the-loop mobile task navigation. ReInAgent integrates three specialized agents around a shared memory module: an information-managing agent for slot-based information management and proactive interaction with the user, a decision-making agent for conflict-aware planning, and a reflecting agent for task reflection and information consistency validation. Through continuous contextual information analysis and sustained user-agent collaboration, ReInAgent overcomes the limitation of existing approaches that rely on clear and static task assumptions. Consequently, it enables more adaptive and reliable mobile task navigation in complex, real-world scenarios. Experimental results demonstrate that ReInAgent effectively resolves information dilemmas and produces outcomes that are more closely aligned with genuine user preferences. Notably, on complex tasks involving information dilemmas, ReInAgent achieves a 25% higher success rate than Mobile-Agent-v2.
-]]></content:encoded>
-<pubDate>Fri, 10 Oct 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Language Models Do Not Embed Numbers Continuously</title>
-<link>https://arxiv.org/abs/2510.08009</link>
-<guid>https://arxiv.org/abs/2510.08009</guid>
-<content:encoded><![CDATA[
-<div> representations, language models, numeric values, continuous, noise <br />
-<br />
-Summary: 
-The research evaluates how language models handle integers and numeric representations, finding that models do not treat numeric spaces as continuous and introduce significant noise. While models can accurately reconstruct values, principal components only explain a small portion of the variation in the embedding space, indicating the presence of orthogonal components. The study shows that as the decimal precision increases, both linear reconstruction and explained variance deteriorate, highlighting potential issues in areas where embedding models are used, especially for tasks requiring high numerical precision or involving large magnitudes and mixed-sign values. <div>
-arXiv:2510.08009v1 Announce Type: new 
-Abstract: Recent research has extensively studied how large language models manipulate integers in specific arithmetic tasks, and on a more fundamental level, how they represent numeric values. These previous works have found that language model embeddings can be used to reconstruct the original values, however, they do not evaluate whether language models actually model continuous values as continuous. Using expected properties of the embedding space, including linear reconstruction and principal component analysis, we show that language models not only represent numeric spaces as non-continuous but also introduce significant noise. Using models from three major providers (OpenAI, Google Gemini and Voyage AI), we show that while reconstruction is possible with high fidelity ($R^2 \geq 0.95$), principal components only explain a minor share of variation within the embedding space. This indicates that many components within the embedding space are orthogonal to the simple numeric input space. Further, both linear reconstruction and explained variance suffer with increasing decimal precision, despite the ordinal nature of the input space being fundamentally unchanged. The findings of this work therefore have implications for the many areas where embedding models are used, in-particular where high numerical precision, large magnitudes or mixed-sign values are common.
-]]></content:encoded>
-<pubDate>Fri, 10 Oct 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>PEAR: Phase Entropy Aware Reward for Efficient Reasoning</title>
-<link>https://arxiv.org/abs/2510.08026</link>
-<guid>https://arxiv.org/abs/2510.08026</guid>
-<content:encoded><![CDATA[
-<div> Keyword: Large Reasoning Models, Entropy, Phase Entropy Aware Reward, Response Length, Performance
-
-Summary:
-Large Reasoning Models (LRMs) often generate long and redundant explanations due to high entropy in the thinking phase. To address this, Phase Entropy Aware Reward (PEAR) penalizes excessive entropy during the thinking phase while allowing moderate exploration for the final answer, leading to concise and accurate reasoning traces. This approach enables adaptive control of response length without predefined targets or rigid rules. Experimental results across multiple benchmarks demonstrate that PEAR effectively reduces response length while maintaining competitive accuracy, even exhibiting strong out-of-distribution robustness. The code for PEAR is available on GitHub for further exploration and implementation.<br /><br />Summary: <div>
-arXiv:2510.08026v1 Announce Type: new 
-Abstract: Large Reasoning Models (LRMs) have achieved impressive performance on complex reasoning tasks by generating detailed chain-of-thought (CoT) explanations. However, these responses are often excessively long, containing redundant reasoning steps that inflate inference cost and reduce usability. Controlling the length of generated reasoning without sacrificing accuracy remains an open challenge. Through a systematic empirical analysis, we reveal a consistent positive correlation between model entropy and response length at different reasoning stages across diverse LRMs: the thinking phase exhibits higher entropy, reflecting exploratory behavior of longer responses, while the final answer phase shows lower entropy, indicating a more deterministic solution.This observation suggests that entropy at different reasoning stages can serve as a control knob for balancing conciseness and performance. Based on this insight, this paper introduces Phase Entropy Aware Reward (PEAR), a reward mechanism that incorporating phase-dependent entropy into the reward design. Instead of treating all tokens uniformly, PEAR penalize excessive entropy during the thinking phase and allowing moderate exploration at the final answer phase, which encourages models to generate concise reasoning traces that retain sufficient flexibility to solve the task correctly. This enables adaptive control of response length without relying on explicit length targets or rigid truncation rules. Extensive experiments across four benchmarks demonstrate that PEAR consistently reduces response length while sustaining competitive accuracy across model scales. In addition, PEAR demonstrates strong out-of-distribution (OOD) robustness beyond the training distribution. Our code is available at: https://github.com/iNLP-Lab/PEAR.
-]]></content:encoded>
-<pubDate>Fri, 10 Oct 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>AILoRA: Function-Aware Asymmetric Initialization for Low-Rank Adaptation of Large Language Models</title>
-<link>https://arxiv.org/abs/2510.08034</link>
-<guid>https://arxiv.org/abs/2510.08034</guid>
-<content:encoded><![CDATA[
-<div> parameter-efficient, finetuning, Low-Rank Adaptation, AILoRA, self-attention <br />
-Summary: 
-The article introduces AILoRA, a novel parameter-efficient finetuning method that incorporates function-aware asymmetric low-rank priors. It addresses limitations of the widely adopted Low-Rank Adaptation (LoRA) approach by considering the distinct characteristics of the projection matrices $W^Q$ and $W^V in self-attention mechanisms. $W^Q captures task-specific semantic space knowledge, while $W^V encodes stable token-level feature representations. AILoRA leverages this insight to initialize LoRA modules asymmetrically, injecting principal components of $W^Q for task adaptation and minor components of $W^V for generalizable features. This strategy enhances finetuning performance and convergence efficiency by better capturing the specialized roles of attention parameters. AILoRA offers a promising solution to overcoming challenges faced by existing parameter-efficient finetuning approaches, improving model adaptation to diverse downstream tasks with reduced computational and memory overhead. <br /> <div>
-arXiv:2510.08034v1 Announce Type: new 
-Abstract: Parameter-efficient finetuning (PEFT) aims to mitigate the substantial computational and memory overhead involved in adapting large-scale pretrained models to diverse downstream tasks. Among numerous PEFT strategies, Low-Rank Adaptation (LoRA) has emerged as one of the most widely adopted approaches due to its robust empirical performance and low implementation complexity. In practical deployment, LoRA is typically applied to the $W^Q$ and $W^V$ projection matrices of self-attention modules, enabling an effective trade-off between model performance and parameter efficiency. While LoRA has achieved considerable empirical success, it still encounters challenges such as suboptimal performance and slow convergence. To address these limitations, we introduce \textbf{AILoRA}, a novel parameter-efficient method that incorporates function-aware asymmetric low-rank priors. Our empirical analysis reveals that the projection matrices $W^Q$ and $W^V$ in the self-attention mechanism exhibit distinct parameter characteristics, stemming from their functional differences. Specifically, $W^Q$ captures task-specific semantic space knowledge essential for attention distributions computation, making its parameters highly sensitive to downstream task variations. In contrast, $W^V$ encodes token-level feature representations that tend to remain stable across tasks and layers. Leveraging these insights, AILoRA performs a function-aware initialization by injecting the principal components of $W^Q$ to retain task-adaptive capacity, and the minor components of $W^V$ to preserve generalizable feature representations. This asymmetric initialization strategy enables LoRA modules to better capture the specialized roles of attention parameters, thereby enhancing both finetuning performance and convergence efficiency.
-]]></content:encoded>
-<pubDate>Fri, 10 Oct 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>LinguaSim: Interactive Multi-Vehicle Testing Scenario Generation via Natural Language Instruction Based on Large Language Models</title>
-<link>https://arxiv.org/abs/2510.08046</link>
-<guid>https://arxiv.org/abs/2510.08046</guid>
-<content:encoded><![CDATA[
-<div> keywords: scenario generation, autonomous vehicles, Large Language Models (LLMs), 3D simulations, natural language<br />
-Summary:<br />
-The article introduces LinguaSim, a framework that converts natural language into realistic 3D scenarios for autonomous vehicle testing and training. Current methods struggle to balance accuracy and realism, often sacrificing realism for simplicity. LinguaSim aims to bridge this gap by creating interactive simulations that align closely with user descriptions, enhancing safety testing and training. The framework includes a feedback calibration module to refine scenario generation precision, improving fidelity to user intent. Experiments show LinguaSim can generate scenarios with varying criticality based on natural language descriptions and effectively reduce excessive aggressiveness in initial outputs. This results in a lower crash rate to better match user intentions. Overall, LinguaSim offers a promising approach to scenario generation for autonomous vehicles, combining natural language processing with interactive 3D simulations for more accurate and realistic testing environments.<br /><br />Summary: <div>
-arXiv:2510.08046v1 Announce Type: new 
-Abstract: The generation of testing and training scenarios for autonomous vehicles has drawn significant attention. While Large Language Models (LLMs) have enabled new scenario generation methods, current methods struggle to balance command adherence accuracy with the realism of real-world driving environments. To reduce scenario description complexity, these methods often compromise realism by limiting scenarios to 2D, or open-loop simulations where background vehicles follow predefined, non-interactive behaviors. We propose LinguaSim, an LLM-based framework that converts natural language into realistic, interactive 3D scenarios, ensuring both dynamic vehicle interactions and faithful alignment between the input descriptions and the generated scenarios. A feedback calibration module further refines the generation precision, improving fidelity to user intent. By bridging the gap between natural language and closed-loop, interactive simulations, LinguaSim constrains adversarial vehicle behaviors using both the scenario description and the autonomous driving model guiding them. This framework facilitates the creation of high-fidelity scenarios that enhance safety testing and training. Experiments show LinguaSim can generate scenarios with varying criticality aligned with different natural language descriptions (ACT: 0.072 s for dangerous vs. 3.532 s for safe descriptions; comfortability: 0.654 vs. 0.764), and its refinement module effectively reduces excessive aggressiveness in LinguaSim's initial outputs, lowering the crash rate from 46.9% to 6.3% to better match user intentions.
-]]></content:encoded>
-<pubDate>Fri, 10 Oct 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Multi-Condition Conformal Selection</title>
-<link>https://arxiv.org/abs/2510.08075</link>
-<guid>https://arxiv.org/abs/2510.08075</guid>
-<content:encoded><![CDATA[
-<div> algorithm, high-quality candidates, multi-condition selection, FDR control, drug discovery 
-
-Summary: 
-The article introduces the Multi-Condition Conformal Selection (MCCS) algorithm, which addresses the challenge of selecting high-quality candidates from large datasets with multiple conditions. Traditional conformal selection methods are limited to single-threshold scenarios, but MCCS extends this to include conjunctive and disjunctive conditions. The algorithm utilizes a novel nonconformity score for conjunctive conditions and a global Benjamini-Hochberg procedure for disjunctive conditions to ensure finite-sample False Discovery Rate control with theoretical guarantees. Experimental results demonstrate the superior performance of MCCS compared to baseline methods, its applicability across diverse conditions and real-world modalities, and its scalability to multi-task environments. The MCCS algorithm provides a robust solution for selecting high-quality candidates in resource-constrained applications such as drug discovery, precision medicine, and large language model alignment. 
-
-<br /><br />Summary: <div>
-arXiv:2510.08075v1 Announce Type: new 
-Abstract: Selecting high-quality candidates from large-scale datasets is critically important in resource-constrained applications such as drug discovery, precision medicine, and the alignment of large language models. While conformal selection methods offer a rigorous solution with False Discovery Rate (FDR) control, their applicability is confined to single-threshold scenarios (i.e., y > c) and overlooks practical needs for multi-condition selection, such as conjunctive or disjunctive conditions. In this work, we propose the Multi-Condition Conformal Selection (MCCS) algorithm, which extends conformal selection to scenarios with multiple conditions. In particular, we introduce a novel nonconformity score with regional monotonicity for conjunctive conditions and a global Benjamini-Hochberg (BH) procedure for disjunctive conditions, thereby establishing finite-sample FDR control with theoretical guarantees. The integration of these components enables the proposed method to achieve rigorous FDR-controlled selection in various multi-condition environments. Extensive experiments validate the superiority of MCCS over baselines, its generalizability across diverse condition combinations, different real-world modalities, and multi-task scalability.
-]]></content:encoded>
-<pubDate>Fri, 10 Oct 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>AutoQual: An LLM Agent for Automated Discovery of Interpretable Features for Review Quality Assessment</title>
-<link>https://arxiv.org/abs/2510.08081</link>
-<guid>https://arxiv.org/abs/2510.08081</guid>
-<content:encoded><![CDATA[
-<div> Keywords: online reviews, quality assessment, deep learning, interpretable features, AutoQual
-
-Summary:
-AutoQual is a novel framework utilizing LLM-based agents to automatically extract interpretable features for ranking online reviews based on quality. Traditional methods are limited in scalability and adaptability, while deep learning approaches often lack interpretability. AutoQual mimics human research processes by generating feature hypotheses, operationalizing them, and accumulating knowledge in memory. Deployed on a large-scale online platform, it increased the average reviews viewed per user by 0.79% and the conversion rate of review readers by 0.27% through large-scale A/B testing. This framework aims to transform implicit data knowledge into explicit, computable features and can be applied across various domains beyond review quality assessment.<br /><br />Summary: <div>
-arXiv:2510.08081v1 Announce Type: new 
-Abstract: Ranking online reviews by their intrinsic quality is a critical task for e-commerce platforms and information services, impacting user experience and business outcomes. However, quality is a domain-dependent and dynamic concept, making its assessment a formidable challenge. Traditional methods relying on hand-crafted features are unscalable across domains and fail to adapt to evolving content patterns, while modern deep learning approaches often produce black-box models that lack interpretability and may prioritize semantics over quality. To address these challenges, we propose AutoQual, an LLM-based agent framework that automates the discovery of interpretable features. While demonstrated on review quality assessment, AutoQual is designed as a general framework for transforming tacit knowledge embedded in data into explicit, computable features. It mimics a human research process, iteratively generating feature hypotheses through reflection, operationalizing them via autonomous tool implementation, and accumulating experience in a persistent memory. We deploy our method on a large-scale online platform with a billion-level user base. Large-scale A/B testing confirms its effectiveness, increasing average reviews viewed per user by 0.79% and the conversion rate of review readers by 0.27%.
-]]></content:encoded>
-<pubDate>Fri, 10 Oct 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>From Ethical Declarations to Provable Independence: An Ontology-Driven Optimal-Transport Framework for Certifiably Fair AI Systems</title>
-<link>https://arxiv.org/abs/2510.08086</link>
-<guid>https://arxiv.org/abs/2510.08086</guid>
-<content:encoded><![CDATA[
-<div> ontology engineering, bias mitigation, fair AI, optimal transport, loan approval<br />
-<br />
-This paper introduces a framework for provably fair AI that addresses the limitations of current bias mitigation methods. The framework utilizes ontology engineering in OWL 2 QL to formally define sensitive attributes and infer their proxies, constructing a sigma algebra G to capture biased patterns. Fair representations are obtained through Delbaen Majumdar optimal transport to generate independent variables while preserving accuracy. By modeling bias as dependence between sigma algebras and using optimal transport as the fair transformation, the approach ensures complete fairness in tasks like loan approval where proxies like ZIP code can reveal race. This method provides a certifiable and mathematically grounded approach for developing trustworthy AI. 
-<br /><br />Summary: <div>
-arXiv:2510.08086v1 Announce Type: new 
-Abstract: This paper presents a framework for provably fair AI that overcomes the limits of current bias mitigation methods by systematically removing all sensitive information and its proxies. Using ontology engineering in OWL 2 QL, it formally defines sensitive attributes and infers their proxies through logical reasoning, constructing a sigma algebra G that captures the full structure of biased patterns. Fair representations are then obtained via Delbaen Majumdar optimal transport, which generates variables independent of G while minimizing L2 distance to preserve accuracy. This guarantees true independence rather than mere decorrelation. By modeling bias as dependence between sigma algebras, compiling ontological knowledge into measurable structures, and using optimal transport as the unique fair transformation, the approach ensures complete fairness in tasks like loan approval, where proxies such as ZIP code reveal race. The result is a certifiable and mathematically grounded method for trustworthy AI.
-]]></content:encoded>
-<pubDate>Fri, 10 Oct 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Can Risk-taking AI-Assistants suitably represent entities</title>
-<link>https://arxiv.org/abs/2510.08114</link>
-<guid>https://arxiv.org/abs/2510.08114</guid>
-<content:encoded><![CDATA[
-<div> gender-specific attitudes, uncertainty, role-based decision-making, manipulability, risk aversion
-
-Summary:
-The study explores the manipulability of risk aversion in language models (LMs) to better understand their ability to replicate human risk preferences. It specifically focuses on gender-specific attitudes, uncertainty, and role-based decision-making. The results show that while some LMs align with human behaviors, there are discrepancies that highlight the need for refining bio-centric measures of manipulability. The study suggests directions for improving AI design to enhance ethical decision-making and calls for advancements to ensure AI systems accurately replicate human risk preferences for better risk management. By refining AI design, the study aims to increase the applicability of AI assistants in risk management contexts. <div>
-arXiv:2510.08114v1 Announce Type: new 
-Abstract: Responsible AI demands systems whose behavioral tendencies can be effectively measured, audited, and adjusted to prevent inadvertently nudging users toward risky decisions or embedding hidden biases in risk aversion. As language models (LMs) are increasingly incorporated into AI-driven decision support systems, understanding their risk behaviors is crucial for their responsible deployment. This study investigates the manipulability of risk aversion (MoRA) in LMs, examining their ability to replicate human risk preferences across diverse economic scenarios, with a focus on gender-specific attitudes, uncertainty, role-based decision-making, and the manipulability of risk aversion. The results indicate that while LMs such as DeepSeek Reasoner and Gemini-2.0-flash-lite exhibit some alignment with human behaviors, notable discrepancies highlight the need to refine bio-centric measures of manipulability. These findings suggest directions for refining AI design to better align human and AI risk preferences and enhance ethical decision-making. The study calls for further advancements in model design to ensure that AI systems more accurately replicate human risk preferences, thereby improving their effectiveness in risk management contexts. This approach could enhance the applicability of AI assistants in managing risk.
-]]></content:encoded>
-<pubDate>Fri, 10 Oct 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Prepared mind, fast response: A temporal decoupling framework for adaptive knowledge orchestration in open-domain dialogue</title>
-<link>https://arxiv.org/abs/2510.08175</link>
-<guid>https://arxiv.org/abs/2510.08175</guid>
-<content:encoded><![CDATA[
-<div> latency-quality tradeoff, open-domain dialogue AI systems, asynchronous knowledge orchestration, PMFR, Top-iOCQA <br />
-<br />
-Summary: <br />
-In open-domain dialogue AI systems, the tradeoff between response latency and quality is a critical challenge. Existing approaches fall short in balancing comprehensive knowledge access and quick response times. A new system called PMFR addresses this issue by using asynchronous knowledge orchestration. It consists of a Knowledge Adequacy Evaluator for real-time assessment, a Lightweight Response Generator for immediate interaction, and an Asynchronous Knowledge Refinement Agent for background knowledge enrichment. PMFR demonstrated superior performance on Top-iOCQA by reducing latency by 95.3% while maintaining response quality comparable to synchronous baselines. This innovative architecture ensures continuous conversational flow while gradually enhancing knowledge coverage through intelligent triggering mechanisms. <div>
-arXiv:2510.08175v1 Announce Type: new 
-Abstract: The latency-quality tradeoff is a fundamental constraint in open-domain dialogue AI systems, since comprehensive knowledge access necessitates prohibitive response delays. Contemporary approaches offer two inadequate solutions: lightweight instruct models achieve sub-second latency but lack reasoning depth, while tool-augmented ReAct agents enhance factuality through external knowledge at the cost of synchronous execution that blocks interaction during re- trieval processes. PMFR is thus proposed, with a tempo- ral decoupling framework that fundamentally resolves the contradiction through asynchronous knowledge orchestra- tion. PMFR employs three coordinated components: (1) a Knowledge Adequacy Evaluator for real-time sufficiency assessment, (2) a Lightweight Response Generator for imme- diate user interaction, and (3) an Asynchronous Knowledge Refinement Agent for background knowledge enhancement. This architecture maintains continuous conversational flow while progressively enriching knowledge coverage through intelligent triggering mechanisms. Evaluation results on Top- iOCQA demonstrate PMFR outperforms brute-force scaling: PMFR achieves 95.3% latency reduction (23.38s -> 1.09s) while preserving response quality comparable to heavyweight synchronous baselines (GEval-C: 0.613 vs. 0.620).
-]]></content:encoded>
-<pubDate>Fri, 10 Oct 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>R-Horizon: How Far Can Your Large Reasoning Model Really Go in Breadth and Depth?</title>
-<link>https://arxiv.org/abs/2510.08189</link>
-<guid>https://arxiv.org/abs/2510.08189</guid>
-<content:encoded><![CDATA[
-<div> scaling, reasoning models, R-HORIZON, long-horizon reasoning, LRMs
-
-Summary:
-- Recent advancements in test-time scaling for reasoning models have shown significant improvements through long Chain-of-Thought (CoT).
-- Current benchmarks primarily focus on immediate, single-horizon tasks, lacking evaluation of models' performance on complex, long-horizon scenarios.
-- R-HORIZON is introduced to enhance long-horizon reasoning behaviors in Large Reasoning Models (LRMs) by stimulating complex multi-step reasoning tasks.
-- LRMs exhibit limitations in effective reasoning length and struggle with allocating thinking budget across multiple interconnected problems.
-- Training LRMs using R-HORIZON data for reinforcement learning with verified rewards (RLVR) results in improved performance on multi-horizon reasoning tasks and enhanced accuracy on standard reasoning tasks, as shown by a significant increase on AIME2024. 
-
-<br /><br />Summary: <div>
-arXiv:2510.08189v1 Announce Type: new 
-Abstract: Recent trends in test-time scaling for reasoning models (e.g., OpenAI o1, DeepSeek-R1) have led to remarkable improvements through long Chain-of-Thought (CoT). However, existing benchmarks mainly focus on immediate, single-horizon tasks, failing to adequately evaluate models' ability to understand and respond to complex, long-horizon scenarios. To address this incomplete evaluation of Large Reasoning Models (LRMs), we propose R-HORIZON, a method designed to stimulate long-horizon reasoning behaviors in LRMs through query composition. Based on R-HORIZON, we construct a long-horizon reasoning benchmark, comprising complex multi-step reasoning tasks with interdependent problems that span long reasoning horizons. Through comprehensive evaluation of LRMs using the R-HORIZON benchmark, we find that even the most advanced LRMs suffer significant performance degradation. Our analysis reveals that LRMs exhibit limited effective reasoning length and struggle to allocate thinking budget across multiple problems appropriately. Recognizing these limitations, we use R-HORIZON to construct long-horizon reasoning data for reinforcement learning with verified rewards (RLVR). Compared to training with single-horizon data, RLVR with R-HORIZON not only substantially improves performance on the multi-horizon reasoning tasks, but also promotes accuracy on standard reasoning tasks, with an increase of 7.5 on AIME2024. These results position R-HORIZON as a scalable, controllable, and low-cost paradigm for enhancing and evaluating the long-horizon reasoning capabilities of LRMs.
-]]></content:encoded>
-<pubDate>Fri, 10 Oct 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Measuring What Matters: The AI Pluralism Index</title>
-<link>https://arxiv.org/abs/2510.08193</link>
-<guid>https://arxiv.org/abs/2510.08193</guid>
-<content:encoded><![CDATA[
-<div> Artificial Intelligence, Governance, Pluralism, Index, Transparency
-Summary: 
-The article introduces the AI Pluralism Index (AIPI), a tool that evaluates AI systems based on participatory governance, inclusivity, transparency, and accountability. The index aims to measure the degree to which stakeholders can influence the objectives, data practices, safeguards, and deployment of AI systems. The AIPI utilizes verifiable practices from public artifacts and independent evaluations to provide transparent and evidence-based assessments. The index is designed to promote pluralistic governance in AI development and to enable policymakers, procurers, and the public to make informed decisions. The article outlines the measurement model, implementation process, and reliability assessment of the AIPI. It also presents pilot results of the index and discusses its positioning among existing transparency, safety, and governance frameworks. The ultimate goal of the AIPI is to incentivize pluralistic practices in the development and deployment of AI technologies. 
-
-<br /><br />Summary: <div>
-arXiv:2510.08193v1 Announce Type: new 
-Abstract: Artificial intelligence systems increasingly mediate knowledge, communication, and decision making. Development and governance remain concentrated within a small set of firms and states, raising concerns that technologies may encode narrow interests and limit public agency. Capability benchmarks for language, vision, and coding are common, yet public, auditable measures of pluralistic governance are rare. We define AI pluralism as the degree to which affected stakeholders can shape objectives, data practices, safeguards, and deployment. We present the AI Pluralism Index (AIPI), a transparent, evidence-based instrument that evaluates producers and system families across four pillars: participatory governance, inclusivity and diversity, transparency, and accountability. AIPI codes verifiable practices from public artifacts and independent evaluations, explicitly handling "Unknown" evidence to report both lower-bound ("evidence") and known-only scores with coverage. We formalize the measurement model; implement a reproducible pipeline that integrates structured web and repository analysis, external assessments, and expert interviews; and assess reliability with inter-rater agreement, coverage reporting, cross-index correlations, and sensitivity analysis. The protocol, codebook, scoring scripts, and evidence graph are maintained openly with versioned releases and a public adjudication process. We report pilot provider results and situate AIPI relative to adjacent transparency, safety, and governance frameworks. The index aims to steer incentives toward pluralistic practice and to equip policymakers, procurers, and the public with comparable evidence.
-]]></content:encoded>
-<pubDate>Fri, 10 Oct 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>The Tournament Tree Method for preference elicitation in Multi-criteria decision-making</title>
-<link>https://arxiv.org/abs/2510.08197</link>
-<guid>https://arxiv.org/abs/2510.08197</guid>
-<content:encoded><![CDATA[
-arXiv:2510.08197v1 Announce Type: new 
-Abstract: Pairwise comparison methods, such as Fuzzy Preference Relations and Saaty's Multiplicative Preference Relations, are widely used to model expert judgments in multi-criteria decision-making. However, their application is limited by the high cognitive load required to complete $m(m-1)/2$ comparisons, the risk of inconsistency, and the computational complexity of deriving consistent value scales. This paper proposes the Tournament Tree Method (TTM), a novel elicitation and evaluation framework that overcomes these limitations. The TTM requires only $m-1$ pairwise comparisons to obtain a complete, reciprocal, and consistent comparison matrix. The method consists of three phases: (i) elicitation of expert judgments using a reduced set of targeted comparisons, (ii) construction of the consistent pairwise comparison matrix, and (iii) derivation of a global value scale from the resulting matrix. The proposed approach ensures consistency by design, minimizes cognitive effort, and reduces the dimensionality of preference modeling from $m(m-1)/2$ to $m$ parameters. Furthermore, it is compatible with the classical Deck of Cards method, and thus it can handle interval and ratio scales. We have also developed a web-based tool that demonstrates its practical applicability in real decision-making scenarios.
 ]]></content:encoded>
 <pubDate>Fri, 10 Oct 2025 00:00:00 -0400</pubDate>
 </item>
