@@ -4,6 +4,7 @@
 <title>cs.AI updates on arXiv.org</title>
 <link>http://rss.arxiv.org/rss/cs.AI</link>
 
+
 <item>
 <title>L2M-AID: Autonomous Cyber-Physical Defense by Fusing Semantic Reasoning of Large Language Models with Multi-Agent Reinforcement Learning (Preprint)</title>
 <link>https://arxiv.org/abs/2510.07363</link>
@@ -11,16 +12,15 @@
 <content:encoded><![CDATA[
 <div> Keywords: Industrial IoT, Autonomous Industrial Defense, Multi-agent reinforcement learning, Large Language Model, Cyber-physical systems
 
-Summary:<br>
-- The paper introduces L2M-AID, a framework for Autonomous Industrial Defense using Multi-agent reinforcement learning driven by Large Language Models.<br>
-- L2M-AID leverages a semantic bridge provided by LLM to translate telemetry into a contextual state representation for agents, aiding in reasoning about adversary intent.<br>
-- The framework utilizes a MARL algorithm, MAPPO, with a unique reward function balancing security objectives and operational imperatives, penalizing actions disrupting physical process stability.<br>
-- Extensive experiments on SWaT and a synthetic dataset show L2M-AID outperforms traditional IDS and deep learning detectors with a 97.2% detection rate and reduced false positives by 80%.<br>
-- L2M-AID improves response times by a factor of four and excels in maintaining physical process stability, showcasing its effectiveness in securing critical national infrastructure.<br> <div>
+Summary:<br />
+- The paper introduces L2M-AID, a framework for Autonomous Industrial Defense using Multi-agent reinforcement learning driven by Large Language Models.<br />
+- L2M-AID leverages a semantic bridge provided by LLM to translate telemetry into a contextual state representation for agents, aiding in reasoning about adversary intent.<br />
+- The framework utilizes a MARL algorithm, MAPPO, with a unique reward function balancing security objectives and operational imperatives, penalizing actions disrupting physical process stability.<br />
+- Extensive experiments on SWaT and a synthetic dataset show L2M-AID outperforms traditional IDS and deep learning detectors with a 97.2% detection rate and reduced false positives by 80%.<br />
+- L2M-AID improves response times by a factor of four and excels in maintaining physical process stability, showcasing its effectiveness in securing critical national infrastructure.<br /> <div>
 arXiv:2510.07363v2 Announce Type: replace 
 Abstract: The increasing integration of Industrial IoT (IIoT) exposes critical cyber-physical systems to sophisticated, multi-stage attacks that elude traditional defenses lacking contextual awareness. This paper introduces L2M-AID, a novel framework for Autonomous Industrial Defense using LLM-empowered, Multi-agent reinforcement learning. L2M-AID orchestrates a team of collaborative agents, each driven by a Large Language Model (LLM), to achieve adaptive and resilient security. The core innovation lies in the deep fusion of two AI paradigms: we leverage an LLM as a semantic bridge to translate vast, unstructured telemetry into a rich, contextual state representation, enabling agents to reason about adversary intent rather than merely matching patterns. This semantically-aware state empowers a Multi-Agent Reinforcement Learning (MARL) algorithm, MAPPO, to learn complex cooperative strategies. The MARL reward function is uniquely engineered to balance security objectives (threat neutralization) with operational imperatives, explicitly penalizing actions that disrupt physical process stability. To validate our approach, we conduct extensive experiments on the benchmark SWaT dataset and a novel synthetic dataset generated based on the MITRE ATT&amp;CK for ICS framework. Results demonstrate that L2M-AID significantly outperforms traditional IDS, deep learning anomaly detectors, and single-agent RL baselines across key metrics, achieving a 97.2% detection rate while reducing false positives by over 80% and improving response times by a factor of four. Crucially, it demonstrates superior performance in maintaining physical process stability, presenting a robust new paradigm for securing critical national infrastructure.
 ]]></content:encoded>
-<pubDate>Wed, 15 Oct 2025 00:00:00 -0400</pubDate>
 <pubDate>Wed, 15 Oct 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -33,7 +33,7 @@ Abstract: The increasing integration of Industrial IoT (IIoT) exposes critical c
 Summary:
 CrisiText introduces a large-scale dataset for generating warning messages across various crisis scenarios using NLG architectures. The dataset includes over 400,000 warning messages for nearly 18,000 crisis situations to aid civilians during and after events. The dataset was created by linking crisis descriptions with chains of events, with each event paired with a warning message following experts' guidelines. Multiple warning types are provided for each message to allow for the comparison of NLG approaches. Experimentation included supervised fine-tuning setups, preference alignment, zero-shot, and few-shot approaches. Model performance was evaluated in out-of-distribution scenarios, and an automatic post-editor's effectiveness was assessed.
 
-<br><br>Summary: 
+<br /><br />Summary: 
 - CrisiText dataset for generating warning messages in crisis scenarios
 - Over 400,000 warning messages across 13 types of crises
 - Messages created following experts' guidelines for accuracy
@@ -43,9 +43,7 @@ arXiv:2510.09243v2 Announce Type: replace-cross
 Abstract: Effectively identifying threats and mitigating their potential damage during crisis situations, such as natural disasters or violent attacks, is paramount for safeguarding endangered individuals. To tackle these challenges, AI has been used in assisting humans in emergency situations. Still, the use of NLP techniques remains limited and mostly focuses on classification tasks. The significant potential of timely warning message generation using NLG architectures, however, has been largely overlooked. In this paper we present CrisiText, the first large-scale dataset for the generation of warning messages across 13 different types of crisis scenarios. The dataset contains more than 400,000 warning messages (spanning almost 18,000 crisis situations) aimed at assisting civilians during and after such events. To generate the dataset, we started from existing crisis descriptions and created chains of events related to the scenarios. Each event was then paired with a warning message. The generations follow experts' written guidelines to ensure correct terminology and factuality of their suggestions. Additionally, each message is accompanied by three suboptimal warning types to allow for the study of different NLG approaches. To this end, we conducted a series of experiments comparing supervised fine-tuning setups with preference alignment, zero-shot, and few-shot approaches. We further assessed model performance in out-of-distribution scenarios and evaluated the effectiveness of an automatic post-editor.
 ]]></content:encoded>
 <pubDate>Wed, 15 Oct 2025 00:00:00 -0400</pubDate>
-<pubDate>Wed, 15 Oct 2025 00:00:00 -0400</pubDate>
 </item>
-
 <item>
 <title>AI Agents for the Dhumbal Card Game: A Comparative Study</title>
 <link>https://arxiv.org/abs/2510.11736</link>
@@ -10803,26 +10801,6 @@ Abstract: Crowdsourced model evaluation platforms, such as Chatbot Arena, enable
 <content:encoded><![CDATA[
 arXiv:2510.08705v1 Announce Type: cross 
 Abstract: Object transportation in cluttered environments is a fundamental task in various domains, including domestic service and warehouse logistics. In cooperative object transport, multiple robots must coordinate to move objects that are too large for a single robot. One transport strategy is pushing, which only requires simple robots. However, careful selection of robot-object contact points is necessary to push the object along a preplanned path. Although this selection can be solved analytically, the solution space grows combinatorially with the number of robots and object size, limiting scalability. Inspired by how humans rely on common-sense reasoning for cooperative transport, we propose combining the reasoning capabilities of Large Language Models with local search to select suitable contact points. Our LLM-guided local search method for contact point selection, ConPoSe, successfully selects contact points for a variety of shapes, including cuboids, cylinders, and T-shapes. We demonstrate that ConPoSe scales better with the number of robots and object size than the analytical approach, and also outperforms pure LLM-based selection.
-]]></content:encoded>
-<pubDate>Mon, 13 Oct 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>In-Context Learning for Non-Stationary MIMO Equalization</title>
-<link>https://arxiv.org/abs/2510.08711</link>
-<guid>https://arxiv.org/abs/2510.08711</guid>
-<content:encoded><![CDATA[
-arXiv:2510.08711v1 Announce Type: cross 
-Abstract: Channel equalization is fundamental for mitigating distortions such as frequency-selective fading and inter-symbol interference. Unlike standard supervised learning approaches that require costly retraining or fine-tuning for each new task, in-context learning (ICL) adapts to new channels at inference time with only a few examples. However, existing ICL-based equalizers are primarily developed for and evaluated on static channels within the context window. Indeed, to our knowledge, prior principled analyses and theoretical studies of ICL focus exclusively on the stationary setting, where the function remains fixed within the context. In this paper, we investigate the ability of ICL to address non-stationary problems through the lens of time-varying channel equalization. We employ a principled framework for designing efficient attention mechanisms with improved adaptivity in non-stationary tasks, leveraging algorithms from adaptive signal processing to guide better designs. For example, new attention variants can be derived from the Least Mean Square (LMS) adaptive algorithm, a Least Root Mean Square (LRMS) formulation for enhanced robustness, or multi-step gradient updates for improved long-term tracking. Experimental results demonstrate that ICL holds strong promise for non-stationary MIMO equalization, and that attention mechanisms inspired by classical adaptive algorithms can substantially enhance adaptability and performance in dynamic environments. Our findings may provide critical insights for developing next-generation wireless foundation models with stronger adaptability and robustness.
-]]></content:encoded>
-<pubDate>Mon, 13 Oct 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Enhancing Self-Supervised Learning with Semantic Pairs A New Dataset and Empirical Study</title>
-<link>https://arxiv.org/abs/2510.08722</link>
-<guid>https://arxiv.org/abs/2510.08722</guid>
-<content:encoded><![CDATA[
-arXiv:2510.08722v1 Announce Type: cross 
-Abstract: Instance discrimination is a self-supervised representation learning paradigm wherein individual instances within a dataset are treated as distinct classes. This is typically achieved by generating two disparate views of each instance by applying stochastic transformations, which encourages the model to learn representations that are invariant to the common underlying object across these views.
 ]]></content:encoded>
 <pubDate>Mon, 13 Oct 2025 00:00:00 -0400</pubDate>
 </item>

@@ -5,19 +5,34 @@
 <link>http://rss.arxiv.org/rss/cs.LG</link>
 
 <item>
+<title>Near-Optimal Second-Order Guarantees for Model-Based Adversarial Imitation Learning</title>
+<link>https://arxiv.org/abs/2510.09487</link>
+<guid>https://arxiv.org/abs/2510.09487</guid>
+<content:encoded><![CDATA[
+<div> Algorithm, Online Learning, Imitation Learning, Sample Complexity, Model-based
+
+Summary:
+The study focuses on online adversarial imitation learning (AIL) where an agent learns from offline expert demonstrations and interacts with the environment online without reward feedback. Introducing a model-based AIL algorithm (MB-AIL), the research establishes horizon-free, second-order sample-complexity guarantees under general function approximations. The algorithm's second-order bounds offer scalable results based on policy variance, tightening as the system becomes more deterministic. By presenting information-theoretic lower bounds and practical experiments, the study demonstrates that MB-AIL achieves minimax-optimal sample complexity for online interaction and expert demonstration scenarios. The experiments validate the theoretical findings, showing that MB-AIL can match or exceed the sample efficiency of existing methods. <div>
+arXiv:2510.09487v2 Announce Type: replace 
+Abstract: We study online adversarial imitation learning (AIL), where an agent learns from offline expert demonstrations and interacts with the environment online without access to rewards. Despite strong empirical results, the benefits of online interaction and the impact of stochasticity remain poorly understood. We address these gaps by introducing a model-based AIL algorithm (MB-AIL) and establish its horizon-free, second-order sample-complexity guarantees under general function approximations for both expert data and reward-free interactions. These second-order bounds provide an instance-dependent result that can scale with the variance of returns under the relevant policies and therefore tighten as the system approaches determinism. Together with second-order, information-theoretic lower bounds on a newly constructed hard-instance family, we show that MB-AIL attains minimax-optimal sample complexity for online interaction (up to logarithmic factors) with limited expert demonstrations and matches the lower bound for expert demonstrations in terms of the dependence on horizon $H$, precision $\epsilon$ and the policy variance $\sigma^2$. Experiments further validate our theoretical findings and demonstrate that a practical implementation of MB-AIL matches or surpasses the sample efficiency of existing methods.
+]]></content:encoded>
+<pubDate>Wed, 15 Oct 2025 00:00:00 -0400</pubDate>
+<pubDate>Wed, 15 Oct 2025 00:00:00 -0400</pubDate>
+</item>
+
+<item>
 <title>MergeBench: A Benchmark for Merging Domain-Specialized LLMs</title>
 <link>https://arxiv.org/abs/2505.10833</link>
 <guid>https://arxiv.org/abs/2505.10833</guid>
 <content:encoded><![CDATA[
 <div> evaluation suite, model merging, language models, multi-task performance, knowledge retention
-<br>
+<br />
 Summary:
 MergeBench is introduced as a comprehensive evaluation suite for assessing model merging at scale. It includes state-of-the-art open-source language models like Llama and Gemma families at large scales and covers various domains such as instruction following, mathematics, multilingual understanding, coding, and safety. The evaluation standardizes finetuning and assessment protocols and evaluates eight merging methods on multi-task performance, forgetting, and runtime efficiency. The results indicate that model merging performs better on stronger base models, with techniques like merging coefficient tuning and sparsification enhancing knowledge retention. Challenges include the computational cost on large models, in-domain performance compared to multi-task models, and the underexplored role of model merging in standard language model training pipelines. The findings offer practical guidelines for algorithm selection and highlight the potential of model merging in advancing the understanding and application of scalable model deployment. 
-<br> <div>
+<br /> <div>
 arXiv:2505.10833v4 Announce Type: replace 
 Abstract: Model merging provides a scalable alternative to multi-task training by combining specialized finetuned models through parameter arithmetic, enabling efficient deployment without the need for joint training or access to all task data. While recent methods have shown promise, existing evaluations are limited in both model scale and task diversity, leaving open questions about their applicability to large, domain-specialized LLMs. To tackle the challenges, we introduce MergeBench, a comprehensive evaluation suite designed to assess model merging at scale. MergeBench builds on state-of-the-art open-source language models, including Llama and Gemma families at 2B to 9B scales, and covers five key domains: instruction following, mathematics, multilingual understanding, coding and safety. We standardize finetuning and evaluation protocols, and assess eight representative merging methods across multi-task performance, forgetting and runtime efficiency. Based on extensive experiments, we provide practical guidelines for algorithm selection and share insights showing that model merging tends to perform better on stronger base models, with techniques such as merging coefficient tuning and sparsification improving knowledge retention. However, several challenges remain, including the computational cost on large models, the gap for in-domain performance compared to multi-task models, and the underexplored role of model merging in standard LLM training pipelines. We hope MergeBench provides a foundation for future research to advance the understanding and practical application of model merging. Our project page is at \href{https://yifei-he.github.io/mergebench/}{https://yifei-he.github.io/mergebench/}.
 ]]></content:encoded>
-<pubDate>Wed, 15 Oct 2025 00:00:00 -0400</pubDate>
 <pubDate>Wed, 15 Oct 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -27,7 +42,7 @@ Abstract: Model merging provides a scalable alternative to multi-task training b
 <content:encoded><![CDATA[
 <div> benchmark, vulnerability, multi-agent systems, planner-executor, robustness
 
-Summary:<br>
+Summary:<br />
 1. Weak planners have a more significant negative impact on clean task performance in planner-executor MAS compared to weak executors.
 2. A memory module is crucial for the planner's performance, but not as impactful for the executor's performance in clean task scenarios.
 3. There is a trade-off between task performance and robustness in MAS.
@@ -36,7 +51,6 @@ Summary:<br>
 arXiv:2510.07505v2 Announce Type: replace 
 Abstract: Large Language Model (LLM)-based Multi-Agent Systems (MAS) have emerged as a powerful paradigm for tackling complex, multi-step tasks across diverse domains. However, despite their impressive capabilities, MAS remain susceptible to adversarial manipulation. Existing studies typically examine isolated attack surfaces or specific scenarios, leaving a lack of holistic understanding of MAS vulnerabilities. To bridge this gap, we introduce PEAR, a benchmark for systematically evaluating both the utility and vulnerability of planner-executor MAS. While compatible with various MAS architectures, our benchmark focuses on the planner-executor structure, which is a practical and widely adopted design. Through extensive experiments, we find that (1) a weak planner degrades overall clean task performance more severely than a weak executor; (2) while a memory module is essential for the planner, having a memory module for the executor does not impact the clean task performance; (3) there exists a trade-off between task performance and robustness; and (4) attacks targeting the planner are particularly effective at misleading the system. These findings offer actionable insights for enhancing the robustness of MAS and lay the groundwork for principled defenses in multi-agent settings.
 ]]></content:encoded>
-<pubDate>Wed, 15 Oct 2025 00:00:00 -0400</pubDate>
 <pubDate>Wed, 15 Oct 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -54,7 +68,6 @@ arXiv:2208.08067v3 Announce Type: replace-cross
 Abstract: Large Language Models (LLMs) are transforming software engineering tasks, including code vulnerability detection-a critical area of software security. However, existing methods often rely on resource-intensive models or graph-based techniques, limiting their accessibility and practicality. This paper introduces K-ASTRO, a lightweight Transformer model that combines semantic embeddings from LLMs with structural features of Abstract Syntax Trees (ASTs) to improve both efficiency and accuracy in code vulnerability detection. Our approach introduces an AST-based augmentation technique inspired by mutation testing, a structure-aware attention mechanism that incorporates augmented AST features, and a joint adaptation pipeline to unify code semantics and syntax. Experimental results on three large-scale datasets, including BigVul, DiverseVul, and PrimeVul-demonstrate state-of-the-art performance while enabling rapid inference on CPUs with minimal training time. By offering a scalable, interpretable, and efficient solution, K-ASTRO bridges the gap between LLM advancements and practical software vulnerability detection, providing open-sourced tools to foster further research.
 ]]></content:encoded>
 <pubDate>Wed, 15 Oct 2025 00:00:00 -0400</pubDate>
-<pubDate>Wed, 15 Oct 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
 <title>Denoised Diffusion for Object-Focused Image Augmentation</title>
@@ -69,9 +82,7 @@ arXiv:2510.08955v2 Announce Type: replace-cross
 Abstract: Modern agricultural operations increasingly rely on integrated monitoring systems that combine multiple data sources for farm optimization. Aerial drone-based animal health monitoring serves as a key component but faces limited data availability, compounded by scene-specific issues such as small, occluded, or partially visible animals. Transfer learning approaches often fail to address this limitation due to the unavailability of large datasets that reflect specific farm conditions, including variations in animal breeds, environments, and behaviors. Therefore, there is a need for developing a problem-specific, animal-focused data augmentation strategy tailored to these unique challenges. To address this gap, we propose an object-focused data augmentation framework designed explicitly for animal health monitoring in constrained data settings. Our approach segments animals from backgrounds and augments them through transformations and diffusion-based synthesis to create realistic, diverse scenes that enhance animal detection and monitoring performance. Our initial experiments demonstrate that our augmented dataset yields superior performance compared to our baseline models on the animal detection task. By generating domain-specific data, our method empowers real-time animal health monitoring solutions even in data-scarce scenarios, bridging the gap between limited data and practical applicability.
 ]]></content:encoded>
 <pubDate>Wed, 15 Oct 2025 00:00:00 -0400</pubDate>
-<pubDate>Wed, 15 Oct 2025 00:00:00 -0400</pubDate>
 </item>
-
 <item>
 <title>Think as a Doctor: An Interpretable AI Approach for ICU Mortality Prediction</title>
 <link>https://arxiv.org/abs/2510.11745</link>
@@ -10808,46 +10819,6 @@ Abstract: AI control protocols serve as a defense mechanism to stop untrusted LL
 <content:encoded><![CDATA[
 arXiv:2510.09465v1 Announce Type: new 
 Abstract: This study develops an interpretable machine learning framework to forecast startup outcomes, including funding, patenting, and exit. A firm-quarter panel for 2010-2023 is constructed from Crunchbase and matched to U.S. Patent and Trademark Office (USPTO) data. Three horizons are evaluated: next funding within 12 months, patent-stock growth within 24 months, and exit through an initial public offering (IPO) or acquisition within 36 months. Preprocessing is fit on a development window (2010-2019) and applied without change to later cohorts to avoid leakage. Class imbalance is addressed using inverse-prevalence weights and the Synthetic Minority Oversampling Technique for Nominal and Continuous features (SMOTE-NC). Logistic regression and tree ensembles, including Random Forest, XGBoost, LightGBM, and CatBoost, are compared using the area under the precision-recall curve (PR-AUC) and the area under the receiver operating characteristic curve (AUROC). Patent, funding, and exit predictions achieve AUROC values of 0.921, 0.817, and 0.872, providing transparent and reproducible rankings for innovation finance.
-]]></content:encoded>
-<pubDate>Mon, 13 Oct 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Geodesic Calculus on Latent Spaces</title>
-<link>https://arxiv.org/abs/2510.09468</link>
-<guid>https://arxiv.org/abs/2510.09468</guid>
-<content:encoded><![CDATA[
-arXiv:2510.09468v1 Announce Type: new 
-Abstract: Latent manifolds of autoencoders provide low-dimensional representations of data, which can be studied from a geometric perspective. We propose to describe these latent manifolds as implicit submanifolds of some ambient latent space. Based on this, we develop tools for a discrete Riemannian calculus approximating classical geometric operators. These tools are robust against inaccuracies of the implicit representation often occurring in practical examples. To obtain a suitable implicit representation, we propose to learn an approximate projection onto the latent manifold by minimizing a denoising objective. This approach is independent of the underlying autoencoder and supports the use of different Riemannian geometries on the latent manifolds. The framework in particular enables the computation of geodesic paths connecting given end points and shooting geodesics via the Riemannian exponential maps on latent manifolds. We evaluate our approach on various autoencoders trained on synthetic and real data.
-]]></content:encoded>
-<pubDate>Mon, 13 Oct 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>CRPS-LAM: Regional ensemble weather forecasting from matching marginals</title>
-<link>https://arxiv.org/abs/2510.09484</link>
-<guid>https://arxiv.org/abs/2510.09484</guid>
-<content:encoded><![CDATA[
-arXiv:2510.09484v1 Announce Type: new 
-Abstract: Machine learning for weather prediction increasingly relies on ensemble methods to provide probabilistic forecasts. Diffusion-based models have shown strong performance in Limited-Area Modeling (LAM) but remain computationally expensive at sampling time. Building on the success of global weather forecasting models trained based on Continuous Ranked Probability Score (CRPS), we introduce CRPS-LAM, a probabilistic LAM forecasting model trained with a CRPS-based objective. By sampling and injecting a single latent noise vector into the model, CRPS-LAM generates ensemble members in a single forward pass, achieving sampling speeds up to 39 times faster than a diffusion-based model. We evaluate the model on the MEPS regional dataset, where CRPS-LAM matches the low errors of diffusion models. By retaining also fine-scale forecast details, the method stands out as an effective approach for probabilistic regional weather forecasting
-]]></content:encoded>
-<pubDate>Mon, 13 Oct 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Locally Optimal Private Sampling: Beyond the Global Minimax</title>
-<link>https://arxiv.org/abs/2510.09485</link>
-<guid>https://arxiv.org/abs/2510.09485</guid>
-<content:encoded><![CDATA[
-arXiv:2510.09485v1 Announce Type: new 
-Abstract: We study the problem of sampling from a distribution under local differential privacy (LDP). Given a private distribution $P \in \mathcal{P}$, the goal is to generate a single sample from a distribution that remains close to $P$ in $f$-divergence while satisfying the constraints of LDP. This task captures the fundamental challenge of producing realistic-looking data under strong privacy guarantees. While prior work by Park et al. (NeurIPS'24) focuses on global minimax-optimality across a class of distributions, we take a local perspective. Specifically, we examine the minimax risk in a neighborhood around a fixed distribution $P_0$, and characterize its exact value, which depends on both $P_0$ and the privacy level. Our main result shows that the local minimax risk is determined by the global minimax risk when the distribution class $\mathcal{P}$ is restricted to a neighborhood around $P_0$. To establish this, we (1) extend previous work from pure LDP to the more general functional LDP framework, and (2) prove that the globally optimal functional LDP sampler yields the optimal local sampler when constrained to distributions near $P_0$. Building on this, we also derive a simple closed-form expression for the locally minimax-optimal samplers which does not depend on the choice of $f$-divergence. We further argue that this local framework naturally models private sampling with public data, where the public data distribution is represented by $P_0$. In this setting, we empirically compare our locally optimal sampler to existing global methods, and demonstrate that it consistently outperforms global minimax samplers.
-]]></content:encoded>
-<pubDate>Mon, 13 Oct 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Near-Optimal Second-Order Guarantees for Model-Based Adversarial Imitation Learning</title>
-<link>https://arxiv.org/abs/2510.09487</link>
-<guid>https://arxiv.org/abs/2510.09487</guid>
-<content:encoded><![CDATA[
-arXiv:2510.09487v1 Announce Type: new 
-Abstract: We study online adversarial imitation learning (AIL), where an agent learns from offline expert demonstrations and interacts with the environment online without access to rewards. Despite strong empirical results, the benefits of online interaction and the impact of stochasticity remain poorly understood. We address these gaps by introducing a model-based AIL algorithm (MB-AIL) and establish its horizon-free, second-order sample-complexity guarantees under general function approximations for both expert data and reward-free interactions. These second-order bounds provide an instance-dependent result that can scale with the variance of returns under the relevant policies and therefore tighten as the system approaches determinism. Together with second-order, information-theoretic lower bounds on a newly constructed hard-instance family, we show that MB-AIL attains minimax-optimal sample complexity for online interaction (up to logarithmic factors) with limited expert demonstrations and matches the lower bound for expert demonstrations in terms of the dependence on horizon $H$, precision $\epsilon$ and the policy variance $\sigma^2$. Experiments further validate our theoretical findings and demonstrate that a practical implementation of MB-AIL matches or surpasses the sample efficiency of existing methods.
 ]]></content:encoded>
 <pubDate>Mon, 13 Oct 2025 00:00:00 -0400</pubDate>
 </item>
