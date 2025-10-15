@@ -4,6 +4,7 @@
 <title>cs.LG updates on arXiv.org</title>
 <link>http://rss.arxiv.org/rss/cs.LG</link>
 
+
 <item>
 <title>Near-Optimal Second-Order Guarantees for Model-Based Adversarial Imitation Learning</title>
 <link>https://arxiv.org/abs/2510.09487</link>
@@ -17,9 +18,7 @@ arXiv:2510.09487v2 Announce Type: replace
 Abstract: We study online adversarial imitation learning (AIL), where an agent learns from offline expert demonstrations and interacts with the environment online without access to rewards. Despite strong empirical results, the benefits of online interaction and the impact of stochasticity remain poorly understood. We address these gaps by introducing a model-based AIL algorithm (MB-AIL) and establish its horizon-free, second-order sample-complexity guarantees under general function approximations for both expert data and reward-free interactions. These second-order bounds provide an instance-dependent result that can scale with the variance of returns under the relevant policies and therefore tighten as the system approaches determinism. Together with second-order, information-theoretic lower bounds on a newly constructed hard-instance family, we show that MB-AIL attains minimax-optimal sample complexity for online interaction (up to logarithmic factors) with limited expert demonstrations and matches the lower bound for expert demonstrations in terms of the dependence on horizon $H$, precision $\epsilon$ and the policy variance $\sigma^2$. Experiments further validate our theoretical findings and demonstrate that a practical implementation of MB-AIL matches or surpasses the sample efficiency of existing methods.
 ]]></content:encoded>
 <pubDate>Wed, 15 Oct 2025 00:00:00 -0400</pubDate>
-<pubDate>Wed, 15 Oct 2025 00:00:00 -0400</pubDate>
 </item>
-
 <item>
 <title>MergeBench: A Benchmark for Merging Domain-Specialized LLMs</title>
 <link>https://arxiv.org/abs/2505.10833</link>
@@ -10809,16 +10808,6 @@ Abstract: Unsupervised anomaly detection is often framed around two widely studi
 <content:encoded><![CDATA[
 arXiv:2510.09462v1 Announce Type: new 
 Abstract: AI control protocols serve as a defense mechanism to stop untrusted LLM agents from causing harm in autonomous settings. Prior work treats this as a security problem, stress testing with exploits that use the deployment context to subtly complete harmful side tasks, such as backdoor insertion. In practice, most AI control protocols are fundamentally based on LLM monitors, which can become a central point of failure. We study adaptive attacks by an untrusted model that knows the protocol and the monitor model, which is plausible if the untrusted model was trained with a later knowledge cutoff or can search for this information autonomously. We instantiate a simple adaptive attack vector by which the attacker embeds publicly known or zero-shot prompt injections in the model outputs. Using this tactic, frontier models consistently evade diverse monitors and complete malicious tasks on two main AI control benchmarks. The attack works universally against current protocols that rely on a monitor. Furthermore, the recent Defer-to-Resample protocol even backfires, as its resampling amplifies the prompt injection and effectively reframes it as a best-of-$n$ attack. In general, adaptive attacks on monitor models represent a major blind spot in current control protocols and should become a standard component of evaluations for future AI control mechanisms.
-]]></content:encoded>
-<pubDate>Mon, 13 Oct 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Interpretable Machine Learning for Predicting Startup Funding, Patenting, and Exits</title>
-<link>https://arxiv.org/abs/2510.09465</link>
-<guid>https://arxiv.org/abs/2510.09465</guid>
-<content:encoded><![CDATA[
-arXiv:2510.09465v1 Announce Type: new 
-Abstract: This study develops an interpretable machine learning framework to forecast startup outcomes, including funding, patenting, and exit. A firm-quarter panel for 2010-2023 is constructed from Crunchbase and matched to U.S. Patent and Trademark Office (USPTO) data. Three horizons are evaluated: next funding within 12 months, patent-stock growth within 24 months, and exit through an initial public offering (IPO) or acquisition within 36 months. Preprocessing is fit on a development window (2010-2019) and applied without change to later cohorts to avoid leakage. Class imbalance is addressed using inverse-prevalence weights and the Synthetic Minority Oversampling Technique for Nominal and Continuous features (SMOTE-NC). Logistic regression and tree ensembles, including Random Forest, XGBoost, LightGBM, and CatBoost, are compared using the area under the precision-recall curve (PR-AUC) and the area under the receiver operating characteristic curve (AUROC). Patent, funding, and exit predictions achieve AUROC values of 0.921, 0.817, and 0.872, providing transparent and reproducible rankings for innovation finance.
 ]]></content:encoded>
 <pubDate>Mon, 13 Oct 2025 00:00:00 -0400</pubDate>
 </item>
