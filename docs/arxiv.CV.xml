@@ -4,6 +4,7 @@
 <title>cs.CV updates on arXiv.org</title>
 <link>http://rss.arxiv.org/rss/cs.CV</link>
 
+
 <item>
 <title>MATRIX: Multimodal Agent Tuning for Robust Tool-Use Reasoning</title>
 <link>https://arxiv.org/abs/2510.08567</link>
@@ -14,14 +15,12 @@
 Summary:
 Vision language models (VLMs) are enhanced with a vision-centric agent tuning framework that synthesizes multimodal trajectories, preference pairs, and trains for robust tool-use reasoning. The framework leverages the M-TRACE dataset, consisting of 28.5K multimodal tasks and 177K verified trajectories, for trajectory tuning. The MATRIX Agent, refined on M-TRACE, enables step-wise tool reasoning. To enhance alignment, Pref-X, generated preference pairs, are used for optimizing MATRIX through step-wise preference learning. Across benchmarks like Agent-X, GTA, and GAIA, MATRIX outperforms existing VLMs in multimodal tool use. The approach demonstrates scalability and effectiveness in complex reasoning tasks. Data and code are available at https://github.com/mbzuai-oryx/MATRIX. 
 
-<br><br>Summary: <div>
+<br /><br />Summary: <div>
 arXiv:2510.08567v2 Announce Type: replace 
 Abstract: Vision language models (VLMs) are increasingly deployed as controllers with access to external tools for complex reasoning and decision-making, yet their effectiveness remains limited by the scarcity of high-quality multimodal trajectories and the cost of manual annotation. We address this challenge with a vision-centric agent tuning framework that automatically synthesizes multimodal trajectories, generates step-wise preference pairs, and trains a VLM controller for robust tool-use reasoning. Our pipeline first constructs M-TRACE, a large-scale dataset of 28.5K multimodal tasks with 177K verified trajectories, enabling imitation-based trajectory tuning. Building on this, we develop MATRIX Agent, a controller finetuned on M-TRACE for step-wise tool reasoning. To achieve finer alignment, we further introduce Pref-X, a set of 11K automatically generated preference pairs, and optimize MATRIX on it via step-wise preference learning. Across three benchmarks, Agent-X, GTA, and GAIA, MATRIX consistently surpasses both open- and closed-source VLMs, demonstrating scalable and effective multimodal tool use. Our data and code is avaliable at https://github.com/mbzuai-oryx/MATRIX.
 ]]></content:encoded>
 <pubDate>Thu, 16 Oct 2025 00:00:00 -0400</pubDate>
-<pubDate>Thu, 16 Oct 2025 00:00:00 -0400</pubDate>
 </item>
-
 <item>
 <title>SimULi: Real-Time LiDAR and Camera Simulation with Unscented Transforms</title>
 <link>https://arxiv.org/abs/2510.12901</link>
@@ -11257,16 +11256,6 @@ Abstract: Large language models (LLMs) often generate self-contradictory outputs
 <content:encoded><![CDATA[
 arXiv:2510.08143v1 Announce Type: new 
 Abstract: Cascaded video super-resolution has emerged as a promising technique for decoupling the computational burden associated with generating high-resolution videos using large foundation models. Existing studies, however, are largely confined to text-to-video tasks and fail to leverage additional generative conditions beyond text, which are crucial for ensuring fidelity in multi-modal video generation. We address this limitation by presenting UniMMVSR, the first unified generative video super-resolution framework to incorporate hybrid-modal conditions, including text, images, and videos. We conduct a comprehensive exploration of condition injection strategies, training schemes, and data mixture techniques within a latent video diffusion model. A key challenge was designing distinct data construction and condition utilization methods to enable the model to precisely utilize all condition types, given their varied correlations with the target video. Our experiments demonstrate that UniMMVSR significantly outperforms existing methods, producing videos with superior detail and a higher degree of conformity to multi-modal conditions. We also validate the feasibility of combining UniMMVSR with a base model to achieve multi-modal guided generation of 4K video, a feat previously unattainable with existing techniques.
-]]></content:encoded>
-<pubDate>Fri, 10 Oct 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Beyond Textual CoT: Interleaved Text-Image Chains with Deep Confidence Reasoning for Image Editing</title>
-<link>https://arxiv.org/abs/2510.08157</link>
-<guid>https://arxiv.org/abs/2510.08157</guid>
-<content:encoded><![CDATA[
-arXiv:2510.08157v1 Announce Type: new 
-Abstract: Image editing with natural language has gained significant popularity, yet existing methods struggle with intricate object intersections and fine-grained spatial relationships due to the lack of an explicit reasoning process. While Chain-of-Thought (CoT) has been explored to enhance reasoning, purely textual CoT or CoT augmented with coordinate information is fundamentally limited in its ability to represent intricate visual layouts and lacks the necessary visual cues to guide the generation of fine-grained, pixel-level details. To address these challenges, we propose Multimodal Reasoning Edit (MURE), a novel framework that shifts the visual editing process from purely text-based reasoning to a series of interleaved textual and visual rationales. Our framework performs image editing using a natively multimodal, interleaved text-image CoT. This approach generates a step-by-step chain of reasoning where a textual description is followed by a corresponding visual cue, such as a positional mask that defined intended edited regions or a representation of new content. Furthermore, to mitigate the hallucination phenomenon of large language models, we introduce Multimodal Deep Confidence (MMDC) reasoning paradigm. This paradigm explores a tree of visual reasoning paths at each step. By pruning low-quality branches using a deep confidence score from a reward model, it ensures the model consistently follows a high-quality trajectory towards the final edited result. The proposed method decomposes complex editing tasks into interdependent sub-tasks, achieving greater precision at each stage and yielding high-fidelity edited results. We define the formulation for interleaved text-image chains and release the first CoT-Edit-14K dataset, comprising 14K high-quality editing examples. Extensive experiments show that our method yields significant improvements across three image editing benchmarks.
 ]]></content:encoded>
 <pubDate>Fri, 10 Oct 2025 00:00:00 -0400</pubDate>
 </item>

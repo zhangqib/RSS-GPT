@@ -4,6 +4,7 @@
 <title>cs.AI updates on arXiv.org</title>
 <link>http://rss.arxiv.org/rss/cs.AI</link>
 
+
 <item>
 <title>Superior Molecular Representations from Intermediate Encoder Layers</title>
 <link>https://arxiv.org/abs/2506.06443</link>
@@ -14,14 +15,12 @@
 Summary:
 In this study, the authors explore the use of intermediate layers in molecular encoders for improving property prediction tasks in computational chemistry. They analyze the information flow in five different molecular encoders and find that intermediate layers contain more general-purpose features while the final layer specializes and compresses information. Through empirical evaluation across 22 property prediction tasks, they discover that utilizing frozen embeddings from optimal intermediate layers leads to an average performance improvement of 5.4%, reaching up to 28.6% compared to the final layer. Furthermore, fine-tuning encoders truncated at intermediate depths results in even greater average improvements of 8.5%, with some cases showing increases as high as 40.8%. This approach not only achieves new state-of-the-art results on various benchmarks but also underscores the importance of fully exploring the representational depth of molecular encoders to enhance both performance and computational efficiency. The authors will release the code for public use. 
 
-<br><br>Summary: <div>
+<br /><br />Summary: <div>
 arXiv:2506.06443v3 Announce Type: replace-cross 
 Abstract: Pretrained molecular encoders have become indispensable in computational chemistry for tasks such as property prediction and molecular generation. However, the standard practice of relying solely on final-layer embeddings for downstream tasks may discard valuable information. In this work, we first analyze the information flow in five diverse molecular encoders and find that intermediate layers retain more general-purpose features, whereas the final-layer specializes and compresses information. We then perform an empirical layer-wise evaluation across 22 property prediction tasks. We find that using frozen embeddings from optimal intermediate layers improves downstream performance by an average of 5.4%, up to 28.6%, compared to the final-layer. Furthermore, finetuning encoders truncated at intermediate depths achieves even greater average improvements of 8.5%, with increases as high as 40.8%, obtaining new state-of-the-art results on several benchmarks. These findings highlight the importance of exploring the full representational depth of molecular encoders to achieve substantial performance improvements and computational efficiency. The code will be made publicly available.
 ]]></content:encoded>
 <pubDate>Thu, 16 Oct 2025 00:00:00 -0400</pubDate>
-<pubDate>Thu, 16 Oct 2025 00:00:00 -0400</pubDate>
 </item>
-
 <item>
 <title>From Literal to Liberal: A Meta-Prompting Framework for Eliciting Human-Aligned Exception Handling in Large Language Models</title>
 <link>https://arxiv.org/abs/2510.12864</link>
@@ -10805,16 +10804,6 @@ Abstract: Many everyday mobile manipulation tasks require precise interaction wi
 <content:encoded><![CDATA[
 arXiv:2502.15507v5 Announce Type: replace-cross 
 Abstract: Recent advances in automated theorem proving use Large Language Models (LLMs) to translate informal mathematical statements into formal proofs. However, informal cues are often ambiguous or lack strict logical structure, making it hard for models to interpret them precisely. While existing methods achieve strong performance, little is known about how LLMs internally represent informal cues, or how these influence proof generation. To address this, we explore \textit{activation steering}, an inference-time intervention that identifies linear directions in residual activations associated with informal reasoning traces and adjusts them to improve proof construction without fine-tuning. This mechanism also yields interpretable information about how reasoning is internally encoded in the activation space of LLMs. We test our method for generating formal proofs from already-formalized theorems. Our contributions are twofold: (1) a novel activation-based intervention for guiding proof synthesis in LLMs; and (2) demonstration that this intervention improves performance under two decoding strategies (sampling and best-first search) without any further training.
-]]></content:encoded>
-<pubDate>Tue, 14 Oct 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Unveiling Downstream Performance Scaling of LLMs: A Clustering-Based Perspective</title>
-<link>https://arxiv.org/abs/2502.17262</link>
-<guid>https://arxiv.org/abs/2502.17262</guid>
-<content:encoded><![CDATA[
-arXiv:2502.17262v3 Announce Type: replace-cross 
-Abstract: The escalating scale and cost of Large Language Models (LLMs) training necessitate accurate pre-training prediction of downstream task performance for efficient resource allocation. This is challenged by: 1) the emergence phenomenon, where metrics become meaningful only after extensive training, hindering prediction by smaller models; and 2) uneven task difficulty and inconsistent performance scaling patterns, leading to high metric variability. Current prediction methods lack accuracy and reliability. We propose a Clustering-On-Difficulty (COD) framework for downstream performance prediction. The COD framework clusters tasks by their difficulty scaling features, thereby establishing a more stable and predictable support subset through the exclusion of tasks exhibiting non-emergent behavior or irregular scaling. We adopt a performance scaling law to predict cluster-wise performance with theoretical support. Predictable subset performance acts as an intermediate predictor for the full evaluation set. We further derive a mapping function to accurately extrapolate the performance of the subset to the full set. Applied to an LLM with 70B parameters, COD achieved a 1.36% average prediction error across eight key LLM benchmarks, offering actionable insights for resource allocation and training monitoring of LLMs pretraining.
 ]]></content:encoded>
 <pubDate>Tue, 14 Oct 2025 00:00:00 -0400</pubDate>
 </item>

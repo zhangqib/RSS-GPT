@@ -4,6 +4,7 @@
 <title>cs.CL updates on arXiv.org</title>
 <link>http://rss.arxiv.org/rss/cs.CL</link>
 
+
 <item>
 <title>MATRIX: Multimodal Agent Tuning for Robust Tool-Use Reasoning</title>
 <link>https://arxiv.org/abs/2510.08567</link>
@@ -17,9 +18,7 @@ arXiv:2510.08567v2 Announce Type: replace-cross
 Abstract: Vision language models (VLMs) are increasingly deployed as controllers with access to external tools for complex reasoning and decision-making, yet their effectiveness remains limited by the scarcity of high-quality multimodal trajectories and the cost of manual annotation. We address this challenge with a vision-centric agent tuning framework that automatically synthesizes multimodal trajectories, generates step-wise preference pairs, and trains a VLM controller for robust tool-use reasoning. Our pipeline first constructs M-TRACE, a large-scale dataset of 28.5K multimodal tasks with 177K verified trajectories, enabling imitation-based trajectory tuning. Building on this, we develop MATRIX Agent, a controller finetuned on M-TRACE for step-wise tool reasoning. To achieve finer alignment, we further introduce Pref-X, a set of 11K automatically generated preference pairs, and optimize MATRIX on it via step-wise preference learning. Across three benchmarks, Agent-X, GTA, and GAIA, MATRIX consistently surpasses both open- and closed-source VLMs, demonstrating scalable and effective multimodal tool use. Our data and code is avaliable at https://github.com/mbzuai-oryx/MATRIX.
 ]]></content:encoded>
 <pubDate>Thu, 16 Oct 2025 00:00:00 -0400</pubDate>
-<pubDate>Thu, 16 Oct 2025 00:00:00 -0400</pubDate>
 </item>
-
 <item>
 <title>Benchmarking Open-Source Large Language Models for Persian in Zero-Shot and Few-Shot Learning</title>
 <link>https://arxiv.org/abs/2510.12807</link>
@@ -11276,16 +11275,6 @@ Abstract: Shared Autonomous Vehicles (SAVs) are likely to become an important pa
 <content:encoded><![CDATA[
 arXiv:2510.08252v1 Announce Type: cross 
 Abstract: In this paper, we introduce ReasonEmbed, a novel text embedding model developed for reasoning-intensive document retrieval. Our work includes three key technical contributions. First, we propose ReMixer, a new data synthesis method that overcomes the triviality problem prevalent in previous synthetic datasets, enabling large-scale production of 82K high-quality training samples. Second, we design Redapter, a self-adaptive learning algorithm that dynamically adjusts training each sample's weight based on its reasoning intensity. This allows the model to effectively capture the complex semantic relationships between queries and documents. Third, we implement ReasonEmbed across multiple backbones of varying sizes, all of which achieve superior performance on reasoning-intensive retrieval tasks. Notably, our ReasonEmbed-Qwen3-8B model offers a record-high nDCG@10 score of 38.1 on the BRIGHT benchmark, which significantly outperforms existing text embedding models. We will fully open-source our created resources in ReasonEmbed to push forward the research advancement in this field.
-]]></content:encoded>
-<pubDate>Fri, 10 Oct 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Opponent Shaping in LLM Agents</title>
-<link>https://arxiv.org/abs/2510.08255</link>
-<guid>https://arxiv.org/abs/2510.08255</guid>
-<content:encoded><![CDATA[
-arXiv:2510.08255v1 Announce Type: cross 
-Abstract: Large Language Models (LLMs) are increasingly being deployed as autonomous agents in real-world environments. As these deployments scale, multi-agent interactions become inevitable, making it essential to understand strategic behavior in such systems. A central open question is whether LLM agents, like reinforcement learning agents, can shape the learning dynamics and influence the behavior of others through interaction alone. In this paper, we present the first investigation of opponent shaping (OS) with LLM-based agents. Existing OS algorithms cannot be directly applied to LLMs, as they require higher-order derivatives, face scalability constraints, or depend on architectural components that are absent in transformers. To address this gap, we introduce ShapeLLM, an adaptation of model-free OS methods tailored for transformer-based agents. Using ShapeLLM, we examine whether LLM agents can influence co-players' learning dynamics across diverse game-theoretic environments. We demonstrate that LLM agents can successfully guide opponents toward exploitable equilibria in competitive games (Iterated Prisoner's Dilemma, Matching Pennies, and Chicken) and promote coordination and improve collective welfare in cooperative games (Iterated Stag Hunt and a cooperative version of the Prisoner's Dilemma). Our findings show that LLM agents can both shape and be shaped through interaction, establishing opponent shaping as a key dimension of multi-agent LLM research.
 ]]></content:encoded>
 <pubDate>Fri, 10 Oct 2025 00:00:00 -0400</pubDate>
 </item>

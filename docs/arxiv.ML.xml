@@ -4,19 +4,19 @@
 <title>cs.LG updates on arXiv.org</title>
 <link>http://rss.arxiv.org/rss/cs.LG</link>
 
+
 <item>
 <title>When Less Is More: Binary Feedback Can Outperform Ordinal Comparisons in Ranking Recovery</title>
 <link>https://arxiv.org/abs/2507.01613</link>
 <guid>https://arxiv.org/abs/2507.01613</guid>
 <content:encoded><![CDATA[
-<div> Ordinal paired comparisons, ordinal data, binary comparisons, ranking recovery, signal-to-noise ratio <br>
-<br>
-Summary: <br>
+<div> Ordinal paired comparisons, ordinal data, binary comparisons, ranking recovery, signal-to-noise ratio <br />
+<br />
+Summary: <br />
 This paper challenges the conventional wisdom that ordinal comparison data offer richer information than binary comparisons in ranking tasks. A parametric framework for modeling ordinal paired comparisons without ties is proposed, encompassing binary comparison models as special cases. It is shown that binarizing ordinal data can significantly improve ranking recovery accuracy, with faster exponential convergence rates under the counting algorithm for binary comparisons. A signal-to-noise ratio (SNR) is identified as a key metric, with a pattern function minimizing the SNR to maximize the benefits of binarization. Simulations and a real application on the MovieLens dataset support these theoretical findings. <div>
 arXiv:2507.01613v3 Announce Type: replace-cross 
 Abstract: Paired comparison data, where users evaluate items in pairs, play a central role in ranking and preference learning tasks. While ordinal comparison data intuitively offer richer information than binary comparisons, this paper challenges that conventional wisdom. We propose a general parametric framework for modeling ordinal paired comparisons without ties. The model adopts a generalized additive structure, featuring a link function that quantifies the preference difference between two items and a pattern function that governs the distribution over ordinal response levels. This framework encompasses classical binary comparison models as special cases, by treating binary responses as binarized versions of ordinal data. Within this framework, we show that binarizing ordinal data can significantly improve the accuracy of ranking recovery. Specifically, we prove that under the counting algorithm, the ranking error associated with binary comparisons exhibits a faster exponential convergence rate than that of ordinal data. Furthermore, we characterize a substantial performance gap between binary and ordinal data in terms of a signal-to-noise ratio (SNR) determined by the pattern function. We identify the pattern function that minimizes the SNR and maximizes the benefit of binarization. Extensive simulations and a real application on the MovieLens dataset further corroborate our theoretical findings.
 ]]></content:encoded>
-<pubDate>Thu, 16 Oct 2025 00:00:00 -0400</pubDate>
 <pubDate>Thu, 16 Oct 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -32,9 +32,7 @@ arXiv:2509.18530v3 Announce Type: replace-cross
 Abstract: Quantum data re-uploading has proved powerful for classical inputs, where repeatedly encoding features into a small circuit yields universal function approximation. Extending this idea to quantum inputs remains underexplored, as the information contained in a quantum state is not directly accessible in classical form. We propose and analyze a quantum data re-uploading architecture in which a qubit interacts sequentially with fresh copies of an arbitrary input state. The circuit can approximate any bounded continuous function using only one ancilla qubit and single-qubit measurements. By alternating entangling unitaries with mid-circuit resets of the input register, the architecture realizes a discrete cascade of completely positive and trace-preserving maps, analogous to collision models in open quantum system dynamics. Our framework provides a qubit-efficient and expressive approach to designing quantum machine learning models that operate directly on quantum data.
 ]]></content:encoded>
 <pubDate>Thu, 16 Oct 2025 00:00:00 -0400</pubDate>
-<pubDate>Thu, 16 Oct 2025 00:00:00 -0400</pubDate>
 </item>
-
 <item>
 <title>Local Timescale Gates for Timescale-Robust Continual Spiking Neural Networks</title>
 <link>https://arxiv.org/abs/2510.12843</link>
@@ -10814,26 +10812,6 @@ Abstract: Pretrained molecular encoders have become indispensable in computation
 <content:encoded><![CDATA[
 arXiv:2506.07134v2 Announce Type: replace 
 Abstract: We introduce Reliable Policy Iteration (RPI) and Conservative RPI (CRPI), variants of Policy Iteration (PI) and Conservative PI (CPI), that retain tabular guarantees under function approximation. RPI uses a novel Bellman-constrained optimization for policy evaluation. We show that RPI restores the textbook \textit{monotonicity} of value estimates and that these estimates provably \textit{lower-bound} the true return; moreover, their limit partially satisfies the \textit{unprojected} Bellman equation. CRPI shares RPI's evaluation, but updates policies conservatively by maximizing a new performance-difference \textit{lower bound} that explicitly accounts for function-approximation-induced errors. CRPI inherits RPI's guarantees and, crucially, admits per-step improvement bounds. In initial simulations, RPI and CRPI outperform PI and its variants. Our work addresses a foundational gap in RL: popular algorithms such as TRPO and PPO derive from tabular CPI yet are deployed with function approximation, where CPI's guarantees often fail-leading to divergence, oscillations, or convergence to suboptimal policies. By restoring PI/CPI-style guarantees for \textit{arbitrary} function classes, RPI and CRPI provide a principled basis for next-generation RL.
-]]></content:encoded>
-<pubDate>Tue, 14 Oct 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Wavelet Scattering Transform and Fourier Representation for Offline Detection of Malicious Clients in Federated Learning</title>
-<link>https://arxiv.org/abs/2506.09674</link>
-<guid>https://arxiv.org/abs/2506.09674</guid>
-<content:encoded><![CDATA[
-arXiv:2506.09674v2 Announce Type: replace 
-Abstract: Federated Learning (FL) enables the training of machine learning models across decentralized clients while preserving data privacy. However, the presence of anomalous or corrupted clients - such as those with faulty sensors or non representative data distributions - can significantly degrade model performance. Detecting such clients without accessing raw data remains a key challenge. We propose WAFFLE (Wavelet and Fourier representations for Federated Learning) a detection algorithm that labels malicious clients {\it before training}, using locally computed compressed representations derived from either the Wavelet Scattering Transform (WST) or the Fourier Transform. Both approaches provide low-dimensional, task-agnostic embeddings suitable for unsupervised client separation. A lightweight detector, trained on a distillated public dataset, performs the labeling with minimal communication and computational overhead. While both transforms enable effective detection, WST offers theoretical advantages, such as non-invertibility and stability to local deformations, that make it particularly well-suited to federated scenarios. Experiments on benchmark datasets show that our method improves detection accuracy and downstream classification performance compared to existing FL anomaly detection algorithms, validating its effectiveness as a pre-training alternative to online detection strategies.
-]]></content:encoded>
-<pubDate>Tue, 14 Oct 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Tversky Neural Networks: Psychologically Plausible Deep Learning with Differentiable Tversky Similarity</title>
-<link>https://arxiv.org/abs/2506.11035</link>
-<guid>https://arxiv.org/abs/2506.11035</guid>
-<content:encoded><![CDATA[
-arXiv:2506.11035v2 Announce Type: replace 
-Abstract: Work in psychology has highlighted that the geometric model of similarity standard in deep learning is not psychologically plausible because its metric properties such as symmetry do not align with human perception of similarity. In contrast, Tversky (1977) proposed an axiomatic theory of similarity with psychological plausibility based on a representation of objects as sets of features, and their similarity as a function of their common and distinctive features. This model of similarity has not been used in deep learning before, in part because of the challenge of incorporating discrete set operations. In this paper, we develop a differentiable parameterization of Tversky's similarity that is learnable through gradient descent, and derive basic neural network building blocks such as the Tversky projection layer, which unlike the linear projection layer can model non-linear functions such as XOR. Through experiments with image recognition and language modeling neural networks, we show that the Tversky projection layer is a beneficial replacement for the linear projection layer. For instance, on the NABirds image classification task, a frozen ResNet-50 adapted with a Tversky projection layer achieves a 24.7% relative accuracy improvement over the linear layer adapter baseline. With Tversky projection layers, GPT-2's perplexity on PTB decreases by 7.8%, and its parameter count by 34.8%. Finally, we propose a unified interpretation of both types of projection layers as computing similarities of input stimuli to learned prototypes for which we also propose a novel visualization technique highlighting the interpretability of Tversky projection layers. Our work offers a new paradigm for thinking about the similarity model implicit in modern deep learning, and designing neural networks that are interpretable under an established theory of psychological similarity.
 ]]></content:encoded>
 <pubDate>Tue, 14 Oct 2025 00:00:00 -0400</pubDate>
 </item>
