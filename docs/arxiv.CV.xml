@@ -4,6 +4,7 @@
 <title>cs.CV updates on arXiv.org</title>
 <link>http://rss.arxiv.org/rss/cs.CV</link>
 
+
 <item>
 <title>A Denoising Framework for Real-World Ultra-Low Dose Lung CT Images Based on an Image Purification Strategy</title>
 <link>https://arxiv.org/abs/2510.07492</link>
@@ -12,11 +13,10 @@
 <div> Keywords: uLDCT, denoising, Image Purification, Frequency-domain Flow Matching, anatomical structure preservation
 
 Summary:
-Ultra-low dose CT (uLDCT) imaging reduces radiation exposure but introduces noise and spatial misalignment. Existing denoising methods struggle with this challenge, as they are trained on synthetic data or aligned images. This study proposes an Image Purification (IP) strategy to address the data mismatch problem. By generating structurally aligned uLDCT-NDCT image pairs, the IP strategy improves the quality of data for denoising network training. Additionally, a Frequency-domain Flow Matching (FFM) model is introduced to preserve anatomical structures in denoised images. Experimental results on a real clinical dataset demonstrate that the IP strategy enhances the performance of denoising models and the FFM model combined with IP achieves state-of-the-art results in anatomical structure preservation. This study provides an effective solution for denoising real-world uLDCT images. <br><br>Summary: <div>
+Ultra-low dose CT (uLDCT) imaging reduces radiation exposure but introduces noise and spatial misalignment. Existing denoising methods struggle with this challenge, as they are trained on synthetic data or aligned images. This study proposes an Image Purification (IP) strategy to address the data mismatch problem. By generating structurally aligned uLDCT-NDCT image pairs, the IP strategy improves the quality of data for denoising network training. Additionally, a Frequency-domain Flow Matching (FFM) model is introduced to preserve anatomical structures in denoised images. Experimental results on a real clinical dataset demonstrate that the IP strategy enhances the performance of denoising models and the FFM model combined with IP achieves state-of-the-art results in anatomical structure preservation. This study provides an effective solution for denoising real-world uLDCT images. <br /><br />Summary: <div>
 arXiv:2510.07492v2 Announce Type: replace 
 Abstract: Ultra-low dose CT (uLDCT) significantly reduces radiation exposure but introduces severe noise and artifacts. It also leads to substantial spatial misalignment between uLDCT and normal dose CT (NDCT) image pairs. This poses challenges for directly applying existing denoising networks trained on synthetic noise or aligned data. To address this core challenge in uLDCT denoising, this paper proposes an innovative denoising framework based on an Image Purification (IP) strategy. First, we construct a real clinical uLDCT lung dataset. Then, we propose an Image Purification strategy that generates structurally aligned uLDCT-NDCT image pairs, providing a high-quality data foundation for network training. Building upon this, we propose a Frequency-domain Flow Matching (FFM) model, which works synergistically with the IP strategy to excellently preserve the anatomical structure integrity of denoised images. Experiments on the real clinical dataset demonstrate that our IP strategy significantly enhances the performance of multiple mainstream denoising models on the uLDCT task. Notably, our proposed FFM model combined with the IP strategy achieves state-of-the-art (SOTA) results in anatomical structure preservation. This study provides an effective solution to the data mismatch problem in real-world uLDCT denoising. Code and dataset are available at https://github.com/MonkeyDadLufy/flow-matching.
 ]]></content:encoded>
-<pubDate>Fri, 17 Oct 2025 00:00:00 -0400</pubDate>
 <pubDate>Fri, 17 Oct 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -31,7 +31,6 @@ arXiv:2510.07670v2 Announce Type: replace
 Abstract: Many video workflows benefit from a mixture of user controls with varying granularity, from exact 4D object trajectories and camera paths to coarse text prompts, while existing video generative models are typically trained for fixed input formats. We develop Ctrl-VI, a video synthesis method that addresses this need and generates samples with high controllability for specified elements while maintaining diversity for under-specified ones. We cast the task as variational inference to approximate a composed distribution, leveraging multiple video generation backbones to account for all task constraints collectively. To address the optimization challenge, we break down the problem into step-wise KL divergence minimization over an annealed sequence of distributions, and further propose a context-conditioned factorization technique that reduces modes in the solution space to circumvent local optima. Experiments suggest that our method produces samples with improved controllability, diversity, and 3D consistency compared to prior works.
 ]]></content:encoded>
 <pubDate>Fri, 17 Oct 2025 00:00:00 -0400</pubDate>
-<pubDate>Fri, 17 Oct 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
 <title>CVD-STORM: Cross-View Video Diffusion with Spatial-Temporal Reconstruction Model for Autonomous Driving</title>
@@ -40,11 +39,10 @@ Abstract: Many video workflows benefit from a mixture of user controls with vary
 <content:encoded><![CDATA[
 <div> Variational Autoencoder, Cross-view Video Diffusion, 4D Reconstruction, Autonomous Driving, Scene Understanding
 Summary: 
-Variational Autoencoder (VAE) enhanced with 4D reconstruction capabilities is proposed for cross-view video diffusion in autonomous driving scenarios. The VAE, fine-tuned with a 4D reconstruction task, encodes 3D structures and temporal dynamics, improving video generation quality. Integration of VAE into video diffusion process enhances fidelity. Results show significant improvements in FID and FVD metrics. Gaussian Splatting Decoder reconstructs dynamic scenes, aiding scene understanding with valuable geometric information. The proposed CVD-STORM model generates high-quality, diverse videos under various controls, addressing the demand for realistic environment simulation and depth estimation in autonomous driving scenarios.<br><br>Summary: <div>
+Variational Autoencoder (VAE) enhanced with 4D reconstruction capabilities is proposed for cross-view video diffusion in autonomous driving scenarios. The VAE, fine-tuned with a 4D reconstruction task, encodes 3D structures and temporal dynamics, improving video generation quality. Integration of VAE into video diffusion process enhances fidelity. Results show significant improvements in FID and FVD metrics. Gaussian Splatting Decoder reconstructs dynamic scenes, aiding scene understanding with valuable geometric information. The proposed CVD-STORM model generates high-quality, diverse videos under various controls, addressing the demand for realistic environment simulation and depth estimation in autonomous driving scenarios.<br /><br />Summary: <div>
 arXiv:2510.07944v2 Announce Type: replace 
 Abstract: Generative models have been widely applied to world modeling for environment simulation and future state prediction. With advancements in autonomous driving, there is a growing demand not only for high-fidelity video generation under various controls, but also for producing diverse and meaningful information such as depth estimation. To address this, we propose CVD-STORM, a cross-view video diffusion model utilizing a spatial-temporal reconstruction Variational Autoencoder (VAE) that generates long-term, multi-view videos with 4D reconstruction capabilities under various control inputs. Our approach first fine-tunes the VAE with an auxiliary 4D reconstruction task, enhancing its ability to encode 3D structures and temporal dynamics. Subsequently, we integrate this VAE into the video diffusion process to significantly improve generation quality. Experimental results demonstrate that our model achieves substantial improvements in both FID and FVD metrics. Additionally, the jointly-trained Gaussian Splatting Decoder effectively reconstructs dynamic scenes, providing valuable geometric information for comprehensive scene understanding. Our project page is https://sensetime-fvg.github.io/CVD-STORM.
 ]]></content:encoded>
-<pubDate>Fri, 17 Oct 2025 00:00:00 -0400</pubDate>
 <pubDate>Fri, 17 Oct 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -60,9 +58,7 @@ arXiv:2510.08131v2 Announce Type: replace
 Abstract: Real-time motion-controllable video generation remains challenging due to the inherent latency of bidirectional diffusion models and the lack of effective autoregressive (AR) approaches. Existing AR video diffusion models are limited to simple control signals or text-to-video generation, and often suffer from quality degradation and motion artifacts in few-step generation. To address these challenges, we propose AR-Drag, the first RL-enhanced few-step AR video diffusion model for real-time image-to-video generation with diverse motion control. We first fine-tune a base I2V model to support basic motion control, then further improve it via reinforcement learning with a trajectory-based reward model. Our design preserves the Markov property through a Self-Rollout mechanism and accelerates training by selectively introducing stochasticity in denoising steps. Extensive experiments demonstrate that AR-Drag achieves high visual fidelity and precise motion alignment, significantly reducing latency compared with state-of-the-art motion-controllable VDMs, while using only 1.3B parameters. Additional visualizations can be found on our project page: https://kesenzhao.github.io/AR-Drag.github.io/.
 ]]></content:encoded>
 <pubDate>Fri, 17 Oct 2025 00:00:00 -0400</pubDate>
-<pubDate>Fri, 17 Oct 2025 00:00:00 -0400</pubDate>
 </item>
-
 <item>
 <title>MultiFoodhat: A potential new paradigm for intelligent food quality inspection</title>
 <link>https://arxiv.org/abs/2510.13889</link>
@@ -11296,53 +11292,6 @@ Summary:
 training feature attribution is explored in this work for deep neural networks to provide insights into model workings. This approach links test predictions to specific regions of training images, offering fine-grained, test-specific explanations. It identifies harmful examples driving misclassifications and exposes spurious correlations like patch-based shortcuts that other attribution methods may miss. By studying both input features and influential training examples together, a better understanding of model behavior is achieved. This method enhances the trust and accountability of deep learning models by shedding light on their inner workings. <div>
 arXiv:2510.09135v1 Announce Type: new 
 Abstract: Deep neural networks are often considered opaque systems, prompting the need for explainability methods to improve trust and accountability. Existing approaches typically attribute test-time predictions either to input features (e.g., pixels in an image) or to influential training examples. We argue that both perspectives should be studied jointly. This work explores *training feature attribution*, which links test predictions to specific regions of specific training images and thereby provides new insights into the inner workings of deep models. Our experiments on vision datasets show that training feature attribution yields fine-grained, test-specific explanations: it identifies harmful examples that drive misclassifications and reveals spurious correlations, such as patch-based shortcuts, that conventional attribution methods fail to expose.
-]]></content:encoded>
-<pubDate>Mon, 13 Oct 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Online Topological Localization for Navigation Assistance in Bronchoscopy</title>
-<link>https://arxiv.org/abs/2510.09144</link>
-<guid>https://arxiv.org/abs/2510.09144</guid>
-<content:encoded><![CDATA[
-<div> Video bronchoscopy, respiratory medicine, navigation assistance, topological localization, image-based<br />
-Summary:<br />
-Video bronchoscopy is a crucial procedure in respiratory medicine, but navigating the bronchial tree can be complex. Surgeons often rely on CT scans and additional sensors for guidance. This article introduces an image-based topological localization pipeline for navigation assistance during bronchoscopy, eliminating the need for patient CT scans. The approach, trained on phantom data, shows strong generalization capabilities and outperforms existing methods, particularly on real data test sequences.<br /> <div>
-arXiv:2510.09144v1 Announce Type: new 
-Abstract: Video bronchoscopy is a fundamental procedure in respiratory medicine, where medical experts navigate through the bronchial tree of a patient to diagnose or operate the patient. Surgeons need to determine the position of the scope as they go through the airway until they reach the area of interest. This task is very challenging for practitioners due to the complex bronchial tree structure and varying doctor experience and training. Navigation assistance to locate the bronchoscope during the procedure can improve its outcome. Currently used techniques for navigational guidance commonly rely on previous CT scans of the patient to obtain a 3D model of the airway, followed by tracking of the scope with additional sensors or image registration. These methods obtain accurate locations but imply additional setup, scans and training. Accurate metric localization is not always required, and a topological localization with regard to a generic airway model can often suffice to assist the surgeon with navigation. We present an image-based bronchoscopy topological localization pipeline to provide navigation assistance during the procedure, with no need of patient CT scan. Our approach is trained only on phantom data, eliminating the high cost of real data labeling, and presents good generalization capabilities. The results obtained surpass existing methods, particularly on real data test sequences.
-]]></content:encoded>
-<pubDate>Mon, 13 Oct 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Instance-Level Generation for Representation Learning</title>
-<link>https://arxiv.org/abs/2510.09171</link>
-<guid>https://arxiv.org/abs/2510.09171</guid>
-<content:encoded><![CDATA[
-<div> Instance-level recognition, ILR, synthetic data generation, fine-grained image classification, large-scale training set <br />
-<br />
-Summary: 
-Instance-level recognition (ILR) is crucial for identifying individual objects accurately. However, creating large-scale annotated datasets for ILR is challenging. This research introduces a novel approach that generates diverse object instances synthetically without using real images. By fine-tuning vision models on the generated data, significant improvements were achieved in retrieval performance across seven ILR benchmarks covering multiple domains. This method addresses ILR-specific challenges efficiently and effectively, offering a new paradigm where only target domain names are required as input. The approach eliminates the need for extensive data collection and curation, making ILR more applicable in real-world scenarios across various domains. <div>
-arXiv:2510.09171v1 Announce Type: new 
-Abstract: Instance-level recognition (ILR) focuses on identifying individual objects rather than broad categories, offering the highest granularity in image classification. However, this fine-grained nature makes creating large-scale annotated datasets challenging, limiting ILR's real-world applicability across domains. To overcome this, we introduce a novel approach that synthetically generates diverse object instances from multiple domains under varied conditions and backgrounds, forming a large-scale training set. Unlike prior work on automatic data synthesis, our method is the first to address ILR-specific challenges without relying on any real images. Fine-tuning foundation vision models on the generated data significantly improves retrieval performance across seven ILR benchmarks spanning multiple domains. Our approach offers a new, efficient, and effective alternative to extensive data collection and curation, introducing a new ILR paradigm where the only input is the names of the target domains, unlocking a wide range of real-world applications.
-]]></content:encoded>
-<pubDate>Mon, 13 Oct 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>TARO: Toward Semantically Rich Open-World Object Detection</title>
-<link>https://arxiv.org/abs/2510.09173</link>
-<guid>https://arxiv.org/abs/2510.09173</guid>
-<content:encoded><![CDATA[
-arXiv:2510.09173v1 Announce Type: new 
-Abstract: Modern object detectors are largely confined to a "closed-world" assumption, limiting them to a predefined set of classes and posing risks when encountering novel objects in real-world scenarios. While open-set detection methods aim to address this by identifying such instances as 'Unknown', this is often insufficient. Rather than treating all unknowns as a single class, assigning them more descriptive subcategories can enhance decision-making in safety-critical contexts. For example, identifying an object as an 'Unknown Animal' (requiring an urgent stop) versus 'Unknown Debris' (requiring a safe lane change) is far more useful than just 'Unknown' in autonomous driving. To bridge this gap, we introduce TARO, a novel detection framework that not only identifies unknown objects but also classifies them into coarse parent categories within a semantic hierarchy. TARO employs a unique architecture with a sparsemax-based head for modeling objectness, a hierarchy-guided relabeling component that provides auxiliary supervision, and a classification module that learns hierarchical relationships. Experiments show TARO can categorize up to 29.9% of unknowns into meaningful coarse classes, significantly reduce confusion between unknown and known classes, and achieve competitive performance in both unknown recall and known mAP. Code will be made available.
-]]></content:encoded>
-<pubDate>Mon, 13 Oct 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Online Video Depth Anything: Temporally-Consistent Depth Prediction with Low Memory Consumption</title>
-<link>https://arxiv.org/abs/2510.09182</link>
-<guid>https://arxiv.org/abs/2510.09182</guid>
-<content:encoded><![CDATA[
-arXiv:2510.09182v1 Announce Type: new 
-Abstract: Depth estimation from monocular video has become a key component of many real-world computer vision systems. Recently, Video Depth Anything (VDA) has demonstrated strong performance on long video sequences. However, it relies on batch-processing which prohibits its use in an online setting. In this work, we overcome this limitation and introduce online VDA (oVDA). The key innovation is to employ techniques from Large Language Models (LLMs), namely, caching latent features during inference and masking frames at training. Our oVDA method outperforms all competing online video depth estimation methods in both accuracy and VRAM usage. Low VRAM usage is particularly important for deployment on edge devices. We demonstrate that oVDA runs at 42 FPS on an NVIDIA A100 and at 20 FPS on an NVIDIA Jetson edge device. We will release both, code and compilation scripts, making oVDA easy to deploy on low-power hardware.
 ]]></content:encoded>
 <pubDate>Mon, 13 Oct 2025 00:00:00 -0400</pubDate>
 </item>

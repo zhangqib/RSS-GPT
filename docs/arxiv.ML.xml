@@ -4,18 +4,18 @@
 <title>cs.LG updates on arXiv.org</title>
 <link>http://rss.arxiv.org/rss/cs.LG</link>
 
+
 <item>
 <title>Rediscovering Entropy Regularization: Adaptive Coefficient Unlocks Its Potential for LLM Reinforcement Learning</title>
 <link>https://arxiv.org/abs/2510.10959</link>
 <guid>https://arxiv.org/abs/2510.10959</guid>
 <content:encoded><![CDATA[
-<div> Reinforcement Learning, Large Language Models, Entropy Regularization, Exploration, Reasoning Accuracy<br>
-<br>Summary:
+<div> Reinforcement Learning, Large Language Models, Entropy Regularization, Exploration, Reasoning Accuracy<br />
+<br />Summary:
 Large Language Models (LLMs) have advanced reasoning abilities using Reinforcement Learning with Verifiable Rewards (RLVR). However, RLVR training often faces policy entropy collapse, limiting exploration and reasoning performance. Entropy regularization, a common fix, is unstable across tasks and models. This study reconsiders entropy regularization, finding tasks require varied exploration intensities and balanced entropy levels. The proposed Adaptive Entropy Regularization (AER) dynamically balances exploration and exploitation through difficulty-aware coefficient allocation, initial-anchored target entropy, and global coefficient adjustment. Experiments on mathematical reasoning benchmarks demonstrate AER's superiority in reasoning accuracy and exploration capability over baselines. AER maintains policy entropy within a moderate range, enhancing exploration while improving reasoning accuracy. <div>
 arXiv:2510.10959v2 Announce Type: replace 
 Abstract: Reasoning ability has become a defining capability of Large Language Models (LLMs), with Reinforcement Learning with Verifiable Rewards (RLVR) emerging as a key paradigm to enhance it. However, RLVR training often suffers from policy entropy collapse, where the policy becomes overly deterministic, hindering exploration and limiting reasoning performance. While entropy regularization is a common remedy, its effectiveness is highly sensitive to the fixed coefficient, making it unstable across tasks and models. In this work, we revisit entropy regularization in RLVR and argue that its potential has been largely underestimated. Our analysis shows that (i) tasks of varying difficulty demand distinct exploration intensities, and (ii) balanced exploration may require the policy entropy to be maintained within a moderate range below its initial level. Therefore, we propose Adaptive Entropy Regularization (AER)--a framework that dynamically balances exploration and exploitation via three components: difficulty-aware coefficient allocation, initial-anchored target entropy, and dynamic global coefficient adjustment. Experiments on multiple mathematical reasoning benchmarks show that AER consistently outperforms baselines, improving both reasoning accuracy and exploration capability.
 ]]></content:encoded>
-<pubDate>Fri, 17 Oct 2025 00:00:00 -0400</pubDate>
 <pubDate>Fri, 17 Oct 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -23,14 +23,13 @@ Abstract: Reasoning ability has become a defining capability of Large Language M
 <link>https://arxiv.org/abs/2510.11278</link>
 <guid>https://arxiv.org/abs/2510.11278</guid>
 <content:encoded><![CDATA[
-<div> ENIGMA, Large-Language Model, Mutual Information, Geometry, Alignment <br>
-<br>
-Summary: <br>
+<div> ENIGMA, Large-Language Model, Mutual Information, Geometry, Alignment <br />
+<br />
+Summary: <br />
 ENIGMA is a novel approach to training Large-Language Models (LLMs) that focuses on improving reasoning, alignment, and robustness simultaneously by using an organization's policies as guidance on the model's information manifold. It combines Group-Relative Policy Optimization (GRPO) with Chain-of-Thought (CoT) rewards and Self-Supervised Alignment with Mutual Information (SAMI) techniques to enhance training dynamics and performance. By introducing infoNCE metrics, ENIGMA can measure how well LLMs encode organizational principles, allowing for the selection of high-performance principles before training. Experimental results with small LLMs show that models trained using ENIGMA exhibit improved benchmark performance and structural changes in the information manifold, indicating principled reasoning without the need for a reward model. This suggests that ENIGMA offers a promising approach to enhancing LLM capabilities through a unified information-geometric objective. <div>
 arXiv:2510.11278v2 Announce Type: replace 
 Abstract: We present Entropic Mutual-Information Geometry Large-Language Model Alignment (ENIGMA), a novel approach to Large-Language Model (LLM) training that jointly improves reasoning, alignment and robustness by treating an organisation's policies/principles as directions to move on a model's information manifold. Our single-loop trainer combines Group-Relative Policy Optimisation (GRPO), an on-policy, critic-free RL method with Chain-of-Thought (CoT)-format only rewards; a Self-Supervised Alignment with Mutual Information (SAMI)-style symmetric InfoNCE auxiliary; and an entropic Sinkhorn optimal-transport regulariser on hidden-state distributions to bound geometry drift. We also introduce infoNCE metrics that specialise to a standard MI lower bound under matched negatives to measure how strongly a model's CoT encodes these policies. These metrics include a Sufficiency Index (SI) that enables the selection and creation of principles that maximise downstream performance prior to training. In our experiments using small (1B) LLMs, high-SI principles predict steadier training dynamics and improved benchmark performance over GRPO ablations. Our information-geometry analysis of trained models validates desirable structural change in the manifold. These results support our hypothesis that reasoning, alignment, and robustness are projections of a single information-geometric objective, and that models trained using ENIGMA demonstrate principled reasoning without the use of a reward model, offering a path to trusted capability
 ]]></content:encoded>
-<pubDate>Fri, 17 Oct 2025 00:00:00 -0400</pubDate>
 <pubDate>Fri, 17 Oct 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -47,11 +46,10 @@ Summary:
 - The capability for ciphered reasoning correlated with cipher prevalence in pretraining data.
 - The study also identified scaling laws indicating slow improvement in ciphered reasoning capability with additional fine-tuning data.
 
-<br><br>Summary: <div>
+<br /><br />Summary: <div>
 arXiv:2510.09714v2 Announce Type: replace-cross 
 Abstract: Detecting harmful AI actions is important as AI agents gain adoption. Chain-of-thought (CoT) monitoring is one method widely used to detect adversarial attacks and AI misalignment. However, attackers and misaligned models might evade CoT monitoring through ciphered reasoning: reasoning hidden in encrypted, translated, or compressed text. To assess this risk, we test whether models can perform ciphered reasoning. For each of 28 different ciphers, we fine-tune and prompt up to 10 models to reason in that cipher. We measure model accuracy on math problems as a proxy for reasoning ability. Across the models we test, we find an asymmetry: model accuracy can drop significantly when reasoning in ciphered text, even though models demonstrate comprehension of ciphered text by being able to translate it accurately to English. Even frontier models struggle with lesser-known ciphers, although they can reason accurately in well-known ciphers like rot13. We show that ciphered reasoning capability correlates with cipher prevalence in pretraining data. We also identify scaling laws showing that ciphered reasoning capability improves slowly with additional fine-tuning data. Our work suggests that evading CoT monitoring using ciphered reasoning may be an ineffective tactic for current models and offers guidance on constraining the development of this capability in future frontier models.
 ]]></content:encoded>
-<pubDate>Fri, 17 Oct 2025 00:00:00 -0400</pubDate>
 <pubDate>Fri, 17 Oct 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -67,9 +65,7 @@ arXiv:2510.11713v3 Announce Type: replace-cross
 Abstract: Large Reasoning Models (LRMs) excel at complex reasoning but are traditionally evaluated in static, "frozen world" settings: model responses are assumed to be instantaneous, and the context of a request is presumed to be immutable over the duration of the response. While generally true for short-term tasks, the "frozen world" assumption breaks down in modern reasoning tasks such as assistive programming, where models may take hours to think through problems and code may change dramatically from the time the model starts thinking to the model's final output. In this work, we challenge the frozen world assumption and evaluate LRM robustness under two realistic dynamic scenarios: interruptions, which test the quality of the model's partial outputs on a limited budget, and dynamic context, which tests model adaptation to in-flight changes. Across mathematics and programming benchmarks that require long-form reasoning, static evaluations consistently overestimate robustness: even state-of-the-art LRMs, which achieve high accuracy in static settings, can fail unpredictably when interrupted or exposed to changing context, with performance dropping by up to 60% when updates are introduced late in the reasoning process. Our analysis further reveals several novel failure modes, including reasoning leakage, where models fold the reasoning into their final answer when interrupted; panic, where under time pressure models abandon reasoning entirely and return incorrect answers; and self-doubt, where performance degrades while incorporating updated information. Project Page: http://dynamic-lm.github.io/
 ]]></content:encoded>
 <pubDate>Fri, 17 Oct 2025 00:00:00 -0400</pubDate>
-<pubDate>Fri, 17 Oct 2025 00:00:00 -0400</pubDate>
 </item>
-
 <item>
 <title>Large Language Models for Real-World IoT Device Identification</title>
 <link>https://arxiv.org/abs/2510.13817</link>
@@ -11100,46 +11096,6 @@ Abstract: Brain-computer interfaces (BCIs) provide potential for applications ra
 <content:encoded><![CDATA[
 arXiv:2510.10605v1 Announce Type: new 
 Abstract: Building learning models frequently requires evaluating numerous intermediate models. Examples include models considered during feature selection, model structure search, and parameter tunings. The evaluation of an intermediate model influences subsequent model exploration decisions. Although prior knowledge can provide initial quality estimates, true performance is only revealed after evaluation. In this work, we address the challenge of optimally allocating a bounded budget to explore the space of intermediate models. We formalize this as a general budget allocation problem over unknown-value functions within a Lipschitz space.
-]]></content:encoded>
-<pubDate>Tue, 14 Oct 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Encoder Decoder Generative Adversarial Network Model for Stock Market Prediction</title>
-<link>https://arxiv.org/abs/2510.10617</link>
-<guid>https://arxiv.org/abs/2510.10617</guid>
-<content:encoded><![CDATA[
-arXiv:2510.10617v1 Announce Type: new 
-Abstract: Forecasting stock prices remains challenging due to the volatile and non-linear nature of financial markets. Despite the promise of deep learning, issues such as mode collapse, unstable training, and difficulty in capturing temporal and feature level correlations have limited the applications of GANs in this domain. We propose a GRU-based Encoder-Decoder GAN (EDGAN) model that strikes a balance between expressive power and simplicity. The model introduces key innovations such as a temporal decoder with residual connections for precise reconstruction, conditioning on static and dynamic covariates for contextual learning, and a windowing mechanism to capture temporal dynamics. Here, the generator uses a dense encoder-decoder framework with residual GRU blocks. Extensive experiments on diverse stock datasets demonstrate that EDGAN achieves superior forecasting accuracy and training stability, even in volatile markets. It consistently outperforms traditional GAN variants in forecasting accuracy and convergence stability under market conditions.
-]]></content:encoded>
-<pubDate>Tue, 14 Oct 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>SDG-L: A Semiparametric Deep Gaussian Process based Framework for Battery Capacity Prediction</title>
-<link>https://arxiv.org/abs/2510.10621</link>
-<guid>https://arxiv.org/abs/2510.10621</guid>
-<content:encoded><![CDATA[
-arXiv:2510.10621v1 Announce Type: new 
-Abstract: Lithium-ion batteries are becoming increasingly omnipresent in energy supply. However, the durability of energy storage using lithium-ion batteries is threatened by their dropping capacity with the growing number of charging/discharging cycles. An accurate capacity prediction is the key to ensure system efficiency and reliability, where the exploitation of battery state information in each cycle has been largely undervalued. In this paper, we propose a semiparametric deep Gaussian process regression framework named SDG-L to give predictions based on the modeling of time series battery state data. By introducing an LSTM feature extractor, the SDG-L is specially designed to better utilize the auxiliary profiling information during charging/discharging process. In experimental studies based on NASA dataset, our proposed method obtains an average test MSE error of 1.2%. We also show that SDG-L achieves better performance compared to existing works and validate the framework using ablation studies.
-]]></content:encoded>
-<pubDate>Tue, 14 Oct 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>ImpMIA: Leveraging Implicit Bias for Membership Inference Attack under Realistic Scenarios</title>
-<link>https://arxiv.org/abs/2510.10625</link>
-<guid>https://arxiv.org/abs/2510.10625</guid>
-<content:encoded><![CDATA[
-arXiv:2510.10625v1 Announce Type: new 
-Abstract: Determining which data samples were used to train a model-known as Membership Inference Attack (MIA)-is a well-studied and important problem with implications for data privacy. Black-box methods presume access only to the model's outputs and often rely on training auxiliary reference models. While they have shown strong empirical performance, they rely on assumptions that rarely hold in real-world settings: (i) the attacker knows the training hyperparameters; (ii) all available non-training samples come from the same distribution as the training data; and (iii) the fraction of training data in the evaluation set is known. In this paper, we demonstrate that removing these assumptions leads to a significant drop in the performance of black-box attacks. We introduce ImpMIA, a Membership Inference Attack that exploits the Implicit Bias of neural networks, hence removes the need to rely on any reference models and their assumptions. ImpMIA is a white-box attack -- a setting which assumes access to model weights and is becoming increasingly realistic given that many models are publicly available (e.g., via Hugging Face). Building on maximum-margin implicit bias theory, ImpMIA uses the Karush-Kuhn-Tucker (KKT) optimality conditions to identify training samples. This is done by finding the samples whose gradients most strongly reconstruct the trained model's parameters. As a result, ImpMIA achieves state-of-the-art performance compared to both black and white box attacks in realistic settings where only the model weights and a superset of the training data are available.
-]]></content:encoded>
-<pubDate>Tue, 14 Oct 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>ProteinAE: Protein Diffusion Autoencoders for Structure Encoding</title>
-<link>https://arxiv.org/abs/2510.10634</link>
-<guid>https://arxiv.org/abs/2510.10634</guid>
-<content:encoded><![CDATA[
-arXiv:2510.10634v1 Announce Type: new 
-Abstract: Developing effective representations of protein structures is essential for advancing protein science, particularly for protein generative modeling. Current approaches often grapple with the complexities of the SE(3) manifold, rely on discrete tokenization, or the need for multiple training objectives, all of which can hinder the model optimization and generalization. We introduce ProteinAE, a novel and streamlined protein diffusion autoencoder designed to overcome these challenges by directly mapping protein backbone coordinates from E(3) into a continuous, compact latent space. ProteinAE employs a non-equivariant Diffusion Transformer with a bottleneck design for efficient compression and is trained end-to-end with a single flow matching objective, substantially simplifying the optimization pipeline. We demonstrate that ProteinAE achieves state-of-the-art reconstruction quality, outperforming existing autoencoders. The resulting latent space serves as a powerful foundation for a latent diffusion model that bypasses the need for explicit equivariance. This enables efficient, high-quality structure generation that is competitive with leading structure-based approaches and significantly outperforms prior latent-based methods. Code is available at https://github.com/OnlyLoveKFC/ProteinAE_v1.
 ]]></content:encoded>
 <pubDate>Tue, 14 Oct 2025 00:00:00 -0400</pubDate>
 </item>
