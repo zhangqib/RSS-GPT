@@ -4,18 +4,18 @@
 <title>cs.CE updates on arXiv.org</title>
 <link>http://rss.arxiv.org/rss/cs.CE</link>
 
+
 <item>
 <title>Extending Temporal Disturbance Estimations For Magnetic Anomaly Navigation and Mapping</title>
 <link>https://arxiv.org/abs/2510.15113</link>
 <guid>https://arxiv.org/abs/2510.15113</guid>
 <content:encoded><![CDATA[
-<div> Reference Station Model, Magnetic Anomaly Mapping, Long-range Aeromagnetic Surveys, Regression Models, Space Weather<br>
-Summary:<br>
+<div> Reference Station Model, Magnetic Anomaly Mapping, Long-range Aeromagnetic Surveys, Regression Models, Space Weather<br />
+Summary:<br />
 The article introduces the Extended Reference Station Model (ERSM) to address the challenges faced by slow-moving vehicles relying on crustal magnetic anomaly navigation. This model aims to eliminate the need for fixed ground stations within 100 km by utilizing an extended reference ground magnetometer station. By applying longitudinal correction and regression models, such as linear regression, k-nearest neighbors, and neural-network regression, ERSM successfully estimates the local temporal disturbance field with performance benefits. The results demonstrate low root mean square errors and median performance below 5nT, particularly with the kNN and neural-net models for longer distances. Factors such as space-weather events, water-body separation, and proximity to polar regions are also considered in determining the model's performance based on ERS selection. <div>
 arXiv:2510.15113v1 Announce Type: new 
 Abstract: Slow-moving vehicles relying on crustal magnetic anomaly navigation (MagNav) or vehicles revisiting the same location in a short time - such as those used for surveys in magnetic anomaly mapping - require fixed ground stations within 100 km of the vehicle's trajectory to measure and remove the geomagnetic disturbance field from magnetic readings. This approach is impractical due to the limited network of fixed-ground magnetometer stations, making long-range (several hundred kilometers long) aeromagnetic surveys for anomaly map-making infeasible. To address these challenges, we developed the Extended Reference Station Model (ERSM). ERSM applies a longitudinal correction and regression model to an extended reference ground magnetometer station (ERS) to produce an estimate of the local temporal disturbance field. ERSM is regression model-agnostic, so we implemented a linear regression, a k-nearest neighbors (kNN) regression, and a neural-network regression model to assess performance benefits. Our results show typical performance below 10nT root mean square error and median performance below 5nT for typical use with the kNN and neural-net model for farther distances and below 5nT performance using the linear regression model on stations with proximity. We also consider how space-weather events, water-body separation, and proximity to polar regions affect the model performance based on ERS selection.
 ]]></content:encoded>
-<pubDate>Mon, 20 Oct 2025 00:00:00 -0400</pubDate>
 <pubDate>Mon, 20 Oct 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -23,13 +23,12 @@ Abstract: Slow-moving vehicles relying on crustal magnetic anomaly navigation (M
 <link>https://arxiv.org/abs/2510.15205</link>
 <guid>https://arxiv.org/abs/2510.15205</guid>
 <content:encoded><![CDATA[
-<div> prediction markets, Polymarket, logit jump-diffusion, risk factors, calibration pipeline <br>
-Summary:<br>
-The article introduces a new stochastic kernel for prediction markets, specifically focusing on platforms like Polymarket. The proposed logit jump-diffusion model aims to provide a unified framework for market makers to manage belief volatility, jump, and cross-event risks. By treating traded probabilities as Q-martingales and incorporating risk factors such as belief volatility and jump intensity, the model enables quoting and hedging strategies. A calibration pipeline is developed to filter noise, separate diffusion from jumps, and establish a stable belief-volatility surface. Additionally, the model supports the creation of derivative instruments analogous to options, allowing for the transfer of belief risk. Experimental results show improved short-horizon belief-variance forecast accuracy compared to existing approaches, demonstrating the model's utility in enhancing market efficiency and risk management in prediction markets like Polymarket. <br> <div>
+<div> prediction markets, Polymarket, logit jump-diffusion, risk factors, calibration pipeline <br />
+Summary:<br />
+The article introduces a new stochastic kernel for prediction markets, specifically focusing on platforms like Polymarket. The proposed logit jump-diffusion model aims to provide a unified framework for market makers to manage belief volatility, jump, and cross-event risks. By treating traded probabilities as Q-martingales and incorporating risk factors such as belief volatility and jump intensity, the model enables quoting and hedging strategies. A calibration pipeline is developed to filter noise, separate diffusion from jumps, and establish a stable belief-volatility surface. Additionally, the model supports the creation of derivative instruments analogous to options, allowing for the transfer of belief risk. Experimental results show improved short-horizon belief-variance forecast accuracy compared to existing approaches, demonstrating the model's utility in enhancing market efficiency and risk management in prediction markets like Polymarket. <br /> <div>
 arXiv:2510.15205v1 Announce Type: new 
 Abstract: Prediction markets, such as Polymarket, aggregate dispersed information into tradable probabilities, but they still lack a unifying stochastic kernel comparable to the one options gained from Black-Scholes. As these markets scale with institutional participation, exchange integrations, and higher volumes around elections and macro prints, market makers face belief volatility, jump, and cross-event risks without standardized tools for quoting or hedging. We propose such a foundation: a logit jump-diffusion with risk-neutral drift that treats the traded probability p_t as a Q-martingale and exposes belief volatility, jump intensity, and dependence as quotable risk factors. On top, we build a calibration pipeline that filters microstructure noise, separates diffusion from jumps using expectation-maximization, enforces the risk-neutral drift, and yields a stable belief-volatility surface. We then define a coherent derivative layer (variance, correlation, corridor, and first-passage instruments) analogous to volatility and correlation products in option markets. In controlled experiments on synthetic risk-neutral paths and real event data, the model reduces short-horizon belief-variance forecast error relative to diffusion-only and probability-space baselines, supporting both causal calibration and economic interpretability. Conceptually, the logit jump-diffusion kernel supplies an implied-volatility analogue for prediction markets: a tractable, tradable language for quoting, hedging, and transferring belief risk across venues such as Polymarket.
 ]]></content:encoded>
-<pubDate>Mon, 20 Oct 2025 00:00:00 -0400</pubDate>
 <pubDate>Mon, 20 Oct 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -45,7 +44,6 @@ arXiv:2510.15612v1 Announce Type: new
 Abstract: Decentralized prediction markets (DePMs) allow open participation in event-based wagering without fully relying on centralized intermediaries. We review the history of DePMs which date back to 2011 and includes hundreds of proposals. Perhaps surprising, modern DePMs like Polymarket deviate materially from earlier designs like Truthcoin and Augur v1. We use our review to present a modular workflow comprising seven stages: underlying infrastructure, market topic, share structure and pricing, trading, market resolution, settlement, and archiving. For each module, we enumerate the design variants, analyzing trade-offs around decentralization, expressiveness, and manipulation resistance. We also identify open problems for researchers interested in this ecosystem.
 ]]></content:encoded>
 <pubDate>Mon, 20 Oct 2025 00:00:00 -0400</pubDate>
-<pubDate>Mon, 20 Oct 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
 <title>DeepAries: Adaptive Rebalancing Interval Selection for Enhanced Portfolio Selection</title>
@@ -53,11 +51,10 @@ Abstract: Decentralized prediction markets (DePMs) allow open participation in e
 <guid>https://arxiv.org/abs/2510.14985</guid>
 <content:encoded><![CDATA[
 <div> reinforcement learning, portfolio management, deep learning, financial markets, transaction costs
-Summary:<br><br>DeepAries is introduced as a novel deep reinforcement learning framework for dynamic portfolio management that optimizes both timing and allocation decisions. It addresses the limitation of fixed rebalancing intervals by adaptively selecting optimal intervals and portfolio weights based on market conditions. The framework combines a Transformer-based state encoder with Proximal Policy Optimization to generate simultaneous discrete and continuous actions for rebalancing and asset allocations. Extensive experiments on real-world financial markets show that DeepAries outperforms traditional strategies in terms of risk-adjusted returns, transaction costs, and drawdowns. A live demo and open-source code and dataset are provided, demonstrating the framework's interpretability and effectiveness in producing adaptive portfolio management decisions aligned with changing market conditions. Overall, DeepAries offers a new approach to portfolio management by integrating timing and allocation decisions in a unified framework. <div>
+Summary:<br /><br />DeepAries is introduced as a novel deep reinforcement learning framework for dynamic portfolio management that optimizes both timing and allocation decisions. It addresses the limitation of fixed rebalancing intervals by adaptively selecting optimal intervals and portfolio weights based on market conditions. The framework combines a Transformer-based state encoder with Proximal Policy Optimization to generate simultaneous discrete and continuous actions for rebalancing and asset allocations. Extensive experiments on real-world financial markets show that DeepAries outperforms traditional strategies in terms of risk-adjusted returns, transaction costs, and drawdowns. A live demo and open-source code and dataset are provided, demonstrating the framework's interpretability and effectiveness in producing adaptive portfolio management decisions aligned with changing market conditions. Overall, DeepAries offers a new approach to portfolio management by integrating timing and allocation decisions in a unified framework. <div>
 arXiv:2510.14985v1 Announce Type: cross 
 Abstract: We propose DeepAries , a novel deep reinforcement learning framework for dynamic portfolio management that jointly optimizes the timing and allocation of rebalancing decisions. Unlike prior reinforcement learning methods that employ fixed rebalancing intervals regardless of market conditions, DeepAries adaptively selects optimal rebalancing intervals along with portfolio weights to reduce unnecessary transaction costs and maximize risk-adjusted returns. Our framework integrates a Transformer-based state encoder, which effectively captures complex long-term market dependencies, with Proximal Policy Optimization (PPO) to generate simultaneous discrete (rebalancing intervals) and continuous (asset allocations) actions. Extensive experiments on multiple real-world financial markets demonstrate that DeepAries significantly outperforms traditional fixed-frequency and full-rebalancing strategies in terms of risk-adjusted returns, transaction costs, and drawdowns. Additionally, we provide a live demo of DeepAries at https://deep-aries.github.io/, along with the source code and dataset at https://github.com/dmis-lab/DeepAries, illustrating DeepAries' capability to produce interpretable rebalancing and allocation decisions aligned with shifting market regimes. Overall, DeepAries introduces an innovative paradigm for adaptive and practical portfolio management by integrating both timing and allocation into a unified decision-making process.
 ]]></content:encoded>
-<pubDate>Mon, 20 Oct 2025 00:00:00 -0400</pubDate>
 <pubDate>Mon, 20 Oct 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -68,11 +65,10 @@ Abstract: We propose DeepAries , a novel deep reinforcement learning framework f
 <div> machine learning, thermal conductivity, covalent organic frameworks, dangling branches, molecular dynamics simulations
 
 Summary:
-The study explores the relationship between the structure and thermal conductivity of covalent organic frameworks (COFs), a class of nanoporous polymeric materials. Traditional features do not reliably predict thermal conductivity in COFs, prompting the development of an attention-based machine learning model that accurately predicts thermal conductivities even for structures beyond the training set. The model's analysis highlights dangling molecular branches as a significant predictor, leading to the definition of the dangling mass ratio (DMR) as a descriptor for thermal conductivity prediction. Feature importance assessments confirm the importance of DMR in predicting thermal conductivity. Molecular dynamics simulations support the observation that COFs with dangling functional groups have lower thermal transfer capabilities, attributed to significant mismatches in vibrational density of states due to the presence of dangling branches.<br><br>Summary: <div>
+The study explores the relationship between the structure and thermal conductivity of covalent organic frameworks (COFs), a class of nanoporous polymeric materials. Traditional features do not reliably predict thermal conductivity in COFs, prompting the development of an attention-based machine learning model that accurately predicts thermal conductivities even for structures beyond the training set. The model's analysis highlights dangling molecular branches as a significant predictor, leading to the definition of the dangling mass ratio (DMR) as a descriptor for thermal conductivity prediction. Feature importance assessments confirm the importance of DMR in predicting thermal conductivity. Molecular dynamics simulations support the observation that COFs with dangling functional groups have lower thermal transfer capabilities, attributed to significant mismatches in vibrational density of states due to the presence of dangling branches.<br /><br />Summary: <div>
 arXiv:2409.06457v3 Announce Type: replace 
 Abstract: The thermal conductivity of covalent organic frameworks (COFs), an emerging class of nanoporous polymeric materials, is crucial for many applications, yet the link between their structure and thermal properties remains poorly understood. Analysis of a dataset containing over 2,400 COFs reveals that conventional features such as density, pore size, void fraction, and surface area do not reliably predict thermal conductivity. To address this, an attention-based machine learning model was trained, accurately predicting thermal conductivities even for structures outside the training set. The attention mechanism was then utilized to investigate the model's success. The analysis identified dangling molecular branches as a key predictor of thermal conductivity, leading us to define the dangling mass ratio (DMR), a descriptor that quantifies the fraction of atomic mass in dangling branches relative to the total COF mass. Feature importance assessments on regression models confirm the significance of DMR in predicting thermal conductivity. These findings indicate that COFs with dangling functional groups exhibit lower thermal transfer capabilities. Molecular dynamics simulations support this observation, revealing significant mismatches in the vibrational density of states due to the presence of dangling branches.
 ]]></content:encoded>
-<pubDate>Mon, 20 Oct 2025 00:00:00 -0400</pubDate>
 <pubDate>Mon, 20 Oct 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -80,13 +76,12 @@ Abstract: The thermal conductivity of covalent organic frameworks (COFs), an eme
 <link>https://arxiv.org/abs/2303.11409</link>
 <guid>https://arxiv.org/abs/2303.11409</guid>
 <content:encoded><![CDATA[
-<div> tensor networks, quantum simulation, symmetry, machine learning, scalable approaches <br>
-<br>
-Summary: Physics-informed tensor networks are key in efficiently simulating complex quantum systems. By incorporating symmetry, such as $U(1)$-symmetric tensor networks, computational costs are reduced, enabling larger simulations. These networks are accelerated on GPUs and scaled to supercomputers, making them essential for quantum simulation, computation, and machine learning. Physics-informed design extends beyond symmetry, including hybrid tensor networks and parallel sequential circuits, to enhance efficiency through different principles. This Perspective emphasizes the importance of physics-informed tensor networks, incorporating both symmetry and beyond-symmetry insights, as unifying strategies for scalable approaches in quantum simulation, computation, and machine learning. <br><br> <div>
+<div> tensor networks, quantum simulation, symmetry, machine learning, scalable approaches <br />
+<br />
+Summary: Physics-informed tensor networks are key in efficiently simulating complex quantum systems. By incorporating symmetry, such as $U(1)$-symmetric tensor networks, computational costs are reduced, enabling larger simulations. These networks are accelerated on GPUs and scaled to supercomputers, making them essential for quantum simulation, computation, and machine learning. Physics-informed design extends beyond symmetry, including hybrid tensor networks and parallel sequential circuits, to enhance efficiency through different principles. This Perspective emphasizes the importance of physics-informed tensor networks, incorporating both symmetry and beyond-symmetry insights, as unifying strategies for scalable approaches in quantum simulation, computation, and machine learning. <br /><br /> <div>
 arXiv:2303.11409v2 Announce Type: replace-cross 
 Abstract: The efficient simulation of complex quantum systems remains a central challenge due to the exponential growth of Hilbert space with system size. Tensor network methods have long been established as powerful approximation schemes, and their efficiency can be further enhanced by incorporating physics-informed priors. A prominent example is symmetry: recent progress on $U(1)$-symmetric tensor networks, accelerated on GPUs and scaled to supercomputers, shows how conserved charges induce block-sparse structures that reduce computational cost and enable larger simulations. The same principle extends to general symmetries, inspiring equivariant neural networks in machine learning and guiding symmetry-preserving ansatze in variational quantum algorithms. Beyond symmetry, physics-informed design also includes strategies such as hybrid tensor networks and parallel sequential circuits, which pursue efficiency from complementary principles. This Perspective argues that physics-informed tensor networks, grounded in both symmetry and beyond-symmetry insights, provide unifying strategies for scalable approaches in quantum simulation, computation, and machine learning.
 ]]></content:encoded>
-<pubDate>Mon, 20 Oct 2025 00:00:00 -0400</pubDate>
 <pubDate>Mon, 20 Oct 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -94,17 +89,15 @@ Abstract: The efficient simulation of complex quantum systems remains a central 
 <link>https://arxiv.org/abs/2309.12351</link>
 <guid>https://arxiv.org/abs/2309.12351</guid>
 <content:encoded><![CDATA[
-<div> automated reasoning, machine learning, trust, reviewability, science<br>
-<br>
+<div> automated reasoning, machine learning, trust, reviewability, science<br />
+<br />
 Summary: 
 The article discusses the importance of automated reasoning in scientific research and the shift towards formulating rules through machine learning techniques. It highlights the need for trust in these systems and the results they produce, an issue often overlooked by practitioners. The focus is on independent reviewing as a key factor in building trust in automated reasoning systems. The article identifies the characteristics that affect the reviewability of these systems and proposes a combination of technical and social measures to enhance their trustworthiness. By emphasizing the importance of transparency and accountability in automated reasoning, the article aims to bridge the gap between the philosophical discussions on trust in science and practical considerations in research. <div>
 arXiv:2309.12351v2 Announce Type: replace-cross 
 Abstract: Since its beginnings in the 1940s, automated reasoning by computers has become a tool of ever growing importance in scientific research. So far, the rules underlying automated reasoning have mainly been formulated by humans, in the form of program source code. Rules derived from large amounts of data, via machine learning techniques, are a complementary approach currently under intense development. The question of why we should trust these systems, and the results obtained with their help, has been discussed by philosophers of science but has so far received little attention by practitioners. The present work focuses on independent reviewing, an important source of trust in science, and identifies the characteristics of automated reasoning systems that affect their reviewability. It also discusses possible steps towards increasing reviewability and trustworthiness via a combination of technical and social measures.
 ]]></content:encoded>
 <pubDate>Mon, 20 Oct 2025 00:00:00 -0400</pubDate>
-<pubDate>Mon, 20 Oct 2025 00:00:00 -0400</pubDate>
 </item>
-
 <item>
 <title>Rock Classification through Knowledge-Enhanced Deep Learning: A Hybrid Mineral-Based Approach</title>
 <link>https://arxiv.org/abs/2510.13937</link>
@@ -14481,110 +14474,6 @@ arXiv:2212.01191v4 Announce Type: replace-cross
 Abstract: Ongoing advances in force field and computer hardware development enable the use of molecular dynamics (MD) to simulate increasingly complex systems with the ultimate goal of reaching cellular complexity. At the same time, rational design by high-throughput (HT) simulations is another forefront of MD. In these areas, the Martini coarse-grained force field, especially the latest version (i.e. v3), is being actively explored because it offers an enhanced spatial-temporal resolution. However, the automation tools for preparing simulations with the Martini force field, accompanying the previous version, were not designed for HT simulations or studies of complex cellular systems. Therefore, they become a major limiting factor. To address these shortcomings, we present the open-source Vermouth python library. Vermouth is designed to become the unified framework for developing programs, which prepare, run, and analyze Martini simulations of complex systems. To demonstrate the power of the Vermouth library, the Martinize2 program is showcased as a generalization of the martinize script, originally aimed to set up simulations of proteins. In contrast to the previous version, Martinize2 automatically handles protonation states in proteins and post-translation modifications, offers more options to fine-tune structural biases such as the elastic network (EN), and can convert non-protein molecules such as ligands. Finally, Martinize2 is used in two high-complexity benchmarks. The entire I-TASSER protein template database as well as a subset of 200,000 structures from the AlphaFold Protein Structure Database are converted to CG resolution and we illustrate how the checks on input structure quality can safeguard high-throughput applications.
 ]]></content:encoded>
 <pubDate>Tue, 13 May 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>LSR-IGRU: Stock Trend Prediction Based on Long Short-Term Relationships and Improved GRU</title>
-<link>https://arxiv.org/abs/2409.08282</link>
-<guid>https://arxiv.org/abs/2409.08282</guid>
-<content:encoded><![CDATA[
-<div> Keywords: stock price prediction, deep learning, GRU, long short-term relationships, algorithmic trading  
-
-<br /><br />Summary:  
-Stock price prediction is a complex challenge attracting significant attention within finance. Recent advances in deep learning and graph neural networks have emphasized exploring inter-stock relationships. However, most existing models primarily focus on short-term dynamics and tend to neglect the intricate nonlinear characteristics and higher-order interactions in the market. To address this, the paper introduces the LSR-IGRU model, aimed at improving stock price trend predictions. This model constructs a long short-term relationship matrix utilizing secondary industry information for long-term connections and overnight price data for short-term dynamics. The GRU inputs are enhanced at each step to better combine temporal and relationship data, boosting prediction accuracy. Extensive experimentation across various stock market datasets from China and the United States confirms the LSR-IGRU model's superiority over leading baseline models. Additionally, the model has been successfully implemented in a financial company's algorithmic trading system, significantly outperforming other methods in generating cumulative portfolio returns. The research's codebase is publicly available at the provided GitHub link. <div>
-arXiv:2409.08282v3 Announce Type: replace-cross 
-Abstract: Stock price prediction is a challenging problem in the field of finance and receives widespread attention. In recent years, with the rapid development of technologies such as deep learning and graph neural networks, more research methods have begun to focus on exploring the interrelationships between stocks. However, existing methods mostly focus on the short-term dynamic relationships of stocks and directly integrating relationship information with temporal information. They often overlook the complex nonlinear dynamic characteristics and potential higher-order interaction relationships among stocks in the stock market. Therefore, we propose a stock price trend prediction model named LSR-IGRU in this paper, which is based on long short-term stock relationships and an improved GRU input. Firstly, we construct a long short-term relationship matrix between stocks, where secondary industry information is employed for the first time to capture long-term relationships of stocks, and overnight price information is utilized to establish short-term relationships. Next, we improve the inputs of the GRU model at each step, enabling the model to more effectively integrate temporal information and long short-term relationship information, thereby significantly improving the accuracy of predicting stock trend changes. Finally, through extensive experiments on multiple datasets from stock markets in China and the United States, we validate the superiority of the proposed LSR-IGRU model over the current state-of-the-art baseline models. We also apply the proposed model to the algorithmic trading system of a financial company, achieving significantly higher cumulative portfolio returns compared to other baseline methods. Our sources are released at https://github.com/ZP1481616577/Baselines_LSR-IGRU.
-]]></content:encoded>
-<pubDate>Tue, 13 May 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Unfitted finite element modelling of surface-bulk viscous flows in animal cells</title>
-<link>https://arxiv.org/abs/2505.05723</link>
-<guid>https://arxiv.org/abs/2505.05723</guid>
-<content:encoded><![CDATA[
-<div> Keywords: unfitted finite element framework, surface-bulk problems, cortex-cytoplasm interactions, cell division, computational modelling
-
-Summary: 
-This work introduces a novel unfitted finite element framework for simulating surface-bulk problems in time-dependent domains, specifically focusing on fluid-fluid interactions in animal cells. The framework addresses the challenges of modelling cortical contractions that induce surface flows and intracellular flow within large animal cells. By combining the trace finite element method for surface flows with the aggregated finite element method for bulk flows, the framework enables accurate and stable simulations on fixed Cartesian grids without remeshing. Additionally, it incorporates mechanochemical feedback through the surface transport of a molecular regulator of active tension. The method's accuracy and stability are validated through numerical experiments, showcasing its ability to capture phenomena such as self-organized pattern formation, curvature-driven relaxation, and cell cleavage. This innovative framework provides a versatile tool for studying complex morphogenetic processes in animal cells. 
-
-<br /><br />Summary: <div>
-arXiv:2505.05723v1 Announce Type: new 
-Abstract: This work presents a novel unfitted finite element framework to simulate coupled surface-bulk problems in time-dependent domains, focusing on fluid-fluid interactions in animal cells between the actomyosin cortex and the cytoplasm. The cortex, a thin layer beneath the plasma membrane, provides structural integrity and drives shape changes by generating surface contractile forces akin to tension. Cortical contractions generate Marangoni-like surface flows and induce intracellular cytoplasmic flows that are essential for processes such as cell division, migration, and polarization, particularly in large animal cells. Despite its importance, the spatiotemporal regulation of cortex-cytoplasm interactions remains poorly understood and computational modelling can be very challenging because surface-bulk dynamics often lead to large cell deformations. To address these challenges, we propose a sharp-interface framework that uniquely combines the trace finite element method for surface flows with the aggregated finite element method for bulk flows. This approach enables accurate and stable simulations on fixed Cartesian grids without remeshing. The model also incorporates mechanochemical feedback through the surface transport of a molecular regulator of active tension. We solve the resulting mixed-dimensional system on a fixed Cartesian grid using a level-set-based method to track the evolving surface. Numerical experiments validate the accuracy and stability of the method, capturing phenomena such as self-organised pattern formation, curvature-driven relaxation, and cell cleavage. This novel framework offers a powerful and extendable tool for investigating increasingly complex morphogenetic processes in animal cells.
-]]></content:encoded>
-<pubDate>Mon, 12 May 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Trading Under Uncertainty: A Distribution-Based Strategy for Futures Markets Using FutureQuant Transformer</title>
-<link>https://arxiv.org/abs/2505.05595</link>
-<guid>https://arxiv.org/abs/2505.05595</guid>
-<content:encoded><![CDATA[
-<div> Transformer model, futures trading, price predictions, attention mechanisms, risk management 
-Summary:
-The FutureQuant Transformer model is introduced to predict future price ranges and volatility in futures trading. Unlike traditional models, it focuses on forecasting ranges and volatility rather than point predictions, providing richer insights for trading strategies. By leveraging attention mechanisms to analyze complex data like real-time Limit Order Books, the model significantly improves decision-making and risk management in trading. Through its ability to learn intricate market patterns, it achieved an average gain of 0.1193% per 30-minute trade, outperforming state-of-the-art models. The model uses factors such as RSI, ATR, and Bollinger Bands in a simple algorithm to make accurate predictions, marking a substantial advancement in predictive analytics for futures trading. 
-<br /><br />Summary: <div>
-arXiv:2505.05595v1 Announce Type: cross 
-Abstract: In the complex landscape of traditional futures trading, where vast data and variables like real-time Limit Order Books (LOB) complicate price predictions, we introduce the FutureQuant Transformer model, leveraging attention mechanisms to navigate these challenges. Unlike conventional models focused on point predictions, the FutureQuant model excels in forecasting the range and volatility of future prices, thus offering richer insights for trading strategies. Its ability to parse and learn from intricate market patterns allows for enhanced decision-making, significantly improving risk management and achieving a notable average gain of 0.1193% per 30-minute trade over state-of-the-art models with a simple algorithm using factors such as RSI, ATR, and Bollinger Bands. This innovation marks a substantial leap forward in predictive analytics within the volatile domain of futures trading.
-]]></content:encoded>
-<pubDate>Mon, 12 May 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>The Evolution of Embedding Table Optimization and Multi-Epoch Training in Pinterest Ads Conversion</title>
-<link>https://arxiv.org/abs/2505.05605</link>
-<guid>https://arxiv.org/abs/2505.05605</guid>
-<content:encoded><![CDATA[
-<div> Keywords: Deep Learning, Conversion Prediction, Embedding Tables, Multi-Task Model, Overfitting<br />
-<br />
-Summary: 
-Deep learning models for conversion prediction in online advertising often require complex training to predict multiple objectives. The use of embedding tables encoding high cardinality categorical features can enhance model performance but poses challenges due to gradient sparsity and label sparsity. Pinterest Ads Conversion models utilize Sparse Optimizer to improve convergence speed and address multi-epoch overfitting. The severity of overfitting varies across objectives in a multi-task model based on label sparsity. A new approach using frequency-adaptive learning rates on embedding tables is proposed to mitigate multi-epoch overfitting, compared to re-initialization. Evaluation on a large-scale production dataset demonstrates the effectiveness of these techniques in enhancing model performance without sacrificing accuracy.<br /><br />Summary: <div>
-arXiv:2505.05605v1 Announce Type: cross 
-Abstract: Deep learning for conversion prediction has found widespread applications in online advertising. These models have become more complex as they are trained to jointly predict multiple objectives such as click, add-to-cart, checkout and other conversion types. Additionally, the capacity and performance of these models can often be increased with the use of embedding tables that encode high cardinality categorical features such as advertiser, user, campaign, and product identifiers (IDs). These embedding tables can be pre-trained, but also learned end-to-end jointly with the model to directly optimize the model objectives. Training these large tables is challenging due to: gradient sparsity, the high cardinality of the categorical features, the non-uniform distribution of IDs and the very high label sparsity. These issues make training prone to both slow convergence and overfitting after the first epoch. Previous works addressed the multi-epoch overfitting issue by using: stronger feature hashing to reduce cardinality, filtering of low frequency IDs, regularization of the embedding tables, re-initialization of the embedding tables after each epoch, etc. Some of these techniques reduce overfitting at the expense of reduced model performance if used too aggressively. In this paper, we share key learnings from the development of embedding table optimization and multi-epoch training in Pinterest Ads Conversion models. We showcase how our Sparse Optimizer speeds up convergence, and how multi-epoch overfitting varies in severity between different objectives in a multi-task model depending on label sparsity. We propose a new approach to deal with multi-epoch overfitting: the use of a frequency-adaptive learning rate on the embedding tables and compare it to embedding re-initialization. We evaluate both methods offline using an industrial large-scale production dataset.
-]]></content:encoded>
-<pubDate>Mon, 12 May 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Characterizing GPU Energy Usage in Exascale-Ready Portable Science Applications</title>
-<link>https://arxiv.org/abs/2505.05623</link>
-<guid>https://arxiv.org/abs/2505.05623</guid>
-<content:encoded><![CDATA[
-<div> quantum Monte Carlo, adaptive mesh, GPU energy usage, exascale-ready applications, mixed-precision
-
-Summary:<br />
-The study focuses on analyzing the GPU energy usage of two exascale-ready applications, QMCPACK and AMReX-Castro, representing particle and mesh solvers, respectively. Using NVIDIA's A100 and H100 GPUs and AMD's MI250X GPUs, power, temperature, utilization, and energy traces were examined. The research highlights the energy-saving potential of mixed-precision computations, with savings ranging from 6-25% for QMCPACK and 45% for AMReX-Castro. Challenges remain in the AMD tooling for Frontier GPUs, while NVML query resolutions exhibit little variability. The study underscores the importance of application-specific metrics in informing energy-performance trade-offs and optimizing future supercomputer architectures in the post-Moore era.<br /> 
-
-Summary: <div>
-arXiv:2505.05623v1 Announce Type: cross 
-Abstract: We characterize the GPU energy usage of two widely adopted exascale-ready applications representing two classes of particle and mesh solvers: (i) QMCPACK, a quantum Monte Carlo package, and (ii) AMReX-Castro, an adaptive mesh astrophysical code. We analyze power, temperature, utilization, and energy traces from double-/single (mixed)-precision benchmarks on NVIDIA's A100 and H100 and AMD's MI250X GPUs using queries in NVML and rocm smi lib, respectively. We explore application-specific metrics to provide insights on energy vs. performance trade-offs. Our results suggest that mixed-precision energy savings range between 6-25% on QMCPACK and 45% on AMReX-Castro. Also there are still gaps in the AMD tooling on Frontier GPUs that need to be understood, while query resolutions on NVML have little variability between 1 ms and 1 s. Overall, application level knowledge is crucial to define energy-cost/science-benefit opportunities for the codesign of future supercomputer architectures in the post-Moore era.
-]]></content:encoded>
-<pubDate>Mon, 12 May 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>FlowHFT: Flow Policy Induced Optimal High-Frequency Trading under Diverse Market Conditions</title>
-<link>https://arxiv.org/abs/2505.05784</link>
-<guid>https://arxiv.org/abs/2505.05784</guid>
-<content:encoded><![CDATA[
-<div> Framework, High-frequency trading, Imitation learning, Flow matching policy, Market conditions
-
-Summary:
-FlowHFT is an imitation learning framework designed for high-frequency trading (HFT) that addresses the limitations of traditional HFT approaches. It simultaneously learns strategies from various expert models, allowing for adaptive adjustment of investment decisions based on market conditions. The framework incorporates a grid-search fine-tuning mechanism to refine strategies and outperform expert strategies in complex market scenarios. Through testing in multiple market environments, FlowHFT consistently achieves superior performance compared to individual expert models, showcasing its effectiveness in dynamic and diverse market conditions. The flow matching policy utilized in FlowHFT enables the framework to learn trading strategies under different market scenarios, demonstrating its applicability in stochastic market environments. This innovative approach offers a promising solution for HFT strategies in real-world markets. 
-
-<br /><br />Summary: <div>
-arXiv:2505.05784v1 Announce Type: cross 
-Abstract: High-frequency trading (HFT) is an investing strategy that continuously monitors market states and places bid and ask orders at millisecond speeds. Traditional HFT approaches fit models with historical data and assume that future market states follow similar patterns. This limits the effectiveness of any single model to the specific conditions it was trained for. Additionally, these models achieve optimal solutions only under specific market conditions, such as assumptions about stock price's stochastic process, stable order flow, and the absence of sudden volatility. Real-world markets, however, are dynamic, diverse, and frequently volatile. To address these challenges, we propose the FlowHFT, a novel imitation learning framework based on flow matching policy. FlowHFT simultaneously learns strategies from numerous expert models, each proficient in particular market scenarios. As a result, our framework can adaptively adjust investment decisions according to the prevailing market state. Furthermore, FlowHFT incorporates a grid-search fine-tuning mechanism. This allows it to refine strategies and achieve superior performance even in complex or extreme market scenarios where expert strategies may be suboptimal. We test FlowHFT in multiple market environments. We first show that flow matching policy is applicable in stochastic market environments, thus enabling FlowHFT to learn trading strategies under different market conditions. Notably, our single framework consistently achieves performance superior to the best expert for each market condition.
-]]></content:encoded>
-<pubDate>Mon, 12 May 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Using iterated local alignment to aggregate trajectory data into a traffic flow map</title>
-<link>https://arxiv.org/abs/2406.17500</link>
-<guid>https://arxiv.org/abs/2406.17500</guid>
-<content:encoded><![CDATA[
-<div> Keywords: vehicle trajectories, traffic flow maps, measurement noise, local alignment algorithms, spatial resolution
-
-Summary: 
-Vehicle trajectories are valuable data for generating traffic flow maps at various scales. However, the presence of measurement noise can make small-scale aggregation challenging. To address this issue, new local alignment algorithms are introduced to align road segments for accurate flow mapping. These algorithms use inferred road segments as reference points and iterate through the process to compute locally aligned flow maps. Testing on synthetic and real-world data shows that the locally aligned maps provide precise flow aggregation at multiple scales, enhancing the accuracy and spatial resolution of static and interactive maps. The innovative approach offers a solution to the noise-related challenges in small-scale flow aggregation, making it possible to generate detailed and reliable traffic flow maps for effective traffic management and planning.<br /><br />Summary: <div>
-arXiv:2406.17500v4 Announce Type: replace-cross 
-Abstract: Vehicle trajectories, with their detailed geolocations, are a promising data source to compute traffic flow maps at scales ranging from the city/regional level to the road level. The main obstacle is that trajectory data are prone to measurement noise. While this is negligible for city level large-scale flow aggregation, it poses substantial difficulties for road level small-scale aggregation. To overcome these difficulties, we introduce innovative local alignment algorithms, where we infer road segments to serve as local reference segments, and proceed to align nearby road segments to them. We deploy these algorithms in an iterative workflow to compute locally aligned flow maps. By applying this workflow to synthetic and empirical trajectories, we verify that our locally aligned flow maps provide high levels of accuracy and spatial resolution of flow aggregation at multiple scales for static and interactive maps.
-]]></content:encoded>
-<pubDate>Mon, 12 May 2025 00:00:00 -0400</pubDate>
 </item>
 </channel>
 </rss>
