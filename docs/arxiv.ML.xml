@@ -4,6 +4,7 @@
 <title>cs.LG updates on arXiv.org</title>
 <link>http://rss.arxiv.org/rss/cs.LG</link>
 
+
 <item>
 <title>Learning What Matters: Steering Diffusion via Spectrally Anisotropic Forward Noise</title>
 <link>https://arxiv.org/abs/2510.09660</link>
@@ -14,11 +15,10 @@
 Summary:
 Anisotropic noise is introduced in diffusion probabilistic models to incorporate inductive biases by shaping the training and sampling process. This spectrally anisotropic Gaussian diffusion (SAGD) operator replaces isotropic forward covariance with a structured, frequency-diagonal covariance, allowing for the manipulation of designated frequency bands. By deriving the score relation for anisotropic covariances, it is shown that the learned score converges to the true data score as time approaches zero, impacting the probability flow path from noise to data. Empirical results demonstrate that the induced anisotropy improves performance on various vision datasets and enables selective omission of known corruptions in specific bands. This approach provides a simple yet principled method for tailoring inductive bias in DPMs. 
 
-<br><br>Summary: <div>
+<br /><br />Summary: <div>
 arXiv:2510.09660v2 Announce Type: replace 
 Abstract: Diffusion Probabilistic Models (DPMs) have achieved strong generative performance, yet their inductive biases remain largely implicit. In this work, we aim to build inductive biases into the training and sampling of diffusion models to better accommodate the target distribution of the data to model. We introduce an anisotropic noise operator that shapes these biases by replacing the isotropic forward covariance with a structured, frequency-diagonal covariance. This operator unifies band-pass masks and power-law weightings, allowing us to emphasize or suppress designated frequency bands, while keeping the forward process Gaussian. We refer to this as spectrally anisotropic Gaussian diffusion (SAGD). In this work, we derive the score relation for anisotropic covariances and show that, under full support, the learned score converges to the true data score as $t\!\to\!0$, while anisotropy reshapes the probability-flow path from noise to data. Empirically, we show the induced anisotropy outperforms standard diffusion across several vision datasets, and enables selective omission: learning while ignoring known corruptions confined to specific bands. Together, these results demonstrate that carefully designed anisotropic forward noise provides a simple, yet principled, handle to tailor inductive bias in DPMs.
 ]]></content:encoded>
-<pubDate>Mon, 20 Oct 2025 00:00:00 -0400</pubDate>
 <pubDate>Mon, 20 Oct 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -31,14 +31,12 @@ Abstract: Diffusion Probabilistic Models (DPMs) have achieved strong generative 
 Summary: 
 Molecular property prediction is essential in drug discovery and materials science but faces challenges with interpretability and generalization. The proposed MPPReasoner model combines chemical reasoning with a large language model to improve molecular property prediction. By incorporating molecular images and SMILES strings, the model enhances molecular understanding. A two-stage training strategy is utilized, including supervised fine-tuning and Reinforcement Learning from Principle-Guided Rewards. MPPReasoner outperforms existing models on multiple datasets, showing superior performance on both in-distribution and out-of-distribution tasks. The model demonstrates strong cross-task generalization and generates chemically sound reasoning paths, providing valuable insights for chemists. This approach significantly enhances interpretability and practical utility in molecular property analysis. Access to the code for MPPReasoner is available for further exploration. 
 
-<br><br>Summary: <div>
+<br /><br />Summary: <div>
 arXiv:2510.10248v2 Announce Type: replace 
 Abstract: Molecular property prediction is crucial for drug discovery and materials science, yet existing approaches suffer from limited interpretability, poor cross-task generalization, and lack of chemical reasoning capabilities. Traditional machine learning models struggle with task transferability, while specialized molecular language models provide little insight into their decision-making processes. To address these limitations, we propose \textbf{MPPReasoner}, a multimodal large language model that incorporates chemical reasoning for molecular property prediction. Our approach, built upon Qwen2.5-VL-7B-Instruct, integrates molecular images with SMILES strings to enable comprehensive molecular understanding. We develop a two-stage training strategy: supervised fine-tuning (SFT) using 16,000 high-quality reasoning trajectories generated through expert knowledge and multiple teacher models, followed by Reinforcement Learning from Principle-Guided Rewards (RLPGR). RLPGR employs verifiable, rule-based rewards that systematically evaluate chemical principle application, molecular structure analysis, and logical consistency through computational verification. Extensive experiments across 8 datasets demonstrate significant performance improvements, with MPPReasoner outperforming the best baselines by 7.91\% and 4.53\% on in-distribution and out-of-distribution tasks respectively. MPPReasoner exhibits exceptional cross-task generalization and generates chemically sound reasoning paths that provide valuable insights into molecular property analysis, substantially enhancing both interpretability and practical utility for chemists. Code is available at https://anonymous.4open.science/r/MPPReasoner-12687.
 ]]></content:encoded>
 <pubDate>Mon, 20 Oct 2025 00:00:00 -0400</pubDate>
-<pubDate>Mon, 20 Oct 2025 00:00:00 -0400</pubDate>
 </item>
-
 <item>
 <title>Extending Load Forecasting from Zonal Aggregates to Individual Nodes for Transmission System Operators</title>
 <link>https://arxiv.org/abs/2510.14983</link>
@@ -11044,26 +11042,6 @@ Abstract: Safe and interpretable motion planning in complex urban environments n
 <content:encoded><![CDATA[
 arXiv:2510.12744v1 Announce Type: cross 
 Abstract: We develop a unified statistical framework for softmax-gated Gaussian mixture of experts (SGMoE) that addresses three long-standing obstacles in parameter estimation and model selection: (i) non-identifiability of gating parameters up to common translations, (ii) intrinsic gate-expert interactions that induce coupled differential relations in the likelihood, and (iii) the tight numerator-denominator coupling in the softmax-induced conditional density. Our approach introduces Voronoi-type loss functions aligned with the gate-partition geometry and establishes finite-sample convergence rates for the maximum likelihood estimator (MLE). In over-specified models, we reveal a link between the MLE's convergence rate and the solvability of an associated system of polynomial equations characterizing near-nonidentifiable directions. For model selection, we adapt dendrograms of mixing measures to SGMoE, yielding a consistent, sweep-free selector of the number of experts that attains pointwise-optimal parameter rates under overfitting while avoiding multi-size training. Simulations on synthetic data corroborate the theory, accurately recovering the expert count and achieving the predicted rates for parameter estimation while closely approximating the regression function. Under model misspecification (e.g., $\epsilon$-contamination), the dendrogram selection criterion is robust, recovering the true number of mixture components, while the Akaike information criterion, the Bayesian information criterion, and the integrated completed likelihood tend to overselect as sample size grows. On a maize proteomics dataset of drought-responsive traits, our dendrogram-guided SGMoE selects two experts, exposes a clear mixing-measure hierarchy, stabilizes the likelihood early, and yields interpretable genotype-phenotype maps, outperforming standard criteria without multi-size training.
-]]></content:encoded>
-<pubDate>Wed, 15 Oct 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>VQArt-Bench: A semantically rich VQA Benchmark for Art and Cultural Heritage</title>
-<link>https://arxiv.org/abs/2510.12750</link>
-<guid>https://arxiv.org/abs/2510.12750</guid>
-<content:encoded><![CDATA[
-arXiv:2510.12750v1 Announce Type: cross 
-Abstract: Multimodal Large Language Models (MLLMs) have demonstrated significant capabilities in joint visual and linguistic tasks. However, existing Visual Question Answering (VQA) benchmarks often fail to evaluate deep semantic understanding, particularly in complex domains like visual art analysis. Confined to simple syntactic structures and surface-level attributes, these questions fail to capture the diversity and depth of human visual inquiry. This limitation incentivizes models to exploit statistical shortcuts rather than engage in visual reasoning. To address this gap, we introduce VQArt-Bench, a new, large-scale VQA benchmark for the cultural heritage domain. This benchmark is constructed using a novel multi-agent pipeline where specialized agents collaborate to generate nuanced, validated, and linguistically diverse questions. The resulting benchmark is structured along relevant visual understanding dimensions that probe a model's ability to interpret symbolic meaning, narratives, and complex visual relationships. Our evaluation of 14 state-of-the-art MLLMs on this benchmark reveals significant limitations in current models, including a surprising weakness in simple counting tasks and a clear performance gap between proprietary and open-source models.
-]]></content:encoded>
-<pubDate>Wed, 15 Oct 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>AnyUp: Universal Feature Upsampling</title>
-<link>https://arxiv.org/abs/2510.12764</link>
-<guid>https://arxiv.org/abs/2510.12764</guid>
-<content:encoded><![CDATA[
-arXiv:2510.12764v1 Announce Type: cross 
-Abstract: We introduce AnyUp, a method for feature upsampling that can be applied to any vision feature at any resolution, without encoder-specific training. Existing learning-based upsamplers for features like DINO or CLIP need to be re-trained for every feature extractor and thus do not generalize to different feature types at inference time. In this work, we propose an inference-time feature-agnostic upsampling architecture to alleviate this limitation and improve upsampling quality. In our experiments, AnyUp sets a new state of the art for upsampled features, generalizes to different feature types, and preserves feature semantics while being efficient and easy to apply to a wide range of downstream tasks.
 ]]></content:encoded>
 <pubDate>Wed, 15 Oct 2025 00:00:00 -0400</pubDate>
 </item>

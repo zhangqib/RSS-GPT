@@ -4,6 +4,7 @@
 <title>cs.AI updates on arXiv.org</title>
 <link>http://rss.arxiv.org/rss/cs.AI</link>
 
+
 <item>
 <title>Learning What Matters: Steering Diffusion via Spectrally Anisotropic Forward Noise</title>
 <link>https://arxiv.org/abs/2510.09660</link>
@@ -14,11 +15,10 @@
 Summary:
 Diffusion Probabilistic Models (DPMs) have shown strong generative performance, but their inductive biases are not explicitly defined. This study introduces an anisotropic noise operator, called spectrally anisotropic Gaussian diffusion (SAGD), to incorporate inductive biases into DPM training and sampling. By replacing the isotropic forward covariance with a structured, frequency-diagonal covariance, SAGD allows for the emphasis or suppression of specific frequency bands while maintaining a Gaussian forward process. The derived score relation for anisotropic covariances shows that the learned score converges to the true data score with anisotropy reshaping the probability-flow path from noise to data. Empirical results demonstrate that the induced anisotropy in SAGD surpasses standard diffusion methods on various vision datasets and enables selective omission of known corruptions within specific bands. This showcases the efficacy of utilizing anisotropic forward noise to customize inductive bias in DPMs.
 
-<br><br>Summary: <div>
+<br /><br />Summary: <div>
 arXiv:2510.09660v2 Announce Type: replace-cross 
 Abstract: Diffusion Probabilistic Models (DPMs) have achieved strong generative performance, yet their inductive biases remain largely implicit. In this work, we aim to build inductive biases into the training and sampling of diffusion models to better accommodate the target distribution of the data to model. We introduce an anisotropic noise operator that shapes these biases by replacing the isotropic forward covariance with a structured, frequency-diagonal covariance. This operator unifies band-pass masks and power-law weightings, allowing us to emphasize or suppress designated frequency bands, while keeping the forward process Gaussian. We refer to this as spectrally anisotropic Gaussian diffusion (SAGD). In this work, we derive the score relation for anisotropic covariances and show that, under full support, the learned score converges to the true data score as $t\!\to\!0$, while anisotropy reshapes the probability-flow path from noise to data. Empirically, we show the induced anisotropy outperforms standard diffusion across several vision datasets, and enables selective omission: learning while ignoring known corruptions confined to specific bands. Together, these results demonstrate that carefully designed anisotropic forward noise provides a simple, yet principled, handle to tailor inductive bias in DPMs.
 ]]></content:encoded>
-<pubDate>Mon, 20 Oct 2025 00:00:00 -0400</pubDate>
 <pubDate>Mon, 20 Oct 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -26,17 +26,15 @@ Abstract: Diffusion Probabilistic Models (DPMs) have achieved strong generative 
 <link>https://arxiv.org/abs/2510.09869</link>
 <guid>https://arxiv.org/abs/2510.09869</guid>
 <content:encoded><![CDATA[
-<div> taxonomy, narrative-understanding tasks, benchmarks, subjective aspects, NLP<br>
-<br>
+<div> taxonomy, narrative-understanding tasks, benchmarks, subjective aspects, NLP<br />
+<br />
 Summary: 
 The article introduces NarraBench, a taxonomy of narrative-understanding tasks and reviews 78 existing benchmarks in the field. It identifies a need for new evaluations that address overlooked aspects of narrative understanding and are better aligned with existing metrics. Only 27% of narrative tasks are well covered by current benchmarks, with areas like narrative events, style, perspective, and revelation being underrepresented. There is a pressing need for benchmarks that can assess subjective and perspectival elements of narratives where there is no single correct answer. This work is beneficial for NLP researchers interested in testing Language Model (LLM) narrative comprehension. <div>
 arXiv:2510.09869v2 Announce Type: replace-cross 
 Abstract: We present NarraBench, a theory-informed taxonomy of narrative-understanding tasks, as well as an associated survey of 78 existing benchmarks in the area. We find significant need for new evaluations covering aspects of narrative understanding that are either overlooked in current work or are poorly aligned with existing metrics. Specifically, we estimate that only 27% of narrative tasks are well captured by existing benchmarks, and we note that some areas -- including narrative events, style, perspective, and revelation -- are nearly absent from current evaluations. We also note the need for increased development of benchmarks capable of assessing constitutively subjective and perspectival aspects of narrative, that is, aspects for which there is generally no single correct answer. Our taxonomy, survey, and methodology are of value to NLP researchers seeking to test LLM narrative understanding.
 ]]></content:encoded>
 <pubDate>Mon, 20 Oct 2025 00:00:00 -0400</pubDate>
-<pubDate>Mon, 20 Oct 2025 00:00:00 -0400</pubDate>
 </item>
-
 <item>
 <title>OpenEstimate: Evaluating LLMs on Reasoning Under Uncertainty with Real-World Data</title>
 <link>https://arxiv.org/abs/2510.15096</link>
@@ -11014,26 +11012,6 @@ Abstract: Offline Reinforcement Learning (RL) enables policy improvement from fi
 <content:encoded><![CDATA[
 arXiv:2404.07214v4 Announce Type: replace-cross 
 Abstract: The advent of Large Language Models (LLMs) has significantly reshaped the trajectory of the AI revolution. Nevertheless, these LLMs exhibit a notable limitation, as they are primarily adept at processing textual information. To address this constraint, researchers have endeavored to integrate visual capabilities with LLMs, resulting in the emergence of Vision-Language Models (VLMs). These advanced models are instrumental in tackling more intricate tasks such as image captioning and visual question answering. In our comprehensive survey paper, we delve into the key advancements within the realm of VLMs. Our classification organizes VLMs into three distinct categories: models dedicated to vision-language understanding, models that process multimodal inputs to generate unimodal (textual) outputs and models that both accept and produce multimodal inputs and outputs.This classification is based on their respective capabilities and functionalities in processing and generating various modalities of data.We meticulously dissect each model, offering an extensive analysis of its foundational architecture, training data sources, as well as its strengths and limitations wherever possible, providing readers with a comprehensive understanding of its essential components. We also analyzed the performance of VLMs in various benchmark datasets. By doing so, we aim to offer a nuanced understanding of the diverse landscape of VLMs. Additionally, we underscore potential avenues for future research in this dynamic domain, anticipating further breakthroughs and advancements.
-]]></content:encoded>
-<pubDate>Wed, 15 Oct 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>ACCO: Accumulate While You Communicate for Communication-Overlapped Sharded LLM Training</title>
-<link>https://arxiv.org/abs/2406.02613</link>
-<guid>https://arxiv.org/abs/2406.02613</guid>
-<content:encoded><![CDATA[
-arXiv:2406.02613v3 Announce Type: replace-cross 
-Abstract: Training LLMs relies on distributed implementations using multiple GPUs to compute gradients in parallel with sharded optimizers. However, synchronizing gradients in data parallel setups introduces communication overhead that grows with the number of workers, limiting parallelization efficiency. Local optimization algorithms reduce communications but incur high memory costs as they prevent optimizer state sharding, hindering scalability. To address this, we propose \textbf{AC}cumulate while \textbf{CO}mmunicate (ACCO), a memory-efficient optimization algorithm for distributed LLM training. By synchronizing delayed gradients while computing new ones, ACCO reduces GPU idle time and supports heterogeneous hardware. To mitigate the convergence issues caused by delayed updates, we introduce a novel technique ensuring training dynamics align with standard distributed optimization. Compared to ZeRO-1, our approach is significantly faster and scales effectively across heterogeneous hardware.
-]]></content:encoded>
-<pubDate>Wed, 15 Oct 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Assessing Latency in ASR Systems: A Methodological Perspective for Real-Time Use</title>
-<link>https://arxiv.org/abs/2409.05674</link>
-<guid>https://arxiv.org/abs/2409.05674</guid>
-<content:encoded><![CDATA[
-arXiv:2409.05674v3 Announce Type: replace-cross 
-Abstract: Automatic speech recognition (ASR) systems generate real-time transcriptions but often miss nuances that human interpreters capture. While ASR is useful in many contexts, interpreters-who already use ASR tools such as Dragon-add critical value, especially in sensitive settings such as diplomatic meetings where subtle language is key. Human interpreters not only perceive these nuances but can adjust in real time, improving accuracy, while ASR handles basic transcription tasks. However, ASR systems introduce a delay that does not align with real-time interpretation needs. The user-perceived latency of ASR systems differs from that of interpretation because it measures the time between speech and transcription delivery. To address this, we propose a new approach to measuring delay in ASR systems and validate if they are usable in live interpretation scenarios.
 ]]></content:encoded>
 <pubDate>Wed, 15 Oct 2025 00:00:00 -0400</pubDate>
 </item>
