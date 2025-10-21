@@ -4,19 +4,19 @@
 <title>cs.CV updates on arXiv.org</title>
 <link>http://rss.arxiv.org/rss/cs.CV</link>
 
+
 <item>
 <title>When Does Supervised Training Pay Off? The Hidden Economics of Object Detection in the Era of Vision-Language Models</title>
 <link>https://arxiv.org/abs/2510.11302</link>
 <guid>https://arxiv.org/abs/2510.11302</guid>
 <content:encoded><![CDATA[
-<div> YOLO, Gemini, GPT-4, cost-effectiveness analysis, object detection<br>
-<br>
-Summary: <br>
+<div> YOLO, Gemini, GPT-4, cost-effectiveness analysis, object detection<br />
+<br />
+Summary: <br />
 The study compares the cost-effectiveness of supervised YOLO and zero-shot vision-language models Gemini Flash 2.5 and GPT-4 for object detection. Supervised YOLO achieves higher accuracy (91.2%) compared to Gemini (68.5%) and GPT-4 (71.3%) on standard categories. However, the annotation expense for a 100-category system is $10,800, making the accuracy advantage of YOLO worthwhile only beyond 55 million inferences. For diverse product categories, Gemini and GPT-4 outperform supervised YOLO, achieving 52.3% and 55.1% accuracy, respectively. Gemini has the lowest cost-per-correct-detection at $0.00050, followed by GPT-4 at $0.00067, while YOLO is significantly higher at $0.143. The choice of architecture depends on factors such as inference volume, category stability, budget, and accuracy requirements, as illustrated by decision frameworks provided in the study. <div>
 arXiv:2510.11302v2 Announce Type: replace 
 Abstract: Object detection traditionally relies on costly manual annotation. We present the first comprehensive cost-effectiveness analysis comparing supervised YOLO and zero-shot vision-language models (Gemini Flash 2.5 and GPT-4). Evaluated on 5,000 stratified COCO images and 500 diverse product images, combined with Total Cost of Ownership modeling, we derive break-even thresholds for architecture selection. Results show supervised YOLO attains 91.2% accuracy versus 68.5% for Gemini and 71.3% for GPT-4 on standard categories; the annotation expense for a 100-category system is $10,800, and the accuracy advantage only pays off beyond 55 million inferences (151,000 images/day for one year). On diverse product categories Gemini achieves 52.3% and GPT-4 55.1%, while supervised YOLO cannot detect untrained classes. Cost-per-correct-detection favors Gemini ($0.00050) and GPT-4 ($0.00067) over YOLO ($0.143) at 100,000 inferences. We provide decision frameworks showing that optimal architecture choice depends on inference volume, category stability, budget, and accuracy requirements.
 ]]></content:encoded>
-<pubDate>Tue, 21 Oct 2025 00:00:00 -0400</pubDate>
 <pubDate>Tue, 21 Oct 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -32,7 +32,6 @@ arXiv:2510.11387v2 Announce Type: replace
 Abstract: Modeling reflections from 2D images is essential for photorealistic rendering and novel view synthesis. Recent approaches enhance Gaussian primitives with reflection-related material attributes to enable physically based rendering (PBR) with Gaussian Splatting. However, the material inference often lacks sufficient constraints, especially under limited environment modeling, resulting in illumination aliasing and reduced generalization. In this work, we revisit the problem from a multi-view perspective and show that multi-view consistent material inference with more physically-based environment modeling is key to learning accurate reflections with Gaussian Splatting. To this end, we enforce 2D Gaussians to produce multi-view consistent material maps during deferred shading. We also track photometric variations across views to identify highly reflective regions, which serve as strong priors for reflection strength terms. To handle indirect illumination caused by inter-object occlusions, we further introduce an environment modeling strategy through ray tracing with 2DGS, enabling photorealistic rendering of indirect radiance. Experiments on widely used benchmarks show that our method faithfully recovers both illumination and geometry, achieving state-of-the-art rendering quality in novel views synthesis.
 ]]></content:encoded>
 <pubDate>Tue, 21 Oct 2025 00:00:00 -0400</pubDate>
-<pubDate>Tue, 21 Oct 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
 <title>ImpMIA: Leveraging Implicit Bias for Membership Inference Attack under Realistic Scenarios</title>
@@ -47,23 +46,20 @@ arXiv:2510.10625v2 Announce Type: replace-cross
 Abstract: Determining which data samples were used to train a model-known as Membership Inference Attack (MIA)-is a well-studied and important problem with implications for data privacy. Black-box methods presume access only to the model's outputs and often rely on training auxiliary reference models. While they have shown strong empirical performance, they rely on assumptions that rarely hold in real-world settings: (i) the attacker knows the training hyperparameters; (ii) all available non-training samples come from the same distribution as the training data; and (iii) the fraction of training data in the evaluation set is known. In this paper, we demonstrate that removing these assumptions leads to a significant drop in the performance of black-box attacks. We introduce ImpMIA, a Membership Inference Attack that exploits the Implicit Bias of neural networks, hence removes the need to rely on any reference models and their assumptions. ImpMIA is a white-box attack -- a setting which assumes access to model weights and is becoming increasingly realistic given that many models are publicly available (e.g., via Hugging Face). Building on maximum-margin implicit bias theory, ImpMIA uses the Karush-Kuhn-Tucker (KKT) optimality conditions to identify training samples. This is done by finding the samples whose gradients most strongly reconstruct the trained model's parameters. As a result, ImpMIA achieves state-of-the-art performance compared to both black and white box attacks in realistic settings where only the model weights and a superset of the training data are available.
 ]]></content:encoded>
 <pubDate>Tue, 21 Oct 2025 00:00:00 -0400</pubDate>
-<pubDate>Tue, 21 Oct 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
 <title>JND-Guided Light-Weight Neural Pre-Filter for Perceptual Image Coding</title>
 <link>https://arxiv.org/abs/2510.10648</link>
 <guid>https://arxiv.org/abs/2510.10648</guid>
 <content:encoded><![CDATA[
-<div> Pytorch, benchmark, JND-Guided, CNN, compression <br>
+<div> Pytorch, benchmark, JND-Guided, CNN, compression <br />
 Summary: 
-The paper introduces a unified benchmark, FJNDF-Pytorch, for evaluating frequency-domain JND-Guided pre-filters for image compression. A lightweight Convolutional Neural Network (CNN) is proposed within this framework, achieving superior compression efficiency compared to existing methods. The model outperforms competitors on multiple datasets and encoders while maintaining low computational cost, requiring only 7.15 GFLOPs to process a 1080p image. This cost is merely 14.1% of that of recent lightweight networks. The approach offers a robust solution that excels in both performance and efficiency and is supported by an open-source platform for reproducible research. The implementation is available on GitHub at https://github.com/viplab-fudan/FJNDF-Pytorch. <br> <div>
+The paper introduces a unified benchmark, FJNDF-Pytorch, for evaluating frequency-domain JND-Guided pre-filters for image compression. A lightweight Convolutional Neural Network (CNN) is proposed within this framework, achieving superior compression efficiency compared to existing methods. The model outperforms competitors on multiple datasets and encoders while maintaining low computational cost, requiring only 7.15 GFLOPs to process a 1080p image. This cost is merely 14.1% of that of recent lightweight networks. The approach offers a robust solution that excels in both performance and efficiency and is supported by an open-source platform for reproducible research. The implementation is available on GitHub at https://github.com/viplab-fudan/FJNDF-Pytorch. <br /> <div>
 arXiv:2510.10648v2 Announce Type: replace-cross 
 Abstract: Just Noticeable Distortion (JND)-guided pre-filter is a promising technique for improving the perceptual compression efficiency of image coding. However, existing methods are often computationally expensive, and the field lacks standardized benchmarks for fair comparison. To address these challenges, this paper introduces a twofold contribution. First, we develop and open-source FJNDF-Pytorch, a unified benchmark for frequency-domain JND-Guided pre-filters. Second, leveraging this platform, we propose a complete learning framework for a novel, lightweight Convolutional Neural Network (CNN). Experimental results demonstrate that our proposed method achieves state-of-the-art compression efficiency, consistently outperforming competitors across multiple datasets and encoders. In terms of computational cost, our model is exceptionally lightweight, requiring only 7.15 GFLOPs to process a 1080p image, which is merely 14.1% of the cost of recent lightweight network. Our work presents a robust, state-of-the-art solution that excels in both performance and efficiency, supported by a reproducible research platform. The open-source implementation is available at https://github.com/viplab-fudan/FJNDF-Pytorch.
 ]]></content:encoded>
 <pubDate>Tue, 21 Oct 2025 00:00:00 -0400</pubDate>
-<pubDate>Tue, 21 Oct 2025 00:00:00 -0400</pubDate>
 </item>
-
 <item>
 <title>ESCA: Contextualizing Embodied Agents via Scene-Graph Generation</title>
 <link>https://arxiv.org/abs/2510.15963</link>
@@ -11239,46 +11235,6 @@ Abstract: Recent advances in multimodal large language models (MLLMs) have shown
 <content:encoded><![CDATA[
 arXiv:2507.14697v2 Announce Type: replace 
 Abstract: Agricultural parcels serve as basic units for conducting agricultural practices and applications, which is vital for land ownership registration, food security assessment, soil erosion monitoring, etc. However, existing agriculture parcel extraction studies only focus on mid-resolution mapping or regular plain farmlands while lacking representation of complex terraced terrains due to the demands of precision agriculture.In this paper, we introduce a more fine-grained terraced parcel dataset named GTPBD (Global Terraced Parcel and Boundary Dataset), which is the first fine-grained dataset covering major worldwide terraced regions with more than 200,000 complex terraced parcels with manual annotation. GTPBD comprises 47,537 high-resolution images with three-level labels, including pixel-level boundary labels, mask labels, and parcel labels. It covers seven major geographic zones in China and transcontinental climatic regions around the world.Compared to the existing datasets, the GTPBD dataset brings considerable challenges due to the: (1) terrain diversity; (2) complex and irregular parcel objects; and (3) multiple domain styles. Our proposed GTPBD dataset is suitable for four different tasks, including semantic segmentation, edge detection, terraced parcel extraction, and unsupervised domain adaptation (UDA) tasks.Accordingly, we benchmark the GTPBD dataset on eight semantic segmentation methods, four edge extraction methods, three parcel extraction methods, and five UDA methods, along with a multi-dimensional evaluation framework integrating pixel-level and object-level metrics. GTPBD fills a critical gap in terraced remote sensing research, providing a basic infrastructure for fine-grained agricultural terrain analysis and cross-scenario knowledge transfer.
-]]></content:encoded>
-<pubDate>Wed, 15 Oct 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Finding Dori: Memorization in Text-to-Image Diffusion Models Is Not Local</title>
-<link>https://arxiv.org/abs/2507.16880</link>
-<guid>https://arxiv.org/abs/2507.16880</guid>
-<content:encoded><![CDATA[
-arXiv:2507.16880v2 Announce Type: replace 
-Abstract: Text-to-image diffusion models (DMs) have achieved remarkable success in image generation. However, concerns about data privacy and intellectual property remain due to their potential to inadvertently memorize and replicate training data. Recent mitigation efforts have focused on identifying and pruning weights responsible for triggering verbatim training data replication, based on the assumption that memorization can be localized. We challenge this assumption and demonstrate that, even after such pruning, small perturbations to the text embeddings of previously mitigated prompts can re-trigger data replication, revealing the fragility of such defenses. Our further analysis then provides multiple indications that memorization is indeed not inherently local: (1) replication triggers for memorized images are distributed throughout text embedding space; (2) embeddings yielding the same replicated image produce divergent model activations; and (3) different pruning methods identify inconsistent sets of memorization-related weights for the same image. Finally, we show that bypassing the locality assumption enables more robust mitigation through adversarial fine-tuning. These findings provide new insights into the nature of memorization in text-to-image DMs and inform the development of more reliable mitigations against DM memorization.
-]]></content:encoded>
-<pubDate>Wed, 15 Oct 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Capturing More: Learning Multi-Domain Representations for Robust Online Handwriting Verification</title>
-<link>https://arxiv.org/abs/2508.01427</link>
-<guid>https://arxiv.org/abs/2508.01427</guid>
-<content:encoded><![CDATA[
-arXiv:2508.01427v2 Announce Type: replace 
-Abstract: In this paper, we propose SPECTRUM, a temporal-frequency synergistic model that unlocks the untapped potential of multi-domain representation learning for online handwriting verification (OHV). SPECTRUM comprises three core components: (1) a multi-scale interactor that finely combines temporal and frequency features through dual-modal sequence interaction and multi-scale aggregation, (2) a self-gated fusion module that dynamically integrates global temporal and frequency features via self-driven balancing. These two components work synergistically to achieve micro-to-macro spectral-temporal integration. (3) A multi-domain distance-based verifier then utilizes both temporal and frequency representations to improve discrimination between genuine and forged handwriting, surpassing conventional temporal-only approaches. Extensive experiments demonstrate SPECTRUM's superior performance over existing OHV methods, underscoring the effectiveness of temporal-frequency multi-domain learning. Furthermore, we reveal that incorporating multiple handwritten biometrics fundamentally enhances the discriminative power of handwriting representations and facilitates verification. These findings not only validate the efficacy of multi-domain learning in OHV but also pave the way for future research in multi-domain approaches across both feature and biometric domains. Code is publicly available at https://github.com/NiceRingNode/SPECTRUM.
-]]></content:encoded>
-<pubDate>Wed, 15 Oct 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>mmWave Radar-Based Non-Line-of-Sight Pedestrian Localization at T-Junctions Utilizing Road Layout Extraction via Camera</title>
-<link>https://arxiv.org/abs/2508.02348</link>
-<guid>https://arxiv.org/abs/2508.02348</guid>
-<content:encoded><![CDATA[
-arXiv:2508.02348v2 Announce Type: replace 
-Abstract: Pedestrians Localization in Non-Line-of-Sight (NLoS) regions within urban environments poses a significant challenge for autonomous driving systems. While mmWave radar has demonstrated potential for detecting objects in such scenarios, the 2D radar point cloud (PCD) data is susceptible to distortions caused by multipath reflections, making accurate spatial inference difficult. Additionally, although camera images provide high-resolution visual information, they lack depth perception and cannot directly observe objects in NLoS regions. In this paper, we propose a novel framework that interprets radar PCD through road layout inferred from camera for localization of NLoS pedestrians. The proposed method leverages visual information from the camera to interpret 2D radar PCD, enabling spatial scene reconstruction. The effectiveness of the proposed approach is validated through experiments conducted using a radar-camera system mounted on a real vehicle. The localization performance is evaluated using a dataset collected in outdoor NLoS driving environments, demonstrating the practical applicability of the method.
-]]></content:encoded>
-<pubDate>Wed, 15 Oct 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Macro-from-Micro Planning for High-Quality and Parallelized Autoregressive Long Video Generation</title>
-<link>https://arxiv.org/abs/2508.03334</link>
-<guid>https://arxiv.org/abs/2508.03334</guid>
-<content:encoded><![CDATA[
-arXiv:2508.03334v3 Announce Type: replace 
-Abstract: Current autoregressive diffusion models excel at video generation but are generally limited to short temporal durations. Our theoretical analysis indicates that the autoregressive modeling typically suffers from temporal drift caused by error accumulation and hinders parallelization in long video synthesis. To address these limitations, we propose a novel planning-then-populating framework centered on Macro-from-Micro Planning (MMPL) for long video generation. MMPL sketches a global storyline for the entire video through two hierarchical stages: Micro Planning and Macro Planning. Specifically, Micro Planning predicts a sparse set of future keyframes within each short video segment, offering motion and appearance priors to guide high-quality video segment generation. Macro Planning extends the in-segment keyframes planning across the entire video through an autoregressive chain of micro plans, ensuring long-term consistency across video segments. Subsequently, MMPL-based Content Populating generates all intermediate frames in parallel across segments, enabling efficient parallelization of autoregressive generation. The parallelization is further optimized by Adaptive Workload Scheduling for balanced GPU execution and accelerated autoregressive video generation. Extensive experiments confirm that our method outperforms existing long video generation models in quality and stability. Generated videos and comparison results are in our project page.
 ]]></content:encoded>
 <pubDate>Wed, 15 Oct 2025 00:00:00 -0400</pubDate>
 </item>
