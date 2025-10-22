@@ -4,19 +4,19 @@
 <title>cs.LG updates on arXiv.org</title>
 <link>http://rss.arxiv.org/rss/cs.LG</link>
 
+
 <item>
 <title>Changing Base Without Losing Pace: A GPU-Efficient Alternative to MatMul in DNNs</title>
 <link>https://arxiv.org/abs/2503.12211</link>
 <guid>https://arxiv.org/abs/2503.12211</guid>
 <content:encoded><![CDATA[
-<div> bilinear operator, GPU native, Strassen-Tile, FLOPs, Imagenet-1K accuracy <br>
-<br>
+<div> bilinear operator, GPU native, Strassen-Tile, FLOPs, Imagenet-1K accuracy <br />
+<br />
 Summary:
 The paper introduces a GPU native bilinear operator called Strassen-Tile (STL) as an alternative to matrix multiplications in neural networks. STL offers a tradeoff between speed, accuracy, and parameter count, requiring fewer FLOPs to evaluate while increasing parameter count compared to traditional methods. The key idea behind STL is a local learnable change-of-basis applied on tiles of weight and activation matrices. Theory-backed initializations of the change-of-basis lead to better accuracy than random SGD initialization. STL can approximate 4x4 MatMul of tiles while reducing FLOPs and improve Imagenet-1K accuracy of T2T-ViT-7 with fewer parameters. Despite non-optimized code, STL shows wall-clock speedups in compute-bound scenarios. The results suggest that STL could be a promising building block for scalable and cost-efficient AI. <div>
 arXiv:2503.12211v3 Announce Type: replace 
 Abstract: Modern AI relies on huge matrix multiplications (MatMuls), whose computation poses a scalability problem for inference and training. We propose an alternative, GPU native bilinear operator to MatMuls in neural networks, which offers a three-way tradeoff between: speed, accuracy and parameter count. In particular, this operator requires substantially fewer FLOPs to evaluate ($\ll n^3$), yet increases the parameter count compared to MatMul ($\gg n^2$). We call this operator Strassen-Tile (STL). The key idea behind STL is a local learnable change-of-basis, applied on tiles of the weight and activation matrices, followed by an element-wise product between the tiles, implemented simultaneously via MatMul. The key technical question we study is how to optimize the change-of-basis of a given layer, which is a highly non-convex problem. We show that theory-backed initializations (inspired by fast matrix and polynomial multiplication) lead to substantially better accuracy than random SGD initialization. This phenomenon motivates further algorithmic study of STL optimization in DNNs. Our experiments demonstrate that STL can approximate 4x4 MatMul of tiles while reducing FLOPs by a factor of 2.66, and can improve Imagenet-1K accuracy of SoTA T2T-ViT-7 (4.3M parameters) while lowering FLOPs. Even with non-CUDA optimized PyTorch code, STL achieves wall-clock speedups in the compute-bound regime. These results, together with its theoretical grounds, suggest STL as a promising building block for scalable and cost-efficient AI.
 ]]></content:encoded>
-<pubDate>Wed, 22 Oct 2025 00:00:00 -0400</pubDate>
 <pubDate>Wed, 22 Oct 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -32,7 +32,6 @@ arXiv:2510.05092v3 Announce Type: replace
 Abstract: Finetuning (pretrained) language models is a standard approach for updating their internal parametric knowledge and specializing them to new tasks and domains. However, the corresponding model weight changes ("weight diffs") are not generally interpretable. While inspecting the finetuning dataset can give a sense of how the model might have changed, these datasets are often not publicly available or are too large to work with directly. Towards the goal of comprehensively understanding weight diffs in natural language, we introduce Diff Interpretation Tuning (DIT), a method that trains models to describe their own finetuning-induced modifications. Our approach uses synthetic, labeled weight diffs to train a DIT-adapter, which can be applied to a compatible finetuned model to make it describe how it has changed. We demonstrate in two proof-of-concept settings (reporting hidden behaviors and summarizing finetuned knowledge) that our method enables models to describe their finetuning-induced modifications using accurate natural language descriptions.
 ]]></content:encoded>
 <pubDate>Wed, 22 Oct 2025 00:00:00 -0400</pubDate>
-<pubDate>Wed, 22 Oct 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
 <title>Deep Edge Filter: Return of the Human-Crafted Layer in Deep Learning</title>
@@ -42,11 +41,10 @@ Abstract: Finetuning (pretrained) language models is a standard approach for upd
 <div> Keywords: Deep Edge Filter, high-pass filtering, neural network features, generalizability, feature sparsification
 
 Summary:
-The Deep Edge Filter is a new method that uses high-pass filtering on deep neural network features to enhance model generalizability. The approach is based on the idea that neural networks encode task-relevant information in high-frequency components and domain-specific biases in low-frequency components. By subtracting low-pass filtered outputs from original features, the method isolates generalizable representations while maintaining the model's structure. Experimental results across various domains show consistent performance improvements, regardless of the model architecture and data type. The analysis confirms that the method induces feature sparsification and effectively isolates high-frequency components, supporting the initial hypothesis. The code for the Deep Edge Filter is accessible on GitHub for further implementation and testing. <br><br>Summary: The Deep Edge Filter introduces high-pass filtering to neural network features to enhance generalizability, leveraging high-frequency components for task-relevant information and low-frequency components for domain-specific biases. Experimental results demonstrate performance boosts across diverse domains, showcasing feature sparsification and successful isolation of high-frequency components. The method is accessible for implementation through available code on GitHub. <div>
+The Deep Edge Filter is a new method that uses high-pass filtering on deep neural network features to enhance model generalizability. The approach is based on the idea that neural networks encode task-relevant information in high-frequency components and domain-specific biases in low-frequency components. By subtracting low-pass filtered outputs from original features, the method isolates generalizable representations while maintaining the model's structure. Experimental results across various domains show consistent performance improvements, regardless of the model architecture and data type. The analysis confirms that the method induces feature sparsification and effectively isolates high-frequency components, supporting the initial hypothesis. The code for the Deep Edge Filter is accessible on GitHub for further implementation and testing. <br /><br />Summary: The Deep Edge Filter introduces high-pass filtering to neural network features to enhance generalizability, leveraging high-frequency components for task-relevant information and low-frequency components for domain-specific biases. Experimental results demonstrate performance boosts across diverse domains, showcasing feature sparsification and successful isolation of high-frequency components. The method is accessible for implementation through available code on GitHub. <div>
 arXiv:2510.13865v3 Announce Type: replace 
 Abstract: We introduce the Deep Edge Filter, a novel approach that applies high-pass filtering to deep neural network features to improve model generalizability. Our method is motivated by our hypothesis that neural networks encode task-relevant semantic information in high-frequency components while storing domain-specific biases in low-frequency components of deep features. By subtracting low-pass filtered outputs from original features, our approach isolates generalizable representations while preserving architectural integrity. Experimental results across diverse domains such as Vision, Text, 3D, and Audio demonstrate consistent performance improvements regardless of model architecture and data modality. Analysis reveals that our method induces feature sparsification and effectively isolates high-frequency components, providing empirical validation of our core hypothesis. The code is available at https://github.com/dongkwani/DeepEdgeFilter.
 ]]></content:encoded>
-<pubDate>Wed, 22 Oct 2025 00:00:00 -0400</pubDate>
 <pubDate>Wed, 22 Oct 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -60,24 +58,21 @@ arXiv:2510.14586v2 Announce Type: replace
 Abstract: Accurate prediction of protein-ligand binding poses is crucial for structure-based drug design, yet existing methods struggle to balance speed, accuracy, and physical plausibility. We introduce Matcha, a novel molecular docking pipeline that combines multi-stage flow matching with learned scoring and physical validity filtering. Our approach consists of three sequential stages applied consecutively to refine docking predictions, each implemented as a flow matching model operating on appropriate geometric spaces ($\mathbb{R}^3$, $\mathrm{SO}(3)$, and $\mathrm{SO}(2)$). We enhance the prediction quality through a dedicated scoring model and apply unsupervised physical validity filters to eliminate unrealistic poses. Compared to various approaches, Matcha demonstrates superior performance on Astex and PDBbind test sets in terms of docking success rate and physical plausibility. Moreover, our method works approximately 25 times faster than modern large-scale co-folding models. The model weights and inference code to reproduce our results are available at https://github.com/LigandPro/Matcha.
 ]]></content:encoded>
 <pubDate>Wed, 22 Oct 2025 00:00:00 -0400</pubDate>
-<pubDate>Wed, 22 Oct 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
 <title>Incomplete Multi-view Clustering via Hierarchical Semantic Alignment and Cooperative Completion</title>
 <link>https://arxiv.org/abs/2510.13887</link>
 <guid>https://arxiv.org/abs/2510.13887</guid>
 <content:encoded><![CDATA[
-<div> Hierarchical Semantic Alignment, Cooperative Completion, Incomplete Multi-view Clustering, Deep Learning, Multi-view Data<br>
-<br>
+<div> Hierarchical Semantic Alignment, Cooperative Completion, Incomplete Multi-view Clustering, Deep Learning, Multi-view Data<br />
+<br />
 Summary:
-The paper introduces a novel framework, Hierarchical Semantic Alignment and Cooperative Completion (HSACC), for incomplete multi-view clustering. HSACC addresses the challenges of missing views by employing a dual-level semantic space design. It aligns views in a low-level semantic space by maximizing mutual information and dynamically assigns adaptive view weights based on distributional affinity in a high-level semantic space. This results in a robust cross-view fusion. HSACC also incorporates implicit view recovery through joint reconstruction and clustering optimization. Experimental results show that HSACC outperforms existing methods on benchmark datasets. Ablation studies confirm the effectiveness of hierarchical alignment and dynamic weighting, while parameter analysis demonstrates the model's robustness. Overall, HSACC offers a comprehensive solution for incomplete multi-view clustering with improved fusion results and error propagation mitigation. <br><br> <div>
+The paper introduces a novel framework, Hierarchical Semantic Alignment and Cooperative Completion (HSACC), for incomplete multi-view clustering. HSACC addresses the challenges of missing views by employing a dual-level semantic space design. It aligns views in a low-level semantic space by maximizing mutual information and dynamically assigns adaptive view weights based on distributional affinity in a high-level semantic space. This results in a robust cross-view fusion. HSACC also incorporates implicit view recovery through joint reconstruction and clustering optimization. Experimental results show that HSACC outperforms existing methods on benchmark datasets. Ablation studies confirm the effectiveness of hierarchical alignment and dynamic weighting, while parameter analysis demonstrates the model's robustness. Overall, HSACC offers a comprehensive solution for incomplete multi-view clustering with improved fusion results and error propagation mitigation. <br /><br /> <div>
 arXiv:2510.13887v2 Announce Type: replace-cross 
 Abstract: Incomplete multi-view data, where certain views are entirely missing for some samples, poses significant challenges for traditional multi-view clustering methods. Existing deep incomplete multi-view clustering approaches often rely on static fusion strategies or two-stage pipelines, leading to suboptimal fusion results and error propagation issues. To address these limitations, this paper proposes a novel incomplete multi-view clustering framework based on Hierarchical Semantic Alignment and Cooperative Completion (HSACC). HSACC achieves robust cross-view fusion through a dual-level semantic space design. In the low-level semantic space, consistency alignment is ensured by maximizing mutual information across views. In the high-level semantic space, adaptive view weights are dynamically assigned based on the distributional affinity between individual views and an initial fused representation, followed by weighted fusion to generate a unified global representation. Additionally, HSACC implicitly recovers missing views by projecting aligned latent representations into high-dimensional semantic spaces and jointly optimizes reconstruction and clustering objectives, enabling cooperative learning of completion and clustering. Experimental results demonstrate that HSACC significantly outperforms state-of-the-art methods on five benchmark datasets. Ablation studies validate the effectiveness of the hierarchical alignment and dynamic weighting mechanisms, while parameter analysis confirms the model's robustness to hyperparameter variations.
 ]]></content:encoded>
 <pubDate>Wed, 22 Oct 2025 00:00:00 -0400</pubDate>
-<pubDate>Wed, 22 Oct 2025 00:00:00 -0400</pubDate>
 </item>
-
 <item>
 <title>From Noise to Laws: Regularized Time-Series Forecasting via Denoised Dynamic Graphs</title>
 <link>https://arxiv.org/abs/2510.17817</link>
@@ -10843,56 +10838,6 @@ Abstract: Fact-checking long-form text is challenging, and it is therefore commo
 <content:encoded><![CDATA[
 arXiv:2510.13253v1 Announce Type: cross 
 Abstract: Current end-to-end multi-modal models utilize different encoders and decoders to process input and output information. This separation hinders the joint representation learning of various modalities. To unify multi-modal processing, we propose a novel architecture called MDM (Multi-modal Diffusion Mamba). MDM utilizes a Mamba-based multi-step selection diffusion model to progressively generate and refine modality-specific information through a unified variational autoencoder for both encoding and decoding. This innovative approach allows MDM to achieve superior performance when processing high-dimensional data, particularly in generating high-resolution images and extended text sequences simultaneously. Our evaluations in areas such as image generation, image captioning, visual question answering, text comprehension, and reasoning tasks demonstrate that MDM significantly outperforms existing end-to-end models (MonoFormer, LlamaGen, and Chameleon etc.) and competes effectively with SOTA models like GPT-4V, Gemini Pro, and Mistral. Our results validate MDM's effectiveness in unifying multi-modal processes while maintaining computational efficiency, establishing a new direction for end-to-end multi-modal architectures.
-]]></content:encoded>
-<pubDate>Mon, 20 Oct 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Constrained Diffusion for Protein Design with Hard Structural Constraints</title>
-<link>https://arxiv.org/abs/2510.14989</link>
-<guid>https://arxiv.org/abs/2510.14989</guid>
-<content:encoded><![CDATA[
-arXiv:2510.14989v1 Announce Type: cross 
-Abstract: Diffusion models offer a powerful means of capturing the manifold of realistic protein structures, enabling rapid design for protein engineering tasks. However, existing approaches observe critical failure modes when precise constraints are necessary for functional design. To this end, we present a constrained diffusion framework for structure-guided protein design, ensuring strict adherence to functional requirements while maintaining precise stereochemical and geometric feasibility. The approach integrates proximal feasibility updates with ADMM decomposition into the generative process, scaling effectively to the complex constraint sets of this domain. We evaluate on challenging protein design tasks, including motif scaffolding and vacancy-constrained pocket design, while introducing a novel curated benchmark dataset for motif scaffolding in the PDZ domain. Our approach achieves state-of-the-art, providing perfect satisfaction of bonding and geometric constraints with no degradation in structural diversity.
-]]></content:encoded>
-<pubDate>Mon, 20 Oct 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Evaluation and Implementation of Machine Learning Algorithms to Predict Early Detection of Kidney and Heart Disease in Diabetic Patients</title>
-<link>https://arxiv.org/abs/2510.14997</link>
-<guid>https://arxiv.org/abs/2510.14997</guid>
-<content:encoded><![CDATA[
-arXiv:2510.14997v1 Announce Type: cross 
-Abstract: Cardiovascular disease and chronic kidney disease are major complications of diabetes, leading to high morbidity and mortality. Early detection of these conditions is critical, yet traditional diagnostic markers often lack sensitivity in the initial stages. This study integrates conventional statistical methods with machine learning approaches to improve early diagnosis of CKD and CVD in diabetic patients. Descriptive and inferential statistics were computed in SPSS to explore associations between diseases and clinical or demographic factors. Patients were categorized into four groups: Group A both CKD and CVD, Group B CKD only, Group C CVD only, and Group D no disease. Statistical analysis revealed significant correlations: Serum Creatinine and Hypertension with CKD, and Cholesterol, Triglycerides, Myocardial Infarction, Stroke, and Hypertension with CVD. These results guided the selection of predictive features for machine learning models. Logistic Regression, Support Vector Machine, and Random Forest algorithms were implemented, with Random Forest showing the highest accuracy, particularly for CKD prediction. Ensemble models outperformed single classifiers in identifying high-risk diabetic patients. SPSS results further validated the significance of the key parameters integrated into the models. While challenges such as interpretability and class imbalance remain, this hybrid statistical machine learning framework offers a promising advancement toward early detection and risk stratification of diabetic complications compared to conventional diagnostic approaches.
-]]></content:encoded>
-<pubDate>Mon, 20 Oct 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Estimand framework and intercurrent events handling for clinical trials with time-to-event outcomes</title>
-<link>https://arxiv.org/abs/2510.15000</link>
-<guid>https://arxiv.org/abs/2510.15000</guid>
-<content:encoded><![CDATA[
-arXiv:2510.15000v1 Announce Type: cross 
-Abstract: The ICH E9(R1) guideline presents a framework of estimand for clinical trials, proposes five strategies for handling intercurrent events (ICEs), and provides a comprehensive discussion and many real-life clinical examples for quantitative outcomes and categorical outcomes. However, in ICH E9(R1) the discussion is lacking for time-to-event (TTE) outcomes. In this paper, we discuss how to define estimands and how to handle ICEs for clinical trials with TTE outcomes. Specifically, we discuss six ICE handling strategies, including those five strategies proposed by ICH E9(R1) and a new strategy, the competing-risk strategy. Compared with ICH E9(R1), the novelty of this paper is three-fold: (1) the estimands are defined in terms of potential outcomes, (2) the methods can utilize time-dependent covariates straightforwardly, and (3) the efficient estimators are discussed accordingly.
-]]></content:encoded>
-<pubDate>Mon, 20 Oct 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>From Universal Approximation Theorem to Tropical Geometry of Multi-Layer Perceptrons</title>
-<link>https://arxiv.org/abs/2510.15012</link>
-<guid>https://arxiv.org/abs/2510.15012</guid>
-<content:encoded><![CDATA[
-arXiv:2510.15012v1 Announce Type: cross 
-Abstract: We revisit the Universal Approximation Theorem(UAT) through the lens of the tropical geometry of neural networks and introduce a constructive, geometry-aware initialization for sigmoidal multi-layer perceptrons (MLPs). Tropical geometry shows that Rectified Linear Unit (ReLU) networks admit decision functions with a combinatorial structure often described as a tropical rational, namely a difference of tropical polynomials. Focusing on planar binary classification, we design purely sigmoidal MLPs that adhere to the finite-sum format of UAT: a finite linear combination of shifted and scaled sigmoids of affine functions. The resulting models yield decision boundaries that already align with prescribed shapes at initialization and can be refined by standard training if desired. This provides a practical bridge between the tropical perspective and smooth MLPs, enabling interpretable, shape-driven initialization without resorting to ReLU architectures. We focus on the construction and empirical demonstrations in two dimensions; theoretical analysis and higher-dimensional extensions are left for future work.
-]]></content:encoded>
-<pubDate>Mon, 20 Oct 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Reliable data clustering with Bayesian community detection</title>
-<link>https://arxiv.org/abs/2510.15013</link>
-<guid>https://arxiv.org/abs/2510.15013</guid>
-<content:encoded><![CDATA[
-arXiv:2510.15013v1 Announce Type: cross 
-Abstract: From neuroscience and genomics to systems biology and ecology, researchers rely on clustering similarity data to uncover modular structure. Yet widely used clustering methods, such as hierarchical clustering, k-means, and WGCNA, lack principled model selection, leaving them susceptible to noise. A common workaround sparsifies a correlation matrix representation to remove noise before clustering, but this extra step introduces arbitrary thresholds that can distort the structure and lead to unreliable results. To detect reliable clusters, we capitalize on recent advances in network science to unite sparsification and clustering with principled model selection. We test two Bayesian community detection methods, the Degree-Corrected Stochastic Block Model and the Regularized Map Equation, both grounded in the Minimum Description Length principle for model selection. In synthetic data, they outperform traditional approaches, detecting planted clusters under high-noise conditions and with fewer samples. Compared to WGCNA on gene co-expression data, the Regularized Map Equation identifies more robust and functionally coherent gene modules. Our results establish Bayesian community detection as a principled and noise-resistant framework for uncovering modular structure in high-dimensional data across fields.
 ]]></content:encoded>
 <pubDate>Mon, 20 Oct 2025 00:00:00 -0400</pubDate>
 </item>

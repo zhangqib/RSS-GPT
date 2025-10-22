@@ -4,20 +4,19 @@
 <title>cs.CV updates on arXiv.org</title>
 <link>http://rss.arxiv.org/rss/cs.CV</link>
 
+
 <item>
 <title>Visible Yet Unreadable: A Systematic Blind Spot of Vision Language Models Across Writing Systems</title>
 <link>https://arxiv.org/abs/2509.06996</link>
 <guid>https://arxiv.org/abs/2509.06996</guid>
 <content:encoded><![CDATA[
 <div> resilience, vision language models, psychophysics, writing systems, compositional priors
-Summary:<br><br>This paper investigates the resilience of advanced vision language models (VLMs) in recognizing fragmented and perturbed text in Chinese and English writing systems. While human readers can still understand words even when characters are manipulated, contemporary VLMs struggle with such stimuli, often producing unrelated or incoherent outputs. The study highlights the models' reliance on generic visual invariances and lack of compositional priors essential for robust literacy. The research calls for improved architectures and training strategies that incorporate symbol segmentation, composition, and binding across different scripts. The findings have implications for the development of multimodal systems in education, accessibility, cultural heritage, and security. The paper provides code, prompts, and evaluation protocols for transparent replication and further investigations. <div>
+Summary:<br /><br />This paper investigates the resilience of advanced vision language models (VLMs) in recognizing fragmented and perturbed text in Chinese and English writing systems. While human readers can still understand words even when characters are manipulated, contemporary VLMs struggle with such stimuli, often producing unrelated or incoherent outputs. The study highlights the models' reliance on generic visual invariances and lack of compositional priors essential for robust literacy. The research calls for improved architectures and training strategies that incorporate symbol segmentation, composition, and binding across different scripts. The findings have implications for the development of multimodal systems in education, accessibility, cultural heritage, and security. The paper provides code, prompts, and evaluation protocols for transparent replication and further investigations. <div>
 arXiv:2509.06996v4 Announce Type: replace 
 Abstract: Writing is a universal cultural technology that reuses vision for symbolic communication. Humans display striking resilience: we readily recognize words even when characters are fragmented, fused, or partially occluded. This paper investigates whether advanced vision language models (VLMs) share this resilience. We construct two psychophysics inspired benchmarks across distinct writing systems, Chinese logographs and English alphabetic words, by splicing, recombining, and overlaying glyphs to yield ''visible but unreadable'' stimuli for models while remaining legible to humans. Despite strong performance on clean text, contemporary VLMs show a severe drop under these perturbations, frequently producing unrelated or incoherent outputs. The pattern suggests a structural limitation: models heavily leverage generic visual invariances but under rely on compositional priors needed for robust literacy. We release stimuli generation code, prompts, and evaluation protocols to facilitate transparent replication and follow up work. Our findings motivate architectures and training strategies that encode symbol segmentation, composition, and binding across scripts, and they delineate concrete challenges for deploying multimodal systems in education, accessibility, cultural heritage, and security.
 ]]></content:encoded>
 <pubDate>Wed, 22 Oct 2025 00:00:00 -0400</pubDate>
-<pubDate>Wed, 22 Oct 2025 00:00:00 -0400</pubDate>
 </item>
-
 <item>
 <title>MAT-Agent: Adaptive Multi-Agent Training Optimization</title>
 <link>https://arxiv.org/abs/2510.17845</link>
@@ -11226,16 +11225,6 @@ Abstract: Unsupervised anomaly detection and segmentation methods train a model 
 <content:encoded><![CDATA[
 arXiv:2504.05774v3 Announce Type: replace 
 Abstract: Recent advances in Vision Transformers (ViTs) have significantly advanced semantic segmentation performance. However, their adaptation to new target domains remains challenged by distribution shifts, which often disrupt global attention mechanisms. While existing global and patch-level adaptation methods offer some improvements, they overlook the spatially varying transferability inherent in different image regions. To address this, we propose the Transferable Mask Transformer (TMT), a region-adaptive framework designed to enhance cross-domain representation learning through transferability guidance. First, we dynamically partition the image into coherent regions, grouped by structural and semantic similarity, and estimates their domain transferability at a localized level. Then, we incorporate region-level transferability maps directly into the self-attention mechanism of ViTs, allowing the model to adaptively focus attention on areas with lower transferability and higher semantic uncertainty. Extensive experiments across 20 diverse cross-domain settings demonstrate that TMT not only mitigates the performance degradation typically associated with domain shift but also consistently outperforms existing approaches.
-]]></content:encoded>
-<pubDate>Thu, 16 Oct 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Preserving Privacy Without Compromising Accuracy: Machine Unlearning for Handwritten Text Recognition</title>
-<link>https://arxiv.org/abs/2504.08616</link>
-<guid>https://arxiv.org/abs/2504.08616</guid>
-<content:encoded><![CDATA[
-arXiv:2504.08616v2 Announce Type: replace 
-Abstract: Handwritten Text Recognition (HTR) is crucial for document digitization, but handwritten data can contain user-identifiable features, like unique writing styles, posing privacy risks. Regulations such as the ``right to be forgotten'' require models to remove these sensitive traces without full retraining. We introduce a practical encoder-only transformer baseline as a robust reference for future HTR research. Building on this, we propose a two-stage unlearning framework for multihead transformer HTR models. Our method combines neural pruning with machine unlearning applied to a writer classification head, ensuring sensitive information is removed while preserving the recognition head. We also present Writer-ID Confusion (WIC), a method that forces the forget set to follow a uniform distribution over writer identities, unlearning user-specific cues while maintaining text recognition performance. We compare WIC to Random Labeling, Fisher Forgetting, Amnesiac Unlearning, and DELETE within our prune-unlearn pipeline and consistently achieve better privacy and accuracy trade-offs. This is the first systematic study of machine unlearning for HTR. Using metrics such as Accuracy, Character Error Rate (CER), Word Error Rate (WER), and Membership Inference Attacks (MIA) on the IAM and CVL datasets, we demonstrate that our method achieves state-of-the-art or superior performance for effective unlearning. These experiments show that our approach effectively safeguards privacy without compromising accuracy, opening new directions for document analysis research. Our code is publicly available at https://github.com/leitro/WIC-WriterIDConfusion-MachineUnlearning.
 ]]></content:encoded>
 <pubDate>Thu, 16 Oct 2025 00:00:00 -0400</pubDate>
 </item>

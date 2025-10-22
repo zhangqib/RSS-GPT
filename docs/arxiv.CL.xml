@@ -4,21 +4,20 @@
 <title>cs.CL updates on arXiv.org</title>
 <link>http://rss.arxiv.org/rss/cs.CL</link>
 
+
 <item>
 <title>Lightweight Baselines for Medical Abstract Classification: DistilBERT with Cross-Entropy as a Strong Default</title>
 <link>https://arxiv.org/abs/2510.10025</link>
 <guid>https://arxiv.org/abs/2510.10025</guid>
 <content:encoded><![CDATA[
-<div> Keywords: lightweight, medical abstract classification, BERT, DistilBERT, focal loss <br>
+<div> Keywords: lightweight, medical abstract classification, BERT, DistilBERT, focal loss <br />
 Summary: 
-The research evaluates lightweight methods for classifying medical abstracts, focusing on maximizing performance within financial constraints. BERT base and Distil BERT models were fine-tuned using different loss functions on a public medical abstract corpus. DistilBERT with plain cross entropy showed the best trade-off between performance and efficiency. However, further refinement through post hoc operating point selection, such as validation calibration and classwise thresholds, significantly enhanced deployment performance. This tuning particularly benefited the focal loss function. The study reports on accuracy, macro F1, and weighted F1 metrics, and includes confusion analyses to identify error patterns. The practical recommendation is to start with a compact encoder and cross entropy loss, adding lightweight calibration or thresholding for improved macro balance in deployment scenarios. <br><br>Summary: <div>
+The research evaluates lightweight methods for classifying medical abstracts, focusing on maximizing performance within financial constraints. BERT base and Distil BERT models were fine-tuned using different loss functions on a public medical abstract corpus. DistilBERT with plain cross entropy showed the best trade-off between performance and efficiency. However, further refinement through post hoc operating point selection, such as validation calibration and classwise thresholds, significantly enhanced deployment performance. This tuning particularly benefited the focal loss function. The study reports on accuracy, macro F1, and weighted F1 metrics, and includes confusion analyses to identify error patterns. The practical recommendation is to start with a compact encoder and cross entropy loss, adding lightweight calibration or thresholding for improved macro balance in deployment scenarios. <br /><br />Summary: <div>
 arXiv:2510.10025v2 Announce Type: replace 
 Abstract: The research evaluates lightweight medical abstract classification methods to establish their maximum performance capabilities under financial budget restrictions. On the public medical abstracts corpus, we finetune BERT base and Distil BERT with three objectives cross entropy (CE), class weighted CE, and focal loss under identical tokenization, sequence length, optimizer, and schedule. DistilBERT with plain CE gives the strongest raw argmax trade off, while a post hoc operating point selection (validation calibrated, classwise thresholds) sub stantially improves deployed performance; under this tuned regime, focal benefits most. We report Accuracy, Macro F1, and WeightedF1, release evaluation artifacts, and include confusion analyses to clarify error structure. The practical takeaway is to start with a compact encoder and CE, then add lightweight calibration or thresholding when deployment requires higher macro balance.
 ]]></content:encoded>
 <pubDate>Wed, 22 Oct 2025 00:00:00 -0400</pubDate>
-<pubDate>Wed, 22 Oct 2025 00:00:00 -0400</pubDate>
 </item>
-
 <item>
 <title>Modeling Layered Consciousness with Multi-Agent Large Language Models</title>
 <link>https://arxiv.org/abs/2510.17844</link>
@@ -11530,16 +11529,6 @@ Abstract: There is growing interest in applying artificial intelligence (AI) to 
 <content:encoded><![CDATA[
 arXiv:2510.12780v1 Announce Type: cross 
 Abstract: Voice anonymization techniques have been found to successfully obscure a speaker's acoustic identity in short, isolated utterances in benchmarks such as the VoicePrivacy Challenge. In practice, however, utterances seldom occur in isolation: long-form audio is commonplace in domains such as interviews, phone calls, and meetings. In these cases, many utterances from the same speaker are available, which pose a significantly greater privacy risk: given multiple utterances from the same speaker, an attacker could exploit an individual's vocabulary, syntax, and turns of phrase to re-identify them, even when their voice is completely disguised. To address this risk, we propose new content anonymization approaches. Our approach performs a contextual rewriting of the transcripts in an ASR-TTS pipeline to eliminate speaker-specific style while preserving meaning. We present results in a long-form telephone conversation setting demonstrating the effectiveness of a content-based attack on voice-anonymized speech. Then we show how the proposed content-based anonymization methods can mitigate this risk while preserving speech utility. Overall, we find that paraphrasing is an effective defense against content-based attacks and recommend that stakeholders adopt this step to ensure anonymity in long-form audio.
-]]></content:encoded>
-<pubDate>Wed, 15 Oct 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>SRUM: Fine-Grained Self-Rewarding for Unified Multimodal Models</title>
-<link>https://arxiv.org/abs/2510.12784</link>
-<guid>https://arxiv.org/abs/2510.12784</guid>
-<content:encoded><![CDATA[
-arXiv:2510.12784v1 Announce Type: cross 
-Abstract: Recently, remarkable progress has been made in Unified Multimodal Models (UMMs), which integrate vision-language generation and understanding capabilities within a single framework. However, a significant gap exists where a model's strong visual understanding often fails to transfer to its visual generation. A model might correctly understand an image based on user instructions, yet be unable to generate a faithful image from text prompts. This phenomenon directly raises a compelling question: Can a model achieve self-improvement by using its understanding module to reward its generation module? To bridge this gap and achieve self-improvement, we introduce SRUM, a self-rewarding post-training framework that can be directly applied to existing UMMs of various designs. SRUM creates a feedback loop where the model's own understanding module acts as an internal ``evaluator'', providing corrective signals to improve its generation module, without requiring additional human-labeled data. To ensure this feedback is comprehensive, we designed a global-local dual reward system. To tackle the inherent structural complexity of images, this system offers multi-scale guidance: a \textbf{global reward} ensures the correctness of the overall visual semantics and layout, while a \textbf{local reward} refines fine-grained, object-level fidelity. SRUM leads to powerful capabilities and shows strong generalization, boosting performance on T2I-CompBench from 82.18 to \textbf{88.37} and on T2I-ReasonBench from 43.82 to \textbf{46.75}. Overall, our work establishes a powerful new paradigm for enabling a UMMs' understanding module to guide and enhance its own generation via self-rewarding.
 ]]></content:encoded>
 <pubDate>Wed, 15 Oct 2025 00:00:00 -0400</pubDate>
 </item>
