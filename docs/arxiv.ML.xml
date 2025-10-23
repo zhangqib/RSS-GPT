@@ -4,6 +4,7 @@
 <title>cs.LG updates on arXiv.org</title>
 <link>http://rss.arxiv.org/rss/cs.LG</link>
 
+
 <item>
 <title>Provably Efficient Reward Transfer in Reinforcement Learning with Discrete Markov Decision Processes</title>
 <link>https://arxiv.org/abs/2503.13414</link>
@@ -17,7 +18,6 @@ arXiv:2503.13414v3 Announce Type: replace
 Abstract: In this paper, we propose a new solution to reward adaptation (RA) in reinforcement learning, where the agent adapts to a target reward function based on one or more existing source behaviors learned a priori under the same domain dynamics but different reward functions. While learning the target behavior from scratch is possible, it is often inefficient given the available source behaviors. Our work introduces a new approach to RA through the manipulation of Q-functions. Assuming the target reward function is a known function of the source reward functions, we compute bounds on the Q-function and present an iterative process (akin to value iteration) to tighten these bounds. Such bounds enable action pruning in the target domain before learning even starts. We refer to this method as "Q-Manipulation" (Q-M). The iteration process assumes access to a lite-model, which is easy to provide or learn. We formally prove that Q-M, under discrete domains, does not affect the optimality of the returned policy and show that it is provably efficient in terms of sample complexity in a probabilistic sense. Q-M is evaluated in a variety of synthetic and simulation domains to demonstrate its effectiveness, generalizability, and practicality.
 ]]></content:encoded>
 <pubDate>Thu, 23 Oct 2025 00:00:00 -0400</pubDate>
-<pubDate>Thu, 23 Oct 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
 <title>Breaking the Exploration Bottleneck: Rubric-Scaffolded Reinforcement Learning for General LLM Reasoning</title>
@@ -26,12 +26,11 @@ Abstract: In this paper, we propose a new solution to reward adaptation (RA) in 
 <content:encoded><![CDATA[
 <div> Reinforcement Learning, Large Language Models, Rubric-Scaffolded Reinforcement Learning, Exploration, Reasoning
 
-Summary:<br>
-Rubric-Scaffolded Reinforcement Learning (RuscaRL) addresses the exploration bottleneck in Large Language Models (LLMs) for reasoning tasks. It uses checklist-style rubrics as explicit scaffolding during rollout generation, guiding high-quality responses and gradually decaying to internalize reasoning patterns. RuscaRL also leverages rubrics as verifiable rewards for model training, enabling effective RL on general reasoning tasks. Experiments show RuscaRL's superiority, boosting performance on HealthBench-500 and surpassing GPT-4.1 on Qwen2.5-7B-Instruct. The fine-tuned variant on Qwen3-30B-A3B-Instruct outperforms leading LLMs. The code is available for further exploration at https://github.com/IANNXANG/RuscaRL. <br><br> <div>
+Summary:<br />
+Rubric-Scaffolded Reinforcement Learning (RuscaRL) addresses the exploration bottleneck in Large Language Models (LLMs) for reasoning tasks. It uses checklist-style rubrics as explicit scaffolding during rollout generation, guiding high-quality responses and gradually decaying to internalize reasoning patterns. RuscaRL also leverages rubrics as verifiable rewards for model training, enabling effective RL on general reasoning tasks. Experiments show RuscaRL's superiority, boosting performance on HealthBench-500 and surpassing GPT-4.1 on Qwen2.5-7B-Instruct. The fine-tuned variant on Qwen3-30B-A3B-Instruct outperforms leading LLMs. The code is available for further exploration at https://github.com/IANNXANG/RuscaRL. <br /><br /> <div>
 arXiv:2508.16949v5 Announce Type: replace 
 Abstract: Recent advances in Large Language Models (LLMs) have underscored the potential of Reinforcement Learning (RL) to facilitate the emergence of reasoning capabilities. Despite the encouraging results, a fundamental dilemma persists as RL improvement relies on learning from high-quality samples, yet the exploration for such samples remains bounded by the inherent limitations of LLMs. This, in effect, creates an undesirable cycle in which what cannot be explored cannot be learned. In this work, we propose Rubric-Scaffolded Reinforcement Learning (RuscaRL), a novel instructional scaffolding framework designed to break the exploration bottleneck for general LLM reasoning. Specifically, RuscaRL introduces checklist-style rubrics as (1) explicit scaffolding for exploration during rollout generation, where different rubrics are provided as external guidance within task instructions to steer diverse high-quality responses. This guidance is gradually decayed over time, encouraging the model to internalize the underlying reasoning patterns; (2) verifiable rewards for exploitation during model training, where we can obtain robust LLM-as-a-Judge scores using rubrics as references, enabling effective RL on general reasoning tasks. Extensive experiments demonstrate the superiority of the proposed RuscaRL across various benchmarks, effectively expanding reasoning boundaries under the Best-of-N evaluation. Notably, RuscaRL significantly boosts Qwen2.5-7B-Instruct from 23.6 to 50.3 on HealthBench-500, surpassing GPT-4.1. Furthermore, our fine-tuned variant on Qwen3-30B-A3B-Instruct achieves 61.1 on HealthBench-500, outperforming leading LLMs including OpenAI-o3. Our code is available at https://github.com/IANNXANG/RuscaRL.
 ]]></content:encoded>
-<pubDate>Thu, 23 Oct 2025 00:00:00 -0400</pubDate>
 <pubDate>Thu, 23 Oct 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -44,11 +43,10 @@ Abstract: Recent advances in Large Language Models (LLMs) have underscored the p
 Summary:
 A new framework for Signal Temporal Logic (STL) inference is introduced, combining Conformal Prediction (CP) to provide statistical correctness guarantees with end-to-end differentiable learning. The framework includes a robustness-based nonconformity score and a smooth CP layer embedded into training. A new loss function is employed to optimize inference accuracy and CP prediction sets simultaneously. After training, an exact CP procedure ensures statistical guarantees for the learned STL formulas. Experimental results on benchmark time-series tasks demonstrate reduced uncertainty in predictions, improved accuracy over existing methods, high coverage with reduced prediction set size, and fewer misclassifications compared to state-of-the-art baselines. The framework enhances both reliability and interpretability of the resulting rules extracted from time-series data, addressing the limitations of existing methods. 
 
-<br><br>Summary: <div>
+<br /><br />Summary: <div>
 arXiv:2509.25473v3 Announce Type: replace 
 Abstract: Signal Temporal Logic (STL) inference seeks to extract human-interpretable rules from time-series data, but existing methods lack formal confidence guarantees for the inferred rules. Conformal prediction (CP) is a technique that can provide statistical correctness guarantees, but is typically applied as a post-training wrapper without improving model learning. Instead, we introduce an end-to-end differentiable CP framework for STL inference that enhances both reliability and interpretability of the resulting formulas. We introduce a robustness-based nonconformity score, embed a smooth CP layer directly into training, and employ a new loss function that simultaneously optimizes inference accuracy and CP prediction sets with a single term. Following training, an exact CP procedure delivers statistical guarantees for the learned STL formulas. Experiments on benchmark time-series tasks show that our approach reduces uncertainty in predictions (i.e., it achieves high coverage while reducing prediction set size), and improves accuracy (i.e., the number of misclassifications when using a fixed threshold) over state-of-the-art baselines.
 ]]></content:encoded>
-<pubDate>Thu, 23 Oct 2025 00:00:00 -0400</pubDate>
 <pubDate>Thu, 23 Oct 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -61,11 +59,10 @@ Abstract: Signal Temporal Logic (STL) inference seeks to extract human-interpret
 Summary:
 Diffusion Probabilistic Models (DPMs) have shown strong generative performance, but their inductive biases are often implicit. This study aims to incorporate inductive biases into the training and sampling of diffusion models to better match the data distribution. The introduction of an anisotropic noise operator, known as spectrally anisotropic Gaussian diffusion (SAGD), allows for the shaping of biases by emphasizing or suppressing specific frequency bands. The derived score relation for anisotropic covariances demonstrates that learned scores converge to the true data score with anisotropy altering the probability-flow path. Empirical results showcase that the induced anisotropy outperforms standard diffusion on various vision datasets. Moreover, SAGD enables selective omission by learning while disregarding known corruptions within designated bands. This work underscores the importance of strategically incorporating anisotropic forward noise to tailor inductive bias in DPMs. 
 
-<br><br>Summary: <div>
+<br /><br />Summary: <div>
 arXiv:2510.09660v3 Announce Type: replace 
 Abstract: Diffusion Probabilistic Models (DPMs) have achieved strong generative performance, yet their inductive biases remain largely implicit. In this work, we aim to build inductive biases into the training and sampling of diffusion models to better accommodate the target distribution of the data to model. We introduce an anisotropic noise operator that shapes these biases by replacing the isotropic forward covariance with a structured, frequency-diagonal covariance. This operator unifies band-pass masks and power-law weightings, allowing us to emphasize or suppress designated frequency bands, while keeping the forward process Gaussian. We refer to this as spectrally anisotropic Gaussian diffusion (SAGD). In this work, we derive the score relation for anisotropic covariances and show that, under full support, the learned score converges to the true data score as $t\!\to\!0$, while anisotropy reshapes the probability-flow path from noise to data. Empirically, we show the induced anisotropy outperforms standard diffusion across several vision datasets, and enables selective omission: learning while ignoring known corruptions confined to specific bands. Together, these results demonstrate that carefully designed anisotropic forward noise provides a simple, yet principled, handle to tailor inductive bias in DPMs.
 ]]></content:encoded>
-<pubDate>Thu, 23 Oct 2025 00:00:00 -0400</pubDate>
 <pubDate>Thu, 23 Oct 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -77,11 +74,10 @@ Abstract: Diffusion Probabilistic Models (DPMs) have achieved strong generative 
 Summary:
 The article discusses the issue of slop in AI-generated text and introduces Antislop, a framework designed to detect and eliminate repetitive phraseology in language models. The framework includes the Antislop Sampler, which suppresses unwanted patterns during inference without affecting vocabulary, an automated pipeline for profiling slop patterns against human baselines, and Final Token Preference Optimization (FTPO) for fine-tuning individual tokens to remove banned patterns. The study reveals that some slop patterns occur significantly more often in AI-generated text compared to human text. The Antislop Sampler successfully suppresses thousands of patterns without compromising quality, while FTPO achieves a 90% reduction in slop while maintaining or enhancing performance in various evaluation tasks. On the other hand, traditional token banning methods show limitations in managing slop patterns. The code and results are available under the MIT license on GitHub. 
 
-<br><br>Summary: <div>
+<br /><br />Summary: <div>
 arXiv:2510.15061v2 Announce Type: replace 
 Abstract: Widespread LLM adoption has introduced characteristic repetitive phraseology, termed "slop," which degrades output quality and makes AI-generated text immediately recognizable. We present Antislop, a comprehensive framework providing tools to both detect and eliminate these overused patterns. Our approach combines three innovations: (1) The Antislop Sampler, which uses backtracking to suppress unwanted strings at inference time without destroying vocabulary; (2) An automated pipeline that profiles model-specific slop against human baselines and generates training data; (3) Final Token Preference Optimization (FTPO), a novel fine-tuning method that operates on individual tokens, surgically adjusting logits wherever a banned pattern has appeared in an inference trace. We demonstrate that some slop patterns appear over 1,000x more frequently in LLM output than human text. The Antislop Sampler successfully suppresses 8,000+ patterns while maintaining quality, whereas token banning becomes unusable at just 2,000. Most importantly, FTPO achieves 90% slop reduction while maintaining or improving performance in cross-domain evals including GSM8K, MMLU, and creative writing tasks. In contrast, DPO suffers significant degradation in writing quality and lexical diversity despite achieving weaker suppression. We release all code and results under MIT license: https://github.com/sam-paech/auto-antislop.
 ]]></content:encoded>
-<pubDate>Thu, 23 Oct 2025 00:00:00 -0400</pubDate>
 <pubDate>Thu, 23 Oct 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -89,13 +85,12 @@ Abstract: Widespread LLM adoption has introduced characteristic repetitive phras
 <link>https://arxiv.org/abs/2510.15242</link>
 <guid>https://arxiv.org/abs/2510.15242</guid>
 <content:encoded><![CDATA[
-<div> Reinforcement Learning, Chain-of-Thought Reasoning, Preference Modeling, Dual-Weighted Reinforcement Learning, Generative Preference Models <br>
-Summary: <br>
-This paper introduces Dual-Weighted Reinforcement Learning (DWRL) as a new framework for preference modeling that combines Chain-of-Thought reasoning with the Bradley-Terry model. DWRL aims to extend reinforcement learning to non-verifiable tasks, such as human preference pairs, by integrating dual weights to preserve preference modeling biases. By training generative preference models using DWRL, the study demonstrates improved performance across various benchmarks and model scales compared to baseline models. The framework emphasizes under-trained pairs misaligned with human preferences and promotes promising thoughts through conditional preference scores. The results showcase the effectiveness of DWRL in enhancing preference learning beyond tasks with verifiable answers, producing coherent and interpretable thoughts. DWRL emerges as a versatile tool for scaling reasoning in preference modeling tasks. <br> <div>
+<div> Reinforcement Learning, Chain-of-Thought Reasoning, Preference Modeling, Dual-Weighted Reinforcement Learning, Generative Preference Models <br />
+Summary: <br />
+This paper introduces Dual-Weighted Reinforcement Learning (DWRL) as a new framework for preference modeling that combines Chain-of-Thought reasoning with the Bradley-Terry model. DWRL aims to extend reinforcement learning to non-verifiable tasks, such as human preference pairs, by integrating dual weights to preserve preference modeling biases. By training generative preference models using DWRL, the study demonstrates improved performance across various benchmarks and model scales compared to baseline models. The framework emphasizes under-trained pairs misaligned with human preferences and promotes promising thoughts through conditional preference scores. The results showcase the effectiveness of DWRL in enhancing preference learning beyond tasks with verifiable answers, producing coherent and interpretable thoughts. DWRL emerges as a versatile tool for scaling reasoning in preference modeling tasks. <br /> <div>
 arXiv:2510.15242v2 Announce Type: replace 
 Abstract: Reinforcement learning (RL) has recently proven effective at scaling chain-of-thought (CoT) reasoning in large language models on tasks with verifiable answers. However, extending RL to more general non-verifiable tasks, typically in the format of human preference pairs, remains both challenging and underexplored. In this work, we propose Dual-Weighted Reinforcement Learning (DWRL), a new framework for preference modeling that integrates CoT reasoning with the Bradley-Terry (BT) model via a dual-weighted RL objective that preserves preference-modeling inductive bias. DWRL approximates the maximum-likelihood objective of the BT model with two complementary weights: an instance-wise misalignment weight, which emphasizes under-trained pairs misaligned with human preference, and a group-wise (self-normalized) conditional preference score, which promotes promising thoughts. In this paper, we apply DWRL to preference modeling by training generative preference models (GPMs) to first generate a thought and then predict the human preference score. Across multiple benchmarks and model scales (Llama3 and Qwen2.5), DWRL consistently outperforms both GPM baselines and scalar models, while producing coherent, interpretable thoughts. In summary, our results position DWRL as a general framework for reasoning-enhanced preference learning beyond verifiable tasks.
 ]]></content:encoded>
-<pubDate>Thu, 23 Oct 2025 00:00:00 -0400</pubDate>
 <pubDate>Thu, 23 Oct 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -113,9 +108,7 @@ arXiv:2503.09271v4 Announce Type: replace-cross
 Abstract: Open-Vocabulary object detectors can generalize to an unrestricted set of categories through simple textual prompting. However, adapting these models to rare classes or reinforcing their abilities on multiple specialized domains remains essential. While recent methods rely on monolithic adaptation strategies with a single set of weights, we embrace modular deep learning. We introduce DitHub, a framework designed to build and maintain a library of efficient adaptation modules. Inspired by Version Control Systems, DitHub manages expert modules as branches that can be fetched and merged as needed. This modular approach allows us to conduct an in-depth exploration of the compositional properties of adaptation modules, marking the first such study in Object Detection. Our method achieves state-of-the-art performance on the ODinW-13 benchmark and ODinW-O, a newly introduced benchmark designed to assess class reappearance. For more details, visit our project page: https://aimagelab.github.io/DitHub/
 ]]></content:encoded>
 <pubDate>Thu, 23 Oct 2025 00:00:00 -0400</pubDate>
-<pubDate>Thu, 23 Oct 2025 00:00:00 -0400</pubDate>
 </item>
-
 <item>
 <title>3D Optimization for AI Inference Scaling: Balancing Accuracy, Cost, and Latency</title>
 <link>https://arxiv.org/abs/2510.18905</link>
@@ -10917,76 +10910,6 @@ Abstract: Wi-Fi sensing systems are severely hindered by cross domain problem wh
 <content:encoded><![CDATA[
 arXiv:2402.18012v4 Announce Type: replace 
 Abstract: Addressing real-world optimization problems becomes particularly challenging when analytic objective functions or constraints are unavailable. While numerous studies have addressed the issue of unknown objectives, limited research has focused on scenarios where feasibility constraints are not given explicitly. Overlooking these constraints can lead to spurious solutions that are unrealistic in practice. To deal with such unknown constraints, we propose to perform optimization within the data manifold using diffusion models. To constrain the optimization process to the data manifold, we reformulate the original optimization problem as a sampling problem from the product of the Boltzmann distribution defined by the objective function and the data distribution learned by the diffusion model. Depending on the differentiability of the objective function, we propose two different sampling methods. For differentiable objectives, we propose a two-stage framework that begins with a guided diffusion process for warm-up, followed by a Langevin dynamics stage for further correction. For non-differentiable objectives, we propose an iterative importance sampling strategy using the diffusion model as the proposal distribution. Comprehensive experiments on a synthetic dataset, six real-world black-box optimization datasets, and a multi-objective molecule optimization dataset show that our method achieves better or comparable performance with previous state-of-the-art baselines.
-]]></content:encoded>
-<pubDate>Tue, 21 Oct 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>LinkedIn Post Embeddings: Industrial Scale Embedding Generation and Usage across LinkedIn</title>
-<link>https://arxiv.org/abs/2405.11344</link>
-<guid>https://arxiv.org/abs/2405.11344</guid>
-<content:encoded><![CDATA[
-arXiv:2405.11344v4 Announce Type: replace 
-Abstract: A post embedding (representation of text in embedding space that effectively captures semantic meaning) is a foundational component of LinkedIn that is consumed by product surfaces in retrieval and ranking (e.g., ranking posts in the feed or video tab). This paper presents the post embeddings used at LinkedIn, where a pre-trained transformer-based large language model (LLM) is taken as input and fine-tuned using multi-task learning across a diverse set of semantic labeling tasks. We observe positive transfer, leading to improved performance across all tasks, compared to training them independently. The generated post embeddings outperform baseline models in zero-shot learning, demonstrating its potential for broader applicability. Furthermore, the generated post embeddings' performance surpasses that of OpenAI's ADA-001 and ADA-002 embeddings on LinkedIn specific datasets and tasks. We also describe the offline evaluation methodology and the deployment to our near-line infrastructure, which makes the post embedding available for use within minutes of post creation for any downstream application. We present how the embeddings were applied in the Feed product surface, in both ranking and retrieval stages, and showcase the real world online impact to demonstrate the superior performance of these embeddings. Finally, we also share the results of applying the embeddings to the retrieval system of our video ranking product surface in LinkedIn. These embeddings have been battle-tested in production at LinkedIn for over two years, consistently powering multiple products.
-]]></content:encoded>
-<pubDate>Tue, 21 Oct 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Direct Preference Optimization With Unobserved Preference Heterogeneity: The Necessity of Ternary Preferences</title>
-<link>https://arxiv.org/abs/2405.15065</link>
-<guid>https://arxiv.org/abs/2405.15065</guid>
-<content:encoded><![CDATA[
-arXiv:2405.15065v2 Announce Type: replace 
-Abstract: Reinforcement Learning from Human Feedback (RLHF) has become central to aligning large language models with human values, typically by first learning a reward model from preference data which is then used to update the model with reinforcement learning. Recent alternatives such as Direct Preference Optimization (DPO) simplify this pipeline by directly optimizing on preferences. However, both approaches often assume uniform annotator preferences and rely on binary comparisons, overlooking two key limitations: the diversity of human evaluators and the limitations of pairwise feedback. In this work, we address both these issues. First, we connect preference learning in RLHF with the econometrics literature and show that binary comparisons are insufficient for identifying latent user preferences from finite user data and infinite users, while (even incomplete) rankings over three or more responses ensure identifiability. Second, we introduce methods to incorporate heterogeneous preferences into alignment algorithms. We develop an Expectation-Maximization adaptation of DPO that discovers latent annotator types and trains a mixture of LLMs accordingly. Then we propose an aggregation algorithm using a min-max regret fairness criterion to produce a single generative policy with equitable performance guarantees. Together, these contributions establish a theoretical and algorithmic framework for fairness and personalization for diverse users in generative model alignment.
-]]></content:encoded>
-<pubDate>Tue, 21 Oct 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Target Networks and Over-parameterization Stabilize Off-policy Bootstrapping with Function Approximation</title>
-<link>https://arxiv.org/abs/2405.21043</link>
-<guid>https://arxiv.org/abs/2405.21043</guid>
-<content:encoded><![CDATA[
-arXiv:2405.21043v3 Announce Type: replace 
-Abstract: We prove that the combination of a target network and over-parameterized linear function approximation establishes a weaker convergence condition for bootstrapped value estimation in certain cases, even with off-policy data. Our condition is naturally satisfied for expected updates over the entire state-action space or learning with a batch of complete trajectories from episodic Markov decision processes. Notably, using only a target network or an over-parameterized model does not provide such a convergence guarantee. Additionally, we extend our results to learning with truncated trajectories, showing that convergence is achievable for all tasks with minor modifications, akin to value truncation for the final states in trajectories. Our primary result focuses on temporal difference estimation for prediction, providing high-probability value estimation error bounds and empirical analysis on Baird's counterexample and a Four-room task. Furthermore, we explore the control setting, demonstrating that similar convergence conditions apply to Q-learning.
-]]></content:encoded>
-<pubDate>Tue, 21 Oct 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Neural Green's Operators for Parametric Partial Differential Equations</title>
-<link>https://arxiv.org/abs/2406.01857</link>
-<guid>https://arxiv.org/abs/2406.01857</guid>
-<content:encoded><![CDATA[
-arXiv:2406.01857v4 Announce Type: replace 
-Abstract: This work introduces a paradigm for constructing parametric neural operators that are derived from finite-dimensional representations of Green's operators, with learnable Green's functions, for linear partial differential equations (PDEs). We refer to such neural operators as Neural Green's Operators (NGOs). Our construction of NGOs preserves the linear action of Green's operators on the inhomogeneity fields, while approximating the nonlinear dependence of the Green's function on the coefficients of the PDE using neural networks that take weighted averages of such coefficients as input. This construction reduces the complexity of the problem from learning the entire solution operator and its dependence on all parameters to only learning the Green's function and its dependence on the PDE coefficients. Moreover, taking weighted averages, rather than point samples, of input functions decouples the network size from the number of sampling points, enabling efficient resolution of multiple scales in the input fields. Furthermore, we show that our explicit representation of Green's functions enables the embedding of desirable mathematical attributes in our NGO architectures, such as symmetry, spectral, and conservation properties. Through numerical benchmarks on canonical PDEs, we demonstrate that NGOs achieve comparable or superior accuracy to deep operator networks, variationally mimetic operator networks, and Fourier neural operators with similar parameter counts, while generalizing significantly better when tested on out-of-distribution data. For time-dependent PDEs, we show that NGOs can produce pointwise-accurate dynamics in an auto-regressive manner when trained on a single time step. Finally, we show that we can leverage the explicit representation of Green's functions returned by NGOs to construct effective matrix preconditioners that accelerate iterative solvers for PDEs.
-]]></content:encoded>
-<pubDate>Tue, 21 Oct 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Absolute abstraction: a renormalisation group approach</title>
-<link>https://arxiv.org/abs/2407.01656</link>
-<guid>https://arxiv.org/abs/2407.01656</guid>
-<content:encoded><![CDATA[
-arXiv:2407.01656v4 Announce Type: replace 
-Abstract: Abstraction is the process of extracting the essential features from raw data while ignoring irrelevant details. It is well known that abstraction emerges with depth in neural networks, where deep layers capture abstract characteristics of data by combining lower level features encoded in shallow layers (e.g. edges). Yet we argue that depth alone is not enough to develop truly abstract representations. We advocate that the level of abstraction crucially depends on how broad the training set is. We address the issue within a renormalisation group approach where a representation is expanded to encompass a broader set of data. We take the unique fixed point of this transformation -- the Hierarchical Feature Model -- as a candidate for a representation which is absolutely abstract. This theoretical picture is tested in numerical experiments based on Deep Belief Networks and auto-encoders trained on data of different breadth. These show that representations in neural networks approach the Hierarchical Feature Model as the data get broader and as depth increases, in agreement with theoretical predictions.
-]]></content:encoded>
-<pubDate>Tue, 21 Oct 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Identifiable Latent Bandits: Leveraging observational data for personalized decision-making</title>
-<link>https://arxiv.org/abs/2407.16239</link>
-<guid>https://arxiv.org/abs/2407.16239</guid>
-<content:encoded><![CDATA[
-arXiv:2407.16239v5 Announce Type: replace 
-Abstract: Sequential decision-making algorithms such as multi-armed bandits can find optimal personalized decisions, but are notoriously sample-hungry. In personalized medicine, for example, training a bandit from scratch for every patient is typically infeasible, as the number of trials required is much larger than the number of decision points for a single patient. To combat this, latent bandits offer rapid exploration and personalization beyond what context variables alone can offer, provided that a latent variable model of problem instances can be learned consistently. However, existing works give no guidance as to how such a model can be found. In this work, we propose an identifiable latent bandit framework that leads to optimal decision-making with a shorter exploration time than classical bandits by learning from historical records of decisions and outcomes. Our method is based on nonlinear independent component analysis that provably identifies representations from observational data sufficient to infer optimal actions in new bandit instances. We verify this strategy in simulated and semi-synthetic environments, showing substantial improvement over online and offline learning baselines when identifying conditions are satisfied.
-]]></content:encoded>
-<pubDate>Tue, 21 Oct 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>MoFO: Momentum-Filtered Optimizer for Mitigating Forgetting in LLM Fine-Tuning</title>
-<link>https://arxiv.org/abs/2407.20999</link>
-<guid>https://arxiv.org/abs/2407.20999</guid>
-<content:encoded><![CDATA[
-arXiv:2407.20999v4 Announce Type: replace 
-Abstract: Large language models (LLMs) have demonstrated remarkable capabilities across a wide range of tasks. Typically, LLMs are first pre-trained on large corpora and subsequently fine-tuned on task-specific datasets. However, during fine-tuning, LLMs may forget some knowledge acquired in the pre-training stage, leading to a decline in general capabilities. Existing approaches to mitigate forgetting often rely on access to pre-training data, which may be unavailable in many real-world scenarios--such as fine-tuning checkpoint-only open-source LLMs. To address this challenge, we propose a new fine-tuning algorithm termed Momentum-Filtered Optimizer (MoFO). MoFO is an extension of greedy block coordinate descent (BCD) methods: in each iteration, MoFO only updates the model parameters with the largest momentum magnitudes, while keeping all other parameters fixed. MoFO achieves similar fine-tuning performance to the default fine-tuning algorithm while effectively mitigating knowledge forgetting. We validate MoFO through rigorous convergence analysis and extensive experiments, demonstrating its effectiveness in mitigating forgetting without pre-training data.
 ]]></content:encoded>
 <pubDate>Tue, 21 Oct 2025 00:00:00 -0400</pubDate>
 </item>

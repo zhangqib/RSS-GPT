@@ -4,6 +4,7 @@
 <title>cs.AI updates on arXiv.org</title>
 <link>http://rss.arxiv.org/rss/cs.AI</link>
 
+
 <item>
 <title>Invoice Information Extraction: Methods and Performance Evaluation</title>
 <link>https://arxiv.org/abs/2510.15727</link>
@@ -11,11 +12,10 @@
 <content:encoded><![CDATA[
 <div> invoice, structured information, extraction methods, evaluation metrics, accuracy assessment
 
-Summary:<br><br>This paper discusses methods for extracting structured information from invoice documents by using pre-processing techniques and Docling and LlamaCloud Services. The proposed evaluation metrics include field-level precision, consistency check failures, and exact match accuracy to assess the accuracy of the extracted data against annotated ground truth. These metrics provide a standardized way to compare different extraction methods and highlight strengths and weaknesses in field-specific performance. The approach aims to ensure the reliability of the extraction process by establishing a robust evaluation framework. <div>
+Summary:<br /><br />This paper discusses methods for extracting structured information from invoice documents by using pre-processing techniques and Docling and LlamaCloud Services. The proposed evaluation metrics include field-level precision, consistency check failures, and exact match accuracy to assess the accuracy of the extracted data against annotated ground truth. These metrics provide a standardized way to compare different extraction methods and highlight strengths and weaknesses in field-specific performance. The approach aims to ensure the reliability of the extraction process by establishing a robust evaluation framework. <div>
 arXiv:2510.15727v2 Announce Type: replace 
 Abstract: This paper presents methods for extracting structured information from invoice documents and proposes a set of evaluation metrics (EM) to assess the accuracy of the extracted data against annotated ground truth. The approach involves pre-processing scanned or digital invoices, applying Docling and LlamaCloud Services to identify and extract key fields such as invoice number, date, total amount, and vendor details. To ensure the reliability of the extraction process, we establish a robust evaluation framework comprising field-level precision, consistency check failures, and exact match accuracy. The proposed metrics provide a standardized way to compare different extraction methods and highlight strengths and weaknesses in field-specific performance.
 ]]></content:encoded>
-<pubDate>Thu, 23 Oct 2025 00:00:00 -0400</pubDate>
 <pubDate>Thu, 23 Oct 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -24,12 +24,11 @@ Abstract: This paper presents methods for extracting structured information from
 <guid>https://arxiv.org/abs/2503.13414</guid>
 <content:encoded><![CDATA[
 <div> reinforcement learning, reward adaptation, Q-functions, action pruning, sample complexity
-Summary:<br>
+Summary:<br />
 This paper introduces a new method called "Q-Manipulation" (Q-M) for reward adaptation in reinforcement learning. The approach leverages existing source behaviors to adapt to a target reward function efficiently. By manipulating Q-functions and computing bounds based on the known relationship between source and target reward functions, Q-M enables action pruning in the target domain before learning begins. The iterative process of tightening these bounds, similar to value iteration, ensures that Q-M does not compromise the optimality of the returned policy in discrete domains. The method is proven to be efficient in terms of sample complexity and is evaluated in various synthetic and simulation domains, showcasing its effectiveness, generalizability, and practicality. <div>
 arXiv:2503.13414v3 Announce Type: replace-cross 
 Abstract: In this paper, we propose a new solution to reward adaptation (RA) in reinforcement learning, where the agent adapts to a target reward function based on one or more existing source behaviors learned a priori under the same domain dynamics but different reward functions. While learning the target behavior from scratch is possible, it is often inefficient given the available source behaviors. Our work introduces a new approach to RA through the manipulation of Q-functions. Assuming the target reward function is a known function of the source reward functions, we compute bounds on the Q-function and present an iterative process (akin to value iteration) to tighten these bounds. Such bounds enable action pruning in the target domain before learning even starts. We refer to this method as "Q-Manipulation" (Q-M). The iteration process assumes access to a lite-model, which is easy to provide or learn. We formally prove that Q-M, under discrete domains, does not affect the optimality of the returned policy and show that it is provably efficient in terms of sample complexity in a probabilistic sense. Q-M is evaluated in a variety of synthetic and simulation domains to demonstrate its effectiveness, generalizability, and practicality.
 ]]></content:encoded>
-<pubDate>Thu, 23 Oct 2025 00:00:00 -0400</pubDate>
 <pubDate>Thu, 23 Oct 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -39,12 +38,11 @@ Abstract: In this paper, we propose a new solution to reward adaptation (RA) in 
 <content:encoded><![CDATA[
 <div> Keywords: Large Language Models, Reinforcement Learning, Instructional scaffolding, Exploration, Reasoning
 
-Summary:<br>
-Recent advances in Large Language Models (LLMs) have highlighted the potential of Reinforcement Learning (RL) for enhancing reasoning capabilities. However, the inherent limitations of LLMs create a cycle where exploration is restricted, hindering learning. To address this, Rubric-Scaffolded Reinforcement Learning (RuscaRL) introduces checklist-style rubrics as explicit guidance during both exploration and exploitation phases. This framework provides external guidance for diverse responses and verifiable rewards for model training. Extensive experiments show RuscaRL's superiority in general reasoning tasks, exceeding performance of leading LLMs like GPT-4.1. Notably, RuscaRL significantly improves performance on HealthBench-500 benchmarks. The fine-tuned variant on Qwen3-30B-A3B-Instruct achieves impressive results, surpassing other LLMs. The code for RuscaRL is available on GitHub for further exploration and implementation. <br>Summary: <div>
+Summary:<br />
+Recent advances in Large Language Models (LLMs) have highlighted the potential of Reinforcement Learning (RL) for enhancing reasoning capabilities. However, the inherent limitations of LLMs create a cycle where exploration is restricted, hindering learning. To address this, Rubric-Scaffolded Reinforcement Learning (RuscaRL) introduces checklist-style rubrics as explicit guidance during both exploration and exploitation phases. This framework provides external guidance for diverse responses and verifiable rewards for model training. Extensive experiments show RuscaRL's superiority in general reasoning tasks, exceeding performance of leading LLMs like GPT-4.1. Notably, RuscaRL significantly improves performance on HealthBench-500 benchmarks. The fine-tuned variant on Qwen3-30B-A3B-Instruct achieves impressive results, surpassing other LLMs. The code for RuscaRL is available on GitHub for further exploration and implementation. <br />Summary: <div>
 arXiv:2508.16949v5 Announce Type: replace-cross 
 Abstract: Recent advances in Large Language Models (LLMs) have underscored the potential of Reinforcement Learning (RL) to facilitate the emergence of reasoning capabilities. Despite the encouraging results, a fundamental dilemma persists as RL improvement relies on learning from high-quality samples, yet the exploration for such samples remains bounded by the inherent limitations of LLMs. This, in effect, creates an undesirable cycle in which what cannot be explored cannot be learned. In this work, we propose Rubric-Scaffolded Reinforcement Learning (RuscaRL), a novel instructional scaffolding framework designed to break the exploration bottleneck for general LLM reasoning. Specifically, RuscaRL introduces checklist-style rubrics as (1) explicit scaffolding for exploration during rollout generation, where different rubrics are provided as external guidance within task instructions to steer diverse high-quality responses. This guidance is gradually decayed over time, encouraging the model to internalize the underlying reasoning patterns; (2) verifiable rewards for exploitation during model training, where we can obtain robust LLM-as-a-Judge scores using rubrics as references, enabling effective RL on general reasoning tasks. Extensive experiments demonstrate the superiority of the proposed RuscaRL across various benchmarks, effectively expanding reasoning boundaries under the Best-of-N evaluation. Notably, RuscaRL significantly boosts Qwen2.5-7B-Instruct from 23.6 to 50.3 on HealthBench-500, surpassing GPT-4.1. Furthermore, our fine-tuned variant on Qwen3-30B-A3B-Instruct achieves 61.1 on HealthBench-500, outperforming leading LLMs including OpenAI-o3. Our code is available at https://github.com/IANNXANG/RuscaRL.
 ]]></content:encoded>
-<pubDate>Thu, 23 Oct 2025 00:00:00 -0400</pubDate>
 <pubDate>Thu, 23 Oct 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -52,13 +50,12 @@ Abstract: Recent advances in Large Language Models (LLMs) have underscored the p
 <link>https://arxiv.org/abs/2510.09660</link>
 <guid>https://arxiv.org/abs/2510.09660</guid>
 <content:encoded><![CDATA[
-<div> Diffusion Probabilistic Models, Anisotropic Noise Operator, Spectrally Anisotropic Gaussian Diffusion, Score Relation, Empirical Results <br>
-Summary: <br>
-This paper introduces an anisotropic noise operator called Spectrally Anisotropic Gaussian Diffusion (SAGD) to incorporate inductive biases into Diffusion Probabilistic Models (DPMs). By replacing the isotropic forward covariance with a structured, frequency-diagonal covariance, SAGD allows for emphasizing or suppressing designated frequency bands while keeping the forward process Gaussian. The derived score relation for anisotropic covariances shows that the learned score converges to the true data score as time approaches zero, reshaping the probability-flow path from noise to data. Empirically, the induced anisotropy in SAGD outperforms standard diffusion across various vision datasets and enables selective omission of known corruptions in specific frequency bands. This demonstrates that carefully designed anisotropic forward noise can effectively tailor inductive bias in DPMs. <br> <div>
+<div> Diffusion Probabilistic Models, Anisotropic Noise Operator, Spectrally Anisotropic Gaussian Diffusion, Score Relation, Empirical Results <br />
+Summary: <br />
+This paper introduces an anisotropic noise operator called Spectrally Anisotropic Gaussian Diffusion (SAGD) to incorporate inductive biases into Diffusion Probabilistic Models (DPMs). By replacing the isotropic forward covariance with a structured, frequency-diagonal covariance, SAGD allows for emphasizing or suppressing designated frequency bands while keeping the forward process Gaussian. The derived score relation for anisotropic covariances shows that the learned score converges to the true data score as time approaches zero, reshaping the probability-flow path from noise to data. Empirically, the induced anisotropy in SAGD outperforms standard diffusion across various vision datasets and enables selective omission of known corruptions in specific frequency bands. This demonstrates that carefully designed anisotropic forward noise can effectively tailor inductive bias in DPMs. <br /> <div>
 arXiv:2510.09660v3 Announce Type: replace-cross 
 Abstract: Diffusion Probabilistic Models (DPMs) have achieved strong generative performance, yet their inductive biases remain largely implicit. In this work, we aim to build inductive biases into the training and sampling of diffusion models to better accommodate the target distribution of the data to model. We introduce an anisotropic noise operator that shapes these biases by replacing the isotropic forward covariance with a structured, frequency-diagonal covariance. This operator unifies band-pass masks and power-law weightings, allowing us to emphasize or suppress designated frequency bands, while keeping the forward process Gaussian. We refer to this as spectrally anisotropic Gaussian diffusion (SAGD). In this work, we derive the score relation for anisotropic covariances and show that, under full support, the learned score converges to the true data score as $t\!\to\!0$, while anisotropy reshapes the probability-flow path from noise to data. Empirically, we show the induced anisotropy outperforms standard diffusion across several vision datasets, and enables selective omission: learning while ignoring known corruptions confined to specific bands. Together, these results demonstrate that carefully designed anisotropic forward noise provides a simple, yet principled, handle to tailor inductive bias in DPMs.
 ]]></content:encoded>
-<pubDate>Thu, 23 Oct 2025 00:00:00 -0400</pubDate>
 <pubDate>Thu, 23 Oct 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -68,12 +65,11 @@ Abstract: Diffusion Probabilistic Models (DPMs) have achieved strong generative 
 <content:encoded><![CDATA[
 <div> coverage, language models, pre-training, cross-entropy, downstream performance
 
-Summary:<br>
-The article discusses the impact of pre-training language models on downstream performance. It highlights the limitations of using cross-entropy loss as a predictor of success and introduces the concept of coverage as a more effective measure. The coverage principle is explained, showing how optimizing next-token prediction leads to better coverage and faster generalization compared to cross-entropy. The article also suggests practical interventions to improve coverage, including model selection, gradient normalization, and decoding strategies during testing. These interventions have provable benefits for enhancing the model's performance on specific tasks. Overall, the study provides insights into the importance of coverage in shaping the success of pre-trained language models and offers strategies for optimizing it for better performance. <br>Summary: <div>
+Summary:<br />
+The article discusses the impact of pre-training language models on downstream performance. It highlights the limitations of using cross-entropy loss as a predictor of success and introduces the concept of coverage as a more effective measure. The coverage principle is explained, showing how optimizing next-token prediction leads to better coverage and faster generalization compared to cross-entropy. The article also suggests practical interventions to improve coverage, including model selection, gradient normalization, and decoding strategies during testing. These interventions have provable benefits for enhancing the model's performance on specific tasks. Overall, the study provides insights into the importance of coverage in shaping the success of pre-trained language models and offers strategies for optimizing it for better performance. <br />Summary: <div>
 arXiv:2510.15020v2 Announce Type: replace-cross 
 Abstract: Language models demonstrate remarkable abilities when pre-trained on large text corpora and fine-tuned for specific tasks, but how and why pre-training shapes the success of the final model remains poorly understood. Notably, although pre-training success is often quantified by cross-entropy loss, cross-entropy can be a poor predictor of downstream performance. Instead, we provide a theoretical perspective on this relationship through the lens of \emph{coverage}, which quantifies the probability mass the pre-trained model places on high-quality responses and which is necessary and sufficient for post-training and test-time scaling methods such as Best-of-N to succeed. Our main results develop an understanding of \emph{the coverage principle}, a phenomenon whereby next-token prediction (more generally, maximum likelihood) implicitly optimizes toward a model with good coverage. In particular, we uncover a mechanism that explains the power of coverage in predicting downstream performance: \emph{coverage generalizes faster than cross-entropy}, avoiding spurious dependence on problem-dependent parameters such as the sequence length. We also study practical algorithmic interventions with provable benefits for improving coverage, including (i) model/checkpoint selection procedures, (ii) gradient normalization schemes, and (iii) test-time decoding strategies.
 ]]></content:encoded>
-<pubDate>Thu, 23 Oct 2025 00:00:00 -0400</pubDate>
 <pubDate>Thu, 23 Oct 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -83,16 +79,14 @@ Abstract: Language models demonstrate remarkable abilities when pre-trained on l
 <content:encoded><![CDATA[
 <div> Validation, Ethical AI, Mental Health, Suicide Risk, Chatbots
 Summary:
-VERA-MH is an automated system designed for evaluating the safety of AI chatbots used in mental health contexts, focusing on suicide risk. The system involves a user-agent model simulating conversations with the chatbot and a judge-agent scoring the interactions based on a rubric developed by clinicians and experts. The process aims to ensure realistic user interactions and accurate evaluation of the chatbot's performance. Initial evaluations have been conducted on GPT-5, Claude Opus, and Claude Sonnet, with findings used for further development. The next steps include robust clinical validation, iteration, and refining scoring mechanisms. Community feedback on both technical and clinical aspects of the evaluation is solicited for further improvement. <br><br>Summary: <div>
+VERA-MH is an automated system designed for evaluating the safety of AI chatbots used in mental health contexts, focusing on suicide risk. The system involves a user-agent model simulating conversations with the chatbot and a judge-agent scoring the interactions based on a rubric developed by clinicians and experts. The process aims to ensure realistic user interactions and accurate evaluation of the chatbot's performance. Initial evaluations have been conducted on GPT-5, Claude Opus, and Claude Sonnet, with findings used for further development. The next steps include robust clinical validation, iteration, and refining scoring mechanisms. Community feedback on both technical and clinical aspects of the evaluation is solicited for further improvement. <br /><br />Summary: <div>
 arXiv:2510.15297v2 Announce Type: replace-cross 
 Abstract: We introduce VERA-MH (Validation of Ethical and Responsible AI in Mental Health), an automated evaluation of the safety of AI chatbots used in mental health contexts, with an initial focus on suicide risk.
   Practicing clinicians and academic experts developed a rubric informed by best practices for suicide risk management for the evaluation. To fully automate the process, we used two ancillary AI agents. A user-agent model simulates users engaging in a mental health-based conversation with the chatbot under evaluation. The user-agent role-plays specific personas with pre-defined risk levels and other features. Simulated conversations are then passed to a judge-agent who scores them based on the rubric. The final evaluation of the chatbot being tested is obtained by aggregating the scoring of each conversation.
   VERA-MH is actively under development and undergoing rigorous validation by mental health clinicians to ensure user-agents realistically act as patients and that the judge-agent accurately scores the AI chatbot. To date we have conducted preliminary evaluation of GPT-5, Claude Opus and Claude Sonnet using initial versions of the VERA-MH rubric and used the findings for further design development. Next steps will include more robust clinical validation and iteration, as well as refining actionable scoring. We are seeking feedback from the community on both the technical and clinical aspects of our evaluation.
 ]]></content:encoded>
 <pubDate>Thu, 23 Oct 2025 00:00:00 -0400</pubDate>
-<pubDate>Thu, 23 Oct 2025 00:00:00 -0400</pubDate>
 </item>
-
 <item>
 <title>Test-time Verification via Optimal Transport: Coverage, ROC, &amp; Sub-optimality</title>
 <link>https://arxiv.org/abs/2510.18982</link>
@@ -10875,67 +10869,6 @@ Abstract: Retrieval-augmented generation (RAG) has proven effective in integrati
 <content:encoded><![CDATA[
 arXiv:2502.01932v5 Announce Type: replace-cross 
 Abstract: Robot sports, characterized by well-defined objectives, explicit rules, and dynamic interactions, present ideal scenarios for demonstrating embodied intelligence. In this paper, we present VolleyBots, a novel robot sports testbed where multiple drones cooperate and compete in the sport of volleyball under physical dynamics. VolleyBots integrates three features within a unified platform: competitive and cooperative gameplay, turn-based interaction structure, and agile 3D maneuvering. These intertwined features yield a complex problem combining motion control and strategic play, with no available expert demonstrations. We provide a comprehensive suite of tasks ranging from single-drone drills to multi-drone cooperative and competitive tasks, accompanied by baseline evaluations of representative reinforcement learning (RL), multi-agent reinforcement learning (MARL) and game-theoretic algorithms. Simulation results show that on-policy RL methods outperform off-policy methods in single-agent tasks, but both approaches struggle in complex tasks that combine motion control and strategic play. We additionally design a hierarchical policy which achieves 69.5% win rate against the strongest baseline in the 3 vs 3 task, demonstrating its potential for tackling the complex interplay between low-level control and high-level strategy. To highlight VolleyBots' sim-to-real potential, we further demonstrate the zero-shot deployment of a policy trained entirely in simulation on real-world drones.
-]]></content:encoded>
-<pubDate>Tue, 21 Oct 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Harmony in Divergence: Towards Fast, Accurate, and Memory-efficient Zeroth-order LLM Fine-tuning</title>
-<link>https://arxiv.org/abs/2502.03304</link>
-<guid>https://arxiv.org/abs/2502.03304</guid>
-<content:encoded><![CDATA[
-arXiv:2502.03304v3 Announce Type: replace-cross 
-Abstract: Large language models (LLMs) excel across various tasks, but standard first-order (FO) fine-tuning demands considerable memory, significantly limiting real-world deployment. Recently, zeroth-order (ZO) optimization stood out as a promising memory-efficient training paradigm, avoiding backward passes and relying solely on forward passes for gradient estimation, making it attractive for resource-constrained scenarios. However, ZO method lags far behind FO method in both convergence speed and accuracy. To bridge the gap, we introduce a novel layer-wise divergence analysis that uncovers the distinct update pattern of FO and ZO optimization. Aiming to resemble the learning capacity of FO method from the findings, we propose Divergence-driven Zeroth-Order (DiZO) optimization. DiZO conducts divergence-driven layer adaptation by incorporating projections to ZO updates, generating diverse-magnitude updates precisely scaled to layer-wise individual optimization needs. Our results demonstrate that DiZO significantly reduces the needed iterations for convergence without sacrificing throughput, cutting training GPU hours by up to 48\% on various datasets. Moreover, DiZO consistently outperforms the representative ZO baselines in fine-tuning RoBERTa-large, OPT-series, and Llama-series on downstream tasks and, in some cases, even surpasses memory-intensive FO fine-tuning. Our code is released at https://github.com/Skilteee/DiZO.
-]]></content:encoded>
-<pubDate>Tue, 21 Oct 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Seeing in the Dark: A Teacher-Student Framework for Dark Video Action Recognition via Knowledge Distillation and Contrastive Learning</title>
-<link>https://arxiv.org/abs/2502.03724</link>
-<guid>https://arxiv.org/abs/2502.03724</guid>
-<content:encoded><![CDATA[
-arXiv:2502.03724v2 Announce Type: replace-cross 
-Abstract: Action recognition in dark or low-light (under-exposed) videos is a challenging task due to visibility degradation, which can hinder critical spatiotemporal details. This paper proposes ActLumos, a teacher-student framework that attains single-stream inference while retaining multi-stream level accuracy. The teacher consumes dual stream inputs, which include original dark frames and retinex-enhanced frames, processed by weight-shared R(2+1)D-34 backbones and fused by a Dynamic Feature Fusion (DFF) module, which dynamically re-weights the two streams at each time step, emphasising the most informative temporal segments. The teacher is also included with a supervised contrastive loss (SupCon) that sharpens class margins. The student shares the R(2+1)D-34 backbone but uses only dark frames and no fusion at test time. The student is first pre-trained with self-supervision on dark clips of both datasets without their labels and then fine-tuned with knowledge distillation from the teacher, transferring the teacher's multi-stream knowledge into a single-stream model. Under single-stream inference, the distilled student attains state-of-the-art accuracy of 96.92% (Top-1) on ARID V1.0, 88.27% on ARID V1.5, and 48.96% on Dark48. Ablation studies further highlight the individual contributions of each component, i.e., DFF in the teacher outperforms single or static fusion, knowledge distillation (KD) transfers these gains to the single-stream student, and two-view spatio-temporal SSL surpasses spatial-only or temporal-only variants without increasing inference cost. The official website of this work is available at: https://github.com/HrishavBakulBarua/ActLumos
-]]></content:encoded>
-<pubDate>Tue, 21 Oct 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Towards Principled Unsupervised Multi-Agent Reinforcement Learning</title>
-<link>https://arxiv.org/abs/2502.08365</link>
-<guid>https://arxiv.org/abs/2502.08365</guid>
-<content:encoded><![CDATA[
-arXiv:2502.08365v4 Announce Type: replace-cross 
-Abstract: In reinforcement learning, we typically refer to unsupervised pre-training when we aim to pre-train a policy without a priori access to the task specification, i.e. rewards, to be later employed for efficient learning of downstream tasks. In single-agent settings, the problem has been extensively studied and mostly understood. A popular approach, called task-agnostic exploration, casts the unsupervised objective as maximizing the entropy of the state distribution induced by the agent's policy, from which principles and methods follow.
-  In contrast, little is known about it in multi-agent settings, which are ubiquitous in the real world. What are the pros and cons of alternative problem formulations in this setting? How hard is the problem in theory, how can we solve it in practice? In this paper, we address these questions by first characterizing those alternative formulations and highlighting how the problem, even when tractable in theory, is non-trivial in practice. Then, we present a scalable, decentralized, trust-region policy search algorithm to address the problem in practical settings. Finally, we provide numerical validations to both corroborate the theoretical findings and pave the way for unsupervised multi-agent reinforcement learning via task-agnostic exploration in challenging domains, showing that optimizing for a specific objective, namely mixture entropy, provides an excellent trade-off between tractability and performances.
-]]></content:encoded>
-<pubDate>Tue, 21 Oct 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Manual2Skill: Learning to Read Manuals and Acquire Robotic Skills for Furniture Assembly Using Vision-Language Models</title>
-<link>https://arxiv.org/abs/2502.10090</link>
-<guid>https://arxiv.org/abs/2502.10090</guid>
-<content:encoded><![CDATA[
-arXiv:2502.10090v3 Announce Type: replace-cross 
-Abstract: Humans possess an extraordinary ability to understand and execute complex manipulation tasks by interpreting abstract instruction manuals. For robots, however, this capability remains a substantial challenge, as they cannot interpret abstract instructions and translate them into executable actions. In this paper, we present Manual2Skill, a novel framework that enables robots to perform complex assembly tasks guided by high-level manual instructions. Our approach leverages a Vision-Language Model (VLM) to extract structured information from instructional images and then uses this information to construct hierarchical assembly graphs. These graphs represent parts, subassemblies, and the relationships between them. To facilitate task execution, a pose estimation model predicts the relative 6D poses of components at each assembly step. At the same time, a motion planning module generates actionable sequences for real-world robotic implementation. We demonstrate the effectiveness of Manual2Skill by successfully assembling several real-world IKEA furniture items. This application highlights its ability to manage long-horizon manipulation tasks with both efficiency and precision, significantly enhancing the practicality of robot learning from instruction manuals. This work marks a step forward in advancing robotic systems capable of understanding and executing complex manipulation tasks in a manner akin to human capabilities.Project Page: https://owensun2004.github.io/Furniture-Assembly-Web/
-]]></content:encoded>
-<pubDate>Tue, 21 Oct 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>GRIFFIN: Effective Token Alignment for Faster Speculative Decoding</title>
-<link>https://arxiv.org/abs/2502.11018</link>
-<guid>https://arxiv.org/abs/2502.11018</guid>
-<content:encoded><![CDATA[
-arXiv:2502.11018v3 Announce Type: replace-cross 
-Abstract: Speculative decoding accelerates inference in large language models (LLMs) by generating multiple draft tokens simultaneously. However, existing methods often struggle with token misalignment between the training and decoding phases, limiting their performance. To address this, we propose GRIFFIN, a novel framework that incorporates a token-alignable training strategy and a token-alignable draft model to mitigate misalignment. The training strategy employs a loss masking mechanism to exclude highly misaligned tokens during training, preventing them from negatively impacting the draft model's optimization. The token-alignable draft model introduces input tokens to correct inconsistencies in generated features. Experiments on LLaMA, Vicuna, Qwen and Mixtral models demonstrate that GRIFFIN achieves an average acceptance length improvement of over 8% and a speedup ratio exceeding 7%, outperforming current speculative decoding state-of-the-art methods. Our code and GRIFFIN's draft models are released publicly in https://github.com/hsj576/GRIFFIN.
-]]></content:encoded>
-<pubDate>Tue, 21 Oct 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>PartSDF: Part-Based Implicit Neural Representation for Composite 3D Shape Parametrization and Optimization</title>
-<link>https://arxiv.org/abs/2502.12985</link>
-<guid>https://arxiv.org/abs/2502.12985</guid>
-<content:encoded><![CDATA[
-arXiv:2502.12985v3 Announce Type: replace-cross 
-Abstract: Accurate 3D shape representation is essential in engineering applications such as design, optimization, and simulation. In practice, engineering workflows require structured, part-based representations, as objects are inherently designed as assemblies of distinct components. However, most existing methods either model shapes holistically or decompose them without predefined part structures, limiting their applicability in real-world design tasks. We propose PartSDF, a supervised implicit representation framework that explicitly models composite shapes with independent, controllable parts while maintaining shape consistency. Thanks to its simple but innovative architecture, PartSDF outperforms both supervised and unsupervised baselines in reconstruction and generation tasks. We further demonstrate its effectiveness as a structured shape prior for engineering applications, enabling precise control over individual components while preserving overall coherence. Code available at https://github.com/cvlab-epfl/PartSDF.
 ]]></content:encoded>
 <pubDate>Tue, 21 Oct 2025 00:00:00 -0400</pubDate>
 </item>

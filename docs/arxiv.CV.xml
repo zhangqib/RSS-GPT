@@ -4,6 +4,7 @@
 <title>cs.CV updates on arXiv.org</title>
 <link>http://rss.arxiv.org/rss/cs.CV</link>
 
+
 <item>
 <title>RADAR: A Risk-Aware Dynamic Multi-Agent Framework for LLM Safety Evaluation via Role-Specialized Collaboration</title>
 <link>https://arxiv.org/abs/2509.25271</link>
@@ -17,9 +18,7 @@ arXiv:2509.25271v3 Announce Type: replace-cross
 Abstract: Existing safety evaluation methods for large language models (LLMs) suffer from inherent limitations, including evaluator bias and detection failures arising from model homogeneity, which collectively undermine the robustness of risk evaluation processes. This paper seeks to re-examine the risk evaluation paradigm by introducing a theoretical framework that reconstructs the underlying risk concept space. Specifically, we decompose the latent risk concept space into three mutually exclusive subspaces: the explicit risk subspace (encompassing direct violations of safety guidelines), the implicit risk subspace (capturing potential malicious content that requires contextual reasoning for identification), and the non-risk subspace. Furthermore, we propose RADAR, a multi-agent collaborative evaluation framework that leverages multi-round debate mechanisms through four specialized complementary roles and employs dynamic update mechanisms to achieve self-evolution of risk concept distributions. This approach enables comprehensive coverage of both explicit and implicit risks while mitigating evaluator bias. To validate the effectiveness of our framework, we construct an evaluation dataset comprising 800 challenging cases. Extensive experiments on our challenging testset and public benchmarks demonstrate that RADAR significantly outperforms baseline evaluation methods across multiple dimensions, including accuracy, stability, and self-evaluation risk sensitivity. Notably, RADAR achieves a 28.87% improvement in risk identification accuracy compared to the strongest baseline evaluation method.
 ]]></content:encoded>
 <pubDate>Thu, 23 Oct 2025 00:00:00 -0400</pubDate>
-<pubDate>Thu, 23 Oct 2025 00:00:00 -0400</pubDate>
 </item>
-
 <item>
 <title>Dimensionality Reduction for Remote Sensing Data Analysis: A Systematic Review of Methods and Applications</title>
 <link>https://arxiv.org/abs/2510.18935</link>
@@ -11220,16 +11219,6 @@ Abstract: Multi-image Interleaved Reasoning aims to improve Multi-modal Large La
 <content:encoded><![CDATA[
 arXiv:2509.18092v2 Announce Type: replace 
 Abstract: Generating high-fidelity images of humans with fine-grained control over attributes such as hairstyle and clothing remains a core challenge in personalized text-to-image synthesis. While prior methods emphasize identity preservation from a reference image, they lack modularity and fail to provide disentangled control over specific visual attributes. We introduce a new paradigm for attribute-specific image prompting, in which distinct sets of reference images are used to guide the generation of individual aspects of human appearance, such as hair, clothing, and identity. Our method encodes these inputs into attribute-specific tokens, which are injected into a pre-trained text-to-image diffusion model. This enables compositional and disentangled control over multiple visual factors, even across multiple people within a single image. To promote natural composition and robust disentanglement, we curate a cross-reference training dataset featuring subjects in diverse poses and expressions, and propose a multi-attribute cross-reference training strategy that encourages the model to generate faithful outputs from misaligned attribute inputs while adhering to both identity and textual conditioning. Extensive experiments show that our method achieves state-of-the-art performance in accurately following both visual and textual prompts. Our framework paves the way for more configurable human image synthesis by combining visual prompting with text-driven generation. Webpage is available at: https://snap-research.github.io/composeme/.
-]]></content:encoded>
-<pubDate>Fri, 17 Oct 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>DevFD: Developmental Face Forgery Detection by Learning Shared and Orthogonal LoRA Subspaces</title>
-<link>https://arxiv.org/abs/2509.19230</link>
-<guid>https://arxiv.org/abs/2509.19230</guid>
-<content:encoded><![CDATA[
-arXiv:2509.19230v2 Announce Type: replace 
-Abstract: The rise of realistic digital face generation and manipulation poses significant social risks. The primary challenge lies in the rapid and diverse evolution of generation techniques, which often outstrip the detection capabilities of existing models. To defend against the ever-evolving new types of forgery, we need to enable our model to quickly adapt to new domains with limited computation and data while avoiding forgetting previously learned forgery types. In this work, we posit that genuine facial samples are abundant and relatively stable in acquisition methods, while forgery faces continuously evolve with the iteration of manipulation techniques. Given the practical infeasibility of exhaustively collecting all forgery variants, we frame face forgery detection as a continual learning problem and allow the model to develop as new forgery types emerge. Specifically, we employ a Developmental Mixture of Experts (MoE) architecture that uses LoRA models as its individual experts. These experts are organized into two groups: a Real-LoRA to learn and refine knowledge of real faces, and multiple Fake-LoRAs to capture incremental information from different forgery types. To prevent catastrophic forgetting, we ensure that the learning direction of Fake-LoRAs is orthogonal to the established subspace. Moreover, we integrate orthogonal gradients into the orthogonal loss of Fake-LoRAs, preventing gradient interference throughout the training process of each task. Experimental results under both the datasets and manipulation types incremental protocols demonstrate the effectiveness of our method.
 ]]></content:encoded>
 <pubDate>Fri, 17 Oct 2025 00:00:00 -0400</pubDate>
 </item>
