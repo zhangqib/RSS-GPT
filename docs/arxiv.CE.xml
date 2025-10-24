@@ -4,17 +4,17 @@
 <title>cs.CE updates on arXiv.org</title>
 <link>http://rss.arxiv.org/rss/cs.CE</link>
 
+
 <item>
 <title>Finite Element and Machine Learning Modeling of Autogenous Self-Healing Concrete</title>
 <link>https://arxiv.org/abs/2510.19839</link>
 <guid>https://arxiv.org/abs/2510.19839</guid>
 <content:encoded><![CDATA[
-<div> Keywords: self-healing concrete, moisture diffusion, damage evolution, finite element modeling, machine learning <br>
-Summary: A time-dependent modeling framework was developed for autogenous self-healing concrete, considering moisture diffusion and damage evolution. Two finite element variants, Crack Diffusion Model (CDM) and Crack Membrane Model (CMM), were implemented to simulate healing processes. The orientation and size of initial cracks, diffusion coefficients, healing rate constant, and cement availability smoothing parameter were identified as key parameters affecting healing time. The simulations showed non-monotonic variations in healing time based on crack orientation and size. The CMM model replicated staged moisture penetration but extended total healing time compared to the CDM model. Machine learning classifiers achieved high accuracy in predicting healing outcomes. The framework serves as a valuable tool for guiding experimental studies and practical applications of self-healing concrete. <br><br>Summary: <div>
+<div> Keywords: self-healing concrete, moisture diffusion, damage evolution, finite element modeling, machine learning <br />
+Summary: A time-dependent modeling framework was developed for autogenous self-healing concrete, considering moisture diffusion and damage evolution. Two finite element variants, Crack Diffusion Model (CDM) and Crack Membrane Model (CMM), were implemented to simulate healing processes. The orientation and size of initial cracks, diffusion coefficients, healing rate constant, and cement availability smoothing parameter were identified as key parameters affecting healing time. The simulations showed non-monotonic variations in healing time based on crack orientation and size. The CMM model replicated staged moisture penetration but extended total healing time compared to the CDM model. Machine learning classifiers achieved high accuracy in predicting healing outcomes. The framework serves as a valuable tool for guiding experimental studies and practical applications of self-healing concrete. <br /><br />Summary: <div>
 arXiv:2510.19839v1 Announce Type: new 
 Abstract: A time-dependent modeling framework for autogenous self-healing concrete that couples moisture diffusion with damage evolution was developed. Water transport follows Fick's second law with a damage-dependent diffusivity obtained by power-law interpolation between intact concrete and crack space. Healing reduces damage in proportion to local moisture and a smoothed cement availability field computed via a Helmholtz filter. Two finite element variants were implemented in FEniCSx over time horizons up to $5\times10^6$ seconds: a Crack Diffusion Model (CDM) with standard diffusion and a Crack Membrane Model (CMM) that gates cross-crack transport until a critical moisture threshold is reached. Key control parameters are the initial crack orientation and size, the diffusion coefficients of intact and cracked concrete, the healing rate constant, and the cement availability smoothing parameter. Simulations on a unit square domain show that healing time varies non-monotonically with crack orientation, peaking near $45^\circ$ and $135^\circ$ and minimizing near $90^\circ$, consistent with diffusion distance to crack endpoints dominating the process. The dependence on crack width reverses with material parameters: healing time increases when $D_{\text{cracked}}D_{\text{intact}}$. The CMM reproduces staged moisture penetration with delayed gate activation but lengthens total healing time, whereas the CDM is efficient for parametric sweeps. Machine learning classifiers trained on one million simulation samples predict binary healing outcomes $H(\sigma,\gamma,t)$ (healed or not) with high accuracy (up to 0.998 for neural networks). Although experimental calibration is still required, the framework provides a versatile tool for guiding laboratory studies and implementations of self-healing concrete.
 ]]></content:encoded>
-<pubDate>Fri, 24 Oct 2025 00:00:00 -0400</pubDate>
 <pubDate>Fri, 24 Oct 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -22,14 +22,13 @@ Abstract: A time-dependent modeling framework for autogenous self-healing concre
 <link>https://arxiv.org/abs/2510.20044</link>
 <guid>https://arxiv.org/abs/2510.20044</guid>
 <content:encoded><![CDATA[
-<div> Keywords: polygonal Reissner-Mindlin plate element, scaled boundary finite element method, transverse shear locking, assumed natural strain approach, two-field variational formulation <br>
-<br>
+<div> Keywords: polygonal Reissner-Mindlin plate element, scaled boundary finite element method, transverse shear locking, assumed natural strain approach, two-field variational formulation <br />
+<br />
 Summary: 
 This work introduces a polygonal Reissner-Mindlin plate element using a scaled boundary finite element method with linear shape functions. This approach allows the use of non-star-convex-polygonal elements, simplifying meshing. To address transverse shear locking, an assumed natural strain approach is applied. A two-field variational formulation is developed to incorporate three-dimensional material laws while enforcing plane stress assumptions. This enables the use of material models defined in three-dimensional continuum, considering Poisson's thickness locking. The effectiveness of the formulation is demonstrated through various numerical examples. <div>
 arXiv:2510.20044v1 Announce Type: new 
 Abstract: In this work, a polygonal Reissner-Mindlin plate element is presented. The formulation is based on a scaled boundary finite element method, where in contrast to the original semi-analytical approach, linear shape functions are introduced for the parametrization of the scaling and the radial direction. This yields a fully discretized formulation, which enables the use of non-star-convex-polygonal elements with an arbitrary number of edges, simplifying the meshing process. To address the common effect of transverse shear locking for low-order Reissner-Mindlin elements in the thin-plate limit, an assumed natural strain approach for application on the polygonal scaled boundary finite elements is derived. Further, a two-field variational formulation is introduced to incorporate three-dimensional material laws. Here the plane stress assumptions are enforced on the weak formulation, facilitating the use of material models defined in three-dimensional continuum while considering the effect of Poisson's thickness locking. The effectiveness of the proposed formulation is demonstrated in various numerical examples.
 ]]></content:encoded>
-<pubDate>Fri, 24 Oct 2025 00:00:00 -0400</pubDate>
 <pubDate>Fri, 24 Oct 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -44,7 +43,6 @@ SparseEB-gMCR, a new extension of the EB-gMCR method, has been developed to hand
 arXiv:2510.20364v1 Announce Type: new 
 Abstract: Analytical chemistry instruments provide physically meaningful signals for elucidating analyte composition and play important roles in material, biological, and food analysis. These instruments are valued for strong alignment with physical principles, enabling compound identification through pattern matching with chemical libraries. More reliable instruments generate sufficiently sparse signals for direct interpretation. Generative multivariate curve resolution (gMCR) and its energy-based solver (EB-gMCR) offer powerful tools for decomposing mixed signals suitable for chemical data analysis. However, extreme signal sparsity from instruments such as GC-MS or 1H-NMR can impair EB-gMCR decomposability. To address this, a fixed EB-select module inheriting EB-gMCR's design was introduced for handling extreme sparse components. Combined with minor adjustments to energy optimization, this led to SparseEB-gMCR. In synthetic datasets, SparseEB-gMCR exhibited comparable decomposability and graceful scalability to dense-component EB-gMCR. The sparse variant was applied to real GC-MS chromatograms for unsupervised contamination removal. Analysis showed siloxane-related pollution signals were effectively eliminated, improving compound identification reliability. Results demonstrate that SparseEB-gMCR preserves the decomposability and self-determining component capability of EB-gMCR while extending adaptability to sparse and irregular chemical data. With this sparse extension, the EB-gMCR family becomes applicable to wider ranges of real-world chemical datasets, providing a general mathematical framework for signal unmixing and contamination elimination in analytical chemistry.
 ]]></content:encoded>
-<pubDate>Fri, 24 Oct 2025 00:00:00 -0400</pubDate>
 <pubDate>Fri, 24 Oct 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -61,11 +59,10 @@ Summary:
 - The analysis shows significant Granger-causal relationships across layers and moderate predictive accuracy out-of-sample.
 - The most informative figures, such as the pipeline overview, Layer A heatmap, Layer C robustness analysis, and precision-recall curve, are presented. Full data and figures are available in the artifact repository. 
 
-Summary:<br><br> <div>
+Summary:<br /><br /> <div>
 arXiv:2510.20066v1 Announce Type: cross 
 Abstract: We study whether liquidity and volatility proxies of a core set of cryptoassets generate spillovers that forecast market-wide risk. Our empirical framework integrates three statistical layers: (A) interactions between core liquidity and returns, (B) principal-component relations linking liquidity and returns, and (C) volatility-factor projections that capture cross-sectional volatility crowding. The analysis is complemented by vector autoregression impulse responses and forecast error variance decompositions (see Granger 1969; Sims 1980), heterogeneous autoregressive models with exogenous regressors (HAR-X, Corsi 2009), and a leakage-safe machine learning protocol using temporal splits, early stopping, validation-only thresholding, and SHAP-based interpretation. Using daily data from 2021 to 2025 (1462 observations across 74 assets), we document statistically significant Granger-causal relationships across layers and moderate out-of-sample predictive accuracy. We report the most informative figures, including the pipeline overview, Layer A heatmap, Layer C robustness analysis, vector autoregression variance decompositions, and the test-set precision-recall curve. Full data and figure outputs are provided in the artifact repository.
 ]]></content:encoded>
-<pubDate>Fri, 24 Oct 2025 00:00:00 -0400</pubDate>
 <pubDate>Fri, 24 Oct 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -81,15 +78,14 @@ arXiv:2510.20099v1 Announce Type: cross
 Abstract: We present AI PB, a production-scale generative agent deployed in real retail finance. Unlike reactive chatbots that answer queries passively, AI PB proactively generates grounded, compliant, and user-specific investment insights. It integrates (i) a component-based orchestration layer that deterministically routes between internal and external LLMs based on data sensitivity, (ii) a hybrid retrieval pipeline using OpenSearch and the finance-domain embedding model, and (iii) a multi-stage recommendation mechanism combining rule heuristics, sequential behavioral modeling, and contextual bandits. Operating fully on-premises under Korean financial regulations, the system employs Docker Swarm and vLLM across 24 X NVIDIA H100 GPUs. Through human QA and system metrics, we demonstrate that grounded generation with explicit routing and layered safety can deliver trustworthy AI insights in high-stakes finance.
 ]]></content:encoded>
 <pubDate>Fri, 24 Oct 2025 00:00:00 -0400</pubDate>
-<pubDate>Fri, 24 Oct 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
 <title>Decentralized Exchange that Mitigate a Bribery Attack</title>
 <link>https://arxiv.org/abs/2510.20645</link>
 <guid>https://arxiv.org/abs/2510.20645</guid>
 <content:encoded><![CDATA[
-<div> HTLC, bribery attack, MAD-HTLC, He-HTLC, Miner-collusion<br>
-Summary:<br>
+<div> HTLC, bribery attack, MAD-HTLC, He-HTLC, Miner-collusion<br />
+Summary:<br />
 Despite the popularity of Hashed Time-Locked Contracts (HTLCs) in various applications, their use in exchanges is still questionable due to vulnerability to bribery attacks. State-of-the-art solutions like MAD-HTLC and He-HTLC address this issue but have limitations against collusion scenarios. This paper exposes vulnerabilities in these solutions and proposes a stronger attack, demonstrating the need for a more secure protocol. The proposed protocol, \prot, is designed to be game-theoretically secure and resistant to all bribery scenarios by employing a two-phase approach to prevent unauthorized token confiscation. Implementation on Bitcoin and Ethereum shows \prot’s efficiency in transaction cost and latency. <div>
 arXiv:2510.20645v1 Announce Type: cross 
 Abstract: Despite the popularity of Hashed Time-Locked Contracts (HTLCs) because of their use in wide areas of applications such as payment channels, atomic swaps, etc, their use in exchange is still questionable. This is because of its incentive incompatibility and susceptibility to bribery attacks.
@@ -98,9 +94,7 @@ Abstract: Despite the popularity of Hashed Time-Locked Contracts (HTLCs) because
   Leveraging our insights, we propose \prot, a game-theoretically secure HTLC protocol resistant to all bribery scenarios. \prot\ employs a two-phase approach, preventing unauthorized token confiscation by third parties, such as miners. In Phase 1, parties commit to the transfer; in Phase 2, the transfer is executed without manipulation. We demonstrate \prot's efficiency in transaction cost and latency via implementations on Bitcoin and Ethereum.
 ]]></content:encoded>
 <pubDate>Fri, 24 Oct 2025 00:00:00 -0400</pubDate>
-<pubDate>Fri, 24 Oct 2025 00:00:00 -0400</pubDate>
 </item>
-
 <item>
 <title>Parameter Estimation in River Transport Models With Immobile Phase Exchange Using Dimensional Analysis and Reduced-Order Models</title>
 <link>https://arxiv.org/abs/2510.19664</link>
@@ -14490,94 +14484,6 @@ This paper discusses the potential of theranostics in precision oncology by comb
 <br /><br />Summary: <div>
 arXiv:2505.09899v1 Announce Type: new 
 Abstract: Cancer remains a leading cause of death worldwide, necessitating personalized treatment approaches to improve outcomes. Theranostics, combining molecular-level imaging with targeted therapy, offers potential for precision oncology but requires optimized, patient-specific care plans. This paper investigates state-of-the-art data-driven decision support applications with a reinforcement learning focus in precision oncology. We review current applications, training environments, state-space representation, performance evaluation criteria, and measurement of risk and reward, highlighting key challenges. We propose a framework integrating data-driven modeling with reinforcement learning-based decision support to optimize radiopharmaceutical therapy dosing, addressing identified challenges and setting directions for future research. The framework leverages Neural Ordinary Differential Equations and Physics-Informed Neural Networks to enhance Physiologically Based Pharmacokinetic models while applying reinforcement learning algorithms to iteratively refine treatment policies based on patient-specific data.
-]]></content:encoded>
-<pubDate>Fri, 16 May 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Physical regularized Hierarchical Generative Model for Metallic Glass Structural Generation and Energy Prediction</title>
-<link>https://arxiv.org/abs/2505.09977</link>
-<guid>https://arxiv.org/abs/2505.09977</guid>
-<content:encoded><![CDATA[
-<div> variational autoencoder, disordered materials, glass, generative AI models, physics-informed regularizers <br />
-Summary: 
-The article introduces GlassVAE, a hierarchical graph variational autoencoder designed to handle the complexity of disordered materials like glasses. GlassVAE uses graph representations to create rotation, translation, and permutation invariant embeddings of atomic configurations, enabling efficient generation of realistic structures and exploration of the glass energy landscape. To ensure structural realism and physical fidelity, GlassVAE is augmented with two physics-informed regularizers: a radial distribution function (RDF) loss and an energy regression loss. The regularizers play a crucial role in enhancing the accuracy of the model. By encoding high-dimensional atomistic data into a compact latent vector and decoding it to generate structures with accurate energy predictions, GlassVAE provides a rapid, physics-aware approach for modeling and designing disordered materials. <br /><br /> <div>
-arXiv:2505.09977v1 Announce Type: new 
-Abstract: Disordered materials such as glasses, unlike crystals, lack long range atomic order and have no periodic unit cells, yielding a high dimensional configuration space with widely varying properties. The complexity not only increases computational costs for atomistic simulations but also makes it difficult for generative AI models to deliver accurate property predictions and realistic structure generation. In this work, we introduce GlassVAE, a hierarchical graph variational autoencoder that uses graph representations to learn compact, rotation, translation, and permutation invariant embeddings of atomic configurations. The resulting structured latent space not only enables efficient generation of novel, physically plausible structures but also supports exploration of the glass energy landscape. To enforce structural realism and physical fidelity, we augment GlassVAE with two physics informed regularizers, a radial distribution function (RDF) loss that captures characteristic short and medium range ordering and an energy regression loss that reflects the broad configurational energetics. Both theoretical analysis and experimental results highlight the critical impact of these regularizers. By encoding high dimensional atomistic data into a compact latent vector and decoding it into structures with accurate energy predictions, GlassVAE provides a fast, physics aware path for modeling and designing disordered materials.
-]]></content:encoded>
-<pubDate>Fri, 16 May 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Knowledge-Based Aerospace Engineering -- A Systematic Literature Review</title>
-<link>https://arxiv.org/abs/2505.10142</link>
-<guid>https://arxiv.org/abs/2505.10142</guid>
-<content:encoded><![CDATA[
-<div> Knowledge-Based Engineering, aerospace industry, knowledge management, SWARM-SLR, knowledge graph<br />
-<br />
-Summary: 
-The study explores state-of-the-art knowledge management practices in aerospace engineering. It involves an extensive review of over 1,000 articles using SWARM-SLR methodology, qualitative analysis of 164 selected articles, and input from aerospace engineering domain experts. The research results include the creation of a knowledge graph comprising over 700 aerospace engineering processes, software, and data, formalized in the Web Ontology Language (OWL) and mapped to Wikidata entries. The knowledge graph is available on the Open Research Knowledge Graph (ORKG) and an aerospace Wikibase for further collaboration and knowledge exchange. The study highlights the importance of structured, semantic-based approaches in managing aerospace engineering knowledge, aiming to improve design processes, foster collaboration, and promote sustainable aviation practices. The intermediate and final artifacts of the study are documented in a Zenodo dataset for wider dissemination and reuse. <div>
-arXiv:2505.10142v1 Announce Type: new 
-Abstract: The aerospace industry operates at the frontier of technological innovation while maintaining high standards regarding safety and reliability. In this environment, with an enormous potential for re-use and adaptation of existing solutions and methods, Knowledge-Based Engineering (KBE) has been applied for decades. The objective of this study is to identify and examine state-of-the-art knowledge management practices in the field of aerospace engineering. Our contributions include: 1) A SWARM-SLR of over 1,000 articles with qualitative analysis of 164 selected articles, supported by two aerospace engineering domain expert surveys. 2) A knowledge graph of over 700 knowledge-based aerospace engineering processes, software, and data, formalized in the interoperable Web Ontology Language (OWL) and mapped to Wikidata entries where possible. The knowledge graph is represented on the Open Research Knowledge Graph (ORKG), and an aerospace Wikibase, for reuse and continuation of structuring aerospace engineering knowledge exchange. 3) Our resulting intermediate and final artifacts of the knowledge synthesis, available as a Zenodo dataset. This review sets a precedent for structured, semantic-based approaches to managing aerospace engineering knowledge. By advancing these principles, research, and industry can achieve more efficient design processes, enhanced collaboration, and a stronger commitment to sustainable aviation.
-]]></content:encoded>
-<pubDate>Fri, 16 May 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Space-Time Multigrid Methods Suitable for Topology Optimisation of Transient Heat Conduction</title>
-<link>https://arxiv.org/abs/2505.10168</link>
-<guid>https://arxiv.org/abs/2505.10168</guid>
-<content:encoded><![CDATA[
-<div> topology optimization, transient heat conduction, Space-Time MultiGrid methods, diffusivity, adjoint problem <br />
-Summary: <br />
-This paper introduces Space-Time MultiGrid (STMG) methods for topology optimization in transient heat conduction problems. The methods employ pointwise smoothers and uniform Cartesian space-time meshes, with a coarsening strategy based on the geometric mean of minimum and maximum diffusivity for high contrast problems. Different discretization methods for coarse levels were tested, with averaging thermal resistivities on finer levels showing best results for one-dimensional cases. A proposed coarsening strategy ensuring spatial resolution on coarse grids yielded mixed results. The STMG methods successfully served as a solver for one-dimensional topology optimization, including solving the adjoint problem. The methods were robust and converged reliably during optimization cycles. They proved effective for the adjoint problem even when the prolongation operator only forwards information in time, despite the adjoint problem moving backwards in time. <div>
-arXiv:2505.10168v1 Announce Type: new 
-Abstract: This paper presents Space-Time MultiGrid (STMG) methods which are suitable for performing topology optimisation of transient heat conduction problems. The proposed methods use a pointwise smoother and uniform Cartesian space-time meshes. For problems with high contrast in the diffusivity, it was found that it is beneficial to define a coarsening strategy based on the geometric mean of the minimum and maximum diffusivity. However, other coarsening strategies may be better for other smoothers. Several methods of discretising the coarse levels were tested. Of these, it was best to use a method which averages the thermal resistivities on the finer levels. However, this was likely a consequence of the fact that only one spatial dimension was considered for the test problems. A second coarsening strategy was proposed which ensures spatial resolution on the coarse grids. Mixed results were found for this strategy. The proposed STMG methods were used as a solver for a one-dimensional topology optimisation problem. In this context, the adjoint problem was also solved using the STMG methods. The STMG methods were sufficiently robust for this application, since they converged during every optimisation cycle. It was found that the STMG methods also work for the adjoint problem when the prolongation operator only sends information forwards in time, even although the direction of time for the adjoint problem is backwards.
-]]></content:encoded>
-<pubDate>Fri, 16 May 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Avocado Price Prediction Using a Hybrid Deep Learning Model: TCN-MLP-Attention Architecture</title>
-<link>https://arxiv.org/abs/2505.09907</link>
-<guid>https://arxiv.org/abs/2505.09907</guid>
-<content:encoded><![CDATA[
-<div> Keywords: Hass avocados, price forecasting, deep learning, TCN-MLP-Attention Architecture, agricultural markets <br />
-Summary:  
-- The study addresses the importance of price forecasting for high-value crops like Hass avocados due to the demand for healthy foods.
-- The proposed hybrid deep learning model, TCN-MLP-Attention Architecture, combines TCN, MLP, and an Attention mechanism to handle complex price fluctuations influenced by various factors.
-- The dataset consists of over 50,000 records of Hass avocado sales in the U.S. from 2015 to 2018, including variables like sales volume, average price, region, weather, and variety type.
-- After systematic preprocessing, the model demonstrated excellent predictive performance, outperforming traditional methods with an RMSE of 1.23 and an MSE of 1.51.
-- The research offers a scalable and effective approach for time series forecasting in agricultural markets, providing valuable insights for intelligent supply chain management and price strategy optimization. 
-
-<br /><br />Summary: <div>
-arXiv:2505.09907v1 Announce Type: cross 
-Abstract: With the growing demand for healthy foods, agricultural product price forecasting has become increasingly important. Hass avocados, as a high-value crop, exhibit complex price fluctuations influenced by factors such as seasonality, region, and weather. Traditional prediction models often struggle with highly nonlinear and dynamic data. To address this, we propose a hybrid deep learning model, TCN-MLP-Attention Architecture, combining Temporal Convolutional Networks (TCN) for sequential feature extraction, Multi-Layer Perceptrons (MLP) for nonlinear interactions, and an Attention mechanism for dynamic feature weighting. The dataset used covers over 50,000 records of Hass avocado sales across the U.S. from 2015 to 2018, including variables such as sales volume, average price, time, region, weather, and variety type, collected from point-of-sale systems and the Hass Avocado Board. After systematic preprocessing, including missing value imputation and feature normalization, the proposed model was trained and evaluated. Experimental results demonstrate that the TCN-MLP-Attention model achieves excellent predictive performance, with an RMSE of 1.23 and an MSE of 1.51, outperforming traditional methods. This research provides a scalable and effective approach for time series forecasting in agricultural markets and offers valuable insights for intelligent supply chain management and price strategy optimization.
-]]></content:encoded>
-<pubDate>Fri, 16 May 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Towards Foundation Model for Chemical Reactor Modeling: Meta-Learning with Physics-Informed Adaptation</title>
-<link>https://arxiv.org/abs/2405.11752</link>
-<guid>https://arxiv.org/abs/2405.11752</guid>
-<content:encoded><![CDATA[
-<div> neural network framework, chemical reactors, meta-learning, physics-informed, generalizable
-
-Summary:
-This work introduces a neural network framework for chemical reactor modeling that can generalize across different reactor types and quickly adapt to new chemical processes. By leveraging meta-learning, the model is pretrained on a wide range of reactor dynamics, allowing for efficient adaptation to unseen reactions with minimal data. Additionally, physics-informed fine-tuning is incorporated to ensure consistent adaptation to new reactor conditions. The framework is evaluated on three fundamental reactor types, showing superior few-shot adaptation compared to traditional approaches. By combining meta-learning with physics-informed techniques, this work paves the way for a more generalizable modeling framework in chemical engineering applications. <div>
-arXiv:2405.11752v3 Announce Type: replace 
-Abstract: Developing accurate models for chemical reactors is often challenging due to the complexity of reaction kinetics and process dynamics. Traditional approaches require retraining models for each new system, limiting generalizability and efficiency. In this work, we take a step toward foundation models for chemical reactor modeling by introducing a neural network framework that generalizes across diverse reactor types and rapidly adapts to new chemical processes. Our approach leverages meta-learning to pretrain the model on a broad set of reactor dynamics, enabling efficient adaptation to unseen reactions with minimal data. To further enhance generalizability, we incorporate physics-informed fine-tuning, ensuring physically consistent adaptation to new reactor conditions. Our framework is evaluated across three integer-order fundamental reactor types - continuous stirred tank reactors, batch reactors, and plug flow reactors - demonstrating superior few-shot adaptation compared to conventional data-driven, physics-informed, and transfer learning approaches. By combining meta-learning with physics-informed adaptation, this work lays the foundation for a generalizable modeling framework, advancing the development of foundation models for chemical engineering applications. Source code is available at https://github.com/killingbear999/chemical-reactor-foundation-model.
-]]></content:encoded>
-<pubDate>Fri, 16 May 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>RoBERTa-BiLSTM: A Context-Aware Hybrid Model for Sentiment Analysis</title>
-<link>https://arxiv.org/abs/2406.00367</link>
-<guid>https://arxiv.org/abs/2406.00367</guid>
-<content:encoded><![CDATA[
-<div> RoBERTa-BiLSTM, sentiment analysis, deep learning, Transformer, latent intentions
-<br />
-Summary:
-The article introduces a hybrid deep learning model, RoBERTa-BiLSTM, combining RoBERTa and BiLSTM for sentiment analysis. Challenges in sentiment analysis include lexical diversity, long dependencies, unknown symbols, and imbalanced datasets. Existing models like BERT and RoBERTa face issues with processing time due to sequential nature. The RoBERTa-BiLSTM model aims to address these challenges by leveraging RoBERTa for word embeddings and BiLSTM for contextual semantics. Experimental results on IMDb, Twitter US Airline, and Sentiment140 datasets show RoBERTa-BiLSTM outperforming baseline models like BERT and RoBERTa, achieving high accuracies and F1 scores. The model achieves accuracies of 80.74%, 92.36%, and 82.25% on the respective datasets, with corresponding F1 scores. This hybrid approach demonstrates improved performance in sentiment analysis tasks. 
-<br /> <div>
-arXiv:2406.00367v2 Announce Type: replace-cross 
-Abstract: Effectively analyzing the comments to uncover latent intentions holds immense value in making strategic decisions across various domains. However, several challenges hinder the process of sentiment analysis including the lexical diversity exhibited in comments, the presence of long dependencies within the text, encountering unknown symbols and words, and dealing with imbalanced datasets. Moreover, existing sentiment analysis tasks mostly leveraged sequential models to encode the long dependent texts and it requires longer execution time as it processes the text sequentially. In contrast, the Transformer requires less execution time due to its parallel processing nature. In this work, we introduce a novel hybrid deep learning model, RoBERTa-BiLSTM, which combines the Robustly Optimized BERT Pretraining Approach (RoBERTa) with Bidirectional Long Short-Term Memory (BiLSTM) networks. RoBERTa is utilized to generate meaningful word embedding vectors, while BiLSTM effectively captures the contextual semantics of long-dependent texts. The RoBERTa-BiLSTM hybrid model leverages the strengths of both sequential and Transformer models to enhance performance in sentiment analysis. We conducted experiments using datasets from IMDb, Twitter US Airline, and Sentiment140 to evaluate the proposed model against existing state-of-the-art methods. Our experimental findings demonstrate that the RoBERTa-BiLSTM model surpasses baseline models (e.g., BERT, RoBERTa-base, RoBERTa-GRU, and RoBERTa-LSTM), achieving accuracies of 80.74%, 92.36%, and 82.25% on the Twitter US Airline, IMDb, and Sentiment140 datasets, respectively. Additionally, the model achieves F1-scores of 80.73%, 92.35%, and 82.25% on the same datasets, respectively.
 ]]></content:encoded>
 <pubDate>Fri, 16 May 2025 00:00:00 -0400</pubDate>
 </item>
