@@ -4,6 +4,102 @@
 <title>cs.CE updates on arXiv.org</title>
 <link>http://rss.arxiv.org/rss/cs.CE</link>
 
+<item>
+<title>Finite Element and Machine Learning Modeling of Autogenous Self-Healing Concrete</title>
+<link>https://arxiv.org/abs/2510.19839</link>
+<guid>https://arxiv.org/abs/2510.19839</guid>
+<content:encoded><![CDATA[
+<div> Keywords: self-healing concrete, moisture diffusion, damage evolution, finite element modeling, machine learning <br>
+Summary: A time-dependent modeling framework was developed for autogenous self-healing concrete, considering moisture diffusion and damage evolution. Two finite element variants, Crack Diffusion Model (CDM) and Crack Membrane Model (CMM), were implemented to simulate healing processes. The orientation and size of initial cracks, diffusion coefficients, healing rate constant, and cement availability smoothing parameter were identified as key parameters affecting healing time. The simulations showed non-monotonic variations in healing time based on crack orientation and size. The CMM model replicated staged moisture penetration but extended total healing time compared to the CDM model. Machine learning classifiers achieved high accuracy in predicting healing outcomes. The framework serves as a valuable tool for guiding experimental studies and practical applications of self-healing concrete. <br><br>Summary: <div>
+arXiv:2510.19839v1 Announce Type: new 
+Abstract: A time-dependent modeling framework for autogenous self-healing concrete that couples moisture diffusion with damage evolution was developed. Water transport follows Fick's second law with a damage-dependent diffusivity obtained by power-law interpolation between intact concrete and crack space. Healing reduces damage in proportion to local moisture and a smoothed cement availability field computed via a Helmholtz filter. Two finite element variants were implemented in FEniCSx over time horizons up to $5\times10^6$ seconds: a Crack Diffusion Model (CDM) with standard diffusion and a Crack Membrane Model (CMM) that gates cross-crack transport until a critical moisture threshold is reached. Key control parameters are the initial crack orientation and size, the diffusion coefficients of intact and cracked concrete, the healing rate constant, and the cement availability smoothing parameter. Simulations on a unit square domain show that healing time varies non-monotonically with crack orientation, peaking near $45^\circ$ and $135^\circ$ and minimizing near $90^\circ$, consistent with diffusion distance to crack endpoints dominating the process. The dependence on crack width reverses with material parameters: healing time increases when $D_{\text{cracked}}D_{\text{intact}}$. The CMM reproduces staged moisture penetration with delayed gate activation but lengthens total healing time, whereas the CDM is efficient for parametric sweeps. Machine learning classifiers trained on one million simulation samples predict binary healing outcomes $H(\sigma,\gamma,t)$ (healed or not) with high accuracy (up to 0.998 for neural networks). Although experimental calibration is still required, the framework provides a versatile tool for guiding laboratory studies and implementations of self-healing concrete.
+]]></content:encoded>
+<pubDate>Fri, 24 Oct 2025 00:00:00 -0400</pubDate>
+<pubDate>Fri, 24 Oct 2025 00:00:00 -0400</pubDate>
+</item>
+<item>
+<title>A polygonal Reissner-Mindlin plate element based on the scaled boundary finite element method</title>
+<link>https://arxiv.org/abs/2510.20044</link>
+<guid>https://arxiv.org/abs/2510.20044</guid>
+<content:encoded><![CDATA[
+<div> Keywords: polygonal Reissner-Mindlin plate element, scaled boundary finite element method, transverse shear locking, assumed natural strain approach, two-field variational formulation <br>
+<br>
+Summary: 
+This work introduces a polygonal Reissner-Mindlin plate element using a scaled boundary finite element method with linear shape functions. This approach allows the use of non-star-convex-polygonal elements, simplifying meshing. To address transverse shear locking, an assumed natural strain approach is applied. A two-field variational formulation is developed to incorporate three-dimensional material laws while enforcing plane stress assumptions. This enables the use of material models defined in three-dimensional continuum, considering Poisson's thickness locking. The effectiveness of the formulation is demonstrated through various numerical examples. <div>
+arXiv:2510.20044v1 Announce Type: new 
+Abstract: In this work, a polygonal Reissner-Mindlin plate element is presented. The formulation is based on a scaled boundary finite element method, where in contrast to the original semi-analytical approach, linear shape functions are introduced for the parametrization of the scaling and the radial direction. This yields a fully discretized formulation, which enables the use of non-star-convex-polygonal elements with an arbitrary number of edges, simplifying the meshing process. To address the common effect of transverse shear locking for low-order Reissner-Mindlin elements in the thin-plate limit, an assumed natural strain approach for application on the polygonal scaled boundary finite elements is derived. Further, a two-field variational formulation is introduced to incorporate three-dimensional material laws. Here the plane stress assumptions are enforced on the weak formulation, facilitating the use of material models defined in three-dimensional continuum while considering the effect of Poisson's thickness locking. The effectiveness of the proposed formulation is demonstrated in various numerical examples.
+]]></content:encoded>
+<pubDate>Fri, 24 Oct 2025 00:00:00 -0400</pubDate>
+<pubDate>Fri, 24 Oct 2025 00:00:00 -0400</pubDate>
+</item>
+<item>
+<title>SparseEB-gMCR: A Generative Solver for Extreme Sparse Components with Application to Contamination Removal in GC-MS</title>
+<link>https://arxiv.org/abs/2510.20364</link>
+<guid>https://arxiv.org/abs/2510.20364</guid>
+<content:encoded><![CDATA[
+<div> decomposability, SparseEB-gMCR, chemical data analysis, contamination removal, analytical chemistry
+
+Summary:
+SparseEB-gMCR, a new extension of the EB-gMCR method, has been developed to handle extreme signal sparsity in analytical chemistry instruments. By introducing a fixed EB-select module and making minor adjustments to energy optimization, SparseEB-gMCR demonstrated comparable decomposability and scalability to dense-component EB-gMCR in synthetic datasets. When applied to real GC-MS chromatograms for unsupervised contamination removal, SparseEB-gMCR effectively eliminated siloxane-related pollution signals and improved compound identification reliability. This new extension allows the EB-gMCR family to be applied to a wider range of real-world chemical datasets, providing a general mathematical framework for signal unmixing and contamination elimination in analytical chemistry. <div>
+arXiv:2510.20364v1 Announce Type: new 
+Abstract: Analytical chemistry instruments provide physically meaningful signals for elucidating analyte composition and play important roles in material, biological, and food analysis. These instruments are valued for strong alignment with physical principles, enabling compound identification through pattern matching with chemical libraries. More reliable instruments generate sufficiently sparse signals for direct interpretation. Generative multivariate curve resolution (gMCR) and its energy-based solver (EB-gMCR) offer powerful tools for decomposing mixed signals suitable for chemical data analysis. However, extreme signal sparsity from instruments such as GC-MS or 1H-NMR can impair EB-gMCR decomposability. To address this, a fixed EB-select module inheriting EB-gMCR's design was introduced for handling extreme sparse components. Combined with minor adjustments to energy optimization, this led to SparseEB-gMCR. In synthetic datasets, SparseEB-gMCR exhibited comparable decomposability and graceful scalability to dense-component EB-gMCR. The sparse variant was applied to real GC-MS chromatograms for unsupervised contamination removal. Analysis showed siloxane-related pollution signals were effectively eliminated, improving compound identification reliability. Results demonstrate that SparseEB-gMCR preserves the decomposability and self-determining component capability of EB-gMCR while extending adaptability to sparse and irregular chemical data. With this sparse extension, the EB-gMCR family becomes applicable to wider ranges of real-world chemical datasets, providing a general mathematical framework for signal unmixing and contamination elimination in analytical chemistry.
+]]></content:encoded>
+<pubDate>Fri, 24 Oct 2025 00:00:00 -0400</pubDate>
+<pubDate>Fri, 24 Oct 2025 00:00:00 -0400</pubDate>
+</item>
+<item>
+<title>A Multi-Layer Machine Learning and Econometric Pipeline for Forecasting Market Risk: Evidence from Cryptoasset Liquidity Spillovers</title>
+<link>https://arxiv.org/abs/2510.20066</link>
+<guid>https://arxiv.org/abs/2510.20066</guid>
+<content:encoded><![CDATA[
+<div> liquidity, volatility, spillovers, risk, cryptoassets
+
+Summary:
+- The study examines the relationship between liquidity and volatility proxies of core cryptoassets and their impact on forecasting market-wide risk.
+- Three statistical layers are integrated: interactions between liquidity and returns, principal-component relations, and volatility-factor projections.
+- Various statistical techniques are utilized, including vector autoregression impulse responses, forecast error variance decompositions, and HAR-X models with exogenous regressors.
+- The analysis shows significant Granger-causal relationships across layers and moderate predictive accuracy out-of-sample.
+- The most informative figures, such as the pipeline overview, Layer A heatmap, Layer C robustness analysis, and precision-recall curve, are presented. Full data and figures are available in the artifact repository. 
+
+Summary:<br><br> <div>
+arXiv:2510.20066v1 Announce Type: cross 
+Abstract: We study whether liquidity and volatility proxies of a core set of cryptoassets generate spillovers that forecast market-wide risk. Our empirical framework integrates three statistical layers: (A) interactions between core liquidity and returns, (B) principal-component relations linking liquidity and returns, and (C) volatility-factor projections that capture cross-sectional volatility crowding. The analysis is complemented by vector autoregression impulse responses and forecast error variance decompositions (see Granger 1969; Sims 1980), heterogeneous autoregressive models with exogenous regressors (HAR-X, Corsi 2009), and a leakage-safe machine learning protocol using temporal splits, early stopping, validation-only thresholding, and SHAP-based interpretation. Using daily data from 2021 to 2025 (1462 observations across 74 assets), we document statistically significant Granger-causal relationships across layers and moderate out-of-sample predictive accuracy. We report the most informative figures, including the pipeline overview, Layer A heatmap, Layer C robustness analysis, vector autoregression variance decompositions, and the test-set precision-recall curve. Full data and figure outputs are provided in the artifact repository.
+]]></content:encoded>
+<pubDate>Fri, 24 Oct 2025 00:00:00 -0400</pubDate>
+<pubDate>Fri, 24 Oct 2025 00:00:00 -0400</pubDate>
+</item>
+<item>
+<title>AI PB: A Grounded Generative Agent for Personalized Investment Insights</title>
+<link>https://arxiv.org/abs/2510.20099</link>
+<guid>https://arxiv.org/abs/2510.20099</guid>
+<content:encoded><![CDATA[
+<div> Keywords: AI PB, generative agent, retail finance, investment insights, finance-domain embedding model
+
+Summary: 
+AI PB is a generative agent deployed in retail finance that proactively generates investment insights. It uses a deterministic orchestration layer to route between LLMs, a hybrid retrieval pipeline, and a multi-stage recommendation mechanism. The system operates on-premises under Korean financial regulations and utilizes Docker Swarm and vLLM on NVIDIA H100 GPUs. Grounded generation with explicit routing and layered safety ensures trustworthy AI insights in high-stakes finance. <div>
+arXiv:2510.20099v1 Announce Type: cross 
+Abstract: We present AI PB, a production-scale generative agent deployed in real retail finance. Unlike reactive chatbots that answer queries passively, AI PB proactively generates grounded, compliant, and user-specific investment insights. It integrates (i) a component-based orchestration layer that deterministically routes between internal and external LLMs based on data sensitivity, (ii) a hybrid retrieval pipeline using OpenSearch and the finance-domain embedding model, and (iii) a multi-stage recommendation mechanism combining rule heuristics, sequential behavioral modeling, and contextual bandits. Operating fully on-premises under Korean financial regulations, the system employs Docker Swarm and vLLM across 24 X NVIDIA H100 GPUs. Through human QA and system metrics, we demonstrate that grounded generation with explicit routing and layered safety can deliver trustworthy AI insights in high-stakes finance.
+]]></content:encoded>
+<pubDate>Fri, 24 Oct 2025 00:00:00 -0400</pubDate>
+<pubDate>Fri, 24 Oct 2025 00:00:00 -0400</pubDate>
+</item>
+<item>
+<title>Decentralized Exchange that Mitigate a Bribery Attack</title>
+<link>https://arxiv.org/abs/2510.20645</link>
+<guid>https://arxiv.org/abs/2510.20645</guid>
+<content:encoded><![CDATA[
+<div> HTLC, bribery attack, MAD-HTLC, He-HTLC, Miner-collusion<br>
+Summary:<br>
+Despite the popularity of Hashed Time-Locked Contracts (HTLCs) in various applications, their use in exchanges is still questionable due to vulnerability to bribery attacks. State-of-the-art solutions like MAD-HTLC and He-HTLC address this issue but have limitations against collusion scenarios. This paper exposes vulnerabilities in these solutions and proposes a stronger attack, demonstrating the need for a more secure protocol. The proposed protocol, \prot, is designed to be game-theoretically secure and resistant to all bribery scenarios by employing a two-phase approach to prevent unauthorized token confiscation. Implementation on Bitcoin and Ethereum shows \prot’s efficiency in transaction cost and latency. <div>
+arXiv:2510.20645v1 Announce Type: cross 
+Abstract: Despite the popularity of Hashed Time-Locked Contracts (HTLCs) because of their use in wide areas of applications such as payment channels, atomic swaps, etc, their use in exchange is still questionable. This is because of its incentive incompatibility and susceptibility to bribery attacks.
+  State-of-the-art solutions such as MAD-HTLC (Oakland'21) and He-HTLC (NDSS'23) address this by leveraging miners' profit-driven behaviour to mitigate such attacks. The former is the mitigation against passive miners; however, the latter works against both active and passive miners. However, they consider only two bribing scenarios where either of the parties involved in the transfer collude with the miner.
+  In this paper, we expose vulnerabilities in state-of-the-art solutions by presenting a miner-collusion bribery attack with implementation and game-theoretic analysis. Additionally, we propose a stronger attack on MAD-HTLC than He-HTLC, allowing the attacker to earn profits equivalent to attacking naive HTLC.
+  Leveraging our insights, we propose \prot, a game-theoretically secure HTLC protocol resistant to all bribery scenarios. \prot\ employs a two-phase approach, preventing unauthorized token confiscation by third parties, such as miners. In Phase 1, parties commit to the transfer; in Phase 2, the transfer is executed without manipulation. We demonstrate \prot's efficiency in transaction cost and latency via implementations on Bitcoin and Ethereum.
+]]></content:encoded>
+<pubDate>Fri, 24 Oct 2025 00:00:00 -0400</pubDate>
+<pubDate>Fri, 24 Oct 2025 00:00:00 -0400</pubDate>
+</item>
 
 <item>
 <title>Parameter Estimation in River Transport Models With Immobile Phase Exchange Using Dimensional Analysis and Reduced-Order Models</title>
