@@ -4,6 +4,7 @@
 <title>cs.CV updates on arXiv.org</title>
 <link>http://rss.arxiv.org/rss/cs.CV</link>
 
+
 <item>
 <title>Identity-Preserving Image-to-Video Generation via Reward-Guided Optimization</title>
 <link>https://arxiv.org/abs/2510.14255</link>
@@ -11,12 +12,11 @@
 <content:encoded><![CDATA[
 <div> identity preservation, video generation, reinforcement learning, facial scoring, KL-divergence regularization
 
-Summary:<br>
+Summary:<br />
 Recent advancements in image-to-video (I2V) generation have led to notable progress in creating high-quality videos from static images, particularly focusing on human-centric applications. However, maintaining identity consistency in generated videos remains a challenge, especially when the subject undergoes significant expression changes or movements. To address this issue, a novel approach called Identity-Preserving Reward-guided Optimization (IPRO) is proposed. This framework utilizes reinforcement learning to optimize diffusion models based on a face identity scorer, without the need for additional modules or architectural modifications. By backpropagating the reward signal and incorporating a facial scoring mechanism, the model achieves improved performance and convergence speed. Furthermore, a KL-divergence regularization is introduced to enhance training stability and prevent overfitting. Experimental results on existing I2V models validate the efficacy of the proposed approach. <div>
 arXiv:2510.14255v3 Announce Type: replace 
 Abstract: Recent advances in image-to-video (I2V) generation have achieved remarkable progress in synthesizing high-quality, temporally coherent videos from static images. Among all the applications of I2V, human-centric video generation includes a large portion. However, existing I2V models encounter difficulties in maintaining identity consistency between the input human image and the generated video, especially when the person in the video exhibits significant expression changes and movements. This issue becomes critical when the human face occupies merely a small fraction of the image. Since humans are highly sensitive to identity variations, this poses a critical yet under-explored challenge in I2V generation. In this paper, we propose Identity-Preserving Reward-guided Optimization (IPRO), a novel video diffusion framework based on reinforcement learning to enhance identity preservation. Instead of introducing auxiliary modules or altering model architectures, our approach introduces a direct and effective tuning algorithm that optimizes diffusion models using a face identity scorer. To improve performance and accelerate convergence, our method backpropagates the reward signal through the last steps of the sampling chain, enabling richer gradient feedback. We also propose a novel facial scoring mechanism that treats faces in ground-truth videos as facial feature pools, providing multi-angle facial information to enhance generalization. A KL-divergence regularization is further incorporated to stabilize training and prevent overfitting to the reward signal. Extensive experiments on Wan 2.2 I2V model and our in-house I2V model demonstrate the effectiveness of our method. Our project and code are available at https://ipro-alimama.github.io/.
 ]]></content:encoded>
-<pubDate>Fri, 24 Oct 2025 00:00:00 -0400</pubDate>
 <pubDate>Fri, 24 Oct 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -24,16 +24,14 @@ Abstract: Recent advances in image-to-video (I2V) generation have achieved remar
 <link>https://arxiv.org/abs/2510.14349</link>
 <guid>https://arxiv.org/abs/2510.14349</guid>
 <content:encoded><![CDATA[
-<div> Keywords: Multimodal large language models, Vision-Centric activation, Task-aware perceptual features, Modular Task Queries, Visual Alignment Layers<br>
+<div> Keywords: Multimodal large language models, Vision-Centric activation, Task-aware perceptual features, Modular Task Queries, Visual Alignment Layers<br />
 Summary: 
-Multimodal large language models (MLLMs) integrate image features with language models for advanced comprehension. However, current MLLMs only rely on textual prediction, neglecting crucial vision-centric information. VaCo addresses this by optimizing MLLM representations through Vision-Centric activation and Coordination from multiple vision foundation models (VFMs). It integrates task-aware perceptual features from VFMs, using Modular Task Queries (MTQs) and Visual Alignment Layers (VALs) to activate visual signals. The Token Gateway Mask (TGM) coordinates representation conflicts across VFMs. Extensive experiments show VaCo significantly enhances the performance of MLLMs on various tasks, highlighting its superior visual comprehension capabilities.<br><br>Summary: <div>
+Multimodal large language models (MLLMs) integrate image features with language models for advanced comprehension. However, current MLLMs only rely on textual prediction, neglecting crucial vision-centric information. VaCo addresses this by optimizing MLLM representations through Vision-Centric activation and Coordination from multiple vision foundation models (VFMs). It integrates task-aware perceptual features from VFMs, using Modular Task Queries (MTQs) and Visual Alignment Layers (VALs) to activate visual signals. The Token Gateway Mask (TGM) coordinates representation conflicts across VFMs. Extensive experiments show VaCo significantly enhances the performance of MLLMs on various tasks, highlighting its superior visual comprehension capabilities.<br /><br />Summary: <div>
 arXiv:2510.14349v3 Announce Type: replace 
 Abstract: Multimodal large language models (MLLMs) integrate image features from visual encoders with LLMs, demonstrating advanced comprehension capabilities. However, mainstream MLLMs are solely supervised by the next-token prediction of textual tokens, neglecting critical vision-centric information essential for analytical abilities. To track this dilemma, we introduce VaCo, which optimizes MLLM representations through Vision-Centric activation and Coordination from multiple vision foundation models (VFMs). VaCo introduces visual discriminative alignment to integrate task-aware perceptual features extracted from VFMs, thereby unifying the optimization of both textual and visual outputs in MLLMs. Specifically, we incorporate the learnable Modular Task Queries (MTQs) and Visual Alignment Layers (VALs) into MLLMs, activating specific visual signals under the supervision of diverse VFMs. To coordinate representation conflicts across VFMs, the crafted Token Gateway Mask (TGM) restricts the information flow among multiple groups of MTQs. Extensive experiments demonstrate that VaCo significantly improves the performance of different MLLMs on various benchmarks, showcasing its superior capabilities in visual comprehension.
 ]]></content:encoded>
 <pubDate>Fri, 24 Oct 2025 00:00:00 -0400</pubDate>
-<pubDate>Fri, 24 Oct 2025 00:00:00 -0400</pubDate>
 </item>
-
 <item>
 <title>Fourier-Based GAN Fingerprint Detection using ResNet50</title>
 <link>https://arxiv.org/abs/2510.19840</link>
@@ -11231,38 +11229,6 @@ The paper introduces NAPPure, an extended adversarial purification framework des
 <br /><br />Summary: <div>
 arXiv:2510.14025v1 Announce Type: new 
 Abstract: Adversarial purification has achieved great success in combating adversarial image perturbations, which are usually assumed to be additive. However, non-additive adversarial perturbations such as blur, occlusion, and distortion are also common in the real world. Under such perturbations, existing adversarial purification methods are much less effective since they are designed to fit the additive nature. In this paper, we propose an extended adversarial purification framework named NAPPure, which can further handle non-additive perturbations. Specifically, we first establish the generation process of an adversarial image, and then disentangle the underlying clean image and perturbation parameters through likelihood maximization. Experiments on GTSRB and CIFAR-10 datasets show that NAPPure significantly boosts the robustness of image classification models against non-additive perturbations.
-]]></content:encoded>
-<pubDate>Fri, 17 Oct 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Vgent: Graph-based Retrieval-Reasoning-Augmented Generation For Long Video Understanding</title>
-<link>https://arxiv.org/abs/2510.14032</link>
-<guid>https://arxiv.org/abs/2510.14032</guid>
-<content:encoded><![CDATA[
-<div> Graph-based retrieval, reasoning, generation, LVLMs, long videos  
-Summary:  
-- The study addresses challenges faced by large video language models in understanding and reasoning over long videos.  
-- The proposed Vgent framework utilizes structured graphs to represent videos and includes an intermediate reasoning step to enhance retrieval effectiveness and reduce noise.  
-- Vgent improves overall performance by 3.0% to 5.4% compared to base models on MLVU benchmarks.  
-- The framework outperforms state-of-the-art video RAG methods by 8.6%.  
-- The code for the Vgent framework is publicly available for further research and implementation.  
-
-<br /><br />Summary: <div>
-arXiv:2510.14032v1 Announce Type: new 
-Abstract: Understanding and reasoning over long videos pose significant challenges for large video language models (LVLMs) due to the difficulty in processing intensive video tokens beyond context window and retaining long-term sequential information. Retrieval-Augmented Generation (RAG) has demonstrated effectiveness in processing long context for Large Language Models (LLMs); however, applying RAG to long video faces challenges such as disrupted temporal dependencies and inclusion of irrelevant information that can hinder accurate reasoning. To address these limitations, we propose Vgent, a novel graph-based retrieval-reasoning-augmented generation framework to enhance LVLMs for long video understanding. Our approach introduces two key innovations: (i) It represents videos by structured graphs with semantic relationships across video clips preserved to improve retrieval effectiveness. (ii) It introduces an intermediate reasoning step to mitigate the reasoning limitation of LVLMs, which leverages structured verification to reduce retrieval noise and facilitate the explicit aggregation of relevant information across clips, resulting in more accurate and context-aware responses. We comprehensively evaluate our framework with various open-source LVLMs on three long-video understanding benchmarks. Our approach yielded an overall performance improvement of $3.0\%\sim 5.4\%$ over base models on MLVU, and outperformed state-of-the-art video RAG methods by $8.6\%$. Our code is publicly available at https://xiaoqian-shen.github.io/Vgent.
-]]></content:encoded>
-<pubDate>Fri, 17 Oct 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Synchronization of Multiple Videos</title>
-<link>https://arxiv.org/abs/2510.14051</link>
-<guid>https://arxiv.org/abs/2510.14051</guid>
-<content:encoded><![CDATA[
-<div> Keywords: video synchronization, Temporal Prototype Learning (TPL), generative AI videos, pretrained models, action phases<br />
-Summary: <br />
-The article introduces Temporal Prototype Learning (TPL) as a framework for synchronizing videos captured simultaneously from different scenes or generative AI videos. TPL constructs a shared 1D representation from high-dimensional embeddings obtained from pretrained models, allowing for robust alignment of videos without exhaustive pairwise matching. This approach improves synchronization accuracy, efficiency, and robustness across diverse datasets, including fine-grained frame retrieval and phase classification tasks. TPL is the first method to address synchronization challenges in multiple generative AI videos depicting the same action. The framework is available for use and is accompanied by a new multiple video synchronization dataset, demonstrating its effectiveness in addressing the complexities of synchronizing videos with diverse subjects and backgrounds. <div>
-arXiv:2510.14051v1 Announce Type: new 
-Abstract: Synchronizing videos captured simultaneously from multiple cameras in the same scene is often easy and typically requires only simple time shifts. However, synchronizing videos from different scenes or, more recently, generative AI videos, poses a far more complex challenge due to diverse subjects, backgrounds, and nonlinear temporal misalignment. We propose Temporal Prototype Learning (TPL), a prototype-based framework that constructs a shared, compact 1D representation from high-dimensional embeddings extracted by any of various pretrained models. TPL robustly aligns videos by learning a unified prototype sequence that anchors key action phases, thereby avoiding exhaustive pairwise matching. Our experiments show that TPL improves synchronization accuracy, efficiency, and robustness across diverse datasets, including fine-grained frame retrieval and phase classification tasks. Importantly, TPL is the first approach to mitigate synchronization issues in multiple generative AI videos depicting the same action. Our code and a new multiple video synchronization dataset are available at https://bgu-cs-vil.github.io/TPL/
 ]]></content:encoded>
 <pubDate>Fri, 17 Oct 2025 00:00:00 -0400</pubDate>
 </item>

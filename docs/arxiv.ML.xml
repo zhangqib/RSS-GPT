@@ -4,6 +4,7 @@
 <title>cs.LG updates on arXiv.org</title>
 <link>http://rss.arxiv.org/rss/cs.LG</link>
 
+
 <item>
 <title>Bridging Symmetry and Robustness: On the Role of Equivariance in Enhancing Adversarial Robustness</title>
 <link>https://arxiv.org/abs/2510.16171</link>
@@ -16,7 +17,6 @@ arXiv:2510.16171v2 Announce Type: replace
 Abstract: Adversarial examples reveal critical vulnerabilities in deep neural networks by exploiting their sensitivity to imperceptible input perturbations. While adversarial training remains the predominant defense strategy, it often incurs significant computational cost and may compromise clean-data accuracy. In this work, we investigate an architectural approach to adversarial robustness by embedding group-equivariant convolutions-specifically, rotation- and scale-equivariant layers-into standard convolutional neural networks (CNNs). These layers encode symmetry priors that align model behavior with structured transformations in the input space, promoting smoother decision boundaries and greater resilience to adversarial attacks. We propose and evaluate two symmetry-aware architectures: a parallel design that processes standard and equivariant features independently before fusion, and a cascaded design that applies equivariant operations sequentially. Theoretically, we demonstrate that such models reduce hypothesis space complexity, regularize gradients, and yield tighter certified robustness bounds under the CLEVER (Cross Lipschitz Extreme Value for nEtwork Robustness) framework. Empirically, our models consistently improve adversarial robustness and generalization across CIFAR-10, CIFAR-100, and CIFAR-10C under both FGSM and PGD attacks, without requiring adversarial training. These findings underscore the potential of symmetry-enforcing architectures as efficient and principled alternatives to data augmentation-based defenses.
 ]]></content:encoded>
 <pubDate>Fri, 24 Oct 2025 00:00:00 -0400</pubDate>
-<pubDate>Fri, 24 Oct 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
 <title>Improving Model Representation and Reducing KV Cache via Skip Connections with First Value Heads</title>
@@ -24,13 +24,12 @@ Abstract: Adversarial examples reveal critical vulnerabilities in deep neural ne
 <guid>https://arxiv.org/abs/2510.16807</guid>
 <content:encoded><![CDATA[
 <div> KeyWords: Transformer models, Skip connections, KV cache, Representation improvement, Auto-regressive tasks
-<br>
+<br />
 Summary: 
 SkipV1Former is introduced as a variant of Transformer models that leverages skip connections from the first layer's Value heads to enhance representation and reduce KV cache usage by nearly 50%. By reusing half of the Value heads from the initial layer in subsequent layers, the model retains valuable information lost during compression, leading to improved performance in auto-regressive tasks. Empirically, SkipV1Former consistently reduces KV cache size by approximately 25% while outperforming standard Multi-Head Attention Transformers. An efficient uptraining method is proposed to transition existing MHA Transformer checkpoints to SkipV1Former with minimal additional compute cost. Moreover, SkipV1Former can be combined with advanced techniques like Group-Query Attention and Multi-Latent Attention to achieve further KV cache savings and performance enhancement. When integrated with YOCO, SkipV1Former achieves significant KV cache reduction while maintaining performance improvements. <div>
 arXiv:2510.16807v2 Announce Type: replace 
 Abstract: Transformer models have driven breakthroughs across various language tasks by their strong capability to learn rich contextual representations. Scaling them to improve representation, however, often demands substantial memory and compute costs, such as the Key-Value (KV) cache used during auto-regressive decoding. Skip connections offer a promising way to improve representation without bloating resource usage, yet most prior works either improve expressivity while leaving KV costs unchanged, or reduce memory at the cost of weaker representation. In this work, we propose SkipV1Former, a Transformer variant that uses skip connections from the first layer's Value heads to strengthen model representation and reduce KV cache. Specifically, from the second block onward, each layer reuses half of its Value heads from the very first layer, while computing the other half as usual-cutting Value projections and V cache by nearly 50 \%. Theoretically, we show that routing uncompressed first-layer Values into deeper layers restores information lost to compression and accelerates the model's implicit mesa-optimization-a key pattern of Transformer in auto-regressive tasks. Empirically, across different model scales, SkipV1Former delivers consistent reductions of approximately 25 \% in KV cache while improving perplexity relative to standard Multi-Head Attention (MHA) Transformers and some advanced variants. Moreover, we propose a recipe for uptraining existing MHA Transformer checkpoints to SkipV1Former with only 10-15\% additional compute. Finally, SkipV1Former can seamlessly combine advanced methods like Group-Query Attention and Multi-Latent Attention to achieve further KV cache savings and performance improvement. When combined with YOCO, it cuts KV cache size by nearly 50 \% while still improving performance.
 ]]></content:encoded>
-<pubDate>Fri, 24 Oct 2025 00:00:00 -0400</pubDate>
 <pubDate>Fri, 24 Oct 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -43,11 +42,10 @@ Abstract: Transformer models have driven breakthroughs across various language t
 Summary:
 TabR1 introduces a reasoning large language model (LLM) for tabular prediction, utilizing Permutation Relative Policy Optimization (PRPO) to enhance interpretability and generalization. By incorporating column-permutation invariance as a structural prior, PRPO transforms sparse rewards into dense learning signals, improving the model's reasoning ability. TabR1 achieves comparable performance to strong baselines under full-supervision fine-tuning and shows promising results in the zero-shot setting, approaching performance levels of baselines under limited supervision. The model outperforms larger LLMs in various tasks, demonstrating up to a 53.17% improvement over DeepSeek-R1 (685B). Overall, TabR1 showcases the potential of reasoning LLMs for tabular data by enhancing few-shot and zero-shot performance while maintaining interpretability. 
 
-<br><br>Summary: <div>
+<br /><br />Summary: <div>
 arXiv:2510.17385v2 Announce Type: replace 
 Abstract: Tabular prediction has traditionally relied on gradient-boosted decision trees and specialized deep learning models, which excel within tasks but provide limited interpretability and weak transfer across tables. Reasoning large language models (LLMs) promise cross-task adaptability with trans- parent reasoning traces, yet their potential has not been fully realized for tabular data. This paper presents TabR1, the first reasoning LLM for tabular prediction with multi-step reasoning. At its core is Permutation Relative Policy Optimization (PRPO), a simple yet efficient reinforcement learning method that encodes column-permutation invariance as a structural prior. By construct- ing multiple label-preserving permutations per sample and estimating advantages both within and across permutations, PRPO transforms sparse rewards into dense learning signals and improves generalization. With limited supervision, PRPO activates the reasoning ability of LLMs for tabular prediction, enhancing few-shot and zero-shot performance as well as interpretability. Comprehensive experiments demonstrate that TabR1 achieves performance comparable to strong baselines under full-supervision fine-tuning. In the zero-shot setting, TabR1 approaches the performance of strong baselines under the 32-shot setting. Moreover, TabR1 (8B) substantially outperforms much larger LLMs across various tasks, achieving up to 53.17% improvement over DeepSeek-R1 (685B).
 ]]></content:encoded>
-<pubDate>Fri, 24 Oct 2025 00:00:00 -0400</pubDate>
 <pubDate>Fri, 24 Oct 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -60,11 +58,10 @@ Abstract: Tabular prediction has traditionally relied on gradient-boosted decisi
 Summary:
 RawHash3 is a novel approach that combines graph neural networks with dynamic programming to improve the accuracy and efficiency of seed chaining in nanopore sequencing alignment. By treating seed chaining as a graph learning problem and incorporating spatial relationships between seeds, RawHash3 achieves a high precision of 99.94% and improves recall by 25.0% compared to baseline methods. The system maintains real-time performance with a median inference latency of 1.59ms and demonstrates robustness to label corruption, outperforming baseline methods. RawHash3's success rate remains at 100% under 20% label corruption, highlighting its reliability for genomics pipelines. Through extensive evaluation and cross-validation, RawHash3 showcases the effectiveness of graph neural networks in enhancing genomic alignment tasks, providing a promising avenue for future developments in the field. 
 
-<br><br>Summary: <div>
+<br /><br />Summary: <div>
 arXiv:2510.16013v2 Announce Type: replace-cross 
 Abstract: Nanopore sequencing enables real-time long-read DNA sequencing with reads exceeding 10 kilobases, but inherent error rates of 12-15 percent present significant computational challenges for read alignment. The critical seed chaining step must connect exact k-mer matches between reads and reference genomes while filtering spurious matches, yet state-of-the-art methods rely on fixed gap penalty functions unable to adapt to varying genomic contexts including tandem repeats and structural variants. This paper presents RawHash3, a hybrid framework combining graph neural networks with classical dynamic programming for adaptive seed chaining that maintains real-time performance while providing statistical guarantees. We formalize seed chaining as graph learning where seeds constitute nodes with 12-dimensional feature vectors and edges encode 8-dimensional spatial relationships including gap consistency. Our architecture employs three-layer EdgeConv GNN with confidence-based method selection that dynamically switches between learned guidance and algorithmic fallback. Comprehensive evaluation on 1,000 synthetic nanopore reads with 5,200 test seeds demonstrates RawHash3 achieves 99.94 percent precision and 40.07 percent recall, representing statistically significant 25.0 percent relative improvement over baseline with p less than 0.001. The system maintains median inference latency of 1.59ms meeting real-time constraints, while demonstrating superior robustness with 100 percent success rate under 20 percent label corruption versus baseline degradation to 30.3 percent. Cross-validation confirms stability establishing graph neural networks as viable approach for production genomics pipelines.
 ]]></content:encoded>
-<pubDate>Fri, 24 Oct 2025 00:00:00 -0400</pubDate>
 <pubDate>Fri, 24 Oct 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -75,11 +72,10 @@ Abstract: Nanopore sequencing enables real-time long-read DNA sequencing with re
 <div> Efficient Vision-Language-Action Models, latency reduction, memory footprint reduction, training and inference cost reduction, edge platforms, systematic review, model architecture, perception feature, action generation, training/inference strategies, future trends, open challenges.
 
 Summary:
-Efficient Vision-Language-Action (VLA) models are crucial for real-time performance on edge platforms. This survey explores methods to enhance VLA efficiency by reducing latency, memory footprint, training, and inference costs. Solutions are categorized into model architecture, perception feature, action generation, and training/inference strategies. Techniques include optimizing network design, utilizing lightweight features, improving action prediction, and enhancing training strategies. The study also highlights future trends and challenges in advancing efficient embodied intelligence. <br><br>Summary: <div>
+Efficient Vision-Language-Action (VLA) models are crucial for real-time performance on edge platforms. This survey explores methods to enhance VLA efficiency by reducing latency, memory footprint, training, and inference costs. Solutions are categorized into model architecture, perception feature, action generation, and training/inference strategies. Techniques include optimizing network design, utilizing lightweight features, improving action prediction, and enhancing training strategies. The study also highlights future trends and challenges in advancing efficient embodied intelligence. <br /><br />Summary: <div>
 arXiv:2510.17111v3 Announce Type: replace-cross 
 Abstract: Vision-Language-Action (VLA) models extend vision-language models to embodied control by mapping natural-language instructions and visual observations to robot actions. Despite their capabilities, VLA systems face significant challenges due to their massive computational and memory demands, which conflict with the constraints of edge platforms such as on-board mobile manipulators that require real-time performance. Addressing this tension has become a central focus of recent research. In light of the growing efforts toward more efficient and scalable VLA systems, this survey provides a systematic review of approaches for improving VLA efficiency, with an emphasis on reducing latency, memory footprint, and training and inference costs. We categorize existing solutions into four dimensions: model architecture, perception feature, action generation, and training/inference strategies, summarizing representative techniques within each category. Finally, we discuss future trends and open challenges, highlighting directions for advancing efficient embodied intelligence.
 ]]></content:encoded>
-<pubDate>Fri, 24 Oct 2025 00:00:00 -0400</pubDate>
 <pubDate>Fri, 24 Oct 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -87,13 +83,12 @@ Abstract: Vision-Language-Action (VLA) models extend vision-language models to e
 <link>https://arxiv.org/abs/2510.17451</link>
 <guid>https://arxiv.org/abs/2510.17451</guid>
 <content:encoded><![CDATA[
-<div> algorithm, VC-dimension, complexity, hypergraph, approximation<br>
-Summary:<br>
-The article introduces new results on computing the VC-dimension, a crucial complexity measure in machine learning set systems. It proves the tightness of the naive algorithm's time complexity under the Exponential Time Hypothesis. Additionally, it presents a fixed-parameter approximation algorithm and a fixed-parameter algorithm based on structural parameters like maximum degree and dimension. These algorithms are the most effective for this problem. The study extends to graphs, providing a faster algorithm based on treewidth, unlike similar problems with double-exponential dependencies. Overall, the research enhances the understanding of computing the VC-dimension and offers efficient algorithms for practical applications.<br> <div>
+<div> algorithm, VC-dimension, complexity, hypergraph, approximation<br />
+Summary:<br />
+The article introduces new results on computing the VC-dimension, a crucial complexity measure in machine learning set systems. It proves the tightness of the naive algorithm's time complexity under the Exponential Time Hypothesis. Additionally, it presents a fixed-parameter approximation algorithm and a fixed-parameter algorithm based on structural parameters like maximum degree and dimension. These algorithms are the most effective for this problem. The study extends to graphs, providing a faster algorithm based on treewidth, unlike similar problems with double-exponential dependencies. Overall, the research enhances the understanding of computing the VC-dimension and offers efficient algorithms for practical applications.<br /> <div>
 arXiv:2510.17451v2 Announce Type: replace-cross 
 Abstract: The VC-dimension is a well-studied and fundamental complexity measure of a set system (or hypergraph) that is central to many areas of machine learning. We establish several new results on the complexity of computing the VC-dimension. In particular, given a hypergraph $\mathcal{H}=(\mathcal{V},\mathcal{E})$, we prove that the naive $2^{\mathcal{O}(|\mathcal{V}|)}$-time algorithm is asymptotically tight under the Exponential Time Hypothesis (ETH). We then prove that the problem admits a $1$-additive fixed-parameter approximation algorithm when parameterized by the maximum degree of $\mathcal{H}$ and a fixed-parameter algorithm when parameterized by its dimension, and that these are essentially the only such exploitable structural parameters. Lastly, we consider a generalization of the problem, formulated using graphs, which captures the VC-dimension of both set systems and graphs. We design a $2^{\mathcal{O}(\rm{tw}\cdot \log \rm{tw})}\cdot |V|$-time algorithm for any graph $G=(V,E)$ of treewidth $\rm{tw}$ (which, for a set system, applies to the treewidth of its incidence graph). This is in contrast with closely related problems that require a double-exponential dependency on the treewidth (assuming the ETH).
 ]]></content:encoded>
-<pubDate>Fri, 24 Oct 2025 00:00:00 -0400</pubDate>
 <pubDate>Fri, 24 Oct 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -101,14 +96,13 @@ Abstract: The VC-dimension is a well-studied and fundamental complexity measure 
 <link>https://arxiv.org/abs/2510.17472</link>
 <guid>https://arxiv.org/abs/2510.17472</guid>
 <content:encoded><![CDATA[
-<div> Statistical certificate, self-consistency, majority voting, Martingale Majority Certificate, test-time reinforcement learning<br>
-<br>
-Summary:<br>
-The article introduces a unified framework for certifiable inference in large language models (LLMs), focusing on self-consistency and test-time reinforcement learning (TTRL). It shows that majority voting can provide a statistical certificate of self-consistency in LLMs by aligning the aggregated answer with the terminal distribution mode with high probability. The framework includes concentration bounds and the Martingale Majority Certificate (MMC) for adaptive stopping. The article explains how label-free post-training methods like TTRL increase model sharpness by tilting the answer distribution towards its mode. It proposes new post-training objectives that balance sharpness and bias for improved reliability. By connecting self-consistency and TTRL within a statistical framework, the article enhances understanding of test-time scaling strategies for reasoning LLMs.<br><br> <div>
+<div> Statistical certificate, self-consistency, majority voting, Martingale Majority Certificate, test-time reinforcement learning<br />
+<br />
+Summary:<br />
+The article introduces a unified framework for certifiable inference in large language models (LLMs), focusing on self-consistency and test-time reinforcement learning (TTRL). It shows that majority voting can provide a statistical certificate of self-consistency in LLMs by aligning the aggregated answer with the terminal distribution mode with high probability. The framework includes concentration bounds and the Martingale Majority Certificate (MMC) for adaptive stopping. The article explains how label-free post-training methods like TTRL increase model sharpness by tilting the answer distribution towards its mode. It proposes new post-training objectives that balance sharpness and bias for improved reliability. By connecting self-consistency and TTRL within a statistical framework, the article enhances understanding of test-time scaling strategies for reasoning LLMs.<br /><br /> <div>
 arXiv:2510.17472v2 Announce Type: replace-cross 
 Abstract: Recent advances such as self-consistency and test-time reinforcement learning (TTRL) improve the reliability of large language models (LLMs) without additional supervision, yet their underlying mechanisms and statistical guarantees remain poorly understood. We present a unified framework for certifiable inference in LLMs, showing that majority voting provides a statistical certificate of self-consistency: under mild assumptions, the aggregated answer coincides with the mode of the model's terminal distribution with high probability. We derive finite-sample and anytime-valid concentration bounds that quantify this confidence, and introduce the Martingale Majority Certificate (MMC), a sequential stopping rule that adaptively determines when sufficient samples have been drawn. We further prove that label-free post-training methods such as TTRL implicitly sharpen the answer distribution by exponentially tilting it toward its mode, thereby reducing the number of samples required for certification. Building on this insight, we propose new post-training objectives that explicitly optimise this trade-off between sharpness and bias. Together, these results explain and connect two central test-time scaling strategies, self-consistency and TTRL, within a single statistical framework for label-free, certifiable reliability in reasoning LLMs.
 ]]></content:encoded>
-<pubDate>Fri, 24 Oct 2025 00:00:00 -0400</pubDate>
 <pubDate>Fri, 24 Oct 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -121,14 +115,12 @@ Abstract: Recent advances such as self-consistency and test-time reinforcement l
 Summary:
 In this work, the authors address the challenge of steering cooperative multi-agent reinforcement learning (MARL) towards desired outcomes. They use multi-agent influence diagrams (MAIDs) to analyze and visualize different MARL interaction paradigms, including unguided self-organization and global guidance mechanisms. They introduce a new paradigm called the targeted intervention paradigm, which focuses on influencing a single targeted agent to mitigate the need for global guidance. The authors employ a causal inference technique called Pre-Strategy Intervention (PSI) to implement the targeted intervention paradigm and achieve a composite desired outcome. By leveraging MAIDs as causal diagrams, they demonstrate how the bundled relevance graph analysis can help identify whether an MARL learning paradigm is practical under a specific MARL interaction paradigm design. Experimental results showcase the effectiveness of their proposed targeted intervention approach and validate the relevance graph analysis findings.
 
-<br><br>Summary: <div>
+<br /><br />Summary: <div>
 arXiv:2510.17697v2 Announce Type: replace-cross 
 Abstract: Steering cooperative multi-agent reinforcement learning (MARL) towards desired outcomes is challenging, particularly when the global guidance from a human on the whole multi-agent system is impractical in a large-scale MARL. On the other hand, designing external mechanisms (e.g., intrinsic rewards and human feedback) to coordinate agents mostly relies on empirical studies, lacking a easy-to-use research tool. In this work, we employ multi-agent influence diagrams (MAIDs) as a graphical framework to address the above issues. First, we introduce the concept of MARL interaction paradigms, using MAIDs to analyze and visualize both unguided self-organization and global guidance mechanisms in MARL. Then, we design a new MARL interaction paradigm, referred to as the targeted intervention paradigm that is applied to only a single targeted agent, so the problem of global guidance can be mitigated. In our implementation, we introduce a causal inference technique, referred to as Pre-Strategy Intervention (PSI), to realize the targeted intervention paradigm. Since MAIDs can be regarded as a special class of causal diagrams, a composite desired outcome that integrates the primary task goal and an additional desired outcome can be achieved by maximizing the corresponding causal effect through the PSI. Moreover, the bundled relevance graph analysis of MAIDs provides a tool to identify whether an MARL learning paradigm is workable under the design of an MARL interaction paradigm. In experiments, we demonstrate the effectiveness of our proposed targeted intervention, and verify the result of relevance graph analysis.
 ]]></content:encoded>
 <pubDate>Fri, 24 Oct 2025 00:00:00 -0400</pubDate>
-<pubDate>Fri, 24 Oct 2025 00:00:00 -0400</pubDate>
 </item>
-
 <item>
 <title>Some Attention is All You Need for Retrieval</title>
 <link>https://arxiv.org/abs/2510.19861</link>
@@ -11158,107 +11150,6 @@ Summary:<br />
 Summary: <div>
 arXiv:2510.16064v1 Announce Type: new 
 Abstract: Solving the nonlinear AC optimal power flow (AC OPF) problem remains a major computational bottleneck for real-time grid operations. In this paper, we propose a residual learning paradigm that uses fast DC optimal power flow (DC OPF) solutions as a baseline, and learns only the nonlinear corrections required to provide the full AC-OPF solution. The method utilizes a topology-aware Graph Neural Network with local attention and two-level DC feature integration, trained using a physics-informed loss that enforces AC power-flow feasibility and operational limits. Evaluations on OPFData for 57-, 118-, and 2000-bus systems show around 25% lower MSE, up to 3X reduction in feasibility error, and up to 13X runtime speedup compared to conventional AC OPF solvers. The model maintains accuracy under N-1 contingencies and scales efficiently to large networks. These results demonstrate that residual learning is a practical and scalable bridge between linear approximations and AC-feasible OPF, enabling near real-time operational decision making.
-]]></content:encoded>
-<pubDate>Tue, 21 Oct 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>FedPURIN: Programmed Update and Reduced INformation for Sparse Personalized Federated Learning</title>
-<link>https://arxiv.org/abs/2510.16065</link>
-<guid>https://arxiv.org/abs/2510.16065</guid>
-<content:encoded><![CDATA[
-<div> Keywords: Personalized Federated Learning, parameter decoupling, communication efficiency, sparse aggregation, edge intelligence systems
-
-Summary:
-Personalized Federated Learning (PFL) addresses data heterogeneity by creating client-specific models. Parameter decoupling is a promising approach but existing methods often have inefficient communication. To improve this, Federated Learning with Programmed Update and Reduced Information (FedPURIN) uses an integer programming formulation to identify critical parameters for transmission and integrates this into a sparse aggregation scheme. This approach reduces communication while maintaining efficacy. Evaluations on image classification benchmarks show competitive performance and significant communication reduction compared to existing methods. FedPURIN is particularly beneficial for edge intelligence systems with diverse data sources. The framework sets a new standard for communication-efficient PFL. 
-
-Summary: <br /><br />Personalized Federated Learning (PFL) has emerged as a critical research frontier, addressing data heterogeneity across distributed clients. Parameter decoupling in PFL frameworks is a promising paradigm for maintaining model performance, but many existing methods suffer from suboptimal communication efficiency. To tackle this issue, Federated Learning with Programmed Update and Reduced Information (FedPURIN) strategically identifies critical parameters for transmission through an integer programming formulation and sparse aggregation. This approach results in a significant reduction in communication burden while preserving efficacy. Comprehensive evaluations demonstrate competitive performance and quantifiable communication reduction, making FedPURIN a valuable framework for edge intelligence systems operating with heterogeneous data sources. <div>
-arXiv:2510.16065v1 Announce Type: new 
-Abstract: Personalized Federated Learning (PFL) has emerged as a critical research frontier addressing data heterogeneity issue across distributed clients. Novel model architectures and collaboration mechanisms are engineered to accommodate statistical disparities while producing client-specific models. Parameter decoupling represents a promising paradigm for maintaining model performance in PFL frameworks. However, the communication efficiency of many existing methods remains suboptimal, sustaining substantial communication burdens that impede practical deployment. To bridge this gap, we propose Federated Learning with Programmed Update and Reduced INformation (FedPURIN), a novel framework that strategically identifies critical parameters for transmission through an integer programming formulation. This mathematically grounded strategy is seamlessly integrated into a sparse aggregation scheme, achieving a significant communication reduction while preserving the efficacy. Comprehensive evaluations on standard image classification benchmarks under varied non-IID conditions demonstrate competitive performance relative to state-of-the-art methods, coupled with quantifiable communication reduction through sparse aggregation. The framework establishes a new paradigm for communication-efficient PFL, particularly advantageous for edge intelligence systems operating with heterogeneous data sources.
-]]></content:encoded>
-<pubDate>Tue, 21 Oct 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>MNO: Multiscale Neural Operator for Computational Fluid Dynamics with 3D Point Cloud Data</title>
-<link>https://arxiv.org/abs/2510.16071</link>
-<guid>https://arxiv.org/abs/2510.16071</guid>
-<content:encoded><![CDATA[
-<div> multiscale neural operator, computational fluid dynamics, 3D unstructured point clouds, neural operators, fluid dynamics<br />
-<br />
-Summary: <br />
-Neural operators have revolutionized solving Partial Differential Equations (PDEs) by accelerating traditional solvers significantly. However, existing methods lack accuracy and scalability on irregular domains, hindering their effectiveness in capturing complex fluid flow structures. To address this, the Multiscale Neural Operator (MNO) architecture is introduced for Computational Fluid Dynamics (CFD) on 3D unstructured point clouds. MNO utilizes global, local, and micro attention modules to handle long-range dependencies, neighborhood interactions, and fine-grained details efficiently. Evaluation on diverse benchmarks demonstrates MNO's superior performance over state-of-the-art methods, reducing prediction errors by 5% to 40% and showcasing improved robustness in challenging 3D CFD scenarios. The explicit multiscale design of MNO establishes it as a scalable framework for learning intricate fluid dynamics on irregular domains. <div>
-arXiv:2510.16071v1 Announce Type: new 
-Abstract: Neural operators have emerged as a powerful data-driven paradigm for solving Partial Differential Equations (PDEs), offering orders-of-magnitude acceleration over traditional solvers. However, existing approaches still suffer from limited accuracy and scalability, particularly on irregular domains where fluid flows exhibit rich multiscale structures. In this work, we introduce the Multiscale Neural Operator (MNO), a new architecture for Computational Fluid Dynamics (CFD) on three-dimensional (3D) unstructured point clouds. MNO explicitly decomposes information across three scales: a global dimension-shrinkage attention module for long-range dependencies, a local graph attention module for neighborhood-level interactions, and a micro point-wise attention module for fine-grained details. This design preserves multiscale inductive biases while remaining computationally efficient. We evaluate MNO on four diverse benchmarks, covering both steady-state and unsteady flow scenarios with up to 300K points. Across all tasks, MNO consistently outperforms state-of-the-art baselines, reducing prediction errors by 5% to 40% and demonstrating improved robustness in challenging 3D CFD problems. Our results highlight the importance of explicit multiscale design for neural operators and establish MNO as a scalable framework for learning complex fluid dynamics on irregular domains.
-]]></content:encoded>
-<pubDate>Tue, 21 Oct 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Early-stopping for Transformer model training</title>
-<link>https://arxiv.org/abs/2510.16074</link>
-<guid>https://arxiv.org/abs/2510.16074</guid>
-<content:encoded><![CDATA[
-<div> novel theoretical framework, Transformer training dynamics, Random Matrix Theory, early-stopping criteria, spectral density<br />
-<br />
-Summary: This study presents a new theoretical framework based on Random Matrix Theory (RMT) for analyzing the training dynamics of Transformers. The focus is on understanding the mechanisms driving performance improvements and deriving principled early-stopping criteria. The study observed that the spectral density of the shallow self-attention matrix V transitions into a heavy-tailed distribution, leading to three distinct stages of training: structural exploration, heavy-tailed structure stabilization, and convergence saturation. The authors propose two validation-free criteria – a quantitative metric for heavy-tailed dynamics and a spectral signature indicating convergence – to aid in monitoring and diagnosing the progression of Transformer model training. The alignment between these criteria underscores the effectiveness of RMT in evaluating Transformer training dynamics. <br /><br /> <div>
-arXiv:2510.16074v1 Announce Type: new 
-Abstract: This work introduces a novel theoretical framework grounded in Random Matrix Theory (RMT) for analyzing Transformer training dynamics. We focus on the underlying mechanisms that drive performance improvements and derive principled early-stopping criteria. Empirically, we observe that the spectral density of the shallow self-attention matrix V consistently evolves into a heavy-tailed distribution. Utilizing the PL (Power Law) fit to this matrix as a probe, we demarcate training into three stages: structural exploration, heavy-tailed structure stabilization, and convergence saturation. This staging provides guidance for preliminary stopping decisions. Crucially, we propose two consistent and validation-free criteria: a quantitative metric for heavy-tailed dynamics and a novel spectral signature indicative of convergence. The strong alignment between these criteria highlights the utility of RMT for monitoring and diagnosing the progression of Transformer model training.
-]]></content:encoded>
-<pubDate>Tue, 21 Oct 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Optimization of the quantization of dense neural networks from an exact QUBO formulation</title>
-<link>https://arxiv.org/abs/2510.16075</link>
-<guid>https://arxiv.org/abs/2510.16075</guid>
-<content:encoded><![CDATA[
-<div> post-training quantization, neural networks, QUBO formulation, simulated annealing, integer precisions
-
-Summary:<br />
-This work presents a post-training quantization method for dense neural networks using a QUBO formulation based on ADAROUND. By formulating the objective as minimizing the Frobenius distance between theoretical and dequantized outputs, a QUBO with binary variables for rounding choices of weights and biases is derived. The QUBO matrix structure allows efficient decomposition into independent subproblems for solving with heuristics like simulated annealing. The method is applied to various datasets and compared with traditional round-to-nearest quantization across integer precisions from int8 to int1. The results demonstrate the effectiveness of the proposed approach in optimizing the quantization process for neural networks with improved accuracy at lower bit precisions. <div>
-arXiv:2510.16075v1 Announce Type: new 
-Abstract: This work introduces a post-training quantization (PTQ) method for dense neural networks via a novel ADAROUND-based QUBO formulation. Using the Frobenius distance between the theoretical output and the dequantized output (before the activation function) as the objective, an explicit QUBO whose binary variables represent the rounding choice for each weight and bias is obtained. Additionally, by exploiting the structure of the coefficient QUBO matrix, the global problem can be exactly decomposed into $n$ independent subproblems of size $f+1$, which can be efficiently solved using some heuristics such as simulated annealing. The approach is evaluated on MNIST, Fashion-MNIST, EMNIST, and CIFAR-10 across integer precisions from int8 to int1 and compared with a round-to-nearest traditional quantization methodology.
-]]></content:encoded>
-<pubDate>Tue, 21 Oct 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>BPL: Bias-adaptive Preference Distillation Learning for Recommender System</title>
-<link>https://arxiv.org/abs/2510.16076</link>
-<guid>https://arxiv.org/abs/2510.16076</guid>
-<content:encoded><![CDATA[
-<div> Bias-adaptive Preference distillation Learning, recommender systems, debiasing learning, counterfactual test environment, factual test environment
-
-Summary:
-Bias-adaptive Preference distillation Learning (BPL) is a new learning framework that aims to improve the accuracy of recommender systems by addressing biases in user feedback. BPL employs dual distillation strategies to uncover user preferences gradually, focusing on both factual and counterfactual test environments. By utilizing teacher-student distillation and self-distillation with reliability filtering, BPL retains accurate preference knowledge aligned with collected feedback while iteratively refining its predictions. This approach allows BPL to perform well in predicting user behaviors on platforms and long-term user satisfaction. Comprehensive experiments demonstrate the effectiveness of BPL in improving performance in both factual and counterfactual tests. The implementation of BPL is available on GitHub for further exploration and use. <br /><br />Summary: <div>
-arXiv:2510.16076v1 Announce Type: new 
-Abstract: Recommender systems suffer from biases that cause the collected feedback to incompletely reveal user preference. While debiasing learning has been extensively studied, they mostly focused on the specialized (called counterfactual) test environment simulated by random exposure of items, significantly degrading accuracy in the typical (called factual) test environment based on actual user-item interactions. In fact, each test environment highlights the benefit of a different aspect: the counterfactual test emphasizes user satisfaction in the long-terms, while the factual test focuses on predicting subsequent user behaviors on platforms. Therefore, it is desirable to have a model that performs well on both tests rather than only one. In this work, we introduce a new learning framework, called Bias-adaptive Preference distillation Learning (BPL), to gradually uncover user preferences with dual distillation strategies. These distillation strategies are designed to drive high performance in both factual and counterfactual test environments. Employing a specialized form of teacher-student distillation from a biased model, BPL retains accurate preference knowledge aligned with the collected feedback, leading to high performance in the factual test. Furthermore, through self-distillation with reliability filtering, BPL iteratively refines its knowledge throughout the training process. This enables the model to produce more accurate predictions across a broader range of user-item combinations, thereby improving performance in the counterfactual test. Comprehensive experiments validate the effectiveness of BPL in both factual and counterfactual tests. Our implementation is accessible via: https://github.com/SeongKu-Kang/BPL.
-]]></content:encoded>
-<pubDate>Tue, 21 Oct 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Continual Knowledge Consolidation LORA for Domain Incremental Learning</title>
-<link>https://arxiv.org/abs/2510.16077</link>
-<guid>https://arxiv.org/abs/2510.16077</guid>
-<content:encoded><![CDATA[
-arXiv:2510.16077v1 Announce Type: new 
-Abstract: Domain Incremental Learning (DIL) is a continual learning sub-branch that aims to address never-ending arrivals of new domains without catastrophic forgetting problems. Despite the advent of parameter-efficient fine-tuning (PEFT) approaches, existing works create task-specific LoRAs overlooking shared knowledge across tasks. Inaccurate selection of task-specific LORAs during inference results in significant drops in accuracy, while existing works rely on linear or prototype-based classifiers, which have suboptimal generalization powers. Our paper proposes continual knowledge consolidation low rank adaptation (CONEC-LoRA) addressing the DIL problems. CONEC-LoRA is developed from consolidations between task-shared LORA to extract common knowledge and task-specific LORA to embrace domain-specific knowledge. Unlike existing approaches, CONEC-LoRA integrates the concept of a stochastic classifier whose parameters are sampled from a distribution, thus enhancing the likelihood of correct classifications. Last but not least, an auxiliary network is deployed to optimally predict the task-specific LoRAs for inferences and implements the concept of a different-depth network structure in which every layer is connected with a local classifier to take advantage of intermediate representations. This module integrates the ball-generator loss and transformation module to address the synthetic sample bias problem. Our rigorous experiments demonstrate the advantage of CONEC-LoRA over prior arts in 4 popular benchmark problems with over 5% margins.
-]]></content:encoded>
-<pubDate>Tue, 21 Oct 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>PassREfinder-FL: Privacy-Preserving Credential Stuffing Risk Prediction via Graph-Based Federated Learning for Representing Password Reuse between Websites</title>
-<link>https://arxiv.org/abs/2510.16083</link>
-<guid>https://arxiv.org/abs/2510.16083</guid>
-<content:encoded><![CDATA[
-arXiv:2510.16083v1 Announce Type: new 
-Abstract: Credential stuffing attacks have caused significant harm to online users who frequently reuse passwords across multiple websites. While prior research has attempted to detect users with reused passwords or identify malicious login attempts, existing methods often compromise usability by restricting password creation or website access, and their reliance on complex account-sharing mechanisms hinders real-world deployment. To address these limitations, we propose PassREfinder-FL, a novel framework that predicts credential stuffing risks across websites. We introduce the concept of password reuse relations -- defined as the likelihood of users reusing passwords between websites -- and represent them as edges in a website graph. Using graph neural networks (GNNs), we perform a link prediction task to assess credential reuse risk between sites. Our approach scales to a large number of arbitrary websites by incorporating public website information and linking newly observed websites as nodes in the graph. To preserve user privacy, we extend PassREfinder-FL with a federated learning (FL) approach that eliminates the need to share user sensitive information across administrators. Evaluation on a real-world dataset of 360 million breached accounts from 22,378 websites shows that PassREfinder-FL achieves an F1-score of 0.9153 in the FL setting. We further validate that our FL-based GNN achieves a 4-11% performance improvement over other state-of-the-art GNN models through an ablation study. Finally, we demonstrate that the predicted results can be used to quantify password reuse likelihood as actionable risk scores.
-]]></content:encoded>
-<pubDate>Tue, 21 Oct 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Near-Equilibrium Propagation training in nonlinear wave systems</title>
-<link>https://arxiv.org/abs/2510.16084</link>
-<guid>https://arxiv.org/abs/2510.16084</guid>
-<content:encoded><![CDATA[
-arXiv:2510.16084v1 Announce Type: new 
-Abstract: Backpropagation learning algorithm, the workhorse of modern artificial intelligence, is notoriously difficult to implement in physical neural networks. Equilibrium Propagation (EP) is an alternative with comparable efficiency and strong potential for in-situ training. We extend EP learning to both discrete and continuous complex-valued wave systems. In contrast to previous EP implementations, our scheme is valid in the weakly dissipative regime, and readily applicable to a wide range of physical settings, even without well defined nodes, where trainable inter-node connections can be replaced by trainable local potential. We test the method in driven-dissipative exciton-polariton condensates governed by generalized Gross-Pitaevskii dynamics. Numerical studies on standard benchmarks, including a simple logical task and handwritten-digit recognition, demonstrate stable convergence, establishing a practical route to in-situ learning in physical systems in which system control is restricted to local parameters.
 ]]></content:encoded>
 <pubDate>Tue, 21 Oct 2025 00:00:00 -0400</pubDate>
 </item>
