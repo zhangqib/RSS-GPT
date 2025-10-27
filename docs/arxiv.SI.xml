@@ -4,6 +4,118 @@
 <title>cs.SI updates on arXiv.org</title>
 <link>http://rss.arxiv.org/rss/cs.SI</link>
 
+<item>
+<title>Social Simulations with Large Language Model Risk Utopian Illusion</title>
+<link>https://arxiv.org/abs/2510.21180</link>
+<guid>https://arxiv.org/abs/2510.21180</guid>
+<content:encoded><![CDATA[
+<div> Keywords: simulation, human behavior, large language models (LLMs), social cognitive biases, social desirability bias
+
+Summary: 
+The study explores how large language models (LLMs) simulate human behavior in social contexts. Through chatroom-style interactions, the researchers analyzed LLMs across five linguistic dimensions to identify social cognitive biases. The findings reveal that LLMs do not accurately replicate authentic human behavior, exhibiting biases like social role bias, primacy effect, and positivity bias. These biases lead to the creation of "Utopian" societies that lack the complexity and variability of real human interactions. The study highlights the importance of developing socially grounded LLMs that can capture the diverse nature of human social behavior. This systematic framework provides a valuable tool for assessing the behavior of LLMs in social simulations and emphasizes the need for more nuanced representations of human behavior in artificial intelligence models. 
+
+<br><br>Summary: <div>
+arXiv:2510.21180v1 Announce Type: cross 
+Abstract: Reliable simulation of human behavior is essential for explaining, predicting, and intervening in our society. Recent advances in large language models (LLMs) have shown promise in emulating human behaviors, interactions, and decision-making, offering a powerful new lens for social science studies. However, the extent to which LLMs diverge from authentic human behavior in social contexts remains underexplored, posing risks of misinterpretation in scientific studies and unintended consequences in real-world applications. Here, we introduce a systematic framework for analyzing LLMs' behavior in social simulation. Our approach simulates multi-agent interactions through chatroom-style conversations and analyzes them across five linguistic dimensions, providing a simple yet effective method to examine emergent social cognitive biases. We conduct extensive experiments involving eight representative LLMs across three families. Our findings reveal that LLMs do not faithfully reproduce genuine human behavior but instead reflect overly idealized versions of it, shaped by the social desirability bias. In particular, LLMs show social role bias, primacy effect, and positivity bias, resulting in "Utopian" societies that lack the complexity and variability of real human interactions. These findings call for more socially grounded LLMs that capture the diversity of human social behavior.
+]]></content:encoded>
+<pubDate>Mon, 27 Oct 2025 00:00:00 -0400</pubDate>
+<pubDate>Mon, 27 Oct 2025 00:00:00 -0400</pubDate>
+</item>
+<item>
+<title>Shift Bribery over Social Networks</title>
+<link>https://arxiv.org/abs/2510.21200</link>
+<guid>https://arxiv.org/abs/2510.21200</guid>
+<content:encoded><![CDATA[
+<div> bribery, social influence, networks, complexity landscape, shift strategy<br>
+Summary:<br>
+In shift bribery over networks, a briber aims to influence voters in a social network to promote their preferred candidate by paying them to change their rankings. This study considers the impact of social influence within the network, where bribed voters can influence their neighbors, amplifying persuasion effects. The problem complexity is shown to be challenging, being NP-complete and W[2]-hard under various parameters. However, some positive results include algorithms for specific network structures such as complete graphs, path graphs, transitive tournaments, and cluster graphs. Additionally, fixed-parameter tractable algorithms are developed based on treewidth and cluster vertex deletion number parameters. Overall, this research provides a comprehensive analysis of the complexity landscape of shift bribery in social networks, offering insights into the feasibility and challenges of influencing voters through network propagation. <br> <div>
+arXiv:2510.21200v1 Announce Type: cross 
+Abstract: In shift bribery, a briber seeks to promote his preferred candidate by paying voters to raise their ranking. Classical models of shift bribery assume voters act independently, overlooking the role of social influence. However, in reality, individuals are social beings and are often represented as part of a social network, where bribed voters may influence their neighbors, thereby amplifying the effect of persuasion. We study Shift bribery over Networks, where voters are modeled as nodes in a directed weighted graph, and arcs represent social influence between them. In this setting, bribery is not confined to directly targeted voters its effects can propagate through the network, influencing neighbors and amplifying persuasion. Given a budget and individual cost functions for shifting each voter's preference toward a designated candidate, the goal is to determine whether a shift strategy exists within budget that ensures the preferred candidate wins after both direct and network-propagated influence takes effect. We show that the problem is NP-Complete even with two candidates and unit costs, and W[2]-hard when parameterized by budget or maximum degree. On the positive side, we design polynomial-time algorithms for complete graphs under plurality and majority rules and path graphs for uniform edge weights, linear-time algorithms for transitive tournaments for two candidates, linear cost functions and uniform arc weights, and pseudo-polynomial algorithms for cluster graphs. We further prove the existence of fixed-parameter tractable algorithms with treewidth as parameter for two candidates, linear cost functions and uniform arc weights and pseudo-FPT with cluster vertex deletion number for two candidates and uniform arc weights. Together, these results give a detailed complexity landscape for shift bribery in social networks.
+]]></content:encoded>
+<pubDate>Mon, 27 Oct 2025 00:00:00 -0400</pubDate>
+<pubDate>Mon, 27 Oct 2025 00:00:00 -0400</pubDate>
+</item>
+<item>
+<title>World-POI: Global Point-of-Interest Data Enriched from Foursquare and OpenStreetMap as Tabular and Graph Data</title>
+<link>https://arxiv.org/abs/2510.21342</link>
+<guid>https://arxiv.org/abs/2510.21342</guid>
+<content:encoded><![CDATA[
+<div> dataset, points of interest, Foursquare, OpenStreetMap, metadata
+Summary: 
+This data paper presents a methodology for integrating Foursquare and OpenStreetMap datasets to create a comprehensive dataset of points of interest (POIs). The Foursquare dataset provides a baseline of commercial POIs, while the OpenStreetMap dataset offers enriched metadata. By combining these datasets, a 1 TB dataset is created, with filtered releases available for practical use. Record linkage is achieved through name similarity scores and spatial distances, allowing for the identification of high-confidence matches representing real businesses. A graph-based representation of POIs is constructed using this filtered dataset, enabling advanced spatial analyses and a variety of downstream applications. <div>
+arXiv:2510.21342v1 Announce Type: cross 
+Abstract: Recently, Foursquare released a global dataset with more than 100 million points of interest (POIs), each representing a real-world business on its platform. However, many entries lack complete metadata such as addresses or categories, and some correspond to non-existent or fictional locations. In contrast, OpenStreetMap (OSM) offers a rich, user-contributed POI dataset with detailed and frequently updated metadata, though it does not formally verify whether a POI represents an actual business. In this data paper, we present a methodology that integrates the strengths of both datasets: Foursquare as a comprehensive baseline of commercial POIs and OSM as a source of enriched metadata. The combined dataset totals approximately 1 TB. While this full version is not publicly released, we provide filtered releases with adjustable thresholds that reduce storage needs and make the data practical to download and use across domains. We also provide step-by-step instructions to reproduce the full 631 GB build. Record linkage is achieved by computing name similarity scores and spatial distances between Foursquare and OSM POIs. These measures identify and retain high-confidence matches that correspond to real businesses in Foursquare, have representations in OSM, and show strong name similarity. Finally, we use this filtered dataset to construct a graph-based representation of POIs enriched with attributes from both sources, enabling advanced spatial analyses and a range of downstream applications.
+]]></content:encoded>
+<pubDate>Mon, 27 Oct 2025 00:00:00 -0400</pubDate>
+<pubDate>Mon, 27 Oct 2025 00:00:00 -0400</pubDate>
+</item>
+<item>
+<title>Towards Socio-Technical Topology-Aware Adaptive Threat Detection in Software Supply Chains</title>
+<link>https://arxiv.org/abs/2510.21452</link>
+<guid>https://arxiv.org/abs/2510.21452</guid>
+<content:encoded><![CDATA[
+<div> SSCs, software supply chains, threat detection, socio-technical models, adaptive.
+
+Summary:
+Software supply chains (SSCs) are complex systems that are vulnerable to attacks, necessitating targeted and adaptive threat detection strategies. Current approaches mainly focus on technical aspects, but understanding socio-technical dynamics is crucial for effective threat detection. By analyzing the XZ Utils attack, where malicious actors exploited social trust within the project, the importance of monitoring both technical and social data for identifying suspicious behavior is highlighted. The proposed research vision involves using socio-technical models to support adaptive threat detection in SSCs, leveraging trends in data to inform targeted vulnerability assessment. Key challenges include techniques for developer and software analysis, decentralized adaptation, and the establishment of a test bed for SSC security research. This holistic approach aims to enhance the security of software supply chains by integrating technical and social considerations in threat detection mechanisms.<br><br>Summary: <div>
+arXiv:2510.21452v1 Announce Type: cross 
+Abstract: Software supply chains (SSCs) are complex systems composed of dynamic, heterogeneous technical and social components which collectively achieve the production and maintenance of software artefacts. Attacks on SSCs are increasing, yet pervasive vulnerability analysis is challenging due to their complexity. Therefore, threat detection must be targeted, to account for the large and dynamic structure, and adaptive, to account for its change and diversity. While current work focuses on technical approaches for monitoring supply chain dependencies and establishing component controls, approaches which inform threat detection through understanding the socio-technical dynamics are lacking. We outline a position and research vision to develop and investigate the use of socio-technical models to support adaptive threat detection of SSCs. We motivate this approach through an analysis of the XZ Utils attack whereby malicious actors undermined the maintainers' trust via the project's GitHub and mailing lists. We highlight that monitoring technical and social data can identify trends which indicate suspicious behaviour to then inform targeted and intensive vulnerability assessment. We identify challenges and research directions to achieve this vision considering techniques for developer and software analysis, decentralised adaptation and the need for a test bed for software supply chain security research.
+]]></content:encoded>
+<pubDate>Mon, 27 Oct 2025 00:00:00 -0400</pubDate>
+<pubDate>Mon, 27 Oct 2025 00:00:00 -0400</pubDate>
+</item>
+<item>
+<title>Just Another Hour on TikTok: ID sampling to obtain a complete slice of TikTok</title>
+<link>https://arxiv.org/abs/2504.13279</link>
+<guid>https://arxiv.org/abs/2504.13279</guid>
+<content:encoded><![CDATA[
+<div> TikTok, platform, posts, metadata, statistics
+Summary:
+- The study focuses on analyzing TikTok, a popular platform with significant global impact, utilizing a method to extract a representative sample of posts.
+- The method enables collection of metadata, video media, and comments from a vast portion of TikTok, providing crucial statistics about the platform.
+- An estimated 269 million posts were produced on the observed day, highlighting the platform's extensive content creation.
+- Approximately 18% of videos on TikTok feature children, reflecting a significant presence of younger users on the platform.
+- Notably, at least 0.5% of posts contain artificial intelligence-generated content, indicating the integration of AI technology into TikTok's content creation. 
+
+<br><br>Summary: <div>
+arXiv:2504.13279v4 Announce Type: replace 
+Abstract: TikTok is now a massive platform, and has a deep impact on global events. Despite preliminary studies, issues remain in determining fundamental characteristics of the platform. We develop a method to extract a representative sample of >99% of posts from a given time range on TikTok, and use it to collect all posts from a full hour on the platform, alongside all posts from a single minute from each hour of a day. Through this, we obtain post metadata, video media, and comments from a close-to-complete slice of TikTok, and report the critical statistics of the platform. Notably, we estimate a total of 269 million posts produced on the day we looked at, that 18% of videos on the platform feature children, and that at least 0.5% of posts contain artificial intelligence-generated content.
+]]></content:encoded>
+<pubDate>Mon, 27 Oct 2025 00:00:00 -0400</pubDate>
+<pubDate>Mon, 27 Oct 2025 00:00:00 -0400</pubDate>
+</item>
+<item>
+<title>Bounded-confidence opinion models with random-time interactions</title>
+<link>https://arxiv.org/abs/2409.15148</link>
+<guid>https://arxiv.org/abs/2409.15148</guid>
+<content:encoded><![CDATA[
+<div> random-time interactions, bounded-confidence model, renewal processes, interevent-time distributions, transient dynamics
+
+Summary:
+Random-time interactions in bounded-confidence models on networks are studied in this paper, allowing agents to interact at random times using renewal processes to determine event times following arbitrary interevent-time distributions (ITDs). Connections between random-time and deterministic-time interaction BCMs are established, with a focus on the impact of ITDs on transient dynamics. Markovian ITDs result in consistent statistical properties, while non-Markovian ITDs show dependence on the type of ITD even with the same mean. Numerical analysis of models with various ITDs on different networks reveals differences in expected order-parameter values and convergence times for transient and steady-state dynamics. This research provides insights into the effects of random-time interactions in opinion dynamics models and highlights the importance of considering randomness in social interactions. 
+
+<br><br>Summary: <div>
+arXiv:2409.15148v2 Announce Type: replace-cross 
+Abstract: In models of opinion dynamics, agents interact with each other and can change their opinions as a result of those interactions. One type of opinion model is a bounded-confidence model (BCM), in which opinions take continuous values and interacting agents compromise their opinions with each other if their opinions are sufficiently similar. In studies of BCMs, researchers typically assume that interactions between agents occur at deterministic times. This assumption neglects an inherent element of randomness in social interactions, and it is desirable to account for it. In this paper, we study BCMs on networks and allow agents to interact at random times. To incorporate random-time interactions, we use renewal processes to determine social-interaction event times, which can follow arbitrary interevent-time distributions (ITDs). We establish connections between these random-time-interaction BCMs and deterministic-time-interaction BCMs. We analyze the quantitative impact of ITDs on the transient dynamics of BCMs and derive approximate master equations for the time-dependent expectations of the BCM dynamics. We find that BCMs with Markovian ITDs have consistent statistical properties (in particular, they have the same expected time-dependent opinions) when the ITDs have the same mean but that the statistical properties of BCMs with non-Markovian ITDs depend on the type of ITD even when the ITDs have the same mean. Additionally, we numerically examine the transient and steady-state dynamics of our models with various ITDs on different networks and compare their expected order-parameter values and expected convergence times.
+]]></content:encoded>
+<pubDate>Mon, 27 Oct 2025 00:00:00 -0400</pubDate>
+<pubDate>Mon, 27 Oct 2025 00:00:00 -0400</pubDate>
+</item>
+<item>
+<title>A QUBO Framework for Team Formation</title>
+<link>https://arxiv.org/abs/2503.23209</link>
+<guid>https://arxiv.org/abs/2503.23209</guid>
+<content:encoded><![CDATA[
+<div> team formation problem, experts, skills, cost functions, QUBO
+
+Summary:
+The article introduces the unified TeamFormation formulation, addressing the team formation problem by optimizing the coverage of required skills while minimizing expert costs. Three variants of TeamFormation are formulated using QUBO, with different cost functions considered. Two general-purpose solution methods are evaluated, demonstrating that QUBO-based solutions are at least as effective as established baselines. Additionally, the article highlights the use of graph neural networks in QUBO-based solutions, enabling the learning of expert and skill representations for transfer learning. This approach allows for efficient application of node embeddings from one problem instance to another, showcasing the potential for enhanced problem-solving capabilities in team formation scenarios. <div>
+arXiv:2503.23209v2 Announce Type: replace-cross 
+Abstract: The team formation problem assumes a set of experts and a task, where each expert has a set of skills and the task requires some skills. The objective is to find a set of experts that maximizes coverage of the required skills while simultaneously minimizing the costs associated with the experts. Different definitions of cost have traditionally led to distinct problem formulations and algorithmic solutions. We introduce the unified TeamFormation formulation that captures all cost definitions for team formation problems that balance task coverage and expert cost. Specifically, we formulate three TeamFormation variants with different cost functions using quadratic unconstrained binary optimization (QUBO), and we evaluate two distinct general-purpose solution methods. We show that solutions based on the QUBO formulations of TeamFormation problems are at least as good as those produced by established baselines. Furthermore, we show that QUBO-based solutions leveraging graph neural networks can effectively learn representations of experts and skills to enable transfer learning, allowing node embeddings from one problem instance to be efficiently applied to another.
+]]></content:encoded>
+<pubDate>Mon, 27 Oct 2025 00:00:00 -0400</pubDate>
+<pubDate>Mon, 27 Oct 2025 00:00:00 -0400</pubDate>
+</item>
 
 <item>
 <title>The Risks of Industry Influence in Tech Research</title>
