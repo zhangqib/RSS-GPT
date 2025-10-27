@@ -4,18 +4,18 @@
 <title>cs.CL updates on arXiv.org</title>
 <link>http://rss.arxiv.org/rss/cs.CL</link>
 
+
 <item>
 <title>Schema for In-Context Learning</title>
 <link>https://arxiv.org/abs/2510.13905</link>
 <guid>https://arxiv.org/abs/2510.13905</guid>
 <content:encoded><![CDATA[
-<div> schema, activated, in-context learning, cognitive science, reasoning <br>
-Summary: <br>
-The article introduces Schema Activated In Context Learning (SA-ICL) as a framework that leverages cognitive science principles, specifically schema theory, to enhance transformer-based language models. SA-ICL extracts and utilizes abstracted schemas from prior examples to improve a model's reasoning process when faced with new questions. It addresses the limitations of traditional example-driven in-context learning by providing explicit schema-based scaffolding. Experimental results on chemistry and physics questions show that SA-ICL significantly boosts performance, up to 36.19 percent, with high-quality demonstration examples. This approach reduces the reliance on multiple demonstrations and enhances interpretability. SA-ICL bridges different in-context learning strategies and offers a new direction for improving human-like reasoning in large language models. <br> <div>
+<div> schema, activated, in-context learning, cognitive science, reasoning <br />
+Summary: <br />
+The article introduces Schema Activated In Context Learning (SA-ICL) as a framework that leverages cognitive science principles, specifically schema theory, to enhance transformer-based language models. SA-ICL extracts and utilizes abstracted schemas from prior examples to improve a model's reasoning process when faced with new questions. It addresses the limitations of traditional example-driven in-context learning by providing explicit schema-based scaffolding. Experimental results on chemistry and physics questions show that SA-ICL significantly boosts performance, up to 36.19 percent, with high-quality demonstration examples. This approach reduces the reliance on multiple demonstrations and enhances interpretability. SA-ICL bridges different in-context learning strategies and offers a new direction for improving human-like reasoning in large language models. <br /> <div>
 arXiv:2510.13905v2 Announce Type: replace 
 Abstract: In-Context Learning (ICL) enables transformer-based language models to adapt to new tasks by conditioning on demonstration examples. However, traditional example-driven in-context learning lacks explicit modules for knowledge retrieval and transfer at the abstraction level. Inspired by cognitive science, specifically schema theory, which holds that humans interpret new information by activating pre-existing mental frameworks (schemas) to structure understanding, we introduce SCHEMA ACTIVATED IN CONTEXT LEARNING (SA-ICL). This framework extracts the representation of the building blocks of cognition for the reasoning process instilled from prior examples, creating an abstracted schema, a lightweight, structured template of key inferential steps and their relationships, which is then used to augment a model's reasoning process when presented with a novel question. We demonstrate that a broad range of large language models (LLMs) lack the capacity to form and utilize internal schema-based learning representations implicitly, but instead benefit significantly from explicit schema-based scaffolding. Across chemistry and physics questions from the GPQA dataset, our experiments show that SA-ICL consistently boosts performance, up to 36.19 percent, when the single demonstration example is of high quality, which simultaneously reduces reliance on the number of demonstrations and enhances interpretability. SCHEMA ACTIVATED IN CONTEXT LEARNING not only bridges disparate ICL strategies ranging from pattern priming to Chain-of-Thought prompting, but also paves a new path for enhancing human-like reasoning in LLMs.
 ]]></content:encoded>
-<pubDate>Mon, 27 Oct 2025 00:00:00 -0400</pubDate>
 <pubDate>Mon, 27 Oct 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -24,17 +24,15 @@ Abstract: In-Context Learning (ICL) enables transformer-based language models to
 <guid>https://arxiv.org/abs/2510.14509</guid>
 <content:encoded><![CDATA[
 <div> Benchmark, Large Language Models, End-to-End Software Development, Behavior-Driven Development, Automated Testing Pipeline
-<br>
+<br />
 Summary:
 E2EDev is a novel benchmark designed to evaluate End-to-End Software Development frameworks by mirroring real user interactions through Behavior-Driven Development principles. It offers fine-grained user requirements, BDD test scenarios with Python step implementations, and an automated testing pipeline using the Behave framework. The benchmark leverages the Human-in-the-Loop Multi-Agent Annotation Framework to ensure quality while reducing annotation effort. Evaluation of E2ESD frameworks and LLM backbones using E2EDev reveals challenges in effectively solving tasks, highlighting the need for more efficient solutions in this field. The codebase and benchmark are publicly accessible at https://github.com/SCUNLP/E2EDev.
-<br><br>Summary: <div>
+<br /><br />Summary: <div>
 arXiv:2510.14509v2 Announce Type: replace-cross 
 Abstract: The rapid advancement in large language models (LLMs) has demonstrated significant potential in End-to-End Software Development (E2ESD). However, existing E2ESD benchmarks are limited by coarse-grained requirement specifications and unreliable evaluation protocols, hindering a true understanding of current framework capabilities. To address these limitations, we present E2EDev, a novel benchmark grounded in the principles of Behavior-Driven Development (BDD), which evaluates the capabilities of E2ESD frameworks by assessing whether the generated software meets user needs through mimicking real user interactions (Figure 1). E2EDev comprises (i) a fine-grained set of user requirements, (ii) multiple BDD test scenarios with corresponding Python step implementations for each requirement, and (iii) a fully automated testing pipeline built on the Behave framework. To ensure its quality while reducing the annotation effort, E2EDev leverages our proposed Human-in-the-Loop Multi-Agent Annotation Framework (HITL-MAA). By evaluating various E2ESD frameworks and LLM backbones with E2EDev, our analysis reveals a persistent struggle to effectively solve these tasks, underscoring the critical need for more effective and cost-efficient E2ESD solutions. Our codebase and benchmark are publicly available at https://github.com/SCUNLP/E2EDev.
 ]]></content:encoded>
 <pubDate>Mon, 27 Oct 2025 00:00:00 -0400</pubDate>
-<pubDate>Mon, 27 Oct 2025 00:00:00 -0400</pubDate>
 </item>
-
 <item>
 <title>Shoot First, Ask Questions Later? Building Rational Agents that Explore and Act Like People</title>
 <link>https://arxiv.org/abs/2510.20886</link>
@@ -11544,32 +11542,6 @@ The paper introduces a new paradigm called informed routing to address the high 
 <br /><br />Summary: <div>
 arXiv:2510.13831v1 Announce Type: new 
 Abstract: The deployment of large language models (LLMs) in real-world applications is increasingly limited by their high inference cost. While recent advances in dynamic token-level computation allocation attempt to improve efficiency by selectively activating model components per token, existing methods rely on greedy routing--a myopic execute-or-skip mechanism that often leads to irreversible information loss and suboptimal token selection. This paper introduces informed routing, a new paradigm that proactively addresses these issues. The key insight is to assess not only a token's immediate importance but also its recoverability, i.e., how well its transformation can be approximated. To this end, we propose the Lightweight Feature Forecaster (LFF), a small predictive module that estimates a unit's output before routing decisions are made. This enables a flexible execute-or-approximate policy that preserves model fidelity while drastically reducing computation. Extensive experiments on both language modeling and reasoning tasks show that informed routing achieves state-of-the-art efficiency-performance trade-offs across multiple sparsity levels. Notably, even without final LoRA fine-tuning, our method matches or surpasses strong baselines that require full fine-tuning, all while reducing training time by over 50%. The code is available at: https://github.com/EIT-NLP/informed-routing
-]]></content:encoded>
-<pubDate>Fri, 17 Oct 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Entropy Meets Importance: A Unified Head Importance-Entropy Score for Stable and Efficient Transformer Pruning</title>
-<link>https://arxiv.org/abs/2510.13832</link>
-<guid>https://arxiv.org/abs/2510.13832</guid>
-<content:encoded><![CDATA[
-<div> Keywords: Transformer-based models, NLP tasks, pruning methods, HIES, model compression 
-Summary:<br /><br />Transformer-based models in NLP tasks face challenges in inference and deployment due to their complex structure. Recent pruning methods, like Head Importance Scores (HIS), have shown promise in improving efficiency and interpretability by identifying redundant heads. However, HIS alone may not capture the full picture of head importance. To address this issue, a new pruning criterion, Head Importance-Entropy Score (HIES), is proposed. HIES combines head importance scores with attention entropy to provide a more comprehensive view of per-head contribution. Empirical results demonstrate that HIES-based pruning can significantly improve model quality and stability compared to HIS-only methods. This approach enables substantial model compression without sacrificing accuracy or stability. The code for HIES will be made available upon publication. <div>
-arXiv:2510.13832v1 Announce Type: new 
-Abstract: Transformer-based models have achieved remarkable performance in NLP tasks. However, their structural characteristics-multiple layers and attention heads-introduce efficiency challenges in inference and deployment. To address these challenges, various pruning methods have recently been proposed. Notably, gradient-based methods using Head Importance Scores (HIS) have gained traction for interpretability, efficiency, and ability to identify redundant heads. However, HIS alone has limitations as it captures only the gradient-driven contribution, overlooking the diversity of attention patterns. To overcome these limitations, we introduce a novel pruning criterion, HIES (Head Importance-Entropy Score), which integrates head importance scores with attention entropy, providing complementary evidence on per-head contribution. Empirically, HIES-based pruning yields up to 15.2% improvement in model quality and 2.04x improvement in stability over HIS-only methods, enabling substantial model compression without sacrificing either accuracy or stability. Code will be released upon publication.
-]]></content:encoded>
-<pubDate>Fri, 17 Oct 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>ConDABench: Interactive Evaluation of Language Models for Data Analysis</title>
-<link>https://arxiv.org/abs/2510.13835</link>
-<guid>https://arxiv.org/abs/2510.13835</guid>
-<content:encoded><![CDATA[
-<div> ConDABench, conversational data analysis, benchmarks, evaluation, LLMs<br />
-<br />
-Summary:<br />
-ConDABench introduces a framework for creating conversational data analysis benchmarks that address the complexities of real-world data analysis tasks. The framework includes a multi-agent workflow for generating realistic benchmarks from articles describing insights gained from public datasets, resulting in 1,420 problems. An evaluation harness allows for systematic evaluation of conversational data analysis tools on these benchmarks. Evaluation of state-of-the-art LLMs on the benchmarks shows that while newer models perform better on more instances, they struggle with tasks requiring sustained, long-form engagement. ConDABench serves as a platform for model builders to assess progress towards developing collaborative models capable of handling complex interactive tasks. <br /> <div>
-arXiv:2510.13835v1 Announce Type: new 
-Abstract: Real-world data analysis tasks often come with under-specified goals and unclean data. User interaction is necessary to understand and disambiguate a user's intent, and hence, essential to solving these complex tasks. Existing benchmarks for evaluating LLMs on data analysis tasks do not capture these complexities or provide first-class support for interactivity. We introduce ConDABench, a framework for generating conversational data analysis (ConDA) benchmarks and evaluating external tools on the generated benchmarks. \bench consists of (a) a multi-agent workflow for generating realistic benchmarks from articles describing insights gained from public datasets, (b) 1,420 ConDA problems generated using this workflow, and (c) an evaluation harness that, for the first time, makes it possible to systematically evaluate conversational data analysis tools on the generated ConDA problems. Evaluation of state-of-the-art LLMs on the benchmarks reveals that while the new generation of models are better at solving more instances, they are not necessarily better at solving tasks that require sustained, long-form engagement. ConDABench is an avenue for model builders to measure progress towards truly collaborative models that can complete complex interactive tasks.
 ]]></content:encoded>
 <pubDate>Fri, 17 Oct 2025 00:00:00 -0400</pubDate>
 </item>

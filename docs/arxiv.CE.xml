@@ -4,6 +4,7 @@
 <title>cs.CE updates on arXiv.org</title>
 <link>http://rss.arxiv.org/rss/cs.CE</link>
 
+
 <item>
 <title>Prot2Text-V2: Protein Function Prediction with Multimodal Contrastive Alignment</title>
 <link>https://arxiv.org/abs/2505.11194</link>
@@ -12,14 +13,12 @@
 <div> Keywords: protein function, sequence-to-text model, natural language generation, multimodal learning, contrastive alignment
 
 Summary:
-Prot2Text-V2 is a novel multimodal sequence-to-text model that generates natural language descriptions of protein function from amino acid sequences. It combines a protein language model and a decoder-only language model through a modality projector, and includes Hybrid Sequence-level Contrastive Alignment Learning (H-SCALE) to enhance cross-modal learning. The model is trained on curated entries from SwissProt and excels in low-homology conditions, outperforming traditional and LLM-based baselines. The innovative approach of Prot2Text-V2 showcases its ability to generate accurate protein function descriptions directly from protein sequences, showcasing the potential of multimodal learning in predicting protein function.<br><br>Summary: <div>
+Prot2Text-V2 is a novel multimodal sequence-to-text model that generates natural language descriptions of protein function from amino acid sequences. It combines a protein language model and a decoder-only language model through a modality projector, and includes Hybrid Sequence-level Contrastive Alignment Learning (H-SCALE) to enhance cross-modal learning. The model is trained on curated entries from SwissProt and excels in low-homology conditions, outperforming traditional and LLM-based baselines. The innovative approach of Prot2Text-V2 showcases its ability to generate accurate protein function descriptions directly from protein sequences, showcasing the potential of multimodal learning in predicting protein function.<br /><br />Summary: <div>
 arXiv:2505.11194v3 Announce Type: replace 
 Abstract: Predicting protein function from sequence is a central challenge in computational biology. While existing methods rely heavily on structured ontologies or similarity-based techniques, they often lack the flexibility to express structure-free functional descriptions and novel biological functions. In this work, we introduce Prot2Text-V2, a novel multimodal sequence-to-text model that generates free-form natural language descriptions of protein function directly from amino acid sequences. Our method combines a protein language model as a sequence encoder (ESM-3B) and a decoder-only language model (LLaMA-3.1-8B-Instruct) through a lightweight nonlinear modality projector. A key innovation is our Hybrid Sequence-level Contrastive Alignment Learning (H-SCALE), which improves cross-modal learning by matching mean- and std-pooled protein embeddings with text representations via contrastive loss. After the alignment phase, we apply instruction-based fine-tuning using LoRA on the decoder to teach the model how to generate accurate protein function descriptions conditioned on the protein sequence. We train Prot2Text-V2 on about 250K curated entries from SwissProt and evaluate it under low-homology conditions, where test sequences have low similarity with training samples. Prot2Text-V2 consistently outperforms traditional and LLM-based baselines across various metrics.
 ]]></content:encoded>
 <pubDate>Mon, 27 Oct 2025 00:00:00 -0400</pubDate>
-<pubDate>Mon, 27 Oct 2025 00:00:00 -0400</pubDate>
 </item>
-
 <item>
 <title>Integrated physics-informed learning and resonance process signature for the prediction of fatigue crack growth for laser-fused alloys</title>
 <link>https://arxiv.org/abs/2510.21018</link>
@@ -14486,20 +14485,6 @@ Summary:
 The study introduces a discrete physics-informed neural network (dPINN) framework with enforced interface constraints (EIC) for modeling physical systems using the domain decomposition method (DDM). The dPINN accurately calculates system energy through element-wise integration using Gaussian quadrature. The EIC enforces interfacial displacement constraints to ensure physical field continuity without auxiliary sampling or loss penalties, supporting independent meshing in each subdomain. By eliminating weak spatial constraints (WSC), the EIC-dPINN provides more stable and physically consistent predictions. Extensive numerical experiments in two and three dimensions confirm the framework's accuracy and showcase computational efficiency gains through parallel training. The results illustrate the framework's scalability, robustness, and potential for solving large-scale, geometrically complex problems.<br /><br />Summary: <div>
 arXiv:2505.10925v1 Announce Type: new 
 Abstract: This study presents a discrete physics-informed neural network (dPINN) framework, enhanced with enforced interface constraints (EIC), for modeling physical systems using the domain decomposition method (DDM). Built upon finite element-style mesh discretization, the dPINN accurately evaluates system energy through Gaussian quadrature-based element-wise integration. To ensure physical field continuity across subdomain interfaces, the EIC mechanism enforces interfacial displacement constraints without requiring auxiliary sampling or loss penalties.This formulation supports independent meshing in each subdomain, simplifying preprocessing and improving computational flexibility. Additionally, by eliminating the influence of weak spatial constraints (WSC) commonly observed in traditional PINNs, the EIC-dPINN delivers more stable and physically consistent predictions.Extensive two- and three-dimensional numerical experiments validate the proposed framework's accuracy and demonstrate the computational efficiency gains achieved through parallel training. The results highlight the framework's scalability, robustness, and potential for solving large-scale, geometrically complex problems.
-]]></content:encoded>
-<pubDate>Mon, 19 May 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Time Travel is Cheating: Going Live with DeepFund for Real-Time Fund Investment Benchmarking</title>
-<link>https://arxiv.org/abs/2505.11065</link>
-<guid>https://arxiv.org/abs/2505.11065</guid>
-<content:encoded><![CDATA[
-<div> Keywords: Large Language Models, DeepFund, real-time market data, fund investment, evaluation
-
-Summary:<br />
-Large Language Models (LLMs) have shown promise in financial tasks but their effectiveness in fund investment remains unexplored. To address limitations in evaluating LLM-driven trading strategies, a new benchmark tool called DeepFund is introduced. DeepFund directly connects with real-time stock market data to prevent information leakage and provide fair evaluations. Test results on nine top LLMs reveal challenges in various investment dimensions, showcasing practical limitations in active fund management. Even advanced models like DeepSeek-V3 and Claude-3.7-Sonnet incur net trading losses in the real-time evaluation environment of DeepFund. This highlights the current constraints of LLMs in active fund management.<br /> <div>
-arXiv:2505.11065v1 Announce Type: new 
-Abstract: Large Language Models (LLMs) have demonstrated notable capabilities across financial tasks, including financial report summarization, earnings call transcript analysis, and asset classification. However, their real-world effectiveness in managing complex fund investment remains inadequately assessed. A fundamental limitation of existing benchmarks for evaluating LLM-driven trading strategies is their reliance on historical back-testing, inadvertently enabling LLMs to "time travel"-leveraging future information embedded in their training corpora, thus resulting in possible information leakage and overly optimistic performance estimates. To address this issue, we introduce DeepFund, a live fund benchmark tool designed to rigorously evaluate LLM in real-time market conditions. Utilizing a multi-agent architecture, DeepFund connects directly with real-time stock market data-specifically data published after each model pretraining cutoff-to ensure fair and leakage-free evaluations. Empirical tests on nine flagship LLMs from leading global institutions across multiple investment dimensions-including ticker-level analysis, investment decision-making, portfolio management, and risk control-reveal significant practical challenges. Notably, even cutting-edge models such as DeepSeek-V3 and Claude-3.7-Sonnet incur net trading losses within DeepFund real-time evaluation environment, underscoring the present limitations of LLMs for active fund management. Our code is available at https://github.com/HKUSTDial/DeepFund.
 ]]></content:encoded>
 <pubDate>Mon, 19 May 2025 00:00:00 -0400</pubDate>
 </item>

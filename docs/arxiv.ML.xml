@@ -4,18 +4,18 @@
 <title>cs.LG updates on arXiv.org</title>
 <link>http://rss.arxiv.org/rss/cs.LG</link>
 
+
 <item>
 <title>FlashBias: Fast Computation of Attention with Bias</title>
 <link>https://arxiv.org/abs/2505.12044</link>
 <guid>https://arxiv.org/abs/2505.12044</guid>
 <content:encoded><![CDATA[
-<div> FlashBias, Attention with bias, Efficiency optimization, Low-rank compressed sensing theory, Matrix multiplication operation <br>
-Summary: <br>
+<div> FlashBias, Attention with bias, Efficiency optimization, Low-rank compressed sensing theory, Matrix multiplication operation <br />
+Summary: <br />
 Efficiency optimization for attention with bias is crucial due to its computational cost. FlashBias is introduced based on low-rank compressed sensing theory to efficiently compute attention with bias, leveraging optimized matrix multiplication on GPUs. This approach speeds up Pairformer in AlphaFold 3 by 1.5$\times$ and enhances attention with bias in vision and language models by over 2$\times$ without sacrificing accuracy. The absence of targeted efficiency optimization for biased attention has hindered complex task applications, but FlashBias addresses this bottleneck by enabling fast-exact computation for widely used biases and efficient approximation for general biases. The optimal efficiency of FlashAttention is shown to be influenced by the rank of the attention weight matrix, inspiring the development of FlashBias to enhance computational performance in various scientific models. The code for FlashBias is available on GitHub for implementation. <div>
 arXiv:2505.12044v3 Announce Type: replace 
 Abstract: Attention with bias, which extends standard attention by introducing prior knowledge as an additive bias matrix to the query-key scores, has been widely deployed in vision, language, protein-folding and other advanced scientific models, underscoring its status as a key evolution of this foundational module. However, introducing bias terms creates a severe efficiency bottleneck in attention computation. It disrupts the tightly fused memory-compute pipeline that underlies the speed of accelerators like FlashAttention, thereby stripping away most of their performance gains and leaving biased attention computationally expensive. Surprisingly, despite its common usage, targeted efficiency optimization for attention with bias remains absent, which seriously hinders its application in complex tasks. Diving into the computation of FlashAttention, we prove that its optimal efficiency is determined by the rank of the attention weight matrix. Inspired by this theoretical result, this paper presents FlashBias based on the low-rank compressed sensing theory, which can provide fast-exact computation for many widely used attention biases and a fast-accurate approximation for biases in general formalizations. FlashBias can fully take advantage of the extremely optimized matrix multiplication operation in modern GPUs, achieving 1.5$\times$ speedup for Pairformer in AlphaFold 3, and over 2$\times$ speedup for attention with bias in vision and language models without loss of accuracy. Code is available at this repository: https://github.com/thuml/FlashBias.
 ]]></content:encoded>
-<pubDate>Mon, 27 Oct 2025 00:00:00 -0400</pubDate>
 <pubDate>Mon, 27 Oct 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -26,11 +26,10 @@ Abstract: Attention with bias, which extends standard attention by introducing p
 <div> Keywords: Graph neural networks, text-attributed graphs, large language models, knowledge distillation, few-shot learning
 
 Summary: 
-Graph neural networks (GNNs) and large language models (LLMs) have shown promise in handling text-attributed graphs (TAGs) but face challenges in training and scalability. To address this, a preference-driven knowledge distillation (PKD) framework is proposed to combine the strengths of LLMs and various GNNs for few-shot node classification. The framework includes a GNN-preference-driven node selector to facilitate prediction distillation from LLMs to GNNs and a node-preference-driven GNN selector to tailor knowledge distillation from teacher GNNs to student GNNs based on node characteristics. Experimental results demonstrate the effectiveness of the framework in real-world TAGs. This approach enhances the ability of GNNs to handle the complex local topologies of nodes in TAGs efficiently and demonstrates improved performance in few-shot node classification tasks.<br><br>Summary: <div>
+Graph neural networks (GNNs) and large language models (LLMs) have shown promise in handling text-attributed graphs (TAGs) but face challenges in training and scalability. To address this, a preference-driven knowledge distillation (PKD) framework is proposed to combine the strengths of LLMs and various GNNs for few-shot node classification. The framework includes a GNN-preference-driven node selector to facilitate prediction distillation from LLMs to GNNs and a node-preference-driven GNN selector to tailor knowledge distillation from teacher GNNs to student GNNs based on node characteristics. Experimental results demonstrate the effectiveness of the framework in real-world TAGs. This approach enhances the ability of GNNs to handle the complex local topologies of nodes in TAGs efficiently and demonstrates improved performance in few-shot node classification tasks.<br /><br />Summary: <div>
 arXiv:2510.10116v3 Announce Type: replace 
 Abstract: Graph neural networks (GNNs) can efficiently process text-attributed graphs (TAGs) due to their message-passing mechanisms, but their training heavily relies on the human-annotated labels. Moreover, the complex and diverse local topologies of nodes of real-world TAGs make it challenging for a single mechanism to handle. Large language models (LLMs) perform well in zero-/few-shot learning on TAGs but suffer from a scalability challenge. Therefore, we propose a preference-driven knowledge distillation (PKD) framework to synergize the complementary strengths of LLMs and various GNNs for few-shot node classification. Specifically, we develop a GNN-preference-driven node selector that effectively promotes prediction distillation from LLMs to teacher GNNs. To further tackle nodes' intricate local topologies, we develop a node-preference-driven GNN selector that identifies the most suitable teacher GNN for each node, thereby facilitating tailored knowledge distillation from teacher GNNs to the student GNN. Extensive experiments validate the efficacy of our proposed framework in few-shot node classification on real-world TAGs. Our code is be available.
 ]]></content:encoded>
-<pubDate>Mon, 27 Oct 2025 00:00:00 -0400</pubDate>
 <pubDate>Mon, 27 Oct 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -39,16 +38,14 @@ Abstract: Graph neural networks (GNNs) can efficiently process text-attributed g
 <guid>https://arxiv.org/abs/2510.18212</guid>
 <content:encoded><![CDATA[
 <div> framework, Artificial General Intelligence, cognitive domains, psychometric batteries, cognitive profile
-<br>
+<br />
 Summary:
 The paper proposes a quantifiable framework to define Artificial General Intelligence (AGI) as having the cognitive versatility and proficiency of a well-educated adult, grounded in Cattell-Horn-Carroll theory. It dissects general intelligence into ten core cognitive domains and evaluates AI systems using adapted human psychometric batteries. Current AI systems show proficiency in knowledge-intensive domains but have deficits in foundational cognitive machinery such as long-term memory storage. The framework reveals a "jagged" cognitive profile in contemporary models, with AGI scores (e.g., GPT-4 at 27%, GPT-5 at 57%) quantifying progress and the existing gap towards achieving AGI. <div>
 arXiv:2510.18212v2 Announce Type: replace-cross 
 Abstract: The lack of a concrete definition for Artificial General Intelligence (AGI) obscures the gap between today's specialized AI and human-level cognition. This paper introduces a quantifiable framework to address this, defining AGI as matching the cognitive versatility and proficiency of a well-educated adult. To operationalize this, we ground our methodology in Cattell-Horn-Carroll theory, the most empirically validated model of human cognition. The framework dissects general intelligence into ten core cognitive domains-including reasoning, memory, and perception-and adapts established human psychometric batteries to evaluate AI systems. Application of this framework reveals a highly "jagged" cognitive profile in contemporary models. While proficient in knowledge-intensive domains, current AI systems have critical deficits in foundational cognitive machinery, particularly long-term memory storage. The resulting AGI scores (e.g., GPT-4 at 27%, GPT-5 at 57%) concretely quantify both rapid progress and the substantial gap remaining before AGI.
 ]]></content:encoded>
 <pubDate>Mon, 27 Oct 2025 00:00:00 -0400</pubDate>
-<pubDate>Mon, 27 Oct 2025 00:00:00 -0400</pubDate>
 </item>
-
 <item>
 <title>Incentivizing Consistent, Effective and Scalable Reasoning Capability in Audio LLMs via Reasoning Process Rewards</title>
 <link>https://arxiv.org/abs/2510.20867</link>
@@ -10878,36 +10875,6 @@ Abstract: Multimodal models have demonstrated powerful capabilities in complex t
 <content:encoded><![CDATA[
 arXiv:2506.20779v3 Announce Type: replace-cross 
 Abstract: We study the implicit bias of flatness / low (loss) curvature and its effects on generalization in two-layer overparameterized ReLU networks with multivariate inputs -- a problem well motivated by the minima stability and edge-of-stability phenomena in gradient-descent training. Existing work either requires interpolation or focuses only on univariate inputs. This paper presents new and somewhat surprising theoretical results for multivariate inputs. On two natural settings (1) generalization gap for flat solutions, and (2) mean-squared error (MSE) in nonparametric function estimation by stable minima, we prove upper and lower bounds, which establish that while flatness does imply generalization, the resulting rates of convergence necessarily deteriorate exponentially as the input dimension grows. This gives an exponential separation between the flat solutions vis-\`a-vis low-norm solutions (i.e., weight decay), which knowingly do not suffer from the curse of dimensionality. In particular, our minimax lower bound construction, based on a novel packing argument with boundary-localized ReLU neurons, reveals how flat solutions can exploit a kind of ''neural shattering'' where neurons rarely activate, but with high weight magnitudes. This leads to poor performance in high dimensions. We corroborate these theoretical findings with extensive numerical simulations. To the best of our knowledge, our analysis provides the first systematic explanation for why flat minima may fail to generalize in high dimensions.
-]]></content:encoded>
-<pubDate>Thu, 23 Oct 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Information-Theoretic Decentralized Secure Aggregation with Collusion Resilience</title>
-<link>https://arxiv.org/abs/2508.00596</link>
-<guid>https://arxiv.org/abs/2508.00596</guid>
-<content:encoded><![CDATA[
-arXiv:2508.00596v3 Announce Type: replace-cross 
-Abstract: In decentralized federated learning (FL), multiple clients collaboratively learn a shared machine learning (ML) model by leveraging their privately held datasets distributed across the network, through interactive exchange of the intermediate model updates. To ensure data security, cryptographic techniques are commonly employed to protect model updates during aggregation. Despite growing interest in secure aggregation, existing works predominantly focus on protocol design and computational guarantees, with limited understanding of the fundamental information-theoretic limits of such systems. Moreover, optimal bounds on communication and key usage remain unknown in decentralized settings, where no central aggregator is available. Motivated by these gaps, we study the problem of decentralized secure aggregation (DSA) from an information-theoretic perspective. Specifically, we consider a network of $K$ fully-connected users, each holding a private input -- an abstraction of local training data -- who aim to securely compute the sum of all inputs. The security constraint requires that no user learns anything beyond the input sum, even when colluding with up to $T$ other users. We characterize the optimal rate region, which specifies the minimum achievable communication and secret key rates for DSA. In particular, we show that to securely compute one symbol of the desired input sum, each user must (i) transmit at least one symbol to others, (ii) hold at least one symbol of secret key, and (iii) all users must collectively hold no fewer than $K - 1$ independent key symbols. Our results establish the fundamental performance limits of DSA, providing insights for the design of provably secure and communication-efficient protocols in distributed learning systems.
-]]></content:encoded>
-<pubDate>Thu, 23 Oct 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>AgentTTS: Large Language Model Agent for Test-time Compute-optimal Scaling Strategy in Complex Tasks</title>
-<link>https://arxiv.org/abs/2508.00890</link>
-<guid>https://arxiv.org/abs/2508.00890</guid>
-<content:encoded><![CDATA[
-arXiv:2508.00890v2 Announce Type: replace-cross 
-Abstract: Test-time scaling (TTS) enhances the performance of large language models (LLMs) by allocating additional compute resources during inference. However, existing research primarily investigates TTS in single-stage tasks; while many real-world problems are multi-stage complex tasks, composed of a sequence of heterogeneous subtasks with each subtask requires LLM of specific capability. Therefore, we study a novel problem: the test-time compute-optimal scaling in multi-stage complex tasks, aiming to select suitable models and allocate budgets per subtask to maximize overall performance. TTS in multi-stage tasks introduces two fundamental challenges: (i) The combinatorial search space of model and budget allocations, combined with the high cost of inference, makes brute-force search impractical. (ii) The optimal model and budget allocations across subtasks are interdependent, increasing the complexity of the compute-optimal search. To address this gap, we conduct extensive pilot experiments on four tasks across six datasets, deriving three empirical insights characterizing the behavior of LLMs in multi-stage complex tasks. Informed by these insights, we propose AgentTTS, an LLM-agent-based framework that autonomously searches for compute-optimal allocations through iterative feedback-driven interactions with the execution environment. Experimental results demonstrate that AgentTTS significantly outperforms traditional and other LLM-based baselines in search efficiency, and shows improved robustness to varying training set sizes and enhanced interpretability.
-]]></content:encoded>
-<pubDate>Thu, 23 Oct 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>DeCAL Tokenwise Compression</title>
-<link>https://arxiv.org/abs/2508.08514</link>
-<guid>https://arxiv.org/abs/2508.08514</guid>
-<content:encoded><![CDATA[
-arXiv:2508.08514v2 Announce Type: replace-cross 
-Abstract: This paper introduces DeCAL, a new method for tokenwise compression. DeCAL uses an encoder-decoder language model pretrained with denoising to learn to produce high-quality, general-purpose compressed representations from the encoder. DeCAL applies small modifications to the encoder, with the emphasis on maximizing compression quality, even at the expense of compute. We show that DeCAL at 2x compression can match uncompressed on several downstream tasks, with usually only a minor dropoff in metrics up to 8x compression, among question-answering, summarization, and multi-vector retrieval tasks. DeCAL offers significant savings where pre-computed dense representations can be utilized, and we believe the approach can be further developed to be more broadly applicable.
 ]]></content:encoded>
 <pubDate>Thu, 23 Oct 2025 00:00:00 -0400</pubDate>
 </item>
