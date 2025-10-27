@@ -5,6 +5,22 @@
 <link>http://rss.arxiv.org/rss/cs.CE</link>
 
 <item>
+<title>Prot2Text-V2: Protein Function Prediction with Multimodal Contrastive Alignment</title>
+<link>https://arxiv.org/abs/2505.11194</link>
+<guid>https://arxiv.org/abs/2505.11194</guid>
+<content:encoded><![CDATA[
+<div> Keywords: protein function, sequence-to-text model, natural language generation, multimodal learning, contrastive alignment
+
+Summary:
+Prot2Text-V2 is a novel multimodal sequence-to-text model that generates natural language descriptions of protein function from amino acid sequences. It combines a protein language model and a decoder-only language model through a modality projector, and includes Hybrid Sequence-level Contrastive Alignment Learning (H-SCALE) to enhance cross-modal learning. The model is trained on curated entries from SwissProt and excels in low-homology conditions, outperforming traditional and LLM-based baselines. The innovative approach of Prot2Text-V2 showcases its ability to generate accurate protein function descriptions directly from protein sequences, showcasing the potential of multimodal learning in predicting protein function.<br><br>Summary: <div>
+arXiv:2505.11194v3 Announce Type: replace 
+Abstract: Predicting protein function from sequence is a central challenge in computational biology. While existing methods rely heavily on structured ontologies or similarity-based techniques, they often lack the flexibility to express structure-free functional descriptions and novel biological functions. In this work, we introduce Prot2Text-V2, a novel multimodal sequence-to-text model that generates free-form natural language descriptions of protein function directly from amino acid sequences. Our method combines a protein language model as a sequence encoder (ESM-3B) and a decoder-only language model (LLaMA-3.1-8B-Instruct) through a lightweight nonlinear modality projector. A key innovation is our Hybrid Sequence-level Contrastive Alignment Learning (H-SCALE), which improves cross-modal learning by matching mean- and std-pooled protein embeddings with text representations via contrastive loss. After the alignment phase, we apply instruction-based fine-tuning using LoRA on the decoder to teach the model how to generate accurate protein function descriptions conditioned on the protein sequence. We train Prot2Text-V2 on about 250K curated entries from SwissProt and evaluate it under low-homology conditions, where test sequences have low similarity with training samples. Prot2Text-V2 consistently outperforms traditional and LLM-based baselines across various metrics.
+]]></content:encoded>
+<pubDate>Mon, 27 Oct 2025 00:00:00 -0400</pubDate>
+<pubDate>Mon, 27 Oct 2025 00:00:00 -0400</pubDate>
+</item>
+
+<item>
 <title>Integrated physics-informed learning and resonance process signature for the prediction of fatigue crack growth for laser-fused alloys</title>
 <link>https://arxiv.org/abs/2510.21018</link>
 <guid>https://arxiv.org/abs/2510.21018</guid>
@@ -12,11 +28,10 @@
 <div> machine learning, fatigue crack growth, laser-fused components, SS-316L, physics-informed modeling
 
 Summary: 
-This study addresses the challenges in predicting fatigue crack growth of laser-fused SS-316L components with random geometrical defects. Traditional statistics-based models struggle to account for the scattering in fatigue behaviors caused by these defects. The proposed approach, a physics-informed machine learning (PIML) model, integrates fatigue laws and constraints with small data to provide a realistic and interpretable prediction. By leveraging resonance process signature data and Paris's law, the model successfully learns the constants and predicts crack growth rates without the need for experimental crack growth data. The results demonstrate that the model can accurately predict crack sizes and provide insights into the fatigue behavior of laser-fused materials. The combination of machine learning and physics-based modeling offers a promising approach for predicting fatigue crack growth in metal components with inherent scattering. <br><br>Summary: <div>
+This study addresses the challenges in predicting fatigue crack growth of laser-fused SS-316L components with random geometrical defects. Traditional statistics-based models struggle to account for the scattering in fatigue behaviors caused by these defects. The proposed approach, a physics-informed machine learning (PIML) model, integrates fatigue laws and constraints with small data to provide a realistic and interpretable prediction. By leveraging resonance process signature data and Paris's law, the model successfully learns the constants and predicts crack growth rates without the need for experimental crack growth data. The results demonstrate that the model can accurately predict crack sizes and provide insights into the fatigue behavior of laser-fused materials. The combination of machine learning and physics-based modeling offers a promising approach for predicting fatigue crack growth in metal components with inherent scattering. <br /><br />Summary: <div>
 arXiv:2510.21018v1 Announce Type: new 
 Abstract: Fatigue behaviors of metal components by laser fusion suffer from scattering due to random geometrical defects (e.g., porosity, lack of fusion). Monitoring fatigue crack initiation and growth is critical, especially for laser-fused components with significant inherent fatigue scattering. Conventional statistics-based curve-fitting fatigue models have difficulty incorporating significant scattering in their fatigue life due to the random geometrical defects. A scattering-informed predictive method is needed for laser-fused materials' crack size and growth. Current data-driven machine learning could circumvent the issue of deterministic modeling, but results in a black-box function that lacks interpretability. To address these challenges, this study explores a novel nondimensionalized physics-informed machine learning (PIML) model to predict fatigue crack growth of laser-fused SS-316L by integrating fatigue laws and constraints with small data to ensure a realistic and interpretable prediction. Resonance process signature data were leveraged with Paris's law to train the PIML model without experimental crack growth data. The results show that Paris's law constants can be learned with good similarity to comparable data from the literature, and the crack growth rate can be predicted to compute crack sizes.
 ]]></content:encoded>
-<pubDate>Mon, 27 Oct 2025 00:00:00 -0400</pubDate>
 <pubDate>Mon, 27 Oct 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -24,13 +39,12 @@ Abstract: Fatigue behaviors of metal components by laser fusion suffer from scat
 <link>https://arxiv.org/abs/2510.21230</link>
 <guid>https://arxiv.org/abs/2510.21230</guid>
 <content:encoded><![CDATA[
-<div> Keywords: molecular dynamics, three-body interactions, parallel computation, linked cells, Lennard-Jones fluid <br>
+<div> Keywords: molecular dynamics, three-body interactions, parallel computation, linked cells, Lennard-Jones fluid <br />
 Summary: 
-This work focuses on developing parallel computation algorithms for three-body interactions in molecular dynamics. The algorithms extend existing traversals for pair interactions to handle interactions between molecules stored across three cells. A general framework for computing three-body interactions in linked cells is described and implemented. The analysis includes considering cutoff conditions, which affect the workload of interaction computations. The algorithms are validated using the Lennard-Jones fluid, with case studies configured for homogeneous and inhomogeneous scenarios. The study evaluates strong scalability and performance in terms of molecule updates at the node level. The results demonstrate the effectiveness and efficiency of the developed algorithms for handling three-body interactions in molecular dynamics. <br><br>Summary: <div>
+This work focuses on developing parallel computation algorithms for three-body interactions in molecular dynamics. The algorithms extend existing traversals for pair interactions to handle interactions between molecules stored across three cells. A general framework for computing three-body interactions in linked cells is described and implemented. The analysis includes considering cutoff conditions, which affect the workload of interaction computations. The algorithms are validated using the Lennard-Jones fluid, with case studies configured for homogeneous and inhomogeneous scenarios. The study evaluates strong scalability and performance in terms of molecule updates at the node level. The results demonstrate the effectiveness and efficiency of the developed algorithms for handling three-body interactions in molecular dynamics. <br /><br />Summary: <div>
 arXiv:2510.21230v1 Announce Type: new 
 Abstract: In this work, algorithms for the parallel computation of three-body interactions in molecular dynamics are developed. While traversals for the computation of pair interactions are readily available in the literature, here, such traversals are extended to allow for the computation between molecules stored across three cells. A general framework for the computation of three-body interactions in linked cells is described, and then used to implement the corresponding traversals. In addition, our analysis is combined with the commonly used cutoff conditions, because they influence the total workload of the computation of interactions. The combinations between traversals and truncation conditions are validated using the well-known Lennard-Jones fluid. Validation case studies are taken from the literature and configured into homogeneous and inhomogeneous scenarios. Finally, strong scalability and performance in terms of molecule updates are measured at node-level.
 ]]></content:encoded>
-<pubDate>Mon, 27 Oct 2025 00:00:00 -0400</pubDate>
 <pubDate>Mon, 27 Oct 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -43,13 +57,12 @@ Abstract: In this work, algorithms for the parallel computation of three-body in
 Summary:
 CRISP, a novel framework for financial time series forecasting, addresses the challenge of predicting optimal asset allocations during crisis periods. Unlike traditional methods, CRISP adapts to shifting market dynamics by leveraging Graph Convolutional Networks and BiLSTM with self-attention to learn sparse structures through Graph Attention Networks. By filtering out noise and capturing crisis-relevant dependencies, CRISP achieves accurate regime-specific predictions. Trained on data spanning credit and pandemic crises, CRISP demonstrates robust generalization to inflation-driven markets. This adaptive approach enables portfolio allocation that maintains profitability during downturns, outperforming equal-weight baselines and static graph methods. The learned attention weights provide interpretable regime detection, with defensive cluster attention strengthening significantly during crises, reflecting emergent behavior from learning to forecast rather than imposing assumptions.
 
-<br><br>Summary: <div>
+<br /><br />Summary: <div>
 arXiv:2510.20868v1 Announce Type: cross 
 Abstract: Financial time series forecasting faces a fundamental challenge: predicting optimal asset allocations requires understanding regime-dependent correlation structures that transform during crisis periods. Existing graph-based spatio-temporal learning approaches rely on predetermined graph topologies--correlation thresholds, sector classifications--that fail to adapt when market dynamics shift across different crisis mechanisms: credit contagion, pandemic shocks, or inflation-driven selloffs.
   We present CRISP (Crisis-Resilient Investment through Spatio-temporal Patterns), a graph-based spatio-temporal learning framework that encodes spatial relationships via Graph Convolutional Networks and temporal dynamics via BiLSTM with self-attention, then learns sparse structures through multi-head Graph Attention Networks. Unlike fixed-topology methods, CRISP discovers which asset relationships matter through attention mechanisms, filtering 92.5% of connections as noise while preserving crisis-relevant dependencies for accurate regime-specific predictions.
   Trained on 2005--2021 data encompassing credit and pandemic crises, CRISP demonstrates robust generalization to 2022--2024 inflation-driven markets--a fundamentally different regime--by accurately forecasting regime-appropriate correlation structures. This enables adaptive portfolio allocation that maintains profitability during downturns, achieving Sharpe ratio 3.76: 707% improvement over equal-weight baselines and 94% improvement over static graph methods. Learned attention weights provide interpretable regime detection, with defensive cluster attention strengthening 49% during crises versus 31% market-wide--emergent behavior from learning to forecast rather than imposing assumptions.
 ]]></content:encoded>
-<pubDate>Mon, 27 Oct 2025 00:00:00 -0400</pubDate>
 <pubDate>Mon, 27 Oct 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -57,13 +70,12 @@ Abstract: Financial time series forecasting faces a fundamental challenge: predi
 <link>https://arxiv.org/abs/2510.21648</link>
 <guid>https://arxiv.org/abs/2510.21648</guid>
 <content:encoded><![CDATA[
-<div> Keywords: Micro aerial vehicles, search and rescue operations, lightweight drone, structural durability, adaptive navigation<br>
-Summary:<br>
-Micro aerial vehicles are vital for search and rescue missions due to their agility and accessibility to hazardous areas. However, many low-cost aerial systems lack structural durability and dynamic path replanning capabilities. This study introduces a custom-built drone that addresses these limitations by using readily available components and materials, focusing on modularity, affordability, and ease of assembly. The drone's frame is reinforced for impact resistance, while the control system operates on free open-source software, enabling real-time perception and adaptive navigation without costly hardware accelerators. This approach offers a practical and cost-effective solution for search and rescue missions, showcasing the importance of lightweight yet durable drone design for navigating rough terrains and responding dynamically to new obstacles or victims.<br><br>Summary: <div>
+<div> Keywords: Micro aerial vehicles, search and rescue operations, lightweight drone, structural durability, adaptive navigation<br />
+Summary:<br />
+Micro aerial vehicles are vital for search and rescue missions due to their agility and accessibility to hazardous areas. However, many low-cost aerial systems lack structural durability and dynamic path replanning capabilities. This study introduces a custom-built drone that addresses these limitations by using readily available components and materials, focusing on modularity, affordability, and ease of assembly. The drone's frame is reinforced for impact resistance, while the control system operates on free open-source software, enabling real-time perception and adaptive navigation without costly hardware accelerators. This approach offers a practical and cost-effective solution for search and rescue missions, showcasing the importance of lightweight yet durable drone design for navigating rough terrains and responding dynamically to new obstacles or victims.<br /><br />Summary: <div>
 arXiv:2510.21648v1 Announce Type: cross 
 Abstract: Micro aerial vehicles are becoming increasingly important in search and rescue operations due to their agility, speed, and ability to access confined spaces or hazardous areas. However, designing lightweight aerial systems presents significant structural, aerodynamic, and computational challenges. This work addresses two key limitations in many low-cost aerial systems under two kilograms: their lack of structural durability during flight through rough terrains and inability to replan paths dynamically when new victims or obstacles are detected. We present a fully customised drone built from scratch using only commonly available components and materials, emphasising modularity, low cost, and ease of assembly. The structural frame is reinforced with lightweight yet durable materials to withstand impact, while the onboard control system is powered entirely by free, open-source software solutions. The proposed system demonstrates real-time perception and adaptive navigation capabilities without relying on expensive hardware accelerators, offering an affordable and practical solution for real-world search and rescue missions.
 ]]></content:encoded>
-<pubDate>Mon, 27 Oct 2025 00:00:00 -0400</pubDate>
 <pubDate>Mon, 27 Oct 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -76,11 +88,10 @@ Abstract: Micro aerial vehicles are becoming increasingly important in search an
 Summary:
 The proposed work introduces a hybrid framework that combines classical computers with quantum annealers for structural optimization. This approach involves formulating two minimization problems at each iteration: one for the mechanical boundary value problem and one for updating the design variables. By leveraging quantum computing, specifically quantum annealing-assisted sequential programming, the framework can efficiently solve these minimization problems. Several case studies on truss optimization demonstrate the framework's effectiveness in utilizing quantum computers for optimization tasks. The framework shows promise for future structural optimization applications, especially in scenarios where classical computers face limitations due to problem complexities. This advancement opens up new possibilities in the field of structural engineering by harnessing the power of quantum computing for design optimization. 
 
-<br><br>Summary: <div>
+<br /><br />Summary: <div>
 arXiv:2502.19570v2 Announce Type: replace 
 Abstract: This work proposes a hybrid framework combining classical computers with quantum annealers for structural optimisation. At each optimisation iteration of an iterative process, two minimisation problems are formulated one for the underlying mechanical boundary value problem through the minimisation potential energy principle and one for the minimisation problem to update the design variables. Our hybrid approach leverages the strength of quantum computing to solve these two minimisation problems at each step, thanks to the developed quantum annealing-assisted sequential programming strategy introduced in [Nguyen, Wu, Remacle, and Noels. A quantum annealing-sequential quadratic programming assisted finite element simulation for non-linear and history-dependent mechanical problems. European Journal of Mechanics-A/Solids 105 (2024): 105254]. The applicability of the proposed framework is demonstrated through several case studies of truss optimisation, highlighting its capability to perform optimisation with quantum computers. The proposed framework offers a promising direction for future structural optimisation applications, particularly in scenarios where the quantum computer could resolve the size limitations of the classical computers due to problem complexities.
 ]]></content:encoded>
-<pubDate>Mon, 27 Oct 2025 00:00:00 -0400</pubDate>
 <pubDate>Mon, 27 Oct 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -98,9 +109,7 @@ Abstract: The simulation of many complex phenomena in engineering and science re
   In detail, the method consists of Variational Encoding of Noisy Inputs (VENI) to identify the distribution of reduced coordinates. Simultaneously, we learn the distribution of the coefficients of a pre-determined set of candidate functions by VINDy. Once trained offline, the identified model can be queried for new parameter instances and new initial conditions to compute the corresponding full-time solutions. The probabilistic setup enables uncertainty quantification as the online testing consists of Variational Inference naturally providing Certainty Intervals (VICI). In this work we showcase the effectiveness of the newly proposed VINDy method in identifying interpretable and accurate dynamical system for the Roessler system with different noise intensities and sources. Then the performance of the overall method - named VENI, VINDy, VICI - is tested on PDE benchmarks including structural mechanics and fluid dynamics.
 ]]></content:encoded>
 <pubDate>Mon, 27 Oct 2025 00:00:00 -0400</pubDate>
-<pubDate>Mon, 27 Oct 2025 00:00:00 -0400</pubDate>
 </item>
-
 <item>
 <title>Finite Element and Machine Learning Modeling of Autogenous Self-Healing Concrete</title>
 <link>https://arxiv.org/abs/2510.19839</link>
@@ -14493,95 +14502,6 @@ arXiv:2505.11065v1 Announce Type: new
 Abstract: Large Language Models (LLMs) have demonstrated notable capabilities across financial tasks, including financial report summarization, earnings call transcript analysis, and asset classification. However, their real-world effectiveness in managing complex fund investment remains inadequately assessed. A fundamental limitation of existing benchmarks for evaluating LLM-driven trading strategies is their reliance on historical back-testing, inadvertently enabling LLMs to "time travel"-leveraging future information embedded in their training corpora, thus resulting in possible information leakage and overly optimistic performance estimates. To address this issue, we introduce DeepFund, a live fund benchmark tool designed to rigorously evaluate LLM in real-time market conditions. Utilizing a multi-agent architecture, DeepFund connects directly with real-time stock market data-specifically data published after each model pretraining cutoff-to ensure fair and leakage-free evaluations. Empirical tests on nine flagship LLMs from leading global institutions across multiple investment dimensions-including ticker-level analysis, investment decision-making, portfolio management, and risk control-reveal significant practical challenges. Notably, even cutting-edge models such as DeepSeek-V3 and Claude-3.7-Sonnet incur net trading losses within DeepFund real-time evaluation environment, underscoring the present limitations of LLMs for active fund management. Our code is available at https://github.com/HKUSTDial/DeepFund.
 ]]></content:encoded>
 <pubDate>Mon, 19 May 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Prot2Text-V2: Protein Function Prediction with Multimodal Contrastive Alignment</title>
-<link>https://arxiv.org/abs/2505.11194</link>
-<guid>https://arxiv.org/abs/2505.11194</guid>
-<content:encoded><![CDATA[
-<div> sequence-to-text model, protein function prediction, multimodal, contrastive alignment learning, fine-tuning
-
-Summary:
-Prot2Text-V2 is a novel multimodal sequence-to-text model that generates natural language descriptions of protein function directly from amino acid sequences. This model combines a protein language encoder with a decoder-only language model through a modality projector, improving cross-modal learning through Hybrid Sequence-level Contrastive Alignment Learning (H-SCALE). The model is trained on curated entries from SwissProt and performs well under low-homology conditions. Prot2Text-V2 outperforms traditional and LLM-based baselines across various metrics. The combination of contrasting mean- and std-pooled protein embeddings with text representations, along with instruction-based fine-tuning using LoRA, results in accurate protein function description generation conditioned on the protein sequence.<br /><br />Summary: <div>
-arXiv:2505.11194v1 Announce Type: new 
-Abstract: Predicting protein function from sequence is a central challenge in computational biology. While existing methods rely heavily on structured ontologies or similarity-based techniques, they often lack the flexibility to express structure-free functional descriptions and novel biological functions. In this work, we introduce Prot2Text-V2, a novel multimodal sequence-to-text model that generates free-form natural language descriptions of protein function directly from amino acid sequences. Our method combines a protein language model as a sequence encoder (ESM-3B) and a decoder-only language model (LLaMA-3.1-8B-Instruct) through a lightweight nonlinear modality projector. A key innovation is our Hybrid Sequence-level Contrastive Alignment Learning (H-SCALE), which improves cross-modal learning by matching mean- and std-pooled protein embeddings with text representations via contrastive loss. After the alignment phase, we apply instruction-based fine-tuning using LoRA on the decoder to teach the model how to generate accurate protein function descriptions conditioned on the protein sequence. We train Prot2Text-V2 on about 250K curated entries from SwissProt and evaluate it under low-homology conditions, where test sequences have low similarity with training samples. Prot2Text-V2 consistently outperforms traditional and LLM-based baselines across various metrics.
-]]></content:encoded>
-<pubDate>Mon, 19 May 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>GLOVA: Global and Local Variation-Aware Analog Circuit Design with Risk-Sensitive Reinforcement Learning</title>
-<link>https://arxiv.org/abs/2505.11208</link>
-<guid>https://arxiv.org/abs/2505.11208</guid>
-<content:encoded><![CDATA[
-<div> reinforcement learning, analog circuit design, variation-aware design, robustness, PVT variations
-
-Summary:
-GLOVA is introduced as an analog circuit sizing framework to address challenges in variation-aware design. It utilizes risk-sensitive reinforcement learning to improve robustness against PVT variations, with an ensemble-based critic for efficient learning. A $\mu$-$\sigma$ evaluation and simulation reordering method is proposed for design verification, reducing simulation costs. GLOVA supports industrial-level PVT variation evaluation methods, including corner simulation and global/local Monte Carlo simulations. Compared to existing frameworks, GLOVA demonstrates significant improvements in sample efficiency and time, achieving up to 80.5$\times$ improvement in sample efficiency and 76.0$\times$ reduction in time. <div>
-arXiv:2505.11208v1 Announce Type: cross 
-Abstract: Analog/mixed-signal circuit design encounters significant challenges due to performance degradation from process, voltage, and temperature (PVT) variations. To achieve commercial-grade reliability, iterative manual design revisions and extensive statistical simulations are required. While several studies have aimed to automate variation aware analog design to reduce time-to-market, the substantial mismatches in real-world wafers have not been thoroughly addressed. In this paper, we present GLOVA, an analog circuit sizing framework that effectively manages the impact of diverse random mismatches to improve robustness against PVT variations. In the proposed approach, risk-sensitive reinforcement learning is leveraged to account for the reliability bound affected by PVT variations, and ensemble-based critic is introduced to achieve sample-efficient learning. For design verification, we also propose $\mu$-$\sigma$ evaluation and simulation reordering method to reduce simulation costs of identifying failed designs. GLOVA supports verification through industrial-level PVT variation evaluation methods, including corner simulation as well as global and local Monte Carlo (MC) simulations. Compared to previous state-of-the-art variation-aware analog sizing frameworks, GLOVA achieves up to 80.5$\times$ improvement in sample efficiency and 76.0$\times$ reduction in time.
-]]></content:encoded>
-<pubDate>Mon, 19 May 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>TwinMarket: A Scalable Behavioral and Social Simulation for Financial Markets</title>
-<link>https://arxiv.org/abs/2502.01506</link>
-<guid>https://arxiv.org/abs/2502.01506</guid>
-<content:encoded><![CDATA[
-<div> Keywords: social emergence, large language model agents, multi-agent framework, socio-economic systems, emergent phenomena
-
-Summary: 
- This study introduces TwinMarket, a new framework that uses large language model agents to simulate socio-economic systems. Traditional modeling approaches struggle to capture the complexity of human behavior, but TwinMarket's use of LLMs allows for more realistic simulations. By focusing on individual behaviors and their interactions, the framework demonstrates how collective dynamics and emergent phenomena can arise. The experiments conducted in a simulated stock market environment show how individual actions can lead to group behaviors, resulting in outcomes such as financial bubbles and recessions. This approach provides valuable insights into the intricate relationship between individual decision-making and collective socio-economic patterns. Overall, TwinMarket offers a promising avenue for studying social emergence and understanding the complexities of human behavior in socio-economic systems. 
-
-<br /><br /> <div>
-arXiv:2502.01506v3 Announce Type: replace 
-Abstract: The study of social emergence has long been a central focus in social science. Traditional modeling approaches, such as rule-based Agent-Based Models (ABMs), struggle to capture the diversity and complexity of human behavior, particularly the irrational factors emphasized in behavioral economics. Recently, large language model (LLM) agents have gained traction as simulation tools for modeling human behavior in social science and role-playing applications. Studies suggest that LLMs can account for cognitive biases, emotional fluctuations, and other non-rational influences, enabling more realistic simulations of socio-economic dynamics. In this work, we introduce TwinMarket, a novel multi-agent framework that leverages LLMs to simulate socio-economic systems. Specifically, we examine how individual behaviors, through interactions and feedback mechanisms, give rise to collective dynamics and emergent phenomena. Through experiments in a simulated stock market environment, we demonstrate how individual actions can trigger group behaviors, leading to emergent outcomes such as financial bubbles and recessions. Our approach provides valuable insights into the complex interplay between individual decision-making and collective socio-economic patterns.
-]]></content:encoded>
-<pubDate>Mon, 19 May 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Tensor Network Structure Search with Program Synthesis</title>
-<link>https://arxiv.org/abs/2502.02711</link>
-<guid>https://arxiv.org/abs/2502.02711</guid>
-<content:encoded><![CDATA[
-<div> tensor networks, data compression, program synthesis, constraint-based assessment, search efficiency 
-
-Summary: 
-Tensor networks are effective for compressing multi-dimensional data, but finding the optimal structure is challenging. This study proposes a novel approach that views tensor network structure search as a program synthesis problem. By establishing a link between transformation programs and network structures, the method reduces the search space using output-directed splits. A synthesis algorithm identifies promising network candidates through constraint solving, minimizing the need for costly tensor decomposition. Experimental results demonstrate a significant improvement in search speed, achieving compression ratios surpassing state-of-the-art methods by 1.5 to 3 times. The approach also scales effectively to larger tensors and generalizes well to similar data, outperforming generic structures with compression ratios up to 2.4 times better. This enhanced efficiency and effectiveness make the proposed method a valuable tool for data compression tasks. 
-
-<br /><br />Summary: <div>
-arXiv:2502.02711v3 Announce Type: replace 
-Abstract: Tensor networks provide a powerful framework for compressing multi-dimensional data. The optimal tensor network structure for a given data tensor depends on both data characteristics and specific optimality criteria, making tensor network structure search a difficult problem. Existing solutions typically rely on sampling and compressing numerous candidate structures; these procedures are computationally expensive and therefore limiting for practical applications. We address this challenge by viewing tensor network structure search as a program synthesis problem and introducing an efficient constraint-based assessment method that avoids costly tensor decomposition. Specifically, we establish a correspondence between transformation programs and network structures. We also design a novel operation named output-directed splits to reduce the search space without hindering expressiveness. We then propose a synthesis algorithm to identify promising network candidates through constraint solving, and avoid tensor decomposition for all but the most promising candidates. Experimental results show that our approach improves search speed by up to $10\times$ and achieves compression ratios $1.5\times$ to $3\times$ better than state-of-the-art. Notably, our approach scales to larger tensors that are unattainable by prior work. Furthermore, the discovered topologies generalize well to similar data, yielding compression ratios up to $ 2.4\times$ better than a generic structure while the runtime remains around $110$ seconds.
-]]></content:encoded>
-<pubDate>Mon, 19 May 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Parallel Market Environments for FinRL Contests</title>
-<link>https://arxiv.org/abs/2504.02281</link>
-<guid>https://arxiv.org/abs/2504.02281</guid>
-<content:encoded><![CDATA[
-<div> Contests, FinRL, financial tasks, datasets, evaluation protocols<br />
-<br />
-Summary: Financial reinforcement learning (FinRL) has shown promise in sequential decision-making in finance, but faces challenges in real-world trading. To address this, three FinRL Contests were organized from 2023 to 2025, covering various financial tasks with standardized definitions, datasets, environments, and baselines. Over 200 participants from 100 institutions and 22 countries joined, with open-source starter kits provided for reproducibility. The contests focused on stock trading, order execution, cryptocurrency trading, and the use of large language model-generated signals. The efforts included task formulations, data curation pipelines, environment implementations, evaluation protocols, participant performance analysis, and organizational insights. These benchmarking initiatives have enhanced the understanding and development of FinRL methods for financial applications. <br /><br /> <div>
-arXiv:2504.02281v3 Announce Type: replace 
-Abstract: Financial reinforcement learning (FinRL) has emerged as a promising paradigm for sequential decision-making in financial engineering. However, applying RL in real-world trading tasks remains challenging due to the non-stationarity of financial data, low signal-to-noise ratios, and various market frictions. Although numerous FinRL methods have been developed for tasks such as trading and portfolio management, the lack of standardized task definitions, datasets, environments, and baselines has hindered consistent evaluation and reproducibility. To bridge this gap, we organized three FinRL Contests from 2023 to 2025, covering a diverse range of financial tasks such as stock trading, order execution, cryptocurrency trading, and the use of large language model (LLM)-generated signals. These contests attracted 200 participants from over 100 institutions across 22 countries. To promote reproduction, we provided open-source starter kits featuring GPU-optimized parallel market environments and comprehensive documentation. In this paper, we summarize these benchmarking efforts, detailing task formulations, data curation pipelines, environment implementations, evaluation protocols, participant performance, and key organizational insights.
-]]></content:encoded>
-<pubDate>Mon, 19 May 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Promise of Data-Driven Modeling and Decision Support for Precision Oncology and Theranostics</title>
-<link>https://arxiv.org/abs/2505.09899</link>
-<guid>https://arxiv.org/abs/2505.09899</guid>
-<content:encoded><![CDATA[
-<div> Keywords: Cancer, Theranostics, Precision oncology, Reinforcement learning, Data-driven decision support 
-
-Summary: 
-This paper discusses the potential of theranostics in precision oncology by combining molecular imaging with targeted therapy for personalized cancer treatment. It explores current data-driven decision support applications with a focus on reinforcement learning to optimize patient-specific care plans for cancer treatment. The study reviews the training environments, state-space representation, performance evaluation criteria, and the measurement of risk and reward in precision oncology applications. It identifies key challenges in the field and proposes a framework that integrates data-driven modeling with reinforcement learning-based decision support to optimize radiopharmaceutical therapy dosing. The framework utilizes advanced technologies such as Neural Ordinary Differential Equations and Physics-Informed Neural Networks to enhance Physiologically Based Pharmacokinetic models. By employing reinforcement learning algorithms, it iteratively refines treatment policies based on individual patient data, aiming to improve outcomes in cancer therapy. 
-
-<br /><br />Summary: <div>
-arXiv:2505.09899v1 Announce Type: new 
-Abstract: Cancer remains a leading cause of death worldwide, necessitating personalized treatment approaches to improve outcomes. Theranostics, combining molecular-level imaging with targeted therapy, offers potential for precision oncology but requires optimized, patient-specific care plans. This paper investigates state-of-the-art data-driven decision support applications with a reinforcement learning focus in precision oncology. We review current applications, training environments, state-space representation, performance evaluation criteria, and measurement of risk and reward, highlighting key challenges. We propose a framework integrating data-driven modeling with reinforcement learning-based decision support to optimize radiopharmaceutical therapy dosing, addressing identified challenges and setting directions for future research. The framework leverages Neural Ordinary Differential Equations and Physics-Informed Neural Networks to enhance Physiologically Based Pharmacokinetic models while applying reinforcement learning algorithms to iteratively refine treatment policies based on patient-specific data.
-]]></content:encoded>
-<pubDate>Fri, 16 May 2025 00:00:00 -0400</pubDate>
 </item>
 </channel>
 </rss>
