@@ -5,6 +5,22 @@
 <link>http://rss.arxiv.org/rss/cs.CE</link>
 
 <item>
+<title>ChromFound: Towards A Universal Foundation Model for Single-Cell Chromatin Accessibility Data</title>
+<link>https://arxiv.org/abs/2505.12638</link>
+<guid>https://arxiv.org/abs/2505.12638</guid>
+<content:encoded><![CDATA[
+<div> scATAC-seq, foundation model, ChromFound, single-cell chromatin accessibility, regulatory mechanisms<br>
+<br>
+Summary:<br>
+The article introduces ChromFound, a foundation model designed for single-cell Assay for Transposase-Accessible Chromatin using sequencing (scATAC-seq) data analysis. It addresses the challenges of high dimensionality and sparsity in scATAC-seq data by using a hybrid architecture and genome-aware tokenization. ChromFound, pretrained on a vast dataset, demonstrates strong performance in various tasks such as cell identification, cell type annotation, and cross-omics prediction. It uncovers enhancer-gene links that were previously undetected, providing insights into disease risk variants in the noncoding genome. ChromFound's ability to generate universal cell representations and its transferability make it a promising tool for comprehensive multi-omics analysis in the field of chromatin accessibility research. <div>
+arXiv:2505.12638v3 Announce Type: replace-cross 
+Abstract: The advent of single-cell Assay for Transposase-Accessible Chromatin using sequencing (scATAC-seq) offers an innovative perspective for deciphering regulatory mechanisms by assembling a vast repository of single-cell chromatin accessibility data. While foundation models have achieved significant success in single-cell transcriptomics, there is currently no foundation model for scATAC-seq that supports zero-shot high-quality cell identification and comprehensive multi-omics analysis simultaneously. Key challenges lie in the high dimensionality and sparsity of scATAC-seq data, as well as the lack of a standardized schema for representing open chromatin regions (OCRs). Here, we present ChromFound, a foundation model tailored for scATAC-seq. ChromFound utilizes a hybrid architecture and genome-aware tokenization to effectively capture genome-wide long contexts and regulatory signals from dynamic chromatin landscapes. Pretrained on 1.97 million cells from 30 tissues and 6 disease conditions, ChromFound demonstrates broad applicability across 6 diverse tasks. Notably, it achieves robust zero-shot performance in generating universal cell representations and exhibits excellent transferability in cell type annotation and cross-omics prediction. By uncovering enhancer-gene links undetected by existing computational methods, ChromFound offers a promising framework for understanding disease risk variants in the noncoding genome.
+]]></content:encoded>
+<pubDate>Tue, 28 Oct 2025 00:00:00 -0400</pubDate>
+<pubDate>Tue, 28 Oct 2025 00:00:00 -0400</pubDate>
+</item>
+
+<item>
 <title>Error bounded compression for weather and climate applications</title>
 <link>https://arxiv.org/abs/2510.22265</link>
 <guid>https://arxiv.org/abs/2510.22265</guid>
@@ -12,11 +28,10 @@
 <div> JPEG2000, wavelet transform, SPIHT encoding, error-bounded compression, weather and climate simulations
 
 Summary: 
-EBCC (Error Bounded Climate-data Compressor) addresses the challenge of rapidly growing data in weather and climate simulations by utilizing a two-layer compression approach. The base compression layer employs JPEG2000, while the residual compression layer utilizes wavelet transform and SPIHT encoding to eliminate extreme errors. A feedback rate-control mechanism adjusts compression ratios to meet specified error targets. EBCC outperforms other compression methods in benchmarks related to weather and climate science, concentrating errors near zero and achieving compression ratios ranging from 15x to over 300x. In benchmarks such as energy budget closure and Lagrangian trajectory simulation, EBCC maintains errors within natural variability while achieving more than 100x compression. The source code for EBCC is available on github.com/spcl/EBCC. <br><br>Summary: <div>
+EBCC (Error Bounded Climate-data Compressor) addresses the challenge of rapidly growing data in weather and climate simulations by utilizing a two-layer compression approach. The base compression layer employs JPEG2000, while the residual compression layer utilizes wavelet transform and SPIHT encoding to eliminate extreme errors. A feedback rate-control mechanism adjusts compression ratios to meet specified error targets. EBCC outperforms other compression methods in benchmarks related to weather and climate science, concentrating errors near zero and achieving compression ratios ranging from 15x to over 300x. In benchmarks such as energy budget closure and Lagrangian trajectory simulation, EBCC maintains errors within natural variability while achieving more than 100x compression. The source code for EBCC is available on github.com/spcl/EBCC. <br /><br />Summary: <div>
 arXiv:2510.22265v1 Announce Type: new 
 Abstract: As the resolution of weather and climate simulations increases, the amount of data produced is growing rapidly from hundreds of terabytes to tens of petabytes. The huge size becomes a limiting factor for broader adoption, and its fast growth rate will soon exhaust all the available storage devices. To address these issues, we present EBCC (Error Bounded Climate-data Compressor). It follows a two-layer approach: a base compression layer using JPEG2000 to capture the bulk of the data with a high compression ratio, and a residual compression layer using wavelet transform and SPIHT encoding to efficiently eliminate long-tail extreme errors introduced by the base compression layer. It incorporates a feedback rate-control mechanism for both layers that adjusts compression ratios to achieve the specified maximum error target. We evaluate EBCC alongside other established compression methods on benchmarks related to weather and climate science including error statistics, a case study on primitive and derived variables near a hurricane, evaluation of the closure of the global energy budget, and a Lagrangian air parcel trajectory simulation. This is the first time that trajectory simulation is used to benchmark compression methods. Our method concentrates most errors near zero, while others tend to distribute errors uniformly within the error bound. EBCC outperforms other methods in the benchmarks at relative error targets ranging from 0.1% to 10% and achieves compression ratios from 15x to more than 300x. In the energy budget closure and Lagrangian trajectory benchmarks, it can achieve more than 100x compression while keeping errors within natural variability derived from ERA5 uncertainty members. This verifies the effectiveness of EBCC in creating heavily compressed weather and climate datasets suitable for downstream applications. The source code of EBCC is available in github.com/spcl/EBCC.
 ]]></content:encoded>
-<pubDate>Tue, 28 Oct 2025 00:00:00 -0400</pubDate>
 <pubDate>Tue, 28 Oct 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -27,11 +42,10 @@ Abstract: As the resolution of weather and climate simulations increases, the am
 <div> sensor placement, machine learning, feature attribution, optimal, real-world
 
 Summary:
-The article introduces a Correlation-Aware Attribution Framework (CAAF) for optimal sensor placement (OSP) in complex systems. OSP is crucial for accurate monitoring and control. CAAF uses machine learning to identify OSP by quantifying input contributions through feature attribution. It addresses challenges of highly correlated input data by introducing a clustering step before feature attribution to reduce redundancy and improve generalizability. The framework is validated through various cases and applied to real-world systems like structural health monitoring and airfoil lift prediction. Results demonstrate the effectiveness of CAAF in identifying OSP in systems with nonlinear dynamics, chaotic behavior, and multi-scale interactions. The proposed framework outperforms traditional approaches and enables efficient application of feature attribution in real-world environments.<br><br>Summary: <div>
+The article introduces a Correlation-Aware Attribution Framework (CAAF) for optimal sensor placement (OSP) in complex systems. OSP is crucial for accurate monitoring and control. CAAF uses machine learning to identify OSP by quantifying input contributions through feature attribution. It addresses challenges of highly correlated input data by introducing a clustering step before feature attribution to reduce redundancy and improve generalizability. The framework is validated through various cases and applied to real-world systems like structural health monitoring and airfoil lift prediction. Results demonstrate the effectiveness of CAAF in identifying OSP in systems with nonlinear dynamics, chaotic behavior, and multi-scale interactions. The proposed framework outperforms traditional approaches and enables efficient application of feature attribution in real-world environments.<br /><br />Summary: <div>
 arXiv:2510.22517v1 Announce Type: new 
 Abstract: Optimal sensor placement (OSP) is critical for efficient, accurate monitoring, control, and inference in complex real-world systems. We propose a machine-learning-based feature attribution framework to identify OSP for the prediction of quantities of interest. Feature attribution quantifies input contributions to a model's output; however, it struggles with highly correlated input data often encountered in real-world applications. To address this, we propose a Correlation-Aware Attribution Framework (CAAF), which introduces a clustering step before performing feature attribution to reduce redundancy and enhance generalizability. We first illustrate the core principles of the proposed framework through a series of validation cases, then demonstrate its effectiveness in real-world dynamical systems, such as structural health monitoring, airfoil lift prediction, and wall-normal velocity estimation for turbulent channel flow. The results show that the CAAF outperforms alternative approaches that typically struggle due to the presence of nonlinear dynamics, chaotic behavior, and multi-scale interactions, and enables the effective application of feature attribution for identifying OSP in real-world environments.
 ]]></content:encoded>
-<pubDate>Tue, 28 Oct 2025 00:00:00 -0400</pubDate>
 <pubDate>Tue, 28 Oct 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -48,7 +62,6 @@ Abstract: Mortgage risk assessment traditionally relies on structured financial 
   Our framework incorporates sentiment analysis across distinct news categories to capture borrower and market dynamics and employs GradCAM-based visualizations as an interpretability tool. These components are designed features of the framework, while our results later demonstrate that they effectively enrich contextual understanding and highlight the influential factors driving mortgage risk predictions. Our results show that our multimodal FusionCapsNet framework not only exceeds individual unimodal models but also outperforms benchmark fusion strategies such as addition, concatenation, and cross attention in terms of AUC, partial AUC, and F1 score, demonstrating clear gains in both predictive accuracy and interpretability for mortgage risk assessment.
 ]]></content:encoded>
 <pubDate>Tue, 28 Oct 2025 00:00:00 -0400</pubDate>
-<pubDate>Tue, 28 Oct 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
 <title>P1GPT: a multi-agent LLM workflow module for multi-modal financial information analysis</title>
@@ -63,7 +76,6 @@ arXiv:2510.23032v1 Announce Type: new
 Abstract: Recent advances in large language models (LLMs) have enabled multi-agent reasoning systems capable of collaborative decision-making. However, in financial analysis, most frameworks remain narrowly focused on either isolated single-agent predictors or loosely connected analyst ensembles, and they lack a coherent reasoning workflow that unifies diverse data modalities. We introduce P1GPT, a layered multi-agent LLM framework for multi-modal financial information analysis and interpretable trading decision support. Unlike prior systems that emulate trading teams through role simulation, P1GPT implements a structured reasoning pipeline that systematically fuses technical, fundamental, and news-based insights through coordinated agent communication and integration-time synthesis. Backtesting on multi-modal datasets across major U.S. equities demonstrates that P1GPT achieves superior cumulative and risk-adjusted returns, maintains low drawdowns, and provides transparent causal rationales. These findings suggest that structured reasoning workflows, rather than agent role imitation, offer a scalable path toward explainable and trustworthy financial AI systems.
 ]]></content:encoded>
 <pubDate>Tue, 28 Oct 2025 00:00:00 -0400</pubDate>
-<pubDate>Tue, 28 Oct 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
 <title>GroupSHAP-Guided Integration of Financial News Keywords and Technical Indicators for Stock Price Prediction</title>
@@ -77,13 +89,12 @@ Summary:
 - Using explainable AI techniques like SHAP, researchers have identified influential features, but its computational cost grows exponentially with input features.
 - This study introduces a GRU-based forecasting framework enhanced with GroupSHAP, which quantifies contributions of semantically related keyword groups, reducing computational burden.
 - News articles from 2015 to 2024 were embedded using FinBERT, clustered into semantic groups, and GroupSHAP was applied to measure each group's contribution to stock price movements.
-- GroupSHAP variables across multiple topics were used for one-day-ahead forecasting of the S&P 500 index in 2024, resulting in a 32.2% reduction in MAE and a 40.5% reduction in RMSE compared to benchmark models.
-<br><br>Summary: 
-Recent advancements in finance-focused language models have enabled the translation of public sentiment into index-based measures. However, compressing complex language signals into single metrics can overlook contextual nuances. To address this limitation, this study introduces a GRU-based forecasting framework enhanced with GroupSHAP, which identifies influential semantic groupings instead of individual tokens in financial news articles. By employing this approach, the research achieves significant improvements in predictive performance for the S&P 500 index, highlighting the potential for grouped sentiment representations to enhance both interpretability and forecasting accuracy in finance. <div>
+- GroupSHAP variables across multiple topics were used for one-day-ahead forecasting of the S&amp;P 500 index in 2024, resulting in a 32.2% reduction in MAE and a 40.5% reduction in RMSE compared to benchmark models.
+<br /><br />Summary: 
+Recent advancements in finance-focused language models have enabled the translation of public sentiment into index-based measures. However, compressing complex language signals into single metrics can overlook contextual nuances. To address this limitation, this study introduces a GRU-based forecasting framework enhanced with GroupSHAP, which identifies influential semantic groupings instead of individual tokens in financial news articles. By employing this approach, the research achieves significant improvements in predictive performance for the S&amp;P 500 index, highlighting the potential for grouped sentiment representations to enhance both interpretability and forecasting accuracy in finance. <div>
 arXiv:2510.23112v1 Announce Type: new 
 Abstract: Recent advances in finance-specific language models such as FinBERT have enabled the quantification of public sentiment into index-based measures, yet compressing diverse linguistic signals into single metrics overlooks contextual nuances and limits interpretability. To address this limitation, explainable AI techniques, particularly SHAP (SHapley Additive Explanations), have been employed to identify influential features. However, SHAP's computational cost grows exponentially with input features, making it impractical for large-scale text-based financial data. This study introduces a GRU-based forecasting framework enhanced with GroupSHAP, which quantifies contributions of semantically related keyword groups rather than individual tokens, substantially reducing computational burden while preserving interpretability. We employed FinBERT to embed news articles from 2015 to 2024, clustered them into coherent semantic groups, and applied GroupSHAP to measure each group's contribution to stock price movements. The resulting group-level SHAP variables across multiple topics were used as input features for the prediction model. Empirical results from one-day-ahead forecasting of the S&amp;P 500 index throughout 2024 demonstrate that our approach achieves a 32.2% reduction in MAE and a 40.5% reduction in RMSE compared with benchmark models without the GroupSHAP mechanism. This research presents the first application of GroupSHAP in news-driven financial forecasting, showing that grouped sentiment representations simultaneously enhance interpretability and predictive performance.
 ]]></content:encoded>
-<pubDate>Tue, 28 Oct 2025 00:00:00 -0400</pubDate>
 <pubDate>Tue, 28 Oct 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -91,14 +102,13 @@ Abstract: Recent advances in finance-specific language models such as FinBERT ha
 <link>https://arxiv.org/abs/2510.23166</link>
 <guid>https://arxiv.org/abs/2510.23166</guid>
 <content:encoded><![CDATA[
-<div> Machine learning, scientific machine learning, Common Task Framework, benchmarks, reproducibility<br>
-<br>
+<div> Machine learning, scientific machine learning, Common Task Framework, benchmarks, reproducibility<br />
+<br />
 Summary: 
-Machine learning is revolutionizing modeling and control in various scientific fields, but the lack of standardized benchmarks hinders progress. To address this issue, a Common Task Framework (CTF) is proposed, offering curated datasets and metrics for evaluating algorithms. By benchmarking methods on nonlinear systems like Kuramoto-Sivashinsky and Lorenz, the CTF reveals strengths, limitations, and suitability for different problems. A global sea surface temperature dataset competition with a true holdout dataset will foster community engagement. The long-term goal is to replace ad hoc comparisons with standardized evaluations on hidden test sets, enhancing rigor and reproducibility in scientific machine learning. <br><br> <div>
+Machine learning is revolutionizing modeling and control in various scientific fields, but the lack of standardized benchmarks hinders progress. To address this issue, a Common Task Framework (CTF) is proposed, offering curated datasets and metrics for evaluating algorithms. By benchmarking methods on nonlinear systems like Kuramoto-Sivashinsky and Lorenz, the CTF reveals strengths, limitations, and suitability for different problems. A global sea surface temperature dataset competition with a true holdout dataset will foster community engagement. The long-term goal is to replace ad hoc comparisons with standardized evaluations on hidden test sets, enhancing rigor and reproducibility in scientific machine learning. <br /><br /> <div>
 arXiv:2510.23166v1 Announce Type: new 
 Abstract: Machine learning (ML) is transforming modeling and control in the physical, engineering, and biological sciences. However, rapid development has outpaced the creation of standardized, objective benchmarks - leading to weak baselines, reporting bias, and inconsistent evaluations across methods. This undermines reproducibility, misguides resource allocation, and obscures scientific progress. To address this, we propose a Common Task Framework (CTF) for scientific machine learning. The CTF features a curated set of datasets and task-specific metrics spanning forecasting, state reconstruction, and generalization under realistic constraints, including noise and limited data. Inspired by the success of CTFs in fields like natural language processing and computer vision, our framework provides a structured, rigorous foundation for head-to-head evaluation of diverse algorithms. As a first step, we benchmark methods on two canonical nonlinear systems: Kuramoto-Sivashinsky and Lorenz. These results illustrate the utility of the CTF in revealing method strengths, limitations, and suitability for specific classes of problems and diverse objectives. Next, we are launching a competition around a global real world sea surface temperature dataset with a true holdout dataset to foster community engagement. Our long-term vision is to replace ad hoc comparisons with standardized evaluations on hidden test sets that raise the bar for rigor and reproducibility in scientific ML.
 ]]></content:encoded>
-<pubDate>Tue, 28 Oct 2025 00:00:00 -0400</pubDate>
 <pubDate>Tue, 28 Oct 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -108,12 +118,11 @@ Abstract: Machine learning (ML) is transforming modeling and control in the phys
 <content:encoded><![CDATA[
 <div> architecture, computation offloading, UAVs, HAPs, distributionally robust optimization
 
-Summary:<br>
+Summary:<br />
 An architecture for Low-altitude networks (LANs) that integrates unmanned aerial vehicles (UAVs) and high-altitude platforms (HAPs) is proposed to meet increasing computation demands. Uncertain task sizes and UAV mobility present challenges in ensuring quality of service. To tackle this, a distributionally robust optimization problem is formulated to minimize worst-case delays by optimizing offloading decisions and UAV trajectories. An algorithm is designed to solve the mixed-integer min-max optimization problem, utilizing an outer-inner layer approach. The algorithm employs Benders decomposition to optimize offloading decisions and UAV trajectories iteratively. Simulation results indicate the proposed algorithm excels over traditional methods in balancing worst-case delay and robustness. <div>
 arXiv:2510.23202v1 Announce Type: new 
 Abstract: The low-altitude networks (LANs) integrating unmanned aerial vehicles (UAVs) and high-altitude platforms (HAPs) have become a promising solution for the rising computation demands. However, the uncertain task sizes and high mobility of UAVs pose great challenges to guarantee the quality of service. To address these issues, we propose an LAN architecture where UAVs and HAPs collaboratively provide computation offloading for ground users. Moreover, the uncertainty sets are constructed to characterize the uncertain task size, and a distributionally robust optimization problem is formulated to minimize the worst-case delay by jointly optimizing the offloading decisions and UAV trajectories. To solve the mixed-integer min-max optimization problem, we design the distributionally robust computation offloading and trajectories optimization algorithm. Specifically, the original problem is figured out by iteratively solving the outerlayer and inner-layer problems. The convex outer-layer problem with probability distributions is solved by the optimization toolkit. As for the inner-layer mixed-integer problem, we employ the Benders decomposition. The decoupled master problem concerning the binary offloading decisions is solved by the integer solver, and UAV trajectories in the sub-problem are optimized via the successive convex approximation. Simulation results show the proposed algorithm outperforms traditional optimization methods in balancing the worst-case delay and robustness.
 ]]></content:encoded>
-<pubDate>Tue, 28 Oct 2025 00:00:00 -0400</pubDate>
 <pubDate>Tue, 28 Oct 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -124,11 +133,10 @@ Abstract: The low-altitude networks (LANs) integrating unmanned aerial vehicles 
 <div> Keywords: Post-translational modifications, COMPASS-PTM, enzyme-substrate assignment, protein language models, cellular signaling.
 
 Summary: 
-The article introduces COMPASS-PTM, a novel learning framework that combines residue-level PTM profiling with enzyme-substrate assignment. By integrating evolutionary representations, physicochemical priors, and a crosstalk-aware prompting mechanism, COMPASS-PTM effectively deciphers the complex code of PTMs in cellular signaling. The model achieves state-of-the-art performance in multi-label site prediction and enzyme assignment, demonstrating a significant improvement in accuracy. It also shows interpretability by identifying kinase motifs and predicting disease-related PTM alterations due to missense variants. COMPASS-PTM bridges statistical learning with biochemical mechanisms, allowing it to learn the grammar underlying protein regulation and signaling. This unified framework provides a comprehensive understanding of PTMs, shedding light on the intricate regulatory mechanisms within cells.<br><br>Summary: <div>
+The article introduces COMPASS-PTM, a novel learning framework that combines residue-level PTM profiling with enzyme-substrate assignment. By integrating evolutionary representations, physicochemical priors, and a crosstalk-aware prompting mechanism, COMPASS-PTM effectively deciphers the complex code of PTMs in cellular signaling. The model achieves state-of-the-art performance in multi-label site prediction and enzyme assignment, demonstrating a significant improvement in accuracy. It also shows interpretability by identifying kinase motifs and predicting disease-related PTM alterations due to missense variants. COMPASS-PTM bridges statistical learning with biochemical mechanisms, allowing it to learn the grammar underlying protein regulation and signaling. This unified framework provides a comprehensive understanding of PTMs, shedding light on the intricate regulatory mechanisms within cells.<br /><br />Summary: <div>
 arXiv:2510.23492v1 Announce Type: new 
 Abstract: Post-translational modifications (PTMs) form a combinatorial "code" that regulates protein function, yet deciphering this code - linking modified sites to their catalytic enzymes - remains a central unsolved problem in understanding cellular signaling and disease. We introduce COMPASS-PTM, a mechanism-aware, coarse-to-fine learning framework that unifies residue-level PTM profiling with enzyme-substrate assignment. COMPASS-PTM integrates evolutionary representations from protein language models with physicochemical priors and a crosstalk-aware prompting mechanism that explicitly models inter-PTM dependencies. This design allows the model to learn biologically coherent patterns of cooperative and antagonistic modifications while addressing the dual long-tail distribution of PTM data. Across multiple proteome-scale benchmarks, COMPASS-PTM establishes new state-of-the-art performance, including a 122% relative F1 improvement in multi-label site prediction and a 54% gain in zero-shot enzyme assignment. Beyond accuracy, the model demonstrates interpretable generalization, recovering canonical kinase motifs and predicting disease-associated PTM rewiring caused by missense variants. By bridging statistical learning with biochemical mechanism, COMPASS-PTM unifies site-level and enzyme-level prediction into a single framework that learns the grammar underlying protein regulation and signaling.
 ]]></content:encoded>
-<pubDate>Tue, 28 Oct 2025 00:00:00 -0400</pubDate>
 <pubDate>Tue, 28 Oct 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -136,13 +144,12 @@ Abstract: Post-translational modifications (PTMs) form a combinatorial "code" th
 <link>https://arxiv.org/abs/2510.21818</link>
 <guid>https://arxiv.org/abs/2510.21818</guid>
 <content:encoded><![CDATA[
-<div> Front-Capturing, Front-Tracking, interface properties, mesoscopic scale, microstructure evolution<br>
-Summary:<br>
+<div> Front-Capturing, Front-Tracking, interface properties, mesoscopic scale, microstructure evolution<br />
+Summary:<br />
 In mesoscopic scale microstructure evolution modeling, two main numerical frameworks are used: Front-Capturing (FC) and Front-Tracking (FT). FC models indirectly define interfaces by tracking field variable changes, while FT models explicitly define interfaces using interconnected segments or surfaces. FT-type approaches, associated with Lagrangian movement, provide enhanced spatial resolution in 3D and 2D problems. They efficiently handle physical mechanisms related to interface properties and geometries but face challenges with complex topological events in 3D. Recent advancements show their potential in computational efficiency and analyzing mobility and energy properties for potential applications in intragranular phenomena. <div>
 arXiv:2510.21818v1 Announce Type: cross 
 Abstract: In mesoscopic scale microstructure evolution modeling, two primary numerical frameworks are used: Front-Capturing (FC) and Front-Tracking (FT) ones. FC models, like phase-field or level-set methods, indirectly define interfaces by tracking field variable changes. On the contrary, FT models explicitly define interfaces using interconnected segments or surfaces. In historical FT methodologies, Vertex models were first developed and consider the description of the evolution of polygonal structures in terms of the motion of points where multiple boundaries meet. Globally, FT-type approaches, often associated with Lagrangian movement, enhance spatial resolution in 3D surfacic and 2D lineic problems using techniques derived from finite element meshing and remeshing algorithms. These efficient approaches, by nature, are well adapted to physical mechanisms correlated to interface properties and geometries. They also face challenges in managing complex topological events, especially in 3D. However, recent advances highlight their potential in computational efficiency and analysis of mobility and energy properties, with possible applications in intragranular phenomena.
 ]]></content:encoded>
-<pubDate>Tue, 28 Oct 2025 00:00:00 -0400</pubDate>
 <pubDate>Tue, 28 Oct 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -158,7 +165,6 @@ arXiv:2510.22222v1 Announce Type: cross
 Abstract: In the domain of corporate credit rating, traditional deep learning methods have improved predictive accuracy but still suffer from the inherent 'black-box' problem and limited interpretability. While incorporating non-financial information enriches the data and provides partial interpretability, the models still lack hierarchical reasoning mechanisms, limiting their comprehensive analytical capabilities. To address these challenges, we propose CreditXAI, a Multi-Agent System (MAS) framework that simulates the collaborative decision-making process of professional credit analysts. The framework focuses on business, financial, and governance risk dimensions to generate consistent and interpretable credit assessments. Experimental results demonstrate that multi-agent collaboration improves predictive accuracy by more than 7% over the best single-agent baseline, confirming its significant synergistic advantage in corporate credit risk evaluation. This study provides a new technical pathway to build intelligent and interpretable credit rating models.
 ]]></content:encoded>
 <pubDate>Tue, 28 Oct 2025 00:00:00 -0400</pubDate>
-<pubDate>Tue, 28 Oct 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
 <title>LAMP: Data-Efficient Linear Affine Weight-Space Models for Parameter-Controlled 3D Shape Generation and Extrapolation</title>
@@ -173,21 +179,19 @@ arXiv:2510.22491v1 Announce Type: cross
 Abstract: Generating high-fidelity 3D geometries that satisfy specific parameter constraints has broad applications in design and engineering. However, current methods typically rely on large training datasets and struggle with controllability and generalization beyond the training distributions. To overcome these limitations, we introduce LAMP (Linear Affine Mixing of Parametric shapes), a data-efficient framework for controllable and interpretable 3D generation. LAMP first aligns signed distance function (SDF) decoders by overfitting each exemplar from a shared initialization, then synthesizes new geometries by solving a parameter-constrained mixing problem in the aligned weight space. To ensure robustness, we further propose a safety metric that detects geometry validity via linearity mismatch. We evaluate LAMP on two 3D parametric benchmarks: DrivAerNet++ and BlendedNet. We found that LAMP enables (i) controlled interpolation within bounds with as few as 100 samples, (ii) safe extrapolation by up to 100% parameter difference beyond training ranges, (iii) physics performance-guided optimization under fixed parameters. LAMP significantly outperforms conditional autoencoder and Deep Network Interpolation (DNI) baselines in both extrapolation and data efficiency. Our results demonstrate that LAMP advances controllable, data-efficient, and safe 3D generation for design exploration, dataset generation, and performance-driven optimization.
 ]]></content:encoded>
 <pubDate>Tue, 28 Oct 2025 00:00:00 -0400</pubDate>
-<pubDate>Tue, 28 Oct 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
 <title>Graph Neural Network Assisted Genetic Algorithm for Structural Dynamic Response and Parameter Optimization</title>
 <link>https://arxiv.org/abs/2510.22839</link>
 <guid>https://arxiv.org/abs/2510.22839</guid>
 <content:encoded><![CDATA[
-<div> Framework, Structural parameters, Optimization, Genetic Algorithm, Machine learning<br>
-<br>
+<div> Framework, Structural parameters, Optimization, Genetic Algorithm, Machine learning<br />
+<br />
 Summary: 
 This study proposes a hybrid data-driven framework that combines a Graph Neural Network (GNN) surrogate model with a Genetic Algorithm (GA) optimizer for optimizing structural parameters in design. The GNN is trained to predict dynamic displacement responses based on mass, stiffness, and damping configurations, reducing computational cost compared to conventional simulations. A dataset of single-degree-of-freedom system responses is used to train the GNN, which enables rapid predictions without solving the system equations repeatedly. The GA then searches for globally optimal parameter sets by minimizing displacements and enhancing dynamic stability. The framework demonstrates strong convergence, robust generalization, and efficient optimization, showcasing the potential of combining machine learning surrogates with evolutionary algorithms for intelligent structural design. <div>
 arXiv:2510.22839v1 Announce Type: cross 
 Abstract: The optimization of structural parameters, such as mass(m), stiffness(k), and damping coefficient(c), is critical for designing efficient, resilient, and stable structures. Conventional numerical approaches, including Finite Element Method (FEM) and Computational Fluid Dynamics (CFD) simulations, provide high-fidelity results but are computationally expensive for iterative optimization tasks, as each evaluation requires solving the governing equations for every parameter combination. This study proposes a hybrid data-driven framework that integrates a Graph Neural Network (GNN) surrogate model with a Genetic Algorithm (GA) optimizer to overcome these challenges. The GNN is trained to accurately learn the nonlinear mapping between structural parameters and dynamic displacement responses, enabling rapid predictions without repeatedly solving the system equations. A dataset of single-degree-of-freedom (SDOF) system responses is generated using the Newmark Beta method across diverse mass, stiffness, and damping configurations. The GA then searches for globally optimal parameter sets by minimizing predicted displacements and enhancing dynamic stability. Results demonstrate that the GNN and GA framework achieves strong convergence, robust generalization, and significantly reduced computational cost compared to conventional simulations. This approach highlights the effectiveness of combining machine learning surrogates with evolutionary optimization for automated and intelligent structural design.
 ]]></content:encoded>
-<pubDate>Tue, 28 Oct 2025 00:00:00 -0400</pubDate>
 <pubDate>Tue, 28 Oct 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -204,11 +208,10 @@ Summary:
 - Experimentally validated results showed agreement with wet-lab measurements and comparable or superior performance to a commercial coolant.
 - GATE is established as a versatile AI platform applicable across various materials discovery tasks. 
 
-<br><br>Summary: <div>
+<br /><br />Summary: <div>
 arXiv:2510.23371v1 Announce Type: cross 
 Abstract: Artificial intelligence (AI) has emerged as a powerful accelerator of materials discovery, yet most existing models remain problem-specific, requiring additional data collection and retraining for each new property. Here we introduce and validate GATE (Geometrically Aligned Transfer Encoder) -- a generalizable AI framework that jointly learns 34 physicochemical properties spanning thermal, electrical, mechanical, and optical domains. By aligning these properties within a shared geometric space, GATE captures cross-property correlations that reduce disjoint-property bias -- a key factor causing false negatives in multi-criteria screening. To demonstrate its generalizability, GATE -- without any problem-specific reconfiguration -- was directly applied to the discovery of immersion cooling fluids for data centers, a stringent real-world challenge defined by the Open Compute Project (OCP). Screening billions of candidates, GATE identified 92,861 molecules as promising for practical deployment. Four were experimentally or literarily validated, showing strong agreement with wet-lab measurements and performance comparable to or exceeding a commercial coolant. These results establish GATE as a ready-to-use, generalizable AI platform readily applicable across diverse materials discovery tasks.
 ]]></content:encoded>
-<pubDate>Tue, 28 Oct 2025 00:00:00 -0400</pubDate>
 <pubDate>Tue, 28 Oct 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -224,20 +227,18 @@ arXiv:2510.23446v1 Announce Type: cross
 Abstract: For low-frequency electromagnetic problems, where wave-propagation effects can be neglected, eddy current formulations are commonly used as a simplification of the full Maxwell's equations. In this setup, time-domain simulations, needed to capture transient startup responses or nonlinear behavior, are often computationally expensive. We propose a novel tearing and interconnecting approach for eddy currents in time-domain and investigate its scalability.
 ]]></content:encoded>
 <pubDate>Tue, 28 Oct 2025 00:00:00 -0400</pubDate>
-<pubDate>Tue, 28 Oct 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
 <title>Error estimation and step size control with minimal subsystem interfaces</title>
 <link>https://arxiv.org/abs/2406.17353</link>
 <guid>https://arxiv.org/abs/2406.17353</guid>
 <content:encoded><![CDATA[
-<div> methods, co-simulation, error estimation, black-box subsystems, step size control <br>
+<div> methods, co-simulation, error estimation, black-box subsystems, step size control <br />
 Summary: 
 This article reviews error estimation methods for co-simulation, focusing on scenarios where subsystems have minimal interfaces. These "black-box" subsystems lack time step rollback capabilities and provide limited internal information, presenting challenges for integration in large-system simulations. The article discusses using error indicators to automatically adjust macro time step sizes for optimal simulation speed and accuracy. It includes pseudocode for implementing the step size control algorithm and offers practical advice on assessing co-simulation quality, avoiding common errors, and configuring the control algorithm effectively. By highlighting the nuances of error estimation in co-simulation, the article aims to guide readers in implementing and testing these methods in their industrial applications. <div>
 arXiv:2406.17353v2 Announce Type: replace 
 Abstract: We review error estimation methods for co-simulation, in particular methods that are applicable when the subsystems provide minimal interfaces. By this, we mean that subsystems do not support rollback of time steps, do not output derivatives, and do not provide any other information about their internals besides the output variables that are required for coupling with other subsystems. Such "black-box" subsystems are common in industrial applications, and the ability to couple them and run large-system simulations is one of the major attractions of the co-simulation paradigm. We also describe how the resulting error indicators may be used to automatically control macro time step sizes to strike a good balance between simulation speed and accuracy. The various elements of the step size control algorithm are presented in pseudocode so that readers may implement them and test them in their own applications. We provide practicable advice on how to use error indicators to judge the quality of a co-simulation, how to avoid common pitfalls, and how to configure the step size control algorithm.
 ]]></content:encoded>
-<pubDate>Tue, 28 Oct 2025 00:00:00 -0400</pubDate>
 <pubDate>Tue, 28 Oct 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -247,18 +248,17 @@ Abstract: We review error estimation methods for co-simulation, in particular me
 <content:encoded><![CDATA[
 <div> artificial intelligence, deep learning, neural network, tensor decomposition, large-scale systems
 
-Summary:<br>
+Summary:<br />
 - Simulation-driven engineering applications are becoming increasingly large and complex, leading to significant computational time and memory cost issues with classical numerical methods.
 - Data-driven surrogates have been explored to accelerate PDE solvers, but often require extensive training data.
 - The C-HiDeNN-TD method is proposed in this paper, which can directly obtain surrogate models for large-scale space-time PDE without the need for offline training data.
 - The performance of this method is compared to classical numerical methods for extremely large-scale systems.
 - The C-HiDeNN-TD method shows promise in providing efficient solutions for complex PDE problems without the need for massive amounts of training data. 
 
-<br><br>Summary: <div>
+<br /><br />Summary: <div>
 arXiv:2409.00329v2 Announce Type: replace 
 Abstract: A common trend in simulation-driven engineering applications is the ever-increasing size and complexity of the problem, where classical numerical methods typically suffer from significant computational time and huge memory cost. Methods based on artificial intelligence have been extensively investigated to accelerate partial differential equations (PDE) solvers using data-driven surrogates. However, most data-driven surrogates require an extremely large amount of training data. In this paper, we propose the Convolutional Hierarchical Deep Learning Neural Network-Tensor Decomposition (C-HiDeNN-TD) method, which can directly obtain surrogate models by solving large-scale space-time PDE without generating any offline training data. We compare the performance of the proposed method against classical numerical methods for extremely large-scale systems.
 ]]></content:encoded>
-<pubDate>Tue, 28 Oct 2025 00:00:00 -0400</pubDate>
 <pubDate>Tue, 28 Oct 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -266,13 +266,12 @@ Abstract: A common trend in simulation-driven engineering applications is the ev
 <link>https://arxiv.org/abs/2503.13010</link>
 <guid>https://arxiv.org/abs/2503.13010</guid>
 <content:encoded><![CDATA[
-<div> homogenization technique, foil windings, high frequency applications, magneto-thermal simulation, Joule losses<br>
+<div> homogenization technique, foil windings, high frequency applications, magneto-thermal simulation, Joule losses<br />
 Summary:
-Homogenization techniques are used in the simulation of foil windings to capture their unique properties for high frequency applications. The layered structure of foil windings results in different electromagnetic and thermal characteristics compared to traditional wire windings. A coupled magneto-thermal simulation approach is employed, considering the interaction between electromagnetic and thermal effects through Joule losses and temperature-dependent material properties. Utilizing different time step sizes for electromagnetic and thermal simulations allows for efficient analysis of foil windings. The method is validated using a simple geometry and applied to a pot transformer with both foil and wire windings, demonstrating its effectiveness in capturing the behavior of complex winding structures. <br><br>Summary: <div>
+Homogenization techniques are used in the simulation of foil windings to capture their unique properties for high frequency applications. The layered structure of foil windings results in different electromagnetic and thermal characteristics compared to traditional wire windings. A coupled magneto-thermal simulation approach is employed, considering the interaction between electromagnetic and thermal effects through Joule losses and temperature-dependent material properties. Utilizing different time step sizes for electromagnetic and thermal simulations allows for efficient analysis of foil windings. The method is validated using a simple geometry and applied to a pot transformer with both foil and wire windings, demonstrating its effectiveness in capturing the behavior of complex winding structures. <br /><br />Summary: <div>
 arXiv:2503.13010v2 Announce Type: replace 
 Abstract: Foil windings have, due to their layered structure, different properties than conventional wire windings, which make them advantageous for high frequency applications. Both electromagnetic and thermal analyses are relevant for foil windings. These two physical areas are coupled through Joule losses and temperature dependent material properties. For an efficient simulation of foil windings, homogenization techniques are used to avoid resolving the single turns. Therefore, this paper comprises a coupled magneto-thermal simulation that uses a homogenization method in the electromagnetic and thermal part. A weak coupling with different time step sizes for both parts is presented. The method is verified on a simple geometry and showcased for a pot transformer that uses a foil and a wire winding.
 ]]></content:encoded>
-<pubDate>Tue, 28 Oct 2025 00:00:00 -0400</pubDate>
 <pubDate>Tue, 28 Oct 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -288,9 +287,7 @@ arXiv:2503.12755v2 Announce Type: replace-cross
 Abstract: Artificial intelligence (AI) has significantly improved medical screening accuracy, particularly in cancer detection and risk assessment. However, traditional classification metrics often fail to account for imbalanced data, varying performance across cohorts, and patient-level inconsistencies, leading to biased evaluations. We propose the Cohort-Attention Evaluation Metrics (CAT) framework to address these challenges. CAT introduces patient-level assessment, entropy-based distribution weighting, and cohort-weighted sensitivity and specificity. Key metrics like CATSensitivity (CATSen), CATSpecificity (CATSpe), and CATMean ensure balanced and fair evaluation across diverse populations. This approach enhances predictive reliability, fairness, and interpretability, providing a robust evaluation method for AI-driven medical screening models.
 ]]></content:encoded>
 <pubDate>Tue, 28 Oct 2025 00:00:00 -0400</pubDate>
-<pubDate>Tue, 28 Oct 2025 00:00:00 -0400</pubDate>
 </item>
-
 <item>
 <title>Prot2Text-V2: Protein Function Prediction with Multimodal Contrastive Alignment</title>
 <link>https://arxiv.org/abs/2505.11194</link>
@@ -14513,266 +14510,6 @@ arXiv:2505.13469v1 Announce Type: cross
 Abstract: As financial institutions increasingly rely on machine learning models to automate lending decisions, concerns about algorithmic fairness have risen. This paper explores the tradeoff between enforcing fairness constraints (such as demographic parity or equal opportunity) and maximizing lender profitability. Through simulations on synthetic data that reflects real-world lending patterns, we quantify how different fairness interventions impact profit margins and default rates. Our results demonstrate that equal opportunity constraints typically impose lower profit costs than demographic parity, but surprisingly, removing protected attributes from the model (fairness through unawareness) outperforms explicit fairness interventions in both fairness and profitability metrics. We further identify the specific economic conditions under which fair lending becomes profitable and analyze the feature-specific drivers of unfairness. These findings offer practical guidance for designing lending algorithms that balance ethical considerations with business objectives.
 ]]></content:encoded>
 <pubDate>Wed, 21 May 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Improved Methods for Model Pruning and Knowledge Distillation</title>
-<link>https://arxiv.org/abs/2505.14052</link>
-<guid>https://arxiv.org/abs/2505.14052</guid>
-<content:encoded><![CDATA[
-<div> Pruning, Language models, Model optimization, Computational complexity, Knowledge distillation
-<br />
-Summary:
-MAMA Pruning is introduced as an enhanced method for model pruning in large language models like R1 or o3-mini. The technique aims to remove neurons and connections that are unlikely to contribute significantly during human-computer interaction. By analyzing movement and magnitude of weights and biases in the pre-training phase, as well as GRPO rewards in the post-training phase, MAMA Pruning effectively reduces model size and computational complexity. The method maintains performance comparable to unpruned models even at extreme pruning levels. Experimental results demonstrate the superiority of MAMA Pruning over existing methods across various pruning levels and computational linguistics tasks.
-<br /><br />Summary: <div>
-arXiv:2505.14052v1 Announce Type: cross 
-Abstract: Model pruning is a performance optimization technique for large language models like R1 or o3-mini. However, existing pruning methods often lead to significant performance degradation or require extensive retraining and fine-tuning. This technique aims to identify and remove neurons, connections unlikely leading to the contribution during the human-computer interaction phase. Our goal is to obtain a much smaller and faster knowledge distilled model that can quickly generate content almost as good as those of the unpruned ones. We propose MAMA Pruning, short for Movement and Magnitude Analysis, an improved pruning method that effectively reduces model size and computational complexity while maintaining performance comparable to the original unpruned model even at extreme pruned levels. The improved method is based on weights, bias fixed in the pre-training phase and GRPO rewards verified during the post-training phase as our novel pruning indicators. Preliminary experimental results show that our method outperforms and be comparable to state-of-the-art methods across various pruning levels and different downstream computational linguistics tasks.
-]]></content:encoded>
-<pubDate>Wed, 21 May 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Design and Evaluation of a Microservices Cloud Framework for Online Travel Platforms</title>
-<link>https://arxiv.org/abs/2505.14508</link>
-<guid>https://arxiv.org/abs/2505.14508</guid>
-<content:encoded><![CDATA[
-<div> Keywords: Online Travel Agents, Microservices architecture, Cloud computing, Fault Tolerance, Cost-effective analysis<br />
-Summary: <br />
-The paper discusses the use of Microservices architecture in handling online travel agents globally, highlighting the benefits of flexibility and efficiency in managing large amounts of data. The Microservices Cloud Framework for Online Travel Platforms (MCF-OTP) is designed to improve performance, flexibility, and maintenance by utilizing cloud computing and microservice technologies. The framework aims to enhance fault tolerance and response time, surpassing traditional monolithic designs in scalability and uptime. Cost-effective analysis shows a net gain from startup fees and operational costs. The cloud-based environment helps reduce costs and optimize resource allocation, ultimately increasing efficiency in managing online travel platforms. <div>
-arXiv:2505.14508v1 Announce Type: cross 
-Abstract: Handling online travel agents globally requires efficient and flexible software solution architectures. When it needs to handle thousands of agents and billions of clients data globally. Microservices architecture is used to break down a large program into numerous, smaller services which can run individually and perform individual tasks. This paper analyses and integrates a unique Microservices Cloud Framework designed to support Online Travel Platforms (MCF-OTP). MCF-OTPs main goal is to increase the performance, flexibility, and maintenance of online travel platforms via cloud computing and microservice technologies. Large-scale travel apps, including managing numerous data sources, dealing with traffic peaks, and providing fault tolerance, can be addressed by the suggested framework. The framework increases good interpretation between flawless data synchronization, microservices, and dynamic scaling based on demand technology. An organization framework that optimizes service borders and minimizes inter-service dependencies is recommended. Thus, this can result in elevated development adaptability. In this research, the principal goal is to evaluate MCF-OTPs efficiency using the indicators of fault tolerance and response time. It is indicated by the findings that the MCF-OTP structure excels traditional monolithic designs in terms of dependability and scalability, managing traffic spikes seamlessly and decreasing downtime. The cost-effective analysis helps ascertain the net gain attained by the startup fees and the ongoing operational costs. The cloud-based environment is used to reduce the fracture cost which also helps to increase the efficiency of resource allocation, according to the research.
-]]></content:encoded>
-<pubDate>Wed, 21 May 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>EvoMesh: Adaptive Physical Simulation with Hierarchical Graph Evolutions</title>
-<link>https://arxiv.org/abs/2410.03779</link>
-<guid>https://arxiv.org/abs/2410.03779</guid>
-<content:encoded><![CDATA[
-<div> Graph neural networks, mesh-based physical simulation, EvoMesh, anisotropic message passing, adaptively guided, physical inputs<br />
-<br />
-Summary:<br />
-EvoMesh is introduced as a fully differentiable framework for mesh-based physical simulation that learns graph hierarchies and physical dynamics together. It utilizes direction-specific aggregation of dynamic features and node selection probabilities for hierarchical levels based on physical context, enabling flexible message shortcuts and long-range dependency capture. Experimental results on various datasets demonstrate EvoMesh's superior performance over fixed-hierarchy message passing networks. The code for EvoMesh is available on GitHub for further exploration and implementation. <br /> <div>
-arXiv:2410.03779v2 Announce Type: replace-cross 
-Abstract: Graph neural networks have been a powerful tool for mesh-based physical simulation. To efficiently model large-scale systems, existing methods mainly employ hierarchical graph structures to capture multi-scale node relations. However, these graph hierarchies are typically manually designed and fixed, limiting their ability to adapt to the evolving dynamics of complex physical systems. We propose EvoMesh, a fully differentiable framework that jointly learns graph hierarchies and physical dynamics, adaptively guided by physical inputs. EvoMesh introduces anisotropic message passing, which enables direction-specific aggregation of dynamic features between nodes within each hierarchy, while simultaneously learning node selection probabilities for the next hierarchical level based on physical context. This design creates more flexible message shortcuts and enhances the model's capacity to capture long-range dependencies. Extensive experiments on five benchmark physical simulation datasets show that EvoMesh outperforms recent fixed-hierarchy message passing networks by large margins. Code is available at https://github.com/hbell99/EvoMesh.
-]]></content:encoded>
-<pubDate>Wed, 21 May 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>SHAP zero Explains Biological Sequence Models with Near-zero Marginal Cost for Future Queries</title>
-<link>https://arxiv.org/abs/2410.19236</link>
-<guid>https://arxiv.org/abs/2410.19236</guid>
-<content:encoded><![CDATA[
-<div> algorithm, SHAP zero, Shapley values, biological sequences, interpretability
-
-Summary:
-SHAP zero is a novel algorithm that addresses the need for interpretable predictions in machine learning models for biological sequences. By amortizing the computational cost of Shapley value computation across large-scale datasets, SHAP zero enables near-zero marginal cost for future queries. It leverages the sparse Fourier transform of the model to uncover high-order feature interactions and efficiently explain predictions in models of guide RNA efficacy, DNA repair outcomes, and protein fitness. The algorithm significantly accelerates the process of extracting global biological insights and reveals rich combinatorial interactions that were previously inaccessible at scale. This work paves the way for scalable and efficient interpretability of black-box sequence models in biology.<br /><br />Summary: <div>
-arXiv:2410.19236v3 Announce Type: replace-cross 
-Abstract: The growing adoption of machine learning models for biological sequences has intensified the need for interpretable predictions, with Shapley values emerging as a theoretically grounded standard for model explanation. While effective for local explanations of individual input sequences, scaling Shapley-based interpretability to extract global biological insights requires evaluating thousands of sequences--incurring exponential computational cost per query. We introduce SHAP zero, a novel algorithm that amortizes the cost of Shapley value computation across large-scale biological datasets. After a one-time model sketching step, SHAP zero enables near-zero marginal cost for future queries by uncovering an underexplored connection between Shapley values, high-order feature interactions, and the sparse Fourier transform of the model. Applied to models of guide RNA efficacy, DNA repair outcomes, and protein fitness, SHAP zero explains predictions orders of magnitude faster than existing methods, recovering rich combinatorial interactions previously inaccessible at scale. This work opens the door to principled, efficient, and scalable interpretability for black-box sequence models in biology.
-]]></content:encoded>
-<pubDate>Wed, 21 May 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>LLM-Enhanced Feature Engineering for Multi-Factor Electricity Price Predictions</title>
-<link>https://arxiv.org/abs/2505.11890</link>
-<guid>https://arxiv.org/abs/2505.11890</guid>
-<content:encoded><![CDATA[
-<div> forecasting, electricity price, volatility, New South Wales, machine learning
-
-Summary:<br /><br />
-- Traditional forecasting models struggle in capturing the complex dynamics of electricity markets, leading to unreliable predictions in volatile markets like New South Wales.
-- FAEP, a Feature-Augmented Electricity Price Prediction framework, addresses these challenges by leveraging Large Language Models (LLMs) and advanced feature engineering.
-- By incorporating external features such as weather data and price volatility jumps, FAEP enhances prediction accuracy.
-- Utilizing Retrieval-Augmented Generation (RAG) for feature extraction and a hybrid XGBoost-LSTM model, FAEP outperforms other models in the NSW electricity market.
-- Experimental results demonstrate the state-of-the-art performance of FAEP in electricity price prediction, showcasing the efficiency of LLM-enhanced feature engineering and hybrid machine learning architectures. 
-
-<br /><br />Summary: Hello, please summarize this article in en language, first extract 5 keywords, output in the same line, then line break, write a summary containing all the points in 200 words in en, output in order by points, and output in the following format '<br /><br />Summary:' , <br /> is the line break of HTML, 2 must be retained when output, and must be before the word 'Summary:' <div>
-arXiv:2505.11890v1 Announce Type: new 
-Abstract: Accurately forecasting electricity price volatility is crucial for effective risk management and decision-making. Traditional forecasting models often fall short in capturing the complex, non-linear dynamics of electricity markets, particularly when external factors like weather conditions and market volatility are involved. These limitations hinder their ability to provide reliable predictions in markets with high volatility, such as the New South Wales (NSW) electricity market. To address these challenges, we introduce FAEP, a Feature-Augmented Electricity Price Prediction framework. FAEP leverages Large Language Models (LLMs) combined with advanced feature engineering to enhance prediction accuracy. By incorporating external features such as weather data and price volatility jumps, and utilizing Retrieval-Augmented Generation (RAG) for effective feature extraction, FAEP overcomes the shortcomings of traditional approaches. A hybrid XGBoost-LSTM model in FAEP further refines these augmented features, resulting in a more robust prediction framework. Experimental results demonstrate that FAEP achieves state-of-art (SOTA) performance compared to other electricity price prediction models in the Australian New South Wale electricity market, showcasing the efficiency of LLM-enhanced feature engineering and hybrid machine learning architectures.
-]]></content:encoded>
-<pubDate>Tue, 20 May 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>MLLM-based Discovery of Intrinsic Coordinates and Governing Equations from High-Dimensional Data</title>
-<link>https://arxiv.org/abs/2505.11940</link>
-<guid>https://arxiv.org/abs/2505.11940</guid>
-<content:encoded><![CDATA[
-<div> Keywords: governing equations, high-dimensional data, multimodal large language models, zero-shot method, spatial perception <br />
-<br />
-Summary: 
-Discovering governing equations from high-dimensional scientific data is a challenging task due to the exponential expansion of the equation space. This paper introduces a novel zero-shot approach using multimodal large language models (MLLM) to automatically identify physical coordinates and equations from data. By enhancing MLLM's spatial perception with visual prompts and leveraging its domain knowledge, the proposed method effectively navigates the equation space. Evaluation on simulated and real data shows improved accuracy in discovering physical coordinates and equations. Long-term extrapolation accuracy is enhanced by approximately 26.96% compared to the baseline, showcasing the efficiency of the approach in understanding the evolution of systems. <div>
-arXiv:2505.11940v1 Announce Type: new 
-Abstract: Discovering governing equations from scientific data is crucial for understanding the evolution of systems, and is typically framed as a search problem within a candidate equation space. However, the high-dimensional nature of dynamical systems leads to an exponentially expanding equation space, making the search process extremely challenging. The visual perception and pre-trained scientific knowledge of multimodal large language models (MLLM) hold promise for providing effective navigation in high-dimensional equation spaces. In this paper, we propose a zero-shot method based on MLLM for automatically discovering physical coordinates and governing equations from high-dimensional data. Specifically, we design a series of enhanced visual prompts for MLLM to enhance its spatial perception. In addition, MLLM's domain knowledge is employed to navigate the search process within the equation space. Quantitative and qualitative evaluations on two representative types of systems demonstrate that the proposed method effectively discovers the physical coordinates and equations from both simulated and real experimental data, with long-term extrapolation accuracy improved by approximately 26.96% compared to the baseline.
-]]></content:encoded>
-<pubDate>Tue, 20 May 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Predicting Gas Well Performance with Decline Curve Analysis: A Case Study on Semutang Gas Field</title>
-<link>https://arxiv.org/abs/2505.12333</link>
-<guid>https://arxiv.org/abs/2505.12333</guid>
-<content:encoded><![CDATA[
-<div> DCA, production forecasting, gas reservoir, Semutang gas field, decline curve parameters <br />
-<br />
-Summary: <br />
-Decline-curve analysis (DCA) is an important method for forecasting production and estimating reserves in gas reservoirs. This study applied DCA to predict future production performance and estimate ultimate recovery for a well in the Semutang gas field in Bangladesh. Different decline curve models were used, with the hyperbolic model providing the most accurate forecast. It is crucial to select the right decline model for precise production forecasting and reserve estimation, essential for effective reservoir management and resource optimization. The study emphasizes the significance of accurate decline curve analysis in the oil and gas industry. <div>
-arXiv:2505.12333v1 Announce Type: new 
-Abstract: Decline-curve analysis (DCA) is a widely utilized method for production forecasting and estimating remaining reserves in gas reservoir. Based on the assumptions that past production trend can be mathematically characterized and used to predict future performance. It relies on historical production data and assumes that production methods remain unchanged throughout the analysis. This method is particularly valuable due to its accuracy in forecasting and its broad acceptance within the industry. Wells in the same geographical area and producing from similar geological formations often exhibit similar decline curve parameters. This study applies DCA to forecast the future production performance and estimate the ultimate recovery for the Semutang gas field's well 5 in Bangladesh. Using historical production data, decline curves were generated based on exponential, hyperbolic, and harmonic model equations. The cumulative production estimations were 11,139.34 MMSCF for the exponential model, 11,620.26 MMSCF for the hyperbolic model, and 14,021.92 MMSCF for the harmonic model. In terms of the well's productive life, the estimates were 335.13 days, 1,152 days, and 22,611 days, respectively. Among these models, the hyperbolic decline provided the most realistic forecast, closely aligning with observed production trend. The study highlights the importance of selecting an appropriate decline model for accurate production forecasting and reserve estimation, which is essential for effective reservoir management and resource optimization.
-]]></content:encoded>
-<pubDate>Tue, 20 May 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Seismic analysis based on a new interval method with incomplete information</title>
-<link>https://arxiv.org/abs/2505.12607</link>
-<guid>https://arxiv.org/abs/2505.12607</guid>
-<content:encoded><![CDATA[
-<div> Keywords: seismic analysis, interval uncertainty, Monte Carlo simulation, covariance matrix adaptation evolution strategy, computational efficiency <br />
-Summary: 
-This study focuses on describing time-variant uncertain seismic accelerations using the minimum interval radius-based interval process (MRIP) based on the convex model for seismic analysis in engineering structures. To enhance computational efficiency in uncertainty analysis, the paper introduces the improved covariance matrix adaptation evolution strategy (CMA-ES) called DES-ES, which exhibits higher efficiency. Additionally, a computational framework named DES-ES-SS is proposed to leverage response dependency and further enhance computational efficiency while maintaining accuracy in interval uncertainty analysis of seismic structures under stationary or non-stationary seismic acceleration conditions. Numerical experiments validate the effectiveness of DES-ES-SS in improving computational efficiency without compromising accuracy. <br /><br /> <div>
-arXiv:2505.12607v1 Announce Type: new 
-Abstract: For seismic analysis in engineering structures, it is essential to consider the dynamic responses under seismic excitation, necessitating the description of seismic accelerations. Limit seismics samples lead to incomplete uncertainty information, which is described by the non-probabilistic method reasonable. This study employs the minimum interval radius-based interval process (MRIP) based on the convex model to describe the time-variant uncertain seismic acceleration, subsequently conducting uncertainty analysis for seismic structures. However, the Monte Carlo simulation for uncertainty analysis requires extensive deterministic computations to ensure accuracy, exhibiting poor computational efficiency. To address this issue, this paper first improves the covariance matrix adaptation evolution strategy (CMA-ES) through the dynamic evolution sequence, proposing DES-ES, whose efficiency is validated to be higher than that of CMA-ES. Furthermore, leveraging the dependency of the responses, a computational framework named DES-ES-SS is proposed. Numerical experiments demonstrate that DES-ES-SS improves computational efficiency while maintaining the accuracy of the interval uncertainty analysis of the seismic structures whether the seismic acceleration is stationary or non-stationary.
-]]></content:encoded>
-<pubDate>Tue, 20 May 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Implicit differentiation with second-order derivatives and benchmarks in finite-element-based differentiable physics</title>
-<link>https://arxiv.org/abs/2505.12646</link>
-<guid>https://arxiv.org/abs/2505.12646</guid>
-<content:encoded><![CDATA[
-<div> differentiable programming, automatic differentiation, second-order derivatives, finite-element-based, PDE-constrained optimization
-
-Summary:
-This paper introduces a framework for computing second-order derivatives (Hessians) for implicit functions in finite-element-based differentiable physics. By utilizing primitive automatic differentiation tools, the authors develop an algorithm for efficiently calculating Hessian-vector products. Validation against finite difference approximations shows accurate results. Benchmark tests across various problem types demonstrate the advantages of using second-order information in optimization. The Newton-CG method with exact Hessians proves beneficial for nonlinear inverse problems like traction force identification and shape optimization, while the L-BFGS-B method is suitable for linear cases. These findings establish a solid foundation for incorporating second-order implicit differentiation into differentiable physics engines, enhancing optimization speed and reliability.<br /><br />Summary: <div>
-arXiv:2505.12646v1 Announce Type: new 
-Abstract: Differentiable programming is revolutionizing computational science by enabling automatic differentiation (AD) of numerical simulations. While first-order gradients are well-established, second-order derivatives (Hessians) for implicit functions in finite-element-based differentiable physics remain underexplored. This work bridges this gap by deriving and implementing a framework for implicit Hessian computation in PDE-constrained optimization problems. We leverage primitive AD tools (Jacobian-vector product/vector-Jacobian product) to build an algorithm for Hessian-vector products and validate the accuracy against finite difference approximations. Four benchmarks spanning linear/nonlinear, 2D/3D, and single/coupled-variable problems demonstrate the utility of second-order information. Results show that the Newton-CG method with exact Hessians accelerates convergence for nonlinear inverse problems (e.g., traction force identification, shape optimization), while the L-BFGS-B method suffices for linear cases. Our work provides a robust foundation for integrating second-order implicit differentiation into differentiable physics engines, enabling faster and more reliable optimization.
-]]></content:encoded>
-<pubDate>Tue, 20 May 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Grid Topology Estimation using an Information Theoretic Approach</title>
-<link>https://arxiv.org/abs/2505.11517</link>
-<guid>https://arxiv.org/abs/2505.11517</guid>
-<content:encoded><![CDATA[
-<div> mutual information, power grid, graph modeling, maximum spanning tree, IEEE networks
-
-Summary:
-The article introduces an information-theoretic approach to estimate the topology of a power grid by modeling it as a graph and analyzing voltage magnitude data of individual nodes. The mutual information between pairs of nodes is computed using different approximation methods, leading to the estimation of the power grid topology through a maximum spanning tree based on mutual information, generated with the Chow-Liu algorithm. The approach is successfully optimized and validated on IEEE networks created with MATPOWER and GridLAB-D data, as well as on networks from the European Union Joint Research Council. The experiments and results demonstrate the effectiveness of this method in accurately estimating power grid topologies. <br /><br />Summary: <div>
-arXiv:2505.11517v1 Announce Type: cross 
-Abstract: The topology of a power grid is estimated using an information theoretic approach. By modeling the grid as a graph and using voltage magnitude data of individual nodes in the grid, the mutual information between pairs of nodes is computed using different approximation methods. Using the well-known Chow-Liu algorithm, a maximum spanning tree based on mutual information is computed to estimate the power grid topology. Experiments and results are presented to optimize this approach with success shown for IEEE networks generated with MATPOWER and data generated using GridLAB-D. The algorithm is then cross-validated on IEEE networks generated by the European Union Joint Research Council.
-]]></content:encoded>
-<pubDate>Tue, 20 May 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>CASL-HJX: A Comprehensive Guide to Solving Deterministic and Stochastic Hamilton-Jacobi Equations</title>
-<link>https://arxiv.org/abs/2505.11527</link>
-<guid>https://arxiv.org/abs/2505.11527</guid>
-<content:encoded><![CDATA[
-<div> framework, Hamilton-Jacobi equations, numerical methods, operator splitting techniques, neuroscience<br />
-Summary:<br />
-CASL-HJX is a computational framework designed for solving deterministic and stochastic Hamilton-Jacobi equations in two spatial dimensions. It integrates numerical methods for hyperbolic PDEs with operator splitting techniques and implements implicit methods for second-order derivative terms to ensure convergence to viscosity solutions. The high-performance C++ core efficiently handles mixed-order derivative systems with time-varying dynamics, making it suitable for real-world applications. The solver's versatility is demonstrated through tutorial examples and applications in neuroscience, enabling the design of energy-efficient controllers for regulating neural populations. CASL-HJX's modular architecture allows researchers to define computational domains, configure problems, and execute simulations with high numerical accuracy. It serves as a robust tool for managing uncertainty in complex dynamical systems, bridging the gap between deterministic control methods and stochastic models. <div>
-arXiv:2505.11527v1 Announce Type: cross 
-Abstract: CASL-HJX is a computational framework designed for solving deterministic and stochastic Hamilton-Jacobi equations in two spatial dimensions. It provides a flexible and efficient approach to modeling front propagation problems, optimal control problems, and stochastic Hamilton-Jacobi Bellman equations. The framework integrates numerical methods for hyperbolic PDEs with operator splitting techniques and implements implicit methods for second-order derivative terms, ensuring convergence to viscosity solutions while achieving global rather than local optimization. Built with a high-performance C++ core, CASL-HJX efficiently handles mixed-order derivative systems with time-varying dynamics, making it suitable for real-world applications across multiple domains. We demonstrate the solver's versatility through tutorial examples covering various PDEs and through applications in neuroscience, where it enables the design of energy-efficient controllers for regulating neural populations to mitigate pathological synchrony. While our examples focus on these applications, the mathematical foundation of the solver makes it applicable to problems in finance, engineering, and machine learning. The modular architecture allows researchers to define computational domains, configure problems, and execute simulations with high numerical accuracy. CASL-HJX bridges the gap between deterministic control methods and stochastic models, providing a robust tool for managing uncertainty in complex dynamical systems.
-]]></content:encoded>
-<pubDate>Tue, 20 May 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>CLT and Edgeworth Expansion for m-out-of-n Bootstrap Estimators of The Studentized Median</title>
-<link>https://arxiv.org/abs/2505.11725</link>
-<guid>https://arxiv.org/abs/2505.11725</guid>
-<content:encoded><![CDATA[
-<div> bootstrap, quantiles, central limit theorem, moment condition, asymptotic distributions
-
-Summary:
-This paper investigates the m-out-of-n bootstrap method for estimating sample quantiles, providing parameter-free guarantees for its soundness. A central limit theorem is established for a data-driven estimator under a mild moment condition, without the need for unknown nuisance parameters. The paper presents a counter-example demonstrating the tightness of the moment assumption and derives an Edgeworth expansion for exact convergence rates, along with a Berry Esseen bound for bootstrap approximation errors. The results are illustrated through applications to practical statistics like quantiles for random walk Metropolis-Hastings and rewards of ergodic Markov decision processes, showcasing the theory's utility in modern estimation and learning tasks.<br /><br />Summary: <div>
-arXiv:2505.11725v1 Announce Type: cross 
-Abstract: The m-out-of-n bootstrap, originally proposed by Bickel, Gotze, and Zwet (1992), approximates the distribution of a statistic by repeatedly drawing m subsamples (with m much smaller than n) without replacement from an original sample of size n. It is now routinely used for robust inference with heavy-tailed data, bandwidth selection, and other large-sample applications. Despite its broad applicability across econometrics, biostatistics, and machine learning, rigorous parameter-free guarantees for the soundness of the m-out-of-n bootstrap when estimating sample quantiles have remained elusive.
-  This paper establishes such guarantees by analyzing the estimator of sample quantiles obtained from m-out-of-n resampling of a dataset of size n. We first prove a central limit theorem for a fully data-driven version of the estimator that holds under a mild moment condition and involves no unknown nuisance parameters. We then show that the moment assumption is essentially tight by constructing a counter-example in which the CLT fails. Strengthening the assumptions slightly, we derive an Edgeworth expansion that provides exact convergence rates and, as a corollary, a Berry Esseen bound on the bootstrap approximation error. Finally, we illustrate the scope of our results by deriving parameter-free asymptotic distributions for practical statistics, including the quantiles for random walk Metropolis-Hastings and the rewards of ergodic Markov decision processes, thereby demonstrating the usefulness of our theory in modern estimation and learning tasks.
-]]></content:encoded>
-<pubDate>Tue, 20 May 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>ChromFound: Towards A Universal Foundation Model for Single-Cell Chromatin Accessibility Data</title>
-<link>https://arxiv.org/abs/2505.12638</link>
-<guid>https://arxiv.org/abs/2505.12638</guid>
-<content:encoded><![CDATA[
-<div> ChromFound, scATAC-seq, single-cell, regulatory mechanisms, cell identification<br />
-Summary:<br />
-ChromFound is a foundation model designed for scATAC-seq data analysis, addressing challenges such as high dimensionality and lack of standardized OCR representation. It utilizes a hybrid architecture and genome-aware tokenization to capture genome-wide regulatory signals, trained on a large dataset for diverse tasks. The model demonstrates robust zero-shot performance, universal cell representation generation, and transferability in cell type annotation and cross-omics prediction. By identifying enhancer-gene links missed by other methods, ChromFound provides insights into disease risk variants in the noncoding genome. The model offers a promising framework for deciphering regulatory mechanisms and understanding complex chromatin landscapes in single-cell studies. <br /><br />Summary: <div>
-arXiv:2505.12638v1 Announce Type: cross 
-Abstract: The advent of single-cell Assay for Transposase-Accessible Chromatin using sequencing (scATAC-seq) offers an innovative perspective for deciphering regulatory mechanisms by assembling a vast repository of single-cell chromatin accessibility data. While foundation models have achieved significant success in single-cell transcriptomics, there is currently no foundation model for scATAC-seq that supports zero-shot high-quality cell identification and comprehensive multi-omics analysis simultaneously. Key challenges lie in the high dimensionality and sparsity of scATAC-seq data, as well as the lack of a standardized schema for representing open chromatin regions (OCRs). Here, we present \textbf{ChromFound}, a foundation model tailored for scATAC-seq. ChromFound utilizes a hybrid architecture and genome-aware tokenization to effectively capture genome-wide long contexts and regulatory signals from dynamic chromatin landscapes. Pretrained on 1.97 million cells from 30 tissues and 6 disease conditions, ChromFound demonstrates broad applicability across 6 diverse tasks. Notably, it achieves robust zero-shot performance in generating universal cell representations and exhibits excellent transferability in cell type annotation and cross-omics prediction. By uncovering enhancer-gene links undetected by existing computational methods, ChromFound offers a promising framework for understanding disease risk variants in the noncoding genome.
-]]></content:encoded>
-<pubDate>Tue, 20 May 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Generative Modeling of Random Fields from Limited Data via Constrained Latent Flow Matching</title>
-<link>https://arxiv.org/abs/2505.13007</link>
-<guid>https://arxiv.org/abs/2505.13007</guid>
-<content:encoded><![CDATA[
-<div> framework, generative modeling, random fields, latent flow matching, variational autoencoder <br />
-Summary: 
-- The article discusses a novel framework for generative modeling of random fields that incorporates domain knowledge to supplement limited data.
-- The approach uses latent flow matching to operate on compressed function representations in the latent space of a pre-trained VAE.
-- It includes a function decoder within the VAE and integrates physical/statistical constraints into the training process.
-- The framework learns a latent function representation that generates continuous random field samples satisfying domain-specific constraints, even with sparse data.
-- Two applications, wind velocity field reconstruction and material property inference, demonstrate the effectiveness of the framework in achieving improved reconstruction accuracy and inference with small training datasets. 
-<br /> <div>
-arXiv:2505.13007v1 Announce Type: cross 
-Abstract: Deep generative models are promising tools for science and engineering, but their reliance on abundant, high-quality data limits applicability. We present a novel framework for generative modeling of random fields (probability distributions over continuous functions) that incorporates domain knowledge to supplement limited, sparse, and indirect data. The foundation of the approach is latent flow matching, where generative modeling occurs on compressed function representations in the latent space of a pre-trained variational autoencoder (VAE). Innovations include the adoption of a function decoder within the VAE and integration of physical/statistical constraints into the VAE training process. In this way, a latent function representation is learned that yields continuous random field samples satisfying domain-specific constraints when decoded, even in data-limited regimes. Efficacy is demonstrated on two challenging applications: wind velocity field reconstruction from sparse sensors and material property inference from a limited number of indirect measurements. Results show that the proposed framework achieves significant improvements in reconstruction accuracy compared to unconstrained methods and enables effective inference with relatively small training datasets that is intractable without constraints.
-]]></content:encoded>
-<pubDate>Tue, 20 May 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>System reduction-based approximate reanalysis method for statically indeterminate structures with high-rank modification</title>
-<link>https://arxiv.org/abs/2302.02171</link>
-<guid>https://arxiv.org/abs/2302.02171</guid>
-<content:encoded><![CDATA[
-<div> spectral decomposition, structural reanalysis, high-rank modification, approximate static reanalysis, iterative solution <br />
-Summary: <br />
-The article proposes a novel approximate static reanalysis method for statically indeterminate structures with high-rank modification. The method involves dividing the structure into the basis system and additional components, rewriting equilibrium equations, and establishing a reduced equation system using spectral decomposition. The reduced system is solved using a pre-conditioned iterative solution algorithm to obtain approximate solutions for modified structures. The method shows excellent computational performance for structures with homogeneous material and functionally graded beams. The combination of system reduction and iterative solution technology proves to be an effective approach for developing high-performance reanalysis methods. <div>
-arXiv:2302.02171v2 Announce Type: replace 
-Abstract: Efficient structural reanalysis for high-rank modification plays an important role in engineering computations which require repeated evaluations of structural responses, such as structural optimization and probabilistic analysis. To improve the efficiency of engineering computations, a novel approximate static reanalysis method based on system reduction and iterative solution is proposed for statically indeterminate structures with high-rank modification. In this approach, a statically indeterminate structure is divided into the basis system and the additional components. Subsequently, the structural equilibrium equations are rewritten as the equation system with the stiffness matrix of the basis system and the pseudo forces derived from the additional elements. With the introduction of spectral decomposition, a reduced equation system with the element forces of the additional elements as the unknowns is established. Then, the approximate solutions of the modified structure can be obtained by solving the reduced equation system through a pre-conditioned iterative solution algorithm. The computational costs of the proposed method and the other two reanalysis methods are compared and numerical examples including static reanalysis and static nonlinear analysis are presented. The results demonstrate that the proposed method has excellent computational performance for both the structures with homogeneous material and structures composed of functionally graded beams. Meanwhile, the superiority of the proposed method indicates that the combination of system reduction and pre-conditioned iterative solution technology is an effective way to develop high-performance reanalysis methods.
-]]></content:encoded>
-<pubDate>Tue, 20 May 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>CSP-free adaptive Kriging surrogate model method for reliability analysis with small failure probability</title>
-<link>https://arxiv.org/abs/2304.07010</link>
-<guid>https://arxiv.org/abs/2304.07010</guid>
-<content:encoded><![CDATA[
-<div> Active learning reliability method, Kriging, Monte Carlo Simulation, Candidate Sample Pool, Particle Swarm Optimization
-
-Summary:
-The paper introduces a new method, CSP-free AK-MCS, to enhance reliability analysis in engineering. The method eliminates the reliance on Candidate Sample Pool (CSP) size, especially for systems with low failure probabilities. It consists of two stages: constructing a surrogate model and using Monte Carlo simulation. Surrogate model refinement is done iteratively with representative samples selected through Particle Swarm Optimization (PSO) algorithm. Adjustments like penalty intensity control and density control optimize the objective function, balancing accuracy and efficiency. Numerical examples prove the effectiveness of CSP-free AK-MCS in handling small failure probabilities, showing improved performance compared to conventional methods. This innovative approach overcomes limitations and provides exceptional results for reliability analysis. 
-
-<br /><br />Summary: <div>
-arXiv:2304.07010v5 Announce Type: replace 
-Abstract: In the field of reliability engineering, the Active learning reliability method combining Kriging and Monte Carlo Simulation (AK-MCS) has been developed and demonstrated to be effective in reliability analysis. However, the performance of AK-MCS is sensitive to the size of Candidate Sample Pool (CSP), particularly for systems with small failure probabilities. To address the limitations of conventional AK-MCS that relies on CSP, this paper proposes a CSP-free AK-MCS. The proposed methodology consists of two stages: surrogate model construction and Monte Carlo simulation for estimating the failure probability. In the stage of surrogate model construction, the surrogate model is iteratively refined based on the representative samples selected by solving the optimization problem facilitated by Particle Swarm Optimization (PSO) algorithm. To achieve an optimal balance between solution accuracy and efficiency, the penalty intensity control and the density control for the experimental design points are introduced to modify the objective function in optimization. The performance of the proposed methodology is evaluated using numerical examples, and results indicate that by leveraging an optimization algorithm to select representative samples, the proposed CSP-free AK-MCS overcomes the limitations of conventional CSP-based AK-MCS and exhibits exceptional performance in addressing small failure probabilities.
-]]></content:encoded>
-<pubDate>Tue, 20 May 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>A cable finite element formulation based on exact tension field for static nonlinear analysis of cable structures</title>
-<link>https://arxiv.org/abs/2401.05609</link>
-<guid>https://arxiv.org/abs/2401.05609</guid>
-<content:encoded><![CDATA[
-<div> beam theory, cable structures, finite element model, nonlinear analysis, numerical precision <br />
-Summary: 
-This paper introduces a numerically exact finite element model for analyzing the static nonlinear behavior of cable structures. The model accurately calculates the tension field by incorporating the geometrically exact beam theory and fundamental mechanical properties of cables. Unlike previous approaches, this model prioritizes numerical precision and universal applicability, deriving linearized equations with implicit expressions that include integrals. It also considers the variation in cross-sectional stiffness along the cable's length. The formulation ensures equilibrium and compatibility within cable elements, enabling accurate computation of internal forces, deformation states, and the unstrained length of the cable. The study discusses the implementation of solutions using the complete tangent matrix and internal iterations within elements. Numerical examples validate the effectiveness of the proposed cable element. <div>
-arXiv:2401.05609v5 Announce Type: replace 
-Abstract: This paper presents a numerically exact cable finite element model for static nonlinear analysis of cable structures. The model derives the exact expression of the tension field using the geometrically exact beam theory coupled with the fundamental mechanical characteristics of cables. The equations for the cable element are formulated by addressing the equilibrium conditions at the element boundaries and ensuring compatibility within the element. Unlike previous studies that typically provide explicit expressions for cable models, this study develops a formulation that emphasizes numerical precision and broad applicability. It achieves this by deriving linearized equations with implicit expressions incorporating integrals. The proposed model accurately computes internal forces and deformation states, and determines the unstrained length of the cable. Additionally, it accounts for the variability in cross-sectional stiffness along the cable's length. The paper discusses solution implementations using the complete tangent matrix and element internal iterations. The effectiveness of the proposed cable element is demonstrated through numerical examples.
-]]></content:encoded>
-<pubDate>Tue, 20 May 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Enforced Interface Constraints for Domain Decomposition Method of Discrete Physics-Informed Neural Networks</title>
-<link>https://arxiv.org/abs/2505.10925</link>
-<guid>https://arxiv.org/abs/2505.10925</guid>
-<content:encoded><![CDATA[
-<div> Discrete Physics-Informed Neural Network, Domain Decomposition Method, Gaussian quadrature, Interface constraints, Computational efficiency<br />
-<br />
-Summary:
-The study introduces a discrete physics-informed neural network (dPINN) framework with enforced interface constraints (EIC) for modeling physical systems using the domain decomposition method (DDM). The dPINN accurately calculates system energy through element-wise integration using Gaussian quadrature. The EIC enforces interfacial displacement constraints to ensure physical field continuity without auxiliary sampling or loss penalties, supporting independent meshing in each subdomain. By eliminating weak spatial constraints (WSC), the EIC-dPINN provides more stable and physically consistent predictions. Extensive numerical experiments in two and three dimensions confirm the framework's accuracy and showcase computational efficiency gains through parallel training. The results illustrate the framework's scalability, robustness, and potential for solving large-scale, geometrically complex problems.<br /><br />Summary: <div>
-arXiv:2505.10925v1 Announce Type: new 
-Abstract: This study presents a discrete physics-informed neural network (dPINN) framework, enhanced with enforced interface constraints (EIC), for modeling physical systems using the domain decomposition method (DDM). Built upon finite element-style mesh discretization, the dPINN accurately evaluates system energy through Gaussian quadrature-based element-wise integration. To ensure physical field continuity across subdomain interfaces, the EIC mechanism enforces interfacial displacement constraints without requiring auxiliary sampling or loss penalties.This formulation supports independent meshing in each subdomain, simplifying preprocessing and improving computational flexibility. Additionally, by eliminating the influence of weak spatial constraints (WSC) commonly observed in traditional PINNs, the EIC-dPINN delivers more stable and physically consistent predictions.Extensive two- and three-dimensional numerical experiments validate the proposed framework's accuracy and demonstrate the computational efficiency gains achieved through parallel training. The results highlight the framework's scalability, robustness, and potential for solving large-scale, geometrically complex problems.
-]]></content:encoded>
-<pubDate>Mon, 19 May 2025 00:00:00 -0400</pubDate>
 </item>
 </channel>
 </rss>
