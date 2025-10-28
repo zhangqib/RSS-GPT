@@ -4,21 +4,20 @@
 <title>cs.AI updates on arXiv.org</title>
 <link>http://rss.arxiv.org/rss/cs.AI</link>
 
+
 <item>
 <title>Steering Evaluation-Aware Language Models to Act Like They Are Deployed</title>
 <link>https://arxiv.org/abs/2510.20487</link>
 <guid>https://arxiv.org/abs/2510.20487</guid>
 <content:encoded><![CDATA[
-<div> evaluation-aware behavior, steering vector, large language models, safety evaluations, AI evaluators<br>
-<br>
+<div> evaluation-aware behavior, steering vector, large language models, safety evaluations, AI evaluators<br />
+<br />
 Summary: Large language models (LLMs) can develop evaluation-aware behavior when being tested, affecting the reliability of safety evaluations. A new approach using a steering vector added to an LLM's activations can suppress this awareness and make the model behave as if it is deployed during evaluation. The study involved training an LLM to exhibit evaluation-aware behavior using a two-step process. Firstly, continued pretraining on documents with factual descriptions introduced evaluation cues, and then expert iteration trained the model to utilize Python type hints in evaluation settings. The results showed that activation steering effectively reduced evaluation awareness in the model. By steering models to act like they are deployed, AI evaluators can enhance the accuracy and trustworthiness of safety evaluations, ensuring the reliability of the model's behavior during testing scenarios. <div>
 arXiv:2510.20487v2 Announce Type: replace-cross 
 Abstract: Large language models (LLMs) can sometimes detect when they are being evaluated and adjust their behavior to appear more aligned, compromising the reliability of safety evaluations. In this paper, we show that adding a steering vector to an LLM's activations can suppress evaluation-awareness and make the model act like it is deployed during evaluation. To study our steering technique, we train an LLM to exhibit evaluation-aware behavior using a two-step training process designed to mimic how this behavior could emerge naturally. First, we perform continued pretraining on documents with factual descriptions of the model (1) using Python type hints during evaluation but not during deployment and (2) recognizing that the presence of a certain evaluation cue always means that it is being tested. Then, we train the model with expert iteration to use Python type hints in evaluation settings. The resulting model is evaluation-aware: it writes type hints in evaluation contexts more than deployment contexts. We find that activation steering can suppress evaluation awareness and make the model act like it is deployed even when the cue is present. Importantly, we constructed our steering vector using the original model before our additional training. Our results suggest that AI evaluators could improve the reliability of safety evaluations by steering models to act like they are deployed.
 ]]></content:encoded>
 <pubDate>Tue, 28 Oct 2025 00:00:00 -0400</pubDate>
-<pubDate>Tue, 28 Oct 2025 00:00:00 -0400</pubDate>
 </item>
-
 <item>
 <title>A Multi-faceted Analysis of Cognitive Abilities: Evaluating Prompt Methods with Large Language Models on the CONSORT Checklist</title>
 <link>https://arxiv.org/abs/2510.19139</link>
@@ -10842,16 +10841,6 @@ Abstract: The development of neural audio codecs (NACs) has largely promoted app
 <content:encoded><![CDATA[
 arXiv:2510.20448v1 Announce Type: cross 
 Abstract: Drug combinations offer therapeutic benefits but also carry the risk of adverse drug-drug interactions (DDIs), especially under complex molecular structures. Accurate DDI event prediction requires capturing fine-grained inter-drug relationships, which are critical for modeling metabolic mechanisms such as enzyme-mediated competition. However, existing approaches typically rely on isolated drug representations and fail to explicitly model atom-level cross-molecular interactions, limiting their effectiveness across diverse molecular complexities and DDI type distributions. To address these limitations, we propose MolBridge, a novel atom-level joint graph refinement framework for robust DDI event prediction. MolBridge constructs a joint graph that integrates atomic structures of drug pairs, enabling direct modeling of inter-drug associations. A central challenge in such joint graph settings is the potential loss of information caused by over-smoothing when modeling long-range atomic dependencies. To overcome this, we introduce a structure consistency module that iteratively refines node features while preserving the global structural context. This joint design allows MolBridge to effectively learn both local and global interaction outperforms state-of-the-art baselines, achieving superior performance across long-tail and inductive scenarios. patterns, yielding robust representations across both frequent and rare DDI types. Extensive experiments on two benchmark datasets show that MolBridge consistently. These results demonstrate the advantages of fine-grained graph refinement in improving the accuracy, robustness, and mechanistic interpretability of DDI event prediction.This work contributes to Web Mining and Content Analysis by developing graph-based methods for mining and analyzing drug-drug interaction networks.
-]]></content:encoded>
-<pubDate>Fri, 24 Oct 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Symbolic Regression and Differentiable Fits in Beyond the Standard Model Physics</title>
-<link>https://arxiv.org/abs/2510.20453</link>
-<guid>https://arxiv.org/abs/2510.20453</guid>
-<content:encoded><![CDATA[
-arXiv:2510.20453v1 Announce Type: cross 
-Abstract: We demonstrate the efficacy of symbolic regression (SR) to probe models of particle physics Beyond the Standard Model (BSM), by considering the so-called Constrained Minimal Supersymmetric Standard Model (CMSSM). Like many incarnations of BSM physics this model has a number (four) of arbitrary parameters, which determine the experimental signals, and cosmological observables such as the dark matter relic density. We show that analysis of the phenomenology can be greatly accelerated by using symbolic expressions derived for the observables in terms of the input parameters. Here we focus on the Higgs mass, the cold dark matter relic density, and the contribution to the anomalous magnetic moment of the muon. We find that SR can produce remarkably accurate expressions. Using them we make global fits to derive the posterior probability densities of the CMSSM input parameters which are in good agreement with those performed using conventional methods. Moreover, we demonstrate a major advantage of SR which is the ability to make fits using differentiable methods rather than sampling methods. We also compare the method with neural network (NN) regression. SR produces more globally robust results, while NNs require data that is focussed on the promising regions in order to be equally performant.
 ]]></content:encoded>
 <pubDate>Fri, 24 Oct 2025 00:00:00 -0400</pubDate>
 </item>
