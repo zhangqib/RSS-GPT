@@ -4,20 +4,20 @@
 <title>cs.LG updates on arXiv.org</title>
 <link>http://rss.arxiv.org/rss/cs.LG</link>
 
+
 <item>
 <title>Improving Data Efficiency for LLM Reinforcement Fine-tuning Through Difficulty-targeted Online Data Selection and Rollout Replay</title>
 <link>https://arxiv.org/abs/2506.05316</link>
 <guid>https://arxiv.org/abs/2506.05316</guid>
 <content:encoded><![CDATA[
 <div> Reinforcement Learning, Language Models, Data Efficiency, Adaptive Difficulty, Rollout Replay
-<br>
+<br />
 Summary: 
 Reinforcement learning is widely used to fine-tune large language models (LLMs) for improved reasoning skills, but it can be resource-intensive and lacks data efficiency. This paper introduces two techniques to enhance data efficiency in LLM RL fine-tuning. The first technique involves difficulty-targeted online data selection, focusing on questions of moderate difficulty to provide more informative learning signals. An attention-based framework is used for adaptive difficulty estimation, requiring rollouts for only a small set of reference questions. The second technique, rollout replay, reduces computation cost by reusing recent rollouts while maintaining stable updates. Experimental results across various LLM-dataset combinations demonstrate that the proposed method significantly reduces RL fine-tuning time (23% to 62%) while achieving comparable performance to the original GRPO algorithm. The code for this method is publicly available on GitHub. 
-<br><br>Summary: <div>
+<br /><br />Summary: <div>
 arXiv:2506.05316v3 Announce Type: replace 
 Abstract: Reinforcement learning (RL) has become an effective approach for fine-tuning large language models (LLMs), particularly to enhance their reasoning capabilities. However, RL fine-tuning remains highly resource-intensive, and existing work has largely overlooked the problem of data efficiency. In this paper, we propose two techniques to improve data efficiency in LLM RL fine-tuning: difficulty-targeted online data selection and rollout replay. We introduce the notion of adaptive difficulty to guide online data selection, prioritizing questions of moderate difficulty that are more likely to yield informative learning signals. To estimate adaptive difficulty efficiently, we develop an attention-based framework that requires rollouts for only a small reference set of questions. The adaptive difficulty of the remaining questions is then estimated based on their similarity to this set. To further reduce rollout cost, we introduce a rollout replay mechanism inspired by experience replay in traditional RL. This technique reuses recent rollouts, lowering per-step computation while maintaining stable updates. Experiments across 6 LLM-dataset combinations show that our method reduces RL fine-tuning time by 23% to 62% while reaching the same level of performance as the original GRPO algorithm. Our code is available at https://github.com/ASTRAL-Group/data-efficient-llm-rl.
 ]]></content:encoded>
-<pubDate>Wed, 29 Oct 2025 00:00:00 -0400</pubDate>
 <pubDate>Wed, 29 Oct 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -30,11 +30,10 @@ Abstract: Reinforcement learning (RL) has become an effective approach for fine-
 Summary: 
 The article introduces a novel approach, DP-LLM, for handling queries for on-device large language models with varying runtime constraints. By leveraging multi-scale quantization and mixed-precision techniques, DP-LLM dynamically assigns precision to each layer based on input values, leading to superior performance-latency trade-offs compared to prior approaches. This approach addresses the challenge of effectively configuring models to match a target precision or latency. Experimental results across multiple models and benchmarks demonstrate the effectiveness of DP-LLM in achieving optimal performance while adapting to varying runtime constraints. Overall, DP-LLM offers a promising solution for efficiently managing queries for on-device large language models. 
 
-<br><br>Summary: <div>
+<br /><br />Summary: <div>
 arXiv:2508.06041v3 Announce Type: replace 
 Abstract: How can we effectively handle queries for on-device large language models (LLMs) with varying runtime constraints, such as latency and accuracy? Multi-scale quantization addresses this challenge by enabling memory-efficient runtime model adaptation of LLMs through the overlaying of multiple model variants quantized to different bitwidths. Meanwhile, an important question still remains open-ended: how can models be properly configured to match a target precision or latency? While mixed-precision offers a promising solution, we take this further by leveraging the key observation that the sensitivity of each layer dynamically changes across decoding steps. Building on this insight, we introduce DP-LLM, a novel mechanism that dynamically assigns precision to each layer based on input values. Experimental results across multiple models and benchmarks demonstrate that DP-LLM achieves a superior performance-latency trade-off, outperforming prior approaches.
 ]]></content:encoded>
-<pubDate>Wed, 29 Oct 2025 00:00:00 -0400</pubDate>
 <pubDate>Wed, 29 Oct 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -44,7 +43,7 @@ Abstract: How can we effectively handle queries for on-device large language mod
 <content:encoded><![CDATA[
 <div> semantic content, unsupervised learning, intrinsic dimension, probability density, generalization
 
-Summary:<br>
+Summary:<br />
 - The thesis focuses on understanding how deep artificial neural networks create meaningful representations and generalize.
 - A method called Gride is introduced to estimate the intrinsic dimension of data without decimation, based on distance among data points.
 - Evolution of probability density across hidden layers in deep neural networks is studied, revealing a hierarchical generation of peaks reflecting semantic concepts.
@@ -56,20 +55,18 @@ arXiv:2510.21582v2 Announce Type: replace
 Abstract: The goal of this thesis is to improve our understanding of the internal mechanisms by which deep artificial neural networks create meaningful representations and are able to generalize. We focus on the challenge of characterizing the semantic content of the hidden representations with unsupervised learning tools, partially developed by us and described in this thesis, which allow harnessing the low-dimensional structure of the data. Chapter 2. introduces Gride, a method that allows estimating the intrinsic dimension of the data as an explicit function of the scale without performing any decimation of the data set. Our approach is based on rigorous distributional results that enable the quantification of uncertainty of the estimates. Moreover, our method is simple and computationally efficient since it relies only on the distances among nearest data points. In Chapter 3, we study the evolution of the probability density across the hidden layers in some state-of-the-art deep neural networks. We find that the initial layers generate a unimodal probability density getting rid of any structure irrelevant to classification. In subsequent layers, density peaks arise in a hierarchical fashion that mirrors the semantic hierarchy of the concepts. This process leaves a footprint in the probability density of the output layer, where the topography of the peaks allows reconstructing the semantic relationships of the categories. In Chapter 4, we study the problem of generalization in deep neural networks: adding parameters to a network that interpolates its training data will typically improve its generalization performance, at odds with the classical bias-variance trade-off. We show that wide neural networks learn redundant representations instead of overfitting to spurious correlation and that redundant neurons appear only if the network is regularized and the training error is zero.
 ]]></content:encoded>
 <pubDate>Wed, 29 Oct 2025 00:00:00 -0400</pubDate>
-<pubDate>Wed, 29 Oct 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
 <title>NeuroPilot: A Realtime Brain-Computer Interface system to enhance concentration of students in online learning</title>
 <link>https://arxiv.org/abs/2510.20958</link>
 <guid>https://arxiv.org/abs/2510.20958</guid>
 <content:encoded><![CDATA[
-<div> EEG, BCI, concentration, real-time monitoring, feedback<br>
-Summary:<br>
+<div> EEG, BCI, concentration, real-time monitoring, feedback<br />
+Summary:<br />
 The study introduces a Brain-Computer Interface (BCI) system, FocusCalm, using EEG to monitor students' concentration in online learning settings. Traditional methods like questionnaires are manual, and webcam monitoring lacks accuracy. The system collects brainwave data and uses SVMs for classification, achieving an 88.77% accuracy in distinguishing attentive and non-attentive states. Real-time feedback alerts are provided to users when inattention is detected, leading to improved concentration in a pilot study. The study highlights the importance of real-time monitoring in online learning environments and demonstrates the effectiveness of using BCI for providing feedback to enhance student focus.  <div>
 arXiv:2510.20958v2 Announce Type: replace-cross 
 Abstract: The prevalence of online learning poses a vital challenge in real-time monitoring of students' concentration. Traditional methods such as questionnaire assessments require manual intervention, and webcam-based monitoring fails to provide accurate insights about learners' mental focus as it is deceived by mere screen fixation without cognitive engagement. Existing BCI-based approaches lack real-time validation and evaluation procedures. To address these limitations, a Brain-Computer Interface (BCI) system is developed using a non-invasive Electroencephalogram (EEG) headband, FocusCalm, to record brainwave activity under attentive and non-attentive states. 20 minutes of data were collected from each of 20 participants watching a pre-recorded educational video. The data validation employed a novel intra-video questionnaire assessment. Subsequently, collected signals were segmented (sliding window), filtered (Butterworth bandpass), and cleaned (removal of high- amplitude and EOG artifacts such as eye blinks). Time, frequency, wavelet, and statistical features were extracted, followed by recursive feature elimination (RFE) with support vector machines (SVMs) to classify attention and non-attention states. The leave-one-subject-out (LOSO) cross-validation accuracy was found to be 88.77%. The system provides feedback alerts upon detection of a non-attention state and maintains focus profile logs. A pilot study was conducted to evaluate the effectiveness of real-time feedback. Five participants underwent a 10-minute session comprising a 5-minute baseline phase devoid of feedback, succeeded by a 5-minute feedback phase, during which alerts were activated if participants exhibited inattention for approximately 8 consecutive seconds. A paired t-test (t = 5.73, p = 0.007) indicated a statistically significant improvement in concentration during the feedback phase.
 ]]></content:encoded>
-<pubDate>Wed, 29 Oct 2025 00:00:00 -0400</pubDate>
 <pubDate>Wed, 29 Oct 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -85,9 +82,7 @@ arXiv:2510.20974v2 Announce Type: replace-cross
 Abstract: Reinforcement Learning (RL) from raw visual input has achieved impressive successes in recent years, yet it remains fragile to out-of-distribution variations such as changes in lighting, color, and viewpoint. Point Cloud Reinforcement Learning (PC-RL) offers a promising alternative by mitigating appearance-based brittleness, but its sensitivity to camera pose mismatches continues to undermine reliability in realistic settings. To address this challenge, we propose PCA Point Cloud (PPC), a canonicalization framework specifically tailored for downstream robotic control. PPC maps point clouds under arbitrary rigid-body transformations to a unique canonical pose, aligning observations to a consistent frame, thereby substantially decreasing viewpoint-induced inconsistencies. In our experiments, we show that PPC improves robustness to unseen camera poses across challenging robotic tasks, providing a principled alternative to domain randomization.
 ]]></content:encoded>
 <pubDate>Wed, 29 Oct 2025 00:00:00 -0400</pubDate>
-<pubDate>Wed, 29 Oct 2025 00:00:00 -0400</pubDate>
 </item>
-
 <item>
 <title>An Enhanced Dual Transformer Contrastive Network for Multimodal Sentiment Analysis</title>
 <link>https://arxiv.org/abs/2510.23617</link>
@@ -10771,76 +10766,6 @@ Distilled Decoding 2 (DD2) is introduced as a method to enhance one-step samplin
 <br /><br />Summary: <div>
 arXiv:2510.21003v1 Announce Type: new 
 Abstract: Image Auto-regressive (AR) models have emerged as a powerful paradigm of visual generative models. Despite their promising performance, they suffer from slow generation speed due to the large number of sampling steps required. Although Distilled Decoding 1 (DD1) was recently proposed to enable few-step sampling for image AR models, it still incurs significant performance degradation in the one-step setting, and relies on a pre-defined mapping that limits its flexibility. In this work, we propose a new method, Distilled Decoding 2 (DD2), to further advances the feasibility of one-step sampling for image AR models. Unlike DD1, DD2 does not without rely on a pre-defined mapping. We view the original AR model as a teacher model which provides the ground truth conditional score in the latent embedding space at each token position. Based on this, we propose a novel \emph{conditional score distillation loss} to train a one-step generator. Specifically, we train a separate network to predict the conditional score of the generated distribution and apply score distillation at every token position conditioned on previous tokens. Experimental results show that DD2 enables one-step sampling for image AR models with an minimal FID increase from 3.40 to 5.43 on ImageNet-256. Compared to the strongest baseline DD1, DD2 reduces the gap between the one-step sampling and original AR model by 67%, with up to 12.3$\times$ training speed-up simultaneously. DD2 takes a significant step toward the goal of one-step AR generation, opening up new possibilities for fast and high-quality AR modeling. Code is available at https://github.com/imagination-research/Distilled-Decoding-2.
-]]></content:encoded>
-<pubDate>Mon, 27 Oct 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Fair Representation Learning with Controllable High Confidence Guarantees via Adversarial Inference</title>
-<link>https://arxiv.org/abs/2510.21017</link>
-<guid>https://arxiv.org/abs/2510.21017</guid>
-<content:encoded><![CDATA[
-<div> fair representation learning, high-confidence guarantees, demographic disparity, downstream tasks, adversarial model
-
-Summary:
-The article introduces the concept of fair representation learning with high-confidence guarantees to address demographic disparity in downstream tasks. The goal is to ensure that unfairness towards specific demographic groups is bounded by a user-defined error threshold with controllable high probability. The Fair Representation learning with high-confidence Guarantees (FRG) framework leverages an optimized adversarial model to achieve these guarantees. Empirical evaluations on three real-world datasets show that FRG outperforms six state-of-the-art fair representation learning methods by consistently bounding unfairness across a variety of downstream models and tasks. <div>
-arXiv:2510.21017v1 Announce Type: new 
-Abstract: Representation learning is increasingly applied to generate representations that generalize well across multiple downstream tasks. Ensuring fairness guarantees in representation learning is crucial to prevent unfairness toward specific demographic groups in downstream tasks. In this work, we formally introduce the task of learning representations that achieve high-confidence fairness. We aim to guarantee that demographic disparity in every downstream prediction remains bounded by a *user-defined* error threshold $\epsilon$, with *controllable* high probability. To this end, we propose the ***F**air **R**epresentation learning with high-confidence **G**uarantees (FRG)* framework, which provides these high-confidence fairness guarantees by leveraging an optimized adversarial model. We empirically evaluate FRG on three real-world datasets, comparing its performance to six state-of-the-art fair representation learning methods. Our results demonstrate that FRG consistently bounds unfairness across a range of downstream models and tasks.
-]]></content:encoded>
-<pubDate>Mon, 27 Oct 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>More Than Memory Savings: Zeroth-Order Optimization Mitigates Forgetting in Continual Learning</title>
-<link>https://arxiv.org/abs/2510.21019</link>
-<guid>https://arxiv.org/abs/2510.21019</guid>
-<content:encoded><![CDATA[
-<div> Memory-efficient, Zeroth-order optimization, Continual learning, Plasticity, Stability<br />
-<br />
-Summary:<br />
-Zeroth-order (ZO) optimization is explored as a memory-efficient alternative to first-order (FO) methods for continual learning (CL). ZO optimization results in flatter loss landscapes, reducing forgetting in CL but at the expense of plasticity. It is less effective than FO in acquiring task-specific knowledge due to imprecise gradient estimates and slower convergence. ZO optimization enhances stability but undermines plasticity, particularly with learnable classifiers. A new approach, ZO-FC, applies ZO optimization to an adapter-based PEFT module with an FO-optimized classifier, striking a balance between stability and plasticity with minimal memory overhead. ZO-FC offers a practical solution for on-device CL, demonstrating effective performance in maintaining stability while being adaptable to new task-specific knowledge. <br />
-<br />Summary: <div>
-arXiv:2510.21019v1 Announce Type: new 
-Abstract: Zeroth-order (ZO) optimization has gained attention as a memory-efficient alternative to first-order (FO) methods, particularly in settings where gradient computation is expensive or even impractical. Beyond its memory efficiency, in this work, we investigate ZO optimization for continual learning (CL) as a novel approach to address the plasticity-stability-efficiency trilemma. Through theoretical analysis and empirical evidence, we show that ZO optimization naturally leads to flatter loss landscapes, which in turn reduce forgetting in CL. However, this stability comes at a cost of plasticity: due to its imprecise gradient estimates and slower convergence, ZO optimization tends to be less effective than FO in acquiring new task-specific knowledge, particularly under constrained training budgets. To better understand this trade-off, we conduct a holistic evaluation of ZO optimization applied to various existing CL methods. Our findings reveal that ZO optimization enhances stability but often undermines plasticity, particularly when used with learnable classifiers. Motivated by this insight, we propose ZO-FC, a simple but effective approach that applies ZO optimization to a single adapter-based PEFT module with FO optimized classifier. This design leverages the stability benefits of ZO while preserving the adaptability of FO updates with negligible memory overhead. Experiments demonstrate that ZO-FC achieves an effective balance between stability and plasticity, offering a practical and memory-efficient solution for on-device CL.
-]]></content:encoded>
-<pubDate>Mon, 27 Oct 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>From Information to Generative Exponent: Learning Rate Induces Phase Transitions in SGD</title>
-<link>https://arxiv.org/abs/2510.21020</link>
-<guid>https://arxiv.org/abs/2510.21020</guid>
-<content:encoded><![CDATA[
-<div> Keywords: feature learning dynamics, neural networks, gradient-based algorithms, sample complexity, two-timescales approach
-
-Summary:<br /><br />
-The paper explores feature learning dynamics in neural networks by studying gradient-based learning of Gaussian single-index models. It focuses on the relationship between learning rates and sample complexity in various algorithms. The sample complexity of online SGD is determined by the information exponent of the link function, but recent works have shown improvements by using multiple gradient steps with different learning rates. There is a transition from an "information exponent regime" with small learning rates to a "generative exponent regime" with large learning rates. The study introduces a new layer-wise training algorithm that uses a two-timescales approach with different learning rates for each layer. The theoretical analysis emphasizes the importance of the choice of learning rate in achieving statistical and computational efficiency in neural network training. <div>
-arXiv:2510.21020v1 Announce Type: new 
-Abstract: To understand feature learning dynamics in neural networks, recent theoretical works have focused on gradient-based learning of Gaussian single-index models, where the label is a nonlinear function of a latent one-dimensional projection of the input. While the sample complexity of online SGD is determined by the information exponent of the link function, recent works improved this by performing multiple gradient steps on the same sample with different learning rates -- yielding a non-correlational update rule -- and instead are limited by the (potentially much smaller) generative exponent. However, this picture is only valid when these learning rates are sufficiently large. In this paper, we characterize the relationship between learning rate(s) and sample complexity for a broad class of gradient-based algorithms that encapsulates both correlational and non-correlational updates. We demonstrate that, in certain cases, there is a phase transition from an "information exponent regime" with small learning rate to a "generative exponent regime" with large learning rate. Our framework covers prior analyses of one-pass SGD and SGD with batch reuse, while also introducing a new layer-wise training algorithm that leverages a two-timescales approach (via different learning rates for each layer) to go beyond correlational queries without reusing samples or modifying the loss from squared error. Our theoretical study demonstrates that the choice of learning rate is as important as the design of the algorithm in achieving statistical and computational efficiency.
-]]></content:encoded>
-<pubDate>Mon, 27 Oct 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>CIPHER: Scalable Time Series Analysis for Physical Sciences with Application to Solar Wind Phenomena</title>
-<link>https://arxiv.org/abs/2510.21022</link>
-<guid>https://arxiv.org/abs/2510.21022</guid>
-<content:encoded><![CDATA[
-<div> iSAX, compression, indexing, clustering, human evaluation
-Summary:
-The article introduces the CIPHER framework, which aims to accelerate the labeling of complex time series in physics by integrating iSAX for compression and indexing, HDBSCAN for clustering, and human evaluation for expert validation. The framework utilizes representative samples labeled by domain scientists, whose annotations are propagated across clusters to create systematic classifications. CIPHER is evaluated on classifying solar wind phenomena in OMNI data, successfully identifying phenomena such as coronal mass ejections and stream interaction regions. The framework offers a general strategy for addressing label scarcity in time series across the physical sciences by combining symbolic representations, unsupervised learning, and expert knowledge. The code and configuration files used in the study are publicly available for reproducibility.<br /><br />Summary: <div>
-arXiv:2510.21022v1 Announce Type: new 
-Abstract: Labeling or classifying time series is a persistent challenge in the physical sciences, where expert annotations are scarce, costly, and often inconsistent. Yet robust labeling is essential to enable machine learning models for understanding, prediction, and forecasting. We present the \textit{Clustering and Indexation Pipeline with Human Evaluation for Recognition} (CIPHER), a framework designed to accelerate large-scale labeling of complex time series in physics. CIPHER integrates \textit{indexable Symbolic Aggregate approXimation} (iSAX) for interpretable compression and indexing, density-based clustering (HDBSCAN) to group recurring phenomena, and a human-in-the-loop step for efficient expert validation. Representative samples are labeled by domain scientists, and these annotations are propagated across clusters to yield systematic, scalable classifications. We evaluate CIPHER on the task of classifying solar wind phenomena in OMNI data, a central challenge in space weather research, showing that the framework recovers meaningful phenomena such as coronal mass ejections and stream interaction regions. Beyond this case study, CIPHER highlights a general strategy for combining symbolic representations, unsupervised learning, and expert knowledge to address label scarcity in time series across the physical sciences. The code and configuration files used in this study are publicly available to support reproducibility.
-]]></content:encoded>
-<pubDate>Mon, 27 Oct 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Physically consistent and uncertainty-aware learning of spatiotemporal dynamics</title>
-<link>https://arxiv.org/abs/2510.21023</link>
-<guid>https://arxiv.org/abs/2510.21023</guid>
-<content:encoded><![CDATA[
-<div> Neural Operator, Spatiotemporal Forecasting, Physics Consistent, Uncertainty Quantification, Diffusion Model <br />
-<br />
-Summary: 
-The article introduces a novel approach, the physics-consistent neural operator (PCNO), to improve long-term spatiotemporal forecasting by enforcing physical constraints and quantifying uncertainties in predictions. The PCNO method effectively incorporates mass and momentum conservation laws through a physics-consistent projection layer, enhancing the accuracy and reliability of forecasts. Additionally, a diffusion model-enhanced PCNO (DiffPCNO) is proposed to further improve predictions by leveraging a consistency model to mitigate uncertainties. The framework demonstrates high-fidelity forecasting across various systems and spatial resolutions, from turbulent flow modeling to real-world flood and atmospheric forecasting. By combining deterministic predictions with uncertainty-aware models, PCNO and DiffPCNO offer a robust and versatile approach for accurate spatiotemporal forecasting that maintains physical consistency and uncertainty quantification. <div>
-arXiv:2510.21023v1 Announce Type: new 
-Abstract: Accurate long-term forecasting of spatiotemporal dynamics remains a fundamental challenge across scientific and engineering domains. Existing machine learning methods often neglect governing physical laws and fail to quantify inherent uncertainties in spatiotemporal predictions. To address these challenges, we introduce a physics-consistent neural operator (PCNO) that enforces physical constraints by projecting surrogate model outputs onto function spaces satisfying predefined laws. A physics-consistent projection layer within PCNO efficiently computes mass and momentum conservation in Fourier space. Building upon deterministic predictions, we further propose a diffusion model-enhanced PCNO (DiffPCNO), which leverages a consistency model to quantify and mitigate uncertainties, thereby improving the accuracy and reliability of forecasts. PCNO and DiffPCNO achieve high-fidelity spatiotemporal predictions while preserving physical consistency and uncertainty across diverse systems and spatial resolutions, ranging from turbulent flow modeling to real-world flood/atmospheric forecasting. Our two-stage framework provides a robust and versatile approach for accurate, physically grounded, and uncertainty-aware spatiotemporal forecasting.
 ]]></content:encoded>
 <pubDate>Mon, 27 Oct 2025 00:00:00 -0400</pubDate>
 </item>

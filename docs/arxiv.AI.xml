@@ -4,6 +4,7 @@
 <title>cs.AI updates on arXiv.org</title>
 <link>http://rss.arxiv.org/rss/cs.AI</link>
 
+
 <item>
 <title>Improving Data Efficiency for LLM Reinforcement Fine-tuning Through Difficulty-targeted Online Data Selection and Rollout Replay</title>
 <link>https://arxiv.org/abs/2506.05316</link>
@@ -12,11 +13,10 @@
 <div> adaptive difficulty, online data selection, rollout replay, data efficiency, reinforcement learning
 
 Summary:
-The paper introduces two techniques to improve data efficiency in reinforcement learning fine-tuning of large language models (LLMs). The first technique is difficulty-targeted online data selection, which prioritizes questions of moderate difficulty to yield informative learning signals. An attention-based framework efficiently estimates adaptive difficulty by using a small reference set of questions. The second technique is rollout replay, inspired by experience replay in traditional RL, which reuses recent rollouts to reduce computation while maintaining stable updates. Experimental results across six LLM-dataset combinations show that the proposed method reduces fine-tuning time by 23% to 62% while achieving the same level of performance as the original GRPO algorithm. The code for the method is available on GitHub. <br><br>Summary: <div>
+The paper introduces two techniques to improve data efficiency in reinforcement learning fine-tuning of large language models (LLMs). The first technique is difficulty-targeted online data selection, which prioritizes questions of moderate difficulty to yield informative learning signals. An attention-based framework efficiently estimates adaptive difficulty by using a small reference set of questions. The second technique is rollout replay, inspired by experience replay in traditional RL, which reuses recent rollouts to reduce computation while maintaining stable updates. Experimental results across six LLM-dataset combinations show that the proposed method reduces fine-tuning time by 23% to 62% while achieving the same level of performance as the original GRPO algorithm. The code for the method is available on GitHub. <br /><br />Summary: <div>
 arXiv:2506.05316v3 Announce Type: replace-cross 
 Abstract: Reinforcement learning (RL) has become an effective approach for fine-tuning large language models (LLMs), particularly to enhance their reasoning capabilities. However, RL fine-tuning remains highly resource-intensive, and existing work has largely overlooked the problem of data efficiency. In this paper, we propose two techniques to improve data efficiency in LLM RL fine-tuning: difficulty-targeted online data selection and rollout replay. We introduce the notion of adaptive difficulty to guide online data selection, prioritizing questions of moderate difficulty that are more likely to yield informative learning signals. To estimate adaptive difficulty efficiently, we develop an attention-based framework that requires rollouts for only a small reference set of questions. The adaptive difficulty of the remaining questions is then estimated based on their similarity to this set. To further reduce rollout cost, we introduce a rollout replay mechanism inspired by experience replay in traditional RL. This technique reuses recent rollouts, lowering per-step computation while maintaining stable updates. Experiments across 6 LLM-dataset combinations show that our method reduces RL fine-tuning time by 23% to 62% while reaching the same level of performance as the original GRPO algorithm. Our code is available at https://github.com/ASTRAL-Group/data-efficient-llm-rl.
 ]]></content:encoded>
-<pubDate>Wed, 29 Oct 2025 00:00:00 -0400</pubDate>
 <pubDate>Wed, 29 Oct 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -26,13 +26,12 @@ Abstract: Reinforcement learning (RL) has become an effective approach for fine-
 <content:encoded><![CDATA[
 <div> dynamic precision, large language models, runtime constraints, mixed-precision, memory-efficient
 
-Summary:<br>
+Summary:<br />
 The article proposes a novel approach called DP-LLM for handling queries for on-device large language models with varying runtime constraints. The approach leverages multi-scale quantization and dynamically assigns precision to each layer based on input values. This allows for memory-efficient runtime model adaptation and superior performance-latency trade-off compared to prior approaches. The sensitivity of each layer dynamically changes across decoding steps, leading to optimized precision assignments. Experimental results across multiple models and benchmarks demonstrate the effectiveness of DP-LLM in achieving better performance while considering latency constraints. The approach outperforms previous methods and shows promising results for future research in optimizing large language models for on-device applications. 
-<br><br>Summary: <div>
+<br /><br />Summary: <div>
 arXiv:2508.06041v3 Announce Type: replace-cross 
 Abstract: How can we effectively handle queries for on-device large language models (LLMs) with varying runtime constraints, such as latency and accuracy? Multi-scale quantization addresses this challenge by enabling memory-efficient runtime model adaptation of LLMs through the overlaying of multiple model variants quantized to different bitwidths. Meanwhile, an important question still remains open-ended: how can models be properly configured to match a target precision or latency? While mixed-precision offers a promising solution, we take this further by leveraging the key observation that the sensitivity of each layer dynamically changes across decoding steps. Building on this insight, we introduce DP-LLM, a novel mechanism that dynamically assigns precision to each layer based on input values. Experimental results across multiple models and benchmarks demonstrate that DP-LLM achieves a superior performance-latency trade-off, outperforming prior approaches.
 ]]></content:encoded>
-<pubDate>Wed, 29 Oct 2025 00:00:00 -0400</pubDate>
 <pubDate>Wed, 29 Oct 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -42,12 +41,11 @@ Abstract: How can we effectively handle queries for on-device large language mod
 <content:encoded><![CDATA[
 <div> Keywords: text classification, language models, log probabilities, AdaDetectGPT, statistical guarantees
 
-Summary:<br>
+Summary:<br />
 The study focuses on differentiating human-authored text from text generated by large language models (LLMs). Existing detectors rely on log probabilities from LLMs, but this approach may not be optimal. In response, the novel classifier AdaDetectGPT adapts by learning a witness function from training data to improve detector performance. The classifier offers statistical guarantees on its true positive rate, false positive rate, true negative rate, and false negative rate. Numerical studies demonstrate that AdaDetectGPT consistently enhances the state-of-the-art method across various datasets and LLMs, with improvements of up to 37%. A Python implementation of AdaDetectGPT is available on GitHub for further exploration and implementation. <div>
 arXiv:2510.01268v3 Announce Type: replace-cross 
 Abstract: We study the problem of determining whether a piece of text has been authored by a human or by a large language model (LLM). Existing state of the art logits-based detectors make use of statistics derived from the log-probability of the observed text evaluated using the distribution function of a given source LLM. However, relying solely on log probabilities can be sub-optimal. In response, we introduce AdaDetectGPT -- a novel classifier that adaptively learns a witness function from training data to enhance the performance of logits-based detectors. We provide statistical guarantees on its true positive rate, false positive rate, true negative rate and false negative rate. Extensive numerical studies show AdaDetectGPT nearly uniformly improves the state-of-the-art method in various combination of datasets and LLMs, and the improvement can reach up to 37\%. A python implementation of our method is available at https://github.com/Mamba413/AdaDetectGPT.
 ]]></content:encoded>
-<pubDate>Wed, 29 Oct 2025 00:00:00 -0400</pubDate>
 <pubDate>Wed, 29 Oct 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -63,9 +61,7 @@ arXiv:2510.20280v2 Announce Type: replace-cross
 Abstract: Next-token prediction (NTP) is the cornerstone of modern large language models (LLMs) pretraining, driving their unprecedented capabilities in text generation, reasoning, and instruction following. However, the token-level prediction limits the model's capacity to capture higher-level semantic structures and long-range contextual relationships. To overcome this limitation, we introduce \textbf{ContextLM}, a framework that augments standard pretraining with an inherent \textbf{next-context prediction} objective. This mechanism trains the model to learn predictive representations of multi-token contexts, leveraging error signals derived from future token chunks. Crucially, ContextLM achieves this enhancement while remaining fully compatible with the standard autoregressive, token-by-token evaluation paradigm (e.g., perplexity). Extensive experiments on the GPT2 and Pythia model families, scaled up to $1.5$B parameters, show that ContextLM delivers consistent improvements in both perplexity and downstream task performance. Our analysis indicates that next-context prediction provides a scalable and efficient pathway to stronger language modeling, yielding better long-range coherence and more effective attention allocation with minimal computational overhead.
 ]]></content:encoded>
 <pubDate>Wed, 29 Oct 2025 00:00:00 -0400</pubDate>
-<pubDate>Wed, 29 Oct 2025 00:00:00 -0400</pubDate>
 </item>
-
 <item>
 <title>Game-TARS: Pretrained Foundation Models for Scalable Generalist Multimodal Game Agents</title>
 <link>https://arxiv.org/abs/2510.23691</link>
@@ -10853,46 +10849,6 @@ Abstract: As generative AI continues to evolve, Vision Language Models (VLMs) ha
 <content:encoded><![CDATA[
 arXiv:2510.21443v1 Announce Type: cross 
 Abstract: [Context and motivation] Large language models (LLMs) show notable results in natural language processing (NLP) tasks for requirements engineering (RE). However, their use is compromised by high computational cost, data sharing risks, and dependence on external services. In contrast, small language models (SLMs) offer a lightweight, locally deployable alternative. [Question/problem] It remains unclear how well SLMs perform compared to LLMs in RE tasks in terms of accuracy. [Results] Our preliminary study compares eight models, including three LLMs and five SLMs, on requirements classification tasks using the PROMISE, PROMISE Reclass, and SecReq datasets. Our results show that although LLMs achieve an average F1 score of 2% higher than SLMs, this difference is not statistically significant. SLMs almost reach LLMs performance across all datasets and even outperform them in recall on the PROMISE Reclass dataset, despite being up to 300 times smaller. We also found that dataset characteristics play a more significant role in performance than model size. [Contribution] Our study contributes with evidence that SLMs are a valid alternative to LLMs for requirements classification, offering advantages in privacy, cost, and local deployability.
-]]></content:encoded>
-<pubDate>Mon, 27 Oct 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>REMONI: An Autonomous System Integrating Wearables and Multimodal Large Language Models for Enhanced Remote Health Monitoring</title>
-<link>https://arxiv.org/abs/2510.21445</link>
-<guid>https://arxiv.org/abs/2510.21445</guid>
-<content:encoded><![CDATA[
-arXiv:2510.21445v1 Announce Type: cross 
-Abstract: With the widespread adoption of wearable devices in our daily lives, the demand and appeal for remote patient monitoring have significantly increased. Most research in this field has concentrated on collecting sensor data, visualizing it, and analyzing it to detect anomalies in specific diseases such as diabetes, heart disease and depression. However, this domain has a notable gap in the aspect of human-machine interaction. This paper proposes REMONI, an autonomous REmote health MONItoring system that integrates multimodal large language models (MLLMs), the Internet of Things (IoT), and wearable devices. The system automatically and continuously collects vital signs, accelerometer data from a special wearable (such as a smartwatch), and visual data in patient video clips collected from cameras. This data is processed by an anomaly detection module, which includes a fall detection model and algorithms to identify and alert caregivers of the patient's emergency conditions. A distinctive feature of our proposed system is the natural language processing component, developed with MLLMs capable of detecting and recognizing a patient's activity and emotion while responding to healthcare worker's inquiries. Additionally, prompt engineering is employed to integrate all patient information seamlessly. As a result, doctors and nurses can access real-time vital signs and the patient's current state and mood by interacting with an intelligent agent through a user-friendly web application. Our experiments demonstrate that our system is implementable and scalable for real-life scenarios, potentially reducing the workload of medical professionals and healthcare costs. A full-fledged prototype illustrating the functionalities of the system has been developed and being tested to demonstrate the robustness of its various capabilities.
-]]></content:encoded>
-<pubDate>Mon, 27 Oct 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>PhysWorld: From Real Videos to World Models of Deformable Objects via Physics-Aware Demonstration Synthesis</title>
-<link>https://arxiv.org/abs/2510.21447</link>
-<guid>https://arxiv.org/abs/2510.21447</guid>
-<content:encoded><![CDATA[
-arXiv:2510.21447v1 Announce Type: cross 
-Abstract: Interactive world models that simulate object dynamics are crucial for robotics, VR, and AR. However, it remains a significant challenge to learn physics-consistent dynamics models from limited real-world video data, especially for deformable objects with spatially-varying physical properties. To overcome the challenge of data scarcity, we propose PhysWorld, a novel framework that utilizes a simulator to synthesize physically plausible and diverse demonstrations to learn efficient world models. Specifically, we first construct a physics-consistent digital twin within MPM simulator via constitutive model selection and global-to-local optimization of physical properties. Subsequently, we apply part-aware perturbations to the physical properties and generate various motion patterns for the digital twin, synthesizing extensive and diverse demonstrations. Finally, using these demonstrations, we train a lightweight GNN-based world model that is embedded with physical properties. The real video can be used to further refine the physical properties. PhysWorld achieves accurate and fast future predictions for various deformable objects, and also generalizes well to novel interactions. Experiments show that PhysWorld has competitive performance while enabling inference speeds 47 times faster than the recent state-of-the-art method, i.e., PhysTwin.
-]]></content:encoded>
-<pubDate>Mon, 27 Oct 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Enhancing Social Robots through Resilient AI</title>
-<link>https://arxiv.org/abs/2510.21469</link>
-<guid>https://arxiv.org/abs/2510.21469</guid>
-<content:encoded><![CDATA[
-arXiv:2510.21469v1 Announce Type: cross 
-Abstract: As artificial intelligence continues to advance and becomes more integrated into sensitive areas like healthcare, education, and everyday life, it's crucial for these systems to be both resilient and robust. This paper shows how resilience is a fundamental characteristic of social robots, which, through it, ensure trust in the robot itself-an essential element especially when operating in contexts with elderly people, who often have low trust in these systems. Resilience is therefore the ability to operate under adverse or stressful conditions, even when degraded or weakened, while maintaining essential operational capabilities.
-]]></content:encoded>
-<pubDate>Mon, 27 Oct 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>GranViT: A Fine-Grained Vision Model With Autoregressive Perception For MLLMs</title>
-<link>https://arxiv.org/abs/2510.21501</link>
-<guid>https://arxiv.org/abs/2510.21501</guid>
-<content:encoded><![CDATA[
-arXiv:2510.21501v1 Announce Type: cross 
-Abstract: Vision encoders are indispensable for allowing impressive performance of Multi-modal Large Language Models (MLLMs) in vision language tasks such as visual question answering and reasoning. However, existing vision encoders focus on global image representations but overlook fine-grained regional analysis. They are limited in fine grained perception due to the scarcity of fine grained annotated data and the lack of a fine grained pre-training paradigm. In this paper, we propose GranViT, a novel Vision Transformer that integrates fine-grained feature extraction with semantic alignment to Large Language Models (LLMs) via region level autoregressive training. We first construct Gran-29M, a dataset comprising 2million natural and OCR images paired with over 180 million high-quality region-level annotations, to enable large scale fine grained pretraining. Consequently, we develop a pretraining-adaptation framework along with a self distillation mechanism to train fine-grained GranViT on Gran-29M. We sufficiently exploit the fine-grained annotations from Gran-29M to resort to bounding-box-to-caption regression to enhance localized visual representation of the vision encoder in the pretraining and caption-to-bounding-box regression to improve vision feature utilization and localization for LLM in the adaptation. We further incorporate a self distillation mechanism that imposes explicit localization constraints on the vision encoder to strengthen its regional reasoning capability. Extensive experiments show that GranViT surpasses existing vision encoders and attains strong transferability to varying LLMs. Remarkably, it achieves state-of-the-art results on fine-grained recognition, multimodal VQA, and OCR understanding.
 ]]></content:encoded>
 <pubDate>Mon, 27 Oct 2025 00:00:00 -0400</pubDate>
 </item>

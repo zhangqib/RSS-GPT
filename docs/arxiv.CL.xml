@@ -4,6 +4,7 @@
 <title>cs.CL updates on arXiv.org</title>
 <link>http://rss.arxiv.org/rss/cs.CL</link>
 
+
 <item>
 <title>Semantic Agreement Enables Efficient Open-Ended LLM Cascades</title>
 <link>https://arxiv.org/abs/2509.21837</link>
@@ -17,9 +18,7 @@ arXiv:2509.21837v3 Announce Type: replace
 Abstract: Cascade systems route computational requests to smaller models when possible and defer to larger models only when necessary, offering a promising approach to balance cost and quality in LLM deployment. However, they face a fundamental challenge in open-ended text generation: determining output reliability when generation quality lies on a continuous spectrum, often with multiple valid responses. To address this, we propose semantic agreement -- meaning-level consensus between ensemble outputs -- as a training-free signal for reliable deferral. We show that when diverse model outputs agree semantically, their consensus is a stronger reliability signal than token-level confidence. Evaluated from 500M to 70B-parameter models, we find that semantic cascades match or surpass target-model quality at 40% of the cost and reduce latency by up to 60%. Our method requires no model internals, works across black-box APIs, and remains robust to model updates, making it a practical baseline for real-world LLM deployment.
 ]]></content:encoded>
 <pubDate>Wed, 29 Oct 2025 00:00:00 -0400</pubDate>
-<pubDate>Wed, 29 Oct 2025 00:00:00 -0400</pubDate>
 </item>
-
 <item>
 <title>Evaluating Long-Term Memory for Long-Context Question Answering</title>
 <link>https://arxiv.org/abs/2510.23730</link>
@@ -11488,16 +11487,6 @@ Abstract: Large language models (LLMs) have demonstrated remarkable reasoning ca
 <content:encoded><![CDATA[
 arXiv:2505.19591v2 Announce Type: replace 
 Abstract: Large language models (LLMs) have achieved remarkable results across diverse downstream tasks, but their monolithic nature restricts scalability and efficiency in complex problem-solving. While recent research explores multi-agent collaboration among LLMs, most approaches rely on static organizational structures that struggle to adapt as task complexity and agent numbers grow, resulting in coordination overhead and inefficiencies. To this end, we propose a puppeteer-style paradigm for LLM-based multi-agent collaboration, where a centralized orchestrator ("puppeteer") dynamically directs agents ("puppets") in response to evolving task states. This orchestrator is trained via reinforcement learning to adaptively sequence and prioritize agents, enabling flexible and evolvable collective reasoning. Experiments on closed- and open-domain scenarios show that this method achieves superior performance with reduced computational costs. Analyses further reveal that the key improvements consistently stem from the emergence of more compact, cyclic reasoning structures under the orchestrator's evolution. Our code is available at https://github.com/OpenBMB/ChatDev/tree/puppeteer.
-]]></content:encoded>
-<pubDate>Wed, 22 Oct 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Explaining Large Language Models with gSMILE</title>
-<link>https://arxiv.org/abs/2505.21657</link>
-<guid>https://arxiv.org/abs/2505.21657</guid>
-<content:encoded><![CDATA[
-arXiv:2505.21657v5 Announce Type: replace 
-Abstract: Large Language Models (LLMs) such as GPT, LLaMA, and Claude achieve remarkable performance in text generation but remain opaque in their decision-making processes, limiting trust and accountability in high-stakes applications. We present gSMILE (generative SMILE), a model-agnostic, perturbation-based framework for token-level interpretability in LLMs. Extending the SMILE methodology, gSMILE uses controlled prompt perturbations, Wasserstein distance metrics, and weighted linear surrogates to identify input tokens with the most significant impact on the output. This process enables the generation of intuitive heatmaps that visually highlight influential tokens and reasoning paths. We evaluate gSMILE across leading LLMs (OpenAI's gpt-3.5-turbo-instruct, Meta's LLaMA 3.1 Instruct Turbo, and Anthropic's Claude 2.1) using attribution fidelity, attribution consistency, attribution stability, attribution faithfulness, and attribution accuracy as metrics. Results show that gSMILE delivers reliable human-aligned attributions, with Claude 2.1 excelling in attention fidelity and GPT-3.5 achieving the highest output consistency. These findings demonstrate gSMILE's ability to balance model performance and interpretability, enabling more transparent and trustworthy AI systems.
 ]]></content:encoded>
 <pubDate>Wed, 22 Oct 2025 00:00:00 -0400</pubDate>
 </item>

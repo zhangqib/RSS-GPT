@@ -4,21 +4,20 @@
 <title>cs.CV updates on arXiv.org</title>
 <link>http://rss.arxiv.org/rss/cs.CV</link>
 
+
 <item>
 <title>DWaste: Greener AI for Waste Sorting using Mobile and Edge Devices</title>
 <link>https://arxiv.org/abs/2510.18513</link>
 <guid>https://arxiv.org/abs/2510.18513</guid>
 <content:encoded><![CDATA[
-<div> EfficientNetV2S, ResNet50/101, MobileNet, YOLOv8n, YOLOv11n <br>
-Summary: <br>
+<div> EfficientNetV2S, ResNet50/101, MobileNet, YOLOv8n, YOLOv11n <br />
+Summary: <br />
 The article discusses the development of a computer vision platform, DWaste, for real-time waste sorting on smartphones and edge devices. Various image classification and object detection models were benchmarked using an annotated dataset for recycling. EfficientNetV2S showed high accuracy but had high latency and carbon emissions. Lightweight object detection models demonstrated strong performance with fast inference and small model sizes, making them ideal for low-power use. Model quantization further improved efficiency by reducing model size and VRAM usage. The implementation of "Greener AI" models successfully supports sustainable waste sorting on edge devices. <div>
 arXiv:2510.18513v2 Announce Type: replace 
 Abstract: The rise of convenience packaging has led to generation of enormous waste, making efficient waste sorting crucial for sustainable waste management. To address this, we developed DWaste, a computer vision-powered platform designed for real-time waste sorting on resource-constrained smartphones and edge devices, including offline functionality. We benchmarked various image classification models (EfficientNetV2S/M, ResNet50/101, MobileNet) and object detection (YOLOv8n, YOLOv11n) including our purposed YOLOv8n-CBAM model using our annotated dataset designed for recycling. We found a clear trade-off between accuracy and resource consumption: the best classifier, EfficientNetV2S, achieved high accuracy(~ 96%) but suffered from high latency (~ 0.22s) and elevated carbon emissions. In contrast, lightweight object detection models delivered strong performance (up to 80% mAP) with ultra-fast inference (~ 0.03s) and significantly smaller model sizes (< 7MB ), making them ideal for real-time, low-power use. Model quantization further maximized efficiency, substantially reducing model size and VRAM usage by up to 75%. Our work demonstrates the successful implementation of "Greener AI" models to support real-time, sustainable waste sorting on edge devices.
 ]]></content:encoded>
 <pubDate>Wed, 29 Oct 2025 00:00:00 -0400</pubDate>
-<pubDate>Wed, 29 Oct 2025 00:00:00 -0400</pubDate>
 </item>
-
 <item>
 <title>Explainable Detection of AI-Generated Images with Artifact Localization Using Faster-Than-Lies and Vision-Language Models for Edge Devices</title>
 <link>https://arxiv.org/abs/2510.23775</link>
@@ -11229,16 +11228,6 @@ Abstract: Multimodal models have demonstrated powerful capabilities in complex t
 <content:encoded><![CDATA[
 arXiv:2506.16962v2 Announce Type: replace 
 Abstract: Multimodal large language models (MLLMs) have begun to demonstrate robust reasoning capabilities on general tasks, yet their application in the medical domain remains in its early stages. Constructing chain-of-thought (CoT) training data is essential for bolstering the reasoning abilities of medical MLLMs. However, existing approaches exhibit a deficiency in offering a comprehensive framework for searching and evaluating effective reasoning paths towards critical diagnosis. To address this challenge, we propose Mentor-Intern Collaborative Search (MICS), a novel reasoning-path searching scheme to generate rigorous and effective medical CoT data. MICS first leverages mentor models to initialize the reasoning, one step at a time, then prompts each intern model to continue the thinking along those initiated paths, and finally selects the optimal reasoning path according to the overall reasoning performance of multiple intern models. The reasoning performance is determined by an MICS-Score, which assesses the quality of generated reasoning paths. Eventually, we construct MMRP, a multi-task medical reasoning dataset with ranked difficulty, and Chiron-o1, a new medical MLLM devised via a curriculum learning strategy, with robust visual question-answering and generalizable reasoning capabilities. Extensive experiments demonstrate that Chiron-o1, trained on our CoT dataset constructed using MICS, achieves state-of-the-art performance across a list of medical visual question answering and reasoning benchmarks. Codes are available at https://github.com/manglu097/Chiron-o1
-]]></content:encoded>
-<pubDate>Thu, 23 Oct 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Towards foundational LiDAR world models with efficient latent flow matching</title>
-<link>https://arxiv.org/abs/2506.23434</link>
-<guid>https://arxiv.org/abs/2506.23434</guid>
-<content:encoded><![CDATA[
-arXiv:2506.23434v2 Announce Type: replace 
-Abstract: LiDAR-based world models offer more structured and geometry-aware representations than their image-based counterparts. However, existing LiDAR world models are narrowly trained; each model excels only in the domain for which it was built. Can we develop LiDAR world models that exhibit strong transferability across multiple domains? We conduct the first systematic domain transfer study across three demanding scenarios: (i) outdoor to indoor generalization, (ii) sparse-beam & dense-beam adaptation, and (iii) non-semantic to semantic transfer. Given different amounts of fine-tuning data, our experiments show that a single pre-trained model can achieve up to 11% absolute improvement (83% relative) over training from scratch and outperforms training from scratch in 30/36 of our comparisons. This transferability of dynamic learning significantly reduces the reliance on manually annotated data for semantic occupancy forecasting: our method exceed the previous semantic occupancy forecasting models with only 5% of the labeled training data required by prior models. We also observed inefficiencies of current LiDAR world models, mainly through their under-compression of LiDAR data and inefficient training objectives. To address this, we propose a latent conditional flow matching (CFM)-based frameworks that achieves state-of-the-art reconstruction accuracy using only half the training data and a compression ratio 6 times higher than that of prior methods. Our model achieves SOTA performance on future-trajectory-conditioned semantic occupancy forecasting while being 23x more computationally efficient (a 28x FPS speedup); and achieves SOTA performance on semantic occupancy forecasting while being 2x more computationally efficient (a 1.1x FPS speedup).
 ]]></content:encoded>
 <pubDate>Thu, 23 Oct 2025 00:00:00 -0400</pubDate>
 </item>
