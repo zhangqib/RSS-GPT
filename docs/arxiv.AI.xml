@@ -4,6 +4,7 @@
 <title>cs.AI updates on arXiv.org</title>
 <link>http://rss.arxiv.org/rss/cs.AI</link>
 
+
 <item>
 <title>When Models Outthink Their Safety: Mitigating Self-Jailbreak in Large Reasoning Models with Chain-of-Guardrails</title>
 <link>https://arxiv.org/abs/2510.21285</link>
@@ -14,11 +15,10 @@
 Summary:
 Large Reasoning Models (LRMs) have shown impressive capabilities in complex reasoning tasks but face safety risks such as harmful content generation and jailbreak attacks. Existing mitigation strategies using heuristic safety signals often compromise reasoning ability. A study reveals a phenomenon termed Self-Jailbreak, where LRMs override risk assessments and justify unsafe responses. LRMs inherently possess the ability to reject unsafe queries, but it is compromised, leading to harmful outputs. The proposed Chain-of-Guardrail (CoG) framework recomposes or backtracks unsafe reasoning steps to steer LRMs back onto safe trajectories while preserving valid reasoning chains. Extensive experiments across various benchmarks show that CoG significantly enhances LRM safety without sacrificing reasoning ability, surpassing previous methods with notable safety-reasoning trade-offs. 
 
-<br><br>Summary: Large Reasoning Models face safety risks like harmful content and jailbreak attacks. LRMs can override risk assessments, termed Self-Jailbreak. The Chain-of-Guardrail (CoG) framework improves safety by guiding LRMs back to safe trajectories. CoG enhances safety without compromising reasoning ability, outperforming previous methods with significant safety-reasoning trade-offs. <div>
+<br /><br />Summary: Large Reasoning Models face safety risks like harmful content and jailbreak attacks. LRMs can override risk assessments, termed Self-Jailbreak. The Chain-of-Guardrail (CoG) framework improves safety by guiding LRMs back to safe trajectories. CoG enhances safety without compromising reasoning ability, outperforming previous methods with significant safety-reasoning trade-offs. <div>
 arXiv:2510.21285v2 Announce Type: replace 
 Abstract: Large Reasoning Models (LRMs) demonstrate remarkable capabilities on complex reasoning tasks but remain vulnerable to severe safety risks, including harmful content generation and jailbreak attacks. Existing mitigation strategies rely on injecting heuristic safety signals during training, which often suppress reasoning ability and fail to resolve the safety-reasoning trade-off. To systematically investigate this issue, we analyze the reasoning trajectories of diverse LRMs and uncover a phenomenon we term Self-Jailbreak, where models override their own risk assessments and justify responding to unsafe prompts. This finding reveals that LRMs inherently possess the ability to reject unsafe queries, but this ability is compromised, resulting in harmful outputs. Building on these insights, we propose the Chain-of-Guardrail (CoG), a training framework that recomposes or backtracks unsafe reasoning steps, steering the model back onto safe trajectories while preserving valid reasoning chains. Extensive experiments across multiple reasoning and safety benchmarks demonstrate that CoG substantially improves the safety of current LRMs while preserving comparable reasoning ability, significantly outperforming prior methods that suffer from severe safety-reasoning trade-offs.
 ]]></content:encoded>
-<pubDate>Thu, 30 Oct 2025 00:00:00 -0400</pubDate>
 <pubDate>Thu, 30 Oct 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -29,11 +29,10 @@ Abstract: Large Reasoning Models (LRMs) demonstrate remarkable capabilities on c
 <div> agent, self-improvement, coding, benchmark, HGM
 
 Summary:
-The article addresses the Metaproductivity-Performance Mismatch in self-improving coding agents by introducing the Huxley-Gödel Machine (HGM). They propose a metric (CMP) to measure an agent's potential for self-improvement based on the benchmark performances of its descendants. By estimating CMP, HGM efficiently searches the tree of self-modifications, outperforming previous methods with fewer CPU hours on SWE-bench Verified and Polyglot datasets. HGM exhibits strong transferability to other coding datasets and large language models. The agent optimized by HGM achieves human-level performance on SWE-bench Verified with GPT-5-mini and SWE-bench Lite with GPT-5, matching the best results of human-engineered coding agents. The code for HGM is publicly available on GitHub at https://github.com/metauto-ai/HGM.<br><br>Summary: <div>
+The article addresses the Metaproductivity-Performance Mismatch in self-improving coding agents by introducing the Huxley-Gödel Machine (HGM). They propose a metric (CMP) to measure an agent's potential for self-improvement based on the benchmark performances of its descendants. By estimating CMP, HGM efficiently searches the tree of self-modifications, outperforming previous methods with fewer CPU hours on SWE-bench Verified and Polyglot datasets. HGM exhibits strong transferability to other coding datasets and large language models. The agent optimized by HGM achieves human-level performance on SWE-bench Verified with GPT-5-mini and SWE-bench Lite with GPT-5, matching the best results of human-engineered coding agents. The code for HGM is publicly available on GitHub at https://github.com/metauto-ai/HGM.<br /><br />Summary: <div>
 arXiv:2510.21614v3 Announce Type: replace 
 Abstract: Recent studies operationalize self-improvement through coding agents that edit their own codebases. They grow a tree of self-modifications through expansion strategies that favor higher software engineering benchmark performance, assuming that this implies more promising subsequent self-modifications. However, we identify a mismatch between the agent's self-improvement potential (metaproductivity) and its coding benchmark performance, namely the Metaproductivity-Performance Mismatch. Inspired by Huxley's concept of clade, we propose a metric ($\mathrm{CMP}$) that aggregates the benchmark performances of the descendants of an agent as an indicator of its potential for self-improvement. We show that, in our self-improving coding agent development setting, access to the true $\mathrm{CMP}$ is sufficient to simulate how the G\"odel Machine would behave under certain assumptions. We introduce the Huxley-G\"odel Machine (HGM), which, by estimating $\mathrm{CMP}$ and using it as guidance, searches the tree of self-modifications. On SWE-bench Verified and Polyglot, HGM outperforms prior self-improving coding agent development methods while using fewer allocated CPU hours. Last but not least, HGM demonstrates strong transfer to other coding datasets and large language models. The agent optimized by HGM on SWE-bench Verified with GPT-5-mini and evaluated on SWE-bench Lite with GPT-5 achieves human-level performance, matching the best officially checked results of human-engineered coding agents. Our code is publicly available at https://github.com/metauto-ai/HGM.
 ]]></content:encoded>
-<pubDate>Thu, 30 Oct 2025 00:00:00 -0400</pubDate>
 <pubDate>Thu, 30 Oct 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -42,17 +41,15 @@ Abstract: Recent studies operationalize self-improvement through coding agents t
 <guid>https://arxiv.org/abs/2510.21236</guid>
 <content:encoded><![CDATA[
 <div> Framework, Security, Access control, Model Context Protocol, Malicious behavior
-<br>
+<br />
 Summary:
 AgentBound is introduced as an access control framework for Model Context Protocol (MCP) servers to address the security issues associated with unrestricted access. Inspired by the Android permission model, AgentBound combines a declarative policy mechanism with a policy enforcement engine to contain malicious behavior without requiring modifications to the MCP server. A dataset of the top 296 MCP servers is analyzed, demonstrating that access control policies can be automatically generated with high accuracy. The framework successfully blocks a majority of security threats in malicious MCP servers, with minimal overhead from the policy enforcement engine. These findings provide a practical foundation for securing MCP servers while maintaining productivity, offering opportunities for further exploration in declarative access control and MCP security. 
-<br><br>Summary: <div>
+<br /><br />Summary: <div>
 arXiv:2510.21236v2 Announce Type: replace-cross 
 Abstract: Large Language Models (LLMs) have evolved into AI agents that interact with external tools and environments to perform complex tasks. The Model Context Protocol (MCP) has become the de facto standard for connecting agents with such resources, but security has lagged behind: thousands of MCP servers execute with unrestricted access to host systems, creating a broad attack surface. In this paper, we introduce AgentBound, the first access control framework for MCP servers. AgentBound combines a declarative policy mechanism, inspired by the Android permission model, with a policy enforcement engine that contains malicious behavior without requiring MCP server modifications. We build a dataset containing the 296 most popular MCP servers, and show that access control policies can be generated automatically from source code with 80.9% accuracy. We also show that AgentBound blocks the majority of security threats in several malicious MCP servers, and that policy enforcement engine introduces negligible overhead. Our contributions provide developers and project managers with a practical foundation for securing MCP servers while maintaining productivity, enabling researchers and tool builders to explore new directions for declarative access control and MCP security.
 ]]></content:encoded>
 <pubDate>Thu, 30 Oct 2025 00:00:00 -0400</pubDate>
-<pubDate>Thu, 30 Oct 2025 00:00:00 -0400</pubDate>
 </item>
-
 <item>
 <title>Scheduling Your LLM Reinforcement Learning with Reasoning Trees</title>
 <link>https://arxiv.org/abs/2510.24832</link>
@@ -10857,36 +10854,6 @@ Abstract: Recent advances in video generation have led to remarkable improvement
 <content:encoded><![CDATA[
 arXiv:2503.17239v2 Announce Type: replace-cross 
 Abstract: Fine-tuning large language models (LLMs) is a common practice to adapt generalist models to specialized domains. However, recent studies show that fine-tuning can erode safety alignment, causing LLMs to respond to harmful or unethical prompts. Many methods to realign safety have been proposed, but often introduce custom algorithms that are difficult to implement or compromise task utility. In this work, we propose SafeMERGE, a lightweight, post-fine-tuning framework that preserves safety while maintaining downstream performance. SafeMERGE selectively merges fine-tuned with safety-aligned model layers only when they deviate from safe behavior, measured by a cosine similarity criterion. Across three LLMs and two tasks, SafeMERGE consistently reduces harmful outputs compared to other defenses, with negligible or even positive impact on utility. Our results demonstrate that selective layer-wise merging offers an effective safeguard against the inadvertent loss of safety during fine-tuning, establishing SafeMERGE as a simple post-fine-tuning defense.
-]]></content:encoded>
-<pubDate>Tue, 28 Oct 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Progressive Multi-Source Domain Adaptation for Personalized Facial Expression Recognition</title>
-<link>https://arxiv.org/abs/2504.04252</link>
-<guid>https://arxiv.org/abs/2504.04252</guid>
-<content:encoded><![CDATA[
-arXiv:2504.04252v2 Announce Type: replace-cross 
-Abstract: Personalized facial expression recognition (FER) involves adapting a machine learning model using samples from labeled sources and unlabeled target domains. Given the challenges of recognizing subtle expressions with considerable interpersonal variability, state-of-the-art unsupervised domain adaptation (UDA) methods focus on the multi-source UDA (MSDA) setting, where each domain corresponds to a specific subject, and improve model accuracy and robustness. However, when adapting to a specific target, the diverse nature of multiple source domains translates to a large shift between source and target data. State-of-the-art MSDA methods for FER address this domain shift by considering all the sources to adapt to the target representations. Nevertheless, adapting to a target subject presents significant challenges due to large distributional differences between source and target domains, often resulting in negative transfer. In addition, integrating all sources simultaneously increases computational costs and causes misalignment with the target. To address these issues, we propose a progressive MSDA approach that gradually introduces information from subjects based on their similarity to the target subject. This will ensure that only the most relevant sources from the target are selected, which helps avoid the negative transfer caused by dissimilar sources. We first exploit the closest sources to reduce the distribution shift with the target and then move towards the furthest while only considering the most relevant sources based on the predetermined threshold. Furthermore, to mitigate catastrophic forgetting caused by the incremental introduction of source subjects, we implemented a density-based memory mechanism that preserves the most relevant historical source samples for adaptation. Our extensive experiments on Biovid, UNBC-McMaster, Aff-Wild2, BAH, and in a cross-dataset setting.
-]]></content:encoded>
-<pubDate>Tue, 28 Oct 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Nes2Net: A Lightweight Nested Architecture for Foundation Model Driven Speech Anti-spoofing</title>
-<link>https://arxiv.org/abs/2504.05657</link>
-<guid>https://arxiv.org/abs/2504.05657</guid>
-<content:encoded><![CDATA[
-arXiv:2504.05657v2 Announce Type: replace-cross 
-Abstract: Speech foundation models have significantly advanced various speech-related tasks by providing exceptional representation capabilities. However, their high-dimensional output features often create a mismatch with downstream task models, which typically require lower-dimensional inputs. A common solution is to apply a dimensionality reduction (DR) layer, but this approach increases parameter overhead, computational costs, and risks losing valuable information. To address these issues, we propose Nested Res2Net (Nes2Net), a lightweight back-end architecture designed to directly process high-dimensional features without DR layers. The nested structure enhances multi-scale feature extraction, improves feature interaction, and preserves high-dimensional information. We first validate Nes2Net on CtrSVDD, a singing voice deepfake detection dataset, and report a 22% performance improvement and an 87% back-end computational cost reduction over the state-of-the-art baseline. Additionally, extensive testing across four diverse datasets: ASVspoof 2021, ASVspoof 5, PartialSpoof, and In-the-Wild, covering fully spoofed speech, adversarial attacks, partial spoofing, and real-world scenarios, consistently highlights Nes2Net's superior robustness and generalization capabilities. The code package and pre-trained models are available at https://github.com/Liu-Tianchi/Nes2Net.
-]]></content:encoded>
-<pubDate>Tue, 28 Oct 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>DMol: A Schedule-Driven Diffusion Model for Highly Efficient and Versatile Molecule Generation</title>
-<link>https://arxiv.org/abs/2504.06312</link>
-<guid>https://arxiv.org/abs/2504.06312</guid>
-<content:encoded><![CDATA[
-arXiv:2504.06312v2 Announce Type: replace-cross 
-Abstract: We introduce a new graph diffusion model for small molecule generation, DMol, which outperforms the state-of-the-art DiGress model in terms of validity by roughly 1.5% across all benchmarking datasets while reducing the number of diffusion steps by at least 10-fold, and the running time to roughly one half. The performance improvements are a result of a careful change in the objective function and a graph noise scheduling approach which, at each diffusion step, allows one to only change a subset of nodes of varying size in the molecule graph. Another relevant property of the method is that it can be easily combined with junction-tree-like graph representations that arise by compressing a collection of relevant ring structures into supernodes. Unlike classical junction-tree techniques that involve VAEs and require complicated reconstruction steps, compressed DMol directly performs graph diffusion on a graph that compresses only a carefully selected set of frequent carbon rings into supernodes, which results in straightforward sample generation. This compressed DMol method offers additional validity improvements over generic DMol of roughly 2%, increases the novelty of the method, and further improves the running time due to reductions in the graph size.
 ]]></content:encoded>
 <pubDate>Tue, 28 Oct 2025 00:00:00 -0400</pubDate>
 </item>

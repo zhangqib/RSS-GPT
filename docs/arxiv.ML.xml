@@ -4,6 +4,7 @@
 <title>cs.LG updates on arXiv.org</title>
 <link>http://rss.arxiv.org/rss/cs.LG</link>
 
+
 <item>
 <title>Path-specific effects for pulse-oximetry guided decisions in critical care</title>
 <link>https://arxiv.org/abs/2506.12371</link>
@@ -12,11 +13,10 @@
 <div> pulse oximeter, bias, healthcare, intensive care units, racial disparities  
 Summary:  
 This study focuses on investigating the impact of racial discrepancies in pulse oximeter readings on clinical decision-making in intensive care units. The researchers use a causal inference-based approach to isolate the effects of bias by race on invasive ventilation. They employ a doubly robust estimator and its self-normalized variant to estimate these effects and provide novel finite-sample guarantees. Contrary to previous research, the analysis reveals minimal impact of racial discrepancies on invasive ventilation rates. However, path-specific effects mediated by oxygen saturation disparity have a more significant impact on ventilation duration, with variations observed in different datasets. The study highlights the importance of using causal methods to robustly assess fairness in healthcare and provides a novel pipeline for investigating potential disparities in clinical decision-making.  
-<br><br>Summary: <div>
+<br /><br />Summary: <div>
 arXiv:2506.12371v3 Announce Type: replace 
 Abstract: Identifying and measuring biases associated with sensitive attributes is a crucial consideration in healthcare to prevent treatment disparities. One prominent issue is inaccurate pulse oximeter readings, which tend to overestimate oxygen saturation for dark-skinned patients and misrepresent supplemental oxygen needs. Most existing research has revealed statistical disparities linking device measurement errors to patient outcomes in intensive care units (ICUs) without causal formalization. This study causally investigates how racial discrepancies in oximetry measurements affect invasive ventilation in ICU settings. We employ a causal inference-based approach using path-specific effects to isolate the impact of bias by race on clinical decision-making. To estimate these effects, we leverage a doubly robust estimator, propose its self-normalized variant for improved sample efficiency, and provide novel finite-sample guarantees. Our methodology is validated on semi-synthetic data and applied to two large real-world health datasets: MIMIC-IV and eICU. Contrary to prior work, our analysis reveals minimal impact of racial discrepancies on invasive ventilation rates. However, path-specific effects mediated by oxygen saturation disparity are more pronounced on ventilation duration, and the severity differs by dataset. Our work provides a novel pipeline for investigating potential disparities in clinical decision-making and, more importantly, highlights the necessity of causal methods to robustly assess fairness in healthcare.
 ]]></content:encoded>
-<pubDate>Thu, 30 Oct 2025 00:00:00 -0400</pubDate>
 <pubDate>Thu, 30 Oct 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -24,13 +24,12 @@ Abstract: Identifying and measuring biases associated with sensitive attributes 
 <link>https://arxiv.org/abs/2506.15721</link>
 <guid>https://arxiv.org/abs/2506.15721</guid>
 <content:encoded><![CDATA[
-<div> Hierarchical Multi-Armed Bandit, Synthetic Data, Large Language Model Fusion, DynaBranches Mechanism, Introspection-Rebirth Mechanism <br>
-Summary: <br>
+<div> Hierarchical Multi-Armed Bandit, Synthetic Data, Large Language Model Fusion, DynaBranches Mechanism, Introspection-Rebirth Mechanism <br />
+Summary: <br />
 The article introduces Bohdi, a synthetic-data-only heterogeneous Large Language Model (LLM) fusion framework that addresses limitations in existing methods. Bohdi organizes knowledge domains into a hierarchical tree structure, enabling automatic domain exploration and multi-domain data generation. It formalizes domain expansion and data allocation as a Hierarchical Multi-Armed Bandit problem, utilizing the DynaBranches mechanism to adaptively adjust data sampling proportions based on the target LLM's performance feedback. The Introspection-Rebirth mechanism tracks capability shifts during target LLM updates, enhancing online adaptation. Experimental results demonstrate Bohdi's superiority over existing baselines in multiple target LLMs, showcasing higher data efficiency and alleviating capability imbalances. The code for Bohdi is available on GitHub for further exploration and implementation. <div>
 arXiv:2506.15721v4 Announce Type: replace 
 Abstract: Heterogeneous Large Language Model (LLM) fusion integrates the strengths of multiple source LLMs with different architectures into a target LLM with low computational overhead. While promising, existing methods suffer from two major limitations: 1) reliance on real data from limited domain for knowledge fusion, preventing the target LLM from fully acquiring knowledge across diverse domains, and 2) fixed data allocation proportions across domains, failing to dynamically adjust according to the target LLM's varying capabilities across domains, leading to a capability imbalance. To overcome these limitations, we propose Bohdi, a synthetic-data-only heterogeneous LLM fusion framework. Through the organization of knowledge domains into a hierarchical tree structure, Bohdi enables automatic domain exploration and multi-domain data generation through multi-model collaboration, thereby comprehensively extracting knowledge from source LLMs. By formalizing domain expansion and data sampling proportion allocation on the knowledge tree as a Hierarchical Multi-Armed Bandit problem, Bohdi leverages the designed DynaBranches mechanism to adaptively adjust sampling proportions based on the target LLM's performance feedback across domains. Integrated with our proposed Introspection-Rebirth (IR) mechanism, DynaBranches dynamically tracks capability shifts during target LLM's updates via Sliding Window Binomial Likelihood Ratio Testing (SWBLRT), further enhancing its online adaptation capability. Comparative experimental results on a comprehensive suite of benchmarks demonstrate that Bohdi significantly outperforms existing baselines on multiple target LLMs, exhibits higher data efficiency, and virtually eliminates the imbalance in the target LLM's capabilities. Our code is available at https://github.com/gjq100/Bohdi.git.
 ]]></content:encoded>
-<pubDate>Thu, 30 Oct 2025 00:00:00 -0400</pubDate>
 <pubDate>Thu, 30 Oct 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -38,13 +37,12 @@ Abstract: Heterogeneous Large Language Model (LLM) fusion integrates the strengt
 <link>https://arxiv.org/abs/2510.20995</link>
 <guid>https://arxiv.org/abs/2510.20995</guid>
 <content:encoded><![CDATA[
-<div> Dual ascent algorithms, Lagrangian duality, constrained learning, Augmented Lagrangian methods, non-convex settings <br>
-<br>
+<div> Dual ascent algorithms, Lagrangian duality, constrained learning, Augmented Lagrangian methods, non-convex settings <br />
+<br />
 Summary: The study explores the use of Augmented Lagrangian methods in addressing constrained learning problems in the presence of non-convexity. Strong duality results are established with convergence of dual ascent algorithms to optimal primal solutions and PAC-style generalization guarantees are provided. The effectiveness of these methods is demonstrated on fairness constrained classification tasks. <div>
 arXiv:2510.20995v2 Announce Type: replace 
 Abstract: Despite the non-convexity of most modern machine learning parameterizations, Lagrangian duality has become a popular tool for addressing constrained learning problems. We revisit Augmented Lagrangian methods, which aim to mitigate the duality gap in non-convex settings while requiring only minimal modifications, and have remained comparably unexplored in constrained learning settings. We establish strong duality results under mild conditions, prove convergence of dual ascent algorithms to feasible and optimal primal solutions, and provide PAC-style generalization guarantees. Finally, we demonstrate its effectiveness on fairness constrained classification tasks.
 ]]></content:encoded>
-<pubDate>Thu, 30 Oct 2025 00:00:00 -0400</pubDate>
 <pubDate>Thu, 30 Oct 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -55,14 +53,12 @@ Abstract: Despite the non-convexity of most modern machine learning parameteriza
 <div> Keywords: damage assessment, natural disasters, computer vision, multimodal system, satellite and UAV imagery
 
 Summary: 
-The study introduces a Vision Language Caption Enhancer (VLCE) system aimed at providing detailed and contextually informed descriptions of disaster imagery for quick damage assessment. The system utilizes a dual-architecture approach, combining a CNN-LSTM model pretrained on satellite imagery and a Vision Transformer model pretrained on UAV pictures. External semantic knowledge from ConceptNet and WordNet is incorporated to enhance vocabulary coverage and description accuracy. Experimental results demonstrate that VLCE outperforms baseline models like LLaVA and QwenVL in terms of both semantic alignment and informativeness of captions. With a maximum InfoMetIC score of 95.33%, VLCE shows great potential in automating the generation of actionable descriptions from satellite and drone photos for enhanced disaster damage assessment.<br><br>Summary: <div>
+The study introduces a Vision Language Caption Enhancer (VLCE) system aimed at providing detailed and contextually informed descriptions of disaster imagery for quick damage assessment. The system utilizes a dual-architecture approach, combining a CNN-LSTM model pretrained on satellite imagery and a Vision Transformer model pretrained on UAV pictures. External semantic knowledge from ConceptNet and WordNet is incorporated to enhance vocabulary coverage and description accuracy. Experimental results demonstrate that VLCE outperforms baseline models like LLaVA and QwenVL in terms of both semantic alignment and informativeness of captions. With a maximum InfoMetIC score of 95.33%, VLCE shows great potential in automating the generation of actionable descriptions from satellite and drone photos for enhanced disaster damage assessment.<br /><br />Summary: <div>
 arXiv:2509.21609v3 Announce Type: replace-cross 
 Abstract: Immediate damage assessment is essential after natural catastrophes; yet, conventional hand evaluation techniques are sluggish and perilous. Although satellite and unmanned aerial vehicle (UAV) photos offer extensive perspectives of impacted regions, current computer vision methodologies generally yield just classification labels or segmentation masks, so constraining their capacity to deliver a thorough situational comprehension. We introduce the Vision Language Caption Enhancer (VLCE), a multimodal system designed to produce comprehensive, contextually-informed explanations of disaster imagery. VLCE employs a dual-architecture approach: a CNN-LSTM model with a ResNet50 backbone pretrained on EuroSat satellite imagery for the xBD dataset, and a Vision Transformer (ViT) model pretrained on UAV pictures for the RescueNet dataset. Both systems utilize external semantic knowledge from ConceptNet and WordNet to expand vocabulary coverage and improve description accuracy. We assess VLCE in comparison to leading vision-language models (LLaVA and QwenVL) utilizing CLIPScore for semantic alignment and InfoMetIC for caption informativeness. Experimental findings indicate that VLCE markedly surpasses baseline models, attaining a maximum of 95.33% on InfoMetIC while preserving competitive semantic alignment. Our dual-architecture system demonstrates significant potential for improving disaster damage assessment by automating the production of actionable, information-dense descriptions from satellite and drone photos.
 ]]></content:encoded>
 <pubDate>Thu, 30 Oct 2025 00:00:00 -0400</pubDate>
-<pubDate>Thu, 30 Oct 2025 00:00:00 -0400</pubDate>
 </item>
-
 <item>
 <title>Fortytwo: Swarm Inference with Peer-Ranked Consensus</title>
 <link>https://arxiv.org/abs/2510.24801</link>
@@ -10918,46 +10914,6 @@ Abstract: Suppressor variables can influence model predictions without being dep
 <content:encoded><![CDATA[
 arXiv:2505.11823v2 Announce Type: replace 
 Abstract: Recovering the dynamics from a few snapshots of a high-dimensional system is a challenging task in statistical physics and machine learning, with important applications in computational biology. Many algorithms have been developed to tackle this problem, based on frameworks such as optimal transport and the Schr\"odinger bridge. A notable recent framework is Regularized Unbalanced Optimal Transport (RUOT), which integrates both stochastic dynamics and unnormalized distributions. However, since many existing methods do not explicitly enforce optimality conditions, their solutions often struggle to satisfy the principle of least action and meet challenges to converge in a stable and reliable way. To address these issues, we propose Variational RUOT (Var-RUOT), a new framework to solve the RUOT problem. By incorporating the optimal necessary conditions for the RUOT problem into both the parameterization of the search space and the loss function design, Var-RUOT only needs to learn a scalar field to solve the RUOT problem and can search for solutions with lower action. We also examined the challenge of selecting a growth penalty function in the widely used Wasserstein-Fisher-Rao metric and proposed a solution that better aligns with biological priors in Var-RUOT. We validated the effectiveness of Var-RUOT on both simulated data and real single-cell datasets. Compared with existing algorithms, Var-RUOT can find solutions with lower action while exhibiting faster convergence and improved training stability. Our code is available at https://github.com/ZerooVector/VarRUOT.
-]]></content:encoded>
-<pubDate>Tue, 28 Oct 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>FedSVD: Adaptive Orthogonalization for Private Federated Learning with LoRA</title>
-<link>https://arxiv.org/abs/2505.12805</link>
-<guid>https://arxiv.org/abs/2505.12805</guid>
-<content:encoded><![CDATA[
-arXiv:2505.12805v2 Announce Type: replace 
-Abstract: Low-Rank Adaptation (LoRA), which introduces a product of two trainable low-rank matrices into frozen pre-trained weights, is widely used for efficient fine-tuning of language models in federated learning (FL). However, when combined with differentially private stochastic gradient descent (DP-SGD), LoRA faces substantial noise amplification: DP-SGD perturbs per-sample gradients, and the matrix multiplication of the LoRA update ($BA$) intensifies this effect. Freezing one matrix (e.g., $A$) reduces the noise but restricts model expressiveness, often resulting in suboptimal adaptation. To address this, we propose $\texttt{FedSVD}$, a simple yet effective method that introduces a global reparameterization based on singular value decomposition (SVD). In our approach, each client optimizes only the $B$ matrix and transmits it to the server. The server aggregates the $B$ matrices, computes the product $BA$ using the previous $A$, and refactorizes the result via SVD. This yields a new adaptive $A$ composed of the orthonormal right singular vectors of $BA$, and an updated $B$ containing the remaining SVD components. This reparameterization avoids quadratic noise amplification, while allowing $A$ to better capture the principal directions of the aggregate updates. Moreover, the orthonormal structure of $A$ bounds the gradient norms of $B$ and preserves more signal under DP-SGD, as confirmed by our theoretical analysis. As a result, $\texttt{FedSVD}$ consistently improves stability and performance across a variety of privacy settings and benchmarks, outperforming relevant baselines under both private and non-private regimes.
-]]></content:encoded>
-<pubDate>Tue, 28 Oct 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>OmniFC: Rethinking Federated Clustering via Lossless and Secure Distance Reconstruction</title>
-<link>https://arxiv.org/abs/2505.13071</link>
-<guid>https://arxiv.org/abs/2505.13071</guid>
-<content:encoded><![CDATA[
-arXiv:2505.13071v2 Announce Type: replace 
-Abstract: Federated clustering (FC) aims to discover global cluster structures across decentralized clients without sharing raw data, making privacy preservation a fundamental requirement. There are two critical challenges: (1) privacy leakage during collaboration, and (2) robustness degradation due to aggregation of proxy information from non-independent and identically distributed (Non-IID) local data, leading to inaccurate or inconsistent global clustering. Existing solutions typically rely on model-specific local proxies, which are sensitive to data heterogeneity and inherit inductive biases from their centralized counterparts, thus limiting robustness and generality. We propose Omni Federated Clustering (OmniFC), a unified and model-agnostic framework. Leveraging Lagrange coded computing, our method enables clients to share only encoded data, allowing exact reconstruction of the global distance matrix--a fundamental representation of sample relationships--without leaking private information, even under client collusion. This construction is naturally resilient to Non-IID data distributions. This approach decouples FC from model-specific proxies, providing a unified extension mechanism applicable to diverse centralized clustering methods. Theoretical analysis confirms both reconstruction fidelity and privacy guarantees, while comprehensive experiments demonstrate OmniFC's superior robustness, effectiveness, and generality across various benchmarks compared to state-of-the-art methods. Code will be released.
-]]></content:encoded>
-<pubDate>Tue, 28 Oct 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Unlabeled Data vs. Pre-trained Knowledge: Rethinking SSL in the Era of Large Models</title>
-<link>https://arxiv.org/abs/2505.13317</link>
-<guid>https://arxiv.org/abs/2505.13317</guid>
-<content:encoded><![CDATA[
-arXiv:2505.13317v4 Announce Type: replace 
-Abstract: Semi-supervised learning (SSL) alleviates the cost of data labeling process by exploiting unlabeled data and has achieved promising results. Meanwhile, with the development of large foundation models, exploiting pre-trained models becomes a promising way to address the label scarcity in the downstream tasks, such as various parameter-efficient fine-tuning techniques. This raises a natural yet critical question: When labeled data is limited, should we rely on unlabeled data or pre-trained models? To investigate this issue, we conduct a fair comparison between SSL methods and pre-trained models (e.g., CLIP) on representative image classification tasks under a controlled supervision budget. Experiments reveal that SSL has met its ``Waterloo" in the era of large models, as pre-trained models show both high efficiency and strong performance on widely adopted SSL benchmarks. This underscores the urgent need for SSL researchers to explore new avenues, such as deeper integration between the SSL and pre-trained models. Furthermore, we investigate the potential of Multi-Modal Large Language Models (MLLMs) in image classification tasks. Results show that, despite their massive parameter scales, MLLMs still face significant performance limitations, highlighting that even a seemingly well-studied task remains highly challenging.
-]]></content:encoded>
-<pubDate>Tue, 28 Oct 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>RLVR-World: Training World Models with Reinforcement Learning</title>
-<link>https://arxiv.org/abs/2505.13934</link>
-<guid>https://arxiv.org/abs/2505.13934</guid>
-<content:encoded><![CDATA[
-arXiv:2505.13934v2 Announce Type: replace 
-Abstract: World models predict state transitions in response to actions and are increasingly developed across diverse modalities. However, standard training objectives such as maximum likelihood estimation (MLE) often misalign with task-specific goals of world models, i.e., transition prediction metrics like accuracy or perceptual quality. In this paper, we present RLVR-World, a unified framework that leverages reinforcement learning with verifiable rewards (RLVR) to directly optimize world models for such metrics. Despite formulating world modeling as autoregressive prediction of tokenized sequences, RLVR-World evaluates metrics of decoded predictions as verifiable rewards. We demonstrate substantial performance gains on both language- and video-based world models across domains, including text games, web navigation, and robot manipulation. Our work indicates that, beyond recent advances in reasoning language models, RLVR offers a promising post-training paradigm for enhancing the utility of generative models more broadly. Code, datasets, models, and video samples are available at the project website: https://thuml.github.io/RLVR-World.
 ]]></content:encoded>
 <pubDate>Tue, 28 Oct 2025 00:00:00 -0400</pubDate>
 </item>
