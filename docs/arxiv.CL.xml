@@ -4,6 +4,7 @@
 <title>cs.CL updates on arXiv.org</title>
 <link>http://rss.arxiv.org/rss/cs.CL</link>
 
+
 <item>
 <title>UNO-Bench: A Unified Benchmark for Exploring the Compositional Law Between Uni-modal and Omni-modal in Omni Models</title>
 <link>https://arxiv.org/abs/2510.18915</link>
@@ -14,14 +15,12 @@
 Summary:
 The article introduces a new benchmark, UNO-Bench, designed to evaluate both uni-modal and omni-modal capabilities in large language models. The benchmark includes 1250 human curated samples for omni-modal assessment and 2480 enhanced uni-modal samples. It covers 44 task types and 5 modality combinations, providing a comprehensive evaluation framework. The dataset is suitable for real-world scenarios, especially in the Chinese context, and offers increased efficiency and consistency across public benchmarks. A novel multi-step open-ended question format is proposed for assessing complex reasoning in addition to traditional multi-choice questions. A general scoring model with 6 question types supports automated evaluation with high accuracy. Experimental results demonstrate the Compositional Law between uni-modal and omni-modal performance and the bottleneck effect of omni-modal capabilities on weaker models. The omni-modal capabilities show synergistic promotion on stronger models. 
 
-<br><br>Summary: <div>
+<br /><br />Summary: <div>
 arXiv:2510.18915v3 Announce Type: replace 
 Abstract: Multimodal Large Languages models have been progressing from uni-modal understanding toward unifying visual, audio and language modalities, collectively termed omni models. However, the correlation between uni-modal and omni-modal remains unclear, which requires comprehensive evaluation to drive omni model's intelligence evolution. In this work, we introduce a novel, high-quality, and UNified Omni model benchmark, UNO-Bench. This benchmark is designed to effectively evaluate both UNi-modal and Omni-modal capabilities under a unified ability taxonomy, spanning 44 task types and 5 modality combinations. It includes 1250 human curated samples for omni-modal with 98% cross-modality solvability, and 2480 enhanced uni-modal samples. The human-generated dataset is well-suited to real-world scenarios, particularly within the Chinese context, whereas the automatically compressed dataset offers a 90% increase in speed and maintains 98% consistency across 18 public benchmarks. In addition to traditional multi-choice questions, we propose an innovative multi-step open-ended question format to assess complex reasoning. A general scoring model is incorporated, supporting 6 question types for automated evaluation with 95% accuracy. Experimental result shows the Compositional Law between omni-modal and uni-modal performance and the omni-modal capability manifests as a bottleneck effect on weak models, while exhibiting synergistic promotion on strong models.
 ]]></content:encoded>
 <pubDate>Fri, 31 Oct 2025 00:00:00 -0400</pubDate>
-<pubDate>Fri, 31 Oct 2025 00:00:00 -0400</pubDate>
 </item>
-
 <item>
 <title>StreetMath: Study of LLMs' Approximation Behaviors</title>
 <link>https://arxiv.org/abs/2510.25776</link>
@@ -11520,16 +11519,6 @@ Abstract: Large language models (LLMs) are increasingly trained from AI constitu
 <content:encoded><![CDATA[
 arXiv:2510.07774v2 Announce Type: replace 
 Abstract: Large language models for mathematical reasoning are typically trained with outcome-based rewards, which credit only the final answer. In our experiments, we observe that this paradigm is highly susceptible to reward hacking, leading to a substantial overestimation of a model's reasoning ability. This is evidenced by a high incidence of false positives - solutions that reach the correct final answer through an unsound reasoning process. Through a systematic analysis with human verification, we establish a taxonomy of these failure modes, identifying patterns like Miracle Steps - abrupt jumps to a correct output without a valid preceding derivation. Probing experiments suggest a strong association between these Miracle Steps and memorization, where the model appears to recall the answer directly rather than deriving it. To mitigate this systemic issue, we introduce the Rubric Reward Model (RRM), a process-oriented reward function that evaluates the entire reasoning trajectory against problem-specific rubrics. The generative RRM provides fine-grained, calibrated rewards (0-1) that explicitly penalize logical flaws and encourage rigorous deduction. When integrated into a reinforcement learning pipeline, RRM-based training consistently outperforms outcome-only supervision across four math benchmarks. Notably, it boosts Verified Pass@1024 on AIME2024 from 26.7% to 62.6% and reduces the incidence of Miracle Steps by 71%. Our work demonstrates that rewarding the solution process is crucial for building models that are not only more accurate but also more reliable.
-]]></content:encoded>
-<pubDate>Fri, 24 Oct 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>X-Reflect: Cross-Reflection Prompting for Multimodal Recommendation</title>
-<link>https://arxiv.org/abs/2408.15172</link>
-<guid>https://arxiv.org/abs/2408.15172</guid>
-<content:encoded><![CDATA[
-arXiv:2408.15172v2 Announce Type: replace-cross 
-Abstract: Large Language Models (LLMs) have been shown to enhance the effectiveness of enriching item descriptions, thereby improving the accuracy of recommendation systems. However, most existing approaches either rely on text-only prompting or employ basic multimodal strategies that do not fully exploit the complementary information available from both textual and visual modalities. This paper introduces a novel framework, Cross-Reflection Prompting, termed X-Reflect, designed to address these limitations by prompting Multimodal Large Language Models (MLLMs) to explicitly identify and reconcile supportive and conflicting information between text and images. By capturing nuanced insights from both modalities, this approach generates more comprehensive and contextually rich item representations. Extensive experiments conducted on two widely used benchmarks demonstrate that our method outperforms existing prompting baselines in downstream recommendation accuracy. Furthermore, we identify a U-shaped relationship between text-image dissimilarity and recommendation performance, suggesting the benefit of applying multimodal prompting selectively. To support efficient real-time inference, we also introduce X-Reflect-keyword, a lightweight variant that summarizes image content using keywords and replaces the base model with a smaller backbone, achieving nearly 50% reduction in input length while maintaining competitive performance. This work underscores the importance of integrating multimodal information and presents an effective solution for improving item understanding in multimodal recommendation systems.
 ]]></content:encoded>
 <pubDate>Fri, 24 Oct 2025 00:00:00 -0400</pubDate>
 </item>

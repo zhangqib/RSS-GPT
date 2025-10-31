@@ -4,6 +4,7 @@
 <title>cs.LG updates on arXiv.org</title>
 <link>http://rss.arxiv.org/rss/cs.LG</link>
 
+
 <item>
 <title>Seeing Structural Failure Before it Happens: An Image-Based Physics-Informed Neural Network (PINN) for Spaghetti Bridge Load Prediction</title>
 <link>https://arxiv.org/abs/2510.23117</link>
@@ -14,12 +15,11 @@
 Summary:
 Physics Informed Neural Networks (PINNs) are utilized to predict the weight of small scale spaghetti bridges in structural engineering tasks with limited data. By incorporating physics-based constraints, a novel architecture known as Physics Informed Kolmogorov Arnold Network (PIKAN) is introduced to blend universal function approximation theory with physical insights. The dataset consists of 15 real bridges augmented to 100 samples, achieving high accuracy with an R^2 score of 0.9603 and a mean absolute error of 10.50 units. Both manual and computer vision methods are used to collect structural parameters for input to the model. A web-based interface is provided for parameter entry and prediction, showcasing the reliability of PINNs in estimating structural weight and aiding in early stage failure analysis for lightweight bridge designs. The complete data and code are available at https://github.com/OmerJauhar/PINNS-For-Spaghetti-Bridges. 
 
-<br><br>Summary: <div>
+<br /><br />Summary: <div>
 arXiv:2510.23117v2 Announce Type: replace 
 Abstract: Physics Informed Neural Networks (PINNs) are gaining attention for their ability to embed physical laws into deep learning models, which is particularly useful in structural engineering tasks with limited data. This paper aims to explore the use of PINNs to predict the weight of small scale spaghetti bridges, a task relevant to understanding load limits and potential failure modes in simplified structural models. Our proposed framework incorporates physics-based constraints to the prediction model for improved performance. In addition to standard PINNs, we introduce a novel architecture named Physics Informed Kolmogorov Arnold Network (PIKAN), which blends universal function approximation theory with physical insights. The structural parameters provided as input to the model are collected either manually or through computer vision methods. Our dataset includes 15 real bridges, augmented to 100 samples, and our best model achieves an $R^2$ score of 0.9603 and a mean absolute error (MAE) of 10.50 units. From applied perspective, we also provide a web based interface for parameter entry and prediction. These results show that PINNs can offer reliable estimates of structural weight, even with limited data, and may help inform early stage failure analysis in lightweight bridge designs.
   The complete data and code are available at https://github.com/OmerJauhar/PINNS-For-Spaghetti-Bridges.
 ]]></content:encoded>
-<pubDate>Fri, 31 Oct 2025 00:00:00 -0400</pubDate>
 <pubDate>Fri, 31 Oct 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -27,14 +27,13 @@ Abstract: Physics Informed Neural Networks (PINNs) are gaining attention for the
 <link>https://arxiv.org/abs/2510.22319</link>
 <guid>https://arxiv.org/abs/2510.22319</guid>
 <content:encoded><![CDATA[
-<div> GRPO-based reinforcement learning, flow-matching models, importance-ratio clipping, over-optimization, image quality<br>
-<br>
-Summary:<br>
+<div> GRPO-based reinforcement learning, flow-matching models, importance-ratio clipping, over-optimization, image quality<br />
+<br />
+Summary:<br />
 The article introduces GRPO-Guard, an enhancement to GRPO frameworks addressing issues with overconfident updates and implicit over-optimization. It incorporates ratio normalization to restore a balanced importance ratio distribution and a gradient reweighting strategy to equalize policy gradients across noise conditions. These designs act as a regulated clipping mechanism, stabilizing optimization and mitigating implicit over-optimization without heavy KL regularization. Extensive experiments on various diffusion backbones and proxy tasks show that GRPO-Guard significantly reduces over-optimization while maintaining or improving generation quality. <div>
 arXiv:2510.22319v2 Announce Type: replace-cross 
 Abstract: Recently, GRPO-based reinforcement learning has shown remarkable progress in optimizing flow-matching models, effectively improving their alignment with task-specific rewards. Within these frameworks, the policy update relies on importance-ratio clipping to constrain overconfident positive and negative gradients. However, in practice, we observe a systematic shift in the importance-ratio distribution-its mean falls below 1 and its variance differs substantially across timesteps. This left-shifted and inconsistent distribution prevents positive-advantage samples from entering the clipped region, causing the mechanism to fail in constraining overconfident positive updates. As a result, the policy model inevitably enters an implicit over-optimization stage-while the proxy reward continues to increase, essential metrics such as image quality and text-prompt alignment deteriorate sharply, ultimately making the learned policy impractical for real-world use. To address this issue, we introduce GRPO-Guard, a simple yet effective enhancement to existing GRPO frameworks. Our method incorporates ratio normalization, which restores a balanced and step-consistent importance ratio, ensuring that PPO clipping properly constrains harmful updates across denoising timesteps. In addition, a gradient reweighting strategy equalizes policy gradients over noise conditions, preventing excessive updates from particular timestep regions. Together, these designs act as a regulated clipping mechanism, stabilizing optimization and substantially mitigating implicit over-optimization without relying on heavy KL regularization. Extensive experiments on multiple diffusion backbones (e.g., SD3.5M, Flux.1-dev) and diverse proxy tasks demonstrate that GRPO-Guard significantly reduces over-optimization while maintaining or even improving generation quality.
 ]]></content:encoded>
-<pubDate>Fri, 31 Oct 2025 00:00:00 -0400</pubDate>
 <pubDate>Fri, 31 Oct 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -42,14 +41,13 @@ Abstract: Recently, GRPO-based reinforcement learning has shown remarkable progr
 <link>https://arxiv.org/abs/2510.23216</link>
 <guid>https://arxiv.org/abs/2510.23216</guid>
 <content:encoded><![CDATA[
-<div> Deep Reinforcement Learning, Value-based DRL, Industrial Settings, Sample Efficiency, Training Agent<br>
-<br>
+<div> Deep Reinforcement Learning, Value-based DRL, Industrial Settings, Sample Efficiency, Training Agent<br />
+<br />
 Summary:
-This paper proposes a sample-efficient Deep Reinforcement Learning (DRL) method tailored for training and fine-tuning agents in industrial settings, specifically the video game industry. The method improves sample efficiency of value-based DRL by using pre-collected data and increasing network plasticity. Evaluation on training a goalkeeper agent in EA SPORTS FC 25 shows that the agent outperforms the game's built-in AI by 10% in ball saving rate. Ablation studies indicate that the method trains agents 50% faster compared to standard DRL methods. Qualitative evaluation by domain experts suggests that the approach creates more human-like gameplay compared to hand-crafted agents. The method has been adopted for use in the most recent release of the series, showcasing its impact on crafting authentic AI behaviors in video games. <br><br>Summary: <div>
+This paper proposes a sample-efficient Deep Reinforcement Learning (DRL) method tailored for training and fine-tuning agents in industrial settings, specifically the video game industry. The method improves sample efficiency of value-based DRL by using pre-collected data and increasing network plasticity. Evaluation on training a goalkeeper agent in EA SPORTS FC 25 shows that the agent outperforms the game's built-in AI by 10% in ball saving rate. Ablation studies indicate that the method trains agents 50% faster compared to standard DRL methods. Qualitative evaluation by domain experts suggests that the approach creates more human-like gameplay compared to hand-crafted agents. The method has been adopted for use in the most recent release of the series, showcasing its impact on crafting authentic AI behaviors in video games. <br /><br />Summary: <div>
 arXiv:2510.23216v3 Announce Type: replace-cross 
 Abstract: While several high profile video games have served as testbeds for Deep Reinforcement Learning (DRL), this technique has rarely been employed by the game industry for crafting authentic AI behaviors. Previous research focuses on training super-human agents with large models, which is impractical for game studios with limited resources aiming for human-like agents. This paper proposes a sample-efficient DRL method tailored for training and fine-tuning agents in industrial settings such as the video game industry. Our method improves sample efficiency of value-based DRL by leveraging pre-collected data and increasing network plasticity. We evaluate our method training a goalkeeper agent in EA SPORTS FC 25, one of the best-selling football simulations today. Our agent outperforms the game's built-in AI by 10% in ball saving rate. Ablation studies show that our method trains agents 50% faster compared to standard DRL methods. Finally, qualitative evaluation from domain experts indicates that our approach creates more human-like gameplay compared to hand-crafted agents. As a testament to the impact of the approach, the method has been adopted for use in the most recent release of the series.
 ]]></content:encoded>
-<pubDate>Fri, 31 Oct 2025 00:00:00 -0400</pubDate>
 <pubDate>Fri, 31 Oct 2025 00:00:00 -0400</pubDate>
 </item>
 <item>
@@ -65,9 +63,7 @@ arXiv:2510.23534v2 Announce Type: replace-cross
 Abstract: We develop a direct debiased machine learning framework comprising Neyman targeted estimation and generalized Riesz regression. Our framework unifies Riesz regression for automatic debiased machine learning, covariate balancing, targeted maximum likelihood estimation (TMLE), and density-ratio estimation. In many problems involving causal effects or structural models, the parameters of interest depend on regression functions. Plugging regression functions estimated by machine learning methods into the identifying equations can yield poor performance because of first-stage bias. To reduce such bias, debiased machine learning employs Neyman orthogonal estimating equations. Debiased machine learning typically requires estimation of the Riesz representer and the regression function. For this problem, we develop a direct debiased machine learning framework with an end-to-end algorithm. We formulate estimation of the nuisance parameters, the regression function and the Riesz representer, as minimizing the discrepancy between Neyman orthogonal scores computed with known and unknown nuisance parameters, which we refer to as Neyman targeted estimation. Neyman targeted estimation includes Riesz representer estimation, and we measure discrepancies using the Bregman divergence. The Bregman divergence encompasses various loss functions as special cases, where the squared loss yields Riesz regression and the Kullback-Leibler divergence yields entropy balancing. We refer to this Riesz representer estimation as generalized Riesz regression. Neyman targeted estimation also yields TMLE as a special case for regression function estimation. Furthermore, for specific pairs of models and Riesz representer estimation methods, we can automatically obtain the covariate balancing property without explicitly solving the covariate balancing objective.
 ]]></content:encoded>
 <pubDate>Fri, 31 Oct 2025 00:00:00 -0400</pubDate>
-<pubDate>Fri, 31 Oct 2025 00:00:00 -0400</pubDate>
 </item>
-
 <item>
 <title>A Practitioner's Guide to Kolmogorov-Arnold Networks</title>
 <link>https://arxiv.org/abs/2510.25781</link>
@@ -11148,46 +11144,6 @@ Abstract: Accurate prediction of remaining useful life (RUL) is essential to enh
 <content:encoded><![CDATA[
 arXiv:2510.22977v1 Announce Type: new 
 Abstract: Enhancing the reasoning capabilities of Large Language Models (LLMs) is a key strategy for building Agents that "think then act." However, recent observations, like OpenAI's o3, suggest a paradox: stronger reasoning often coincides with increased hallucination, yet no prior work has systematically examined whether reasoning enhancement itself causes tool hallucination. To address this gap, we pose the central question: Does strengthening reasoning increase tool hallucination? To answer this, we introduce SimpleToolHalluBench, a diagnostic benchmark measuring tool hallucination in two failure modes: (i) no tool available, and (ii) only distractor tools available. Through controlled experiments, we establish three key findings. First, we demonstrate a causal relationship: progressively enhancing reasoning through RL increases tool hallucination proportionally with task performance gains. Second, this effect transcends overfitting - training on non-tool tasks (e.g., mathematics) still amplifies subsequent tool hallucination. Third, the effect is method-agnostic, appearing when reasoning is instilled via supervised fine-tuning and when it is merely elicited at inference by switching from direct answers to step-by-step thinking. We also evaluate mitigation strategies including Prompt Engineering and Direct Preference Optimization (DPO), revealing a fundamental reliability-capability trade-off: reducing hallucination consistently degrades utility. Mechanistically, Reasoning RL disproportionately collapses tool-reliability-related representations, and hallucinations surface as amplified divergences concentrated in late-layer residual streams. These findings reveal that current reasoning enhancement methods inherently amplify tool hallucination, highlighting the need for new training objectives that jointly optimize for capability and reliability.
-]]></content:encoded>
-<pubDate>Tue, 28 Oct 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>How Muon's Spectral Design Benefits Generalization: A Study on Imbalanced Data</title>
-<link>https://arxiv.org/abs/2510.22980</link>
-<guid>https://arxiv.org/abs/2510.22980</guid>
-<content:encoded><![CDATA[
-arXiv:2510.22980v1 Announce Type: new 
-Abstract: The growing adoption of spectrum-aware matrix-valued optimizers such as Muon and Shampoo in deep learning motivates a systematic study of their generalization properties and, in particular, when they might outperform competitive algorithms. We approach this question by introducing appropriate simplifying abstractions as follows: First, we use imbalanced data as a testbed. Second, we study the canonical form of such optimizers, which is Spectral Gradient Descent (SpecGD) -- each update step is $UV^T$ where $U\Sigma V^T$ is the truncated SVD of the gradient. Third, within this framework we identify a canonical setting for which we precisely quantify when SpecGD outperforms vanilla Euclidean GD. For a Gaussian mixture data model and both linear and bilinear models, we show that unlike GD, which prioritizes learning dominant principal components of the data first, SpecGD learns all principal components of the data at equal rates. We demonstrate how this translates to a growing gap in balanced accuracy favoring SpecGD early in training and further show that the gap remains consistent even when the GD counterpart uses adaptive step-sizes via normalization. By extending the analysis to deep linear models, we show that depth amplifies these effects. We empirically verify our theoretical findings on a variety of imbalanced datasets. Our experiments compare practical variants of spectral methods, like Muon and Shampoo, against their Euclidean counterparts and Adam. The results validate our findings that these spectral optimizers achieve superior generalization by promoting a more balanced learning of the data's underlying components.
-]]></content:encoded>
-<pubDate>Tue, 28 Oct 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>QoSGMAA: A Robust Multi-Order Graph Attention and Adversarial Framework for Sparse QoS Prediction</title>
-<link>https://arxiv.org/abs/2510.22982</link>
-<guid>https://arxiv.org/abs/2510.22982</guid>
-<content:encoded><![CDATA[
-arXiv:2510.22982v1 Announce Type: new 
-Abstract: With the rapid advancement of internet technologies, network services have become critical for delivering diverse and reliable applications to users. However, the exponential growth in the number of available services has resulted in many similar offerings, posing significant challenges in selecting optimal services. Predicting Quality of Service (QoS) accurately thus becomes a fundamental prerequisite for ensuring reliability and user satisfaction. However, existing QoS prediction methods often fail to capture rich contextual information and exhibit poor performance under extreme data sparsity and structural noise. To bridge this gap, we propose a novel architecture, QoSMGAA, specifically designed to enhance prediction accuracy in complex and noisy network service environments. QoSMGAA integrates a multi-order attention mechanism to aggregate extensive contextual data and predict missing QoS values effectively. Additionally, our method incorporates adversarial neural networks to perform autoregressive supervised learning based on transformed interaction matrices. To capture complex, higher-order interactions among users and services, we employ a discrete sampling technique leveraging the Gumbel-Softmax method to generate informative negative samples. Comprehensive experimental validation conducted on large-scale real-world datasets demonstrates that our proposed model significantly outperforms existing baseline methods, highlighting its strong potential for practical deployment in service selection and recommendation scenarios.
-]]></content:encoded>
-<pubDate>Tue, 28 Oct 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Equivariant Neural Networks for General Linear Symmetries on Lie Algebras</title>
-<link>https://arxiv.org/abs/2510.22984</link>
-<guid>https://arxiv.org/abs/2510.22984</guid>
-<content:encoded><![CDATA[
-arXiv:2510.22984v1 Announce Type: new 
-Abstract: Encoding symmetries is a powerful inductive bias for improving the generalization of deep neural networks. However, most existing equivariant models are limited to simple symmetries like rotations, failing to address the broader class of general linear transformations, GL(n), that appear in many scientific domains. We introduce Reductive Lie Neurons (ReLNs), a novel neural network architecture exactly equivariant to these general linear symmetries. ReLNs are designed to operate directly on a wide range of structured inputs, including general n-by-n matrices. ReLNs introduce a novel adjoint-invariant bilinear layer to achieve stable equivariance for both Lie-algebraic features and matrix-valued inputs, without requiring redesign for each subgroup. This architecture overcomes the limitations of prior equivariant networks that only apply to compact groups or simple vector data. We validate ReLNs' versatility across a spectrum of tasks: they outperform existing methods on algebraic benchmarks with sl(3) and sp(4) symmetries and achieve competitive results on a Lorentz-equivariant particle physics task. In 3D drone state estimation with geometric uncertainty, ReLNs jointly process velocities and covariances, yielding significant improvements in trajectory accuracy. ReLNs provide a practical and general framework for learning with broad linear group symmetries on Lie algebras and matrix-valued data. Project page: https://reductive-lie-neuron.github.io/
-]]></content:encoded>
-<pubDate>Tue, 28 Oct 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Adaptive Forests For Classification</title>
-<link>https://arxiv.org/abs/2510.22991</link>
-<guid>https://arxiv.org/abs/2510.22991</guid>
-<content:encoded><![CDATA[
-arXiv:2510.22991v1 Announce Type: new 
-Abstract: Random Forests (RF) and Extreme Gradient Boosting (XGBoost) are two of the most widely used and highly performing classification and regression models. They aggregate equally weighted CART trees, generated randomly in RF or sequentially in XGBoost. In this paper, we propose Adaptive Forests (AF), a novel approach that adaptively selects the weights of the underlying CART models. AF combines (a) the Optimal Predictive-Policy Trees (OP2T) framework to prescribe tailored, input-dependent unequal weights to trees and (b) Mixed Integer Optimization (MIO) to refine weight candidates dynamically, enhancing overall performance. We demonstrate that AF consistently outperforms RF, XGBoost, and other weighted RF in binary and multi-class classification problems over 20+ real-world datasets.
 ]]></content:encoded>
 <pubDate>Tue, 28 Oct 2025 00:00:00 -0400</pubDate>
 </item>
