@@ -4,6 +4,7 @@
 <title>cs.AI updates on arXiv.org</title>
 <link>http://rss.arxiv.org/rss/cs.AI</link>
 
+
 <item>
 <title>E2Rank: Your Text Embedding can Also be an Effective and Efficient Listwise Reranker</title>
 <link>https://arxiv.org/abs/2510.22733</link>
@@ -11,7 +12,7 @@
 <content:encoded><![CDATA[
 <div> embedding models, retrieval performance, listwise reranking, E2Rank framework, efficiency
 
-Summary:<br>
+Summary:<br />
 The paper introduces the E2Rank framework, which enhances a single text embedding model to perform both retrieval and listwise reranking efficiently. The framework continues training under a listwise ranking objective, improving ranking fidelity. By using cosine similarity as a unified ranking function and constructing a listwise ranking prompt from the query and candidate documents, E2Rank incorporates signals from top-K documents, similar to pseudo-relevance feedback. This design maintains the efficiency and quality of the base embedding model while significantly boosting reranking performance. Empirically, E2Rank achieves top results on BEIR reranking and performs well on the BRIGHT benchmark with low reranking latency. The ranking training process also enhances embedding performance on the MTEB benchmark, demonstrating the capability of a single embedding model to unify retrieval and reranking efficiently and accurately. 
 
 Summary: <div>
@@ -19,9 +20,7 @@ arXiv:2510.22733v2 Announce Type: replace-cross
 Abstract: Text embedding models serve as a fundamental component in real-world search applications. By mapping queries and documents into a shared embedding space, they deliver competitive retrieval performance with high efficiency. However, their ranking fidelity remains limited compared to dedicated rerankers, especially recent LLM-based listwise rerankers, which capture fine-grained query-document and document-document interactions. In this paper, we propose a simple yet effective unified framework E2Rank, means Efficient Embedding-based Ranking (also means Embedding-to-Rank), which extends a single text embedding model to perform both high-quality retrieval and listwise reranking through continued training under a listwise ranking objective, thereby achieving strong effectiveness with remarkable efficiency. By applying cosine similarity between the query and document embeddings as a unified ranking function, the listwise ranking prompt, which is constructed from the original query and its candidate documents, serves as an enhanced query enriched with signals from the top-K documents, akin to pseudo-relevance feedback (PRF) in traditional retrieval models. This design preserves the efficiency and representational quality of the base embedding model while significantly improving its reranking performance. Empirically, E2Rank achieves state-of-the-art results on the BEIR reranking benchmark and demonstrates competitive performance on the reasoning-intensive BRIGHT benchmark, with very low reranking latency. We also show that the ranking training process improves embedding performance on the MTEB benchmark. Our findings indicate that a single embedding model can effectively unify retrieval and reranking, offering both computational efficiency and competitive ranking accuracy.
 ]]></content:encoded>
 <pubDate>Mon, 03 Nov 2025 00:00:00 -0500</pubDate>
-<pubDate>Mon, 03 Nov 2025 00:00:00 -0500</pubDate>
 </item>
-
 <item>
 <title>CATArena: Evaluation of LLM Agents through Iterative Tournament Competitions</title>
 <link>https://arxiv.org/abs/2510.26852</link>
@@ -11058,16 +11057,6 @@ Abstract: Room impulse response (RIR) generation remains a critical challenge fo
 <content:encoded><![CDATA[
 arXiv:2510.22450v1 Announce Type: cross 
 Abstract: The choice of activation function plays a critical role in neural networks, yet most architectures still rely on fixed, uniform activation functions across all neurons. We introduce SmartMixed, a two-phase training strategy that allows networks to learn optimal per-neuron activation functions while preserving computational efficiency at inference. In the first phase, neurons adaptively select from a pool of candidate activation functions (ReLU, Sigmoid, Tanh, Leaky ReLU, ELU, SELU) using a differentiable hard-mixture mechanism. In the second phase, each neuron's activation function is fixed according to the learned selection, resulting in a computationally efficient network that supports continued training with optimized vectorized operations. We evaluate SmartMixed on the MNIST dataset using feedforward neural networks of varying depths. The analysis shows that neurons in different layers exhibit distinct preferences for activation functions, providing insights into the functional diversity within neural architectures.
-]]></content:encoded>
-<pubDate>Tue, 28 Oct 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>GraphTOP: Graph Topology-Oriented Prompting for Graph Neural Networks</title>
-<link>https://arxiv.org/abs/2510.22451</link>
-<guid>https://arxiv.org/abs/2510.22451</guid>
-<content:encoded><![CDATA[
-arXiv:2510.22451v1 Announce Type: cross 
-Abstract: Graph Neural Networks (GNNs) have revolutionized the field of graph learning by learning expressive graph representations from massive graph data. As a common pattern to train powerful GNNs, the "pre-training, adaptation" scheme first pre-trains GNNs over unlabeled graph data and subsequently adapts them to specific downstream tasks. In the adaptation phase, graph prompting is an effective strategy that modifies input graph data with learnable prompts while keeping pre-trained GNN models frozen. Typically, existing graph prompting studies mainly focus on *feature-oriented* methods that apply graph prompts to node features or hidden representations. However, these studies often achieve suboptimal performance, as they consistently overlook the potential of *topology-oriented* prompting, which adapts pre-trained GNNs by modifying the graph topology. In this study, we conduct a pioneering investigation of graph prompting in terms of graph topology. We propose the first **Graph** **T**opology-**O**riented **P**rompting (GraphTOP) framework to effectively adapt pre-trained GNN models for downstream tasks. More specifically, we reformulate topology-oriented prompting as an edge rewiring problem within multi-hop local subgraphs and relax it into the continuous probability space through reparameterization while ensuring tight relaxation and preserving graph sparsity. Extensive experiments on five graph datasets under four pre-training strategies demonstrate that our proposed GraphTOP outshines six baselines on multiple node classification datasets. Our code is available at https://github.com/xbfu/GraphTOP.
 ]]></content:encoded>
 <pubDate>Tue, 28 Oct 2025 00:00:00 -0400</pubDate>
 </item>

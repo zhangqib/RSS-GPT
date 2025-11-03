@@ -4,6 +4,7 @@
 <title>cs.LG updates on arXiv.org</title>
 <link>http://rss.arxiv.org/rss/cs.LG</link>
 
+
 <item>
 <title>SmartMixed: A Two-Phase Training Strategy for Adaptive Activation Function Learning in Neural Networks</title>
 <link>https://arxiv.org/abs/2510.22450</link>
@@ -16,20 +17,18 @@ arXiv:2510.22450v2 Announce Type: replace
 Abstract: The choice of activation function plays a critical role in neural networks, yet most architectures still rely on fixed, uniform activation functions across all neurons. We introduce SmartMixed, a two-phase training strategy that allows networks to learn optimal per-neuron activation functions while preserving computational efficiency at inference. In the first phase, neurons adaptively select from a pool of candidate activation functions (ReLU, Sigmoid, Tanh, Leaky ReLU, ELU, SELU) using a differentiable hard-mixture mechanism. In the second phase, each neuron's activation function is fixed according to the learned selection, resulting in a computationally efficient network that supports continued training with optimized vectorized operations. We evaluate SmartMixed on the MNIST dataset using feedforward neural networks of varying depths. The analysis shows that neurons in different layers exhibit distinct preferences for activation functions, providing insights into the functional diversity within neural architectures.
 ]]></content:encoded>
 <pubDate>Mon, 03 Nov 2025 00:00:00 -0500</pubDate>
-<pubDate>Mon, 03 Nov 2025 00:00:00 -0500</pubDate>
 </item>
 <item>
 <title>Generating Auxiliary Tasks with Reinforcement Learning</title>
 <link>https://arxiv.org/abs/2510.22940</link>
 <guid>https://arxiv.org/abs/2510.22940</guid>
 <content:encoded><![CDATA[
-<div> Auxiliary Learning, multi-task learning, reinforcement learning, dynamic task creation, per-example weights <br>
-Summary:<br> 
-The paper introduces RL-AUX, a reinforcement learning framework for dynamically generating auxiliary tasks in multi-task learning. This approach aims to reduce the reliance on human-labeled auxiliary tasks, which are costly and require domain expertise. RL-AUX assigns auxiliary labels to training examples and rewards the agent for improving performance on the primary task. The framework also explores learning per-example weights for the auxiliary loss. Experimental results on CIFAR-100 and other classification datasets demonstrate that the RL method outperforms human-labeled auxiliary tasks and matches the performance of a prominent bi-level optimization baseline. These findings indicate that RL can effectively generate auxiliary tasks, showcasing its potential as a viable approach for enhancing generalization in multi-task learning scenarios. <br> <div>
+<div> Auxiliary Learning, multi-task learning, reinforcement learning, dynamic task creation, per-example weights <br />
+Summary:<br /> 
+The paper introduces RL-AUX, a reinforcement learning framework for dynamically generating auxiliary tasks in multi-task learning. This approach aims to reduce the reliance on human-labeled auxiliary tasks, which are costly and require domain expertise. RL-AUX assigns auxiliary labels to training examples and rewards the agent for improving performance on the primary task. The framework also explores learning per-example weights for the auxiliary loss. Experimental results on CIFAR-100 and other classification datasets demonstrate that the RL method outperforms human-labeled auxiliary tasks and matches the performance of a prominent bi-level optimization baseline. These findings indicate that RL can effectively generate auxiliary tasks, showcasing its potential as a viable approach for enhancing generalization in multi-task learning scenarios. <br /> <div>
 arXiv:2510.22940v3 Announce Type: replace 
 Abstract: Auxiliary Learning (AL) is a form of multi-task learning in which a model trains on auxiliary tasks to boost performance on a primary objective. While AL has improved generalization across domains such as navigation, image classification, and NLP, it often depends on human-labeled auxiliary tasks that are costly to design and require domain expertise. Meta-learning approaches mitigate this by learning to generate auxiliary tasks, but typically rely on gradient based bi-level optimization, adding substantial computational and implementation overhead. We propose RL-AUX, a reinforcement-learning (RL) framework that dynamically creates auxiliary tasks by assigning auxiliary labels to each training example, rewarding the agent whenever its selections improve the performance on the primary task. We also explore learning per-example weights for the auxiliary loss. On CIFAR-100 grouped into 20 superclasses, our RL method outperforms human-labeled auxiliary tasks and matches the performance of a prominent bi-level optimization baseline. We present similarly strong results on other classification datasets. These results suggest RL is a viable path to generating effective auxiliary tasks.
 ]]></content:encoded>
-<pubDate>Mon, 03 Nov 2025 00:00:00 -0500</pubDate>
 <pubDate>Mon, 03 Nov 2025 00:00:00 -0500</pubDate>
 </item>
 <item>
@@ -38,16 +37,14 @@ Abstract: Auxiliary Learning (AL) is a form of multi-task learning in which a mo
 <guid>https://arxiv.org/abs/2510.22951</guid>
 <content:encoded><![CDATA[
 <div> Hankel singular values, state space models, compression, regularization, deep neural networks  
-<br>  
+<br />  
 Summary:  
 State space models used as layers in deep neural networks are effective for long-range sequence tasks but challenging to compress post-training. By regularizing the sum of Hankel singular values, the singular values decay rapidly, resulting in compressible models. An algorithm is developed to efficiently compute the Hankel singular values during training iterations by exploiting the block-diagonal structure of system matrices in the state space model parametrization. Experiments on Long Range Arena benchmarks show that regularized state space layers are up to 10 times more compressible than standard layers while maintaining high accuracy. <div>
 arXiv:2510.22951v2 Announce Type: replace 
 Abstract: Deep neural networks using state space models as layers are well suited for long-range sequence tasks but can be challenging to compress after training. We use that regularizing the sum of Hankel singular values of state space models leads to a fast decay of these singular values and thus to compressible models. To make the proposed Hankel singular value regularization scalable, we develop an algorithm to efficiently compute the Hankel singular values during training iterations by exploiting the specific block-diagonal structure of the system matrices that we use in our state space model parametrization. Experiments on Long Range Arena benchmarks demonstrate that the regularized state space layers are up to 10$\times$ more compressible than standard state space layers while maintaining high accuracy.
 ]]></content:encoded>
 <pubDate>Mon, 03 Nov 2025 00:00:00 -0500</pubDate>
-<pubDate>Mon, 03 Nov 2025 00:00:00 -0500</pubDate>
 </item>
-
 <item>
 <title>Layer of Truth: Probing Belief Shifts under Continual Pre-Training Poisoning</title>
 <link>https://arxiv.org/abs/2510.26829</link>
@@ -11053,36 +11050,6 @@ Abstract: Reconstructing high-quality images from low-resolution inputs using Re
 <content:encoded><![CDATA[
 arXiv:2507.01271v4 Announce Type: replace 
 Abstract: In recent years, unlearning techniques, which are methods for inducing a model to "forget" previously learned information, have attracted attention as a way to address privacy and copyright concerns in large language models (LLMs) and large multimodal models (LMMs). While several unlearning benchmarks have been established for LLMs, a practical evaluation framework for unlearning in LMMs has been less explored. Specifically, existing unlearning benchmark for LMMs considers only scenarios in which the model is required to unlearn fine-tuned knowledge through a single unlearning operation. In this study, we introduce PULSE protocol for realistic unlearning scenarios for LMMs by introducing two critical perspectives: (i) Pre-trained knowledge Unlearning for analyzing the effect across different knowledge acquisition phases and (ii) Long-term Sustainability Evaluation to address sequential requests. We then evaluate existing unlearning methods along these dimensions. Our results reveal that, although some techniques can successfully unlearn knowledge acquired through fine-tuning, they struggle to eliminate information learned during pre-training. Moreover, methods that effectively unlearn a batch of target data in a single operation exhibit substantial performance degradation when the same data are split and unlearned sequentially.
-]]></content:encoded>
-<pubDate>Wed, 29 Oct 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Sample Complexity Bounds for Linear Constrained MDPs with a Generative Model</title>
-<link>https://arxiv.org/abs/2507.02089</link>
-<guid>https://arxiv.org/abs/2507.02089</guid>
-<content:encoded><![CDATA[
-arXiv:2507.02089v2 Announce Type: replace 
-Abstract: We consider infinite-horizon $\gamma$-discounted (linear) constrained Markov decision processes (CMDPs) where the objective is to find a policy that maximizes the expected cumulative reward subject to expected cumulative constraints. Given access to a generative model, we propose to solve CMDPs with a primal-dual framework that can leverage any black-box unconstrained MDP solver. For linear CMDPs with feature dimension $d$, we instantiate the framework by using mirror descent value iteration (\texttt{MDVI})~\citep{kitamura2023regularization} an example MDP solver. We provide sample complexity bounds for the resulting CMDP algorithm in two cases: (i) relaxed feasibility, where small constraint violations are allowed, and (ii) strict feasibility, where the output policy is required to exactly satisfy the constraint. For (i), we prove that the algorithm can return an $\epsilon$-optimal policy with high probability by using $\tilde{O}\left(\frac{d^2}{(1-\gamma)^4\epsilon^2}\right)$ samples. For (ii), we show that the algorithm requires $\tilde{O}\left(\frac{d^2}{(1-\gamma)^6\epsilon^2\zeta^2}\right)$ samples, where $\zeta$ is the problem-dependent Slater constant that characterizes the size of the feasible region. Furthermore, we prove a lower-bound of $\Omega\left(\frac{d^2}{(1-\gamma)^5\epsilon^2\zeta^2}\right)$ for the strict feasibility setting. We note that our upper bounds under both settings exhibit a near-optimal dependence on $d$, $\epsilon$, and $\zeta$. Finally, we instantiate our framework for tabular CMDPs and show that it can be used to recover near-optimal sample complexities in this setting.
-]]></content:encoded>
-<pubDate>Wed, 29 Oct 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>FoGE: Fock Space inspired encoding for graph prompting</title>
-<link>https://arxiv.org/abs/2507.02937</link>
-<guid>https://arxiv.org/abs/2507.02937</guid>
-<content:encoded><![CDATA[
-arXiv:2507.02937v2 Announce Type: replace 
-Abstract: Recent results show that modern Large Language Models (LLM) are indeed capable of understanding and answering questions about structured data such as graphs. This new paradigm can lead to solutions that require less supervision while, at the same time, providing a model that can generalize and answer questions beyond the training labels. Existing proposals often use some description of the graph to create an ``augmented'' prompt fed to the LLM. For a chosen class of graphs, if a well-tailored graph encoder is deployed to play together with a pre-trained LLM, the model can answer graph-related questions well. Existing solutions to graph-based prompts range from graph serialization to graph transformers. In this work, we show that the use of a parameter-free graph encoder based on Fock space representations, a concept borrowed from mathematical physics, is remarkably versatile in this problem setting. The simple construction, inherited directly from the theory with a few small adjustments, can provide rich and informative graph encodings, for a wide range of different graphs. We investigate the use of this idea for prefix-tuned prompts leveraging the capabilities of a pre-trained, frozen LLM. The modifications lead to a model that can answer graph-related questions -- from simple graphs to proteins to hypergraphs -- effectively and with minimal, if any, adjustments to the architecture. Our work significantly simplifies existing solutions and generalizes well to multiple different graph-based structures effortlessly.
-]]></content:encoded>
-<pubDate>Wed, 29 Oct 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>MH-GIN: Multi-scale Heterogeneous Graph-based Imputation Network for AIS Data (Extended Version)</title>
-<link>https://arxiv.org/abs/2507.20362</link>
-<guid>https://arxiv.org/abs/2507.20362</guid>
-<content:encoded><![CDATA[
-arXiv:2507.20362v3 Announce Type: replace 
-Abstract: Location-tracking data from the Automatic Identification System, much of which is publicly available, plays a key role in a range of maritime safety and monitoring applications. However, the data suffers from missing values that hamper downstream applications. Imputing the missing values is challenging because the values of different heterogeneous attributes are updated at diverse rates, resulting in the occurrence of multi-scale dependencies among attributes. Existing imputation methods that assume similar update rates across attributes are unable to capture and exploit such dependencies, limiting their imputation accuracy. We propose MH-GIN, a Multi-scale Heterogeneous Graph-based Imputation Network that aims improve imputation accuracy by capturing multi-scale dependencies. Specifically, MH-GIN first extracts multi-scale temporal features for each attribute while preserving their intrinsic heterogeneous characteristics. Then, it constructs a multi-scale heterogeneous graph to explicitly model dependencies between heterogeneous attributes to enable more accurate imputation of missing values through graph propagation. Experimental results on two real-world datasets find that MH-GIN is capable of an average 57% reduction in imputation errors compared to state-of-the-art methods, while maintaining computational efficiency. The source code and implementation details of MH-GIN are publicly available https://github.com/hyLiu1994/MH-GIN.
 ]]></content:encoded>
 <pubDate>Wed, 29 Oct 2025 00:00:00 -0400</pubDate>
 </item>
