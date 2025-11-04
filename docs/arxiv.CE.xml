@@ -4,6 +4,7 @@
 <title>cs.CE updates on arXiv.org</title>
 <link>http://rss.arxiv.org/rss/cs.CE</link>
 
+
 <item>
 <title>GEDICorrect: A Scalable Python Tool for Orbit-, Beam-, and Footprint-Level GEDI Geolocation Correction</title>
 <link>https://arxiv.org/abs/2511.00319</link>
@@ -18,11 +19,10 @@ Summary:
 - Canopy height accuracy is enhanced from $R^2 = 0.61$ to 0.78 with footprint-level correction, reducing RMSE and rRMSE.
 - Terrain elevation accuracy also sees improvements, with GEDICorrect reducing RMSE compared to uncorrected data and the GEDI Simulator baseline.
 - The framework demonstrates computational efficiency, achieving a speedup over the GEDI Simulator and scaling efficiently to 24 cores for a significant improvement in runtime.
-<br><br>Summary: <div>
+<br /><br />Summary: <div>
 arXiv:2511.00319v1 Announce Type: new 
 Abstract: Accurate geolocation is essential for the reliable use of GEDI LiDAR data in footprint-scale applications such as aboveground biomass modeling, data fusion, and ecosystem monitoring. However, residual geolocation errors arising from both systematic biases and random ISS-induced jitter can significantly affect the accuracy of derived vegetation and terrain metrics. The main goal of this study is to develop and evaluate a flexible, computationally efficient framework (GEDICorrect) that enables geolocation correction of GEDI data at the orbit, beam, and footprint levels. The framework integrates existing GEDI Simulator modules (gediRat and gediMetrics) and extends their functionality with flexible correction logic, multiple similarity metrics, adaptive footprint clustering, and optimized I/O handling. Using the Kullback--Leibler divergence as the waveform similarity metric, GEDICorrect improved canopy height (RH95) accuracy from $R^2 = 0.61$ (uncorrected) to 0.74 with the orbit-level correction, and up to $R^2 = 0.78$ with the footprint-level correction, reducing RMSE from 2.62~m ($rRMSE = 43.13\%$) to 2.12~m ($rRMSE = 34.97\%$) at the orbit level, and 2.01~m ($rRMSE = 33.05\%$) at the footprint level. Terrain elevation accuracy also improved, decreasing RMSE by 0.34~m relative to uncorrected data and by 0.37~m compared to the GEDI Simulator baseline. In terms of computational efficiency, GEDICorrect achieved a $\sim2.4\times$ speedup over the GEDI Simulator in single-process mode (reducing runtime from $\sim84$~h to $\sim35$~h) and scaled efficiently to 24 cores, completing the same task in $\sim4.3$~h -- an overall $\sim19.5\times$ improvement. GEDICorrect offers a robust and scalable solution for improving GEDI geolocation accuracy while maintaining full compatibility with standard GEDI data products.
 ]]></content:encoded>
-<pubDate>Tue, 04 Nov 2025 00:00:00 -0500</pubDate>
 <pubDate>Tue, 04 Nov 2025 00:00:00 -0500</pubDate>
 </item>
 <item>
@@ -35,11 +35,10 @@ Abstract: Accurate geolocation is essential for the reliable use of GEDI LiDAR d
 Summary:
 The article introduces STARC-9, a large-scale dataset for multi-class tissue classification in colorectal cancer (CRC) histopathologic images. The dataset consists of 630,000 image tiles across nine tissue classes from 200 CRC patients. STARC-9 was created using the DeepCluster++ framework, which ensures intra-class diversity and reduces manual curation. The process involves extracting feature vectors, clustering similar tiles, and sampling diverse morphologic patterns within each class. Expert pathologists verify the selected tiles, resulting in high-quality data. Models trained on STARC-9 show superior generalizability compared to existing datasets, demonstrating its utility in CRC tissue classification and segmentation tasks. DeepCluster++ is highlighted as a flexible framework that can be applied to construct high-quality datasets from large WSI repositories for various cancer and non-cancer applications. 
 
-<br><br>Summary: <div>
+<br /><br />Summary: <div>
 arXiv:2511.00383v1 Announce Type: new 
 Abstract: Multi-class tissue-type classification of colorectal cancer (CRC) histopathologic images is a significant step in the development of downstream machine learning models for diagnosis and treatment planning. However, existing public CRC datasets often lack morphologic diversity, suffer from class imbalance, and contain low-quality image tiles, limiting model performance and generalizability. To address these issues, we introduce STARC-9 (STAnford coloRectal Cancer), a large-scale dataset for multi-class tissue classification. STARC-9 contains 630,000 hematoxylin and eosin-stained image tiles uniformly sampled across nine clinically relevant tissue classes (70,000 tiles per class) from 200 CRC patients at the Stanford University School of Medicine. The dataset was built using a novel framework, DeepCluster++, designed to ensure intra-class diversity and reduce manual curation. First, an encoder from a histopathology-specific autoencoder extracts feature vectors from tiles within each whole-slide image. Then, K-means clustering groups morphologically similar tiles, followed by equal-frequency binning to sample diverse morphologic patterns within each class. The selected tiles are subsequently verified by expert gastrointestinal pathologists to ensure accuracy. This semi-automated process significantly reduces manual effort while producing high-quality, diverse tiles. To evaluate STARC-9, we benchmarked convolutional neural networks, transformers, and pathology-specific foundation models on multi-class CRC tissue classification and segmentation tasks, showing superior generalizability compared to models trained on existing datasets. Although we demonstrate the utility of DeepCluster++ on CRC as a pilot use-case, it is a flexible framework that can be used for constructing high-quality datasets from large WSI repositories across a wide range of cancer and non-cancer applications.
 ]]></content:encoded>
-<pubDate>Tue, 04 Nov 2025 00:00:00 -0500</pubDate>
 <pubDate>Tue, 04 Nov 2025 00:00:00 -0500</pubDate>
 </item>
 <item>
@@ -48,13 +47,12 @@ Abstract: Multi-class tissue-type classification of colorectal cancer (CRC) hist
 <guid>https://arxiv.org/abs/2511.00390</guid>
 <content:encoded><![CDATA[
 <div> deep learning, lead-lag effect, financial markets, portfolio construction, predictive signals
-<br>
+<br />
 Summary:
 DeltaLag is introduced as an innovative deep learning approach for detecting and exploiting dynamic lead-lag structures in financial markets. It utilizes a sparsified cross-attention mechanism to identify relevant lead-lag pairs and extract lag-aligned raw features for predicting future returns of lagger stocks. The method outperforms traditional baselines and precomputed lead-lag graphs, demonstrating superior adaptability in dynamic market conditions. DeltaLag surpasses temporal and spatio-temporal deep learning models in stock prediction accuracy and interpretability, offering enhanced trading performance. <div>
 arXiv:2511.00390v1 Announce Type: new 
 Abstract: The lead-lag effect, where the price movement of one asset systematically precedes that of another, has been widely observed in financial markets and conveys valuable predictive signals for trading. However, traditional lead-lag detection methods are limited by their reliance on statistical analysis methods and by the assumption of persistent lead-lag patterns, which are often invalid in dynamic market conditions. In this paper, we propose \textbf{DeltaLag}, the first end-to-end deep learning method that discovers and exploits dynamic lead-lag structures with pair-specific lag values in financial markets for portfolio construction. Specifically, DeltaLag employs a sparsified cross-attention mechanism to identify relevant lead-lag pairs. These lead-lag signals are then leveraged to extract lag-aligned raw features from the leading stocks for predicting the lagger stock's future return. Empirical evaluations show that DeltaLag substantially outperforms both fixed-lag and self-lead-lag baselines. In addition, its adaptive mechanism for identifying lead-lag relationships consistently surpasses precomputed lead-lag graphs based on statistical methods. Furthermore, DeltaLag outperforms a wide range of temporal and spatio-temporal deep learning models designed for stock prediction or time series forecasting, offering both better trading performance and enhanced interpretability.
 ]]></content:encoded>
-<pubDate>Tue, 04 Nov 2025 00:00:00 -0500</pubDate>
 <pubDate>Tue, 04 Nov 2025 00:00:00 -0500</pubDate>
 </item>
 <item>
@@ -67,11 +65,10 @@ Abstract: The lead-lag effect, where the price movement of one asset systematica
 Summary:
 The paper introduces a new framework for autonomous navigation of UAV swarms in challenging environments. The framework, called Self-Learning Slime Mould Algorithm (SLSMA), incorporates meta-cognitive principles to enable real-time adaptation and recovery from planning failures. It includes a situation-aware search strategy, a collective memory mechanism, and an adaptive recovery behavior. The multi-UAV trajectory problem is formulated as a resilient planning challenge, considering path length, collisions, navigational uncertainty, and proximity to failure states. Extensive simulations demonstrate that the SLSMA outperforms existing metaheuristics in terms of mission success rate, recovery speed, and solution reliability. This work marks a crucial advancement towards the development of truly autonomous UAV swarms capable of operating persistently in complex and dynamic environments. 
 
-Summary:<br><br>framework: new framework for autonomous UAV swarm navigation introduced<br>UAV swarms: multiple UAVs working together autonomously<br>autonomous navigation: navigating without human intervention<br>meta-cognition: incorporating cognitive principles in algorithms<br>Self-Learning Slime Mould Algorithm: algorithm integrating meta-cognition for real-time adaptation and recovery of UAV swarms <div>
+Summary:<br /><br />framework: new framework for autonomous UAV swarm navigation introduced<br />UAV swarms: multiple UAVs working together autonomously<br />autonomous navigation: navigating without human intervention<br />meta-cognition: incorporating cognitive principles in algorithms<br />Self-Learning Slime Mould Algorithm: algorithm integrating meta-cognition for real-time adaptation and recovery of UAV swarms <div>
 arXiv:2511.00884v1 Announce Type: new 
 Abstract: Autonomous navigation of UAV swarms in perceptually-degraded environments, where GPS is unavailable and terrain is densely cluttered, presents a critical bottleneck for real-world deployment. Existing optimization-based planners lack the resilience to avoid catastrophic convergence to local optima under such uncertainty. Inspired by principles of computational meta-cognition, this paper introduces a novel swarm intelligence framework that enables a fleet of UAVs to autonomously sense, adapt, and recover from planning failures in real-time. At its core is the Self-Learning Slime Mould Algorithm (SLSMA), which integrates three meta-cognitive layers: a situation-aware search strategy that dynamically selects between exploration and exploitation based on perceived search stagnation; a collective memory mechanism that allows the swarm to learn from and avoid previously failed trajectories; and an adaptive recovery behavior that triggers global re-exploration upon entrapment. We formulate the multi-UAV trajectory problem as a resilient planning challenge, with a cost function that penalizes not only path length and collisions but also navigational uncertainty and proximity to failure states. Extensive simulations in synthetically complex 3D worlds and against the CEC 2017 benchmark suite demonstrate the framework's superior performance. The SLSMA does not merely optimize paths; it generates resilient trajectories, demonstrating a 99.5% mission success rate and significantly outperforming state-of-the-art metaheuristics in recovery speed and solution reliability. This work provides a foundational step towards truly autonomous swarms capable of persistent operation in denied and dynamic environments.
 ]]></content:encoded>
-<pubDate>Tue, 04 Nov 2025 00:00:00 -0500</pubDate>
 <pubDate>Tue, 04 Nov 2025 00:00:00 -0500</pubDate>
 </item>
 <item>
@@ -84,11 +81,10 @@ Abstract: Autonomous navigation of UAV swarms in perceptually-degraded environme
 Summary:
 This study explores the performance and scalability of GPU-accelerated Quantum Inspired Evolutionary Optimization (QIEO) for solving large-scale 01 Knapsack problems. By leveraging CUDA's parallel processing capabilities on NVIDIA Tesla V100 GPUs, the researchers systematically analyze various problem sizes, kernel configurations, and memory models. They find that optimizing memory strategies and kernel configurations is crucial for maximizing efficiency, with constant memory outperforming other options up to hardware limits. Beyond these limits, global memory and tiling strategies offer trade-offs in performance. The study highlights both the potential and practical constraints of implementing QIEO on GPUs for complex combinatorial optimization problems, providing valuable insights for future large-scale metaheuristic implementations. 
 
-<br><br>Summary: <div>
+<br /><br />Summary: <div>
 arXiv:2511.01298v1 Announce Type: new 
 Abstract: Quantum inspired evolutionary optimization leverages quantum computing principles like superposition, interference, and probabilistic representation to enhance classical evolutionary algorithms with improved exploration and exploitation capabilities. Implemented on NVIDIA Tesla V100 SXM2 GPUs, this study systematically investigates the performance and scalability of a GPU-accelerated Quantum Inspired Evolutionary Optimizer applied to large scale 01 Knapsack problems. By exploiting CUDA`s parallel processing capabilities, particularly through optimized memory management and thread configuration, significant speedups and efficient utilization of GPU resources is demonstrated. The analysis covers various problem sizes, kernel launch configurations, and memory models including constant, shared, global, and pinned memory, alongside extensive scaling studies. The results reveal that careful tuning of memory strategies and kernel configurations is essential for maximizing throughput and efficiency, with constant memory providing superior performance up to hardware limits. Beyond these limits, global memory and strategic tiling become necessary, albeit with some performance trade offs. The findings highlight both the promise and the practical constraints of applying QIEO on GPUs for complex combinatorial optimization, offering actionable insights for future large scale metaheuristic implementations.
 ]]></content:encoded>
-<pubDate>Tue, 04 Nov 2025 00:00:00 -0500</pubDate>
 <pubDate>Tue, 04 Nov 2025 00:00:00 -0500</pubDate>
 </item>
 <item>
@@ -96,13 +92,12 @@ Abstract: Quantum inspired evolutionary optimization leverages quantum computing
 <link>https://arxiv.org/abs/2511.01318</link>
 <guid>https://arxiv.org/abs/2511.01318</guid>
 <content:encoded><![CDATA[
-<div> Keywords: stock market analysis, Chinese stock market, multimodal dataset, LightQuant framework, financial domains<br>
-Summary:<br>
-The article introduces a new multimodal dataset, CSMD, specifically curated for analyzing the Chinese stock market. The dataset is meticulously processed to ensure validated quality and addresses the limitations of existing resources mainly focused on the U.S. stock market in English. The authors also present a lightweight and user-friendly framework called LightQuant for researchers and practitioners with expertise in financial domains. Experimental results using various backbone models demonstrate the effectiveness of the dataset and framework compared to existing datasets. The datasets and code are publicly available on GitHub, providing a valuable resource for researchers and practitioners interested in stock market analysis in the Chinese market. <br><br>Summary: <div>
+<div> Keywords: stock market analysis, Chinese stock market, multimodal dataset, LightQuant framework, financial domains<br />
+Summary:<br />
+The article introduces a new multimodal dataset, CSMD, specifically curated for analyzing the Chinese stock market. The dataset is meticulously processed to ensure validated quality and addresses the limitations of existing resources mainly focused on the U.S. stock market in English. The authors also present a lightweight and user-friendly framework called LightQuant for researchers and practitioners with expertise in financial domains. Experimental results using various backbone models demonstrate the effectiveness of the dataset and framework compared to existing datasets. The datasets and code are publicly available on GitHub, providing a valuable resource for researchers and practitioners interested in stock market analysis in the Chinese market. <br /><br />Summary: <div>
 arXiv:2511.01318v1 Announce Type: new 
 Abstract: The stock market is a complex and dynamic system, where it is non-trivial for researchers and practitioners to uncover underlying patterns and forecast stock movements. The existing studies for stock market analysis rely on leveraging various types of information to extract useful factors, which are highly conditional on the quality of the data used. However, the currently available resources are mainly based on the U.S. stock market in English, which is inapplicable to adapt to other countries. To address these issues, we propose CSMD, a multimodal dataset curated specifically for analyzing the Chinese stock market with meticulous processing for validated quality. In addition, we develop a lightweight and user-friendly framework LightQuant for researchers and practitioners with expertise in financial domains. Experimental results on top of our datasets and framework with various backbone models demonstrate their effectiveness compared with using existing datasets. The datasets and code are publicly available at the link: https://github.com/ECNU-CILAB/LightQuant.
 ]]></content:encoded>
-<pubDate>Tue, 04 Nov 2025 00:00:00 -0500</pubDate>
 <pubDate>Tue, 04 Nov 2025 00:00:00 -0500</pubDate>
 </item>
 <item>
@@ -110,19 +105,18 @@ Abstract: The stock market is a complex and dynamic system, where it is non-triv
 <link>https://arxiv.org/abs/2511.01701</link>
 <guid>https://arxiv.org/abs/2511.01701</guid>
 <content:encoded><![CDATA[
-<div> Keywords: Monte Carlo Tree Search, puzzle solving, solution space topology, compatibility graphs, algebraic connectivity <br>
+<div> Keywords: Monte Carlo Tree Search, puzzle solving, solution space topology, compatibility graphs, algebraic connectivity <br />
 Summary: 
 - The study focuses on determining the most effective topology to guide Monte Carlo Tree Search (MCTS) in puzzle solving tasks.
 - The research identifies that grid topology, commonly used in prior work, is not suitable for guiding MCTS due to its constant nature across all instances.
 - The proposed approach involves measuring solution space topology, which determines the structure of valid color assignments based on detected pattern rules.
 - The automatic detection of pattern rules is achieved with 100% accuracy for five types, and compatibility graphs are constructed to encode solution space structure.
-- Topological features such as algebraic connectivity play a crucial role in task difficulty and are integrated into MCTS node selection to improve search efficiency. <br><br>Summary: <div>
+- Topological features such as algebraic connectivity play a crucial role in task difficulty and are integrated into MCTS node selection to improve search efficiency. <br /><br />Summary: <div>
 arXiv:2511.01701v1 Announce Type: new 
 Abstract: A fundamental question in search-guided AI: what topology should guide Monte Carlo Tree Search (MCTS) in puzzle solving? Prior work applied topological features to guide MCTS in ARC-style tasks using grid topology -- the Laplacian spectral properties of cell connectivity -- and found no benefit. We identify the root cause: grid topology is constant across all instances. We propose measuring \emph{solution space topology} instead: the structure of valid color assignments constrained by detected pattern rules. We build this via compatibility graphs where nodes are $(cell, color)$ pairs and edges represent compatible assignments under pattern constraints.
   Our method: (1) detect pattern rules automatically with 100\% accuracy on 5 types, (2) construct compatibility graphs encoding solution space structure, (3) extract topological features (algebraic connectivity, rigidity, color structure) that vary with task difficulty, (4) integrate these features into MCTS node selection via sibling-normalized scores.
   We provide formal definitions, a rigorous selection formula, and comprehensive ablations showing that algebraic connectivity is the dominant signal. The work demonstrates that topology matters for search -- but only the \emph{right} topology. For puzzle solving, this is solution space structure, not problem space structure.
 ]]></content:encoded>
-<pubDate>Tue, 04 Nov 2025 00:00:00 -0500</pubDate>
 <pubDate>Tue, 04 Nov 2025 00:00:00 -0500</pubDate>
 </item>
 <item>
@@ -130,13 +124,12 @@ Abstract: A fundamental question in search-guided AI: what topology should guide
 <link>https://arxiv.org/abs/2511.01790</link>
 <guid>https://arxiv.org/abs/2511.01790</guid>
 <content:encoded><![CDATA[
-<div> Keywords: Computational materials discovery, crystal structures, density functional theory, synthesizability prediction, experimental synthesis <br>
+<div> Keywords: Computational materials discovery, crystal structures, density functional theory, synthesizability prediction, experimental synthesis <br />
 Summary: 
-Computational materials discovery involves generating crystal structures judged for plausibility with density functional theory, but these structures may not be experimentally accessible. A new combined compositional and structural synthesizability score has been developed to predict which compounds can be synthesized in a laboratory. Using this score, non-synthesized structures from various databases were evaluated, leading to the identification of several highly synthesizable candidates. Predicted synthesis pathways were tested experimentally across 16 targets, resulting in successful synthesis of 7 out of 16 compounds within just three days. This process not only filled gaps in known synthesized structures but also provided valuable insights into the practical usability of current materials databases. The study underscores the importance of synthesizability prediction in accelerating materials discovery. <br><br>Summary: <div>
+Computational materials discovery involves generating crystal structures judged for plausibility with density functional theory, but these structures may not be experimentally accessible. A new combined compositional and structural synthesizability score has been developed to predict which compounds can be synthesized in a laboratory. Using this score, non-synthesized structures from various databases were evaluated, leading to the identification of several highly synthesizable candidates. Predicted synthesis pathways were tested experimentally across 16 targets, resulting in successful synthesis of 7 out of 16 compounds within just three days. This process not only filled gaps in known synthesized structures but also provided valuable insights into the practical usability of current materials databases. The study underscores the importance of synthesizability prediction in accelerating materials discovery. <br /><br />Summary: <div>
 arXiv:2511.01790v1 Announce Type: new 
 Abstract: Computational materials discovery relies on the generation of plausible crystal structures. The plausibility is typically judged through density functional theory methods which, while typically accurate at zero Kelvin, often favor low-energy structures that are not experimentally accessible. We develop a combined compositional and structural synthesizability score which provides an accurate way of predicting which compounds can actually be synthesized in a laboratory. We use it to evaluate non-synthesized structures from the Materials Project, GNoME, and Alexandria, and identified several hundred highly synthesizable candidates. We then predict synthesis pathways, conduct corresponding experiments, and characterize the products across 16 targets, successfully synthesizing 7 of 16. The entire experimental process was completed in only three days. Our results highlight omissions in lists of known synthesized structures, deliver insights into the practical utility of current materials databases, and showcase the central role synthesizability prediction can play in materials discovery.
 ]]></content:encoded>
-<pubDate>Tue, 04 Nov 2025 00:00:00 -0500</pubDate>
 <pubDate>Tue, 04 Nov 2025 00:00:00 -0500</pubDate>
 </item>
 <item>
@@ -144,14 +137,13 @@ Abstract: Computational materials discovery relies on the generation of plausibl
 <link>https://arxiv.org/abs/2511.00047</link>
 <guid>https://arxiv.org/abs/2511.00047</guid>
 <content:encoded><![CDATA[
-<div> Graph-BERT, financial fraud detection, dynamic financial transaction analysis, DynBERG, Gated Recurrent Unit (GRU) <br>
-<br>
+<div> Graph-BERT, financial fraud detection, dynamic financial transaction analysis, DynBERG, Gated Recurrent Unit (GRU) <br />
+<br />
 Summary: 
 The study introduces DynBERG, a novel model that combines Graph-BERT with a GRU layer to analyze dynamic financial transaction networks. The model is designed to capture temporal evolution over multiple time steps and support directed edges, making it suitable for analyzing evolving structures in financial data. Tested on the Elliptic dataset containing Bitcoin transactions, including those during the Dark Market Shutdown event, DynBERG shows superior performance compared to other dynamic graph classification models like EvolveGCN and GCN. Its ability to adapt to significant market shifts is evident, with GRU playing a crucial role in modeling the temporal dynamics of financial transactions. DynBERG outperforms EvolveGCN before the market shutdown and surpasses GCN post-event, highlighting its effectiveness in detecting financial fraud and adapting to changing market conditions. <div>
 arXiv:2511.00047v1 Announce Type: cross 
 Abstract: Financial fraud detection is critical for maintaining the integrity of financial systems, particularly in decentralised environments such as cryptocurrency networks. Although Graph Convolutional Networks (GCNs) are widely used for financial fraud detection, graph Transformer models such as Graph-BERT are gaining prominence due to their Transformer-based architecture, which mitigates issues such as over-smoothing. Graph-BERT is designed for static graphs and primarily evaluated on citation networks with undirected edges. However, financial transaction networks are inherently dynamic, with evolving structures and directed edges representing the flow of money. To address these challenges, we introduce DynBERG, a novel architecture that integrates Graph-BERT with a Gated Recurrent Unit (GRU) layer to capture temporal evolution over multiple time steps. Additionally, we modify the underlying algorithm to support directed edges, making DynBERG well-suited for dynamic financial transaction analysis. We evaluate our model on the Elliptic dataset, which includes Bitcoin transactions, including all transactions during a major cryptocurrency market event, the Dark Market Shutdown. By assessing DynBERG's resilience before and after this event, we analyse its ability to adapt to significant market shifts that impact transaction behaviours. Our model is benchmarked against state-of-the-art dynamic graph classification approaches, such as EvolveGCN and GCN, demonstrating superior performance, outperforming EvolveGCN before the market shutdown and surpassing GCN after the event. Additionally, an ablation study highlights the critical role of incorporating a time-series deep learning component, showcasing the effectiveness of GRU in modelling the temporal dynamics of financial transactions.
 ]]></content:encoded>
-<pubDate>Tue, 04 Nov 2025 00:00:00 -0500</pubDate>
 <pubDate>Tue, 04 Nov 2025 00:00:00 -0500</pubDate>
 </item>
 <item>
@@ -167,7 +159,6 @@ arXiv:2511.00366v1 Announce Type: cross
 Abstract: Digital twins are developed to model the behavior of a specific physical asset (or twin), and they can consist of high-fidelity physics-based models or surrogates. A highly accurate surrogate is often preferred over multi-physics models as they enable forecasting the physical twin future state in real-time. To adapt to a specific physical twin, the digital twin model must be updated using in-service data from that physical twin. Here, we extend Gaussian process (GP) models to include derivative data, for improved accuracy, with dynamic updating to ingest physical twin data during service. Including derivative data, however, comes at a prohibitive cost of increased covariance matrix dimension. We circumvent this issue by using a sparse GP approximation, for which we develop extensions to incorporate derivatives. Numerical experiments demonstrate that the prediction accuracy of the derivative-enhanced sparse GP method produces improved models upon dynamic data additions. Lastly, we apply the developed algorithm within a DT framework to model fatigue crack growth in an aerospace vehicle.
 ]]></content:encoded>
 <pubDate>Tue, 04 Nov 2025 00:00:00 -0500</pubDate>
-<pubDate>Tue, 04 Nov 2025 00:00:00 -0500</pubDate>
 </item>
 <item>
 <title>OceanAI: A Conversational Platform for Accurate, Transparent, Near-Real-Time Oceanographic Insights</title>
@@ -176,11 +167,10 @@ Abstract: Digital twins are developed to model the behavior of a specific physic
 <content:encoded><![CDATA[
 <div> Keywords: Artificial intelligence, oceanography, data integration, conversational platform, NOAA.
 
-Summary:<br><br>Artificial intelligence is revolutionizing scientific research, but conventional conversational AI systems often produce unreliable information, posing a threat to scientific integrity. In response to this challenge, the OceanAI platform has been developed to combine the linguistic proficiency of large language models with direct access to real-time oceanographic data from NOAA. By leveraging APIs to access and synthesize authoritative data, OceanAI can provide accurate and reproducible answers to queries, such as historical water levels in specific locations. In a comparison with other AI chat interfaces, OceanAI was the only platform to consistently produce accurate values supported by original data sources. The platform's extensibility allows it to connect with various NOAA datasets, enabling applications in marine hazard prediction, ecosystem evaluation, and water quality monitoring. By prioritizing transparency and verifiability, OceanAI enhances the trustworthiness and credibility of AI-driven decision-making processes in ocean-related domains. Visit https://oceanai.ai4ocean.xyz for a live demonstration of OceanAI. <div>
+Summary:<br /><br />Artificial intelligence is revolutionizing scientific research, but conventional conversational AI systems often produce unreliable information, posing a threat to scientific integrity. In response to this challenge, the OceanAI platform has been developed to combine the linguistic proficiency of large language models with direct access to real-time oceanographic data from NOAA. By leveraging APIs to access and synthesize authoritative data, OceanAI can provide accurate and reproducible answers to queries, such as historical water levels in specific locations. In a comparison with other AI chat interfaces, OceanAI was the only platform to consistently produce accurate values supported by original data sources. The platform's extensibility allows it to connect with various NOAA datasets, enabling applications in marine hazard prediction, ecosystem evaluation, and water quality monitoring. By prioritizing transparency and verifiability, OceanAI enhances the trustworthiness and credibility of AI-driven decision-making processes in ocean-related domains. Visit https://oceanai.ai4ocean.xyz for a live demonstration of OceanAI. <div>
 arXiv:2511.01019v1 Announce Type: cross 
 Abstract: Artificial intelligence is transforming the sciences, yet general conversational AI systems often generate unverified "hallucinations" undermining scientific rigor. We present OceanAI, a conversational platform that integrates the natural-language fluency of open-source large language models (LLMs) with real-time, parameterized access to authoritative oceanographic data streams hosted by the National Oceanic and Atmospheric Administration (NOAA). Each query such as "What was Boston Harbor's highest water level in 2024?" triggers real-time API calls that identify, parse, and synthesize relevant datasets into reproducible natural-language responses and data visualizations. In a blind comparison with three widely used AI chat-interface products, only OceanAI produced NOAA-sourced values with original data references; others either declined to answer or provided unsupported results. Designed for extensibility, OceanAI connects to multiple NOAA data products and variables, supporting applications in marine hazard forecasting, ecosystem assessment, and water-quality monitoring. By grounding outputs and verifiable observations, OceanAI advances transparency, reproducibility, and trust, offering a scalable framework for AI-enabled decision support within the oceans. A public demonstration is available at https://oceanai.ai4ocean.xyz.
 ]]></content:encoded>
-<pubDate>Tue, 04 Nov 2025 00:00:00 -0500</pubDate>
 <pubDate>Tue, 04 Nov 2025 00:00:00 -0500</pubDate>
 </item>
 <item>
@@ -196,7 +186,6 @@ arXiv:2511.01211v1 Announce Type: cross
 Abstract: We propose a framework that recasts scientific novelty not as a single attribute of a paper, but as a reflection of its position within the evolving intellectual landscape. We decompose this position into two orthogonal dimensions: \textit{spatial novelty}, which measures a paper's intellectual distinctiveness from its neighbors, and \textit{temporal novelty}, which captures its engagement with a dynamic research frontier. To operationalize these concepts, we leverage Large Language Models to develop semantic isolation metrics that quantify a paper's location relative to the full-text literature. Applying this framework to a large corpus of economics articles, we uncover a fundamental trade-off: these two dimensions predict systematically different outcomes. Temporal novelty primarily predicts citation counts, whereas spatial novelty predicts disruptive impact. This distinction allows us to construct a typology of semantic neighborhoods, identifying four archetypes associated with distinct and predictable impact profiles. Our findings demonstrate that novelty can be understood as a multidimensional construct whose different forms, reflecting a paper's strategic location, have measurable and fundamentally distinct consequences for scientific progress.
 ]]></content:encoded>
 <pubDate>Tue, 04 Nov 2025 00:00:00 -0500</pubDate>
-<pubDate>Tue, 04 Nov 2025 00:00:00 -0500</pubDate>
 </item>
 <item>
 <title>Dynamic Modeling of Precipitation in Electrolyte Systems</title>
@@ -211,20 +200,18 @@ arXiv:2511.01519v1 Announce Type: cross
 Abstract: This study presents a dynamic modeling approach for precipitation in electrolyte systems, focusing on the crystallization of an aromatic amine through continuous processes. A novel model, integrating equilibrium and crystallization kinetics, is formulated and applied to a continuous oscillatory baffled reactor. The approach assumes rapid equilibrium establishment and is formulated as a set of differential algebraic equations. Key features include a population balance equation model to describe the particle size distribution and the modeling of dynamically changing equilibria. The predictions of the dynamic model show good agreement with the available experimental measurements. The model is aimed at aiding the transition from a batch process to continuous process by forming the basis for numerical optimization and advanced control.
 ]]></content:encoded>
 <pubDate>Tue, 04 Nov 2025 00:00:00 -0500</pubDate>
-<pubDate>Tue, 04 Nov 2025 00:00:00 -0500</pubDate>
 </item>
 <item>
 <title>Disciplined Biconvex Programming</title>
 <link>https://arxiv.org/abs/2511.01813</link>
 <guid>https://arxiv.org/abs/2511.01813</guid>
 <content:encoded><![CDATA[
-<div> Keywords: disciplined biconvex programming, biconvex optimization, alternate convex search, convex optimization, Python package<br>
-Summary:<br>
+<div> Keywords: disciplined biconvex programming, biconvex optimization, alternate convex search, convex optimization, Python package<br />
+Summary:<br />
 Disciplined biconvex programming (DBCP) is proposed as a framework for solving biconvex optimization problems in various fields such as machine learning and signal processing. Typically, these problems are tackled using heuristics like alternate convex search (ACS) methods. DBCP simplifies the process by extending disciplined convex programming principles to biconvex problems, enabling users to specify problems with minimal syntax rules. The framework automatically splits and transforms problems into convex subproblems, generating customized ACS solvers for efficient solutions. Implemented in the Python package dbcp, DBCP integrates seamlessly with the popular CVXPY language for convex optimization. This enhancement allows users to experiment with diverse biconvex formulations without requiring specialized knowledge in convex optimization. <div>
 arXiv:2511.01813v1 Announce Type: cross 
 Abstract: We introduce disciplined biconvex programming (DBCP), a modeling framework for specifying and solving biconvex optimization problems. Biconvex optimization problems arise in various applications, including machine learning, signal processing, computational science, and control. Solving a biconvex optimization problem in practice usually resolves to heuristic methods based on alternate convex search (ACS), which iteratively optimizes over one block of variables while keeping the other fixed, so that the resulting subproblems are convex and can be efficiently solved. However, designing and implementing an ACS solver for a specific biconvex optimization problem usually requires significant effort from the user, which can be tedious and error-prone. DBCP extends the principles of disciplined convex programming to biconvex problems, allowing users to specify biconvex optimization problems in a natural way based on a small number of syntax rules. The resulting problem can then be automatically split and transformed into convex subproblems, for which a customized ACS solver is then generated and applied. DBCP allows users to quickly experiment with different biconvex problem formulations, without expertise in convex optimization. We implement DBCP into the open source Python package dbcp, as an extension to the famous domain specific language CVXPY for convex optimization.
 ]]></content:encoded>
-<pubDate>Tue, 04 Nov 2025 00:00:00 -0500</pubDate>
 <pubDate>Tue, 04 Nov 2025 00:00:00 -0500</pubDate>
 </item>
 <item>
@@ -235,14 +222,12 @@ Abstract: We introduce disciplined biconvex programming (DBCP), a modeling frame
 <div> multimodal data, Project-Based Learning, large language models, educational tasks, benchmark
 
 Summary:
-The article introduces PBLBench, a benchmark designed to evaluate complex reasoning in Project-Based Learning using large language models. It addresses the limitations of existing benchmarks by providing a free-form output structure and rigorous human expert validation process. Automated pipelines are lacking due to model hallucination and instability. PBLBench challenges models with tasks that resemble those handled by human experts, grounded in domain-specific knowledge and long-context understanding. The benchmark utilizes the Analytic Hierarchy Process for reliable ground truth, resulting in structured and weighted evaluation criteria. Performance of 15 MLLMs/LLMs on PBLBench shows that even advanced models achieve only 59% rank accuracy, highlighting the challenges it presents. PBLBench aims to facilitate the development of more capable AI agents to assist teachers and enhance educational productivity.<br><br>Summary: <div>
+The article introduces PBLBench, a benchmark designed to evaluate complex reasoning in Project-Based Learning using large language models. It addresses the limitations of existing benchmarks by providing a free-form output structure and rigorous human expert validation process. Automated pipelines are lacking due to model hallucination and instability. PBLBench challenges models with tasks that resemble those handled by human experts, grounded in domain-specific knowledge and long-context understanding. The benchmark utilizes the Analytic Hierarchy Process for reliable ground truth, resulting in structured and weighted evaluation criteria. Performance of 15 MLLMs/LLMs on PBLBench shows that even advanced models achieve only 59% rank accuracy, highlighting the challenges it presents. PBLBench aims to facilitate the development of more capable AI agents to assist teachers and enhance educational productivity.<br /><br />Summary: <div>
 arXiv:2505.17050v2 Announce Type: replace-cross 
 Abstract: Project-Based Learning (PBL) involves a variety of highly correlated multimodal data, making it a vital educational approach within STEM disciplines. With the rapid development of multimodal large language models (MLLMs), researchers have begun exploring their potential to enhance tasks such as information retrieval, knowledge comprehension, and data generation in educational settings. However, existing benchmarks fall short in providing both a free-form output structure and a rigorous human expert validation process, limiting their effectiveness in evaluating real-world educational tasks. Additionally, few methods have developed automated pipelines to assist with the complex responsibilities of teachers leveraging MLLMs, largely due to model hallucination and instability, which lead to unreliable implementation. To address this gap, we introduce PBLBench, a novel benchmark designed to evaluate complex reasoning grounded in domain-specific knowledge and long-context understanding, thereby challenging models with tasks that closely resemble those handled by human experts. To establish reliable ground truth, we adopt the Analytic Hierarchy Process (AHP), utilizing expert-driven pairwise comparisons to derive structured and weighted evaluation criteria. We assess the performance of 15 leading MLLMs/LLMs using PBLBench and demonstrate that even the most advanced models achieve only 59% rank accuracy, underscoring the significant challenges presented by this benchmark. We believe PBLBench will serve as a catalyst for the development of more capable AI agents, ultimately aiming to alleviate teacher workload and enhance educational productivity.
 ]]></content:encoded>
 <pubDate>Tue, 04 Nov 2025 00:00:00 -0500</pubDate>
-<pubDate>Tue, 04 Nov 2025 00:00:00 -0500</pubDate>
 </item>
-
 <item>
 <title>FMint-SDE: A Multimodal Foundation Model for Accelerating Numerical Simulation of SDEs via Error Correction</title>
 <link>https://arxiv.org/abs/2510.27173</link>
@@ -14517,220 +14502,6 @@ arXiv:2505.18210v1 Announce Type: cross
 Abstract: In this research a real time power hardware in loop configuration has been implemented for an microgrid with the combination of distribution energy resources such as photovoltaic, grid tied inverter, battery, utility grid, and a diesel generator. This paper introduces an unique adaptive multi-objective optimization approach that employs weighted optimization techniques for real-time microgrid systems. The aim is to effectively balance various factors including fuel consumption, load mismatch, power quality, battery degradation, and the utilization of renewable energy sources. A real time experimental data from power hardware in loop system has been used for dynamically updating system states. The adaptive preference-based selection method are adjusted based on state of battery charging thresholds. The technique has been integrated with six technical objectives and complex constraints. This approach helps to practical microgrid decision making and optimization of dynamic energy systems. The energy management process were also able to maximize photovoltaic production where minimizing power mismatch, stabilizing battery state of charge under different condition. The research results were also compared with the baseline system without optimization techniques, and a reliable outcome was found.
 ]]></content:encoded>
 <pubDate>Tue, 27 May 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Learning Fluid-Structure Interaction Dynamics with Physics-Informed Neural Networks and Immersed Boundary Methods</title>
-<link>https://arxiv.org/abs/2505.18565</link>
-<guid>https://arxiv.org/abs/2505.18565</guid>
-<content:encoded><![CDATA[
-<div> PINNs, immersed boundary method, fluid-structure interaction, neural network architectures, adaptive activation functions <br />
-Summary:
-Neural network architectures combining physics-informed neural networks (PINNs) with the immersed boundary method (IBM) were proposed for fluid-structure interaction (FSI) problems. Two architectures, Single-FSI and Eulerian-Lagrangian, were compared using standard Tanh and adaptive B-spline activation functions. The Eulerian-Lagrangian architecture showed superior performance, with the adaptive B-spline activation improving accuracy near boundaries. While velocity field prediction was successful, pressure recovery proved challenging without explicit force-coupling constraints. The study emphasized the importance of domain-specific architectural design and adaptive activation functions in modeling FSI within the PINN framework. <br /> <div>
-arXiv:2505.18565v1 Announce Type: cross 
-Abstract: We introduce neural network architectures that combine physics-informed neural networks (PINNs) with the immersed boundary method (IBM) to solve fluid-structure interaction (FSI) problems. Our approach features two distinct architectures: a Single-FSI network with a unified parameter space, and an innovative Eulerian-Lagrangian network that maintains separate parameter spaces for fluid and structure domains. We study each architecture using standard Tanh and adaptive B-spline activation functions. Empirical studies on a 2D cavity flow problem involving a moving solid structure show that the Eulerian-Lagrangian architecture performs significantly better. The adaptive B-spline activation further enhances accuracy by providing locality-aware representation near boundaries. While our methodology shows promising results in predicting the velocity field, pressure recovery remains challenging due to the absence of explicit force-coupling constraints in the current formulation. Our findings underscore the importance of domain-specific architectural design and adaptive activation functions for modeling FSI problems within the PINN framework.
-]]></content:encoded>
-<pubDate>Tue, 27 May 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Discrete gradient methods for port-Hamiltonian differential-algebraic equations</title>
-<link>https://arxiv.org/abs/2505.18810</link>
-<guid>https://arxiv.org/abs/2505.18810</guid>
-<content:encoded><![CDATA[
-<div> discrete gradient methods, nonlinear port-Hamiltonian differential-algebraic equations, numerical scheme, Dirac-dissipative structures, multibody system dynamics 
-
-Summary: 
-Discrete gradient methods are effective for time discretization of dynamical systems, preserving structure regardless of the total energy form. This study focuses on applying these methods to nonlinear port-Hamiltonian differential-algebraic equations, commonly used in modeling physical systems. A novel numerical scheme is introduced for semi-explicit differential-algebraic equations, with the utilization of discrete gradient pairs and Dirac-dissipative structures in general settings. The behavior under system transformations is analyzed, showing that these equations can be represented as a parametrized port-Hamiltonian semi-explicit system and an unstructured equation under specific conditions. The application to multibody system dynamics is demonstrated through numerical results, showcasing the efficiency of the approach. <div>
-arXiv:2505.18810v1 Announce Type: cross 
-Abstract: Discrete gradient methods are a powerful tool for the time discretization of dynamical systems, since they are structure-preserving regardless of the form of the total energy. In this work, we discuss the application of discrete gradient methods to the system class of nonlinear port-Hamiltonian differential-algebraic equations - as they emerge from the port- and energy-based modeling of physical systems in various domains. We introduce a novel numerical scheme tailored for semi-explicit differential-algebraic equations and further address more general settings using the concepts of discrete gradient pairs and Dirac-dissipative structures. Additionally, the behavior under system transformations is investigated and we demonstrate that under suitable assumptions port-Hamiltonian differential-algebraic equations admit a representation which consists of a parametrized port-Hamiltonian semi-explicit system and an unstructured equation. Finally, we present the application to multibody system dynamics and discuss numerical results to demonstrate the capabilities of our approach.
-]]></content:encoded>
-<pubDate>Tue, 27 May 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>MOOSE-Chem2: Exploring LLM Limits in Fine-Grained Scientific Hypothesis Discovery via Hierarchical Search</title>
-<link>https://arxiv.org/abs/2505.19209</link>
-<guid>https://arxiv.org/abs/2505.19209</guid>
-<content:encoded><![CDATA[
-<div> Keywords: Large language models, scientific hypothesis discovery, combinatorial optimization, hierarchical search method, chemistry literature
-
-Summary:
-1. The study introduces the task of fine-grained scientific hypothesis discovery, aiming to generate detailed and experimentally actionable hypotheses from initial research directions.
-2. The research explores how to utilize an LLM's internal heuristics to formulate the most promising hypothesis based on its own scoring system.
-3. The alignment between LLM-generated hypotheses and ground-truth hypotheses is investigated to evaluate the quality of the generated hypotheses.
-4. Comparisons are made between using an ensemble of diverse LLMs and repeated instances of the strongest LLM to shape the reward landscape for hypothesis generation.
-5. The study also analyzes the effectiveness of an ensemble of identical LLMs in providing a reliable reward landscape for hypothesis discovery.
-6. The proposed hierarchical search method incrementally adds details to hypotheses, leading to a smoother reward landscape and more effective optimization.
-7. Empirical evaluations on a chemistry literature benchmark demonstrate that the hierarchical search method consistently outperforms strong baselines. 
-
-<br /><br />Summary: <div>
-arXiv:2505.19209v1 Announce Type: cross 
-Abstract: Large language models (LLMs) have shown promise in automating scientific hypothesis generation, yet existing approaches primarily yield coarse-grained hypotheses lacking critical methodological and experimental details. We introduce and formally define the novel task of fine-grained scientific hypothesis discovery, which entails generating detailed, experimentally actionable hypotheses from coarse initial research directions. We frame this as a combinatorial optimization problem and investigate the upper limits of LLMs' capacity to solve it when maximally leveraged. Specifically, we explore four foundational questions: (1) how to best harness an LLM's internal heuristics to formulate the fine-grained hypothesis it itself would judge as the most promising among all the possible hypotheses it might generate, based on its own internal scoring-thus defining a latent reward landscape over the hypothesis space; (2) whether such LLM-judged better hypotheses exhibit stronger alignment with ground-truth hypotheses; (3) whether shaping the reward landscape using an ensemble of diverse LLMs of similar capacity yields better outcomes than defining it with repeated instances of the strongest LLM among them; and (4) whether an ensemble of identical LLMs provides a more reliable reward landscape than a single LLM. To address these questions, we propose a hierarchical search method that incrementally proposes and integrates details into the hypothesis, progressing from general concepts to specific experimental configurations. We show that this hierarchical process smooths the reward landscape and enables more effective optimization. Empirical evaluations on a new benchmark of expert-annotated fine-grained hypotheses from recent chemistry literature show that our method consistently outperforms strong baselines.
-]]></content:encoded>
-<pubDate>Tue, 27 May 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Rapid Development of Efficient Participant-Specific Computational Models of the Wrist</title>
-<link>https://arxiv.org/abs/2505.19282</link>
-<guid>https://arxiv.org/abs/2505.19282</guid>
-<content:encoded><![CDATA[
-<div> Keywords: computational modeling, hand and wrist injuries, finite element models, participant-specific, ligament injury
-
-Summary:
-Computational modeling plays a crucial role in developing treatment options for hand and wrist injuries. However, the current models are limited, often relying on average material properties from literature. A novel automated workflow has been developed to create participant-specific finite element models using non-linear morphing techniques and algorithmic approaches. By utilizing four-dimensional computed tomography (4DCT) data, three participant-specific models were created within 2 hours, allowing for individual simulations to be performed in just 45 seconds. The models were used to investigate clinical questions such as optimizing ligament properties to participant-specific kinematics and conducting Monte Carlo analysis on the effects of ligament injury on joint contact pressure. This work paves the way for future patient-specific modeling of hand and wrist injuries, offering a more personalized approach to treatment and understanding the impacts of injuries on joint health. 
-
-<br /><br />Summary: <div>
-arXiv:2505.19282v1 Announce Type: cross 
-Abstract: While computational modeling may help to develop new treatment options for hand and wrist injuries, at present, few models exist. The time and expertise required to develop and use these models is considerable. Moreover, most do not allow for variation of material properties, instead relying on literature reported averages. We have developed a novel automated workflow combining non-linear morphing techniques with various algorithmic techniques to create participant-specific finite element models. Using this workflow, three participant-specific models were created from our existing four-dimensional computed tomography (4DCT) data. These were then used to perform two analyses to demonstrate the usefulness of the models to investigate clinical questions, namely optimization of ligament properties to participant-specific kinematics, and Monte Carlo (MC) analysis of the impacts of ligament injury on joint contact pressure, as an analogue for joint injury that may lead to osteoarthritis. Participant-specific models can be created in 2 hours and individual simulations performed in 45 seconds. This work lays the groundwork for future patient-specific modeling of the hand and wrist.
-]]></content:encoded>
-<pubDate>Tue, 27 May 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>BizFinBench: A Business-Driven Real-World Financial Benchmark for Evaluating LLMs</title>
-<link>https://arxiv.org/abs/2505.19457</link>
-<guid>https://arxiv.org/abs/2505.19457</guid>
-<content:encoded><![CDATA[
-<div> benchmark, LLMs, finance, evaluation, reasoning <br /> 
-<br />
-Summary: 
-The article introduces BizFinBench, a benchmark designed to evaluate Large Language Models (LLMs) in financial applications. It includes 6,781 annotated queries in Chinese across various dimensions such as numerical calculation, reasoning, information extraction, prediction recognition, and knowledge-based question answering. The benchmark utilizes both objective and subjective metrics and introduces IteraJudge, a method to reduce bias when LLMs serve as evaluators. The evaluation of 25 models shows no single model excels in all tasks, revealing distinct capability patterns. In Numerical Calculation, Claude-3.5-Sonnet and DeepSeek-R1 lead, while in Reasoning, proprietary models outperform open-source models. Information Extraction shows the largest performance spread, while Prediction Recognition performance variance is minimal. The study highlights that while current LLMs handle routine finance queries well, they struggle with complex scenarios that require cross-concept reasoning. BizFinBench aims to provide a rigorous benchmark for future research in the financial domain. <div>
-arXiv:2505.19457v1 Announce Type: cross 
-Abstract: Large language models excel in general tasks, yet assessing their reliability in logic-heavy, precision-critical domains like finance, law, and healthcare remains challenging. To address this, we introduce BizFinBench, the first benchmark specifically designed to evaluate LLMs in real-world financial applications. BizFinBench consists of 6,781 well-annotated queries in Chinese, spanning five dimensions: numerical calculation, reasoning, information extraction, prediction recognition, and knowledge-based question answering, grouped into nine fine-grained categories. The benchmark includes both objective and subjective metrics. We also introduce IteraJudge, a novel LLM evaluation method that reduces bias when LLMs serve as evaluators in objective metrics. We benchmark 25 models, including both proprietary and open-source systems. Extensive experiments show that no model dominates across all tasks. Our evaluation reveals distinct capability patterns: (1) In Numerical Calculation, Claude-3.5-Sonnet (63.18) and DeepSeek-R1 (64.04) lead, while smaller models like Qwen2.5-VL-3B (15.92) lag significantly; (2) In Reasoning, proprietary models dominate (ChatGPT-o3: 83.58, Gemini-2.0-Flash: 81.15), with open-source models trailing by up to 19.49 points; (3) In Information Extraction, the performance spread is the largest, with DeepSeek-R1 scoring 71.46, while Qwen3-1.7B scores 11.23; (4) In Prediction Recognition, performance variance is minimal, with top models scoring between 39.16 and 50.00. We find that while current LLMs handle routine finance queries competently, they struggle with complex scenarios requiring cross-concept reasoning. BizFinBench offers a rigorous, business-aligned benchmark for future research. The code and dataset are available at https://github.com/HiThink-Research/BizFinBench.
-]]></content:encoded>
-<pubDate>Tue, 27 May 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>DoctorRAG: Medical RAG Fusing Knowledge with Patient Analogy through Textual Gradients</title>
-<link>https://arxiv.org/abs/2505.19538</link>
-<guid>https://arxiv.org/abs/2505.19538</guid>
-<content:encoded><![CDATA[
-<div> Knowledge bases, experiential knowledge, DoctorRAG, retrieval precision, Med-TextGrad <br />
-Summary: <br />
-Existing medical reasoning systems often focus on knowledge bases, neglecting the importance of experiential knowledge from patient cases. DoctorRAG is introduced as a framework that combines clinical knowledge and case-based experience to mimic doctor-like reasoning. It enhances retrieval precision by tagging concepts and employing a hybrid retrieval mechanism from knowledge sources and patient data. The integration of the Med-TextGrad module ensures the output aligns with retrieved knowledge and patient queries. Experimental results on diverse datasets show DoctorRAG outperforms traditional RAG models, with iterative refinements further improving performance. The approach generates more accurate, relevant, and comprehensive responses, highlighting progress towards developing medical reasoning systems that more closely mimic human clinical reasoning. <div>
-arXiv:2505.19538v1 Announce Type: cross 
-Abstract: Existing medical RAG systems mainly leverage knowledge from medical knowledge bases, neglecting the crucial role of experiential knowledge derived from similar patient cases -- a key component of human clinical reasoning. To bridge this gap, we propose DoctorRAG, a RAG framework that emulates doctor-like reasoning by integrating both explicit clinical knowledge and implicit case-based experience. DoctorRAG enhances retrieval precision by first allocating conceptual tags for queries and knowledge sources, together with a hybrid retrieval mechanism from both relevant knowledge and patient. In addition, a Med-TextGrad module using multi-agent textual gradients is integrated to ensure that the final output adheres to the retrieved knowledge and patient query. Comprehensive experiments on multilingual, multitask datasets demonstrate that DoctorRAG significantly outperforms strong baseline RAG models and gains improvements from iterative refinements. Our approach generates more accurate, relevant, and comprehensive responses, taking a step towards more doctor-like medical reasoning systems.
-]]></content:encoded>
-<pubDate>Tue, 27 May 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Cross-Sequence Semi-Supervised Learning for Multi-Parametric MRI-Based Visual Pathway Delineation</title>
-<link>https://arxiv.org/abs/2505.19733</link>
-<guid>https://arxiv.org/abs/2505.19733</guid>
-<content:encoded><![CDATA[
-<div> Framework, visual pathway, MRI, feature decomposition, semi-supervised<br />
-<br />
-Summary: 
-Accurately delineating the visual pathway (VP) using multi-parametric MR imaging data is crucial for understanding the human visual system and diagnosing related disorders. Existing methods struggle with complex cross-sequence relationships and the need for large labeled datasets. To address these challenges, a novel semi-supervised framework is proposed. It includes a correlation-constrained feature decomposition (CFD) to capture unique MRI sequence characteristics and aid in information fusion. Additionally, a consistency-based sample enhancement (CSE) module generates edge information from unlabeled data to mitigate the limited labeled data issue. The framework outperforms seven state-of-the-art approaches in VP delineation on public and in-house datasets, showcasing its effectiveness in leveraging multi-parametric MRI data for improved visual pathway delineation. <br /> <div>
-arXiv:2505.19733v1 Announce Type: cross 
-Abstract: Accurately delineating the visual pathway (VP) is crucial for understanding the human visual system and diagnosing related disorders. Exploring multi-parametric MR imaging data has been identified as an important way to delineate VP. However, due to the complex cross-sequence relationships, existing methods cannot effectively model the complementary information from different MRI sequences. In addition, these existing methods heavily rely on large training data with labels, which is labor-intensive and time-consuming to obtain. In this work, we propose a novel semi-supervised multi-parametric feature decomposition framework for VP delineation. Specifically, a correlation-constrained feature decomposition (CFD) is designed to handle the complex cross-sequence relationships by capturing the unique characteristics of each MRI sequence and easing the multi-parametric information fusion process. Furthermore, a consistency-based sample enhancement (CSE) module is developed to address the limited labeled data issue, by generating and promoting meaningful edge information from unlabeled data. We validate our framework using two public datasets, and one in-house Multi-Shell Diffusion MRI (MDM) dataset. Experimental results demonstrate the superiority of our approach in terms of delineation performance when compared to seven state-of-the-art approaches.
-]]></content:encoded>
-<pubDate>Tue, 27 May 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>A Generative Approach to Credit Prediction with Learnable Prompts for Multi-scale Temporal Representation Learning</title>
-<link>https://arxiv.org/abs/2404.13004</link>
-<guid>https://arxiv.org/abs/2404.13004</guid>
-<content:encoded><![CDATA[
-<div> Keywords: credit scoring, deep learning, FinLangNet, multi-scale distributions, time series classification
-
-Summary:
-FinLangNet is a novel approach for credit scoring that utilizes deep learning to generate multi-scale distributions of a user's future behavior by transforming tabular data into sequential representations. By incorporating prompt-based training inspired by Large Language Models, FinLangNet introduces prompts at different levels to capture user behavior effectively. Experimental results show that FinLangNet outperforms traditional methods like XGBoost, achieving significant improvements in performance metrics such as KS metric and relative bad debt rate. Moreover, FinLangNet demonstrates superior performance in time series classification tasks on public UEA archives, highlighting its scalability and adaptability in financial scenarios.<br /><br />Summary: <div>
-arXiv:2404.13004v4 Announce Type: replace 
-Abstract: Recent industrial credit scoring models remain heavily reliant on manually tuned statistical learning methods. While deep learning offers promising solutions, its effectiveness is often limited by the complexity of financial data, particularly in long-horizon scenarios. In this work, we propose FinLangNet, which addresses credit scoring by reframing it as the task of generating multi-scale distributions of a user's future behavior. Within this framework, tabular data is transformed into sequential representations, enabling the generation of user embeddings across multiple temporal scales. Inspired by the recent success of prompt-based training in Large Language Models (LLMs), FinLangNet also introduces two types of prompts to model and capture user behavior at both the feature-granularity and user-granularity levels. Experimental results demonstrate that FinLangNet outperforms the online XGBoost benchmark, achieving a 7.2\% improvement in KS metric performance and a 9.9\% reduction in the relative bad debt rate. Furthermore, FinLangNet exhibits superior performance on public UEA archives, underscoring its scalability and adaptability in time series classification tasks.
-]]></content:encoded>
-<pubDate>Tue, 27 May 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Finding Pathways in Reaction Networks guided by Energy Barriers using Integer Linear Programming</title>
-<link>https://arxiv.org/abs/2504.10609</link>
-<guid>https://arxiv.org/abs/2504.10609</guid>
-<content:encoded><![CDATA[
-<div> methodology, pathways, reaction networks, kinetic information, energy barriers 
-Summary: 
-This study introduces a computational methodology for exploring synthesis pathways in chemical reaction networks. The approach incorporates integer linear programming and directed hypergraphs to model reaction networks. Multiple pathways meeting search criteria can be ranked based on an objective function maximizing pathway probability. An automated pipeline estimates energy barriers for reactions in the network. This methodology allows for flexible and kinetically informed pathway exploration on large reaction networks, even when lacking kinetic annotations. It can be applied to networks generated via molecular space expansion approaches. <div>
-arXiv:2504.10609v2 Announce Type: replace 
-Abstract: Analyzing synthesis pathways for target molecules in a chemical reaction network annotated with information on the kinetics of individual reactions is an area of active study. This work presents a computational methodology for searching for pathways in reaction networks which is based on integer linear programming and the modeling of reaction networks by directed hypergraphs. Often multiple pathways fit the given search criteria. To rank them, we develop an objective function based on physical arguments maximizing the probability of the pathway. We furthermore develop an automated pipeline to estimate the energy barriers of individual reactions in reaction networks. Combined, the methodology facilitates flexible and kinetically informed pathway investigations on large reaction networks by computational means, even for networks coming without kinetic annotation, such as those created via generative approaches for expanding molecular spaces.
-]]></content:encoded>
-<pubDate>Tue, 27 May 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Regress, Don't Guess -- A Regression-like Loss on Number Tokens for Language Models</title>
-<link>https://arxiv.org/abs/2411.02083</link>
-<guid>https://arxiv.org/abs/2411.02083</guid>
-<content:encoded><![CDATA[
-<div> Keywords: language models, quantitative reasoning, Number Token Loss, regression-like loss, token level<br />
-Summary:<br />
-Language models excel at text generation but struggle with quantitative reasoning due to a lack of inductive bias for numbers. The Cross Entropy loss, designed for nominal scale data, hinders number token proximity understanding. To address this, a Number Token Loss (NTL) is proposed, minimizing Lp norm or Wasserstein distance between real and predicted number tokens. NTL enhances math-related task performance without increasing runtime, even matching regression head performance in a direct comparison. Scaling to 3B parameter models shows improved performance, showcasing potential for seamless integration into Large Language Models (LLMs). This work aims to inspire LLM developers to enhance pretraining objectives. <div>
-arXiv:2411.02083v2 Announce Type: replace-cross 
-Abstract: While language models have exceptional capabilities at text generation, they lack a natural inductive bias for emitting numbers and thus struggle in tasks involving quantitative reasoning, especially arithmetic. One fundamental limitation is the nature of the Cross Entropy loss, which assumes a nominal scale and thus cannot convey proximity between generated number tokens. In response, we here present a regression-like loss that operates purely on token level. Our proposed Number Token Loss (NTL) comes in two flavors and minimizes either the Lp norm or the Wasserstein distance between the numerical values of the real and predicted number tokens. NTL can easily be added to any language model and extend the Cross Entropy objective during training without runtime overhead. We evaluate the proposed scheme on various mathematical datasets and find that it consistently improves performance in math-related tasks. In a direct comparison on a regression task, we find that NTL can match the performance of a regression head, despite operating on token level. Finally, we scale NTL up to 3B parameter models and observe improved performance, demonstrating its potential for seamless integration into LLMs. We hope that this work can inspire LLM developers to improve their pretraining objectives. The code is available via: https://tum-ai.github.io/number-token-loss/
-]]></content:encoded>
-<pubDate>Tue, 27 May 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>ChemToolAgent: The Impact of Tools on Language Agents for Chemistry Problem Solving</title>
-<link>https://arxiv.org/abs/2411.07228</link>
-<guid>https://arxiv.org/abs/2411.07228</guid>
-<content:encoded><![CDATA[
-<div> ChemToolAgent, Chemistry tasks, Large language models, Evaluation, Specialized tools<br />
-Summary:<br />
-ChemToolAgent, an enhanced chemistry agent over ChemCrow, was developed to improve large language models (LLMs) for chemistry problem solving. Comprehensive evaluation showed that while ChemToolAgent did not consistently outperform LLMs without tools, it excelled in specialized chemistry tasks like synthesis prediction when augmented with specialized tools. However, for general chemistry questions like those in exams, agents' ability to reason correctly with chemistry knowledge proved to be more critical, and tool augmentation did not always provide added benefits. Error analysis with a chemistry expert supported these findings, highlighting the importance of considering task specificity and the role of tools in enhancing LLMs for diverse chemistry tasks. <div>
-arXiv:2411.07228v3 Announce Type: replace-cross 
-Abstract: To enhance large language models (LLMs) for chemistry problem solving, several LLM-based agents augmented with tools have been proposed, such as ChemCrow and Coscientist. However, their evaluations are narrow in scope, leaving a large gap in understanding the benefits of tools across diverse chemistry tasks. To bridge this gap, we develop ChemToolAgent, an enhanced chemistry agent over ChemCrow, and conduct a comprehensive evaluation of its performance on both specialized chemistry tasks and general chemistry questions. Surprisingly, ChemToolAgent does not consistently outperform its base LLMs without tools. Our error analysis with a chemistry expert suggests that: For specialized chemistry tasks, such as synthesis prediction, we should augment agents with specialized tools; however, for general chemistry questions like those in exams, agents' ability to reason correctly with chemistry knowledge matters more, and tool augmentation does not always help.
-]]></content:encoded>
-<pubDate>Tue, 27 May 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Sparse Diffusion Autoencoder for Test-time Adapting Prediction of Complex Systems</title>
-<link>https://arxiv.org/abs/2505.17459</link>
-<guid>https://arxiv.org/abs/2505.17459</guid>
-<content:encoded><![CDATA[
-<div> SparseDiff, test-time adaptation, sparse encoder, graph neural ordinary differential equation, spatial interactions <br />
-Summary: SparseDiff is a novel approach for predicting the behavior of complex systems by dynamically updating the encoding scheme to capture emergent spatiotemporal structures. It utilizes a codebook-based sparse encoder to create a sparse graph topology of the spatial domain, coupled with a graph neural ordinary differential equation to model dynamics and a diffusion decoder for reconstruction. This method enables autoregressive prediction of spatiotemporal evolution while adapting the sparse topological structure to accommodate emerging spatial patterns through adaptive re-encoding. Extensive evaluations show that SparseDiff significantly reduces prediction errors compared to baselines, requiring only a fraction of the spatial resolution. <div>
-arXiv:2505.17459v1 Announce Type: new 
-Abstract: Predicting the behavior of complex systems is critical in many scientific and engineering domains, and hinges on the model's ability to capture their underlying dynamics. Existing methods encode the intrinsic dynamics of high-dimensional observations through latent representations and predict autoregressively. However, these latent representations lose the inherent spatial structure of spatiotemporal dynamics, leading to the predictor's inability to effectively model spatial interactions and neglect emerging dynamics during long-term prediction. In this work, we propose SparseDiff, introducing a test-time adaptation strategy to dynamically update the encoding scheme to accommodate emergent spatiotemporal structures during the long-term evolution of the system. Specifically, we first design a codebook-based sparse encoder, which coarsens the continuous spatial domain into a sparse graph topology. Then, we employ a graph neural ordinary differential equation to model the dynamics and guide a diffusion decoder for reconstruction. SparseDiff autoregressively predicts the spatiotemporal evolution and adjust the sparse topological structure to adapt to emergent spatiotemporal patterns by adaptive re-encoding. Extensive evaluations on representative systems demonstrate that SparseDiff achieves an average prediction error reduction of 49.99\% compared to baselines, requiring only 1\% of the spatial resolution.
-]]></content:encoded>
-<pubDate>Mon, 26 May 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Latent Imputation before Prediction: A New Computational Paradigm for De Novo Peptide Sequencing</title>
-<link>https://arxiv.org/abs/2505.17524</link>
-<guid>https://arxiv.org/abs/2505.17524</guid>
-<content:encoded><![CDATA[
-<div> Keywords: de novo peptide sequencing, missing fragmentation, latent imputation, set-prediction, performance improvement
-
-Summary:
-De novo peptide sequencing is a critical technique for determining peptide sequences directly from mass spectrometry data. The new computational approach, LIPNovo, addresses the challenge of missing fragmentation in spectra by imputing missing information in the latent space using theoretical peak profiles of target peptides. By framing the imputation as a set-prediction problem and utilizing learnable peak queries, LIPNovo effectively supplements missing data during inference, leading to improved performance. Experimental results on benchmark datasets show that LIPNovo surpasses existing methods significantly. The code for LIPNovo is available on GitHub for further exploration and application. 
-
-<br /><br />Summary: De novo peptide sequencing is vital for peptide identification from mass spectrometry data. LIPNovo introduces a novel approach to handle missing fragmentation by imputing information in the latent space, enhancing performance through set-prediction techniques. Experimentally, LIPNovo outperforms state-of-the-art methods, underscoring its effectiveness in peptide sequencing tasks. The availability of the code on GitHub enables wider adoption and exploration of LIPNovo's capabilities. <div>
-arXiv:2505.17524v1 Announce Type: new 
-Abstract: De novo peptide sequencing is a fundamental computational technique for ascertaining amino acid sequences of peptides directly from tandem mass spectrometry data, eliminating the need for reference databases. Cutting-edge models usually encode the observed mass spectra into latent representations from which peptides are predicted autoregressively. However, the issue of missing fragmentation, attributable to factors such as suboptimal fragmentation efficiency and instrumental constraints, presents a formidable challenge in practical applications. To tackle this obstacle, we propose a novel computational paradigm called \underline{\textbf{L}}atent \underline{\textbf{I}}mputation before \underline{\textbf{P}}rediction (LIPNovo). LIPNovo is devised to compensate for missing fragmentation information within observed spectra before executing the final peptide prediction. Rather than generating raw missing data, LIPNovo performs imputation in the latent space, guided by the theoretical peak profile of the target peptide sequence. The imputation process is conceptualized as a set-prediction problem, utilizing a set of learnable peak queries to reason about the relationships among observed peaks and directly generate the latent representations of theoretical peaks through optimal bipartite matching. In this way, LIPNovo manages to supplement missing information during inference and thus boosts performance. Despite its simplicity, experiments on three benchmark datasets demonstrate that LIPNovo outperforms state-of-the-art methods by large margins. Code is available at \href{https://github.com/usr922/LIPNovo}{https://github.com/usr922/LIPNovo}.
-]]></content:encoded>
-<pubDate>Mon, 26 May 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>4D-CTA Image and geometry dataset for kinematic analysis of abdominal aortic aneurysms</title>
-<link>https://arxiv.org/abs/2505.17647</link>
-<guid>https://arxiv.org/abs/2505.17647</guid>
-<content:encoded><![CDATA[
-<div> Dataset, Abdominal Aortic Aneurysm, 4D-CTA, Biomechanics, Image Registration
-
-Summary:<br /><br />This article presents a dataset of 4D-CTA images and patient-specific AAA geometries from ten patients for kinematic analysis of abdominal aortic aneurysms (AAA). The dataset includes images captured throughout the cardiac cycle, allowing for the study of AAA wall displacement and strain. Synthetic ground truth data from Patient 1's image is also included for method verification. The dataset facilitates non-invasive analysis of AAA kinematics using an image registration-based approach. The use of open-source file formats enhances the applicability and reusability of the dataset in AAA biomechanics studies. The research was conducted at the ISML-UWA, using images acquired at Fiona Stanley Hospital in Western Australia. This dataset provides valuable information for understanding the biomechanics of AAA and could aid in the development of improved diagnostic and treatment strategies.<br />Summary: <div>
-arXiv:2505.17647v1 Announce Type: new 
-Abstract: This article presents a dataset used in the article "Kinematics of Abdominal Aortic Aneurysms" [arXiv:2405.13377], published in the Journal of Biomechanics. The dataset is publicly available for download from the Zenodo data repository (https://doi.org/10.5281/zenodo.15477710). The dataset includes time-resolved 3D computed tomography angiography (4D-CTA) images of abdominal aortic aneurysm (AAA) captured throughout the cardiac cycle from ten patients diagnosed with AAA, along with ten patient-specific AAA geometries extracted from these images. Typically, the 4D-CTA dataset for each patient contains ten electrocardiogram (ECG)-gated 3D-CTA image frames acquired over a cardiac cycle, capturing both the systolic and diastolic phases of the AAA configuration. For method verification, the dataset also includes synthetic ground truth data generated from Patient 1's 3D-CTA AAA image in the diastolic phase. The ground truth data includes the patient-specific finite element (FE) biomechanical model and a synthetic systolic 3D-CTA image. The synthetic systolic image was generated by warping Patient 1's diastolic 3D-CTA image using the realistic displacement field obtained from the AAA biomechanical FE model. The images were acquired at Fiona Stanley Hospital in Western Australia and provided to the researchers at the Intelligent Systems for Medicine Laboratory at The University of Western Australia (ISML-UWA), where image-based AAA kinematic analysis was performed. Our dataset enabled the analysis of AAA wall displacement and strain throughout the cardiac cycle using a non-invasive, in vivo, image registration-based approach. The use of widely adopted, open-source file formats (NRRD for images and STL for geometries) facilitates broad applicability and reusability in AAA biomechanics studies that require patient-specific geometry and information about AAA kinematics during cardiac cycle.
-]]></content:encoded>
-<pubDate>Mon, 26 May 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>A brief review of the Deep BSDE method for solving high-dimensional partial differential equations</title>
-<link>https://arxiv.org/abs/2505.17032</link>
-<guid>https://arxiv.org/abs/2505.17032</guid>
-<content:encoded><![CDATA[
-<div> Deep BSDE method, high-dimensional PDEs, numerical computation, deep learning techniques, neural networks <br />
-<br />
-Summary: 
-The article discusses the challenges posed by high-dimensional partial differential equations (PDEs) in traditional numerical computation methods. It introduces the Deep BSDE method, which utilizes deep learning techniques to effectively solve nonlinear PDEs in high dimensions. Since its inception in 2017, the Deep BSDE method has generated widespread interest in using neural networks for tackling high-dimensional PDEs. The article briefly outlines the method, its subsequent developments, and highlights the active research being conducted in this area. The Deep BSDE method has opened up new possibilities for solving complex PDEs in very high dimensions, offering a promising approach for addressing the curse of dimensionality in numerical computations. Future directions for research in this field are also discussed, suggesting potential advancements and applications of deep learning techniques in solving high-dimensional PDEs. <div>
-arXiv:2505.17032v1 Announce Type: cross 
-Abstract: High-dimensional partial differential equations (PDEs) pose significant challenges for numerical computation due to the curse of dimensionality, which limits the applicability of traditional mesh-based methods. Since 2017, the Deep BSDE method has introduced deep learning techniques that enable the effective solution of nonlinear PDEs in very high dimensions. This innovation has sparked considerable interest in using neural networks for high-dimensional PDEs, making it an active area of research. In this short review, we briefly sketch the Deep BSDE method, its subsequent developments, and future directions for the field.
-]]></content:encoded>
-<pubDate>Mon, 26 May 2025 00:00:00 -0400</pubDate>
 </item>
 </channel>
 </rss>
