@@ -4,6 +4,7 @@
 <title>cs.CL updates on arXiv.org</title>
 <link>http://rss.arxiv.org/rss/cs.CL</link>
 
+
 <item>
 <title>Debiasing LLMs by Masking Unfairness-Driving Attention Heads</title>
 <link>https://arxiv.org/abs/2510.10142</link>
@@ -20,9 +21,7 @@ arXiv:2510.10142v3 Announce Type: replace
 Abstract: Large language models (LLMs) increasingly mediate decisions in domains where unfair treatment of demographic groups is unacceptable. Existing work probes when biased outputs appear, but gives little insight into the mechanisms that generate them, leaving existing mitigations largely fragile. In this paper, we conduct a systematic investigation LLM unfairness and propose DiffHeads, a lightweight debiasing framework for LLMs. We first compare Direct-Answer (DA) prompting to Chain-of-Thought (CoT) prompting across eight representative open- and closed-source LLMs. DA will trigger the nature bias part of LLM and improve measured unfairness by 534.5%-391.9% in both one-turn and two-turn dialogues. Next, we define a token-to-head contribution score that traces each token's influence back to individual attention heads. This reveals a small cluster of bias heads that activate under DA but stay largely dormant with CoT, providing the first causal link between prompting strategy and bias emergence. Finally, building on this insight, we propose DiffHeads that identifies bias heads through differential activation analysis between DA and CoT, and selectively masks only those heads. DiffHeads reduces unfairness by 49.4%, and 40.3% under DA and CoT, respectively, without harming model utility.
 ]]></content:encoded>
 <pubDate>Tue, 04 Nov 2025 00:00:00 -0500</pubDate>
-<pubDate>Tue, 04 Nov 2025 00:00:00 -0500</pubDate>
 </item>
-
 <item>
 <title>PlotCraft: Pushing the Limits of LLMs for Complex and Interactive Data Visualization</title>
 <link>https://arxiv.org/abs/2511.00010</link>
@@ -11543,16 +11542,6 @@ Abstract: Contemporary theories model language processing as integrating both to
 <content:encoded><![CDATA[
 arXiv:2509.23659v2 Announce Type: replace 
 Abstract: Large language models (LLMs) remain unreliable for global enterprise applications due to substantial performance gaps between high-resource and mid/low-resource languages, driven by English-centric pretraining and internal reasoning biases. This inconsistency undermines customer experience and operational reliability in multilingual settings such as customer support, content moderation, and information retrieval. Even with advanced Retrieval-Augmented Generation (RAG) systems, we observe up to an 29% accuracy drop in non-English languages compared to English. We propose a practical, batch-wise alignment strategy for fine-tuning LLMs, leveraging semantically equivalent multilingual data in each training batch to directly align model outputs across languages. This approach improves non-English accuracy by up to 23.9% without compromising English performance, model reasoning, or retrieval quality. Our method is simple to implement, scalable, and integrates seamlessly with existing LLM training & deployment pipelines, enabling more robust and equitable multilingual AI solutions in industry.
-]]></content:encoded>
-<pubDate>Tue, 28 Oct 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>EuroSpeech: A Multilingual Speech Corpus</title>
-<link>https://arxiv.org/abs/2510.00514</link>
-<guid>https://arxiv.org/abs/2510.00514</guid>
-<content:encoded><![CDATA[
-arXiv:2510.00514v2 Announce Type: replace 
-Abstract: Recent progress in speech processing has highlighted that high-quality performance across languages requires substantial training data for each individual language. While existing multilingual datasets cover many languages, they often contain insufficient data for most languages. Thus, trained models perform poorly on the majority of the supported languages. Our work addresses this challenge by introducing a scalable pipeline for constructing speech datasets from parliamentary recordings. The proposed pipeline includes robust components for media retrieval and a two-stage alignment algorithm designed to handle non-verbatim transcripts and long-form audio. Applying this pipeline to recordings from 22 European parliaments, we extract over 61k hours of aligned speech segments, achieving substantial per-language coverage with 19 languages exceeding 1k hours and 22 languages exceeding 500 hours of high-quality speech data. We obtain an average 41.8\% reduction in word error rates over baselines when finetuning an existing ASR model on our dataset, demonstrating the usefulness of our approach.
 ]]></content:encoded>
 <pubDate>Tue, 28 Oct 2025 00:00:00 -0400</pubDate>
 </item>
