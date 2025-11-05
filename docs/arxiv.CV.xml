@@ -4,6 +4,7 @@
 <title>cs.CV updates on arXiv.org</title>
 <link>http://rss.arxiv.org/rss/cs.CV</link>
 
+
 <item>
 <title>Real-Time Neural Video Compression with Unified Intra and Inter Coding</title>
 <link>https://arxiv.org/abs/2510.14431</link>
@@ -14,14 +15,12 @@
 Summary:
 Neural video compression technology has advanced with the development of schemes like DCVC-RT, surpassing traditional compression methods like H.266/VVC. However, current NVC schemes face challenges such as handling disocclusion and new content efficiently, interframe error propagation, and accumulation. To address these limitations, the proposed framework combines intra and inter coding, enabling adaptive processing of frames by a single model. Additionally, a simultaneous two-frame compression design leverages interframe redundancy both forward and backward. Experimental results show a 12.1% improvement in BD-rate reduction compared to DCVC-RT, offering more stable bitrate and quality per frame while maintaining real-time encoding/decoding performance. Code and models for the framework will be made available for further research and development. 
 
-<br><br>Summary: <div>
+<br /><br />Summary: <div>
 arXiv:2510.14431v4 Announce Type: replace 
 Abstract: Neural video compression (NVC) technologies have advanced rapidly in recent years, yielding state-of-the-art schemes such as DCVC-RT that offer superior compression efficiency to H.266/VVC and real-time encoding/decoding capabilities. Nonetheless, existing NVC schemes have several limitations, including inefficiency in dealing with disocclusion and new content, interframe error propagation and accumulation, among others. To eliminate these limitations, we borrow the idea from classic video coding schemes, which allow intra coding within inter-coded frames. With the intra coding tool enabled, disocclusion and new content are properly handled, and interframe error propagation is naturally intercepted without the need for manual refresh mechanisms. We present an NVC framework with unified intra and inter coding, where every frame is processed by a single model that is trained to perform intra/inter coding adaptively. Moreover, we propose a simultaneous two-frame compression design to exploit interframe redundancy not only forwardly but also backwardly. Experimental results show that our scheme outperforms DCVC-RT by an average of 12.1% BD-rate reduction, delivers more stable bitrate and quality per frame, and retains real-time encoding/decoding performances. Code and models will be released.
 ]]></content:encoded>
 <pubDate>Wed, 05 Nov 2025 00:00:00 -0500</pubDate>
-<pubDate>Wed, 05 Nov 2025 00:00:00 -0500</pubDate>
 </item>
-
 <item>
 <title>iFlyBot-VLA Technical Report</title>
 <link>https://arxiv.org/abs/2511.01914</link>
@@ -11512,16 +11511,6 @@ Abstract: 3D visual grounding has made notable progress in localizing objects wi
 <content:encoded><![CDATA[
 arXiv:2506.06517v2 Announce Type: replace 
 Abstract: Traditional SLAM algorithms excel at camera tracking, but typically produce incomplete and low-resolution maps that are not tightly integrated with semantics prediction. Recent work integrates Gaussian Splatting (GS) into SLAM to enable dense, photorealistic 3D mapping, yet existing GS-based SLAM methods require per-scene optimization that is slow and consumes an excessive number of Gaussians. We present GS4, the first generalizable GS-based semantic SLAM system. Compared with prior approaches, GS4 runs 10x faster, uses 10x fewer Gaussians, and achieves state-of-the-art performance across color, depth, semantic mapping and camera tracking. From an RGB-D video stream, GS4 incrementally builds and updates a set of 3D Gaussians using a feed-forward network. First, the Gaussian Prediction Model estimates a sparse set of Gaussian parameters from input frame, which integrates both color and semantic prediction with the same backbone. Then, the Gaussian Refinement Network merges new Gaussians with the existing set while avoiding redundancy. Finally, we propose to optimize GS for only 1-5 iterations that corrects drift and floaters when significant pose changes are detected. Experiments on the real-world ScanNet and ScanNet++ benchmarks demonstrate state-of-the-art semantic SLAM performance, with strong generalization capability shown through zero-shot transfer to the NYUv2 and TUM RGB-D datasets.
-]]></content:encoded>
-<pubDate>Wed, 29 Oct 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>GEMeX-RMCoT: An Enhanced Med-VQA Dataset for Region-Aware Multimodal Chain-of-Thought Reasoning</title>
-<link>https://arxiv.org/abs/2506.17939</link>
-<guid>https://arxiv.org/abs/2506.17939</guid>
-<content:encoded><![CDATA[
-arXiv:2506.17939v2 Announce Type: replace 
-Abstract: Medical visual question answering aims to support clinical decision-making by enabling models to answer natural language questions based on medical images. While recent advances in multi-modal learning have significantly improved performance, current methods still suffer from limited answer reliability and poor interpretability, impairing the ability of clinicians and patients to understand and trust model outputs. To address these limitations, this work first proposes a Region-Aware Multimodal Chain-of-Thought (RMCoT) dataset, in which the process of producing an answer is preceded by a sequence of intermediate reasoning steps that explicitly ground relevant visual regions of the medical image, thereby providing fine-grained explainability. Furthermore, we introduce a novel verifiable reward mechanism for reinforcement learning to guide post-training, improving the alignment between the model's reasoning process and its final answer. Remarkably, our method achieves comparable performance using only one-eighth of the training data, demonstrating the efficiency and effectiveness of the proposal. The dataset is available at https://www.med-vqa.com/GEMeX/.
 ]]></content:encoded>
 <pubDate>Wed, 29 Oct 2025 00:00:00 -0400</pubDate>
 </item>

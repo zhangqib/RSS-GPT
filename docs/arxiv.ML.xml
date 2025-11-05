@@ -4,6 +4,7 @@
 <title>cs.LG updates on arXiv.org</title>
 <link>http://rss.arxiv.org/rss/cs.LG</link>
 
+
 <item>
 <title>MTL-KD: Multi-Task Learning Via Knowledge Distillation for Generalizable Neural Vehicle Routing Solver</title>
 <link>https://arxiv.org/abs/2506.02935</link>
@@ -17,7 +18,6 @@ arXiv:2506.02935v4 Announce Type: replace
 Abstract: Multi-Task Learning (MTL) in Neural Combinatorial Optimization (NCO) is a promising approach to train a unified model capable of solving multiple Vehicle Routing Problem (VRP) variants. However, existing Reinforcement Learning (RL)-based multi-task methods can only train light decoder models on small-scale problems, exhibiting limited generalization ability when solving large-scale problems. To overcome this limitation, this work introduces a novel multi-task learning method driven by knowledge distillation (MTL-KD), which enables the efficient training of heavy decoder models with strong generalization ability. The proposed MTL-KD method transfers policy knowledge from multiple distinct RL-based single-task models to a single heavy decoder model, facilitating label-free training and effectively improving the model's generalization ability across diverse tasks. In addition, we introduce a flexible inference strategy termed Random Reordering Re-Construction (R3C), which is specifically adapted for diverse VRP tasks and further boosts the performance of the multi-task model. Experimental results on 6 seen and 10 unseen VRP variants with up to 1000 nodes indicate that our proposed method consistently achieves superior performance on both uniform and real-world benchmarks, demonstrating robust generalization abilities.
 ]]></content:encoded>
 <pubDate>Wed, 05 Nov 2025 00:00:00 -0500</pubDate>
-<pubDate>Wed, 05 Nov 2025 00:00:00 -0500</pubDate>
 </item>
 <item>
 <title>Exploring Human-AI Conceptual Alignment through the Prism of Chess</title>
@@ -29,11 +29,10 @@ Abstract: Multi-Task Learning (MTL) in Neural Combinatorial Optimization (NCO) i
 Summary:
 Artificial intelligence systems have been developed to play chess at a grandmaster level, but a study reveals that while these systems perform well, they may not truly understand human concepts. The analysis shows that early layers of the system can accurately encode human concepts like center control and knight outposts, but deeper layers diverge towards alien representations, indicating a shift away from human understanding. To test the system's conceptual robustness, a Chess960 dataset is introduced, revealing a reliance on memorized patterns rather than genuine understanding when opening theory is eliminated. This tension between game-winning representations and human-aligned thinking poses a challenge for AI applications that require collaboration with humans. As AI systems prioritize performance, they may develop increasingly alien intelligence, highlighting the need for genuine human-AI collaboration in creative AI applications. The dataset and code for further exploration are available for study. 
 
-<br><br>Summary: <div>
+<br /><br />Summary: <div>
 arXiv:2510.26025v2 Announce Type: replace 
 Abstract: Do AI systems truly understand human concepts or merely mimic surface patterns? We investigate this through chess, where human creativity meets precise strategic concepts. Analyzing a 270M-parameter transformer that achieves grandmaster-level play, we uncover a striking paradox: while early layers encode human concepts like center control and knight outposts with up to 85\% accuracy, deeper layers, despite driving superior performance, drift toward alien representations, dropping to 50-65\% accuracy. To test conceptual robustness beyond memorization, we introduce the first Chess960 dataset: 240 expert-annotated positions across 6 strategic concepts. When opening theory is eliminated through randomized starting positions, concept recognition drops 10-20\% across all methods, revealing the model's reliance on memorized patterns rather than abstract understanding. Our layer-wise analysis exposes a fundamental tension in current architectures: the representations that win games diverge from those that align with human thinking. These findings suggest that as AI systems optimize for performance, they develop increasingly alien intelligence, a critical challenge for creative AI applications requiring genuine human-AI collaboration. Dataset and code are available at: https://github.com/slomasov/ChessConceptsLLM.
 ]]></content:encoded>
-<pubDate>Wed, 05 Nov 2025 00:00:00 -0500</pubDate>
 <pubDate>Wed, 05 Nov 2025 00:00:00 -0500</pubDate>
 </item>
 <item>
@@ -41,16 +40,14 @@ Abstract: Do AI systems truly understand human concepts or merely mimic surface 
 <link>https://arxiv.org/abs/2510.26709</link>
 <guid>https://arxiv.org/abs/2510.26709</guid>
 <content:encoded><![CDATA[
-<div> Keywords: distributed machine learning, gradient sparsification, ARC-Top-K, All-Reduce, convergence rates <br>
+<div> Keywords: distributed machine learning, gradient sparsification, ARC-Top-K, All-Reduce, convergence rates <br />
 Summary: 
-Communication bottleneck in large-scale distributed machine learning is addressed through gradient sparsification. Existing compressors like Rand-K and Top-K have limitations, prompting the development of ARC-Top-K. This new compressor aligns sparsity patterns across nodes using a lightweight gradient sketch, enabling index-free All-Reduce while preserving globally significant information. ARC-Top-K is provably contractive and, when combined with momentum error feedback (EF21M), achieves linear speedup and sharper convergence rates than the original EF21M. Empirical results show that ARC-Top-K matches the accuracy of Top-K while reducing wall-clock training time by up to 60.7%. This efficient and scalable solution combines the robustness of Rand-K with the strong performance of Top-K. <br><br>Summary: <div>
+Communication bottleneck in large-scale distributed machine learning is addressed through gradient sparsification. Existing compressors like Rand-K and Top-K have limitations, prompting the development of ARC-Top-K. This new compressor aligns sparsity patterns across nodes using a lightweight gradient sketch, enabling index-free All-Reduce while preserving globally significant information. ARC-Top-K is provably contractive and, when combined with momentum error feedback (EF21M), achieves linear speedup and sharper convergence rates than the original EF21M. Empirical results show that ARC-Top-K matches the accuracy of Top-K while reducing wall-clock training time by up to 60.7%. This efficient and scalable solution combines the robustness of Rand-K with the strong performance of Top-K. <br /><br />Summary: <div>
 arXiv:2510.26709v3 Announce Type: replace 
 Abstract: Communication remains a central bottleneck in large-scale distributed machine learning, and gradient sparsification has emerged as a promising strategy to alleviate this challenge. However, existing gradient compressors face notable limitations: Rand-$K$ discards structural information and performs poorly in practice, while Top-$K$ preserves informative entries but loses the contraction property and requires costly All-Gather operations. In this paper, we propose ARC-Top-$K$, an {All-Reduce}-Compatible Top-$K$ compressor that aligns sparsity patterns across nodes using a lightweight sketch of the gradient, enabling index-free All-Reduce while preserving globally significant information. ARC-Top-$K$ is provably contractive and, when combined with momentum error feedback (EF21M), achieves linear speedup and sharper convergence rates than the original EF21M under standard assumptions. Empirically, ARC-Top-$K$ matches the accuracy of Top-$K$ while reducing wall-clock training time by up to 60.7\%, offering an efficient and scalable solution that combines the robustness of Rand-$K$ with the strong performance of Top-$K$.
 ]]></content:encoded>
 <pubDate>Wed, 05 Nov 2025 00:00:00 -0500</pubDate>
-<pubDate>Wed, 05 Nov 2025 00:00:00 -0500</pubDate>
 </item>
-
 <item>
 <title>CudaForge: An Agent Framework with Hardware Feedback for CUDA Kernel Optimization</title>
 <link>https://arxiv.org/abs/2511.01884</link>
@@ -10826,36 +10823,6 @@ Abstract: Benchmarks for competition-style reasoning have advanced evaluation in
 <content:encoded><![CDATA[
 arXiv:2510.03865v2 Announce Type: replace 
 Abstract: Reinforcement learning with verifiable rewards (RLVR) has recently enhanced the reasoning capabilities of large language models (LLMs), particularly for mathematical problem solving. However, a fundamental limitation remains: as the sampling budget increases, the advantage of RLVR-trained models over their pretrained bases often diminishes or even vanishes, revealing a strong dependence on the base model's restricted search space. We attribute this phenomenon to the widespread use of the reverse Kullback-Leibler (KL) divergence regularizer, whose mode-seeking behavior keeps the policy trapped inside the base model's support region and hampers wider exploration. To address this issue, we propose RAPO (Rewards-Aware Policy Optimization), an algorithm to promote broader yet focused exploration. Our method (i) utilizes the forward KL penalty to replace the reverse KL penalty for out-of-distribution exploration, and (ii) reweights the reference policy to facilitate adaptive in-distribution exploration. We train Qwen2.5-3B and 7B models with RAPO on the 8K SimpleRL-Zero dataset, without supervised fine-tuning, and evaluate them on AIME2024 and AIME2025. Results show that RAPO consistently improves problem-solving performance. Notably, RAPO enables models to surpass the base model's performance ceiling and solves previously intractable problems, advancing the frontier of RLVR for challenging reasoning tasks.
-]]></content:encoded>
-<pubDate>Mon, 03 Nov 2025 00:00:00 -0500</pubDate>
-</item>
-<item>
-<title>Demystifying MaskGIT Sampler and Beyond: Adaptive Order Selection in Masked Diffusion</title>
-<link>https://arxiv.org/abs/2510.04525</link>
-<guid>https://arxiv.org/abs/2510.04525</guid>
-<content:encoded><![CDATA[
-arXiv:2510.04525v2 Announce Type: replace 
-Abstract: Masked diffusion models have shown promising performance in generating high-quality samples in a wide range of domains, but accelerating their sampling process remains relatively underexplored. To investigate efficient samplers for masked diffusion, this paper theoretically analyzes the MaskGIT sampler for image modeling, revealing its implicit temperature sampling mechanism. Through this analysis, we introduce the "moment sampler," an asymptotically equivalent but more tractable and interpretable alternative to MaskGIT, which employs a "choose-then-sample" approach by selecting unmasking positions before sampling tokens. In addition, we improve the efficiency of choose-then-sample algorithms through two key innovations: a partial caching technique for transformers that approximates longer sampling trajectories without proportional computational cost, and a hybrid approach formalizing the exploration-exploitation trade-off in adaptive unmasking. Experiments in image and text domains demonstrate our theory as well as the efficiency of our proposed methods, advancing both theoretical understanding and practical implementation of masked diffusion samplers.
-]]></content:encoded>
-<pubDate>Mon, 03 Nov 2025 00:00:00 -0500</pubDate>
-</item>
-<item>
-<title>Deciphering Invariant Feature Decoupling in Source-free Time Series Forecasting with Proxy Denoising</title>
-<link>https://arxiv.org/abs/2510.05589</link>
-<guid>https://arxiv.org/abs/2510.05589</guid>
-<content:encoded><![CDATA[
-arXiv:2510.05589v2 Announce Type: replace 
-Abstract: The proliferation of mobile devices generates a massive volume of time series across various domains, where effective time series forecasting enables a variety of real-world applications. This study focuses on a new problem of source-free domain adaptation for time series forecasting. It aims to adapt a pretrained model from sufficient source time series to the sparse target time series domain without access to the source data, embracing data protection regulations. To achieve this, we propose TimePD, the first source-free time series forecasting framework with proxy denoising, where large language models (LLMs) are employed to benefit from their generalization capabilities. Specifically, TimePD consists of three key components: (1) dual-branch invariant disentangled feature learning that enforces representation- and gradient-wise invariance by means of season-trend decomposition; (2) lightweight, parameter-free proxy denoising that dynamically calibrates systematic biases of LLMs; and (3) knowledge distillation that bidirectionally aligns the denoised prediction and the original target prediction. Extensive experiments on real-world datasets offer insight into the effectiveness of the proposed TimePD, outperforming SOTA baselines by 9.3% on average.
-]]></content:encoded>
-<pubDate>Mon, 03 Nov 2025 00:00:00 -0500</pubDate>
-</item>
-<item>
-<title>SVTime: Small Time Series Forecasting Models Informed by "Physics" of Large Vision Model Forecasters</title>
-<link>https://arxiv.org/abs/2510.09780</link>
-<guid>https://arxiv.org/abs/2510.09780</guid>
-<content:encoded><![CDATA[
-arXiv:2510.09780v2 Announce Type: replace 
-Abstract: Time series AI is crucial for analyzing dynamic web content, driving a surge of pre-trained large models known for their strong knowledge encoding and transfer capabilities across diverse tasks. However, given their energy-intensive training, inference, and hardware demands, using large models as a one-fits-all solution raises serious concerns about carbon footprint and sustainability. For a specific task, a compact yet specialized, high-performing model may be more practical and affordable, especially for resource-constrained users such as small businesses. This motivates the question: Can we build cost-effective lightweight models with large-model-like performance on core tasks such as forecasting? This paper addresses this question by introducing SVTime, a novel Small model inspired by large Vision model (LVM) forecasters for long-term Time series forecasting (LTSF). Recently, LVMs have been shown as powerful tools for LTSF. We identify a set of key inductive biases of LVM forecasters -- analogous to the "physics" governing their behaviors in LTSF -- and design small models that encode these biases through meticulously crafted linear layers and constraint functions. Across 21 baselines spanning lightweight, complex, and pre-trained large models on 8 benchmark datasets, SVTime outperforms state-of-the-art (SOTA) lightweight models and rivals large models with 10^3 fewer parameters than LVMs, while enabling efficient training and inference in low-resource settings.
 ]]></content:encoded>
 <pubDate>Mon, 03 Nov 2025 00:00:00 -0500</pubDate>
 </item>
