@@ -4,6 +4,7 @@
 <title>cs.CV updates on arXiv.org</title>
 <link>http://rss.arxiv.org/rss/cs.CV</link>
 
+
 <item>
 <title>Generative View Stitching</title>
 <link>https://arxiv.org/abs/2510.24718</link>
@@ -14,14 +15,12 @@
 Summary:
 Generative View Stitching (GVS) addresses the limitations of autoregressive video diffusion models by proposing a sampling algorithm that allows for the faithful generation of scenes based on a predefined camera trajectory. GVS enables stable, collision-free, and consistent video generation by sampling the entire sequence in parallel. The technique extends previous work on diffusion stitching for robot planning to video generation and is compatible with any off-the-shelf video model trained with Diffusion Forcing. Additionally, Omni Guidance enhances temporal consistency by conditioning on both past and future frames, enabling loop-closing mechanisms for long-range coherence. GVS demonstrates its effectiveness in generating videos for various predefined camera paths, including complex scenarios like Oscar Reutersv\"ard's Impossible Staircase. Results can be viewed as videos on the project website. 
 
-<br><br>Summary: <div>
+<br /><br />Summary: <div>
 arXiv:2510.24718v2 Announce Type: replace 
 Abstract: Autoregressive video diffusion models are capable of long rollouts that are stable and consistent with history, but they are unable to guide the current generation with conditioning from the future. In camera-guided video generation with a predefined camera trajectory, this limitation leads to collisions with the generated scene, after which autoregression quickly collapses. To address this, we propose Generative View Stitching (GVS), which samples the entire sequence in parallel such that the generated scene is faithful to every part of the predefined camera trajectory. Our main contribution is a sampling algorithm that extends prior work on diffusion stitching for robot planning to video generation. While such stitching methods usually require a specially trained model, GVS is compatible with any off-the-shelf video model trained with Diffusion Forcing, a prevalent sequence diffusion framework that we show already provides the affordances necessary for stitching. We then introduce Omni Guidance, a technique that enhances the temporal consistency in stitching by conditioning on both the past and future, and that enables our proposed loop-closing mechanism for delivering long-range coherence. Overall, GVS achieves camera-guided video generation that is stable, collision-free, frame-to-frame consistent, and closes loops for a variety of predefined camera paths, including Oscar Reutersv\"ard's Impossible Staircase. Results are best viewed as videos at https://andrewsonga.github.io/gvs.
 ]]></content:encoded>
 <pubDate>Thu, 06 Nov 2025 00:00:00 -0500</pubDate>
-<pubDate>Thu, 06 Nov 2025 00:00:00 -0500</pubDate>
 </item>
-
 <item>
 <title>Cropland Mapping using Geospatial Embeddings</title>
 <link>https://arxiv.org/abs/2511.02923</link>
@@ -11623,20 +11622,6 @@ Summary:
 <br /><br />Summary: <div>
 arXiv:2510.24038v1 Announce Type: new 
 Abstract: Vision-language models (VLMs) such as CLIP demonstrate strong generalization in zero-shot classification but remain highly vulnerable to adversarial perturbations. Existing methods primarily focus on adversarial fine-tuning or prompt optimization; they often overlook the gaps in CLIP's encoded features, which is shown as the text and image features lie far apart from each other. This misalignment is significantly amplified under adversarial perturbations, leading to severe degradation in classification performance. To address this problem, we propose Cross-modality Alignment, dubbed COLA, an optimal transport-based framework that explicitly addresses adversarial misalignment by restoring both global image-text alignment and local structural consistency in the feature space. (1) COLA first projects adversarial image embeddings onto a subspace spanned by class text features, effectively filtering out non-semantic distortions while preserving discriminative information. (2) It then models images and texts as discrete distributions over multiple augmented views and refines their alignment via OT, with the subspace projection seamlessly integrated into the cost computation. This design ensures stable cross-modal alignment even under adversarial conditions. COLA is training-free and compatible with existing fine-tuned models. Extensive evaluations across 14 zero-shot classification benchmarks demonstrate the effectiveness of COLA, especially with an average improvement of 6.7% on ImageNet and its variants under PGD adversarial attacks, while maintaining high accuracy on clean samples.
-]]></content:encoded>
-<pubDate>Wed, 29 Oct 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Beyond Objects: Contextual Synthetic Data Generation for Fine-Grained Classification</title>
-<link>https://arxiv.org/abs/2510.24078</link>
-<guid>https://arxiv.org/abs/2510.24078</guid>
-<content:encoded><![CDATA[
-<div> Keywords: Text-to-image, synthetic data generation, fine-grained classification, attribute conditioning, overfitting mitigation
-
-Summary:
-Text-to-image (T2I) models are used for generating synthetic training data for classification tasks, but faces challenges in quality and diversity. A new fine-tuning strategy called BOB (BeyondOBjects) is proposed to address these issues. BOB extracts class-agnostic attributes from real examples, conditions the T2I model on these attributes during fine-tuning, and then marginalizes them during generation. This approach helps mitigate overfitting, preserve the model's generative prior, reduce estimation errors, and minimize unintended inter-class associations. Experimental results across multiple models, backbones, and datasets show that BOB achieves state-of-the-art performance in low-shot fine-grained classification when augmented with synthetic data. Notably, BOB outperforms previous methods like DataDream by 7.4% on the Aircraft dataset with only five real images and 100 synthetic images. Fine-tuning downstream models with BOB outperforms using 10 real images in three out of four benchmarks, showing significant accuracy improvements in 14 experimental settings. <br /><br />Summary: <div>
-arXiv:2510.24078v1 Announce Type: new 
-Abstract: Text-to-image (T2I) models are increasingly used for synthetic dataset generation, but generating effective synthetic training data for classification remains challenging. Fine-tuning a T2I model with a few real examples can help improve the quality of synthetic training data; however, it may also cause overfitting and reduce diversity in the generated samples. We propose a fine-tuning strategy BOB (BeyondOBjects) to mitigate these concerns for fine-grained classification. Given a small set of real examples, we first extract class-agnostic attributes such as scene background and object pose. We then explicitly condition on these attributes during fine-tuning of the T2I model and marginalize them out during generation. This design mitigates overfitting, preserves the T2I model's generative prior, reduces estimation errors, and further minimizes unintended inter-class associations. Extensive experiments across multiple T2I models, backbones, and datasets show that our method achieves state-of-the-art performance in low-shot fine-grained classification when augmented with synthetic data. Concretely, BOB outperforms DataDream by 7.4% on the Aircraft dataset (from 50.0% to 57.4% when fine-tuning a CLIP classifier with five real images augmented with 100 synthetic images). In three of the four benchmarks, fine-tuning downstream models with 5 real images augmented with BOB achieves better performance than fine-tuning with 10 real images. Collectively, BOB outperforms prior art in 18 of 24 experimental settings, with 2+% accuracy improvements in 14 of these settings.
 ]]></content:encoded>
 <pubDate>Wed, 29 Oct 2025 00:00:00 -0400</pubDate>
 </item>
