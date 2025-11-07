@@ -4,18 +4,18 @@
 <title>cs.LG updates on arXiv.org</title>
 <link>http://rss.arxiv.org/rss/cs.LG</link>
 
+
 <item>
 <title>ADPO: Anchored Direct Preference Optimization</title>
 <link>https://arxiv.org/abs/2510.18913</link>
 <guid>https://arxiv.org/abs/2510.18913</guid>
 <content:encoded><![CDATA[
-<div> Anchored Direct Preference Optimization, Soft listwise supervision, Reference anchoring, KL divergence, Dynamic-anchor updates<br>
-Summary:<br>
+<div> Anchored Direct Preference Optimization, Soft listwise supervision, Reference anchoring, KL divergence, Dynamic-anchor updates<br />
+Summary:<br />
 Anchored Direct Preference Optimization (ADPO) introduces a framework that extends preference learning to soft listwise supervision through reference anchoring, minimizing KL divergence between the target distribution and the anchored distribution. ADPO encompasses various strategies such as supervised fine-tuning, knowledge distillation, and maximum-entropy reinforcement learning. It creates an implicit trust region utilizing the softmax Fisher metric and supports stable dynamic-anchor updates. Empirical results show that dynamic anchors enhance online exploration in the presence of noise, while fixed anchors are more effective for offline distillation tasks, achieving significant reductions in student-teacher KL divergence on benchmark datasets. <div>
 arXiv:2510.18913v5 Announce Type: replace 
 Abstract: Direct Preference Optimization (DPO) is effective but brittle under annotator noise and distribution shift because it operates on hard, pairwise labels and only regularizes log-probability differences. We introduce Anchored Direct Preference Optimization (ADPO), a framework that extends preference learning to soft listwise supervision via reference anchoring. ADPO minimizes KL(q || softmax((s - s_ref) / tau_anc)), which (i) recovers supervised fine-tuning, knowledge distillation, maximum-entropy reinforcement learning, and DPO as special cases through suitable choices of target q, anchor policy, and temperature; (ii) induces an implicit trust region governed by the softmax Fisher metric, independent of the anchor; and (iii) supports stable dynamic-anchor updates. Empirically, we observe a task-dependent tradeoff: dynamic anchors improve online exploration under noise, while fixed anchors excel at offline distillation, achieving up to 170 to 5000 times reduction in student-teacher KL on our benchmarks.
 ]]></content:encoded>
-<pubDate>Fri, 07 Nov 2025 00:00:00 -0500</pubDate>
 <pubDate>Fri, 07 Nov 2025 00:00:00 -0500</pubDate>
 </item>
 <item>
@@ -23,13 +23,12 @@ Abstract: Direct Preference Optimization (DPO) is effective but brittle under an
 <link>https://arxiv.org/abs/2505.18574</link>
 <guid>https://arxiv.org/abs/2505.18574</guid>
 <content:encoded><![CDATA[
-<div> accelerator programming, code optimization, large language models, hardware feedback, Autocomp<br>
-Summary:<br>
+<div> accelerator programming, code optimization, large language models, hardware feedback, Autocomp<br />
+Summary:<br />
 The article discusses the challenges of programming hardware accelerators, particularly tensor processing units, and introduces Autocomp, an approach that utilizes large language models to optimize code generation for specialized tensor accelerator code. Autocomp formulates optimization passes as structured prompts, incorporating domain knowledge and hardware feedback to improve code performance. Results show that Autocomp-optimized code outperforms vendor-provided libraries, expert hand-tuned code, and machine learning-based cost models, achieving significant speedups across different hardware platforms. The approach also demonstrates the reusability of optimization schedules, leading to further performance improvements under fixed sample budgets. Autocomp's integration of domain knowledge and hardware feedback enables accelerator programmers to leverage expertise in optimizing code for tensor accelerators effectively. <div>
 arXiv:2505.18574v5 Announce Type: replace-cross 
 Abstract: Hardware accelerators, especially those designed for tensor processing, have become ubiquitous in today's computing landscape. However, even with significant efforts in building compilers, programming these tensor accelerators remains challenging, leaving much of their potential underutilized. Recently, large language models (LLMs), trained on large amounts of code, have shown significant promise in code generation and optimization tasks, but generating low-resource languages, such as specialized tensor accelerator code still poses a significant challenge. We tackle this challenge with Autocomp, an approach that empowers accelerator programmers to leverage domain knowledge and hardware feedback to optimize code via an automated LLM-driven search. We accomplish this by: 1) formulating each optimization pass as a structured two-phase prompt, divided into planning and code generation phases, 2) inserting domain knowledge during planning via a concise and adaptable optimization menu, and 3) integrating correctness and performance metrics from hardware as feedback at each search iteration. Across three distinct hardware platforms, we demonstrate that Autocomp-optimized code runs 5.6x faster than the vendor-provided library (Gemmini), outperforms expert-level hand-tuned code by 1.9x (AWS Trainium), and achieves 3.8x higher performance than a machine learning-based cost model for GPUs (NVIDIA L40S). Additionally, we demonstrate that optimization schedules generated from Autocomp can be reused across similar tensor operations, improving speedups by up to 24% under a fixed sample budget.
 ]]></content:encoded>
-<pubDate>Fri, 07 Nov 2025 00:00:00 -0500</pubDate>
 <pubDate>Fri, 07 Nov 2025 00:00:00 -0500</pubDate>
 </item>
 <item>
@@ -42,14 +41,12 @@ Abstract: Hardware accelerators, especially those designed for tensor processing
 Summary:
 OceanAI is a conversational platform that combines the fluency of large language models with real-time access to authoritative oceanographic data from NOAA. It enables users to ask questions and receive natural-language responses and data visualizations based on real-time API calls to relevant datasets. In a comparison with other AI chat interfaces, OceanAI was the only platform to provide NOAA-sourced values with original data references, promoting transparency and trust. The platform is designed for scalability and extensibility, connecting to multiple NOAA data products for applications in marine hazard forecasting, ecosystem assessment, and water-quality monitoring. By grounding responses in verifiable observations, OceanAI enhances scientific rigor and reproducibility in decision support systems for the oceans. A public demonstration of OceanAI is available at https://oceanai.ai4ocean.xyz. 
 
-<br><br>Summary: <div>
+<br /><br />Summary: <div>
 arXiv:2511.01019v2 Announce Type: replace-cross 
 Abstract: Artificial intelligence is transforming the sciences, yet general conversational AI systems often generate unverified "hallucinations" undermining scientific rigor. We present OceanAI, a conversational platform that integrates the natural-language fluency of open-source large language models (LLMs) with real-time, parameterized access to authoritative oceanographic data streams hosted by the National Oceanic and Atmospheric Administration (NOAA). Each query such as "What was Boston Harbor's highest water level in 2024?" triggers real-time API calls that identify, parse, and synthesize relevant datasets into reproducible natural-language responses and data visualizations. In a blind comparison with three widely used AI chat-interface products, only OceanAI produced NOAA-sourced values with original data references; others either declined to answer or provided unsupported results. Designed for extensibility, OceanAI connects to multiple NOAA data products and variables, supporting applications in marine hazard forecasting, ecosystem assessment, and water-quality monitoring. By grounding outputs and verifiable observations, OceanAI advances transparency, reproducibility, and trust, offering a scalable framework for AI-enabled decision support within the oceans. A public demonstration is available at https://oceanai.ai4ocean.xyz.
 ]]></content:encoded>
 <pubDate>Fri, 07 Nov 2025 00:00:00 -0500</pubDate>
-<pubDate>Fri, 07 Nov 2025 00:00:00 -0500</pubDate>
 </item>
-
 <item>
 <title>Applying Time Series Deep Learning Models to Forecast the Growth of Perennial Ryegrass in Ireland</title>
 <link>https://arxiv.org/abs/2511.03749</link>
@@ -11079,36 +11076,6 @@ Abstract: Purpose: To evaluate deep learning (DL) models for enhancing vitreous 
 <content:encoded><![CDATA[
 arXiv:2511.00886v1 Announce Type: cross 
 Abstract: We deal with the solution of the forward problem for high-dimensional parabolic PDEs with random feature (projection) neural networks (RFNNs). We first prove that there exists a single-hidden layer neural network with randomized heat-kernels arising from the fundamental solution (Green's functions) of the heat operator, that we call HEATNET, that provides an unbiased universal approximator to the solution of parabolic PDEs in arbitrary (high) dimensions, with the rate of convergence being analogous to the ${O}(N^{-1/2})$, where $N$ is the size of HEATNET. Thus, HEATNETs are explainable schemes, based on the analytical framework of parabolic PDEs, exploiting insights from physics-informed neural networks aided by numerical and functional analysis, and the structure of the corresponding solution operators. Importantly, we show how HEATNETs can be scaled up for the efficient numerical solution of arbitrary high-dimensional parabolic PDEs using suitable transformations and importance Monte Carlo sampling of the integral representation of the solution, in order to deal with the singularities of the heat kernel around the collocation points. We evaluate the performance of HEATNETs through benchmark linear parabolic problems up to 2,000 dimensions. We show that HEATNETs result in remarkable accuracy with the order of the approximation error ranging from $1.0E-05$ to $1.0E-07$ for problems up to 500 dimensions, and of the order of $1.0E-04$ to $1.0E-03$ for 1,000 to 2,000 dimensions, with a relatively low number (up to 15,000) of features.
-]]></content:encoded>
-<pubDate>Tue, 04 Nov 2025 00:00:00 -0500</pubDate>
-</item>
-<item>
-<title>Android Malware Detection: A Machine Leaning Approach</title>
-<link>https://arxiv.org/abs/2511.00894</link>
-<guid>https://arxiv.org/abs/2511.00894</guid>
-<content:encoded><![CDATA[
-arXiv:2511.00894v1 Announce Type: cross 
-Abstract: This study examines machine learning techniques like Decision Trees, Support Vector Machines, Logistic Regression, Neural Networks, and ensemble methods to detect Android malware. The study evaluates these models on a dataset of Android applications and analyzes their accuracy, efficiency, and real-world applicability. Key findings show that ensemble methods demonstrate superior performance, but there are trade-offs between model interpretability, efficiency, and accuracy. Given its increasing threat, the insights guide future research and practical use of ML to combat Android malware.
-]]></content:encoded>
-<pubDate>Tue, 04 Nov 2025 00:00:00 -0500</pubDate>
-</item>
-<item>
-<title>Towards Channel Charting Enhancement with Non-Reconfigurable Intelligent Surfaces</title>
-<link>https://arxiv.org/abs/2511.00919</link>
-<guid>https://arxiv.org/abs/2511.00919</guid>
-<content:encoded><![CDATA[
-arXiv:2511.00919v1 Announce Type: cross 
-Abstract: We investigate how fully-passive electromagnetic skins (EMSs) can be engineered to enhance channel charting (CC) in dense urban environments. We employ two complementary state-of-the-art CC techniques, semi-supervised t-distributed stochastic neighbor embedding (t-SNE) and a semi-supervised Autoencoder (AE), to verify the consistency of results across nonparametric and parametric mappings. We show that the accuracy of CC hinges on a balance between signal-to-noise ratio (SNR) and spatial dissimilarity: EMS codebooks that only maximize gain, as in conventional Reconfigurable Intelligent Surface (RIS) optimization, suppress location fingerprints and degrade CC, while randomized phases increase diversity but reduce SNR. To address this trade-off, we design static EMS phase profiles via a quantile-driven criterion that targets worst-case users and improves both trustworthiness and continuity. In a 3D ray-traced city at 30 GHz, the proposed EMS reduces the 90th-percentile localization error from > 50 m to < 25 m for both t-SNE and AE-based CC, and decreases severe trajectory dropouts by over 4x under 15% supervision. The improvements hold consistently across the evaluated configurations, establishing static, pre-configured EMS as a practical enabler of CC without reconfiguration overheads.
-]]></content:encoded>
-<pubDate>Tue, 04 Nov 2025 00:00:00 -0500</pubDate>
-</item>
-<item>
-<title>Aligning LLM agents with human learning and adjustment behavior: a dual agent approach</title>
-<link>https://arxiv.org/abs/2511.00993</link>
-<guid>https://arxiv.org/abs/2511.00993</guid>
-<content:encoded><![CDATA[
-arXiv:2511.00993v1 Announce Type: cross 
-Abstract: Effective modeling of how human travelers learn and adjust their travel behavior from interacting with transportation systems is critical for system assessment and planning. However, this task is also difficult due to the complex cognition and decision-making involved in such behavior. Recent research has begun to leverage Large Language Model (LLM) agents for this task. Building on this, we introduce a novel dual-agent framework that enables continuous learning and alignment between LLM agents and human travelers on learning and adaptation behavior from online data streams. Our approach involves a set of LLM traveler agents, equipped with a memory system and a learnable persona, which serve as simulators for human travelers. To ensure behavioral alignment, we introduce an LLM calibration agent that leverages the reasoning and analytical capabilities of LLMs to train the personas of these traveler agents. Working together, this dual-agent system is designed to track and align the underlying decision-making mechanisms of travelers and produce realistic, adaptive simulations. Using a real-world dataset from a day-to-day route choice experiment, we show our approach significantly outperforms existing LLM-based methods in both individual behavioral alignment and aggregate simulation accuracy. Furthermore, we demonstrate that our method moves beyond simple behavioral mimicry to capture the evolution of underlying learning processes, a deeper alignment that fosters robust generalization. Overall, our framework provides a new approach for creating adaptive and behaviorally realistic agents to simulate travelers' learning and adaptation that can benefit transportation simulation and policy analysis.
 ]]></content:encoded>
 <pubDate>Tue, 04 Nov 2025 00:00:00 -0500</pubDate>
 </item>
