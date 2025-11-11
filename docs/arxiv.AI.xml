@@ -4,6 +4,7 @@
 <title>cs.AI updates on arXiv.org</title>
 <link>http://rss.arxiv.org/rss/cs.AI</link>
 
+
 <item>
 <title>GraphChain: Large Language Models for Large-scale Graph Analysis via Tool Chaining</title>
 <link>https://arxiv.org/abs/2511.00457</link>
@@ -17,7 +18,6 @@ arXiv:2511.00457v2 Announce Type: replace
 Abstract: Large Language Models (LLMs) face significant limitations when applied to large-scale graphs, struggling with context constraints and inflexible reasoning. We present GraphChain, a framework that enables LLMs to analyze complex graphs through dynamic sequences of specialized tools, mimicking human exploratory intelligence. Our approach introduces two key innovations: (1) Progressive Graph Distillation, a reinforcement learning mechanism that generates optimized tool sequences balancing task relevance with information compression, and (2) Structure-aware Test-Time Adaptation, which efficiently tailors tool selection strategies to diverse graph topologies using spectral properties and lightweight adapters without costly retraining. Experiments show GraphChain significantly outperforms prior methods, enabling scalable and adaptive LLM-driven graph analysis.
 ]]></content:encoded>
 <pubDate>Tue, 11 Nov 2025 00:00:00 -0500</pubDate>
-<pubDate>Tue, 11 Nov 2025 00:00:00 -0500</pubDate>
 </item>
 <item>
 <title>PreferThinker: Reasoning-based Personalized Image Preference Assessment</title>
@@ -29,11 +29,10 @@ Abstract: Large Language Models (LLMs) face significant limitations when applied
 Summary:
 This paper introduces a personalized image preference assessment framework that utilizes a common preference profile to bridge across users and capture diverse individual tastes. The framework follows a predict-then-assess paradigm, predicting a user's preference profile from reference images and providing multi-dimensional scores and assessments of candidate images based on the profile. A large-scale Chain-of-Thought (CoT) dataset is constructed for training the model with structured reasoning supervision. The proposed two-stage training strategy involves a cold-start supervised fine-tuning phase and reinforcement learning to enhance generalization. A similarity-aware prediction reward is used to improve prediction of the user's preference profile and encourage reasonable assessment exploration. Extensive experiments demonstrate the effectiveness of the method in personalized image preference assessment. 
 
-<br><br>Summary: <div>
+<br /><br />Summary: <div>
 arXiv:2511.00609v2 Announce Type: replace 
 Abstract: Personalized image preference assessment aims to evaluate an individual user's image preferences by relying only on a small set of reference images as prior information. Existing methods mainly focus on general preference assessment, training models with large-scale data to tackle well-defined tasks such as text-image alignment. However, these approaches struggle to handle personalized preference because user-specific data are scarce and not easily scalable, and individual tastes are often diverse and complex. To overcome these challenges, we introduce a common preference profile that serves as a bridge across users, allowing large-scale user data to be leveraged for training profile prediction and capturing complex personalized preferences. Building on this idea, we propose a reasoning-based personalized image preference assessment framework that follows a \textit{predict-then-assess} paradigm: it first predicts a user's preference profile from reference images, and then provides interpretable, multi-dimensional scores and assessments of candidate images based on the predicted profile. To support this, we first construct a large-scale Chain-of-Thought (CoT)-style personalized assessment dataset annotated with diverse user preference profiles and high-quality CoT-style reasoning, enabling explicit supervision of structured reasoning. Next, we adopt a two-stage training strategy: a cold-start supervised fine-tuning phase to empower the model with structured reasoning capabilities, followed by reinforcement learning to incentivize the model to explore more reasonable assessment paths and enhance generalization. Furthermore, we propose a similarity-aware prediction reward to encourage better prediction of the user's preference profile, which facilitates more reasonable assessments exploration. Extensive experiments demonstrate the superiority of the proposed method.
 ]]></content:encoded>
-<pubDate>Tue, 11 Nov 2025 00:00:00 -0500</pubDate>
 <pubDate>Tue, 11 Nov 2025 00:00:00 -0500</pubDate>
 </item>
 <item>
@@ -45,11 +44,10 @@ Abstract: Personalized image preference assessment aims to evaluate an individua
 
 Summary: Vision-Language Models (VLMs) trained with Reinforcement Learning (RL) show improved reasoning abilities, particularly in spatial tasks. The new framework, Ariadne, uses synthetic mazes for controlled multi-step spatial reasoning training with RL and Verified Rewards. The VLM trained with RLVR achieves significant accuracy improvement in spatial tasks, expanding its initial capability boundaries. Evaluation on practical benchmarks demonstrates out-of-distribution generalization, with substantial zero-shot improvements on MapBench and ReasonMap tasks. The study focuses on the post-training phase, limited by pre-training dataset opacity, encouraging further research on specialized capability-extending alignment. Overall, the approach enhances VLMs' spatial reasoning capabilities and improves generalization to real-world scenarios. 
 
-Summary: <br><br> <div>
+Summary: <br /><br /> <div>
 arXiv:2511.00710v2 Announce Type: replace 
 Abstract: While Vision-Language Models (VLMs) post-trained with Reinforcement Learning (RL) show impressive general reasoning, their evaluation is often confined to language-dominant tasks (e.g., math). This raises a critical question: can RL post-training truly extend the inherent capability boundary of a base VLM, particularly for visual-centric spatial tasks where it initially fails? To investigate this, we introduce Ariadne, a framework utilizing synthetic mazes for multi-step spatial reasoning where task difficulty (e.g., path length, turns) is precisely controlled. We leverage this controllable environment to train VLMs using Reinforcement Learning with Verified Rewards (RLVR) in a difficulty-aware curriculum. Surprisingly, post-RLVR training, the VLM achieves over 50% accuracy on a problem set where the base model scored 0%, demonstrating that our approach expands the model's initial capability boundary. To assess real-world viability, we evaluate out-of-distribution (OOD) generalization on practical benchmarks. Despite training only on synthetic maze samples, Ariadne achieves significant zero-shot improvements, averaging 16% on MapBench (e.g., museum navigation) and 24% on ReasonMap (subway transfer tasks). These results confirm that our method not only broadens the model's fundamental limits but also enhances its generalization to real-world spatial reasoning. We acknowledge our study is limited to the post-training phase, given the opaqueness of pre-training data, and hope our research motivates further work on specialized, capability-extending alignment.
 ]]></content:encoded>
-<pubDate>Tue, 11 Nov 2025 00:00:00 -0500</pubDate>
 <pubDate>Tue, 11 Nov 2025 00:00:00 -0500</pubDate>
 </item>
 <item>
@@ -60,11 +58,10 @@ Abstract: While Vision-Language Models (VLMs) post-trained with Reinforcement Le
 <div> method, Parameter-Efficient, Fine-Tuning, DoRA, SORA  
 Summary:  
 Parameter-Efficient Fine-Tuning (PEFT) methods are crucial for adapting large pre-trained models. The DoRA method enhances performance by decomposing weight updates into magnitude and direction, increasing the singular value entropy for a more uniform update distribution. This insight led to the reformulation of DoRA into a more efficient matrix form as a learnable weight conditioning method. A unified framework for designing advanced PEFT methods was proposed, exploring two dimensions: architectural placement and transformation type of the conditioning matrix. Two novel methods were introduced within this framework: Pre-Diag, which efficiently calibrates pre-trained weights before the LoRA update, and SORA, which utilizes a parameter-efficient orthogonal rotation for norm-preserving transformations in the feature space. Extensive experiments showed superior performance and efficiency of the proposed methods compared to LoRA and DoRA. (Source: https://arxiv.org/abs/2511.00051v2)  
-<br><br>Summary: <div>
+<br /><br />Summary: <div>
 arXiv:2511.00051v2 Announce Type: replace-cross 
 Abstract: Parameter-Efficient Fine-Tuning (PEFT) methods are crucial for adapting large pre-trained models. Among these, LoRA is considered a foundational approach. Building on this, the influential DoRA method enhances performance by decomposing weight updates into magnitude and direction. However, its underlying mechanism remains unclear, and it introduces significant computational overhead. In this work, we first identify that DoRA's success stems from its capacity to increase the singular value entropy of the weight update matrix, which promotes a more uniform update distribution akin to full fine-tuning. We then reformulate DoRA into a mathematically equivalent and more efficient matrix form, revealing it as a learnable weight conditioning method. Based on this insight, we propose a unified framework for designing advanced PEFT methods by exploring two orthogonal dimensions: the architectural placement and the transformation type of the conditioning matrix. Within this framework, we introduce two novel methods: (1) \textbf{Pre-Diag}, which applies a diagonal conditioning matrix before the LoRA update to efficiently calibrate the pre-trained weights, thereby enhancing performance while reducing training time; and (2) \textbf{S}kewed \textbf{O}rthogonal \textbf{R}otation \textbf{A}daptation (\textbf{SORA}), which employs a parameter-efficient orthogonal rotation to perform a more powerful, norm-preserving transformation of the feature space. Extensive experiments on natural language understanding and generation tasks demonstrate that our proposed methods achieve superior performance and efficiency compared to both LoRA and DoRA. The code is available at https://github.com/MaeChd/SORA.
 ]]></content:encoded>
-<pubDate>Tue, 11 Nov 2025 00:00:00 -0500</pubDate>
 <pubDate>Tue, 11 Nov 2025 00:00:00 -0500</pubDate>
 </item>
 <item>
@@ -80,20 +77,18 @@ arXiv:2511.00065v2 Announce Type: replace-cross
 Abstract: When we hear the word "house", we don't just process sound, we imagine walls, doors, memories. The brain builds meaning through layers, moving from raw acoustics to rich, multimodal associations. Inspired by this, we build on recent work from Meta that aligned EEG signals with averaged wav2vec2 speech embeddings, and ask a deeper question: which layers of pre-trained models best reflect this layered processing in the brain? We compare embeddings from two models: wav2vec2, which encodes sound into language, and CLIP, which maps words to images. Using EEG recorded during natural speech perception, we evaluate how these embeddings align with brain activity using ridge regression and contrastive decoding. We test three strategies: individual layers, progressive concatenation, and progressive summation. The findings suggest that combining multimodal, layer-aware representations may bring us closer to decoding how the brain understands language, not just as sound, but as experience.
 ]]></content:encoded>
 <pubDate>Tue, 11 Nov 2025 00:00:00 -0500</pubDate>
-<pubDate>Tue, 11 Nov 2025 00:00:00 -0500</pubDate>
 </item>
 <item>
 <title>Reasoning Planning for Language Models</title>
 <link>https://arxiv.org/abs/2511.00521</link>
 <guid>https://arxiv.org/abs/2511.00521</guid>
 <content:encoded><![CDATA[
-<div> Keywords: reasoning methods, language model generation, EPIC, Ensemble Planning, computational cost <br>
+<div> Keywords: reasoning methods, language model generation, EPIC, Ensemble Planning, computational cost <br />
 Summary: 
 EPIC is introduced as an Ensemble Planning with Contrastive learning framework for selecting appropriate reasoning methods in language model generation. A theoretical analysis is conducted to derive accuracy bounds for aggregation methods, challenging the assumption that more candidate responses lead to higher accuracy. EPIC learns a shared representation space that considers both model reasoning abilities and query-method compatibility. It uses probability bounds as a regularizer in a utility-driven optimization to balance accuracy and computational cost. Experimental results on mathematical reasoning tasks demonstrate that EPIC significantly improves accuracy while reducing computational overhead. <div>
 arXiv:2511.00521v2 Announce Type: replace-cross 
 Abstract: Selecting an appropriate reasoning method for a given query remains a key challenge in language model generation. Existing approaches typically generate multiple candidate responses and use an aggregation strategy to select the output answer, often assuming that more candidate answers yield higher accuracy. We revisit this assumption through a rigorous theoretical analysis, deriving accuracy bounds for standard aggregation methods under fixed generation distributions and candidate sizes. Building on these insights, we introduce EPIC, an Ensemble Planning with Contrastive learning framework to learn a shared representation space that captures both model reasoning abilities and query-method compatibility. EPIC incorporates our probability bounds as a regularizer in a utility-driven optimization that balances accuracy and computational cost. Experiments on diverse mathematical reasoning tasks show that EPIC consistently selects optimal reasoning methods, improving accuracy while reducing computational overhead. Our code can be found at https://github.com/nguyenngocbaocmt02/EPIC.
 ]]></content:encoded>
-<pubDate>Tue, 11 Nov 2025 00:00:00 -0500</pubDate>
 <pubDate>Tue, 11 Nov 2025 00:00:00 -0500</pubDate>
 </item>
 <item>
@@ -108,20 +103,18 @@ arXiv:2511.01934v2 Announce Type: replace-cross
 Abstract: Training tool-augmented LLMs has emerged as a promising approach to enhancing language models' capabilities for complex tasks. The current supervised fine-tuning paradigm relies on constructing extensive domain-specific datasets to train models. However, this approach often struggles to generalize effectively to unfamiliar or intricate tool-use scenarios. Recently, reinforcement learning (RL) paradigm can endow LLMs with superior reasoning and generalization abilities. In this work, we address a key question: Can the pure RL be used to effectively elicit a model's intrinsic reasoning capabilities and enhance the tool-agnostic generalization? We propose a dynamic generalization-guided reward design for rule-based RL, which progressively shifts rewards from exploratory to exploitative tool-use patterns. Based on this design, we introduce the Tool-Zero series models. These models are trained to enable LLMs to autonomously utilize general tools by directly scaling up RL from Zero models (i.e., base models without post-training). Experimental results demonstrate that our models achieve over 7% performance improvement compared to both SFT and RL-with-SFT models under the same experimental settings. These gains are consistently replicated across cross-dataset and intra-dataset evaluations, validating the effectiveness and robustness of our methods.
 ]]></content:encoded>
 <pubDate>Tue, 11 Nov 2025 00:00:00 -0500</pubDate>
-<pubDate>Tue, 11 Nov 2025 00:00:00 -0500</pubDate>
 </item>
 <item>
 <title>RobustFSM: Submodular Maximization in Federated Setting with Malicious Clients</title>
 <link>https://arxiv.org/abs/2511.02029</link>
 <guid>https://arxiv.org/abs/2511.02029</guid>
 <content:encoded><![CDATA[
-<div> Submodular maximization, federated learning, client misbehaviors, RobustFSM, privacy<br>
-Summary:<br>
+<div> Submodular maximization, federated learning, client misbehaviors, RobustFSM, privacy<br />
+Summary:<br />
 The article discusses the optimization problem of submodular maximization in a federated setting where decentralized clients own data and must aggregate local information. Addressing the vulnerability to client misbehaviors, the study introduces RobustFSM, a solution resilient to practical attacks. It outperforms conventional federated algorithms, particularly in severe attack scenarios, with quality improvements reaching 200%. The empirical evaluation using real-world datasets confirms the effectiveness of RobustFSM in maintaining solution quality despite potential malicious actions by clients. <div>
 arXiv:2511.02029v2 Announce Type: replace-cross 
 Abstract: Submodular maximization is an optimization problem benefiting many machine learning applications, where we seek a small subset best representing an extremely large dataset. We focus on the federated setting where the data are locally owned by decentralized clients who have their own definitions for the quality of representability. This setting requires repetitive aggregation of local information computed by the clients. While the main motivation is to respect the privacy and autonomy of the clients, the federated setting is vulnerable to client misbehaviors: malicious clients might share fake information. An analogy is backdoor attack in conventional federated learning, but our challenge differs freshly due to the unique characteristics of submodular maximization. We propose RobustFSM, a federated submodular maximization solution that is robust to various practical client attacks. Its performance is substantiated with an empirical evaluation study using real-world datasets. Numerical results show that the solution quality of RobustFSM substantially exceeds that of the conventional federated algorithm when attacks are severe. The degree of this improvement depends on the dataset and attack scenarios, which can be as high as 200%
 ]]></content:encoded>
-<pubDate>Tue, 11 Nov 2025 00:00:00 -0500</pubDate>
 <pubDate>Tue, 11 Nov 2025 00:00:00 -0500</pubDate>
 </item>
 <item>
@@ -132,11 +125,10 @@ Abstract: Submodular maximization is an optimization problem benefiting many mac
 <div> Keywords: retinal vessels, deep learning, segmentation, MM-UNet, Morph Mamba Convolution. 
 
 Summary: 
-The article presents a novel architecture, MM-UNet, designed for accurate retinal vessel segmentation using deep learning. The model incorporates Morph Mamba Convolution layers to enhance perception of branching structures. Reverse Selective State Guidance modules improve geometric boundary awareness and decoding efficiency. Extensive experiments on public datasets show that MM-UNet outperforms existing methods, achieving F1-score gains of 1.64% on the DRIVE dataset and 1.25% on the STARE dataset. The proposed method demonstrates superior segmentation accuracy, addressing challenges posed by the thin and branching nature of retinal vasculature. The project code is openly available on the GitHub repository. <br><br>Summary: <div>
+The article presents a novel architecture, MM-UNet, designed for accurate retinal vessel segmentation using deep learning. The model incorporates Morph Mamba Convolution layers to enhance perception of branching structures. Reverse Selective State Guidance modules improve geometric boundary awareness and decoding efficiency. Extensive experiments on public datasets show that MM-UNet outperforms existing methods, achieving F1-score gains of 1.64% on the DRIVE dataset and 1.25% on the STARE dataset. The proposed method demonstrates superior segmentation accuracy, addressing challenges posed by the thin and branching nature of retinal vasculature. The project code is openly available on the GitHub repository. <br /><br />Summary: <div>
 arXiv:2511.02193v2 Announce Type: replace-cross 
 Abstract: Accurate detection of retinal vessels plays a critical role in reflecting a wide range of health status indicators in the clinical diagnosis of ocular diseases. Recently, advances in deep learning have led to a surge in retinal vessel segmentation methods, which have significantly contributed to the quantitative analysis of vascular morphology. However, retinal vasculature differs significantly from conventional segmentation targets in that it consists of extremely thin and branching structures, whose global morphology varies greatly across images. These characteristics continue to pose challenges to segmentation precision and robustness. To address these issues, we propose MM-UNet, a novel architecture tailored for efficient retinal vessel segmentation. The model incorporates Morph Mamba Convolution layers, which replace pointwise convolutions to enhance branching topological perception through morph, state-aware feature sampling. Additionally, Reverse Selective State Guidance modules integrate reverse guidance theory with state-space modeling to improve geometric boundary awareness and decoding efficiency. Extensive experiments conducted on two public retinal vessel segmentation datasets demonstrate the superior performance of the proposed method in segmentation accuracy. Compared to the existing approaches, MM-UNet achieves F1-score gains of 1.64 % on DRIVE and 1.25 % on STARE, demonstrating its effectiveness and advancement. The project code is public via https://github.com/liujiawen-jpg/MM-UNet.
 ]]></content:encoded>
-<pubDate>Tue, 11 Nov 2025 00:00:00 -0500</pubDate>
 <pubDate>Tue, 11 Nov 2025 00:00:00 -0500</pubDate>
 </item>
 <item>
@@ -151,9 +143,7 @@ arXiv:2511.02376v2 Announce Type: replace-cross
 Abstract: Large Language Models (LLMs) remain vulnerable to jailbreaking attacks where adversarial prompts elicit harmful outputs, yet most evaluations focus on single-turn interactions while real-world attacks unfold through adaptive multi-turn conversations. We present AutoAdv, a training-free framework for automated multi-turn jailbreaking that achieves up to 95% attack success rate on Llama-3.1-8B within six turns a 24 percent improvement over single turn baselines. AutoAdv uniquely combines three adaptive mechanisms: a pattern manager that learns from successful attacks to enhance future prompts, a temperature manager that dynamically adjusts sampling parameters based on failure modes, and a two-phase rewriting strategy that disguises harmful requests then iteratively refines them. Extensive evaluation across commercial and open-source models (GPT-4o-mini, Qwen3-235B, Mistral-7B) reveals persistent vulnerabilities in current safety mechanisms, with multi-turn attacks consistently outperforming single-turn approaches. These findings demonstrate that alignment strategies optimized for single-turn interactions fail to maintain robustness across extended conversations, highlighting an urgent need for multi-turn-aware defenses.
 ]]></content:encoded>
 <pubDate>Tue, 11 Nov 2025 00:00:00 -0500</pubDate>
-<pubDate>Tue, 11 Nov 2025 00:00:00 -0500</pubDate>
 </item>
-
 <item>
 <title>Evidence-Bound Autonomous Research (EviBound): A Governance Framework for Eliminating False Claims</title>
 <link>https://arxiv.org/abs/2511.05524</link>
@@ -11033,107 +11023,6 @@ Abstract: The increasing reliance on generative AI models is rapidly increasing 
 <content:encoded><![CDATA[
 arXiv:2510.07978v2 Announce Type: replace 
 Abstract: Large-scale Speech Language Models (SpeechLMs) have enabled voice assistants capable of understanding natural spoken queries and performing complex tasks. However, existing speech benchmarks primarily focus on isolated capabilities such as transcription, or question-answering, and do not systematically evaluate agentic scenarios encompassing multilingual and cultural understanding, as well as adversarial robustness. To address this, we introduce VoiceAgentBench, a comprehensive benchmark designed to evaluate SpeechLMs in realistic spoken agentic settings. It comprises over 5,500 synthetic spoken queries, including dialogues grounded in Indian context, covering single-tool invocations, multi-tool workflows, multi-turn interactions, and safety evaluations. The benchmark supports English, Hindi, and 5 other Indian languages, reflecting real-world linguistic and cultural diversity. We simulate speaker variability using a novel sampling algorithm that selects audios for TTS voice conversion based on its speaker embeddings, maximizing acoustic and speaker diversity. Our evaluation measures tool selection accuracy, structural consistency, and the correctness of tool invocations, including adversarial robustness. Our experiments reveal significant gaps in contextual tool orchestration tasks, Indic generalization, and adversarial robustness, exposing critical limitations of current SpeechLMs.
-]]></content:encoded>
-<pubDate>Thu, 06 Nov 2025 00:00:00 -0500</pubDate>
-</item>
-<item>
-<title>PlanU: Large Language Model Reasoning through Planning under Uncertainty</title>
-<link>https://arxiv.org/abs/2510.18442</link>
-<guid>https://arxiv.org/abs/2510.18442</guid>
-<content:encoded><![CDATA[
-arXiv:2510.18442v2 Announce Type: replace 
-Abstract: Large Language Models (LLMs) are increasingly being explored across a range of reasoning tasks. However, LLMs sometimes struggle with reasoning tasks under uncertainty that are relatively easy for humans, such as planning actions in stochastic environments. The adoption of LLMs for reasoning is impeded by uncertainty challenges, such as LLM uncertainty and environmental uncertainty. LLM uncertainty arises from the stochastic sampling process inherent to LLMs. Most LLM-based Decision-Making (LDM) approaches address LLM uncertainty through multiple reasoning chains or search trees. However, these approaches overlook environmental uncertainty, which leads to poor performance in environments with stochastic state transitions. Some recent LDM approaches deal with uncertainty by forecasting the probability of unknown variables. However, they are not designed for multi-step reasoning tasks that require interaction with the environment. To address uncertainty in LLM decision-making, we introduce PlanU, an LLM-based planning method that captures uncertainty within Monte Carlo Tree Search (MCTS). PlanU models the return of each node in the MCTS as a quantile distribution, which uses a set of quantiles to represent the return distribution. To balance exploration and exploitation during tree search, PlanU introduces an Upper Confidence Bounds with Curiosity (UCC) score which estimates the uncertainty of MCTS nodes. Through extensive experiments, we demonstrate the effectiveness of PlanU in LLM-based reasoning tasks under uncertainty.
-]]></content:encoded>
-<pubDate>Thu, 06 Nov 2025 00:00:00 -0500</pubDate>
-</item>
-<item>
-<title>Misalignment Bounty: Crowdsourcing AI Agent Misbehavior</title>
-<link>https://arxiv.org/abs/2510.19738</link>
-<guid>https://arxiv.org/abs/2510.19738</guid>
-<content:encoded><![CDATA[
-arXiv:2510.19738v2 Announce Type: replace 
-Abstract: Advanced AI systems sometimes act in ways that differ from human intent. To gather clear, reproducible examples, we ran the Misalignment Bounty: a crowdsourced project that collected cases of agents pursuing unintended or unsafe goals. The bounty received 295 submissions, of which nine were awarded.
-  This report explains the program's motivation and evaluation criteria, and walks through the nine winning submissions step by step.
-]]></content:encoded>
-<pubDate>Thu, 06 Nov 2025 00:00:00 -0500</pubDate>
-</item>
-<item>
-<title>Agentic Meta-Orchestrator for Multi-task Copilots</title>
-<link>https://arxiv.org/abs/2510.22781</link>
-<guid>https://arxiv.org/abs/2510.22781</guid>
-<content:encoded><![CDATA[
-arXiv:2510.22781v2 Announce Type: replace 
-Abstract: Microsoft Copilot suites serve as the universal entry point for various agents skilled in handling important tasks, ranging from assisting a customer with product purchases to detecting vulnerabilities in corporate programming code. Each agent can be powered by language models, software engineering operations, such as database retrieval, and internal \& external knowledge. The repertoire of a copilot can expand dynamically with new agents. This requires a robust orchestrator that can distribute tasks from user prompts to the right agents. In this work, we propose an Agentic Meta-orchestrator (AMO) for handling multiple tasks and scalable agents in copilot services, which can provide both natural language and action responses. We will also demonstrate the planning that leverages meta-learning, i.e., a trained decision tree model for deciding the best inference strategy among various agents/models. We showcase the effectiveness of our AMO through two production use cases: Microsoft 365 (M365) E-Commerce Copilot and code compliance copilot. M365 E-Commerce Copilot advertises Microsoft products to external customers to promote sales success. The M365 E-Commerce Copilot provides up-to-date product information and connects to multiple agents, such as relational databases and human customer support. The code compliance copilot scans the internal DevOps code to detect known and new compliance issues in pull requests (PR).
-]]></content:encoded>
-<pubDate>Thu, 06 Nov 2025 00:00:00 -0500</pubDate>
-</item>
-<item>
-<title>Emotion Detection From Social Media Posts</title>
-<link>https://arxiv.org/abs/2302.05610</link>
-<guid>https://arxiv.org/abs/2302.05610</guid>
-<content:encoded><![CDATA[
-arXiv:2302.05610v2 Announce Type: replace-cross 
-Abstract: Over the last few years, social media has evolved into a medium for expressing personal views, emotions, and even business and political proposals, recommendations, and advertisements. We address the topic of identifying emotions from text data obtained from social media posts like Twitter in this research. We have deployed different traditional machine learning techniques such as Support Vector Machines (SVM), Naive Bayes, Decision Trees, and Random Forest, as well as deep neural network models such as LSTM, CNN, GRU, BiLSTM, BiGRU to classify these tweets into four emotion categories (Fear, Anger, Joy, and Sadness). Furthermore, we have constructed a BiLSTM and BiGRU ensemble model. The evaluation result shows that the deep neural network models(BiGRU, to be specific) produce the most promising results compared to traditional machine learning models, with an 87.53 % accuracy rate. The ensemble model performs even better (87.66 %), albeit the difference is not significant. This result will aid in the development of a decision-making tool that visualizes emotional fluctuations.
-]]></content:encoded>
-<pubDate>Thu, 06 Nov 2025 00:00:00 -0500</pubDate>
-</item>
-<item>
-<title>Transfer Learning-based Real-time Handgun Detection</title>
-<link>https://arxiv.org/abs/2311.13559</link>
-<guid>https://arxiv.org/abs/2311.13559</guid>
-<content:encoded><![CDATA[
-arXiv:2311.13559v3 Announce Type: replace-cross 
-Abstract: Traditional surveillance systems rely on human attention, limiting their effectiveness. This study employs convolutional neural networks and transfer learning to develop a real-time computer vision system for automatic handgun detection. Comprehensive analysis of online handgun detection methods is conducted, emphasizing reducing false positives and learning time. Transfer learning is demonstrated as an effective approach. Despite technical challenges, the proposed system achieves a precision rate of 84.74%, demonstrating promising performance comparable to related works, enabling faster learning and accurate automatic handgun detection for enhanced security. This research advances security measures by reducing human monitoring dependence, showcasing the potential of transfer learning-based approaches for efficient and reliable handgun detection.
-]]></content:encoded>
-<pubDate>Thu, 06 Nov 2025 00:00:00 -0500</pubDate>
-</item>
-<item>
-<title>Survey on AI Ethics: A Socio-technical Perspective</title>
-<link>https://arxiv.org/abs/2311.17228</link>
-<guid>https://arxiv.org/abs/2311.17228</guid>
-<content:encoded><![CDATA[
-arXiv:2311.17228v2 Announce Type: replace-cross 
-Abstract: The past decade has observed a significant advancement in AI with deep learning-based models being deployed in diverse scenarios, including safety-critical applications. As these AI systems become deeply embedded in our societal infrastructure, the repercussions of their decisions and actions have significant consequences, making the ethical implications of AI deployment highly relevant and essential. The ethical concerns associated with AI are multifaceted, including challenging issues of fairness, privacy and data protection, responsibility and accountability, safety and robustness, transparency and explainability, and environmental impact. These principles together form the foundations of ethical AI considerations that concern every stakeholder in the AI system lifecycle. In light of the present ethical and future x-risk concerns, governments have shown increasing interest in establishing guidelines for the ethical deployment of AI. This work unifies the current and future ethical concerns of deploying AI into society. While we acknowledge and appreciate the technical surveys for each of the ethical principles concerned, in this paper, we aim to provide a comprehensive overview that not only addresses each principle from a technical point of view but also discusses them from a social perspective.
-]]></content:encoded>
-<pubDate>Thu, 06 Nov 2025 00:00:00 -0500</pubDate>
-</item>
-<item>
-<title>Neural Physics: Using AI Libraries to Develop Physics-Based Solvers for Incompressible Computational Fluid Dynamics</title>
-<link>https://arxiv.org/abs/2402.17913</link>
-<guid>https://arxiv.org/abs/2402.17913</guid>
-<content:encoded><![CDATA[
-arXiv:2402.17913v2 Announce Type: replace-cross 
-Abstract: Numerical discretisations of partial differential equations (PDEs) can be written as discrete convolutions, which, themselves, are a key tool in AI libraries and used in convolutional neural networks (CNNs). We therefore propose to implement numerical discretisations as convolutional layers of a neural network, where the weights or filters are determined analytically rather than by training. Furthermore, we demonstrate that these systems can be solved entirely by functions in AI libraries, either by using Jacobi iteration or multigrid methods, the latter realised through a U-Net architecture. Some advantages of the Neural Physics approach are that (1) the methods are platform agnostic; (2) the resulting solvers are fully differentiable, ideal for optimisation tasks; and (3) writing CFD solvers as (untrained) neural networks means that they can be seamlessly integrated with trained neural networks to form hybrid models. We demonstrate the proposed approach on a number of test cases of increasing complexity from advection-diffusion problems, the non-linear Burgers equation to the Navier-Stokes equations. We validate the approach by comparing our results with solutions obtained from traditionally written code and common benchmarks from the literature. We show that the proposed methodology can solve all these problems using repurposed AI libraries in an efficient way, without training, and presents a new avenue to explore in the development of methods to solve PDEs with implicit methods.
-]]></content:encoded>
-<pubDate>Thu, 06 Nov 2025 00:00:00 -0500</pubDate>
-</item>
-<item>
-<title>A Survey of Graph Neural Networks in Real world: Imbalance, Noise, Privacy and OOD Challenges</title>
-<link>https://arxiv.org/abs/2403.04468</link>
-<guid>https://arxiv.org/abs/2403.04468</guid>
-<content:encoded><![CDATA[
-arXiv:2403.04468v2 Announce Type: replace-cross 
-Abstract: Graph-structured data exhibits universality and widespread applicability across diverse domains, such as social network analysis, biochemistry, financial fraud detection, and network security. Significant strides have been made in leveraging Graph Neural Networks (GNNs) to achieve remarkable success in these areas. However, in real-world scenarios, the training environment for models is often far from ideal, leading to substantial performance degradation of GNN models due to various unfavorable factors, including imbalance in data distribution, the presence of noise in erroneous data, privacy protection of sensitive information, and generalization capability for out-of-distribution (OOD) scenarios. To tackle these issues, substantial efforts have been devoted to improving the performance of GNN models in practical real-world scenarios, as well as enhancing their reliability and robustness. In this paper, we present a comprehensive survey that systematically reviews existing GNN models, focusing on solutions to the four mentioned real-world challenges including imbalance, noise, privacy, and OOD in practical scenarios that many existing reviews have not considered. Specifically, we first highlight the four key challenges faced by existing GNNs, paving the way for our exploration of real-world GNN models. Subsequently, we provide detailed discussions on these four aspects, dissecting how these solutions contribute to enhancing the reliability and robustness of GNN models. Last but not least, we outline promising directions and offer future perspectives in the field.
-]]></content:encoded>
-<pubDate>Thu, 06 Nov 2025 00:00:00 -0500</pubDate>
-</item>
-<item>
-<title>A Reliable Cryptographic Framework for Empirical Machine Unlearning Evaluation</title>
-<link>https://arxiv.org/abs/2404.11577</link>
-<guid>https://arxiv.org/abs/2404.11577</guid>
-<content:encoded><![CDATA[
-arXiv:2404.11577v4 Announce Type: replace-cross 
-Abstract: Machine unlearning updates machine learning models to remove information from specific training samples, complying with data protection regulations that allow individuals to request the removal of their personal data. Despite the recent development of numerous unlearning algorithms, reliable evaluation of these algorithms remains an open research question. In this work, we focus on membership inference attack (MIA) based evaluation, one of the most common approaches for evaluating unlearning algorithms, and address various pitfalls of existing evaluation metrics lacking theoretical understanding and reliability. Specifically, by modeling the proposed evaluation process as a \emph{cryptographic game} between unlearning algorithms and MIA adversaries, the naturally induced evaluation metric measures the data removal efficacy of unlearning algorithms and enjoys provable guarantees that existing evaluation metrics fail to satisfy. Furthermore, we propose a practical and efficient approximation of the induced evaluation metric and demonstrate its effectiveness through both theoretical analysis and empirical experiments. Overall, this work presents a novel and reliable approach to empirically evaluating unlearning algorithms, paving the way for the development of more effective unlearning techniques.
-]]></content:encoded>
-<pubDate>Thu, 06 Nov 2025 00:00:00 -0500</pubDate>
-</item>
-<item>
-<title>Autonomous Robotic Drilling System for Mice Cranial Window Creation</title>
-<link>https://arxiv.org/abs/2406.14135</link>
-<guid>https://arxiv.org/abs/2406.14135</guid>
-<content:encoded><![CDATA[
-arXiv:2406.14135v2 Announce Type: replace-cross 
-Abstract: Robotic assistance for experimental manipulation in the life sciences is expected to enable favorable outcomes, regardless of the skill of the scientist. Experimental specimens in the life sciences are subject to individual variability and hence require intricate algorithms for successful autonomous robotic control. As a use case, we are studying the cranial window creation in mice. This operation requires the removal of an 8-mm circular patch of the skull, which is approximately 300 um thick, but the shape and thickness of the mouse skull significantly varies depending on the strain of the mouse, sex, and age. In this work, we develop an autonomous robotic drilling system with no offline planning, consisting of a trajectory planner with execution-time feedback with drilling completion level recognition based on image and force information. In the experiments, we first evaluate the image-and-force-based drilling completion level recognition by comparing it with other state-of-the-art deep learning image processing methods and conduct an ablation study in eggshell drilling to evaluate the impact of each module on system performance. Finally, the system performance is further evaluated in postmortem mice, achieving a success rate of 70% (14/20 trials) with an average drilling time of 9.3 min.
 ]]></content:encoded>
 <pubDate>Thu, 06 Nov 2025 00:00:00 -0500</pubDate>
 </item>

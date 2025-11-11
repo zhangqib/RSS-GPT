@@ -4,13 +4,14 @@
 <title>cs.CV updates on arXiv.org</title>
 <link>http://rss.arxiv.org/rss/cs.CV</link>
 
+
 <item>
 <title>GauSSmart: Enhanced 3D Reconstruction through 2D Foundation Models and Geometric Filtering</title>
 <link>https://arxiv.org/abs/2510.14270</link>
 <guid>https://arxiv.org/abs/2510.14270</guid>
 <content:encoded><![CDATA[
-<div> GauSSmart; 2D foundational models; 3D Gaussian Splatting; scene reconstruction; fine details <br>
-<br>
+<div> GauSSmart; 2D foundational models; 3D Gaussian Splatting; scene reconstruction; fine details <br />
+<br />
 Summary: 
 The article introduces GauSSmart, a hybrid method that combines 2D computer vision techniques with 3D Gaussian Splatting reconstruction for improved scene reconstruction. By integrating concepts like convex filtering and semantic feature supervision from 2D models like DINO, GauSSmart enhances Gaussian-based reconstruction by guiding densification and refinement of splats. This approach helps capture fine details and improve coverage in underrepresented areas. GauSSmart outperforms existing Gaussian Splatting on multiple datasets, showcasing the potential of hybrid 2D-3D approaches to overcome limitations of individual methods. <div>
 arXiv:2510.14270v3 Announce Type: replace 
@@ -18,7 +19,6 @@ Abstract: Scene reconstruction has emerged as a central challenge in computer vi
   In this work, we propose GauSSmart, a hybrid method that effectively bridges 2D foundational models and 3D Gaussian Splatting reconstruction. Our approach integrates established 2D computer vision techniques, including convex filtering and semantic feature supervision from foundational models such as DINO, to enhance Gaussian-based scene reconstruction. By leveraging 2D segmentation priors and high-dimensional feature embeddings, our method guides the densification and refinement of Gaussian splats, improving coverage in underrepresented areas and preserving intricate structural details.
   We validate our approach across three datasets, where GauSSmart consistently outperforms existing Gaussian Splatting in the majority of evaluated scenes. Our results demonstrate the significant potential of hybrid 2D-3D approaches, highlighting how the thoughtful combination of 2D foundational models with 3D reconstruction pipelines can overcome the limitations inherent in either approach alone.
 ]]></content:encoded>
-<pubDate>Tue, 11 Nov 2025 00:00:00 -0500</pubDate>
 <pubDate>Tue, 11 Nov 2025 00:00:00 -0500</pubDate>
 </item>
 <item>
@@ -31,11 +31,10 @@ Abstract: Scene reconstruction has emerged as a central challenge in computer vi
 Summary:
 Concept erasure in diffusion models aims to selectively unlearn undesirable content to reduce sensitive content generation. Existing methods use adversarial training to identify and suppress target concepts, but often neglect the specificity needed in diffusion models. This results in partial mitigation due to ineffective fitting of concept spaces. The new S-GRACE method leverages semantic guidance within the concept space to generate adversarial samples and improve erasure performance by 26%. It better preserves non-target concepts and reduces training time by 90%. Experiment results show the effectiveness of S-GRACE in various unlearning scenarios. The code for S-GRACE is available on GitHub. 
 
-<br><br>Summary: <div>
+<br /><br />Summary: <div>
 arXiv:2510.27285v2 Announce Type: replace 
 Abstract: Concept erasure aims to selectively unlearning undesirable content in diffusion models (DMs) to reduce the risk of sensitive content generation. As a novel paradigm in concept erasure, most existing methods employ adversarial training to identify and suppress target concepts, thus reducing the likelihood of sensitive outputs. However, these methods often neglect the specificity of adversarial training in DMs, resulting in only partial mitigation. In this work, we investigate and quantify this specificity from the perspective of concept space, i.e., can adversarial samples truly fit the target concept space? We observe that existing methods neglect the role of conceptual semantics when generating adversarial samples, resulting in ineffective fitting of concept spaces. This oversight leads to the following issues: 1) when there are few adversarial samples, they fail to comprehensively cover the object concept; 2) conversely, they will disrupt other target concept spaces. Motivated by the analysis of these findings, we introduce S-GRACE (Semantics-Guided Robust Adversarial Concept Erasure), which grace leveraging semantic guidance within the concept space to generate adversarial samples and perform erasure training. Experiments conducted with seven state-of-the-art methods and three adversarial prompt generation strategies across various DM unlearning scenarios demonstrate that S-GRACE significantly improves erasure performance 26%, better preserves non-target concepts, and reduces training time by 90%. Our code is available at https://github.com/Qhong-522/S-GRACE.
 ]]></content:encoded>
-<pubDate>Tue, 11 Nov 2025 00:00:00 -0500</pubDate>
 <pubDate>Tue, 11 Nov 2025 00:00:00 -0500</pubDate>
 </item>
 <item>
@@ -46,14 +45,12 @@ Abstract: Concept erasure aims to selectively unlearning undesirable content in 
 <div> Keywords: concept erasure, image generation, GFlowNets, trajectory balance objective, prior preservation
 
 Summary:
-EraseFlow is a new framework designed to erase harmful or proprietary concepts from text-to-image generators. Unlike existing techniques, EraseFlow does not compromise image quality or rely on adversarial losses. Instead, it focuses on exploring denoising paths using GFlowNets with the trajectory balance objective. By sampling entire trajectories rather than single end states, EraseFlow learns a stochastic policy to steer generation away from target concepts while preserving the model's prior. This approach eliminates the need for complex reward models, allowing EraseFlow to generalize effectively to unseen concepts and prevent hackable rewards. Empirical results demonstrate that EraseFlow outperforms existing methods, striking an optimal balance between performance and prior preservation.<br><br>Summary: EraseFlow introduces a novel approach to concept erasure in text-to-image generation, prioritizing trajectory exploration and prior preservation without sacrificing image quality. <div>
+EraseFlow is a new framework designed to erase harmful or proprietary concepts from text-to-image generators. Unlike existing techniques, EraseFlow does not compromise image quality or rely on adversarial losses. Instead, it focuses on exploring denoising paths using GFlowNets with the trajectory balance objective. By sampling entire trajectories rather than single end states, EraseFlow learns a stochastic policy to steer generation away from target concepts while preserving the model's prior. This approach eliminates the need for complex reward models, allowing EraseFlow to generalize effectively to unseen concepts and prevent hackable rewards. Empirical results demonstrate that EraseFlow outperforms existing methods, striking an optimal balance between performance and prior preservation.<br /><br />Summary: EraseFlow introduces a novel approach to concept erasure in text-to-image generation, prioritizing trajectory exploration and prior preservation without sacrificing image quality. <div>
 arXiv:2511.00804v3 Announce Type: replace-cross 
 Abstract: Erasing harmful or proprietary concepts from powerful text to image generators is an emerging safety requirement, yet current "concept erasure" techniques either collapse image quality, rely on brittle adversarial losses, or demand prohibitive retraining cycles. We trace these limitations to a myopic view of the denoising trajectories that govern diffusion based generation. We introduce EraseFlow, the first framework that casts concept unlearning as exploration in the space of denoising paths and optimizes it with GFlowNets equipped with the trajectory balance objective. By sampling entire trajectories rather than single end states, EraseFlow learns a stochastic policy that steers generation away from target concepts while preserving the model's prior. EraseFlow eliminates the need for carefully crafted reward models and by doing this, it generalizes effectively to unseen concepts and avoids hackable rewards while improving the performance. Extensive empirical results demonstrate that EraseFlow outperforms existing baselines and achieves an optimal trade off between performance and prior preservation.
 ]]></content:encoded>
 <pubDate>Tue, 11 Nov 2025 00:00:00 -0500</pubDate>
-<pubDate>Tue, 11 Nov 2025 00:00:00 -0500</pubDate>
 </item>
-
 <item>
 <title>Randomized-MLP Regularization Improves Domain Adaptation and Interpretability in DINOv2</title>
 <link>https://arxiv.org/abs/2511.05509</link>
@@ -11562,36 +11559,6 @@ Abstract: Recent studies have identified Direct Preference Optimization (DPO) as
 <content:encoded><![CDATA[
 arXiv:2511.01458v1 Announce Type: new 
 Abstract: Safety and reliability are essential for deploying Visual Question Answering (VQA) in surgery, where incorrect or ambiguous responses can harm the patient. Most surgical VQA research focuses on accuracy or linguistic quality while overlooking safety behaviors such as ambiguity awareness, referral to human experts, or triggering a second opinion. Inspired by Automatic Failure Detection (AFD), we study uncertainty estimation as a key enabler of safer decision making. We introduce Question Aligned Semantic Nearest Neighbor Entropy (QA-SNNE), a black box uncertainty estimator that incorporates question semantics into prediction confidence. It measures semantic entropy by comparing generated answers with nearest neighbors in a medical text embedding space, conditioned on the question. We evaluate five models, including domain specific Parameter-Efficient Fine-Tuned (PEFT) models and zero-shot Large Vision-Language Models (LVLMs), on EndoVis18-VQA and PitVQA. PEFT models degrade under mild paraphrasing, while LVLMs are more resilient. Across three LVLMs and two PEFT baselines, QA-SNNE improves AUROC in most in-template settings and enhances hallucination detection. The Area Under the ROC Curve (AUROC) increases by 15-38% for zero-shot models, with gains maintained under out-of-template stress. QA-SNNE offers a practical and interpretable step toward AFD in surgical VQA by linking semantic uncertainty to question context. Combining LVLM backbones with question aligned uncertainty estimation can improve safety and clinician trust. The code and model are available at https://github.com/DennisPierantozzi/QASNNE
-]]></content:encoded>
-<pubDate>Tue, 04 Nov 2025 00:00:00 -0500</pubDate>
-</item>
-<item>
-<title>Efficiently Training A Flat Neural Network Before It has been Quantizated</title>
-<link>https://arxiv.org/abs/2511.01462</link>
-<guid>https://arxiv.org/abs/2511.01462</guid>
-<content:encoded><![CDATA[
-arXiv:2511.01462v1 Announce Type: new 
-Abstract: Post-training quantization (PTQ) for vision transformers (ViTs) has garnered significant attention due to its efficiency in compressing models. However, existing methods typically overlook the relationship between a well-trained NN and the quantized model, leading to considerable quantization error for PTQ. However, it is unclear how to efficiently train a model-agnostic neural network which is tailored for a predefined precision low-bit model. In this paper, we firstly discover that a flat full precision neural network is crucial for low-bit quantization. To achieve this, we propose a framework that proactively pre-conditions the model by measuring and disentangling the error sources. Specifically, both the Activation Quantization Error (AQE) and the Weight Quantization Error (WQE) are statistically modeled as independent Gaussian noises. We study several noise injection optimization methods to obtain a flat minimum. Experimental results attest to the effectiveness of our approach. These results open novel pathways for obtaining low-bit PTQ models.
-]]></content:encoded>
-<pubDate>Tue, 04 Nov 2025 00:00:00 -0500</pubDate>
-</item>
-<item>
-<title>HMVLM: Human Motion-Vision-Lanuage Model via MoE LoRA</title>
-<link>https://arxiv.org/abs/2511.01463</link>
-<guid>https://arxiv.org/abs/2511.01463</guid>
-<content:encoded><![CDATA[
-arXiv:2511.01463v1 Announce Type: new 
-Abstract: The expansion of instruction-tuning data has enabled foundation language models to exhibit improved instruction adherence and superior performance across diverse downstream tasks. Semantically-rich 3D human motion is being progressively integrated with these foundation models to enhance multimodal understanding and cross-modal generation capabilities. However, the modality gap between human motion and text raises unresolved concerns about catastrophic forgetting during this integration. In addition, developing autoregressive-compatible pose representations that preserve generalizability across heterogeneous downstream tasks remains a critical technical barrier. To address these issues, we propose the Human Motion-Vision-Language Model (HMVLM), a unified framework based on the Mixture of Expert Low-Rank Adaption(MoE LoRA) strategy. The framework leverages the gating network to dynamically allocate LoRA expert weights based on the input prompt, enabling synchronized fine-tuning of multiple tasks. To mitigate catastrophic forgetting during instruction-tuning, we introduce a novel zero expert that preserves the pre-trained parameters for general linguistic tasks. For pose representation, we implement body-part-specific tokenization by partitioning the human body into different joint groups, enhancing the spatial resolution of the representation. Experiments show that our method effectively alleviates knowledge forgetting during instruction-tuning and achieves remarkable performance across diverse human motion downstream tasks.
-]]></content:encoded>
-<pubDate>Tue, 04 Nov 2025 00:00:00 -0500</pubDate>
-</item>
-<item>
-<title>SecDiff: Diffusion-Aided Secure Deep Joint Source-Channel Coding Against Adversarial Attacks</title>
-<link>https://arxiv.org/abs/2511.01466</link>
-<guid>https://arxiv.org/abs/2511.01466</guid>
-<content:encoded><![CDATA[
-arXiv:2511.01466v1 Announce Type: new 
-Abstract: Deep joint source-channel coding (JSCC) has emerged as a promising paradigm for semantic communication, delivering significant performance gains over conventional separate coding schemes. However, existing JSCC frameworks remain vulnerable to physical-layer adversarial threats, such as pilot spoofing and subcarrier jamming, compromising semantic fidelity. In this paper, we propose SecDiff, a plug-and-play, diffusion-aided decoding framework that significantly enhances the security and robustness of deep JSCC under adversarial wireless environments. Different from prior diffusion-guided JSCC methods that suffer from high inference latency, SecDiff employs pseudoinverse-guided sampling and adaptive guidance weighting, enabling flexible step-size control and efficient semantic reconstruction. To counter jamming attacks, we introduce a power-based subcarrier masking strategy and recast recovery as a masked inpainting problem, solved via diffusion guidance. For pilot spoofing, we formulate channel estimation as a blind inverse problem and develop an expectation-minimization (EM)-driven reconstruction algorithm, guided jointly by reconstruction loss and a channel operator. Notably, our method alternates between pilot recovery and channel estimation, enabling joint refinement of both variables throughout the diffusion process. Extensive experiments over orthogonal frequency-division multiplexing (OFDM) channels under adversarial conditions show that SecDiff outperforms existing secure and generative JSCC baselines by achieving a favorable trade-off between reconstruction quality and computational cost. This balance makes SecDiff a promising step toward practical, low-latency, and attack-resilient semantic communications.
 ]]></content:encoded>
 <pubDate>Tue, 04 Nov 2025 00:00:00 -0500</pubDate>
 </item>

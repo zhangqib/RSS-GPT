@@ -5,6 +5,26 @@
 <link>http://rss.arxiv.org/rss/cs.CL</link>
 
 <item>
+<title>Inside CORE-KG: Evaluating Structured Prompting and Coreference Resolution for Knowledge Graphs</title>
+<link>https://arxiv.org/abs/2510.26512</link>
+<guid>https://arxiv.org/abs/2510.26512</guid>
+<content:encoded><![CDATA[
+<div> Keywords: human smuggling networks, legal case documents, knowledge graph construction, coreference resolution, LLM-based pipelines
+
+Summary: 
+- Human smuggling networks are evolving and challenging to analyze, with legal case documents providing crucial insights but posing difficulties due to their complex and ambiguous nature.
+- Current LLM-based approaches have limitations in generating structured knowledge graphs from these documents, leading to noisy and fragmented graphs with duplicate nodes.
+- The CORE-KG framework addresses these challenges by incorporating a type-aware coreference module and domain-guided structured prompts, significantly reducing duplication and legal noise.
+- An ablation study of CORE-KG highlights the importance of both coreference resolution and structured prompts in minimizing node duplication and noisy nodes.
+- Removing coreference resolution results in increased node duplication and noisy nodes, while removing structured prompts leads to further duplication and noise. These findings provide valuable insights for enhancing LLM-based pipelines for extracting structured representations from complex legal texts.<br><br>Summary: <div>
+arXiv:2510.26512v2 Announce Type: replace 
+Abstract: Human smuggling networks are increasingly adaptive and difficult to analyze. Legal case documents offer critical insights but are often unstructured, lexically dense, and filled with ambiguous or shifting references, which pose significant challenges for automated knowledge graph (KG) construction. While recent LLM-based approaches improve over static templates, they still generate noisy, fragmented graphs with duplicate nodes due to the absence of guided extraction and coreference resolution. The recently proposed CORE-KG framework addresses these limitations by integrating a type-aware coreference module and domain-guided structured prompts, significantly reducing node duplication and legal noise. In this work, we present a systematic ablation study of CORE-KG to quantify the individual contributions of its two key components. Our results show that removing coreference resolution results in a 28.25% increase in node duplication and a 4.32% increase in noisy nodes, while removing structured prompts leads to a 4.29% increase in node duplication and a 73.33% increase in noisy nodes. These findings offer empirical insights for designing robust LLM-based pipelines for extracting structured representations from complex legal texts.
+]]></content:encoded>
+<pubDate>Tue, 11 Nov 2025 00:00:00 -0500</pubDate>
+<pubDate>Tue, 11 Nov 2025 00:00:00 -0500</pubDate>
+</item>
+
+<item>
 <title>How Efficient Are Diffusion Language Models? A Critical Examination of Efficiency Evaluation Practices</title>
 <link>https://arxiv.org/abs/2510.18480</link>
 <guid>https://arxiv.org/abs/2510.18480</guid>
@@ -15,11 +35,10 @@ Summary:
 - This study systematically examines DLM efficiency, pointing out issues in prior evaluation methods.
 - Empirical benchmarking and theoretical analysis show that autoregressive models achieve higher throughput compared to DLMs.
 - Acceleration strategies such as dual cache and parallel decoding provide benefits mainly at small batch sizes.
-- The study emphasizes the need for robust evaluation methods and improved acceleration strategies to enhance research on DLMs.<br><br>Summary: <div>
+- The study emphasizes the need for robust evaluation methods and improved acceleration strategies to enhance research on DLMs.<br /><br />Summary: <div>
 arXiv:2510.18480v3 Announce Type: replace 
 Abstract: Diffusion language models (DLMs) have emerged as a promising alternative to the long-dominant autoregressive (AR) paradigm, offering a parallelable decoding process that could yield greater efficiency. Yet, in practice, current open-source DLMs often underperform their AR counterparts in speed, limiting their real-world utility. This work presents a systematic study of DLM efficiency, identifying key issues in prior evaluation methods. Through empirical benchmarking and a theoretical analysis, we demonstrate that AR models generally achieve higher throughput, while DLMs consistently lag. We also investigate acceleration strategies, finding that techniques like dual cache and parallel decoding mainly offer gains at small batch sizes, with their benefits diminishing upon scaling. Our findings underscore the necessity of robust evaluation methods and improved acceleration strategies to advance research on DLMs.
 ]]></content:encoded>
-<pubDate>Tue, 11 Nov 2025 00:00:00 -0500</pubDate>
 <pubDate>Tue, 11 Nov 2025 00:00:00 -0500</pubDate>
 </item>
 <item>
@@ -27,13 +46,12 @@ Abstract: Diffusion language models (DLMs) have emerged as a promising alternati
 <link>https://arxiv.org/abs/2509.02547</link>
 <guid>https://arxiv.org/abs/2509.02547</guid>
 <content:encoded><![CDATA[
-<div> Markov Decision Processes, Reinforcement Learning, Agentic RL, Language Models, Autonomous Agents<br>
-Summary:<br>
-This article introduces the concept of agentic reinforcement learning (Agentic RL) as a shift from traditional reinforcement learning applied to large language models (LLM RL). It contrasts single-step Markov Decision Processes (MDPs) of LLM-RL with partially observable Markov decision processes (POMDPs) in Agentic RL. The survey proposes a taxonomy focusing on agentic capabilities like planning, tool use, memory, reasoning, self-improvement, and perception, along with their applications in various task domains. It emphasizes reinforcement learning as crucial for transforming static modules into adaptive agentic behavior. The article consolidates open-source environments, benchmarks, and frameworks for researchers. By analyzing over five hundred recent works, it maps the evolving field of Agentic RL and identifies opportunities and challenges for developing scalable AI agents. <br>Summary: <div>
+<div> Markov Decision Processes, Reinforcement Learning, Agentic RL, Language Models, Autonomous Agents<br />
+Summary:<br />
+This article introduces the concept of agentic reinforcement learning (Agentic RL) as a shift from traditional reinforcement learning applied to large language models (LLM RL). It contrasts single-step Markov Decision Processes (MDPs) of LLM-RL with partially observable Markov decision processes (POMDPs) in Agentic RL. The survey proposes a taxonomy focusing on agentic capabilities like planning, tool use, memory, reasoning, self-improvement, and perception, along with their applications in various task domains. It emphasizes reinforcement learning as crucial for transforming static modules into adaptive agentic behavior. The article consolidates open-source environments, benchmarks, and frameworks for researchers. By analyzing over five hundred recent works, it maps the evolving field of Agentic RL and identifies opportunities and challenges for developing scalable AI agents. <br />Summary: <div>
 arXiv:2509.02547v3 Announce Type: replace-cross 
 Abstract: The emergence of agentic reinforcement learning (Agentic RL) marks a paradigm shift from conventional reinforcement learning applied to large language models (LLM RL), reframing LLMs from passive sequence generators into autonomous, decision-making agents embedded in complex, dynamic worlds. This survey formalizes this conceptual shift by contrasting the degenerate single-step Markov Decision Processes (MDPs) of LLM-RL with the temporally extended, partially observable Markov decision processes (POMDPs) that define Agentic RL. Building on this foundation, we propose a comprehensive twofold taxonomy: one organized around core agentic capabilities, including planning, tool use, memory, reasoning, self-improvement, and perception, and the other around their applications across diverse task domains. Central to our thesis is that reinforcement learning serves as the critical mechanism for transforming these capabilities from static, heuristic modules into adaptive, robust agentic behavior. To support and accelerate future research, we consolidate the landscape of open-source environments, benchmarks, and frameworks into a practical compendium. By synthesizing over five hundred recent works, this survey charts the contours of this rapidly evolving field and highlights the opportunities and challenges that will shape the development of scalable, general-purpose AI agents.
 ]]></content:encoded>
-<pubDate>Tue, 11 Nov 2025 00:00:00 -0500</pubDate>
 <pubDate>Tue, 11 Nov 2025 00:00:00 -0500</pubDate>
 </item>
 <item>
@@ -41,16 +59,14 @@ Abstract: The emergence of agentic reinforcement learning (Agentic RL) marks a p
 <link>https://arxiv.org/abs/2510.25677</link>
 <guid>https://arxiv.org/abs/2510.25677</guid>
 <content:encoded><![CDATA[
-<div> framework, wireless sensing, security, zero-knowledge proofs, encoder <br>
-Summary: <br>
+<div> framework, wireless sensing, security, zero-knowledge proofs, encoder <br />
+Summary: <br />
 ZK-SenseLM is a wireless sensing framework that ensures security through zero-knowledge proofs and a large-model encoder for Wi-Fi channel state information. It incorporates mmWave radar or RFID and a policy-based decision layer. The system utilizes masked spectral pretraining and phase-consistency regularization for encoding, with a cross-modal alignment linking RF features to policy tokens. To prevent unsafe actions during distribution shift, a selective-abstention head is employed, with the chosen risk-coverage point included in the proof. A four-stage proving pipeline ensures the integrity of actions, with PLONK-style proofs verifying actions and confidence. Proofs are optimized using micro-batching and can be offloaded from low-power devices through a gateway option. The system is compatible with federated learning and on-device personalization while maintaining verifiability. ZK-SenseLM enhances performance in various tasks, improves calibration and coverage-risk curves, and effectively detects tampering and replay events. <div>
 arXiv:2510.25677v2 Announce Type: replace-cross 
 Abstract: ZK-SenseLM is a secure and auditable wireless sensing framework that pairs a large-model encoder for Wi-Fi channel state information (and optionally mmWave radar or RFID) with a policy-grounded decision layer and end-to-end zero-knowledge proofs of inference. The encoder uses masked spectral pretraining with phase-consistency regularization, plus a light cross-modal alignment that ties RF features to compact, human-interpretable policy tokens. To reduce unsafe actions under distribution shift, we add a calibrated selective-abstention head; the chosen risk-coverage operating point is registered and bound into the proof. We implement a four-stage proving pipeline: (C1) feature sanity and commitment, (C2) threshold and version binding, (C3) time-window binding, and (C4) PLONK-style proofs that the quantized network, given the committed window, produced the logged action and confidence. Micro-batched proving amortizes cost across adjacent windows, and a gateway option offloads proofs from low-power devices. The system integrates with differentially private federated learning and on-device personalization without weakening verifiability: model hashes and the registered threshold are part of each public statement. Across activity, presence or intrusion, respiratory proxy, and RF fingerprinting tasks, ZK-SenseLM improves macro-F1 and calibration, yields favorable coverage-risk curves under perturbations, and rejects tamper and replay with compact proofs and fast verification.
 ]]></content:encoded>
 <pubDate>Tue, 11 Nov 2025 00:00:00 -0500</pubDate>
-<pubDate>Tue, 11 Nov 2025 00:00:00 -0500</pubDate>
 </item>
-
 <item>
 <title>Ming-UniAudio: Speech LLM for Joint Understanding, Generation and Editing with Unified Representation</title>
 <link>https://arxiv.org/abs/2511.05516</link>
@@ -12019,51 +12035,6 @@ Abstract: Purpose: The purpose of this study was to determine if an ensemble of 
   Methods: 29,766 non-contrast CT head exams from fourteen hospitals were processed by a commercial intracranial hemorrhage (ICH) AI detection tool. Radiology reports were analyzed by an ensemble of eight open-source LLM models and a HIPAA compliant internal version of GPT-4o using a single multi-shot prompt that assessed for presence of ICH. 1,726 examples were manually reviewed. Performance characteristics of the eight open-source models and consensus were compared to GPT-4o. Three ideal consensus LLM ensembles were tested for rating the performance of the triage tool.
   Results: The cohort consisted of 29,766 head CTs exam-report pairs. The highest AUC performance was achieved with llama3.3:70b and GPT-4o (AUC= 0.78). The average precision was highest for Llama3.3:70b and GPT-4o (AP=0.75 & 0.76). Llama3.3:70b had the highest F1 score (0.81) and recall (0.85), greater precision (0.78), specificity (0.72), and MCC (0.57). Using MCC (95% CI) the ideal combination of LLMs were: Full-9 Ensemble 0.571 (0.552-0.591), Top-3 Ensemble 0.558 (0.537-0.579), Consensus 0.556 (0.539-0.574), and GPT4o 0.522 (0.500-0.543). No statistically significant differences were observed between Top-3, Full-9, and Consensus (p > 0.05).
   Conclusion: An ensemble of medium to large sized open-source LLMs provides a more consistent and reliable method to derive a ground truth retrospective evaluation of a clinical AI triage tool over a single LLM alone.
-]]></content:encoded>
-<pubDate>Fri, 31 Oct 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Inside CORE-KG: Evaluating Structured Prompting and Coreference Resolution for Knowledge Graphs</title>
-<link>https://arxiv.org/abs/2510.26512</link>
-<guid>https://arxiv.org/abs/2510.26512</guid>
-<content:encoded><![CDATA[
-<div> Keywords: human smuggling networks, automated knowledge graph construction, coreference resolution, structured prompts, LLM-based pipelines<br />
-Summary: <br />
-This study focuses on the challenges of analyzing human smuggling networks using legal case documents. The researchers introduce the CORE-KG framework, which combines a type-aware coreference module and domain-guided structured prompts to improve automated knowledge graph construction. An ablation study of CORE-KG reveals the individual contributions of coreference resolution and structured prompts. Removing coreference resolution results in increased node duplication and noisy nodes, while removing structured prompts also leads to similar issues. The results highlight the importance of these components in reducing duplicate nodes and legal noise in structured representations extracted from complex legal texts. The findings provide valuable insights for enhancing LLM-based pipelines for analyzing human smuggling networks. <br />  
-Summary: <div>
-arXiv:2510.26512v1 Announce Type: new 
-Abstract: Human smuggling networks are increasingly adaptive and difficult to analyze. Legal case documents offer critical insights but are often unstructured, lexically dense, and filled with ambiguous or shifting references, which pose significant challenges for automated knowledge graph (KG) construction. While recent LLM-based approaches improve over static templates, they still generate noisy, fragmented graphs with duplicate nodes due to the absence of guided extraction and coreference resolution. The recently proposed CORE-KG framework addresses these limitations by integrating a type-aware coreference module and domain-guided structured prompts, significantly reducing node duplication and legal noise. In this work, we present a systematic ablation study of CORE-KG to quantify the individual contributions of its two key components. Our results show that removing coreference resolution results in a 28.32% increase in node duplication and a 4.32% increase in noisy nodes, while removing structured prompts leads to a 4.34% increase in node duplication and a 73.33% increase in noisy nodes. These findings offer empirical insights for designing robust LLM-based pipelines for extracting structured representations from complex legal texts.
-]]></content:encoded>
-<pubDate>Fri, 31 Oct 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Hebrew Diacritics Restoration using Visual Representation</title>
-<link>https://arxiv.org/abs/2510.26521</link>
-<guid>https://arxiv.org/abs/2510.26521</guid>
-<content:encoded><![CDATA[
-<div> Keywords: Hebrew, diacritics restoration, machine learning, zero-shot classification, visual language model
-
-Summary: 
-DIVRIT is a new system for diacritization in Hebrew, treating it as a zero-shot classification problem at the word level. Using a Hebrew Visual Language Model, it embeds diacritic information directly into the input’s vector representation. The system performs diacritization effectively without complex linguistic analysis, achieving high accuracy in an "oracle" setting. Architectural enhancements and optimized training methods improve generalization capabilities. The study demonstrates the potential of visual representations for automated Hebrew diacritization.
-<br /><br />Summary: <div>
-arXiv:2510.26521v1 Announce Type: new 
-Abstract: Diacritics restoration in Hebrew is a fundamental task for ensuring accurate word pronunciation and disambiguating textual meaning. Despite the language's high degree of ambiguity when unvocalized, recent machine learning approaches have significantly advanced performance on this task.
-  In this work, we present DIVRIT, a novel system for Hebrew diacritization that frames the task as a zero-shot classification problem. Our approach operates at the word level, selecting the most appropriate diacritization pattern for each undiacritized word from a dynamically generated candidate set, conditioned on the surrounding textual context. A key innovation of DIVRIT is its use of a Hebrew Visual Language Model, which processes undiacritized text as an image, allowing diacritic information to be embedded directly within the input's vector representation.
-  Through a comprehensive evaluation across various configurations, we demonstrate that the system effectively performs diacritization without relying on complex, explicit linguistic analysis. Notably, in an ``oracle'' setting where the correct diacritized form is guaranteed to be among the provided candidates, DIVRIT achieves a high level of accuracy. Furthermore, strategic architectural enhancements and optimized training methodologies yield significant improvements in the system's overall generalization capabilities. These findings highlight the promising potential of visual representations for accurate and automated Hebrew diacritization.
-]]></content:encoded>
-<pubDate>Fri, 31 Oct 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>The Structure of Relation Decoding Linear Operators in Large Language Models</title>
-<link>https://arxiv.org/abs/2510.26543</link>
-<guid>https://arxiv.org/abs/2510.26543</guid>
-<content:encoded><![CDATA[
-<div> decoder operators, relational facts, transformer language models, tensor networks, semantic properties<br />
-<br />
-Summary: 
-This paper explores the structure of linear operators used to decode relational facts in transformer language models. It extends previous single-relation findings to multiple relations and demonstrates that these decoders can be efficiently compressed using simple order-3 tensor networks without losing decoding accuracy significantly. Through a cross-evaluation protocol, the study reveals that these linear operators do not encode distinct relations but instead extract recurring, coarse-grained semantic properties. The research suggests that the structure of these linear relational decoders is primarily property-based rather than relation-specific, explaining their compressibility and limited generalization to new, semantically similar relations. <div>
-arXiv:2510.26543v1 Announce Type: new 
-Abstract: This paper investigates the structure of linear operators introduced in Hernandez et al. [2023] that decode specific relational facts in transformer language models. We extend their single-relation findings to a collection of relations and systematically chart their organization. We show that such collections of relation decoders can be highly compressed by simple order-3 tensor networks without significant loss in decoding accuracy. To explain this surprising redundancy, we develop a cross-evaluation protocol, in which we apply each linear decoder operator to the subjects of every other relation. Our results reveal that these linear maps do not encode distinct relations, but extract recurring, coarse-grained semantic properties (e.g., country of capital city and country of food are both in the country-of-X property). This property-centric structure clarifies both the operators' compressibility and highlights why they generalize only to new relations that are semantically close. Our findings thus interpret linear relational decoding in transformer language models as primarily property-based, rather than relation-specific.
 ]]></content:encoded>
 <pubDate>Fri, 31 Oct 2025 00:00:00 -0400</pubDate>
 </item>
