@@ -4,6 +4,7 @@
 <title>cs.CL updates on arXiv.org</title>
 <link>http://rss.arxiv.org/rss/cs.CL</link>
 
+
 <item>
 <title>Inside CORE-KG: Evaluating Structured Prompting and Coreference Resolution for Knowledge Graphs</title>
 <link>https://arxiv.org/abs/2510.26512</link>
@@ -16,14 +17,12 @@ Summary:
 - Current LLM-based approaches have limitations in generating structured knowledge graphs from these documents, leading to noisy and fragmented graphs with duplicate nodes.
 - The CORE-KG framework addresses these challenges by incorporating a type-aware coreference module and domain-guided structured prompts, significantly reducing duplication and legal noise.
 - An ablation study of CORE-KG highlights the importance of both coreference resolution and structured prompts in minimizing node duplication and noisy nodes.
-- Removing coreference resolution results in increased node duplication and noisy nodes, while removing structured prompts leads to further duplication and noise. These findings provide valuable insights for enhancing LLM-based pipelines for extracting structured representations from complex legal texts.<br><br>Summary: <div>
+- Removing coreference resolution results in increased node duplication and noisy nodes, while removing structured prompts leads to further duplication and noise. These findings provide valuable insights for enhancing LLM-based pipelines for extracting structured representations from complex legal texts.<br /><br />Summary: <div>
 arXiv:2510.26512v2 Announce Type: replace 
 Abstract: Human smuggling networks are increasingly adaptive and difficult to analyze. Legal case documents offer critical insights but are often unstructured, lexically dense, and filled with ambiguous or shifting references, which pose significant challenges for automated knowledge graph (KG) construction. While recent LLM-based approaches improve over static templates, they still generate noisy, fragmented graphs with duplicate nodes due to the absence of guided extraction and coreference resolution. The recently proposed CORE-KG framework addresses these limitations by integrating a type-aware coreference module and domain-guided structured prompts, significantly reducing node duplication and legal noise. In this work, we present a systematic ablation study of CORE-KG to quantify the individual contributions of its two key components. Our results show that removing coreference resolution results in a 28.25% increase in node duplication and a 4.32% increase in noisy nodes, while removing structured prompts leads to a 4.29% increase in node duplication and a 73.33% increase in noisy nodes. These findings offer empirical insights for designing robust LLM-based pipelines for extracting structured representations from complex legal texts.
 ]]></content:encoded>
 <pubDate>Tue, 11 Nov 2025 00:00:00 -0500</pubDate>
-<pubDate>Tue, 11 Nov 2025 00:00:00 -0500</pubDate>
 </item>
-
 <item>
 <title>How Efficient Are Diffusion Language Models? A Critical Examination of Efficiency Evaluation Practices</title>
 <link>https://arxiv.org/abs/2510.18480</link>
@@ -12016,25 +12015,6 @@ The article introduces the Bayesian network LLM fusion (BNLF) framework, which a
 <br /><br /> <div>
 arXiv:2510.26484v1 Announce Type: new 
 Abstract: Large language models (LLMs) continue to advance, with an increasing number of domain-specific variants tailored for specialised tasks. However, these models often lack transparency and explainability, can be costly to fine-tune, require substantial prompt engineering, yield inconsistent results across domains, and impose significant adverse environmental impact due to their high computational demands. To address these challenges, we propose the Bayesian network LLM fusion (BNLF) framework, which integrates predictions from three LLMs, including FinBERT, RoBERTa, and BERTweet, through a probabilistic mechanism for sentiment analysis. BNLF performs late fusion by modelling the sentiment predictions from multiple LLMs as probabilistic nodes within a Bayesian network. Evaluated across three human-annotated financial corpora with distinct linguistic and contextual characteristics, BNLF demonstrates consistent gains of about six percent in accuracy over the baseline LLMs, underscoring its robustness to dataset variability and the effectiveness of probabilistic fusion for interpretable sentiment classification.
-]]></content:encoded>
-<pubDate>Fri, 31 Oct 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>A Multi-agent Large Language Model Framework to Automatically Assess Performance of a Clinical AI Triage Tool</title>
-<link>https://arxiv.org/abs/2510.26498</link>
-<guid>https://arxiv.org/abs/2510.26498</guid>
-<content:encoded><![CDATA[
-<div> Ensemble; LLM; AI; Triage tool; Intracranial hemorrhage<br />
-Summary:<br />
-- Purpose: Study aimed to assess the collective use of multiple LLM agents for evaluating an AI triage tool.<br />
-- Methods: Data from 29,766 CT head exams processed by an ICH AI detection tool were analyzed using open-source LLMs and GPT-4o. Performance was compared among models and ensembles.<br />
-- Results: The ensemble of LLMs, particularly llama3.3:70b and GPT-4o, showed the highest performance in terms of AUC, average precision, F1 score, recall, precision, specificity, and MCC. Different ensemble combinations had similar performance.<br />
-- Conclusion: Medium to large-sized LLM ensembles proved to be more consistent and reliable in evaluating the AI triage tool than a single LLM. No significant differences were observed between top-performing ensembles, highlighting the effectiveness of utilizing multiple LLMs for a comprehensive assessment.<br /> <div>
-arXiv:2510.26498v1 Announce Type: new 
-Abstract: Purpose: The purpose of this study was to determine if an ensemble of multiple LLM agents could be used collectively to provide a more reliable assessment of a pixel-based AI triage tool than a single LLM.
-  Methods: 29,766 non-contrast CT head exams from fourteen hospitals were processed by a commercial intracranial hemorrhage (ICH) AI detection tool. Radiology reports were analyzed by an ensemble of eight open-source LLM models and a HIPAA compliant internal version of GPT-4o using a single multi-shot prompt that assessed for presence of ICH. 1,726 examples were manually reviewed. Performance characteristics of the eight open-source models and consensus were compared to GPT-4o. Three ideal consensus LLM ensembles were tested for rating the performance of the triage tool.
-  Results: The cohort consisted of 29,766 head CTs exam-report pairs. The highest AUC performance was achieved with llama3.3:70b and GPT-4o (AUC= 0.78). The average precision was highest for Llama3.3:70b and GPT-4o (AP=0.75 & 0.76). Llama3.3:70b had the highest F1 score (0.81) and recall (0.85), greater precision (0.78), specificity (0.72), and MCC (0.57). Using MCC (95% CI) the ideal combination of LLMs were: Full-9 Ensemble 0.571 (0.552-0.591), Top-3 Ensemble 0.558 (0.537-0.579), Consensus 0.556 (0.539-0.574), and GPT4o 0.522 (0.500-0.543). No statistically significant differences were observed between Top-3, Full-9, and Consensus (p > 0.05).
-  Conclusion: An ensemble of medium to large sized open-source LLMs provides a more consistent and reliable method to derive a ground truth retrospective evaluation of a clinical AI triage tool over a single LLM alone.
 ]]></content:encoded>
 <pubDate>Fri, 31 Oct 2025 00:00:00 -0400</pubDate>
 </item>

@@ -4,21 +4,20 @@
 <title>cs.LG updates on arXiv.org</title>
 <link>http://rss.arxiv.org/rss/cs.LG</link>
 
+
 <item>
 <title>A Feedback-Control Framework for Efficient Dataset Collection from In-Vehicle Data Streams</title>
 <link>https://arxiv.org/abs/2511.03239</link>
 <guid>https://arxiv.org/abs/2511.03239</guid>
 <content:encoded><![CDATA[
-<div> Controlled data collection, Feedback mechanism, Dataset diversity, Reducing redundancy, Data-centric AI<br>
+<div> Controlled data collection, Feedback mechanism, Dataset diversity, Reducing redundancy, Data-centric AI<br />
 Summary: 
-Modern AI systems often face constraints not in model capacity but in data quality and diversity. The traditional open-loop data collection approach leads to inefficiencies in storage, labeling, and generalization. This paper introduces Feedback Control Data Collection (FCDC), which treats data collection as a closed-loop control problem. FCDC uses an online probabilistic model to approximate data distribution and adjusts sample retention based on feedback signals like likelihood and Mahalanobis distance. This approach balances exploration and exploitation, maintains dataset diversity, and prevents redundancy accumulation. Experimental results show that FCDC produces more balanced datasets by 25.9% and reduces data storage by 39.8%. FCDC demonstrates that data collection can be actively controlled, transforming it from a passive pipeline stage into a self-regulating, feedback-driven process at the core of data-centric AI.<br><br> <div>
+Modern AI systems often face constraints not in model capacity but in data quality and diversity. The traditional open-loop data collection approach leads to inefficiencies in storage, labeling, and generalization. This paper introduces Feedback Control Data Collection (FCDC), which treats data collection as a closed-loop control problem. FCDC uses an online probabilistic model to approximate data distribution and adjusts sample retention based on feedback signals like likelihood and Mahalanobis distance. This approach balances exploration and exploitation, maintains dataset diversity, and prevents redundancy accumulation. Experimental results show that FCDC produces more balanced datasets by 25.9% and reduces data storage by 39.8%. FCDC demonstrates that data collection can be actively controlled, transforming it from a passive pipeline stage into a self-regulating, feedback-driven process at the core of data-centric AI.<br /><br /> <div>
 arXiv:2511.03239v2 Announce Type: replace 
 Abstract: Modern AI systems are increasingly constrained not by model capacity but by the quality and diversity of their data. Despite growing emphasis on data-centric AI, most datasets are still gathered in an open-loop manner which accumulates redundant samples without feedback from the current coverage. This results in inefficient storage, costly labeling, and limited generalization. To address this, this paper introduces Feedback Control Data Collection (FCDC), a paradigm that formulates data collection as a closed-loop control problem. FCDC continuously approximates the state of the collected data distribution using an online probabilistic model and adaptively regulates sample retention using based on feedback signals such as likelihood and Mahalanobis distance. Through this feedback mechanism, the system dynamically balances exploration and exploitation, maintains dataset diversity, and prevents redundancy from accumulating over time. In addition to demonstrating the controllability of FCDC on a synthetic dataset that converges toward a uniform distribution under Gaussian input assumption, experiments on real data streams show that FCDC produces more balanced datasets by 25.9% while reducing data storage by 39.8%. These results demonstrate that data collection itself can be actively controlled, transforming collection from a passive pipeline stage into a self-regulating, feedback-driven process at the core of data-centric AI.
 ]]></content:encoded>
 <pubDate>Tue, 11 Nov 2025 00:00:00 -0500</pubDate>
-<pubDate>Tue, 11 Nov 2025 00:00:00 -0500</pubDate>
 </item>
-
 <item>
 <title>Calibrating and Rotating: A Unified Framework for Weight Conditioning in PEFT</title>
 <link>https://arxiv.org/abs/2511.00051</link>
@@ -10962,20 +10961,6 @@ Summary:
 <br /><br />Summary: <div>
 arXiv:2511.03190v1 Announce Type: new 
 Abstract: Attention mechanisms have been extensively employed in various applications, including time series modeling, owing to their capacity to capture intricate dependencies; however, their utility is often constrained by quadratic computational complexity, which impedes scalability for long sequences. In this work, we propose a novel linear attention mechanism designed to overcome these limitations. Our approach is grounded in a theoretical demonstration that entropy, as a strictly concave function on the probability simplex, implies that distributions with aligned probability rankings and similar entropy values exhibit structural resemblance. Building on this insight, we develop an efficient approximation algorithm that computes the entropy of dot-product-derived distributions with only linear complexity, enabling the implementation of a linear attention mechanism based on entropy equality. Through rigorous analysis, we reveal that the effectiveness of attention in spatio-temporal time series modeling may not primarily stem from the non-linearity of softmax but rather from the attainment of a moderate and well-balanced weight distribution. Extensive experiments on four spatio-temporal datasets validate our method, demonstrating competitive or superior forecasting performance while achieving substantial reductions in both memory usage and computational time.
-]]></content:encoded>
-<pubDate>Thu, 06 Nov 2025 00:00:00 -0500</pubDate>
-</item>
-<item>
-<title>Cross-Modal Alignment via Variational Copula Modelling</title>
-<link>https://arxiv.org/abs/2511.03196</link>
-<guid>https://arxiv.org/abs/2511.03196</guid>
-<content:encoded><![CDATA[
-<div> Copula, multimodal learning, joint distribution, Gaussian mixture distribution, MIMIC dataset <br />
-<br />
-Summary: <br />
-Various real-world applications involve multiple data modalities, such as electronic health records and medical images. Developing effective methods for multimodal learning is crucial for aggregating information from different modalities. Existing methods often oversimplify interactions between modalities, highlighting the need for more complex interaction modeling. This study introduces a novel copula-driven multimodal learning framework that focuses on capturing complex interactions by learning the joint distribution of different modalities. By using a Gaussian mixture distribution for each modality and a copula model for the joint distribution, the proposed model efficiently aligns marginal distributions and generates accurate representations for missing modalities. Experiments on MIMIC datasets demonstrate the superior performance of the model compared to other methods. The code for the model is publicly available for further exploration. <div>
-arXiv:2511.03196v1 Announce Type: new 
-Abstract: Various data modalities are common in real-world applications (e.g., electronic health records, medical images and clinical notes in healthcare). It is essential to develop multimodal learning methods to aggregate various information from multiple modalities. The main challenge is how to appropriately align and fuse the representations of different modalities into a joint distribution. Existing methods mainly rely on concatenation or the Kronecker product, oversimplifying the interaction structure between modalities and indicating a need to model more complex interactions. Additionally, the joint distribution of latent representations with higher-order interactions is underexplored. Copula is a powerful statistical structure for modelling the interactions among variables, as it naturally bridges the joint distribution and marginal distributions of multiple variables. We propose a novel copula-driven multimodal learning framework, which focuses on learning the joint distribution of various modalities to capture the complex interactions among them. The key idea is to interpret the copula model as a tool to align the marginal distributions of the modalities efficiently. By assuming a Gaussian mixture distribution for each modality and a copula model on the joint distribution, our model can generate accurate representations for missing modalities. Extensive experiments on public MIMIC datasets demonstrate the superior performance of our model over other competitors. The code is available at https://github.com/HKU-MedAI/CMCM.
 ]]></content:encoded>
 <pubDate>Thu, 06 Nov 2025 00:00:00 -0500</pubDate>
 </item>
