@@ -4,19 +4,19 @@
 <title>cs.CE updates on arXiv.org</title>
 <link>http://rss.arxiv.org/rss/cs.CE</link>
 
+
 <item>
 <title>Accelerated, Memory-Efficient Far-Field Scattering Computation with Monte Carlo SBR</title>
 <link>https://arxiv.org/abs/2511.07586</link>
 <guid>https://arxiv.org/abs/2511.07586</guid>
 <content:encoded><![CDATA[
-<div> Monte Carlo integration, Shooting and Bouncing Ray, electromagnetic scattering, complex dielectric materials, variance reduction strategies <br>
-<br>
+<div> Monte Carlo integration, Shooting and Bouncing Ray, electromagnetic scattering, complex dielectric materials, variance reduction strategies <br />
+<br />
 Summary: 
 The article introduces a Monte Carlo integration-based Shooting and Bouncing Ray (SBR) algorithm for electromagnetic scattering, specifically targeting complex dielectric materials. This innovative approach reformulates the SBR integral equations using Monte Carlo techniques and advanced variance reduction strategies. The method enables efficient, massively parallel computation on modern GPUs, resulting in reduced memory usage and faster runtime, especially for multilayer dielectric structures. Emphasizing high-energy propagation paths, the algorithm efficiently captures long multipath and interreflection effects. Verification on canonical 3D geometries and ISAR imaging of conducting and dielectric representative aircraft models shows that the Monte Carlo SBR achieves high accuracy with low noise, making it suitable for downstream imaging and analysis tasks. <div>
 arXiv:2511.07586v1 Announce Type: new 
 Abstract: We introduce a Monte Carlo integration-based Shooting and Bouncing Ray (SBR) algorithm for electromagnetic scattering, specifically targeting complex dielectric materials. Unlike traditional deterministic SBR methods, our approach is the first to reformulate the SBR integral equations using Monte Carlo techniques and advanced variance reduction strategies adapted from photorealistic rendering. This enables efficient, massively parallel computation on modern GPUs, resulting in up to a 10-15x reduction in memory usage and a 4x speed up in runtime, particularly for multilayer dielectric structures. Our method emphasizes high-energy propagation paths, efficiently capturing long multipath and interreflection effects. Verification on canonical 3D geometries and ISAR imaging of both conducting and dielectric representative aircraft models demonstrates that our Monte Carlo SBR achieves high accuracy while maintaining low noise, making it suitable for downstream imaging and analysis tasks.
 ]]></content:encoded>
-<pubDate>Wed, 12 Nov 2025 00:00:00 -0500</pubDate>
 <pubDate>Wed, 12 Nov 2025 00:00:00 -0500</pubDate>
 </item>
 <item>
@@ -32,7 +32,6 @@ arXiv:2511.08049v1 Announce Type: new
 Abstract: Long-term Time Series Forecasting is crucial across numerous critical domains, yet its accuracy remains fundamentally constrained by the receptive field bottleneck in existing models. Mainstream Transformer- and Multi-layer Perceptron (MLP)-based methods mainly rely on finite look-back windows, limiting their ability to model long-term dependencies and hurting forecasting performance. Naively extending the look-back window proves ineffective, as it not only introduces prohibitive computational complexity, but also drowns vital long-term dependencies in historical noise. To address these challenges, we propose CometNet, a novel Contextual Motif-guided Long-term Time Series Forecasting framework. CometNet first introduces a Contextual Motif Extraction module that identifies recurrent, dominant contextual motifs from complex historical sequences, providing extensive temporal dependencies far exceeding limited look-back windows; Subsequently, a Motif-guided Forecasting module is proposed, which integrates the extracted dominant motifs into forecasting. By dynamically mapping the look-back window to its relevant motifs, CometNet effectively harnesses their contextual information to strengthen long-term forecasting capability. Extensive experimental results on eight real-world datasets have demonstrated that CometNet significantly outperforms current state-of-the-art (SOTA) methods, particularly on extended forecast horizons.
 ]]></content:encoded>
 <pubDate>Wed, 12 Nov 2025 00:00:00 -0500</pubDate>
-<pubDate>Wed, 12 Nov 2025 00:00:00 -0500</pubDate>
 </item>
 <item>
 <title>Counterfactual Forecasting of Human Behavior using Generative AI and Causal Graphs</title>
@@ -47,7 +46,6 @@ arXiv:2511.07484v1 Announce Type: cross
 Abstract: This study presents a novel framework for counterfactual user behavior forecasting that combines structural causal models with transformer-based generative artificial intelligence. To model fictitious situations, the method creates causal graphs that map the connections between user interactions, adoption metrics, and product features. The framework generates realistic behavioral trajectories under counterfactual conditions by using generative models that are conditioned on causal variables. Tested on datasets from web interactions, mobile applications, and e-commerce, the methodology outperforms conventional forecasting and uplift modeling techniques. Product teams can effectively simulate and assess possible interventions prior to deployment thanks to the framework improved interpretability through causal path visualization.
 ]]></content:encoded>
 <pubDate>Wed, 12 Nov 2025 00:00:00 -0500</pubDate>
-<pubDate>Wed, 12 Nov 2025 00:00:00 -0500</pubDate>
 </item>
 <item>
 <title>Physical regularized Hierarchical Generative Model for Metallic Glass Structural Generation and Energy Prediction</title>
@@ -56,14 +54,12 @@ Abstract: This study presents a novel framework for counterfactual user behavior
 <content:encoded><![CDATA[
 <div> Graph Variational Autoencoder, Disordered Materials, Atomic Configurations, Physics Informed Regularizers, Energy Landscape
 Summary: 
-Disordered materials like glasses pose challenges for accurate property predictions and structure generation due to their lack of atomic order. GlassVAE, a hierarchical graph variational autoencoder, addresses this by learning rotation, translation, and permutation invariant embeddings of atomic configurations. The structured latent space allows for efficient generation of realistic structures and exploration of the glass energy landscape. By incorporating physics informed regularizers - a radial distribution function loss for ordering and an energy regression loss for energetics - GlassVAE ensures structural realism and physical fidelity. The regularizers play a crucial role in enhancing model performance. Encoding high dimensional atomistic data into compact vectors and decoding accurate energy predictions, GlassVAE offers a fast, physics-aware approach for modeling and designing disordered materials. <br><br>Summary: <div>
+Disordered materials like glasses pose challenges for accurate property predictions and structure generation due to their lack of atomic order. GlassVAE, a hierarchical graph variational autoencoder, addresses this by learning rotation, translation, and permutation invariant embeddings of atomic configurations. The structured latent space allows for efficient generation of realistic structures and exploration of the glass energy landscape. By incorporating physics informed regularizers - a radial distribution function loss for ordering and an energy regression loss for energetics - GlassVAE ensures structural realism and physical fidelity. The regularizers play a crucial role in enhancing model performance. Encoding high dimensional atomistic data into compact vectors and decoding accurate energy predictions, GlassVAE offers a fast, physics-aware approach for modeling and designing disordered materials. <br /><br />Summary: <div>
 arXiv:2505.09977v2 Announce Type: replace 
 Abstract: Disordered materials such as glasses, unlike crystals, lack long range atomic order and have no periodic unit cells, yielding a high dimensional configuration space with widely varying properties. The complexity not only increases computational costs for atomistic simulations but also makes it difficult for generative AI models to deliver accurate property predictions and realistic structure generation. In this work, we introduce GlassVAE, a hierarchical graph variational autoencoder that uses graph representations to learn compact, rotation, translation, and permutation invariant embeddings of atomic configurations. The resulting structured latent space not only enables efficient generation of novel, physically plausible structures but also supports exploration of the glass energy landscape. To enforce structural realism and physical fidelity, we augment GlassVAE with two physics informed regularizers, a radial distribution function (RDF) loss that captures characteristic short and medium range ordering and an energy regression loss that reflects the broad configurational energetics. Both theoretical analysis and experimental results highlight the critical impact of these regularizers. By encoding high dimensional atomistic data into a compact latent vector and decoding it into structures with accurate energy predictions, GlassVAE provides a fast, physics aware path for modeling and designing disordered materials.
 ]]></content:encoded>
 <pubDate>Wed, 12 Nov 2025 00:00:00 -0500</pubDate>
-<pubDate>Wed, 12 Nov 2025 00:00:00 -0500</pubDate>
 </item>
-
 <item>
 <title>Differentiable Semantic Meta-Learning Framework for Long-Tail Motion Forecasting in Autonomous Driving</title>
 <link>https://arxiv.org/abs/2511.06649</link>
@@ -14503,62 +14499,6 @@ Summary:
 The article introduces the estimation and optimization of convex risk measures, specifically utility-based shortfall risk (UBSR) and Optimized Certainty Equivalent (OCE) risk, covering unbounded random variables. It extends various risk measures like entropic risk and Value-at-Risk. Non-asymptotic bounds are derived for mean absolute error and mean-squared error in estimation using sample average approximation (SAA) estimators. Expressions for UBSR and OCE gradients under smooth parameterization are provided, with gradient estimators proposed using the SAA estimator of UBSR and non-asymptotic bounds on error. A stochastic gradient algorithm is developed for optimization using these gradient estimators. Non-asymptotic convergence rate bounds are derived for the optimization of UBSR and OCE risk measures. <div>
 arXiv:2506.01101v1 Announce Type: new 
 Abstract: We consider the problems of estimation and optimization of two popular convex risk mea- sures: utility-based shortfall risk (UBSR) and Optimized Certainty Equivalent (OCE) risk. We extend these risk measures to cover possibly unbounded random variables. We cover prominent risk measures like the entropic risk, expectile risk, monotone mean-variance risk, Value-at-Risk, and Conditional Value-at-Risk as few special cases of either the UBSR or the OCE risk. In the context of estimation, we derive non-asymptotic bounds on the mean absolute error (MAE) and mean-squared error (MSE) of the classical sample average approximation (SAA) estimators of both, the UBSR and the OCE. Next, in the context of optimization, we derive expressions for the UBSR gradient and the OCE gradient under a smooth parameterization. Utilizing these expres- sions, we propose gradient estimators for both, the UBSR and the OCE. We use the SAA estimator of UBSR in both these gradient estimators, and derive non-asymptotic bounds on MAE and MSE for the proposed gradient estimation schemes. We incorporate the aforementioned gradient estima- tors into a stochastic gradient (SG) algorithm for optimization. Finally, we derive non-asymptotic bounds that quantify the rate of convergence of our SG algorithm for the optimization of the UBSR and the OCE risk measure
-]]></content:encoded>
-<pubDate>Tue, 03 Jun 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Fast numerical generation of Lie closure</title>
-<link>https://arxiv.org/abs/2506.01120</link>
-<guid>https://arxiv.org/abs/2506.01120</guid>
-<content:encoded><![CDATA[
-<div> Keywords: Lie algebra, matrix, numerical construction, quantum computing, linear independence<br />
-Summary:<br />
-The article discusses the importance of finding the Lie-algebraic closure of matrices in quantum computing and quantum control. Analytically determining the closure is challenging for most cases, leading to a need for numerical construction. The standard algorithm for this construction relies on a subroutine to check linear independence, which can be computationally intensive. The authors present efficient methods for linear independence checks that reduce computational complexity and memory usage. One of these methods is implemented and validated against known results. These new algorithms allow for the exploration of Lie closure in larger system sizes that were previously unattainable, opening up possibilities for numerical studies in quantum computing and control applications. <div>
-arXiv:2506.01120v1 Announce Type: new 
-Abstract: Finding the Lie-algebraic closure of a handful of matrices has important applications in quantum computing and quantum control. For most realistic cases, the closure cannot be determined analytically, necessitating an explicit numerical construction. The standard construction algorithm makes repeated calls to a subroutine that determines whether a matrix is linearly independent from a potentially large set of matrices. Because the common implementation of this subroutine has a high complexity, the construction of Lie closure is practically limited to trivially small matrix sizes. We present efficient alternative methods of linear independence check that simultaneously reduce the computational complexity and memory footprint. An implementation of one of the methods is validated against known results. Our new algorithms enable numerical studies of Lie closure in larger system sizes than was previously possible.
-]]></content:encoded>
-<pubDate>Tue, 03 Jun 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Emerging ML-AI Techniques for Analog and RF EDA</title>
-<link>https://arxiv.org/abs/2506.00007</link>
-<guid>https://arxiv.org/abs/2506.00007</guid>
-<content:encoded><![CDATA[
-<div> Keywords: machine learning, EDA workflows, analog design, RF circuits, optimization techniques
-
-Summary: 
-This survey delves into the integration of machine learning (ML) into electronic design automation (EDA) workflows specifically tailored for analog and RF circuits. The challenges unique to analog design, such as complex constraints, nonlinear design spaces, and high computational costs, are addressed. The review encompasses state-of-the-art ML and optimization techniques for various circuit tasks, including constraint formulation, topology generation, device modeling, sizing, placement, and routing. The survey emphasizes how ML can enhance automation, elevate design quality, and reduce time-to-market while meeting desired circuit specifications. In addition, emerging trends and cross-cutting challenges, like robustness to variations and considerations of interconnect parasitics, are explored. Overall, the survey underscores the potential of ML to revolutionize analog and RF circuit design by optimizing workflow efficiency and achieving superior design outcomes. 
-
-<br /><br />Summary: <div>
-arXiv:2506.00007v1 Announce Type: cross 
-Abstract: This survey explores the integration of machine learning (ML) into EDA workflows for analog and RF circuits, addressing challenges unique to analog design, which include complex constraints, nonlinear design spaces, and high computational costs. State-of-the-art learning and optimization techniques are reviewed for circuit tasks such as constraint formulation, topology generation, device modeling, sizing, placement, and routing. The survey highlights the capability of ML to enhance automation, improve design quality, and reduce time-to-market while meeting the target specifications of an analog or RF circuit. Emerging trends and cross-cutting challenges, including robustness to variations and considerations of interconnect parasitics, are also discussed.
-]]></content:encoded>
-<pubDate>Tue, 03 Jun 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Learning Spatio-Temporal Vessel Behavior using AIS Trajectory Data and Markovian Models in the Gulf of St. Lawrence</title>
-<link>https://arxiv.org/abs/2506.00025</link>
-<guid>https://arxiv.org/abs/2506.00025</guid>
-<content:encoded><![CDATA[
-<div> Keywords: maritime mobility, spatio-temporal analysis, vessel movement patterns, discrete-time Markov chains, COVID-19 pandemic <br />
-Summary: <br />
-This article presents a spatio-temporal analytical framework using discrete-time Markov chains to analyze vessel movement patterns in the Gulf of St. Lawrence, focusing on changes during the COVID-19 pandemic. The ocean space is divided into hexagonal cells, and mobility signatures for different vessel types are constructed based on cell transitions and dwell time. Origin-destination matrices and spatial transition probability models are developed to understand vessel dynamics at different time scales. The study reveals consistent mobility signatures for specific vessel types across different regions, suggesting underlying behavioral patterns. During the pandemic, passenger and fishing vessels show significant temporal deviations, reflecting the impact of social isolation measures and operational restrictions on non-essential maritime activities in the region. These findings contribute to a better understanding of maritime mobility patterns and highlight the influence of external factors on vessel movements. <br /> <div>
-arXiv:2506.00025v1 Announce Type: cross 
-Abstract: Maritime Mobility is at the center of the global economy, and analyzing and understanding such data at scale is critical for ocean conservation and governance. Accordingly, this work introduces a spatio-temporal analytical framework based on discrete-time Markov chains to analyze vessel movement patterns in the Gulf of St. Lawrence, emphasizing changes induced during the COVID-19 pandemic. We discretize the ocean space into hexagonal cells and construct mobility signatures for individual vessel types using the frequency of cell transitions and the dwell time within each cell. These features are used to build origin-destination matrices and spatial transition probability models that characterize vessel dynamics at different temporal resolutions. Under multiple vessel types, we contribute with a temporal evolution analysis of mobility patterns during pandemic times, highlighting significant but transient changes to recurring transportation behaviors. Our findings indicate vessel-specific mobility signatures consistent across spatially disjoint regions, suggesting that those are latent behavioral invariants. Besides, we observe significant temporal deviations among passenger and fishing vessels during the pandemic, indicating a strong influence of social isolation policies and operational limitations imposed on non-essential maritime activity in this region.
-]]></content:encoded>
-<pubDate>Tue, 03 Jun 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Risks of AI-driven product development and strategies for their mitigation</title>
-<link>https://arxiv.org/abs/2506.00047</link>
-<guid>https://arxiv.org/abs/2506.00047</guid>
-<content:encoded><![CDATA[
-<div> progressing, automated product development, risks, mitigation strategies, AI-driven product development
-<br />
-Summary:
-Humanity is moving towards automated product development to accelerate technological progress, but this trend poses risks that must be addressed. To mitigate these risks, principles for safer AI-driven product development are outlined, emphasizing human oversight, accountability, and explainable design. The risk assessment includes technical risks affecting product quality and safety, as well as sociotechnical risks impacting society. While AI-driven product development is still evolving, this discussion aims to balance opportunities and risks without hindering progress in understanding, norm-setting, and regulation. <div>
-arXiv:2506.00047v1 Announce Type: cross 
-Abstract: Humanity is progressing towards automated product development, a trend that promises faster creation of better products and thus the acceleration of technological progress. However, increasing reliance on non-human agents for this process introduces many risks. This perspective aims to initiate a discussion on these risks and appropriate mitigation strategies. To this end, we outline a set of principles for safer AI-driven product development which emphasize human oversight, accountability, and explainable design, among others. The risk assessment covers both technical risks which affect product quality and safety, and sociotechnical risks which affect society. While AI-driven product development is still in its early stages, this discussion will help balance its opportunities and risks without delaying essential progress in understanding, norm-setting, and regulation.
 ]]></content:encoded>
 <pubDate>Tue, 03 Jun 2025 00:00:00 -0400</pubDate>
 </item>
