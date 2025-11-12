@@ -4,6 +4,7 @@
 <title>cs.CV updates on arXiv.org</title>
 <link>http://rss.arxiv.org/rss/cs.CV</link>
 
+
 <item>
 <title>GUI-AIMA: Aligning Intrinsic Multimodal Attention with a Context Anchor for GUI Grounding</title>
 <link>https://arxiv.org/abs/2511.00810</link>
@@ -14,14 +15,12 @@
 Summary:
 GUI-AIMA is a novel framework for graphical user interface (GUI) grounding that leverages the grounding capability inherent in Multimodal Large Language Models (MLLMs). By aligning the multimodal attention of MLLMs with patch-wise grounding signals, GUI-AIMA eliminates the need for generating precise coordinates directly from visual inputs, resulting in a more computationally efficient process. The framework utilizes a coordinate-free approach and can easily integrate a zoom-in stage. GUI-AIMA-3B, trained with just 85k screenshots, achieves state-of-the-art performance among 3B models, with impressive accuracy rates on various datasets. This highlights its exceptional data efficiency and the ability to trigger the native grounding capability of MLLMs with minimal training. The project page provides further details and resources for implementation and experimentation. 
 
-<br><br>Summary: <div>
+<br /><br />Summary: <div>
 arXiv:2511.00810v2 Announce Type: replace 
 Abstract: Graphical user interface (GUI) grounding is a key function of computer-use agents, which maps natural-language instructions to actionable screen regions. Existing approaches based on Multimodal Large Language Models (MLLMs) typically formulate it as a text-based coordinate generation task, yet directly generating precise coordinates from visual inputs remains challenging and computationally intensive. An intuitive way to implement GUI grounding is to first select visual patches relevant to the instructions and then determine the precise click location within those patches. Based on the observations that general MLLMs have some native grounding capability, nested within their attentions, we propose GUI-AIMA, an attention-based and coordinate-free supervised fine-tuning framework for efficient GUI grounding. GUI-AIMA aligns the intrinsic multimodal attention of MLLMs with patch-wise grounding signals. These signals are calculated adaptively for diverse user instructions by multi-head aggregation on simplified query-visual attention matrices. Besides, its coordinate-free manner can easily integrate a plug-and-play zoom-in stage. GUI-AIMA-3B was trained with only 85k screenshots, demonstrating exceptional data efficiency and verifying that light training can trigger the native grounding capability of MLLMs. It achieves state-of-the-art performance among 3B models, attaining an average accuracy of 59.6% on ScreenSpot-Pro, 63.8% on OSWorld-G and 91.5% on ScreenSpot-v2. Project page: https://github.com/sjz5202/GUI-AIMA
 ]]></content:encoded>
 <pubDate>Wed, 12 Nov 2025 00:00:00 -0500</pubDate>
-<pubDate>Wed, 12 Nov 2025 00:00:00 -0500</pubDate>
 </item>
-
 <item>
 <title>Knowledge-Guided Textual Reasoning for Explainable Video Anomaly Detection via LLMs</title>
 <link>https://arxiv.org/abs/2511.07429</link>
@@ -11562,16 +11561,6 @@ Abstract: Large-scale data has driven breakthroughs in robotics, from language m
 <content:encoded><![CDATA[
 arXiv:2311.01357v3 Announce Type: replace 
 Abstract: Notwithstanding offering convenience and entertainment to society, Deepfake face swapping has caused critical privacy issues with the rapid development of deep generative models. Due to imperceptible artifacts in high-quality synthetic images, passive detection models against face swapping in recent years usually suffer performance damping regarding the generalizability issue in cross-domain scenarios. Therefore, several studies have been attempted to proactively protect the original images against malicious manipulations by inserting invisible signals in advance. However, existing proactive defense approaches demonstrate unsatisfactory results with respect to visual quality, detection accuracy, and source tracing ability. In this study, to fulfill the research gap, we propose a robust identity perceptual watermarking framework that concurrently performs detection and source tracing against Deepfake face swapping proactively. We innovatively assign identity semantics regarding the image contents to the watermarks and devise an unpredictable and nonreversible chaotic encryption system to ensure watermark confidentiality. The watermarks are robustly encoded and recovered by jointly training an encoder-decoder framework along with adversarial image manipulations. For a suspect image, falsification is accomplished by justifying the consistency between the content-matched identity perceptual watermark and the recovered robust watermark, without requiring the ground-truth. Moreover, source tracing can be accomplished based on the identity semantics that the recovered watermark carries. Extensive experiments demonstrate state-of-the-art detection and source tracing performance against Deepfake face swapping with promising watermark robustness for both cross-dataset and cross-manipulation settings.
-]]></content:encoded>
-<pubDate>Wed, 05 Nov 2025 00:00:00 -0500</pubDate>
-</item>
-<item>
-<title>Training Convolutional Neural Networks with the Forward-Forward algorithm</title>
-<link>https://arxiv.org/abs/2312.14924</link>
-<guid>https://arxiv.org/abs/2312.14924</guid>
-<content:encoded><![CDATA[
-arXiv:2312.14924v4 Announce Type: replace 
-Abstract: Recent successes in image analysis with deep neural networks are achieved almost exclusively with Convolutional Neural Networks (CNNs), typically trained using the backpropagation (BP) algorithm. In a 2022 preprint, Geoffrey Hinton proposed the Forward-Forward (FF) algorithm as a biologically inspired alternative, where positive and negative examples are jointly presented to the network and training is guided by a locally defined goodness function. Here, we extend the FF paradigm to CNNs. We introduce two spatially extended labeling strategies, based on Fourier patterns and morphological transformations, that enable convolutional layers to access label information across all spatial positions. On CIFAR10, we show that deeper FF-trained CNNs can be optimized successfully and that morphology-based labels prevent shortcut solutions on dataset with more complex and fine features. On CIFAR100, carefully designed label sets scale effectively to 100 classes. Class Activation Maps reveal that FF-trained CNNs learn meaningful and complementary features across layers. Together, these results demonstrate that FF training is feasible beyond fully connected networks, provide new insights into its learning dynamics and stability, and highlight its potential for neuromorphic computing and biologically inspired learning.
 ]]></content:encoded>
 <pubDate>Wed, 05 Nov 2025 00:00:00 -0500</pubDate>
 </item>
