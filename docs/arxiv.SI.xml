@@ -4,6 +4,7 @@
 <title>cs.SI updates on arXiv.org</title>
 <link>http://rss.arxiv.org/rss/cs.SI</link>
 
+
 <item>
 <title>Conformal Prediction for Multi-Source Detection on a Network</title>
 <link>https://arxiv.org/abs/2511.08867</link>
@@ -14,11 +15,10 @@
 Summary:
 The article presents a novel approach to the multi-source detection problem in networks, where the goal is to identify the set of source nodes responsible for information or infection spread. Existing methods often lack statistical guarantees or are limited in their scope, but the proposed conformal prediction framework offers reliable recall guarantees regardless of the underlying diffusion process. By introducing principled score functions and using a calibration set, this method constructs prediction sets with specified recall and coverage levels, making it applicable to various diffusion dynamics and computationally efficient for large graphs. Empirical results show that the approach achieves rigorous coverage and outperforms existing baselines in terms of accuracy and scalability. The code for the method is available online. 
 
-<br><br>Summary: <div>
+<br /><br />Summary: <div>
 arXiv:2511.08867v1 Announce Type: new 
 Abstract: Detecting the origin of information or infection spread in networks is a fundamental challenge with applications in misinformation tracking, epidemiology, and beyond. We study the multi-source detection problem: given snapshot observations of node infection status on a graph, estimate the set of source nodes that initiated the propagation. Existing methods either lack statistical guarantees or are limited to specific diffusion models and assumptions. We propose a novel conformal prediction framework that provides statistically valid recall guarantees for source set detection, independent of the underlying diffusion process or data distribution. Our approach introduces principled score functions to quantify the alignment between predicted probabilities and true sources, and leverages a calibration set to construct prediction sets with user-specified recall and coverage levels. The method is applicable to both single- and multi-source scenarios, supports general network diffusion dynamics, and is computationally efficient for large graphs. Empirical results demonstrate that our method achieves rigorous coverage with competitive accuracy, outperforming existing baselines in both reliability and scalability.The code is available online.
 ]]></content:encoded>
-<pubDate>Thu, 13 Nov 2025 00:00:00 -0500</pubDate>
 <pubDate>Thu, 13 Nov 2025 00:00:00 -0500</pubDate>
 </item>
 <item>
@@ -28,12 +28,11 @@ Abstract: Detecting the origin of information or infection spread in networks is
 <content:encoded><![CDATA[
 <div> Ricci flow, community detection, Foster curvature, effective resistance, Gaussian Mixture Model  
 
-<br><br>Summary:  
+<br /><br />Summary:  
 This article presents a novel method for community detection in complex networks based on Ricci flow applied to graphs. The method iteratively updates edge weights according to the Foster version of Ricci curvature, calculated using effective resistance distance between nodes, which involves pseudo-inverting the graph Laplacian matrix. This approach serves as an alternative to the Ollivier-Ricci geometric flow method and demonstrates significantly better computational efficiency. After iterations of Foster-Ricci flow highlight regions of varying curvature, a Gaussian Mixture Model (GMM) is used to classify edges into "strong" intra-community and "weak" inter-community groups. This classification enables systematic pruning of edges to isolate distinct communities effectively. The algorithm is benchmarked on synthetic networks generated from the Stochastic Block Model (SBM) and evaluated using the Adjusted Rand Index (ARI) for accuracy. Results confirm that the proposed Ricci-Foster flow combined with GMM clustering robustly recovers the planted community structure in SBM-generated graphs. Overall, this framework offers a principled, computationally efficient alternative to existing Ricci flow methods paired with spectral clustering, making it a promising tool for network analysis and community detection tasks. <div>
 arXiv:2511.08919v1 Announce Type: new 
 Abstract: Community detection in complex networks is a fundamental problem, open to new approaches in various scientific settings. We introduce a novel community detection method, based on Ricci flow on graphs. Our technique iteratively updates edge weights (their metric lengths) according to their (combinatorial) Foster version of Ricci curvature computed from effective resistance distance between the nodes. The latter computation is known to be done by pseudo-inverting the graph Laplacian matrix. At that, our approach is alternative to one based on Ollivier-Ricci geometric flow for community detection on graphs, significantly outperforming it in terms of computation time. In our proposed method, iterations of Foster-Ricci flow that highlight network regions of different curvature -- are followed by a Gaussian Mixture Model (GMM) separation heuristic. That allows to classify edges into ''strong'' (intra-community) and ''weak'' (inter-community) groups, followed by a systematic pruning of the former to isolate communities. We benchmark our algorithm on synthetic networks generated from the Stochastic Block Model (SBM), evaluating performance with the Adjusted Rand Index (ARI). Our results demonstrate that proposed framework robustly recovers the planted community structure of SBM-s, establishing Ricci-Foster Flow with GMM-clustering as a principled and computationally effective new tool for network analysis, tested against alternative Ricci-Ollivier flow coupled with spectral clustering.
 ]]></content:encoded>
-<pubDate>Thu, 13 Nov 2025 00:00:00 -0500</pubDate>
 <pubDate>Thu, 13 Nov 2025 00:00:00 -0500</pubDate>
 </item>
 <item>
@@ -41,13 +40,12 @@ Abstract: Community detection in complex networks is a fundamental problem, open
 <link>https://arxiv.org/abs/2511.09132</link>
 <guid>https://arxiv.org/abs/2511.09132</guid>
 <content:encoded><![CDATA[
-<div> Spanning-tree-skeleton, edge removals, connectivity, robustness analysis, planar graph<br>
-Summary:<br>
-This paper addresses the problem of dismantling planar graphs under an edge-budget constraint in spatially embedded networks. A novel spanning-tree-skeleton dual-path framework is proposed, which samples multiple uniform spanning trees to identify network backbones and selects between two paths based on the budget. The small-budget path estimates a dismantlable subgraph fraction using a logarithmic density feature, while the large-budget path predicts the optimal partition count using a slope-based model. Experiments on random planar graphs show near-linear runtime scaling, consistent reductions in the largest connected component ratio, and clear budget-fragmentation trends. The method offers an efficient and interpretable approach for analyzing the robustness of planar networks. <br> <div>
+<div> Spanning-tree-skeleton, edge removals, connectivity, robustness analysis, planar graph<br />
+Summary:<br />
+This paper addresses the problem of dismantling planar graphs under an edge-budget constraint in spatially embedded networks. A novel spanning-tree-skeleton dual-path framework is proposed, which samples multiple uniform spanning trees to identify network backbones and selects between two paths based on the budget. The small-budget path estimates a dismantlable subgraph fraction using a logarithmic density feature, while the large-budget path predicts the optimal partition count using a slope-based model. Experiments on random planar graphs show near-linear runtime scaling, consistent reductions in the largest connected component ratio, and clear budget-fragmentation trends. The method offers an efficient and interpretable approach for analyzing the robustness of planar networks. <br /> <div>
 arXiv:2511.09132v1 Announce Type: new 
 Abstract: In spatially embedded networks such as transportation and power grids, understanding how edge removals affect connectivity is crucial for robustness analysis. This paper studies a planar graph dismantling problem under an edge-budget constraint. We propose a spanning-tree-skeleton dual-path framework that first samples multiple uniform spanning trees to capture network backbones and then adaptively selects between two complementary paths according to the budget. The small-budget path estimates a dismantlable subgraph fraction using a logarithmic density feature, while the large-budget path predicts the optimal partition count through a slope-based model. Experiments on random planar graphs demonstrate near-linear runtime scaling, consistent reductions in the largest connected component ratio, and clear budget-fragmentation trends. The method provides an interpretable and efficient approach for planar-network robustness analysis.
 ]]></content:encoded>
-<pubDate>Thu, 13 Nov 2025 00:00:00 -0500</pubDate>
 <pubDate>Thu, 13 Nov 2025 00:00:00 -0500</pubDate>
 </item>
 <item>
@@ -57,12 +55,11 @@ Abstract: In spatially embedded networks such as transportation and power grids,
 <content:encoded><![CDATA[
 <div> Keywords: opinion dynamics, nonlinear system, directed networks, phase transition, disruptive bias  
 
-<br><br>Summary:  
+<br /><br />Summary:  
 This article investigates the nonlinear dynamics of binary opinions within a population of agents connected by a directed network, where each agent is influenced by two competing forces: stubbornness and disruptive bias. Stubbornness represents an agent's inclination to maintain its initial opinion, while the disruptive bias models external influences pushing agents toward the opposite opinion. Agents update their opinions based on a nonlinear function involving neighbors' states and the bias parameter \( p \in [0,1] \). The authors focus on random directed graphs with fixed in- and out-degree distributions. They prove a phase transition phenomenon: if the disruptive bias \( p \) exceeds a critical threshold \( p_c \), the population rapidly converges to consensus on the disruptive opinion. If \( p < p_c \), the system reaches a metastable state wherein only a fraction \( q_\star(p) < 1 \) of agents adopt the new opinion for an extended period. The critical threshold \( p_c \) and the fraction \( q_\star(p) \) are explicitly characterized and depend solely on simple statistics of the degree sequences. The analysis employs a dual system composed of branching, coalescing, and dying particles, which mirrors the original dynamics and enables rigorous mathematical treatment. Overall, the results provide insight into how agent connectivity, stubbornness, and external bias interplay to produce tipping points in opinion evolution on networks. <div>
 arXiv:2511.09434v1 Announce Type: new 
 Abstract: We study a nonlinear dynamics of binary opinions in a population of agents connected by a directed network, influenced by two competing forces. On the one hand, agents are stubborn, i.e., have a tendency for one of the two opinions; on the other hand, there is a disruptive bias, $p\in[0,1]$, that drives the agents toward the other opinion. The disruptive bias models external factors, such as market innovations or social controllers, aiming to challenge the status quo, while agents' stubbornness reinforces the initial opinion making it harder for the external bias to drive the process toward change. Each agent updates its opinion according to a nonlinear function of the states of its neighbors and of the bias $p$. We consider the case of random directed graphs with prescribed in- and out-degree sequences and we prove that the dynamics exhibits a phase transition: when the disruptive bias $p$ is larger than a critical threshold $p_c$, the population converges in constant time to a consensus on the disruptive opinion. Conversely, when the bias $p$ is less than $p_c$, the system enters a metastable state in which only a fraction of agents $q_\star(p)<1$ will share the new opinion for a long time. We characterize $p_c$ and $q_\star(p)$ explicitly, showing that they only depend on few simple statistics of the degree sequences. Our analysis relies on a dual system of branching, coalescing, and dying particles, which we show exhibits equivalent behavior and allows a rigorous characterization of the system's dynamics. Our results characterize the interplay between the degree of the agents, their stubbornness, and the external bias, shedding light on the tipping points of opinion dynamics in networks.
 ]]></content:encoded>
-<pubDate>Thu, 13 Nov 2025 00:00:00 -0500</pubDate>
 <pubDate>Thu, 13 Nov 2025 00:00:00 -0500</pubDate>
 </item>
 <item>
@@ -72,7 +69,7 @@ Abstract: We study a nonlinear dynamics of binary opinions in a population of ag
 <content:encoded><![CDATA[
 <div> Keywords: heterophilous graphs, graph neural networks, GNN depth, generalization, Mixture of scope experts (Moscat)  
 
-<br><br>Summary:  
+<br /><br />Summary:  
 1. Heterophilous graphs, characterized by connections between dissimilar nodes, challenge the effectiveness of graph neural networks (GNNs).  
 2. Increasing GNN depth can broaden the receptive field, potentially capturing homophily from higher-order neighborhoods, but this often leads to performance degradation.  
 3. Despite their greater expressivity, deeper state-of-the-art GNNs show only marginal improvement over shallow versions.  
@@ -83,7 +80,6 @@ Abstract: We study a nonlinear dynamics of binary opinions in a population of ag
 arXiv:2409.06998v4 Announce Type: replace-cross 
 Abstract: Heterophilous graphs, where dissimilar nodes tend to connect, pose a challenge for graph neural networks (GNNs). Increasing the GNN depth can expand the scope (i.e., receptive field), potentially finding homophily from the higher-order neighborhoods. However, GNNs suffer from performance degradation as depth increases. Despite having better expressivity, state-of-the-art deeper GNNs achieve only marginal improvements compared to their shallow variants. Through theoretical and empirical analysis, we systematically demonstrate a shift in GNN generalization preferences across nodes with different homophily levels as depth increases. This creates a disparity in generalization patterns between GNN models with varying depth. Based on these findings, we propose to improve deeper GNN generalization while maintaining high expressivity by Mixture of scope experts at test (Moscat). Experimental results show that Moscat works flexibly with various GNNs across a wide range of datasets while significantly improving accuracy. Our code is available at (https://github.com/Hydrapse/moscat).
 ]]></content:encoded>
-<pubDate>Thu, 13 Nov 2025 00:00:00 -0500</pubDate>
 <pubDate>Thu, 13 Nov 2025 00:00:00 -0500</pubDate>
 </item>
 <item>
@@ -96,14 +92,12 @@ Abstract: Heterophilous graphs, where dissimilar nodes tend to connect, pose a c
 Summary:
 Graph neural networks (GNNs) have shown success in graph-based learning tasks but struggle with heterogeneous structures. To overcome this, GNNMoE is introduced, a framework that combines multiple expert networks for adaptive node representation learning. GNNMoE breaks down message passing into propagation and transformation components, incorporating a hybrid routing mechanism to guide the experts. With dynamic soft weighting and top-k routing adjustments through routing entropy regularization, GNNMoE can effectively adapt to diverse neighborhood contexts. The framework outperforms state-of-the-art methods in node classification tasks across various datasets while maintaining scalability and interpretability. GNNMoE offers a systematic approach to achieve personalized node representation learning, paving the way for fine-grained graph-based analysis. 
 
-<br><br>Summary: <div>
+<br /><br />Summary: <div>
 arXiv:2502.08083v2 Announce Type: replace-cross 
 Abstract: Graph neural networks (GNNs) have achieved significant progress in graph-based learning tasks, yet their performance often deteriorates when facing heterophilous structures where connected nodes differ substantially in features and labels. To address this limitation, we propose GNNMoE, a novel entropy-driven mixture of message-passing experts framework that enables node-level adaptive representation learning. GNNMoE decomposes message passing into propagation and transformation operations and integrates them through multiple expert networks guided by a hybrid routing mechanism. And a routing entropy regularization dynamically adjusts soft weighting and soft top-$k$ routing, allowing GNNMoE to flexibly adapt to diverse neighborhood contexts. Extensive experiments on twelve benchmark datasets demonstrate that GNNMoE consistently outperforms SOTA node classification methods, while maintaining scalability and interpretability. This work provides a unified and principled approach for achieving fine-grained, personalized node representation learning.
 ]]></content:encoded>
 <pubDate>Thu, 13 Nov 2025 00:00:00 -0500</pubDate>
-<pubDate>Thu, 13 Nov 2025 00:00:00 -0500</pubDate>
 </item>
-
 <item>
 <title>Leveraging the Power of AI and Social Interactions to Restore Trust in Public Polls</title>
 <link>https://arxiv.org/abs/2511.07593</link>
@@ -14718,92 +14712,6 @@ arXiv:2410.00075v2 Announce Type: replace
 Abstract: In Influence Maximization (IM), the objective is to -- given a budget -- select the optimal set of entities in a network to target with a treatment so as to maximize the total effect. For instance, in marketing, the objective is to target the set of customers that maximizes the total response rate, resulting from both direct treatment effects on targeted customers and indirect, spillover, effects that follow from targeting these customers. Recently, new methods to estimate treatment effects in the presence of network interference have been proposed. However, the issue of how to leverage these models to make better treatment allocation decisions has been largely overlooked. Traditionally, in Uplift Modeling (UM), entities are ranked according to estimated treatment effect, and the top entities are allocated treatment. Since, in a network context, entities influence each other, the UM ranking approach will be suboptimal. The problem of finding the optimal treatment allocation in a network setting is \textcolor{red}{NP-hard,} and generally has to be solved heuristically. To fill the gap between IM and UM, we propose OTAPI: Optimizing Treatment Allocation in the Presence of Interference to find solutions to the IM problem using treatment effect estimates. OTAPI consists of two steps. First, a causal estimator is trained to predict treatment effects in a network setting. Second, this estimator is leveraged to identify an optimal treatment allocation by integrating it into classic IM algorithms. We demonstrate that this novel method outperforms classic IM and UM approaches on both synthetic and semi-synthetic datasets.
 ]]></content:encoded>
 <pubDate>Thu, 05 Jun 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Mixture of Experts for Node Classification</title>
-<link>https://arxiv.org/abs/2412.00418</link>
-<guid>https://arxiv.org/abs/2412.00418</guid>
-<content:encoded><![CDATA[
-<div> mixture of experts, node classification, node predictors, diverse patterns, real-world graphs
-<br />
-Summary: 
-The study highlights the limitations of existing node predictors in capturing diverse patterns in real-world graphs, such as degree and homophily. It suggests that using a single node predictor for all nodes could result in suboptimal classification performance. To address this issue, the authors propose a novel framework called MoE-NP, which utilizes a mixture of node predictors and strategically selects models based on node patterns. Experimental results on various real-world datasets show significant performance improvements with MoE-NP. This approach emphasizes the importance of considering different node patterns when predicting node behavior in complex networks. <div>
-arXiv:2412.00418v3 Announce Type: replace 
-Abstract: Nodes in the real-world graphs exhibit diverse patterns in numerous aspects, such as degree and homophily. However, most existent node predictors fail to capture a wide range of node patterns or to make predictions based on distinct node patterns, resulting in unsatisfactory classification performance. In this paper, we reveal that different node predictors are good at handling nodes with specific patterns and only apply one node predictor uniformly could lead to suboptimal result. To mitigate this gap, we propose a mixture of experts framework, MoE-NP, for node classification. Specifically, MoE-NP combines a mixture of node predictors and strategically selects models based on node patterns. Experimental results from a range of real-world datasets demonstrate significant performance improvements from MoE-NP.
-]]></content:encoded>
-<pubDate>Thu, 05 Jun 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Quantifying edge relevance for epidemic spreading via the semi-metric topology of complex networks</title>
-<link>https://arxiv.org/abs/2311.14817</link>
-<guid>https://arxiv.org/abs/2311.14817</guid>
-<content:encoded><![CDATA[
-<div> semi-metric topology, sparsification, complex networks, epidemic outbreaks, shortest paths
-Summary:
-The study introduces a new sparsification method based on semi-metric distortion, prioritizing edges that significantly break the triangle inequality in weighted graphs. By identifying and removing edges with high semi-metric distortion, the method effectively preserves network dynamics and topology while reducing computational costs. Experimental results demonstrate that the semi-metric distortion sparsification outperforms existing methods in recovering Susceptible-Infected dynamics and maintaining connectivity. This approach improves the ranking of edge relevance for epidemic outbreaks by quantifying alternative transmission pathways through semi-metric distances. Overall, the method provides a more efficient and accurate way to sparsify networks while retaining essential information for studying complex system dynamics.<br /><br />Summary: <div>
-arXiv:2311.14817v2 Announce Type: replace-cross 
-Abstract: Sparsification aims at extracting a reduced core of associations that best preserves both the dynamics and topology of networks while reducing the computational cost of simulations. We show that the semi-metric topology of complex networks yields a natural and algebraically-principled sparsification that outperforms existing methods on those goals. Weighted graphs whose edges represent distances between nodes are semi-metric when at least one edge breaks the triangle inequality (transitivity). We first confirm with new experiments that the metric backbone$\unicode{x2013}$a unique subgraph of all edges that obey the triangle inequality and thus preserve all shortest paths$\unicode{x2013}$recovers Susceptible-Infected dynamics over the original non-sparsified graph. This recovery is improved when we remove only those edges that break the triangle inequality significantly, i.e., edges with large semi-metric distortion. Based on these results, we propose the new semi-metric distortion sparsification method to progressively sparsify networks in decreasing order of semi-metric distortion. Our method recovers the macro- and micro-level dynamics of epidemic outbreaks better than other methods while also yielding sparser yet connected subgraphs that preserve all shortest paths. Overall, we show that semi-metric distortion overcomes the limitations of edge betweenness in ranking the dynamical relevance of edges not participating in any shortest path, as it quantifies the existence and strength of alternative transmission pathways.
-]]></content:encoded>
-<pubDate>Thu, 05 Jun 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Ideological Fragmentation of the Social Media Ecosystem: From echo chambers to echo platforms</title>
-<link>https://arxiv.org/abs/2411.16826</link>
-<guid>https://arxiv.org/abs/2411.16826</guid>
-<content:encoded><![CDATA[
-<div> platform centrality, news consumption, user base composition, social media ecosystem, ideological diversity
-
-Summary:
-The study investigates the impact of social media on political discussions, focusing on platform centrality, news consumption, and user base composition. Analyzing 117 million posts related to the 2020 US Presidential elections on nine platforms, including mainstream and alt-tech platforms, significant differences are found. Mainstream platforms are more central within the ecosystem, circulate more reliable news, and have a more diverse user base. In contrast, alt-tech platforms play a peripheral role, feature higher instances of unreliable content, and exhibit greater ideological uniformity. The findings underscore the growing fragmentation and polarization of the social media landscape, with platforms catering to specific ideological niches and users seeking like-minded communities. This trend highlights the challenge of echo chambers and the need for platforms to address the spread of unreliable information and promote diverse perspectives. 
-
-<br /><br />Summary: <div>
-arXiv:2411.16826v2 Announce Type: replace-cross 
-Abstract: The entertainment-driven nature of social media encourages users to engage with like-minded individuals and consume content aligned with their beliefs, limiting exposure to diverse perspectives. Simultaneously, users migrate between platforms, either due to moderation policies like de-platforming or in search of environments better suited to their preferences. These dynamics drive the specialization of the social media ecosystem, shifting from internal echo chambers to "echo platforms"--entire platforms functioning as ideologically homogeneous niches. To systematically analyze this phenomenon in political discussions, we propose a quantitative approach based on three key dimensions: platform centrality, news consumption, and user base composition. We analyze 117 million posts related to the 2020 US Presidential elections from nine social media platforms--Facebook, Reddit, Twitter, YouTube, BitChute, Gab, Parler, Scored, and Voat. Our findings reveal significant differences among platforms in their centrality within the ecosystem, the reliability of circulated news, and the ideological diversity of their users, highlighting a clear divide between mainstream and alt-tech platforms. The latter occupy a peripheral role, feature a higher prevalence of unreliable content, and exhibit greater ideological uniformity. These results highlight the key dimensions shaping the fragmentation and polarization of the social media landscape.
-]]></content:encoded>
-<pubDate>Thu, 05 Jun 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Multiplex Nodal Modularity: A novel network metric for the regional analysis of amnestic mild cognitive impairment during a working memory binding task</title>
-<link>https://arxiv.org/abs/2501.09805</link>
-<guid>https://arxiv.org/abs/2501.09805</guid>
-<content:encoded><![CDATA[
-<div> modularity, community structure, nodal modularity, Alzheimer's disease, fMRI<br />
-Summary:<br />
-This study introduces the concept of nodal modularity (nQ) to capture variations in community structure at individual nodes in brain networks. By applying nQ to fMRI and DTI data from early-stage Alzheimer's disease (AD) patients, the researchers found changes in nQ in visual, limbic, and paralimbic regions, associated with amyloid-$\beta$ and tau deposition. Additionally, white-matter microstructure changes in parietal and frontal regions were observed, potentially linked to memory deficits. NQ was able to differentiate between individuals with mild cognitive impairment (MCI) and MCI converters, suggesting its sensitivity to disease progression. This novel measure offers insights into localized group structures and may have broader applications across various domains for understanding network organization. <br />  
-Summary: <div>
-arXiv:2501.09805v2 Announce Type: replace-cross 
-Abstract: Modularity is a well-established concept for assessing community structures in various single and multi-layer networks, including those in biological and social domains. Brain networks are known to exhibit community structure at local, meso, and global scale. However, modularity is limited as a metric to a global scale describing the overall strength of community structure, overlooking important variations in community structure at node level. To address this limitation, we extended modularity to individual nodes. This novel measure of nodal modularity (nQ) captures both mesoscale and local-scale changes in modularity. We hypothesized that nQ would illuminate granular changes in the brain due to diseases such as Alzheimer's disease (AD), which are known to disrupt the brain's modular structure. We explored nQ in multiplex networks of a visual short-term memory binding task in fMRI and DTI data in the early stages of AD. While limited by sample size, changes in nQ for individual regions of interest (ROIs) in our fMRI networks were predominantly observed in visual, limbic, and paralimbic systems in the brain, aligning with known AD trajectories and linked to amyloid-$\beta$ and tau deposition. Furthermore, observed changes in white-matter microstructure in our DTI networks in parietal and frontal regions may compliment studies of white-matter integrity in poor memory binders. Additionally, nQ clearly differentiated MCI from MCI converters indicating that nQ may be sensitive to this key turning point of AD. Our findings demonstrate the utility of nQ as a measure of localized group structure, providing novel insights into task and disease-related variability at the node level. Given the widespread application of modularity as a global measure, nQ represents a significant advancement, providing a granular measure of network organization applicable to a wide range of disciplines.
-]]></content:encoded>
-<pubDate>Thu, 05 Jun 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Examining Algorithmic Curation on Social Media: An Empirical Audit of Reddit's r/popular Feed</title>
-<link>https://arxiv.org/abs/2502.20491</link>
-<guid>https://arxiv.org/abs/2502.20491</guid>
-<content:encoded><![CDATA[
-<div> Keywords: algorithms, social media feeds, user behavior, Reddit, engagement
-
-Summary: 
-Algorithms play a crucial role in curating content on social media feeds, impacting user behavior and content consumption. An empirical audit of Reddit's r/popular feed revealed that recent comments boost a post's visibility and ranking on the feed, while posts below rank 80 experience a significant decline in activity. Despite a higher proportion of undesired behavior like toxic comments, there is no evidence that it helps posts stay on r/popular longer. Posts closer to the top receive more undesired comments but also see an overall increase in engagement, indicating a broader impact rather than targeting undesired activity specifically. The findings emphasize the influence of algorithms in determining content prioritization on social media platforms, underscoring the need for transparency and accountability in algorithmic curation. Content creators, consumers, and moderators can benefit from empirical audits to enhance understanding and improve user experiences on algorithmically curated feeds. 
-
-<br /><br />Summary: <div>
-arXiv:2502.20491v2 Announce Type: replace-cross 
-Abstract: Platforms are increasingly relying on algorithms to curate the content within users' social media feeds. However, the growing prominence of proprietary, algorithmically curated feeds has concealed what factors influence the presentation of content on social media feeds and how that presentation affects user behavior. This lack of transparency can be detrimental to users, from reducing users' agency over their content consumption to the propagation of misinformation and toxic content. To uncover details about how these feeds operate and influence user behavior, we conduct an empirical audit of Reddit's algorithmically curated trending feed called r/popular. Using 10K r/popular posts collected by taking snapshots of the feed over 11 months, we find that recent comments help a post remain on r/popular longer and climb the feed. We also find that posts below rank 80 correspond to a sharp decline in activity compared to posts above. When examining the effects of having a higher proportion of undesired behavior -- i.e., moderator-removed and toxic comments -- we find no significant evidence that it helps posts stay on r/popular for longer. Although posts closer to the top receive more undesired comments, we find this increase to coincide with a broader increase in overall engagement -- rather than indicating a disproportionate effect on undesired activity. The relationships between algorithmic rank and engagement highlight the extent to which algorithms employed by social media platforms essentially determine which content is prioritized and which is not. We conclude by discussing how content creators, consumers, and moderators on social media platforms can benefit from empirical audits aimed at improving transparency in algorithmically curated feeds.
-]]></content:encoded>
-<pubDate>Thu, 05 Jun 2025 00:00:00 -0400</pubDate>
-</item>
-<item>
-<title>Building a Recommendation System Using Amazon Product Co-Purchasing Network</title>
-<link>https://arxiv.org/abs/2506.02482</link>
-<guid>https://arxiv.org/abs/2506.02482</guid>
-<content:encoded><![CDATA[
-<div> GraphSAGE, link prediction, e-commerce, recommendation system, online<br />
-<br />
-Summary: This project introduces an online recommendation system for new products on e-commerce platforms. By utilizing the Amazon Product Co-Purchasing Network Metadata dataset, a co-purchasing graph is created to showcase relationships among products. A modified GraphSAGE method is implemented for link prediction, combining product features and co-purchasing graph structure to forecast potential connections. This approach enables the model to adapt to unseen products and update in real time, enhancing the relevance of new product suggestions. Experimental results indicate superior performance compared to baseline algorithms, demonstrating the effectiveness of the proposed method in improving product recommendations in e-commerce settings. The code for the project is available on GitHub for further exploration and implementation. <div>
-arXiv:2506.02482v1 Announce Type: new 
-Abstract: This project develops an online, inductive recommendation system for newly listed products on e-commerce platforms, focusing on suggesting relevant new items to customers as they purchase other products. Using the Amazon Product Co-Purchasing Network Metadata dataset, we construct a co-purchasing graph where nodes represent products and edges capture co-purchasing relationships. To address the challenge of recommending new products with limited information, we apply a modified GraphSAGE method for link prediction. This inductive approach leverages both product features and the existing co-purchasing graph structure to predict potential co-purchasing relationships, enabling the model to generalize to unseen products. As an online method, it updates in real time, making it scalable and adaptive to evolving product catalogs. Experimental results demonstrate that our approach outperforms baseline algorithms in predicting relevant product links, offering a promising solution for enhancing the relevance of new product recommendations in e-commerce environments. All code is available at https://github.com/cse416a-fl24/final-project-l-minghao_z-catherine_z-nathan.git.
-]]></content:encoded>
-<pubDate>Wed, 04 Jun 2025 00:00:00 -0400</pubDate>
 </item>
 </channel>
 </rss>
