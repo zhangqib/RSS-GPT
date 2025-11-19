@@ -4,6 +4,7 @@
 <title>cs.AI updates on arXiv.org</title>
 <link>http://rss.arxiv.org/rss/cs.AI</link>
 
+
 <item>
 <title>A Style is Worth One Code: Unlocking Code-to-Style Image Generation with Discrete Style Space</title>
 <link>https://arxiv.org/abs/2511.10555</link>
@@ -11,15 +12,13 @@
 <content:encoded><![CDATA[
 <div> Keywords: visual stylization, style code, CoTyle, image generation, diffusion model  
 
-<br><br>Summary:  
+<br /><br />Summary:  
 This paper addresses the challenge of generating novel and consistent visual styles in artistic creation. Traditional methods often rely on lengthy text prompts, reference images, or fine-tuning, which can lead to issues with style consistency and creativity. The study introduces the novel task of code-to-style image generation, which uses a numerical style code as the sole input for generating images with unique styles. CoTyle is proposed as the first open-source method for this task, bridging the gap in academic research. The approach begins with training a discrete style codebook from a collection of images to extract style embeddings, which serve as conditions for a text-to-image diffusion model (T2I-DM). An autoregressive style generator is then trained on these discrete embeddings to model their distribution, enabling the creation of new style embeddings. During inference, a numerical style code is mapped to an embedding that guides the T2I-DM in image generation. The key advantages of CoTyle include its simplicity and diversity, unlocking a broad range of reproducible styles from minimal input. Experimental results confirm that a numerical code can effectively control artistic styles, validating the authors' assertion that a style is worth one code. <div>
 arXiv:2511.10555v3 Announce Type: replace-cross 
 Abstract: Innovative visual stylization is a cornerstone of artistic creation, yet generating novel and consistent visual styles remains a significant challenge. Existing generative approaches typically rely on lengthy textual prompts, reference images, or parameter-efficient fine-tuning to guide style-aware image generation, but often struggle with style consistency, limited creativity, and complex style representations. In this paper, we affirm that a style is worth one numerical code by introducing the novel task, code-to-style image generation, which produces images with novel, consistent visual styles conditioned solely on a numerical style code. To date, this field has only been primarily explored by the industry (e.g., Midjourney), with no open-source research from the academic community. To fill this gap, we propose CoTyle, the first open-source method for this task. Specifically, we first train a discrete style codebook from a collection of images to extract style embeddings. These embeddings serve as conditions for a text-to-image diffusion model (T2I-DM) to generate stylistic images. Subsequently, we train an autoregressive style generator on the discrete style embeddings to model their distribution, allowing the synthesis of novel style embeddings. During inference, a numerical style code is mapped to a unique style embedding by the style generator, and this embedding guides the T2I-DM to generate images in the corresponding style. Unlike existing methods, our method offers unparalleled simplicity and diversity, unlocking a vast space of reproducible styles from minimal input. Extensive experiments validate that CoTyle effectively turns a numerical code into a style controller, demonstrating a style is worth one code.
 ]]></content:encoded>
 <pubDate>Wed, 19 Nov 2025 00:00:00 -0500</pubDate>
-<pubDate>Wed, 19 Nov 2025 00:00:00 -0500</pubDate>
 </item>
-
 <item>
 <title>Glia: A Human-Inspired AI for Automated Systems Design and Optimization</title>
 <link>https://arxiv.org/abs/2510.27176</link>
@@ -10562,16 +10561,6 @@ Abstract: Misinformation on social media thrives on surprise, emotion, and ident
 <content:encoded><![CDATA[
 arXiv:2511.10390v1 Announce Type: cross 
 Abstract: Document parsing is a core task in document intelligence, supporting applications such as information extraction, retrieval-augmented generation, and automated document analysis. However, real-world documents often feature complex layouts with multi-level tables, embedded images or formulas, and cross-page structures, which remain challenging for existing OCR systems. We introduce MonkeyOCR v1.5, a unified vision-language framework that enhances both layout understanding and content recognition through a two-stage parsing pipeline. The first stage employs a large multimodal model to jointly predict document layout and reading order, leveraging visual information to ensure structural and sequential consistency. The second stage performs localized recognition of text, formulas, and tables within detected regions, maintaining high visual fidelity while reducing error propagation. To address complex table structures, we propose a visual consistency-based reinforcement learning scheme that evaluates recognition quality via render-and-compare alignment, improving structural accuracy without manual annotations. Additionally, two specialized modules, Image-Decoupled Table Parsing and Type-Guided Table Merging, are introduced to enable reliable parsing of tables containing embedded images and reconstruction of tables crossing pages or columns. Comprehensive experiments on OmniDocBench v1.5 demonstrate that MonkeyOCR v1.5 achieves state-of-the-art performance, outperforming PPOCR-VL and MinerU 2.5 while showing exceptional robustness in visually complex document scenarios.
-]]></content:encoded>
-<pubDate>Fri, 14 Nov 2025 00:00:00 -0500</pubDate>
-</item>
-<item>
-<title>Enhancing Kernel Power K-means: Scalable and Robust Clustering with Random Fourier Features and Possibilistic Method</title>
-<link>https://arxiv.org/abs/2511.10392</link>
-<guid>https://arxiv.org/abs/2511.10392</guid>
-<content:encoded><![CDATA[
-arXiv:2511.10392v1 Announce Type: cross 
-Abstract: Kernel power $k$-means (KPKM) leverages a family of means to mitigate local minima issues in kernel $k$-means. However, KPKM faces two key limitations: (1) the computational burden of the full kernel matrix restricts its use on extensive data, and (2) the lack of authentic centroid-sample assignment learning reduces its noise robustness. To overcome these challenges, we propose RFF-KPKM, introducing the first approximation theory for applying random Fourier features (RFF) to KPKM. RFF-KPKM employs RFF to generate efficient, low-dimensional feature maps, bypassing the need for the whole kernel matrix. Crucially, we are the first to establish strong theoretical guarantees for this combination: (1) an excess risk bound of $\mathcal{O}(\sqrt{k^3/n})$, (2) strong consistency with membership values, and (3) a $(1+\varepsilon)$ relative error bound achievable using the RFF of dimension $\mathrm{poly}(\varepsilon^{-1}\log k)$. Furthermore, to improve robustness and the ability to learn multiple kernels, we propose IP-RFF-MKPKM, an improved possibilistic RFF-based multiple kernel power $k$-means. IP-RFF-MKPKM ensures the scalability of MKPKM via RFF and refines cluster assignments by combining the merits of the possibilistic membership and fuzzy membership. Experiments on large-scale datasets demonstrate the superior efficiency and clustering accuracy of the proposed methods compared to the state-of-the-art alternatives.
 ]]></content:encoded>
 <pubDate>Fri, 14 Nov 2025 00:00:00 -0500</pubDate>
 </item>
