@@ -4,19 +4,18 @@
 <title>cs.LG updates on arXiv.org</title>
 <link>http://rss.arxiv.org/rss/cs.LG</link>
 
+
 <item>
 <title>Interpreting the Effects of Quantization on LLMs</title>
 <link>https://arxiv.org/abs/2508.16785</link>
 <guid>https://arxiv.org/abs/2508.16785</guid>
 <content:encoded><![CDATA[
-<div> quantization, large language models, neuron activation, model calibration, model compression<br><br>Summary:<br><br>This study investigates the effects of quantization on large language models (LLMs), focusing on how internal representations and neuron behavior are influenced when applying 4-bit and 8-bit quantization. The research utilizes several interpretability techniques to analyze multiple LLMs. Key findings demonstrate that quantization has a generally minor impact on model calibration, indicating that the reliability of predictions is largely maintained. In analyzing neuron activations, the number of dead neurons—neurons with activations near zero across the dataset—remains stable regardless of quantization, showing resilience in neuron activation patterns. The study also reveals that smaller, full precision models tend to have fewer salient neurons contributing significantly to predictions, while larger models usually contain more salient neurons, though an exception was observed with Llama-2-7B. Additionally, the effect of quantization on neuron redundancy is inconsistent and varies depending on the specific model architecture. Overall, the results suggest that while quantization effects may differ across models and tasks, no drastic or discouraging changes were observed. This supports the use of quantization as a reliable technique for compressing LLMs without sacrificing model integrity. <div>
+<div> quantization, large language models, neuron activation, model calibration, model compression<br /><br />Summary:<br /><br />This study investigates the effects of quantization on large language models (LLMs), focusing on how internal representations and neuron behavior are influenced when applying 4-bit and 8-bit quantization. The research utilizes several interpretability techniques to analyze multiple LLMs. Key findings demonstrate that quantization has a generally minor impact on model calibration, indicating that the reliability of predictions is largely maintained. In analyzing neuron activations, the number of dead neurons—neurons with activations near zero across the dataset—remains stable regardless of quantization, showing resilience in neuron activation patterns. The study also reveals that smaller, full precision models tend to have fewer salient neurons contributing significantly to predictions, while larger models usually contain more salient neurons, though an exception was observed with Llama-2-7B. Additionally, the effect of quantization on neuron redundancy is inconsistent and varies depending on the specific model architecture. Overall, the results suggest that while quantization effects may differ across models and tasks, no drastic or discouraging changes were observed. This supports the use of quantization as a reliable technique for compressing LLMs without sacrificing model integrity. <div>
 arXiv:2508.16785v3 Announce Type: replace 
 Abstract: Quantization offers a practical solution to deploy LLMs in resource-constraint environments. However, its impact on internal representations remains understudied, raising questions about the reliability of quantized models. In this study, we employ a range of interpretability techniques to investigate how quantization affects model and neuron behavior. We analyze multiple LLMs under 4-bit and 8-bit quantization. Our findings reveal that the impact of quantization on model calibration is generally minor. Analysis of neuron activations indicates that the number of dead neurons, i.e., those with activation values close to 0 across the dataset, remains consistent regardless of quantization. In terms of neuron contribution to predictions, we observe that smaller full precision models exhibit fewer salient neurons, whereas larger models tend to have more, with the exception of Llama-2-7B. The effect of quantization on neuron redundancy varies across models. Overall, our findings suggest that effect of quantization may vary by model and tasks, however, we did not observe any drastic change which may discourage the use of quantization as a reliable model compression technique.
 ]]></content:encoded>
 <pubDate>Fri, 21 Nov 2025 00:00:00 -0500</pubDate>
-<pubDate>Fri, 21 Nov 2025 00:00:00 -0500</pubDate>
 </item>
-
 <item>
 <title>Extending Test-Time Scaling: A 3D Perspective with Context, Batch, and Turn</title>
 <link>https://arxiv.org/abs/2511.15738</link>
@@ -10752,16 +10751,6 @@ Abstract: Despite their wide application, the vulnerabilities of deep neural net
 <content:encoded><![CDATA[
 arXiv:2511.12006v1 Announce Type: cross 
 Abstract: Deep learning is transforming microscopy, yet models often fail when applied to images from new instruments or acquisition settings. Conventional adversarial domain adaptation (ADDA) retrains entire networks, often disrupting learned semantic representations. Here, we overturn this paradigm by showing that adapting only the earliest convolutional layers, while freezing deeper layers, yields reliable transfer. Building on this principle, we introduce Subnetwork Image Translation ADDA with automatic depth selection (SIT-ADDA-Auto), a self-configuring framework that integrates shallow-layer adversarial alignment with predictive uncertainty to automatically select adaptation depth without target labels. We demonstrate robustness via multi-metric evaluation, blinded expert assessment, and uncertainty-depth ablations. Across exposure and illumination shifts, cross-instrument transfer, and multiple stains, SIT-ADDA improves reconstruction and downstream segmentation over full-encoder adaptation and non-adversarial baselines, with reduced drift of semantic features. Our results provide a design rule for label-free adaptation in microscopy and a recipe for field settings; the code is publicly available.
-]]></content:encoded>
-<pubDate>Tue, 18 Nov 2025 00:00:00 -0500</pubDate>
-</item>
-<item>
-<title>Adaptive Diagnostic Reasoning Framework for Pathology with Multimodal Large Language Models</title>
-<link>https://arxiv.org/abs/2511.12008</link>
-<guid>https://arxiv.org/abs/2511.12008</guid>
-<content:encoded><![CDATA[
-arXiv:2511.12008v1 Announce Type: cross 
-Abstract: AI tools in pathology have improved screening throughput, standardized quantification, and revealed prognostic patterns that inform treatment. However, adoption remains limited because most systems still lack the human-readable reasoning needed to audit decisions and prevent errors. We present RECAP-PATH, an interpretable framework that establishes a self-learning paradigm, shifting off-the-shelf multimodal large language models from passive pattern recognition to evidence-linked diagnostic reasoning. At its core is a two-phase learning process that autonomously derives diagnostic criteria: diversification expands pathology-style explanations, while optimization refines them for accuracy. This self-learning approach requires only small labeled sets and no white-box access or weight updates to generate cancer diagnoses. Evaluated on breast and prostate datasets, RECAP-PATH produced rationales aligned with expert assessment and delivered substantial gains in diagnostic accuracy over baselines. By uniting visual understanding with reasoning, RECAP-PATH provides clinically trustworthy AI and demonstrates a generalizable path toward evidence-linked interpretation.
 ]]></content:encoded>
 <pubDate>Tue, 18 Nov 2025 00:00:00 -0500</pubDate>
 </item>

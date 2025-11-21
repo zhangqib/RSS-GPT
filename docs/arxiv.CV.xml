@@ -4,13 +4,14 @@
 <title>cs.CV updates on arXiv.org</title>
 <link>http://rss.arxiv.org/rss/cs.CV</link>
 
+
 <item>
 <title>Beyond Patches: Mining Interpretable Part-Prototypes for Explainable AI</title>
 <link>https://arxiv.org/abs/2504.12197</link>
 <guid>https://arxiv.org/abs/2504.12197</guid>
 <content:encoded><![CDATA[
 <div> Prototype learning, interpretability, concept mining, robustness, AI alignment  
-<br><br>Summary:  
+<br /><br />Summary:  
 1. The article addresses the challenge of limited interpretability in deep AI models, emphasizing the need for decisions that are understandable and aligned with human expectations.  
 2. Existing post-hoc methods like GradCAM offer heatmaps but limited conceptual insight, while prototype-based methods provide example-based explanations but often suffer from rigid region selection and lack semantic consistency.  
 3. To overcome these issues, the authors propose PCMNet, a part-prototypical concept mining network that learns human-comprehensible prototypes from meaningful image regions without requiring extra supervision.  
@@ -25,21 +26,18 @@ Abstract: As AI systems grow more capable, it becomes increasingly important tha
   Experiments across multiple image classification benchmarks show that PCMNet outperforms state-of-the-art methods in interpretability, stability, and robustness. This work contributes to AI alignment by enhancing transparency, controllability, and trustworthiness in AI systems. Our code is available at: https://github.com/alehdaghi/PCMNet.
 ]]></content:encoded>
 <pubDate>Fri, 21 Nov 2025 00:00:00 -0500</pubDate>
-<pubDate>Fri, 21 Nov 2025 00:00:00 -0500</pubDate>
 </item>
 <item>
 <title>LightFusion: A Light-weighted, Double Fusion Framework for Unified Multimodal Understanding and Generation</title>
 <link>https://arxiv.org/abs/2510.22946</link>
 <guid>https://arxiv.org/abs/2510.22946</guid>
 <content:encoded><![CDATA[
-<div> Keywords: unified multimodal models, double fusion mechanism, multimodal self-attention, text-to-image generation, image editing<br><br>Summary: This paper addresses the challenge of training unified multimodal models, which typically require extensive computational resources when trained from scratch. The authors propose an efficient approach that strategically fuses publicly available pre-trained models designed specifically for generation or understanding tasks. The core innovation, called the double fusion mechanism, involves retaining the original model blocks while interleaving new multimodal self-attention blocks throughout the network. This design not only preserves the strengths of the individual base models but also enhances multimodal fusion by combining high-level semantic representations from the understanding encoder with low-level spatial information from the generation encoder. The method achieves competitive performance across several benchmarks using only around 35 billion training tokens. Notably, the approach attains a score of 0.91 on GenEval for compositional text-to-image generation, 82.16 on DPG-Bench for complex text-to-image generation, 6.06 on GEditBench, and 3.77 on ImgEdit-Bench for image editing tasks. The authors also release all associated code, model weights, and datasets to foster further research on unified multimodal modeling. <div>
+<div> Keywords: unified multimodal models, double fusion mechanism, multimodal self-attention, text-to-image generation, image editing<br /><br />Summary: This paper addresses the challenge of training unified multimodal models, which typically require extensive computational resources when trained from scratch. The authors propose an efficient approach that strategically fuses publicly available pre-trained models designed specifically for generation or understanding tasks. The core innovation, called the double fusion mechanism, involves retaining the original model blocks while interleaving new multimodal self-attention blocks throughout the network. This design not only preserves the strengths of the individual base models but also enhances multimodal fusion by combining high-level semantic representations from the understanding encoder with low-level spatial information from the generation encoder. The method achieves competitive performance across several benchmarks using only around 35 billion training tokens. Notably, the approach attains a score of 0.91 on GenEval for compositional text-to-image generation, 82.16 on DPG-Bench for complex text-to-image generation, 6.06 on GEditBench, and 3.77 on ImgEdit-Bench for image editing tasks. The authors also release all associated code, model weights, and datasets to foster further research on unified multimodal modeling. <div>
 arXiv:2510.22946v4 Announce Type: replace 
 Abstract: Unified multimodal models have recently shown remarkable gains in both capability and versatility, yet most leading systems are still trained from scratch and require substantial computational resources. In this paper, we show that competitive performance can be obtained far more efficiently by strategically fusing publicly available models specialized for either generation or understanding. Our key design is to retain the original blocks while additionally interleaving multimodal self-attention blocks throughout the networks. This double fusion mechanism (1) effectively enables rich multi-modal fusion while largely preserving the original strengths of the base models, and (2) catalyzes synergistic fusion of high-level semantic representations from the understanding encoder with low-level spatial signals from the generation encoder. By training with only ~ 35B tokens, this approach achieves strong results across multiple benchmarks: 0.91 on GenEval for compositional text-to-image generation, 82.16 on DPG-Bench for complex text-to-image generation, 6.06 on GEditBench, and 3.77 on ImgEdit-Bench for image editing. By fully releasing the entire suite of code, model weights, and datasets, we hope to support future research on unified multimodal modeling.
 ]]></content:encoded>
 <pubDate>Fri, 21 Nov 2025 00:00:00 -0500</pubDate>
-<pubDate>Fri, 21 Nov 2025 00:00:00 -0500</pubDate>
 </item>
-
 <item>
 <title>UniFit: Towards Universal Virtual Try-on with MLLM-Guided Semantic Alignment</title>
 <link>https://arxiv.org/abs/2511.15831</link>
@@ -10653,26 +10651,6 @@ Abstract: Video-based multimodal large language models (V-MLLMs) have shown vuln
 <content:encoded><![CDATA[
 arXiv:2501.03659v5 Announce Type: replace 
 Abstract: Current novel view synthesis methods are typically designed for high-quality and clean input images. However, in foggy scenes, scattering and attenuation can significantly degrade the quality of rendering. Although NeRF-based dehazing approaches have been developed, their reliance on deep fully connected neural networks and per-ray sampling strategies leads to high computational costs. Furthermore, NeRF's implicit representation limits its ability to recover fine-grained details from hazy scenes. To overcome these limitations, we propose learning an explicit Gaussian representation to explain the formation mechanism of foggy images through a physically forward rendering process. Our method, DehazeGS, reconstructs and renders fog-free scenes using only multi-view foggy images as input. Specifically, based on the atmospheric scattering model, we simulate the formation of fog by establishing the transmission function directly onto Gaussian primitives via depth-to-transmission mapping. During training, we jointly learn the atmospheric light and scattering coefficients while optimizing the Gaussian representation of foggy scenes. At inference time, we remove the effects of scattering and attenuation in Gaussian distributions and directly render the scene to obtain dehazed views. Experiments on both real-world and synthetic foggy datasets demonstrate that DehazeGS achieves state-of-the-art performance. visualizations are available at https://dehazegs.github.io/
-]]></content:encoded>
-<pubDate>Tue, 18 Nov 2025 00:00:00 -0500</pubDate>
-</item>
-<item>
-<title>GUSLO: General and Unified Structured Light Optimization</title>
-<link>https://arxiv.org/abs/2501.14659</link>
-<guid>https://arxiv.org/abs/2501.14659</guid>
-<content:encoded><![CDATA[
-arXiv:2501.14659v2 Announce Type: replace 
-Abstract: Structured light (SL) 3D reconstruction captures the precise surface shape of objects, providing high-accuracy 3D data essential for industrial inspection and cultural heritage digitization. However, existing methods suffer from two key limitations: reliance on scene-specific calibration with manual parameter tuning, and optimization frameworks tailored to specific SL patterns, limiting their generalizability across varied scenarios. We propose General and Unified Structured Light Optimization (GUSLO), a novel framework addressing these issues through two coordinated innovations: (1) single-shot calibration via 2D triangulation-based interpolation that converts sparse matches into dense correspondence fields, and (2) artifact-aware photometric adaptation via explicit transfer functions, balancing generalization and color fidelity. We conduct diverse experiments covering binary, speckle, and color-coded settings. Results show that GUSLO consistently improves accuracy and cross-encoding robustness over conventional methods in challenging industrial and cultural scenarios.
-]]></content:encoded>
-<pubDate>Tue, 18 Nov 2025 00:00:00 -0500</pubDate>
-</item>
-<item>
-<title>SVBench: A Benchmark with Temporal Multi-Turn Dialogues for Streaming Video Understanding</title>
-<link>https://arxiv.org/abs/2502.10810</link>
-<guid>https://arxiv.org/abs/2502.10810</guid>
-<content:encoded><![CDATA[
-arXiv:2502.10810v2 Announce Type: replace 
-Abstract: Despite the significant advancements of Large Vision-Language Models (LVLMs) on established benchmarks, there remains a notable gap in suitable evaluation regarding their applicability in the emerging domain of long-context streaming video understanding. Current benchmarks for video understanding typically emphasize isolated single-instance text inputs and fail to evaluate the capacity to sustain temporal reasoning throughout the entire duration of video streams. To address these limitations, we introduce SVBench, a pioneering benchmark with temporal multi-turn question-answering chains specifically designed to thoroughly assess the capabilities of streaming video understanding of current LVLMs. We design a semi-automated annotation pipeline to obtain 49,979 Question-Answer (QA) pairs of 1,353 streaming videos, which includes generating QA chains that represent a series of consecutive multi-turn dialogues over video segments and constructing temporal linkages between successive QA chains. Our experimental results, obtained from 14 models in dialogue and streaming evaluations, reveal that while the closed-source GPT-4o outperforms others, most open-source LVLMs struggle with long-context streaming video understanding. We also construct a StreamingChat model, which significantly outperforms open-source LVLMs on our SVBench and achieves comparable performance on diverse vision-language benchmarks. We expect SVBench to advance the research of streaming video understanding by providing a comprehensive and in-depth analysis of current LVLMs. Our benchmark and model can be accessed at https://github.com/sotayang/SVBench.
 ]]></content:encoded>
 <pubDate>Tue, 18 Nov 2025 00:00:00 -0500</pubDate>
 </item>
