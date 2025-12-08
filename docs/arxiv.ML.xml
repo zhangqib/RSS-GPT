@@ -4,6 +4,7 @@
 <title>cs.LG updates on arXiv.org</title>
 <link>http://rss.arxiv.org/rss/cs.LG</link>
 
+
 <item>
 <title>Morphling: Fast, Fused, and Flexible GNN Training at Scale</title>
 <link>https://arxiv.org/abs/2512.01678</link>
@@ -11,15 +12,13 @@
 <content:encoded><![CDATA[
 <div> Graph Neural Networks, code synthesis, performance optimization, sparsity-aware execution, distributed training  
 
-<br><br>Summary:  
+<br /><br />Summary:  
 Graph Neural Networks (GNNs) face significant hardware challenges due to the combination of irregular graph traversals and dense matrix computations, which existing frameworks like PyTorch Geometric (PyG) and Deep Graph Library (DGL) do not efficiently handle. Morphling is introduced as a domain-specific code synthesizer that compiles high-level GNN specifications into optimized, backend-specialized implementations for OpenMP, CUDA, and MPI. It leverages a library of architecture-aware primitives customized for each execution environment to enhance performance. Additionally, Morphling integrates a runtime sparsity-aware execution engine that dynamically selects between dense or sparse computation paths based on input feature statistics, effectively reducing unnecessary operations on zero-valued data. The effectiveness of Morphling was validated on eleven diverse real-world datasets covering various graph types, feature sizes, and sparsity levels. Results demonstrate that Morphling improves per-epoch training throughput by approximately 20× on CPUs, 19× on GPUs, and 6× in distributed settings compared to PyG and DGL, with speedups peaking at 66×. Moreover, Morphling’s memory-efficient layouts reduce peak memory usage by up to 15×, enabling training of large-scale GNNs on commodity hardware. This work highlights that specialized, architecture-aware code generation is a viable and scalable solution for efficient GNN execution across different parallel and distributed platforms. <div>
 arXiv:2512.01678v3 Announce Type: replace 
 Abstract: Graph Neural Networks (GNNs) present a fundamental hardware challenge by fusing irregular, memory-bound graph traversals with regular, compute-intensive dense matrix operations. While frameworks such as PyTorch Geometric (PyG) and Deep Graph Library (DGL) prioritize high-level usability, they fail to address these divergent execution characteristics. As a result, they rely on generic kernels that suffer from poor cache locality, excessive memory movement, and substantial intermediate allocations. To address these limitations, we present Morphling, a domain-specific code synthesizer designed to bridge this gap. Morphling compiles high-level GNN specifications into portable, backend-specialized implementations targeting OpenMP, CUDA, and MPI. It achieves this by instantiating a library of optimized, architecture-aware primitives tailored to each execution environment. Morphling also incorporates a runtime sparsity-aware execution engine that dynamically selects dense or sparse execution paths using input feature statistics, reducing unnecessary computation on zero-valued entries. We evaluate Morphling on eleven real-world datasets spanning diverse graph structures, feature dimensionalities, and sparsity regimes. Morphling improves per-epoch training throughput by an average of 20X on CPUs, 19X on GPUs, and 6X in distributed settings over PyG and DGL, with peak speedups reaching 66X. Morphling's memory-efficient layouts further reduce peak memory consumption by up to 15X, enabling large-scale GNN training on commodity hardware. These findings demonstrate that specialized, architecture-aware code synthesis provides an effective and scalable path toward high-performance GNN execution across diverse parallel and distributed platforms.
 ]]></content:encoded>
 <pubDate>Mon, 08 Dec 2025 00:00:00 -0500</pubDate>
-<pubDate>Mon, 08 Dec 2025 00:00:00 -0500</pubDate>
 </item>
-
 <item>
 <title>Advanced Unsupervised Learning: A Comprehensive Overview of Multi-View Clustering Techniques</title>
 <link>https://arxiv.org/abs/2512.05169</link>
@@ -10759,16 +10758,6 @@ Abstract: Geospatial foundation models (GeoFMs) promise broad generalisation cap
 <content:encoded><![CDATA[
 arXiv:2512.01187v1 Announce Type: new 
 Abstract: Transformer models often exhibit brittle extrapolation, failing on inputs that are longer or structurally more complex than those seen during training. We introduce Counter-Example-Driven Curricula (CEDC), an automated framework that improves model robustness by iteratively focusing on its own failures. At each step, CEDC uses the current model to generate a diverse set of candidate problems, employs a fast, executable verifier to identify incorrect predictions (counter-examples), and then fine-tunes the model on a dataset enriched with these discovered failures. We evaluate CEDC on a suite of algorithmic and natural language tasks, including integer addition, sorting, Dyck-2 language recognition, and three text classification benchmarks. Compared to static training and standard curriculum learning baselines, CEDC achieves up to 30x greater length extrapolation, is 3.75x more computationally efficient than uniform data augmentation, and requires no manual difficulty heuristics. We provide a detailed analysis of the counter-examples, showing how the curriculum naturally adapts to target progressively more complex error modes. Our findings establish verifier-guided, failure-driven learning as a simple, powerful, and efficient paradigm for enhancing the generalization capabilities of Transformer models.
-]]></content:encoded>
-<pubDate>Tue, 02 Dec 2025 00:00:00 -0500</pubDate>
-</item>
-<item>
-<title>LGDC: Latent Graph Diffusion via Spectrum-Preserving Coarsening</title>
-<link>https://arxiv.org/abs/2512.01190</link>
-<guid>https://arxiv.org/abs/2512.01190</guid>
-<content:encoded><![CDATA[
-arXiv:2512.01190v1 Announce Type: new 
-Abstract: Graph generation is a critical task across scientific domains. Existing methods fall broadly into two categories: autoregressive models, which iteratively expand graphs, and one-shot models, such as diffusion, which generate the full graph at once. In this work, we provide an analysis of these two paradigms and reveal a key trade-off: autoregressive models stand out in capturing fine-grained local structures, such as degree and clustering properties, whereas one-shot models excel at modeling global patterns, such as spectral distributions. Building on this, we propose LGDC (latent graph diffusion via spectrum-preserving coarsening), a hybrid framework that combines strengths of both approaches. LGDC employs a spectrum-preserving coarsening-decoarsening to bidirectionally map between graphs and a latent space, where diffusion efficiently generates latent graphs before expansion restores detail. This design captures both local and global properties with improved efficiency. Empirically, LGDC matches autoregressive models on locally structured datasets (Tree) and diffusion models on globally structured ones (Planar, Community-20), validating the benefits of hybrid generation.
 ]]></content:encoded>
 <pubDate>Tue, 02 Dec 2025 00:00:00 -0500</pubDate>
 </item>

@@ -4,12 +4,13 @@
 <title>cs.AI updates on arXiv.org</title>
 <link>http://rss.arxiv.org/rss/cs.AI</link>
 
+
 <item>
 <title>On the Holographic Geometry of Deterministic Computation</title>
 <link>https://arxiv.org/abs/2512.00607</link>
 <guid>https://arxiv.org/abs/2512.00607</guid>
 <content:encoded><![CDATA[
-<div> Keywords: Turing machines, holographic simulation, Kolmogorov complexity, spacetime DAG, computational area law<br><br>Summary:  
+<div> Keywords: Turing machines, holographic simulation, Kolmogorov complexity, spacetime DAG, computational area law<br /><br />Summary:  
 1. Traditional Turing machine simulations indicate a linear relationship between the runtime \(t\) and the amount of stored information necessary to verify or regenerate configurations at time \(t\).  
 2. For deterministic multitape Turing machines working over a fixed finite alphabet, this linear dependency is not fundamental; any length-\(t\) run can be simulated using only \(O(\sqrt{t})\) cells on the work tape.  
 3. This improvement leverages a Height Compression Theorem for succinct computation trees along with an Algebraic Replay Engine.  
@@ -22,21 +23,18 @@ arXiv:2512.00607v2 Announce Type: replace-cross
 Abstract: Standard simulations of Turing machines suggest a linear relationship between the temporal duration $t$ of a run and the amount of information that must be stored by known simulations to certify, verify, or regenerate the configuration at time $t$. For deterministic multitape Turing machines over a fixed finite alphabet, this apparent linear dependence is not intrinsic: any length-$t$ run can be simulated using $O(\sqrt{t})$ work-tape cells via a Height Compression Theorem for succinct computation trees together with an Algebraic Replay Engine. In this paper we recast that construction in geometric and information-theoretic language. We interpret the execution trace as a spacetime DAG of local update events and exhibit a family of recursively defined holographic boundary summaries such that, along the square-root-space simulation, the total description length of all boundary data stored at any time is $O(\sqrt{t})$. Using Kolmogorov complexity, we prove that every internal configuration has constant conditional description complexity given the appropriate boundary summary and time index, establishing that the spacetime bulk carries no additional algorithmic information beyond its boundary. We express this as a one-dimensional computational area law: there exists a simulation in which the information capacity of the active "holographic screen'' needed to generate a spacetime region of volume proportional to $t$ is bounded by $O(\sqrt{t})$. In this precise sense, deterministic computation on a one-dimensional work tape admits a holographic representation, with the bulk history algebraically determined by data residing on a lower-dimensional boundary screen.
 ]]></content:encoded>
 <pubDate>Mon, 08 Dec 2025 00:00:00 -0500</pubDate>
-<pubDate>Mon, 08 Dec 2025 00:00:00 -0500</pubDate>
 </item>
 <item>
 <title>Concept-Guided Backdoor Attack on Vision Language Models</title>
 <link>https://arxiv.org/abs/2512.00713</link>
 <guid>https://arxiv.org/abs/2512.00713</guid>
 <content:encoded><![CDATA[
-<div> Backdoor attacks, Vision-Language Models, Concept-level triggers, Concept Bottleneck Model, Semantic manipulation<br><br>Summary:<br><br>1. The paper addresses security vulnerabilities in Vision-Language Models (VLMs), particularly focusing on backdoor attacks that exploit semantic concepts rather than image pixels.<br><br>2. Two novel concept-guided backdoor attack methods are proposed: Concept-Thresholding Poisoning (CTP) and CBL-Guided Unseen Backdoor (CGUB).<br><br>3. CTP poisons only the samples containing a target semantic concept, enabling the model to behave normally elsewhere but maliciously trigger when the concept appears in input images.<br><br>4. CGUB utilizes a Concept Bottleneck Model (CBM) during training to manipulate internal concept activations, allowing targeted label replacement in generated text (e.g., swapping "cat" with "dog"), and discards the CBM at inference, preserving the original model architecture.<br><br>5. Experimental results across multiple VLM architectures and datasets demonstrate that both CTP and CGUB achieve high attack success rates while maintaining moderate impact on normal task performance, establishing concept-level manipulations as a new and effective backdoor attack surface for VLMs. <div>
+<div> Backdoor attacks, Vision-Language Models, Concept-level triggers, Concept Bottleneck Model, Semantic manipulation<br /><br />Summary:<br /><br />1. The paper addresses security vulnerabilities in Vision-Language Models (VLMs), particularly focusing on backdoor attacks that exploit semantic concepts rather than image pixels.<br /><br />2. Two novel concept-guided backdoor attack methods are proposed: Concept-Thresholding Poisoning (CTP) and CBL-Guided Unseen Backdoor (CGUB).<br /><br />3. CTP poisons only the samples containing a target semantic concept, enabling the model to behave normally elsewhere but maliciously trigger when the concept appears in input images.<br /><br />4. CGUB utilizes a Concept Bottleneck Model (CBM) during training to manipulate internal concept activations, allowing targeted label replacement in generated text (e.g., swapping "cat" with "dog"), and discards the CBM at inference, preserving the original model architecture.<br /><br />5. Experimental results across multiple VLM architectures and datasets demonstrate that both CTP and CGUB achieve high attack success rates while maintaining moderate impact on normal task performance, establishing concept-level manipulations as a new and effective backdoor attack surface for VLMs. <div>
 arXiv:2512.00713v2 Announce Type: replace-cross 
 Abstract: Vision-Language Models (VLMs) have achieved impressive progress in multimodal text generation, yet their rapid adoption raises increasing concerns about security vulnerabilities. Existing backdoor attacks against VLMs primarily rely on explicit pixel-level triggers or imperceptible perturbations injected into images. While effective, these approaches reduce stealthiness and remain vulnerable to image-based defenses. We introduce concept-guided backdoor attacks, a new paradigm that operates at the semantic concept level rather than on raw pixels. We propose two different attacks. The first, Concept-Thresholding Poisoning (CTP), uses explicit concepts in natural images as triggers: only samples containing the target concept are poisoned, causing the model to behave normally in all other cases but consistently inject malicious outputs whenever the concept appears. The second, CBL-Guided Unseen Backdoor (CGUB), leverages a Concept Bottleneck Model (CBM) during training to intervene on internal concept activations, while discarding the CBM branch at inference time to keep the VLM unchanged. This design enables systematic replacement of a targeted label in generated text (for example, replacing "cat" with "dog"), even when the replacement behavior never appears in the training data. Experiments across multiple VLM architectures and datasets show that both CTP and CGUB achieve high attack success rates while maintaining moderate impact on clean-task performance. These findings highlight concept-level vulnerabilities as a critical new attack surface for VLMs.
 ]]></content:encoded>
 <pubDate>Mon, 08 Dec 2025 00:00:00 -0500</pubDate>
-<pubDate>Mon, 08 Dec 2025 00:00:00 -0500</pubDate>
 </item>
-
 <item>
 <title>Documenting SME Processes with Conversational AI: From Tacit Knowledge to BPMN</title>
 <link>https://arxiv.org/abs/2512.05122</link>
@@ -10710,26 +10708,6 @@ Abstract: Goal-conditioned policy learning for robotic manipulation presents sig
 <content:encoded><![CDATA[
 arXiv:2512.00105v1 Announce Type: cross 
 Abstract: Pattern sampling has emerged as a promising approach for information discovery in large databases, allowing analysts to focus on a manageable subset of patterns. In this approach, patterns are randomly drawn based on an interestingness measure, such as frequency or hyper-volume. This paper presents the first sampling approach designed to handle interval patterns in numerical databases. This approach, named Fips, samples interval patterns proportionally to their frequency. It uses a multi-step sampling procedure and addresses a key challenge in numerical data: accurately determining the number of interval patterns that cover each object. We extend this work with HFips, which samples interval patterns proportionally to both their frequency and hyper-volume. These methods efficiently tackle the well-known long-tail phenomenon in pattern sampling. We formally prove that Fips and HFips sample interval patterns in proportion to their frequency and the product of hyper-volume and frequency, respectively. Through experiments on several databases, we demonstrate the quality of the obtained patterns and their robustness against the long-tail phenomenon.
-]]></content:encoded>
-<pubDate>Tue, 02 Dec 2025 00:00:00 -0500</pubDate>
-</item>
-<item>
-<title>From RISC-V Cores to Neuromorphic Arrays: A Tutorial on Building Scalable Digital Neuromorphic Processors</title>
-<link>https://arxiv.org/abs/2512.00113</link>
-<guid>https://arxiv.org/abs/2512.00113</guid>
-<content:encoded><![CDATA[
-arXiv:2512.00113v1 Announce Type: cross 
-Abstract: Digital neuromorphic processors are emerging as a promising computing substrate for low-power, always-on EdgeAI applications. In this tutorial paper, we outline the main architectural design principles behind fully digital neuromorphic processors and illustrate them using the SENECA platform as a running example. Starting from a flexible array of tiny RISC-V processing cores connected by a simple Network-on-Chip (NoC), we show how to progressively evolve the architecture: from a baseline event-driven implementation of fully connected networks, to versions with dedicated Neural Processing Elements (NPEs) and a loop controller that offloads fine-grained control from the general-purpose cores. Along the way, we discuss software and mapping techniques such as spike grouping, event-driven depth-first convolution for convolutional networks, and hard-attention style processing for high-resolution event-based vision. The focus is on architectural trade-offs, performance and energy bottlenecks, and on leveraging flexibility to incrementally add domain-specific acceleration. This paper assumes familiarity with basic neuromorphic concepts (spikes, event-driven computation, sparse activation) and deep neural network workloads. It does not present new experimental results; instead, it synthesizes and contextualizes findings previously reported in our SENECA publications to provide a coherent, step-by-step architectural perspective for students and practitioners who wish to design their own digital neuromorphic processors.
-]]></content:encoded>
-<pubDate>Tue, 02 Dec 2025 00:00:00 -0500</pubDate>
-</item>
-<item>
-<title>NetDeTox: Adversarial and Efficient Evasion of Hardware-Security GNNs via RL-LLM Orchestration</title>
-<link>https://arxiv.org/abs/2512.00119</link>
-<guid>https://arxiv.org/abs/2512.00119</guid>
-<content:encoded><![CDATA[
-arXiv:2512.00119v1 Announce Type: cross 
-Abstract: Graph neural networks (GNNs) have shown promise in hardware security by learning structural motifs from netlist graphs. However, this reliance on motifs makes GNNs vulnerable to adversarial netlist rewrites; even small-scale edits can mislead GNN predictions. Existing adversarial approaches, ranging from synthesis-recipe perturbations to gate transformations, come with high design overheads. We present NetDeTox, an automated end-to-end framework that orchestrates large language models (LLMs) with reinforcement learning (RL) in a systematic manner, enabling focused local rewriting. The RL agent identifies netlist components critical for GNN-based reasoning, while the LLM devises rewriting plans to diversify motifs that preserve functionality. Iterative feedback between the RL and LLM stages refines adversarial rewritings to limit overheads. Compared to the SOTA work AttackGNN, NetDeTox successfully degrades the effectiveness of all security schemes with fewer rewrites and substantially lower area overheads (reductions of 54.50% for GNN-RE, 25.44% for GNN4IP, and 41.04% for OMLA, respectively). For GNN4IP, ours can even optimize/reduce the original benchmarks' area, in particular for larger circuits, demonstrating the practicality and scalability of NetDeTox.
 ]]></content:encoded>
 <pubDate>Tue, 02 Dec 2025 00:00:00 -0500</pubDate>
 </item>
