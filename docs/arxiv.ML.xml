@@ -4,6 +4,7 @@
 <title>cs.LG updates on arXiv.org</title>
 <link>http://rss.arxiv.org/rss/cs.LG</link>
 
+
 <item>
 <title>Instruction-based Time Series Editing</title>
 <link>https://arxiv.org/abs/2508.01504</link>
@@ -11,15 +12,13 @@
 <content:encoded><![CDATA[
 <div> Time series editing, diffusion models, natural language instructions, multi-modal representation, controllable editing strength  
 
-<br><br>Summary:  
+<br /><br />Summary:  
 This paper addresses the problem of time series editing, where specific properties of a time series are modified without affecting others. Traditional diffusion-based editors rely on fixed attribute vectors and generate binary, all-or-nothing edits, restricting flexibility and nuanced control over editing strength. To advance this field, the authors propose Instruction-based Time Series Editing, enabling users to provide editing commands in natural language, thus broadening the scope and accessibility of edits. They introduce InstructTime, the first editor following this paradigm, which encodes both the input time series and the user instructions into a shared multi-modal embedding space before decoding to produce the edited series. This structured multi-modal space permits smooth interpolation between embeddings, allowing fine-tuning of edit intensity. The model incorporates multi-resolution encoders to manage both local and global time series edits effectively. Experiments conducted on synthetic and real datasets demonstrate that InstructTime outperforms existing methods by delivering high-quality, controllable edits. It generalizes well to previously unseen instructions and adapts to new editing conditions via few-shot learning, showcasing its flexibility and practical utility in time series analysis scenarios. <div>
 arXiv:2508.01504v3 Announce Type: replace 
 Abstract: In time series editing, we aim to modify some properties of a given time series without altering others. For example, when analyzing a hospital patient's blood pressure, we may add a sudden early drop and observe how it impacts their future while preserving other conditions. Existing diffusion-based editors rely on rigid, predefined attribute vectors as conditions and produce all-or-nothing edits through sampling. This attribute- and sampling-based approach limits flexibility in condition format and lacks customizable control over editing strength. To overcome these limitations, we introduce Instruction-based Time Series Editing, where users specify intended edits using natural language. This allows users to express a wider range of edits in a more accessible format. We then introduce InstructTime, the first instruction-based time series editor. InstructTime takes in time series and instructions, embeds them into a shared multi-modal representation space, then decodes their embeddings to generate edited time series. By learning a structured multi-modal representation space, we can easily interpolate between embeddings to achieve varying degrees of edit. To handle local and global edits together, we propose multi-resolution encoders. In our experiments, we use synthetic and real datasets and find that InstructTime is a state-of-the-art time series editor: InstructTime achieves high-quality edits with controllable strength, can generalize to unseen instructions, and can be easily adapted to unseen conditions through few-shot learning.
 ]]></content:encoded>
 <pubDate>Tue, 09 Dec 2025 00:00:00 -0500</pubDate>
-<pubDate>Tue, 09 Dec 2025 00:00:00 -0500</pubDate>
 </item>
-
 <item>
 <title>A self-driving lab for solution-processed electrochromic thin films</title>
 <link>https://arxiv.org/abs/2512.05989</link>
@@ -10635,16 +10634,6 @@ Abstract: Continuous-time reinforcement learning (CTRL) provides a natural frame
 <content:encoded><![CDATA[
 arXiv:2508.03772v4 Announce Type: replace 
 Abstract: Group Relative Policy Optimization (GRPO) is a promising policy-based approach for Large Language Model alignment, yet its performance is often limited by training instability and suboptimal convergence. In this paper, we identify and analyze two main GRPO issues: (i) the token-level penalization, where valuable tokens shared across different responses receive contradictory feedback signals, leading to conflicting gradient updates that can reduce their likelihood; and (ii) the policy collapse, where negatively rewarded completions may penalize confident responses and shift model decisions toward unlikely tokens, destabilizing training process. To address these issues we introduce GTPO (Group-relative Trajectory-based Policy Optimization), which prevents conflicting gradients on valuable tokens by skipping negative updates while amplifying positive ones and filters out completions whose entropy exceeds a provable threshold, to prevent policy collapse. Unlike GRPO, GTPO does not rely on KL-divergence regularization, eliminating the need for a reference model during training, while still ensuring greater training stability and improved performance, as validated through multiple experiments on GSM8K, MATH, AIME 2024, AIME 2025 and AMC 2023.
-]]></content:encoded>
-<pubDate>Thu, 04 Dec 2025 00:00:00 -0500</pubDate>
-</item>
-<item>
-<title>Run-Time Monitoring of ERTMS/ETCS Control Flow by Process Mining</title>
-<link>https://arxiv.org/abs/2509.10419</link>
-<guid>https://arxiv.org/abs/2509.10419</guid>
-<content:encoded><![CDATA[
-arXiv:2509.10419v2 Announce Type: replace 
-Abstract: Ensuring the resilience of computer-based railways is increasingly crucial to account for uncertainties and changes due to the growing complexity and criticality of those systems. Although their software relies on strict verification and validation processes following well-established best-practices and certification standards, anomalies can still occur at run-time due to residual faults, system and environmental modifications that were unknown at design-time, or other emergent cyber-threat scenarios. This paper explores run-time control-flow anomaly detection using process mining to enhance the resilience of ERTMS/ETCS L2 (European Rail Traffic Management System / European Train Control System Level 2). Process mining allows learning the actual control flow of the system from its execution traces, thus enabling run-time monitoring through online conformance checking. In addition, anomaly localization is performed through unsupervised machine learning to link relevant deviations to critical system components. We test our approach on a reference ERTMS/ETCS L2 scenario, namely the RBC/RBC Handover, to show its capability to detect and localize anomalies with high accuracy, efficiency, and explainability.
 ]]></content:encoded>
 <pubDate>Thu, 04 Dec 2025 00:00:00 -0500</pubDate>
 </item>
