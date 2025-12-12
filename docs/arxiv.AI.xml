@@ -4,6 +4,7 @@
 <title>cs.AI updates on arXiv.org</title>
 <link>http://rss.arxiv.org/rss/cs.AI</link>
 
+
 <item>
 <title>Beyond Words and Pixels: A Benchmark for Implicit World Knowledge Reasoning in Generative Models</title>
 <link>https://arxiv.org/abs/2511.18271</link>
@@ -11,7 +12,7 @@
 <content:encoded><![CDATA[
 <div> Keywords: text-to-image models, implicit world knowledge, physical causal reasoning, PicWorld benchmark, multi-agent evaluator  
 
-<br><br>Summary:  
+<br /><br />Summary:  
 1. Current text-to-image (T2I) models produce photorealistic, instruction-following images but often fail on prompts requiring implicit world knowledge.  
 2. Existing evaluation methods focus mainly on compositional alignment or single-round VQA-based scoring, neglecting critical aspects such as knowledge grounding, multi-physics interactions, and verifiable evidence.  
 3. To overcome these gaps, the authors introduce PicWorld, a novel benchmark containing 1,100 prompts across three core categories to comprehensively assess T2I models' understanding of implicit world knowledge and physical causal reasoning.  
@@ -21,9 +22,7 @@ arXiv:2511.18271v3 Announce Type: replace-cross
 Abstract: Text-to-image (T2I) models today are capable of producing photorealistic, instruction-following images, yet they still frequently fail on prompts that require implicit world knowledge. Existing evaluation protocols either emphasize compositional alignment or rely on single-round VQA-based scoring, leaving critical dimensions such as knowledge grounding, multi-physics interactions, and auditable evidence-substantially undertested. To address these limitations, we introduce PicWorld, the first comprehensive benchmark that assesses the grasp of implicit world knowledge and physical causal reasoning of T2I models. This benchmark consists of 1,100 prompts across three core categories. To facilitate fine-grained evaluation, we propose PW-Agent, an evidence-grounded multi-agent evaluator to hierarchically assess images on their physical realism and logical consistency by decomposing prompts into verifiable visual evidence. We conduct a thorough analysis of 17 mainstream T2I models on PicWorld, illustrating that they universally exhibit a fundamental limitation in their capacity for implicit world knowledge and physical causal reasoning to varying degrees. The findings highlight the need for reasoning-aware, knowledge-integrative architectures in future T2I systems.
 ]]></content:encoded>
 <pubDate>Fri, 12 Dec 2025 00:00:00 -0500</pubDate>
-<pubDate>Fri, 12 Dec 2025 00:00:00 -0500</pubDate>
 </item>
-
 <item>
 <title>ExaCraft: Dynamic Learning Context Adaptation for Personalized Educational Examples</title>
 <link>https://arxiv.org/abs/2512.09931</link>
@@ -10649,16 +10648,6 @@ Abstract: Identifying key temporal intervals within long videos, known as tempor
 <content:encoded><![CDATA[
 arXiv:2510.01132v2 Announce Type: replace-cross 
 Abstract: We study what actually works and what doesn't for training large language models as agents via multi-turn reinforcement learning. Despite rapid progress, existing frameworks and definitions are fragmented, and there is no systematic formulation or analysis of which design choices matter across tasks. We address this gap by first breaking down the design space into three inter-related pillars -- environment, reward, and policy -- and empirically derive a recipe for training LLM agents in situated textual domains. In particular, we test TextWorld and ALFWorld, popular domains for testing situated embodied reasoning, as well as SWE-Gym for more software engineering style tasks. (i) For the environment, we analyze the impacts of task complexity in terms of sizes of the state and action spaces as well as optimal solution length, finding that even simple environments within a domain can provide signal on how well an agent can generalize to more complex tasks. (ii) For the reward, we ablate relative reward sparsity, observing that while dense turn-level rewards accelerate training, performance and stability is highly dependent on the choice of RL algorithm. (iii) And for the agent's policy, we explore the interplay between reward sparsity and biased (PPO, GRPO) and unbiased (RLOO) policy gradient methods in addition to showing how to find the optimal Supervised Fine-tuning (SFT) to RL training ratio given a fixed budget. We distill these findings into a training recipe that guides co-design across the three pillars, facilitating research and practical efforts in multi-turn agentic RL. Code: https://github.com/pearls-lab/meow-tea-taro
-]]></content:encoded>
-<pubDate>Tue, 09 Dec 2025 00:00:00 -0500</pubDate>
-</item>
-<item>
-<title>AdaDetectGPT: Adaptive Detection of LLM-Generated Text with Statistical Guarantees</title>
-<link>https://arxiv.org/abs/2510.01268</link>
-<guid>https://arxiv.org/abs/2510.01268</guid>
-<content:encoded><![CDATA[
-arXiv:2510.01268v4 Announce Type: replace-cross 
-Abstract: We study the problem of determining whether a piece of text has been authored by a human or by a large language model (LLM). Existing state of the art logits-based detectors make use of statistics derived from the log-probability of the observed text evaluated using the distribution function of a given source LLM. However, relying solely on log probabilities can be sub-optimal. In response, we introduce AdaDetectGPT -- a novel classifier that adaptively learns a witness function from training data to enhance the performance of logits-based detectors. We provide statistical guarantees on its true positive rate, false positive rate, true negative rate and false negative rate. Extensive numerical studies show AdaDetectGPT nearly uniformly improves the state-of-the-art method in various combination of datasets and LLMs, and the improvement can reach up to 37\%. A python implementation of our method is available at https://github.com/Mamba413/AdaDetectGPT.
 ]]></content:encoded>
 <pubDate>Tue, 09 Dec 2025 00:00:00 -0500</pubDate>
 </item>
