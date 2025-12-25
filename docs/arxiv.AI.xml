@@ -4,6 +4,7 @@
 <title>cs.AI updates on arXiv.org</title>
 <link>http://rss.arxiv.org/rss/cs.AI</link>
 
+
 <item>
 <title>Rethinking Popularity Bias in Collaborative Filtering via Analytical Vector Decomposition</title>
 <link>https://arxiv.org/abs/2512.10688</link>
@@ -11,15 +12,13 @@
 <content:encoded><![CDATA[
 <div> Popularity bias, collaborative filtering, Bayesian Pairwise Ranking, embedding geometry, recommendation fairness
 
-<br><br>Summary:  
+<br /><br />Summary:  
 This paper addresses the issue of popularity bias in collaborative filtering (CF) models, which causes popular items to be over-recommended while niche preferences are overlooked. Unlike previous studies that treat popularity bias as an external confounding factor, the authors reveal that the bias arises intrinsically from the geometric properties of Bayesian Pairwise Ranking (BPR) optimization. Through mathematical analysis, they show that BPR aligns item embeddings along a "popularity direction," where embedding magnitude correlates with item popularity, creating a geometric distortion. This forces user embeddings to manage competing tasks—reflecting true preferences and compensating for global popularity—resulting in suboptimal recommendations biased toward popular items. To address this, the authors propose Directional Decomposition and Correction (DDC), a framework that corrects this embedding geometry by updating embeddings asymmetrically. DDC separates personalized preference directions from the global popularity direction by guiding positive interactions toward true preferences while redirecting negative interactions away from popularity. Extensive experiments on multiple BPR-based models demonstrate that DDC significantly outperforms existing debiasing techniques, drastically reducing training loss to less than 5% compared to heavily fine-tuned baselines and improving both recommendation accuracy and fairness. The authors provide publicly available code for reproducibility. <div>
 arXiv:2512.10688v5 Announce Type: replace-cross 
 Abstract: Popularity bias fundamentally undermines the personalization capabilities of collaborative filtering (CF) models, causing them to disproportionately recommend popular items while neglecting users' genuine preferences for niche content. While existing approaches treat this as an external confounding factor, we reveal that popularity bias is an intrinsic geometric artifact of Bayesian Pairwise Ranking (BPR) optimization in CF models. Through rigorous mathematical analysis, we prove that BPR systematically organizes item embeddings along a dominant "popularity direction" where embedding magnitudes directly correlate with interaction frequency. This geometric distortion forces user embeddings to simultaneously handle two conflicting tasks-expressing genuine preference and calibrating against global popularity-trapping them in suboptimal configurations that favor popular items regardless of individual tastes. We propose Directional Decomposition and Correction (DDC), a universally applicable framework that surgically corrects this embedding geometry through asymmetric directional updates. DDC guides positive interactions along personalized preference directions while steering negative interactions away from the global popularity direction, disentangling preference from popularity at the geometric source. Extensive experiments across multiple BPR-based architectures demonstrate that DDC significantly outperforms state-of-the-art debiasing methods, reducing training loss to less than 5% of heavily-tuned baselines while achieving superior recommendation quality and fairness. Code is available in https://github.com/LingFeng-Liu-AI/DDC.
 ]]></content:encoded>
 <pubDate>Thu, 25 Dec 2025 00:00:00 -0500</pubDate>
-<pubDate>Thu, 25 Dec 2025 00:00:00 -0500</pubDate>
 </item>
-
 <item>
 <title>BitRL-Light: 1-bit LLM Agents with Deep Reinforcement Learning for Energy-Efficient Smart Home Lighting Optimization</title>
 <link>https://arxiv.org/abs/2512.20623</link>
@@ -10850,16 +10849,6 @@ Abstract: Multi-agent systems have demonstrated the ability to improve performan
 <content:encoded><![CDATA[
 arXiv:2512.16445v1 Announce Type: cross 
 Abstract: Choosing the number of topics $T$ in Latent Dirichlet Allocation (LDA) is a key design decision that strongly affects both the statistical fit and interpretability of topic models. In this work, we formulate the selection of $T$ as a discrete black-box optimization problem, where each function evaluation corresponds to training an LDA model and measuring its validation perplexity. Under a fixed evaluation budget, we compare four families of optimizers: two hand-designed evolutionary methods - Genetic Algorithm (GA) and Evolution Strategy (ES) - and two learned, amortized approaches, Preferential Amortized Black-Box Optimization (PABBO) and Sharpness-Aware Black-Box Optimization (SABBO). Our experiments show that, while GA, ES, PABBO, and SABBO eventually reach a similar band of final perplexity, the amortized optimizers are substantially more sample- and time-efficient. SABBO typically identifies a near-optimal topic number after essentially a single evaluation, and PABBO finds competitive configurations within a few evaluations, whereas GA and ES require almost the full budget to approach the same region.
-]]></content:encoded>
-<pubDate>Fri, 19 Dec 2025 00:00:00 -0500</pubDate>
-</item>
-<item>
-<title>E-SDS: Environment-aware See it, Do it, Sorted - Automated Environment-Aware Reinforcement Learning for Humanoid Locomotion</title>
-<link>https://arxiv.org/abs/2512.16446</link>
-<guid>https://arxiv.org/abs/2512.16446</guid>
-<content:encoded><![CDATA[
-arXiv:2512.16446v1 Announce Type: cross 
-Abstract: Vision-language models (VLMs) show promise in automating reward design in humanoid locomotion, which could eliminate the need for tedious manual engineering. However, current VLM-based methods are essentially "blind", as they lack the environmental perception required to navigate complex terrain. We present E-SDS (Environment-aware See it, Do it, Sorted), a framework that closes this perception gap. E-SDS integrates VLMs with real-time terrain sensor analysis to automatically generate reward functions that facilitate training of robust perceptive locomotion policies, grounded by example videos. Evaluated on a Unitree G1 humanoid across four distinct terrains (simple, gaps, obstacles, stairs), E-SDS uniquely enabled successful stair descent, while policies trained with manually-designed rewards or a non-perceptive automated baseline were unable to complete the task. In all terrains, E-SDS also reduced velocity tracking error by 51.9-82.6%. Our framework reduces the human effort of reward design from days to less than two hours while simultaneously producing more robust and capable locomotion policies.
 ]]></content:encoded>
 <pubDate>Fri, 19 Dec 2025 00:00:00 -0500</pubDate>
 </item>
